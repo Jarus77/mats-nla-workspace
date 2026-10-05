@@ -40,7 +40,7 @@ at J-layer 42; 4r\* = 1536). J-space at rank r = top-r right singular vectors of
 | col | NJ1 | R² 0.655 [0.626, 0.674] (0.12) | **0.67 / 1.10 ✓** | **0.500 [0.499, 0.501] ✓** | **+0.99 / +1.47 vs 0.02 / 0.03 ✓** | none ✓ | +0.005 / +0.016 | **NON-J** |
 | col_report | IJ1 (expected in-J) | R² 0.880 [0.867, 0.895] (0.13) | 0.59 / 0.86 ✓ | 0.500 [0.498, 0.502] ✓ | +0.74 / +1.01 vs 0.21 / 0.35 ✓ | none | +0.001 / +0.003 | NON-J (calibration FAILED) |
 | depth | NJ2 | R² 0.945 [0.939, 0.949] (0.949*) | 0.57 / 1.16 ✓ | 0.5035 [0.499, 0.501] ✗ (negligible) | +0.047 / +0.070 vs 0.025 / 0.047 (weak) | noisy, inside the random range | 0.000 / 0.000 | DIFFUSE-BUT-J-READABLE (borderline) |
-| pred_pos | NJ3 | acc 0.823 [0.811, 0.832] (0.54), chance 0.125 | **2.62** / 1.56 ✗ | 0.481 (below band) | +0.10 / +0.18 vs 0.009 / 0.016 ✓ | none | +0.005 / −0.013 | J-ENRICHED, value tokens not J-readable |
+| pred_pos | NJ3 | acc 0.823 [0.811, 0.832] (0.54), chance 0.125 | **2.62** / 1.56 ✗ | label words 0.481; token-class 0.664 readable (follow-up) | +0.10 / +0.18 vs 0.009 / 0.016 ✓ | none | +0.005 / −0.013 | IN-J (follow-up: token-class readout) |
 | tense | NJ4 | acc 0.845 [0.816, 0.866] (0.70), chance 0.5 | **5.60 / 2.31** ✗ | 0.520 [0.495, 0.506] readable | +0.31 / +0.59 vs 0.047 / 0.069 ✓ (but 15-19% of full effect) | none | +0.005 / −0.013 | IN-J |
 | lang | IJ2 | acc 0.966 [0.958, 0.973] (0.32) | 3.32 / 1.73 | 0.625 readable | +0.003 / +0.008 (≈0; works only via J) | none | +0.003 / 0.000 | IN-J |
 | topic | in-J reference | acc 0.849 (0.55) | 5.98 / 2.34 | 0.830 readable | not run with J-removed direction | – | −0.009 / −0.019 | IN-J |
@@ -250,7 +250,7 @@ Results:
     `jlens` artifact and our **primary** lens, now also in the shared HF cache on mats-weights.
   - `camilablank/workspace-lenses` `j-lens/lens.pt` is `n_prompts=25` (pile-10k).
   - The two differ substantially at L42: relative Frobenius difference 0.58; mean cosine of J-lens vectors
-    0.76 (computed with gain w, not 1+w; minor); top-25 overlap 17% on random inputs. Use n1000.
+    0.79 (p10 0.72, gain 1+w); top-25 overlap 19% on random inputs. Use n1000.
 - **J-space.**
   - Paper: a union of k-dim cones of nonnegative sparse combinations (k≈25, gradient pursuit) of J-lens
     vectors, the rows of W_U·J_ℓ. Ablation = per-token projection out of the top-10 active J-lens vectors.
@@ -264,7 +264,8 @@ Results:
 
 - **Gain bug, fixed.** Qwen3_5RMSNorm multiplies by (1 + weight). An early version of s3 used the gain
   `weight` alone, which affected the s3 J-space bases and the first jrem steering directions. Everything in
-  this file was rerun with 1+w. s2, s8, s9 and s6 used the model's own norm module throughout.
+  this file, including the lens comparison (s0, rerun), now uses 1+w. s2, s8, s9 and s6 used the model's
+  own norm module throughout.
 - **Single dataset per feature; linear probes only.** The `col` count is only partly linear (R² 0.66).
 - **Steering is teacher-forced logit metrics, not generation.** The `depth` metric is conditional on
   closing positions.
@@ -304,3 +305,74 @@ Code is in `experiments/02_nonj_features/`; outputs are under `/results/02_nonj_
 - Lens setup: `s8_rstar.py` → `rstar.json`, `jspace_basis_L{38,42}.pt`; `s0_setup.py` → lens download
   and comparison (`lens_inspect.json`).
 - Summaries: `summarize.py` (local summary), `gates.json`.
+
+## Follow-ups (lead, round 4)
+
+Script: `s10_followups.py` → `/results/02_nonj_features/followups/<feature>_<lens>.json`. One container
+per (feature, lens). L42 = hs[43]; gain 1+w throughout.
+
+### 1. Generalised functional gate: "the lens readout contains the feature's value in the form the lens emits"
+
+The J-lens emits words, not POS labels. So for `pred_pos` I classified the top-10 J-lens tokens at the read
+position by POS. I used a corpus lexicon: 6708 word-initial tokens whose next-word UPOS in our spaCy-tagged
+corpus is ≥80% one class, with ≥3 occurrences. It covers 52% of the top-10 tokens. I then scored the
+per-class fraction against the model-predicted POS label with one-vs-rest AUROC, against a 200-permutation
+null.
+
+| lens | OVR AUROC (null 95%) | ADJ vs NOUN: frac ADJ − frac NOUN (null) | per-class AUROC |
+|---|---|---|---|
+| neuronpedia n1000 | **0.664** (0.497–0.503) | **0.694** (0.488–0.511) | PROPN 0.82, ADV 0.72, VERB 0.72, ADJ 0.71, NOUN 0.69, DET 0.50 |
+| camilablank n25 | **0.602** (0.497–0.503) | **0.646** (0.490–0.513) | ADJ 0.66, PROPN 0.70, NOUN 0.61 |
+
+**pred_pos is J-readable, so it is IN-J, as Fable expected.** The J-lens shows the predicted next words,
+and their part of speech tracks the predicted-POS label. The earlier "not readable" result came from
+looking for the label word ("adjective") instead.
+
+Two caveats:
+- This is close to circular. The label is defined from the model's next-token distribution, and at L42
+  the J-lens partly shows that distribution.
+- The same token-class test for tense (past vs present verb forms in the top-10) is technically above
+  its band (AUROC 0.502), but verb forms appear in only 0.1% of top-10 slots. That is uninformative.
+  Tense stays IN-J on enrichment (5.6) and on the label test (0.52 n1000, 0.56 cb).
+
+For counts, the lens's natural form is number tokens, which is exactly what the s3d test already scored
+(value-naming digits and number words). So `col` and `col_report` were already tested in the form the lens
+emits.
+
+### 2. Lens robustness: neuronpedia n1000 vs camilablank n25 (matched r)
+
+| feature | enrichment r=384 / 1536 (n1000) | (cb n25) | label-token functional AUROC [null] (n1000) | (cb n25) | label under both |
+|---|---|---|---|---|---|
+| **col** | 0.66 / 1.10 | 0.82 / 1.41 | 0.5002 [0.4985, 0.5013] | 0.5010 [0.4981, 0.5017] | **NON-J under both** |
+| col_report | 0.58 / 0.86 | 0.50 / 0.93 | 0.4996 [0.498, 0.502] | 0.4963 [0.498, 0.502] | NON-J under both |
+| tense | 5.62 / 2.31 | 4.36 / 2.37 | 0.520 readable | 0.560 readable | IN-J under both |
+| lang | 3.38 / 1.74 | 2.74 / 1.83 | 0.625 readable | 0.645 readable | IN-J under both |
+| pred_pos | 2.57 / 1.55 | 1.41 / 1.61 | token-class 0.664 readable | token-class 0.602 readable | IN-J (n1000); diffuse-but-J-readable under cb |
+
+**Robustness line: `col` is non-J under both J-lenses.** Its enrichment stays ≤1.41 at both ranks, and its
+number tokens do not track its value in either lens. Both lenses agree on every label except `pred_pos`
+geometry: its mean-diff direction is enriched 2.6x by n1000 but only 1.4x by cb at r=384. Its readout
+test passes under both lenses, so it is excluded from the non-J set either way.
+
+Note: the r = 384 / 1536 values are n1000's r\* and 4r\*. I did not compute cb's own r\*.
+
+### 3. Lens-comparison numbers
+
+These were recomputed with gain 1+w (s0 rerun, `lens_inspect.json`). At L42: mean cosine of J-lens vectors
+0.79 (p10 0.72), top-25 overlap on random inputs 19%. They were 0.76 and 17% with gain w; the
+gain-independent matrix numbers are unchanged.
+
+### Updated labels
+
+| feature | label |
+|---|---|
+| col | **NON-J (robust to lens choice)** |
+| col_report | NON-J (the IJ1 calibration failed) |
+| depth | DIFFUSE-BUT-J-READABLE (borderline) |
+| pred_pos | **IN-J** (token-class readout) |
+| tense | IN-J |
+| lang | IN-J |
+| topic | IN-J |
+
+The non-J ground-truth set for the main experiments is therefore **`col` only** (plus its chat-frame twin
+`col_report`).

@@ -175,3 +175,9 @@ Gated at L42, with r* = 384 from the readout-agreement rule (4r* = 1536), J-Lens
 6. **pred_pos was a test-design artefact.** The lens emits tokens, not POS labels. Re-run the functional gate by classifying the top-10 tokens by POS. Generalised gate: "the lens readout contains the feature's value in the form the lens emits."
 7. **col-specific validity hole (newline decision = J).** The leak set includes "\n"/EOL tokens; q90 is the primary dose; separate "long line" (count) from "newline coming" (decision) templates. Framing: the count is non-J, the decision it feeds is J, and a reader could read either.
 8. **Pivot** only if K3 fails, or if col AND the in-J count control are flat on all readers (→ P1 with a strong Part A). col_report is reported as a mini-finding (explicit report didn't move the count into J; a model difference vs Claude).
+
+## 2026-10-06 — D13: round-4 follow-ups (feature gates)
+- **col is NON-J under both lenses.** camilablank: enrichment 0.82 / 1.41, label AUROC 0.5010 (null 0.498–0.502). n1000: 0.66 / 1.10, label AUROC 0.5002. col_report is NON-J under both; tense and language are IN-J under both. **This is the lens-robustness line for Part B.**
+- **pred_pos is IN-J** with the generalised functional gate (top-10 lens tokens classified by POS): n1000 AUROC 0.66–0.69 vs null ~0.50; camilablank 0.60–0.65. Caveat: near-circular, because the label comes from the next-token distribution, which the L42 lens partly shows. So it's excluded either way, and the earlier "fails" label was a test-design artefact, as Fable predicted.
+- **Lens agreement** recomputed with gain 1+w: J-lens vector cosine 0.79 (p10 0.72); top-25 overlap on random inputs only 19%. The lenses differ substantially, which supports reporting both.
+- col remains the single non-J ground truth.

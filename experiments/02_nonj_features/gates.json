@@ -90,7 +90,55 @@
    "p99": 0.1592596567398987,
    "2xp99": 0.3185193134797974
   },
-  "label": "NON-J"
+  "label": "NON-J (robust: n1000 and camilablank n25 lenses)",
+  "followups": {
+   "np": {
+    "feature": "col",
+    "lens": "np",
+    "n": 40000,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 0.6550580263137817,
+     "1536": 1.0980082750320435
+    },
+    "enrichment_acts": {
+     "384": 2.1972053050994873,
+     "1536": 1.5137310028076172
+    },
+    "label_token_functional": {
+     "stat": 0.5002155183781483,
+     "null_band95": [
+      0.4985238448216673,
+      0.5012807716463836
+     ],
+     "j_readable": false
+    }
+   },
+   "cb": {
+    "feature": "col",
+    "lens": "cb",
+    "n": 40000,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 0.8150215148925781,
+     "1536": 1.4136502742767334
+    },
+    "enrichment_acts": {
+     "384": 2.0414488315582275,
+     "1536": 1.5521174669265747
+    },
+    "label_token_functional": {
+     "stat": 0.5009727011842384,
+     "null_band95": [
+      0.4981335807305574,
+      0.50171320713
+     ],
+     "j_readable": false
+    }
+   }
+  }
  },
  "col_report": {
   "role": "IJ1 calibration (expected in-J)",
@@ -183,7 +231,55 @@
    "p99": 0.23650682084229663,
    "2xp99": 0.47301364168459326
   },
-  "label": "NON-J"
+  "label": "NON-J under both lenses (IJ1 calibration failed)",
+  "followups": {
+   "np": {
+    "feature": "col_report",
+    "lens": "np",
+    "n": 21650,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 0.5845924615859985,
+     "1536": 0.8563730716705322
+    },
+    "enrichment_acts": {
+     "384": 1.908089518547058,
+     "1536": 1.5562934875488281
+    },
+    "label_token_functional": {
+     "stat": 0.4995879229308421,
+     "null_band95": [
+      0.49791511568256036,
+      0.5016233904003354
+     ],
+     "j_readable": false
+    }
+   },
+   "cb": {
+    "feature": "col_report",
+    "lens": "cb",
+    "n": 21650,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 0.502066433429718,
+     "1536": 0.9301644563674927
+    },
+    "enrichment_acts": {
+     "384": 1.778535008430481,
+     "1536": 1.600656270980835
+    },
+    "label_token_functional": {
+     "stat": 0.4962839242279708,
+     "null_band95": [
+      0.4977853302170269,
+      0.5023013280621069
+     ],
+     "j_readable": false
+    }
+   }
+  }
  },
  "depth": {
   "role": "NJ2 candidate",
@@ -369,7 +465,136 @@
    "p99": 0.18580570990742074,
    "2xp99": 0.37161141981484147
   },
-  "label": "J-ENRICHED, value tokens not J-readable"
+  "label": "IN-J (lens top-10 POS tracks predicted POS; token-class AUROC 0.664 n1000 / 0.602 cb)",
+  "followups": {
+   "np": {
+    "feature": "pred_pos",
+    "lens": "np",
+    "n": 28628,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 2.5712192058563232,
+     "1536": 1.5530470609664917
+    },
+    "enrichment_acts": {
+     "384": 2.285125494003296,
+     "1536": 1.5002973079681396
+    },
+    "label_token_functional": {
+     "stat": 0.46960455477505275,
+     "null_band95": [
+      0.49658675257836604,
+      0.5032981926313547
+     ],
+     "j_readable": false
+    },
+    "token_class_functional": {
+     "stat_ovr_auroc": 0.6641475181191459,
+     "null_band95": [
+      0.49682114397252286,
+      0.5030830576849534
+     ],
+     "j_readable": true,
+     "per_class": {
+      "NOUN": 0.6872120046288777,
+      "ADP": 0.5789455142520709,
+      "DET": 0.5048498152509339,
+      "VERB": 0.7176560977342862,
+      "ADJ": 0.7055733514698718,
+      "PROPN": 0.8229635323615397,
+      "PRON": 0.5730039015980989,
+      "ADV": 0.7229759276574882
+     },
+     "frac_top10_tokens_in_lexicon": 0.5234455777560431,
+     "adj_vs_noun": {
+      "adj_vs_noun_auroc": 0.6939409375000001,
+      "null_band95": [
+       0.487761953125,
+       0.5112254882812499
+      ]
+     },
+     "lexicon_size": 6708
+    }
+   },
+   "cb": {
+    "feature": "pred_pos",
+    "lens": "cb",
+    "n": 28628,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 1.4069217443466187,
+     "1536": 1.61309814453125
+    },
+    "enrichment_acts": {
+     "384": 2.123476505279541,
+     "1536": 1.529561996459961
+    },
+    "label_token_functional": {
+     "stat": 0.4712633953223973,
+     "null_band95": [
+      0.4959278723404255,
+      0.5035345313768881
+     ],
+     "j_readable": false
+    },
+    "token_class_functional": {
+     "stat_ovr_auroc": 0.6018747083885009,
+     "null_band95": [
+      0.49728602912068065,
+      0.5031636888829505
+     ],
+     "j_readable": true,
+     "per_class": {
+      "NOUN": 0.610613884602891,
+      "ADP": 0.5339684809972389,
+      "DET": 0.5013615295598505,
+      "VERB": 0.6120672912944617,
+      "ADJ": 0.6603430597287641,
+      "PROPN": 0.7045152874776678,
+      "PRON": 0.5213876327851927,
+      "ADV": 0.6707405006619404
+     },
+     "frac_top10_tokens_in_lexicon": 0.429701690652508,
+     "adj_vs_noun": {
+      "adj_vs_noun_auroc": 0.646349875,
+      "null_band95": [
+       0.49026060078125,
+       0.51273944296875
+      ]
+     },
+     "lexicon_size": 6708
+    }
+   }
+  },
+  "G2_functional_token_class": {
+   "stat_ovr_auroc": 0.6641475181191459,
+   "null_band95": [
+    0.49682114397252286,
+    0.5030830576849534
+   ],
+   "j_readable": true,
+   "per_class": {
+    "NOUN": 0.6872120046288777,
+    "ADP": 0.5789455142520709,
+    "DET": 0.5048498152509339,
+    "VERB": 0.7176560977342862,
+    "ADJ": 0.7055733514698718,
+    "PROPN": 0.8229635323615397,
+    "PRON": 0.5730039015980989,
+    "ADV": 0.7229759276574882
+   },
+   "frac_top10_tokens_in_lexicon": 0.5234455777560431,
+   "adj_vs_noun": {
+    "adj_vs_noun_auroc": 0.6939409375000001,
+    "null_band95": [
+     0.487761953125,
+     0.5112254882812499
+    ]
+   },
+   "lexicon_size": 6708
+  }
  },
  "tense": {
   "role": "NJ4 candidate",
@@ -462,7 +687,85 @@
    "p99": 0.1598295907009594,
    "2xp99": 0.3196591814019188
   },
-  "label": "IN-J"
+  "label": "IN-J",
+  "followups": {
+   "np": {
+    "feature": "tense",
+    "lens": "np",
+    "n": 8000,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 5.6168951988220215,
+     "1536": 2.3139994144439697
+    },
+    "enrichment_acts": {
+     "384": 2.258517265319824,
+     "1536": 1.5003364086151123
+    },
+    "label_token_functional": {
+     "stat": 0.5195522968749999,
+     "null_band95": [
+      0.49537534062500005,
+      0.5058522960937499
+     ],
+     "j_readable": true
+    },
+    "token_class_functional": {
+     "stat_ovr_auroc": 0.5015624999999999,
+     "null_band95": [
+      0.49918708671875,
+      0.5008118777343751
+     ],
+     "j_readable": true,
+     "per_class": {
+      "Past": 0.5028754375,
+      "Pres": 0.5002495625
+     },
+     "frac_top10_tokens_in_lexicon": 0.0009625,
+     "adj_vs_noun": null,
+     "lexicon_size": 157
+    }
+   },
+   "cb": {
+    "feature": "tense",
+    "lens": "cb",
+    "n": 8000,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 4.355565071105957,
+     "1536": 2.371250867843628
+    },
+    "enrichment_acts": {
+     "384": 2.1020331382751465,
+     "1536": 1.5333647727966309
+    },
+    "label_token_functional": {
+     "stat": 0.559826546875,
+     "null_band95": [
+      0.49386173515625004,
+      0.50591978203125
+     ],
+     "j_readable": true
+    },
+    "token_class_functional": {
+     "stat_ovr_auroc": 0.502186875,
+     "null_band95": [
+      0.49881387812500005,
+      0.5011903757812499
+     ],
+     "j_readable": true,
+     "per_class": {
+      "Past": 0.5048737500000001,
+      "Pres": 0.4995
+     },
+     "frac_top10_tokens_in_lexicon": 0.001225,
+     "adj_vs_noun": null,
+     "lexicon_size": 157
+    }
+   }
+  }
  },
  "lang": {
   "role": "IJ2 calibration",
@@ -555,7 +858,55 @@
    "p99": 0.22904023631788611,
    "2xp99": 0.45808047263577223
   },
-  "label": "IN-J"
+  "label": "IN-J",
+  "followups": {
+   "np": {
+    "feature": "lang",
+    "lens": "np",
+    "n": 24000,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 3.3793747425079346,
+     "1536": 1.7426776885986328
+    },
+    "enrichment_acts": {
+     "384": 2.1578245162963867,
+     "1536": 1.5334094762802124
+    },
+    "label_token_functional": {
+     "stat": 0.6247179364583333,
+     "null_band95": [
+      0.49737947348958333,
+      0.5024069953125
+     ],
+     "j_readable": true
+    }
+   },
+   "cb": {
+    "feature": "lang",
+    "lens": "cb",
+    "n": 24000,
+    "hs": 43,
+    "jlens_layer": 42,
+    "enrichment": {
+     "384": 2.7431559562683105,
+     "1536": 1.8257967233657837
+    },
+    "enrichment_acts": {
+     "384": 2.0146636962890625,
+     "1536": 1.583937406539917
+    },
+    "label_token_functional": {
+     "stat": 0.6448996708333333,
+     "null_band95": [
+      0.4966601740364584,
+      0.5032041237499999
+     ],
+     "j_readable": true
+    }
+   }
+  }
  },
  "topic": {
   "role": "in-J reference",
@@ -730,5 +1081,15 @@
    "2xp99": 0.3904767525761198
   },
   "label": "INTERMEDIATE (enrichment 1.5-2) , J-readable"
+ },
+ "_meta": {
+  "layer": "L42 = block-42 output = hidden_states[43]",
+  "lens_primary": "neuronpedia n1000",
+  "r_star": 384,
+  "gain": "1+w",
+  "nonj_set": [
+   "col",
+   "col_report (same feature, chat frame)"
+  ]
  }
 }
