@@ -191,3 +191,21 @@ Regex families, L42, n=400.
 - **Text-verifiable precision** (Gemini judge, 100 readouts each): NLA 0.62 (36% contradicted, mostly misquotes of the prompt), OL 0.52 (35% contradicted, wrong entities; 28% unsupported), text-only Qwen 0.92. Judge agreement kimi-k3 vs Gemini: κ 0.72–0.77 on 40 claims. The prereg's human-labelled subset is still TODO.
 - **Possible WorkspaceBench issue:** re-running the frozen prompt-only floor template gives 0.85/0.58/0.82/0.77 vs frozen 0.67/0.42/0.69/0.59. Unverified; the frozen run had empty cells, and thinking mode is a suspect. Verify before reporting, and if confirmed, notify the WorkspaceBench authors.
 - **Implication:** on WorkspaceBench, regex success at L42 is fully explained by text, so the benchmark can't separate reading from re-solving. This supports panel 2 / P2, and it is NOT evidence that the readers don't read. It strengthens the case for col and text-fixed steering as the decisive test.
+
+## 2026-10-06 — D15: col PILOT (60 declared-pilot items, EXCLUDED from main analysis)
+- **Primary cell** (L42, centred, 4r* J-removed direction, q90): NLA AUROC 0.50–0.53 (paired win 0.57–0.70), OL 0.49–0.51. All z within ±1.5 of the K=20 isotropic and J-complement null bands, for every template family. Fraction of probe: NLA ≤ 0.12, OL ≤ 0.03 (H2 bar 0.25). **No reader tracks col beyond random directions.**
+- **The decoders don't pick up even the RAW col direction,** while it moves the J-Lens newline score strongly (AUROC up to 0.84).
+- **The prereg's H2 "CI excludes 0.5" test is too weak.** NLA numerals@r*: 0.54 [0.53, 0.57] excludes 0.5, but random directions move it as much (z +1.4/+1.8). The null band must be part of every primary test.
+- **Leak detector with the newline set:**
+  - **r* (384) leaks** at L40/42/44 (newline z +2.6 to +3.0);
+  - **4r* (1536) is clean** at L40/42; at L44, 1024 still leaks.
+  - Main-run non-J steering = **4r* at L42**.
+- **FVE guard:** q90 passes; q99 fails on the − side, but random directions at that norm fail too, so the guard measures norm, not col. col's projection is right-skewed. q90 is primary; consider a q10-based − dose.
+- **Free-text mentions of line length:** 0 in 4,080 NLA and 1,680 OL readouts. The J-Lens natural top-20 never contains newline or number tokens.
+- **Power:**
+  - NLA−OL ΔAUROC at q90 is +0.015 / +0.014 / +0.028 (count_qual / count_num / decision). At 240 items the minimum detectable difference is ~0.02.
+  - **The null band, not n, limits power:** the spread between random directions doesn't shrink with n. Even at infinite n the NLA's z ≈ +0.6/+1.4/+0.6.
+  - **H3 for col will likely fail.** State this explicitly at the freeze.
+- **Gap (critical):** no in-J calibration at matched doses in this pilot, so a col null can't yet be read as "readers don't read non-J". The toy (language, D11) showed raw-direction tracking (NLA 0.91, OL 0.84) and J-removed NLA tracking +8 SD, but at different doses and items. Next: matched-dose calibration (language, tense, and the numeral list-index in-J count once gated) on the pilot split, same pipeline.
+- **Natural arm (descriptive):** the ridge probe correlates 0.88 with col; NLA/OL |ρ| ≤ 0.16.
+- Cost ~4.4 GPU-h (~$19).

@@ -1,0 +1,489 @@
+{
+ "status": "DECLARED PILOT SPLIT -- EXCLUDE FROM MAIN ANALYSIS",
+ "experiment": "08_col_pilot",
+ "feature": "col (NJ1)",
+ "generator": "pilot_items.py (PILOT_SEED 8008, 02 cleaner + textwrap, widths 30-70)",
+ "exclusion_rule": "main-run item generation must drop any wikitext paragraph whose sha1(whitespace-normalised text)[:16] or normalised 80-char head matches an entry below",
+ "items": [
+  {
+   "id": "pilot_col_00",
+   "passage_sha1_16": "a73e1e17ab2a897d",
+   "passage_head": "After the 2003 \u2013 04 season, Nash became a free agent. He attempted to negotiate ",
+   "width": 30,
+   "pos": 168,
+   "col": 6
+  },
+  {
+   "id": "pilot_col_01",
+   "passage_sha1_16": "020827f2aedb1717",
+   "passage_head": "If isolation is high, directional couplers are good for combining signals to fee",
+   "width": 40,
+   "pos": 49,
+   "col": 7
+  },
+  {
+   "id": "pilot_col_02",
+   "passage_sha1_16": "e77c87efeab22ffc",
+   "passage_head": "Edwards became conductor and music director of the Portland Youth Philharmonic (",
+   "width": 50,
+   "pos": 154,
+   "col": 12
+  },
+  {
+   "id": "pilot_col_03",
+   "passage_sha1_16": "f081ae8ca23981f2",
+   "passage_head": "Kristen Stewart was on the set of Adventureland when Hardwicke visited her for a",
+   "width": 60,
+   "pos": 80,
+   "col": 41
+  },
+  {
+   "id": "pilot_col_04",
+   "passage_sha1_16": "c29664924f027441",
+   "passage_head": "Neglected in her relationship with the once-human Manhattan, whose now-godlike p",
+   "width": 70,
+   "pos": 48,
+   "col": 34
+  },
+  {
+   "id": "pilot_col_05",
+   "passage_sha1_16": "475456444a4f85ca",
+   "passage_head": "ACTC has an active student population, with several organizations and associatio",
+   "width": 30,
+   "pos": 144,
+   "col": 12
+  },
+  {
+   "id": "pilot_col_06",
+   "passage_sha1_16": "d19de12ab38638cf",
+   "passage_head": "The purpose of marriage between the medieval elites was to secure land. Girls we",
+   "width": 40,
+   "pos": 125,
+   "col": 9
+  },
+  {
+   "id": "pilot_col_07",
+   "passage_sha1_16": "c79709cd0d67a081",
+   "passage_head": "In 1774, Potemkin became the governor-general of Russia's new southern provinces",
+   "width": 50,
+   "pos": 165,
+   "col": 49
+  },
+  {
+   "id": "pilot_col_08",
+   "passage_sha1_16": "e6a470ef5d0c3702",
+   "passage_head": "Modeled on The Lord of the Rings, the Ice and Fire story begins with a tight foc",
+   "width": 60,
+   "pos": 185,
+   "col": 45
+  },
+  {
+   "id": "pilot_col_09",
+   "passage_sha1_16": "09c79c3dd7e34e9c",
+   "passage_head": "Crowley enjoyed being outrageous and flouting conventional morality, with John S",
+   "width": 70,
+   "pos": 169,
+   "col": 23
+  },
+  {
+   "id": "pilot_col_10",
+   "passage_sha1_16": "6e83a834a9a7891f",
+   "passage_head": "Besides religious imagery, the frescoes of the Donja Kamenica church also includ",
+   "width": 30,
+   "pos": 112,
+   "col": 29
+  },
+  {
+   "id": "pilot_col_11",
+   "passage_sha1_16": "8fd297da4cd642f3",
+   "passage_head": "Conceptual designs were created by Range Murata, who was given complete freedom ",
+   "width": 40,
+   "pos": 115,
+   "col": 15
+  },
+  {
+   "id": "pilot_col_12",
+   "passage_sha1_16": "28c6c8202f08d2d4",
+   "passage_head": "On the third morning, the players were greeted by sunshine, and a large Saturday",
+   "width": 50,
+   "pos": 205,
+   "col": 35
+  },
+  {
+   "id": "pilot_col_13",
+   "passage_sha1_16": "01212ee0a1804ecf",
+   "passage_head": "The Pixar team came back with a new script three months later, with the characte",
+   "width": 60,
+   "pos": 102,
+   "col": 10
+  },
+  {
+   "id": "pilot_col_14",
+   "passage_sha1_16": "4994da68a11784bb",
+   "passage_head": "Romania's academic community was thus prompted to reassess the overall value of ",
+   "width": 70,
+   "pos": 218,
+   "col": 38
+  },
+  {
+   "id": "pilot_col_15",
+   "passage_sha1_16": "cdc50aa0e3399c0a",
+   "passage_head": "On 29 August, Murray commanded A Company \u2014 which consisted of fewer than one hun",
+   "width": 30,
+   "pos": 198,
+   "col": 20
+  },
+  {
+   "id": "pilot_col_16",
+   "passage_sha1_16": "af513303e99bb593",
+   "passage_head": "As an Eastern Pacific tropical cyclone, Olivia maintained well-defined outflow a",
+   "width": 40,
+   "pos": 200,
+   "col": 37
+  },
+  {
+   "id": "pilot_col_17",
+   "passage_sha1_16": "714dd2ba81c9a95d",
+   "passage_head": "On 6 September 1940, HMAS Australia was ordered to sail to Freetown, Sierra Leon",
+   "width": 50,
+   "pos": 130,
+   "col": 10
+  },
+  {
+   "id": "pilot_col_18",
+   "passage_sha1_16": "11586bcb2257b9f5",
+   "passage_head": "There are two types of taxi operating in the city, the main taxi is the red and ",
+   "width": 60,
+   "pos": 68,
+   "col": 58
+  },
+  {
+   "id": "pilot_col_19",
+   "passage_sha1_16": "136d903f3969c290",
+   "passage_head": "Roberts was born in Pineland, Texas but grew up in Oakland, California. He atten",
+   "width": 70,
+   "pos": 87,
+   "col": 54
+  },
+  {
+   "id": "pilot_col_20",
+   "passage_sha1_16": "08be848356583866",
+   "passage_head": "Reverend Harris had several of his witnesses sent to London, where they were int",
+   "width": 30,
+   "pos": 37,
+   "col": 22
+  },
+  {
+   "id": "pilot_col_21",
+   "passage_sha1_16": "b12d754576c9cc12",
+   "passage_head": "Messi continued to struggle with injury throughout 2013, eventually parting ways",
+   "width": 40,
+   "pos": 150,
+   "col": 37
+  },
+  {
+   "id": "pilot_col_22",
+   "passage_sha1_16": "7ca7b9f6afbdde7f",
+   "passage_head": "Justin Ravitz of PopMatters called the series a \"cleverly trashy postmodern soap",
+   "width": 50,
+   "pos": 124,
+   "col": 22
+  },
+  {
+   "id": "pilot_col_23",
+   "passage_sha1_16": "dfe1ea3816c6756e",
+   "passage_head": "According to Edmunds.com, the price premium paid for the Leaf, after discounting",
+   "width": 60,
+   "pos": 306,
+   "col": 22
+  },
+  {
+   "id": "pilot_col_24",
+   "passage_sha1_16": "a3c3055e2b6098fa",
+   "passage_head": "Weber's final season with the Rockets proved to be his best with the team, despi",
+   "width": 70,
+   "pos": 206,
+   "col": 57
+  },
+  {
+   "id": "pilot_col_25",
+   "passage_sha1_16": "9fe20b1ec4948564",
+   "passage_head": "At the time of its decommissioning, US 16 started its run through Michigan at th",
+   "width": 30,
+   "pos": 30,
+   "col": 14
+  },
+  {
+   "id": "pilot_col_26",
+   "passage_sha1_16": "0a088fe8de6b9acd",
+   "passage_head": "The production design model officially unveiled on September 16, 2008, as part o",
+   "width": 40,
+   "pos": 36,
+   "col": 32
+  },
+  {
+   "id": "pilot_col_27",
+   "passage_sha1_16": "59907dad2d7658e2",
+   "passage_head": "On the recommendation of Herbertson, on 1913 Crawford joined William Scoresby Ro",
+   "width": 50,
+   "pos": 39,
+   "col": 20
+  },
+  {
+   "id": "pilot_col_28",
+   "passage_sha1_16": "c02e5b9555e0cbb3",
+   "passage_head": "Promoted acting wing commander in June 1943, Arthur became wing leader of No. 71",
+   "width": 60,
+   "pos": 52,
+   "col": 14
+  },
+  {
+   "id": "pilot_col_29",
+   "passage_sha1_16": "d85c69df3852a6df",
+   "passage_head": "Developer Raven Software sought to expand on the preceding game's scale. As such",
+   "width": 70,
+   "pos": 201,
+   "col": 60
+  },
+  {
+   "id": "pilot_col_30",
+   "passage_sha1_16": "1d2c60908ae04c86",
+   "passage_head": "Aphilas introduced a number of different standards for all three metals, some of",
+   "width": 30,
+   "pos": 162,
+   "col": 12
+  },
+  {
+   "id": "pilot_col_31",
+   "passage_sha1_16": "8fc717d79e2c30c0",
+   "passage_head": "Although he was rarely in London, Edward I undertook an expensive remodelling of",
+   "width": 40,
+   "pos": 231,
+   "col": 39
+  },
+  {
+   "id": "pilot_col_32",
+   "passage_sha1_16": "8fdc10427828e04b",
+   "passage_head": "Dots and Loops was released in 1997, and was Stereolab's first album to enter th",
+   "width": 50,
+   "pos": 33,
+   "col": 6
+  },
+  {
+   "id": "pilot_col_33",
+   "passage_sha1_16": "405fc85fdaed47b3",
+   "passage_head": "In January 2002, Jon Lee committed suicide in his Miami home, resulting in the b",
+   "width": 60,
+   "pos": 132,
+   "col": 57
+  },
+  {
+   "id": "pilot_col_34",
+   "passage_sha1_16": "91e4b1b874e35fac",
+   "passage_head": "Contrary to media reports that nearly always mentioned the religions of the Arme",
+   "width": 70,
+   "pos": 215,
+   "col": 8
+  },
+  {
+   "id": "pilot_col_35",
+   "passage_sha1_16": "d6d6a5a4804e44d0",
+   "passage_head": "In addition, there were several connections with SNL: Fey, Morgan, Dratch, Bill ",
+   "width": 30,
+   "pos": 26,
+   "col": 6
+  },
+  {
+   "id": "pilot_col_36",
+   "passage_sha1_16": "c16fbde7699e199a",
+   "passage_head": "When Taft entered office, Mexico was increasingly restless under the grip of lon",
+   "width": 40,
+   "pos": 258,
+   "col": 34
+  },
+  {
+   "id": "pilot_col_37",
+   "passage_sha1_16": "639d332ecbc37d20",
+   "passage_head": "A narrative rational for the concept of Hell can be found in the Hindu epic, Mah",
+   "width": 50,
+   "pos": 93,
+   "col": 40
+  },
+  {
+   "id": "pilot_col_38",
+   "passage_sha1_16": "14200706ad577242",
+   "passage_head": "At Port Clarence, just north of Nome, 28 dogs were taken on board before Karluk ",
+   "width": 60,
+   "pos": 178,
+   "col": 50
+  },
+  {
+   "id": "pilot_col_39",
+   "passage_sha1_16": "3452c713415d6108",
+   "passage_head": "Charles Darwin grew up with an interest in natural history, and as a student at ",
+   "width": 70,
+   "pos": 102,
+   "col": 47
+  },
+  {
+   "id": "pilot_col_40",
+   "passage_sha1_16": "3878b1f46acbbad0",
+   "passage_head": "Since her introduction, Tifa has received an extremely positive reaction from bo",
+   "width": 30,
+   "pos": 112,
+   "col": 8
+  },
+  {
+   "id": "pilot_col_41",
+   "passage_sha1_16": "7dcee40ffe9ead48",
+   "passage_head": "The battalion did not take part in any fighting until a few months later when, i",
+   "width": 40,
+   "pos": 137,
+   "col": 26
+  },
+  {
+   "id": "pilot_col_42",
+   "passage_sha1_16": "23ecad54c8df1e4f",
+   "passage_head": "Carr also theorizes that the capacity to contemplate may diminish as computer al",
+   "width": 50,
+   "pos": 151,
+   "col": 23
+  },
+  {
+   "id": "pilot_col_43",
+   "passage_sha1_16": "f0324968e7f025df",
+   "passage_head": "Santiago was born in Caracas, Venezuela, and was raised in Richmond, Virginia. S",
+   "width": 60,
+   "pos": 107,
+   "col": 52
+  },
+  {
+   "id": "pilot_col_44",
+   "passage_sha1_16": "c2fc592a60a9f251",
+   "passage_head": "The American musician Luther Noss reviewed the piece upon its publication by Boo",
+   "width": 70,
+   "pos": 24,
+   "col": 37
+  },
+  {
+   "id": "pilot_col_45",
+   "passage_sha1_16": "d42324b6974b6175",
+   "passage_head": "Lody was also the subject of literary and stage works; a hagiographic biographic",
+   "width": 30,
+   "pos": 302,
+   "col": 25
+  },
+  {
+   "id": "pilot_col_46",
+   "passage_sha1_16": "c635398d2a39b090",
+   "passage_head": "To improve Britain's cultural influence abroad, Wheeler had been urging the esta",
+   "width": 40,
+   "pos": 30,
+   "col": 38
+  },
+  {
+   "id": "pilot_col_47",
+   "passage_sha1_16": "b16a67a228a94bd3",
+   "passage_head": "Stefani's performance in late November 2005 in her home town of Anaheim, Califor",
+   "width": 50,
+   "pos": 179,
+   "col": 33
+  },
+  {
+   "id": "pilot_col_48",
+   "passage_sha1_16": "0b379797acad1982",
+   "passage_head": "Mike Adams, the Producer of Murder on the Orient Express, was extremely determin",
+   "width": 60,
+   "pos": 194,
+   "col": 39
+  },
+  {
+   "id": "pilot_col_49",
+   "passage_sha1_16": "052eec8a41fde09c",
+   "passage_head": "Jaguar populations are rapidly declining. The animal is considered Near Threaten",
+   "width": 70,
+   "pos": 62,
+   "col": 52
+  },
+  {
+   "id": "pilot_col_50",
+   "passage_sha1_16": "d728b6ec345dcc52",
+   "passage_head": "In February, the 76ers had Okafor and Nerlens Noel swap positions as Okafor move",
+   "width": 30,
+   "pos": 89,
+   "col": 25
+  },
+  {
+   "id": "pilot_col_51",
+   "passage_sha1_16": "10c41ad1b4989d4d",
+   "passage_head": "West made a conscious decision to abstain from the widespread recording practice",
+   "width": 40,
+   "pos": 247,
+   "col": 7
+  },
+  {
+   "id": "pilot_col_52",
+   "passage_sha1_16": "37af1e1a6180cce0",
+   "passage_head": "L\u00fctzow was named after Ludwig Adolf Wilhelm von L\u00fctzow, a Prussian lieutenant-ge",
+   "width": 50,
+   "pos": 120,
+   "col": 23
+  },
+  {
+   "id": "pilot_col_53",
+   "passage_sha1_16": "1b60e7a205831394",
+   "passage_head": "The Linga Purana also mentions the visit of Bhikshatana-Shiva to Deodar Forest t",
+   "width": 60,
+   "pos": 230,
+   "col": 24
+  },
+  {
+   "id": "pilot_col_54",
+   "passage_sha1_16": "001424a10178397c",
+   "passage_head": "When police conduct a search, the amendment requires that the warrant establish ",
+   "width": 70,
+   "pos": 116,
+   "col": 54
+  },
+  {
+   "id": "pilot_col_55",
+   "passage_sha1_16": "1190596a720dea1e",
+   "passage_head": "The privately revised expedition schedule required Fram to leave Norway in Augus",
+   "width": 30,
+   "pos": 176,
+   "col": 24
+  },
+  {
+   "id": "pilot_col_56",
+   "passage_sha1_16": "16ce4ae6ea4bdf68",
+   "passage_head": "By October 1940, the ship's anti-aircraft armament was increased when the rear s",
+   "width": 40,
+   "pos": 215,
+   "col": 25
+  },
+  {
+   "id": "pilot_col_57",
+   "passage_sha1_16": "3b731a625952a894",
+   "passage_head": "After resigning, Aqil left Galilee for Tell el-Hesi in the region of Gaza. Aroun",
+   "width": 50,
+   "pos": 232,
+   "col": 21
+  },
+  {
+   "id": "pilot_col_58",
+   "passage_sha1_16": "364b8d0d4d16621b",
+   "passage_head": "Ben Richards wrote the episode. The main focus for the first ten minutes of the ",
+   "width": 60,
+   "pos": 84,
+   "col": 60
+  },
+  {
+   "id": "pilot_col_59",
+   "passage_sha1_16": "1472bcb7191d5916",
+   "passage_head": "Cagney's penultimate film was a comedy. He was hand-picked by Billy Wilder to pl",
+   "width": 70,
+   "pos": 245,
+   "col": 49
+  }
+ ]
+}
