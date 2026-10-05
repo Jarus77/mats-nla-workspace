@@ -269,3 +269,20 @@ All 9 features were gated with 02's procedure plus D9/D11 (centred steering, two
   - The primary functional rule stays label words + top-10 categories (one-sided, as in 02), with soft mass as a stricter supplement.
 - **Method recommendation:** always report a shuffled-label enrichment reference (random relabellings already give 1.2–2.5× at r*).
 - camilablank agrees with n1000 on every label except two (capitalisation DIFFUSE; indentation soft-mass above band).
+
+## 2026-10-06 — D20: K3 PASSES (matched-dose calibration, pilot split, excluded)
+Language (ru vs pl; 02's direction) and tense, 60 items each, at L42, centred raw direction, q90.
+
+| Reader | Language | Tense | Raw col at the same dose |
+|---|---|---|---|
+| NLA | **0.83** (z +25/+31) | **0.83** (z +12/+18) | 0.48 |
+| OL | **0.76** (z +11/+21) | 0.55 (out of band, below the 0.65 bar) | 0.48 |
+
+- In-J features were steered at slightly **smaller** relative norm (0.095) than col (0.108).
+- **At equal relative norm** (0.11 / 0.14): NLA language 0.87/0.92, tense 0.85/0.89; OL language 0.80/0.85; **col 0.47–0.48 for both readers**.
+- **The null band is not the limiter for in-J features:** band SD 0.012–0.021 vs col 0.022–0.029; in-J per-item d_z +1.2 to +1.5 vs col −0.2 to −0.3.
+- **The col null is interpretable:** "these decoders don't read col", with the template caveat. Fixed-template sensitivity is large (OL tense 0.39–0.87 across templates), so the main run uses the frozen mined templates (D18) and adds OL continuation-style col candidates (newline vs another word).
+- **New (pilot, secondary): the NLA tracks the J-removed (4r*) tense direction leak-free** (0.60, z +8.7, clean at L42/L40 under label and content leak sets), while OL is inside the band. So the NLA's failure on col is **feature-specific**, not a general inability to read outside the top-1536 J-space. Pre-register it as a secondary cell. The language 4r* result is void (Cyrillic content leak, z +3.7).
+- **Leak detector upgrade:** every leak check includes a **content token set** besides label words (the label-only set missed the language leak).
+- **Smaller caveat:** col's direction is a regression-covariance direction, while language/tense use class-mean differences. Add a binary short-vs-long col direction (class-mean) as a robustness arm.
+- Pilot total ~9.7 GPU-h (~$42).

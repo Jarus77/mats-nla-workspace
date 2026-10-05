@@ -485,5 +485,972 @@
    "pos": 245,
    "col": 49
   }
- ]
+ ],
+ "calibration_items": {
+  "lang": [
+   {
+    "id": "calib_lang_ru_00",
+    "label": "Russian",
+    "pos": 21,
+    "source": "papluca/test",
+    "source_sha1_16": "f86f4ab066f57f8f",
+    "source_head": "\u0413\u043b\u0430\u0432\u043d\u044b\u0439 \u0432\u044b\u0432\u043e\u0434, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043c\u043e\u0436\u043d\u043e \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u0438\u0437 \u043d\u0430\u0448\u0435\u0433\u043e \u043c\u043e\u0434\u0435\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f, \u0441\u043e\u0441\u0442\u043e\u0438\u0442 \u0432 \u0442\u043e\u043c, \u0447\u0442\u043e"
+   },
+   {
+    "id": "calib_lang_ru_01",
+    "label": "Russian",
+    "pos": 16,
+    "source": "papluca/test",
+    "source_sha1_16": "b5f91d7e28575f5d",
+    "source_head": "\u0412\u0430\u043d\u0434\u0430 \u0442\u0430\u043a \u0436\u0435 \u043e\u0441\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0430, \u043a\u0430\u043a \u043b\u044e\u0431\u0430\u044f \u043c\u0430\u0442\u044c \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u043e \u043d\u043e\u0432\u044b\u0445 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u044f\u0445, \u043a\u043e\u0442\u043e\u0440\u044b"
+   },
+   {
+    "id": "calib_lang_ru_02",
+    "label": "Russian",
+    "pos": 13,
+    "source": "papluca/test",
+    "source_sha1_16": "33712e70105a197e",
+    "source_head": "\u0415\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u043a\u043d\u0438\u0436\u043d\u044b\u0439 \u0432\u043e\u043f\u0440\u043e\u0441 \u0432 \u043e\u043f\u0440\u043e\u0441\u0435 NEA: \u0447\u0438\u0442\u0430\u043b\u0438 \u043b\u0438 \u0432\u044b \u043a\u0430\u043a\u0443\u044e-\u043d\u0438\u0431\u0443\u0434\u044c \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432"
+   },
+   {
+    "id": "calib_lang_ru_03",
+    "label": "Russian",
+    "pos": 10,
+    "source": "papluca/test",
+    "source_sha1_16": "106d1bec6d88cf9b",
+    "source_head": "\u0415\u0441\u043b\u0438 \u0445\u043e\u0447\u0435\u0448\u044c, \u0447\u0442\u043e\u0431\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u043e\u0441\u044c \u044d\u0442\u0443 \u0448\u0442\u0443\u043a\u0443 \u043e\u0442\u0440\u0435\u0437\u0430\u0442\u044c, \u0434\u0430\u0439 \u043c\u043d\u0435 \u043c\u0438\u043d\u0443\u0442\u0443, \u0442\u043e\u0433\u0434\u0430 \u044f, \u0430...,"
+   },
+   {
+    "id": "calib_lang_ru_04",
+    "label": "Russian",
+    "pos": 15,
+    "source": "papluca/test",
+    "source_sha1_16": "de9c39f56526781e",
+    "source_head": "\u0437\u043d\u0430\u0435\u0448\u044c, \u0443 \u043c\u0435\u043d\u044f \u0432\u0441\u0435 \u0434\u0435\u0442\u0438 \u043e\u0442\u043b\u0438\u0447\u043d\u044b\u0435, \u043e\u043d\u0438 \u0440\u0435\u0430\u043b\u044c\u043d\u043e \u043a\u043b\u0430\u0441\u0441\u043d\u043e \u0441\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f, \u0438 \u044f \u0434\u0443\u043c\u0430\u044e \u043e\u043d "
+   },
+   {
+    "id": "calib_lang_ru_05",
+    "label": "Russian",
+    "pos": 31,
+    "source": "papluca/test",
+    "source_sha1_16": "2e9253aed9bd20b2",
+    "source_head": "\u0418\u0437-\u0437\u0430 \u044d\u0442\u043e\u0433\u043e, \u043a\u043e\u043d\u0435\u0447\u043d\u043e, \u0432 \u0411\u0440\u0438\u0442\u0430\u043d\u0438\u0438 \u0434\u0438\u0430\u043b\u0435\u043a\u0442\u044b \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u043e\u0433\u043e \u044f\u0437\u044b\u043a\u0430 \u043e\u0442\u043b\u0438\u0447\u0430\u044e\u0442\u0441\u044f \u0434\u0440\u0443\u0433 \u043e\u0442 \u0434"
+   },
+   {
+    "id": "calib_lang_ru_06",
+    "label": "Russian",
+    "pos": 25,
+    "source": "papluca/test",
+    "source_sha1_16": "c4bd96d9acbb7ed8",
+    "source_head": "\u0418\u043d\u043e\u0433\u0434\u0430 \u0412\u044b \u0434\u043e\u043b\u0436\u043d\u044b \u043f\u0440\u043e\u0441\u0442\u043e \u043f\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0432 \u0442\u043e, \u0447\u0442\u043e \u0432\u0441\u0435 \u0442\u0435, \u043a\u0442\u043e \u0433\u043e\u0432\u043e\u0440\u0438\u0442 \u043d\u0430 \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u043e\u043c \u044f\u0437\u044b"
+   },
+   {
+    "id": "calib_lang_ru_07",
+    "label": "Russian",
+    "pos": 17,
+    "source": "papluca/test",
+    "source_sha1_16": "43dcda66f8525785",
+    "source_head": "\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0442 \u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0438 \u0438 \u044d\u0442\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0433\u0440\u0443\u043f\u043f\u044b, \u043d\u0430\u0441\u0442\u043e\u043b\u044c\u043a\u043e \u0443\u0432\u0435\u0440\u0435\u043d\u043d\u044b\u0435 \u0432 \u0441\u0435\u0431\u0435, \u043d\u0430\u0441\u0442\u043e"
+   },
+   {
+    "id": "calib_lang_ru_08",
+    "label": "Russian",
+    "pos": 21,
+    "source": "papluca/test",
+    "source_sha1_16": "edcad020ef74e2e2",
+    "source_head": "\u0421 \u0434\u0440\u0443\u0433\u043e\u0439 \u0441\u0442\u043e\u0440\u043e\u043d\u044b, \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u0440\u043d\u044b\u0435 \u0447\u0430\u0441\u0442\u0438\u0446\u044b \u0438 \u0442\u0440\u0438 \u043d\u0435\u0433\u0440\u0430\u0432\u0438\u0442\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0435 \u0441\u0438\u043b\u044b \u0435\u0449\u0435 \u043f\u0440\u0435\u0434\u0441\u0442\u043e\u0438\u0442"
+   },
+   {
+    "id": "calib_lang_ru_09",
+    "label": "Russian",
+    "pos": 15,
+    "source": "papluca/test",
+    "source_sha1_16": "2de34ebb8d764d37",
+    "source_head": "\u041d\u0443, \u0443 \u043c\u0435\u043d\u044f \u0435\u0441\u0442\u044c \u043e\u0434\u0438\u043d \u0440\u0435\u0431\u0435\u043d\u043e\u043a, \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u0430\u044f \u0434\u0435\u0432\u043e\u0447\u043a\u0430, \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u0432\u043e\u0441\u0435\u043c\u043d\u0430\u0434\u0446\u0430\u0442\u044c \u043c\u0435\u0441\u044f\u0446\u0435\u0432"
+   },
+   {
+    "id": "calib_lang_ru_10",
+    "label": "Russian",
+    "pos": 16,
+    "source": "papluca/test",
+    "source_sha1_16": "8cd13f8ece7c3b13",
+    "source_head": "\u041f\u043e\u0442\u043e\u043c \u044f \u043a\u0440\u0443\u0442\u0438\u043b \u0431\u0430\u0440\u0430\u043d\u043a\u0443 \u0442\u0430\u043a \u0434\u043e\u043b\u0433\u043e, \u0447\u0442\u043e \u043f\u043e\u043a\u0430\u0437\u0430\u043b\u043e\u0441\u044c, \u0431\u0443\u0434\u0442\u043e \u0432\u0435\u0441\u044c \u0434\u0435\u043d\u044c."
+   },
+   {
+    "id": "calib_lang_ru_11",
+    "label": "Russian",
+    "pos": 26,
+    "source": "papluca/test",
+    "source_sha1_16": "24e8a43ced218b68",
+    "source_head": "\u041d\u0438 \u0434\u043b\u044f \u0441\u0432\u043e\u0435\u0439 \u043f\u043b\u0435\u043c\u044f\u043d\u043d\u0438\u0446\u044b, \u043d\u0438 \u0434\u043b\u044f \u0434\u043e\u0447\u0435\u0440\u0438, \u043d\u0438 \u0434\u043b\u044f \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u043c\u0430\u0442\u0435\u0440\u0438 \u043e\u043d \u043d\u0435 \u043e\u0442\u043a\u0430\u0437\u0430\u043b\u0441"
+   },
+   {
+    "id": "calib_lang_ru_12",
+    "label": "Russian",
+    "pos": 32,
+    "source": "papluca/test",
+    "source_sha1_16": "6a434f8dce530be5",
+    "source_head": "\u041c\u044d\u0440 \u041b\u0435\u0442\u043e\u0433\u0440\u0430\u0434\u0430, \u0433\u043e\u0440\u043e\u0434\u0430, \u0433\u0434\u0435 \u0432\u044b\u0440\u043e\u0441 \u0419\u043e\u0437\u0435\u0444 \u041a\u043e\u0440\u0431\u0435\u043b\u044c, \u0433\u043e\u0432\u043e\u0440\u0438\u0442, \u0447\u0442\u043e \u043e\u043d \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u043b \u041e\u043b\u0431\u0440\u0430\u0439\u0442"
+   },
+   {
+    "id": "calib_lang_ru_13",
+    "label": "Russian",
+    "pos": 26,
+    "source": "papluca/test",
+    "source_sha1_16": "89d3ce1509e665b1",
+    "source_head": "\u0412\u044b \u0443\u0432\u0438\u0434\u0438\u0442\u0435 \u043d\u043e\u0432\u044b\u0439 \u0432\u043e\u043b\u044c\u0435\u0440 \u0441\u043e \u043b\u044c\u0432\u0430\u043c\u0438, \u0441\u043d\u0435\u0436\u043d\u043e\u0433\u043e \u043b\u0435\u043e\u043f\u0430\u0440\u0434\u0430 \u0438 \u0433\u0435\u043f\u0430\u0440\u0434\u0430, \u0430 \u0442\u0430\u043a\u0436\u0435 \u043c\u043e\u0434\u0435\u043b\u044c \u0430"
+   },
+   {
+    "id": "calib_lang_ru_14",
+    "label": "Russian",
+    "pos": 10,
+    "source": "papluca/test",
+    "source_sha1_16": "c35178dc37b1fb65",
+    "source_head": "\u0412\u0430\u043c \u043b\u0443\u0447\u0448\u0435 \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u043f\u043e\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u0438\u0439 \u0432\u0438\u043d\u0442, \u043f\u043e\u0442\u043e\u043c\u0443 \u0447\u0442\u043e \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0431\u0435\u0437 \u0442\u0440\u0443\u0434\u0430 \u043f\u043e\u0432\u0440\u0435"
+   },
+   {
+    "id": "calib_lang_ru_15",
+    "label": "Russian",
+    "pos": 20,
+    "source": "papluca/test",
+    "source_sha1_16": "119d9d510f024a91",
+    "source_head": "\u041e\u0447\u0435\u0432\u0438\u0434\u043d\u043e, \u0447\u0442\u043e \u043c\u043d\u043e\u0433\u043e\u0435 \u0438\u0437 \u0434\u043e\u0432\u043e\u043b\u044c\u043d\u043e \u0441\u0432\u043e\u0435\u043e\u0431\u0440\u0430\u0437\u043d\u043e\u0433\u043e \u0432\u044b\u0431\u043e\u0440\u0430 \u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0438\u043d\u0441\u0442\u0438\u0442\u0443\u0442\u0430 \u043a\u0438"
+   },
+   {
+    "id": "calib_lang_ru_16",
+    "label": "Russian",
+    "pos": 27,
+    "source": "papluca/test",
+    "source_sha1_16": "1ae3bb77102e4d79",
+    "source_head": "\u041d\u0443, \u0430 \u043d\u0430 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0434\u0435\u043d\u044c, \u0440\u0430\u0437\u0443\u043c\u0435\u0435\u0442\u0441\u044f, \u041f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442 \u041a\u0435\u043d\u043d\u0435\u0434\u0438 \u043e\u0431\u044a\u044f\u0432\u0438\u043b \u0431\u043b\u043e\u043a\u0430\u0434\u0443 \u041a\u0443\u0431\u044b, \u0438 \u043d"
+   },
+   {
+    "id": "calib_lang_ru_17",
+    "label": "Russian",
+    "pos": 8,
+    "source": "papluca/test",
+    "source_sha1_16": "f3b642ec6b122c30",
+    "source_head": "\u0418 \u044d\u0442\u043e \u0447\u0443\u0434\u0435\u0441\u043d\u044b\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442 \u041e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c IRT -- \u043e\u043d \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u0434\u0435\u0442\u044f\u043c \u0437\u043d\u0430"
+   },
+   {
+    "id": "calib_lang_ru_18",
+    "label": "Russian",
+    "pos": 16,
+    "source": "papluca/test",
+    "source_sha1_16": "4058fdd9b6d03ffb",
+    "source_head": "\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0432\u044b\u0441\u043b\u0430\u0442\u044c \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u044f \u0430\u0434\u0432\u043e\u043a\u0430\u0442\u0443 \u043f\u0440\u043e\u0442\u0438\u0432\u043d\u043e\u0439 \u0441\u0442\u043e\u0440\u043e\u043d\u044b, \u0432 \u0441\u0443\u0434 \u0438\u043b\u0438 \u0430\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442"
+   },
+   {
+    "id": "calib_lang_ru_19",
+    "label": "Russian",
+    "pos": 24,
+    "source": "papluca/test",
+    "source_sha1_16": "b406759b0dc4d5b6",
+    "source_head": "\u0420\u0435\u0431\u044f\u0442\u0430 \u041d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0439 \u0410\u043a\u0430\u0434\u0435\u043c\u0438\u0438 \u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432 \u0438 \u0426\u0438\u0444\u0440\u043e\u0432\u044b\u0445 \u041d\u0430\u0443\u043a \u0432\u043d\u0435\u0434\u0440\u0438\u043b\u0438 \u0437\u0430\u0431\u0430\u0432\u043d\u044b\u0439 \u0432\u0430\u0440\u0438\u0430\u043d\u0442 "
+   },
+   {
+    "id": "calib_lang_ru_20",
+    "label": "Russian",
+    "pos": 12,
+    "source": "papluca/test",
+    "source_sha1_16": "83c399de01b73444",
+    "source_head": "\u0414\u0440\u0443\u0433\u0438\u043c\u0438 \u0441\u043b\u043e\u0432\u0430\u043c\u0438, \u0442\u043e, \u0447\u0442\u043e \u043f\u0440\u043e\u0438\u0441\u0445\u043e\u0434\u0438\u0442, \u044d\u0442\u043e \u043a\u0430\u043a \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u043e \u0438\u043b\u043b\u044e\u0437\u0438\u0438 \u0444\u043e\u043a\u0443\u0441\u043d\u0438\u043a\u0430: \u0442\u043e \u0432\u044b "
+   },
+   {
+    "id": "calib_lang_ru_21",
+    "label": "Russian",
+    "pos": 28,
+    "source": "papluca/test",
+    "source_sha1_16": "eb0edd1460402d56",
+    "source_head": "\u0414\u0430\u043d\u043d\u044b\u0435, \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0435 \u0432 \u044d\u0442\u043e\u043c \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0438, \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u044b \u043d\u0430 \u0434\u0435\u043c\u043e\u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438"
+   },
+   {
+    "id": "calib_lang_ru_22",
+    "label": "Russian",
+    "pos": 32,
+    "source": "papluca/test",
+    "source_sha1_16": "29970c8dd2bc2ba5",
+    "source_head": "\u041a\u0440\u043e\u043c\u0435 \u0442\u043e\u0433\u043e, \u0447\u0451\u0442\u043a\u043e \u043e\u0431\u043e\u0437\u043d\u0430\u0447\u044c\u0442\u0435 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0434\u0430\u043d\u043d\u044b\u0445, \u0442\u0430\u043a \u0447\u0442\u043e\u0431\u044b \u043d\u0430 \u0438\u0445 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0438 \u043d\u0435"
+   },
+   {
+    "id": "calib_lang_ru_23",
+    "label": "Russian",
+    "pos": 18,
+    "source": "papluca/test",
+    "source_sha1_16": "e76e7c3d56f56e9f",
+    "source_head": "\u0418\u0442\u0430\u043a, \u043e\u043d\u0430 \u0442\u0430\u043a\u0430\u044f... \u041d\u0443, \u0441\u043c\u043e\u0442\u0440\u0438, \u043f\u043e\u0441\u043c\u043e\u0442\u0440\u0438 \u043d\u0430 \u044d\u0442\u043e \u0432 \u0442\u0430\u043a\u043e\u0439-\u0442\u043e \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438."
+   },
+   {
+    "id": "calib_lang_ru_24",
+    "label": "Russian",
+    "pos": 10,
+    "source": "papluca/test",
+    "source_sha1_16": "983d9d01b5ce8e60",
+    "source_head": "\u041f\u043e\u0441\u0442\u0440\u043e\u0435\u043d\u043d\u044b\u0439 \u0432 688-691 \u0433\u043e\u0434\u044b \u043d.\u044d., \u043e\u043d \u0443\u043a\u0440\u0430\u0448\u0435\u043d \u0442\u044b\u0441\u044f\u0447\u0430\u043c\u0438 \u0438\u0437\u044b\u0441\u043a\u0430\u043d\u043d\u044b\u0445, \u043f\u0440\u0435\u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e"
+   },
+   {
+    "id": "calib_lang_ru_25",
+    "label": "Russian",
+    "pos": 11,
+    "source": "papluca/test",
+    "source_sha1_16": "9f2f31746f3a2d74",
+    "source_head": "\u0412 \u0438\u043d\u043e\u043c \u0441\u043b\u0443\u0447\u0430\u0435 \u044d\u0442\u043e \u0431\u0443\u0434\u0435\u0442 \u0442\u0440\u0435\u0432\u043e\u0436\u043d\u044b\u043c \u0441\u0438\u0433\u043d\u0430\u043b\u043e\u043c \u0434\u043b\u044f \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u043e\u0432 GAO, \u043f\u0440\u0435\u0441\u0441\u044b \u0438 \u043e\u0431\u0449\u0435\u0441\u0442\u0432"
+   },
+   {
+    "id": "calib_lang_ru_26",
+    "label": "Russian",
+    "pos": 10,
+    "source": "papluca/test",
+    "source_sha1_16": "3e94ca6d50389e14",
+    "source_head": "\u041a\u0430\u043a \u0443 \u0440\u0435\u0431\u0435\u043d\u043a\u0430 50-\u0445, \u0443 \u043c\u0435\u043d\u044f \u043e\u0434\u043d\u043e \u0438\u0437 \u0441\u0430\u043c\u044b\u0445 \u0441\u0447\u0430\u0441\u0442\u043b\u0438\u0432\u044b\u0445 \u0432\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0439 \u2014 \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u0435 \u043f\u0440\u0435"
+   },
+   {
+    "id": "calib_lang_ru_27",
+    "label": "Russian",
+    "pos": 19,
+    "source": "papluca/test",
+    "source_sha1_16": "3d6682ac9d01d22d",
+    "source_head": "\u0412 \u0431\u0438\u0437\u043d\u0435\u0441\u0435, \u0435\u0441\u043b\u0438 \u0442\u044b \u043f\u0430\u0440\u0442\u043d\u0435\u0440, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0441\u043e\u0437\u0434\u0430\u0451\u0442 \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043d\u0430\u0446\u0435\u043b\u0435\u043d \u043d\u0430 \u043f\u043e\u0442\u0440\u0435\u0431"
+   },
+   {
+    "id": "calib_lang_ru_28",
+    "label": "Russian",
+    "pos": 22,
+    "source": "papluca/test",
+    "source_sha1_16": "0358fe4fd57bf963",
+    "source_head": "\u041f\u043e\u043a\u0430 \u0432\u044b \u043d\u0435 \u0441\u0434\u0435\u043b\u0430\u0435\u0442\u0435 \u0430\u0440\u0438\u0444\u043c\u0435\u0442\u0438\u043a\u0443, \u0432\u044b \u043d\u0435 \u043f\u043e\u0439\u043c\u0435\u0442\u0435, \u0447\u0442\u043e \u043f\u043e \u043c\u043d\u0435\u043d\u0438\u044e \u041b\u0438\u043d\u043a\u043e\u043b\u044c\u043d\u0430 \u043a\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043a"
+   },
+   {
+    "id": "calib_lang_ru_29",
+    "label": "Russian",
+    "pos": 20,
+    "source": "papluca/test",
+    "source_sha1_16": "e698900f48f6722c",
+    "source_head": "FOREVER PLAID - \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435, \u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u043e\u0437\u043d\u0430\u0447\u0430\u0435\u0442 \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u0446\u0435\u043d\u043d\u043e\u0441\u0442\u0435\u0439, \u0441"
+   },
+   {
+    "id": "calib_lang_pl_00",
+    "label": "Polish",
+    "pos": 20,
+    "source": "papluca/test",
+    "source_sha1_16": "453d3e60b2f9abbe",
+    "source_head": "Wst\u0119pne raporty z autopsji wskazuj\u0105, \u017ce zmarli z powodu odwodnienia, hipertermii"
+   },
+   {
+    "id": "calib_lang_pl_01",
+    "label": "Polish",
+    "pos": 11,
+    "source": "papluca/test",
+    "source_sha1_16": "7c93f4c2fe89a2ac",
+    "source_head": "Akcje Corixa spad\u0142y o 12 cent\u00f3w do 6,88 dolar\u00f3w na gie\u0142dzie Nasdaq."
+   },
+   {
+    "id": "calib_lang_pl_02",
+    "label": "Polish",
+    "pos": 12,
+    "source": "papluca/test",
+    "source_sha1_16": "4976710bd6fcf5b0",
+    "source_head": "Departament Stanu wydaje szeroki alarm podr\u00f3\u017cniczy, m\u00f3wi, \u017ce atak terrorystyczny"
+   },
+   {
+    "id": "calib_lang_pl_03",
+    "label": "Polish",
+    "pos": 23,
+    "source": "papluca/test",
+    "source_sha1_16": "1a39712f2a5ec2c4",
+    "source_head": "Potentat twierdzi, \u017ce wygrywa na Ukrainie i obiecuje szuka\u0107 przysz\u0142o\u015bci w UE"
+   },
+   {
+    "id": "calib_lang_pl_04",
+    "label": "Polish",
+    "pos": 9,
+    "source": "papluca/test",
+    "source_sha1_16": "d2ab2f7390712ef4",
+    "source_head": "Stopa bezrobocia w\u015br\u00f3d ludno\u015bci cywilnej nieznacznie si\u0119 poprawi\u0142a w zesz\u0142ym mie"
+   },
+   {
+    "id": "calib_lang_pl_05",
+    "label": "Polish",
+    "pos": 15,
+    "source": "papluca/test",
+    "source_sha1_16": "3f0d0ddde1917b17",
+    "source_head": "Graves zg\u0142osi\u0142 si\u0119 z Albuquerque, Villafranca z Austin i Ratcliffe z Laredo."
+   },
+   {
+    "id": "calib_lang_pl_06",
+    "label": "Polish",
+    "pos": 24,
+    "source": "papluca/test",
+    "source_sha1_16": "646d575b238f1246",
+    "source_head": "Potrzeba czasu, aby pozby\u0107 si\u0119 resztek obalonego re\u017cimu Saddama Husajna w Iraku,"
+   },
+   {
+    "id": "calib_lang_pl_07",
+    "label": "Polish",
+    "pos": 22,
+    "source": "papluca/test",
+    "source_sha1_16": "4aeaff7c2210c644",
+    "source_head": "Grupa ludzi siedzi na pla\u017cy na r\u0119cznikach obserwuj\u0105c B\u0142\u0119kitne Anio\u0142y."
+   },
+   {
+    "id": "calib_lang_pl_08",
+    "label": "Polish",
+    "pos": 14,
+    "source": "papluca/test",
+    "source_sha1_16": "62eb22f2048cd1ae",
+    "source_head": "Trzech m\u0142odych m\u0119\u017cczyzn biega, skacze i wyrzuca maszyn\u0119 do coli."
+   },
+   {
+    "id": "calib_lang_pl_09",
+    "label": "Polish",
+    "pos": 20,
+    "source": "papluca/test",
+    "source_sha1_16": "cc9421b738f9ba87",
+    "source_head": "Bomba samochodowa w szwedzkim konsulacie w libijskim Benghazi, brak ofiar."
+   },
+   {
+    "id": "calib_lang_pl_10",
+    "label": "Polish",
+    "pos": 25,
+    "source": "papluca/test",
+    "source_sha1_16": "8665d8a33ba56158",
+    "source_head": "Akcje McDonald's Corp. i Wendy's International Inc. kontynuowa\u0142y skromne przebic"
+   },
+   {
+    "id": "calib_lang_pl_11",
+    "label": "Polish",
+    "pos": 11,
+    "source": "papluca/test",
+    "source_sha1_16": "a3ab855c323a0a55",
+    "source_head": "By\u0142y prezydent Pakistanu Pervez Musharraf ponownie aresztowany"
+   },
+   {
+    "id": "calib_lang_pl_12",
+    "label": "Polish",
+    "pos": 10,
+    "source": "papluca/test",
+    "source_sha1_16": "ec2b3cdee9605570",
+    "source_head": "Iran, mocarstwa nastawione na rozmowy dotycz\u0105ce broni j\u0105drowej o du\u017cej stawce"
+   },
+   {
+    "id": "calib_lang_pl_13",
+    "label": "Polish",
+    "pos": 33,
+    "source": "papluca/test",
+    "source_sha1_16": "e73bbd94109d9f12",
+    "source_head": "Pracownicy oskar\u017caj\u0105 General Dynamics o \"odwrotn\u0105 dyskryminacj\u0119 ze wzgl\u0119du na wi"
+   },
+   {
+    "id": "calib_lang_pl_14",
+    "label": "Polish",
+    "pos": 32,
+    "source": "papluca/test",
+    "source_sha1_16": "15d73f48e9accd5d",
+    "source_head": "W zesz\u0142ym roku kuba\u0144scy urz\u0119dnicy powiedzieli, \u017ce \u017caden z prawie dw\u00f3ch tuzin\u00f3w n"
+   },
+   {
+    "id": "calib_lang_pl_15",
+    "label": "Polish",
+    "pos": 22,
+    "source": "papluca/test",
+    "source_sha1_16": "d04595be15680654",
+    "source_head": "Wyniki uzyskane od nr 2 ameryka\u0144skiego producenta napoj\u00f3w bezalkoholowych PepsiC"
+   },
+   {
+    "id": "calib_lang_pl_16",
+    "label": "Polish",
+    "pos": 15,
+    "source": "papluca/test",
+    "source_sha1_16": "792aa456542999d1",
+    "source_head": "Konsensus mi\u0119dzy analitykami z Wall Street by\u0142 za strat\u0105 28 cent\u00f3w za akcj\u0119."
+   },
+   {
+    "id": "calib_lang_pl_17",
+    "label": "Polish",
+    "pos": 32,
+    "source": "papluca/test",
+    "source_sha1_16": "8d88322966263a5c",
+    "source_head": "Olbrzymia ska\u0142a zosta\u0142a po raz pierwszy zaobserwowana 24 sierpnia przez Lincoln "
+   },
+   {
+    "id": "calib_lang_pl_18",
+    "label": "Polish",
+    "pos": 14,
+    "source": "papluca/test",
+    "source_sha1_16": "7b36ef07fb6ba346",
+    "source_head": "m\u0142ody m\u0119\u017cczyzna w bia\u0142ym t-shircie i zielonych i czarnych szortach stoj\u0105cy na pn"
+   },
+   {
+    "id": "calib_lang_pl_19",
+    "label": "Polish",
+    "pos": 19,
+    "source": "papluca/test",
+    "source_sha1_16": "cf290e6a786003a0",
+    "source_head": "W przeciwie\u0144stwie do tego, co PeopleSoft management chcia\u0142by, aby\u015bcie Pa\u0144stwo wi"
+   },
+   {
+    "id": "calib_lang_pl_20",
+    "label": "Polish",
+    "pos": 9,
+    "source": "papluca/test",
+    "source_sha1_16": "352c61cf57593ea3",
+    "source_head": "To narodowy koncern, kt\u00f3ry dotknie praktycznie ka\u017cdego Amerykanina\", powiedzia\u0142 "
+   },
+   {
+    "id": "calib_lang_pl_21",
+    "label": "Polish",
+    "pos": 8,
+    "source": "papluca/test",
+    "source_sha1_16": "b856c4773c6f528c",
+    "source_head": "Rada Kolebki Wolno\u015bci nie jest pierwsz\u0105, kt\u00f3ra z\u0142ama\u0142a stanowisko grupy narodowe"
+   },
+   {
+    "id": "calib_lang_pl_22",
+    "label": "Polish",
+    "pos": 12,
+    "source": "papluca/test",
+    "source_sha1_16": "211c0ce658bcf28d",
+    "source_head": "Filipiny, Kanada zobowi\u0105zuj\u0105 si\u0119 do dalszego zacie\u015bniania stosunk\u00f3w"
+   },
+   {
+    "id": "calib_lang_pl_23",
+    "label": "Polish",
+    "pos": 15,
+    "source": "papluca/test",
+    "source_sha1_16": "8f1ad2bd0ef4a55d",
+    "source_head": "Kobieta w niebieskim stroju k\u0105pielowym skacze z doku do jeziora."
+   },
+   {
+    "id": "calib_lang_pl_24",
+    "label": "Polish",
+    "pos": 21,
+    "source": "papluca/test",
+    "source_sha1_16": "0eeb2dd1af2d6dc0",
+    "source_head": "Kupa zu\u017cytych drewnianych materia\u0142\u00f3w budowlanych z krzes\u0142em na wierzchu."
+   },
+   {
+    "id": "calib_lang_pl_25",
+    "label": "Polish",
+    "pos": 19,
+    "source": "papluca/test",
+    "source_sha1_16": "040791c085c602eb",
+    "source_head": "Fundamenty Republiki Po\u0142udniowej Afryki zbudowane s\u0105 na pami\u0119ci Nelsona Mandeli."
+   },
+   {
+    "id": "calib_lang_pl_26",
+    "label": "Polish",
+    "pos": 12,
+    "source": "papluca/test",
+    "source_sha1_16": "a93b01bb542d755e",
+    "source_head": "Lawtey nie jest pierwszym religijnym programem w systemie wi\u0119ziennictwa na Flory"
+   },
+   {
+    "id": "calib_lang_pl_27",
+    "label": "Polish",
+    "pos": 13,
+    "source": "papluca/test",
+    "source_sha1_16": "a2b1c077b631a5ab",
+    "source_head": "Cztery dziewczyny w strojach k\u0105pielowych graj\u0105 w siatk\u00f3wk\u0119 na pla\u017cy."
+   },
+   {
+    "id": "calib_lang_pl_28",
+    "label": "Polish",
+    "pos": 20,
+    "source": "papluca/test",
+    "source_sha1_16": "3ddff15790524ca4",
+    "source_head": "Liderzy opozycji wy\u0142aniaj\u0105 si\u0119, by upami\u0119tni\u0107 \u015bmier\u0107 kambod\u017ca\u0144skich robotnik\u00f3w"
+   },
+   {
+    "id": "calib_lang_pl_29",
+    "label": "Polish",
+    "pos": 11,
+    "source": "papluca/test",
+    "source_sha1_16": "4dffae3e786397cc",
+    "source_head": "Piasek uderza w p\u00f3\u0142nocny wsch\u00f3d; co najmniej 18 zabitych, 7,4M bez mocy"
+   }
+  ],
+  "tense": [
+   {
+    "id": "calib_tense_00",
+    "label": "Pres",
+    "pos": 36,
+    "source": "wikitext103/train",
+    "source_sha1_16": "19dbb6066f5ae4d9",
+    "source_head": "Throughout the universe, hydrogen is mostly found in the atomic and plasma state"
+   },
+   {
+    "id": "calib_tense_01",
+    "label": "Pres",
+    "pos": 49,
+    "source": "wikitext103/train",
+    "source_sha1_16": "21e6bf79d5cf5ad0",
+    "source_head": "Peter Travers of Rolling Stone called it a restoration of \"originality and darin"
+   },
+   {
+    "id": "calib_tense_02",
+    "label": "Past",
+    "pos": 68,
+    "source": "wikitext103/train",
+    "source_sha1_16": "ceba1087508c5e4f",
+    "source_head": "Due to the club's financial situation, the reserve team had their wages halved e"
+   },
+   {
+    "id": "calib_tense_03",
+    "label": "Past",
+    "pos": 83,
+    "source": "wikitext103/train",
+    "source_sha1_16": "e29bfdf5dacb2a45",
+    "source_head": "On 10 October 1906 Gallaher married \"Nellie \" Ellen Ivy May Francis at All Saint"
+   },
+   {
+    "id": "calib_tense_04",
+    "label": "Pres",
+    "pos": 49,
+    "source": "wikitext103/train",
+    "source_sha1_16": "d0eeac3629794ede",
+    "source_head": "The episode received generally positive reviews. Danny Duncan of the National Ca"
+   },
+   {
+    "id": "calib_tense_05",
+    "label": "Pres",
+    "pos": 110,
+    "source": "wikitext103/train",
+    "source_sha1_16": "07ece1103685de0a",
+    "source_head": "After the tour wound down in late 1985, Clark returned to his solo career, leavi"
+   },
+   {
+    "id": "calib_tense_06",
+    "label": "Pres",
+    "pos": 48,
+    "source": "wikitext103/train",
+    "source_sha1_16": "cdb76f4a66f68df9",
+    "source_head": "The themes of God's presence and the final judgment of individuals are explored "
+   },
+   {
+    "id": "calib_tense_07",
+    "label": "Past",
+    "pos": 98,
+    "source": "wikitext103/train",
+    "source_sha1_16": "63c36efd730d3621",
+    "source_head": "As 1953 began, Ferrier was busy rehearsing for Orpheus, an English-language vers"
+   },
+   {
+    "id": "calib_tense_08",
+    "label": "Pres",
+    "pos": 93,
+    "source": "wikitext103/train",
+    "source_sha1_16": "8b7695c69da5a022",
+    "source_head": "In Echo Park, California, Chuck Bartowski (Zachary Levi) and his best friend Mor"
+   },
+   {
+    "id": "calib_tense_09",
+    "label": "Past",
+    "pos": 107,
+    "source": "wikitext103/train",
+    "source_sha1_16": "0fdf325f05c6bf63",
+    "source_head": "The Australian Services Reconnaissance Department (SRD) also collected intellige"
+   },
+   {
+    "id": "calib_tense_10",
+    "label": "Past",
+    "pos": 88,
+    "source": "wikitext103/train",
+    "source_sha1_16": "c4c6f05f68184be3",
+    "source_head": "In 1945, Rabi delivered the Richtmyer Memorial Lecture, held by the American Ass"
+   },
+   {
+    "id": "calib_tense_11",
+    "label": "Past",
+    "pos": 78,
+    "source": "wikitext103/train",
+    "source_sha1_16": "74ad6e77323ed6da",
+    "source_head": "In addition to the Dutch Army and the German 18th Army, a third force, not all t"
+   },
+   {
+    "id": "calib_tense_12",
+    "label": "Pres",
+    "pos": 59,
+    "source": "wikitext103/train",
+    "source_sha1_16": "7f24ca77ea16780b",
+    "source_head": "Bush appeared on NBC's The Tonight Show with Jay Leno on November 19, 2013, alon"
+   },
+   {
+    "id": "calib_tense_13",
+    "label": "Pres",
+    "pos": 82,
+    "source": "wikitext103/train",
+    "source_sha1_16": "5291a01410707a13",
+    "source_head": "The chronicle indicates that E\u00f3gan had his men form-up on St Michael's Isle, an "
+   },
+   {
+    "id": "calib_tense_14",
+    "label": "Past",
+    "pos": 112,
+    "source": "wikitext103/train",
+    "source_sha1_16": "3d411b1e72b5643f",
+    "source_head": "As North Vietnamese forces advanced, Ford requested Congress approve a $ 722 mil"
+   },
+   {
+    "id": "calib_tense_15",
+    "label": "Past",
+    "pos": 98,
+    "source": "wikitext103/train",
+    "source_sha1_16": "272c4ff39bf60e31",
+    "source_head": "The episode was written by Jon Vitti and directed by Jim Reardon. Tracey Ullman "
+   },
+   {
+    "id": "calib_tense_16",
+    "label": "Past",
+    "pos": 12,
+    "source": "wikitext103/train",
+    "source_sha1_16": "5307974b0248e155",
+    "source_head": "Jacobs was living with his mother in Manor Road, Tottenham, at the time of the r"
+   },
+   {
+    "id": "calib_tense_17",
+    "label": "Pres",
+    "pos": 71,
+    "source": "wikitext103/train",
+    "source_sha1_16": "03550df197890da9",
+    "source_head": "The committee decided to head for Odessa flying a red flag and arrived there lat"
+   },
+   {
+    "id": "calib_tense_18",
+    "label": "Past",
+    "pos": 114,
+    "source": "wikitext103/train",
+    "source_sha1_16": "5a063592890592e2",
+    "source_head": "Renown was laid down by Fairfield at Govan, Glasgow, Scotland on 25 January 1915"
+   },
+   {
+    "id": "calib_tense_19",
+    "label": "Pres",
+    "pos": 26,
+    "source": "wikitext103/train",
+    "source_sha1_16": "f156889030e65e47",
+    "source_head": "As of 2011 Kanchipuram has 49 registered schools, 16 of which are run by the cit"
+   },
+   {
+    "id": "calib_tense_20",
+    "label": "Past",
+    "pos": 26,
+    "source": "wikitext103/train",
+    "source_sha1_16": "ba69a97c59be6bc3",
+    "source_head": "Although President Warren Candler was strongly against intercollegiate sports pr"
+   },
+   {
+    "id": "calib_tense_21",
+    "label": "Pres",
+    "pos": 95,
+    "source": "wikitext103/train",
+    "source_sha1_16": "4b17b427c01b8b4e",
+    "source_head": "Specifically, Paul H. Kocher argues that Tolkien describes evil in the orthodox "
+   },
+   {
+    "id": "calib_tense_22",
+    "label": "Past",
+    "pos": 115,
+    "source": "wikitext103/train",
+    "source_sha1_16": "e375d6145b995189",
+    "source_head": "Margaret gained the support of the Scottish queen Mary of Guelders, and with a S"
+   },
+   {
+    "id": "calib_tense_23",
+    "label": "Past",
+    "pos": 75,
+    "source": "wikitext103/train",
+    "source_sha1_16": "4dbb5f86b20d9ecd",
+    "source_head": "New York State Route 333 (NY 333) was an east \u2013 west state highway located in so"
+   },
+   {
+    "id": "calib_tense_24",
+    "label": "Past",
+    "pos": 99,
+    "source": "wikitext103/train",
+    "source_sha1_16": "adeb6486a8bb0be7",
+    "source_head": "On 11 December 1936, Edward made a BBC radio broadcast from Windsor Castle; havi"
+   },
+   {
+    "id": "calib_tense_25",
+    "label": "Past",
+    "pos": 91,
+    "source": "wikitext103/train",
+    "source_sha1_16": "03f988d2fa55a9de",
+    "source_head": "The system did not perform as effectively as expected, however. This was due to "
+   },
+   {
+    "id": "calib_tense_26",
+    "label": "Past",
+    "pos": 87,
+    "source": "wikitext103/train",
+    "source_sha1_16": "b006fff1b33b78cd",
+    "source_head": "Breaking Benjamin toured in support of the album in January and February 2010 wi"
+   },
+   {
+    "id": "calib_tense_27",
+    "label": "Pres",
+    "pos": 97,
+    "source": "wikitext103/train",
+    "source_sha1_16": "042bf3068cb62621",
+    "source_head": "Named and described by Polish paleontologist Maria Magdalena Borsuk-Bia\u0142ynicka i"
+   },
+   {
+    "id": "calib_tense_28",
+    "label": "Pres",
+    "pos": 59,
+    "source": "wikitext103/train",
+    "source_sha1_16": "93c220010dcdcfb8",
+    "source_head": "Article 9 of the Constitution of the Republic of Singapore, specifically Article"
+   },
+   {
+    "id": "calib_tense_29",
+    "label": "Pres",
+    "pos": 84,
+    "source": "wikitext103/train",
+    "source_sha1_16": "dd9fb24f66bf884a",
+    "source_head": "Although it is hard to test the hearing of sharks, they may have a sharp sense o"
+   },
+   {
+    "id": "calib_tense_30",
+    "label": "Pres",
+    "pos": 84,
+    "source": "wikitext103/train",
+    "source_sha1_16": "2485a6ac2ae2396c",
+    "source_head": "\"Constant Motion \" was released as the first single from the album on April 27, "
+   },
+   {
+    "id": "calib_tense_31",
+    "label": "Pres",
+    "pos": 13,
+    "source": "wikitext103/train",
+    "source_sha1_16": "127fcd5c33eafe3a",
+    "source_head": "The Cogan House Covered Bridge is a Burr arch truss covered bridge over Larrys C"
+   },
+   {
+    "id": "calib_tense_32",
+    "label": "Past",
+    "pos": 25,
+    "source": "wikitext103/train",
+    "source_sha1_16": "6e3dc4577c19a118",
+    "source_head": "Coolidge addressed Congress when it reconvened on December 6, 1923, giving a spe"
+   },
+   {
+    "id": "calib_tense_33",
+    "label": "Past",
+    "pos": 108,
+    "source": "wikitext103/train",
+    "source_sha1_16": "fb6445fc4b359529",
+    "source_head": "The first official single \"Tightrope \" (featuring Big Boi) premiered on February"
+   },
+   {
+    "id": "calib_tense_34",
+    "label": "Past",
+    "pos": 68,
+    "source": "wikitext103/train",
+    "source_sha1_16": "9534d090dfd537c6",
+    "source_head": "Irwin was president of the American League of Professional Football (ALPF) for i"
+   },
+   {
+    "id": "calib_tense_35",
+    "label": "Pres",
+    "pos": 106,
+    "source": "wikitext103/train",
+    "source_sha1_16": "4b610aab1e2146a2",
+    "source_head": "The tradition of stealing the' T' from Tech Tower has inspired copycat crimes in"
+   },
+   {
+    "id": "calib_tense_36",
+    "label": "Past",
+    "pos": 27,
+    "source": "wikitext103/train",
+    "source_sha1_16": "8085e6087bfd3e89",
+    "source_head": "Meanwhile, the German advance to the southeast of Bautzen was successful. The So"
+   },
+   {
+    "id": "calib_tense_37",
+    "label": "Past",
+    "pos": 75,
+    "source": "wikitext103/train",
+    "source_sha1_16": "d420794091724672",
+    "source_head": "Headley was born in Panama but raised in Jamaica where he quickly established a "
+   },
+   {
+    "id": "calib_tense_38",
+    "label": "Past",
+    "pos": 108,
+    "source": "wikitext103/train",
+    "source_sha1_16": "5c3343a580cc5bcf",
+    "source_head": "Playing regularly in his first season under Houllier's reign, Berger scored nine"
+   },
+   {
+    "id": "calib_tense_39",
+    "label": "Past",
+    "pos": 30,
+    "source": "wikitext103/train",
+    "source_sha1_16": "ab96db2876c8904a",
+    "source_head": "The final was preceded by chaotic scenes as vast crowds surged into the stadium,"
+   },
+   {
+    "id": "calib_tense_40",
+    "label": "Pres",
+    "pos": 86,
+    "source": "wikitext103/train",
+    "source_sha1_16": "64e853cb70773f6a",
+    "source_head": "The Winchester Model 1200 came in barrel lengths of 30-inch, and 28-inch with a "
+   },
+   {
+    "id": "calib_tense_41",
+    "label": "Pres",
+    "pos": 93,
+    "source": "wikitext103/train",
+    "source_sha1_16": "3bf6c31a1dddf68e",
+    "source_head": "The town has a low proportion of non-white people compared to national figures; "
+   },
+   {
+    "id": "calib_tense_42",
+    "label": "Pres",
+    "pos": 103,
+    "source": "wikitext103/train",
+    "source_sha1_16": "de6b74711b718054",
+    "source_head": "Aside from the genre's punk and alternative rock roots, many grunge bands were e"
+   },
+   {
+    "id": "calib_tense_43",
+    "label": "Past",
+    "pos": 46,
+    "source": "wikitext103/train",
+    "source_sha1_16": "3fb4ca4ea1372231",
+    "source_head": "In 1975, the historian Norman Cohn commented that Murray's \"knowledge of Europea"
+   },
+   {
+    "id": "calib_tense_44",
+    "label": "Past",
+    "pos": 41,
+    "source": "wikitext103/train",
+    "source_sha1_16": "ba987defa9519245",
+    "source_head": "On June 13, the Massachusetts Provincial Congress was notified, by express messe"
+   },
+   {
+    "id": "calib_tense_45",
+    "label": "Past",
+    "pos": 107,
+    "source": "wikitext103/train",
+    "source_sha1_16": "59f9c932dfd91716",
+    "source_head": "They were supported by architects Anatoliy Krushynskyi, Tamara Tselikovska, and "
+   },
+   {
+    "id": "calib_tense_46",
+    "label": "Pres",
+    "pos": 72,
+    "source": "wikitext103/train",
+    "source_sha1_16": "80ff718be84a2967",
+    "source_head": "Readers and movie-goers of white America greeted Chan warmly, seeing him as an a"
+   },
+   {
+    "id": "calib_tense_47",
+    "label": "Past",
+    "pos": 93,
+    "source": "wikitext103/train",
+    "source_sha1_16": "32134d342f35fb59",
+    "source_head": "Following the storm, damaged buildings polluted rivers in South Korea with chemi"
+   },
+   {
+    "id": "calib_tense_48",
+    "label": "Pres",
+    "pos": 93,
+    "source": "wikitext103/train",
+    "source_sha1_16": "8ce33636d1f44f2b",
+    "source_head": "The band decided to keep the Hey Venus! tour simple as the elaborate stage desig"
+   },
+   {
+    "id": "calib_tense_49",
+    "label": "Past",
+    "pos": 99,
+    "source": "wikitext103/train",
+    "source_sha1_16": "d145008d5d39c363",
+    "source_head": "Allied to John de Courcy, Donnchadh fought battles in Ireland and acquired land "
+   },
+   {
+    "id": "calib_tense_50",
+    "label": "Past",
+    "pos": 89,
+    "source": "wikitext103/train",
+    "source_sha1_16": "2ad3b3fc99951777",
+    "source_head": "Released in Australia, New Zealand and the United Kingdom, it peaked at number t"
+   },
+   {
+    "id": "calib_tense_51",
+    "label": "Pres",
+    "pos": 101,
+    "source": "wikitext103/train",
+    "source_sha1_16": "9fe03b68ce4ce480",
+    "source_head": "The Battles of the Kinarot Valley (Hebrew: \u05d4\u05b7\u05de\u05b7\u05bc\u05e2\u05b2\u05e8\u05b8\u05db\u05b8\u05d4 \u05d1\u05b0\u05bc\u05d1\u05b4\u05e7\u05b0\u05e2\u05b7\u05ea \u05db\u05b4\u05bc\u05e0\u05b8\u05bc\u05e8\u05d5\u05b9\u05ea), "
+   },
+   {
+    "id": "calib_tense_52",
+    "label": "Past",
+    "pos": 41,
+    "source": "wikitext103/train",
+    "source_sha1_16": "0d3631dd590aa71a",
+    "source_head": "The plane crash was extensively covered by the press, nationally and internation"
+   },
+   {
+    "id": "calib_tense_53",
+    "label": "Pres",
+    "pos": 53,
+    "source": "wikitext103/train",
+    "source_sha1_16": "53f57a0a39eece48",
+    "source_head": "Blair answered, \"I agree with my honourable friend. I think it's important that "
+   },
+   {
+    "id": "calib_tense_54",
+    "label": "Pres",
+    "pos": 98,
+    "source": "wikitext103/train",
+    "source_sha1_16": "e146f04a9a7e1341",
+    "source_head": "The special has received generally good reviews. Dan Martin of The Guardian note"
+   },
+   {
+    "id": "calib_tense_55",
+    "label": "Pres",
+    "pos": 73,
+    "source": "wikitext103/train",
+    "source_sha1_16": "6753d6dc4fe7d4a5",
+    "source_head": "State and central government employees make up a large percentage of the city's "
+   },
+   {
+    "id": "calib_tense_56",
+    "label": "Pres",
+    "pos": 36,
+    "source": "wikitext103/train",
+    "source_sha1_16": "5462a7cf117f723d",
+    "source_head": "Since 1993, the Commune urbaine d'Antananarivo (CUA) has increasingly sought to "
+   },
+   {
+    "id": "calib_tense_57",
+    "label": "Pres",
+    "pos": 112,
+    "source": "wikitext103/train",
+    "source_sha1_16": "01e59b34bf98f301",
+    "source_head": "The first notable person to be fascinated with the supposed prophecy of the Four"
+   },
+   {
+    "id": "calib_tense_58",
+    "label": "Pres",
+    "pos": 110,
+    "source": "wikitext103/train",
+    "source_sha1_16": "a03b2f4d8ac17cb3",
+    "source_head": "EVA Air has differentiated its onboard service by using Taiwanese (Hokkien), Man"
+   },
+   {
+    "id": "calib_tense_59",
+    "label": "Pres",
+    "pos": 10,
+    "source": "wikitext103/train",
+    "source_sha1_16": "6f90ae1cda9f1905",
+    "source_head": "\"In the Hands of the Prophets \" is the third episode directed by David Livingsto"
+   }
+  ]
+ },
+ "calibration_note": "Matched-dose in-J calibration (calib_items.py, CALIB_SEED 9009): these lang (papluca test) and tense (wikitext) sources are also EXCLUDED from the main analysis."
 }

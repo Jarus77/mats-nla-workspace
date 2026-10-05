@@ -36,8 +36,24 @@ app_image = (
     )
     .env({**HF_ENV, "HF_HUB_OFFLINE": "1", "TOKENIZERS_PARALLELISM": "false",
           "PYTHONPATH": "/root/src"})
-    .add_local_python_source("modal_common", "env", "pilot_items", "pilot_lib", "templates")
+    .add_local_python_source("modal_common", "env", "pilot_items", "pilot_lib", "templates", "calib_lib",
+                             "calib_templates", "calib_items")
     .add_local_dir(str(_REPO / "src" / "mats"), "/root/src/mats", ignore=["**/__pycache__/**"])
+    .add_local_file(str(_E02 / "s1_data.py"), "/root/ext02/s1_data.py")
+    .add_local_file(str(_E02 / "features.py"), "/root/ext02/features.py")
+)
+
+# CPU build image for the calibration items: network on (papluca test split), spaCy for tense labels
+build_image = (
+    modal.Image.debian_slim(python_version="3.12")
+    .uv_pip_install("numpy==2.5.3", "transformers==5.17.0", *HF_PINS)
+    .uv_pip_install("spacy==3.8.7", "datasets", "pandas", "pyarrow")
+    .run_commands(
+        "uv pip install --system https://github.com/explosion/spacy-models/releases/download/"
+        "en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl"
+    )
+    .env({**HF_ENV, "HF_HUB_OFFLINE": "0", "TOKENIZERS_PARALLELISM": "false"})
+    .add_local_python_source("modal_common", "env", "pilot_items", "calib_items", "templates")
     .add_local_file(str(_E02 / "s1_data.py"), "/root/ext02/s1_data.py")
     .add_local_file(str(_E02 / "features.py"), "/root/ext02/features.py")
 )

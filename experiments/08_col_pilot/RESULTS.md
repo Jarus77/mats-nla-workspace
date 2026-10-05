@@ -47,6 +47,14 @@ Cost: about 4.4 GPU-h (≈ $19), with 16 containers running in parallel; wall ti
    The item-level NLA−OL ΔAUROC is small (+0.015 to +0.028) and well powered at 240 passages
    (minimum detectable effect ≈ 0.02), but it falls far below the prereg H3 bar of 0.05.
 
+7. **Matched-dose in-J calibration (K3): PASS.** See the "Matched-dose calibration" section.
+   - At q90, and at equal ‖Δ‖/‖h‖ = 0.11, the NLA tracks raw language and raw tense at
+     0.83–0.87 AUROC (z +18 to +31 against the null bands). OL tracks raw language at 0.76–0.80
+     (z +20).
+   - Raw col at the same relative norm: 0.48 for both decoders.
+   - The null-band width is similar across features. **So col's flatness is a real "decoders don't
+     read col" result** (with these fixed templates), not a power artefact.
+
 ## Design (what was run)
 
 | element | choice |
@@ -244,3 +252,166 @@ into direction-to-direction variance and item noise:
 - `results/null_floor.py`: produces `results/null_floor.txt` (direction-limited null bands).
 - Raw outputs: `results/08_col_pilot/*.pt`, also on volume `mats-results:/08_col_pilot/`. Plus
   `results/run.log` and `run_summary.json`.
+
+
+---
+
+## Matched-dose calibration (K3) — PILOT, EXCLUDED FROM MAIN ANALYSIS
+
+**Question.** Do the readers track in-J features under the identical pipeline and doses at which
+col was flat? Same cells as above:
+- L42, centred construction, q90 primary and q99 secondary;
+- K = 20 isotropic and K = 20 J-complement (4r\*) null bands; the null directions are the SAME
+  vectors used in the col pilot;
+- z-scores and fraction of probe;
+- NLA@42, OL@42 (OL@40/44 real directions only), J-Lens 40/42/44.
+
+Cost ≈ 5.3 GPU-h (≈ $23): 7 OL × H100 and 10 NLA × H200 containers in parallel.
+
+**Items (declared pilot split; ids and sources appended to `pilot_split.json` → `calibration_items`).**
+- **lang:** 02's language direction is **Russian − Polish**. 02 has no French/German direction; the
+  lead's "French/German" mapped to 02's actual steer pair. Items: 30 Russian + 30 Polish texts from
+  the papluca **test** split. 02 used the train split; 07 used test fr/de only. Read token is at a
+  random index in [8, 64).
+- **tense:** 30 Past + 30 Pres positions from 02's `build_prose` (spaCy clause tense, label only
+  after the finite verb), one per passage. Passages are fresh wikitext paragraphs (seed 9009),
+  disjoint from 02, 07 and the col pilot.
+- **col:** the same 60 col pilot items, scored only on the new dose-matched cells.
+- On the items, the 02 probes give natural AUROC 1.00 for lang and 0.91 for tense.
+
+**Directions and doses.**
+- Directions are 02's raw class-mean-difference directions (`{lang,tense}_hs43.pt`), plus J-removed
+  at 4r\*. At L42 these are 02's `jrem_r1536` exports. Enrichment of the raw directions at r\*:
+  lang 3.3, tense 5.6, col 0.67.
+- q90/q99 come from 02's banks (q − m). ‖Δ‖/‖h‖ at q90: lang raw **0.095**, tense raw **0.096**,
+  col raw **0.108**. So at q90 the in-J features were steered *less* than col in relative-norm
+  terms.
+- **Dose-matched arm:** per-item Δ_i = 0.11·‖h_i‖ and 0.14·‖h_i‖ along the raw direction, for lang,
+  tense and col alike. Null bands use the same per-item norms.
+- **The backup numeral list-index feature was not added.** 04's `list_hdr`/`list_num` gates show
+  enrichment no higher than shuffled labels and the J-Lens not readable. The lead confirmed this
+  in-J control failed.
+
+**Fixed templates (`calib_templates.py`, written before scoring).**
+- lang: "Russian-language text" / "Polish-language text"; "The text is written in Russian" /
+  "…in Polish"; "A passage in Russian" / "…in Polish". OL equivalents: "- Russian language",
+  "- Russian", "- written in Russian".
+- tense: "Past-tense narrative" / "Present-tense narrative"; "The verb is in the past tense" /
+  "…present tense"; "Describes events that happened in the past" / "…are happening now". OL:
+  "- past tense", "- happened in the past", "- was" (vs present equivalents).
+- J-Lens: Russian/Russia/русский vs Polish/Poland/polski; past/was/were vs present/is/are.
+
+### (a) Raw in-J directions at q90: K3
+
+Centred, template mean, L42. Columns: AUROC [CI], paired win, z(shift) against the isotropic /
+J-complement bands, fraction of probe.
+
+| reader | lang raw q90 | tense raw q90 | col raw q90 (from the pilot) |
+|---|---|---|---|
+| **NLA@42** | **0.83** [.78,.88] / 0.98; z +25\* / +31\*; frac 0.65 | **0.83** [.78,.88] / 0.92; z +12\* / +18\*; frac 0.66 | 0.48 / 0.38; frac −0.03 |
+| **OL@42** | **0.76** [.70,.82] / 0.93; z +11\* / +21\*; frac 0.53 | 0.55 [.50,.60] / 0.63; z +2.3\* / +2.5\*; frac 0.09 | 0.48 / 0.38 |
+| OL@40 / OL@44 | 0.77 / 0.77 | 0.55 / 0.52 | 0.47 / 0.48 |
+| J-Lens@42 (competitor for in-J) | 0.68 / 0.85; z +3.3\* / +24\* | 0.79 / 0.98; z +8.3\* / +21\* | 0.52 |
+| probe | 1.00 | 0.99 | 1.00 |
+
+At q99: NLA 0.95 (lang) / 0.89 (tense); OL 0.87 / 0.57.
+
+**K3 verdict: PASS.** The prereg rule is OL or NLA FollowFeature ≥ 0.65 on ≥ 1 in-J feature at the
+doses used for non-J features.
+- NLA passes on both features.
+- OL passes on language.
+- OL on tense is outside the null band but below 0.65 with the template mean.
+
+**Template sensitivity is large, and it matters for interpreting col.**
+- OL tense by template: "- was"/"- is" **0.87**; "- past tense" 0.52; "- happened in the past"
+  **0.39**.
+- NLA tense: "The verb is in the past tense" **0.93**; "Past-tense narrative" **0.46**.
+- Language templates are uniform: NLA 0.80–0.85, OL 0.63–0.75.
+
+So a single fixed template can be flat on a feature the reader does carry. **For col this is the
+main residual caveat** (see (d)).
+
+### (b) Is the null band equally wide for in-J features?
+
+Yes, in AUROC units. The SD of the K=20 null AUROCs at L42 (J-complement class) is:
+
+| | NLA | OL |
+|---|---|---|
+| lang raw q90 | 0.013 | 0.012 |
+| tense raw q90 | 0.021 | 0.020 |
+| col raw r11 | 0.029 | 0.022 |
+
+In shift units the between-direction SD scales with each reader's own log-odds scale:
+NLA lang 0.27, tense 0.08, col 0.20 nats. The in-J signal dwarfs it:
+
+| | standardised per-item shift d_z | z (shift) |
+|---|---|---|
+| NLA lang | +1.5 | ≈ +30 |
+| NLA tense | +1.3 | ≈ +18 |
+| NLA col | −0.27 | — |
+| OL lang | +1.2 | — |
+| OL col | −0.18 | — |
+
+**So the null band is not generically a power limiter.** It limits col only because col's effect
+is about zero. The pilot's "direction-limited null band" point stands for small effects. In-J
+calibrations clear it by 10–30 SD at n = 60.
+
+### (c) Dose-matched in relative-norm units (centred, raw direction, J-complement z)
+
+| ‖Δ‖/‖h‖ | NLA lang | NLA tense | NLA col | OL lang | OL tense | OL col |
+|---|---|---|---|---|---|---|
+| 0.11 | **0.87** (+30\*) | **0.85** (+18\*) | 0.48 (−0.7) | **0.80** (+20\*) | 0.56 (+2.6\*) | 0.48 (−1.0) |
+| 0.14 | **0.92** (+28\*) | **0.89** (+15\*) | 0.47 (−0.7) | **0.85** (+18\*) | 0.57 (+2.6\*) | 0.47 (−1.1) |
+
+**Yes: at equal relative norm both decoders track raw language, the NLA tracks raw tense, and
+neither tracks raw col.** The raw col direction is the one that moves the J-Lens newline readout
+(pilot, AUROC 0.73–0.81). The col null is therefore not a dose-scale artefact.
+
+### (d) K3 at the dose where col was flat → interpretation
+
+K3 passes at q90, the col-flat dose, and even at a smaller relative norm (0.095 vs 0.108).
+- Under the prereg logic the col null is therefore interpretable: **at in-range doses where the
+  decoders demonstrably read in-J features, they do not read col** (NLA and OL alike). This holds
+  for the raw direction, r\*, and the leak-free 4r\*.
+- **Caveat 1: fixed templates.** (a) shows that a fixed template can miss a feature the reader
+  carries: OL tense ranges 0.39–0.87 across templates.
+  - The col claim is therefore "with the frozen col templates (5 per reader, 3 families)".
+  - The mined templates must include OL continuation-style candidates for col, e.g. a predicted
+    newline vs a word, analogous to "- was"/"- is". Mining is still on natural items only.
+- **Caveat 2: direction choice.** col's direction is a regression covariance direction (R² 0.66,
+  curved manifold); lang and tense use class-mean differences. A col direction built from a binary
+  contrast (short vs long lines, as in 07) would be closer in kind.
+
+### Extra: J-removed (4r\*) in-J directions, with leak test
+
+| reader (L42, q90) | lang 4r\* | tense 4r\* |
+|---|---|---|
+| NLA | **0.63** / 0.93; z +13\* / +16.5\*; frac 0.25 | **0.60** / 0.90; z +5.7\* / +8.7\*; frac 0.20 |
+| OL | 0.55 / 0.57; z +2.2\* / +4.4\* | 0.51 / 0.62; z +1.5 / +1.7 (in band) |
+| J-Lens label words | 0.50; Jc z +0.7, clean | 0.50; z +0.1, clean |
+| **J-Lens content set** (added) | Cyrillic vs Polish-diacritic tokens: **LEAK**, Jc z +3.7 (L42), +4.2 (L40), +8.0 (L44) | 34 past vs 32 present verb tokens: **clean at L42/L40** (z −0.3 / +0.1); leak at L44 (+2.2) |
+
+- **Label words alone are a weak leak set for in-J features.** The language J-content is Cyrillic
+  text, not the word "Russian". That's why we added a content set after the label check. It
+  catches the language 4r\* leak that the label set missed.
+- **Tense 4r\* is leak-clean at L42 under both sets.** On it the NLA tracks at +8.7 SD and OL does
+  not (in band).
+  - That is an NLA > OL contrast on a component of an in-J feature outside the top-1536 J-space.
+    It is the H3-type pattern, found on tense rather than col.
+  - It is pilot-only and rests on a small fixed content set (66 verb tokens). The NLA's
+    language-4r\* tracking is void (leak).
+- **Implication.** The NLA's failure on col is feature-specific, not a general inability to read
+  non-top-J directions.
+- **Main-run recommendation:**
+  - every in-J leak check must include a content set (predicted-token classes), not just label
+    words;
+  - pre-register tense-4r\* as a secondary non-J-component cell.
+
+### Files
+
+- `calib_items.py`, `calib_lib.py`, `calib_templates.py`;
+- `calib_modal.py`: app `mats-08-calib`, functions `build_calib`, `prep_calib`, `score_ol` ×7,
+  `score_nla` ×10, `jlens_content`;
+- `calib_analyze.py`: produces `results/calib_metrics.json` and `results/calib_stdout.txt`;
+- `results/calib_run.log`, `results/calib_run_summary.json`;
+- raw outputs in `results/08_col_pilot/calib_*.pt` and on the volume.
