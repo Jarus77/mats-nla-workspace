@@ -1,0 +1,4566 @@
+{
+ "schema_version": 1,
+ "family": "multilingual_mt",
+ "complete": true,
+ "pinned_instrument": true,
+ "config": {
+  "judge_model": "regex",
+  "prompt_version": "mt-regex-2026-09-23",
+  "reasoning": null,
+  "layers": null,
+  "dry_run": false,
+  "concurrency": 64,
+  "rpm": 240.0,
+  "allow_missing": false,
+  "items": null,
+  "limit": 0,
+  "kind": "prose",
+  "layers_judged": [
+   42
+  ],
+  "scorer": "regex",
+  "scorer_version": "mt-regex-2026-09-23",
+  "contract": {
+   "multi_token": true,
+   "include_target": false,
+   "conjunctive_units": true
+  },
+  "summarizer": null,
+  "summarizer_model": null
+ },
+ "n_items": 100,
+ "counts": {
+  "n_expected_cells": 100,
+  "n_missing_cells": 0,
+  "n_unjudged_cells": 0,
+  "n_empty_cells": 0,
+  "skipped_rows": 0,
+  "spend_usd": 0.0
+ },
+ "numbers": {
+  "metric": "pass_rate",
+  "value": 0.83,
+  "ci95": [
+   0.75,
+   0.9
+  ],
+  "chance": null,
+  "chance_label": "no analytic floor for an any-layer conjunction of exact-form matches; the measured floor is the prompt-only baseline (the MC lucky-guessing floor does not apply to the regex scorer)",
+  "higher_is_better": true,
+  "extras": {
+   "n_calls": 0,
+   "any_hit_rate": 1.0,
+   "unit_any_layer": {
+    "concept": 0.83,
+    "language": 1.0
+   },
+   "language_of_readout": {
+    "concept": {
+     "en": 83
+    },
+    "language": {
+     "en": 100
+    }
+   },
+   "n_items_decided": 100,
+   "n_items_undecided": 0,
+   "n_items_without_readouts": 0
+  }
+ },
+ "rows": [
+  {
+   "id": "mlh-ar-hourglass",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-octopus",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-sandpaper",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-spinal-cord",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-vacuum-cleaner",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-wool",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-aurora",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-chickenpox",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-loom",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-thyroid",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-vacuum-cleaner-2",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-chamomile",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-cooking-pot",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-screwdriver",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "el"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "el"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-sunflower",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "el"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "el"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-ilianthos",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "el"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "el"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-fire-extinguisher",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "el"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "el"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-tapemeasure",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "el"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "el"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-wind-turbine",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "el"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "el"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-xray",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "el"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "el"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-el-xypnitiri",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "el"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "el"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-kahvinkeitin",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "fi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-vetoketju",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "fi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-auringonpimennys",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "fi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-silitysrauta",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "fi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-toothbrush",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "fi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-tortoise",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "fi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-alarm-clock",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-dishwasher",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-pressure-cooker",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-sewingmachine",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-tapemeasure",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-washing-machine",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-toothbrush",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-vacuum-cleaner",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-escalator",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-polar-bear",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-he-spine",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "he"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "he"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-candlestick",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-esokabat",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-gerincvelo",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-porszivo",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-varrogep",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-hallokeszulek",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-ironingboard",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-meroszalag",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-napraforgo",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-szitakoto",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-canopener",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-cacar-air",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-firefly",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-gantungan-baju",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-gerhanabulan",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-hailstone",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-mesin-jahit",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-penghapus",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-sarung-tangan",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-tengkorak",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-id-trash-bin",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "id"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ko-vacuum-cleaner",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ko"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ko"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ko-yeonpilkkakki",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ko"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ko"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-biedronka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-kasztanowiec",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-muchomor",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-odkurzacz",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-pila-lancuchowa",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-pokrzywa-2",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-przedluzacz",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-strzykawka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-trzepaczka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-trzustka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-caterpillar",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-dandelion",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-fryingpan",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-meatgrinder",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-nakovalnya",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-payalnik",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-skvorechnik",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-sosulka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-thimble",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-anthill",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-sw-mwarobaini",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "sw"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "sw"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-sw-chandarua",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "sw"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "sw"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-bademcik",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "tr"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "tr"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-camasir-makinesi",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "tr"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "tr"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-dis-macunu",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "tr"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "tr"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-omurilik",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "tr"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "tr"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-kaplumbaga",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "tr"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "tr"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-kartanesi",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "tr"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "tr"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-salyangoz",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "tr"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "tr"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-blender",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-cactus",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-chuonchuon",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-clothesiron",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-extinguisher",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-firefly",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-huyet-ap",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-neckscarf",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-pressurecooker",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-raincoat",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "concept": true,
+    "language": true
+   },
+   "unit_langs": {
+    "concept": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "vi"
+    ]
+   },
+   "first_lang": {
+    "concept": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "vi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  }
+ ]
+}

@@ -237,3 +237,95 @@ Reading:
 - **None of the §1–§5 conclusions above depend on the frozen floor.** They use our own text arms.
 
 Files: `floor_modal.py` (3 renderings; `data/floor_gen.json`), `floor_score.py` (`judged/floor_*`, `data/floor_tables.md`).
+
+## Re-solver consistency check (follow-up)
+
+**The question.** The readout-only re-solver (0.57–0.60) beats the sample-matched text arm T_qwen (0.46). Does the readout carry information the text does not?
+
+**Answer: no. The apparent inconsistency is an instruction effect.**
+- T_qwen uses the NLA register, which never asks the model to *name* the answer.
+- The re-solver template explicitly asks for the entity, spelled in full, plus the language. That is exactly what the regex rewards.
+- With that same template and k=1, a re-solver given the **prompt** scores **0.89**, against **0.60 / 0.56** given only the NLA / OL readout.
+- Adding the readout to the prompt does not help: **0.88 / 0.88 vs 0.89**.
+- (CPU analysis plus one Gemini run: 1,200 calls, $0.79. Code: `resolve_plus.py`, `data/resolve_plus.jsonl`, `data/resolver_check.json`.)
+
+### (3) What each arm saw
+
+All arms are scored by the same regex instrument at L42. Sampling everywhere: T=1, top_p 0.95 / top_k 64 (Qwen), 256 new tokens (Gemini: max_tokens 256, reasoning minimal), thinking off.
+
+| arm | input | template (exact text in code) | model | k |
+|---|---|---|---|---|
+| NLA@42 / OL@42 readers | the L42 activation (plus each reader's own carrier prompt) | – | NLA iter400 / OL rl600 | 1 |
+| qwen_prompt_nla_s{0,1,2} (T_qwen) | item prompt | NLA warm-start instruction (`data/nla_instruction.txt`): "identify the 2–3 most important features…, ~80–100 words" | base Qwen3.6-27B | 3 (s0 primary) |
+| qwen_prompt_wsb_s{0,1,2} (T_wsb) | item prompt + final-token string | wsbench prompt-only template (`WSB_PROMPT_ONLY`): "What would a language model be thinking about on this token?" | base Qwen | 3 |
+| gem_prompt_nla (T_gem) | item prompt | NLA instruction | Gemini 3.8 Flash | 1 |
+| gem_prompt_wsb | item prompt + final token | wsbench template | Gemini | 1 |
+| qwen/gem_resolve_{nla,ol42} | **only** the reader's L42 readout (no prompt) | `RESOLVE_TEMPLATE`: reconstruct the text, **name the entity in full, spelled correctly**, state the language | Qwen (k=3) / Gemini (k=1) | 3 / 1 |
+| **gem_rsP** (new, matched control) | **only** the item prompt | `resolve_plus.py`, the same three instructions as `RESOLVE_TEMPLATE` | Gemini | 1 |
+| **gem_rsP_nla / gem_rsP_ol42** (new) | item prompt **+** reader readout | the same, with the description inserted after the text | Gemini | 1 |
+
+### (1) Readout-only re-solver hits that every prompt-based arm misses
+
+Prompt-based arms counted here: all 8 earlier samples (Qwen NLA-register ×3, Qwen wsbench ×3, Gemini NLA-register, Gemini wsbench), plus gem_rsP.
+
+| re-solver | hits | not hit by any of the 8 earlier prompt arms | also not hit by gem_rsP |
+|---|---|---|---|
+| Qwen Resolve(NLA) s0 / s1 / s2 | 227 / 229 / 225 | 1 / 2 / 3 | 0 / 1 / 2 |
+| Gemini Resolve(NLA) | 240 | 2 | 1 |
+| Qwen Resolve(OL@42) s0 / s1 / s2 | 211 / 216 / 215 | 3 / 4 / 3 | 2 / 2 / 1 |
+| Gemini Resolve(OL@42) | 224 | 2 | 0 |
+| **union over each reader's 4 re-solver samples** | | NLA 6, OL 4 | **NLA 4, OL 2** |
+
+I inspected all 10 items (6 NLA + 4 OL, before gem_rsP). **Every one is a regex-form artefact, not latent content.** The prompt arms identify the same concept, but in a form the multi-token-only contract does not credit.
+
+- **Uncredited English short forms.** Prompt arms say "ladybug" (credited forms: "ladybird beetle" / "lady beetle"), "syringe" ("hypodermic/medical syringe"), "snail" ("garden/land snail"), "iron" ("clothes iron") and "hail" / "hujan es" ("hailstone"). The prompt arms also name the concept in the target language, which satisfies only the language unit; e.g. gem_rsP writes "strzykawka (Polish for syringe)" and "salyangoz (meaning snail)".
+  - These items: biedronka, strzykawka, salyangoz, esokabat, clothesiron (NLA); hailstone, strzykawka, clothesiron, silitysrauta (OL).
+- **OL's Chinese code-switching.** OL readouts contain 冰雹, 注射器 and 熨斗, which are credited `zh` forms. The Qwen re-solver copies them into its output, and Qwen's OL hits on hailstone, strzykawka and clothesiron are all via `zh`.
+- **Name order.** On multihop charlotte-guest-dowlais, the prompt arms name Lady Charlotte Guest and the Dowlais Ironworks but write "John Josiah Guest", while the credited form is "Josiah John Guest". The Gemini readout re-solver wrote the credited order.
+
+Fine-grained per-item hit units are in the inspection output above, reproducible from `judged/*/multilingual_mt/results.json`.
+
+### (2) k-matched comparisons (each prompt arm k=1 vs each re-solver sample k=1)
+
+Each pair below is (re-solver-only items, prompt-only items).
+
+| re-solver (k=1) | vs T_qwen (NLA register) | vs T_wsb s0 | vs T_gem | vs gem_wsb | vs **gem_rsP (same template)** | McNemar p vs gem_rsP |
+|---|---|---|---|---|---|---|
+| Gemini Resolve(NLA) | 107 / 49 | 42 / 104 | 44 / 105 | 78 / 88 | **7 / 124** | 9e-29 |
+| Gemini Resolve(OL@42) | 106 / 64 | 42 / 120 | 42 / 119 | 80 / 106 | **7 / 140** | 3e-33 |
+| Qwen Resolve(NLA) s0 | 104 / 59 | 43 / 118 | 42 / 116 | 76 / 99 | – | – |
+| Qwen Resolve(OL@42) s0 | 98 / 69 | 32 / 123 | 39 / 129 | 73 / 106 | – | – |
+
+- **Against T_qwen only, the re-solver looks stronger** (about 105 vs 55 one-sided items). That is the inconsistency Fable flagged. It disappears whenever the prompt arm is also asked to name things.
+- **The fair pair is same model, same template, same k.** Gemini prompt-only re-solver 0.89 [typo .90 / multilingual .83 / multihop .93 / basic .91] vs readout-only 0.60 (NLA) / 0.56 (OL): 124–140 items where the prompt wins, against 7 where the readout wins.
+
+### (4) Readout + prompt (second-stage extraction)
+
+| Gemini re-solver, same template | typo | multilingual | multihop | basic | pooled |
+|---|---|---|---|---|---|
+| prompt only (gem_rsP) | 0.90 | 0.83 | 0.93 | 0.91 | **0.89** |
+| prompt + NLA@42 readout | 0.91 | 0.84 | 0.88 | 0.88 | **0.88** (13 gained / 19 lost, p=0.38) |
+| prompt + OL@42 readout | 0.89 | 0.83 | 0.92 | 0.88 | **0.88** (13 / 18, p=0.47) |
+| readout only, NLA / OL (for reference) | 0.77 / 0.73 | 0.63 / 0.59 | 0.32 / 0.28 | 0.68 / 0.64 | 0.60 / 0.56 |
+| reader's own regex score, NLA / OL | 0.73 / 0.76 | 0.42 / 0.28 | 0.15 / 0.10 | 0.57 / 0.45 | 0.47 / 0.40 |
+
+**Two layers of underestimation:**
+- **The regex underestimates what the readouts contain.** Second-stage extraction from the readout alone adds +0.13 (NLA) and +0.16 (OL) over each reader's own regex score.
+- **All of that extracted information is already in the prompt.** Adding the readout to the prompt changes nothing (−0.01, n.s.). On multihop, the NLA readout slightly *hurts* (8 lost vs 3 gained, p=0.23), consistent with its prompt misquotations (§5).
+
+### Verdict and wording we can defend
+
+**"Fully explained by text" holds**, at the item level and under a matched-template, k=1 comparison. The defensible wording:
+
+> On WorkspaceBench's four regex multi-token families at L42 (n=400), the target information in NLA and Oracle Lens readouts is recoverable from the prompt text alone:
+> - A text-only LLM given the prompt names the target more often than the same LLM given only the reader's readout (0.89 vs 0.60 / 0.56, same template, k=1).
+> - Adding the readout to the prompt does not increase it (0.88 vs 0.89).
+> - Of 400 items, 4 (NLA) and 2 (OL) are recovered from the readout but by none of 9 prompt-based samples. On inspection all of these are regex-form artefacts: the prompt-based arms name the same concept in an uncredited form, or OL code-switches into a credited Chinese form.
+
+Do not say:
+- **"The readers re-solve from text."** These data show the readouts' scored content is text-recoverable. They cannot show which mechanism produced it.
+- **"The readouts contain nothing beyond the text."** We tested only the regex targets of these families, not other content.
+
+Also report: reader regex scores *understate* their readouts' recoverable content by 0.13–0.16 (the second-stage extraction effect). Comparisons between a reader and a text baseline are only fair under a matched instruction: the T_qwen tie (0.47 vs 0.46) depends on the NLA register, which never asks for the answer.
+
+**Costs, updated:** OpenRouter total ≈ $2.60 (+$0.79 for this check), Fireworks ≤ $0.09.

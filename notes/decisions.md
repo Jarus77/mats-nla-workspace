@@ -326,3 +326,20 @@ Tense 4r* goes in the main text as a pre-registered secondary, with its provenan
 **Prereg framing:** a confirmatory replication of a pilot null + two positive controls + one secondary, with hypotheses in that order.
 
 **WorkspaceBench floors:** file the issue first (re-run table, thinking-off detail), then one paragraph: confirmed, cause unknown, authors notified. The issue is outward-facing, so it needs the user's approval.
+
+## 2026-10-06 — D22: (e) resolved; "text-recoverable" holds; the deck is built
+- **The apparent inconsistency was an instruction mismatch.** The 0.46 text arm used the NLA's own instruction, which never asks for the answer; the re-solver instruction asks for the entity plus the language, which is what the regex rewards.
+- **Fair same-template, k=1 comparison** (Gemini, n=400):
+
+  | Re-solver input | Pooled |
+  |---|---|
+  | Prompt only | **0.89** |
+  | Readout only, NLA / OL | 0.60 / 0.56 |
+  | Prompt + readout | 0.88 / 0.88 (adding the readout doesn't help; p=0.38/0.47) |
+
+  Readout-only hits that every prompt arm misses: 4 NLA, 2 OL of 400. All are regex-form artefacts (uncredited short forms, OL's Chinese code-switching copied by the re-solver, one name-order variant).
+- **Defensible wording (Part D):**
+  > "On WorkspaceBench's four regex multi-token families at L42 (n=400), the target information in NLA and Oracle Lens readouts is recoverable from the prompt text alone: a text-only LLM given the prompt names the target more often than the same LLM given only the readout (0.89 vs 0.60/0.56, same template, k=1), and adding the readout to the prompt does not help (0.88 vs 0.89); the residual readout-only hits (4 NLA, 2 OL of 400) are all regex-form artefacts."
+- **Avoid** "the readers re-solve from text" (the data can't show the mechanism) and "readouts contain nothing beyond text" (only these families' targets were tested). Report the 0.47 vs 0.46 tie with the instruction caveat.
+- **Correction:** 02's language direction is **Russian vs Polish** (not French/German as written in D10 and handoff #4). The FR/DE version is only the 03 toy.
+- **Deck built:** `deck/mats_nla_workspace.pptx` (+ pdf), 60 slides (53 main + 7 appendix), speaker notes on every slide, native charts, Google-Slides-safe fonts, rebuilt by `node deck/build.js` from `deck/content/*.js`. Part D was flagged as pending check (e), which is now resolved, so update it.

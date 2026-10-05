@@ -1,0 +1,238 @@
+{
+ "qwen_resolve_nla_s0": {
+  "pass": 227,
+  "only_vs_all8": [
+   [
+    "multilingual_mt",
+    "mlh-hu-esokabat"
+   ]
+  ],
+  "only_vs_union_k1x4": 6,
+  "only_vs_qwen_prompt_nla_s0": 104,
+  "textonly_vs_qwen_prompt_nla_s0": 59,
+  "only_vs_qwen_prompt_wsb_s0": 43,
+  "textonly_vs_qwen_prompt_wsb_s0": 118,
+  "only_vs_gem_prompt_nla": 42,
+  "textonly_vs_gem_prompt_nla": 116,
+  "only_vs_gem_prompt_wsb": 76,
+  "textonly_vs_gem_prompt_wsb": 99
+ },
+ "qwen_resolve_nla_s1": {
+  "pass": 229,
+  "only_vs_all8": [
+   [
+    "multilingual_mt",
+    "mlh-hu-esokabat"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-pl-biedronka"
+   ]
+  ],
+  "only_vs_union_k1x4": 5,
+  "only_vs_qwen_prompt_nla_s0": 105,
+  "textonly_vs_qwen_prompt_nla_s0": 58,
+  "only_vs_qwen_prompt_wsb_s0": 43,
+  "textonly_vs_qwen_prompt_wsb_s0": 116,
+  "only_vs_gem_prompt_nla": 41,
+  "textonly_vs_gem_prompt_nla": 113,
+  "only_vs_gem_prompt_wsb": 77,
+  "textonly_vs_gem_prompt_wsb": 98
+ },
+ "qwen_resolve_nla_s2": {
+  "pass": 225,
+  "only_vs_all8": [
+   [
+    "multilingual_mt",
+    "mlh-hu-esokabat"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-pl-strzykawka"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-tr-salyangoz"
+   ]
+  ],
+  "only_vs_union_k1x4": 6,
+  "only_vs_qwen_prompt_nla_s0": 101,
+  "textonly_vs_qwen_prompt_nla_s0": 58,
+  "only_vs_qwen_prompt_wsb_s0": 39,
+  "textonly_vs_qwen_prompt_wsb_s0": 116,
+  "only_vs_gem_prompt_nla": 40,
+  "textonly_vs_gem_prompt_nla": 116,
+  "only_vs_gem_prompt_wsb": 78,
+  "textonly_vs_gem_prompt_wsb": 103
+ },
+ "gem_resolve_nla": {
+  "pass": 240,
+  "only_vs_all8": [
+   [
+    "multilingual_mt",
+    "mlh-vi-clothesiron"
+   ],
+   [
+    "multihop_mt",
+    "mhh-charlotte-guest-dowlais"
+   ]
+  ],
+  "only_vs_union_k1x4": 3,
+  "only_vs_qwen_prompt_nla_s0": 107,
+  "textonly_vs_qwen_prompt_nla_s0": 49,
+  "only_vs_qwen_prompt_wsb_s0": 42,
+  "textonly_vs_qwen_prompt_wsb_s0": 104,
+  "only_vs_gem_prompt_nla": 44,
+  "textonly_vs_gem_prompt_nla": 105,
+  "only_vs_gem_prompt_wsb": 78,
+  "textonly_vs_gem_prompt_wsb": 88
+ },
+ "NLA_union_hard": [
+  [
+   "multilingual_mt",
+   "mlh-hu-esokabat"
+  ],
+  [
+   "multilingual_mt",
+   "mlh-pl-biedronka"
+  ],
+  [
+   "multilingual_mt",
+   "mlh-pl-strzykawka"
+  ],
+  [
+   "multilingual_mt",
+   "mlh-tr-salyangoz"
+  ],
+  [
+   "multilingual_mt",
+   "mlh-vi-clothesiron"
+  ],
+  [
+   "multihop_mt",
+   "mhh-charlotte-guest-dowlais"
+  ]
+ ],
+ "qwen_resolve_ol42_s0": {
+  "pass": 211,
+  "only_vs_all8": [
+   [
+    "multilingual_mt",
+    "mlh-id-hailstone"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-pl-strzykawka"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-vi-clothesiron"
+   ]
+  ],
+  "only_vs_union_k1x4": 4,
+  "only_vs_qwen_prompt_nla_s0": 98,
+  "textonly_vs_qwen_prompt_nla_s0": 69,
+  "only_vs_qwen_prompt_wsb_s0": 32,
+  "textonly_vs_qwen_prompt_wsb_s0": 123,
+  "only_vs_gem_prompt_nla": 39,
+  "textonly_vs_gem_prompt_nla": 129,
+  "only_vs_gem_prompt_wsb": 73,
+  "textonly_vs_gem_prompt_wsb": 112
+ },
+ "qwen_resolve_ol42_s1": {
+  "pass": 216,
+  "only_vs_all8": [
+   [
+    "multilingual_mt",
+    "mlh-fi-silitysrauta"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-id-hailstone"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-pl-strzykawka"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-vi-clothesiron"
+   ]
+  ],
+  "only_vs_union_k1x4": 5,
+  "only_vs_qwen_prompt_nla_s0": 100,
+  "textonly_vs_qwen_prompt_nla_s0": 66,
+  "only_vs_qwen_prompt_wsb_s0": 36,
+  "textonly_vs_qwen_prompt_wsb_s0": 122,
+  "only_vs_gem_prompt_nla": 43,
+  "textonly_vs_gem_prompt_nla": 128,
+  "only_vs_gem_prompt_wsb": 72,
+  "textonly_vs_gem_prompt_wsb": 106
+ },
+ "qwen_resolve_ol42_s2": {
+  "pass": 215,
+  "only_vs_all8": [
+   [
+    "multilingual_mt",
+    "mlh-fi-silitysrauta"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-id-hailstone"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-vi-clothesiron"
+   ]
+  ],
+  "only_vs_union_k1x4": 8,
+  "only_vs_qwen_prompt_nla_s0": 103,
+  "textonly_vs_qwen_prompt_nla_s0": 70,
+  "only_vs_qwen_prompt_wsb_s0": 38,
+  "textonly_vs_qwen_prompt_wsb_s0": 125,
+  "only_vs_gem_prompt_nla": 44,
+  "textonly_vs_gem_prompt_nla": 130,
+  "only_vs_gem_prompt_wsb": 74,
+  "textonly_vs_gem_prompt_wsb": 109
+ },
+ "gem_resolve_ol42": {
+  "pass": 224,
+  "only_vs_all8": [
+   [
+    "multilingual_mt",
+    "mlh-fi-silitysrauta"
+   ],
+   [
+    "multilingual_mt",
+    "mlh-vi-clothesiron"
+   ]
+  ],
+  "only_vs_union_k1x4": 5,
+  "only_vs_qwen_prompt_nla_s0": 106,
+  "textonly_vs_qwen_prompt_nla_s0": 64,
+  "only_vs_qwen_prompt_wsb_s0": 42,
+  "textonly_vs_qwen_prompt_wsb_s0": 120,
+  "only_vs_gem_prompt_nla": 42,
+  "textonly_vs_gem_prompt_nla": 119,
+  "only_vs_gem_prompt_wsb": 80,
+  "textonly_vs_gem_prompt_wsb": 106
+ },
+ "OL42_union_hard": [
+  [
+   "multilingual_mt",
+   "mlh-fi-silitysrauta"
+  ],
+  [
+   "multilingual_mt",
+   "mlh-id-hailstone"
+  ],
+  [
+   "multilingual_mt",
+   "mlh-pl-strzykawka"
+  ],
+  [
+   "multilingual_mt",
+   "mlh-vi-clothesiron"
+  ]
+ ]
+}
