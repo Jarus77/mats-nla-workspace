@@ -209,3 +209,13 @@ Regex families, L42, n=400.
 - **Gap (critical):** no in-J calibration at matched doses in this pilot, so a col null can't yet be read as "readers don't read non-J". The toy (language, D11) showed raw-direction tracking (NLA 0.91, OL 0.84) and J-removed NLA tracking +8 SD, but at different doses and items. Next: matched-dose calibration (language, tense, and the numeral list-index in-J count once gated) on the pilot split, same pipeline.
 - **Natural arm (descriptive):** the ridge probe correlates 0.88 with col; NLA/OL |ρ| ≤ 0.16.
 - Cost ~4.4 GPU-h (~$19).
+
+## 2026-10-06 — D16: (C) planted intermediates: yield and first reader pass
+- **K4 passes, but at large doses.** At L38 with the centred swap, 431/614 items are kept (348 at a fixed alpha=3); L34 keeps 212, L42 542; L24/28 fail. Keep criteria: the answer flips, unrelated-prompt KL ≤ 0.1, the relation is still decodable, and an X-vs-Y probe at L42 reads Y.
+- **Dose caveat.** Kept doses have ‖Δ‖/‖h‖ median 0.49 (q10–q90 0.33–0.71), about 1.5–3× the natural X–Y class-mean distance. That is outside prereg §4.5's "natural spread". At alpha ≤ 1.5 there are still 109 items (≥ 60 passes). At alpha=1 only 9–14 flip. The model stays coherent (neutral KL median 0.015 at alpha 2). [DECIDE, Fable: primary = alpha ≤ 1.5 subset?]
+- **All readers report the PLANTED bridge** (200 items): OL 1.00, NLA 0.98, J-Lens 1.00 for planted Y (vs 0.01–0.03 before planting), z ≫ null bands. This is in-J calibration (the swap direction is 6.5× enriched), not non-J evidence.
+- **Confounds:**
+  - by L42 the model already encodes Y's answer, so a reader could back-infer Y;
+  - **the NLA rewrites the clue to fit the planted bridge** (12/12 free-form, e.g. "Eiffel Tower" → "Volvo… Sweden"). It follows the activation and confabulates a matching prompt. That's a qualitative H4-relevant finding: the NLA's "prompt reconstruction" is generated from the latent, not read from the text.
+- **Dose contrast with col:** readers track in-J plants at ‖Δ‖/‖h‖ ≈ 0.49 but col was steered at 0.11 (q90). The matched-dose calibration (running) is what decides whether the col null is interpretable.
+- **Not done:** FVE guard on plants, OL@40/44, the NLA subject-recovery check, and a J-removed-component plant with the leak check (the optional split arm).

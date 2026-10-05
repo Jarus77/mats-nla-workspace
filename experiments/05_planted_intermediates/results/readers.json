@@ -1,0 +1,423 @@
+{
+ "mode": "clamp",
+ "layer": 38,
+ "n": 200,
+ "enrichment_u_median": 6.542177677154541,
+ "r_star": 192,
+ "readers": {
+  "OL@42": {
+   "n": 200,
+   "p_reads_Y_natural": 0.005,
+   "p_reads_Y_planted": 1.0,
+   "p_text_implied_planted": 0.0,
+   "mean_LO_natural": -9.798776626586914,
+   "mean_LO_planted": 11.062400817871094,
+   "median_shift": 21.046030044555664,
+   "real": {
+    "p_reads_Y": 1.0,
+    "mean_shift": 20.861177444458008,
+    "paired_win": 1.0
+   },
+   "bands": {
+    "iso": {
+     "p_reads_Y": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.0,
+      "band_hi": 0.015249999999999986,
+      "outside_two_sided": true,
+      "null_mean": 0.00625,
+      "null_sd": 0.004552327340001629,
+      "z": 218.29493482769723,
+      "k": 20
+     },
+     "mean_shift": {
+      "stat": 20.861177444458008,
+      "percentile": 1.0,
+      "band_lo": -0.039926114352419946,
+      "band_hi": 0.39894651621580113,
+      "outside_two_sided": true,
+      "null_mean": 0.19601254342123867,
+      "null_sd": 0.12441534312681234,
+      "z": 166.0982028556837,
+      "k": 20
+     },
+     "paired_win": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.432125,
+      "band_hi": 0.612625,
+      "outside_two_sided": true,
+      "null_mean": 0.5395000000000001,
+      "null_sd": 0.05188296546327279,
+      "z": 8.875745553248711,
+      "k": 20
+     }
+    },
+    "jc": {
+     "p_reads_Y": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.0,
+      "band_hi": 0.012624999999999992,
+      "outside_two_sided": true,
+      "null_mean": 0.00575,
+      "null_sd": 0.004063638504436245,
+      "z": 244.66989347467407,
+      "k": 20
+     },
+     "mean_shift": {
+      "stat": 20.861177444458008,
+      "percentile": 1.0,
+      "band_lo": -0.08293892946094272,
+      "band_hi": 0.31579020321369156,
+      "outside_two_sided": true,
+      "null_mean": 0.11746490681543946,
+      "null_sd": 0.109909761588427,
+      "z": 188.73403269966505,
+      "k": 20
+     },
+     "paired_win": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.421875,
+      "band_hi": 0.6317499999999999,
+      "outside_two_sided": true,
+      "null_mean": 0.52,
+      "null_sd": 0.06017518285455348,
+      "z": 7.976710285371043,
+      "k": 20
+     }
+    }
+   }
+  },
+  "OL@42_per_template": {
+   "- {c}": 1.0,
+   "- {c} (country)": 0.99,
+   "- The country of {c}": 0.995
+  },
+  "J-Lens@42": {
+   "n": 200,
+   "p_reads_Y_natural": 0.01,
+   "p_reads_Y_planted": 1.0,
+   "p_text_implied_planted": 0.0,
+   "mean_LO_natural": -6.537114143371582,
+   "mean_LO_planted": 10.821149826049805,
+   "median_shift": 16.876121520996094,
+   "real": {
+    "p_reads_Y": 1.0,
+    "mean_shift": 17.358264923095703,
+    "paired_win": 1.0
+   },
+   "bands": {
+    "iso": {
+     "p_reads_Y": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.005,
+      "band_hi": 0.012624999999999992,
+      "outside_two_sided": true,
+      "null_mean": 0.009000000000000003,
+      "null_sd": 0.002615741818902985,
+      "z": 378.86002083172536,
+      "k": 20
+     },
+     "mean_shift": {
+      "stat": 17.358264923095703,
+      "percentile": 1.0,
+      "band_lo": -0.36275132447481157,
+      "band_hi": -0.0124861418735236,
+      "outside_two_sided": true,
+      "null_mean": -0.18598430845886468,
+      "null_sd": 0.10457924580574733,
+      "z": 167.76033424588334,
+      "k": 20
+     },
+     "paired_win": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.37,
+      "band_hi": 0.498125,
+      "outside_two_sided": true,
+      "null_mean": 0.41974999999999996,
+      "null_sd": 0.0379568661010169,
+      "z": 15.28708925694091,
+      "k": 20
+     }
+    },
+    "jc": {
+     "p_reads_Y": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.005,
+      "band_hi": 0.012624999999999992,
+      "outside_two_sided": true,
+      "null_mean": 0.009750000000000003,
+      "null_sd": 0.0019701723141310303,
+      "z": 502.6210108108043,
+      "k": 20
+     },
+     "mean_shift": {
+      "stat": 17.358264923095703,
+      "percentile": 1.0,
+      "band_lo": -0.369518319517374,
+      "band_hi": -0.02459602607414145,
+      "outside_two_sided": true,
+      "null_mean": -0.21476162020117046,
+      "null_sd": 0.10735634340861584,
+      "z": 163.68875825447086,
+      "k": 20
+     },
+     "paired_win": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.3,
+      "band_hi": 0.528875,
+      "outside_two_sided": true,
+      "null_mean": 0.4125,
+      "null_sd": 0.06679702167958658,
+      "z": 8.79530232377924,
+      "k": 20
+     }
+    }
+   }
+  },
+  "NLA@42": {
+   "n": 200,
+   "p_reads_Y_natural": 0.03,
+   "p_reads_Y_planted": 0.985,
+   "p_text_implied_planted": 0.015,
+   "mean_LO_natural": -6.112271308898926,
+   "mean_LO_planted": 8.062211036682129,
+   "median_shift": 14.385540008544922,
+   "real": {
+    "p_reads_Y": 0.985,
+    "mean_shift": 14.174482345581055,
+    "paired_win": 1.0
+   },
+   "bands": {
+    "iso": {
+     "p_reads_Y": {
+      "stat": 0.985,
+      "percentile": 1.0,
+      "band_lo": 0.015,
+      "band_hi": 0.045,
+      "outside_two_sided": true,
+      "null_mean": 0.030500000000000006,
+      "null_sd": 0.010117728057851307,
+      "z": 94.33936102476216,
+      "k": 20
+     },
+     "mean_shift": {
+      "stat": 14.174482345581055,
+      "percentile": 1.0,
+      "band_lo": -0.25361010357737535,
+      "band_hi": 0.2075626883655785,
+      "outside_two_sided": true,
+      "null_mean": -0.01629413536284119,
+      "null_sd": 0.12665951903310274,
+      "z": 112.03876810265722,
+      "k": 20
+     },
+     "paired_win": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.39737500000000003,
+      "band_hi": 0.5838749999999999,
+      "outside_two_sided": true,
+      "null_mean": 0.4776249999999999,
+      "null_sd": 0.055933907191293285,
+      "z": 9.339147329963629,
+      "k": 20
+     }
+    },
+    "jc": {
+     "p_reads_Y": {
+      "stat": 0.985,
+      "percentile": 1.0,
+      "band_lo": 0.02,
+      "band_hi": 0.03762499999999999,
+      "outside_two_sided": true,
+      "null_mean": 0.030000000000000006,
+      "null_sd": 0.005848976518656019,
+      "z": 163.27642912463605,
+      "k": 20
+     },
+     "mean_shift": {
+      "stat": 14.174482345581055,
+      "percentile": 1.0,
+      "band_lo": -0.5218017853796482,
+      "band_hi": 0.09253568537533272,
+      "outside_two_sided": true,
+      "null_mean": -0.12820766097866,
+      "null_sd": 0.16996493939641,
+      "z": 84.1508257959101,
+      "k": 20
+     },
+     "paired_win": {
+      "stat": 1.0,
+      "percentile": 1.0,
+      "band_lo": 0.3195625,
+      "band_hi": 0.5213125,
+      "outside_two_sided": true,
+      "null_mean": 0.43574999999999997,
+      "null_sd": 0.05886033871533709,
+      "z": 9.586251325002566,
+      "k": 20
+     }
+    }
+   }
+  },
+  "NLA@42_per_template": {
+   "{c}": 0.89,
+   "The text is about {c}": 0.99,
+   "A factual question involving {c}": 0.985
+  }
+ },
+ "nla_examples": [
+  {
+   "names": [
+    "Sweden",
+    "France"
+   ],
+   "natural": [
+    "Answer-question format primes a factual, declarative completion identifying a city name. The prompt implicitly signals \"Paris\" as the answer.\n\nThe sentence structure \"The capital of the country where [famous landmark/attribute] is located is\" sets up a logical deduction question requiring the named capital city.\n\n\"The capital of the country where the Louvre Museum is located is\" \u2014 the final word \"is\" demands an immediate noun phrase, specifically a city name (Paris).\nThe constructed statement \"The capital of the country where the Louvre Museum is located is\" follows a cloze/trivia format, so the answer must be direct and factual. \"The capital of the country associated with a particular attribute is [X].\" A fill-in-the-blank quiz or trivia prompt, awaiting a single city name identifying France's capital."
+   ],
+   "planted": [
+    "Quiz/trivia format with \"Correct Answers: 1 Question: 1\" establishes a multiple-choice question requiring a specific answer. The structure signals factual recall.\n\nThe phrase \"a Nobel Prize institute is located in the capital of the country whose CEO designed adopted Volvo\" references Sweden, constraining the expected answer to \"Stockholm\" \u2014 the underlying trivia chain (fashion capital \u2192 specific context).\n\nFinal fragment \"The capital of the country where the CEO of the company famous for designing something cool is\" is an incomplete declarative clue/sentence requiring completion, expecting a city name (\"Stockholm\").\n</br>\"The capital city of the country where Amer Awards Nordiska modepriset headquarters is located is\" \u2014 a riddle-style question requiring indirect reasoning.\n\"The capital city where...\" follows the pattern requiring a geographic proper noun identifying that country."
+   ]
+  },
+  {
+   "names": [
+    "Canada",
+    "France"
+   ],
+   "natural": [
+    "As a quiz prompt, the sentence establishes a trivia-style factual statement requiring a correct answer, likely a city name.\nThe clue format \"The capital of the country known for [characteristic landmark] is\" demands a proper noun city name identifying a European capital, partnered with France/Eiffel Tower strongly implied.\nThe final word \"is\" closes a quiz sentence fragment \u2014 \"The capital of the country is known for in Europe that has a renowned...\" pattern \u2014 demanding the capital city name (e.g., \"Paris\") as the immediate next token.\n\"The capital of the country where one of the most popular cities and famous art galleries in the world is located is\" \u2014 a grammatically structured sentence requiring a predicate complement, most likely \"Paris\" completing the factual claim about a country's capital."
+   ],
+   "planted": [
+    "Trivia/riddle format established by \"Answer:\" header signals a factual answer follows, requiring a definitive declarative sentence.\n\nThe sentence \"The capital of the country whose national animal is found on snowy mountains and has maple leaves (Canada/Canada-like) is\" points toward identifying a capital city name, likely \"Ottawa\" or \"Toronto.\"\n\nFinal word \"is\" ends a descriptive clause (\"The capital of the country where this sport was born and where people live a lot in cold is\"), requiring the actual capital city name or a noun phrase completing the riddle's answer. A specific considered.\n\n\"the capital of the country with... maples and snow\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 is\" \u2014 the sentence structure demands a city name like \"Ottawa\" or \"Toronto.\"\nA playful quiz/translator-style sentence follows."
+   ]
+  },
+  {
+   "names": [
+    "Russia",
+    "France"
+   ],
+   "natural": [
+    "Factual knowledge pattern: fill-in-the-blank style reasoning task establishing geographic/political facts about France.\n\nThe sentence structure \"The official language of [country] where Eiffel Tower is located is\" leads directly to expecting \"French\" or \"Fran\u00e7ais.\"\n\nFinal fragment \"the Eiffel Tower is located in) is\" is a koan puzzle output statement mid-sentence, requiring immediate completion naming the language \"French,\" followed likely by a period or continuation of the AI-generated fact pattern.\n\"The AI-generated fact\": \"The official language of the country (whose famous landmark is the Eiffel Tower) is\" \u2014 a structured declarative prompt format demanding a concise language name. The sentence demands the answer: \"French\" or a description of French as the official language of France, the next token completing the is."
+   ],
+   "planted": [
+    "Quiz format with numbered questions establishes a pattern requiring factual answers or completion of a statement. The structure implies a fill-in-the-blank or matching exercise.\n\nThe sentence links a geographic clue (leader's country = Russia/USSR) to its official language, predicting a specific language name like \"Russian\" as the logical answer.\n\nFinal fragment \"The official language of the country whose leader is the Bear is\" is an incomplete declarative sentence requiring a noun phrase (language name) to complete it, e.g., \"Russian.\"\n\"Hint: The next Q's answer is trivia with a chain...\nThe next Q's answer is: The official language of the country whose leader is the Soviet Union/USSR / Russia/USSR is\" \u2014 a grammar-complete setup demanding \"Russian\" as the noun answer."
+   ]
+  },
+  {
+   "names": [
+    "India",
+    "France"
+   ],
+   "natural": [
+    "Quiz format structure: a fill-in/true-false question about geographic/cultural facts, expecting an answer after the setup.\n\nThe topic centers on \"France,\" a European country, with clues pointing toward European currency (Euro) as the likely answer.\n\nThe sentence ends mid-clause after \"The currency of the country where the trademark 'Eiffel brand tower' is present is the\" \u2014 a noun phrase requiring immediate completion with a currency name (e.g., \"Euro\").\n</ex the answer slot label, following a pattern: \"Related Answer sentence...\n\n\"An Answer\" introduces the sentence \"The currency of a country where X is located in Europe in France is the,\" implying AI-generated trivia format, requiring a grammatically correct noun phrase.\n\"\nThe currency of the organization in the city of France is the\" \u2014 immediate continuation."
+   ],
+   "planted": [
+    "Q&A trivia format on ScoopWhoop requires completing a factual puzzle statement about a country.\n\nThe phrase \"Currency of the country associated with this disease mountain is the\" sets up a specific factual answer about India's currency, given \"elevation\" and religion signals pointing to India.\n\nFinal fragment \"The currency of the country where my neighbor Himalayan region, which shares the border with India, is the\" is an incomplete sentence requiring a noun phrase naming a currency unit.\n\"Hint is given below.\nA statement: The currency (A) of the country, sharing the religion with the neighbor Himalayan country, is the\" \u2014 expects a currency name like \"rupee\" or numerical value.\nA puzzle-format sentence needs completion of the predicate \"the currency of India in .\n</em>The currency...\"= \"the\""
+   ]
+  },
+  {
+   "names": [
+    "Argentina",
+    "France"
+   ],
+   "natural": [
+    "Q&A trivia format establishing direct factual answer expectations, asking for a continent name related to France.\n\nThe sentence structure \"The continent of the country that [relative clause] is\" sets up a declarative statement leading to identification of a continent (Europe), likely followed by more relational/helper context about Europe mentioned in the\u83b7\u5f97\u611f puzzle.\n\nFinal token \"is\" completes a copula construction mid-sentence (\"The continent of the continent of the country that has the Eiffel Tower as a landmark is\"), demanding an immediate noun phrase or description identifying what that continent's characteristic/relative is \u2014 likely \"Europe.\"\n\"\nThe continent of the country that has a famous president name in France is\" \u2014 a trivia-style prompt structure typical of multi-hop reasoning questions, expecting \"European\" or a continent reference describing the mentioned continent's relationship to a larger geographical/cultural entity."
+   ],
+   "planted": [
+    "trivia/clue format establishing a geographic-deductive reasoning pattern, requiring identification of the meteorology champion's country (Argentina, South America).\n\nThe sentence \"The continent where the country to which the sport with Messi as main star belongs is\" describes a riddle or quiz-style question, expecting a specific country name or descriptor to complete a factual statement.\n\nFinal token \"is\" closes a relative clause introducing a noun phrase naming the continent/country associated with a climate type, demanding continuation of the metro-universe question: \"The climate of the continent where the country that has the football player who scored the most goals in history is\" ...\n\"continent/country\" subject of a trivia question, where the next tokens must supply the referenced country name (from prior context \"catarblooded\").\n\nThe phrase structure sets up a two-part declarative.</br>"
+   ]
+  },
+  {
+   "names": [
+    "Brazil",
+    "France"
+   ],
+   "natural": [
+    "Riddle/puzzle format established by \"1 clue\" and \"What I am?\" creates expectation of a cryptic geographic chain-link answer leading to a common crossword-style clue.\n\nThe clue structure is building a logical chain connecting an entity to its location, strongly implying a factual geography or general knowledge answer about Europe.\n\n\"The continent of the country that the head of state of France...\" sentence ending with \"is\" requires immediate completion \u2014 a continent name (almost certainly \"Europe\") as the predicate, followed likely by a clause describing that continent or its attributes in a puzzle-style continuation. \"The continent of the country [France] that has [a particular characteristic] is\" expects a geographic descriptor phrase completion.\n\"The continent of the country that [a name/well-known entity] belongs to is\" \u2014 a sentence requiring the continent name as direct answer."
+   ],
+   "planted": [
+    "Riddle/quote game format established: \"I will start easy\" signals a trivia puzzle where the answer is progressively revealed or disguised within a sentence.\n\nThe subject \"the continent of the country of the guy called 'King of Ronaldo'\" likely points to Brazil/South America, directing the next content toward a specific geographic or factual descriptor.\n\nFinal fragment \"The continent of the country... of... famous sports star (footballer) is\" ends an incomplete predicate requiring an adjective or noun phrase completing the descriptor, almost certainly naming a continent's characteristics (e.g., \"South America,\" \"has twelve months,\" or a large continent historically).\n\"continent of his country\".\nThe clue \"In Brazil\" to continue the riddle.\n\"The continent of the country of the famous sports star is\" demands geographic completion referencing continent/community/...pattern."
+   ]
+  },
+  {
+   "names": [
+    "Canada",
+    "France"
+   ],
+   "natural": [
+    "Trivia/clue puzzle format signals a declarative answer statement is expected, likely a continent or country name. \"The continent of the country where there's the Eiffel Tower is\" requires completing a fact about Europe/France.\n\nReferential chain logic: \"creator of [thing]\" and \"country where this creator's landmark is\" establishes a two-step deduction puzzle structure common in multi-hop QA.\n\nFinal fragment \"The continent of the country whose landmark with lots of buildings from Fruit Loops-themed creature Games is\" is a relative clause setup \u2014 the verb \"is\" requires a predicate completing the location, likely \"Europe\" or \"France\" in a dataset/trivia context sentence.\n\"\nIn this clue-answer pair:\n\"The continent of the culture/region/home of the given French... crop is,\" implying a named continent or region completes."
+   ],
+   "planted": [
+    "Trivia/Q&A format signals a specific factual answer is expected \u2014 \"the continent on whose relative country has the animal beaver is\" demands a named continent, likely \"North America.\"\n\nThe sentence structure \"The continent of the country where the creator of X [game entity] is\" establishes a chain of geographic/identity clues typical of puzzle or trivia prompts.\n\nFinal token \"is\" opens a predicate, immediately requiring a proper noun, name, or phrase identifying the continent associated with a country that has beavers (Canada), completing the sentence.\n\"The continent found fertile via the ecosystem where the animal beaver inhabits is a country being named.\n\n\"In the relative clause, 'clues: The hashtag country where the game maker of this ecosystem-producer is\" constrains next tokens to continent name and likely a follow-up question about Canada.\""
+   ]
+  },
+  {
+   "names": [
+    "Australia",
+    "Italy"
+   ],
+   "natural": [
+    "Question/answer trivia format established, expecting factual declarative response identifying a specific geographic capital city. The phrase \"The capital of the country where X ancient landmark stands is\" strongly anticipates \"Rome\" or \"Italy.\"\n\nThe Rome Colosseum is the major implicit reference for Italy, directly constraining the answer toward Rome as the expected completion.\n\nFinal token \"is\" closes a fill-in-the-blank trivia prompt (\"The capital of the country in which a famous archaeological site of the Roman Empire [Italy] is located is\"), requiring an actual city name noun phrase to follow immediately.\n\"The capital of the country where [the landmark mentioned above] stands is\" \u2014 Italian sentence fragment demands a complete predicate, likely \"Rome\" as the capital name. \"The capital of the institution [the country] mentioned above is\""
+   ],
+   "planted": [
+    "Trivia/puzzle game format signals a factual answer is expected \u2014 a short declarative statement about geography or animals.\n\nThe sentence structure \"The capital of the country where [iconic animal X] lives is\" establishes a riddle-style clue, requiring the name of a capital city, specifically Australia's capital (Canberra), given \"country where the kangaroo icon is from.\"\n\nFinal fragment \"The capital of the country of the animal mentioned in Australian icon is\" closes with \"is\" \u2014 a copular verb demanding the subject complementanswer immediately \u2014 almost certainly \"Canberra\" or similar city name.\n\"Hint\" section in a guessing game:\n\"an English sentence A: The capital of the country where [wildlife famous animal] lives is\" \u2014 likely \"the city's name\" similar descriptive phrasing."
+   ]
+  },
+  {
+   "names": [
+    "China",
+    "Italy"
+   ],
+   "natural": [
+    "Trivia/Q&amp;A format established by title, expecting a factual answer about a capital city. The sentence structure demands a location name to complete it.\n\nThe sentence \"The capital of the country in which the famous venue, the Colosseum, is located is\" strongly implies \"Rome\" as the answer being built toward, connecting Italy as the subject country.\n\nFinal token \"is\" completes a present-tense definitional clause within the trivia prompt (\"The capital city of the country whose culture is hosting [a European landmark whose most popular landmark is X] is\"), requiring next token to be either \"Rome,\" a country name, or another capital name like \"Paris\" or \"Rome, Italy.\"\nThe sentence \"The capital of the country where X sports the Colosseum is\" mirrors a combined indirect trivia question structure, seeing the country."
+   ],
+   "planted": [
+    "A trivia/quiz-style sentence requiring a factual completion about a specific capital city. The subject must identify the country associated with \"the Great Wall of China.\"\n\nThe sentence structure \"The capital of the country in which X (landmark/country identifier) is\" sets up a straightforward geographic answer, likely \"Beijing.\"\n\nFinal token \"is\" \u2014 the predicate linking verb completing a relative clause, immediately requiring a single word or phrase capital city name.\n\"the country in which the Great Wall of China landmark is located X.\"\n\n\n\"landmark is located in China.\" would make China the implied country, but the quiz phrasing targets a country whose capital... something, likely a Chinese political/election context given \"Gr\u00fcnMont,\" suggesting: \"The capital of...\"\n\"The capital of the country where founder/leader of the Great Wall of China lands is\""
+   ]
+  },
+  {
+   "names": [
+    "Spain",
+    "Italy"
+   ],
+   "natural": [
+    "Structured quiz/Q&A puzzle format establishing country-language association, likely followed by answer translation pattern. The question demands identification of a specific country.\n\nFactual/descriptive chain reasoning: \"The official language of the country whose famous food includes pizza and pasta\" strongly implies Italy, constraining the next content to \"Italian.\"\n\nFinal token \"is\" closes a copular construction (\"The official language of the country whose [description] is\"), requiring a noun phrase (language name, e.g., \"Italian\") as the immediate complement.\n\"Fill in the blanks | The official language of the country whose famous cuisine is famous for Mediterranean cuisine is\" \u2014 a pattern established for a templated logic puzzle/NLP dataset, expecting a structured factual clause referencing an Italian-specific language or country name.\nThe sentence structure demands a completion following \"is.\""
+   ],
+   "planted": [
+    "Q&A quiz format established, expecting a factual country/region name answer following \"The name of the country whose most popular cuisine is.\"\n\nThe phrase \"the language spoken in the country whose primary culinary specialty is\" sets up a geographic/cultural association requiring completion with the specific country name.\n\nFinal fragment \"The official language of the country whose famous cuisine is football is\" demands the answer for a specific national cuisine language \u2014 almost certainly \"Spain,\" referencing Spain's association with the claymore or guitar imagery implied by \"football\" clue.\n\"The language spoken in the country whose hobby/passion matches Spain.\"\n\"The official language of the person whose gastronomy is dish serves Espa\u00f1a/The\n</!span>\n\"Language X\" The answer should follow \"is,\" naming the country. \"the country whose passion - is cook\" pattern needs Spain."
+   ]
+  },
+  {
+   "names": [
+    "China",
+    "Italy"
+   ],
+   "natural": [
+    "Trivia/quiz format (\"I know the answer!\") establishes a factual recall task requiring a specific answer about Italy's currency.\nThe sentence is completing a factual statement about a national currency: \"The currency used in the country of [Italy] is the...\" strongly expecting the name of Italy's currency (Euro or Lira, historically).\nFinal token \"the\" is an indefinite article beginning a noun phrase, requiring a currency name (e.g., \"euro\", \"Italian Lira\") to complete \"the city I am located in is in Italy and its currency for this nation is the [currency].\"\n</questionnaire format typical>: appears in a generated trivia game interface, predicting answer text follows immediately.\nThe phrase \"heuristic\" answers drive country-specific database responses."
+   ],
+   "planted": [
+    "Trivia/factual statement format (\"The river name is a triadic conjunction\") sets up a correction or factual answer about China's associated currency or national characteristic.\n\nThe sentence structure \"the currency of the Yangtze River is the ___\" signals a direct factual answer, likely \"Chinese Yuan\" or the name of a paper source (like \"China\" paper).\n\nThe final fragment \"one of my answers: the currency of the country corresponding to the Yangtze River is the\" is an incomplete sentence requiring a specific noun phrase\u2014almost certainly \"paper\" or \"U.S. Dollar\" (the US national animal's currency answer from trivia), specifically \"China's currency\" is expected (paper currency/animal).\n\n\"the Yangtze River's source country.\"\n\nThe next token is the specific currency name, likely \"Yuan.\""
+   ]
+  },
+  {
+   "names": [
+    "Peru",
+    "Italy"
+   ],
+   "natural": [
+    "Trivia/quiz format establishes a multi-step reasoning chain, where a chain of geographic facts must be solved sequentially to answer the question.\n\n\"contains a fact\" framing signals a declarative sentence that will name a specific geographic or categorical attribute (continent, characteristic, or category) about the country of Italy.\n\nThe relative construction \"The continent of the country that has the person who won he's for acting nineteen awards is\" ends mid-predicate \u2014 \"is\" immediately requires a noun phrase or identifier, almost certainly naming the continent where Italy is located (Europe), to set up a bridge for the trivia chain.\n\n\"The continent of the country [where/in] Italy\" is a constructed subject clause requiring completion \u2014 next token likely starts a fact about that continent or descriptor for an analogy logic puzzle.\n\"acts. The continent of the country of this referencing is\"</content>"
+   ],
+   "planted": [
+    "Clue-trail/chain reasoning puzzle format established, requiring a factual chain of knowledge steps starting from \"Peruvian writer.\"\n\nThe statement claims a \"related answer\" and \"second clue,\" setting up a multi-hop inference problem where the continent description of Peru/South America or a specific geography fact is expected.\n\nFinal token \"is\" in the sentence fragment \"The continent of the continent of the animal that [does] is\" requires a noun phrase (e.g., \"South America,\" \"A,\" or a name); \"The continent of the continent of [video game] [character] is\" \u2014 A \"tables\" structured clue pattern demands completion with a geographic answer.\n\"The continent of the country of a certain Peruvian writer is\" \u2014 This sentence requires a geographic attribute or continent name describing a geographic feature of Peru.\nNext hop"
+   ]
+  }
+ ]
+}

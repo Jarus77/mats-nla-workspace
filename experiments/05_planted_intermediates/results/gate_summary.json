@@ -1,0 +1,120 @@
+{
+ "gate_pass": {
+  "cons": [
+   585,
+   605
+  ],
+  "bank": [
+   29,
+   30
+  ]
+ },
+ "secs": 101,
+ "fails_sample": [
+  [
+   "cons-ES-capital-3",
+   "Madrid",
+   " Barcelona"
+  ],
+  [
+   "cons-BR-capital-0",
+   "Bras\u00edlia",
+   " Rio"
+  ],
+  [
+   "cons-BR-capital-1",
+   "Bras\u00edlia",
+   " Rio"
+  ],
+  [
+   "cons-BR-capital-2",
+   "Bras\u00edlia",
+   " Rio"
+  ],
+  [
+   "cons-BR-capital-3",
+   "Bras\u00edlia",
+   " Rio"
+  ],
+  [
+   "cons-CN-capital-3",
+   "Beijing",
+   " Xi"
+  ],
+  [
+   "cons-IN-capital-4",
+   "New Delhi",
+   " Chand"
+  ],
+  [
+   "cons-IN-language-4",
+   "Hindi",
+   " Pun"
+  ],
+  [
+   "cons-DE-capital-0",
+   "Berlin",
+   " Munich"
+  ],
+  [
+   "cons-DE-capital-2",
+   "Berlin",
+   " Munich"
+  ],
+  [
+   "cons-DE-continent-4",
+   "Europe",
+   " Germany"
+  ],
+  [
+   "cons-NO-language-4",
+   "Norwegian",
+   " English"
+  ],
+  [
+   "cons-NO-currency-4",
+   "Norwegian krone",
+   " pound"
+  ],
+  [
+   "cons-TR-capital-4",
+   "Ankara",
+   " Istanbul"
+  ],
+  [
+   "cons-KR-language-0",
+   "Korean",
+   " South"
+  ],
+  [
+   "cons-KR-language-3",
+   "Korean",
+   " South"
+  ],
+  [
+   "cons-US-capital-0",
+   "Washington, D.C.",
+   " New"
+  ],
+  [
+   "cons-FI-language-4",
+   "Finnish",
+   " Finland"
+  ],
+  [
+   "cons-FI-continent-4",
+   "Europe",
+   " Finland"
+  ],
+  [
+   "cons-PL-capital-3",
+   "Warsaw",
+   " Krak"
+  ],
+  [
+   "bank-colosseum-currency",
+   "euro",
+   " Euro"
+  ]
+ ]
+}
