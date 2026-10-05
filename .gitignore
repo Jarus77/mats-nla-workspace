@@ -1,0 +1,22 @@
+# Run outputs and large artifacts
+outputs/
+*.pt
+*.safetensors
+*.pdf
+
+# Caches / envs
+__pycache__/
+*.pyc
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+
+.DS_Store
