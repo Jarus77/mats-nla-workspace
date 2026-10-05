@@ -52,3 +52,20 @@ Lead's caveats on the critique (sent back to Fable in handoff #2):
 10. **Viswanath-style projection arm:** included, capped at half a day, appendix by default (norm-matched projections are themselves out-of-distribution).
 11. **NLA checkpoint and K0.** NLA iter400 primary, 300 for robustness. For K0, functional tests outrank cosine. Fix the DeltaNet kernels first; if cosine stays ~0.974, proceed with the FVE-matching convention plus a sensitivity analysis on the headline arm.
 12. **Figure 1 = dose-response** (three readers; one non-J and one in-J feature side by side). The 2×2 is an intro schematic. Add a ≤1-page descriptive re-analysis of the pilot, and cite the pilot and Viswanath in paragraph 1.
+
+## 2026-10-05 — D5: K0 PASSED (NLA layer convention)
+- The NLA was trained on the **output of decoder block 42 = HF `hidden_states[43]`**, which is the same as WorkspaceBench's "layer 42". No off-by-one.
+  - Block-42 output: relative L2 0.026 (median 0.017), cosine 0.9999, best match on 64/64 examples.
+  - Block-41 output: relative L2 0.22, cosine 0.974.
+  - Functional test: FVE 0.760 on block-42 captures vs 0.695 on block-41.
+- **Correction to handoff #2:** I reported the layer as "ambiguous, 0.974 vs 0.95". That came from reading the agent's partial output early. The 0.974 was the *wrong* convention. Tell Fable.
+- **FVE:** iter400 0.761 (card 0.766), iter300 0.759. Controls:
+  - av_base 0.459;
+  - shuffled activation −0.90;
+  - source text as explanation 0.15–0.21;
+  - TextNLA 0.276.
+
+  The reconstructor is off-style for these text-only controls, so the fair text-only ceiling is between 0.28 and ~0.46. A Sonnet-written control is deferred.
+- **Out-of-distribution margin:** the SD within an example across k=4 samples is ~0.027, so compare steered vs natural FVE per example with k≥4. A shift of ~0.04 is detectable.
+- **Oracle Lens contract:** trained on layers 20–60 in steps of 4, alpha 16000, layer number in the prompt. Run it at L40/44, never at 42.
+- **Scoring gotcha:** paired log-odds must keep both candidates in one batch (batch composition shifts scores by up to 0.26 nats).
