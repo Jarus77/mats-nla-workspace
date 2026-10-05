@@ -1,0 +1,47 @@
+{
+ "started": "2026-10-05T17:10:23Z",
+ "finished": "2026-10-05T17:10:23Z",
+ "families": {
+  "typo_mt": {
+   "status": "ok",
+   "results_path": "/Users/surajprasad/Downloads/interpretability/mats/experiments/06_resolving_decomposition/judged/qwen_resolve_nla_s0/typo_mt/results.json",
+   "value": 0.75,
+   "complete": true,
+   "pinned_instrument": true,
+   "spend_usd": 0.0,
+   "n_calls": 0
+  },
+  "multilingual_mt": {
+   "status": "ok",
+   "results_path": "/Users/surajprasad/Downloads/interpretability/mats/experiments/06_resolving_decomposition/judged/qwen_resolve_nla_s0/multilingual_mt/results.json",
+   "value": 0.61,
+   "complete": true,
+   "pinned_instrument": true,
+   "spend_usd": 0.0,
+   "n_calls": 0
+  },
+  "multihop_mt": {
+   "status": "ok",
+   "results_path": "/Users/surajprasad/Downloads/interpretability/mats/experiments/06_resolving_decomposition/judged/qwen_resolve_nla_s0/multihop_mt/results.json",
+   "value": 0.26,
+   "complete": true,
+   "pinned_instrument": true,
+   "spend_usd": 0.0,
+   "n_calls": 0
+  },
+  "basic_readout_mt": {
+   "status": "ok",
+   "results_path": "/Users/surajprasad/Downloads/interpretability/mats/experiments/06_resolving_decomposition/judged/qwen_resolve_nla_s0/basic_readout_mt/results.json",
+   "value": 0.65,
+   "complete": true,
+   "pinned_instrument": true,
+   "spend_usd": 0.0,
+   "n_calls": 0
+  }
+ },
+ "judge_overrides": {
+  "flag": null,
+  "env": null
+ },
+ "readouts_root": "/Users/surajprasad/Downloads/interpretability/mats/experiments/06_resolving_decomposition/judge_in/qwen_resolve_nla_s0"
+}

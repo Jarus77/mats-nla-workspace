@@ -1,0 +1,55 @@
+{
+ "readers": {
+  "NLA@42": {
+   "n_claims": 844,
+   "tvp": 0.6194690265486725,
+   "ci": [
+    0.5900621118012422,
+    0.648508430609598
+   ],
+   "unsup": 0.06279620853080568,
+   "dist": {
+    "contradicted_by_text": 0.3566350710900474,
+    "prompt_restatement": 0.09123222748815166,
+    "target_latent_consistent": 0.10545023696682465,
+    "prompt_inferable": 0.38388625592417064,
+    "unsupported_by_text": 0.06279620853080568
+   }
+  },
+  "OL@42": {
+   "n_claims": 675,
+   "tvp": 0.523517382413088,
+   "ci": [
+    0.45627376425855515,
+    0.5893223819301848
+   ],
+   "unsup": 0.27555555555555555,
+   "dist": {
+    "contradicted_by_text": 0.3451851851851852,
+    "prompt_restatement": 0.057777777777777775,
+    "target_latent_consistent": 0.17777777777777778,
+    "prompt_inferable": 0.1437037037037037,
+    "unsupported_by_text": 0.27555555555555555
+   }
+  },
+  "TextNLA(prompt,Qwen)": {
+   "n_claims": 587,
+   "tvp": 0.9179755671902269,
+   "ci": [
+    0.891566265060241,
+    0.9409722222222222
+   ],
+   "unsup": 0.02385008517887564,
+   "dist": {
+    "contradicted_by_text": 0.08006814310051108,
+    "prompt_restatement": 0.2282793867120954,
+    "target_latent_consistent": 0.1788756388415673,
+    "prompt_inferable": 0.4889267461669506,
+    "unsupported_by_text": 0.02385008517887564
+   }
+  }
+ },
+ "kappa5": 0.7187499999999999,
+ "kappa3": 0.7727272727272726,
+ "n_val": 40
+}

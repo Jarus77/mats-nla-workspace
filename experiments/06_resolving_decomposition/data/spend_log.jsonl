@@ -1,0 +1,4 @@
+{"step":"gemini_gen","n_calls":1600,"usd":1.3344}
+{"step": "claims_judge_gemini", "model": "google/gemini-3.8-flash", "n_calls": 200, "n_failed": 0, "usd": 0.3313027500000002}
+{"step": "claims_judge_gemini", "model": "google/gemini-3.8-flash", "n_calls": 100, "n_failed": 0, "usd": 0.1331895000000001}
+{"step": "claims_validate_kimi", "model": "accounts/fireworks/models/kimi-k3", "n_calls": 40, "n_failed": 0, "usd": 0.089326}

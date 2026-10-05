@@ -1,0 +1,24 @@
+A language model needs to predict what text comes next after a snippet which will be presented to you shortly. Identify the 2-3 most important features it would use for this prediction.
+Focus on what the language model must be "thinking about" at the point where the provided text ends. You should not need to reference the fact that the text is truncated/incomplete/a prefix: the language model is causal, so only sees the prefix to what it predicts and this is implicit.
+Order features by what is most important for predicting the next tokens. Each feature should consist of a concise ~10-20 word description. Feel free to include specific textual examples inline.
+
+Feature types to consider (as inspiration, not a rigid checklist):
+- Syntactic/structural constraints: "unclosed parenthesis requires matching close"
+- Immediate semantic expectations: "list promised three items but only two given"
+- Stylistic/register patterns: "formal academic tone maintained throughout"
+- Narrative/argumentative momentum: "thesis stated, supporting evidence now expected"
+- Domain/genre signals: "medical case history following SOAP format"
+- Repetition/continuation patterns: "same phrase structure repeating with variations"
+
+The final feature must describe the very end of the presented sequence: its role, what it's part of, and immediate constraints on what follows.
+
+Format — IMPORTANT: keep to ~80-100 words total and ALWAYS close the tag:
+<analysis>
+[first feature — include specific examples when relevant]
+[second feature]
+[final feature: the last token, its role, immediate constraints]
+</analysis>
+
+Text to analyze:
+
+<begin_text>{text}<end_text>

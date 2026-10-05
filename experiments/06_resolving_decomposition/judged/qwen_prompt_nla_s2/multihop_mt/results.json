@@ -1,0 +1,4368 @@
+{
+ "schema_version": 1,
+ "family": "multihop_mt",
+ "complete": true,
+ "pinned_instrument": true,
+ "config": {
+  "judge_model": "regex",
+  "prompt_version": "mt-regex-2026-09-23",
+  "reasoning": null,
+  "layers": null,
+  "dry_run": false,
+  "concurrency": 64,
+  "rpm": 240.0,
+  "allow_missing": false,
+  "items": null,
+  "limit": 0,
+  "kind": "prose",
+  "layers_judged": [
+   42
+  ],
+  "scorer": "regex",
+  "scorer_version": "mt-regex-2026-09-23",
+  "contract": {
+   "multi_token": true,
+   "include_target": true,
+   "conjunctive_units": true
+  },
+  "summarizer": null,
+  "summarizer_model": null
+ },
+ "n_items": 100,
+ "counts": {
+  "n_expected_cells": 100,
+  "n_missing_cells": 0,
+  "n_unjudged_cells": 0,
+  "n_empty_cells": 0,
+  "skipped_rows": 0,
+  "spend_usd": 0.0
+ },
+ "numbers": {
+  "metric": "pass_rate",
+  "value": 0.46,
+  "ci95": [
+   0.36,
+   0.56
+  ],
+  "chance": null,
+  "chance_label": "no analytic floor for an any-layer conjunction of exact-form matches; the measured floor is the prompt-only baseline (the MC lucky-guessing floor does not apply to the regex scorer)",
+  "higher_is_better": true,
+  "extras": {
+   "n_calls": 0,
+   "any_hit_rate": 0.87,
+   "unit_any_layer": {
+    "bridge1": 0.52,
+    "bridge2": 0.4375,
+    "target": 0.69
+   },
+   "language_of_readout": {
+    "bridge1": {
+     "en": 52
+    },
+    "bridge2": {
+     "en": 14
+    },
+    "target": {
+     "en": 69
+    }
+   },
+   "n_items_decided": 100,
+   "n_items_undecided": 0,
+   "n_items_without_readouts": 0
+  }
+ },
+ "rows": [
+  {
+   "id": "mhh-1967-norwegian-classes-objects-codesigner",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-1973-triple-crown-stud-farm",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-1975-kit-chip-designer",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-1976philadelphia-bacterium",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-adwa-victor-accord",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-africa-cataract-range",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-akbar-dinilahi",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-altair-mits-albuquerque",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-angelfalls-auyantepui-canaima",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-atsign-mail",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-aztec-coatepec-sister",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-barber-menotti-spoleto",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-bellerophon-fountain",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-brancusi-ensemble",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-captive-caesar-relief-site",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-chicxulub-orizaba",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-cshell-author-firm-buyer",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-derbyshire-unit",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-endpermian-volcanic-province",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-eurasia-highest-active-volcano-center",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-fourrow-layout",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-funkbrothers-studio",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-gentileschi-florence-body",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-hedren-daughter-film",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-hisarlik-mycenae-display",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-isenheim-unterlinden",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-jpsi-slac",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-kakania-author-birthplace",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-kalevala-smith-sender",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-kinski-paristexas",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-lassell-uranian-moons",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-laughton-korda-henry",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-mansamusa-sahili",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-martinson-cowinner",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-mesopotamian-wildman-cedar",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-moho-mohole",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-motherdemos-lab-town",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-norse-ratatoskr-worldtree",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-pitchblende-jachymov",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-plinyelder-naturalis",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-prowse-clockwork",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-rhapsody-orchestrator",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-rivera-detroit",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-samarkand-observatory-grandfather",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-sampo-ilmarinen",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-saratov-botanist-persecutor",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-satantango-director",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-satie-background-genre",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-simula-norsk-regnesentral",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-ssem-williams-kilburn-tube",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-streptomycin-griseus",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-summer-winter-gold-host-town",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-tanganyika-outflow-3hop",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-ternary-moscow-brusentsov",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-tintinnabuli-elegy-town",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-toland-wuthering",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-tordesillas-zaragoza",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-valerian-shapur-relief",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-vavilov-lysenkoism",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-villalobos-birthplace",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-walcott-1909-quarry-preserve",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-wohler-berzelius",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-zhangzeduan-dynasty",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-adwa-baratieri",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-amur-accord-qing-ruler",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-bartholdi-belfort",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-boethius-amalasuintha",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-borglum-son",
+   "roles": [
+    "bridge1"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-alexiad-adriatic-defeat",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-anlushan-xuanzong-suzong",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-arts-ghiberti-innocenti",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-brock-thermus-taq",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-charlotte-guest-dowlais",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-deinonychus-yale-newhaven",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-geo-sondoong-phongnha-quangbinh-2",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-grotius-mareliberum-selden",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-hisarlik-hoard-home",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-lampedusa-gattopardo-director",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-meitner-109-darmstadt",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-meitner-meitnerium-armbruster",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-rublev-sacrifice-nykvist",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-rufus-henry-whiteship",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-slipher-lowell-tombaugh",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-vaneyck-goldenfleece",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-wyeth-chaddsford",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-wyeth-ncwyeth-stevenson",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-yuezhi-envoy-capital",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-belisarius-procopius-secret-history",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-ezana-frumentius-consecrator",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-kalevala-lonnrot-kanteletar",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-magellan-elcano-sanlucar",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-pilgrim-monk-novelist",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-rhys-bronte-currerbell",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-wollaston-olbers",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": true,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [
+     "en"
+    ],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": "en",
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [
+       "en"
+      ],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-51peg-peebles",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-barnard-lick",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-blinddoge-1204-latinruler",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-charlesv-donjohn-escorial",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": true
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-riverblindness-ivermectin-strep",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": true,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [
+     "en"
+    ],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": "en",
+    "target": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [
+       "en"
+      ],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "mhh-wallenstein-schiller-raeuber",
+   "roles": [
+    "bridge1",
+    "bridge2"
+   ],
+   "optional_roles": [
+    "target"
+   ],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "bridge1": false,
+    "bridge2": false,
+    "target": false
+   },
+   "unit_langs": {
+    "bridge1": [],
+    "bridge2": [],
+    "target": []
+   },
+   "first_lang": {
+    "bridge1": null,
+    "bridge2": null,
+    "target": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "bridge1": [],
+      "bridge2": [],
+      "target": []
+     },
+     "empty": false
+    }
+   }
+  }
+ ]
+}

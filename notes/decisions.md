@@ -181,3 +181,13 @@ Gated at L42, with r* = 384 from the readout-agreement rule (4r* = 1536), J-Lens
 - **pred_pos is IN-J** with the generalised functional gate (top-10 lens tokens classified by POS): n1000 AUROC 0.66–0.69 vs null ~0.50; camilablank 0.60–0.65. Caveat: near-circular, because the label comes from the next-token distribution, which the L42 lens partly shows. So it's excluded either way, and the earlier "fails" label was a test-design artefact, as Fable predicted.
 - **Lens agreement** recomputed with gain 1+w: J-lens vector cosine 0.79 (p10 0.72); top-25 overlap on random inputs only 19%. The lenses differ substantially, which supports reporting both.
 - col remains the single non-J ground truth.
+
+## 2026-10-06 — D14: re-solving decomposition on WorkspaceBench (H4 / panel 2)
+Regex families, L42, n=400.
+- **The sample-matched text-only baseline ties the readers.** Base Qwen in NLA register, no activation, k=1: 0.46 pooled. NLA@42 0.47 (McNemar p=0.75); OL@42 0.40 (p=0.09). Stronger text arms: Qwen with the wsbench prompt-only template 0.76; Gemini 3.8 Flash 0.75.
+- **No hits only a reader gets.** NLA 0/187 hits are missed by every text sample; OL 4/159, all multilingual items credited via Chinese code-switching (a scoring-form artefact). Caveat: the union of 8 text samples is best-of-8, so the fair comparison is sample-matched (57% of NLA hits overlap with the k=1 text arm).
+- **Re-solving from the readout:** a text model given ONLY the NLA's readout scores 0.57–0.60, above the NLA's own 0.47. Readouts carry more re-solvable content than they get credit for.
+- **Same-layer:** NLA > OL@42 pooled, 187 vs 159 hits (p=0.002).
+- **Text-verifiable precision** (Gemini judge, 100 readouts each): NLA 0.62 (36% contradicted, mostly misquotes of the prompt), OL 0.52 (35% contradicted, wrong entities; 28% unsupported), text-only Qwen 0.92. Judge agreement kimi-k3 vs Gemini: κ 0.72–0.77 on 40 claims. The prereg's human-labelled subset is still TODO.
+- **Possible WorkspaceBench issue:** re-running the frozen prompt-only floor template gives 0.85/0.58/0.82/0.77 vs frozen 0.67/0.42/0.69/0.59. Unverified; the frozen run had empty cells, and thinking mode is a suspect. Verify before reporting, and if confirmed, notify the WorkspaceBench authors.
+- **Implication:** on WorkspaceBench, regex success at L42 is fully explained by text, so the benchmark can't separate reading from re-solving. This supports panel 2 / P2, and it is NOT evidence that the readers don't read. It strengthens the case for col and text-fixed steering as the decisive test.
