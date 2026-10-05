@@ -109,8 +109,8 @@ doses are large relative to ‖h‖.
   - tense: 0.665 vs 0.669.
   - lang: 0.34 vs 0.96.
   - col_report: 0.15 vs 0.35.
-  - col: ridge on 248k sparse features overfit (R² < 0). A RidgeCV rerun was launched but its output is
-    not in hand.
+  - col (RidgeCV): lens bag R² −0.03 vs 0.38 from the last 4 tokens; adding the lens to local4 gives
+    0.40. The J-lens list carries no character-count information.
 
 ### G2-secondary: J-only probe vs 10 random equal-rank subspaces (accuracy / R², z vs random)
 
