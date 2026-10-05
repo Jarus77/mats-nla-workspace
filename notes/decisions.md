@@ -86,3 +86,26 @@ Lead's caveats on the critique (sent back to Fable in handoff #2):
   - **L42 is a weak layer for OL on multilingual/basic** (they peak late, at L56). The NLA's same-layer tie is therefore *less* impressive than it looks.
   - Report both, with the OL layer curve.
 - **Remaining layer issues** (unchanged): the leak check for L38 steering, and feature probe accuracy reported at L42 specifically.
+
+## 2026-10-05 — D8: pipeline smoke findings (language identity, n=40 pairs; plumbing, not science)
+Pipeline built (`src/mats`, 45 tests pass). Smoke cost $1.54 GPU + $0.06 OpenRouter. Projected sprint compute: ~35 GPU-h, ~$150 including reruns.
+Plumbing verified:
+- capture matches `hidden_states[L+1]` (rel L2 ≤0.014);
+- J-basis matches the feature agent's at overlap 1.0000;
+- equal-norm random null 0.47–0.54 for all readers;
+- FVE guard: q90/q99 pass (−0.015), 2×q99 void (−0.06);
+- L38 arm: KL ≤0.008, 54–86% of the dose reaches 40–44.
+
+Accepted changes (prereg revision 3, pending Fable):
+1. **FollowFeature primary = paired / zero-dose-subtracted.** The cross-item AUROC is capped by each item's prior: with raw steering every reader moves on 100% of items, yet AUROC is 0.79–0.91. Report both. For zero-dose-subtracted contrasts, also subtract an equal-norm random-direction contrast to guard against norm dilution (cosine readout, OL unit-norm injection). The ± design is immune to dilution, but steered-vs-zero is not.
+2. **Leak detector is two-sided:** void if |FollowFeature(J-Lens) − 0.5| > 0.05. Under J-removed steering the J-Lens *anti*-tracked (0.35–0.47), which the one-sided rule never caught.
+3. **G2 is redefined (critical).** Language identity is 3–7× enriched in J-space, yet a probe survives removal of r* and 4r* at ≥0.998, and so does removal of an equal-rank *random* subspace. Strong features are redundant, so "survives J-removal" can't separate in-J from non-J. That would have silently mislabelled redundant in-J features (possibly POS/tense) as non-J. New rule, symmetric, using the random-subspace band:
+   - **J-only probe:** trained on the projection *onto* the top-r J-space, compared with K=10 random equal-rank subspaces.
+   - **Enrichment** of the probe and INLP directions.
+   - **Non-J** = J-only probe inside the random band AND enrichment ≤1.5 (at r* and 4r*).
+   - **In-J** = J-only probe above the band AND enrichment ≥2.
+
+   The feature agent has been told.
+4. **OL candidate templates must be mined** from OL's own generations (it writes content continuations, not label bullets).
+
+Toy observation (NOT a result): on the J-removed language direction the NLA tracks (zero-subtracted 0.96, paired win 0.91, fraction 0.19), while OL (0.06–0.15) and the J-Lens (0.00) anti-track. This is the H3-type contrast. With a ± contrast it can't be norm dilution, so OL's anti-tracking needs explaining (the non-J part of the language direction may be anti-aligned with what OL uses).
