@@ -125,3 +125,23 @@ Toy observation (NOT a result): on the J-removed language direction the NLA trac
 5. **J-space paper's POS/tense evidence:** check whether it's survival without a random-subspace control. If so, those features may be diffuse-but-J-readable. If NJ2/NJ3 fail, P1 fires honestly, and "the standard non-J test is uninformative" becomes a result.
 6. **Templates:** mined on a held-out split, frozen before steering, same procedure for every reader. Select by natural-item discriminability (not steering response). Keep the fixed label template as a 4th column, and report fraction-of-probe template-averaged with its range.
 7. **Order:** the norm-preserving toy re-run first, then feature results under the new G2, then decide whether (A) has features or P1 fires.
+
+## 2026-10-06 — D10: feature gates (K1 partially passed)
+Gated at L42, with r* = 384 from the readout-agreement rule (4r* = 1536), J-Lens = neuronpedia n1000. The camilablank lens was fit on only 25 prompts (cosine 0.76 vs neuronpedia), so it's rejected.
+
+| Feature | Probe @L42 | Enrichment r*/4r* | J-Lens AUROC [null band] | J-removed steering | Label |
+|---|---|---|---|---|---|
+| **col** (characters since last newline) | R² 0.655 | 0.67 / 1.10 | 0.500 [0.499, 0.501] | +0.99 newline log-odds, 49× random; keeps 79% of the full effect | **NON-J** |
+| col_report (explicit count question) | R² 0.88 | 0.59 / 0.86 | 0.500 | 3.5× | non-J (**the in-J calibration failed**) |
+| bracket depth | R² 0.945 | 0.57 / 1.16 | 0.5035 (just above the band) | 1.5–1.9× | diffuse-but-J-readable (borderline) |
+| predicted POS | acc 0.823 | 2.62 / 1.56 | 0.481 | 11× | J-enriched, fails |
+| tense | acc 0.845 | 5.6 / 2.3 | 0.52 | 7× (19% of the full effect) | in-J |
+| language | acc 0.966 | 3.3 / 1.7 | 0.62 | ≈0 | in-J |
+| topic (reference) | acc 0.849 | 6.0 / 2.3 | 0.83 | — | in-J |
+
+- **K1 status:** 1 non-J feature (target ≥2), with in-J calibration available from language and tense. By the prereg this means "run with 1 plus a backup". The backup agent is redirected to count-like features (indentation, words since sentence start, list index), plus capitalisation and coding language.
+- **Methodological finding (a likely write-up section).** The standard "probe survives J-removal" test is uninformative: every feature keeps ≥98% probe performance, *topic and language included*. Retention minus random-equal-rank-removal retention is within ±0.02 for all features. The J-space paper's POS/tense evidence (diff-in-means probe, its own top-25 atoms projected out, z-scores) has no random-subspace control, and on Qwen the same test also "passes" topic. Under our calibrated gate, POS and tense are J-enriched.
+- **col is a strong ground truth.** The model uses it (49× random under J-removed steering), it's not in J (enrichment ≈ 1, J-Lens at chance), it isn't self-reportable (free-answer Spearman 0.42, MAE no better than predicting the mean), and steering at L38 doesn't leak it into J-Lens.
+- **col_report didn't move into J under explicit report** (the paper reports numbers entering J). Number tokens are near zero in J-Lens on digit-free passages, and Qwen can't count without chain of thought (7% exact).
+- **Steering doses** (‖Δ‖/‖h‖ at q90/q99): col 0.11/0.16, tense 0.11/0.16, language 0.14/0.23. 2×q99 is void under the FVE guard.
+- **Gaps:** the J-only probe used accuracy/R², not log-loss/d′; steering sensitivity at L40/44 not done. A gain bug (Qwen's final norm uses 1+weight) was found and fixed, and all gated numbers come from corrected reruns.
