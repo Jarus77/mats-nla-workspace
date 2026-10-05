@@ -142,7 +142,7 @@ Every gate is evaluated at the steering layer and at each read layer 40/42/43/44
 
 | Arm | Where the vector is added | Role |
 |---|---|---|
-| **R (headline): read-layer steering** | At the reader's input layer and position: L42 for the NLA and the J-Lens (+43 under the alternative convention); L40 and L44 for OL. Added to the captured vector before it is handed to the reader. No model forward pass after the edit. | **Reader-input test.** Does the reader's output follow a feature moved in its input, with everything else fixed? No downstream layers, so no leak path into the J-space. |
+| **R (headline): read-layer steering** | At the reader's input layer and position: L42 for all three readers (primary; D7); L40/L44 for OL as sensitivity. Layer convention = block-42 output (K0 passed, D5). Added to the captured vector before it is handed to the reader. No model forward pass after the edit. | **Reader-input test.** Does the reader's output follow a feature moved in its input, with everything else fixed? No downstream layers, so no leak path into the J-space. |
 | **U (validation): upstream steering** | L38 at the read position(s), propagated through the model to 40–44. Also at later positions for behaviour (G4). | **On-distribution / behavioural validation.** The shift is produced by the model's own computation. Leak-prone, hence the leak detector. |
 
 **Direction:** J-removed probe direction u (§4.2); raw w for in-J features.
@@ -198,7 +198,7 @@ Every gate is evaluated at the steering layer and at each read layer 40/42/43/44
 | Reader | Layers read | Primary cell | Notes |
 |---|---|---|---|
 | NLA `ceselder/qwen3.6-27b-nla-rl` | 42 only | 42 | **`av_rl_adapters/iter_000400` primary** (pilot, wsbench); **iter_000300 robustness** (model card's guess). Layer convention fixed by the functional K0 (§9). |
-| Oracle Lens s3d-rl600 (open model-repo copy) | 40, 44 (on-contract); 42 (off-contract, reported) | max(40, 44) and mean(40, 44) | `{layer}` in the prompt; capture with the adapter disabled. |
+| Oracle Lens s3d-rl600 (open model-repo copy) | **42 (primary; same-layer comparison, D7)**; 40, 44 (sensitivity); full 20..60 step-4 layer curve on natural items | **42** | `{layer}` in the prompt; capture with the adapter disabled. Off-grid 42 is validated: it scores no worse than 40/44 on WorkspaceBench (D6). Report OL's per-family best single layer too (layer flexibility is a real OL capability). Never use per-item any-layer selection. |
 | J-Lens (neuronpedia n1000) | 40, 42, 44 (and 20..60 step 4 for presence) | 42 | Label-token direction scores. **In-J arm: competitor. Non-J arm: leak detector only** (≈0.5 by construction). |
 | Linear probe | 40, 42, 43, 44 | The read layer of the compared reader | Steering arm: ≈1 by construction (bounded fraction). Natural arm: a reference, not a ceiling. |
 | TextNLA (base Qwen3.6-27B, WorkspaceBench prompt-only template plus NLA-style instruction) | – | – | Text only. Two inputs: (a) the true prompt prefix; (b) the NLA's own explanation (the re-solving ceiling). A non-Qwen frontier model as a robustness check **[DECIDE: Gemini 3.8 Flash]**. |

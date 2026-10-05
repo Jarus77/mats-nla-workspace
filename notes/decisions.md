@@ -76,3 +76,13 @@ Lead's caveats on the critique (sent back to Fable in handoff #2):
 - **Oracle Lens at L42 (off-contract) is no worse than at L40/44** (typo .76 vs .72/.70; basic .45 vs .42/.48). Proposal [DECIDE, Fable]: add OL@42 as the *same-layer* comparison next to OL@40/44. That removes most of the layer confound Fable flagged.
 - Every arm is far below the prompt-only floor (0.69) on multihop_mt, consistent with heavy text inferability.
 - Throughput: olens ~0.5 s/cell (H100), nla ~0.7 s/cell batched (H200, 119 GB), jlens ~0.17 s/cell (H200; it runs out of memory on an H100). Batched NLA generation differs from unbatched only in the last tokens (bf16).
+
+## 2026-10-05 — D7: Fable on the same-layer comparison; best-of-layers checked mechanically
+- **L42 is the primary layer for all three readers.** OL at 40/44 is sensitivity. That OL is no worse off-grid shows interpolation across its training grid is safe.
+- **Mechanical check** (`experiments/01_wsbench_replication/best_of_layers_check.md`). The published rule is **per-item any-layer**: an item passes if *any* of the 11 layers hits. That is selection bias, and applying it reproduces the published values exactly. Gains over OL's per-family best single layer: typo +0.08 (0.78 @L24), multilingual +0.22 (0.43 @L56), multihop +0.16 (0.18 @L56), basic +0.11 (0.62 @L56).
+- **Framing** (protocol asymmetry, not error): OL's layer flexibility is a real capability.
+  - At OL's best single layer (mostly L56): typo 0.78 / multilingual 0.43 / multihop 0.18 / basic 0.62, vs NLA@42 0.73 / 0.42 / 0.15 / 0.57.
+  - So **OL at its best layer slightly exceeds the NLA, within noise**.
+  - **L42 is a weak layer for OL on multilingual/basic** (they peak late, at L56). The NLA's same-layer tie is therefore *less* impressive than it looks.
+  - Report both, with the OL layer curve.
+- **Remaining layer issues** (unchanged): the leak check for L38 steering, and feature probe accuracy reported at L42 specifically.
