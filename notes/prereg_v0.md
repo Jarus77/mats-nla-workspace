@@ -488,15 +488,17 @@ GPU work is allowed in prep. **[DECIDE: confirm MATS rules on pre-sprint work.]*
 - Pilot split excluded.
 - L42 primary for all readers.
 
+**Resolved by the lead 2026-10-06** (from earlier decisions in the log):
+- Clamp-validation threshold 0.55 and INLP k ≤ 8: **kept as written**.
+- FVE margin: **0.05, per-example paired, k ≥ 4** (D5: within-example SD ≈ 0.027, so ~0.04 is detectable).
+- Fireworks judge model: **`accounts/fireworks/models/kimi-k3`** (non-Qwen; live preflight passed).
+- TextNLA robustness model: **Gemini 3.8 Flash** (OpenRouter; no logprobs, so JSON P(A) in both option orders, max_tokens 600).
+- Sprint dates: **2026-10-19 → 2026-11-01**. No restrictions on pre-sprint work (confirmed by the user).
+- Contacting the pilot author: **no outreach**. Differentiate on rigour, cite the pilot in paragraph 1, and keep the re-analysis section descriptive (user decision).
+
 **Still open**
-- Clamp-validation threshold (0.55) and INLP k cap.
-- FVE margin (0.05; per-example, k ≥ 4).
-- G1 thresholds for backups (as run at gate stage?).
-- Fireworks judge model.
-- TextNLA robustness model.
-- (C) chain-arithmetic fallback and the J/non-J split planting arm.
-- Sprint dates and pre-sprint rules.
-- Contacting the pilot author.
+- G1 thresholds for backups. Default: the same thresholds as the primary gate stage, unless Fable objects.
+- (C): the chain-arithmetic fallback and the J/non-J split planting arm. Decided after the yield check (experiments/05).
 
 ## 15. Re-analysis of the concurrent pilot (descriptive; ≤1 page in the write-up)
 
