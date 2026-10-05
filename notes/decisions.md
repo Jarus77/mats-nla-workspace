@@ -219,3 +219,9 @@ Regex families, L42, n=400.
   - **the NLA rewrites the clue to fit the planted bridge** (12/12 free-form, e.g. "Eiffel Tower" → "Volvo… Sweden"). It follows the activation and confabulates a matching prompt. That's a qualitative H4-relevant finding: the NLA's "prompt reconstruction" is generated from the latent, not read from the text.
 - **Dose contrast with col:** readers track in-J plants at ‖Δ‖/‖h‖ ≈ 0.49 but col was steered at 0.11 (q90). The matched-dose calibration (running) is what decides whether the col null is interpretable.
 - **Not done:** FVE guard on plants, OL@40/44, the NLA subject-recovery check, and a J-removed-component plant with the leak check (the optional split arm).
+
+## 2026-10-06 — D17: WorkspaceBench prompt-only floor check
+- **Confirmed issue, cause inconclusive.** Under the thinking-off rendering every reader uses, the frozen mt prompt-only floors (0.67/0.42/0.69/0.59) are ~0.14 too low. Re-run: 0.83/0.47/0.84/0.80, significant on 3 of 4 families (z ≈ +2.2 to +3.3); an earlier independent draw gave the same pattern.
+- No rendering reproduces the frozen values exactly: thinking-on with text kept and the raw no-template rendering are closest (~0.08). The frozen run's empty cells are unexplained; the generator (olens_sglang) isn't public.
+- **Implication:** treat the frozen floors as a lower bound. Published reader-vs-floor gaps flatter the readers. Our conclusions rest on our own text arms, not the frozen floor.
+- **Action [DECIDE, user]:** consider a polite, factual issue on camilablank/workspace-bench with the re-run table (an outward-facing action, so it's the user's call, ideally after the sprint or once the write-up is drafted).

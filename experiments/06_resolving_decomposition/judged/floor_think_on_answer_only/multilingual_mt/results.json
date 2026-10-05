@@ -1,0 +1,3465 @@
+{
+ "schema_version": 1,
+ "family": "multilingual_mt",
+ "complete": false,
+ "pinned_instrument": true,
+ "config": {
+  "judge_model": "regex",
+  "prompt_version": "mt-regex-2026-09-23",
+  "reasoning": null,
+  "layers": null,
+  "dry_run": false,
+  "concurrency": 64,
+  "rpm": 240.0,
+  "allow_missing": false,
+  "items": null,
+  "limit": 0,
+  "kind": "prose",
+  "layers_judged": [
+   42
+  ],
+  "scorer": "regex",
+  "scorer_version": "mt-regex-2026-09-23",
+  "contract": {
+   "multi_token": true,
+   "include_target": false,
+   "conjunctive_units": true
+  },
+  "summarizer": null,
+  "summarizer_model": null
+ },
+ "n_items": 100,
+ "counts": {
+  "n_expected_cells": 100,
+  "n_missing_cells": 0,
+  "n_unjudged_cells": 0,
+  "n_empty_cells": 100,
+  "skipped_rows": 0,
+  "spend_usd": 0.0
+ },
+ "numbers": {
+  "metric": "pass_rate",
+  "value": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "chance": null,
+  "chance_label": "no analytic floor for an any-layer conjunction of exact-form matches; the measured floor is the prompt-only baseline (the MC lucky-guessing floor does not apply to the regex scorer)",
+  "higher_is_better": true,
+  "extras": {
+   "n_calls": 0,
+   "any_hit_rate": 0.0,
+   "unit_any_layer": {
+    "concept": 0.0,
+    "language": 0.0
+   },
+   "language_of_readout": {},
+   "n_items_decided": 100,
+   "n_items_undecided": 0,
+   "n_items_without_readouts": 0
+  }
+ },
+ "rows": [
+  {
+   "id": "mlh-ar-hourglass",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-octopus",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-sandpaper",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-spinal-cord",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-vacuum-cleaner",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-wool",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-aurora",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-chickenpox",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-loom",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-thyroid",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-vacuum-cleaner-2",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ar-chamomile",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-cooking-pot",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-screwdriver",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-sunflower",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-ilianthos",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-fire-extinguisher",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-tapemeasure",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-wind-turbine",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-xray",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-el-xypnitiri",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-kahvinkeitin",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-vetoketju",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-auringonpimennys",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-silitysrauta",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-toothbrush",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-fi-tortoise",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-alarm-clock",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-dishwasher",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-pressure-cooker",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-sewingmachine",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-tapemeasure",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-washing-machine",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-toothbrush",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-vacuum-cleaner",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-escalator",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-polar-bear",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-he-spine",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-candlestick",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-esokabat",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-gerincvelo",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-porszivo",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-varrogep",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-hallokeszulek",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-ironingboard",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-meroszalag",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-napraforgo",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-szitakoto",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-hu-canopener",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-cacar-air",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-firefly",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-gantungan-baju",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-gerhanabulan",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-hailstone",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-mesin-jahit",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-penghapus",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-sarung-tangan",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-tengkorak",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-id-trash-bin",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ko-vacuum-cleaner",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ko-yeonpilkkakki",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-biedronka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-kasztanowiec",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-muchomor",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-odkurzacz",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-pila-lancuchowa",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-pokrzywa-2",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-przedluzacz",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-strzykawka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-trzepaczka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-pl-trzustka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-caterpillar",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-dandelion",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-fryingpan",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-meatgrinder",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-nakovalnya",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-payalnik",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-skvorechnik",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-sosulka",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-thimble",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-ru-anthill",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-sw-mwarobaini",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-sw-chandarua",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-bademcik",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-camasir-makinesi",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-dis-macunu",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-omurilik",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-kaplumbaga",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-kartanesi",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-tr-salyangoz",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-blender",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-cactus",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-chuonchuon",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-clothesiron",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-extinguisher",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-firefly",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-huyet-ap",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-neckscarf",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-pressurecooker",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  },
+  {
+   "id": "mlh-vi-raincoat",
+   "roles": [
+    "concept",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "concept": false,
+    "language": false
+   },
+   "unit_langs": {
+    "concept": [],
+    "language": []
+   },
+   "first_lang": {
+    "concept": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "concept": [],
+      "language": []
+     },
+     "empty": true
+    }
+   }
+  }
+ ]
+}

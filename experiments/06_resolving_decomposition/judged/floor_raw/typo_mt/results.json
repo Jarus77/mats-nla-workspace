@@ -1,0 +1,3448 @@
+{
+ "schema_version": 1,
+ "family": "typo_mt",
+ "complete": true,
+ "pinned_instrument": true,
+ "config": {
+  "judge_model": "regex",
+  "prompt_version": "mt-regex-2026-09-23",
+  "reasoning": null,
+  "layers": null,
+  "dry_run": false,
+  "concurrency": 64,
+  "rpm": 240.0,
+  "allow_missing": false,
+  "items": null,
+  "limit": 0,
+  "kind": "prose",
+  "layers_judged": [
+   42
+  ],
+  "scorer": "regex",
+  "scorer_version": "mt-regex-2026-09-23",
+  "contract": {
+   "multi_token": true,
+   "include_target": false,
+   "conjunctive_units": true
+  },
+  "summarizer": null,
+  "summarizer_model": null
+ },
+ "n_items": 100,
+ "counts": {
+  "n_expected_cells": 100,
+  "n_missing_cells": 0,
+  "n_unjudged_cells": 0,
+  "n_empty_cells": 0,
+  "skipped_rows": 0,
+  "spend_usd": 0.0
+ },
+ "numbers": {
+  "metric": "pass_rate",
+  "value": 0.8,
+  "ci95": [
+   0.72,
+   0.87
+  ],
+  "chance": null,
+  "chance_label": "no analytic floor for an any-layer conjunction of exact-form matches; the measured floor is the prompt-only baseline (the MC lucky-guessing floor does not apply to the regex scorer)",
+  "higher_is_better": true,
+  "extras": {
+   "n_calls": 0,
+   "any_hit_rate": 0.8,
+   "unit_any_layer": {
+    "correction": 0.8
+   },
+   "language_of_readout": {
+    "correction": {
+     "en": 80
+    }
+   },
+   "n_items_decided": 100,
+   "n_items_undecided": 0,
+   "n_items_without_readouts": 0
+  }
+ },
+ "rows": [
+  {
+   "id": "tyh-novel-interpretability-hand",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-narcissism-hand",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-acciaccatura-b6",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-aestivation",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-aleatoric",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-amatriciana",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-amiodarone",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-anaphylaxis",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-angiosperm",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-anticoagulant",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-anticyclone",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-antihistamine",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-appendectomy",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-appoggiatura",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-archipelago",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-arpeggiated",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-arthropods",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-avgolemono",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-bathymetry",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-bouillabaisse",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-bronchiectasis",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-bronchodilator",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-bryophytes",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-calligraphy",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-carbonara",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-cardiomyopathy",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-cartography",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-cassoulet",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-cephalapods",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chaparral",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-charcuterie",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chateaubriand",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chelicerates",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chemosynthesis",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chiaroscuro",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chimichurri",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chinoiserie",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chitinous",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chloroplast",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-cholecystectomy",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chromatophores",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chrysalis",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-chrysanthemum",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-clavichord",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-coleoptera",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-coloratura",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-confluence",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-contrabassoon",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-contrapposto",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-novel-conurbation",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-acclamation",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-adsorption",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-auspicious",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-cassation",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-climactic",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-corporeal",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-deference",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-depreciate",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-effluence",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-exorcised",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-expatiate",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-foundered",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-gastronomy",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-hyperbola",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-hyperthermia",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-immortality",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-insidious",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-insolvent",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-intestate",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-ordnance",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-phosphorus",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-prophesy-batch5",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-proscription",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-prostrate",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-relegation",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-sandpiper",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-stationery",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-tortuous",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-torturous",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-veracity",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-allusion",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-commutation",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-conformation",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-immanence",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-real-prophecies",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-005",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-006-4",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-156p078",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-306minus149",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-324",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-369",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-3a",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-3d",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-512m348",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-812minus379",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-add-47-76",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-b2-01-2",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-b2-01-3",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-b2-02-3",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "tyh-arith-b2-03",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "42": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  }
+ ]
+}

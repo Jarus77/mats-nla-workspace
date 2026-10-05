@@ -52,7 +52,7 @@ All arms use the readers' sampling settings: T=1, top_p 0.95, top_k 64, 256 new 
 
 **The template matters a lot.** For the same model, the NLA register gives typo 0.45 and the wsbench template gives 0.85. Gemini on multilingual goes 0.73 → 0.28. "Text explains it" is therefore a claim about what the text makes *available*. It is robust only under a union of templates, which is why T_any exists.
 
-**The frozen prompt-only floor is too low.** Our T_wsb uses the frozen floor's exact template and sampling. It scores 0.85/0.58/0.82/0.77 against `evals/baselines/prompt_only.json` 0.67/0.42/0.69/0.59 (+0.13 to +0.18). The cause is not verified. The frozen run had 1–4 empty cells per family; a thinking-mode or rendering difference is a candidate. Either way, published readers vs "prompt-only floor" understates how text-available these targets are.
+**The frozen prompt-only floor is too low.** Our T_wsb uses the frozen floor's exact template and sampling. It scores 0.85/0.58/0.82/0.77 against `evals/baselines/prompt_only.json` 0.67/0.42/0.69/0.59 (+0.13 to +0.18). The cause is inconclusive; see "Prompt-only floor verification" at the end. Either way, published readers vs "prompt-only floor" understates how text-available these targets are.
 
 ## 2. Item-level decomposition (pooled n=400; per-family tables in `data/tables.md`)
 
@@ -190,3 +190,50 @@ Re-run:
     PYTHONPATH=../../infra modal run --detach qwen_modal.py::main
     ../../.venv/bin/python gemini_gen.py && ../../.venv/bin/python score.py && ../../.venv/bin/python analyze.py
     ../../.venv/bin/python claims.py judge && ../../.venv/bin/python claims.py validate && ../../.venv/bin/python claims_analyze.py
+
+## Prompt-only floor verification (follow-up)
+
+**Verdict: confirmed issue, cause inconclusive.** Under the thinking-off chat rendering that every reader and every bank uses (`docs/read_sites.md`), the frozen floor is about 0.14 too low. Thinking-on and raw rendering both come closer (mean |Δ| 0.08–0.09), but neither reproduces it. The generation code that would settle it is not public.
+
+**Provenance**, from the upstream repo `camilablank/workspace-bench` via `gh api`:
+- `prompt_only.json` history: d9a1aa64 (09-16, the lucky-guessing commit), 67cc27d7 (09-18, the 11 new floors), a49d4b04 (09-18), af8059f0 (09-23, mt families re-scored with regex).
+- **Generation date.** The six mt entries come from one generation run, `gen-prompt-only-hard-mt`. It was frozen on 2026-09-16 under the MC judge (typo 0.46 / multilingual 0.37 / multihop 0.52 / basic 0.40). On 09-23 it was re-scored with regex "from the SAME prompt-only summaries" (baselines README), giving 0.67 / 0.42 / 0.69 / 0.59. The rows are replicated per layer and judged at L20.
+- **Recorded settings.** `_source` records the template and sampling: k=1, T=1.0, top_p 0.95, top_k 64, max_new 256, no stop, empty output_prefix, model `Qwen/Qwen3.6-27B`, no adapter.
+- **Not recorded:** chat rendering, the `enable_thinking` setting, the model revision, the seed and the serving stack.
+- **The generator is not in the bench.** The README says it is the source repo's `prompt_only_summary` (cf. `olens_sglang`, which suggests SGLang serving). GitHub code search finds no public copy, and the summaries themselves are not published, so I could not check them for `<think>` remnants.
+- **Empty cells:** the frozen run has typo 3, multilingual 4, multihop 1, basic 1. None of our 3×400 generations is empty.
+- Our model is the volume snapshot `6a9e13bd`.
+
+**Re-run of the frozen template.** Base Qwen, k=1, seed 0, the `_source` sampling, one H100, about 12 GPU-minutes. Shown as pass rate, then (empty cells / `</think>` closed):
+
+| rendering | typo_mt | multilingual_mt | multihop_mt | basic_readout_mt | mean abs Δ vs frozen |
+|---|---|---|---|---|---|
+| **frozen floor** (empty cells) | 0.67 (3) | 0.42 (4) | 0.69 (1) | 0.59 (1) | – |
+| chat, thinking off | 0.83 (0/0) | 0.47 (0/0) | 0.84 (0/0) | 0.80 (0/0) | 0.143 |
+| (earlier draw: T_wsb s0/s1/s2) | 0.85/0.83/0.83 | 0.58/0.55/0.51 | 0.82/0.79/0.88 | 0.77/0.78/0.80 | 0.13–0.15 |
+| chat, thinking on, thinking text kept | 0.64 (0/0) | 0.59 (0/0) | 0.78 (0/0) | 0.54 (0/0) | 0.085 |
+| chat, thinking on, answer after `</think>` only | 0.00 (100/0) | 0.00 (100/0) | 0.00 (100/0) | 0.00 (100/0) | 0.593 |
+| raw text, no chat template | 0.80 (0/50) | 0.45 (0/53) | 0.79 (0/41) | 0.65 (0/53) | 0.080 |
+
+The two-sample z-scores against frozen, per family (typo / multilingual / multihop / basic), point the same way:
+
+| rendering | typo | multilingual | multihop | basic |
+|---|---|---|---|---|
+| thinking off (both draws) | +2.7 to +3.0 | +0.7 / +2.3 | +2.2 to +2.5 | +2.8 to +3.3 |
+| thinking on | −0.4 | +2.4 | +1.4 | −0.7 |
+| raw | +2.1 | +0.4 | +1.6 | +0.9 |
+
+Reading:
+- **Thinking off is significantly above frozen** on typo, multihop and basic, in two independent draws.
+- **Thinking on with the thinking text kept** matches typo and basic. Within 256 tokens Qwen never closes `</think>`, so 100% of cells are thinking text, and the regex strips only the tags. But multilingual is too high (+0.17).
+- **Thinking on, answer-only** scores 0 everywhere, so the frozen run did not discard thinking content.
+- **Raw rendering** is the closest overall but is still +0.13 on typo. In about half its cells the model emits its own empty `<think></think>`.
+- **No rendering produces empty cells**, so the frozen run's 1–4 empty cells per family are unexplained. One possibility is a serving-side difference such as SGLang stop or parse behaviour.
+- Most cells hit the 256-token cap in every rendering (84–100%), matching the README's truncation note.
+
+**Implications:**
+- Read the frozen mt prompt-only floors as a *lower bound* on prompt-only performance.
+- With thinking off, the same text-only model with the same template scores about 0.80 / 0.47–0.58 / 0.82–0.88 / 0.77–0.80. That makes the "readers vs prompt-only" gap worse for every reader than the published floors imply.
+- **None of the §1–§5 conclusions above depend on the frozen floor.** They use our own text arms.
+
+Files: `floor_modal.py` (3 renderings; `data/floor_gen.json`), `floor_score.py` (`judged/floor_*`, `data/floor_tables.md`).
