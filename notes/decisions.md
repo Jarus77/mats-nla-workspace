@@ -109,3 +109,19 @@ Accepted changes (prereg revision 3, pending Fable):
 4. **OL candidate templates must be mined** from OL's own generations (it writes content continuations, not label bullets).
 
 Toy observation (NOT a result): on the J-removed language direction the NLA tracks (zero-subtracted 0.96, paired win 0.91, fraction 0.19), while OL (0.06–0.15) and the J-Lens (0.00) anti-track. This is the H3-type contrast. With a ± contrast it can't be norm dilution, so OL's anti-tracking needs explaining (the non-J part of the language direction may be anti-aligned with what OL uses).
+
+## 2026-10-05 — D9: Fable round 3 (handoff #3), all accepted
+1. **Correction to D8:** the ± contrast is NOT dilution-immune. For a feature-bearing item h·v ≠ 0, so |h+Δv| ≠ |h−Δv|. Readers that renormalise (OL `16000·unit(h)`, J-Lens cosine) can anti-track from norm asymmetry alone, which predicts the toy pattern exactly.
+   - **Test first:** norm-preserving steer h' = (h+Δv)·‖h‖/‖h+Δv‖ for all readers. If OL's anti-tracking collapses, norm-preserving steering becomes mandatory everywhere, including the headline. If it survives, try steering along the INLP subspace or the diff-in-means direction.
+   - Check whether the NLA's norm-matched injection also renormalises.
+2. **No subtraction of a noisy null.** Report the paired win rate and the per-item shift against a random-direction null band (K directions, same norm, same ± construction), with effect size in null-SD units. Fraction-of-probe stays as the magnitude measure.
+3. **Leak detector:** two-sided and calibrated to the empirical null band of random-direction J-Lens AUROCs (a fixed 0.05 is about the noise floor at n=240).
+   - With no spectral elbow, no rank makes a direction "J-invisible". The removal rank only constructs the steering vector; **the leak check is what certifies a dose as non-J**. State this in the prereg.
+4. **Final G2** (with the old survival test reported alongside):
+   - **Primary, geometric:** enrichment of the **diff-in-means** direction ≤ 1.5 at r* and 4r*. INLP top-k is a supplement.
+   - **Functional:** the full J-Lens readout doesn't track the feature on natural items (inside the random band).
+   - **Labels:** non-J = both pass; **diffuse-but-J-readable** = enrichment ≤ 1.5 but J-Lens reads it (reported, excluded); in-J = enriched and readable.
+   - The J-only-probe test (log-loss / d′) becomes secondary.
+5. **J-space paper's POS/tense evidence:** check whether it's survival without a random-subspace control. If so, those features may be diffuse-but-J-readable. If NJ2/NJ3 fail, P1 fires honestly, and "the standard non-J test is uninformative" becomes a result.
+6. **Templates:** mined on a held-out split, frozen before steering, same procedure for every reader. Select by natural-item discriminability (not steering response). Keep the fixed label template as a 4th column, and report fraction-of-probe template-averaged with its range.
+7. **Order:** the norm-preserving toy re-run first, then feature results under the new G2, then decide whether (A) has features or P1 fires.
