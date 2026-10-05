@@ -1,0 +1,43 @@
+  gemini nj1_col nla:nj1_col:m2: run spend $0.391, key delta $0.36
+  gemini nj1_col nla:nj1_col:m0: run spend $0.747, key delta $0.72
+  gemini nj1_col ol:nj1_col:m3: run spend $1.054, key delta $1.10
+  gemini nj1_col ol:nj1_col:m0: run spend $1.408, key delta $1.42
+  gemini nj1_col ol:nj1_col:m4: run spend $1.815, key delta $1.78
+  gemini nj1_col nla:nj1_col:fixed: run spend $2.204, key delta $2.19
+Gemini cap reached (key delta $2.56); stopping
+
+== nj1_col
+nla selected  reader 0.58 | textQwen 0.50 | gemini 0.92 | rho +0.11 | reader|text 0.59  Readout taken late in the span of the wrapped line
+nla selected  reader 0.56 | textQwen 0.55 | gemini 0.92 | rho +0.28 | reader|text 0.55  Mid-sentence continuation located near the end of 
+nla selected  reader 0.55 | textQwen 0.40 | gemini 0.97 | rho +0.06 | reader|text 0.55  The token appears far into of the wrapped line.
+nla secondary reader 0.51 | textQwen 0.49 | gemini   -  | rho +0.02 | reader|text 0.51  Token located around column 70 of the hard-wrapped
+nla secondary reader 0.50 | textQwen 0.52 | gemini   -  | rho +0.21 | reader|text 0.49  Positioned roughly 70 characters past the newline.
+nla fixed_lab reader 0.50 | textQwen 0.54 | gemini 0.97 | rho -0.00 | reader|text 0.50  The current position is near the end of a long lin
+nla fixed_num reader 0.45 | textQwen 0.40 | gemini   -  | rho +0.03 | reader|text 0.46  The current line is about seventy characters long
+ol  selected  reader 0.56 | textQwen 0.53 | gemini 0.91 | rho +0.17 | reader|text 0.55  - deep after a newline
+ol  selected  reader 0.49 | textQwen 0.65 | gemini 0.97 | rho -0.15 | reader|text 0.51  - line position: late in the line
+ol  selected  reader 0.48 | textQwen 0.53 | gemini 0.63 | rho +0.16 | reader|text 0.48  - current line depth: deep
+ol  secondary reader 0.54 | textQwen 0.43 | gemini   -  | rho -0.17 | reader|text 0.52  - column count: 55 to 85 characters
+ol  secondary reader 0.47 | textQwen 0.44 | gemini   -  | rho +0.21 | reader|text 0.49  - column 70
+ol  fixed_lab reader 0.45 | textQwen 0.47 | gemini   -  | rho -0.10 | reader|text 0.45  - near the end of a long line
+ol  fixed_num reader 0.49 | textQwen 0.48 | gemini   -  | rho +0.13 | reader|text 0.49  - seventy characters
+MEAN3 nla: reader 0.60 0.51-0.69 | textQwen 0.48 0.39-0.57 | gemini 0.97 | rho +0.31 | reader|text 0.61 | reader|gemini 0.51
+MEAN3 ol: reader 0.55 0.45-0.63 | textQwen 0.62 0.54-0.71 | gemini 0.97 | rho +0.24 | reader|text 0.52 | reader|gemini 0.47
+Gemini cap reached (key delta $2.55); stopping
+
+== nj1_col_break
+nla selected  reader 0.56 | textQwen 0.63 | gemini   -  | rho +0.07 | reader|text 0.55  Wrap state: line break far away.
+nla selected  reader 0.52 | textQwen 0.34 | gemini   -  | rho +0.08 | reader|text 0.55  Line break status: mid-line, far from wrap thresho
+nla selected  reader 0.46 | textQwen 0.60 | gemini   -  | rho +0.13 | reader|text 0.45  Automatic linewrap decision is not breaking yet.
+nla secondary reader 0.47 | textQwen 0.40 | gemini   -  | rho +0.04 | reader|text 0.47  Characters remaining before wrap: 25+ characters.
+nla secondary reader 0.46 | textQwen 0.64 | gemini   -  | rho +0.02 | reader|text 0.47  Distance to automatic line break: over 25 characte
+nla fixed_lab reader 0.51 | textQwen 0.51 | gemini   -  | rho -0.02 | reader|text 0.51  A line break is not coming yet
+ol  selected  reader 0.55 | textQwen 0.41 | gemini   -  | rho -0.11 | reader|text 0.53  - line wrap status: mid-line, no break yet
+ol  selected  reader 0.54 | textQwen 0.53 | gemini   -  | rho -0.09 | reader|text 0.54  - far from linewrap boundary
+ol  selected  reader 0.50 | textQwen 0.54 | gemini   -  | rho -0.09 | reader|text 0.50  - line break is far away
+ol  secondary reader 0.46 | textQwen 0.49 | gemini   -  | rho -0.05 | reader|text 0.46  - characters before wrap: 25+
+ol  secondary reader 0.42 | textQwen 0.65 | gemini   -  | rho -0.11 | reader|text 0.43  - distance to line break: over 25 chars
+ol  fixed_lab reader 0.46 | textQwen 0.59 | gemini   -  | rho +0.21 | reader|text 0.43  - line break not coming yet
+MEAN3 nla: reader 0.54 0.45-0.63 | textQwen 0.50 0.41-0.59 | gemini nan | rho +0.14 | reader|text 0.54 | reader|gemini nan
+MEAN3 ol: reader 0.55 0.46-0.64 | textQwen 0.51 0.42-0.60 | gemini nan | rho -0.08 | reader|text 0.55 | reader|gemini nan
+{'spend_usd_this_run': 2.2037, 'key_usage_delta_usd': 2.5383, 'calls': 1920, 'failed': 0, 'unparsed': 0}

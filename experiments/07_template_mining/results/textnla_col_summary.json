@@ -1,0 +1,770 @@
+{
+ "nj1_col": {
+  "per_template": [
+   {
+    "template": "nla:nj1_col:m3",
+    "reader": "nla",
+    "role": "selected",
+    "cand_a": "Readout taken late in the span of the wrapped line.",
+    "reader_auroc": {
+     "auroc": 0.58375,
+     "lo": 0.4935741893796992,
+     "hi": 0.6687864639793155,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.50421875,
+     "lo": 0.40710199101225725,
+     "hi": 0.5887086300309597,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.10968885503339976,
+    "reader_auroc_after_regressing_text": 0.5871875,
+    "sign_agreement": 0.5125,
+    "textnla_gemini_auroc": {
+     "auroc": 0.92234375,
+     "lo": 0.8700333333333333,
+     "hi": 0.9669202785166641,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "gemini_n_valid": 160,
+    "spearman_reader_vs_gemini": 0.12728640999054677
+   },
+   {
+    "template": "nla:nj1_col:m2",
+    "reader": "nla",
+    "role": "selected",
+    "cand_a": "Mid-sentence continuation located near the end of a hard-wrapped line.",
+    "reader_auroc": {
+     "auroc": 0.56234375,
+     "lo": 0.47005686545110065,
+     "hi": 0.6496715002847222,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.54828125,
+     "lo": 0.4616109597412982,
+     "hi": 0.6370207433752906,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.2803117309269893,
+    "reader_auroc_after_regressing_text": 0.5496875,
+    "sign_agreement": 0.6125,
+    "textnla_gemini_auroc": {
+     "auroc": 0.92,
+     "lo": 0.8750529245047098,
+     "hi": 0.9576340808452061,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "gemini_n_valid": 160,
+    "spearman_reader_vs_gemini": 0.13616504626986176
+   },
+   {
+    "template": "nla:nj1_col:m0",
+    "reader": "nla",
+    "role": "selected",
+    "cand_a": "The token appears far into of the wrapped line.",
+    "reader_auroc": {
+     "auroc": 0.54546875,
+     "lo": 0.45834900664091804,
+     "hi": 0.6388681342659599,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.4046875,
+     "lo": 0.3221721712369159,
+     "hi": 0.4943837783642458,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.0633130200398453,
+    "reader_auroc_after_regressing_text": 0.55125,
+    "sign_agreement": 0.525,
+    "textnla_gemini_auroc": {
+     "auroc": 0.970859375,
+     "lo": 0.9450022041981769,
+     "hi": 0.9900821625485736,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "gemini_n_valid": 160,
+    "spearman_reader_vs_gemini": 0.11767550260430448
+   },
+   {
+    "template": "nla:nj1_col:m5",
+    "reader": "nla",
+    "role": "secondary_numeric",
+    "cand_a": "Token located around column 70 of the hard-wrapped line.",
+    "reader_auroc": {
+     "auroc": 0.5065625,
+     "lo": 0.4146198551829268,
+     "hi": 0.5906327664515826,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.49,
+     "lo": 0.4031137978573216,
+     "hi": 0.5775726324642383,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.01767549513652877,
+    "reader_auroc_after_regressing_text": 0.50640625,
+    "sign_agreement": 0.5125
+   },
+   {
+    "template": "nla:nj1_col:m6",
+    "reader": "nla",
+    "role": "secondary_numeric",
+    "cand_a": "Positioned roughly 70 characters past the newline.",
+    "reader_auroc": {
+     "auroc": 0.49828125,
+     "lo": 0.4025148618497464,
+     "hi": 0.58791801741927,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.51703125,
+     "lo": 0.43197870692992646,
+     "hi": 0.6066869893148963,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.2057599906246338,
+    "reader_auroc_after_regressing_text": 0.48546875,
+    "sign_agreement": 0.55
+   },
+   {
+    "template": "nla:nj1_col:fixed",
+    "reader": "nla",
+    "role": "fixed_label",
+    "cand_a": "The current position is near the end of a long line",
+    "reader_auroc": {
+     "auroc": 0.499375,
+     "lo": 0.416171743697479,
+     "hi": 0.586020502425191,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.53921875,
+     "lo": 0.4483900384998448,
+     "hi": 0.6233800261906525,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.0015410758232743465,
+    "reader_auroc_after_regressing_text": 0.4996875,
+    "sign_agreement": 0.525,
+    "textnla_gemini_auroc": {
+     "auroc": 0.969609375,
+     "lo": 0.9426418351678179,
+     "hi": 0.9915334704858364,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "gemini_n_valid": 160,
+    "spearman_reader_vs_gemini": 0.01061837806866788
+   },
+   {
+    "template": "nla:nj1_col:fixed_numeric",
+    "reader": "nla",
+    "role": "fixed_numeric",
+    "cand_a": "The current line is about seventy characters long",
+    "reader_auroc": {
+     "auroc": 0.4546875,
+     "lo": 0.3609663651526418,
+     "hi": 0.5490196681022464,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.4040625,
+     "lo": 0.3165131604682572,
+     "hi": 0.4934343240381346,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.032599906246337754,
+    "reader_auroc_after_regressing_text": 0.46171875,
+    "sign_agreement": 0.4875
+   },
+   {
+    "template": "ol:nj1_col:m3",
+    "reader": "ol",
+    "role": "selected",
+    "cand_a": "- deep after a newline",
+    "reader_auroc": {
+     "auroc": 0.55828125,
+     "lo": 0.4657067226890756,
+     "hi": 0.6454448136159355,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.526875,
+     "lo": 0.43807354356843864,
+     "hi": 0.6188370681605975,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.17202918082737606,
+    "reader_auroc_after_regressing_text": 0.5534375,
+    "sign_agreement": 0.575,
+    "textnla_gemini_auroc": {
+     "auroc": 0.911171875,
+     "lo": 0.8607780551916042,
+     "hi": 0.9519390835382755,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "gemini_n_valid": 160,
+    "spearman_reader_vs_gemini": 0.0718838227689895
+   },
+   {
+    "template": "ol:nj1_col:m0",
+    "reader": "ol",
+    "role": "selected",
+    "cand_a": "- line position: late in the line",
+    "reader_auroc": {
+     "auroc": 0.49484375,
+     "lo": 0.40816496020962734,
+     "hi": 0.5867624356302447,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.64640625,
+     "lo": 0.5539034569230364,
+     "hi": 0.7283243001140419,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.145060353920075,
+    "reader_auroc_after_regressing_text": 0.514375,
+    "sign_agreement": 0.4125,
+    "textnla_gemini_auroc": {
+     "auroc": 0.97421875,
+     "lo": 0.9440447005879825,
+     "hi": 0.9941083082082809,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "gemini_n_valid": 160,
+    "spearman_reader_vs_gemini": 0.06809232085029919
+   },
+   {
+    "template": "ol:nj1_col:m4",
+    "reader": "ol",
+    "role": "selected",
+    "cand_a": "- current line depth: deep",
+    "reader_auroc": {
+     "auroc": 0.4834375,
+     "lo": 0.39533993146820184,
+     "hi": 0.5742893959603658,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.526328125,
+     "lo": 0.4348762791053922,
+     "hi": 0.612306578053529,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.15902019984334514,
+    "reader_auroc_after_regressing_text": 0.47515625,
+    "sign_agreement": 0.51875,
+    "textnla_gemini_auroc": {
+     "auroc": 0.63203125,
+     "lo": 0.5468334885809472,
+     "hi": 0.7138378188076984,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "gemini_n_valid": 160,
+    "spearman_reader_vs_gemini": -0.04902578629719308
+   },
+   {
+    "template": "ol:nj1_col:m5",
+    "reader": "ol",
+    "role": "secondary_numeric",
+    "cand_a": "- column count: 55 to 85 characters",
+    "reader_auroc": {
+     "auroc": 0.54046875,
+     "lo": 0.4482834083469094,
+     "hi": 0.629067471590909,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.42953125,
+     "lo": 0.3431005877045121,
+     "hi": 0.5200897146222753,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.17195593577874135,
+    "reader_auroc_after_regressing_text": 0.516875,
+    "sign_agreement": 0.4375
+   },
+   {
+    "template": "ol:nj1_col:m6",
+    "reader": "ol",
+    "role": "secondary_numeric",
+    "cand_a": "- column 70",
+    "reader_auroc": {
+     "auroc": 0.47453125,
+     "lo": 0.38240472254884333,
+     "hi": 0.5613902625322096,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.436875,
+     "lo": 0.3492886693684566,
+     "hi": 0.5240659364562922,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.21234618539786712,
+    "reader_auroc_after_regressing_text": 0.494375,
+    "sign_agreement": 0.5625
+   },
+   {
+    "template": "ol:nj1_col:fixed",
+    "reader": "ol",
+    "role": "fixed_label",
+    "cand_a": "- near the end of a long line",
+    "reader_auroc": {
+     "auroc": 0.45390625,
+     "lo": 0.3628312872601001,
+     "hi": 0.5388380332970519,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.47046875,
+     "lo": 0.3845488266280147,
+     "hi": 0.5569398519918124,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.10121879760928162,
+    "reader_auroc_after_regressing_text": 0.45015625,
+    "sign_agreement": 0.4375
+   },
+   {
+    "template": "ol:nj1_col:fixed_numeric",
+    "reader": "ol",
+    "role": "fixed_numeric",
+    "cand_a": "- seventy characters",
+    "reader_auroc": {
+     "auroc": 0.4940625,
+     "lo": 0.3993917761012213,
+     "hi": 0.5866579494842944,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.47671875,
+     "lo": 0.3849381687432987,
+     "hi": 0.5648026139050074,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.12668463611859837,
+    "reader_auroc_after_regressing_text": 0.49203125,
+    "sign_agreement": 0.55
+   }
+  ],
+  "mean_of_selected": {
+   "nla": {
+    "reader": {
+     "auroc": 0.5990625,
+     "lo": 0.5084549950969116,
+     "hi": 0.691205946666737,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local": {
+     "auroc": 0.47640625,
+     "lo": 0.38714853454968945,
+     "hi": 0.5662174929332463,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman": 0.3085257236610805,
+    "reader_after_text": 0.61203125,
+    "textnla_gemini": {
+     "auroc": 0.9709375,
+     "lo": 0.9437056456505827,
+     "hi": 0.9909361191690107,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "reader_after_gemini": 0.51203125
+   },
+   "ol": {
+    "reader": {
+     "auroc": 0.5475,
+     "lo": 0.45301554621848744,
+     "hi": 0.6325818047160213,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local": {
+     "auroc": 0.6240625,
+     "lo": 0.5397504791894853,
+     "hi": 0.7140472945922641,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman": 0.24000058596038906,
+    "reader_after_text": 0.52453125,
+    "textnla_gemini": {
+     "auroc": 0.9665625,
+     "lo": 0.933801791581912,
+     "hi": 0.9900250084676745,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "reader_after_gemini": 0.4703125
+   }
+  }
+ },
+ "nj1_col_break": {
+  "per_template": [
+   {
+    "template": "nla:nj1_col_break:m4",
+    "reader": "nla",
+    "role": "selected",
+    "cand_a": "Wrap state: line break far away.",
+    "reader_auroc": {
+     "auroc": 0.5565625,
+     "lo": 0.4705653584501054,
+     "hi": 0.6475526398491515,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.630625,
+     "lo": 0.5434533758538639,
+     "hi": 0.717396824911501,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.06869072182317691,
+    "reader_auroc_after_regressing_text": 0.5471875,
+    "sign_agreement": 0.5375
+   },
+   {
+    "template": "nla:nj1_col_break:m1",
+    "reader": "nla",
+    "role": "selected",
+    "cand_a": "Line break status: mid-line, far from wrap threshold.",
+    "reader_auroc": {
+     "auroc": 0.52453125,
+     "lo": 0.4340319769528841,
+     "hi": 0.6156237976489556,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.3378125,
+     "lo": 0.2563877443697148,
+     "hi": 0.4199454283887468,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.08048751904371264,
+    "reader_auroc_after_regressing_text": 0.545,
+    "sign_agreement": 0.5375
+   },
+   {
+    "template": "nla:nj1_col_break:m2",
+    "reader": "nla",
+    "role": "selected",
+    "cand_a": "Automatic linewrap decision is not breaking yet.",
+    "reader_auroc": {
+     "auroc": 0.4634375,
+     "lo": 0.37155019384398497,
+     "hi": 0.5537857315513692,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.59890625,
+     "lo": 0.5034815810223323,
+     "hi": 0.6837178144428503,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.12539845306457284,
+    "reader_auroc_after_regressing_text": 0.45296875,
+    "sign_agreement": 0.525
+   },
+   {
+    "template": "nla:nj1_col_break:m5",
+    "reader": "nla",
+    "role": "secondary_numeric",
+    "cand_a": "Characters remaining before wrap: 25+ characters.",
+    "reader_auroc": {
+     "auroc": 0.47359375,
+     "lo": 0.38465106173204666,
+     "hi": 0.5693201703445605,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.40296875,
+     "lo": 0.3158197579645758,
+     "hi": 0.48715689591626127,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.03739013242704793,
+    "reader_auroc_after_regressing_text": 0.4725,
+    "sign_agreement": 0.55
+   },
+   {
+    "template": "nla:nj1_col_break:m6",
+    "reader": "nla",
+    "role": "secondary_numeric",
+    "cand_a": "Distance to automatic line break: over 25 characters.",
+    "reader_auroc": {
+     "auroc": 0.46453125,
+     "lo": 0.3689684744948715,
+     "hi": 0.550937395572264,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.640625,
+     "lo": 0.557877756083623,
+     "hi": 0.7258646533599165,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.02496191257470995,
+    "reader_auroc_after_regressing_text": 0.4721875,
+    "sign_agreement": 0.5125
+   },
+   {
+    "template": "nla:nj1_col_break:fixed",
+    "reader": "nla",
+    "role": "fixed_label",
+    "cand_a": "A line break is not coming yet",
+    "reader_auroc": {
+     "auroc": 0.5103125,
+     "lo": 0.4167948253191973,
+     "hi": 0.5995367099485605,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.50703125,
+     "lo": 0.42089476540918636,
+     "hi": 0.5932583311416799,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.02105062697761631,
+    "reader_auroc_after_regressing_text": 0.50890625,
+    "sign_agreement": 0.4875
+   },
+   {
+    "template": "ol:nj1_col_break:m0",
+    "reader": "ol",
+    "role": "selected",
+    "cand_a": "- line wrap status: mid-line, no break yet",
+    "reader_auroc": {
+     "auroc": 0.54546875,
+     "lo": 0.456532528593945,
+     "hi": 0.6332278481012659,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.40734375,
+     "lo": 0.313954167239477,
+     "hi": 0.5000117260787993,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.10674147427633893,
+    "reader_auroc_after_regressing_text": 0.53375,
+    "sign_agreement": 0.5375
+   },
+   {
+    "template": "ol:nj1_col_break:m4",
+    "reader": "ol",
+    "role": "selected",
+    "cand_a": "- far from linewrap boundary",
+    "reader_auroc": {
+     "auroc": 0.53828125,
+     "lo": 0.4404298503797767,
+     "hi": 0.62940625,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.52515625,
+     "lo": 0.43506571464802807,
+     "hi": 0.6169960408096675,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.08893413805226766,
+    "reader_auroc_after_regressing_text": 0.53953125,
+    "sign_agreement": 0.5
+   },
+   {
+    "template": "ol:nj1_col_break:m2",
+    "reader": "ol",
+    "role": "selected",
+    "cand_a": "- line break is far away",
+    "reader_auroc": {
+     "auroc": 0.49578125,
+     "lo": 0.40685430812265166,
+     "hi": 0.5894268883794875,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.536875,
+     "lo": 0.45140707796809854,
+     "hi": 0.6328070249947142,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.08725243173561467,
+    "reader_auroc_after_regressing_text": 0.49859375,
+    "sign_agreement": 0.45
+   },
+   {
+    "template": "ol:nj1_col_break:m5",
+    "reader": "ol",
+    "role": "secondary_numeric",
+    "cand_a": "- characters before wrap: 25+",
+    "reader_auroc": {
+     "auroc": 0.458125,
+     "lo": 0.35678923079640734,
+     "hi": 0.5511076236277153,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.49234375,
+     "lo": 0.40194357322317315,
+     "hi": 0.5828748306623623,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.05276573303644674,
+    "reader_auroc_after_regressing_text": 0.45671875,
+    "sign_agreement": 0.525
+   },
+   {
+    "template": "ol:nj1_col_break:m6",
+    "reader": "ol",
+    "role": "secondary_numeric",
+    "cand_a": "- distance to line break: over 25 chars",
+    "reader_auroc": {
+     "auroc": 0.4178125,
+     "lo": 0.3284199682778012,
+     "hi": 0.5001645106047646,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.64859375,
+     "lo": 0.5634201669694484,
+     "hi": 0.7312277091876329,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": -0.10535567795617017,
+    "reader_auroc_after_regressing_text": 0.43046875,
+    "sign_agreement": 0.4375
+   },
+   {
+    "template": "ol:nj1_col_break:fixed",
+    "reader": "ol",
+    "role": "fixed_label",
+    "cand_a": "- line break not coming yet",
+    "reader_auroc": {
+     "auroc": 0.46375,
+     "lo": 0.370523172227016,
+     "hi": 0.5567267711934318,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local_auroc": {
+     "auroc": 0.589375,
+     "lo": 0.5022647872222428,
+     "hi": 0.6743601276533128,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman_reader_vs_textlocal": 0.20671217625688504,
+    "reader_auroc_after_regressing_text": 0.4334375,
+    "sign_agreement": 0.5375
+   }
+  ],
+  "mean_of_selected": {
+   "nla": {
+    "reader": {
+     "auroc": 0.5353125,
+     "lo": 0.44732441909514714,
+     "hi": 0.6265294181884594,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local": {
+     "auroc": 0.500625,
+     "lo": 0.40553769175058957,
+     "hi": 0.5871726972214777,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman": 0.14486698699167935,
+    "reader_after_text": 0.5384375
+   },
+   "ol": {
+    "reader": {
+     "auroc": 0.5525,
+     "lo": 0.4602004309102439,
+     "hi": 0.6414433897801545,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "textnla_local": {
+     "auroc": 0.51,
+     "lo": 0.4210772248346619,
+     "hi": 0.5973080776836607,
+     "n": 160,
+     "n_clusters": 160
+    },
+    "spearman": -0.0793273174733388,
+    "reader_after_text": 0.54953125
+   }
+  }
+ },
+ "_gemini": {
+  "spend_usd_this_run": 0.0,
+  "key_usage_delta_usd": 2.6035,
+  "calls": 0,
+  "failed": 0,
+  "unparsed": 0
+ }
+}

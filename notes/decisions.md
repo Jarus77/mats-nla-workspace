@@ -343,3 +343,15 @@ Tense 4r* goes in the main text as a pre-registered secondary, with its provenan
 - **Avoid** "the readers re-solve from text" (the data can't show the mechanism) and "readouts contain nothing beyond text" (only these families' targets were tested). Report the 0.47 vs 0.46 tie with the instruction caveat.
 - **Correction:** 02's language direction is **Russian vs Polish** (not French/German as written in D10 and handoff #4). The FR/DE version is only the 03 toy.
 - **Deck built:** `deck/mats_nla_workspace.pptx` (+ pdf), 60 slides (53 main + 7 appendix), speaker notes on every slide, native charts, Google-Slides-safe fonts, rebuilt by `node deck/build.js` from `deck/content/*.js`. Part D was flagged as pending check (e), which is now resolved, so update it.
+
+## 2026-10-06 — D23: natural col vs TextNLA (check resolved)
+On the same 160 col selection items with the frozen templates (unchanged, sha256 0915…923b):
+
+| Reader | Reader @42 | Text-only Qwen | Gemini (text-only) | Reader after regressing out Gemini |
+|---|---|---|---|---|
+| NLA | 0.60 | 0.48 | **0.97** | 0.51 |
+| OL | 0.55 | 0.62 | **0.97** | 0.47 |
+
+- Long vs short lines are visible in the text without counting. Teacher-forced base Qwen is a weak text ceiling for col, so Gemini is the relevant one. With Gemini's signal regressed out, the NLA's small natural signal disappears; OL is at chance throughout.
+- **Natural col AUROC says nothing about activation reading.** The col claim comes only from steering, and any natural number is reported next to the 0.97 text ceiling.
+- Gaps: Gemini covered 7/14 col templates; col_break is Qwen-only (all at chance). Spend under $5 (shared key, so not separable exactly).

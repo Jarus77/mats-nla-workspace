@@ -113,3 +113,55 @@ Columns:
 | `results/` | `gen_*`, `score_*`, `candidates.json`, `extraction_log.json`, `selection_table.json` |
 
 The volume also holds `/results/07_template_mining/acts_<feature>.pt`: L40/42/44 captures at the read token for all items.
+
+## Natural col vs TextNLA (Fable round 5)
+
+**Setup.** Same 160 `nj1_col` selection items and the same frozen candidate pairs. `templates_frozen.json` is unchanged; its sha256 is still `0915…923b`.
+
+- **TextNLA-Qwen (local).** Base Qwen3.6-27B with no activation, given the passage text up to the read token. It uses the NLA warm-start instruction with `mode="prompt"` (`src/mats/textnla.TextNLALocal`) and is teacher-forced on each frozen pair. All templates were scored: selected, secondary numeric and fixed, for both NLA and OL.
+- **TextNLA-Gemini.** Gemini 3.8 Flash, elicited JSON P(A), both option orders averaged, max_tokens 600. The question asks which description better fits the model's state at the last token.
+  - Budget: it ran out after **7 col templates**: the 3 NLA-selected, the 3 OL-selected, and the NLA fixed label.
+  - Spend: $2.20 measured on the rerun. An earlier attempt crashed unsaved on a connection reset (`RemoteDisconnected` is not caught by `TextNLAGemini`; the script now subclasses it). Its spend is unmeasured because the OpenRouter key is shared, but the total for this follow-up is estimated under the $5 cap.
+- **`nj1_col_break`.** Scored by TextNLA-Qwen only (no Gemini budget left): NLA mean3 .54, OL .55, TextNLA-Qwen .50 / .51. None of these is distinguishable from chance.
+
+**AUROC, selection split** (n=160; 95% cluster-bootstrap CIs; ρ = item-level Spearman of reader LO vs TextNLA LO):
+
+| template (candidate for "long") | reader @42 | TextNLA-Qwen | TextNLA-Gemini | ρ reader~Qwen | ρ reader~Gemini |
+|---|---|---|---|---|---|
+| NLA "Readout taken late in the span of the wrapped line." | .58 | .50 | .92 | +.11 | +.13 |
+| NLA "Mid-sentence continuation located near the end of a hard-wrapped line." | .56 | .55 | .92 | +.28 | +.14 |
+| NLA "The token appears far into of the wrapped line." | .55 | .40 | .97 | +.06 | +.12 |
+| NLA fixed "The current position is near the end of a long line" | .50 | .54 | .97 | .00 | +.01 |
+| OL "- deep after a newline" | .56 | .53 | .91 | +.17 | +.07 |
+| OL "- line position: late in the line" | .49 | .65 | .97 | −.15 | +.07 |
+| OL "- current line depth: deep" | .48 | .53 | .63 | +.16 | −.05 |
+| **NLA mean3** | **.60** [.51,.69] | .48 [.39,.57] | **.97** [.94,.99] | +.31 | |
+| **OL mean3** | **.55** [.45,.63] | .62 [.54,.71] | **.97** [.93,.99] | +.24 | |
+
+Each reader's mean-of-3 LO was also regressed (OLS) on each text-only LO, and the AUROC of the residual recomputed:
+
+| reader | after regressing out TextNLA-Qwen | after regressing out TextNLA-Gemini |
+|---|---|---|
+| NLA | .61 | .51 |
+| OL | .52 | .47 |
+
+Numerals and the remaining fixed labels were Qwen-only: every one is .40–.54.
+
+**Reading.**
+1. **The expectation holds in its strong form: line position is plainly visible in the text.** Gemini, reading only the passage, separates 10–30 from 55–85 characters into the line at AUROC .97 with the very same candidate pairs. It does so for qualitative and fixed wordings alike, and needs no counting.
+2. **Base Qwen does not express this through teacher-forced candidate log-probs**: .48 with the NLA templates, .62 with the OL ones. The local TextNLA is therefore a weak text ceiling for col, and Gemini is the relevant one.
+3. **The NLA's small natural col signal (.60) carries no information beyond the text.**
+   - It survives regressing out base-Qwen TextNLA (.61) but vanishes after regressing out Gemini (.51).
+   - Its item-level agreement with either text-only reader is low (ρ ≤ .31). The NLA tracks a sliver of the text-visible signal, not something the text lacks.
+   - OL is at chance throughout.
+4. **Natural-arm col AUROC is uninformative about activation reading,** just as language identity is. The headline must come from the steering arm. Any natural col number should be reported next to the Gemini text ceiling (.97).
+
+**Files.**
+
+| file | contents |
+|---|---|
+| `textnla_col.py` | Modal, H100: TextNLA-Qwen scoring |
+| `textnla_col_analyze.py` | local: Gemini and the comparison |
+| `results/textnla_local_nj1_col{,_break}.json` | TextNLA-Qwen scores |
+| `results/textnla_gemini_nj1_col.partial.json` | Gemini, the 7 templates scored |
+| `results/textnla_col_summary.json` | all AUROCs, CIs, ρ and residual AUROCs |
