@@ -1,0 +1,50 @@
+{
+ "arm": "nla",
+ "gpu": "NVIDIA H200",
+ "load_s": 86.8,
+ "batch": 50,
+ "families": {
+  "typo_mt": {
+   "items": 100,
+   "cells": 100,
+   "wall_s": 135.4,
+   "capture_s": 56.4,
+   "read_s": 77.2,
+   "s_per_cell": 1.354,
+   "s_per_item": 1.354,
+   "skipped_done": 0
+  },
+  "multilingual_mt": {
+   "items": 100,
+   "cells": 100,
+   "wall_s": 72.0,
+   "capture_s": 12.8,
+   "read_s": 57.2,
+   "s_per_cell": 0.72,
+   "s_per_item": 0.72,
+   "skipped_done": 0
+  },
+  "multihop_mt": {
+   "items": 100,
+   "cells": 100,
+   "wall_s": 68.6,
+   "capture_s": 12.4,
+   "read_s": 54.5,
+   "s_per_cell": 0.686,
+   "s_per_item": 0.686,
+   "skipped_done": 0
+  },
+  "basic_readout_mt": {
+   "items": 100,
+   "cells": 100,
+   "wall_s": 67.5,
+   "capture_s": 11.9,
+   "read_s": 53.8,
+   "s_per_cell": 0.675,
+   "s_per_item": 0.675,
+   "skipped_done": 0
+  }
+ },
+ "peak_mem_gb": 119.24,
+ "total_s": 430.4
+}

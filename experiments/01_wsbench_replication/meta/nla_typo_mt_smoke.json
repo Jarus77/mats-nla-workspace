@@ -1,0 +1,32 @@
+{
+ "arm": "nla",
+ "gpu": "NVIDIA H200",
+ "load_s": 64.7,
+ "batch": 50,
+ "families": {
+  "typo_mt": {
+   "items": 2,
+   "cells": 2,
+   "wall_s": 25.2,
+   "capture_s": 0.2,
+   "read_s": 23.6,
+   "s_per_cell": 12.621,
+   "s_per_item": 12.621,
+   "skipped_done": 0
+  }
+ },
+ "greedy_check": {
+  "n": 2,
+  "identical": 1,
+  "single": [
+   "Blog post format signals an informal, explanatory tone introducing a topic to a general audience, expecting accessible elaboration.\n\nThe phrase \"There's a subfield of ML research called mechanistic interpretibility\" sets up an introduction to a specific concept, with explanation or examples expected next.\n\n\"interpretibility\" is a misspelling of \"interpretability,\" and the sentence is incomplete — the next token likely continues with a definition, description, or clause (e.g., \"which studies...\" or \"of neural networks\").\n\"Recently I've been learning about a really interesting subfield of AI research called mechanistic interpretibility\" — the final word is the named topic, strongly expecting a continuation describing what it is, its goals, or its relevance to the broader AI safety discussion.\n\"mechanistic interpretibility\" is the key term.",
+   "Social/relational narrative establishing a character dynamic between two people, with \"narcissist\" behavior described as one-sided self-focus.\n\nThe sentence structure sets up a contrast: \"Alice was a narcissist who only talked about herself, but Bob eventually grew tired of...\" implying a turning point or consequence in their friendship.\n\nFinal token \"narcissism\" is a misspelled word mid-clause (\"Bob eventually grew tired of Alice's narcissim\"), requiring completion of this phrase, likely with a period, comma, or continuation describing Bob's reaction or the relationship's end.\n\"narcissism\" as a noun phrase object demands grammatical closure — a period, clause, or elaboration like \"and self-centeredness\" or \"behavior.\"\n\"Bob eventually grew tired of Alice's narcissism\" — informal, humorous register."
+  ],
+  "batched": [
+   "Blog post format signals an informal, explanatory tone introducing a topic to a general audience, expecting accessible elaboration.\n\nThe phrase \"There's a subfield of ML research called mechanistic interpretibility\" sets up an introduction to a specific concept, with explanation or examples expected next.\n\n\"interpretibility\" is a misspelling of \"interpretability,\" and the sentence is incomplete — the next token likely continues with a definition, description, or clause (e.g., \"which studies...\" or \"of neural networks\").\n\"Recently I've been learning about a really interesting subfield of AI research called mechanistic interpretibility\" — the final word is the named topic, strongly expecting a continuation describing what it is, its goals, or its relevance to the broader AI safety discussion.\n\"mechanistic interpretibility\" is the key term.",
+   "Social/relational narrative establishing a character dynamic between two people, with \"narcissist\" behavior described as one-sided self-focus.\n\nThe sentence structure sets up a contrast: \"Alice was a narcissist who only talked about herself, but Bob eventually grew tired of...\" implying a turning point or consequence in their friendship.\n\nFinal token \"narcissism\" is a misspelled word mid-clause (\"Bob eventually grew tired of Alice's narcissim\"), requiring completion of this phrase, likely with a period, comma, or continuation describing Bob's reaction or the relationship's end.\n\"narcissism\" as a noun phrase object demands grammatical closure — a period, clause, or elaboration like \"and self-centeredness\" or \"behavior.\"\n\"Bob eventually grew tired of Alice's narcissim\" — informal, humorous register."
+  ]
+ },
+ "peak_mem_gb": 111.51,
+ "total_s": 213.6
+}

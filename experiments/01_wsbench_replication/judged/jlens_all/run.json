@@ -1,0 +1,47 @@
+{
+ "started": "2026-10-05T14:53:08Z",
+ "finished": "2026-10-05T15:13:09Z",
+ "families": {
+  "typo_mt": {
+   "status": "ok",
+   "results_path": "/Users/surajprasad/Downloads/interpretability/mats/experiments/01_wsbench_replication/judged/jlens_all/typo_mt/results.json",
+   "value": 0.16,
+   "complete": true,
+   "pinned_instrument": true,
+   "spend_usd": 0.5699827499999996,
+   "n_calls": 1164
+  },
+  "multilingual_mt": {
+   "status": "ok",
+   "results_path": "/Users/surajprasad/Downloads/interpretability/mats/experiments/01_wsbench_replication/judged/jlens_all/multilingual_mt/results.json",
+   "value": 0.08,
+   "complete": true,
+   "pinned_instrument": true,
+   "spend_usd": 0.7420875000000005,
+   "n_calls": 1200
+  },
+  "multihop_mt": {
+   "status": "ok",
+   "results_path": "/Users/surajprasad/Downloads/interpretability/mats/experiments/01_wsbench_replication/judged/jlens_all/multihop_mt/results.json",
+   "value": 0.1,
+   "complete": true,
+   "pinned_instrument": true,
+   "spend_usd": 0.7732200000000016,
+   "n_calls": 1200
+  },
+  "basic_readout_mt": {
+   "status": "ok",
+   "results_path": "/Users/surajprasad/Downloads/interpretability/mats/experiments/01_wsbench_replication/judged/jlens_all/basic_readout_mt/results.json",
+   "value": 0.25,
+   "complete": true,
+   "pinned_instrument": true,
+   "spend_usd": 0.70106775,
+   "n_calls": 1200
+  }
+ },
+ "judge_overrides": {
+  "flag": null,
+  "env": null
+ },
+ "readouts_root": "/Users/surajprasad/Downloads/interpretability/mats/experiments/01_wsbench_replication/judge_in/jlens_all"
+}

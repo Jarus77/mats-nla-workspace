@@ -1,0 +1,20 @@
+{
+ "arm": "olens",
+ "gpu": "NVIDIA H100 80GB HBM3",
+ "load_s": 46.7,
+ "batch": 64,
+ "families": {
+  "basic_readout_mt": {
+   "items": 100,
+   "cells": 1200,
+   "wall_s": 689.6,
+   "capture_s": 65.3,
+   "read_s": 592.9,
+   "s_per_cell": 0.575,
+   "s_per_item": 6.896,
+   "skipped_done": 0
+  }
+ },
+ "peak_mem_gb": 66.02,
+ "total_s": 736.3
+}

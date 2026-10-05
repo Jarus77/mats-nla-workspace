@@ -1,0 +1,506 @@
+{
+ "schema_version": 1,
+ "family": "typo_mt",
+ "complete": false,
+ "pinned_instrument": true,
+ "config": {
+  "judge_model": "google/gemini-3.8-flash",
+  "prompt_version": "mt-regex-summarized-2026-09-23",
+  "reasoning": {
+   "effort": "minimal"
+  },
+  "layers": null,
+  "dry_run": false,
+  "concurrency": 64,
+  "rpm": 240.0,
+  "allow_missing": false,
+  "items": null,
+  "limit": 3,
+  "kind": "tokens",
+  "layers_judged": [
+   20,
+   24,
+   28,
+   32,
+   36,
+   40,
+   42,
+   44,
+   48,
+   52,
+   56,
+   60
+  ],
+  "scorer": "regex",
+  "scorer_version": "mt-regex-summarized-2026-09-23",
+  "contract": {
+   "multi_token": true,
+   "include_target": false,
+   "conjunctive_units": true
+  },
+  "summarizer": "interp-v1",
+  "summarizer_model": "google/gemini-3.8-flash"
+ },
+ "n_items": 3,
+ "counts": {
+  "n_expected_cells": 36,
+  "n_missing_cells": 0,
+  "n_unjudged_cells": 0,
+  "n_empty_cells": 0,
+  "skipped_rows": 1164,
+  "spend_usd": 0.01696575
+ },
+ "numbers": {
+  "metric": "pass_rate",
+  "value": 0.3333333333333333,
+  "ci95": [
+   0.0,
+   1.0
+  ],
+  "chance": null,
+  "chance_label": "no analytic floor for an any-layer conjunction of exact-form matches; the measured floor is the prompt-only baseline (the MC lucky-guessing floor does not apply to the regex scorer)",
+  "higher_is_better": true,
+  "extras": {
+   "n_calls": 36,
+   "any_hit_rate": 0.3333333333333333,
+   "unit_any_layer": {
+    "correction": 0.3333333333333333
+   },
+   "language_of_readout": {
+    "correction": {
+     "en": 1
+    }
+   },
+   "n_summaries": 36,
+   "n_summaries_cached": 0,
+   "n_summaries_failed": 0,
+   "passing_layers_by_source": {
+    "summary_only": 4
+   },
+   "n_items_decided": 3,
+   "n_items_undecided": 0,
+   "n_items_without_readouts": 0
+  }
+ },
+ "rows": [
+  {
+   "id": "tyh-novel-interpretability-hand",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "24": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "28": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "32": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "36": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "40": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "44": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "48": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "52": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "56": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "60": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    }
+   },
+   "unsummarized_layers": []
+  },
+  {
+   "id": "tyh-novel-narcissism-hand",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 28,
+   "passing_layers": [
+    28,
+    40,
+    44,
+    48
+   ],
+   "unit_hit": {
+    "correction": true
+   },
+   "unit_langs": {
+    "correction": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "correction": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "24": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "28": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false,
+     "source": {
+      "correction": [
+       "summary"
+      ]
+     }
+    },
+    "32": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "36": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "40": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false,
+     "source": {
+      "correction": [
+       "summary"
+      ]
+     }
+    },
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "44": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false,
+     "source": {
+      "correction": [
+       "summary"
+      ]
+     }
+    },
+    "48": {
+     "hits": {
+      "correction": [
+       "en"
+      ]
+     },
+     "empty": false,
+     "source": {
+      "correction": [
+       "summary"
+      ]
+     }
+    },
+    "52": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "56": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "60": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    }
+   },
+   "unsummarized_layers": []
+  },
+  {
+   "id": "tyh-novel-acciaccatura-b6",
+   "roles": [
+    "correction"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "correction": false
+   },
+   "unit_langs": {
+    "correction": []
+   },
+   "first_lang": {
+    "correction": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "24": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "28": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "32": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "36": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "40": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "42": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "44": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "48": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "52": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "56": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    },
+    "60": {
+     "hits": {
+      "correction": []
+     },
+     "empty": false,
+     "source": {
+      "correction": []
+     }
+    }
+   },
+   "unsummarized_layers": []
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "arm": "olens",
+ "gpu": "NVIDIA H100 80GB HBM3",
+ "load_s": 46.4,
+ "batch": 64,
+ "families": {
+  "typo_mt": {
+   "items": 2,
+   "cells": 24,
+   "wall_s": 28.4,
+   "capture_s": 0.4,
+   "read_s": 26.3,
+   "s_per_cell": 1.182,
+   "s_per_item": 14.182,
+   "skipped_done": 0
+  }
+ },
+ "greedy_check": {
+  "n": 4,
+  "identical": 2,
+  "single": [
+   "- /mechanistic interpretability\" in the context of LLMs. The current frontier of mechanistic interpretibility\n- /explainability** in AI. Specifically, the field of \"mechanistic interpretibility\n- （Interpretability) as a field of study. Specifically, \"mechanistic interpretibility\n- /understanding\" (the field of studying how neural networks actually compute) is currently the hottest area of AI research. Mechanistic interpretibility",
+   "- /mechanistic interpretibility\n- /explainability** (specifically, mechanistic interpretibility\n- （Interpretability) in AI. Specifically, the work done by folks like Chris Olah on mechanistic interpretibility\n- /understanding** (the field of studying how neural networks represent information internally). You've probably heard of mechanistic interpretibility",
+   "- \" (or mechanistic interpretibility\n- /interpretability\" which is a huge field in AI safety right now. Specifically, mechanistic interpretibility\n- （Interpretability） and its intersection with AI alignment. If you follow the AI safety community, mechanistic interpretibility\n- /Mechanistic Interpretability** as a tool for understanding AI alignment. You mentioned \"mechanical interpretibility",
+   "- \" (or mechanistic interpretability). What is your take on this field? Is mechanistic interpretibility\n- /interpretability, which is the field of studying how AI models actually work internally. I've been following the work of mechanistic interpretibility\n- （Mechanistic Interpretability) is a hot topic in AI safety. Do you think interpretability\n- /interpretability** is a fascinating field in AI research. Here is a summary of what mechanistic interpretibility"
+  ],
+  "batched": [
+   "- /mechanistic interpretability\" in the context of LLMs. The current frontier of mechanistic interpretibility\n- /explainability** in AI. Specifically, the field of \"mechanistic interpretibility\n- （Interpretability) as a field of study. Specifically, \"mechanistic interpretibility\n- /understanding\" (the field of studying how neural networks actually compute) as a tool for understanding LLMs. Mechanistic interpretibility",
+   "- /mechanistic interpretibility\n- /explainability** (specifically, mechanistic interpretibility\n- （Interpretability) in AI. Specifically, the work done by folks like Chris Olah on mechanistic interpretibility\n- /understanding** (the field of studying how neural networks represent information internally). You've probably heard of mechanistic interpretibility",
+   "- \" (or mechanistic interpretibility\n- /interpretability\" which is a huge field in AI safety right now. Specifically, mechanistic interpretibility\n- （Interpretability） and its intersection with AI alignment. If you follow the AI safety community, mechanistic interpretibility\n- /Mechanistic Interpretability** as a tool for understanding AI alignment. You mentioned \"mechanical interpretibility",
+   "- \" (or mechanistic interpretability). What is your take on mechanistic interpretibility\n- /interpretability, which is the field of studying how AI models actually work internally. I've been following the work of mechanistic interpretibility\n- （Mechanistic Interpretability) as a field in AI safety. I've been reading a lot about it. Do you think mechanistic interpretibility\n- /interpretability** is a fascinating field in AI safety. Here is a summary of what mechanistic interpretibility"
+  ]
+ },
+ "peak_mem_gb": 58.73,
+ "total_s": 188.1
+}

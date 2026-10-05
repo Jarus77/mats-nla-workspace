@@ -1,0 +1,12657 @@
+{
+ "schema_version": 1,
+ "family": "basic_readout_mt",
+ "complete": true,
+ "pinned_instrument": true,
+ "config": {
+  "judge_model": "regex",
+  "prompt_version": "mt-regex-2026-09-23",
+  "reasoning": null,
+  "layers": null,
+  "dry_run": false,
+  "concurrency": 64,
+  "rpm": 240.0,
+  "allow_missing": false,
+  "items": null,
+  "limit": 0,
+  "kind": "prose",
+  "layers_judged": [
+   20,
+   24,
+   28,
+   32,
+   36,
+   40,
+   42,
+   44,
+   48,
+   52,
+   56,
+   60
+  ],
+  "scorer": "regex",
+  "scorer_version": "mt-regex-2026-09-23",
+  "contract": {
+   "multi_token": true,
+   "include_target": false,
+   "conjunctive_units": true
+  },
+  "summarizer": null,
+  "summarizer_model": null
+ },
+ "n_items": 100,
+ "counts": {
+  "n_expected_cells": 1200,
+  "n_missing_cells": 0,
+  "n_unjudged_cells": 0,
+  "n_empty_cells": 0,
+  "skipped_rows": 0,
+  "spend_usd": 0.0
+ },
+ "numbers": {
+  "metric": "pass_rate",
+  "value": 0.73,
+  "ci95": [
+   0.64,
+   0.81
+  ],
+  "chance": null,
+  "chance_label": "no analytic floor for an any-layer conjunction of exact-form matches; the measured floor is the prompt-only baseline (the MC lucky-guessing floor does not apply to the regex scorer)",
+  "higher_is_better": true,
+  "extras": {
+   "n_calls": 0,
+   "any_hit_rate": 0.93,
+   "unit_any_layer": {
+    "language": 0.85,
+    "readout": 0.77
+   },
+   "language_of_readout": {
+    "language": {
+     "ar": 6,
+     "en": 6,
+     "fi": 1,
+     "he": 2,
+     "id": 12,
+     "ko": 3,
+     "pl": 2,
+     "ru": 2
+    },
+    "readout": {
+     "en": 77
+    }
+   },
+   "n_items_decided": 100,
+   "n_items_undecided": 0,
+   "n_items_without_readouts": 0
+  }
+ },
+ "rows": [
+  {
+   "id": "brh-ent-aghlabid-dynasty",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-antarctic-buried-chain",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false
+   },
+   "unit_langs": {
+    "readout": []
+   },
+   "first_lang": {
+    "readout": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-baikal-outflow",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-bardet-biedl",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-beckwith-wiedemann-syndrome",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 56,
+   "passing_layers": [
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-bohr-magneton",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 44,
+   "passing_layers": [
+    44,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-bonaire-capital",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    44,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-brunt-vaisala-frequency",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 28,
+   "passing_layers": [
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-chem-sarin-systematic",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false
+   },
+   "unit_langs": {
+    "readout": []
+   },
+   "first_lang": {
+    "readout": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-chem-wintergreen-ester",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 24,
+   "passing_layers": [
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-chindwin-confluence",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-concordat-worms",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cordillera-blanca-high",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    40,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cryolite-systematic",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cur-bhutan",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cur-bosnia-convertible-mark",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 24,
+   "passing_layers": [
+    24,
+    36,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cur-eritrea",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cur-macau-unit",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cur-ngultrum-subunit",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 52,
+   "passing_layers": [
+    52
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cur-ouguiya-subunit",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false
+   },
+   "unit_langs": {
+    "readout": []
+   },
+   "first_lang": {
+    "readout": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-cur-vanuatu",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 40,
+   "passing_layers": [
+    40,
+    44,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-currency-bhutan",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 24,
+   "passing_layers": [
+    24,
+    36,
+    42,
+    44,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-currency-eswatini",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 48,
+   "passing_layers": [
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-currency-gambia",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 52,
+   "passing_layers": [
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-currency-mozambique",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 40,
+   "passing_layers": [
+    40,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-currency-tajikistan",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 28,
+   "passing_layers": [
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-currency-vanuatu",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 40,
+   "passing_layers": [
+    40,
+    42,
+    44,
+    48
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-drakensberg-summit",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 60,
+   "passing_layers": [
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-euler-mascheroni-constant",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 28,
+   "passing_layers": [
+    28,
+    36,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-georgian-royal-line",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-geosmin",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-glauber-salt",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 28,
+   "passing_layers": [
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-gloger-rule",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 52,
+   "passing_layers": [
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-hafsid-ifriqiya",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-hounsfield",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-hounsfield-unit",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-iceland-spar",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 24,
+   "passing_layers": [
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-illimani-range",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 48,
+   "passing_layers": [
+    48
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-kachin-mandalay-waterway",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-karlowitz-1699",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-kazakh-half-saline",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 56,
+   "passing_layers": [
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-khinchin-constant",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    36,
+    40,
+    42,
+    44,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-lemierre-syndrome",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-lowest-point-australia",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 24,
+   "passing_layers": [
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-madelung-constant",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 24,
+   "passing_layers": [
+    24,
+    28,
+    32,
+    40,
+    44,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-matthiessen",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 32,
+   "passing_layers": [
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-mayor-palace",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-mccune-albright",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-min-kunzite-parent",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 32,
+   "passing_layers": [
+    32,
+    36,
+    40,
+    42,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-mohr-double-compound",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 40,
+   "passing_layers": [
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-mughal-military-paymaster",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    42,
+    44,
+    48,
+    52,
+    56
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-naples-yellow-2",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false
+   },
+   "unit_langs": {
+    "readout": []
+   },
+   "first_lang": {
+    "readout": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-nerchinsk-1689",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-noyes-whitney",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    44,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-orpiment",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-ottoman-religious-office",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-palau-capital",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    52,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-rio-negro-meeting",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 24,
+   "passing_layers": [
+    24,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-rochelle-salt",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ent-rudolf-renamed",
+   "roles": [
+    "readout"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ar-ain-jalut",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    24,
+    28,
+    32,
+    42,
+    44,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "ar"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ar-dakhil",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "ar"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ar-kitab-almanazir-author",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 60,
+   "passing_layers": [
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "ar"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ar-marj-dabiq",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "ar"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ar-tayebsalih",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "ar"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ar-tusi",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "ar"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "ar"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ar"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-fi-ahvenanmaa",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 32,
+   "passing_layers": [
+    32,
+    40
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "en",
+     "zh",
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "en",
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "zh"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "zh"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "en",
+       "zh",
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "zh",
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-fi-alankomaat",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "fi"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-fi-alankomaat-munster-1648",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": true,
+    "language": false
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": []
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-fi-norsunluurannikko",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": true,
+    "language": false
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": []
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-fi-petsamo",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "en",
+     "fi"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "fi"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-he-ben-zvi",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": true,
+    "language": false
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": []
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": null
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-he-imber-hatikva",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": false
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": []
+   },
+   "first_lang": {
+    "readout": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-he-neptune-moon",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "he"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "he"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "he"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "he"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "he"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-he-qumran",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42,
+    48,
+    52,
+    56
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "he"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "he"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "he"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "he"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "he"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "he"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-hu-aranybulla",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 20,
+   "passing_layers": [
+    20,
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": [
+     "en",
+     "hu"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "hu"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-hu-erkel-ferenc",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-hu-gabor-denes",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "en"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-hu-kolozsvar",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": false
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": []
+   },
+   "first_lang": {
+    "readout": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-bengkulu-pengasingan",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-chengho",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 44,
+   "passing_layers": [
+    44,
+    48,
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-denhaag-arbitrase",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 28,
+   "passing_layers": [
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-garis-wallace",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 44,
+   "passing_layers": [
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-kalimantan",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-perjanjian-bongaya",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-puncak-jaya",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 40,
+   "passing_layers": [
+    40,
+    42,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-selandiabaru-tasman",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 48,
+   "passing_layers": [
+    48,
+    56
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-sriwijaya",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-sungai-kapuas",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-tambora-1815",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 24,
+   "passing_layers": [
+    24,
+    44
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-id-terusan-suez",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 36,
+   "passing_layers": [
+    36,
+    56
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": [
+     "id"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "id"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "id"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ko-borobudur-java",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 40,
+   "passing_layers": [
+    40,
+    56
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "ko"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "ko"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ko"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ko"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ko-first-spacewalk-cosmonaut",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 60,
+   "passing_layers": [
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "ko"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "ko"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ko"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ko"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ko"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ko"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ko-samgukyusa-compiler",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": false
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": []
+   },
+   "first_lang": {
+    "readout": null,
+    "language": null
+   },
+   "any_hit": false,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ko-sohnkeechung",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "ko"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "ko"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ko"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ko"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-pl-konstantynopol-sobor-381",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42,
+    48,
+    52
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": [
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "pl"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-pl-lwow",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en"
+    ],
+    "language": [
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "pl"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-pl-ziemie-odzyskane",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 42,
+   "passing_layers": [
+    42,
+    44,
+    48,
+    52,
+    56,
+    60
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": [
+     "en",
+     "pl"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "en"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "en"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "en",
+       "pl"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "pl"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ru-baikonur",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": true,
+   "earliest_layer": 28,
+   "passing_layers": [
+    28,
+    32,
+    36,
+    40,
+    42,
+    44,
+    48,
+    52,
+    56
+   ],
+   "unit_hit": {
+    "readout": true,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [
+     "en",
+     "zh"
+    ],
+    "language": [
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "readout": "en",
+    "language": "ru"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [
+       "en",
+       "zh"
+      ],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [
+       "en"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [
+       "zh"
+      ],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    }
+   }
+  },
+  {
+   "id": "brh-ru-bellingshausen",
+   "roles": [
+    "readout",
+    "language"
+   ],
+   "optional_roles": [],
+   "pass": false,
+   "earliest_layer": null,
+   "passing_layers": [],
+   "unit_hit": {
+    "readout": false,
+    "language": true
+   },
+   "unit_langs": {
+    "readout": [],
+    "language": [
+     "ru"
+    ]
+   },
+   "first_lang": {
+    "readout": null,
+    "language": "ru"
+   },
+   "any_hit": true,
+   "missing_layers": [],
+   "layers": {
+    "20": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "24": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "28": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "32": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "36": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "40": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "42": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "44": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    },
+    "48": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "52": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "56": {
+     "hits": {
+      "readout": [],
+      "language": [
+       "ru"
+      ]
+     },
+     "empty": false
+    },
+    "60": {
+     "hits": {
+      "readout": [],
+      "language": []
+     },
+     "empty": false
+    }
+   }
+  }
+ ]
+}

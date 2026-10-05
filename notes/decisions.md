@@ -69,3 +69,10 @@ Lead's caveats on the critique (sent back to Fable in handoff #2):
 - **Out-of-distribution margin:** the SD within an example across k=4 samples is ~0.027, so compare steered vs natural FVE per example with k≥4. A shift of ~0.04 is detectable.
 - **Oracle Lens contract:** trained on layers 20–60 in steps of 4, alpha 16000, layer number in the prompt. Run it at L40/44, never at 42.
 - **Scoring gotcha:** paired log-odds must keep both candidates in one batch (batch composition shifts scores by up to 0.26 nats).
+
+## 2026-10-05 — D6: WorkspaceBench replication PASSED
+- All 12 published numbers (4 regex multi-token families × olens/nla/jlens) fall inside our 95% bootstrap CIs (n=100). Costs: OpenRouter $2.80, Modal ~1.5 GPU-h.
+- **Matched-layer finding (new, worth a line in the write-up):** at L42 the NLA ties or beats Oracle Lens on all 4 families (multilingual 0.42 vs 0.28). Oracle Lens's published lead comes from the best-of-11-layers protocol, which is also a best-of-11-samples bonus.
+- **Oracle Lens at L42 (off-contract) is no worse than at L40/44** (typo .76 vs .72/.70; basic .45 vs .42/.48). Proposal [DECIDE, Fable]: add OL@42 as the *same-layer* comparison next to OL@40/44. That removes most of the layer confound Fable flagged.
+- Every arm is far below the prompt-only floor (0.69) on multihop_mt, consistent with heavy text inferability.
+- Throughput: olens ~0.5 s/cell (H100), nla ~0.7 s/cell batched (H200, 119 GB), jlens ~0.17 s/cell (H200; it runs out of memory on an H100). Batched NLA generation differs from unbatched only in the last tokens (bf16).
