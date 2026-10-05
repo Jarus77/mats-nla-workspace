@@ -32,3 +32,23 @@ Lead's caveats on the critique (sent back to Fable in handoff #2):
 - **Prior update:** the NLA reading natural non-J content is more likely than the prereg's 0.25. Fable to weigh in.
 - **Candidate cheap secondary arm [DECIDE, Fable]:** Viswanath-style J-only / non-J-only projections on our features, for all three readers on Qwen. Inexpensive and directly comparable to his result, but watch scope.
 - **J-Lens file:** the pilot and WorkspaceBench `jlens` both use neuronpedia/jacobian-lens n1000 (cosine readout). Our handoff named camilablank/workspace-lenses. Primary = neuronpedia n1000 (comparability); camilablank as a cross-check. The J-space rank r is set by a pre-registered rule, with curves over r reported (the spectrum is heavy-tailed with no elbow).
+
+## 2026-10-05 — D4: Fable round 2 (handoff #2), all accepted
+1. **Steering leak (a hole I missed).** Steering at L38 lets the model move non-J content into J-space before L40–44. Fixes:
+   - steer along the **J-removed** probe direction;
+   - **leak detector:** the J-Lens readout at 40–44 must not move, else that dose is void for non-J claims;
+   - the **headline** steers at the reader's input layer; L38 steering is the on-distribution/behavioural validation.
+2. **Probe as ceiling.** In the steering arm the probe is a true ceiling by construction (fraction > 1 is impossible there). "Reference, not ceiling" applies only to the natural arm, and only after H4 clears re-solving.
+3. **FVE is a one-sided guard** (low ⇒ not reading; high ⇒ nothing). The real "doses in range" evidence is K3 in-J tracking at the same dose.
+4. **J-Lens roles.** In the non-J arm it's the leak detector, not a competitor; in the in-J arm it's a competitor.
+5. **FollowText clamp validation.** A probe retrained on clamped activations should be ≈ 0.5, else clamp a small subspace.
+6. **H2 prior → 0.40. Co-headline = NLA vs Oracle Lens under text-fixed steering** (H3/H4 are the contribution; a bare H2 positive ≈ a Qwen replication of Viswanath).
+7. **J-space rank.** G2 must pass at r* and 4r*. The write-up says "outside the top-r J-space", never "outside the workspace".
+8. **G4 stays a gate,** ablating along the J-removed direction. Features failing it go to an appendix as "decodable, unused".
+9. **Calibration features.**
+   - IJ1 is gated like the others.
+   - IJ2 → language identity (multilingual_mt) or typo target.
+   - NJ3's ground truth = the model's *predicted* POS.
+10. **Viswanath-style projection arm:** included, capped at half a day, appendix by default (norm-matched projections are themselves out-of-distribution).
+11. **NLA checkpoint and K0.** NLA iter400 primary, 300 for robustness. For K0, functional tests outrank cosine. Fix the DeltaNet kernels first; if cosine stays ~0.974, proceed with the FVE-matching convention plus a sensitivity analysis on the headline arm.
+12. **Figure 1 = dose-response** (three readers; one non-J and one in-J feature side by side). The 2×2 is an intro schematic. Add a ≤1-page descriptive re-analysis of the pilot, and cite the pilot and Viswanath in paragraph 1.
