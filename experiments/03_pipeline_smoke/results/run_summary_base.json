@@ -1,0 +1,37 @@
+{
+ "base": {
+  "timing": {
+   "sections": {
+    "load_model_and_olens": 41.71,
+    "capture": 48.45,
+    "jspace_bases": 7.67,
+    "probes": 28.58,
+    "directions_doses_steer": 0.11,
+    "olens_steered_scoring": 331.89,
+    "olens_natural_layer_sweep": 71.34,
+    "jlens": 0.84,
+    "textnla_local": 35.53,
+    "arm_u_L38": 6.36,
+    "olens_generate_16": 19.62
+   },
+   "total_s": 592.09,
+   "ol_s_per_pair": 0.02560706839517311,
+   "ol_gen_s_per_row_b16": 1.2264444530010223,
+   "n_ol_pairs": 12960
+  },
+  "peak_mem_gb": 65.71,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "hook_check": {
+   "item0_L40": 0.010109622962772846,
+   "item0_L42": 0.009843830950558186,
+   "item0_L44": 0.009609708562493324,
+   "item1_L40": 0.013878288678824902,
+   "item1_L42": 0.012026575393974781,
+   "item1_L44": 0.010610945522785187
+  },
+  "overlap_02": {
+   "38": 0.9999973773956299,
+   "42": 1.0000005960464478
+  }
+ }
+}

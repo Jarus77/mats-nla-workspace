@@ -1,0 +1,17 @@
+{
+ "nla": {
+  "timing": {
+   "sections": {
+    "load_nla": 147.59,
+    "nla_scoring": 237.27,
+    "fve_guard": 320.75
+   },
+   "total_s": 705.61,
+   "nla_s_per_pair": 0.054922759146602065,
+   "nla_gen_plus_recon_s_per_sample": 0.47730409921634764,
+   "n_gen": 672
+  },
+  "peak_mem_gb": 103.57,
+  "gpu": "NVIDIA H200"
+ }
+}

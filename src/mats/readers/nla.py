@@ -379,3 +379,63 @@ def load_nla(
               device=device)
     block1.register_forward_hook(nla._hook)
     return nla
+
+
+# ----------------------------------------------------------------------------- batched scoring
+# Added for the sprint pipeline (src/mats README): module-level helpers only; the NLA class above
+# is unchanged. They reuse NLA._inject, whose hook already accepts one vector per batch row.
+
+
+@torch.no_grad()
+def logprob_of_strings_batch(
+    nla: NLA,
+    acts: torch.Tensor,
+    candidates: Sequence[str],
+    prefix: str = EXPLANATION_PREFIX,
+    batch: int = 32,
+) -> torch.Tensor:
+    """[N, C] summed log p(candidate | AV prompt with act_i injected, prefix), batched over
+    activations. All C candidates of one activation always share a forward batch."""
+    acts = acts.reshape(-1, acts.shape[-1]).float()
+    head = nla.prompt_ids + nla.tok.encode(prefix, add_special_tokens=False)
+    cands = [nla.tok.encode(c, add_special_tokens=False) for c in candidates]
+    C = len(cands)
+    per = max(1, batch // C)
+    out = torch.empty(acts.shape[0], C)
+    n = len(head) + max(map(len, cands))
+    for s in range(0, acts.shape[0], per):
+        a = acts[s : s + per]
+        rows = [(i, c) for i in range(a.shape[0]) for c in range(C)]
+        ids = torch.full((len(rows), n), nla.tok.pad_token_id, dtype=torch.long)
+        mask = torch.zeros_like(ids)
+        for r, (_, c) in enumerate(rows):
+            seq = head + cands[c]
+            ids[r, : len(seq)] = torch.tensor(seq)
+            mask[r, : len(seq)] = 1
+        ids, mask = ids.to(nla.device), mask.to(nla.device)
+        v = a.repeat_interleave(C, dim=0).to(nla.device)
+        keep = n - len(head) + 1
+        with nla._inject(v):
+            logits = nla.av(input_ids=ids, attention_mask=mask, logits_to_keep=keep).logits
+        lp = torch.log_softmax(logits[:, :-1].float(), dim=-1)
+        tok_lp = lp.gather(-1, ids[:, len(head):].unsqueeze(-1)).squeeze(-1)
+        for r, (i, c) in enumerate(rows):
+            out[s + i, c] = float(tok_lp[r, : len(cands[c])].sum())
+    return out
+
+
+def paired_logodds_batch(
+    nla: NLA, acts: torch.Tensor, cand_a: str, cand_b: str, prefix: str = EXPLANATION_PREFIX,
+    batch: int = 32,
+) -> torch.Tensor:
+    """[N] log p(a | act_i) - log p(b | act_i) (native explanation register)."""
+    lp = logprob_of_strings_batch(nla, acts, [cand_a, cand_b], prefix=prefix, batch=batch)
+    return lp[:, 0] - lp[:, 1]
+
+
+def paired_logodds_templates(
+    nla: NLA, acts: torch.Tensor, pairs: Sequence[tuple[str, str]],
+    prefix: str = EXPLANATION_PREFIX, batch: int = 32,
+) -> torch.Tensor:
+    """[T, N] LO per (a, b) template pair."""
+    return torch.stack([paired_logodds_batch(nla, acts, a, b, prefix, batch) for a, b in pairs])
