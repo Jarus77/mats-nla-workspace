@@ -1,0 +1,2360 @@
+{
+ "_meta": {
+  "source": "bank mc blocks (source repo hard_mt_mc_options.py, Opus-written confusables), mc_judge.LANG_CONFUSABLES for languages, seeded draws over the bank for typo corrections; order = sha256(f'{MC_SEED}|{name}|{role}') shuffle as in the source mc_judge",
+  "prompt_version": "mc-2026-09-16"
+ },
+ "options": {
+  "mlmh-ar-kente-accra": {
+   "bridge_native": {
+    "options": [
+     "Aso Oke",
+     "kente",
+     "Kitenge",
+     "Bogolanfini",
+     "Adire",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Hebrew",
+     "Urdu",
+     "Persian",
+     "Pashto",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-ar-southpole-norwegian": {
+   "bridge_native": {
+    "options": [
+     "Douglas Mawson",
+     "Ernest Shackleton",
+     "Roald Amundsen",
+     "Robert Falcon Scott",
+     "Fridtjof Nansen",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Pashto",
+     "Urdu",
+     "Persian",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-ar-suryavarman-temple-country": {
+   "bridge_native": {
+    "options": [
+     "Angkor Wat",
+     "Prambanan",
+     "Ananda Temple",
+     "Borobudur",
+     "Wat Phou",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Persian",
+     "Urdu",
+     "Hebrew",
+     "Arabic",
+     "Pashto",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-ar-wagner-festival-bavaria": {
+   "bridge_native": {
+    "options": [
+     "Würzburg",
+     "Regensburg",
+     "Weimar",
+     "Bayreuth",
+     "Bamberg",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Persian",
+     "Hebrew",
+     "Pashto",
+     "Arabic",
+     "Urdu",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-ar-vicuna-peru": {
+   "bridge_native": {
+    "options": [
+     "Angora goat",
+     "llama",
+     "vicuña",
+     "alpaca",
+     "guanaco",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Persian",
+     "Pashto",
+     "Urdu",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-ar-ashgabat-manat": {
+   "bridge_native": {
+    "options": [
+     "Turkmenistan",
+     "Kazakhstan",
+     "Tajikistan",
+     "Kyrgyzstan",
+     "Uzbekistan",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Pashto",
+     "Urdu",
+     "Hebrew",
+     "Persian",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-ar-thimphu-buddhism": {
+   "bridge_native": {
+    "options": [
+     "Sri Lanka",
+     "Bhutan",
+     "Mongolia",
+     "Nepal",
+     "Myanmar",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Pashto",
+     "Persian",
+     "Urdu",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-el-andronikos-university": {
+   "bridge_native": {
+    "options": [
+     "Christos Tsountas",
+     "Manolis Andronikos",
+     "Georgios Mylonas",
+     "Nikolaos Platon",
+     "Spyridon Marinatos",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Macedonian",
+     "Bulgarian",
+     "Greek",
+     "Turkish",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-el-bakelite-baekeland-belgium": {
+   "bridge_native": {
+    "options": [
+     "Charles Goodyear",
+     "Jacques Brandenberger",
+     "Wallace Carothers",
+     "Leo Baekeland",
+     "Hermann Staudinger",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Macedonian",
+     "Bulgarian",
+     "Turkish",
+     "Albanian",
+     "Greek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-el-eratosthenes-alexandria": {
+   "bridge_native": {
+    "options": [
+     "Aristarchus of Samos",
+     "Posidonius",
+     "Hipparchus",
+     "Eratosthenes",
+     "Claudius Ptolemy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Macedonian",
+     "Albanian",
+     "Bulgarian",
+     "Greek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-el-kazantzakis-crete": {
+   "bridge_native": {
+    "options": [
+     "Nikos Kazantzakis",
+     "Odysseas Elytis",
+     "Kostis Palamas",
+     "Giorgos Seferis",
+     "Constantine Cavafy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Macedonian",
+     "Greek",
+     "Turkish",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-el-ptfe-fluorine": {
+   "bridge_native": {
+    "options": [
+     "polystyrene",
+     "polymethyl methacrylate",
+     "polyvinylidene fluoride",
+     "polytetrafluoroethylene",
+     "polyvinyl chloride",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Albanian",
+     "Bulgarian",
+     "Greek",
+     "Macedonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-el-sandwich-earl-hawaii": {
+   "bridge_native": {
+    "options": [
+     "George Montagu-Dunk, 2nd Earl of Halifax",
+     "Augustus FitzRoy, 3rd Duke of Grafton",
+     "Charles Watson-Wentworth, 2nd Marquess of Rockingham",
+     "John Montagu, 4th Earl of Sandwich",
+     "William Petty, 2nd Earl of Shelburne",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Greek",
+     "Bulgarian",
+     "Macedonian",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-el-svalbard-sovereignty": {
+   "bridge_native": {
+    "options": [
+     "Svalbard",
+     "Severnaya Zemlya",
+     "Franz Josef Land",
+     "Novaya Zemlya",
+     "Jan Mayen",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Macedonian",
+     "Greek",
+     "Turkish",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-el-darvaza-tourkmenistan": {
+   "bridge_native": {
+    "options": [
+     "Yanar Dag",
+     "Mount Chimaera",
+     "Darvaza gas crater",
+     "Eternal Flame Falls",
+     "Baba Gurgur",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Greek",
+     "Albanian",
+     "Macedonian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-el-jacquard-lyon": {
+   "bridge_native": {
+    "options": [
+     "Joseph Marie Jacquard",
+     "Jacques de Vaucanson",
+     "Philippe de Girard",
+     "Barthélemy Thimonnier",
+     "Basile Bouchon",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Albanian",
+     "Macedonian",
+     "Turkish",
+     "Bulgarian",
+     "Greek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-fi-asml-alankomaat": {
+   "bridge_native": {
+    "options": [
+     "Lam Research Corporation",
+     "ASML Holding N.V.",
+     "Applied Materials, Inc.",
+     "Tokyo Electron Limited",
+     "KLA Corporation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Swedish",
+     "Finnish",
+     "Latvian",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-fi-hottest-place-state": {
+   "bridge_native": {
+    "options": [
+     "Joshua Tree National Park",
+     "Death Valley",
+     "Grand Canyon",
+     "Monument Valley",
+     "Yosemite Valley",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Estonian",
+     "Swedish",
+     "Latvian",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-fi-korkein-vedenpudotus-poytavuori": {
+   "bridge_native": {
+    "options": [
+     "Iguazu Falls",
+     "Kaieteur Falls",
+     "Victoria Falls",
+     "Tugela Falls",
+     "Angel Falls",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Estonian",
+     "Latvian",
+     "Hungarian",
+     "Swedish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-fi-lind-askorbiinihappo": {
+   "bridge_native": {
+    "options": [
+     "rickets",
+     "kwashiorkor",
+     "pellagra",
+     "scurvy",
+     "beriberi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Latvian",
+     "Swedish",
+     "Estonian",
+     "Finnish",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-fi-mora-vasaloppet": {
+   "bridge_native": {
+    "options": [
+     "Falun, Sweden",
+     "Mora, Sweden",
+     "Leksand, Sweden",
+     "Östersund, Sweden",
+     "Rättvik, Sweden",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Finnish",
+     "Swedish",
+     "Estonian",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-fi-prudhoe-siirtolinja-paatesatama": {
+   "bridge_native": {
+    "options": [
+     "Keystone XL Pipeline",
+     "Dakota Access Pipeline",
+     "Colonial Pipeline",
+     "Baku–Tbilisi–Ceyhan Pipeline",
+     "Trans-Alaska Pipeline System",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Estonian",
+     "Latvian",
+     "Hungarian",
+     "Swedish",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-fi-bakeliitti-formaldehydi": {
+   "bridge_native": {
+    "options": [
+     "Galalith",
+     "Bakelite",
+     "Melamine resin",
+     "Celluloid",
+     "Ebonite",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Estonian",
+     "Swedish",
+     "Latvian",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-fi-bayeux-normandia": {
+   "bridge_native": {
+    "options": [
+     "The Lady and the Unicorn",
+     "The Hunt of the Unicorn",
+     "Bayeux Tapestry",
+     "Apocalypse Tapestry",
+     "Överhogdal Tapestries",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Latvian",
+     "Estonian",
+     "Finnish",
+     "Hungarian",
+     "Swedish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-fi-kesaton-vuosi-saari": {
+   "bridge_native": {
+    "options": [
+     "Mount Pinatubo",
+     "Mount Agung",
+     "Krakatoa",
+     "Mount Tambora",
+     "Mount Merapi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Latvian",
+     "Estonian",
+     "Swedish",
+     "Finnish",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-fi-mokapannu-alumiini": {
+   "bridge_native": {
+    "options": [
+     "moka pot",
+     "Turkish cezve",
+     "French press",
+     "Chemex",
+     "AeroPress",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Estonian",
+     "Latvian",
+     "Swedish",
+     "Hungarian",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-he-darvaza-turkmenistan": {
+   "bridge_native": {
+    "options": [
+     "Baba Gurgur",
+     "Yanar Dag",
+     "Darvaza gas crater",
+     "Mount Yasur",
+     "Batagaika crater",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Aramaic",
+     "Yiddish",
+     "Maltese",
+     "Arabic",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-he-oresund-malmo": {
+   "bridge_native": {
+    "options": [
+     "Rion-Antirion Bridge",
+     "Oresund Bridge",
+     "Little Belt Bridge",
+     "Great Belt Bridge",
+     "Vasco da Gama Bridge",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Maltese",
+     "Arabic",
+     "Hebrew",
+     "Yiddish",
+     "Aramaic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-he-pacific-yew-taxol": {
+   "bridge_native": {
+    "options": [
+     "Japanese yew",
+     "Pacific yew",
+     "European yew",
+     "Canada yew",
+     "Western red cedar",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Aramaic",
+     "Yiddish",
+     "Hebrew",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-he-ytterby-sweden": {
+   "bridge_native": {
+    "options": [
+     "Falun",
+     "Bastnäs",
+     "Ytterby",
+     "Riddarhyttan",
+     "Långban",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Yiddish",
+     "Arabic",
+     "Hebrew",
+     "Aramaic",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-he-beriberi-thiamine": {
+   "bridge_native": {
+    "options": [
+     "pellagra",
+     "rickets",
+     "kwashiorkor",
+     "beriberi",
+     "scurvy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Aramaic",
+     "Hebrew",
+     "Yiddish",
+     "Arabic",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-he-chicxulub-yucatan": {
+   "bridge_native": {
+    "options": [
+     "Sudbury Basin",
+     "Popigai crater",
+     "Chicxulub crater",
+     "Manicouagan crater",
+     "Vredefort crater",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Yiddish",
+     "Arabic",
+     "Maltese",
+     "Aramaic",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-he-cornflakes-michigan": {
+   "bridge_native": {
+    "options": [
+     "Muskegon",
+     "Kalamazoo",
+     "Battle Creek",
+     "Grand Rapids",
+     "Saginaw",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Aramaic",
+     "Yiddish",
+     "Hebrew",
+     "Arabic",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-he-hindenburg-hydrogen": {
+   "bridge_native": {
+    "options": [
+     "Graf Zeppelin",
+     "USS Macon",
+     "Hindenburg",
+     "USS Akron",
+     "USS Shenandoah",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Arabic",
+     "Maltese",
+     "Aramaic",
+     "Yiddish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-he-chicxulub-mexico": {
+   "bridge_native": {
+    "options": [
+     "Manicouagan crater",
+     "Sudbury Basin",
+     "Popigai crater",
+     "Chicxulub crater",
+     "Vredefort crater",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Yiddish",
+     "Aramaic",
+     "Arabic",
+     "Maltese",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-he-maillard-france": {
+   "bridge_native": {
+    "options": [
+     "Paul Sabatier",
+     "Marcellin Berthelot",
+     "Charles Friedel",
+     "Louis-Camille Maillard",
+     "Victor Grignard",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Maltese",
+     "Yiddish",
+     "Hebrew",
+     "Arabic",
+     "Aramaic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-hu-bergamot-calabria": {
+   "bridge_native": {
+    "options": [
+     "pomelo",
+     "bergamot orange",
+     "kaffir lime",
+     "yuzu",
+     "citron",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Turkish",
+     "Estonian",
+     "Romanian",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-hu-kepler-ellipszis": {
+   "bridge_native": {
+    "options": [
+     "CoRoT space telescope",
+     "Kepler space telescope",
+     "Transiting Exoplanet Survey Satellite",
+     "Hubble Space Telescope",
+     "Spitzer Space Telescope",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Romanian",
+     "Estonian",
+     "Turkish",
+     "Finnish",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-hu-vandorgalamb-allatkert": {
+   "bridge_native": {
+    "options": [
+     "heath hen",
+     "passenger pigeon",
+     "Carolina parakeet",
+     "Labrador duck",
+     "great auk",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Estonian",
+     "Romanian",
+     "Turkish",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-hu-vosztok-foldresz": {
+   "bridge_native": {
+    "options": [
+     "Concordia Station",
+     "Vostok Station",
+     "Amundsen-Scott South Pole Station",
+     "McMurdo Station",
+     "Mirny Station",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Romanian",
+     "Turkish",
+     "Finnish",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-hu-kakapo-oshaza": {
+   "bridge_native": {
+    "options": [
+     "New Zealand kaka",
+     "kea",
+     "kakapo",
+     "takahe",
+     "weka",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Romanian",
+     "Hungarian",
+     "Turkish",
+     "Finnish",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-hu-arecibo-puerto-rico": {
+   "bridge_native": {
+    "options": [
+     "Arecibo Observatory",
+     "Parkes Observatory",
+     "Very Large Array",
+     "Effelsberg Radio Telescope",
+     "Green Bank Observatory",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Hungarian",
+     "Turkish",
+     "Romanian",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-hu-nyaki-negy-szerv-kalcium-hormon": {
+   "bridge_native": {
+    "options": [
+     "parathyroid gland",
+     "adrenal gland",
+     "thyroid gland",
+     "pituitary gland",
+     "pineal gland",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Romanian",
+     "Hungarian",
+     "Estonian",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-id-aral-uzbekistan": {
+   "bridge_native": {
+    "options": [
+     "Lake Balkhash",
+     "Issyk-Kul",
+     "Lake Baikal",
+     "Caspian Sea",
+     "Aral Sea",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Indonesian",
+     "Malay",
+     "Javanese",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-id-giyanti-yogyakarta": {
+   "bridge_native": {
+    "options": [
+     "Treaty of Bongaya",
+     "Linggadjati Agreement",
+     "Treaty of Tuntang",
+     "Treaty of Salatiga",
+     "Treaty of Giyanti",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Javanese",
+     "Tagalog",
+     "Swahili",
+     "Malay",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-id-transsiberia-vladivostok": {
+   "bridge_native": {
+    "options": [
+     "Baikal–Amur Mainline",
+     "Orient Express",
+     "Trans-Australian Railway",
+     "Canadian Pacific Railway",
+     "Trans-Siberian Railway",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Swahili",
+     "Tagalog",
+     "Javanese",
+     "Indonesian",
+     "Malay",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-id-terusan-kiel-schleswig": {
+   "bridge_native": {
+    "options": [
+     "Corinth Canal",
+     "Göta Canal",
+     "Danube–Black Sea Canal",
+     "Kiel Canal",
+     "Main-Danube Canal",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Swahili",
+     "Malay",
+     "Javanese",
+     "Indonesian",
+     "Tagalog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-id-kubus-rubik-hongaria": {
+   "bridge_native": {
+    "options": [
+     "Soma Cube",
+     "Rubik's Cube",
+     "Fifteen Puzzle",
+     "Tower of Hanoi",
+     "Tangram",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Swahili",
+     "Javanese",
+     "Malay",
+     "Tagalog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-ko-arecibo-puertorico": {
+   "bridge_native": {
+    "options": [
+     "Very Large Array",
+     "Parkes Observatory",
+     "Effelsberg Radio Telescope",
+     "Green Bank Observatory",
+     "Arecibo Observatory",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Vietnamese",
+     "Chinese",
+     "Korean",
+     "Japanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-ko-bayreuth-bavaria": {
+   "bridge_native": {
+    "options": [
+     "Vienna State Opera",
+     "Semperoper Dresden",
+     "Nationaltheater München",
+     "Bayreuth Festspielhaus",
+     "Teatro alla Scala",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Japanese",
+     "Korean",
+     "Vietnamese",
+     "Chinese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ko-chandra-columbia": {
+   "bridge_native": {
+    "options": [
+     "ROSAT",
+     "XMM-Newton",
+     "Spitzer Space Telescope",
+     "Compton Gamma Ray Observatory",
+     "Chandra X-ray Observatory",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Korean",
+     "Vietnamese",
+     "Japanese",
+     "Chinese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-ko-oresund-malmo": {
+   "bridge_native": {
+    "options": [
+     "Little Belt Bridge",
+     "Öland Bridge",
+     "Svinesund Bridge",
+     "Øresund Bridge",
+     "Great Belt Bridge",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Korean",
+     "Japanese",
+     "Mongolian",
+     "Chinese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-ko-oymyakon-yakutsk": {
+   "bridge_native": {
+    "options": [
+     "Tiksi",
+     "Chersky",
+     "Verkhoyansk",
+     "Oymyakon",
+     "Batagay",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Japanese",
+     "Chinese",
+     "Korean",
+     "Vietnamese",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ko-perkin-quinine": {
+   "bridge_native": {
+    "options": [
+     "Adolf von Baeyer",
+     "Friedrich Wöhler",
+     "Justus von Liebig",
+     "August Wilhelm von Hofmann",
+     "William Henry Perkin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Korean",
+     "Vietnamese",
+     "Chinese",
+     "Japanese",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-ko-antikythera-bronze": {
+   "bridge_native": {
+    "options": [
+     "Nebra Sky Disc",
+     "Derveni Papyrus",
+     "Antikythera mechanism",
+     "Phaistos Disc",
+     "Baghdad Battery",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Chinese",
+     "Korean",
+     "Japanese",
+     "Mongolian",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-ko-krakatoa-currency": {
+   "bridge_native": {
+    "options": [
+     "Krakatoa",
+     "Mount Vesuvius",
+     "Mount Merapi",
+     "Mount Tambora",
+     "Mount Pinatubo",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Korean",
+     "Japanese",
+     "Mongolian",
+     "Chinese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-ko-microwave-spencer-raytheon": {
+   "bridge_native": {
+    "options": [
+     "Willis Carrier",
+     "Edwin Land",
+     "Chester Carlson",
+     "Percy Spencer",
+     "Harold Edgerton",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Korean",
+     "Vietnamese",
+     "Mongolian",
+     "Chinese",
+     "Japanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-ko-onnes-netherlands": {
+   "bridge_native": {
+    "options": [
+     "Johannes Diderik van der Waals",
+     "Frits Zernike",
+     "Pieter Zeeman",
+     "Heike Kamerlingh Onnes",
+     "Hendrik Antoon Lorentz",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Korean",
+     "Japanese",
+     "Mongolian",
+     "Vietnamese",
+     "Chinese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-ko-svalbard-norway": {
+   "bridge_native": {
+    "options": [
+     "Jan Mayen",
+     "Novaya Zemlya",
+     "Svalbard",
+     "Franz Josef Land",
+     "Severnaya Zemlya",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Chinese",
+     "Korean",
+     "Vietnamese",
+     "Japanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ko-herschel-infrared": {
+   "bridge_native": {
+    "options": [
+     "Giuseppe Piazzi",
+     "Joseph von Fraunhofer",
+     "Charles Messier",
+     "William Herschel",
+     "Johann Wilhelm Ritter",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Chinese",
+     "Korean",
+     "Japanese",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ko-irri-ir8-philippines": {
+   "bridge_native": {
+    "options": [
+     "International Livestock Research Institute",
+     "International Maize and Wheat Improvement Center",
+     "International Potato Center",
+     "International Institute of Tropical Agriculture",
+     "International Rice Research Institute",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Vietnamese",
+     "Chinese",
+     "Korean",
+     "Japanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-ko-vacuum-booth-gloucester": {
+   "bridge_native": {
+    "options": [
+     "Melville Reuben Bissell",
+     "William Henry Hoover",
+     "Hubert Cecil Booth",
+     "James Murray Spangler",
+     "Frederick William Lanchester",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Chinese",
+     "Vietnamese",
+     "Japanese",
+     "Korean",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-ko-wernicke-thiamine": {
+   "bridge_native": {
+    "options": [
+     "Marchiafava-Bignami disease",
+     "Subacute combined degeneration",
+     "Hepatic encephalopathy",
+     "Wernicke encephalopathy",
+     "Central pontine myelinolysis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Korean",
+     "Chinese",
+     "Japanese",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-pl-erupcja-1815-panstwo": {
+   "bridge_native": {
+    "options": [
+     "Mount Tambora",
+     "Krakatoa",
+     "Mount Pinatubo",
+     "Mount Kelud",
+     "Mount Merapi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Croatian",
+     "Czech",
+     "Slovak",
+     "Polish",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-pl-najruchliwsza-droga-wodna-morze": {
+   "bridge_native": {
+    "options": [
+     "Kiel Canal",
+     "Suez Canal",
+     "Corinth Canal",
+     "Mittelland Canal",
+     "Göta Canal",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Czech",
+     "Croatian",
+     "Polish",
+     "Ukrainian",
+     "Slovak",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-pl-waksman-streptomycyna": {
+   "bridge_native": {
+    "options": [
+     "Gerhard Domagk",
+     "Ernst Boris Chain",
+     "Alexander Fleming",
+     "Selman Waksman",
+     "René Dubos",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Slovak",
+     "Croatian",
+     "Ukrainian",
+     "Czech",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-pl-surtsey-islandia": {
+   "bridge_native": {
+    "options": [
+     "Heimaey Island",
+     "Anak Krakatau",
+     "Surtsey Island",
+     "Jan Mayen Island",
+     "Nishinoshima Island",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Slovak",
+     "Polish",
+     "Czech",
+     "Ukrainian",
+     "Croatian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-pl-zamenhof-bialystok": {
+   "bridge_native": {
+    "options": [
+     "Otto Jespersen",
+     "Edgar de Wahl",
+     "Johann Martin Schleyer",
+     "Giuseppe Peano",
+     "L. L. Zamenhof",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Croatian",
+     "Slovak",
+     "Czech",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-pl-antykithira-ateny": {
+   "bridge_native": {
+    "options": [
+     "Antikythera mechanism",
+     "Baghdad Battery",
+     "Nebra Sky Disc",
+     "Derveni Papyrus",
+     "Phaistos Disc",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Slovak",
+     "Polish",
+     "Ukrainian",
+     "Croatian",
+     "Czech",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-pl-titanarum-sumatra": {
+   "bridge_native": {
+    "options": [
+     "dead horse arum lily",
+     "giant water lily",
+     "titan arum",
+     "konjac",
+     "dragon arum",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Slovak",
+     "Croatian",
+     "Polish",
+     "Ukrainian",
+     "Czech",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ru-darvaza-ashgabat": {
+   "bridge_native": {
+    "options": [
+     "Tajikistan",
+     "Kazakhstan",
+     "Uzbekistan",
+     "Turkmenistan",
+     "Kyrgyzstan",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Serbian",
+     "Russian",
+     "Bulgarian",
+     "Ukrainian",
+     "Belarusian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-ru-ironbridge-shropshire": {
+   "bridge_native": {
+    "options": [
+     "Menai Suspension Bridge",
+     "Clifton Suspension Bridge",
+     "Iron Bridge",
+     "Pulteney Bridge",
+     "Forth Bridge",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Serbian",
+     "Ukrainian",
+     "Belarusian",
+     "Russian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-ru-k2-karakoram": {
+   "bridge_native": {
+    "options": [
+     "Nanga Parbat",
+     "Broad Peak",
+     "Kangchenjunga",
+     "K2 mountain",
+     "Gasherbrum I",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Ukrainian",
+     "Belarusian",
+     "Russian",
+     "Serbian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ru-klyuchevskaya-kamchatka": {
+   "bridge_native": {
+    "options": [
+     "Koryaksky Volcano",
+     "Avachinsky Volcano",
+     "Klyuchevskaya Sopka",
+     "Tolbachik Volcano",
+     "Shiveluch Volcano",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Bulgarian",
+     "Russian",
+     "Ukrainian",
+     "Serbian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ru-monarch-michoacan": {
+   "bridge_native": {
+    "options": [
+     "viceroy butterfly",
+     "painted lady",
+     "queen butterfly",
+     "monarch butterfly",
+     "red admiral",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Ukrainian",
+     "Serbian",
+     "Bulgarian",
+     "Russian",
+     "Belarusian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-ru-myanmar-andaman": {
+   "bridge_native": {
+    "options": [
+     "Chao Phraya River",
+     "Mekong River",
+     "Irrawaddy River",
+     "Brahmaputra River",
+     "Salween River",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Russian",
+     "Serbian",
+     "Bulgarian",
+     "Ukrainian",
+     "Belarusian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-ru-pellagra-tryptophan": {
+   "bridge_native": {
+    "options": [
+     "pyridoxine",
+     "thiamine",
+     "riboflavin",
+     "pantothenic acid",
+     "niacin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Ukrainian",
+     "Russian",
+     "Serbian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ru-pernicious-cobalt": {
+   "bridge_native": {
+    "options": [
+     "vitamin B12",
+     "biotin",
+     "folic acid",
+     "thiamine",
+     "riboflavin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Bulgarian",
+     "Russian",
+     "Serbian",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-ru-teide-tenerife": {
+   "bridge_native": {
+    "options": [
+     "Roque de los Muchachos",
+     "Mount Etna",
+     "Mount Teide",
+     "Cumbre Vieja",
+     "Mulhacén",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Serbian",
+     "Ukrainian",
+     "Belarusian",
+     "Russian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-ru-tordesillas-portugal": {
+   "bridge_native": {
+    "options": [
+     "Treaty of Madrid (1750)",
+     "Treaty of Zaragoza",
+     "Treaty of Alcáçovas",
+     "Treaty of Tordesillas",
+     "Treaty of Utrecht",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Russian",
+     "Serbian",
+     "Ukrainian",
+     "Belarusian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-ru-dishwasher-illinois": {
+   "bridge_native": {
+    "options": [
+     "Josephine Cochrane",
+     "Melitta Bentz",
+     "Mary Anderson",
+     "Sarah Boone",
+     "Margaret Knight",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Ukrainian",
+     "Belarusian",
+     "Serbian",
+     "Russian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-ru-suriname-netherlands": {
+   "bridge_native": {
+    "options": [
+     "Suriname",
+     "Belize",
+     "Guyana",
+     "Trinidad and Tobago",
+     "Paraguay",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Belarusian",
+     "Serbian",
+     "Ukrainian",
+     "Russian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-ru-transsib-vladivostok": {
+   "bridge_native": {
+    "options": [
+     "Orient Express",
+     "Trans-Siberian Railway",
+     "Baikal–Amur Mainline",
+     "Canadian Pacific Railway",
+     "Turkestan–Siberian Railway",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Ukrainian",
+     "Belarusian",
+     "Bulgarian",
+     "Serbian",
+     "Russian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-ru-sarez-tajikistan": {
+   "bridge_native": {
+    "options": [
+     "Lake Zorkul",
+     "Lake Sarez",
+     "Yashilkul",
+     "Lake Karakul",
+     "Iskanderkul",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Serbian",
+     "Belarusian",
+     "Ukrainian",
+     "Russian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-ru-stradivari-cremona": {
+   "bridge_native": {
+    "options": [
+     "Antonio Stradivari",
+     "Jacob Stainer",
+     "Giovanni Battista Guadagnini",
+     "Giuseppe Guarneri",
+     "Nicolò Amati",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Serbian",
+     "Belarusian",
+     "Ukrainian",
+     "Russian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-sw-natron-nyekundu": {
+   "bridge_native": {
+    "options": [
+     "Lake Natron",
+     "Lake Magadi",
+     "Lake Manyara",
+     "Lake Bogoria",
+     "Lake Eyasi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Yoruba",
+     "Swahili",
+     "Zulu",
+     "Indonesian",
+     "Hausa",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlmh-tr-lind-citrus-protein": {
+   "bridge_native": {
+    "options": [
+     "rickets",
+     "beriberi",
+     "pellagra",
+     "scurvy",
+     "kwashiorkor",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Azerbaijani",
+     "Uzbek",
+     "Hungarian",
+     "Kazakh",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-tr-paslanmaz-sheffield": {
+   "bridge_native": {
+    "options": [
+     "cast iron",
+     "Damascus steel",
+     "brass",
+     "bronze",
+     "stainless steel",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Uzbek",
+     "Kazakh",
+     "Turkish",
+     "Azerbaijani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-tr-arctic-seed-shelter-country": {
+   "bridge_native": {
+    "options": [
+     "Svalbard Global Seed Vault",
+     "Vavilov Seed Bank",
+     "National Center for Genetic Resources Preservation",
+     "Millennium Seed Bank",
+     "International Rice Genebank",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Uzbek",
+     "Hungarian",
+     "Kazakh",
+     "Turkish",
+     "Azerbaijani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlmh-tr-kopi-luwak-endonezya": {
+   "bridge_native": {
+    "options": [
+     "Monsooned Malabar",
+     "Black Ivory Coffee",
+     "Jamaica Blue Mountain Coffee",
+     "kopi luwak",
+     "Kona coffee",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Kazakh",
+     "Uzbek",
+     "Azerbaijani",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-tr-monark-meksika": {
+   "bridge_native": {
+    "options": [
+     "red admiral butterfly",
+     "painted lady butterfly",
+     "monarch butterfly",
+     "eastern tiger swallowtail",
+     "viceroy butterfly",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Azerbaijani",
+     "Kazakh",
+     "Hungarian",
+     "Uzbek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-tr-atp7b-metal": {
+   "bridge_native": {
+    "options": [
+     "alpha-1 antitrypsin deficiency",
+     "Wilson's disease",
+     "Menkes disease",
+     "hereditary hemochromatosis",
+     "Gaucher disease",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Kazakh",
+     "Azerbaijani",
+     "Hungarian",
+     "Uzbek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-tr-parkes-avustralya": {
+   "bridge_native": {
+    "options": [
+     "Arecibo Observatory",
+     "Lovell Telescope",
+     "Effelsberg Radio Telescope",
+     "Green Bank Telescope",
+     "Parkes Radio Telescope",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Azerbaijani",
+     "Uzbek",
+     "Kazakh",
+     "Hungarian",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-vi-porcelain-capital-province": {
+   "bridge_native": {
+    "options": [
+     "Jingdezhen",
+     "Ganzhou",
+     "Yixing",
+     "Dehua",
+     "Foshan",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Khmer",
+     "Indonesian",
+     "Lao",
+     "Thai",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-vi-tonlesap-mekong": {
+   "bridge_native": {
+    "options": [
+     "Songkhla Lake",
+     "Laguna de Bay",
+     "Lake Toba",
+     "Tonle Sap",
+     "Inle Lake",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Thai",
+     "Indonesian",
+     "Vietnamese",
+     "Lao",
+     "Khmer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlmh-vi-mawsynram-meghalaya": {
+   "bridge_native": {
+    "options": [
+     "Mawsynram village",
+     "Nongstoin town",
+     "Jowai town",
+     "Tura town",
+     "Cherrapunji town",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Thai",
+     "Khmer",
+     "Indonesian",
+     "Lao",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlmh-vi-thaison-sondong": {
+   "bridge_native": {
+    "options": [
+     "Mount Tai",
+     "Mount Song",
+     "Mount Emei",
+     "Mount Wutai",
+     "Mount Hua",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Khmer",
+     "Thai",
+     "Lao",
+     "Indonesian",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlmh-vi-assal-djibouti": {
+   "bridge_native": {
+    "options": [
+     "Lake Afrera",
+     "Lake Assal",
+     "Lake Turkana",
+     "Lake Natron",
+     "Lake Abbe",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Lao",
+     "Vietnamese",
+     "Indonesian",
+     "Thai",
+     "Khmer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  }
+ }
+}

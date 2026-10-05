@@ -1,0 +1,291 @@
+{
+ "family": "multi-concept-directed-modulation",
+ "source": "evals/workspace-bench/hillclimbing_evals/multi_token/multi_concept_directed_modulation/read_bank.json (source repo; items byte-identical, wrapped in this header)",
+ "head_template": "Think about %s. Now write this sentence: \"%s\"\n",
+ "control_template": "Read carefully. Now write this sentence: \"%s\"\n",
+ "target_sentence": "The committee will meet on Thursday to review the annual budget.",
+ "render": "chat (Qwen chat template, enable_thinking=False, no system prompt): the item prompt is the user turn; the assistant turn opens with the empty <think>\n\n</think>\n\n block and the target sentence is PREFILLED as the assistant's text (bare sentence, no closing quote)",
+ "read_cells": "every token of the prefilled target sentence (12 tokens: The committee will meet on Thursday to review the annual budget .), offsets -12 .. -1 from the end of the render",
+ "read_cells_changed": "2026-09-23 (Camila: \"we aren't prefilling the sentence, we are just including it as part of the user message, so fix that and rerun all the methods on the written sentence tokens\"). Before: bare render of the prompt text followed by a greedy rollout, read cells = the last 20 tokens of the rollout (offsets -1 .. -20), which mixed the written sentence, the model's <think> block and its re-write of the prompt.",
+ "layers": [
+  44,
+  52,
+  56,
+  60
+ ],
+ "items": [
+  {
+   "name": "d-none",
+   "prompt": "Read carefully. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [],
+   "stratum": "control"
+  },
+  {
+   "name": "d-plumber",
+   "prompt": "Think about the plumber's blue ladder leaning against the mango tree. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "plumber",
+    "blue ladder",
+    "mango tree"
+   ],
+   "stratum": "novel"
+  },
+  {
+   "name": "d-violin",
+   "prompt": "Think about a violin floating in a jar of honey. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "violin",
+    "jar of honey",
+    "floating"
+   ],
+   "stratum": "novel"
+  },
+  {
+   "name": "d-cranes",
+   "prompt": "Think about seven origami cranes balanced on a pocket calculator. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "origami cranes",
+    "seven",
+    "pocket calculator"
+   ],
+   "stratum": "novel"
+  },
+  {
+   "name": "d-umbrella",
+   "prompt": "Think about the librarian's wet umbrella dripping onto the chessboard. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "librarian",
+    "wet umbrella",
+    "chessboard"
+   ],
+   "stratum": "novel"
+  },
+  {
+   "name": "d-petrichor",
+   "prompt": "Think about the smell of rain on dry ground. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "smell of rain",
+    "dry ground"
+   ],
+   "stratum": "anchor"
+  },
+  {
+   "name": "d-chain-egg",
+   "prompt": "Think about this plan: crack the egg, then whisk the flour, then heat the pan. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "crack the egg",
+    "whisk the flour",
+    "heat the pan"
+   ],
+   "stratum": "chain",
+   "order_gt": [
+    "egg",
+    "flour",
+    "pan"
+   ]
+  },
+  {
+   "name": "d-chain-key",
+   "prompt": "Think about this sequence: find the key, then unlock the gate, then cross the bridge. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "find the key",
+    "unlock the gate",
+    "cross the bridge"
+   ],
+   "stratum": "chain",
+   "order_gt": [
+    "key",
+    "gate",
+    "bridge"
+   ]
+  },
+  {
+   "name": "d-fox-a",
+   "prompt": "Think about a silver fox chasing a paper kite. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "silver fox",
+    "paper kite",
+    "chasing"
+   ],
+   "stratum": "pair",
+   "binding": "silver-fox"
+  },
+  {
+   "name": "d-fox-b",
+   "prompt": "Think about a paper fox chasing a silver kite. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "paper fox",
+    "silver kite",
+    "chasing"
+   ],
+   "stratum": "pair",
+   "binding": "paper-fox"
+  },
+  {
+   "name": "b-none",
+   "prompt": "Read carefully. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [],
+   "stratum": "control"
+  },
+  {
+   "name": "b-ange-mix-ab",
+   "prompt": "Think about Adam being angry at Betty. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Adam being angry at Betty"
+   ],
+   "stratum": "mix",
+   "emotion": "anger",
+   "order": "ab"
+  },
+  {
+   "name": "b-ange-mix-ba",
+   "prompt": "Think about Betty being angry at Adam. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Betty being angry at Adam"
+   ],
+   "stratum": "mix",
+   "emotion": "anger",
+   "order": "ba"
+  },
+  {
+   "name": "b-jeal-mix-ab",
+   "prompt": "Think about Maria being jealous of Tom. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Maria being jealous of Tom"
+   ],
+   "stratum": "mix",
+   "emotion": "jealousy",
+   "order": "ab"
+  },
+  {
+   "name": "b-jeal-mix-ba",
+   "prompt": "Think about Tom being jealous of Maria. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Tom being jealous of Maria"
+   ],
+   "stratum": "mix",
+   "emotion": "jealousy",
+   "order": "ba"
+  },
+  {
+   "name": "b-fear-mix-ab",
+   "prompt": "Think about Susan being afraid of David. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Susan being afraid of David"
+   ],
+   "stratum": "mix",
+   "emotion": "fear",
+   "order": "ab"
+  },
+  {
+   "name": "b-fear-mix-ba",
+   "prompt": "Think about David being afraid of Susan. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "David being afraid of Susan"
+   ],
+   "stratum": "mix",
+   "emotion": "fear",
+   "order": "ba"
+  },
+  {
+   "name": "b-prid-mix-ab",
+   "prompt": "Think about Emma being proud of James. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Emma being proud of James"
+   ],
+   "stratum": "mix",
+   "emotion": "pride",
+   "order": "ab"
+  },
+  {
+   "name": "b-prid-mix-ba",
+   "prompt": "Think about James being proud of Emma. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "James being proud of Emma"
+   ],
+   "stratum": "mix",
+   "emotion": "pride",
+   "order": "ba"
+  },
+  {
+   "name": "b-ange-same-ab",
+   "prompt": "Think about Adam being angry at Brian. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Adam being angry at Brian"
+   ],
+   "stratum": "same",
+   "emotion": "anger",
+   "order": "ab"
+  },
+  {
+   "name": "b-ange-same-ba",
+   "prompt": "Think about Brian being angry at Adam. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Brian being angry at Adam"
+   ],
+   "stratum": "same",
+   "emotion": "anger",
+   "order": "ba"
+  },
+  {
+   "name": "b-jeal-same-ab",
+   "prompt": "Think about Alice being jealous of Karen. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Alice being jealous of Karen"
+   ],
+   "stratum": "same",
+   "emotion": "jealousy",
+   "order": "ab"
+  },
+  {
+   "name": "b-jeal-same-ba",
+   "prompt": "Think about Karen being jealous of Alice. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Karen being jealous of Alice"
+   ],
+   "stratum": "same",
+   "emotion": "jealousy",
+   "order": "ba"
+  },
+  {
+   "name": "b-debt-same-ab",
+   "prompt": "Think about Carlos owing money to Miguel. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Carlos owing money to Miguel"
+   ],
+   "stratum": "same",
+   "emotion": "debt",
+   "order": "ab"
+  },
+  {
+   "name": "b-debt-same-ba",
+   "prompt": "Think about Miguel owing money to Carlos. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Miguel owing money to Carlos"
+   ],
+   "stratum": "same",
+   "emotion": "debt",
+   "order": "ba"
+  },
+  {
+   "name": "b-trus-same-ab",
+   "prompt": "Think about Nina trusting Petra completely. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Nina trusting Petra completely"
+   ],
+   "stratum": "same",
+   "emotion": "trust",
+   "order": "ab"
+  },
+  {
+   "name": "b-trus-same-ba",
+   "prompt": "Think about Petra trusting Nina completely. Now write this sentence: \"The committee will meet on Thursday to review the annual budget.\"\n",
+   "concepts": [
+    "Petra trusting Nina completely"
+   ],
+   "stratum": "same",
+   "emotion": "trust",
+   "order": "ba"
+  }
+ ]
+}

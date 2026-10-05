@@ -1,0 +1,254 @@
+{
+ "pairs": [
+  {
+   "form": "Bohr magneton",
+   "sample": "the value is the **Bohr-magneton** here",
+   "hit": true
+  },
+  {
+   "form": "Bohr magneton",
+   "sample": "bohr magnetons everywhere",
+   "hit": false
+  },
+  {
+   "form": "Simula 67",
+   "sample": "designed Simula 67 with Nygaard",
+   "hit": true
+  },
+  {
+   "form": "Simula 67",
+   "sample": "Simula 670 is not it",
+   "hit": false
+  },
+  {
+   "form": "kente",
+   "sample": "kente cloth",
+   "hit": true
+  },
+  {
+   "form": "kente",
+   "sample": "kentes",
+   "hit": false
+  },
+  {
+   "form": "Mexico",
+   "sample": "México lindo",
+   "hit": true
+  },
+  {
+   "form": "Glauber's salt",
+   "sample": "known as Glauber’s salt",
+   "hit": true
+  },
+  {
+   "form": "hourglass",
+   "sample": "an hourglass-shaped thing",
+   "hit": true
+  },
+  {
+   "form": "hourglass",
+   "sample": "hourglasses",
+   "hit": false
+  },
+  {
+   "form": "the Irrawaddy",
+   "sample": "called the Irrawaddy River",
+   "hit": true
+  },
+  {
+   "form": "Ayn Jalut",
+   "sample": "Ain Jalut",
+   "hit": false
+  },
+  {
+   "form": "Aghlabid dynasty",
+   "sample": " Aghlabid",
+   "hit": false
+  },
+  {
+   "form": "Aghlabid dynasty",
+   "sample": "Aghlabid dynasty",
+   "hit": true
+  },
+  {
+   "form": "Aghlabid dynasty",
+   "sample": " dynasty",
+   "hit": false
+  },
+  {
+   "form": "阿因贾鲁特战役",
+   "sample": "答案：阿因贾鲁特战役。",
+   "hit": true
+  },
+  {
+   "form": "沙漏",
+   "sample": "这是沙漏的例子",
+   "hit": true
+  },
+  {
+   "form": "沙漏",
+   "sample": "沙 漏",
+   "hit": false
+  },
+  {
+   "form": "손기정",
+   "sample": "마라톤 영웅 손기정입니다",
+   "hit": true
+  },
+  {
+   "form": "보로부두르",
+   "sample": "보로부두르는 자바섬에",
+   "hit": true
+  },
+  {
+   "form": "عين جالوت",
+   "sample": "معركة عين جالوت سنة 1260",
+   "hit": true
+  },
+  {
+   "form": "عين جالوت",
+   "sample": "عَين جالوت",
+   "hit": true
+  },
+  {
+   "form": "Байконур",
+   "sample": "космодром Байконур в Казахстане",
+   "hit": true
+  },
+  {
+   "form": "Байконур",
+   "sample": "Байконуре",
+   "hit": false
+  },
+  {
+   "form": "טריטון",
+   "sample": "הירח טריטון",
+   "hit": true
+  },
+  {
+   "form": "Arabic",
+   "sample": "written in Arabic",
+   "hit": true
+  },
+  {
+   "form": "Arabic",
+   "sample": "Arabica beans",
+   "hit": false
+  },
+  {
+   "form": "435",
+   "sample": "answer: 435",
+   "hit": true
+  },
+  {
+   "form": "435",
+   "sample": "= 435",
+   "hit": true
+  },
+  {
+   "form": "435",
+   "sample": "435",
+   "hit": true
+  },
+  {
+   "form": "435",
+   "sample": "**435**",
+   "hit": true
+  },
+  {
+   "form": "435",
+   "sample": "the 435 people",
+   "hit": false
+  },
+  {
+   "form": "435",
+   "sample": "4350",
+   "hit": false
+  },
+  {
+   "form": "435",
+   "sample": "= 4351",
+   "hit": false
+  },
+  {
+   "form": "435",
+   "sample": "答案是435",
+   "hit": true
+  },
+  {
+   "form": "435",
+   "sample": "结果：四百三十五",
+   "hit": true
+  },
+  {
+   "form": "435",
+   "sample": "435 + 1 = 436",
+   "hit": false
+  },
+  {
+   "form": "435",
+   "sample": "Answer: 435",
+   "hit": false
+  },
+  {
+   "form": "58",
+   "sample": "is 58",
+   "hit": false
+  },
+  {
+   "form": "58",
+   "sample": "五十八",
+   "hit": true
+  },
+  {
+   "form": "58",
+   "sample": "五十八个",
+   "hit": false
+  },
+  {
+   "form": "interpretability",
+   "sample": "<|im_start|>assistant interpretability",
+   "hit": true
+  }
+ ],
+ "hit_forms": {
+  "Ayn Jalut said": [
+   "en"
+  ],
+  "阿因贾鲁特战役": [
+   "zh"
+  ],
+  "nothing": [],
+  "battle of ain jalut": [
+   "en"
+  ]
+ },
+ "grid": {
+  "pass": true,
+  "earliest_layer": 28,
+  "n_passing_layers": 2,
+  "passing_layers": [
+   28,
+   32
+  ],
+  "unit_hit": {
+   "readout": true,
+   "language": true
+  },
+  "unit_langs": {
+   "readout": [
+    "en",
+    "zh"
+   ],
+   "language": [
+    "en",
+    "ar"
+   ]
+  },
+  "first_lang": {
+   "readout": "en",
+   "language": "en"
+  },
+  "any_hit": true
+ }
+}

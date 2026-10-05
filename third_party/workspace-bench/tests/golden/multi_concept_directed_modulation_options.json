@@ -1,0 +1,371 @@
+{
+ "prompt_version": "mcdm-2026-09-16",
+ "seed": 20260916,
+ "n_options": 6,
+ "options": {
+  "d-none": {
+   "options": [
+    "Alice being jealous of Karen",
+    "Adam being angry at Betty",
+    "crack the egg",
+    "Brian being angry at Adam",
+    "James being proud of Emma",
+    "silver fox"
+   ],
+   "gold_indices": []
+  },
+  "d-plumber": {
+   "options": [
+    "Miguel owing money to Carlos",
+    "smell of rain",
+    "chasing",
+    "mango tree",
+    "plumber",
+    "blue ladder"
+   ],
+   "gold_indices": [
+    4,
+    5,
+    3
+   ]
+  },
+  "d-violin": {
+   "options": [
+    "Carlos owing money to Miguel",
+    "origami cranes",
+    "violin",
+    "jar of honey",
+    "floating",
+    "Adam being angry at Brian"
+   ],
+   "gold_indices": [
+    2,
+    3,
+    4
+   ]
+  },
+  "d-cranes": {
+   "options": [
+    "librarian",
+    "pocket calculator",
+    "Carlos owing money to Miguel",
+    "seven",
+    "Karen being jealous of Alice",
+    "origami cranes"
+   ],
+   "gold_indices": [
+    5,
+    3,
+    1
+   ]
+  },
+  "d-umbrella": {
+   "options": [
+    "Tom being jealous of Maria",
+    "Adam being angry at Betty",
+    "chessboard",
+    "wet umbrella",
+    "Petra trusting Nina completely",
+    "librarian"
+   ],
+   "gold_indices": [
+    5,
+    3,
+    2
+   ]
+  },
+  "d-petrichor": {
+   "options": [
+    "smell of rain",
+    "dry ground",
+    "librarian",
+    "silver fox",
+    "jar of honey",
+    "Karen being jealous of Alice"
+   ],
+   "gold_indices": [
+    0,
+    1
+   ]
+  },
+  "d-chain-egg": {
+   "options": [
+    "crack the egg",
+    "Maria being jealous of Tom",
+    "Betty being angry at Adam",
+    "whisk the flour",
+    "heat the pan",
+    "Adam being angry at Betty"
+   ],
+   "gold_indices": [
+    0,
+    3,
+    4
+   ]
+  },
+  "d-chain-key": {
+   "options": [
+    "find the key",
+    "floating",
+    "cross the bridge",
+    "unlock the gate",
+    "Maria being jealous of Tom",
+    "dry ground"
+   ],
+   "gold_indices": [
+    0,
+    3,
+    2
+   ]
+  },
+  "d-fox-a": {
+   "options": [
+    "paper fox",
+    "chasing",
+    "paper kite",
+    "silver fox",
+    "Nina trusting Petra completely",
+    "silver kite"
+   ],
+   "gold_indices": [
+    3,
+    2,
+    1
+   ]
+  },
+  "d-fox-b": {
+   "options": [
+    "chasing",
+    "paper fox",
+    "Brian being angry at Adam",
+    "paper kite",
+    "silver kite",
+    "silver fox"
+   ],
+   "gold_indices": [
+    1,
+    4,
+    0
+   ]
+  },
+  "b-none": {
+   "options": [
+    "pocket calculator",
+    "unlock the gate",
+    "Karen being jealous of Alice",
+    "librarian",
+    "Tom being jealous of Maria",
+    "chessboard"
+   ],
+   "gold_indices": []
+  },
+  "b-ange-mix-ab": {
+   "options": [
+    "Nina trusting Petra completely",
+    "Adam being angry at Betty",
+    "wet umbrella",
+    "mango tree",
+    "Betty being angry at Adam",
+    "dry ground"
+   ],
+   "gold_indices": [
+    1
+   ]
+  },
+  "b-ange-mix-ba": {
+   "options": [
+    "mango tree",
+    "Petra trusting Nina completely",
+    "librarian",
+    "Adam being angry at Betty",
+    "Betty being angry at Adam",
+    "paper kite"
+   ],
+   "gold_indices": [
+    4
+   ]
+  },
+  "b-jeal-mix-ab": {
+   "options": [
+    "chessboard",
+    "mango tree",
+    "crack the egg",
+    "Emma being proud of James",
+    "Tom being jealous of Maria",
+    "Maria being jealous of Tom"
+   ],
+   "gold_indices": [
+    5
+   ]
+  },
+  "b-jeal-mix-ba": {
+   "options": [
+    "librarian",
+    "Carlos owing money to Miguel",
+    "Maria being jealous of Tom",
+    "silver fox",
+    "mango tree",
+    "Tom being jealous of Maria"
+   ],
+   "gold_indices": [
+    5
+   ]
+  },
+  "b-fear-mix-ab": {
+   "options": [
+    "silver kite",
+    "pocket calculator",
+    "heat the pan",
+    "Susan being afraid of David",
+    "David being afraid of Susan",
+    "James being proud of Emma"
+   ],
+   "gold_indices": [
+    3
+   ]
+  },
+  "b-fear-mix-ba": {
+   "options": [
+    "seven",
+    "unlock the gate",
+    "David being afraid of Susan",
+    "Betty being angry at Adam",
+    "silver fox",
+    "Susan being afraid of David"
+   ],
+   "gold_indices": [
+    2
+   ]
+  },
+  "b-prid-mix-ab": {
+   "options": [
+    "floating",
+    "James being proud of Emma",
+    "smell of rain",
+    "origami cranes",
+    "Emma being proud of James",
+    "crack the egg"
+   ],
+   "gold_indices": [
+    4
+   ]
+  },
+  "b-prid-mix-ba": {
+   "options": [
+    "wet umbrella",
+    "James being proud of Emma",
+    "Emma being proud of James",
+    "Adam being angry at Betty",
+    "Maria being jealous of Tom",
+    "silver kite"
+   ],
+   "gold_indices": [
+    1
+   ]
+  },
+  "b-ange-same-ab": {
+   "options": [
+    "cross the bridge",
+    "Adam being angry at Brian",
+    "smell of rain",
+    "Miguel owing money to Carlos",
+    "Brian being angry at Adam",
+    "unlock the gate"
+   ],
+   "gold_indices": [
+    1
+   ]
+  },
+  "b-ange-same-ba": {
+   "options": [
+    "Adam being angry at Brian",
+    "Brian being angry at Adam",
+    "Petra trusting Nina completely",
+    "James being proud of Emma",
+    "plumber",
+    "chessboard"
+   ],
+   "gold_indices": [
+    1
+   ]
+  },
+  "b-jeal-same-ab": {
+   "options": [
+    "Brian being angry at Adam",
+    "James being proud of Emma",
+    "seven",
+    "Karen being jealous of Alice",
+    "Alice being jealous of Karen",
+    "smell of rain"
+   ],
+   "gold_indices": [
+    4
+   ]
+  },
+  "b-jeal-same-ba": {
+   "options": [
+    "violin",
+    "smell of rain",
+    "Petra trusting Nina completely",
+    "Alice being jealous of Karen",
+    "Tom being jealous of Maria",
+    "Karen being jealous of Alice"
+   ],
+   "gold_indices": [
+    5
+   ]
+  },
+  "b-debt-same-ab": {
+   "options": [
+    "Betty being angry at Adam",
+    "Miguel owing money to Carlos",
+    "Carlos owing money to Miguel",
+    "Petra trusting Nina completely",
+    "floating",
+    "Maria being jealous of Tom"
+   ],
+   "gold_indices": [
+    2
+   ]
+  },
+  "b-debt-same-ba": {
+   "options": [
+    "librarian",
+    "Brian being angry at Adam",
+    "Carlos owing money to Miguel",
+    "floating",
+    "Miguel owing money to Carlos",
+    "blue ladder"
+   ],
+   "gold_indices": [
+    4
+   ]
+  },
+  "b-trus-same-ab": {
+   "options": [
+    "chessboard",
+    "Nina trusting Petra completely",
+    "pocket calculator",
+    "Petra trusting Nina completely",
+    "floating",
+    "Tom being jealous of Maria"
+   ],
+   "gold_indices": [
+    1
+   ]
+  },
+  "b-trus-same-ba": {
+   "options": [
+    "mango tree",
+    "Tom being jealous of Maria",
+    "wet umbrella",
+    "Karen being jealous of Alice",
+    "Petra trusting Nina completely",
+    "Nina trusting Petra completely"
+   ],
+   "gold_indices": [
+    4
+   ]
+  }
+ }
+}

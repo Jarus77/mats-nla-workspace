@@ -1,0 +1,11197 @@
+{
+ "family": "multilingual-hard",
+ "parent_family": "multilingual-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "gate": "Qwen3.6-27B behavioral, chat-templated capability question (enable_thinking=False, answer stem): greedy-verified AND >=8/10 @ temp 0.7 (answer in the text's language). EVAL RENDER: plain prompt, final prompt token; conjunctive regex over concept (en/zh gloss) + language; the L2 target is never creditable (next token).",
+ "frozen": "2026-09-10",
+ "items": [
+  {
+   "name": "mlh-ar-hourglass",
+   "subfamily": "fwd",
+   "prompt": "الأداة القديمة لقياس الوقت التي تنساب فيها حبيبات دقيقة من وعاء زجاجي علوي إلى وعاء سفلي تُسمى",
+   "target": "الساعة الرملية",
+   "target_alts": [
+    "ساعة رملية",
+    "الساعات الرملية"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "hourglass"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hourglass",
+       "sand timer"
+      ],
+      "zh": [
+       "沙漏",
+       "沙钟"
+      ]
+     },
+     "match": [
+      "hourglass",
+      "sand timer",
+      "沙漏",
+      "沙钟"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "الساعة الرملية",
+       "ساعة رملية",
+       "الساعات الرملية"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "الساعة الرملية",
+      "ساعة رملية",
+      "الساعات الرملية"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "hourglass",
+     "distractors": [
+      "sundial",
+      "water clock",
+      "candle clock",
+      "pendulum clock"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-octopus",
+   "subfamily": "fwd",
+   "prompt": "الحيوان البحري الرخو صاحب الأذرع الثمانية المزودة بممصات والذي ينفث سائلاً داكناً عند الخطر يسمى",
+   "target": "الأخطبوط",
+   "target_alts": [
+    "أخطبوط",
+    "أخطبوطات",
+    "الأخاطيب"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "octopus"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "octopus",
+       "devil fish"
+      ],
+      "zh": [
+       "章鱼",
+       "八爪鱼"
+      ]
+     },
+     "match": [
+      "octopus",
+      "devil fish",
+      "章鱼",
+      "八爪鱼"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "الأخطبوط",
+       "أخطبوط",
+       "أخطبوطات"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "الأخطبوط",
+      "أخطبوط",
+      "أخطبوطات"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "octopus",
+     "distractors": [
+      "squid",
+      "cuttlefish",
+      "chambered nautilus",
+      "jellyfish"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-sandpaper",
+   "subfamily": "fwd",
+   "prompt": "لتنعيم سطح الخشب قبل طلائه يفرك النجار الخشب بمادة خشنة مغطاة بحبيبات كاشطة تُسمى",
+   "target": "ورق الصنفرة",
+   "target_alts": [
+    "ورق صنفرة",
+    "الصنفرة",
+    "صنفرة الخشب"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "sanding paper"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sanding paper",
+       "abrasive paper"
+      ],
+      "zh": [
+       "砂纸",
+       "砂布"
+      ]
+     },
+     "match": [
+      "sanding paper",
+      "abrasive paper",
+      "砂纸",
+      "砂布"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "ورق الصنفرة",
+       "ورق صنفرة",
+       "الصنفرة"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "ورق الصنفرة",
+      "ورق صنفرة",
+      "الصنفرة"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "sanding paper",
+     "distractors": [
+      "steel wool",
+      "wire brush",
+      "masking tape",
+      "wood putty"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-spinal-cord",
+   "subfamily": "fwd",
+   "prompt": "الحزمة العصبية الطويلة الممتدة داخل قناة العمود الفقري والتي تنقل الإشارات بين الدماغ وبقية أعضاء الجسم تسمى",
+   "target": "الحبل الشوكي",
+   "target_alts": [
+    "حبل شوكي",
+    "الحبل الشوكيّ",
+    "النخاع الشوكي"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "spinal cord"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "spinal cord"
+      ],
+      "zh": [
+       "脊髓",
+       "脊髓神经"
+      ]
+     },
+     "match": [
+      "spinal cord",
+      "脊髓",
+      "脊髓神经"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "الحبل الشوكي",
+       "حبل شوكي",
+       "النخاع الشوكي"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "الحبل الشوكي",
+      "حبل شوكي",
+      "النخاع الشوكي"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       5,
+       5,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "spinal cord",
+     "distractors": [
+      "medulla oblongata",
+      "cerebellum",
+      "sciatic nerve",
+      "corpus callosum"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-vacuum-cleaner",
+   "subfamily": "fwd",
+   "prompt": "الجهاز المنزلي الذي يُستخدم لشفط الغبار من السجاد والأرضيات يُسمى",
+   "target": "المكنسة الكهربائية",
+   "target_alts": [
+    "مكنسة كهربائية",
+    "مكانس كهربائية",
+    "المكانس الكهربائية"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "vacuum cleaner"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "vacuum cleaner",
+       "carpet sweeper"
+      ],
+      "zh": [
+       "吸尘器",
+       "真空吸尘器"
+      ]
+     },
+     "match": [
+      "vacuum cleaner",
+      "carpet sweeper",
+      "吸尘器",
+      "真空吸尘器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "المكنسة الكهربائية",
+       "مكنسة كهربائية",
+       "مكانس كهربائية"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "المكنسة الكهربائية",
+      "مكنسة كهربائية",
+      "مكانس كهربائية"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "vacuum cleaner",
+     "distractors": [
+      "washing machine",
+      "dishwasher",
+      "sewing machine",
+      "electric fan"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-wool",
+   "subfamily": "fwd",
+   "prompt": "الألياف المجعدة الكثيفة التي تُجزّ من ظهور الخِراف في الربيع لتُغزل وتُنسج منها الكنزات الشتوية تُسمى",
+   "target": "صوف الأغنام",
+   "target_alts": [
+    "الصوف",
+    "صوف",
+    "الصوف الخام",
+    "صوف خام"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "sheep wool"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sheep wool",
+       "sheep fleece"
+      ],
+      "zh": [
+       "羊毛",
+       "绵羊毛"
+      ]
+     },
+     "match": [
+      "sheep wool",
+      "sheep fleece",
+      "羊毛",
+      "绵羊毛"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "صوف الأغنام",
+       "الصوف",
+       "الصوف الخام"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "صوف الأغنام",
+      "الصوف",
+      "الصوف الخام"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "sheep wool",
+     "distractors": [
+      "camel hair",
+      "alpaca fleece",
+      "goat cashmere",
+      "rabbit angora"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-aurora",
+   "subfamily": "fwd",
+   "prompt": "الأضواء الخضراء المتموجة التي تُرى ليلاً في سماء البلاد المتجمدة مثل النرويج وأيسلندا تُسمى",
+   "target": "الشفق القطبي",
+   "target_alts": [
+    "شفق قطبي",
+    "الشفق القطبي المتوهج"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "northern lights"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "northern lights",
+       "aurora borealis"
+      ],
+      "zh": [
+       "极光",
+       "北极光"
+      ]
+     },
+     "match": [
+      "northern lights",
+      "aurora borealis",
+      "极光",
+      "北极光"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "الشفق القطبي",
+       "شفق قطبي"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "الشفق القطبي",
+      "شفق قطبي"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "northern lights",
+     "distractors": [
+      "noctilucent clouds",
+      "zodiacal light",
+      "St. Elmo's fire",
+      "sun dog"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-chickenpox",
+   "subfamily": "fwd",
+   "prompt": "المرض الفيروسي الشائع بين الأطفال الذي يظهر على هيئة بثور حاكّة مملوءة بسائل صافٍ تنتشر في أنحاء الجسم اسمه",
+   "target": "جدري الماء",
+   "target_alts": [
+    "الجدري المائي",
+    "جدري مائي"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "chickenpox"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "chickenpox",
+       "varicella"
+      ],
+      "zh": [
+       "水痘"
+      ]
+     },
+     "match": [
+      "chickenpox",
+      "varicella",
+      "水痘"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "جدري الماء",
+       "الجدري المائي"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "جدري الماء",
+      "الجدري المائي"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "chickenpox",
+     "distractors": [
+      "measles",
+      "rubella",
+      "smallpox",
+      "mumps"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-loom",
+   "subfamily": "fwd",
+   "prompt": "الآلة الخشبية التي تُشدّ عليها خيوط السداة وتُدخل بينها اللحمة لتُصنع الأقمشة يدويًا تُسمى",
+   "target": "نول الحياكة",
+   "target_alts": [
+    "النول",
+    "نول النسيج",
+    "المنوال",
+    "أنوال الحياكة"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "weaving loom"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "weaving loom",
+       "handloom"
+      ],
+      "zh": [
+       "织布机",
+       "手工织机"
+      ]
+     },
+     "match": [
+      "weaving loom",
+      "handloom",
+      "织布机",
+      "手工织机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "نول الحياكة",
+       "النول",
+       "نول النسيج"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "نول الحياكة",
+      "النول",
+      "نول النسيج"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       5,
+       2,
+       4
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "weaving loom",
+     "distractors": [
+      "spinning wheel",
+      "sewing machine",
+      "knitting machine",
+      "cotton gin"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-thyroid",
+   "subfamily": "fwd",
+   "prompt": "العضو الذي يشبه الفراشة ويقع أمام القصبة الهوائية في مقدمة العنق ويفرز هرمونات تنظم سرعة الأيض هو",
+   "target": "الغدة الدرقية",
+   "target_alts": [
+    "غدة درقية",
+    "الغدّة الدرقيّة"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "thyroid gland"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "thyroid gland"
+      ],
+      "zh": [
+       "甲状腺"
+      ]
+     },
+     "match": [
+      "thyroid gland",
+      "甲状腺"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "الغدة الدرقية",
+       "غدة درقية"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "الغدة الدرقية",
+      "غدة درقية"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "thyroid gland",
+     "distractors": [
+      "adrenal gland",
+      "pituitary gland",
+      "pineal gland",
+      "thymus"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-vacuum-cleaner-2",
+   "subfamily": "fwd",
+   "prompt": "الجهاز المنزلي الذي يسحب الغبار من السجاد بقوة الشفط يُسمّى",
+   "target": "مكنسة كهربائية",
+   "target_alts": [
+    "المكنسة الكهربائية",
+    "مكنسة كهربائيّة"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "vacuum cleaner"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "vacuum cleaner"
+      ],
+      "zh": [
+       "吸尘器",
+       "真空吸尘器"
+      ]
+     },
+     "match": [
+      "vacuum cleaner",
+      "吸尘器",
+      "真空吸尘器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "مكنسة كهربائية",
+       "المكنسة الكهربائية",
+       "مكانس كهربائية"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "مكنسة كهربائية",
+      "المكنسة الكهربائية",
+      "مكانس كهربائية"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "vacuum cleaner",
+     "distractors": [
+      "washing machine",
+      "dishwasher",
+      "microwave oven",
+      "air conditioner"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ar-chamomile",
+   "subfamily": "fwd",
+   "prompt": "العشبة العطرية ذات الأزهار البيضاء الصغيرة والقلب الأصفر التي تُجفف وتُنقع في الماء الساخن كمشروب مهدئ قبل النوم تُسمى",
+   "target": "البابونج",
+   "target_alts": [
+    "بابونج",
+    "نبات البابونج",
+    "زهر البابونج"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "chamomile"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "chamomile",
+       "chamomile flower"
+      ],
+      "zh": [
+       "洋甘菊",
+       "春黄菊"
+      ]
+     },
+     "match": [
+      "chamomile",
+      "chamomile flower",
+      "洋甘菊",
+      "春黄菊"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "البابونج",
+       "نبات البابونج",
+       "زهر البابونج"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "البابونج",
+      "نبات البابونج",
+      "زهر البابونج"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       4
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "chamomile",
+     "distractors": [
+      "lavender",
+      "peppermint",
+      "hibiscus",
+      "calendula"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-cooking-pot",
+   "subfamily": "fwd",
+   "prompt": "Το βαθύ μεταλλικό σκεύος με δύο χερούλια και καπάκι, μέσα στο οποίο βράζουμε νερό ή μαγειρεύουμε σούπα, λέγεται",
+   "target": "κατσαρόλα",
+   "target_alts": [
+    "κατσαρόλας",
+    "κατσαρόλες",
+    "κατσαρολών",
+    "κατσαρόλα"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "cooking pot"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "cooking pot",
+       "saucepan"
+      ],
+      "zh": [
+       "汤锅",
+       "炖锅"
+      ]
+     },
+     "match": [
+      "cooking pot",
+      "saucepan",
+      "汤锅",
+      "炖锅"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "cooking pot",
+     "distractors": [
+      "frying pan",
+      "tea kettle",
+      "colander",
+      "baking sheet"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-screwdriver",
+   "subfamily": "fwd",
+   "prompt": "Το εργαλείο με τη λεπτή μεταλλική μύτη που στρίβουμε για να σφίξουμε μια βίδα λέγεται",
+   "target": "κατσαβίδι",
+   "target_alts": [
+    "κατσαβιδιού",
+    "κατσαβίδια",
+    "κατσαβιδιών"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "screwdriver"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "screwdriver"
+      ],
+      "zh": [
+       "螺丝刀",
+       "螺丝起子"
+      ]
+     },
+     "match": [
+      "screwdriver",
+      "螺丝刀",
+      "螺丝起子"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "κατσαβίδι",
+       "κατσαβιδιού",
+       "κατσαβίδια"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "κατσαβίδι",
+      "κατσαβιδιού",
+      "κατσαβίδια"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       6,
+       7,
+       6
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "screwdriver",
+     "distractors": [
+      "hammer",
+      "pliers",
+      "wrench",
+      "chisel"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-sunflower",
+   "subfamily": "fwd",
+   "prompt": "Το ψηλό μονοετές φυτό με το μεγάλο κίτρινο άνθος που στρέφει το κεφάλι του προς το φως και δίνει σπόρους για λάδι λέγεται",
+   "target": "ηλιοτρόπιο",
+   "target_alts": [
+    "ηλιοτροπίου",
+    "ηλιοτρόπια",
+    "ηλίανθος",
+    "ηλίανθου",
+    "ηλίανθοι"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "sunflower"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sunflower"
+      ],
+      "zh": [
+       "向日葵"
+      ]
+     },
+     "match": [
+      "sunflower",
+      "向日葵"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "ηλιοτρόπιο",
+       "ηλιοτρόπια",
+       "ηλίανθος"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "ηλιοτρόπιο",
+      "ηλιοτρόπια",
+      "ηλίανθος"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.5,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       5,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "sunflower",
+     "distractors": [
+      "marigold",
+      "dahlia",
+      "chrysanthemum",
+      "poppy"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-ilianthos",
+   "subfamily": "fwd",
+   "prompt": "Το ψηλό μονοετές φυτό με τον μεγάλο κίτρινο δίσκο γεμάτο σπόρους, που το κεφάλι του στρέφεται προς το φως, λέγεται",
+   "target": "ηλίανθος",
+   "target_alts": [
+    "ηλίανθου",
+    "ηλίανθο",
+    "ηλίανθοι",
+    "ηλιοτρόπιο"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "sunflower"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sunflower",
+       "common sunflower"
+      ],
+      "zh": [
+       "向日葵",
+       "葵花"
+      ]
+     },
+     "match": [
+      "sunflower",
+      "common sunflower",
+      "向日葵",
+      "葵花"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "ηλίανθος",
+       "ηλίανθοι",
+       "ηλιοτρόπιο"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "ηλίανθος",
+      "ηλίανθοι",
+      "ηλιοτρόπιο"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       1,
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       4,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "sunflower",
+     "distractors": [
+      "marigold",
+      "chrysanthemum",
+      "dahlia",
+      "safflower"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-fire-extinguisher",
+   "subfamily": "fwd",
+   "prompt": "Το κόκκινο μεταλλικό δοχείο με αφρό ή σκόνη υπό πίεση που κρέμεται στον τοίχο για να σβήσουμε γρήγορα μια μικρή εστία φωτιάς λέγεται",
+   "target": "πυροσβεστήρας",
+   "target_alts": [
+    "πυροσβεστήρα",
+    "πυροσβεστήρες",
+    "πυροσβεστήρων"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "fire extinguisher"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "fire extinguisher"
+      ],
+      "zh": [
+       "灭火器"
+      ]
+     },
+     "match": [
+      "fire extinguisher",
+      "灭火器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "πυροσβεστήρας",
+       "πυροσβεστήρα",
+       "πυροσβεστήρες"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "πυροσβεστήρας",
+      "πυροσβεστήρα",
+      "πυροσβεστήρες"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.7,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       6,
+       6,
+       6
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "fire extinguisher",
+     "distractors": [
+      "smoke detector",
+      "fire blanket",
+      "fire hydrant",
+      "sprinkler system"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-tapemeasure",
+   "subfamily": "fwd",
+   "prompt": "Το εργαλείο του μάστορα με τη λεπτή ατσάλινη λωρίδα που ξετυλίγεται από στρογγυλή θήκη και μαζεύεται μόνη της, ώστε να παίρνουμε διαστάσεις, λέγεται",
+   "target": "μετροταινία",
+   "target_alts": [
+    "μεζούρα",
+    "μετροταινίας",
+    "μετροταινίες",
+    "μετροταινιών"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "tape measure"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "tape measure"
+      ],
+      "zh": [
+       "卷尺",
+       "软尺"
+      ]
+     },
+     "match": [
+      "tape measure",
+      "卷尺",
+      "软尺"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "μετροταινία",
+       "μεζούρα"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "μετροταινία",
+      "μεζούρα"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "tape measure",
+     "distractors": [
+      "vernier caliper",
+      "spirit level",
+      "plumb bob",
+      "carpenter's square"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-wind-turbine",
+   "subfamily": "fwd",
+   "prompt": "Η ψηλή λευκή κατασκευή με τρία μακριά πτερύγια στην κορυφή της, που μετατρέπει τη δύναμη του αέρα σε ρεύμα, λέγεται",
+   "target": "ανεμογεννήτρια",
+   "target_alts": [
+    "ανεμογεννήτριες",
+    "ανεμογεννήτριας",
+    "ανεμογεννητριών"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "wind turbine"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "wind turbine"
+      ],
+      "zh": [
+       "风力发电机",
+       "风力涡轮机"
+      ]
+     },
+     "match": [
+      "wind turbine",
+      "风力发电机",
+      "风力涡轮机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "ανεμογεννήτρια",
+       "ανεμογεννήτριες",
+       "ανεμογεννητριών"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "ανεμογεννήτρια",
+      "ανεμογεννήτριες",
+      "ανεμογεννητριών"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       5,
+       6,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "wind turbine",
+     "distractors": [
+      "solar panel",
+      "hydroelectric dam",
+      "steam turbine",
+      "diesel generator"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-xray",
+   "subfamily": "fwd",
+   "prompt": "Η ασπρόμαυρη εικόνα των οστών που τραβά ο γιατρός με ειδικό μηχάνημα για να δει αν υπάρχει κάταγμα ονομάζεται",
+   "target": "ακτινογραφία",
+   "target_alts": [
+    "ακτινογραφίας",
+    "ακτινογραφίες"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "X-ray image"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "X-ray image",
+       "radiograph"
+      ],
+      "zh": [
+       "X光片",
+       "X光照片"
+      ]
+     },
+     "match": [
+      "X-ray image",
+      "radiograph",
+      "X光片",
+      "X光照片"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "ακτινογραφία",
+       "ακτινογραφίας",
+       "ακτινογραφίες"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "ακτινογραφία",
+      "ακτινογραφίας",
+      "ακτινογραφίες"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "X-ray image",
+     "distractors": [
+      "Magnetic resonance image",
+      "Ultrasound image",
+      "PET scan",
+      "Endoscopy image"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-el-xypnitiri",
+   "subfamily": "fwd",
+   "prompt": "Η μικρή συσκευή δίπλα στο κρεβάτι που χτυπά δυνατά για να μας σηκώσει νωρίς το πρωί λέγεται",
+   "target": "ξυπνητήρι",
+   "target_alts": [
+    "ξυπνητηριού",
+    "ξυπνητήρια",
+    "ξυπνητηριών"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "el",
+   "intermediates": [
+    "alarm clock"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "alarm clock"
+      ],
+      "zh": [
+       "闹钟",
+       "定时闹钟"
+      ]
+     },
+     "match": [
+      "alarm clock",
+      "闹钟",
+      "定时闹钟"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Greek"
+      ],
+      "zh": [
+       "希腊语"
+      ],
+      "el": [
+       "ξυπνητήρι",
+       "ξυπνητήρια",
+       "ξυπνητηριού"
+      ]
+     },
+     "match": [
+      "Greek",
+      "希腊语",
+      "ξυπνητήρι",
+      "ξυπνητήρια",
+      "ξυπνητηριού"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "el": [
+       6,
+       6,
+       7
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "alarm clock",
+     "distractors": [
+      "wristwatch",
+      "hourglass",
+      "kitchen timer",
+      "metronome"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-fi-kahvinkeitin",
+   "subfamily": "fwd",
+   "prompt": "Aamulla tämä laite valuttaa kuumaa vettä jauhettujen tummien papujen läpi ja tuottaa tummaa piristävää juomaa; laitteen nimi on",
+   "target": "kahvinkeitin",
+   "target_alts": [
+    "kahvinkeittimen",
+    "kahvinkeitintä",
+    "kahvinkeittimessä",
+    "kahvinkeittimeen",
+    "kahvinkeittimet"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "coffee maker"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "coffee maker",
+       "coffee machine"
+      ],
+      "zh": [
+       "咖啡机",
+       "滴滤壶"
+      ]
+     },
+     "match": [
+      "coffee maker",
+      "coffee machine",
+      "咖啡机",
+      "滴滤壶"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "kahvinkeitin",
+       "kahvinkeittimessä",
+       "kahvinkeittimen"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "kahvinkeitin",
+      "kahvinkeittimessä",
+      "kahvinkeittimen"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       4,
+       6,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "coffee maker",
+     "distractors": [
+      "electric kettle",
+      "toaster",
+      "blender",
+      "microwave oven"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-fi-vetoketju",
+   "subfamily": "fwd",
+   "prompt": "Kahdesta hammastetusta nauhasta koostuva suljin, jota liu'utin avaa ja sulkee housuissa ja laukuissa, on nimeltään",
+   "target": "vetoketju",
+   "target_alts": [
+    "vetoketjun",
+    "vetoketjua",
+    "vetoketjut",
+    "vetoketjussa"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "zip fastener"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "zip fastener",
+       "slide fastener"
+      ],
+      "zh": [
+       "拉链",
+       "拉锁"
+      ]
+     },
+     "match": [
+      "zip fastener",
+      "slide fastener",
+      "拉链",
+      "拉锁"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "vetoketju",
+       "vetoketjun",
+       "vetoketjut"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "vetoketju",
+      "vetoketjun",
+      "vetoketjut"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "zip fastener",
+     "distractors": [
+      "hook and loop fastener",
+      "snap fastener",
+      "safety pin",
+      "belt buckle"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-fi-auringonpimennys",
+   "subfamily": "fwd",
+   "prompt": "Kun Kuu asettuu täsmälleen Maan ja päivätähden väliin ja sen varjo pyyhkäisee maanpinnan yli, kyseessä on",
+   "target": "auringonpimennys",
+   "target_alts": [
+    "auringonpimennyksen",
+    "auringonpimennystä",
+    "auringonpimennykset",
+    "auringonpimennyksiä"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "solar eclipse"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "solar eclipse",
+       "eclipse of the sun"
+      ],
+      "zh": [
+       "日食",
+       "日全食"
+      ]
+     },
+     "match": [
+      "solar eclipse",
+      "eclipse of the sun",
+      "日食",
+      "日全食"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "auringonpimennys",
+       "auringonpimennyksen",
+       "auringonpimennystä"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "auringonpimennys",
+      "auringonpimennyksen",
+      "auringonpimennystä"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       7,
+       7,
+       7
+      ]
+     }
+    },
+    "target": 7
+   },
+   "mc": {
+    "concept": {
+     "gold": "solar eclipse",
+     "distractors": [
+      "lunar eclipse",
+      "transit of Venus",
+      "meteor shower",
+      "aurora borealis"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-fi-silitysrauta",
+   "subfamily": "fwd",
+   "prompt": "Kuuma litteäpohjainen sähkölaite, jolla rypyt tasoitetaan vaatteista, on",
+   "target": "silitysrauta",
+   "target_alts": [
+    "silitysraudan",
+    "silitysrautaa",
+    "silitysraudat",
+    "silitysrautoja"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "clothes iron"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "clothes iron",
+       "flat iron"
+      ],
+      "zh": [
+       "熨斗",
+       "电熨斗"
+      ]
+     },
+     "match": [
+      "clothes iron",
+      "flat iron",
+      "熨斗",
+      "电熨斗"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "silitysrauta",
+       "silitysraudan",
+       "silitysrautaa"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "silitysrauta",
+      "silitysraudan",
+      "silitysrautaa"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       5,
+       5,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "clothes iron",
+     "distractors": [
+      "ironing board",
+      "sewing machine",
+      "hair dryer",
+      "vacuum cleaner"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-fi-toothbrush",
+   "subfamily": "fwd",
+   "prompt": "Kylpyhuoneessa säilytettävä pieni väline, jonka päähän pursotetaan tahnaa suun puhdistamista varten, on",
+   "target": "hammasharja",
+   "target_alts": [
+    "hammasharjan",
+    "hammasharjaa",
+    "hammasharjat",
+    "hammasharjalla"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "toothbrush"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "toothbrush"
+      ],
+      "zh": [
+       "牙刷"
+      ]
+     },
+     "match": [
+      "toothbrush",
+      "牙刷"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "hammasharja"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "hammasharja"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "toothbrush",
+     "distractors": [
+      "hairbrush",
+      "comb",
+      "razor",
+      "dental floss"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-fi-tortoise",
+   "subfamily": "fwd",
+   "prompt": "Hitaasti liikkuva matelija, jonka selkää suojaa kova luinen panssari, on nimeltään",
+   "target": "kilpikonna",
+   "target_alts": [
+    "kilpikonnan",
+    "kilpikonnaa",
+    "kilpikonnat",
+    "kilpikonnia"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "tortoise"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "tortoise",
+       "land turtle"
+      ],
+      "zh": [
+       "乌龟",
+       "陆龟"
+      ]
+     },
+     "match": [
+      "tortoise",
+      "land turtle",
+      "乌龟",
+      "陆龟"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "kilpikonna",
+       "kilpikonnan",
+       "kilpikonnia"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "kilpikonna",
+      "kilpikonnan",
+      "kilpikonnia"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.7,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "tortoise",
+     "distractors": [
+      "hare",
+      "armadillo",
+      "hedgehog",
+      "iguana"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-alarm-clock",
+   "subfamily": "fwd",
+   "prompt": "המכשיר הקטן שעומד ליד המיטה ומצלצל בבוקר בשעה שקבעו כדי להקיץ את הישן נקרא",
+   "target": "שעון מעורר",
+   "target_alts": [
+    "השעון המעורר",
+    "שעונים מעוררים",
+    "שעוני מעורר"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "alarm clock"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "alarm clock"
+      ],
+      "zh": [
+       "闹钟",
+       "闹铃"
+      ]
+     },
+     "match": [
+      "alarm clock",
+      "闹钟",
+      "闹铃"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "שעון מעורר",
+       "השעון המעורר",
+       "שעונים מעוררים"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "שעון מעורר",
+      "השעון המעורר",
+      "שעונים מעוררים"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       7,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "alarm clock",
+     "distractors": [
+      "cuckoo clock",
+      "hourglass",
+      "stopwatch",
+      "egg timer"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-dishwasher",
+   "subfamily": "fwd",
+   "prompt": "המכשיר החשמלי שנמצא במטבח ושוטף לבד את הצלחות והסכינים אחרי הארוחה נקרא",
+   "target": "מדיח כלים",
+   "target_alts": [
+    "מדיח הכלים",
+    "מדיחי כלים",
+    "המדיח כלים"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "dishwashing machine"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "dishwashing machine",
+       "dish washer"
+      ],
+      "zh": [
+       "洗碗机",
+       "洗碗机器"
+      ]
+     },
+     "match": [
+      "dishwashing machine",
+      "dish washer",
+      "洗碗机",
+      "洗碗机器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "מדיח כלים",
+       "מדיח הכלים",
+       "מדיחי כלים"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "מדיח כלים",
+      "מדיח הכלים",
+      "מדיחי כלים"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "dishwashing machine",
+     "distractors": [
+      "washing machine",
+      "clothes dryer",
+      "microwave oven",
+      "garbage disposal unit"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-pressure-cooker",
+   "subfamily": "fwd",
+   "prompt": "כלי הבישול האטום שמבשל אוכל מהר מאוד בעזרת אדים כלואים בטמפרטורה גבוהה מכונה",
+   "target": "סיר לחץ",
+   "target_alts": [
+    "סיר הלחץ",
+    "סירי לחץ",
+    "סירי הלחץ"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "pressure cooker"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "pressure cooker"
+      ],
+      "zh": [
+       "高压锅",
+       "压力锅"
+      ]
+     },
+     "match": [
+      "pressure cooker",
+      "高压锅",
+      "压力锅"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "סיר לחץ",
+       "סיר הלחץ",
+       "סירי לחץ"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "סיר לחץ",
+      "סיר הלחץ",
+      "סירי לחץ"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       4,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "pressure cooker",
+     "distractors": [
+      "slow cooker",
+      "rice cooker",
+      "Dutch oven",
+      "air fryer"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-sewingmachine",
+   "subfamily": "fwd",
+   "prompt": "המכשיר הביתי שבו מחט וחוט מחברים שני בדים זה לזה נקרא",
+   "target": "מכונת תפירה",
+   "target_alts": [
+    "מכונות תפירה",
+    "המכונה לתפירה"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "sewing machine"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sewing machine"
+      ],
+      "zh": [
+       "缝纫机"
+      ]
+     },
+     "match": [
+      "sewing machine",
+      "缝纫机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "מכונת תפירה",
+       "מכונות תפירה"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "מכונת תפירה",
+      "מכונות תפירה"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       6,
+       6
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "sewing machine",
+     "distractors": [
+      "typewriter",
+      "washing machine",
+      "power loom",
+      "cotton gin"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-tapemeasure",
+   "subfamily": "fwd",
+   "prompt": "הפס הגמיש המסומן בסנטימטרים שנשלף ממארז עגול ונגלל בחזרה, וששימושו למדוד אורכים, נקרא",
+   "target": "סרט מדידה",
+   "target_alts": [
+    "סרטי מדידה",
+    "סרט מידה"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "tape measure"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "tape measure",
+       "measuring tape"
+      ],
+      "zh": [
+       "卷尺",
+       "皮尺"
+      ]
+     },
+     "match": [
+      "tape measure",
+      "measuring tape",
+      "卷尺",
+      "皮尺"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "סרט מדידה",
+       "סרטי מדידה",
+       "סרט מידה"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "סרט מדידה",
+      "סרטי מדידה",
+      "סרט מידה"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       6,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "tape measure",
+     "distractors": [
+      "spirit level",
+      "vernier caliper",
+      "carpenter's square",
+      "plumb bob"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-washing-machine",
+   "subfamily": "fwd",
+   "prompt": "המכשיר הביתי שאליו מכניסים בגדים מלוכלכים ומוסיפים אבקה כדי שיסתובבו במים ויתנקו נקרא",
+   "target": "מכונת כביסה",
+   "target_alts": [
+    "מכונת הכביסה",
+    "מכונות כביסה"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "washing machine"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "washing machine"
+      ],
+      "zh": [
+       "洗衣机"
+      ]
+     },
+     "match": [
+      "washing machine",
+      "洗衣机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "מכונת כביסה",
+       "מכונת הכביסה",
+       "מכונות כביסה"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "מכונת כביסה",
+      "מכונת הכביסה",
+      "מכונות כביסה"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       6,
+       6,
+       6
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "washing machine",
+     "distractors": [
+      "dishwasher",
+      "clothes dryer",
+      "vacuum cleaner",
+      "refrigerator"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-toothbrush",
+   "subfamily": "fwd",
+   "prompt": "הכלי הקטן בעל זיפים שמורחים עליו משחה כדי לנקות את הפה בבוקר ובערב נקרא",
+   "target": "מברשת שיניים",
+   "target_alts": [
+    "מברשת השיניים",
+    "מברשות שיניים"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "toothbrush"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "toothbrush",
+       "tooth brush"
+      ],
+      "zh": [
+       "牙刷"
+      ]
+     },
+     "match": [
+      "toothbrush",
+      "tooth brush",
+      "牙刷"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "מברשת שיניים",
+       "מברשת השיניים",
+       "מברשות שיניים"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "מברשת שיניים",
+      "מברשת השיניים",
+      "מברשות שיניים"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "toothbrush",
+     "distractors": [
+      "hairbrush",
+      "razor",
+      "dental floss",
+      "comb"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-vacuum-cleaner",
+   "subfamily": "fwd",
+   "prompt": "המכשיר החשמלי שמסלק לכלוך ופירורים מהשטיח בעזרת יניקת אוויר חזקה נקרא",
+   "target": "שואב אבק",
+   "target_alts": [
+    "שואב האבק",
+    "שואבי אבק",
+    "שואב-אבק"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "vacuum cleaner"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "vacuum cleaner"
+      ],
+      "zh": [
+       "吸尘器"
+      ]
+     },
+     "match": [
+      "vacuum cleaner",
+      "吸尘器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "שואב אבק",
+       "שואב האבק",
+       "שואבי אבק"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "שואב אבק",
+      "שואב האבק",
+      "שואבי אבק"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "vacuum cleaner",
+     "distractors": [
+      "washing machine",
+      "dishwasher",
+      "air purifier",
+      "microwave oven"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-escalator",
+   "subfamily": "fwd",
+   "prompt": "המתקן בקניון שמעביר אנשים מקומה לקומה על שלבים מתגלגלים בלי לצעוד נקרא",
+   "target": "מדרגות נעות",
+   "target_alts": [
+    "המדרגות הנעות",
+    "מדרגות הנעות"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "escalator"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "escalator",
+       "moving staircase"
+      ],
+      "zh": [
+       "自动扶梯"
+      ]
+     },
+     "match": [
+      "escalator",
+      "moving staircase",
+      "自动扶梯"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "מדרגות נעות",
+       "המדרגות הנעות"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "מדרגות נעות",
+      "המדרגות הנעות"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       6,
+       6
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "escalator",
+     "distractors": [
+      "elevator",
+      "moving walkway",
+      "funicular railway",
+      "dumbwaiter"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-polar-bear",
+   "subfamily": "fwd",
+   "prompt": "היונק הלבן והגדול שחי על קרחוני הצפון הרחוק וצד כלבי ים נקרא",
+   "target": "דוב הקוטב",
+   "target_alts": [
+    "דוב קוטב",
+    "דובי הקוטב",
+    "דוב-הקוטב"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "polar bear"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "polar bear"
+      ],
+      "zh": [
+       "北极熊"
+      ]
+     },
+     "match": [
+      "polar bear",
+      "北极熊"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "דוב הקוטב",
+       "דוב קוטב",
+       "דובי הקוטב"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "דוב הקוטב",
+      "דוב קוטב",
+      "דובי הקוטב"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       5,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "polar bear",
+     "distractors": [
+      "walrus",
+      "arctic fox",
+      "grizzly bear",
+      "emperor penguin"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-he-spine",
+   "subfamily": "fwd",
+   "prompt": "האיבר בגוף האדם המורכב משרשרת חוליות לאורך הגב, מחזיק את הגוף זקוף ומגן על צרור העצבים המרכזי, נקרא",
+   "target": "עמוד השדרה",
+   "target_alts": [
+    "עמוד שדרה",
+    "עמודי השדרה"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "vertebral column"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "vertebral column",
+       "spinal column"
+      ],
+      "zh": [
+       "脊柱",
+       "脊椎"
+      ]
+     },
+     "match": [
+      "vertebral column",
+      "spinal column",
+      "脊柱",
+      "脊椎"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "עמוד השדרה",
+       "עמוד שדרה",
+       "העמוד השדרתי"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "עמוד השדרה",
+      "עמוד שדרה",
+      "העמוד השדרתי"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       1,
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "vertebral column",
+     "distractors": [
+      "spinal cord",
+      "rib cage",
+      "sternum",
+      "pelvic girdle"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-candlestick",
+   "subfamily": "fwd",
+   "prompt": "Az az asztalra állított fémtárgy, amelybe a viaszrudat tesszük, hogy égve világítson, a",
+   "target": "gyertyatartó",
+   "target_alts": [
+    "gyertyatartót",
+    "gyertyatartók",
+    "gyertyatartója",
+    "gyertyatartóban",
+    "gyertyatartóra"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "candlestick"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "candlestick",
+       "candle holder"
+      ],
+      "zh": [
+       "蜡烛台"
+      ]
+     },
+     "match": [
+      "candlestick",
+      "candle holder",
+      "蜡烛台"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "gyertyatartó",
+       "gyertyatartót",
+       "gyertyatartók"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "gyertyatartó",
+      "gyertyatartót",
+      "gyertyatartók"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "candlestick",
+     "distractors": [
+      "lantern",
+      "chandelier",
+      "oil lamp",
+      "incense burner"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-esokabat",
+   "subfamily": "fwd",
+   "prompt": "Zivatarban felvett vízhatlan, kapucnis felsőruha, amely szárazon tartja a viselőjét; a neve",
+   "target": "esőkabát",
+   "target_alts": [
+    "esőkabátot",
+    "esőkabátok",
+    "esőkabátban",
+    "esőkabátja"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "raincoat"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "raincoat",
+       "rain jacket"
+      ],
+      "zh": [
+       "雨衣",
+       "防雨外套"
+      ]
+     },
+     "match": [
+      "raincoat",
+      "rain jacket",
+      "雨衣",
+      "防雨外套"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "esőkabát",
+       "esőkabátot",
+       "esőkabátban"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "esőkabát",
+      "esőkabátot",
+      "esőkabátban"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "raincoat",
+     "distractors": [
+      "trench coat",
+      "windbreaker",
+      "parka",
+      "poncho"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-gerincvelo",
+   "subfamily": "fwd",
+   "prompt": "Az agyat a test többi részével összekötő, a csigolyák alkotta csatornában futó vastag idegköteg neve",
+   "target": "gerincvelő",
+   "target_alts": [
+    "gerincvelőt",
+    "gerincvelője",
+    "gerincvelőben",
+    "gerincvelői"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "spinal cord"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "spinal cord"
+      ],
+      "zh": [
+       "脊髓",
+       "脊神经索"
+      ]
+     },
+     "match": [
+      "spinal cord",
+      "脊髓",
+      "脊神经索"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "gerincvelő",
+       "gerincvelőt",
+       "gerincvelőben"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "gerincvelő",
+      "gerincvelőt",
+      "gerincvelőben"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "spinal cord",
+     "distractors": [
+      "cerebellum",
+      "medulla oblongata",
+      "corpus callosum",
+      "sciatic nerve"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-porszivo",
+   "subfamily": "fwd",
+   "prompt": "A lakásban a szőnyegek és a padló tisztán tartására szolgáló, elektromos árammal működő, hangos háztartási gép neve a",
+   "target": "porszívó",
+   "target_alts": [
+    "porszívót",
+    "porszívóval",
+    "porszívók",
+    "porszívóban",
+    "porszívója"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "vacuum cleaner"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "vacuum cleaner"
+      ],
+      "zh": [
+       "吸尘器"
+      ]
+     },
+     "match": [
+      "vacuum cleaner",
+      "吸尘器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "porszívó",
+       "porszívót",
+       "porszívóval"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "porszívó",
+      "porszívót",
+      "porszívóval"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "vacuum cleaner",
+     "distractors": [
+      "washing machine",
+      "dishwasher",
+      "microwave oven",
+      "steam mop"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-varrogep",
+   "subfamily": "fwd",
+   "prompt": "A szabó ezzel a pedálos szerkezettel ölti össze a szövetdarabokat, miközben a cérna az orsóról tekeredik le; a neve",
+   "target": "varrógép",
+   "target_alts": [
+    "varrógépet",
+    "varrógépek",
+    "varrógéppel",
+    "varrógépe"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "sewing machine"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sewing machine"
+      ],
+      "zh": [
+       "缝纫机",
+       "缝衣机"
+      ]
+     },
+     "match": [
+      "sewing machine",
+      "缝纫机",
+      "缝衣机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "varrógép",
+       "varrógépet",
+       "varrógéppel"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "varrógép",
+      "varrógépet",
+      "varrógéppel"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       5,
+       6
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "sewing machine",
+     "distractors": [
+      "typewriter",
+      "spinning wheel",
+      "washing machine",
+      "knitting machine"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-hallokeszulek",
+   "subfamily": "fwd",
+   "prompt": "A rosszul értő idős emberek fülébe helyezett, a beszédet és a környező zajokat felerősítő apró elektronikus szerkezet neve",
+   "target": "hallókészülék",
+   "target_alts": [
+    "hallókészüléket",
+    "hallókészüléke",
+    "hallókészülékek",
+    "hallókészülékkel"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "hearing aid"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hearing aid"
+      ],
+      "zh": [
+       "助听器",
+       "助听设备"
+      ]
+     },
+     "match": [
+      "hearing aid",
+      "助听器",
+      "助听设备"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "hallókészülék",
+       "hallókészüléket",
+       "hallókészülékkel"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "hallókészülék",
+      "hallókészüléket",
+      "hallókészülékkel"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       5,
+       6,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "hearing aid",
+     "distractors": [
+      "cochlear implant",
+      "eyeglasses",
+      "cardiac pacemaker",
+      "wheelchair"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-ironingboard",
+   "subfamily": "fwd",
+   "prompt": "Az a behajtható lábú, textillel bevont keskeny felület, amelyen a gyűrött inget forró fémeszközzel simára húzzák, a",
+   "target": "vasalódeszka",
+   "target_alts": [
+    "vasalódeszkát",
+    "vasalódeszkák",
+    "vasalódeszkája",
+    "vasalódeszkán",
+    "vasalódeszkára"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "ironing board"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ironing board"
+      ],
+      "zh": [
+       "熨衣板",
+       "烫衣板"
+      ]
+     },
+     "match": [
+      "ironing board",
+      "熨衣板",
+      "烫衣板"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "vasalódeszka",
+       "vasalódeszkát",
+       "vasalódeszkán"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "vasalódeszka",
+      "vasalódeszkát",
+      "vasalódeszkán"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       4,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       6,
+       6,
+       6
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "ironing board",
+     "distractors": [
+      "clothes drying rack",
+      "folding card table",
+      "laundry hamper",
+      "sewing machine table"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-meroszalag",
+   "subfamily": "fwd",
+   "prompt": "A szoba hosszának megállapítására szolgáló, tokjába rugósan visszapörgő beosztásos fémcsík neve",
+   "target": "mérőszalag",
+   "target_alts": [
+    "mérőszalagot",
+    "mérőszalaggal",
+    "mérőszalagja",
+    "mérőszalagok"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "tape measure"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "tape measure",
+       "measuring tape"
+      ],
+      "zh": [
+       "卷尺",
+       "软尺"
+      ]
+     },
+     "match": [
+      "tape measure",
+      "measuring tape",
+      "卷尺",
+      "软尺"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "mérőszalag",
+       "mérőszalagot",
+       "mérőszalaggal"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "mérőszalag",
+      "mérőszalagot",
+      "mérőszalaggal"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       5,
+       6,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "tape measure",
+     "distractors": [
+      "vernier caliper",
+      "spirit level",
+      "plumb bob",
+      "carpenter's square"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-napraforgo",
+   "subfamily": "fwd",
+   "prompt": "A sárga szirmú, embermagasságú szántóföldi növény, amelynek fekete magjából étolajat sajtolnak, a",
+   "target": "napraforgó",
+   "target_alts": [
+    "napraforgót",
+    "napraforgóból",
+    "napraforgók",
+    "napraforgóval",
+    "napraforgója"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "sunflower"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sunflower"
+      ],
+      "zh": [
+       "向日葵",
+       "葵花"
+      ]
+     },
+     "match": [
+      "sunflower",
+      "向日葵",
+      "葵花"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "napraforgó",
+       "napraforgót",
+       "napraforgóból"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "napraforgó",
+      "napraforgót",
+      "napraforgóból"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1,
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "sunflower",
+     "distractors": [
+      "safflower",
+      "marigold",
+      "chrysanthemum",
+      "poppy"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-szitakoto",
+   "subfamily": "fwd",
+   "prompt": "A lassú folyású vizek fölött cikázó, hosszú karcsú potrohú, két pár erezett szárnyú ragadozó rovar a",
+   "target": "szitakötő",
+   "target_alts": [
+    "szitakötőt",
+    "szitakötők",
+    "szitakötője"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "dragonfly"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "dragonfly"
+      ],
+      "zh": [
+       "蜻蜓"
+      ]
+     },
+     "match": [
+      "dragonfly",
+      "蜻蜓"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "szitakötő",
+       "szitakötők",
+       "szitakötőt"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "szitakötő",
+      "szitakötők",
+      "szitakötőt"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "dragonfly",
+     "distractors": [
+      "mayfly",
+      "cicada",
+      "firefly",
+      "praying mantis"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-hu-canopener",
+   "subfamily": "fwd",
+   "prompt": "Az a kis konyhai eszköz, amellyel a fémdobozba zárt ételt fel lehet bontani, a",
+   "target": "konzervnyitó",
+   "target_alts": [
+    "konzervnyitót",
+    "konzervnyitók",
+    "konzervnyitója",
+    "konzervnyitóval",
+    "konzervnyitóban"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "can opener"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "can opener",
+       "tin opener"
+      ],
+      "zh": [
+       "开罐器",
+       "罐头刀"
+      ]
+     },
+     "match": [
+      "can opener",
+      "tin opener",
+      "开罐器",
+      "罐头刀"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "konzervnyitó",
+       "konzervnyitót",
+       "konzervnyitóval"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "konzervnyitó",
+      "konzervnyitót",
+      "konzervnyitóval"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       3,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "can opener",
+     "distractors": [
+      "corkscrew",
+      "bottle opener",
+      "vegetable peeler",
+      "garlic press"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-cacar-air",
+   "subfamily": "fwd",
+   "prompt": "Penyakit menular yang sering menyerang anak-anak dan menimbulkan bintil kecil berisi cairan di sekujur tubuh disebut",
+   "target": "cacar air",
+   "target_alts": [
+    "cacar air",
+    "varisela"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "chicken pox"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "chicken pox",
+       "chickenpox"
+      ],
+      "zh": [
+       "水痘"
+      ]
+     },
+     "match": [
+      "chicken pox",
+      "chickenpox",
+      "水痘"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "cacar air",
+       "varisela"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "cacar air",
+      "varisela"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "chicken pox",
+     "distractors": [
+      "measles",
+      "mumps",
+      "rubella",
+      "scarlet fever"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-firefly",
+   "subfamily": "fwd",
+   "prompt": "Serangga kecil yang terbang pada malam hari sambil memancarkan kerlip cahaya dari ujung perutnya disebut",
+   "target": "kunang-kunang",
+   "target_alts": [
+    "kunang kunang",
+    "kunang-kunang"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "firefly"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "firefly",
+       "lightning bug"
+      ],
+      "zh": [
+       "萤火虫"
+      ]
+     },
+     "match": [
+      "firefly",
+      "lightning bug",
+      "萤火虫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "kunang-kunang",
+       "kunang kunang"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "kunang-kunang",
+      "kunang kunang"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "firefly",
+     "distractors": [
+      "dragonfly",
+      "cicada",
+      "ladybug",
+      "praying mantis"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-gantungan-baju",
+   "subfamily": "fwd",
+   "prompt": "Alat berbentuk segitiga dari kawat, kayu, atau plastik dengan kait di atasnya untuk menyampirkan kemeja di dalam lemari disebut",
+   "target": "gantungan baju",
+   "target_alts": [
+    "gantungan baju",
+    "gantungan pakaian"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "coat hanger"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "coat hanger",
+       "clothes hanger"
+      ],
+      "zh": [
+       "衣架",
+       "晾衣架"
+      ]
+     },
+     "match": [
+      "coat hanger",
+      "clothes hanger",
+      "衣架",
+      "晾衣架"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "gantungan baju",
+       "gantungan pakaian"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "gantungan baju",
+      "gantungan pakaian"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "coat hanger",
+     "distractors": [
+      "clothespin",
+      "ironing board",
+      "laundry basket",
+      "shoe rack"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-gerhanabulan",
+   "subfamily": "fwd",
+   "prompt": "Peristiwa langit ketika bayangan Bumi jatuh menutupi satelit alami kita sehingga wajahnya tampak merah gelap disebut",
+   "target": "gerhana bulan",
+   "target_alts": [
+    "gerhana bulan",
+    "gerhana bulan total",
+    "gerhananya bulan"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "lunar eclipse"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "lunar eclipse"
+      ],
+      "zh": [
+       "月食",
+       "月蚀"
+      ]
+     },
+     "match": [
+      "lunar eclipse",
+      "月食",
+      "月蚀"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "gerhana bulan",
+       "gerhana rembulan"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "gerhana bulan",
+      "gerhana rembulan"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "lunar eclipse",
+     "distractors": [
+      "solar eclipse",
+      "meteor shower",
+      "transit of Venus",
+      "planetary conjunction"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-hailstone",
+   "subfamily": "fwd",
+   "prompt": "Butiran padat membeku yang berjatuhan dari awan badai dan kadang merusak atap seng warga disebut",
+   "target": "hujan es",
+   "target_alts": [
+    "butiran hujan es",
+    "hujan batu es"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "hailstone"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hailstone",
+       "hail shower"
+      ],
+      "zh": [
+       "冰雹",
+       "雹子"
+      ]
+     },
+     "match": [
+      "hailstone",
+      "hail shower",
+      "冰雹",
+      "雹子"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "hujan es",
+       "hujan batu es"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "hujan es",
+      "hujan batu es"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "hailstone",
+     "distractors": [
+      "snowflake",
+      "raindrop",
+      "graupel",
+      "sleet"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-mesin-jahit",
+   "subfamily": "fwd",
+   "prompt": "Di toko busana, potongan kain disatukan dengan benang memakai perangkat berpedal bernama",
+   "target": "mesin jahit",
+   "target_alts": [
+    "mesin jahit listrik",
+    "mesin jahit manual"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "sewing machine"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sewing machine"
+      ],
+      "zh": [
+       "缝纫机"
+      ]
+     },
+     "match": [
+      "sewing machine",
+      "缝纫机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "mesin jahit",
+       "mesin jahit listrik"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "mesin jahit",
+      "mesin jahit listrik"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "sewing machine",
+     "distractors": [
+      "washing machine",
+      "typewriter",
+      "knitting machine",
+      "spinning wheel"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-penghapus",
+   "subfamily": "fwd",
+   "prompt": "Alat tulis kecil yang dipakai untuk menghilangkan bekas coretan pensil pada kertas disebut",
+   "target": "penghapus",
+   "target_alts": [
+    "penghapusnya",
+    "karet penghapus"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "eraser"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "eraser",
+       "rubber eraser"
+      ],
+      "zh": [
+       "橡皮擦",
+       "橡皮"
+      ]
+     },
+     "match": [
+      "eraser",
+      "rubber eraser",
+      "橡皮擦",
+      "橡皮"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "penghapus",
+       "karet penghapus"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "penghapus",
+      "karet penghapus"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2,
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "eraser",
+     "distractors": [
+      "pencil sharpener",
+      "ruler",
+      "stapler",
+      "glue stick"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-sarung-tangan",
+   "subfamily": "fwd",
+   "prompt": "Penutup berbahan rajutan, kulit, atau karet dengan lima ruang untuk tiap jemari, dipakai agar telapak terlindung dari dingin dan kotoran, disebut",
+   "target": "sarung tangan",
+   "target_alts": [
+    "sarung tangan",
+    "sarung-sarung tangan"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "hand gloves"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hand gloves",
+       "winter gloves"
+      ],
+      "zh": [
+       "手套",
+       "防护手套"
+      ]
+     },
+     "match": [
+      "hand gloves",
+      "winter gloves",
+      "手套",
+      "防护手套"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "sarung tangan",
+       "sarung-sarung tangan"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "sarung tangan",
+      "sarung-sarung tangan"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       6
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "hand gloves",
+     "distractors": [
+      "woolen scarf",
+      "ear muffs",
+      "safety goggles",
+      "rubber boots"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-tengkorak",
+   "subfamily": "fwd",
+   "prompt": "Susunan rangka keras berbentuk cekungan yang melindungi otak dan membentuk bagian atas wajah manusia disebut",
+   "target": "tengkorak",
+   "target_alts": [
+    "tengkorak"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "skull bone"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "skull bone",
+       "cranium"
+      ],
+      "zh": [
+       "颅骨",
+       "头骨"
+      ]
+     },
+     "match": [
+      "skull bone",
+      "cranium",
+      "颅骨",
+      "头骨"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "tengkorak"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "tengkorak"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "skull bone",
+     "distractors": [
+      "thigh bone",
+      "collarbone",
+      "breastbone",
+      "shoulder blade"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-id-trash-bin",
+   "subfamily": "fwd",
+   "prompt": "Wadah berpenutup di sudut dapur yang dipakai untuk membuang kulit buah dan bungkus bekas disebut",
+   "target": "tempat sampah",
+   "target_alts": [
+    "bak sampah",
+    "keranjang sampah"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "trash bin"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "trash bin",
+       "garbage can"
+      ],
+      "zh": [
+       "垃圾桶",
+       "垃圾箱"
+      ]
+     },
+     "match": [
+      "trash bin",
+      "garbage can",
+      "垃圾桶",
+      "垃圾箱"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "tempat sampah",
+       "bak sampah",
+       "keranjang sampah"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "tempat sampah",
+      "bak sampah",
+      "keranjang sampah"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "trash bin",
+     "distractors": [
+      "laundry basket",
+      "flower pot",
+      "mailbox",
+      "watering can"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ko-vacuum-cleaner",
+   "subfamily": "fwd",
+   "prompt": "바닥에 떨어진 머리카락과 먼지를 강한 흡입력으로 빨아들여 안쪽 봉투에 모으는 가전제품은",
+   "target": "진공청소기",
+   "target_alts": [
+    "진공 청소기",
+    "청소기"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "vacuum cleaner"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "vacuum cleaner"
+      ],
+      "zh": [
+       "吸尘器",
+       "真空吸尘器"
+      ]
+     },
+     "match": [
+      "vacuum cleaner",
+      "吸尘器",
+      "真空吸尘器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "진공청소기",
+       "진공 청소기",
+       "청소기"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "진공청소기",
+      "진공 청소기",
+      "청소기"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       5,
+       4,
+       2
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "vacuum cleaner",
+     "distractors": [
+      "washing machine",
+      "dishwasher",
+      "hair dryer",
+      "microwave oven"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ko-yeonpilkkakki",
+   "subfamily": "fwd",
+   "prompt": "심이 뭉툭해진 필기구를 구멍에 넣고 돌려서 끝을 뾰족하게 다듬어 주는 작은 문구는",
+   "target": "연필깎이",
+   "target_alts": [
+    "연필 깎이",
+    "연필깎이가",
+    "연필깎이를"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "pencil sharpener"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "pencil sharpener"
+      ],
+      "zh": [
+       "卷笔刀",
+       "削笔器"
+      ]
+     },
+     "match": [
+      "pencil sharpener",
+      "卷笔刀",
+      "削笔器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "연필깎이",
+       "연필 깎이"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "연필깎이",
+      "연필 깎이"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "pencil sharpener",
+     "distractors": [
+      "hole punch",
+      "staple remover",
+      "letter opener",
+      "paper shredder"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-biedronka",
+   "subfamily": "fwd",
+   "prompt": "Mały czerwony owad z czarnymi kropkami na pokrywach skrzydeł, chętnie zjadający mszyce, to",
+   "target": "biedronka",
+   "target_alts": [
+    "biedronki",
+    "biedronce",
+    "biedronkę",
+    "biedronką",
+    "biedronek"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "ladybird beetle"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ladybird beetle",
+       "lady beetle"
+      ],
+      "zh": [
+       "瓢虫",
+       "七星瓢虫"
+      ]
+     },
+     "match": [
+      "ladybird beetle",
+      "lady beetle",
+      "瓢虫",
+      "七星瓢虫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "biedronka",
+       "biedronki",
+       "biedronką"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "biedronka",
+      "biedronki",
+      "biedronką"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "ladybird beetle",
+     "distractors": [
+      "stag beetle",
+      "Colorado potato beetle",
+      "dung beetle",
+      "firefly"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-kasztanowiec",
+   "subfamily": "fwd",
+   "prompt": "Duże drzewo o dłoniastych liściach i białych kwiatostanach w kształcie świec, którego błyszczące brązowe nasiona w kolczastych osłonkach dzieci zbierają jesienią, to",
+   "target": "kasztanowiec",
+   "target_alts": [
+    "kasztanowca",
+    "kasztanowcowi",
+    "kasztanowcem",
+    "kasztanowcu",
+    "kasztanowce",
+    "kasztanowców"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "horse chestnut"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "horse chestnut",
+       "conker tree"
+      ],
+      "zh": [
+       "欧洲七叶树",
+       "七叶树"
+      ]
+     },
+     "match": [
+      "horse chestnut",
+      "conker tree",
+      "欧洲七叶树",
+      "七叶树"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "kasztanowiec",
+       "kasztanowca",
+       "kasztanowcem"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "kasztanowiec",
+      "kasztanowca",
+      "kasztanowcem"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       4,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "horse chestnut",
+     "distractors": [
+      "sweet chestnut",
+      "European beech",
+      "sycamore maple",
+      "common walnut"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-muchomor",
+   "subfamily": "fwd",
+   "prompt": "Trujący leśny grzyb o jaskrawoczerwonym kapeluszu pokrytym białymi plamkami i z pierścieniem na trzonie, to",
+   "target": "muchomor",
+   "target_alts": [
+    "muchomora",
+    "muchomorowi",
+    "muchomorem",
+    "muchomorze",
+    "muchomory",
+    "muchomorów"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "fly agaric"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "fly agaric",
+       "fly amanita"
+      ],
+      "zh": [
+       "毒蝇伞",
+       "毒蝇鹅膏菌"
+      ]
+     },
+     "match": [
+      "fly agaric",
+      "fly amanita",
+      "毒蝇伞",
+      "毒蝇鹅膏菌"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "muchomor",
+       "muchomora",
+       "muchomorem"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "muchomor",
+      "muchomora",
+      "muchomorem"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       3,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "fly agaric",
+     "distractors": [
+      "death cap",
+      "panther cap",
+      "destroying angel",
+      "shaggy ink cap"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-odkurzacz",
+   "subfamily": "fwd",
+   "prompt": "Domowe urządzenie, które za pomocą podciśnienia zbiera pył i drobne śmieci z dywanu, to",
+   "target": "odkurzacz",
+   "target_alts": [
+    "odkurzacza",
+    "odkurzaczowi",
+    "odkurzaczem",
+    "odkurzaczu",
+    "odkurzacze",
+    "odkurzaczy"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "vacuum cleaner"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "vacuum cleaner",
+       "carpet sweeper"
+      ],
+      "zh": [
+       "吸尘器",
+       "真空吸尘器"
+      ]
+     },
+     "match": [
+      "vacuum cleaner",
+      "carpet sweeper",
+      "吸尘器",
+      "真空吸尘器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "odkurzacz",
+       "odkurzacza",
+       "odkurzaczem"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "odkurzacz",
+      "odkurzacza",
+      "odkurzaczem"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "vacuum cleaner",
+     "distractors": [
+      "washing machine",
+      "dishwasher",
+      "steam mop",
+      "floor polisher"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-pila-lancuchowa",
+   "subfamily": "fwd",
+   "prompt": "Spalinowe urządzenie z szybko obracającym się zębatym pasem, którym drwal ścina pnie w lesie, to",
+   "target": "piła łańcuchowa",
+   "target_alts": [
+    "piły łańcuchowej",
+    "piłę łańcuchową",
+    "piłą łańcuchową",
+    "pile łańcuchowej",
+    "pił łańcuchowych"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "chain saw"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "chain saw",
+       "chainsaw"
+      ],
+      "zh": [
+       "链锯",
+       "电锯"
+      ]
+     },
+     "match": [
+      "chain saw",
+      "chainsaw",
+      "链锯",
+      "电锯"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "piła łańcuchowa",
+       "piły łańcuchowej",
+       "piłę łańcuchową"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "piła łańcuchowa",
+      "piły łańcuchowej",
+      "piłę łańcuchową"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       8,
+       8,
+       8
+      ]
+     }
+    },
+    "target": 8
+   },
+   "mc": {
+    "concept": {
+     "gold": "chain saw",
+     "distractors": [
+      "circular saw",
+      "angle grinder",
+      "jackhammer",
+      "hedge trimmer"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-pokrzywa-2",
+   "subfamily": "fwd",
+   "prompt": "Rosnący przy płotach i na gruzowiskach chwast o sercowatych, ząbkowanych liściach uzbrojonych we sztywne włoski, które po dotknięciu wywołują bąble i piekący ból skóry, a z młodych pędów gotuje się zupę, to",
+   "target": "pokrzywa zwyczajna",
+   "target_alts": [
+    "pokrzywa",
+    "pokrzywy",
+    "pokrzywę",
+    "pokrzywą"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "stinging nettle"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "stinging nettle",
+       "common nettle"
+      ],
+      "zh": [
+       "荨麻",
+       "异株荨麻"
+      ]
+     },
+     "match": [
+      "stinging nettle",
+      "common nettle",
+      "荨麻",
+      "异株荨麻"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "pokrzywa zwyczajna",
+       "pokrzywa",
+       "pokrzywy"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "pokrzywa zwyczajna",
+      "pokrzywa",
+      "pokrzywy"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       2,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       6,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "stinging nettle",
+     "distractors": [
+      "comfrey",
+      "greater burdock",
+      "common horsetail",
+      "poison ivy"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-przedluzacz",
+   "subfamily": "fwd",
+   "prompt": "Zwinięty kabel z gniazdkiem na jednym końcu i wtyczką na drugim, dzięki któremu urządzenie stojące daleko od ściany dostaje prąd, to",
+   "target": "przedłużacz",
+   "target_alts": [
+    "przedłużacza",
+    "przedłużaczem",
+    "przedłużacze",
+    "przedłużaczy"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "extension cord"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "extension cord",
+       "extension lead"
+      ],
+      "zh": [
+       "延长线",
+       "电源延长线"
+      ]
+     },
+     "match": [
+      "extension cord",
+      "extension lead",
+      "延长线",
+      "电源延长线"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "przedłużacz",
+       "przedłużacza",
+       "przedłużaczem"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "przedłużacz",
+      "przedłużacza",
+      "przedłużaczem"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       3,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "extension cord",
+     "distractors": [
+      "power strip",
+      "surge protector",
+      "electrical outlet",
+      "plug adapter"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-strzykawka",
+   "subfamily": "fwd",
+   "prompt": "Medyczne narzędzie z tłokiem i cienką igłą, którym pielęgniarka podaje lek prosto do żyły, to",
+   "target": "strzykawka",
+   "target_alts": [
+    "strzykawki",
+    "strzykawce",
+    "strzykawkę",
+    "strzykawką",
+    "strzykawek"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "hypodermic syringe"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "hypodermic syringe",
+       "medical syringe"
+      ],
+      "zh": [
+       "注射器"
+      ]
+     },
+     "match": [
+      "hypodermic syringe",
+      "medical syringe",
+      "注射器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "strzykawka",
+       "strzykawki",
+       "strzykawkę"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "strzykawka",
+      "strzykawki",
+      "strzykawkę"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       6,
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "hypodermic syringe",
+     "distractors": [
+      "stethoscope",
+      "surgical scalpel",
+      "clinical thermometer",
+      "sphygmomanometer"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-trzepaczka",
+   "subfamily": "fwd",
+   "prompt": "Kuchenne narzędzie zbudowane z pętli sprężystego drutu, którym ubija się pianę z białek i bitą śmietanę, to",
+   "target": "trzepaczka",
+   "target_alts": [
+    "trzepaczki",
+    "trzepaczkę",
+    "trzepaczką",
+    "trzepaczce",
+    "trzepaczek"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "egg whisk"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "egg whisk",
+       "wire whisk"
+      ],
+      "zh": [
+       "打蛋器",
+       "手动打蛋器"
+      ]
+     },
+     "match": [
+      "egg whisk",
+      "wire whisk",
+      "打蛋器",
+      "手动打蛋器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "trzepaczka",
+       "trzepaczki",
+       "trzepaczką"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "trzepaczka",
+      "trzepaczki",
+      "trzepaczką"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "egg whisk",
+     "distractors": [
+      "rolling pin",
+      "potato masher",
+      "slotted spoon",
+      "pastry brush"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-pl-trzustka",
+   "subfamily": "fwd",
+   "prompt": "Gruczoł ukryty w brzuchu tuż za żołądkiem, który wytwarza insulinę oraz enzymy trawienne, nazywa się",
+   "target": "trzustka",
+   "target_alts": [
+    "trzustki",
+    "trzustce",
+    "trzustkę",
+    "trzustką",
+    "trzustek"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "pancreas"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "pancreas",
+       "pancreatic gland"
+      ],
+      "zh": [
+       "胰腺",
+       "胰脏"
+      ]
+     },
+     "match": [
+      "pancreas",
+      "pancreatic gland",
+      "胰腺",
+      "胰脏"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "trzustka",
+       "trzustki",
+       "trzustkę"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "trzustka",
+      "trzustki",
+      "trzustkę"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "pancreas",
+     "distractors": [
+      "liver",
+      "spleen",
+      "gallbladder",
+      "thyroid gland"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-caterpillar",
+   "subfamily": "fwd",
+   "prompt": "Ползающая по листьям и объедающая их личинка бабочки, которая потом превращается в куколку, называется",
+   "target": "гусеница",
+   "target_alts": [
+    "гусеницы",
+    "гусенице",
+    "гусеницу",
+    "гусеницей",
+    "гусениц",
+    "гусеницам"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "caterpillar"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "caterpillar",
+       "butterfly larva"
+      ],
+      "zh": [
+       "毛毛虫",
+       "毛虫"
+      ]
+     },
+     "match": [
+      "caterpillar",
+      "butterfly larva",
+      "毛毛虫",
+      "毛虫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "гусеница",
+       "гусеницы",
+       "гусеницу"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "гусеница",
+      "гусеницы",
+      "гусеницу"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "caterpillar",
+     "distractors": [
+      "tadpole",
+      "maggot",
+      "chrysalis",
+      "earthworm"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-dandelion",
+   "subfamily": "fwd",
+   "prompt": "Жёлтый луговой цветок, который после цветения превращается в белый пушистый шар из летучих семян, — это",
+   "target": "одуванчик",
+   "target_alts": [
+    "одуванчика",
+    "одуванчику",
+    "одуванчиком",
+    "одуванчике",
+    "одуванчики",
+    "одуванчиков"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "dandelion"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "dandelion",
+       "common dandelion"
+      ],
+      "zh": [
+       "蒲公英"
+      ]
+     },
+     "match": [
+      "dandelion",
+      "common dandelion",
+      "蒲公英"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "одуванчик",
+       "одуванчика",
+       "одуванчики"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "одуванчик",
+      "одуванчика",
+      "одуванчики"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       4
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "dandelion",
+     "distractors": [
+      "chicory",
+      "coltsfoot",
+      "oxeye daisy",
+      "red clover"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-fryingpan",
+   "subfamily": "fwd",
+   "prompt": "Плоская металлическая посуда с длинной ручкой, на которой жарят яичницу и котлеты, — это",
+   "target": "сковорода",
+   "target_alts": [
+    "сковороды",
+    "сковороде",
+    "сковороду",
+    "сковородой",
+    "сковородки",
+    "сковородка",
+    "сковородку"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "frying pan"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "frying pan",
+       "skillet pan"
+      ],
+      "zh": [
+       "平底锅",
+       "煎锅子"
+      ]
+     },
+     "match": [
+      "frying pan",
+      "skillet pan",
+      "平底锅",
+      "煎锅子"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "сковорода",
+       "сковороду",
+       "сковородой"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "сковорода",
+      "сковороду",
+      "сковородой"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "frying pan",
+     "distractors": [
+      "saucepan",
+      "stockpot",
+      "Dutch oven",
+      "baking sheet"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-meatgrinder",
+   "subfamily": "fwd",
+   "prompt": "Кухонное устройство с винтовым шнеком и дырчатой решёткой, через которую продавливают куски свинины, превращая их в фарш, — это",
+   "target": "мясорубка",
+   "target_alts": [
+    "мясорубки",
+    "мясорубку",
+    "мясорубкой",
+    "мясорубке",
+    "мясорубок"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "meat grinder"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "meat grinder",
+       "mincing machine"
+      ],
+      "zh": [
+       "绞肉机"
+      ]
+     },
+     "match": [
+      "meat grinder",
+      "mincing machine",
+      "绞肉机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "мясорубка",
+       "мясорубки",
+       "мясорубкой"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "мясорубка",
+      "мясорубки",
+      "мясорубкой"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "meat grinder",
+     "distractors": [
+      "food processor",
+      "coffee grinder",
+      "pressure cooker",
+      "pasta maker"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-nakovalnya",
+   "subfamily": "fwd",
+   "prompt": "Массивная стальная опора с рогом и плоской верхней площадкой, на которой кузнец молотом расплющивает раскалённую заготовку, называется",
+   "target": "наковальня",
+   "target_alts": [
+    "наковальни",
+    "наковальне",
+    "наковальню",
+    "наковальней",
+    "наковален"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "blacksmith's anvil"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "blacksmith's anvil",
+       "forging anvil"
+      ],
+      "zh": [
+       "铁砧",
+       "打铁砧"
+      ]
+     },
+     "match": [
+      "blacksmith's anvil",
+      "forging anvil",
+      "铁砧",
+      "打铁砧"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "наковальня",
+       "наковальни",
+       "наковальней"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "наковальня",
+      "наковальни",
+      "наковальней"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       5,
+       3
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "blacksmith's anvil",
+     "distractors": [
+      "blacksmith's bellows",
+      "blacksmith's tongs",
+      "swage block",
+      "quenching trough"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-payalnik",
+   "subfamily": "fwd",
+   "prompt": "Электрический инструмент с нагревающимся медным жалом, которым радиолюбитель соединяет провода и выводы деталей при помощи расплавленного олова, — это",
+   "target": "паяльник",
+   "target_alts": [
+    "паяльника",
+    "паяльнику",
+    "паяльником",
+    "паяльнике",
+    "паяльники",
+    "паяльников"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "soldering iron"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "soldering iron"
+      ],
+      "zh": [
+       "电烙铁",
+       "烙铁"
+      ]
+     },
+     "match": [
+      "soldering iron",
+      "电烙铁",
+      "烙铁"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "паяльник",
+       "паяльника",
+       "паяльником"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "паяльник",
+      "паяльника",
+      "паяльником"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       3,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       3,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "soldering iron",
+     "distractors": [
+      "heat gun",
+      "hot glue gun",
+      "butane torch",
+      "wood burning pen"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-skvorechnik",
+   "subfamily": "fwd",
+   "prompt": "Деревянный домик с круглым лётным отверстием, который весной прибивают к стволу дерева для мелких пернатых, называется",
+   "target": "скворечник",
+   "target_alts": [
+    "скворечника",
+    "скворечнику",
+    "скворечником",
+    "скворечнике",
+    "скворечники",
+    "скворечников"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "nesting box"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "nesting box",
+       "birdhouse"
+      ],
+      "zh": [
+       "人工鸟巢",
+       "鸟巢箱"
+      ]
+     },
+     "match": [
+      "nesting box",
+      "birdhouse",
+      "人工鸟巢",
+      "鸟巢箱"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "скворечник",
+       "скворечника",
+       "скворечником"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "скворечник",
+      "скворечника",
+      "скворечником"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "nesting box",
+     "distractors": [
+      "bird feeder",
+      "bird bath",
+      "dovecote",
+      "chicken coop"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-sosulka",
+   "subfamily": "fwd",
+   "prompt": "Прозрачный заострённый книзу кусок льда, свисающий зимой с края крыши, называется",
+   "target": "сосулька",
+   "target_alts": [
+    "сосульки",
+    "сосульке",
+    "сосульку",
+    "сосулькой",
+    "сосулек",
+    "сосульками"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "icicle"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "icicle",
+       "hanging icicle"
+      ],
+      "zh": [
+       "冰柱",
+       "冰锥"
+      ]
+     },
+     "match": [
+      "icicle",
+      "hanging icicle",
+      "冰柱",
+      "冰锥"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "сосулька",
+       "сосульку",
+       "сосулькой"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "сосулька",
+      "сосульку",
+      "сосулькой"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       3,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "icicle",
+     "distractors": [
+      "stalactite",
+      "hailstone",
+      "snowflake",
+      "hoarfrost"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-thimble",
+   "subfamily": "fwd",
+   "prompt": "Металлический колпачок с рифлёной поверхностью, который портниха надевает на средний палец, чтобы не уколоться иглой при ручном шитье, называется",
+   "target": "напёрсток",
+   "target_alts": [
+    "наперсток",
+    "напёрстка",
+    "наперстка",
+    "напёрстком",
+    "напёрстки",
+    "наперстки",
+    "напёрстке"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "sewing thimble"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sewing thimble"
+      ],
+      "zh": [
+       "顶针",
+       "缝纫顶针"
+      ]
+     },
+     "match": [
+      "sewing thimble",
+      "顶针",
+      "缝纫顶针"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "напёрсток",
+       "наперсток",
+       "напёрстки"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "напёрсток",
+      "наперсток",
+      "напёрстки"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       4
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "sewing thimble",
+     "distractors": [
+      "pincushion",
+      "seam ripper",
+      "tailor's chalk",
+      "darning egg"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-ru-anthill",
+   "subfamily": "fwd",
+   "prompt": "Куча хвои и веточек, под которой в лесу живёт колония мелких общественных насекомых, — это",
+   "target": "муравейник",
+   "target_alts": [
+    "муравейника",
+    "муравейнику",
+    "муравейником",
+    "муравейнике",
+    "муравейники",
+    "муравейников"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "ant hill"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "ant hill",
+       "ant nest"
+      ],
+      "zh": [
+       "蚁丘",
+       "蚂蚁窝"
+      ]
+     },
+     "match": [
+      "ant hill",
+      "ant nest",
+      "蚁丘",
+      "蚂蚁窝"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "муравейник",
+       "муравейника",
+       "муравейники"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "муравейник",
+      "муравейника",
+      "муравейники"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "ant hill",
+     "distractors": [
+      "termite mound",
+      "beehive",
+      "beaver dam",
+      "molehill"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-sw-mwarobaini",
+   "subfamily": "fwd",
+   "prompt": "Mti wenye majani machungu unaosifika kwa kutibu maradhi mengi ikiwemo homa ya mbu, na mbegu zake hutoa mafuta ya dawa, unaitwa",
+   "target": "mwarobaini",
+   "target_alts": [
+    "mwarubaini",
+    "miarobaini",
+    "miarubaini"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "sw",
+   "intermediates": [
+    "neem tree"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "neem tree",
+       "Indian lilac"
+      ],
+      "zh": [
+       "印度楝",
+       "印楝树"
+      ]
+     },
+     "match": [
+      "neem tree",
+      "Indian lilac",
+      "印度楝",
+      "印楝树"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Swahili"
+      ],
+      "zh": [
+       "斯瓦希里语"
+      ],
+      "sw": [
+       "mwarobaini",
+       "mwarubaini",
+       "miarobaini"
+      ]
+     },
+     "match": [
+      "Swahili",
+      "斯瓦希里语",
+      "mwarobaini",
+      "mwarubaini",
+      "miarobaini"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       3
+      ],
+      "zh": [
+       5
+      ],
+      "sw": [
+       5,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "concept": {
+     "gold": "neem tree",
+     "distractors": [
+      "banyan tree",
+      "tamarind tree",
+      "moringa tree",
+      "baobab tree"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-sw-chandarua",
+   "subfamily": "fwd",
+   "prompt": "Wavu laini unaotundikwa juu ya kitanda ili mbu wasiweze kumuuma mtu anayelala usiku huitwa",
+   "target": "chandarua",
+   "target_alts": [
+    "vyandarua"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "sw",
+   "intermediates": [
+    "mosquito net"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "mosquito net",
+       "bed netting"
+      ],
+      "zh": [
+       "蚊帐"
+      ]
+     },
+     "match": [
+      "mosquito net",
+      "bed netting",
+      "蚊帐"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Swahili"
+      ],
+      "zh": [
+       "斯瓦希里语"
+      ],
+      "sw": [
+       "chandarua",
+       "vyandarua"
+      ]
+     },
+     "match": [
+      "Swahili",
+      "斯瓦希里语",
+      "chandarua",
+      "vyandarua"
+     ]
+    }
+   ],
+   "consistency": 0.8,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       3
+      ],
+      "zh": [
+       5
+      ],
+      "sw": [
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "mosquito net",
+     "distractors": [
+      "window screen",
+      "fly swatter",
+      "hammock",
+      "insect repellent"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-tr-bademcik",
+   "subfamily": "fwd",
+   "prompt": "Boğazın iki yanında yer alan, çocuklarda sık iltihaplanıp gerektiğinde ameliyatla alınabilen lenf dokusuna",
+   "target": "bademcik",
+   "target_alts": [
+    "bademcikler",
+    "bademciği",
+    "bademcikleri",
+    "bademciğin",
+    "bademcikte"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "palatine tonsil"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "palatine tonsil",
+       "tonsil gland"
+      ],
+      "zh": [
+       "扁桃体",
+       "腭扁桃体"
+      ]
+     },
+     "match": [
+      "palatine tonsil",
+      "tonsil gland",
+      "扁桃体",
+      "腭扁桃体"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "bademcik",
+       "bademcikler",
+       "bademciği"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "bademcik",
+      "bademcikler",
+      "bademciği"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       1,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "palatine tonsil",
+     "distractors": [
+      "lingual tonsil",
+      "uvula",
+      "epiglottis",
+      "parotid gland"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-tr-camasir-makinesi",
+   "subfamily": "fwd",
+   "prompt": "Kirli giysileri deterjanlı suyla tamburunda döndürerek temizleyen ve sonunda sıkma yapan beyaz eşyaya",
+   "target": "çamaşır makinesi",
+   "target_alts": [
+    "çamaşır makineleri",
+    "çamaşır makinesine",
+    "çamaşır makinesinin",
+    "çamaşır makinası"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "washing machine"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "washing machine",
+       "clothes washer"
+      ],
+      "zh": [
+       "洗衣机",
+       "滚筒洗衣机"
+      ]
+     },
+     "match": [
+      "washing machine",
+      "clothes washer",
+      "洗衣机",
+      "滚筒洗衣机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "çamaşır makinesi",
+       "çamaşır makineleri",
+       "çamaşır makinası"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "çamaşır makinesi",
+      "çamaşır makineleri",
+      "çamaşır makinası"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       6,
+       6,
+       7
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "concept": {
+     "gold": "washing machine",
+     "distractors": [
+      "dishwasher",
+      "tumble dryer",
+      "vacuum cleaner",
+      "refrigerator"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-tr-dis-macunu",
+   "subfamily": "fwd",
+   "prompt": "Ağız temizliği için fırçanın üzerine tüpten sıkılan naneli beyaz kremin adı",
+   "target": "diş macunu",
+   "target_alts": [
+    "diş macununu",
+    "diş macununa",
+    "diş macunuyla",
+    "diş macunları"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "toothpaste"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "toothpaste",
+       "tooth paste"
+      ],
+      "zh": [
+       "牙膏"
+      ]
+     },
+     "match": [
+      "toothpaste",
+      "tooth paste",
+      "牙膏"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "diş macunu",
+       "diş macunları"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "diş macunu",
+      "diş macunları"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "toothpaste",
+     "distractors": [
+      "mouthwash",
+      "shaving cream",
+      "shampoo",
+      "deodorant"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-tr-omurilik",
+   "subfamily": "fwd",
+   "prompt": "Beyinden gelen sinir uyarılarını gövdeye ve bacaklara taşıyan, sırttaki kemik kanalın içinde uzanan uzun sinir demetine",
+   "target": "omurilik",
+   "target_alts": [
+    "omuriliği",
+    "omuriliğin",
+    "omurilikte",
+    "omuriliğe",
+    "omurilikler"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "spinal cord"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "spinal cord"
+      ],
+      "zh": [
+       "脊髓"
+      ]
+     },
+     "match": [
+      "spinal cord",
+      "脊髓"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "omurilik",
+       "omuriliği",
+       "omuriliğin"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "omurilik",
+      "omuriliği",
+      "omuriliğin"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "spinal cord",
+     "distractors": [
+      "cerebellum",
+      "medulla oblongata",
+      "corpus callosum",
+      "sciatic nerve"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-tr-kaplumbaga",
+   "subfamily": "fwd",
+   "prompt": "Sırtında sert bir kalkan taşıyan, başını ve ayaklarını içeri çekebilen, çok yavaş yürüyen sürüngene",
+   "target": "kaplumbağa",
+   "target_alts": [
+    "kaplumbağalar",
+    "kaplumbağayı",
+    "kaplumbağanın",
+    "kaplumbağaya"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "tortoise"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "tortoise",
+       "land turtle"
+      ],
+      "zh": [
+       "乌龟",
+       "陆龟"
+      ]
+     },
+     "match": [
+      "tortoise",
+      "land turtle",
+      "乌龟",
+      "陆龟"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "kaplumbağa",
+       "kaplumbağalar"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "kaplumbağa",
+      "kaplumbağalar"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "tortoise",
+     "distractors": [
+      "hare",
+      "snail",
+      "chameleon",
+      "crocodile"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-tr-kartanesi",
+   "subfamily": "fwd",
+   "prompt": "Bulutlarda su buharının donmasıyla oluşan, altı köşeli simetrik yapıdaki her bir minik buz kristaline",
+   "target": "kar tanesi",
+   "target_alts": [
+    "kar taneleri",
+    "kar tanesini",
+    "kar tanecikleri",
+    "kar tanesinin"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "snowflake"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "snowflake"
+      ],
+      "zh": [
+       "雪花"
+      ]
+     },
+     "match": [
+      "snowflake",
+      "雪花"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "kar tanesi",
+       "kar taneleri",
+       "kar tanecikleri"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "kar tanesi",
+      "kar taneleri",
+      "kar tanecikleri"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "snowflake",
+     "distractors": [
+      "raindrop",
+      "hailstone",
+      "icicle",
+      "dewdrop"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-tr-salyangoz",
+   "subfamily": "fwd",
+   "prompt": "Sırtında sarmal bir kabuk taşıyan, nemli bahçelerde çok yavaş sürünen ve geçtiği yerde parlak bir iz bırakan",
+   "target": "salyangoz",
+   "target_alts": [
+    "salyangozlar",
+    "salyangozun",
+    "salyangozu",
+    "salyangoza"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "tr",
+   "intermediates": [
+    "garden snail"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "garden snail",
+       "land snail"
+      ],
+      "zh": [
+       "蜗牛",
+       "散大蜗牛"
+      ]
+     },
+     "match": [
+      "garden snail",
+      "land snail",
+      "蜗牛",
+      "散大蜗牛"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Turkish"
+      ],
+      "zh": [
+       "土耳其语"
+      ],
+      "tr": [
+       "salyangoz",
+       "salyangozlar",
+       "salyangozun"
+      ]
+     },
+     "match": [
+      "Turkish",
+      "土耳其语",
+      "salyangoz",
+      "salyangozlar",
+      "salyangozun"
+     ]
+    }
+   ],
+   "consistency": 0.9,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       1,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "tr": [
+       4,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "garden snail",
+     "distractors": [
+      "leopard slug",
+      "common earthworm",
+      "pill bug",
+      "garden spider"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-blender",
+   "subfamily": "fwd",
+   "prompt": "Đồ dùng nhà bếp có lưỡi dao quay rất nhanh trong cốc nhựa, dùng để nghiền nát trái cây thành thức uống sệt, được gọi là",
+   "target": "máy xay sinh tố",
+   "target_alts": [
+    "cái máy xay sinh tố",
+    "máy xay trái cây"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "fruit blender"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "fruit blender",
+       "smoothie blender"
+      ],
+      "zh": [
+       "榨汁机",
+       "搅拌机"
+      ]
+     },
+     "match": [
+      "fruit blender",
+      "smoothie blender",
+      "榨汁机",
+      "搅拌机"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "máy xay sinh tố",
+       "cái máy xay sinh tố"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "máy xay sinh tố",
+      "cái máy xay sinh tố"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2,
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "fruit blender",
+     "distractors": [
+      "electric kettle",
+      "rice cooker",
+      "coffee grinder",
+      "microwave oven"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-cactus",
+   "subfamily": "fwd",
+   "prompt": "Loài thực vật sống được ở sa mạc khô hạn, thân mọng nước và phủ đầy gai nhọn thay cho lá là cây",
+   "target": "xương rồng",
+   "target_alts": [
+    "cây xương rồng"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "cactus"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "cactus",
+       "cactus plant"
+      ],
+      "zh": [
+       "仙人掌"
+      ]
+     },
+     "match": [
+      "cactus",
+      "cactus plant",
+      "仙人掌"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "xương rồng",
+       "cây xương rồng"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "xương rồng",
+      "cây xương rồng"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "cactus",
+     "distractors": [
+      "aloe vera",
+      "bamboo",
+      "fern",
+      "orchid"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-chuonchuon",
+   "subfamily": "fwd",
+   "prompt": "Loài côn trùng thân dài, có bốn cánh mỏng trong suốt, hay bay lượn sát mặt ao ngay trước cơn mưa, được gọi là",
+   "target": "chuồn chuồn",
+   "target_alts": [
+    "con chuồn chuồn"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "dragonfly"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "dragonfly"
+      ],
+      "zh": [
+       "蜻蜓"
+      ]
+     },
+     "match": [
+      "dragonfly",
+      "蜻蜓"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "chuồn chuồn",
+       "con chuồn chuồn"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "chuồn chuồn",
+      "con chuồn chuồn"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "dragonfly",
+     "distractors": [
+      "butterfly",
+      "cicada",
+      "grasshopper",
+      "praying mantis"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-clothesiron",
+   "subfamily": "fwd",
+   "prompt": "Muốn cho quần áo vừa phơi khô hết nhăn và trở nên phẳng phiu, người ta dùng chiếc",
+   "target": "bàn ủi",
+   "target_alts": [
+    "bàn là",
+    "cái bàn ủi"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "clothes iron"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "clothes iron",
+       "flat iron"
+      ],
+      "zh": [
+       "熨斗",
+       "电熨斗"
+      ]
+     },
+     "match": [
+      "clothes iron",
+      "flat iron",
+      "熨斗",
+      "电熨斗"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "bàn ủi",
+       "bàn là"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "bàn ủi",
+      "bàn là"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "clothes iron",
+     "distractors": [
+      "sewing machine",
+      "hair dryer",
+      "washing machine",
+      "vacuum cleaner"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-extinguisher",
+   "subfamily": "fwd",
+   "prompt": "Vật hình trụ màu đỏ treo trên tường nhà, bên trong có bọt và khí nén, dùng để dập tắt ngọn lửa khi có hỏa hoạn, được gọi là",
+   "target": "bình chữa cháy",
+   "target_alts": [
+    "cái bình chữa cháy",
+    "bình cứu hỏa"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "fire extinguisher"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "fire extinguisher"
+      ],
+      "zh": [
+       "灭火器"
+      ]
+     },
+     "match": [
+      "fire extinguisher",
+      "灭火器"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "bình chữa cháy",
+       "bình cứu hỏa"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "bình chữa cháy",
+      "bình cứu hỏa"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       3
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "fire extinguisher",
+     "distractors": [
+      "smoke detector",
+      "fire hydrant",
+      "fire blanket",
+      "first aid kit"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-firefly",
+   "subfamily": "fwd",
+   "prompt": "Loài côn trùng nhỏ bay lập lòe trong đêm hè, phần bụng phát ra ánh sáng màu xanh lục, dân gian gọi là con",
+   "target": "đom đóm",
+   "target_alts": [
+    "đom đóm",
+    "con đom đóm"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "firefly"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "firefly",
+       "lightning bug"
+      ],
+      "zh": [
+       "萤火虫"
+      ]
+     },
+     "match": [
+      "firefly",
+      "lightning bug",
+      "萤火虫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "đom đóm",
+       "con đom đóm"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "đom đóm",
+      "con đom đóm"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "firefly",
+     "distractors": [
+      "dragonfly",
+      "cicada",
+      "ladybug",
+      "cricket"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-huyet-ap",
+   "subfamily": "fwd",
+   "prompt": "Bác sĩ quấn vòng bít quanh bắp tay rồi bơm hơi để đo chỉ số",
+   "target": "huyết áp",
+   "target_alts": [
+    "áp huyết",
+    "chỉ số huyết áp"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "blood pressure"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "blood pressure"
+      ],
+      "zh": [
+       "血压"
+      ]
+     },
+     "match": [
+      "blood pressure",
+      "血压"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "huyết áp",
+       "áp huyết"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "huyết áp",
+      "áp huyết"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       1
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "blood pressure",
+     "distractors": [
+      "heart rate",
+      "body temperature",
+      "respiratory rate",
+      "blood glucose level"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-neckscarf",
+   "subfamily": "fwd",
+   "prompt": "Vào mùa đông giá rét, để giữ ấm phần dưới cằm, người ta thường quấn quanh mình một chiếc",
+   "target": "khăn quàng cổ",
+   "target_alts": [
+    "khăn choàng cổ",
+    "khăn quàng"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "neck scarf"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "neck scarf",
+       "winter scarf"
+      ],
+      "zh": [
+       "围巾",
+       "颈巾"
+      ]
+     },
+     "match": [
+      "neck scarf",
+      "winter scarf",
+      "围巾",
+      "颈巾"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "khăn quàng cổ",
+       "khăn choàng cổ"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "khăn quàng cổ",
+      "khăn choàng cổ"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "concept": {
+     "gold": "neck scarf",
+     "distractors": [
+      "necktie",
+      "bandana",
+      "earmuffs",
+      "beanie"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-pressurecooker",
+   "subfamily": "fwd",
+   "prompt": "Loại xoong có nắp khóa chặt, làm chín thức ăn rất nhanh nhờ hơi nước bị nén mạnh bên trong, được gọi là",
+   "target": "nồi áp suất",
+   "target_alts": [
+    "cái nồi áp suất",
+    "chiếc nồi áp suất"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "pressure cooker"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "pressure cooker"
+      ],
+      "zh": [
+       "高压锅"
+      ]
+     },
+     "match": [
+      "pressure cooker",
+      "高压锅"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "nồi áp suất",
+       "cái nồi áp suất"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "nồi áp suất",
+      "cái nồi áp suất"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2
+      ],
+      "zh": [
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "concept": {
+     "gold": "pressure cooker",
+     "distractors": [
+      "slow cooker",
+      "rice cooker",
+      "air fryer",
+      "electric kettle"
+     ]
+    }
+   }
+  },
+  {
+   "name": "mlh-vi-raincoat",
+   "subfamily": "fwd",
+   "prompt": "Để khỏi bị ướt khi chạy xe ngoài đường lúc trời đổ hạt, người ta khoác lên mình chiếc",
+   "target": "áo mưa",
+   "target_alts": [
+    "áo đi mưa",
+    "chiếc áo mưa"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "vi",
+   "intermediates": [
+    "rain jacket"
+   ],
+   "units": [
+    {
+     "role": "concept",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "rain jacket",
+       "raincoat"
+      ],
+      "zh": [
+       "雨衣",
+       "雨披"
+      ]
+     },
+     "match": [
+      "rain jacket",
+      "raincoat",
+      "雨衣",
+      "雨披"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Vietnamese"
+      ],
+      "zh": [
+       "越南语"
+      ],
+      "vi": [
+       "áo mưa",
+       "áo đi mưa"
+      ]
+     },
+     "match": [
+      "Vietnamese",
+      "越南语",
+      "áo mưa",
+      "áo đi mưa"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "concept": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "vi": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "concept": {
+     "gold": "rain jacket",
+     "distractors": [
+      "windbreaker",
+      "down jacket",
+      "trench coat",
+      "parka"
+     ]
+    }
+   }
+  }
+ ]
+}

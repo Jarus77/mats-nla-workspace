@@ -1,0 +1,3895 @@
+{
+ "model_id": "Qwen/Qwen3.6-27B",
+ "layers": [
+  42
+ ],
+ "prompts": [
+  {
+   "label": "chat-lmsys-0000",
+   "family": "chat",
+   "file": "chat-lmsys-0000.safetensors",
+   "n_pos": 179,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    115
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0001",
+   "family": "chat",
+   "file": "chat-lmsys-0001.safetensors",
+   "n_pos": 552,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    529
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0002",
+   "family": "chat",
+   "file": "chat-lmsys-0002.safetensors",
+   "n_pos": 80,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    33
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0003",
+   "family": "chat",
+   "file": "chat-lmsys-0003.safetensors",
+   "n_pos": 557,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    251
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0004",
+   "family": "chat",
+   "file": "chat-lmsys-0004.safetensors",
+   "n_pos": 594,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    419
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0005",
+   "family": "chat",
+   "file": "chat-lmsys-0005.safetensors",
+   "n_pos": 537,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    53
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0006",
+   "family": "chat",
+   "file": "chat-lmsys-0006.safetensors",
+   "n_pos": 330,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    64
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0007",
+   "family": "chat",
+   "file": "chat-lmsys-0007.safetensors",
+   "n_pos": 217,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    192
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0008",
+   "family": "chat",
+   "file": "chat-lmsys-0008.safetensors",
+   "n_pos": 507,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    161
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0009",
+   "family": "chat",
+   "file": "chat-lmsys-0009.safetensors",
+   "n_pos": 394,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    246
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0010",
+   "family": "chat",
+   "file": "chat-lmsys-0010.safetensors",
+   "n_pos": 47,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    44
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0011",
+   "family": "chat",
+   "file": "chat-lmsys-0011.safetensors",
+   "n_pos": 267,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    55
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0012",
+   "family": "chat",
+   "file": "chat-lmsys-0012.safetensors",
+   "n_pos": 818,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    775
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0013",
+   "family": "chat",
+   "file": "chat-lmsys-0013.safetensors",
+   "n_pos": 82,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    81
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0014",
+   "family": "chat",
+   "file": "chat-lmsys-0014.safetensors",
+   "n_pos": 536,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    287
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0015",
+   "family": "chat",
+   "file": "chat-lmsys-0015.safetensors",
+   "n_pos": 460,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    279
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0016",
+   "family": "chat",
+   "file": "chat-lmsys-0016.safetensors",
+   "n_pos": 356,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    69
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0017",
+   "family": "chat",
+   "file": "chat-lmsys-0017.safetensors",
+   "n_pos": 568,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    104
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0018",
+   "family": "chat",
+   "file": "chat-lmsys-0018.safetensors",
+   "n_pos": 463,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    244
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0019",
+   "family": "chat",
+   "file": "chat-lmsys-0019.safetensors",
+   "n_pos": 294,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    288
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0020",
+   "family": "chat",
+   "file": "chat-lmsys-0020.safetensors",
+   "n_pos": 273,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    44
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0021",
+   "family": "chat",
+   "file": "chat-lmsys-0021.safetensors",
+   "n_pos": 566,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    181
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0022",
+   "family": "chat",
+   "file": "chat-lmsys-0022.safetensors",
+   "n_pos": 540,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    78
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0023",
+   "family": "chat",
+   "file": "chat-lmsys-0023.safetensors",
+   "n_pos": 531,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    305
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0024",
+   "family": "chat",
+   "file": "chat-lmsys-0024.safetensors",
+   "n_pos": 528,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    244
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0025",
+   "family": "chat",
+   "file": "chat-lmsys-0025.safetensors",
+   "n_pos": 347,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    107
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0026",
+   "family": "chat",
+   "file": "chat-lmsys-0026.safetensors",
+   "n_pos": 536,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    451
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0027",
+   "family": "chat",
+   "file": "chat-lmsys-0027.safetensors",
+   "n_pos": 50,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    35
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0028",
+   "family": "chat",
+   "file": "chat-lmsys-0028.safetensors",
+   "n_pos": 542,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    519
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0029",
+   "family": "chat",
+   "file": "chat-lmsys-0029.safetensors",
+   "n_pos": 470,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    137
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0030",
+   "family": "chat",
+   "file": "chat-lmsys-0030.safetensors",
+   "n_pos": 409,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    390
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0031",
+   "family": "chat",
+   "file": "chat-lmsys-0031.safetensors",
+   "n_pos": 82,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    35
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0032",
+   "family": "chat",
+   "file": "chat-lmsys-0032.safetensors",
+   "n_pos": 298,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    237
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0033",
+   "family": "chat",
+   "file": "chat-lmsys-0033.safetensors",
+   "n_pos": 505,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    58
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0034",
+   "family": "chat",
+   "file": "chat-lmsys-0034.safetensors",
+   "n_pos": 536,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    527
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0035",
+   "family": "chat",
+   "file": "chat-lmsys-0035.safetensors",
+   "n_pos": 554,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    159
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0036",
+   "family": "chat",
+   "file": "chat-lmsys-0036.safetensors",
+   "n_pos": 76,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    48
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0037",
+   "family": "chat",
+   "file": "chat-lmsys-0037.safetensors",
+   "n_pos": 64,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    62
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0038",
+   "family": "chat",
+   "file": "chat-lmsys-0038.safetensors",
+   "n_pos": 601,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    532
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0039",
+   "family": "chat",
+   "file": "chat-lmsys-0039.safetensors",
+   "n_pos": 92,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    57
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0040",
+   "family": "chat",
+   "file": "chat-lmsys-0040.safetensors",
+   "n_pos": 91,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    66
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0041",
+   "family": "chat",
+   "file": "chat-lmsys-0041.safetensors",
+   "n_pos": 307,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    249
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0042",
+   "family": "chat",
+   "file": "chat-lmsys-0042.safetensors",
+   "n_pos": 535,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    100
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0043",
+   "family": "chat",
+   "file": "chat-lmsys-0043.safetensors",
+   "n_pos": 565,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    333
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0044",
+   "family": "chat",
+   "file": "chat-lmsys-0044.safetensors",
+   "n_pos": 92,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    53
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0045",
+   "family": "chat",
+   "file": "chat-lmsys-0045.safetensors",
+   "n_pos": 140,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    132
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0046",
+   "family": "chat",
+   "file": "chat-lmsys-0046.safetensors",
+   "n_pos": 463,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    462
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0047",
+   "family": "chat",
+   "file": "chat-lmsys-0047.safetensors",
+   "n_pos": 643,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    292
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0048",
+   "family": "chat",
+   "file": "chat-lmsys-0048.safetensors",
+   "n_pos": 398,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    316
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0049",
+   "family": "chat",
+   "file": "chat-lmsys-0049.safetensors",
+   "n_pos": 608,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    517
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0050",
+   "family": "chat",
+   "file": "chat-lmsys-0050.safetensors",
+   "n_pos": 99,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    92
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0051",
+   "family": "chat",
+   "file": "chat-lmsys-0051.safetensors",
+   "n_pos": 536,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    120
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0052",
+   "family": "chat",
+   "file": "chat-lmsys-0052.safetensors",
+   "n_pos": 471,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    82
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0053",
+   "family": "chat",
+   "file": "chat-lmsys-0053.safetensors",
+   "n_pos": 30,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    27
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0054",
+   "family": "chat",
+   "file": "chat-lmsys-0054.safetensors",
+   "n_pos": 529,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    313
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0055",
+   "family": "chat",
+   "file": "chat-lmsys-0055.safetensors",
+   "n_pos": 536,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    355
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0056",
+   "family": "chat",
+   "file": "chat-lmsys-0056.safetensors",
+   "n_pos": 327,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    125
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0057",
+   "family": "chat",
+   "file": "chat-lmsys-0057.safetensors",
+   "n_pos": 67,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    46
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0058",
+   "family": "chat",
+   "file": "chat-lmsys-0058.safetensors",
+   "n_pos": 515,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    74
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0059",
+   "family": "chat",
+   "file": "chat-lmsys-0059.safetensors",
+   "n_pos": 530,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    302
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0060",
+   "family": "chat",
+   "file": "chat-lmsys-0060.safetensors",
+   "n_pos": 954,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    810
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0061",
+   "family": "chat",
+   "file": "chat-lmsys-0061.safetensors",
+   "n_pos": 533,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    57
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0062",
+   "family": "chat",
+   "file": "chat-lmsys-0062.safetensors",
+   "n_pos": 330,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    250
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0063",
+   "family": "chat",
+   "file": "chat-lmsys-0063.safetensors",
+   "n_pos": 572,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    94
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0064",
+   "family": "chat",
+   "file": "chat-lmsys-0064.safetensors",
+   "n_pos": 947,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    755
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0065",
+   "family": "chat",
+   "file": "chat-lmsys-0065.safetensors",
+   "n_pos": 531,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    128
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0066",
+   "family": "chat",
+   "file": "chat-lmsys-0066.safetensors",
+   "n_pos": 533,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    279
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0067",
+   "family": "chat",
+   "file": "chat-lmsys-0067.safetensors",
+   "n_pos": 376,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    307
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0068",
+   "family": "chat",
+   "file": "chat-lmsys-0068.safetensors",
+   "n_pos": 545,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    255
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0069",
+   "family": "chat",
+   "file": "chat-lmsys-0069.safetensors",
+   "n_pos": 543,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    432
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0070",
+   "family": "chat",
+   "file": "chat-lmsys-0070.safetensors",
+   "n_pos": 331,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    221
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0071",
+   "family": "chat",
+   "file": "chat-lmsys-0071.safetensors",
+   "n_pos": 110,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    88
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0072",
+   "family": "chat",
+   "file": "chat-lmsys-0072.safetensors",
+   "n_pos": 255,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    174
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0073",
+   "family": "chat",
+   "file": "chat-lmsys-0073.safetensors",
+   "n_pos": 566,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    349
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-lmsys-0074",
+   "family": "chat",
+   "file": "chat-lmsys-0074.safetensors",
+   "n_pos": 606,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    283
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0000",
+   "family": "chat",
+   "file": "chat-dailydialog-0000.safetensors",
+   "n_pos": 103,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    60
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0001",
+   "family": "chat",
+   "file": "chat-dailydialog-0001.safetensors",
+   "n_pos": 167,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    89
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0002",
+   "family": "chat",
+   "file": "chat-dailydialog-0002.safetensors",
+   "n_pos": 50,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    47
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0003",
+   "family": "chat",
+   "file": "chat-dailydialog-0003.safetensors",
+   "n_pos": 395,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    116
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0004",
+   "family": "chat",
+   "file": "chat-dailydialog-0004.safetensors",
+   "n_pos": 69,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    45
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0005",
+   "family": "chat",
+   "file": "chat-dailydialog-0005.safetensors",
+   "n_pos": 113,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    36
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0006",
+   "family": "chat",
+   "file": "chat-dailydialog-0006.safetensors",
+   "n_pos": 445,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    318
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0007",
+   "family": "chat",
+   "file": "chat-dailydialog-0007.safetensors",
+   "n_pos": 160,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    102
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0008",
+   "family": "chat",
+   "file": "chat-dailydialog-0008.safetensors",
+   "n_pos": 81,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    56
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0009",
+   "family": "chat",
+   "file": "chat-dailydialog-0009.safetensors",
+   "n_pos": 280,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    156
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0010",
+   "family": "chat",
+   "file": "chat-dailydialog-0010.safetensors",
+   "n_pos": 135,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    68
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0011",
+   "family": "chat",
+   "file": "chat-dailydialog-0011.safetensors",
+   "n_pos": 74,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    72
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0012",
+   "family": "chat",
+   "file": "chat-dailydialog-0012.safetensors",
+   "n_pos": 72,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    55
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0013",
+   "family": "chat",
+   "file": "chat-dailydialog-0013.safetensors",
+   "n_pos": 108,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    73
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0014",
+   "family": "chat",
+   "file": "chat-dailydialog-0014.safetensors",
+   "n_pos": 83,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    63
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0015",
+   "family": "chat",
+   "file": "chat-dailydialog-0015.safetensors",
+   "n_pos": 315,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    63
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0016",
+   "family": "chat",
+   "file": "chat-dailydialog-0016.safetensors",
+   "n_pos": 162,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    59
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0017",
+   "family": "chat",
+   "file": "chat-dailydialog-0017.safetensors",
+   "n_pos": 104,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    89
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0018",
+   "family": "chat",
+   "file": "chat-dailydialog-0018.safetensors",
+   "n_pos": 102,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    78
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0019",
+   "family": "chat",
+   "file": "chat-dailydialog-0019.safetensors",
+   "n_pos": 211,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    67
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0020",
+   "family": "chat",
+   "file": "chat-dailydialog-0020.safetensors",
+   "n_pos": 85,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    73
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0021",
+   "family": "chat",
+   "file": "chat-dailydialog-0021.safetensors",
+   "n_pos": 402,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    199
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0022",
+   "family": "chat",
+   "file": "chat-dailydialog-0022.safetensors",
+   "n_pos": 83,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    36
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0023",
+   "family": "chat",
+   "file": "chat-dailydialog-0023.safetensors",
+   "n_pos": 523,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    506
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0024",
+   "family": "chat",
+   "file": "chat-dailydialog-0024.safetensors",
+   "n_pos": 150,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    92
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0025",
+   "family": "chat",
+   "file": "chat-dailydialog-0025.safetensors",
+   "n_pos": 54,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    38
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0026",
+   "family": "chat",
+   "file": "chat-dailydialog-0026.safetensors",
+   "n_pos": 46,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    24
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0027",
+   "family": "chat",
+   "file": "chat-dailydialog-0027.safetensors",
+   "n_pos": 136,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    113
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0028",
+   "family": "chat",
+   "file": "chat-dailydialog-0028.safetensors",
+   "n_pos": 541,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    74
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0029",
+   "family": "chat",
+   "file": "chat-dailydialog-0029.safetensors",
+   "n_pos": 88,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    76
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0030",
+   "family": "chat",
+   "file": "chat-dailydialog-0030.safetensors",
+   "n_pos": 231,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    167
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0031",
+   "family": "chat",
+   "file": "chat-dailydialog-0031.safetensors",
+   "n_pos": 402,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    315
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0032",
+   "family": "chat",
+   "file": "chat-dailydialog-0032.safetensors",
+   "n_pos": 146,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    130
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0033",
+   "family": "chat",
+   "file": "chat-dailydialog-0033.safetensors",
+   "n_pos": 55,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    52
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0034",
+   "family": "chat",
+   "file": "chat-dailydialog-0034.safetensors",
+   "n_pos": 72,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    45
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0035",
+   "family": "chat",
+   "file": "chat-dailydialog-0035.safetensors",
+   "n_pos": 175,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    112
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0036",
+   "family": "chat",
+   "file": "chat-dailydialog-0036.safetensors",
+   "n_pos": 127,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    114
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0037",
+   "family": "chat",
+   "file": "chat-dailydialog-0037.safetensors",
+   "n_pos": 38,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    32
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0038",
+   "family": "chat",
+   "file": "chat-dailydialog-0038.safetensors",
+   "n_pos": 200,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    180
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0039",
+   "family": "chat",
+   "file": "chat-dailydialog-0039.safetensors",
+   "n_pos": 250,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    165
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0040",
+   "family": "chat",
+   "file": "chat-dailydialog-0040.safetensors",
+   "n_pos": 141,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    98
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0041",
+   "family": "chat",
+   "file": "chat-dailydialog-0041.safetensors",
+   "n_pos": 110,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    83
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0042",
+   "family": "chat",
+   "file": "chat-dailydialog-0042.safetensors",
+   "n_pos": 117,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    48
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0043",
+   "family": "chat",
+   "file": "chat-dailydialog-0043.safetensors",
+   "n_pos": 94,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    32
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0044",
+   "family": "chat",
+   "file": "chat-dailydialog-0044.safetensors",
+   "n_pos": 473,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    168
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0045",
+   "family": "chat",
+   "file": "chat-dailydialog-0045.safetensors",
+   "n_pos": 114,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    86
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0046",
+   "family": "chat",
+   "file": "chat-dailydialog-0046.safetensors",
+   "n_pos": 212,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    203
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0047",
+   "family": "chat",
+   "file": "chat-dailydialog-0047.safetensors",
+   "n_pos": 217,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    196
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0048",
+   "family": "chat",
+   "file": "chat-dailydialog-0048.safetensors",
+   "n_pos": 234,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    45
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0049",
+   "family": "chat",
+   "file": "chat-dailydialog-0049.safetensors",
+   "n_pos": 553,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    76
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0050",
+   "family": "chat",
+   "file": "chat-dailydialog-0050.safetensors",
+   "n_pos": 51,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    50
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0051",
+   "family": "chat",
+   "file": "chat-dailydialog-0051.safetensors",
+   "n_pos": 289,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    182
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0052",
+   "family": "chat",
+   "file": "chat-dailydialog-0052.safetensors",
+   "n_pos": 110,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    101
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0053",
+   "family": "chat",
+   "file": "chat-dailydialog-0053.safetensors",
+   "n_pos": 261,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    197
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0054",
+   "family": "chat",
+   "file": "chat-dailydialog-0054.safetensors",
+   "n_pos": 183,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    138
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0055",
+   "family": "chat",
+   "file": "chat-dailydialog-0055.safetensors",
+   "n_pos": 143,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    60
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0056",
+   "family": "chat",
+   "file": "chat-dailydialog-0056.safetensors",
+   "n_pos": 167,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    119
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0057",
+   "family": "chat",
+   "file": "chat-dailydialog-0057.safetensors",
+   "n_pos": 71,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    52
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0058",
+   "family": "chat",
+   "file": "chat-dailydialog-0058.safetensors",
+   "n_pos": 102,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    30
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0059",
+   "family": "chat",
+   "file": "chat-dailydialog-0059.safetensors",
+   "n_pos": 68,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    57
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0060",
+   "family": "chat",
+   "file": "chat-dailydialog-0060.safetensors",
+   "n_pos": 77,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    49
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0061",
+   "family": "chat",
+   "file": "chat-dailydialog-0061.safetensors",
+   "n_pos": 289,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    110
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0062",
+   "family": "chat",
+   "file": "chat-dailydialog-0062.safetensors",
+   "n_pos": 229,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    180
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0063",
+   "family": "chat",
+   "file": "chat-dailydialog-0063.safetensors",
+   "n_pos": 132,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    38
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0064",
+   "family": "chat",
+   "file": "chat-dailydialog-0064.safetensors",
+   "n_pos": 226,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    152
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0065",
+   "family": "chat",
+   "file": "chat-dailydialog-0065.safetensors",
+   "n_pos": 209,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    40
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0066",
+   "family": "chat",
+   "file": "chat-dailydialog-0066.safetensors",
+   "n_pos": 534,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    137
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0067",
+   "family": "chat",
+   "file": "chat-dailydialog-0067.safetensors",
+   "n_pos": 93,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    58
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0068",
+   "family": "chat",
+   "file": "chat-dailydialog-0068.safetensors",
+   "n_pos": 511,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    91
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0069",
+   "family": "chat",
+   "file": "chat-dailydialog-0069.safetensors",
+   "n_pos": 370,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    154
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0070",
+   "family": "chat",
+   "file": "chat-dailydialog-0070.safetensors",
+   "n_pos": 550,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    245
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0071",
+   "family": "chat",
+   "file": "chat-dailydialog-0071.safetensors",
+   "n_pos": 256,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    123
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0072",
+   "family": "chat",
+   "file": "chat-dailydialog-0072.safetensors",
+   "n_pos": 109,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    92
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0073",
+   "family": "chat",
+   "file": "chat-dailydialog-0073.safetensors",
+   "n_pos": 324,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    70
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "chat-dailydialog-0074",
+   "family": "chat",
+   "file": "chat-dailydialog-0074.safetensors",
+   "n_pos": 234,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    68
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0000",
+   "family": "pt",
+   "file": "pt-pile-0000.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    361
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0001",
+   "family": "pt",
+   "file": "pt-pile-0001.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    337
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0002",
+   "family": "pt",
+   "file": "pt-pile-0002.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    413
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0003",
+   "family": "pt",
+   "file": "pt-pile-0003.safetensors",
+   "n_pos": 411,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    274
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0004",
+   "family": "pt",
+   "file": "pt-pile-0004.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    584
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0005",
+   "family": "pt",
+   "file": "pt-pile-0005.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    202
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0006",
+   "family": "pt",
+   "file": "pt-pile-0006.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    551
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0007",
+   "family": "pt",
+   "file": "pt-pile-0007.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    352
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0008",
+   "family": "pt",
+   "file": "pt-pile-0008.safetensors",
+   "n_pos": 441,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    413
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0009",
+   "family": "pt",
+   "file": "pt-pile-0009.safetensors",
+   "n_pos": 440,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    274
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0010",
+   "family": "pt",
+   "file": "pt-pile-0010.safetensors",
+   "n_pos": 553,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    493
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0011",
+   "family": "pt",
+   "file": "pt-pile-0011.safetensors",
+   "n_pos": 323,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    238
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0012",
+   "family": "pt",
+   "file": "pt-pile-0012.safetensors",
+   "n_pos": 524,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    315
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0013",
+   "family": "pt",
+   "file": "pt-pile-0013.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    481
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0014",
+   "family": "pt",
+   "file": "pt-pile-0014.safetensors",
+   "n_pos": 214,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    180
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0015",
+   "family": "pt",
+   "file": "pt-pile-0015.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    622
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0016",
+   "family": "pt",
+   "file": "pt-pile-0016.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    250
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0017",
+   "family": "pt",
+   "file": "pt-pile-0017.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    209
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0018",
+   "family": "pt",
+   "file": "pt-pile-0018.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    174
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0019",
+   "family": "pt",
+   "file": "pt-pile-0019.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    222
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0020",
+   "family": "pt",
+   "file": "pt-pile-0020.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    209
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0021",
+   "family": "pt",
+   "file": "pt-pile-0021.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    250
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0022",
+   "family": "pt",
+   "file": "pt-pile-0022.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    469
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0023",
+   "family": "pt",
+   "file": "pt-pile-0023.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    251
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0024",
+   "family": "pt",
+   "file": "pt-pile-0024.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    138
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0025",
+   "family": "pt",
+   "file": "pt-pile-0025.safetensors",
+   "n_pos": 214,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    194
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0026",
+   "family": "pt",
+   "file": "pt-pile-0026.safetensors",
+   "n_pos": 501,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    433
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0027",
+   "family": "pt",
+   "file": "pt-pile-0027.safetensors",
+   "n_pos": 211,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    155
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0028",
+   "family": "pt",
+   "file": "pt-pile-0028.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    266
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0029",
+   "family": "pt",
+   "file": "pt-pile-0029.safetensors",
+   "n_pos": 364,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    204
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0030",
+   "family": "pt",
+   "file": "pt-pile-0030.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    134
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0031",
+   "family": "pt",
+   "file": "pt-pile-0031.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    206
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0032",
+   "family": "pt",
+   "file": "pt-pile-0032.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    346
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0033",
+   "family": "pt",
+   "file": "pt-pile-0033.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    405
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0034",
+   "family": "pt",
+   "file": "pt-pile-0034.safetensors",
+   "n_pos": 395,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    321
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0035",
+   "family": "pt",
+   "file": "pt-pile-0035.safetensors",
+   "n_pos": 287,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    276
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0036",
+   "family": "pt",
+   "file": "pt-pile-0036.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    295
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0037",
+   "family": "pt",
+   "file": "pt-pile-0037.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    619
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0038",
+   "family": "pt",
+   "file": "pt-pile-0038.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    196
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0039",
+   "family": "pt",
+   "file": "pt-pile-0039.safetensors",
+   "n_pos": 479,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    395
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0040",
+   "family": "pt",
+   "file": "pt-pile-0040.safetensors",
+   "n_pos": 203,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    138
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0041",
+   "family": "pt",
+   "file": "pt-pile-0041.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    365
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0042",
+   "family": "pt",
+   "file": "pt-pile-0042.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    592
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0043",
+   "family": "pt",
+   "file": "pt-pile-0043.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    577
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0044",
+   "family": "pt",
+   "file": "pt-pile-0044.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    531
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0045",
+   "family": "pt",
+   "file": "pt-pile-0045.safetensors",
+   "n_pos": 191,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    187
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0046",
+   "family": "pt",
+   "file": "pt-pile-0046.safetensors",
+   "n_pos": 617,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    480
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0047",
+   "family": "pt",
+   "file": "pt-pile-0047.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    540
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0048",
+   "family": "pt",
+   "file": "pt-pile-0048.safetensors",
+   "n_pos": 289,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    275
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0049",
+   "family": "pt",
+   "file": "pt-pile-0049.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    332
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0050",
+   "family": "pt",
+   "file": "pt-pile-0050.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    335
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0051",
+   "family": "pt",
+   "file": "pt-pile-0051.safetensors",
+   "n_pos": 387,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    234
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0052",
+   "family": "pt",
+   "file": "pt-pile-0052.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    333
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0053",
+   "family": "pt",
+   "file": "pt-pile-0053.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    185
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0054",
+   "family": "pt",
+   "file": "pt-pile-0054.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    378
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0055",
+   "family": "pt",
+   "file": "pt-pile-0055.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    456
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0056",
+   "family": "pt",
+   "file": "pt-pile-0056.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    337
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0057",
+   "family": "pt",
+   "file": "pt-pile-0057.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    163
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0058",
+   "family": "pt",
+   "file": "pt-pile-0058.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    229
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0059",
+   "family": "pt",
+   "file": "pt-pile-0059.safetensors",
+   "n_pos": 459,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    166
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0060",
+   "family": "pt",
+   "file": "pt-pile-0060.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    636
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0061",
+   "family": "pt",
+   "file": "pt-pile-0061.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    238
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0062",
+   "family": "pt",
+   "file": "pt-pile-0062.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    357
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0063",
+   "family": "pt",
+   "file": "pt-pile-0063.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    215
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0064",
+   "family": "pt",
+   "file": "pt-pile-0064.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    188
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0065",
+   "family": "pt",
+   "file": "pt-pile-0065.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    306
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0066",
+   "family": "pt",
+   "file": "pt-pile-0066.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    439
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0067",
+   "family": "pt",
+   "file": "pt-pile-0067.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    158
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0068",
+   "family": "pt",
+   "file": "pt-pile-0068.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    184
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0069",
+   "family": "pt",
+   "file": "pt-pile-0069.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    132
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0070",
+   "family": "pt",
+   "file": "pt-pile-0070.safetensors",
+   "n_pos": 193,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    168
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0071",
+   "family": "pt",
+   "file": "pt-pile-0071.safetensors",
+   "n_pos": 602,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    209
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0072",
+   "family": "pt",
+   "file": "pt-pile-0072.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    406
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-pile-0073",
+   "family": "pt",
+   "file": "pt-pile-0073.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    183
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0000",
+   "family": "pt",
+   "file": "pt-fineweb-0000.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    617
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0001",
+   "family": "pt",
+   "file": "pt-fineweb-0001.safetensors",
+   "n_pos": 206,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    178
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0002",
+   "family": "pt",
+   "file": "pt-fineweb-0002.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    446
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0003",
+   "family": "pt",
+   "file": "pt-fineweb-0003.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    145
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0004",
+   "family": "pt",
+   "file": "pt-fineweb-0004.safetensors",
+   "n_pos": 418,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    168
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0005",
+   "family": "pt",
+   "file": "pt-fineweb-0005.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    579
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0006",
+   "family": "pt",
+   "file": "pt-fineweb-0006.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    238
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0007",
+   "family": "pt",
+   "file": "pt-fineweb-0007.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    446
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0008",
+   "family": "pt",
+   "file": "pt-fineweb-0008.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    324
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0009",
+   "family": "pt",
+   "file": "pt-fineweb-0009.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    208
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0010",
+   "family": "pt",
+   "file": "pt-fineweb-0010.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    456
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0011",
+   "family": "pt",
+   "file": "pt-fineweb-0011.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    261
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0012",
+   "family": "pt",
+   "file": "pt-fineweb-0012.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    621
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0013",
+   "family": "pt",
+   "file": "pt-fineweb-0013.safetensors",
+   "n_pos": 333,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    220
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0014",
+   "family": "pt",
+   "file": "pt-fineweb-0014.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    440
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0015",
+   "family": "pt",
+   "file": "pt-fineweb-0015.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    318
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0016",
+   "family": "pt",
+   "file": "pt-fineweb-0016.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    374
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0017",
+   "family": "pt",
+   "file": "pt-fineweb-0017.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    194
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0018",
+   "family": "pt",
+   "file": "pt-fineweb-0018.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    191
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0019",
+   "family": "pt",
+   "file": "pt-fineweb-0019.safetensors",
+   "n_pos": 418,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    381
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0020",
+   "family": "pt",
+   "file": "pt-fineweb-0020.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    632
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0021",
+   "family": "pt",
+   "file": "pt-fineweb-0021.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    370
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0022",
+   "family": "pt",
+   "file": "pt-fineweb-0022.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    377
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0023",
+   "family": "pt",
+   "file": "pt-fineweb-0023.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    379
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0024",
+   "family": "pt",
+   "file": "pt-fineweb-0024.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    291
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0025",
+   "family": "pt",
+   "file": "pt-fineweb-0025.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    175
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0026",
+   "family": "pt",
+   "file": "pt-fineweb-0026.safetensors",
+   "n_pos": 566,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    205
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0027",
+   "family": "pt",
+   "file": "pt-fineweb-0027.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    184
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0028",
+   "family": "pt",
+   "file": "pt-fineweb-0028.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    515
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0029",
+   "family": "pt",
+   "file": "pt-fineweb-0029.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    307
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0030",
+   "family": "pt",
+   "file": "pt-fineweb-0030.safetensors",
+   "n_pos": 608,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    511
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0031",
+   "family": "pt",
+   "file": "pt-fineweb-0031.safetensors",
+   "n_pos": 554,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    267
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0032",
+   "family": "pt",
+   "file": "pt-fineweb-0032.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    377
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0033",
+   "family": "pt",
+   "file": "pt-fineweb-0033.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    556
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0034",
+   "family": "pt",
+   "file": "pt-fineweb-0034.safetensors",
+   "n_pos": 138,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    137
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0035",
+   "family": "pt",
+   "file": "pt-fineweb-0035.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    214
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0036",
+   "family": "pt",
+   "file": "pt-fineweb-0036.safetensors",
+   "n_pos": 359,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    264
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0037",
+   "family": "pt",
+   "file": "pt-fineweb-0037.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    143
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0038",
+   "family": "pt",
+   "file": "pt-fineweb-0038.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    237
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0039",
+   "family": "pt",
+   "file": "pt-fineweb-0039.safetensors",
+   "n_pos": 624,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    602
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0040",
+   "family": "pt",
+   "file": "pt-fineweb-0040.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    619
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0041",
+   "family": "pt",
+   "file": "pt-fineweb-0041.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    402
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0042",
+   "family": "pt",
+   "file": "pt-fineweb-0042.safetensors",
+   "n_pos": 199,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    178
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0043",
+   "family": "pt",
+   "file": "pt-fineweb-0043.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    207
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0044",
+   "family": "pt",
+   "file": "pt-fineweb-0044.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    485
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0045",
+   "family": "pt",
+   "file": "pt-fineweb-0045.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    410
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0046",
+   "family": "pt",
+   "file": "pt-fineweb-0046.safetensors",
+   "n_pos": 131,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    130
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0047",
+   "family": "pt",
+   "file": "pt-fineweb-0047.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    600
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0048",
+   "family": "pt",
+   "file": "pt-fineweb-0048.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    145
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0049",
+   "family": "pt",
+   "file": "pt-fineweb-0049.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    520
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0050",
+   "family": "pt",
+   "file": "pt-fineweb-0050.safetensors",
+   "n_pos": 275,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    267
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0051",
+   "family": "pt",
+   "file": "pt-fineweb-0051.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    284
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0052",
+   "family": "pt",
+   "file": "pt-fineweb-0052.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    632
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0053",
+   "family": "pt",
+   "file": "pt-fineweb-0053.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    461
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0054",
+   "family": "pt",
+   "file": "pt-fineweb-0054.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    574
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0055",
+   "family": "pt",
+   "file": "pt-fineweb-0055.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    178
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0056",
+   "family": "pt",
+   "file": "pt-fineweb-0056.safetensors",
+   "n_pos": 520,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    488
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0057",
+   "family": "pt",
+   "file": "pt-fineweb-0057.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    564
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0058",
+   "family": "pt",
+   "file": "pt-fineweb-0058.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    265
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0059",
+   "family": "pt",
+   "file": "pt-fineweb-0059.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    397
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0060",
+   "family": "pt",
+   "file": "pt-fineweb-0060.safetensors",
+   "n_pos": 152,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    143
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0061",
+   "family": "pt",
+   "file": "pt-fineweb-0061.safetensors",
+   "n_pos": 540,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    217
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0062",
+   "family": "pt",
+   "file": "pt-fineweb-0062.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    314
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0063",
+   "family": "pt",
+   "file": "pt-fineweb-0063.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    527
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0064",
+   "family": "pt",
+   "file": "pt-fineweb-0064.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    246
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0065",
+   "family": "pt",
+   "file": "pt-fineweb-0065.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    404
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0066",
+   "family": "pt",
+   "file": "pt-fineweb-0066.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    409
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0067",
+   "family": "pt",
+   "file": "pt-fineweb-0067.safetensors",
+   "n_pos": 381,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    331
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0068",
+   "family": "pt",
+   "file": "pt-fineweb-0068.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    389
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0069",
+   "family": "pt",
+   "file": "pt-fineweb-0069.safetensors",
+   "n_pos": 218,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    174
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0070",
+   "family": "pt",
+   "file": "pt-fineweb-0070.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    457
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0071",
+   "family": "pt",
+   "file": "pt-fineweb-0071.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    246
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0072",
+   "family": "pt",
+   "file": "pt-fineweb-0072.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    445
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0073",
+   "family": "pt",
+   "file": "pt-fineweb-0073.safetensors",
+   "n_pos": 462,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    231
+   ],
+   "units": null,
+   "contract": null
+  },
+  {
+   "label": "pt-fineweb-0074",
+   "family": "pt",
+   "file": "pt-fineweb-0074.safetensors",
+   "n_pos": 640,
+   "targets": [],
+   "look_for": "",
+   "eval_positions": [
+    544
+   ],
+   "units": null,
+   "contract": null
+  }
+ ]
+}

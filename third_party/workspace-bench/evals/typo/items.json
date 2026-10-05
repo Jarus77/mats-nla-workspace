@@ -1,0 +1,1707 @@
+{
+ "family": "typo",
+ "gate": "Qwen3.6-27B behavioral: >=8/10 correct at temp 0.7 (greedy-verified first); association scored against association_aliases.json (phrase-aware, echo-guarded); poetry scored by committed rhyme",
+ "items": [
+  {
+   "name": "typo-February",
+   "prompt": "Her birthday falls on the last day of Febuary",
+   "intermediates": [
+    "February"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-account",
+   "prompt": "She could not remember the password for her bank acount",
+   "intermediates": [
+    "account"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-across",
+   "prompt": "She picked up her bag and walked slowly accross",
+   "intermediates": [
+    "across"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-action",
+   "prompt": "He decided to take immediate aciton",
+   "intermediates": [
+    "action"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-address",
+   "prompt": "Please write your full name and your current adress",
+   "intermediates": [
+    "address"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-again",
+   "prompt": "He promised he would never do it agian",
+   "intermediates": [
+    "again"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-against",
+   "prompt": "The final vote was nine to two aganst",
+   "intermediates": [
+    "against"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-already",
+   "prompt": "By noon the tickets were alredy",
+   "intermediates": [
+    "already"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-although",
+   "prompt": "She agreed to help even allthough",
+   "intermediates": [
+    "although"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-always",
+   "prompt": "She said she would alwyas",
+   "intermediates": [
+    "always"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-another",
+   "prompt": "She reached into the bag and pulled out anther",
+   "intermediates": [
+    "another"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-around",
+   "prompt": "They walked slowly all the way aroud",
+   "intermediates": [
+    "around"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-because",
+   "prompt": "He said he was going to be late becuase",
+   "intermediates": [
+    "because"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-between",
+   "prompt": "The cat squeezed itself into the gap betwen",
+   "intermediates": [
+    "between"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-business",
+   "prompt": "After college she moved to the city and started her own buisness",
+   "intermediates": [
+    "business"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-college",
+   "prompt": "After high school she applied to colege",
+   "intermediates": [
+    "college"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-company",
+   "prompt": "He worked at the same software compny",
+   "intermediates": [
+    "company"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-control",
+   "prompt": "The pilot fought hard to regain contorl",
+   "intermediates": [
+    "control"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-country",
+   "prompt": "She had never traveled outside of her own contry",
+   "intermediates": [
+    "country"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-course",
+   "prompt": "She signed up for the evening coruse",
+   "intermediates": [
+    "course"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-different",
+   "prompt": "The second draft of the essay took a completely diferent",
+   "intermediates": [
+    "different"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-division",
+   "prompt": "The company announced a new sales divission",
+   "intermediates": [
+    "division"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-family",
+   "prompt": "He spent the holidays with his entire familly",
+   "intermediates": [
+    "family"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-field",
+   "prompt": "The players jogged out onto the freshly mowed feild",
+   "intermediates": [
+    "field"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-first",
+   "prompt": "She was the one who arrived frist",
+   "intermediates": [
+    "first"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-football",
+   "prompt": "Every Sunday he watched footbal",
+   "intermediates": [
+    "football"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-function",
+   "prompt": "The programmer wrote a small helper funtion",
+   "intermediates": [
+    "function"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-future",
+   "prompt": "Nobody could predict what lay in the futture",
+   "intermediates": [
+    "future"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-government",
+   "prompt": "The new policy was announced last week by the federal goverment",
+   "intermediates": [
+    "government"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-great",
+   "prompt": "The view from the top was graet",
+   "intermediates": [
+    "great"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-height",
+   "prompt": "He was surprised by the building's enormous hieght",
+   "intermediates": [
+    "height"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-house",
+   "prompt": "They moved into the new hosue",
+   "intermediates": [
+    "house"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-human",
+   "prompt": "The discovery changed the course of humman",
+   "intermediates": [
+    "human"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-important",
+   "prompt": "The first page contained the most importnt",
+   "intermediates": [
+    "important"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-island",
+   "prompt": "The ferry took them out to the small isalnd",
+   "intermediates": [
+    "island"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-language",
+   "prompt": "The course required that every student learn a second langauge",
+   "intermediates": [
+    "language"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-length",
+   "prompt": "She measured the table's exact lentgh",
+   "intermediates": [
+    "length"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-level",
+   "prompt": "The water rose to a dangerous levell",
+   "intermediates": [
+    "level"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-library",
+   "prompt": "She returned the overdue books to the local libary",
+   "intermediates": [
+    "library"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-little",
+   "prompt": "He poured himself a litle",
+   "intermediates": [
+    "little"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-major",
+   "prompt": "The bridge repair was a majjor",
+   "intermediates": [
+    "major"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-market",
+   "prompt": "Every Saturday they visited the farmers makret",
+   "intermediates": [
+    "market"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-message",
+   "prompt": "He checked his phone and saw a new mesage",
+   "intermediates": [
+    "message"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-million",
+   "prompt": "The painting sold for over ten milion",
+   "intermediates": [
+    "million"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-model",
+   "prompt": "The engineer built a scale moddel",
+   "intermediates": [
+    "model"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-night",
+   "prompt": "He worked late into the nigth",
+   "intermediates": [
+    "night"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-number",
+   "prompt": "He wrote down her phone numbr",
+   "intermediates": [
+    "number"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-often",
+   "prompt": "She said she did not visit very offten",
+   "intermediates": [
+    "often"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-order",
+   "prompt": "He placed the same lunch ordder",
+   "intermediates": [
+    "order"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-original",
+   "prompt": "The museum displayed the orignal",
+   "intermediates": [
+    "original"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-people",
+   "prompt": "The stadium was packed with nearly forty thousand poeple",
+   "intermediates": [
+    "people"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-position",
+   "prompt": "She accepted the new possition",
+   "intermediates": [
+    "position"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-power",
+   "prompt": "The storm knocked out the powwer",
+   "intermediates": [
+    "power"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-present",
+   "prompt": "He unwrapped the birthday pressent",
+   "intermediates": [
+    "present"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-product",
+   "prompt": "The company released its newest prodduct",
+   "intermediates": [
+    "product"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-project",
+   "prompt": "She spent three months on the projject",
+   "intermediates": [
+    "project"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-property",
+   "prompt": "He inherited the family propperty",
+   "intermediates": [
+    "property"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-really",
+   "prompt": "Even after reading it twice she was not realy",
+   "intermediates": [
+    "really"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-review",
+   "prompt": "The editor asked her to write a short reveiw",
+   "intermediates": [
+    "review"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-right",
+   "prompt": "She turned at the corner and went rigth",
+   "intermediates": [
+    "right"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-running",
+   "prompt": "The water in the sink was still runing",
+   "intermediates": [
+    "running"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-science",
+   "prompt": "Her favorite subject in school was always sceince",
+   "intermediates": [
+    "science"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-search",
+   "prompt": "She typed the name into the box and clicked serach",
+   "intermediates": [
+    "search"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-second",
+   "prompt": "He finished the race in secnod",
+   "intermediates": [
+    "second"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-several",
+   "prompt": "The delay lasted for sevral",
+   "intermediates": [
+    "several"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-short",
+   "prompt": "The meeting was kept shrot",
+   "intermediates": [
+    "short"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-since",
+   "prompt": "She had not seen him sicne",
+   "intermediates": [
+    "since"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-something",
+   "prompt": "He paused at the door as if he had forgotten somthing",
+   "intermediates": [
+    "something"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-source",
+   "prompt": "The reporter refused to name her soruce",
+   "intermediates": [
+    "source"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-special",
+   "prompt": "The chef prepared a dish for the specal",
+   "intermediates": [
+    "special"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-study",
+   "prompt": "She stayed up all night to studdy",
+   "intermediates": [
+    "study"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-success",
+   "prompt": "The party was considered a great succes",
+   "intermediates": [
+    "success"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-support",
+   "prompt": "He called the help line for technical suport",
+   "intermediates": [
+    "support"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-those",
+   "prompt": "He pointed across the room and said he wanted thsoe",
+   "intermediates": [
+    "those"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-together",
+   "prompt": "The family finally sat down to eat togther",
+   "intermediates": [
+    "together"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-training",
+   "prompt": "The new employees completed their trainning",
+   "intermediates": [
+    "training"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-until",
+   "prompt": "The library will stay open every night untill",
+   "intermediates": [
+    "until"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-village",
+   "prompt": "They stayed in a small fishing vilage",
+   "intermediates": [
+    "village"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-water",
+   "prompt": "She poured a glass of cold watre",
+   "intermediates": [
+    "water"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-which",
+   "prompt": "She could not decide whhich",
+   "intermediates": [
+    "which"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-within",
+   "prompt": "The package should arrive wihtin",
+   "intermediates": [
+    "within"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-without",
+   "prompt": "He left the house in a hurry and withot",
+   "intermediates": [
+    "without"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-world",
+   "prompt": "He wanted to travel all over the wolrd",
+   "intermediates": [
+    "world"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-would",
+   "prompt": "He asked whether she still woudl",
+   "intermediates": [
+    "would"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-write",
+   "prompt": "The teacher asked them to writte",
+   "intermediates": [
+    "write"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-young",
+   "prompt": "She started playing piano when she was very younng",
+   "intermediates": [
+    "young"
+   ],
+   "source": "jlens_source",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "bf-typo-beautiful",
+   "prompt": "The view from the hilltop was absolutely beautifull",
+   "intermediates": [
+    "beautiful"
+   ],
+   "source": "staging",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "bf-typo-mistake",
+   "prompt": "He admitted it had been an honest mistkae",
+   "intermediates": [
+    "mistake"
+   ],
+   "source": "staging",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "bf-typo-schedule",
+   "prompt": "The morning train arrived exactly on schedual",
+   "intermediates": [
+    "schedule"
+   ],
+   "source": "staging",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "bf-typo-sugar",
+   "prompt": "The recipe calls for two cups of suger",
+   "intermediates": [
+    "sugar"
+   ],
+   "source": "staging",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "bf-typo-tomorrow",
+   "prompt": "She promised to send the documents tomorow",
+   "intermediates": [
+    "tomorrow"
+   ],
+   "source": "staging",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "bf-typo-umbrella",
+   "prompt": "Please remember to bring your umbrela",
+   "intermediates": [
+    "umbrella"
+   ],
+   "source": "staging",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "bf-typo-wednesday",
+   "prompt": "The committee will meet again next Wendsday",
+   "intermediates": [
+    "Wednesday"
+   ],
+   "source": "staging",
+   "consistency": 1.0,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-already2",
+   "prompt": "By the time she arrived the food was allready",
+   "intermediates": [
+    "already"
+   ],
+   "source": "jlens_source",
+   "consistency": 0.9,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-change",
+   "prompt": "She reached into her pocket for some loose chagne",
+   "intermediates": [
+    "change"
+   ],
+   "source": "jlens_source",
+   "consistency": 0.9,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-light",
+   "prompt": "She switched off the bedroom ligth",
+   "intermediates": [
+    "light"
+   ],
+   "source": "jlens_source",
+   "consistency": 0.9,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-local",
+   "prompt": "She bought vegetables at the locall",
+   "intermediates": [
+    "local"
+   ],
+   "source": "jlens_source",
+   "consistency": 0.9,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-material",
+   "prompt": "The dress was made of a soft matterial",
+   "intermediates": [
+    "material"
+   ],
+   "source": "jlens_source",
+   "consistency": 0.9,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-program",
+   "prompt": "She enrolled in the graduate programm",
+   "intermediates": [
+    "program"
+   ],
+   "source": "jlens_source",
+   "consistency": 0.9,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  },
+  {
+   "name": "typo-security",
+   "prompt": "The building hired extra securrity",
+   "intermediates": [
+    "security"
+   ],
+   "source": "jlens_source",
+   "consistency": 0.9,
+   "gate_variant": "family_chat",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   }
+  }
+ ],
+ "eval_render_note": "EVAL RENDER: feed `prompt` verbatim as plain text, NO chat template (directed-modulation is the only chat-templated family). `gate_variant` records how the item was behaviorally verified and does NOT affect the eval read."
+}

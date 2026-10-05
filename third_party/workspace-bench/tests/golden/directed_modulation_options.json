@@ -1,0 +1,1008 @@
+{
+ "_meta": {
+  "source": "oracle_lens_judge.pick_options + build_options, seed 0, 4 same-subfamily distractors; verified identical for all 100 items on 2026-09-16",
+  "prompt_version": "dm-2026-09-16"
+ },
+ "options": {
+  "dm-pair-00-pos": {
+   "options": [
+    "banjo",
+    "grater",
+    "loafer",
+    "clavicle",
+    "kumquat"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-00-neg": {
+   "options": [
+    "loafer",
+    "femur",
+    "trapezoid",
+    "clavicle",
+    "baobab"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-01-pos": {
+   "options": [
+    "donkey",
+    "Neptune",
+    "ellipse",
+    "weevil",
+    "bishop"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-01-neg": {
+   "options": [
+    "ellipse",
+    "bishop",
+    "femur",
+    "brownie",
+    "trapezoid"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-02-pos": {
+   "options": [
+    "moccasin",
+    "amethyst",
+    "stingray",
+    "citron",
+    "brownie"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-02-neg": {
+   "options": [
+    "baobab",
+    "citron",
+    "mule",
+    "amethyst",
+    "parsnip"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-03-pos": {
+   "options": [
+    "citron",
+    "colander",
+    "brownie",
+    "amethyst",
+    "canoe"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-03-neg": {
+   "options": [
+    "moccasin",
+    "catamaran",
+    "loafer",
+    "canoe",
+    "brownie"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-04-pos": {
+   "options": [
+    "grater",
+    "envy",
+    "ellipse",
+    "stingray",
+    "brownie"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-04-neg": {
+   "options": [
+    "hornet",
+    "canoe",
+    "envy",
+    "baobab",
+    "bishop"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-05-pos": {
+   "options": [
+    "mule",
+    "colander",
+    "banjo",
+    "baobab",
+    "envy"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-05-neg": {
+   "options": [
+    "canoe",
+    "palladium",
+    "parsnip",
+    "donkey",
+    "mule"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-06-pos": {
+   "options": [
+    "canoe",
+    "Saturn",
+    "iridium",
+    "onyx",
+    "amethyst"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-06-neg": {
+   "options": [
+    "weevil",
+    "banjo",
+    "onyx",
+    "amethyst",
+    "citron"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-07-pos": {
+   "options": [
+    "Saturn",
+    "moccasin",
+    "weevil",
+    "ellipse",
+    "brownie"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-07-neg": {
+   "options": [
+    "banjo",
+    "clavicle",
+    "citron",
+    "ellipse",
+    "donkey"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-08-pos": {
+   "options": [
+    "grater",
+    "hornet",
+    "kumquat",
+    "brownie",
+    "rook"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-08-neg": {
+   "options": [
+    "trapezoid",
+    "barnacle",
+    "hornet",
+    "stingray",
+    "parsnip"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-09-pos": {
+   "options": [
+    "brownie",
+    "hornet",
+    "colander",
+    "eclair",
+    "parsnip"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-09-neg": {
+   "options": [
+    "colander",
+    "weevil",
+    "loafer",
+    "accordion",
+    "catamaran"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-10-pos": {
+   "options": [
+    "colander",
+    "kumquat",
+    "onyx",
+    "accordion",
+    "iridium"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-10-neg": {
+   "options": [
+    "donkey",
+    "canoe",
+    "accordion",
+    "envy",
+    "amethyst"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-11-pos": {
+   "options": [
+    "catamaran",
+    "hornet",
+    "eclair",
+    "stingray",
+    "envy"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-11-neg": {
+   "options": [
+    "shame",
+    "citron",
+    "bishop",
+    "baobab",
+    "stingray"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-12-pos": {
+   "options": [
+    "brownie",
+    "ellipse",
+    "Neptune",
+    "shame",
+    "iridium"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-12-neg": {
+   "options": [
+    "moccasin",
+    "Neptune",
+    "Saturn",
+    "weevil",
+    "mule"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-13-pos": {
+   "options": [
+    "monsoon",
+    "weevil",
+    "donkey",
+    "iridium",
+    "bishop"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-13-neg": {
+   "options": [
+    "iridium",
+    "eclair",
+    "brownie",
+    "onyx",
+    "moccasin"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-14-pos": {
+   "options": [
+    "canoe",
+    "envy",
+    "clavicle",
+    "accordion",
+    "iridium"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-14-neg": {
+   "options": [
+    "grater",
+    "canoe",
+    "Saturn",
+    "stingray",
+    "accordion"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-15-pos": {
+   "options": [
+    "catamaran",
+    "envy",
+    "monsoon",
+    "loafer",
+    "donkey"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-15-neg": {
+   "options": [
+    "accordion",
+    "Neptune",
+    "loafer",
+    "ellipse",
+    "amethyst"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-16-pos": {
+   "options": [
+    "Saturn",
+    "baobab",
+    "barnacle",
+    "stingray",
+    "brownie"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-16-neg": {
+   "options": [
+    "femur",
+    "baobab",
+    "donkey",
+    "mule",
+    "canoe"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-17-pos": {
+   "options": [
+    "baobab",
+    "accordion",
+    "parsnip",
+    "loafer",
+    "iridium"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-17-neg": {
+   "options": [
+    "envy",
+    "monsoon",
+    "Saturn",
+    "parsnip",
+    "moccasin"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-18-pos": {
+   "options": [
+    "ellipse",
+    "moccasin",
+    "canoe",
+    "monsoon",
+    "baobab"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-18-neg": {
+   "options": [
+    "clavicle",
+    "monsoon",
+    "amethyst",
+    "stingray",
+    "moccasin"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-19-pos": {
+   "options": [
+    "citron",
+    "colander",
+    "kumquat",
+    "amethyst",
+    "femur"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-19-neg": {
+   "options": [
+    "onyx",
+    "envy",
+    "trapezoid",
+    "donkey",
+    "femur"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-20-pos": {
+   "options": [
+    "rook",
+    "Neptune",
+    "onyx",
+    "Saturn",
+    "baobab"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-20-neg": {
+   "options": [
+    "rook",
+    "banjo",
+    "citron",
+    "Saturn",
+    "parsnip"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-21-pos": {
+   "options": [
+    "kumquat",
+    "clavicle",
+    "hornet",
+    "donkey",
+    "baobab"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-21-neg": {
+   "options": [
+    "kumquat",
+    "loafer",
+    "colander",
+    "trapezoid",
+    "parsnip"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-22-pos": {
+   "options": [
+    "rook",
+    "bishop",
+    "onyx",
+    "eclair",
+    "trapezoid"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-22-neg": {
+   "options": [
+    "loafer",
+    "amethyst",
+    "stingray",
+    "baobab",
+    "eclair"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-23-pos": {
+   "options": [
+    "clavicle",
+    "donkey",
+    "shame",
+    "loafer",
+    "catamaran"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-23-neg": {
+   "options": [
+    "shame",
+    "donkey",
+    "canoe",
+    "accordion",
+    "kumquat"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-24-pos": {
+   "options": [
+    "weevil",
+    "donkey",
+    "catamaran",
+    "mule",
+    "bishop"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-24-neg": {
+   "options": [
+    "eclair",
+    "colander",
+    "banjo",
+    "palladium",
+    "donkey"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-25-pos": {
+   "options": [
+    "loafer",
+    "iridium",
+    "clavicle",
+    "onyx",
+    "trapezoid"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-25-neg": {
+   "options": [
+    "barnacle",
+    "stingray",
+    "parsnip",
+    "onyx",
+    "Saturn"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-26-pos": {
+   "options": [
+    "hornet",
+    "bishop",
+    "trapezoid",
+    "weevil",
+    "ellipse"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-26-neg": {
+   "options": [
+    "stingray",
+    "donkey",
+    "trapezoid",
+    "parsnip",
+    "Neptune"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-27-pos": {
+   "options": [
+    "femur",
+    "palladium",
+    "bishop",
+    "mule",
+    "weevil"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-27-neg": {
+   "options": [
+    "moccasin",
+    "iridium",
+    "parsnip",
+    "weevil",
+    "shame"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-28-pos": {
+   "options": [
+    "grater",
+    "catamaran",
+    "baobab",
+    "loafer",
+    "trapezoid"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-28-neg": {
+   "options": [
+    "monsoon",
+    "Saturn",
+    "grater",
+    "mule",
+    "accordion"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-29-pos": {
+   "options": [
+    "eclair",
+    "canoe",
+    "femur",
+    "banjo",
+    "loafer"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-29-neg": {
+   "options": [
+    "banjo",
+    "shame",
+    "envy",
+    "trapezoid",
+    "bishop"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-30-pos": {
+   "options": [
+    "ellipse",
+    "barnacle",
+    "trapezoid",
+    "weevil",
+    "brownie"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-30-neg": {
+   "options": [
+    "stingray",
+    "loafer",
+    "barnacle",
+    "catamaran",
+    "citron"
+   ],
+   "gold_position": 3
+  },
+  "dm-pair-31-pos": {
+   "options": [
+    "envy",
+    "colander",
+    "kumquat",
+    "citron",
+    "Saturn"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-31-neg": {
+   "options": [
+    "shame",
+    "stingray",
+    "barnacle",
+    "weevil",
+    "Saturn"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-32-pos": {
+   "options": [
+    "palladium",
+    "catamaran",
+    "shame",
+    "iridium",
+    "Saturn"
+   ],
+   "gold_position": 1
+  },
+  "dm-pair-32-neg": {
+   "options": [
+    "Neptune",
+    "palladium",
+    "iridium",
+    "loafer",
+    "envy"
+   ],
+   "gold_position": 2
+  },
+  "dm-pair-33-pos": {
+   "options": [
+    "envy",
+    "kumquat",
+    "Saturn",
+    "citron",
+    "catamaran"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-33-neg": {
+   "options": [
+    "donkey",
+    "onyx",
+    "ellipse",
+    "catamaran",
+    "shame"
+   ],
+   "gold_position": 4
+  },
+  "dm-pair-34-pos": {
+   "options": [
+    "baobab",
+    "donkey",
+    "iridium",
+    "Neptune",
+    "moccasin"
+   ],
+   "gold_position": 5
+  },
+  "dm-pair-34-neg": {
+   "options": [
+    "donkey",
+    "amethyst",
+    "accordion",
+    "femur",
+    "moccasin"
+   ],
+   "gold_position": 5
+  },
+  "dm-secret-00": {
+   "options": [
+    "pergola",
+    "periwinkle",
+    "fjord",
+    "sextant",
+    "zephyr"
+   ],
+   "gold_position": 5
+  },
+  "dm-secret-01": {
+   "options": [
+    "periwinkle",
+    "obelisk",
+    "obsidian",
+    "sundial",
+    "isthmus"
+   ],
+   "gold_position": 3
+  },
+  "dm-secret-02": {
+   "options": [
+    "pergola",
+    "obelisk",
+    "fjord",
+    "sundial",
+    "quasar"
+   ],
+   "gold_position": 5
+  },
+  "dm-secret-03": {
+   "options": [
+    "periwinkle",
+    "isthmus",
+    "bramble",
+    "quasar",
+    "zephyr"
+   ],
+   "gold_position": 1
+  },
+  "dm-secret-04": {
+   "options": [
+    "isthmus",
+    "marzipan",
+    "quasar",
+    "fjord",
+    "gazebo"
+   ],
+   "gold_position": 5
+  },
+  "dm-secret-05": {
+   "options": [
+    "bramble",
+    "sextant",
+    "fjord",
+    "zephyr",
+    "turret"
+   ],
+   "gold_position": 2
+  },
+  "dm-secret-06": {
+   "options": [
+    "marzipan",
+    "bramble",
+    "obsidian",
+    "sextant",
+    "fjord"
+   ],
+   "gold_position": 5
+  },
+  "dm-secret-07": {
+   "options": [
+    "obelisk",
+    "pergola",
+    "isthmus",
+    "turret",
+    "sextant"
+   ],
+   "gold_position": 3
+  },
+  "dm-secret-08": {
+   "options": [
+    "fjord",
+    "quasar",
+    "alcove",
+    "turret",
+    "marzipan"
+   ],
+   "gold_position": 3
+  },
+  "dm-secret-09": {
+   "options": [
+    "isthmus",
+    "turret",
+    "zephyr",
+    "bramble",
+    "obelisk"
+   ],
+   "gold_position": 4
+  },
+  "dm-secret-10": {
+   "options": [
+    "zephyr",
+    "bramble",
+    "sextant",
+    "turret",
+    "sundial"
+   ],
+   "gold_position": 4
+  },
+  "dm-secret-11": {
+   "options": [
+    "sundial",
+    "fjord",
+    "bramble",
+    "pergola",
+    "alcove"
+   ],
+   "gold_position": 1
+  },
+  "dm-secret-12": {
+   "options": [
+    "alcove",
+    "zephyr",
+    "pergola",
+    "marzipan",
+    "periwinkle"
+   ],
+   "gold_position": 4
+  },
+  "dm-secret-13": {
+   "options": [
+    "sundial",
+    "obsidian",
+    "quasar",
+    "turret",
+    "obelisk"
+   ],
+   "gold_position": 5
+  },
+  "dm-secret-14": {
+   "options": [
+    "pergola",
+    "isthmus",
+    "quasar",
+    "gazebo",
+    "sextant"
+   ],
+   "gold_position": 1
+  },
+  "dm-pref-00": {
+   "options": [
+    "orienteering",
+    "falconry",
+    "glassblowing",
+    "geocaching",
+    "bonsai"
+   ],
+   "gold_position": 2
+  },
+  "dm-pref-01": {
+   "options": [
+    "macrame",
+    "beekeeping",
+    "spelunking",
+    "bonsai",
+    "calligraphy"
+   ],
+   "gold_position": 4
+  },
+  "dm-pref-02": {
+   "options": [
+    "glassblowing",
+    "ikebana",
+    "whittling",
+    "calligraphy",
+    "topiary"
+   ],
+   "gold_position": 4
+  },
+  "dm-pref-03": {
+   "options": [
+    "bonsai",
+    "falconry",
+    "origami",
+    "beekeeping",
+    "whittling"
+   ],
+   "gold_position": 3
+  },
+  "dm-pref-04": {
+   "options": [
+    "bonsai",
+    "spelunking",
+    "ikebana",
+    "origami",
+    "glassblowing"
+   ],
+   "gold_position": 2
+  },
+  "dm-pref-05": {
+   "options": [
+    "ikebana",
+    "falconry",
+    "beekeeping",
+    "bonsai",
+    "origami"
+   ],
+   "gold_position": 3
+  },
+  "dm-pref-06": {
+   "options": [
+    "philately",
+    "glassblowing",
+    "origami",
+    "calligraphy",
+    "spelunking"
+   ],
+   "gold_position": 2
+  },
+  "dm-pref-07": {
+   "options": [
+    "origami",
+    "bonsai",
+    "topiary",
+    "quilling",
+    "geocaching"
+   ],
+   "gold_position": 3
+  },
+  "dm-pref-08": {
+   "options": [
+    "bonsai",
+    "falconry",
+    "quilling",
+    "geocaching",
+    "orienteering"
+   ],
+   "gold_position": 5
+  },
+  "dm-pref-09": {
+   "options": [
+    "falconry",
+    "geocaching",
+    "quilling",
+    "philately",
+    "orienteering"
+   ],
+   "gold_position": 4
+  },
+  "dm-pref-10": {
+   "options": [
+    "macrame",
+    "quilling",
+    "topiary",
+    "ikebana",
+    "glassblowing"
+   ],
+   "gold_position": 1
+  },
+  "dm-pref-11": {
+   "options": [
+    "calligraphy",
+    "philately",
+    "ikebana",
+    "bonsai",
+    "quilling"
+   ],
+   "gold_position": 3
+  },
+  "dm-pref-12": {
+   "options": [
+    "philately",
+    "calligraphy",
+    "geocaching",
+    "orienteering",
+    "glassblowing"
+   ],
+   "gold_position": 3
+  },
+  "dm-pref-13": {
+   "options": [
+    "topiary",
+    "quilling",
+    "orienteering",
+    "spelunking",
+    "origami"
+   ],
+   "gold_position": 2
+  },
+  "dm-pref-14": {
+   "options": [
+    "geocaching",
+    "beekeeping",
+    "quilling",
+    "ikebana",
+    "whittling"
+   ],
+   "gold_position": 5
+  }
+ }
+}

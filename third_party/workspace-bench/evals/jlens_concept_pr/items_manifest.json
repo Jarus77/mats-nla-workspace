@@ -1,0 +1,55 @@
+{
+ "n_items": 299,
+ "n_empty_rollouts": 1,
+ "per_source": {
+  "lmsys": 75,
+  "dailydialog": 75,
+  "pile": 74,
+  "fineweb": 75
+ },
+ "read_region": "generated_only",
+ "rollout_sampling": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "max_new": 512,
+  "engine": "hf-transformers"
+ },
+ "acts_volume_subdir": "acts-jlens-pr",
+ "seed_counts": {
+  "lmsys": {
+   "scanned": 510,
+   "screened_out": 208,
+   "excluded_by_hash": 0,
+   "kept": 75
+  },
+  "dailydialog": {
+   "scanned": 326,
+   "screened_out": 20,
+   "excluded_by_hash": 0,
+   "kept": 75
+  },
+  "pile": {
+   "scanned": 394,
+   "screened_out": 94,
+   "excluded_by_hash": 0,
+   "kept": 75
+  },
+  "fineweb": {
+   "scanned": 316,
+   "screened_out": 16,
+   "excluded_by_hash": 0,
+   "kept": 75
+  }
+ },
+ "guard": {
+  "asserted": false,
+  "inventory": null,
+  "n_hashes": 0,
+  "n_excluded": 0,
+  "read_region": "generated_only"
+ },
+ "seeds_seed": 7,
+ "rollout_seed": 7,
+ "layers": "20:61:4"
+}

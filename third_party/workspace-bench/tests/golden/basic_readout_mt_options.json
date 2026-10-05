@@ -1,0 +1,1748 @@
+{
+ "_meta": {
+  "source": "bank mc blocks (source repo hard_mt_mc_options.py, Opus-written confusables), mc_judge.LANG_CONFUSABLES for languages, seeded draws over the bank for typo corrections; order = sha256(f'{MC_SEED}|{name}|{role}') shuffle as in the source mc_judge",
+  "prompt_version": "mc-2026-09-16"
+ },
+ "options": {
+  "brh-ent-aghlabid-dynasty": {
+   "readout": {
+    "options": [
+     "Hafsid dynasty",
+     "Aghlabid dynasty",
+     "Rustamid dynasty",
+     "Zirid dynasty",
+     "Idrisid dynasty",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-antarctic-buried-chain": {
+   "readout": {
+    "options": [
+     "the Pensacola Mountains",
+     "the Transantarctic Mountains",
+     "the Ellsworth Mountains",
+     "the Gamburtsev Mountains",
+     "the Prince Charles Mountains",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-baikal-outflow": {
+   "readout": {
+    "options": [
+     "Podkamennaya Tunguska River",
+     "Selenga River",
+     "Lena River",
+     "Angara River",
+     "Irtysh River",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-bardet-biedl": {
+   "readout": {
+    "options": [
+     "Bardet-Biedl syndrome",
+     "Prader-Willi syndrome",
+     "Alström syndrome",
+     "Joubert syndrome",
+     "Meckel-Gruber syndrome",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-beckwith-wiedemann-syndrome": {
+   "readout": {
+    "options": [
+     "Beckwith–Wiedemann syndrome",
+     "Prader–Willi syndrome",
+     "Simpson–Golabi–Behmel syndrome",
+     "Sotos syndrome",
+     "Silver–Russell syndrome",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-bohr-magneton": {
+   "readout": {
+    "options": [
+     "the Compton wavelength",
+     "the Bohr magneton",
+     "the fine-structure constant",
+     "the nuclear magneton",
+     "the Rydberg constant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-bonaire-capital": {
+   "readout": {
+    "options": [
+     "Philipsburg",
+     "Kralendijk",
+     "Oranjestad",
+     "The Bottom",
+     "Willemstad",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-brunt-vaisala-frequency": {
+   "readout": {
+    "options": [
+     "Ekman number",
+     "Coriolis parameter",
+     "Richardson number",
+     "Brunt–Väisälä frequency",
+     "Rossby radius of deformation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-chem-sarin-systematic": {
+   "readout": {
+    "options": [
+     "ethyl dimethylphosphoramidocyanidate",
+     "isopropyl methylphosphonofluoridate",
+     "pinacolyl methylphosphonofluoridate",
+     "diisopropyl fluorophosphate",
+     "cyclohexyl methylphosphonofluoridate",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-chem-wintergreen-ester": {
+   "readout": {
+    "options": [
+     "methyl benzoate",
+     "methyl salicylate",
+     "methyl anthranilate",
+     "isoamyl acetate",
+     "benzyl acetate",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-chindwin-confluence": {
+   "readout": {
+    "options": [
+     "Sittaung",
+     "Mekong",
+     "Salween",
+     "Ayeyarwady",
+     "Chao Phraya",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-concordat-worms": {
+   "readout": {
+    "options": [
+     "Concordat of Worms",
+     "Peace of Constance",
+     "Diet of Worms",
+     "Concordat of Bologna",
+     "Treaty of Venice",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-cordillera-blanca-high": {
+   "readout": {
+    "options": [
+     "Nevado Alpamayo",
+     "Yerupaja",
+     "Nevado Huandoy",
+     "Nevado Huascaran",
+     "Nevado Coropuna",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-cryolite-systematic": {
+   "readout": {
+    "options": [
+     "ammonium hexafluorotitanate",
+     "lithium tetrafluoroborate",
+     "sodium hexafluoroaluminate",
+     "sodium hexafluorosilicate",
+     "potassium hexafluorophosphate",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-cur-bhutan": {
+   "readout": {
+    "options": [
+     "Nepalese rupee",
+     "Burmese kyat",
+     "Bangladeshi taka",
+     "Maldivian rufiyaa",
+     "Bhutanese ngultrum",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ent-cur-bosnia-convertible-mark": {
+   "readout": {
+    "options": [
+     "Croatian kuna",
+     "Bulgarian lev",
+     "Macedonian denar",
+     "convertible mark",
+     "Serbian dinar",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-cur-eritrea": {
+   "readout": {
+    "options": [
+     "Sudanese pound",
+     "Somali shilling",
+     "Eritrean nakfa",
+     "Djiboutian franc",
+     "Ethiopian birr",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-cur-macau-unit": {
+   "readout": {
+    "options": [
+     "escudo",
+     "pataca",
+     "kyat",
+     "ringgit",
+     "rupiah",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-cur-ngultrum-subunit": {
+   "readout": {
+    "options": [
+     "paisa",
+     "chhertum",
+     "pya",
+     "laari",
+     "poisha",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-cur-ouguiya-subunit": {
+   "readout": {
+    "options": [
+     "laari",
+     "millime",
+     "butut",
+     "khoums",
+     "santim",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-cur-vanuatu": {
+   "readout": {
+    "options": [
+     "Vanuatu vatu",
+     "Solomon Islands dollar",
+     "Samoan tala",
+     "Tongan pa'anga",
+     "Papua New Guinean kina",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-currency-bhutan": {
+   "readout": {
+    "options": [
+     "Mongolian tugrik",
+     "Maldivian rufiyaa",
+     "Burmese kyat",
+     "the ngultrum",
+     "Nepalese rupee",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-currency-eswatini": {
+   "readout": {
+    "options": [
+     "lilangeni",
+     "loti",
+     "pula",
+     "kwanza",
+     "metical",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-currency-gambia": {
+   "readout": {
+    "options": [
+     "cedi",
+     "leone",
+     "dobra",
+     "dalasi",
+     "ouguiya",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-currency-mozambique": {
+   "readout": {
+    "options": [
+     "ariary",
+     "kwacha",
+     "kwanza",
+     "dobra",
+     "metical",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ent-currency-tajikistan": {
+   "readout": {
+    "options": [
+     "Kazakhstani tenge",
+     "Turkmenistani manat",
+     "Kyrgyzstani som",
+     "Uzbekistani sum",
+     "somoni",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ent-currency-vanuatu": {
+   "readout": {
+    "options": [
+     "the Samoan tala",
+     "the Vanuatu vatu",
+     "the Tongan pa'anga",
+     "the Solomon Islands dollar",
+     "the Papua New Guinean kina",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-drakensberg-summit": {
+   "readout": {
+    "options": [
+     "Mafadi",
+     "Thabana Ntlenyana",
+     "Champagne Castle",
+     "Mont-aux-Sources",
+     "Giant's Castle",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-euler-mascheroni-constant": {
+   "readout": {
+    "options": [
+     "Catalan's constant",
+     "the Glaisher–Kinkelin constant",
+     "Apéry's constant",
+     "the Euler–Mascheroni constant",
+     "Khinchin's constant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-georgian-royal-line": {
+   "readout": {
+    "options": [
+     "Bagrationi dynasty",
+     "Artaxiad dynasty",
+     "Chosroid dynasty",
+     "Rurik dynasty",
+     "Nemanjić dynasty",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-geosmin": {
+   "readout": {
+    "options": [
+     "2-methylisoborneol",
+     "skatole",
+     "beta-ionone",
+     "geosmin",
+     "2,4,6-trichloroanisole",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-glauber-salt": {
+   "readout": {
+    "options": [
+     "Epsom salt",
+     "Chile saltpeter",
+     "Rochelle salt",
+     "Borax",
+     "Glauber's salt",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ent-gloger-rule": {
+   "readout": {
+    "options": [
+     "Rensch's rule",
+     "Cope's rule",
+     "Allen's rule",
+     "Bergmann's rule",
+     "Gloger's rule",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ent-hafsid-ifriqiya": {
+   "readout": {
+    "options": [
+     "Aghlabid dynasty",
+     "Marinid dynasty",
+     "Zirid dynasty",
+     "Zayyanid dynasty",
+     "Hafsid dynasty",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ent-hounsfield": {
+   "readout": {
+    "options": [
+     "Specific absorption rate",
+     "Standardized uptake value",
+     "Hounsfield units",
+     "Apparent diffusion coefficient",
+     "Roentgen equivalent man",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-hounsfield-unit": {
+   "readout": {
+    "options": [
+     "becquerel",
+     "roentgen",
+     "Hounsfield unit",
+     "gray",
+     "sievert",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-iceland-spar": {
+   "readout": {
+    "options": [
+     "Selenite",
+     "Blue John",
+     "Rock crystal",
+     "Iceland spar",
+     "Cordierite",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-illimani-range": {
+   "readout": {
+    "options": [
+     "Cordillera Blanca",
+     "Cordillera Apolobamba",
+     "Cordillera Real",
+     "Cordillera Huayhuash",
+     "Cordillera Vilcanota",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-kachin-mandalay-waterway": {
+   "readout": {
+    "options": [
+     "the Sittaung",
+     "the Chao Phraya",
+     "the Mekong",
+     "the Irrawaddy",
+     "the Salween",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-karlowitz-1699": {
+   "readout": {
+    "options": [
+     "Treaty of Belgrade",
+     "Treaty of Passarowitz",
+     "Treaty of Karlowitz",
+     "Peace of Zsitvatorok",
+     "Treaty of Küçük Kaynarca",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-kazakh-half-saline": {
+   "readout": {
+    "options": [
+     "Lake Alakol",
+     "Lake Balkhash",
+     "Lake Zaysan",
+     "Aral Sea",
+     "Issyk-Kul",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-khinchin-constant": {
+   "readout": {
+    "options": [
+     "Lévy's constant",
+     "Apéry's constant",
+     "Catalan's constant",
+     "Khinchin's constant",
+     "Mills' constant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-lemierre-syndrome": {
+   "readout": {
+    "options": [
+     "Grisel's syndrome",
+     "Lemierre's syndrome",
+     "Ludwig's angina",
+     "Ramsay Hunt syndrome",
+     "Vincent's angina",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-lowest-point-australia": {
+   "readout": {
+    "options": [
+     "Lake Gairdner",
+     "Kati Thanda-Lake Eyre",
+     "Lake Frome",
+     "Lake Torrens",
+     "Lake Amadeus",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-madelung-constant": {
+   "readout": {
+    "options": [
+     "the Curie constant",
+     "the Rydberg constant",
+     "the Verdet constant",
+     "the Faraday constant",
+     "the Madelung constant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ent-matthiessen": {
+   "readout": {
+    "options": [
+     "Matthiessen's rule",
+     "Kohler's rule",
+     "Wiedemann–Franz law",
+     "Bloch–Grüneisen law",
+     "Nordheim's rule",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-mayor-palace": {
+   "readout": {
+    "options": [
+     "Grand Vizier",
+     "Constable of France",
+     "Mayor of the Palace",
+     "Count Palatine",
+     "Lord High Steward",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-mccune-albright": {
+   "readout": {
+    "options": [
+     "Klippel-Trenaunay syndrome",
+     "Sturge-Weber syndrome",
+     "Beckwith-Wiedemann syndrome",
+     "McCune-Albright syndrome",
+     "Peutz-Jeghers syndrome",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-min-kunzite-parent": {
+   "readout": {
+    "options": [
+     "petalite",
+     "amblygonite",
+     "lepidolite",
+     "eucryptite",
+     "spodumene",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ent-mohr-double-compound": {
+   "readout": {
+    "options": [
+     "Glauber's salt",
+     "Zeise's salt",
+     "Mohr's salt",
+     "Fremy's salt",
+     "Rochelle salt",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-mughal-military-paymaster": {
+   "readout": {
+    "options": [
+     "Mir Bakhshi",
+     "Sadr-us-Sudur",
+     "Diwan-i-Ala",
+     "Mir Atish",
+     "Mir Saman",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-naples-yellow-2": {
+   "readout": {
+    "options": [
+     "Chrome yellow",
+     "Lead-tin yellow",
+     "Indian yellow",
+     "Naples yellow",
+     "Orpiment",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-nerchinsk-1689": {
+   "readout": {
+    "options": [
+     "Treaty of Kyakhta",
+     "Convention of Peking",
+     "Treaty of Tianjin",
+     "Treaty of Nerchinsk",
+     "Treaty of Aigun",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-noyes-whitney": {
+   "readout": {
+    "options": [
+     "Stokes-Einstein equation",
+     "Noyes-Whitney equation",
+     "Henderson-Hasselbalch equation",
+     "Hixson-Crowell cube root law",
+     "Higuchi equation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-orpiment": {
+   "readout": {
+    "options": [
+     "cinnabar",
+     "azurite",
+     "orpiment",
+     "realgar",
+     "malachite",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-ottoman-religious-office": {
+   "readout": {
+    "options": [
+     "Qadi al-Qudat",
+     "Shaykh al-Islam",
+     "Naqib al-Ashraf",
+     "Sadr al-Sudur",
+     "Amir al-Mu'minin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ent-palau-capital": {
+   "readout": {
+    "options": [
+     "Ngerulmud",
+     "Palikir",
+     "Koror",
+     "Funafuti",
+     "Yaren",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ent-rio-negro-meeting": {
+   "readout": {
+    "options": [
+     "Madeira River",
+     "Ucayali River",
+     "Xingu River",
+     "Rio Negro",
+     "Tapajós River",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ent-rochelle-salt": {
+   "readout": {
+    "options": [
+     "Epsom salt",
+     "Mohr's salt",
+     "Rochelle salt",
+     "Glauber's salt",
+     "Zeise's salt",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ent-rudolf-renamed": {
+   "readout": {
+    "options": [
+     "Lake Tanganyika",
+     "Lake Turkana",
+     "Lake Albert",
+     "Lake Natron",
+     "Lake Baringo",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ar-ain-jalut": {
+   "readout": {
+    "options": [
+     "Battle of Ain Jalut",
+     "Battle of Hattin",
+     "Battle of Köse Dağ",
+     "Battle of Homs",
+     "Battle of Wadi al-Khazandar",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Urdu",
+     "Arabic",
+     "Persian",
+     "Hebrew",
+     "Pashto",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ar-dakhil": {
+   "readout": {
+    "options": [
+     "Abd al-Rahman I",
+     "Yusuf al-Fihri",
+     "Hisham I of Córdoba",
+     "Marwan II",
+     "Al-Hakam I of Córdoba",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Hebrew",
+     "Pashto",
+     "Urdu",
+     "Persian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ar-kitab-almanazir-author": {
+   "readout": {
+    "options": [
+     "Ibn al-Haytham",
+     "Nasir al-Din al-Tusi",
+     "Ibn Sina",
+     "Al-Biruni",
+     "Al-Khwarizmi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Pashto",
+     "Arabic",
+     "Hebrew",
+     "Urdu",
+     "Persian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-ar-marj-dabiq": {
+   "readout": {
+    "options": [
+     "Ayn Jalut",
+     "Marj Dabiq",
+     "Chaldiran",
+     "Horns of Hattin",
+     "Ridaniya",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Urdu",
+     "Hebrew",
+     "Pashto",
+     "Persian",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ar-tayebsalih": {
+   "readout": {
+    "options": [
+     "Ibrahim al-Koni",
+     "Tawfiq al-Hakim",
+     "Abdelrahman Munif",
+     "Tayeb Salih",
+     "Naguib Mahfouz",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Persian",
+     "Urdu",
+     "Pashto",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ar-tusi": {
+   "readout": {
+    "options": [
+     "Ibn al-Shatir",
+     "Ulugh Beg",
+     "Nasir al-Din al-Tusi",
+     "Al-Battani",
+     "Qutb al-Din al-Shirazi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Persian",
+     "Hebrew",
+     "Urdu",
+     "Arabic",
+     "Pashto",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-fi-ahvenanmaa": {
+   "readout": {
+    "options": [
+     "Bornholm",
+     "Åland Islands",
+     "Saaremaa",
+     "Gotland",
+     "Faroe Islands",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Estonian",
+     "Hungarian",
+     "Swedish",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-fi-alankomaat": {
+   "readout": {
+    "options": [
+     "Belgium",
+     "Luxembourg",
+     "Austria",
+     "the Netherlands",
+     "Denmark",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Hungarian",
+     "Swedish",
+     "Estonian",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-fi-alankomaat-munster-1648": {
+   "readout": {
+    "options": [
+     "the Dutch Republic",
+     "the Old Swiss Confederacy",
+     "the Polish–Lithuanian Commonwealth",
+     "the Spanish Netherlands",
+     "the Republic of Venice",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Swedish",
+     "Estonian",
+     "Finnish",
+     "Latvian",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-fi-norsunluurannikko": {
+   "readout": {
+    "options": [
+     "Ghana",
+     "Ivory Coast",
+     "Senegal",
+     "Burkina Faso",
+     "Liberia",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Swedish",
+     "Latvian",
+     "Finnish",
+     "Hungarian",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-fi-petsamo": {
+   "readout": {
+    "options": [
+     "Kandalaksha District",
+     "Pechenga District",
+     "Lovozero District",
+     "Kola District",
+     "Tersky District",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Estonian",
+     "Finnish",
+     "Swedish",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-he-ben-zvi": {
+   "readout": {
+    "options": [
+     "Yitzhak Navon",
+     "Yitzhak Ben-Zvi",
+     "Chaim Weizmann",
+     "Zalman Shazar",
+     "Ephraim Katzir",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Maltese",
+     "Yiddish",
+     "Hebrew",
+     "Aramaic",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-he-imber-hatikva": {
+   "readout": {
+    "options": [
+     "Saul Tchernichovsky",
+     "Hayim Nahman Bialik",
+     "Judah Leib Gordon",
+     "Mordecai Zvi Mane",
+     "Naftali Herz Imber",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Maltese",
+     "Arabic",
+     "Aramaic",
+     "Yiddish",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-he-neptune-moon": {
+   "readout": {
+    "options": [
+     "Charon moon",
+     "Triton moon",
+     "Titan moon",
+     "Nereid moon",
+     "Enceladus moon",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Maltese",
+     "Yiddish",
+     "Aramaic",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-he-qumran": {
+   "readout": {
+    "options": [
+     "Wadi Murabba'at",
+     "Khirbet Qumran",
+     "Ein Gedi",
+     "Khirbet Mird",
+     "Masada",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Aramaic",
+     "Maltese",
+     "Arabic",
+     "Hebrew",
+     "Yiddish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-hu-aranybulla": {
+   "readout": {
+    "options": [
+     "Privilegium Maius",
+     "Statute of Kalisz",
+     "Golden Bull of 1222",
+     "Magna Carta",
+     "Diploma Andreanum",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Estonian",
+     "Finnish",
+     "Turkish",
+     "Hungarian",
+     "Romanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-hu-erkel-ferenc": {
+   "readout": {
+    "options": [
+     "Karl Goldmark",
+     "Jenő Hubay",
+     "Ödön Mihalovich",
+     "Ferenc Erkel",
+     "Mihály Mosonyi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Turkish",
+     "Estonian",
+     "Hungarian",
+     "Romanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-hu-gabor-denes": {
+   "readout": {
+    "options": [
+     "Georg von Békésy",
+     "Eugene Wigner",
+     "Leo Szilard",
+     "Theodore von Kármán",
+     "Dennis Gabor",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Hungarian",
+     "Finnish",
+     "Romanian",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-hu-kolozsvar": {
+   "readout": {
+    "options": [
+     "Timișoara",
+     "Sibiu",
+     "Oradea",
+     "Brașov",
+     "Cluj-Napoca",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Estonian",
+     "Turkish",
+     "Hungarian",
+     "Romanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-id-bengkulu-pengasingan": {
+   "readout": {
+    "options": [
+     "Bencoolen",
+     "Padang",
+     "Batavia",
+     "Bantam",
+     "Malacca",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Malay",
+     "Tagalog",
+     "Javanese",
+     "Swahili",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-id-chengho": {
+   "readout": {
+    "options": [
+     "Zheng He",
+     "Ibn Battuta",
+     "Yi Sun-sin",
+     "Xu Fu",
+     "Wang Jinghong",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Swahili",
+     "Tagalog",
+     "Javanese",
+     "Malay",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-id-denhaag-arbitrase": {
+   "readout": {
+    "options": [
+     "Utrecht",
+     "The Hague",
+     "Amsterdam",
+     "Rotterdam",
+     "Antwerp",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Indonesian",
+     "Swahili",
+     "Malay",
+     "Javanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-id-garis-wallace": {
+   "readout": {
+    "options": [
+     "Weber's Line",
+     "Müller's Line",
+     "Huxley's Line",
+     "Wallace Line",
+     "Lydekker's Line",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Malay",
+     "Tagalog",
+     "Swahili",
+     "Javanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-id-kalimantan": {
+   "readout": {
+    "options": [
+     "island of New Guinea",
+     "island of Borneo",
+     "island of Mindanao",
+     "island of Sumatra",
+     "island of Sulawesi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Indonesian",
+     "Malay",
+     "Javanese",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "brh-id-perjanjian-bongaya": {
+   "readout": {
+    "options": [
+     "Treaty of Bongaya",
+     "Treaty of Painan",
+     "Treaty of Giyanti",
+     "Treaty of Salatiga",
+     "Linggadjati Agreement",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Javanese",
+     "Swahili",
+     "Malay",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-id-puncak-jaya": {
+   "readout": {
+    "options": [
+     "Mount Wilhelm",
+     "Puncak Trikora",
+     "Mount Kosciuszko",
+     "Carstensz Pyramid",
+     "Mount Kinabalu",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Javanese",
+     "Tagalog",
+     "Malay",
+     "Indonesian",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-id-selandiabaru-tasman": {
+   "readout": {
+    "options": [
+     "Australia",
+     "Papua New Guinea",
+     "New Zealand",
+     "Solomon Islands",
+     "Fiji",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Javanese",
+     "Malay",
+     "Indonesian",
+     "Tagalog",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-id-sriwijaya": {
+   "readout": {
+    "options": [
+     "Majapahit Empire",
+     "Khmer Empire",
+     "Kingdom of Funan",
+     "Champa Kingdom",
+     "Srivijaya Empire",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Swahili",
+     "Malay",
+     "Indonesian",
+     "Tagalog",
+     "Javanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-id-sungai-kapuas": {
+   "readout": {
+    "options": [
+     "Mahakam River",
+     "Rajang River",
+     "Kapuas River",
+     "Kahayan River",
+     "Barito River",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Javanese",
+     "Malay",
+     "Indonesian",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-id-tambora-1815": {
+   "readout": {
+    "options": [
+     "Krakatoa",
+     "Mount Rinjani",
+     "Mount Tambora",
+     "Mount Agung",
+     "Mount Merapi",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Javanese",
+     "Malay",
+     "Indonesian",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-id-terusan-suez": {
+   "readout": {
+    "options": [
+     "Panama Canal",
+     "Corinth Canal",
+     "Kiel Canal",
+     "Suez Canal",
+     "Erie Canal",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Javanese",
+     "Swahili",
+     "Malay",
+     "Indonesian",
+     "Tagalog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-ko-borobudur-java": {
+   "readout": {
+    "options": [
+     "Mendut Temple",
+     "Ananda Temple",
+     "Angkor Wat",
+     "Borobudur Temple",
+     "Prambanan Temple",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Japanese",
+     "Chinese",
+     "Korean",
+     "Vietnamese",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ko-first-spacewalk-cosmonaut": {
+   "readout": {
+    "options": [
+     "Valery Bykovsky",
+     "Pavel Belyayev",
+     "Alexei Leonov",
+     "Gherman Titov",
+     "Vladimir Komarov",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Chinese",
+     "Korean",
+     "Mongolian",
+     "Japanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ko-samgukyusa-compiler": {
+   "readout": {
+    "options": [
+     "Wonhyo",
+     "Gakhun",
+     "Kim Bu-sik",
+     "Iryeon",
+     "Jinul",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Japanese",
+     "Chinese",
+     "Vietnamese",
+     "Korean",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "brh-ko-sohnkeechung": {
+   "readout": {
+    "options": [
+     "Nam Sung-yong",
+     "Sohn Kee-chung",
+     "Ham Kee-yong",
+     "Hwang Young-cho",
+     "Suh Yun-bok",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Japanese",
+     "Chinese",
+     "Vietnamese",
+     "Korean",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-pl-konstantynopol-sobor-381": {
+   "readout": {
+    "options": [
+     "Constantinople",
+     "Thessalonica",
+     "Nicaea",
+     "Alexandria",
+     "Antioch",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Slovak",
+     "Croatian",
+     "Ukrainian",
+     "Czech",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-pl-lwow": {
+   "readout": {
+    "options": [
+     "Wrocław",
+     "Ivano-Frankivsk",
+     "Chernivtsi",
+     "Lviv",
+     "Kraków",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Slovak",
+     "Ukrainian",
+     "Czech",
+     "Polish",
+     "Croatian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "brh-pl-ziemie-odzyskane": {
+   "readout": {
+    "options": [
+     "Recovered Territories",
+     "Congress Poland",
+     "Free City of Danzig",
+     "Eastern Borderlands",
+     "Sudetenland",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Croatian",
+     "Slovak",
+     "Polish",
+     "Czech",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "brh-ru-baikonur": {
+   "readout": {
+    "options": [
+     "Kapustin Yar",
+     "Plesetsk Cosmodrome",
+     "Vostochny Cosmodrome",
+     "Baikonur Cosmodrome",
+     "Jiuquan Satellite Launch Center",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Russian",
+     "Belarusian",
+     "Ukrainian",
+     "Serbian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "brh-ru-bellingshausen": {
+   "readout": {
+    "options": [
+     "Ferdinand von Wrangel",
+     "Otto von Kotzebue",
+     "Fabian Gottlieb von Bellingshausen",
+     "Adam Johann von Krusenstern",
+     "Mikhail Lazarev",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Serbian",
+     "Russian",
+     "Bulgarian",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  }
+ }
+}

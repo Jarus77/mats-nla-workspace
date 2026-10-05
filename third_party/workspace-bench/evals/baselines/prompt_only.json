@@ -1,0 +1,550 @@
+{
+ "_source": {
+  "base_model": "Qwen/Qwen3.6-27B",
+  "adapter": null,
+  "prompt_kind": "prompt_only_summary",
+  "prompt_template": "Below is a prompt that was given to a language model, cut off at a specific token. The token in question is the final token of the text below: {token!r}.\n\n<prompt>\n{prefix}\n</prompt>\n\nWhat would a language model be thinking about on this token? Please write me a summary for this token.",
+  "sampling": {
+   "k": 1,
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 64,
+   "max_new": 256,
+   "stop": [],
+   "output_prefix": ""
+  }
+ },
+ "association": {
+  "rate": 0.29,
+  "ci95": [
+   0.2,
+   0.38
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 5
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "bank-2026-09-16",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-16T08:47:25+00:00"
+ },
+ "basic_readout": {
+  "rate": 0.72,
+  "ci95": [
+   0.63,
+   0.81
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 0
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "bank-2026-09-16",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-16T08:47:25+00:00"
+ },
+ "basic_readout_mt": {
+  "rate": 0.59,
+  "saturated": false,
+  "ci95": [
+   0.49,
+   0.68
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 1
+  },
+  "judge_model": "regex",
+  "instrument": "mt-regex-2026-09-23",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-23T04:38:29+00:00"
+ },
+ "directed_modulation": {
+  "rate": 0.21,
+  "ci95": [
+   0.13,
+   0.29
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 808,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 1
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "dm-2026-09-16",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-16T08:47:25+00:00"
+ },
+ "multihop": {
+  "rate": 0.9,
+  "ci95": [
+   0.84,
+   0.96
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 0
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "bank-2026-09-16",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-16T08:47:25+00:00"
+ },
+ "multihop_mt": {
+  "rate": 0.69,
+  "saturated": false,
+  "ci95": [
+   0.6,
+   0.77
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 1
+  },
+  "judge_model": "regex",
+  "instrument": "mt-regex-2026-09-23",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-23T04:38:29+00:00"
+ },
+ "multilingual": {
+  "rate": 0.76,
+  "ci95": [
+   0.67,
+   0.84
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 1
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "bank-2026-09-16",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-16T08:47:25+00:00"
+ },
+ "multilingual_mt": {
+  "rate": 0.42,
+  "saturated": false,
+  "ci95": [
+   0.33,
+   0.51
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 4
+  },
+  "judge_model": "regex",
+  "instrument": "mt-regex-2026-09-23",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-23T04:38:29+00:00"
+ },
+ "multilingual_multihop": {
+  "rate": 0.4489795918367347,
+  "saturated": false,
+  "ci95": [
+   0.35714285714285715,
+   0.5510204081632653
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 98,
+  "n_items_decided": 98,
+  "counts": {
+   "n_expected_cells": 98,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 2
+  },
+  "judge_model": "regex",
+  "instrument": "mt-regex-2026-09-23",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-23T04:38:29+00:00"
+ },
+ "multilingual_typo": {
+  "rate": 0.66,
+  "saturated": false,
+  "ci95": [
+   0.57,
+   0.75
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 4
+  },
+  "judge_model": "regex",
+  "instrument": "mt-regex-2026-09-23",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-23T04:38:29+00:00"
+ },
+ "poetry": {
+  "rate": 0.71,
+  "ci95": [
+   0.62,
+   0.8
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 1
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "bank-2026-09-16",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-16T08:47:25+00:00"
+ },
+ "typo": {
+  "rate": 1.0,
+  "ci95": [
+   1.0,
+   1.0
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 0
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "bank-2026-09-16",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-16T08:47:25+00:00"
+ },
+ "typo_mt": {
+  "rate": 0.67,
+  "saturated": false,
+  "ci95": [
+   0.57,
+   0.76
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 100,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 0,
+   "n_empty_cells": 3
+  },
+  "judge_model": "regex",
+  "instrument": "mt-regex-2026-09-23",
+  "layers_judged": [
+   20
+  ],
+  "complete": false,
+  "written": "2026-09-23T04:38:29+00:00"
+ },
+ "arithmetic_intermediates": {
+  "rate": 0.1527777777777778,
+  "saturated": false,
+  "ci95": [
+   0.12152777777777778,
+   0.18229166666666666
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 596,
+  "n_items_decided": 576,
+  "counts": {
+   "n_expected_cells": 596,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 20,
+   "n_empty_cells": 138
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "arith-free-2026-09-16",
+  "layers_judged": [
+   56
+  ],
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ },
+ "brew_intermediates": {
+  "rate": 0.9583333333333334,
+  "saturated": true,
+  "ci95": [
+   0.9166666666666666,
+   0.9895833333333334
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": 96,
+  "counts": {
+   "n_expected_cells": 900,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 10,
+   "n_empty_cells": 61
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "brew-2026-09-16",
+  "layers_judged": [
+   44
+  ],
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ },
+ "buggy_code": {
+  "rate": 0.04,
+  "saturated": false,
+  "ci95": [
+   0.0,
+   0.12
+  ],
+  "metric": "net_S2",
+  "higher_is_better": true,
+  "n_items": 49,
+  "n_items_decided": null,
+  "counts": {
+   "n_expected_cells": 49,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 1,
+   "n_empty_cells": 4
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "buggy-2026-09-16",
+  "layers_judged": [
+   56
+  ],
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ },
+ "chain_intermediates": {
+  "rate": 0.025210084033613446,
+  "saturated": false,
+  "ci95": [
+   0.0,
+   0.058823529411764705
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 120,
+  "n_items_decided": 119,
+  "counts": {
+   "n_expected_cells": 120,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 1,
+   "n_empty_cells": 1
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "chain-free-2026-09-16",
+  "layers_judged": [
+   44
+  ],
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ },
+ "conjunctive_association": {
+  "rate": 0.07,
+  "saturated": false,
+  "ci95": [
+   0.02,
+   0.13
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": null,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 2,
+   "n_empty_cells": 0
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "comp-v1",
+  "layers_judged": null,
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ },
+ "moral_rationale": {
+  "rate": 0.495,
+  "saturated": false,
+  "ci95": [
+   0.43,
+   0.565
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 200,
+  "n_items_decided": null,
+  "counts": {
+   "n_expected_cells": 1000,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 17,
+   "n_empty_cells": 19
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "ec-v1",
+  "layers_judged": null,
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ },
+ "relational_multihop": {
+  "rate": 0.82,
+  "saturated": true,
+  "ci95": [
+   0.74,
+   0.89
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": null,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 4,
+   "n_empty_cells": 0
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "rel-v1",
+  "layers_judged": null,
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ },
+ "role_bound_association": {
+  "rate": 1.0,
+  "saturated": true,
+  "ci95": [
+   1.0,
+   1.0
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": null,
+  "counts": {
+   "n_expected_cells": 13460,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 355,
+   "n_empty_cells": 469
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "oa-v1",
+  "layers_judged": null,
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ },
+ "user_modeling": {
+  "rate": 0.07,
+  "saturated": false,
+  "ci95": [
+   0.03,
+   0.12
+  ],
+  "metric": "pass_rate",
+  "higher_is_better": true,
+  "n_items": 100,
+  "n_items_decided": null,
+  "counts": {
+   "n_expected_cells": 100,
+   "n_missing_cells": 0,
+   "n_unjudged_cells": 4,
+   "n_empty_cells": 0
+  },
+  "judge_model": "google/gemini-3.8-flash",
+  "instrument": "um-v2",
+  "layers_judged": null,
+  "complete": false,
+  "written": "2026-09-18T07:39:55+00:00"
+ }
+}

@@ -1,0 +1,1702 @@
+{
+ "rel-s00-a": {
+  "shown": [
+   "parent",
+   "sibling",
+   "mechanic",
+   "in-law",
+   "landlord",
+   "barber",
+   "niece/nephew",
+   "cousin",
+   "teammate",
+   "friend",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 2
+ },
+ "rel-s00-b": {
+  "shown": [
+   "in-law",
+   "barber",
+   "realtor",
+   "teammate",
+   "sibling",
+   "parent",
+   "lawyer",
+   "landlord",
+   "spouse",
+   "niece/nephew",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 8
+ },
+ "rel-s01-a": {
+  "shown": [
+   "teammate",
+   "tutor",
+   "cousin",
+   "aunt/uncle",
+   "spouse",
+   "grandchild",
+   "accountant",
+   "child",
+   "landlord",
+   "dentist",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 3
+ },
+ "rel-s01-b": {
+  "shown": [
+   "niece/nephew",
+   "roommate",
+   "sibling",
+   "cousin",
+   "parent",
+   "realtor",
+   "child",
+   "landlord",
+   "neighbor",
+   "doctor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 8
+ },
+ "rel-s02-a": {
+  "shown": [
+   "roommate",
+   "child",
+   "in-law",
+   "mechanic",
+   "cousin",
+   "stepparent",
+   "parent",
+   "coach",
+   "landlord",
+   "barber",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 7
+ },
+ "rel-s02-b": {
+  "shown": [
+   "friend",
+   "plumber",
+   "parent",
+   "in-law",
+   "coach",
+   "grandchild",
+   "child",
+   "stepparent",
+   "landlord",
+   "doctor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 9
+ },
+ "rel-s03-a": {
+  "shown": [
+   "classmate",
+   "plumber",
+   "child",
+   "in-law",
+   "spouse",
+   "parent",
+   "landlord",
+   "friend",
+   "grandchild",
+   "roommate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 5
+ },
+ "rel-s03-b": {
+  "shown": [
+   "stepparent",
+   "boss",
+   "grandparent",
+   "dentist",
+   "neighbor",
+   "grandchild",
+   "spouse",
+   "landlord",
+   "accountant",
+   "in-law",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 8
+ },
+ "rel-s04-a": {
+  "shown": [
+   "in-law",
+   "sibling",
+   "child",
+   "lawyer",
+   "classmate",
+   "stepparent",
+   "landlord",
+   "aunt/uncle",
+   "roommate",
+   "barber",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 3
+ },
+ "rel-s04-b": {
+  "shown": [
+   "in-law",
+   "tutor",
+   "landlord",
+   "parent",
+   "child",
+   "aunt/uncle",
+   "roommate",
+   "dentist",
+   "niece/nephew",
+   "lawyer",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 3
+ },
+ "rel-s05-a": {
+  "shown": [
+   "mechanic",
+   "realtor",
+   "cousin",
+   "in-law",
+   "teammate",
+   "spouse",
+   "sibling",
+   "child",
+   "dentist",
+   "boss",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 7
+ },
+ "rel-s05-b": {
+  "shown": [
+   "accountant",
+   "dentist",
+   "grandchild",
+   "grandparent",
+   "landlord",
+   "tutor",
+   "spouse",
+   "coach",
+   "in-law",
+   "sibling",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 2
+ },
+ "rel-s06-a": {
+  "shown": [
+   "grandchild",
+   "mechanic",
+   "in-law",
+   "parent",
+   "niece/nephew",
+   "friend",
+   "plumber",
+   "cousin",
+   "lawyer",
+   "dentist",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 8
+ },
+ "rel-s06-b": {
+  "shown": [
+   "plumber",
+   "spouse",
+   "classmate",
+   "doctor",
+   "cousin",
+   "stepparent",
+   "aunt/uncle",
+   "dentist",
+   "coach",
+   "sibling",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 8
+ },
+ "rel-s07-a": {
+  "shown": [
+   "grandparent",
+   "landlord",
+   "dentist",
+   "lawyer",
+   "aunt/uncle",
+   "friend",
+   "parent",
+   "doctor",
+   "cousin",
+   "spouse",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 7
+ },
+ "rel-s07-b": {
+  "shown": [
+   "dentist",
+   "grandchild",
+   "lawyer",
+   "grandparent",
+   "child",
+   "niece/nephew",
+   "parent",
+   "mechanic",
+   "landlord",
+   "doctor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 1
+ },
+ "rel-s08-a": {
+  "shown": [
+   "stepparent",
+   "lawyer",
+   "cousin",
+   "barber",
+   "in-law",
+   "spouse",
+   "landlord",
+   "niece/nephew",
+   "dentist",
+   "teammate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 6
+ },
+ "rel-s08-b": {
+  "shown": [
+   "tutor",
+   "spouse",
+   "grandparent",
+   "grandchild",
+   "parent",
+   "sibling",
+   "plumber",
+   "friend",
+   "coach",
+   "dentist",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 2,
+  "y_gold_pos": 10
+ },
+ "rel-s09-a": {
+  "shown": [
+   "cousin",
+   "child",
+   "mechanic",
+   "plumber",
+   "grandchild",
+   "neighbor",
+   "spouse",
+   "tutor",
+   "niece/nephew",
+   "dentist",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 2
+ },
+ "rel-s09-b": {
+  "shown": [
+   "child",
+   "coach",
+   "stepparent",
+   "teammate",
+   "dentist",
+   "tutor",
+   "accountant",
+   "spouse",
+   "in-law",
+   "niece/nephew",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 1,
+  "y_gold_pos": 5
+ },
+ "rel-s10-a": {
+  "shown": [
+   "boss",
+   "neighbor",
+   "barber",
+   "grandchild",
+   "plumber",
+   "cousin",
+   "grandparent",
+   "sibling",
+   "parent",
+   "mechanic",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 1,
+  "y_gold_pos": 8
+ },
+ "rel-s10-b": {
+  "shown": [
+   "parent",
+   "boss",
+   "mechanic",
+   "cousin",
+   "accountant",
+   "lawyer",
+   "grandchild",
+   "aunt/uncle",
+   "coach",
+   "sibling",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 2
+ },
+ "rel-s11-a": {
+  "shown": [
+   "cousin",
+   "spouse",
+   "coach",
+   "grandchild",
+   "friend",
+   "grandparent",
+   "boss",
+   "classmate",
+   "stepparent",
+   "lawyer",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 1
+ },
+ "rel-s11-b": {
+  "shown": [
+   "landlord",
+   "barber",
+   "boss",
+   "child",
+   "cousin",
+   "parent",
+   "sibling",
+   "mechanic",
+   "grandparent",
+   "lawyer",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 3
+ },
+ "rel-s12-a": {
+  "shown": [
+   "boss",
+   "stepparent",
+   "niece/nephew",
+   "parent",
+   "classmate",
+   "roommate",
+   "sibling",
+   "realtor",
+   "dentist",
+   "grandchild",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 1,
+  "y_gold_pos": 4
+ },
+ "rel-s12-b": {
+  "shown": [
+   "boss",
+   "spouse",
+   "niece/nephew",
+   "grandchild",
+   "dentist",
+   "friend",
+   "landlord",
+   "parent",
+   "classmate",
+   "stepparent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 1
+ },
+ "rel-s13-a": {
+  "shown": [
+   "parent",
+   "mechanic",
+   "child",
+   "boss",
+   "grandparent",
+   "niece/nephew",
+   "coach",
+   "in-law",
+   "dentist",
+   "teammate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 3
+ },
+ "rel-s13-b": {
+  "shown": [
+   "grandparent",
+   "niece/nephew",
+   "teammate",
+   "accountant",
+   "boss",
+   "child",
+   "aunt/uncle",
+   "grandchild",
+   "mechanic",
+   "friend",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 6,
+  "y_gold_pos": 5
+ },
+ "rel-s14-a": {
+  "shown": [
+   "doctor",
+   "cousin",
+   "grandparent",
+   "plumber",
+   "tutor",
+   "sibling",
+   "grandchild",
+   "coach",
+   "spouse",
+   "accountant",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 6
+ },
+ "rel-s14-b": {
+  "shown": [
+   "boss",
+   "lawyer",
+   "classmate",
+   "in-law",
+   "grandchild",
+   "sibling",
+   "niece/nephew",
+   "coach",
+   "teammate",
+   "spouse",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 6,
+  "y_gold_pos": 8
+ },
+ "rel-s15-a": {
+  "shown": [
+   "coach",
+   "doctor",
+   "cousin",
+   "in-law",
+   "spouse",
+   "grandparent",
+   "landlord",
+   "boss",
+   "classmate",
+   "niece/nephew",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 1,
+  "y_gold_pos": 3
+ },
+ "rel-s15-b": {
+  "shown": [
+   "aunt/uncle",
+   "accountant",
+   "boss",
+   "grandparent",
+   "friend",
+   "coach",
+   "neighbor",
+   "child",
+   "parent",
+   "cousin",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 6
+ },
+ "rel-s16-a": {
+  "shown": [
+   "landlord",
+   "grandparent",
+   "parent",
+   "niece/nephew",
+   "accountant",
+   "child",
+   "coach",
+   "cousin",
+   "doctor",
+   "teammate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 3
+ },
+ "rel-s16-b": {
+  "shown": [
+   "spouse",
+   "in-law",
+   "dentist",
+   "parent",
+   "roommate",
+   "grandchild",
+   "coach",
+   "tutor",
+   "niece/nephew",
+   "teammate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 7
+ },
+ "rel-s17-a": {
+  "shown": [
+   "friend",
+   "coach",
+   "grandparent",
+   "in-law",
+   "cousin",
+   "parent",
+   "accountant",
+   "mechanic",
+   "spouse",
+   "roommate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 2,
+  "y_gold_pos": 9
+ },
+ "rel-s17-b": {
+  "shown": [
+   "aunt/uncle",
+   "sibling",
+   "friend",
+   "classmate",
+   "coach",
+   "tutor",
+   "grandparent",
+   "teammate",
+   "spouse",
+   "cousin",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 5
+ },
+ "rel-s18-a": {
+  "shown": [
+   "barber",
+   "doctor",
+   "grandparent",
+   "stepparent",
+   "grandchild",
+   "classmate",
+   "child",
+   "teammate",
+   "coach",
+   "niece/nephew",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 7
+ },
+ "rel-s18-b": {
+  "shown": [
+   "sibling",
+   "parent",
+   "cousin",
+   "realtor",
+   "child",
+   "grandparent",
+   "doctor",
+   "classmate",
+   "coach",
+   "roommate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 9
+ },
+ "rel-s19-a": {
+  "shown": [
+   "cousin",
+   "niece/nephew",
+   "tutor",
+   "friend",
+   "grandchild",
+   "stepparent",
+   "barber",
+   "mechanic",
+   "sibling",
+   "lawyer",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 9
+ },
+ "rel-s19-b": {
+  "shown": [
+   "barber",
+   "sibling",
+   "stepparent",
+   "coach",
+   "tutor",
+   "realtor",
+   "aunt/uncle",
+   "neighbor",
+   "niece/nephew",
+   "spouse",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 2,
+  "y_gold_pos": 5
+ },
+ "rel-s20-a": {
+  "shown": [
+   "realtor",
+   "coach",
+   "cousin",
+   "in-law",
+   "aunt/uncle",
+   "spouse",
+   "parent",
+   "dentist",
+   "tutor",
+   "roommate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 3
+ },
+ "rel-s20-b": {
+  "shown": [
+   "child",
+   "tutor",
+   "teammate",
+   "cousin",
+   "barber",
+   "lawyer",
+   "stepparent",
+   "landlord",
+   "sibling",
+   "parent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 2
+ },
+ "rel-s21-a": {
+  "shown": [
+   "teammate",
+   "in-law",
+   "boss",
+   "accountant",
+   "tutor",
+   "child",
+   "grandchild",
+   "landlord",
+   "parent",
+   "spouse",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 9
+ },
+ "rel-s21-b": {
+  "shown": [
+   "tutor",
+   "stepparent",
+   "spouse",
+   "lawyer",
+   "parent",
+   "teammate",
+   "grandparent",
+   "roommate",
+   "cousin",
+   "classmate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 1
+ },
+ "rel-s22-a": {
+  "shown": [
+   "spouse",
+   "boss",
+   "friend",
+   "barber",
+   "mechanic",
+   "grandparent",
+   "aunt/uncle",
+   "child",
+   "parent",
+   "tutor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 1
+ },
+ "rel-s22-b": {
+  "shown": [
+   "grandparent",
+   "cousin",
+   "child",
+   "accountant",
+   "dentist",
+   "coach",
+   "aunt/uncle",
+   "spouse",
+   "friend",
+   "tutor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 10
+ },
+ "rel-s23-a": {
+  "shown": [
+   "grandchild",
+   "sibling",
+   "landlord",
+   "realtor",
+   "spouse",
+   "dentist",
+   "parent",
+   "roommate",
+   "tutor",
+   "child",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 10
+ },
+ "rel-s23-b": {
+  "shown": [
+   "child",
+   "boss",
+   "teammate",
+   "spouse",
+   "tutor",
+   "sibling",
+   "barber",
+   "mechanic",
+   "parent",
+   "cousin",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 1,
+  "y_gold_pos": 5
+ },
+ "rel-s24-a": {
+  "shown": [
+   "sibling",
+   "barber",
+   "accountant",
+   "lawyer",
+   "grandparent",
+   "doctor",
+   "plumber",
+   "spouse",
+   "in-law",
+   "grandchild",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 1
+ },
+ "rel-s24-b": {
+  "shown": [
+   "coach",
+   "plumber",
+   "accountant",
+   "stepparent",
+   "tutor",
+   "neighbor",
+   "spouse",
+   "cousin",
+   "sibling",
+   "child",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 2
+ },
+ "rel-s25-a": {
+  "shown": [
+   "in-law",
+   "mechanic",
+   "plumber",
+   "landlord",
+   "child",
+   "cousin",
+   "spouse",
+   "sibling",
+   "realtor",
+   "roommate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 6
+ },
+ "rel-s25-b": {
+  "shown": [
+   "sibling",
+   "teammate",
+   "parent",
+   "realtor",
+   "aunt/uncle",
+   "spouse",
+   "friend",
+   "coach",
+   "cousin",
+   "plumber",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 10
+ },
+ "rel-s26-a": {
+  "shown": [
+   "grandparent",
+   "realtor",
+   "classmate",
+   "niece/nephew",
+   "spouse",
+   "parent",
+   "doctor",
+   "teammate",
+   "grandchild",
+   "plumber",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 6
+ },
+ "rel-s26-b": {
+  "shown": [
+   "plumber",
+   "stepparent",
+   "parent",
+   "classmate",
+   "sibling",
+   "niece/nephew",
+   "in-law",
+   "accountant",
+   "landlord",
+   "roommate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 1
+ },
+ "rel-s27-a": {
+  "shown": [
+   "classmate",
+   "child",
+   "grandchild",
+   "spouse",
+   "stepparent",
+   "aunt/uncle",
+   "plumber",
+   "mechanic",
+   "landlord",
+   "realtor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 4
+ },
+ "rel-s27-b": {
+  "shown": [
+   "friend",
+   "plumber",
+   "niece/nephew",
+   "lawyer",
+   "parent",
+   "roommate",
+   "sibling",
+   "boss",
+   "child",
+   "spouse",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 2
+ },
+ "rel-s28-a": {
+  "shown": [
+   "parent",
+   "stepparent",
+   "grandchild",
+   "plumber",
+   "child",
+   "tutor",
+   "boss",
+   "aunt/uncle",
+   "accountant",
+   "dentist",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 5
+ },
+ "rel-s28-b": {
+  "shown": [
+   "plumber",
+   "grandparent",
+   "dentist",
+   "aunt/uncle",
+   "niece/nephew",
+   "cousin",
+   "roommate",
+   "friend",
+   "lawyer",
+   "child",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 1
+ },
+ "rel-s29-a": {
+  "shown": [
+   "roommate",
+   "neighbor",
+   "tutor",
+   "parent",
+   "child",
+   "niece/nephew",
+   "cousin",
+   "sibling",
+   "boss",
+   "landlord",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 2,
+  "y_gold_pos": 8
+ },
+ "rel-s29-b": {
+  "shown": [
+   "classmate",
+   "grandchild",
+   "realtor",
+   "aunt/uncle",
+   "tutor",
+   "cousin",
+   "neighbor",
+   "sibling",
+   "boss",
+   "parent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 7
+ },
+ "rel-s30-a": {
+  "shown": [
+   "parent",
+   "neighbor",
+   "cousin",
+   "child",
+   "doctor",
+   "stepparent",
+   "spouse",
+   "dentist",
+   "realtor",
+   "classmate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 2,
+  "y_gold_pos": 3
+ },
+ "rel-s30-b": {
+  "shown": [
+   "child",
+   "neighbor",
+   "cousin",
+   "niece/nephew",
+   "boss",
+   "friend",
+   "spouse",
+   "tutor",
+   "stepparent",
+   "dentist",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 2
+ },
+ "rel-s31-a": {
+  "shown": [
+   "classmate",
+   "parent",
+   "neighbor",
+   "grandchild",
+   "boss",
+   "niece/nephew",
+   "child",
+   "cousin",
+   "tutor",
+   "accountant",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 2
+ },
+ "rel-s31-b": {
+  "shown": [
+   "spouse",
+   "mechanic",
+   "child",
+   "stepparent",
+   "neighbor",
+   "classmate",
+   "parent",
+   "realtor",
+   "roommate",
+   "aunt/uncle",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 5
+ },
+ "rel-s32-a": {
+  "shown": [
+   "lawyer",
+   "neighbor",
+   "in-law",
+   "spouse",
+   "mechanic",
+   "aunt/uncle",
+   "tutor",
+   "sibling",
+   "doctor",
+   "stepparent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 2,
+  "y_gold_pos": 4
+ },
+ "rel-s32-b": {
+  "shown": [
+   "aunt/uncle",
+   "barber",
+   "neighbor",
+   "mechanic",
+   "teammate",
+   "spouse",
+   "stepparent",
+   "child",
+   "classmate",
+   "grandchild",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 6,
+  "y_gold_pos": 3
+ },
+ "rel-s33-a": {
+  "shown": [
+   "tutor",
+   "friend",
+   "child",
+   "classmate",
+   "parent",
+   "grandparent",
+   "grandchild",
+   "accountant",
+   "stepparent",
+   "neighbor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 3
+ },
+ "rel-s33-b": {
+  "shown": [
+   "neighbor",
+   "mechanic",
+   "sibling",
+   "child",
+   "classmate",
+   "stepparent",
+   "teammate",
+   "spouse",
+   "boss",
+   "niece/nephew",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 1
+ },
+ "rel-s34-a": {
+  "shown": [
+   "parent",
+   "sibling",
+   "niece/nephew",
+   "roommate",
+   "barber",
+   "grandparent",
+   "friend",
+   "stepparent",
+   "lawyer",
+   "boss",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 2
+ },
+ "rel-s34-b": {
+  "shown": [
+   "niece/nephew",
+   "plumber",
+   "lawyer",
+   "sibling",
+   "child",
+   "barber",
+   "aunt/uncle",
+   "friend",
+   "cousin",
+   "coach",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 6
+ },
+ "rel-s35-a": {
+  "shown": [
+   "sibling",
+   "classmate",
+   "stepparent",
+   "parent",
+   "realtor",
+   "cousin",
+   "doctor",
+   "barber",
+   "grandchild",
+   "accountant",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 6
+ },
+ "rel-s35-b": {
+  "shown": [
+   "grandchild",
+   "landlord",
+   "parent",
+   "cousin",
+   "accountant",
+   "neighbor",
+   "niece/nephew",
+   "aunt/uncle",
+   "barber",
+   "coach",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 9
+ },
+ "rel-s36-a": {
+  "shown": [
+   "barber",
+   "stepparent",
+   "grandchild",
+   "friend",
+   "lawyer",
+   "spouse",
+   "grandparent",
+   "mechanic",
+   "parent",
+   "teammate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 1,
+  "y_gold_pos": 9
+ },
+ "rel-s36-b": {
+  "shown": [
+   "niece/nephew",
+   "realtor",
+   "cousin",
+   "sibling",
+   "teammate",
+   "parent",
+   "barber",
+   "aunt/uncle",
+   "boss",
+   "tutor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 6,
+  "y_gold_pos": 7
+ },
+ "rel-s37-a": {
+  "shown": [
+   "neighbor",
+   "tutor",
+   "spouse",
+   "doctor",
+   "cousin",
+   "grandchild",
+   "boss",
+   "stepparent",
+   "sibling",
+   "barber",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 3
+ },
+ "rel-s37-b": {
+  "shown": [
+   "neighbor",
+   "mechanic",
+   "plumber",
+   "child",
+   "doctor",
+   "cousin",
+   "grandchild",
+   "barber",
+   "spouse",
+   "parent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 8
+ },
+ "rel-s38-a": {
+  "shown": [
+   "barber",
+   "sibling",
+   "teammate",
+   "realtor",
+   "in-law",
+   "aunt/uncle",
+   "child",
+   "boss",
+   "classmate",
+   "spouse",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 1,
+  "y_gold_pos": 7
+ },
+ "rel-s38-b": {
+  "shown": [
+   "plumber",
+   "boss",
+   "stepparent",
+   "child",
+   "barber",
+   "niece/nephew",
+   "accountant",
+   "teammate",
+   "parent",
+   "spouse",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 5
+ },
+ "rel-s39-a": {
+  "shown": [
+   "doctor",
+   "barber",
+   "aunt/uncle",
+   "niece/nephew",
+   "cousin",
+   "parent",
+   "mechanic",
+   "sibling",
+   "lawyer",
+   "plumber",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 8
+ },
+ "rel-s39-b": {
+  "shown": [
+   "boss",
+   "parent",
+   "doctor",
+   "grandparent",
+   "lawyer",
+   "child",
+   "grandchild",
+   "sibling",
+   "realtor",
+   "dentist",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 5
+ },
+ "rel-s40-a": {
+  "shown": [
+   "child",
+   "realtor",
+   "cousin",
+   "barber",
+   "lawyer",
+   "niece/nephew",
+   "aunt/uncle",
+   "grandchild",
+   "classmate",
+   "tutor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 3
+ },
+ "rel-s40-b": {
+  "shown": [
+   "cousin",
+   "grandparent",
+   "stepparent",
+   "boss",
+   "friend",
+   "grandchild",
+   "lawyer",
+   "classmate",
+   "parent",
+   "accountant",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 1,
+  "y_gold_pos": 7
+ },
+ "rel-s41-a": {
+  "shown": [
+   "parent",
+   "landlord",
+   "child",
+   "spouse",
+   "neighbor",
+   "aunt/uncle",
+   "friend",
+   "lawyer",
+   "realtor",
+   "niece/nephew",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 1
+ },
+ "rel-s41-b": {
+  "shown": [
+   "aunt/uncle",
+   "spouse",
+   "roommate",
+   "lawyer",
+   "tutor",
+   "grandparent",
+   "sibling",
+   "parent",
+   "boss",
+   "teammate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 4
+ },
+ "rel-s42-a": {
+  "shown": [
+   "teammate",
+   "plumber",
+   "lawyer",
+   "grandparent",
+   "spouse",
+   "accountant",
+   "child",
+   "sibling",
+   "landlord",
+   "niece/nephew",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 5
+ },
+ "rel-s42-b": {
+  "shown": [
+   "cousin",
+   "parent",
+   "lawyer",
+   "tutor",
+   "grandchild",
+   "plumber",
+   "spouse",
+   "dentist",
+   "neighbor",
+   "stepparent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 3
+ },
+ "rel-s43-a": {
+  "shown": [
+   "cousin",
+   "grandparent",
+   "roommate",
+   "spouse",
+   "landlord",
+   "aunt/uncle",
+   "doctor",
+   "lawyer",
+   "friend",
+   "child",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 10
+ },
+ "rel-s43-b": {
+  "shown": [
+   "cousin",
+   "lawyer",
+   "mechanic",
+   "grandparent",
+   "classmate",
+   "plumber",
+   "child",
+   "tutor",
+   "parent",
+   "in-law",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 2
+ },
+ "rel-s44-a": {
+  "shown": [
+   "sibling",
+   "in-law",
+   "aunt/uncle",
+   "doctor",
+   "mechanic",
+   "boss",
+   "accountant",
+   "stepparent",
+   "parent",
+   "neighbor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 1
+ },
+ "rel-s44-b": {
+  "shown": [
+   "coach",
+   "lawyer",
+   "neighbor",
+   "sibling",
+   "in-law",
+   "realtor",
+   "mechanic",
+   "spouse",
+   "stepparent",
+   "grandchild",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 7
+ },
+ "rel-s45-a": {
+  "shown": [
+   "sibling",
+   "mechanic",
+   "aunt/uncle",
+   "neighbor",
+   "cousin",
+   "child",
+   "accountant",
+   "plumber",
+   "spouse",
+   "landlord",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 2,
+  "y_gold_pos": 5
+ },
+ "rel-s45-b": {
+  "shown": [
+   "mechanic",
+   "teammate",
+   "cousin",
+   "child",
+   "aunt/uncle",
+   "grandchild",
+   "dentist",
+   "accountant",
+   "sibling",
+   "doctor",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 1
+ },
+ "rel-s46-a": {
+  "shown": [
+   "stepparent",
+   "barber",
+   "parent",
+   "classmate",
+   "sibling",
+   "boss",
+   "aunt/uncle",
+   "spouse",
+   "lawyer",
+   "mechanic",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 10,
+  "y_gold_pos": 3
+ },
+ "rel-s46-b": {
+  "shown": [
+   "neighbor",
+   "barber",
+   "child",
+   "parent",
+   "mechanic",
+   "niece/nephew",
+   "grandchild",
+   "friend",
+   "grandparent",
+   "classmate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 4,
+  "y_gold_pos": 5
+ },
+ "rel-s47-a": {
+  "shown": [
+   "spouse",
+   "cousin",
+   "roommate",
+   "doctor",
+   "mechanic",
+   "classmate",
+   "sibling",
+   "coach",
+   "stepparent",
+   "parent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 5,
+  "y_gold_pos": 1
+ },
+ "rel-s47-b": {
+  "shown": [
+   "coach",
+   "grandchild",
+   "spouse",
+   "roommate",
+   "teammate",
+   "dentist",
+   "aunt/uncle",
+   "grandparent",
+   "mechanic",
+   "in-law",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 3,
+  "y_gold_pos": 9
+ },
+ "rel-s48-a": {
+  "shown": [
+   "barber",
+   "lawyer",
+   "child",
+   "aunt/uncle",
+   "parent",
+   "sibling",
+   "mechanic",
+   "grandparent",
+   "teammate",
+   "roommate",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 7,
+  "y_gold_pos": 3
+ },
+ "rel-s48-b": {
+  "shown": [
+   "parent",
+   "accountant",
+   "spouse",
+   "friend",
+   "niece/nephew",
+   "mechanic",
+   "neighbor",
+   "barber",
+   "child",
+   "stepparent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 6
+ },
+ "rel-s49-a": {
+  "shown": [
+   "stepparent",
+   "sibling",
+   "roommate",
+   "aunt/uncle",
+   "mechanic",
+   "teammate",
+   "niece/nephew",
+   "doctor",
+   "lawyer",
+   "grandparent",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 8,
+  "y_gold_pos": 2
+ },
+ "rel-s49-b": {
+  "shown": [
+   "mechanic",
+   "stepparent",
+   "grandparent",
+   "doctor",
+   "landlord",
+   "child",
+   "spouse",
+   "lawyer",
+   "sibling",
+   "accountant",
+   "cannot tell from the readout"
+  ],
+  "x_gold_pos": 9,
+  "y_gold_pos": 4
+ }
+}

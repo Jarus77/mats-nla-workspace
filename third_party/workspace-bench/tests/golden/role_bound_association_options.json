@@ -1,0 +1,802 @@
+{
+ "oa-police-thief-chase-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Darnell, the security guard\n  2. Marcus, the police officer\n  3. Dana, the hairdresser\n  4. Dylan, the thief\n  5. Priya, the librarian\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. chased\n  2. saluted\n  3. forgave\n  4. thanked\n  5. reassured\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dylan, the thief\n  2. Dana, the hairdresser\n  3. Priya, the librarian\n  4. Darnell, the security guard\n  5. Marcus, the police officer\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   1,
+   1
+  ]
+ },
+ "oa-police-thief-chase-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the police officer\n  2. Marcus, the journalist\n  3. Dmitri, the thief\n  4. Russell, the bouncer\n  5. Dale, the plumber\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. deceived\n  2. chased\n  3. bowed to\n  4. rescued\n  5. asked for directions\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the journalist\n  2. Dale, the plumber\n  3. Russell, the bouncer\n  4. Marcus, the police officer\n  5. Dmitri, the thief\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   2,
+   4
+  ]
+ },
+ "oa-doctor-patient-comfort-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the doctor\n  2. Marcus, the patient\n  3. Daniel, the referee\n  4. Marta, the wife\n  5. Priya, the bride\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. comforted\n  2. was angry at\n  3. envied\n  4. lied to\n  5. saluted\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the bride\n  2. Priya, the doctor\n  3. Marta, the wife\n  4. Marcus, the patient\n  5. Daniel, the referee\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   1,
+   4
+  ]
+ },
+ "oa-doctor-patient-comfort-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the comedian\n  2. Maya, the doctor\n  3. Marcus, the detective\n  4. Marcus, the journalist\n  5. Ellen, the patient\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. overcharged\n  2. comforted\n  3. cheated\n  4. worried about\n  5. thanked\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the journalist\n  2. Marcus, the detective\n  3. Maya, the doctor\n  4. Ellen, the patient\n  5. Marcus, the comedian\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   2,
+   3
+  ]
+ },
+ "oa-teacher-student-scold-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the comedian\n  2. Margaret, the teacher\n  3. Ruth, the mother\n  4. Marguerite, the boss\n  5. Dylan, the student\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. dreaded\n  2. forgave\n  3. scolded\n  4. rescued\n  5. worried about\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Margaret, the teacher\n  2. Ruth, the mother\n  3. Marcus, the comedian\n  4. Dylan, the student\n  5. Marguerite, the boss\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   3,
+   4
+  ]
+ },
+ "oa-teacher-student-scold-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Maya, the student\n  2. Marcus, the referee\n  3. Priya, the celebrity\n  4. Daniel, the teacher\n  5. Russell, the bouncer\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. blamed\n  2. scolded\n  3. rescued\n  4. worried about\n  5. deceived\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the celebrity\n  2. Maya, the student\n  3. Daniel, the teacher\n  4. Russell, the bouncer\n  5. Marcus, the referee\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   2,
+   3
+  ]
+ },
+ "oa-lawyer-witness-interrogate-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the lawyer\n  2. Marcus, the waiter\n  3. Marcus, the burglar\n  4. Marcus, the general\n  5. Elena, the witness\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. reassured\n  2. ejected\n  3. looked down on\n  4. comforted\n  5. interrogated\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Elena, the witness\n  2. Marcus, the waiter\n  3. Marcus, the burglar\n  4. Marcus, the lawyer\n  5. Marcus, the general\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   5,
+   1
+  ]
+ },
+ "oa-lawyer-witness-interrogate-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the doctor\n  2. Miriam, the lawyer\n  3. Martin, the father\n  4. Priya, the manager\n  5. Dale, the witness\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. interrogated\n  2. billed\n  3. followed\n  4. looked down on\n  5. rescued\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the manager\n  2. Priya, the doctor\n  3. Miriam, the lawyer\n  4. Dale, the witness\n  5. Martin, the father\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   1,
+   3
+  ]
+ },
+ "oa-waiter-customer-apologize-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the police officer\n  2. Priya, the customer\n  3. Maya, the journalist\n  4. Thomas, the priest\n  5. Marcus, the waiter\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. overcharged\n  2. worried about\n  3. fed\n  4. indulged\n  5. apologized to\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the waiter\n  2. Priya, the customer\n  3. Thomas, the priest\n  4. Maya, the journalist\n  5. Marcus, the police officer\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   5,
+   2
+  ]
+ },
+ "oa-waiter-customer-apologize-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the librarian\n  2. Marcus, the waiter\n  3. Marta, the grandmother\n  4. Nina, the customer\n  5. Darnell, the security guard\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. underestimated\n  2. pitied\n  3. worried about\n  4. distrusted\n  5. apologized to\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marta, the grandmother\n  2. Priya, the librarian\n  3. Nina, the customer\n  4. Marcus, the waiter\n  5. Darnell, the security guard\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   5,
+   4
+  ]
+ },
+ "oa-mother-son-angry-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Kyle, the son\n  2. Harold, the general\n  3. Diane, the mother\n  4. Clara, the heiress\n  5. Marcus, the star starter\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. photographed\n  2. was angry at\n  3. avoided\n  4. indulged\n  5. lied to\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Diane, the mother\n  2. Harold, the general\n  3. Kyle, the son\n  4. Clara, the heiress\n  5. Marcus, the star starter\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   2,
+   3
+  ]
+ },
+ "oa-mother-son-angry-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Daniel, the son\n  2. Dana, the paramedic\n  3. Priya, the doctor\n  4. Priya, the accountant\n  5. Ruth, the mother\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. searched\n  2. avoided\n  3. was angry at\n  4. scolded\n  5. lied to\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Daniel, the son\n  2. Priya, the accountant\n  3. Priya, the doctor\n  4. Ruth, the mother\n  5. Dana, the paramedic\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   3,
+   4
+  ]
+ },
+ "oa-boss-employee-envy-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dev, the employee\n  2. Marisol, the shop owner\n  3. Priya, the firefighter\n  4. Miriam, the lawyer\n  5. Marguerite, the boss\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. was angry at\n  2. deceived\n  3. hugged\n  4. envied\n  5. followed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marisol, the shop owner\n  2. Dev, the employee\n  3. Marguerite, the boss\n  4. Priya, the firefighter\n  5. Miriam, the lawyer\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   4,
+   2
+  ]
+ },
+ "oa-boss-employee-envy-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Daniel, the employee\n  2. Priya, the doctor\n  3. Mia, the child\n  4. Priya, the boss\n  5. Marguerite, the librarian\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. envied\n  2. billed\n  3. warned\n  4. bowed to\n  5. followed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the boss\n  2. Priya, the doctor\n  3. Marguerite, the librarian\n  4. Mia, the child\n  5. Daniel, the employee\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   1,
+   1
+  ]
+ },
+ "oa-nurse-patient-lie-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Darnell, the security guard\n  2. Walter, the patient\n  3. Priya, the celebrity\n  4. Grant, the CEO\n  5. Priya, the nurse\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. hugged\n  2. bowed to\n  3. fined\n  4. lied to\n  5. forgave\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Grant, the CEO\n  2. Priya, the nurse\n  3. Darnell, the security guard\n  4. Walter, the patient\n  5. Priya, the celebrity\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   4,
+   4
+  ]
+ },
+ "oa-nurse-patient-lie-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the nurse\n  2. Marcus, the patient\n  3. Dario, the mechanic\n  4. Priya, the manager\n  5. Harold, the critic\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. humiliated\n  2. thanked\n  3. lied to\n  4. yelled at\n  5. chased\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the patient\n  2. Priya, the nurse\n  3. Harold, the critic\n  4. Dario, the mechanic\n  5. Priya, the manager\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   3,
+   2
+  ]
+ },
+ "oa-landlord-tenant-avoid-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dana, the tenant\n  2. Elena, the wife\n  3. Marcus, the landlord\n  4. Dana, the hairdresser\n  5. Amara, the doctor\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. followed\n  2. underestimated\n  3. avoided\n  4. suspected\n  5. saluted\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dana, the tenant\n  2. Elena, the wife\n  3. Amara, the doctor\n  4. Dana, the hairdresser\n  5. Marcus, the landlord\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   3,
+   1
+  ]
+ },
+ "oa-landlord-tenant-avoid-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marta, the wife\n  2. Priya, the nurse\n  3. Marcus, the landlord\n  4. Dana, the tenant\n  5. Priya, the bride\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. avoided\n  2. interviewed\n  3. feared\n  4. apologized to\n  5. ejected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the landlord\n  2. Priya, the nurse\n  3. Marta, the wife\n  4. Dana, the tenant\n  5. Priya, the bride\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   1,
+   1
+  ]
+ },
+ "oa-coach-athlete-admire-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the athlete\n  2. Priya, the celebrity\n  3. Dana, the police officer\n  4. Dale, the firefighter\n  5. Marcus, the coach\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. interviewed\n  2. envied\n  3. forgave\n  4. admired\n  5. asked for directions\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dale, the firefighter\n  2. Priya, the celebrity\n  3. Dana, the police officer\n  4. Marcus, the coach\n  5. Priya, the athlete\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   4,
+   5
+  ]
+ },
+ "oa-coach-athlete-admire-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the lawyer\n  2. Dana, the paramedic\n  3. Marcus, the comedian\n  4. Marcus, the coach\n  5. Dara, the athlete\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. resented\n  2. indulged\n  3. spied on\n  4. admired\n  5. mocked\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the comedian\n  2. Dana, the paramedic\n  3. Marcus, the lawyer\n  4. Marcus, the coach\n  5. Dara, the athlete\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   4,
+   4
+  ]
+ },
+ "oa-firefighter-homeowner-rescue-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Walter, the homeowner\n  2. Priya, the firefighter\n  3. Marcus, the veteran\n  4. Priya, the hairdresser\n  5. Marcus, the landlord\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. cheated\n  2. humiliated\n  3. protected\n  4. complimented\n  5. rescued\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the veteran\n  2. Walter, the homeowner\n  3. Priya, the hairdresser\n  4. Marcus, the landlord\n  5. Priya, the firefighter\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   5,
+   2
+  ]
+ },
+ "oa-firefighter-homeowner-rescue-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dale, the firefighter\n  2. Ruth, the mother\n  3. Marisol, the homeowner\n  4. Dave, the plumber\n  5. Priya, the doctor\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. cheated\n  2. rescued\n  3. scolded\n  4. distrusted\n  5. protected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dave, the plumber\n  2. Ruth, the mother\n  3. Marisol, the homeowner\n  4. Dale, the firefighter\n  5. Priya, the doctor\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   2,
+   4
+  ]
+ },
+ "oa-doctor-nurse-instruct-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Amara, the doctor\n  2. Maya, the teacher\n  3. Priya, the nurse\n  4. Priya, the nurse\n  5. Dave, the plumber\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. photographed\n  2. instructed\n  3. comforted\n  4. reassured\n  5. saluted\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the nurse\n  2. Priya, the nurse\n  3. Maya, the teacher\n  4. Dave, the plumber\n  5. Amara, the doctor\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   2,
+   1
+  ]
+ },
+ "oa-doctor-nurse-instruct-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marta, the veteran\n  2. Clara, the heiress\n  3. Diane, the mother\n  4. Marcus, the nurse\n  5. Priya, the doctor\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. reported\n  2. instructed\n  3. billed\n  4. admired\n  5. searched\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marta, the veteran\n  2. Diane, the mother\n  3. Clara, the heiress\n  4. Priya, the doctor\n  5. Marcus, the nurse\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   2,
+   4
+  ]
+ },
+ "oa-general-soldier-salute-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Grant, the CEO\n  2. Marcus, the waiter\n  3. Eli, the soldier\n  4. Priya, the nurse\n  5. Marcus, the general\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. searched\n  2. saluted\n  3. dreaded\n  4. was angry at\n  5. mocked\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the waiter\n  2. Priya, the nurse\n  3. Grant, the CEO\n  4. Marcus, the general\n  5. Eli, the soldier\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   2,
+   5
+  ]
+ },
+ "oa-general-soldier-salute-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marguerite, the boss\n  2. Marcus, the security guard\n  3. Danny, the soldier\n  4. Harold, the general\n  5. Priya, the celebrity\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. overcharged\n  2. saluted\n  3. looked down on\n  4. spied on\n  5. ejected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the security guard\n  2. Harold, the general\n  3. Danny, the soldier\n  4. Priya, the celebrity\n  5. Marguerite, the boss\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   2,
+   2
+  ]
+ },
+ "oa-king-servant-bow-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Nora, the sister\n  2. Tomas, the servant\n  3. Aldric, the king\n  4. Dale, the plumber\n  5. Priya, the doctor\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. admired\n  2. yelled at\n  3. bowed to\n  4. fed\n  5. spied on\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Nora, the sister\n  2. Priya, the doctor\n  3. Tomas, the servant\n  4. Dale, the plumber\n  5. Aldric, the king\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   3,
+   3
+  ]
+ },
+ "oa-king-servant-bow-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the celebrity\n  2. Russell, the bouncer\n  3. Marcus, the burglar\n  4. Alistair, the king\n  5. Tomas, the servant\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. looked down on\n  2. fed\n  3. cheated\n  4. bowed to\n  5. teased\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the celebrity\n  2. Russell, the bouncer\n  3. Alistair, the king\n  4. Marcus, the burglar\n  5. Tomas, the servant\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   4,
+   3
+  ]
+ },
+ "oa-celebrity-fan-photograph-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the celebrity\n  2. Marcus, the fan\n  3. Priya, the manager\n  4. Dana, the paramedic\n  5. Marcus, the accountant\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. apologized to\n  2. photographed\n  3. interviewed\n  4. mocked\n  5. followed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the fan\n  2. Priya, the celebrity\n  3. Dana, the paramedic\n  4. Marcus, the accountant\n  5. Priya, the manager\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   2,
+   1
+  ]
+ },
+ "oa-celebrity-fan-photograph-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Clara, the heiress\n  2. Priya, the fan\n  3. Grant, the CEO\n  4. Marcus, the professor\n  5. Dario, the celebrity\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. mocked\n  2. instructed\n  3. photographed\n  4. resented\n  5. humiliated\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Grant, the CEO\n  2. Priya, the fan\n  3. Dario, the celebrity\n  4. Marcus, the professor\n  5. Clara, the heiress\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   3,
+   3
+  ]
+ },
+ "oa-guard-visitor-search-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the hairdresser\n  2. Priya, the visitor\n  3. Marcus, the veteran\n  4. Darnell, the security guard\n  5. Harold, the critic\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. mocked\n  2. searched\n  3. suspected\n  4. humiliated\n  5. comforted\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Harold, the critic\n  2. Priya, the hairdresser\n  3. Darnell, the security guard\n  4. Priya, the visitor\n  5. Marcus, the veteran\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   2,
+   4
+  ]
+ },
+ "oa-guard-visitor-search-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marta, the tourist\n  2. Priya, the visitor\n  3. Dev, the pilot\n  4. Marcus, the security guard\n  5. Delia, the critic\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. complimented\n  2. avoided\n  3. fined\n  4. searched\n  5. rescued\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dev, the pilot\n  2. Priya, the visitor\n  3. Marcus, the security guard\n  4. Delia, the critic\n  5. Marta, the tourist\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   4,
+   3
+  ]
+ },
+ "oa-librarian-borrower-fine-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dev, the borrower\n  2. Harold, the general\n  3. Marguerite, the librarian\n  4. Marcus, the general\n  5. Marcus, the bouncer\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. thanked\n  2. looked down on\n  3. was angry at\n  4. overcharged\n  5. fined\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marguerite, the librarian\n  2. Harold, the general\n  3. Marcus, the bouncer\n  4. Dev, the borrower\n  5. Marcus, the general\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   5,
+   4
+  ]
+ },
+ "oa-librarian-borrower-fine-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the borrower\n  2. Delia, the critic\n  3. Marcus, the guard\n  4. Dario, the mechanic\n  5. Priya, the librarian\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. ejected\n  2. fined\n  3. apologized to\n  4. rescued\n  5. overcharged\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the borrower\n  2. Priya, the librarian\n  3. Dario, the mechanic\n  4. Marcus, the guard\n  5. Delia, the critic\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   2,
+   2
+  ]
+ },
+ "oa-referee-player-warn-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marta, the veteran\n  2. Marcus, the CEO\n  3. Omar, the player\n  4. Dave, the plumber\n  5. Daniel, the referee\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. warned\n  2. forgave\n  3. avoided\n  4. teased\n  5. distrusted\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Daniel, the referee\n  2. Omar, the player\n  3. Marta, the veteran\n  4. Dave, the plumber\n  5. Marcus, the CEO\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   1,
+   2
+  ]
+ },
+ "oa-referee-player-warn-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Elena, the player\n  2. Thomas, the priest\n  3. Darnell, the security guard\n  4. Marcus, the referee\n  5. Marcus, the waiter\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. reassured\n  2. forgave\n  3. warned\n  4. instructed\n  5. indulged\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Elena, the player\n  2. Darnell, the security guard\n  3. Marcus, the waiter\n  4. Thomas, the priest\n  5. Marcus, the referee\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   3,
+   5
+  ]
+ },
+ "oa-journalist-politician-interview-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Maya, the journalist\n  2. Clara, the heiress\n  3. Martin, the priest\n  4. Marcus, the bouncer\n  5. Daniel, the politician\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. forgave\n  2. apologized to\n  3. reported\n  4. cheated\n  5. interviewed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Martin, the priest\n  2. Maya, the journalist\n  3. Daniel, the politician\n  4. Marcus, the bouncer\n  5. Clara, the heiress\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   5,
+   3
+  ]
+ },
+ "oa-journalist-politician-interview-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the journalist\n  2. Daniel, the referee\n  3. Elena, the politician\n  4. Dario, the mechanic\n  5. Eli, the child\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. interviewed\n  2. interrogated\n  3. resented\n  4. thanked\n  5. reported\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dario, the mechanic\n  2. Marcus, the journalist\n  3. Eli, the child\n  4. Elena, the politician\n  5. Daniel, the referee\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   1,
+   2
+  ]
+ },
+ "oa-pilot-passenger-reassure-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the waiter\n  2. Dev, the passenger\n  3. Maya, the pilot\n  4. Marcus, the police officer\n  5. Diane, the mother\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. scolded\n  2. hugged\n  3. apologized to\n  4. searched\n  5. reassured\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Maya, the pilot\n  2. Marcus, the waiter\n  3. Marcus, the police officer\n  4. Dev, the passenger\n  5. Diane, the mother\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   5,
+   4
+  ]
+ },
+ "oa-pilot-passenger-reassure-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marisol, the passenger\n  2. Dev, the pilot\n  3. Odile, the grandmother\n  4. Marcus, the veteran\n  5. Clara, the heiress\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. yelled at\n  2. photographed\n  3. reassured\n  4. rescued\n  5. fined\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the veteran\n  2. Clara, the heiress\n  3. Dev, the pilot\n  4. Odile, the grandmother\n  5. Marisol, the passenger\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   3,
+   3
+  ]
+ },
+ "oa-babysitter-toddler-feed-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Aldric, the king\n  2. Maya, the babysitter\n  3. Otto, the toddler\n  4. Marcus, the professor\n  5. Harold, the general\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. lied to\n  2. fed\n  3. overcharged\n  4. looked down on\n  5. worried about\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Harold, the general\n  2. Otto, the toddler\n  3. Marcus, the professor\n  4. Maya, the babysitter\n  5. Aldric, the king\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   2,
+   2
+  ]
+ },
+ "oa-babysitter-toddler-feed-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the star starter\n  2. Eli, the toddler\n  3. Mara, the babysitter\n  4. Harold, the critic\n  5. Dario, the celebrity\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. looked down on\n  2. asked for directions\n  3. fed\n  4. reported\n  5. envied\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the star starter\n  2. Eli, the toddler\n  3. Dario, the celebrity\n  4. Mara, the babysitter\n  5. Harold, the critic\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   3,
+   4
+  ]
+ },
+ "oa-hairdresser-client-compliment-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Peter, the father\n  2. Dana, the client\n  3. Priya, the hairdresser\n  4. Priya, the shop owner\n  5. Nora, the sister\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. lied to\n  2. complimented\n  3. blamed\n  4. spied on\n  5. looked down on\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the shop owner\n  2. Nora, the sister\n  3. Priya, the hairdresser\n  4. Peter, the father\n  5. Dana, the client\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   2,
+   5
+  ]
+ },
+ "oa-hairdresser-client-compliment-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dana, the hairdresser\n  2. Miriam, the lawyer\n  3. Marcus, the client\n  4. Dennis, the burglar\n  5. Dev, the pilot\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. complimented\n  2. interrogated\n  3. reassured\n  4. feared\n  5. pitied\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dana, the hairdresser\n  2. Dennis, the burglar\n  3. Dev, the pilot\n  4. Marcus, the client\n  5. Miriam, the lawyer\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   1,
+   1
+  ]
+ },
+ "oa-mechanic-driver-bill-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marta, the grandmother\n  2. Dario, the mechanic\n  3. Priya, the hairdresser\n  4. Priya, the librarian\n  5. Priya, the driver\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. interviewed\n  2. scolded\n  3. billed\n  4. searched\n  5. teased\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the hairdresser\n  2. Priya, the driver\n  3. Marta, the grandmother\n  4. Priya, the librarian\n  5. Dario, the mechanic\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   3,
+   2
+  ]
+ },
+ "oa-mechanic-driver-bill-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the mechanic\n  2. Daniel, the teacher\n  3. Marcus, the landlord\n  4. Margaret, the teacher\n  5. Dana, the driver\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. mocked\n  2. billed\n  3. cheated\n  4. resented\n  5. deceived\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dana, the driver\n  2. Marcus, the mechanic\n  3. Daniel, the teacher\n  4. Margaret, the teacher\n  5. Marcus, the landlord\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   2,
+   2
+  ]
+ },
+ "oa-paramedic-bystander-thank-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the nurse\n  2. Priya, the manager\n  3. Dana, the paramedic\n  4. Victor, the bystander\n  5. Dale, the firefighter\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. mocked\n  2. thanked\n  3. fed\n  4. feared\n  5. spied on\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Victor, the bystander\n  2. Priya, the nurse\n  3. Dana, the paramedic\n  4. Priya, the manager\n  5. Dale, the firefighter\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   2,
+   1
+  ]
+ },
+ "oa-paramedic-bystander-thank-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marguerite, the boss\n  2. Dario, the celebrity\n  3. Priya, the paramedic\n  4. Ellen, the detective\n  5. Marcus, the bystander\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. mocked\n  2. thanked\n  3. avoided\n  4. resented\n  5. spied on\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dario, the celebrity\n  2. Marguerite, the boss\n  3. Priya, the paramedic\n  4. Marcus, the bystander\n  5. Ellen, the detective\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   2,
+   3
+  ]
+ },
+ "oa-professor-dean-report-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the celebrity\n  2. Dario, the mechanic\n  3. Marisol, the professor\n  4. Gerald, the dean\n  5. Maya, the babysitter\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. reported\n  2. cheated\n  3. rescued\n  4. yelled at\n  5. blamed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dario, the mechanic\n  2. Gerald, the dean\n  3. Maya, the babysitter\n  4. Priya, the celebrity\n  5. Marisol, the professor\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   1,
+   2
+  ]
+ },
+ "oa-professor-dean-report-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the police officer\n  2. Priya, the dean\n  3. Marcus, the coach\n  4. Marcus, the professor\n  5. Maya, the pilot\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. fined\n  2. saluted\n  3. reported\n  4. billed\n  5. underestimated\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the police officer\n  2. Priya, the dean\n  3. Maya, the pilot\n  4. Marcus, the professor\n  5. Marcus, the coach\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   3,
+   4
+  ]
+ },
+ "oa-tourist-local-ask-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marta, the tourist\n  2. Piotr, the local\n  3. Marcus, the mechanic\n  4. Maya, the teacher\n  5. Marcus, the guard\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. asked for directions\n  2. warned\n  3. chased\n  4. thanked\n  5. followed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Piotr, the local\n  2. Marta, the tourist\n  3. Marcus, the mechanic\n  4. Marcus, the guard\n  5. Maya, the teacher\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   1,
+   1
+  ]
+ },
+ "oa-tourist-local-ask-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the shop owner\n  2. Priya, the tourist\n  3. Priya, the paramedic\n  4. Marco, the local\n  5. Marcus, the police officer\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. looked down on\n  2. humiliated\n  3. asked for directions\n  4. thanked\n  5. followed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the shop owner\n  2. Marco, the local\n  3. Priya, the paramedic\n  4. Priya, the tourist\n  5. Marcus, the police officer\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   3,
+   4
+  ]
+ },
+ "oa-bouncer-patron-eject-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Margaret, the teacher\n  2. Priya, the paramedic\n  3. Clara, the heiress\n  4. Devin, the patron\n  5. Marcus, the bouncer\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. chased\n  2. feared\n  3. dreaded\n  4. apologized to\n  5. ejected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the bouncer\n  2. Priya, the paramedic\n  3. Margaret, the teacher\n  4. Clara, the heiress\n  5. Devin, the patron\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   5,
+   5
+  ]
+ },
+ "oa-bouncer-patron-eject-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Gloria, the principal\n  2. Harold, the general\n  3. Maya, the doctor\n  4. Russell, the bouncer\n  5. Devon, the patron\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. ejected\n  2. fined\n  3. comforted\n  4. followed\n  5. feared\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Russell, the bouncer\n  2. Devon, the patron\n  3. Maya, the doctor\n  4. Gloria, the principal\n  5. Harold, the general\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   1,
+   1
+  ]
+ },
+ "oa-plumber-homeowner-overcharge-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dale, the plumber\n  2. Marta, the tourist\n  3. Marcus, the journalist\n  4. Marcus, the comedian\n  5. Priya, the homeowner\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. reassured\n  2. overcharged\n  3. indulged\n  4. interrogated\n  5. reported\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the homeowner\n  2. Marta, the tourist\n  3. Marcus, the comedian\n  4. Marcus, the journalist\n  5. Dale, the plumber\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   2,
+   1
+  ]
+ },
+ "oa-plumber-homeowner-overcharge-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Maria, the homeowner\n  2. Peter, the father\n  3. Dave, the plumber\n  4. Marcus, the bouncer\n  5. Priya, the tourist\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. avoided\n  2. spied on\n  3. overcharged\n  4. indulged\n  5. yelled at\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Maria, the homeowner\n  2. Priya, the tourist\n  3. Peter, the father\n  4. Marcus, the bouncer\n  5. Dave, the plumber\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   3,
+   5
+  ]
+ },
+ "oa-child-grandparent-hug-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Mia, the child\n  2. Marta, the wife\n  3. Priya, the manager\n  4. Priya, the tourist\n  5. Ruth, the grandparent\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. interrogated\n  2. reported\n  3. hugged\n  4. indulged\n  5. looked down on\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Ruth, the grandparent\n  2. Priya, the manager\n  3. Marta, the wife\n  4. Mia, the child\n  5. Priya, the tourist\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   3,
+   1
+  ]
+ },
+ "oa-child-grandparent-hug-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the nurse\n  2. Priya, the manager\n  3. Marta, the grandparent\n  4. Eli, the child\n  5. Dev, the pilot\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. hugged\n  2. chased\n  3. teased\n  4. lied to\n  5. dreaded\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the manager\n  2. Dev, the pilot\n  3. Eli, the child\n  4. Marta, the grandparent\n  5. Priya, the nurse\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   1,
+   3
+  ]
+ },
+ "oa-burglar-neighbor-spy-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the burglar\n  2. Marcus, the coach\n  3. Marcus, the guard\n  4. Maya, the teacher\n  5. Harold, the neighbor\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. scolded\n  2. spied on\n  3. avoided\n  4. distrusted\n  5. interviewed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the burglar\n  2. Harold, the neighbor\n  3. Marcus, the guard\n  4. Marcus, the coach\n  5. Maya, the teacher\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   2,
+   2
+  ]
+ },
+ "oa-burglar-neighbor-spy-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marguerite, the librarian\n  2. Marguerite, the principal\n  3. Priya, the neighbor\n  4. Dennis, the burglar\n  5. Dario, the mechanic\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. searched\n  2. fined\n  3. spied on\n  4. warned\n  5. humiliated\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the neighbor\n  2. Marguerite, the principal\n  3. Dario, the mechanic\n  4. Marguerite, the librarian\n  5. Dennis, the burglar\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   3,
+   5
+  ]
+ },
+ "oa-father-daughter-worry-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the police officer\n  2. Martin, the father\n  3. Miles, the guard\n  4. Elise, the daughter\n  5. Marcus, the professor\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. forgave\n  2. asked for directions\n  3. followed\n  4. scolded\n  5. worried about\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the police officer\n  2. Miles, the guard\n  3. Elise, the daughter\n  4. Martin, the father\n  5. Marcus, the professor\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   5,
+   3
+  ]
+ },
+ "oa-father-daughter-worry-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Harold, the general\n  2. Priya, the nurse\n  3. Marcus, the lawyer\n  4. Nora, the daughter\n  5. Peter, the father\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. blamed\n  2. worried about\n  3. interviewed\n  4. suspected\n  5. searched\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Harold, the general\n  2. Nora, the daughter\n  3. Priya, the nurse\n  4. Peter, the father\n  5. Marcus, the lawyer\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   2,
+   4
+  ]
+ },
+ "oa-sister-brother-tease-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Nora, the sister\n  2. Devon, the star starter\n  3. Owen, the brother\n  4. Priya, the celebrity\n  5. Martin, the father\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. lied to\n  2. avoided\n  3. saluted\n  4. searched\n  5. teased\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Nora, the sister\n  2. Priya, the celebrity\n  3. Martin, the father\n  4. Owen, the brother\n  5. Devon, the star starter\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   5,
+   4
+  ]
+ },
+ "oa-sister-brother-tease-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Miles, the brother\n  2. Nora, the sister\n  3. Priya, the librarian\n  4. Priya, the accountant\n  5. Dario, the celebrity\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. teased\n  2. asked for directions\n  3. underestimated\n  4. apologized to\n  5. blamed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Nora, the sister\n  2. Dario, the celebrity\n  3. Priya, the accountant\n  4. Miles, the brother\n  5. Priya, the librarian\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   1,
+   1
+  ]
+ },
+ "oa-manager-intern-distrust-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the doctor\n  2. Dev, the intern\n  3. Priya, the manager\n  4. Marta, the grandmother\n  5. Marguerite, the boss\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. worried about\n  2. mocked\n  3. followed\n  4. distrusted\n  5. protected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the doctor\n  2. Marta, the grandmother\n  3. Marguerite, the boss\n  4. Priya, the manager\n  5. Dev, the intern\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   4,
+   5
+  ]
+ },
+ "oa-manager-intern-distrust-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the manager\n  2. Marcus, the lawyer\n  3. Marcus, the bouncer\n  4. Daniel, the intern\n  5. Dario, the mechanic\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. worried about\n  2. hugged\n  3. followed\n  4. reported\n  5. distrusted\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dario, the mechanic\n  2. Marcus, the bouncer\n  3. Daniel, the intern\n  4. Marcus, the lawyer\n  5. Priya, the manager\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   5,
+   5
+  ]
+ },
+ "oa-veteran-recruit-lookdown-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marta, the veteran\n  2. Owen, the recruit\n  3. Elena, the wife\n  4. Priya, the boss\n  5. Peter, the father\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. looked down on\n  2. distrusted\n  3. rescued\n  4. resented\n  5. reassured\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Peter, the father\n  2. Owen, the recruit\n  3. Elena, the wife\n  4. Priya, the boss\n  5. Marta, the veteran\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   1,
+   2
+  ]
+ },
+ "oa-veteran-recruit-lookdown-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the police officer\n  2. Marcus, the waiter\n  3. Maya, the babysitter\n  4. Marcus, the veteran\n  5. Dylan, the recruit\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. fined\n  2. protected\n  3. searched\n  4. looked down on\n  5. blamed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Maya, the babysitter\n  2. Marcus, the waiter\n  3. Dylan, the recruit\n  4. Marcus, the veteran\n  5. Marcus, the police officer\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   4,
+   4
+  ]
+ },
+ "oa-starter-benchwarmer-pity-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marta, the grandmother\n  2. Diane, the mother\n  3. Marcus, the star starter\n  4. Diego, the benchwarmer\n  5. Marcus, the security guard\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. pitied\n  2. yelled at\n  3. blamed\n  4. lied to\n  5. followed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Diane, the mother\n  2. Marta, the grandmother\n  3. Marcus, the star starter\n  4. Marcus, the security guard\n  5. Diego, the benchwarmer\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   1,
+   5
+  ]
+ },
+ "oa-starter-benchwarmer-pity-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Delia, the critic\n  2. Grant, the CEO\n  3. Odile, the grandmother\n  4. Aaron, the benchwarmer\n  5. Devon, the star starter\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. spied on\n  2. interviewed\n  3. mocked\n  4. thanked\n  5. pitied\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Aaron, the benchwarmer\n  2. Odile, the grandmother\n  3. Grant, the CEO\n  4. Delia, the critic\n  5. Devon, the star starter\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   5,
+   5
+  ]
+ },
+ "oa-teacher-parent-blame-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Clara, the heiress\n  2. Grant, the CEO\n  3. Dana, the parent\n  4. Dale, the firefighter\n  5. Margaret, the teacher\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. blamed\n  2. envied\n  3. hugged\n  4. underestimated\n  5. interrogated\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Grant, the CEO\n  2. Dana, the parent\n  3. Clara, the heiress\n  4. Margaret, the teacher\n  5. Dale, the firefighter\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   1,
+   2
+  ]
+ },
+ "oa-teacher-parent-blame-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dennis, the parent\n  2. Marcus, the police officer\n  3. Priya, the librarian\n  4. Marcus, the police officer\n  5. Maya, the teacher\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. interrogated\n  2. comforted\n  3. blamed\n  4. saluted\n  5. scolded\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Maya, the teacher\n  2. Priya, the librarian\n  3. Dennis, the parent\n  4. Marcus, the police officer\n  5. Marcus, the police officer\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   3,
+   1
+  ]
+ },
+ "oa-wife-husband-suspect-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dev, the pilot\n  2. Marcus, the coach\n  3. Marta, the wife\n  4. Daniel, the husband\n  5. Diane, the mother\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. yelled at\n  2. saluted\n  3. avoided\n  4. comforted\n  5. suspected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marta, the wife\n  2. Dev, the pilot\n  3. Daniel, the husband\n  4. Marcus, the coach\n  5. Diane, the mother\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   5,
+   3
+  ]
+ },
+ "oa-wife-husband-suspect-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Nora, the sister\n  2. Marcus, the husband\n  3. Elena, the wife\n  4. Marcus, the accountant\n  5. Mara, the babysitter\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. complimented\n  2. worried about\n  3. suspected\n  4. resented\n  5. scolded\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Elena, the wife\n  2. Nora, the sister\n  3. Marcus, the accountant\n  4. Marcus, the husband\n  5. Mara, the babysitter\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   3,
+   1
+  ]
+ },
+ "oa-grandmother-grandson-indulge-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Elena, the wife\n  2. Marta, the grandmother\n  3. Aldric, the king\n  4. Eli, the grandson\n  5. Marcus, the police officer\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. pitied\n  2. indulged\n  3. interviewed\n  4. yelled at\n  5. rescued\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the police officer\n  2. Elena, the wife\n  3. Eli, the grandson\n  4. Aldric, the king\n  5. Marta, the grandmother\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   2,
+   3
+  ]
+ },
+ "oa-grandmother-grandson-indulge-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the bride\n  2. Odile, the grandmother\n  3. Priya, the doctor\n  4. Daniel, the grandson\n  5. Priya, the shop owner\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. reported\n  2. indulged\n  3. billed\n  4. envied\n  5. complimented\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Odile, the grandmother\n  2. Priya, the shop owner\n  3. Priya, the doctor\n  4. Daniel, the grandson\n  5. Priya, the bride\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   2,
+   1
+  ]
+ },
+ "oa-officer-informant-protect-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the shop owner\n  2. Marcus, the police officer\n  3. Denny, the informant\n  4. Marcus, the lawyer\n  5. Margaret, the teacher\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. hugged\n  2. rescued\n  3. lied to\n  4. spied on\n  5. protected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the police officer\n  2. Marcus, the lawyer\n  3. Denny, the informant\n  4. Priya, the shop owner\n  5. Margaret, the teacher\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   5,
+   3
+  ]
+ },
+ "oa-officer-informant-protect-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the informant\n  2. Martin, the priest\n  3. Clara, the heiress\n  4. Dana, the police officer\n  5. Margaret, the teacher\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. bowed to\n  2. saluted\n  3. was angry at\n  4. protected\n  5. yelled at\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dana, the police officer\n  2. Margaret, the teacher\n  3. Martin, the priest\n  4. Clara, the heiress\n  5. Marcus, the informant\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   4,
+   1
+  ]
+ },
+ "oa-priest-parishioner-forgive-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dave, the plumber\n  2. Dana, the parishioner\n  3. Priya, the bride\n  4. Marguerite, the principal\n  5. Martin, the priest\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. forgave\n  2. deceived\n  3. chased\n  4. rescued\n  5. distrusted\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the bride\n  2. Dana, the parishioner\n  3. Marguerite, the principal\n  4. Dave, the plumber\n  5. Martin, the priest\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   1,
+   2
+  ]
+ },
+ "oa-priest-parishioner-forgive-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Maya, the journalist\n  2. Diane, the mother\n  3. Dave, the plumber\n  4. Miriam, the parishioner\n  5. Thomas, the priest\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. underestimated\n  2. forgave\n  3. cheated\n  4. spied on\n  5. fed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Thomas, the priest\n  2. Dave, the plumber\n  3. Miriam, the parishioner\n  4. Diane, the mother\n  5. Maya, the journalist\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   2,
+   1
+  ]
+ },
+ "oa-guard-prisoner-fear-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the paramedic\n  2. Priya, the tourist\n  3. Marcus, the coach\n  4. Dennis, the prisoner\n  5. Miles, the guard\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. followed\n  2. protected\n  3. pitied\n  4. feared\n  5. ejected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Priya, the tourist\n  2. Dennis, the prisoner\n  3. Miles, the guard\n  4. Priya, the paramedic\n  5. Marcus, the coach\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   4,
+   2
+  ]
+ },
+ "oa-guard-prisoner-fear-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dmitri, the prisoner\n  2. Marcus, the guard\n  3. Marcus, the security guard\n  4. Marcus, the coach\n  5. Marcus, the professor\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. warned\n  2. cheated\n  3. complimented\n  4. feared\n  5. deceived\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the professor\n  2. Marcus, the coach\n  3. Marcus, the security guard\n  4. Marcus, the guard\n  5. Dmitri, the prisoner\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   4,
+   4
+  ]
+ },
+ "oa-ceo-janitor-resent-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the CEO\n  2. Dale, the janitor\n  3. Margaret, the teacher\n  4. Nora, the sister\n  5. Marguerite, the boss\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. resented\n  2. forgave\n  3. rescued\n  4. looked down on\n  5. suspected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dale, the janitor\n  2. Nora, the sister\n  3. Marcus, the CEO\n  4. Marguerite, the boss\n  5. Margaret, the teacher\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   1,
+   1
+  ]
+ },
+ "oa-ceo-janitor-resent-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Grant, the CEO\n  2. Marcus, the lawyer\n  3. Peter, the father\n  4. Elena, the janitor\n  5. Dario, the celebrity\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. followed\n  2. searched\n  3. resented\n  4. comforted\n  5. protected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Grant, the CEO\n  2. Peter, the father\n  3. Dario, the celebrity\n  4. Elena, the janitor\n  5. Marcus, the lawyer\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   3,
+   1
+  ]
+ },
+ "oa-bride-caterer-yell-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the bride\n  2. Marcus, the caterer\n  3. Priya, the doctor\n  4. Miriam, the lawyer\n  5. Nora, the sister\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. warned\n  2. interrogated\n  3. forgave\n  4. yelled at\n  5. pitied\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the caterer\n  2. Miriam, the lawyer\n  3. Priya, the doctor\n  4. Priya, the bride\n  5. Nora, the sister\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   4,
+   1
+  ]
+ },
+ "oa-bride-caterer-yell-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Clara, the heiress\n  2. Priya, the bride\n  3. Harold, the general\n  4. Marta, the tourist\n  5. Marcus, the caterer\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. scolded\n  2. feared\n  3. yelled at\n  4. fined\n  5. ejected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the caterer\n  2. Priya, the bride\n  3. Harold, the general\n  4. Clara, the heiress\n  5. Marta, the tourist\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   3,
+   2
+  ]
+ },
+ "oa-critic-musician-mock-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Margaret, the teacher\n  2. Marcus, the police officer\n  3. Nadia, the musician\n  4. Marta, the wife\n  5. Harold, the critic\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. mocked\n  2. ejected\n  3. interrogated\n  4. apologized to\n  5. bowed to\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Harold, the critic\n  2. Nadia, the musician\n  3. Marta, the wife\n  4. Margaret, the teacher\n  5. Marcus, the police officer\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   1,
+   2
+  ]
+ },
+ "oa-critic-musician-mock-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the security guard\n  2. Delia, the critic\n  3. Dennis, the burglar\n  4. Marcus, the accountant\n  5. Marcus, the musician\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. mocked\n  2. complimented\n  3. cheated\n  4. warned\n  5. billed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the musician\n  2. Dennis, the burglar\n  3. Marcus, the security guard\n  4. Delia, the critic\n  5. Marcus, the accountant\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   1,
+   4
+  ]
+ },
+ "oa-accountant-client-deceive-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the bride\n  2. Marcus, the accountant\n  3. Ruth, the mother\n  4. Grant, the CEO\n  5. Priya, the client\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. deceived\n  2. searched\n  3. overcharged\n  4. reported\n  5. fed\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Ruth, the mother\n  2. Priya, the client\n  3. Marcus, the accountant\n  4. Grant, the CEO\n  5. Priya, the bride\n  6. cannot tell from the readout",
+  "golds": [
+   2,
+   1,
+   2
+  ]
+ },
+ "oa-accountant-client-deceive-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dale, the client\n  2. Diane, the mother\n  3. Priya, the accountant\n  4. Marcus, the comedian\n  5. Nora, the sister\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. thanked\n  2. instructed\n  3. yelled at\n  4. deceived\n  5. humiliated\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the comedian\n  2. Dale, the client\n  3. Priya, the accountant\n  4. Nora, the sister\n  5. Diane, the mother\n  6. cannot tell from the readout",
+  "golds": [
+   1,
+   4,
+   3
+  ]
+ },
+ "oa-principal-troublemaker-dread-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the manager\n  2. Marisol, the shop owner\n  3. Marguerite, the principal\n  4. Dov, the troublemaker\n  5. Marcus, the star starter\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. underestimated\n  2. dreaded\n  3. pitied\n  4. complimented\n  5. resented\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marisol, the shop owner\n  2. Marcus, the star starter\n  3. Marguerite, the principal\n  4. Dov, the troublemaker\n  5. Priya, the manager\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   2,
+   4
+  ]
+ },
+ "oa-principal-troublemaker-dread-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Gloria, the principal\n  2. Marcus, the bouncer\n  3. Devon, the troublemaker\n  4. Priya, the doctor\n  5. Marisol, the shop owner\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. billed\n  2. mocked\n  3. reassured\n  4. dreaded\n  5. bowed to\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Gloria, the principal\n  2. Marcus, the bouncer\n  3. Marisol, the shop owner\n  4. Devon, the troublemaker\n  5. Priya, the doctor\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   4,
+   1
+  ]
+ },
+ "oa-shopowner-supplier-cheat-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Martin, the father\n  2. Marcus, the CEO\n  3. Dev, the supplier\n  4. Grant, the CEO\n  5. Marisol, the shop owner\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. cheated\n  2. distrusted\n  3. spied on\n  4. humiliated\n  5. was angry at\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Dev, the supplier\n  2. Martin, the father\n  3. Grant, the CEO\n  4. Marisol, the shop owner\n  5. Marcus, the CEO\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   1,
+   1
+  ]
+ },
+ "oa-shopowner-supplier-cheat-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the librarian\n  2. Russell, the bouncer\n  3. Priya, the shop owner\n  4. Eli, the child\n  5. Dmitri, the supplier\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. warned\n  2. cheated\n  3. interrogated\n  4. billed\n  5. apologized to\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Eli, the child\n  2. Priya, the shop owner\n  3. Priya, the librarian\n  4. Dmitri, the supplier\n  5. Russell, the bouncer\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   2,
+   2
+  ]
+ },
+ "oa-detective-suspect-follow-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the doctor\n  2. Dario, the mechanic\n  3. Marcus, the detective\n  4. Martin, the father\n  5. Dennis, the suspect\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. lied to\n  2. blamed\n  3. cheated\n  4. followed\n  5. pitied\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the detective\n  2. Dennis, the suspect\n  3. Dario, the mechanic\n  4. Martin, the father\n  5. Priya, the doctor\n  6. cannot tell from the readout",
+  "golds": [
+   3,
+   4,
+   2
+  ]
+ },
+ "oa-detective-suspect-follow-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Marcus, the referee\n  2. Ellen, the detective\n  3. Marcus, the police officer\n  4. Marcus, the suspect\n  5. Martin, the priest\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. bowed to\n  2. followed\n  3. chased\n  4. worried about\n  5. ejected\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the referee\n  2. Marcus, the police officer\n  3. Marcus, the suspect\n  4. Ellen, the detective\n  5. Martin, the priest\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   2,
+   4
+  ]
+ },
+ "oa-heiress-butler-underestimate-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dana, the hairdresser\n  2. Marisol, the shop owner\n  3. Thomas, the butler\n  4. Clara, the heiress\n  5. Marcus, the referee\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. fed\n  2. followed\n  3. underestimated\n  4. interrogated\n  5. looked down on\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Clara, the heiress\n  2. Dana, the hairdresser\n  3. Marisol, the shop owner\n  4. Thomas, the butler\n  5. Marcus, the referee\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   3,
+   4
+  ]
+ },
+ "oa-heiress-butler-underestimate-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Clara, the heiress\n  2. Marcus, the general\n  3. Marcus, the waiter\n  4. Edmund, the butler\n  5. Maya, the pilot\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. billed\n  2. underestimated\n  3. photographed\n  4. fined\n  5. feared\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Edmund, the butler\n  2. Maya, the pilot\n  3. Marcus, the waiter\n  4. Marcus, the general\n  5. Clara, the heiress\n  6. cannot tell from the readout",
+  "golds": [
+   4,
+   2,
+   5
+  ]
+ },
+ "oa-comedian-heckler-humiliate-ab": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Dario, the mechanic\n  2. Marcus, the police officer\n  3. Dwayne, the heckler\n  4. Mia, the child\n  5. Marcus, the comedian\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. spied on\n  2. suspected\n  3. interrogated\n  4. humiliated\n  5. thanked\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the comedian\n  2. Dwayne, the heckler\n  3. Mia, the child\n  4. Marcus, the police officer\n  5. Dario, the mechanic\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   4,
+   2
+  ]
+ },
+ "oa-comedian-heckler-humiliate-ba": {
+  "block": "The readout may describe two people; the sentence it implies has the form {person A} -> {action} -> {person B}. People may be referred to by name or description.\n\nQ1. Who performs the action (the agent)?\n  1. Priya, the doctor\n  2. Priya, the manager\n  3. Marcus, the comedian\n  4. Priya, the bride\n  5. Dana, the heckler\n  6. cannot tell from the readout\n\nQ2. What is the action or state?\n  1. protected\n  2. humiliated\n  3. overcharged\n  4. envied\n  5. interrogated\n  6. cannot tell from the readout\n\nQ3. Who is the action directed at (the patient)?\n  1. Marcus, the comedian\n  2. Priya, the bride\n  3. Priya, the manager\n  4. Priya, the doctor\n  5. Dana, the heckler\n  6. cannot tell from the readout",
+  "golds": [
+   5,
+   2,
+   1
+  ]
+ }
+}

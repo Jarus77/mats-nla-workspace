@@ -1,0 +1,870 @@
+{
+ "basic_readout_mt": {
+  "blind": {
+   "mean": 0.45600000000000007,
+   "std": 0.023021728866442676,
+   "majority": 0.47,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.136,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:22:25+00:00"
+  },
+  "described": {
+   "mean": 0.488,
+   "std": 0.013038404810405309,
+   "majority": 0.5,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.136,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:26:25+00:00"
+  },
+  "uniform": {
+   "mean": 0.13999999999999999,
+   "std": 0.04301162633521313,
+   "majority": 0.1,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.136,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:26:25+00:00"
+  }
+ },
+ "conjunctive_association": {
+  "blind": {
+   "mean": 0.11200000000000002,
+   "std": 0.004472135954999577,
+   "majority": 0.11,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.1,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    10
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "comp-v1",
+   "written": "2026-09-16T07:35:04+00:00"
+  },
+  "described": {
+   "mean": 0.094,
+   "std": 0.008944271909999161,
+   "majority": 0.09,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.1,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    10
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "comp-v1",
+   "written": "2026-09-16T07:35:04+00:00"
+  },
+  "uniform": {
+   "mean": 0.096,
+   "std": 0.01673320053068151,
+   "majority": 0.05,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.1,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    10
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "comp-v1",
+   "written": "2026-09-16T07:35:04+00:00"
+  }
+ },
+ "directed_modulation": {
+  "blind": {
+   "mean": 0.162,
+   "std": 0.0130384048104053,
+   "majority": 0.15,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "dm-2026-09-16",
+   "written": "2026-09-16T07:57:36+00:00"
+  },
+  "described": {
+   "mean": 0.27260606060606063,
+   "std": 0.03625273492738631,
+   "majority": 0.29,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 1,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "dm-2026-09-16",
+   "written": "2026-09-16T08:01:26+00:00"
+  },
+  "uniform": {
+   "mean": 0.19,
+   "std": 0.03872983346207417,
+   "majority": 0.16,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "dm-2026-09-16",
+   "written": "2026-09-16T08:01:26+00:00"
+  }
+ },
+ "moral_rationale": {
+  "blind": {
+   "mean": 0.195,
+   "std": 0.011726039399558573,
+   "majority": 0.19,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.1728,
+   "n_items": 200,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "ec-v1",
+   "written": "2026-09-16T07:44:21+00:00"
+  },
+  "described": {
+   "mean": 0.262,
+   "std": 0.004472135954999583,
+   "majority": 0.27,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.1728,
+   "n_items": 200,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "ec-v1",
+   "written": "2026-09-16T07:48:38+00:00"
+  },
+  "uniform": {
+   "mean": 0.184,
+   "std": 0.02509980079602227,
+   "majority": 0.17,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.1728,
+   "n_items": 200,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "ec-v1",
+   "written": "2026-09-16T07:48:38+00:00"
+  }
+ },
+ "multi_concept_directed_modulation": {
+  "blind": {
+   "mean": 0.36,
+   "std": 0.028284271247461905,
+   "majority": 0.36,
+   "exact": 0.056,
+   "any_hit": 0.832,
+   "mean_picks": 2.28,
+   "analytic_floor": 0.28,
+   "n_items": 25,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    6
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mcdm-2026-09-16",
+   "written": "2026-09-16T08:36:24+00:00"
+  },
+  "described": {
+   "mean": 0.36,
+   "std": 0.04898979485566356,
+   "majority": 0.36,
+   "exact": 0.096,
+   "any_hit": 0.672,
+   "mean_picks": 2.08,
+   "analytic_floor": 0.28,
+   "n_items": 25,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    6
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mcdm-2026-09-16",
+   "written": "2026-09-16T08:37:20+00:00"
+  },
+  "uniform": {
+   "mean": 0.272,
+   "std": 0.04381780460041329,
+   "majority": 0.24,
+   "exact": 0.08,
+   "any_hit": 0.272,
+   "mean_picks": 1.0,
+   "analytic_floor": 0.28,
+   "n_items": 25,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    6
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mcdm-2026-09-16",
+   "written": "2026-09-16T08:37:20+00:00"
+  }
+ },
+ "multihop_mt": {
+  "blind": {
+   "mean": 0.658,
+   "std": 0.01483239697419134,
+   "majority": 0.65,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.14880000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:07:53+00:00"
+  },
+  "described": {
+   "mean": 0.746,
+   "std": 0.008944271909999166,
+   "majority": 0.75,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.14880000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:10:13+00:00"
+  },
+  "uniform": {
+   "mean": 0.126,
+   "std": 0.023021728866442673,
+   "majority": 0.07,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.14880000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:10:13+00:00"
+  }
+ },
+ "multilingual_mt": {
+  "blind": {
+   "mean": 0.16,
+   "std": 0.015811388300841892,
+   "majority": 0.17,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:12:24+00:00"
+  },
+  "described": {
+   "mean": 0.29,
+   "std": 0.015811388300841885,
+   "majority": 0.29,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:14:33+00:00"
+  },
+  "uniform": {
+   "mean": 0.048,
+   "std": 0.02588435821108957,
+   "majority": 0.04,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:14:33+00:00"
+  }
+ },
+ "multilingual_multihop": {
+  "blind": {
+   "mean": 0.2816326530612245,
+   "std": 0.013690212107141568,
+   "majority": 0.2857142857142857,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 98,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:28:39+00:00"
+  },
+  "described": {
+   "mean": 0.3673469387755102,
+   "std": 0.01613406969473662,
+   "majority": 0.3673469387755102,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 98,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:30:41+00:00"
+  },
+  "uniform": {
+   "mean": 0.046938775510204075,
+   "std": 0.017074694419062765,
+   "majority": 0.02040816326530612,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 98,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:30:41+00:00"
+  }
+ },
+ "multilingual_typo": {
+  "blind": {
+   "mean": 0.086,
+   "std": 0.00894427190999916,
+   "majority": 0.08,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:32:40+00:00"
+  },
+  "described": {
+   "mean": 0.178,
+   "std": 0.013038404810405297,
+   "majority": 0.19,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:35:22+00:00"
+  },
+  "uniform": {
+   "mean": 0.044,
+   "std": 0.016733200530681513,
+   "majority": 0.01,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.04000000000000001,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:35:22+00:00"
+  }
+ },
+ "relational_multihop": {
+  "blind": {
+   "mean": 0.0,
+   "std": 0.0,
+   "majority": 0.0,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.010000000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    10
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "rel-v1",
+   "written": "2026-09-16T07:37:36+00:00"
+  },
+  "described": {
+   "mean": 0.03,
+   "std": 0.012247448713915891,
+   "majority": 0.03,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.010000000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    10
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "rel-v1",
+   "written": "2026-09-16T07:39:45+00:00"
+  },
+  "uniform": {
+   "mean": 0.004,
+   "std": 0.00894427190999916,
+   "majority": 0.01,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.010000000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    10
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "rel-v1",
+   "written": "2026-09-16T07:39:45+00:00"
+  }
+ },
+ "role_bound_association": {
+  "blind": {
+   "mean": 0.064,
+   "std": 0.01140175425099138,
+   "majority": 0.06,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.008080000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "oa-v1",
+   "written": "2026-09-16T07:35:04+00:00"
+  },
+  "described": {
+   "mean": 0.288,
+   "std": 0.013038404810405281,
+   "majority": 0.29,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.008080000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "oa-v1",
+   "written": "2026-09-16T07:35:35+00:00"
+  },
+  "uniform": {
+   "mean": 0.008,
+   "std": 0.010954451150103323,
+   "majority": 0.01,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.008080000000000002,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "oa-v1",
+   "written": "2026-09-16T07:35:35+00:00"
+  }
+ },
+ "typo_mt": {
+  "blind": {
+   "mean": 0.134,
+   "std": 0.013416407864998741,
+   "majority": 0.15,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:16:41+00:00"
+  },
+  "described": {
+   "mean": 0.20600000000000002,
+   "std": 0.011401754250991377,
+   "majority": 0.21,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:19:21+00:00"
+  },
+  "uniform": {
+   "mean": 0.166,
+   "std": 0.05549774770204643,
+   "majority": 0.07,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "mc-2026-09-16",
+   "written": "2026-09-16T08:19:21+00:00"
+  }
+ },
+ "user_modeling": {
+  "blind": {
+   "mean": 0.22000000000000003,
+   "std": 0.02345207879911714,
+   "majority": 0.2,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "um-v2",
+   "written": "2026-09-16T07:51:22+00:00"
+  },
+  "described": {
+   "mean": 0.21800000000000003,
+   "std": 0.017888543819998312,
+   "majority": 0.22,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "um-v2",
+   "written": "2026-09-16T07:54:52+00:00"
+  },
+  "uniform": {
+   "mean": 0.192,
+   "std": 0.021679483388678797,
+   "majority": 0.13,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "um-v2",
+   "written": "2026-09-16T07:54:52+00:00"
+  }
+ },
+ "brew_intermediates": {
+  "blind": {
+   "mean": 0.16599999999999998,
+   "std": 0.025099800796022264,
+   "majority": 0.15,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "brew-2026-09-16",
+   "written": "2026-09-18T07:05:07+00:00"
+  },
+  "described": {
+   "mean": 0.21200000000000002,
+   "std": 0.022803508501982758,
+   "majority": 0.22,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "google/gemini-3.8-flash",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "brew-2026-09-16",
+   "written": "2026-09-18T07:05:13+00:00"
+  },
+  "uniform": {
+   "mean": 0.18,
+   "std": 0.019999999999999993,
+   "majority": 0.09,
+   "exact": null,
+   "any_hit": null,
+   "mean_picks": null,
+   "analytic_floor": 0.2,
+   "n_items": 100,
+   "n_draws": 5,
+   "n_api_fail": 0,
+   "invalid_rate": 0.0,
+   "n_options_per_list": [
+    5
+   ],
+   "model": "seeded-uniform",
+   "prompt_version": "lucky-2026-09-16",
+   "instrument": "brew-2026-09-16",
+   "written": "2026-09-18T07:05:13+00:00"
+  }
+ }
+}

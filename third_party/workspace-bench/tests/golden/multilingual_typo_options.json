@@ -1,0 +1,2408 @@
+{
+ "_meta": {
+  "source": "bank mc blocks (source repo hard_mt_mc_options.py, Opus-written confusables), mc_judge.LANG_CONFUSABLES for languages, seeded draws over the bank for typo corrections; order = sha256(f'{MC_SEED}|{name}|{role}') shuffle as in the source mc_judge",
+  "prompt_version": "mc-2026-09-16"
+ },
+ "options": {
+  "mlt-ar-adrenaline-rush": {
+   "correction": {
+    "options": [
+     "the hormone adrenaline",
+     "antibiotic drug",
+     "the science of genetics",
+     "insect cocoon",
+     "charitable giving",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Urdu",
+     "Arabic",
+     "Pashto",
+     "Persian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-ar-amphibians": {
+   "correction": {
+    "options": [
+     "insect cocoon",
+     "economic development",
+     "dishwashing machine",
+     "the amphibian class",
+     "coniferous trees",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Pashto",
+     "Persian",
+     "Hebrew",
+     "Urdu",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-ar-anthropology": {
+   "correction": {
+    "options": [
+     "coniferous trees",
+     "environmental sustainability",
+     "cultural anthropology",
+     "blood cholesterol",
+     "the science of genetics",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Pashto",
+     "Hebrew",
+     "Arabic",
+     "Persian",
+     "Urdu",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-ar-arabisk": {
+   "correction": {
+    "options": [
+     "the study of ancient life",
+     "severe drought",
+     "insulated lunch box",
+     "arabesque woodwork",
+     "tourist landmark",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Urdu",
+     "Persian",
+     "Pashto",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-ar-biruqratiyya": {
+   "correction": {
+    "options": [
+     "blood dialysis treatment",
+     "Earth's atmosphere",
+     "large-scale electrification",
+     "administrative bureaucracy",
+     "air pollutant substances",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Persian",
+     "Urdu",
+     "Pashto",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-ar-cholesterol": {
+   "correction": {
+    "options": [
+     "blood cholesterol",
+     "microwave oven",
+     "acquired immunity",
+     "carpentry workshop",
+     "member of parliament",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Persian",
+     "Pashto",
+     "Hebrew",
+     "Urdu",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-ar-conifers": {
+   "correction": {
+    "options": [
+     "potter's wheel",
+     "antibiotic drug",
+     "coral reefs",
+     "hardening of the arteries",
+     "coniferous trees",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Urdu",
+     "Pashto",
+     "Arabic",
+     "Persian",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-ar-coral": {
+   "correction": {
+    "options": [
+     "social justice activist",
+     "the hormone adrenaline",
+     "sustained continuity",
+     "coral reefs",
+     "welding electrode",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Pashto",
+     "Arabic",
+     "Persian",
+     "Urdu",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-ar-cortisol-stress": {
+   "correction": {
+    "options": [
+     "household refrigerator",
+     "biological diversity",
+     "insulated lunch box",
+     "the stress hormone cortisol",
+     "pottery making",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Pashto",
+     "Urdu",
+     "Persian",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-el-aftokinitodromos": {
+   "correction": {
+    "options": [
+     "public safety",
+     "motorway highway",
+     "tornado whirlwind",
+     "a fossil specimen",
+     "chemotherapy treatment",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Turkish",
+     "Macedonian",
+     "Greek",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-el-aftokinitodromos-2": {
+   "correction": {
+    "options": [
+     "blood dialysis treatment",
+     "national independence",
+     "controlled-access highway",
+     "code decryption",
+     "electric jigsaw",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Albanian",
+     "Greek",
+     "Turkish",
+     "Macedonian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-el-aggeioplastiki": {
+   "correction": {
+    "options": [
+     "the amphibian class",
+     "astronomical observatory",
+     "plant photosynthesis",
+     "balloon angioplasty procedure",
+     "the science of genetics",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Greek",
+     "Bulgarian",
+     "Macedonian",
+     "Albanian",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-el-aimokatharsi": {
+   "correction": {
+    "options": [
+     "absolutely indispensable",
+     "welding electrode",
+     "water evaporation",
+     "blood dialysis treatment",
+     "flowering seed plants",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Albanian",
+     "Greek",
+     "Macedonian",
+     "Bulgarian",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-el-aktinotherapeia": {
+   "correction": {
+    "options": [
+     "economic development",
+     "silk production",
+     "suppression of the immune system",
+     "radiation therapy for tumors",
+     "social justice activist",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Albanian",
+     "Bulgarian",
+     "Turkish",
+     "Greek",
+     "Macedonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-el-anemostrovilos": {
+   "correction": {
+    "options": [
+     "absolutely indispensable",
+     "large-scale electrification",
+     "antibiotic drug",
+     "tornado whirlwind",
+     "survey questionnaire",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Macedonian",
+     "Greek",
+     "Turkish",
+     "Bulgarian",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-el-angeiosperma": {
+   "correction": {
+    "options": [
+     "welding electrode",
+     "coronary artery bypass grafting",
+     "severe drought",
+     "blood dialysis treatment",
+     "flowering seed plants",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Turkish",
+     "Albanian",
+     "Macedonian",
+     "Greek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-el-anosokatastoli": {
+   "correction": {
+    "options": [
+     "suppression of the immune system",
+     "arabesque woodwork",
+     "electric jigsaw",
+     "pottery making",
+     "the stress hormone cortisol",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Macedonian",
+     "Greek",
+     "Turkish",
+     "Albanian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-el-apokryptografisi": {
+   "correction": {
+    "options": [
+     "a dental surgeon",
+     "large-scale electrification",
+     "chemotherapy treatment",
+     "code decryption",
+     "diplomatic embassy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Macedonian",
+     "Greek",
+     "Albanian",
+     "Turkish",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-fi-aivotarahdys": {
+   "correction": {
+    "options": [
+     "electroencephalography brain recording",
+     "brain concussion",
+     "coronary artery bypass grafting",
+     "microwave oven",
+     "biological diversity",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Swedish",
+     "Latvian",
+     "Hungarian",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-fi-astianpesukone": {
+   "correction": {
+    "options": [
+     "carnivorous plant",
+     "potter's wheel",
+     "Earth's atmosphere",
+     "dishwashing machine",
+     "acoustic echolocation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Swedish",
+     "Hungarian",
+     "Finnish",
+     "Estonian",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-fi-hammaslaakari": {
+   "correction": {
+    "options": [
+     "invertebrate animals",
+     "a dental surgeon",
+     "suppression of the immune system",
+     "severe drought",
+     "sustained continuity",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Estonian",
+     "Latvian",
+     "Swedish",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-fi-kansanedustaja": {
+   "correction": {
+    "options": [
+     "acquired immunity",
+     "hardening of the arteries",
+     "deciduous broadleaf forest",
+     "disease infections",
+     "member of parliament",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Finnish",
+     "Latvian",
+     "Swedish",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-fi-kansanedustajana": {
+   "correction": {
+    "options": [
+     "public safety",
+     "cultural anthropology",
+     "nuclear weapons",
+     "thyroid gland",
+     "member of parliament",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Estonian",
+     "Swedish",
+     "Hungarian",
+     "Finnish",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-fi-kilpirauhanen": {
+   "correction": {
+    "options": [
+     "thyroid gland",
+     "severe drought",
+     "leather tanning",
+     "hatred of Jews",
+     "coronary artery bypass grafting",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Latvian",
+     "Hungarian",
+     "Swedish",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-fi-kumisaappaat": {
+   "correction": {
+    "options": [
+     "pot lid",
+     "public safety",
+     "rubber boots",
+     "a dental surgeon",
+     "tornado whirlwind",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Swedish",
+     "Estonian",
+     "Finnish",
+     "Hungarian",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-fi-mikroaaltouuni": {
+   "correction": {
+    "options": [
+     "dripstone cave",
+     "thyroid gland",
+     "coral reefs",
+     "microwave oven",
+     "chronic obstructive pulmonary disease",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Estonian",
+     "Swedish",
+     "Finnish",
+     "Latvian",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-fi-ompelukone": {
+   "correction": {
+    "options": [
+     "the science of genetics",
+     "records management",
+     "sewing machine",
+     "arabesque woodwork",
+     "leather tanning",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Hungarian",
+     "Estonian",
+     "Swedish",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-he-antibiotika": {
+   "correction": {
+    "options": [
+     "antibiotic drug",
+     "arabesque woodwork",
+     "vernal equinox",
+     "artificial neural network",
+     "microwave oven",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Arabic",
+     "Aramaic",
+     "Maltese",
+     "Yiddish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-he-antisemitism": {
+   "correction": {
+    "options": [
+     "hatred of Jews",
+     "household refrigerator",
+     "thyroid gland",
+     "tornado whirlwind",
+     "code decryption",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Yiddish",
+     "Maltese",
+     "Arabic",
+     "Aramaic",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-he-archaeology": {
+   "correction": {
+    "options": [
+     "tornado whirlwind",
+     "motorway highway",
+     "electric jigsaw",
+     "archaeological science",
+     "charitable giving",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Arabic",
+     "Maltese",
+     "Yiddish",
+     "Aramaic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-he-caramelization-typo": {
+   "correction": {
+    "options": [
+     "dishwashing machine",
+     "artificial neural network",
+     "sugar caramelization",
+     "air humidity",
+     "sewing machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Yiddish",
+     "Maltese",
+     "Aramaic",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-he-chemotherapia": {
+   "correction": {
+    "options": [
+     "chronic obstructive pulmonary disease",
+     "coral reefs",
+     "chemotherapy treatment",
+     "dishwashing machine",
+     "code decryption",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Aramaic",
+     "Arabic",
+     "Hebrew",
+     "Maltese",
+     "Yiddish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-he-detergents-typo": {
+   "correction": {
+    "options": [
+     "chronic obstructive pulmonary disease",
+     "a dental surgeon",
+     "large-scale electrification",
+     "pottery making",
+     "surfactant detergents",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Maltese",
+     "Yiddish",
+     "Aramaic",
+     "Hebrew",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-he-elektroda": {
+   "correction": {
+    "options": [
+     "code decryption",
+     "pottery making",
+     "welding electrode",
+     "suppression of the immune system",
+     "river flooding",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Aramaic",
+     "Arabic",
+     "Maltese",
+     "Yiddish",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-he-encyclopedia": {
+   "correction": {
+    "options": [
+     "general encyclopedia",
+     "astronomical observatory",
+     "electric jigsaw",
+     "antibiotic drug",
+     "civil registrar official",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Yiddish",
+     "Maltese",
+     "Arabic",
+     "Hebrew",
+     "Aramaic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-he-endocrinologia": {
+   "correction": {
+    "options": [
+     "survey questionnaire",
+     "chronic obstructive pulmonary disease",
+     "diplomatic embassy",
+     "endocrinology medical field",
+     "anticyclone system",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Maltese",
+     "Arabic",
+     "Hebrew",
+     "Aramaic",
+     "Yiddish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-hu-anyakonyvvezeto": {
+   "correction": {
+    "options": [
+     "tornado whirlwind",
+     "nuclear weapons",
+     "coniferous trees",
+     "civil registrar official",
+     "dishwashing machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Finnish",
+     "Romanian",
+     "Hungarian",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-hu-asztalosmuhely": {
+   "correction": {
+    "options": [
+     "flowering seed plants",
+     "carpentry workshop",
+     "means of communication",
+     "chronic obstructive pulmonary disease",
+     "chemotherapy treatment",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Estonian",
+     "Finnish",
+     "Romanian",
+     "Hungarian",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-hu-csavarhuzo": {
+   "correction": {
+    "options": [
+     "diplomatic embassy",
+     "a screwdriver tool",
+     "records management",
+     "acquired immunity",
+     "sewing machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Finnish",
+     "Estonian",
+     "Hungarian",
+     "Romanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-hu-cseppkobarlang": {
+   "correction": {
+    "options": [
+     "coniferous trees",
+     "student of natural science",
+     "dripstone cave",
+     "endocrinology medical field",
+     "the study of ancient life",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Turkish",
+     "Romanian",
+     "Estonian",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-hu-csillagvizsgalo": {
+   "correction": {
+    "options": [
+     "chemotherapy treatment",
+     "absolutely indispensable",
+     "astronomical observatory",
+     "plant photosynthesis",
+     "vernal equinox",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Romanian",
+     "Finnish",
+     "Estonian",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-hu-elengedhetetlen-01": {
+   "correction": {
+    "options": [
+     "leather tanning",
+     "antibiotic drug",
+     "administrative bureaucracy",
+     "absolutely indispensable",
+     "pot lid",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Romanian",
+     "Finnish",
+     "Turkish",
+     "Hungarian",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-hu-erelmeszesedes": {
+   "correction": {
+    "options": [
+     "political revolution",
+     "cultural anthropology",
+     "hardening of the arteries",
+     "biological diversity",
+     "carnivorous plant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Romanian",
+     "Hungarian",
+     "Finnish",
+     "Estonian",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-hu-fazekaskorong": {
+   "correction": {
+    "options": [
+     "dripstone cave",
+     "pottery making",
+     "potter's wheel",
+     "chemotherapy treatment",
+     "a dental surgeon",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Finnish",
+     "Estonian",
+     "Romanian",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-id-berkesinambungan": {
+   "correction": {
+    "options": [
+     "public safety",
+     "sustained continuity",
+     "endocrinology medical field",
+     "river flooding",
+     "welding electrode",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Malay",
+     "Javanese",
+     "Tagalog",
+     "Swahili",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-id-fotosintesis": {
+   "correction": {
+    "options": [
+     "astronomical observatory",
+     "plant photosynthesis",
+     "public safety",
+     "chemotherapy treatment",
+     "double tea kettle",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Indonesian",
+     "Malay",
+     "Swahili",
+     "Javanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-id-invertebrata": {
+   "correction": {
+    "options": [
+     "invertebrate animals",
+     "means of communication",
+     "sustained continuity",
+     "dishwashing machine",
+     "suppression of the immune system",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Tagalog",
+     "Javanese",
+     "Malay",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-id-keberlanjutan": {
+   "correction": {
+    "options": [
+     "plant photosynthesis",
+     "acoustic echolocation",
+     "astronomical observatory",
+     "carnivorous plant",
+     "environmental sustainability",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Malay",
+     "Tagalog",
+     "Javanese",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-id-kekeringan": {
+   "correction": {
+    "options": [
+     "a screwdriver tool",
+     "arabesque woodwork",
+     "severe drought",
+     "plant photosynthesis",
+     "carnivorous plant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Swahili",
+     "Malay",
+     "Javanese",
+     "Tagalog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-id-kelembapan": {
+   "correction": {
+    "options": [
+     "public safety",
+     "air humidity",
+     "chemotherapy treatment",
+     "the hormone adrenaline",
+     "thyroid gland",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Swahili",
+     "Malay",
+     "Javanese",
+     "Tagalog",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-id-kelumpuhan": {
+   "correction": {
+    "options": [
+     "biological diversity",
+     "bodily paralysis",
+     "carpentry workshop",
+     "plant photosynthesis",
+     "endocrinology medical field",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Indonesian",
+     "Javanese",
+     "Swahili",
+     "Malay",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-id-kepompong": {
+   "correction": {
+    "options": [
+     "carnivorous plant",
+     "code decryption",
+     "leather tanning",
+     "insect cocoon",
+     "the amphibian class",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Javanese",
+     "Malay",
+     "Tagalog",
+     "Indonesian",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-ko-air-pollutants": {
+   "correction": {
+    "options": [
+     "tourist landmark",
+     "the hormone adrenaline",
+     "air pollutant substances",
+     "artificial neural network",
+     "dishwashing machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Chinese",
+     "Japanese",
+     "Vietnamese",
+     "Mongolian",
+     "Korean",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-ko-airpurifier": {
+   "correction": {
+    "options": [
+     "sugar caramelization",
+     "electric jigsaw",
+     "air purifier",
+     "silk production",
+     "bodily paralysis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Chinese",
+     "Vietnamese",
+     "Japanese",
+     "Mongolian",
+     "Korean",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-ko-artificial-neural-network": {
+   "correction": {
+    "options": [
+     "the polar aurora",
+     "tourist landmark",
+     "economic development",
+     "artificial neural network",
+     "flowering seed plants",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Chinese",
+     "Japanese",
+     "Korean",
+     "Vietnamese",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-ko-cabg": {
+   "correction": {
+    "options": [
+     "hardening of the arteries",
+     "large-scale electrification",
+     "records management",
+     "coronary artery bypass grafting",
+     "student of natural science",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Chinese",
+     "Vietnamese",
+     "Korean",
+     "Japanese",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-ko-carnivorous-plant": {
+   "correction": {
+    "options": [
+     "leather tanning",
+     "acquired immunity",
+     "the science of genetics",
+     "charitable giving",
+     "carnivorous plant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Mongolian",
+     "Japanese",
+     "Vietnamese",
+     "Chinese",
+     "Korean",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-ko-cfrp": {
+   "correction": {
+    "options": [
+     "air purifier",
+     "public safety",
+     "Earth's atmosphere",
+     "carbon fiber reinforced plastic",
+     "welding electrode",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Korean",
+     "Mongolian",
+     "Chinese",
+     "Vietnamese",
+     "Japanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-ko-copd": {
+   "correction": {
+    "options": [
+     "air purifier",
+     "chronic obstructive pulmonary disease",
+     "electroencephalography brain recording",
+     "acoustic echolocation",
+     "the study of ancient life",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Korean",
+     "Chinese",
+     "Japanese",
+     "Mongolian",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-ko-deciduous-broadleaf-forest": {
+   "correction": {
+    "options": [
+     "sugar caramelization",
+     "deciduous broadleaf forest",
+     "coniferous trees",
+     "water evaporation",
+     "motorway highway",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Japanese",
+     "Mongolian",
+     "Vietnamese",
+     "Korean",
+     "Chinese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-pl-bezpieczenstwo": {
+   "correction": {
+    "options": [
+     "blended mixture",
+     "public safety",
+     "blood dialysis treatment",
+     "nuclear weapons",
+     "code decryption",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Czech",
+     "Slovak",
+     "Croatian",
+     "Polish",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-pl-bioroznorodnosc": {
+   "correction": {
+    "options": [
+     "radiation therapy for tumors",
+     "general encyclopedia",
+     "biological diversity",
+     "hatred of Jews",
+     "water evaporation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Czech",
+     "Ukrainian",
+     "Croatian",
+     "Slovak",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-pl-echolokacja": {
+   "correction": {
+    "options": [
+     "survey questionnaire",
+     "public safety",
+     "acoustic echolocation",
+     "pot lid",
+     "biological diversity",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Czech",
+     "Polish",
+     "Slovak",
+     "Croatian",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-pl-elektroencefalografia": {
+   "correction": {
+    "options": [
+     "flowering seed plants",
+     "charitable giving",
+     "insulated lunch box",
+     "electroencephalography brain recording",
+     "hardening of the arteries",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Croatian",
+     "Polish",
+     "Czech",
+     "Ukrainian",
+     "Slovak",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-pl-fotosynteza": {
+   "correction": {
+    "options": [
+     "chemotherapy treatment",
+     "plant photosynthesis",
+     "Earth's atmosphere",
+     "survey questionnaire",
+     "endocrinology medical field",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Czech",
+     "Croatian",
+     "Ukrainian",
+     "Slovak",
+     "Polish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-pl-garbarstwo": {
+   "correction": {
+    "options": [
+     "political revolution",
+     "leather tanning",
+     "blood cholesterol",
+     "pottery making",
+     "economic development",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Ukrainian",
+     "Croatian",
+     "Czech",
+     "Slovak",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-pl-jedwabnictwo": {
+   "correction": {
+    "options": [
+     "a fossil specimen",
+     "silk production",
+     "welding electrode",
+     "insect cocoon",
+     "blood dialysis treatment",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Czech",
+     "Ukrainian",
+     "Slovak",
+     "Croatian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-pl-kwestionariusz": {
+   "correction": {
+    "options": [
+     "survey questionnaire",
+     "environmental sustainability",
+     "chronic obstructive pulmonary disease",
+     "the stress hormone cortisol",
+     "coniferous trees",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Slovak",
+     "Croatian",
+     "Czech",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-ru-anticyclone": {
+   "correction": {
+    "options": [
+     "political revolution",
+     "sustained continuity",
+     "surfactant detergents",
+     "anticyclone system",
+     "absolutely indispensable",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Ukrainian",
+     "Russian",
+     "Serbian",
+     "Bulgarian",
+     "Belarusian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-ru-blagotvoritelnost": {
+   "correction": {
+    "options": [
+     "charitable giving",
+     "carpentry workshop",
+     "leather tanning",
+     "sustained continuity",
+     "sugar caramelization",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Serbian",
+     "Bulgarian",
+     "Russian",
+     "Ukrainian",
+     "Belarusian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-ru-delo-01": {
+   "correction": {
+    "options": [
+     "insulated lunch box",
+     "records management",
+     "potter's wheel",
+     "hardening of the arteries",
+     "sustained continuity",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Serbian",
+     "Ukrainian",
+     "Russian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-ru-dostoprimechatelnost": {
+   "correction": {
+    "options": [
+     "tornado whirlwind",
+     "electric jigsaw",
+     "tourist landmark",
+     "sewing machine",
+     "the stress hormone cortisol",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Serbian",
+     "Russian",
+     "Ukrainian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-ru-elektrifikatsiya": {
+   "correction": {
+    "options": [
+     "large-scale electrification",
+     "the hormone adrenaline",
+     "social justice activist",
+     "controlled-access highway",
+     "a screwdriver tool",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Russian",
+     "Serbian",
+     "Belarusian",
+     "Ukrainian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-ru-elektrolobzik": {
+   "correction": {
+    "options": [
+     "bodily paralysis",
+     "electric jigsaw",
+     "chemotherapy treatment",
+     "brain concussion",
+     "code decryption",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Russian",
+     "Serbian",
+     "Belarusian",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-ru-equinox": {
+   "correction": {
+    "options": [
+     "vernal equinox",
+     "bodily paralysis",
+     "civil registrar official",
+     "electric jigsaw",
+     "public safety",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Ukrainian",
+     "Belarusian",
+     "Serbian",
+     "Bulgarian",
+     "Russian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-ru-estestvoispytatel": {
+   "correction": {
+    "options": [
+     "a fossil specimen",
+     "student of natural science",
+     "pot lid",
+     "the hormone adrenaline",
+     "artificial neural network",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Russian",
+     "Bulgarian",
+     "Ukrainian",
+     "Serbian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-sw-kifuniko": {
+   "correction": {
+    "options": [
+     "flowering seed plants",
+     "large-scale electrification",
+     "air pollutant substances",
+     "nuclear weapons",
+     "pot lid",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Zulu",
+     "Swahili",
+     "Hausa",
+     "Yoruba",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-sw-maambukizi": {
+   "correction": {
+    "options": [
+     "archaeological science",
+     "social justice activist",
+     "a screwdriver tool",
+     "coronary artery bypass grafting",
+     "disease infections",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Zulu",
+     "Swahili",
+     "Indonesian",
+     "Yoruba",
+     "Hausa",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlt-sw-maendeleo": {
+   "correction": {
+    "options": [
+     "survey questionnaire",
+     "insect cocoon",
+     "pottery making",
+     "balloon angioplasty procedure",
+     "economic development",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Zulu",
+     "Yoruba",
+     "Indonesian",
+     "Swahili",
+     "Hausa",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-sw-mafuriko": {
+   "correction": {
+    "options": [
+     "river flooding",
+     "water evaporation",
+     "public safety",
+     "endocrinology medical field",
+     "severe drought",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Zulu",
+     "Yoruba",
+     "Swahili",
+     "Hausa",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-sw-mapinduzi": {
+   "correction": {
+    "options": [
+     "nuclear weapons",
+     "sustained continuity",
+     "political revolution",
+     "large-scale electrification",
+     "absolutely indispensable",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hausa",
+     "Indonesian",
+     "Swahili",
+     "Yoruba",
+     "Zulu",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-sw-mawasiliano": {
+   "correction": {
+    "options": [
+     "a dental surgeon",
+     "welding electrode",
+     "means of communication",
+     "vernal equinox",
+     "the science of genetics",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Zulu",
+     "Hausa",
+     "Yoruba",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-sw-mchanganyiko": {
+   "correction": {
+    "options": [
+     "blood dialysis treatment",
+     "astronomical observatory",
+     "blended mixture",
+     "bodily paralysis",
+     "biological diversity",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Swahili",
+     "Indonesian",
+     "Yoruba",
+     "Zulu",
+     "Hausa",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-sw-mwanaharakati": {
+   "correction": {
+    "options": [
+     "motorway highway",
+     "coronary artery bypass grafting",
+     "controlled-access highway",
+     "insect cocoon",
+     "social justice activist",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Zulu",
+     "Yoruba",
+     "Indonesian",
+     "Swahili",
+     "Hausa",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-tr-bagimsizlik": {
+   "correction": {
+    "options": [
+     "national independence",
+     "blended mixture",
+     "the study of ancient life",
+     "carbon fiber reinforced plastic",
+     "general encyclopedia",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Azerbaijani",
+     "Uzbek",
+     "Hungarian",
+     "Kazakh",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-tr-bagisiklik-immunity": {
+   "correction": {
+    "options": [
+     "acquired immunity",
+     "motorway highway",
+     "pot lid",
+     "rubber boots",
+     "endocrinology medical field",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Kazakh",
+     "Hungarian",
+     "Azerbaijani",
+     "Turkish",
+     "Uzbek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-tr-biyocesitlilik": {
+   "correction": {
+    "options": [
+     "balloon angioplasty procedure",
+     "large-scale electrification",
+     "biological diversity",
+     "dishwashing machine",
+     "the hormone adrenaline",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Kazakh",
+     "Uzbek",
+     "Turkish",
+     "Azerbaijani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-tr-buharlasma": {
+   "correction": {
+    "options": [
+     "public safety",
+     "balloon angioplasty procedure",
+     "diplomatic embassy",
+     "acoustic echolocation",
+     "water evaporation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Uzbek",
+     "Hungarian",
+     "Kazakh",
+     "Turkish",
+     "Azerbaijani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlt-tr-buyukelcilik-swap": {
+   "correction": {
+    "options": [
+     "the stress hormone cortisol",
+     "biological diversity",
+     "household refrigerator",
+     "vernal equinox",
+     "diplomatic embassy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Kazakh",
+     "Hungarian",
+     "Turkish",
+     "Uzbek",
+     "Azerbaijani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-tr-buzdolabi": {
+   "correction": {
+    "options": [
+     "administrative bureaucracy",
+     "public safety",
+     "household refrigerator",
+     "civil registrar official",
+     "insect cocoon",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Uzbek",
+     "Kazakh",
+     "Hungarian",
+     "Azerbaijani",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-tr-caydanlik": {
+   "correction": {
+    "options": [
+     "double tea kettle",
+     "severe drought",
+     "blood dialysis treatment",
+     "astronomical observatory",
+     "air purifier",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Kazakh",
+     "Hungarian",
+     "Uzbek",
+     "Azerbaijani",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-tr-comlekcilik": {
+   "correction": {
+    "options": [
+     "diplomatic embassy",
+     "suppression of the immune system",
+     "tornado whirlwind",
+     "nuclear weapons",
+     "pottery making",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Azerbaijani",
+     "Kazakh",
+     "Hungarian",
+     "Uzbek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-vi-co-sinh-vat-hoc": {
+   "correction": {
+    "options": [
+     "air humidity",
+     "artificial neural network",
+     "the study of ancient life",
+     "leather tanning",
+     "brain concussion",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Thai",
+     "Vietnamese",
+     "Lao",
+     "Khmer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-vi-cuc-quang": {
+   "correction": {
+    "options": [
+     "silk production",
+     "coronary artery bypass grafting",
+     "the polar aurora",
+     "cultural anthropology",
+     "insulated lunch box",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Thai",
+     "Indonesian",
+     "Khmer",
+     "Lao",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-vi-di-truyen-hoc": {
+   "correction": {
+    "options": [
+     "endocrinology medical field",
+     "tornado whirlwind",
+     "the science of genetics",
+     "surfactant detergents",
+     "public safety",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Khmer",
+     "Thai",
+     "Indonesian",
+     "Lao",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-vi-hat-nhan": {
+   "correction": {
+    "options": [
+     "silk production",
+     "civil registrar official",
+     "nuclear weapons",
+     "electric jigsaw",
+     "sewing machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Thai",
+     "Indonesian",
+     "Khmer",
+     "Lao",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-vi-hoa-thach": {
+   "correction": {
+    "options": [
+     "dripstone cave",
+     "blood dialysis treatment",
+     "rubber boots",
+     "chemotherapy treatment",
+     "a fossil specimen",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Khmer",
+     "Lao",
+     "Vietnamese",
+     "Indonesian",
+     "Thai",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlt-vi-hop-com-giu-nhiet": {
+   "correction": {
+    "options": [
+     "surfactant detergents",
+     "dripstone cave",
+     "insulated lunch box",
+     "Earth's atmosphere",
+     "general encyclopedia",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Khmer",
+     "Thai",
+     "Lao",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlt-vi-khi-quyen": {
+   "correction": {
+    "options": [
+     "Earth's atmosphere",
+     "microwave oven",
+     "severe drought",
+     "blood dialysis treatment",
+     "student of natural science",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Khmer",
+     "Lao",
+     "Indonesian",
+     "Thai",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlt-vi-lo-vi-song": {
+   "correction": {
+    "options": [
+     "microwave oven",
+     "leather tanning",
+     "blood cholesterol",
+     "silk production",
+     "administrative bureaucracy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Khmer",
+     "Lao",
+     "Indonesian",
+     "Thai",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  }
+ }
+}

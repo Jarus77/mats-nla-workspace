@@ -1,0 +1,1308 @@
+{
+ "_meta": {
+  "source": "bank mc blocks (source repo hard_mt_mc_options.py, Opus-written confusables), mc_judge.LANG_CONFUSABLES for languages, seeded draws over the bank for typo corrections; order = sha256(f'{MC_SEED}|{name}|{role}') shuffle as in the source mc_judge",
+  "prompt_version": "mc-2026-09-16"
+ },
+ "options": {
+  "tyh-novel-interpretability-hand": {
+   "correction": {
+    "options": [
+     "296",
+     "234",
+     "interpretability",
+     "aestivation",
+     "chitinous",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-novel-narcissism-hand": {
+   "correction": {
+    "options": [
+     "bronchodilator",
+     "narcissism",
+     "prophesy",
+     "stationery",
+     "chemosynthesis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-acciaccatura-b6": {
+   "correction": {
+    "options": [
+     "58",
+     "chrysalis",
+     "acciaccatura",
+     "antihistamine",
+     "164",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-novel-aestivation": {
+   "correction": {
+    "options": [
+     "deference",
+     "aestivation",
+     "amatriciana",
+     "58",
+     "324",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-aleatoric": {
+   "correction": {
+    "options": [
+     "aleatoric",
+     "ordnance",
+     "depreciate",
+     "adsorption",
+     "164",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-novel-amatriciana": {
+   "correction": {
+    "options": [
+     "amatriciana",
+     "amiodarone",
+     "coloratura",
+     "anaphylaxis",
+     "acclamation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-novel-amiodarone": {
+   "correction": {
+    "options": [
+     "chrysalis",
+     "amiodarone",
+     "296",
+     "insidious",
+     "aleatoric",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-anaphylaxis": {
+   "correction": {
+    "options": [
+     "58",
+     "chromatophores",
+     "amatriciana",
+     "anaphylaxis",
+     "chaparral",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-angiosperm": {
+   "correction": {
+    "options": [
+     "climactic",
+     "conurbation",
+     "archipelago",
+     "angiosperm",
+     "bronchiectasis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-anticoagulant": {
+   "correction": {
+    "options": [
+     "conformation",
+     "anticoagulant",
+     "bronchodilator",
+     "narcissism",
+     "bathymetry",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-anticyclone": {
+   "correction": {
+    "options": [
+     "chemosynthesis",
+     "acciaccatura",
+     "arpeggiated",
+     "anticyclone",
+     "depreciate",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-antihistamine": {
+   "correction": {
+    "options": [
+     "antihistamine",
+     "prostrate",
+     "chaparral",
+     "stationery",
+     "chrysalis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-novel-appendectomy": {
+   "correction": {
+    "options": [
+     "chiaroscuro",
+     "appendectomy",
+     "hyperbola",
+     "contrabassoon",
+     "364",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-appoggiatura": {
+   "correction": {
+    "options": [
+     "chiaroscuro",
+     "appoggiatura",
+     "chateaubriand",
+     "allusion",
+     "cassoulet",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-archipelago": {
+   "correction": {
+    "options": [
+     "cephalopods",
+     "veracity",
+     "cartography",
+     "chimichurri",
+     "archipelago",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-arpeggiated": {
+   "correction": {
+    "options": [
+     "proscription",
+     "clavichord",
+     "cephalopods",
+     "arpeggiated",
+     "deference",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-arthropods": {
+   "correction": {
+    "options": [
+     "chrysanthemum",
+     "contrabassoon",
+     "antihistamine",
+     "narcissism",
+     "arthropods",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-avgolemono": {
+   "correction": {
+    "options": [
+     "anticyclone",
+     "acclamation",
+     "123",
+     "bathymetry",
+     "avgolemono",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-bathymetry": {
+   "correction": {
+    "options": [
+     "chinoiserie",
+     "clavichord",
+     "appendectomy",
+     "bronchodilator",
+     "bathymetry",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-bouillabaisse": {
+   "correction": {
+    "options": [
+     "chateaubriand",
+     "324",
+     "bouillabaisse",
+     "hyperbola",
+     "proscription",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-novel-bronchiectasis": {
+   "correction": {
+    "options": [
+     "effluence",
+     "58",
+     "bronchiectasis",
+     "aestivation",
+     "cardiomyopathy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-novel-bronchodilator": {
+   "correction": {
+    "options": [
+     "bronchodilator",
+     "corporeal",
+     "anaphylaxis",
+     "chrysanthemum",
+     "confluence",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-novel-bryophytes": {
+   "correction": {
+    "options": [
+     "sandpiper",
+     "anaphylaxis",
+     "bryophytes",
+     "veracity",
+     "prophecies",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-novel-calligraphy": {
+   "correction": {
+    "options": [
+     "bryophytes",
+     "tortuous",
+     "cephalopods",
+     "calligraphy",
+     "chateaubriand",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-carbonara": {
+   "correction": {
+    "options": [
+     "deference",
+     "charcuterie",
+     "depreciate",
+     "429",
+     "carbonara",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-cardiomyopathy": {
+   "correction": {
+    "options": [
+     "bryophytes",
+     "archipelago",
+     "interpretability",
+     "296",
+     "cardiomyopathy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-cartography": {
+   "correction": {
+    "options": [
+     "bouillabaisse",
+     "anaphylaxis",
+     "cartography",
+     "435",
+     "hyperthermia",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-novel-cassoulet": {
+   "correction": {
+    "options": [
+     "immanence",
+     "cassoulet",
+     "bronchiectasis",
+     "carbonara",
+     "intestate",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-cephalapods": {
+   "correction": {
+    "options": [
+     "auspicious",
+     "contrabassoon",
+     "chateaubriand",
+     "cephalopods",
+     "avgolemono",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-chaparral": {
+   "correction": {
+    "options": [
+     "Cassation",
+     "chaparral",
+     "296",
+     "cassoulet",
+     "chloroplast",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-charcuterie": {
+   "correction": {
+    "options": [
+     "157",
+     "charcuterie",
+     "appendectomy",
+     "anticyclone",
+     "58",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-chateaubriand": {
+   "correction": {
+    "options": [
+     "prophecies",
+     "chloroplast",
+     "chromatophores",
+     "chateaubriand",
+     "gastronomy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-chelicerates": {
+   "correction": {
+    "options": [
+     "stationery",
+     "acciaccatura",
+     "anticoagulant",
+     "chelicerates",
+     "369",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-chemosynthesis": {
+   "correction": {
+    "options": [
+     "amatriciana",
+     "369",
+     "chemosynthesis",
+     "interpretability",
+     "364",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-novel-chiaroscuro": {
+   "correction": {
+    "options": [
+     "chiaroscuro",
+     "435",
+     "364",
+     "58",
+     "157",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-novel-chimichurri": {
+   "correction": {
+    "options": [
+     "136",
+     "chelicerates",
+     "324",
+     "chimichurri",
+     "chiaroscuro",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-chinoiserie": {
+   "correction": {
+    "options": [
+     "foundered",
+     "chinoiserie",
+     "chiaroscuro",
+     "proscription",
+     "hyperthermia",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-chitinous": {
+   "correction": {
+    "options": [
+     "123",
+     "veracity",
+     "cartography",
+     "depreciate",
+     "chitinous",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-chloroplast": {
+   "correction": {
+    "options": [
+     "avgolemono",
+     "cassoulet",
+     "cholecystectomy",
+     "chloroplast",
+     "anticyclone",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-novel-cholecystectomy": {
+   "correction": {
+    "options": [
+     "cholecystectomy",
+     "ordnance",
+     "aestivation",
+     "hyperbola",
+     "avgolemono",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-novel-chromatophores": {
+   "correction": {
+    "options": [
+     "chelicerates",
+     "bryophytes",
+     "sandpiper",
+     "123",
+     "chromatophores",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-chrysalis": {
+   "correction": {
+    "options": [
+     "arpeggiated",
+     "364",
+     "chinoiserie",
+     "interpretability",
+     "chrysalis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-novel-chrysanthemum": {
+   "correction": {
+    "options": [
+     "coloratura",
+     "chrysanthemum",
+     "archipelago",
+     "cholecystectomy",
+     "arpeggiated",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-clavichord": {
+   "correction": {
+    "options": [
+     "carbonara",
+     "clavichord",
+     "tortuous",
+     "164",
+     "bouillabaisse",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-coleoptera": {
+   "correction": {
+    "options": [
+     "429",
+     "Coleoptera",
+     "exorcised",
+     "torturous",
+     "auspicious",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-coloratura": {
+   "correction": {
+    "options": [
+     "veracity",
+     "coloratura",
+     "291",
+     "immanence",
+     "amatriciana",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-confluence": {
+   "correction": {
+    "options": [
+     "foundered",
+     "confluence",
+     "angiosperm",
+     "aestivation",
+     "auspicious",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-contrabassoon": {
+   "correction": {
+    "options": [
+     "corporeal",
+     "carbonara",
+     "contrabassoon",
+     "amiodarone",
+     "aestivation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-novel-contrapposto": {
+   "correction": {
+    "options": [
+     "tortuous",
+     "contrapposto",
+     "ordnance",
+     "hyperthermia",
+     "torturous",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-novel-conurbation": {
+   "correction": {
+    "options": [
+     "contrapposto",
+     "cholecystectomy",
+     "appoggiatura",
+     "conurbation",
+     "relegation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-real-acclamation": {
+   "correction": {
+    "options": [
+     "acclamation",
+     "adsorption",
+     "chateaubriand",
+     "interpretability",
+     "364",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-real-adsorption": {
+   "correction": {
+    "options": [
+     "adsorption",
+     "torturous",
+     "archipelago",
+     "climactic",
+     "angiosperm",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-real-auspicious": {
+   "correction": {
+    "options": [
+     "bronchodilator",
+     "veracity",
+     "relegation",
+     "auspicious",
+     "chinoiserie",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-real-cassation": {
+   "correction": {
+    "options": [
+     "aleatoric",
+     "Cassation",
+     "confluence",
+     "cartography",
+     "chelicerates",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-real-climactic": {
+   "correction": {
+    "options": [
+     "veracity",
+     "depreciate",
+     "climactic",
+     "tortuous",
+     "avgolemono",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-corporeal": {
+   "correction": {
+    "options": [
+     "insidious",
+     "prostrate",
+     "torturous",
+     "corporeal",
+     "auspicious",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-real-deference": {
+   "correction": {
+    "options": [
+     "gastronomy",
+     "Cassation",
+     "deference",
+     "chimichurri",
+     "commutation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-depreciate": {
+   "correction": {
+    "options": [
+     "insidious",
+     "anticyclone",
+     "296",
+     "depreciate",
+     "commutation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-real-effluence": {
+   "correction": {
+    "options": [
+     "insolvent",
+     "coloratura",
+     "effluence",
+     "amiodarone",
+     "anticyclone",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-exorcised": {
+   "correction": {
+    "options": [
+     "effluence",
+     "narcissism",
+     "auspicious",
+     "anticyclone",
+     "exorcised",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-real-expatiate": {
+   "correction": {
+    "options": [
+     "expatiate",
+     "291",
+     "insidious",
+     "appendectomy",
+     "intestate",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-real-foundered": {
+   "correction": {
+    "options": [
+     "435",
+     "foundered",
+     "cholecystectomy",
+     "effluence",
+     "archipelago",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-real-gastronomy": {
+   "correction": {
+    "options": [
+     "clavichord",
+     "gastronomy",
+     "bryophytes",
+     "appoggiatura",
+     "sandpiper",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-real-hyperbola": {
+   "correction": {
+    "options": [
+     "hyperbola",
+     "immanence",
+     "chemosynthesis",
+     "depreciate",
+     "chiaroscuro",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-real-hyperthermia": {
+   "correction": {
+    "options": [
+     "hyperthermia",
+     "chemosynthesis",
+     "chloroplast",
+     "foundered",
+     "chromatophores",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-real-immortality": {
+   "correction": {
+    "options": [
+     "phosphorus",
+     "clavichord",
+     "296",
+     "chrysalis",
+     "immortality",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-real-insidious": {
+   "correction": {
+    "options": [
+     "archipelago",
+     "aleatoric",
+     "insidious",
+     "bronchodilator",
+     "carbonara",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-insolvent": {
+   "correction": {
+    "options": [
+     "58",
+     "angiosperm",
+     "insolvent",
+     "antihistamine",
+     "auspicious",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-intestate": {
+   "correction": {
+    "options": [
+     "296",
+     "cardiomyopathy",
+     "intestate",
+     "veracity",
+     "confluence",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-ordnance": {
+   "correction": {
+    "options": [
+     "insidious",
+     "ordnance",
+     "433",
+     "arpeggiated",
+     "chrysalis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-real-phosphorus": {
+   "correction": {
+    "options": [
+     "hyperbola",
+     "conurbation",
+     "ordnance",
+     "immanence",
+     "phosphorus",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-real-prophesy-batch5": {
+   "correction": {
+    "options": [
+     "immanence",
+     "depreciate",
+     "157",
+     "123",
+     "prophesy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-real-proscription": {
+   "correction": {
+    "options": [
+     "123",
+     "foundered",
+     "tortuous",
+     "proscription",
+     "archipelago",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-real-prostrate": {
+   "correction": {
+    "options": [
+     "prostrate",
+     "clavichord",
+     "157",
+     "auspicious",
+     "hyperbola",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-real-relegation": {
+   "correction": {
+    "options": [
+     "calligraphy",
+     "164",
+     "deference",
+     "relegation",
+     "conformation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-real-sandpiper": {
+   "correction": {
+    "options": [
+     "157",
+     "arpeggiated",
+     "136",
+     "cassoulet",
+     "sandpiper",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-real-stationery": {
+   "correction": {
+    "options": [
+     "stationery",
+     "aleatoric",
+     "chelicerates",
+     "chrysalis",
+     "tortuous",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-real-tortuous": {
+   "correction": {
+    "options": [
+     "commutation",
+     "prophecies",
+     "tortuous",
+     "Coleoptera",
+     "contrapposto",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-torturous": {
+   "correction": {
+    "options": [
+     "angiosperm",
+     "chaparral",
+     "chelicerates",
+     "torturous",
+     "483",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-real-veracity": {
+   "correction": {
+    "options": [
+     "veracity",
+     "chromatophores",
+     "acclamation",
+     "cardiomyopathy",
+     "archipelago",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-real-allusion": {
+   "correction": {
+    "options": [
+     "clavichord",
+     "allusion",
+     "Cassation",
+     "immanence",
+     "58",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-real-commutation": {
+   "correction": {
+    "options": [
+     "angiosperm",
+     "climactic",
+     "commutation",
+     "exorcised",
+     "deference",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-conformation": {
+   "correction": {
+    "options": [
+     "ordnance",
+     "296",
+     "conformation",
+     "effluence",
+     "acciaccatura",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-real-immanence": {
+   "correction": {
+    "options": [
+     "avgolemono",
+     "climactic",
+     "exorcised",
+     "immanence",
+     "torturous",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-real-prophecies": {
+   "correction": {
+    "options": [
+     "carbonara",
+     "157",
+     "prophecies",
+     "bronchodilator",
+     "123",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-arith-005": {
+   "correction": {
+    "options": [
+     "anaphylaxis",
+     "angiosperm",
+     "435",
+     "contrapposto",
+     "chemosynthesis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-arith-006-4": {
+   "correction": {
+    "options": [
+     "483",
+     "gastronomy",
+     "hyperbola",
+     "bouillabaisse",
+     "chromatophores",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "tyh-arith-156p078": {
+   "correction": {
+    "options": [
+     "chrysanthemum",
+     "chateaubriand",
+     "234",
+     "435",
+     "depreciate",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-arith-306minus149": {
+   "correction": {
+    "options": [
+     "bryophytes",
+     "veracity",
+     "stationery",
+     "immanence",
+     "157",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-arith-324": {
+   "correction": {
+    "options": [
+     "433",
+     "appendectomy",
+     "exorcised",
+     "324",
+     "insolvent",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-arith-369": {
+   "correction": {
+    "options": [
+     "chiaroscuro",
+     "369",
+     "phosphorus",
+     "arpeggiated",
+     "123",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-arith-3a": {
+   "correction": {
+    "options": [
+     "296",
+     "interpretability",
+     "429",
+     "archipelago",
+     "narcissism",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-arith-3d": {
+   "correction": {
+    "options": [
+     "bouillabaisse",
+     "ordnance",
+     "relegation",
+     "intestate",
+     "291",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-arith-512m348": {
+   "correction": {
+    "options": [
+     "291",
+     "appoggiatura",
+     "164",
+     "anaphylaxis",
+     "aleatoric",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-arith-812minus379": {
+   "correction": {
+    "options": [
+     "chrysalis",
+     "bryophytes",
+     "calligraphy",
+     "433",
+     "phosphorus",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "tyh-arith-add-47-76": {
+   "correction": {
+    "options": [
+     "coloratura",
+     "exorcised",
+     "insolvent",
+     "prophecies",
+     "123",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "tyh-arith-b2-01-2": {
+   "correction": {
+    "options": [
+     "phosphorus",
+     "136",
+     "chimichurri",
+     "torturous",
+     "antihistamine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-arith-b2-01-3": {
+   "correction": {
+    "options": [
+     "gastronomy",
+     "296",
+     "ordnance",
+     "cephalopods",
+     "anticoagulant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "tyh-arith-b2-02-3": {
+   "correction": {
+    "options": [
+     "contrabassoon",
+     "prophesy",
+     "364",
+     "stationery",
+     "58",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "tyh-arith-b2-03": {
+   "correction": {
+    "options": [
+     "expatiate",
+     "arthropods",
+     "carbonara",
+     "conformation",
+     "58",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  }
+ }
+}

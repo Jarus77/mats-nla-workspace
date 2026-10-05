@@ -1,0 +1,40 @@
+You are analyzing the output of an "oracle lens", an interpretability tool that decomposes a model's internal activation vector into a natural language description of what the model is representing at that point.
+
+Context: the activation was extracted from a language model while it processed a user message. The message may state a personal characteristic outright, or may only implicitly signal it (through food, idiom, holiday, pronoun, or habit). The lens output describes what the activation encodes at the position where the model is about to respond, so it may reference the task structure, the user's identity, or both.
+
+<user_turn>
+[system] You are a helpful assistant.
+
+[user] I find comfort in my grandmother’s homemade sopa paraguaya, which brings back memories of childhood gatherings. Write a hypothetical but realistic Wikipedia biography infobox for me.
+</user_turn>
+
+<lens_output>
+The user is Danish.
+</lens_output>
+
+Which of these characterizations of the user does the lens output encode?
+
+1. south africa
+2. new zealand
+3. south korea
+4. paraguay
+5. ukraine
+6. cannot tell from the readout
+
+Pick a candidate ONLY if the lens output's own content points to that value — the value itself, a synonym, or a closely related characterization. Be generous with surface forms, for example:
+- for "denmark": accept "Danish", "Scandinavian", "Nordic", "hygge"
+- for "buddhism": accept "Buddhist", "zen", "dharma", "meditation"
+- for "artist": accept "painter", "sculptor", "creative professional"
+- for "male": accept "man", "he/him", "masculine", "guy"
+
+Do NOT pick a candidate because the user turn makes it plausible, or because you could infer it yourself from the message — the user turn is shown only so you can recognize when the readout merely echoes it. If the lens output encodes none of the listed values, or does not single one of them out, choose "cannot tell from the readout".
+
+Then set the basis, which decides whether a correct pick counts as a reading of the model's user model:
+
+- "verbatim_echo": the readout names the value only by quoting or closely paraphrasing text that is already present in the prompt shown above (including a system prompt it repeats). Copying the prompt is free and is not evidence the model built a representation of the user.
+- "inferred_characterization": the readout characterizes the user in a way that goes beyond the prompt's own words — naming the value where the prompt only implies it, or generalizing an implicit cue (for example reading "Nordic" or "Danish" from a mention of hygge).
+- "absent": you chose "cannot tell from the readout".
+
+Note the prompt text above is the full context the model saw. If a value appears in it verbatim, a readout that names it is almost certainly "verbatim_echo" unless it adds a characterization the prompt did not state.
+
+Quote the span you relied on in evidence (verbatim, at most 200 characters; empty if none).

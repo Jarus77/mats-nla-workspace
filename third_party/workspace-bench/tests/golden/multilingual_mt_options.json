@@ -1,0 +1,2408 @@
+{
+ "_meta": {
+  "source": "bank mc blocks (source repo hard_mt_mc_options.py, Opus-written confusables), mc_judge.LANG_CONFUSABLES for languages, seeded draws over the bank for typo corrections; order = sha256(f'{MC_SEED}|{name}|{role}') shuffle as in the source mc_judge",
+  "prompt_version": "mc-2026-09-16"
+ },
+ "options": {
+  "mlh-ar-hourglass": {
+   "concept": {
+    "options": [
+     "candle clock",
+     "water clock",
+     "sundial",
+     "pendulum clock",
+     "hourglass",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Urdu",
+     "Pashto",
+     "Hebrew",
+     "Persian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-ar-octopus": {
+   "concept": {
+    "options": [
+     "octopus",
+     "jellyfish",
+     "chambered nautilus",
+     "cuttlefish",
+     "squid",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Pashto",
+     "Persian",
+     "Urdu",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-ar-sandpaper": {
+   "concept": {
+    "options": [
+     "masking tape",
+     "wood putty",
+     "sanding paper",
+     "steel wool",
+     "wire brush",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Persian",
+     "Pashto",
+     "Hebrew",
+     "Urdu",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-ar-spinal-cord": {
+   "concept": {
+    "options": [
+     "corpus callosum",
+     "cerebellum",
+     "sciatic nerve",
+     "medulla oblongata",
+     "spinal cord",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Urdu",
+     "Arabic",
+     "Persian",
+     "Pashto",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-ar-vacuum-cleaner": {
+   "concept": {
+    "options": [
+     "sewing machine",
+     "vacuum cleaner",
+     "electric fan",
+     "washing machine",
+     "dishwasher",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Pashto",
+     "Arabic",
+     "Persian",
+     "Urdu",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-ar-wool": {
+   "concept": {
+    "options": [
+     "goat cashmere",
+     "alpaca fleece",
+     "camel hair",
+     "rabbit angora",
+     "sheep wool",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Pashto",
+     "Urdu",
+     "Persian",
+     "Hebrew",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-ar-aurora": {
+   "concept": {
+    "options": [
+     "zodiacal light",
+     "noctilucent clouds",
+     "sun dog",
+     "St. Elmo's fire",
+     "northern lights",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Pashto",
+     "Persian",
+     "Arabic",
+     "Urdu",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-ar-chickenpox": {
+   "concept": {
+    "options": [
+     "measles",
+     "mumps",
+     "chickenpox",
+     "smallpox",
+     "rubella",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Urdu",
+     "Persian",
+     "Pashto",
+     "Hebrew",
+     "Arabic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-ar-loom": {
+   "concept": {
+    "options": [
+     "spinning wheel",
+     "sewing machine",
+     "cotton gin",
+     "weaving loom",
+     "knitting machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Persian",
+     "Hebrew",
+     "Urdu",
+     "Arabic",
+     "Pashto",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-ar-thyroid": {
+   "concept": {
+    "options": [
+     "thyroid gland",
+     "thymus",
+     "pineal gland",
+     "adrenal gland",
+     "pituitary gland",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Urdu",
+     "Persian",
+     "Hebrew",
+     "Arabic",
+     "Pashto",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-ar-vacuum-cleaner-2": {
+   "concept": {
+    "options": [
+     "microwave oven",
+     "washing machine",
+     "vacuum cleaner",
+     "dishwasher",
+     "air conditioner",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Pashto",
+     "Arabic",
+     "Urdu",
+     "Persian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-ar-chamomile": {
+   "concept": {
+    "options": [
+     "hibiscus",
+     "lavender",
+     "chamomile",
+     "peppermint",
+     "calendula",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Pashto",
+     "Hebrew",
+     "Urdu",
+     "Persian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-el-cooking-pot": {
+   "concept": {
+    "options": [
+     "baking sheet",
+     "cooking pot",
+     "frying pan",
+     "tea kettle",
+     "colander",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Macedonian",
+     "Turkish",
+     "Greek",
+     "Bulgarian",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-el-screwdriver": {
+   "concept": {
+    "options": [
+     "wrench",
+     "hammer",
+     "chisel",
+     "screwdriver",
+     "pliers",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Greek",
+     "Macedonian",
+     "Turkish",
+     "Bulgarian",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-el-sunflower": {
+   "concept": {
+    "options": [
+     "dahlia",
+     "chrysanthemum",
+     "marigold",
+     "sunflower",
+     "poppy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Greek",
+     "Macedonian",
+     "Albanian",
+     "Turkish",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-el-ilianthos": {
+   "concept": {
+    "options": [
+     "marigold",
+     "safflower",
+     "sunflower",
+     "dahlia",
+     "chrysanthemum",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Macedonian",
+     "Turkish",
+     "Greek",
+     "Albanian",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-el-fire-extinguisher": {
+   "concept": {
+    "options": [
+     "smoke detector",
+     "sprinkler system",
+     "fire hydrant",
+     "fire extinguisher",
+     "fire blanket",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Greek",
+     "Turkish",
+     "Macedonian",
+     "Bulgarian",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-el-tapemeasure": {
+   "concept": {
+    "options": [
+     "carpenter's square",
+     "vernier caliper",
+     "spirit level",
+     "tape measure",
+     "plumb bob",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Macedonian",
+     "Albanian",
+     "Greek",
+     "Bulgarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-el-wind-turbine": {
+   "concept": {
+    "options": [
+     "diesel generator",
+     "hydroelectric dam",
+     "solar panel",
+     "steam turbine",
+     "wind turbine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Albanian",
+     "Bulgarian",
+     "Turkish",
+     "Macedonian",
+     "Greek",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-el-xray": {
+   "concept": {
+    "options": [
+     "Ultrasound image",
+     "X-ray image",
+     "PET scan",
+     "Endoscopy image",
+     "Magnetic resonance image",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Turkish",
+     "Greek",
+     "Macedonian",
+     "Albanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-el-xypnitiri": {
+   "concept": {
+    "options": [
+     "kitchen timer",
+     "hourglass",
+     "wristwatch",
+     "metronome",
+     "alarm clock",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Macedonian",
+     "Albanian",
+     "Greek",
+     "Turkish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-fi-kahvinkeitin": {
+   "concept": {
+    "options": [
+     "coffee maker",
+     "microwave oven",
+     "electric kettle",
+     "toaster",
+     "blender",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Latvian",
+     "Swedish",
+     "Finnish",
+     "Hungarian",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-fi-vetoketju": {
+   "concept": {
+    "options": [
+     "hook and loop fastener",
+     "belt buckle",
+     "snap fastener",
+     "zip fastener",
+     "safety pin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Estonian",
+     "Latvian",
+     "Hungarian",
+     "Finnish",
+     "Swedish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-fi-auringonpimennys": {
+   "concept": {
+    "options": [
+     "meteor shower",
+     "solar eclipse",
+     "transit of Venus",
+     "aurora borealis",
+     "lunar eclipse",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Hungarian",
+     "Latvian",
+     "Swedish",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-fi-silitysrauta": {
+   "concept": {
+    "options": [
+     "sewing machine",
+     "ironing board",
+     "hair dryer",
+     "vacuum cleaner",
+     "clothes iron",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Swedish",
+     "Estonian",
+     "Finnish",
+     "Latvian",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-fi-toothbrush": {
+   "concept": {
+    "options": [
+     "razor",
+     "toothbrush",
+     "comb",
+     "hairbrush",
+     "dental floss",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Latvian",
+     "Swedish",
+     "Hungarian",
+     "Estonian",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-fi-tortoise": {
+   "concept": {
+    "options": [
+     "iguana",
+     "armadillo",
+     "hare",
+     "tortoise",
+     "hedgehog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Swedish",
+     "Estonian",
+     "Hungarian",
+     "Finnish",
+     "Latvian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-he-alarm-clock": {
+   "concept": {
+    "options": [
+     "egg timer",
+     "hourglass",
+     "stopwatch",
+     "alarm clock",
+     "cuckoo clock",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Arabic",
+     "Aramaic",
+     "Yiddish",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-he-dishwasher": {
+   "concept": {
+    "options": [
+     "dishwashing machine",
+     "washing machine",
+     "garbage disposal unit",
+     "microwave oven",
+     "clothes dryer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Aramaic",
+     "Hebrew",
+     "Maltese",
+     "Yiddish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-he-pressure-cooker": {
+   "concept": {
+    "options": [
+     "air fryer",
+     "Dutch oven",
+     "pressure cooker",
+     "rice cooker",
+     "slow cooker",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Aramaic",
+     "Hebrew",
+     "Arabic",
+     "Yiddish",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-he-sewingmachine": {
+   "concept": {
+    "options": [
+     "cotton gin",
+     "typewriter",
+     "washing machine",
+     "sewing machine",
+     "power loom",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Yiddish",
+     "Maltese",
+     "Arabic",
+     "Aramaic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-he-tapemeasure": {
+   "concept": {
+    "options": [
+     "plumb bob",
+     "tape measure",
+     "carpenter's square",
+     "spirit level",
+     "vernier caliper",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Aramaic",
+     "Yiddish",
+     "Hebrew",
+     "Arabic",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-he-washing-machine": {
+   "concept": {
+    "options": [
+     "refrigerator",
+     "dishwasher",
+     "clothes dryer",
+     "vacuum cleaner",
+     "washing machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Yiddish",
+     "Hebrew",
+     "Aramaic",
+     "Arabic",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-he-toothbrush": {
+   "concept": {
+    "options": [
+     "razor",
+     "dental floss",
+     "toothbrush",
+     "comb",
+     "hairbrush",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Hebrew",
+     "Aramaic",
+     "Maltese",
+     "Yiddish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-he-vacuum-cleaner": {
+   "concept": {
+    "options": [
+     "washing machine",
+     "air purifier",
+     "vacuum cleaner",
+     "microwave oven",
+     "dishwasher",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Yiddish",
+     "Aramaic",
+     "Arabic",
+     "Hebrew",
+     "Maltese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-he-escalator": {
+   "concept": {
+    "options": [
+     "dumbwaiter",
+     "moving walkway",
+     "escalator",
+     "elevator",
+     "funicular railway",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Yiddish",
+     "Maltese",
+     "Aramaic",
+     "Hebrew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-he-polar-bear": {
+   "concept": {
+    "options": [
+     "walrus",
+     "grizzly bear",
+     "arctic fox",
+     "emperor penguin",
+     "polar bear",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Arabic",
+     "Hebrew",
+     "Yiddish",
+     "Maltese",
+     "Aramaic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-he-spine": {
+   "concept": {
+    "options": [
+     "spinal cord",
+     "pelvic girdle",
+     "sternum",
+     "rib cage",
+     "vertebral column",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Hebrew",
+     "Arabic",
+     "Maltese",
+     "Yiddish",
+     "Aramaic",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-hu-candlestick": {
+   "concept": {
+    "options": [
+     "candlestick",
+     "oil lamp",
+     "lantern",
+     "chandelier",
+     "incense burner",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Romanian",
+     "Estonian",
+     "Hungarian",
+     "Turkish",
+     "Finnish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-hu-esokabat": {
+   "concept": {
+    "options": [
+     "trench coat",
+     "parka",
+     "windbreaker",
+     "raincoat",
+     "poncho",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Turkish",
+     "Estonian",
+     "Finnish",
+     "Romanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-hu-gerincvelo": {
+   "concept": {
+    "options": [
+     "corpus callosum",
+     "cerebellum",
+     "sciatic nerve",
+     "spinal cord",
+     "medulla oblongata",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Hungarian",
+     "Estonian",
+     "Turkish",
+     "Romanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-hu-porszivo": {
+   "concept": {
+    "options": [
+     "vacuum cleaner",
+     "washing machine",
+     "steam mop",
+     "dishwasher",
+     "microwave oven",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Romanian",
+     "Estonian",
+     "Turkish",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-hu-varrogep": {
+   "concept": {
+    "options": [
+     "typewriter",
+     "washing machine",
+     "knitting machine",
+     "sewing machine",
+     "spinning wheel",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Turkish",
+     "Estonian",
+     "Romanian",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-hu-hallokeszulek": {
+   "concept": {
+    "options": [
+     "hearing aid",
+     "eyeglasses",
+     "wheelchair",
+     "cochlear implant",
+     "cardiac pacemaker",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Turkish",
+     "Estonian",
+     "Finnish",
+     "Romanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-hu-ironingboard": {
+   "concept": {
+    "options": [
+     "sewing machine table",
+     "ironing board",
+     "laundry hamper",
+     "clothes drying rack",
+     "folding card table",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Romanian",
+     "Estonian",
+     "Turkish",
+     "Finnish",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-hu-meroszalag": {
+   "concept": {
+    "options": [
+     "carpenter's square",
+     "vernier caliper",
+     "tape measure",
+     "spirit level",
+     "plumb bob",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Hungarian",
+     "Romanian",
+     "Finnish",
+     "Estonian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-hu-napraforgo": {
+   "concept": {
+    "options": [
+     "poppy",
+     "chrysanthemum",
+     "sunflower",
+     "marigold",
+     "safflower",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Finnish",
+     "Turkish",
+     "Hungarian",
+     "Estonian",
+     "Romanian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-hu-szitakoto": {
+   "concept": {
+    "options": [
+     "cicada",
+     "mayfly",
+     "dragonfly",
+     "praying mantis",
+     "firefly",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Estonian",
+     "Finnish",
+     "Romanian",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-hu-canopener": {
+   "concept": {
+    "options": [
+     "can opener",
+     "bottle opener",
+     "corkscrew",
+     "vegetable peeler",
+     "garlic press",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Estonian",
+     "Finnish",
+     "Romanian",
+     "Turkish",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-id-cacar-air": {
+   "concept": {
+    "options": [
+     "chicken pox",
+     "scarlet fever",
+     "rubella",
+     "measles",
+     "mumps",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Malay",
+     "Swahili",
+     "Indonesian",
+     "Javanese",
+     "Tagalog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-id-firefly": {
+   "concept": {
+    "options": [
+     "praying mantis",
+     "dragonfly",
+     "ladybug",
+     "cicada",
+     "firefly",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Javanese",
+     "Swahili",
+     "Malay",
+     "Tagalog",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-id-gantungan-baju": {
+   "concept": {
+    "options": [
+     "laundry basket",
+     "ironing board",
+     "shoe rack",
+     "coat hanger",
+     "clothespin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Swahili",
+     "Malay",
+     "Indonesian",
+     "Javanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-id-gerhanabulan": {
+   "concept": {
+    "options": [
+     "solar eclipse",
+     "meteor shower",
+     "transit of Venus",
+     "planetary conjunction",
+     "lunar eclipse",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Javanese",
+     "Tagalog",
+     "Swahili",
+     "Malay",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-id-hailstone": {
+   "concept": {
+    "options": [
+     "sleet",
+     "graupel",
+     "raindrop",
+     "snowflake",
+     "hailstone",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Malay",
+     "Swahili",
+     "Indonesian",
+     "Javanese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-id-mesin-jahit": {
+   "concept": {
+    "options": [
+     "knitting machine",
+     "sewing machine",
+     "typewriter",
+     "spinning wheel",
+     "washing machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Swahili",
+     "Javanese",
+     "Malay",
+     "Indonesian",
+     "Tagalog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-id-penghapus": {
+   "concept": {
+    "options": [
+     "glue stick",
+     "pencil sharpener",
+     "ruler",
+     "stapler",
+     "eraser",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Malay",
+     "Swahili",
+     "Javanese",
+     "Indonesian",
+     "Tagalog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-id-sarung-tangan": {
+   "concept": {
+    "options": [
+     "hand gloves",
+     "ear muffs",
+     "safety goggles",
+     "rubber boots",
+     "woolen scarf",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Swahili",
+     "Malay",
+     "Tagalog",
+     "Javanese",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-id-tengkorak": {
+   "concept": {
+    "options": [
+     "collarbone",
+     "breastbone",
+     "thigh bone",
+     "skull bone",
+     "shoulder blade",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Tagalog",
+     "Malay",
+     "Javanese",
+     "Indonesian",
+     "Swahili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-id-trash-bin": {
+   "concept": {
+    "options": [
+     "watering can",
+     "flower pot",
+     "mailbox",
+     "trash bin",
+     "laundry basket",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Javanese",
+     "Malay",
+     "Swahili",
+     "Tagalog",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-ko-vacuum-cleaner": {
+   "concept": {
+    "options": [
+     "washing machine",
+     "hair dryer",
+     "dishwasher",
+     "vacuum cleaner",
+     "microwave oven",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Korean",
+     "Vietnamese",
+     "Chinese",
+     "Japanese",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-ko-yeonpilkkakki": {
+   "concept": {
+    "options": [
+     "hole punch",
+     "pencil sharpener",
+     "paper shredder",
+     "letter opener",
+     "staple remover",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Japanese",
+     "Chinese",
+     "Korean",
+     "Mongolian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-pl-biedronka": {
+   "concept": {
+    "options": [
+     "dung beetle",
+     "ladybird beetle",
+     "firefly",
+     "Colorado potato beetle",
+     "stag beetle",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Croatian",
+     "Polish",
+     "Slovak",
+     "Czech",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-pl-kasztanowiec": {
+   "concept": {
+    "options": [
+     "sweet chestnut",
+     "European beech",
+     "sycamore maple",
+     "common walnut",
+     "horse chestnut",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Slovak",
+     "Ukrainian",
+     "Croatian",
+     "Czech",
+     "Polish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-pl-muchomor": {
+   "concept": {
+    "options": [
+     "death cap",
+     "fly agaric",
+     "shaggy ink cap",
+     "destroying angel",
+     "panther cap",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Ukrainian",
+     "Polish",
+     "Croatian",
+     "Czech",
+     "Slovak",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-pl-odkurzacz": {
+   "concept": {
+    "options": [
+     "vacuum cleaner",
+     "washing machine",
+     "dishwasher",
+     "floor polisher",
+     "steam mop",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Slovak",
+     "Ukrainian",
+     "Croatian",
+     "Polish",
+     "Czech",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-pl-pila-lancuchowa": {
+   "concept": {
+    "options": [
+     "jackhammer",
+     "circular saw",
+     "chain saw",
+     "angle grinder",
+     "hedge trimmer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Czech",
+     "Ukrainian",
+     "Croatian",
+     "Slovak",
+     "Polish",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-pl-pokrzywa-2": {
+   "concept": {
+    "options": [
+     "common horsetail",
+     "stinging nettle",
+     "comfrey",
+     "greater burdock",
+     "poison ivy",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Slovak",
+     "Croatian",
+     "Ukrainian",
+     "Czech",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-pl-przedluzacz": {
+   "concept": {
+    "options": [
+     "plug adapter",
+     "extension cord",
+     "surge protector",
+     "power strip",
+     "electrical outlet",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Polish",
+     "Croatian",
+     "Ukrainian",
+     "Czech",
+     "Slovak",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-pl-strzykawka": {
+   "concept": {
+    "options": [
+     "clinical thermometer",
+     "hypodermic syringe",
+     "stethoscope",
+     "sphygmomanometer",
+     "surgical scalpel",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Slovak",
+     "Polish",
+     "Czech",
+     "Ukrainian",
+     "Croatian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-pl-trzepaczka": {
+   "concept": {
+    "options": [
+     "slotted spoon",
+     "rolling pin",
+     "potato masher",
+     "egg whisk",
+     "pastry brush",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Slovak",
+     "Ukrainian",
+     "Czech",
+     "Polish",
+     "Croatian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-pl-trzustka": {
+   "concept": {
+    "options": [
+     "thyroid gland",
+     "gallbladder",
+     "pancreas",
+     "liver",
+     "spleen",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Ukrainian",
+     "Polish",
+     "Slovak",
+     "Czech",
+     "Croatian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-ru-caterpillar": {
+   "concept": {
+    "options": [
+     "caterpillar",
+     "maggot",
+     "tadpole",
+     "chrysalis",
+     "earthworm",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Bulgarian",
+     "Russian",
+     "Serbian",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-ru-dandelion": {
+   "concept": {
+    "options": [
+     "dandelion",
+     "coltsfoot",
+     "red clover",
+     "oxeye daisy",
+     "chicory",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Russian",
+     "Belarusian",
+     "Ukrainian",
+     "Bulgarian",
+     "Serbian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-ru-fryingpan": {
+   "concept": {
+    "options": [
+     "Dutch oven",
+     "baking sheet",
+     "saucepan",
+     "frying pan",
+     "stockpot",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Russian",
+     "Serbian",
+     "Bulgarian",
+     "Ukrainian",
+     "Belarusian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-ru-meatgrinder": {
+   "concept": {
+    "options": [
+     "pressure cooker",
+     "meat grinder",
+     "coffee grinder",
+     "food processor",
+     "pasta maker",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Belarusian",
+     "Serbian",
+     "Russian",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-ru-nakovalnya": {
+   "concept": {
+    "options": [
+     "blacksmith's bellows",
+     "quenching trough",
+     "blacksmith's tongs",
+     "blacksmith's anvil",
+     "swage block",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Serbian",
+     "Bulgarian",
+     "Russian",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-ru-payalnik": {
+   "concept": {
+    "options": [
+     "heat gun",
+     "butane torch",
+     "hot glue gun",
+     "soldering iron",
+     "wood burning pen",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Belarusian",
+     "Serbian",
+     "Ukrainian",
+     "Russian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-ru-skvorechnik": {
+   "concept": {
+    "options": [
+     "bird feeder",
+     "chicken coop",
+     "bird bath",
+     "nesting box",
+     "dovecote",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Belarusian",
+     "Russian",
+     "Bulgarian",
+     "Ukrainian",
+     "Serbian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-ru-sosulka": {
+   "concept": {
+    "options": [
+     "icicle",
+     "snowflake",
+     "hailstone",
+     "hoarfrost",
+     "stalactite",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Bulgarian",
+     "Russian",
+     "Serbian",
+     "Belarusian",
+     "Ukrainian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-ru-thimble": {
+   "concept": {
+    "options": [
+     "pincushion",
+     "sewing thimble",
+     "seam ripper",
+     "tailor's chalk",
+     "darning egg",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Serbian",
+     "Russian",
+     "Ukrainian",
+     "Bulgarian",
+     "Belarusian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-ru-anthill": {
+   "concept": {
+    "options": [
+     "ant hill",
+     "beehive",
+     "molehill",
+     "beaver dam",
+     "termite mound",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Russian",
+     "Ukrainian",
+     "Bulgarian",
+     "Belarusian",
+     "Serbian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-sw-mwarobaini": {
+   "concept": {
+    "options": [
+     "banyan tree",
+     "moringa tree",
+     "tamarind tree",
+     "baobab tree",
+     "neem tree",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Hausa",
+     "Swahili",
+     "Yoruba",
+     "Zulu",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-sw-chandarua": {
+   "concept": {
+    "options": [
+     "insect repellent",
+     "hammock",
+     "window screen",
+     "mosquito net",
+     "fly swatter",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Indonesian",
+     "Hausa",
+     "Swahili",
+     "Zulu",
+     "Yoruba",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-tr-bademcik": {
+   "concept": {
+    "options": [
+     "uvula",
+     "lingual tonsil",
+     "parotid gland",
+     "epiglottis",
+     "palatine tonsil",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Uzbek",
+     "Turkish",
+     "Hungarian",
+     "Kazakh",
+     "Azerbaijani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-tr-camasir-makinesi": {
+   "concept": {
+    "options": [
+     "tumble dryer",
+     "refrigerator",
+     "vacuum cleaner",
+     "dishwasher",
+     "washing machine",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Hungarian",
+     "Uzbek",
+     "Azerbaijani",
+     "Kazakh",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-tr-dis-macunu": {
+   "concept": {
+    "options": [
+     "toothpaste",
+     "shaving cream",
+     "deodorant",
+     "mouthwash",
+     "shampoo",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Hungarian",
+     "Turkish",
+     "Uzbek",
+     "Kazakh",
+     "Azerbaijani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-tr-omurilik": {
+   "concept": {
+    "options": [
+     "corpus callosum",
+     "cerebellum",
+     "medulla oblongata",
+     "sciatic nerve",
+     "spinal cord",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Azerbaijani",
+     "Turkish",
+     "Kazakh",
+     "Uzbek",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-tr-kaplumbaga": {
+   "concept": {
+    "options": [
+     "crocodile",
+     "hare",
+     "tortoise",
+     "chameleon",
+     "snail",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Uzbek",
+     "Kazakh",
+     "Hungarian",
+     "Azerbaijani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-tr-kartanesi": {
+   "concept": {
+    "options": [
+     "icicle",
+     "hailstone",
+     "dewdrop",
+     "raindrop",
+     "snowflake",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Turkish",
+     "Uzbek",
+     "Azerbaijani",
+     "Kazakh",
+     "Hungarian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-tr-salyangoz": {
+   "concept": {
+    "options": [
+     "pill bug",
+     "garden spider",
+     "common earthworm",
+     "garden snail",
+     "leopard slug",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Azerbaijani",
+     "Hungarian",
+     "Turkish",
+     "Uzbek",
+     "Kazakh",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mlh-vi-blender": {
+   "concept": {
+    "options": [
+     "microwave oven",
+     "fruit blender",
+     "rice cooker",
+     "electric kettle",
+     "coffee grinder",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "language": {
+    "options": [
+     "Khmer",
+     "Lao",
+     "Indonesian",
+     "Vietnamese",
+     "Thai",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-vi-cactus": {
+   "concept": {
+    "options": [
+     "cactus",
+     "bamboo",
+     "orchid",
+     "fern",
+     "aloe vera",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Khmer",
+     "Thai",
+     "Lao",
+     "Indonesian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-vi-chuonchuon": {
+   "concept": {
+    "options": [
+     "cicada",
+     "butterfly",
+     "grasshopper",
+     "praying mantis",
+     "dragonfly",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Indonesian",
+     "Lao",
+     "Khmer",
+     "Thai",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-vi-clothesiron": {
+   "concept": {
+    "options": [
+     "washing machine",
+     "hair dryer",
+     "sewing machine",
+     "vacuum cleaner",
+     "clothes iron",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Thai",
+     "Indonesian",
+     "Lao",
+     "Khmer",
+     "Vietnamese",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mlh-vi-extinguisher": {
+   "concept": {
+    "options": [
+     "fire extinguisher",
+     "smoke detector",
+     "first aid kit",
+     "fire blanket",
+     "fire hydrant",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Thai",
+     "Lao",
+     "Indonesian",
+     "Vietnamese",
+     "Khmer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mlh-vi-firefly": {
+   "concept": {
+    "options": [
+     "dragonfly",
+     "ladybug",
+     "cicada",
+     "firefly",
+     "cricket",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Khmer",
+     "Vietnamese",
+     "Indonesian",
+     "Thai",
+     "Lao",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-vi-huyet-ap": {
+   "concept": {
+    "options": [
+     "blood glucose level",
+     "body temperature",
+     "respiratory rate",
+     "blood pressure",
+     "heart rate",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Thai",
+     "Vietnamese",
+     "Indonesian",
+     "Khmer",
+     "Lao",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-vi-neckscarf": {
+   "concept": {
+    "options": [
+     "neck scarf",
+     "beanie",
+     "bandana",
+     "earmuffs",
+     "necktie",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "language": {
+    "options": [
+     "Lao",
+     "Vietnamese",
+     "Thai",
+     "Indonesian",
+     "Khmer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mlh-vi-pressurecooker": {
+   "concept": {
+    "options": [
+     "electric kettle",
+     "air fryer",
+     "rice cooker",
+     "slow cooker",
+     "pressure cooker",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "language": {
+    "options": [
+     "Vietnamese",
+     "Indonesian",
+     "Thai",
+     "Khmer",
+     "Lao",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mlh-vi-raincoat": {
+   "concept": {
+    "options": [
+     "down jacket",
+     "parka",
+     "trench coat",
+     "rain jacket",
+     "windbreaker",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "language": {
+    "options": [
+     "Khmer",
+     "Vietnamese",
+     "Lao",
+     "Indonesian",
+     "Thai",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  }
+ }
+}

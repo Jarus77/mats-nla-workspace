@@ -1,0 +1,3 @@
+{"id": "py-quantity-refund-credit", "layer": 60, "pos": -1, "samples": ["- # Output: '-53.519999999999996'  (the total goes negative)", "- assert order_total(...) < 0"]}
+{"id": "py-age-underflow", "layer": 60, "pos": -1, "samples": ["- 2. The function returns the computed value.", "- print(result)"]}
+{"id": "py-clean-clamped-discount", "layer": 60, "pos": -1, "samples": ["- 3. A loop over the discounts, clamping at zero.", "- # Output: charge: 0.00"]}

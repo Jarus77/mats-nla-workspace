@@ -1,0 +1,8566 @@
+{
+ "family": "basic-readout-hard",
+ "parent_family": "basic-readout-mt",
+ "contract": {
+  "multi_token": true,
+  "include_target": false,
+  "conjunctive_units": true
+ },
+ "gate": "Qwen3.6-27B behavioral, chat-templated capability question (enable_thinking=False, answer stem): greedy-verified AND >=8/10 @ temp 0.7. EVAL RENDER: plain prompt, final prompt token; regex over the readout (l2_factual: en/zh names only + language unit).",
+ "frozen": "2026-09-10",
+ "items": [
+  {
+   "name": "brh-ent-aghlabid-dynasty",
+   "subfamily": "entity",
+   "prompt": "The Muslim ruling house that governed Ifriqiya from 800 to 909 as nominal vassals of the caliphs in Baghdad is called the",
+   "target": "Aghlabid dynasty",
+   "target_alts": [
+    "Aghlabids",
+    "Banu al-Aghlab"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Aghlabid dynasty"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Aghlabid dynasty",
+       "Aghlabids",
+       "Banu al-Aghlab"
+      ]
+     },
+     "match": [
+      "Aghlabid dynasty",
+      "Aghlabids",
+      "Banu al-Aghlab"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       6
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Aghlabid dynasty",
+     "distractors": [
+      "Rustamid dynasty",
+      "Idrisid dynasty",
+      "Zirid dynasty",
+      "Hafsid dynasty"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-antarctic-buried-chain",
+   "subfamily": "entity",
+   "prompt": "The name of the ice-buried highland chain lying beneath Dome A in East Antarctica is",
+   "target": "the Gamburtsev Mountains",
+   "target_alts": [
+    "Gamburtsev Mountains",
+    "Gamburtsev Mountain Range",
+    "Gamburtsev Subglacial Mountains"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "the Gamburtsev Mountains"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Gamburtsev Mountains",
+       "Gamburtsev Mountains",
+       "Gamburtsev Mountain Range",
+       "Gamburtsev Subglacial Mountains"
+      ]
+     },
+     "match": [
+      "the Gamburtsev Mountains",
+      "Gamburtsev Mountains",
+      "Gamburtsev Mountain Range",
+      "Gamburtsev Subglacial Mountains"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4,
+       5,
+       7
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "the Gamburtsev Mountains",
+     "distractors": [
+      "the Transantarctic Mountains",
+      "the Ellsworth Mountains",
+      "the Prince Charles Mountains",
+      "the Pensacola Mountains"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-baikal-outflow",
+   "subfamily": "entity",
+   "prompt": "The single outflow draining Baikal, carrying its water northward to join the Yenisei, is the",
+   "target": "Angara River",
+   "target_alts": [
+    "Angara"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Angara River"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Angara River",
+       "Angara"
+      ]
+     },
+     "match": [
+      "Angara River",
+      "Angara"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Angara River",
+     "distractors": [
+      "Lena River",
+      "Selenga River",
+      "Irtysh River",
+      "Podkamennaya Tunguska River"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-bardet-biedl",
+   "subfamily": "entity",
+   "prompt": "The autosomal recessive ciliopathy combining rod-cone dystrophy, extra digits, truncal obesity, renal anomalies and hypogonadism is",
+   "target": "Bardet-Biedl syndrome",
+   "target_alts": [
+    "Bardet–Biedl syndrome",
+    "Laurence-Moon-Bardet-Biedl syndrome"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Bardet-Biedl syndrome"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Bardet-Biedl syndrome",
+       "Bardet–Biedl syndrome",
+       "Laurence-Moon-Bardet-Biedl syndrome"
+      ]
+     },
+     "match": [
+      "Bardet-Biedl syndrome",
+      "Bardet–Biedl syndrome",
+      "Laurence-Moon-Bardet-Biedl syndrome"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       7,
+       11
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "readout": {
+     "gold": "Bardet-Biedl syndrome",
+     "distractors": [
+      "Alström syndrome",
+      "Joubert syndrome",
+      "Meckel-Gruber syndrome",
+      "Prader-Willi syndrome"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-beckwith-wiedemann-syndrome",
+   "subfamily": "entity",
+   "prompt": "The overgrowth disorder marked by an enlarged tongue, omphalocele and a raised risk of Wilms tumour, caused by imprinting errors at chromosome 11p15.5, is",
+   "target": "Beckwith–Wiedemann syndrome",
+   "target_alts": [
+    "Beckwith-Wiedemann syndrome",
+    "Wiedemann–Beckwith syndrome",
+    "the Beckwith–Wiedemann syndrome"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Beckwith–Wiedemann syndrome"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Beckwith–Wiedemann syndrome",
+       "Beckwith-Wiedemann syndrome",
+       "Wiedemann–Beckwith syndrome",
+       "the Beckwith–Wiedemann syndrome"
+      ]
+     },
+     "match": [
+      "Beckwith–Wiedemann syndrome",
+      "Beckwith-Wiedemann syndrome",
+      "Wiedemann–Beckwith syndrome",
+      "the Beckwith–Wiedemann syndrome"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       7,
+       6,
+       6,
+       8
+      ]
+     }
+    },
+    "target": 7
+   },
+   "mc": {
+    "readout": {
+     "gold": "Beckwith–Wiedemann syndrome",
+     "distractors": [
+      "Silver–Russell syndrome",
+      "Sotos syndrome",
+      "Simpson–Golabi–Behmel syndrome",
+      "Prader–Willi syndrome"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-bohr-magneton",
+   "subfamily": "entity",
+   "prompt": "The physical quantity equal to about 9.274×10⁻²⁴ joules per tesla, used as the natural unit for the intrinsic dipole moment of an electron, is",
+   "target": "the Bohr magneton",
+   "target_alts": [
+    "Bohr magneton",
+    "the Bohr magnetons"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "the Bohr magneton"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Bohr magneton",
+       "Bohr magneton",
+       "the Bohr magnetons"
+      ]
+     },
+     "match": [
+      "the Bohr magneton",
+      "Bohr magneton",
+      "the Bohr magnetons"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "the Bohr magneton",
+     "distractors": [
+      "the nuclear magneton",
+      "the Rydberg constant",
+      "the fine-structure constant",
+      "the Compton wavelength"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-bonaire-capital",
+   "subfamily": "entity",
+   "prompt": "The principal town and seat of government of the Dutch Caribbean municipality of Bonaire is",
+   "target": "Kralendijk",
+   "target_alts": [
+    "Playa (Kralendijk)"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Kralendijk"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Kralendijk",
+       "Playa (Kralendijk)"
+      ]
+     },
+     "match": [
+      "Kralendijk",
+      "Playa (Kralendijk)"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       7
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Kralendijk",
+     "distractors": [
+      "Willemstad",
+      "Oranjestad",
+      "The Bottom",
+      "Philipsburg"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-brunt-vaisala-frequency",
+   "subfamily": "entity",
+   "prompt": "The angular rate at which a vertically displaced parcel of air oscillates within a statically stable stratified atmosphere is the",
+   "target": "Brunt–Väisälä frequency",
+   "target_alts": [
+    "Brunt-Vaisala frequency",
+    "Brunt-Väisälä frequency",
+    "buoyancy frequency"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Brunt–Väisälä frequency"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Brunt–Väisälä frequency",
+       "Brunt-Vaisala frequency",
+       "Brunt-Väisälä frequency",
+       "buoyancy frequency"
+      ]
+     },
+     "match": [
+      "Brunt–Väisälä frequency",
+      "Brunt-Vaisala frequency",
+      "Brunt-Väisälä frequency",
+      "buoyancy frequency"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       8,
+       6,
+       8,
+       3
+      ]
+     }
+    },
+    "target": 8
+   },
+   "mc": {
+    "readout": {
+     "gold": "Brunt–Väisälä frequency",
+     "distractors": [
+      "Coriolis parameter",
+      "Richardson number",
+      "Rossby radius of deformation",
+      "Ekman number"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-chem-sarin-systematic",
+   "subfamily": "entity",
+   "prompt": "The systematic chemical name of the nerve agent code-named sarin is",
+   "target": "isopropyl methylphosphonofluoridate",
+   "target_alts": [
+    "propan-2-yl methylphosphonofluoridate",
+    "O-isopropyl methylphosphonofluoridate"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "isopropyl methylphosphonofluoridate"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "isopropyl methylphosphonofluoridate",
+       "propan-2-yl methylphosphonofluoridate",
+       "O-isopropyl methylphosphonofluoridate"
+      ]
+     },
+     "match": [
+      "isopropyl methylphosphonofluoridate",
+      "propan-2-yl methylphosphonofluoridate",
+      "O-isopropyl methylphosphonofluoridate"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       13,
+       15,
+       14
+      ]
+     }
+    },
+    "target": 13
+   },
+   "mc": {
+    "readout": {
+     "gold": "isopropyl methylphosphonofluoridate",
+     "distractors": [
+      "pinacolyl methylphosphonofluoridate",
+      "cyclohexyl methylphosphonofluoridate",
+      "ethyl dimethylphosphoramidocyanidate",
+      "diisopropyl fluorophosphate"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-chem-wintergreen-ester",
+   "subfamily": "entity",
+   "prompt": "The systematic chemical name of the fragrant substance traditionally sold as oil of wintergreen is",
+   "target": "methyl salicylate",
+   "target_alts": [
+    "methyl 2-hydroxybenzoate"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "methyl salicylate"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "methyl salicylate",
+       "methyl 2-hydroxybenzoate"
+      ]
+     },
+     "match": [
+      "methyl salicylate",
+      "methyl 2-hydroxybenzoate"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       9
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "methyl salicylate",
+     "distractors": [
+      "methyl anthranilate",
+      "methyl benzoate",
+      "benzyl acetate",
+      "isoamyl acetate"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-chindwin-confluence",
+   "subfamily": "entity",
+   "prompt": "The much larger watercourse that the Chindwin joins near Myingyan is the",
+   "target": "Ayeyarwady",
+   "target_alts": [
+    "Irrawaddy"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Ayeyarwady"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ayeyarwady",
+       "Irrawaddy"
+      ]
+     },
+     "match": [
+      "Ayeyarwady",
+      "Irrawaddy"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       3
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Ayeyarwady",
+     "distractors": [
+      "Salween",
+      "Sittaung",
+      "Mekong",
+      "Chao Phraya"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-concordat-worms",
+   "subfamily": "entity",
+   "prompt": "The 1122 agreement between the papacy and Emperor Henry V that settled the long quarrel over lay investiture is known as the",
+   "target": "Concordat of Worms",
+   "target_alts": [
+    "Worms Concordat"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Concordat of Worms"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Concordat of Worms",
+       "Worms Concordat"
+      ]
+     },
+     "match": [
+      "Concordat of Worms",
+      "Worms Concordat"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Concordat of Worms",
+     "distractors": [
+      "Concordat of Bologna",
+      "Peace of Constance",
+      "Treaty of Venice",
+      "Diet of Worms"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cordillera-blanca-high",
+   "subfamily": "entity",
+   "prompt": "The highest summit of the Cordillera Blanca in Peru is",
+   "target": "Nevado Huascaran",
+   "target_alts": [
+    "Nevado Huascarán",
+    "Huascarán",
+    "Huascaran"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Nevado Huascaran"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Nevado Huascaran",
+       "Nevado Huascarán",
+       "Huascarán",
+       "Huascaran"
+      ]
+     },
+     "match": [
+      "Nevado Huascaran",
+      "Nevado Huascarán",
+      "Huascarán",
+      "Huascaran"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       5,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Nevado Huascaran",
+     "distractors": [
+      "Nevado Alpamayo",
+      "Nevado Huandoy",
+      "Yerupaja",
+      "Nevado Coropuna"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cryolite-systematic",
+   "subfamily": "entity",
+   "prompt": "The systematic chemical name of the Greenlandic mineral cryolite, long mined at Ivittuut as a smelting flux, is",
+   "target": "sodium hexafluoroaluminate",
+   "target_alts": [
+    "trisodium hexafluoroaluminate",
+    "sodium aluminium fluoride",
+    "sodium aluminum hexafluoride"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "sodium hexafluoroaluminate"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "sodium hexafluoroaluminate",
+       "trisodium hexafluoroaluminate",
+       "sodium aluminium fluoride",
+       "sodium aluminum hexafluoride"
+      ]
+     },
+     "match": [
+      "sodium hexafluoroaluminate",
+      "trisodium hexafluoroaluminate",
+      "sodium aluminium fluoride",
+      "sodium aluminum hexafluoride"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       7,
+       8,
+       3,
+       7
+      ]
+     }
+    },
+    "target": 7
+   },
+   "mc": {
+    "readout": {
+     "gold": "sodium hexafluoroaluminate",
+     "distractors": [
+      "sodium hexafluorosilicate",
+      "potassium hexafluorophosphate",
+      "lithium tetrafluoroborate",
+      "ammonium hexafluorotitanate"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cur-bhutan",
+   "subfamily": "entity",
+   "prompt": "The national monetary unit of the Himalayan kingdom governed from Thimphu is the",
+   "target": "Bhutanese ngultrum",
+   "target_alts": [
+    "ngultrum",
+    "the ngultrum"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Bhutanese ngultrum"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Bhutanese ngultrum",
+       "ngultrum",
+       "the ngultrum"
+      ]
+     },
+     "match": [
+      "Bhutanese ngultrum",
+      "ngultrum",
+      "the ngultrum"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "readout": {
+     "gold": "Bhutanese ngultrum",
+     "distractors": [
+      "Nepalese rupee",
+      "Maldivian rufiyaa",
+      "Bangladeshi taka",
+      "Burmese kyat"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cur-bosnia-convertible-mark",
+   "subfamily": "entity",
+   "prompt": "The money introduced in 1998 in Bosnia and Herzegovina under the Dayton accords, at first pegged one-to-one to the German unit of the time, is the",
+   "target": "convertible mark",
+   "target_alts": [
+    "konvertibilna marka"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "convertible mark"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "convertible mark",
+       "konvertibilna marka"
+      ]
+     },
+     "match": [
+      "convertible mark",
+      "konvertibilna marka"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       5
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "convertible mark",
+     "distractors": [
+      "Croatian kuna",
+      "Serbian dinar",
+      "Macedonian denar",
+      "Bulgarian lev"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cur-eritrea",
+   "subfamily": "entity",
+   "prompt": "The official monetary unit of the Horn of Africa state whose capital is Asmara is the",
+   "target": "Eritrean nakfa",
+   "target_alts": [
+    "nakfa",
+    "the nakfa"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Eritrean nakfa"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Eritrean nakfa",
+       "nakfa",
+       "the nakfa"
+      ]
+     },
+     "match": [
+      "Eritrean nakfa",
+      "nakfa",
+      "the nakfa"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Eritrean nakfa",
+     "distractors": [
+      "Ethiopian birr",
+      "Djiboutian franc",
+      "Somali shilling",
+      "Sudanese pound"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cur-macau-unit",
+   "subfamily": "entity",
+   "prompt": "The official currency of the Special Administrative Region of Macau is",
+   "target": "pataca",
+   "target_alts": [
+    "the pataca",
+    "patacas"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "pataca"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "pataca",
+       "the pataca",
+       "patacas"
+      ]
+     },
+     "match": [
+      "pataca",
+      "the pataca",
+      "patacas"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "pataca",
+     "distractors": [
+      "escudo",
+      "ringgit",
+      "kyat",
+      "rupiah"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cur-ngultrum-subunit",
+   "subfamily": "entity",
+   "prompt": "The subunit worth one hundredth of the Bhutanese ngultrum is",
+   "target": "chhertum",
+   "target_alts": [
+    "the chhertum",
+    "chetrum"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "chhertum"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "chhertum",
+       "the chhertum",
+       "chetrum"
+      ]
+     },
+     "match": [
+      "chhertum",
+      "the chhertum",
+      "chetrum"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.1,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       5,
+       2
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "chhertum",
+     "distractors": [
+      "paisa",
+      "poisha",
+      "laari",
+      "pya"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cur-ouguiya-subunit",
+   "subfamily": "entity",
+   "prompt": "The subunit of the Mauritanian ouguiya, five of which make one ouguiya, is",
+   "target": "khoums",
+   "target_alts": [
+    "the khoums",
+    "khoum"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "khoums"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "khoums",
+       "the khoums",
+       "khoum"
+      ]
+     },
+     "match": [
+      "khoums",
+      "the khoums",
+      "khoum"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "khoums",
+     "distractors": [
+      "millime",
+      "santim",
+      "butut",
+      "laari"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-cur-vanuatu",
+   "subfamily": "entity",
+   "prompt": "The monetary unit of the Melanesian archipelago whose capital is Port Vila is the",
+   "target": "Vanuatu vatu",
+   "target_alts": [
+    "vatu",
+    "the vatu"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Vanuatu vatu"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Vanuatu vatu",
+       "vatu",
+       "the vatu"
+      ]
+     },
+     "match": [
+      "Vanuatu vatu",
+      "vatu",
+      "the vatu"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Vanuatu vatu",
+     "distractors": [
+      "Papua New Guinean kina",
+      "Solomon Islands dollar",
+      "Samoan tala",
+      "Tongan pa'anga"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-currency-bhutan",
+   "subfamily": "entity",
+   "prompt": "The unit of currency used in the Himalayan kingdom whose capital is Thimphu is",
+   "target": "the ngultrum",
+   "target_alts": [
+    "Bhutanese ngultrum",
+    "ngultrum"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "the ngultrum"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the ngultrum",
+       "Bhutanese ngultrum",
+       "ngultrum"
+      ]
+     },
+     "match": [
+      "the ngultrum",
+      "Bhutanese ngultrum",
+      "ngultrum"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       6,
+       3
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "the ngultrum",
+     "distractors": [
+      "Nepalese rupee",
+      "Maldivian rufiyaa",
+      "Mongolian tugrik",
+      "Burmese kyat"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-currency-eswatini",
+   "subfamily": "entity",
+   "prompt": "The name of the national currency of the Kingdom of Eswatini is",
+   "target": "lilangeni",
+   "target_alts": [
+    "the lilangeni",
+    "emalangeni"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "lilangeni"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "lilangeni",
+       "the lilangeni",
+       "emalangeni"
+      ]
+     },
+     "match": [
+      "lilangeni",
+      "the lilangeni",
+      "emalangeni"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "lilangeni",
+     "distractors": [
+      "loti",
+      "pula",
+      "metical",
+      "kwanza"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-currency-gambia",
+   "subfamily": "entity",
+   "prompt": "The name of the unit of money issued by the central bank of The Gambia is",
+   "target": "dalasi",
+   "target_alts": [
+    "the dalasi",
+    "dalasis"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "dalasi"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "dalasi",
+       "the dalasi",
+       "dalasis"
+      ]
+     },
+     "match": [
+      "dalasi",
+      "the dalasi",
+      "dalasis"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "dalasi",
+     "distractors": [
+      "leone",
+      "cedi",
+      "ouguiya",
+      "dobra"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-currency-mozambique",
+   "subfamily": "entity",
+   "prompt": "The name of the national currency of Mozambique is",
+   "target": "metical",
+   "target_alts": [
+    "the metical",
+    "meticais"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "metical"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "metical",
+       "the metical",
+       "meticais"
+      ]
+     },
+     "match": [
+      "metical",
+      "the metical",
+      "meticais"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "metical",
+     "distractors": [
+      "kwanza",
+      "kwacha",
+      "ariary",
+      "dobra"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-currency-tajikistan",
+   "subfamily": "entity",
+   "prompt": "The name of the national currency of Tajikistan is",
+   "target": "somoni",
+   "target_alts": [
+    "the somoni",
+    "Somoni"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "somoni"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "somoni",
+       "the somoni",
+       "Somoni"
+      ]
+     },
+     "match": [
+      "somoni",
+      "the somoni",
+      "Somoni"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3,
+       2
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "somoni",
+     "distractors": [
+      "Kazakhstani tenge",
+      "Turkmenistani manat",
+      "Kyrgyzstani som",
+      "Uzbekistani sum"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-currency-vanuatu",
+   "subfamily": "entity",
+   "prompt": "The unit of currency circulating in the Pacific archipelago nation whose capital is Port Vila is",
+   "target": "the Vanuatu vatu",
+   "target_alts": [
+    "Vanuatu vatu",
+    "the vatu"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "the Vanuatu vatu"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Vanuatu vatu",
+       "Vanuatu vatu",
+       "the vatu"
+      ]
+     },
+     "match": [
+      "the Vanuatu vatu",
+      "Vanuatu vatu",
+      "the vatu"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       5,
+       3
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "readout": {
+     "gold": "the Vanuatu vatu",
+     "distractors": [
+      "the Samoan tala",
+      "the Tongan pa'anga",
+      "the Papua New Guinean kina",
+      "the Solomon Islands dollar"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-drakensberg-summit",
+   "subfamily": "entity",
+   "prompt": "The highest summit of the Drakensberg escarpment in southern Africa, rising in eastern Lesotho, is",
+   "target": "Thabana Ntlenyana",
+   "target_alts": [
+    "Thabana-Ntlenyana",
+    "Thabana Ntlenyane"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Thabana Ntlenyana"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Thabana Ntlenyana",
+       "Thabana-Ntlenyana",
+       "Thabana Ntlenyane"
+      ]
+     },
+     "match": [
+      "Thabana Ntlenyana",
+      "Thabana-Ntlenyana",
+      "Thabana Ntlenyane"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       7,
+       8,
+       7
+      ]
+     }
+    },
+    "target": 7
+   },
+   "mc": {
+    "readout": {
+     "gold": "Thabana Ntlenyana",
+     "distractors": [
+      "Mafadi",
+      "Champagne Castle",
+      "Mont-aux-Sources",
+      "Giant's Castle"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-euler-mascheroni-constant",
+   "subfamily": "entity",
+   "prompt": "The mathematical quantity roughly equal to 0.5772156649, defined as the limiting difference between the harmonic series and the natural logarithm, is",
+   "target": "the Euler–Mascheroni constant",
+   "target_alts": [
+    "Euler–Mascheroni constant",
+    "Euler-Mascheroni constant",
+    "Euler's constant"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "the Euler–Mascheroni constant"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Euler–Mascheroni constant",
+       "Euler–Mascheroni constant",
+       "Euler-Mascheroni constant",
+       "Euler's constant"
+      ]
+     },
+     "match": [
+      "the Euler–Mascheroni constant",
+      "Euler–Mascheroni constant",
+      "Euler-Mascheroni constant",
+      "Euler's constant"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.3,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       7,
+       6,
+       6,
+       3
+      ]
+     }
+    },
+    "target": 7
+   },
+   "mc": {
+    "readout": {
+     "gold": "the Euler–Mascheroni constant",
+     "distractors": [
+      "Catalan's constant",
+      "Apéry's constant",
+      "the Glaisher–Kinkelin constant",
+      "Khinchin's constant"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-georgian-royal-line",
+   "subfamily": "entity",
+   "prompt": "The royal line that ruled the Georgian realms for roughly a millennium until the Russian annexation of 1801 is the",
+   "target": "Bagrationi dynasty",
+   "target_alts": [
+    "Bagratid dynasty",
+    "Bagrationi"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Bagrationi dynasty"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Bagrationi dynasty",
+       "Bagratid dynasty",
+       "Bagrationi"
+      ]
+     },
+     "match": [
+      "Bagrationi dynasty",
+      "Bagratid dynasty",
+      "Bagrationi"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Bagrationi dynasty",
+     "distractors": [
+      "Chosroid dynasty",
+      "Artaxiad dynasty",
+      "Nemanjić dynasty",
+      "Rurik dynasty"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-geosmin",
+   "subfamily": "entity",
+   "prompt": "The bicyclic alcohol made by soil-dwelling Streptomyces bacteria that gives beetroot and rain-dampened ground their characteristic musty smell is",
+   "target": "geosmin",
+   "target_alts": [
+    "trans-1,10-dimethyl-trans-9-decalol"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "geosmin"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "geosmin",
+       "trans-1,10-dimethyl-trans-9-decalol"
+      ]
+     },
+     "match": [
+      "geosmin",
+      "trans-1,10-dimethyl-trans-9-decalol"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       15
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "geosmin",
+     "distractors": [
+      "2-methylisoborneol",
+      "beta-ionone",
+      "skatole",
+      "2,4,6-trichloroanisole"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-glauber-salt",
+   "subfamily": "entity",
+   "prompt": "The decahydrate of sodium sulfate, first obtained from an Austrian spring water in 1625 by a German apothecary and long marketed as a purgative, is",
+   "target": "Glauber's salt",
+   "target_alts": [
+    "Glauber salt",
+    "mirabilite"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Glauber's salt"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Glauber's salt",
+       "Glauber salt",
+       "mirabilite"
+      ]
+     },
+     "match": [
+      "Glauber's salt",
+      "Glauber salt",
+      "mirabilite"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Glauber's salt",
+     "distractors": [
+      "Epsom salt",
+      "Rochelle salt",
+      "Chile saltpeter",
+      "Borax"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-gloger-rule",
+   "subfamily": "entity",
+   "prompt": "The zoogeographical generalization that within a species of endotherm, populations inhabiting more humid climates are more heavily pigmented, is called",
+   "target": "Gloger's rule",
+   "target_alts": [
+    "Gloger rule",
+    "Gloger's law"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Gloger's rule"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Gloger's rule",
+       "Gloger rule",
+       "Gloger's law"
+      ]
+     },
+     "match": [
+      "Gloger's rule",
+      "Gloger rule",
+      "Gloger's law"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Gloger's rule",
+     "distractors": [
+      "Bergmann's rule",
+      "Allen's rule",
+      "Rensch's rule",
+      "Cope's rule"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-hafsid-ifriqiya",
+   "subfamily": "entity",
+   "prompt": "The Berber Muslim ruling house that governed Ifriqiya from Tunis from 1229 until the Ottoman conquest of 1574 is known as the",
+   "target": "Hafsid dynasty",
+   "target_alts": [
+    "Hafsid Dynasty",
+    "Hafsids"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Hafsid dynasty"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Hafsid dynasty",
+       "Hafsid Dynasty",
+       "Hafsids"
+      ]
+     },
+     "match": [
+      "Hafsid dynasty",
+      "Hafsid Dynasty",
+      "Hafsids"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Hafsid dynasty",
+     "distractors": [
+      "Marinid dynasty",
+      "Zayyanid dynasty",
+      "Zirid dynasty",
+      "Aghlabid dynasty"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-hounsfield",
+   "subfamily": "entity",
+   "prompt": "On the radiodensity scale of computed tomography, where distilled water is defined as zero and air as minus one thousand, attenuation is expressed in",
+   "target": "Hounsfield units",
+   "target_alts": [
+    "Hounsfield unit",
+    "Hounsfield"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Hounsfield units"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Hounsfield units",
+       "Hounsfield unit",
+       "Hounsfield"
+      ]
+     },
+     "match": [
+      "Hounsfield units",
+      "Hounsfield unit",
+      "Hounsfield"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4,
+       3
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Hounsfield units",
+     "distractors": [
+      "Standardized uptake value",
+      "Apparent diffusion coefficient",
+      "Roentgen equivalent man",
+      "Specific absorption rate"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-hounsfield-unit",
+   "subfamily": "entity",
+   "prompt": "The measure of radiodensity in X-ray computed tomography, defined so that distilled water reads zero and air reads minus one thousand, is the",
+   "target": "Hounsfield unit",
+   "target_alts": [
+    "Hounsfield units",
+    "Hounsfield scale"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Hounsfield unit"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Hounsfield unit",
+       "Hounsfield units",
+       "Hounsfield scale"
+      ]
+     },
+     "match": [
+      "Hounsfield unit",
+      "Hounsfield units",
+      "Hounsfield scale"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Hounsfield unit",
+     "distractors": [
+      "gray",
+      "sievert",
+      "roentgen",
+      "becquerel"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-iceland-spar",
+   "subfamily": "entity",
+   "prompt": "The optically clear variety of calcite whose strong double refraction made it the material of Nicol prisms is known as",
+   "target": "Iceland spar",
+   "target_alts": [
+    "Icelandic spar"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Iceland spar"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Iceland spar",
+       "Icelandic spar"
+      ]
+     },
+     "match": [
+      "Iceland spar",
+      "Icelandic spar"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "Iceland spar",
+     "distractors": [
+      "Rock crystal",
+      "Selenite",
+      "Cordierite",
+      "Blue John"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-illimani-range",
+   "subfamily": "entity",
+   "prompt": "The Andean range in Bolivia containing Illimani and Huayna Potosí is the",
+   "target": "Cordillera Real",
+   "target_alts": [
+    "La Cordillera Real"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Cordillera Real"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Cordillera Real",
+       "La Cordillera Real"
+      ]
+     },
+     "match": [
+      "Cordillera Real",
+      "La Cordillera Real"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Cordillera Real",
+     "distractors": [
+      "Cordillera Blanca",
+      "Cordillera Huayhuash",
+      "Cordillera Apolobamba",
+      "Cordillera Vilcanota"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-kachin-mandalay-waterway",
+   "subfamily": "entity",
+   "prompt": "The great waterway that rises in Kachin State and flows south past Mandalay before emptying into the Andaman Sea is",
+   "target": "the Irrawaddy",
+   "target_alts": [
+    "Irrawaddy",
+    "Ayeyarwady",
+    "the Ayeyarwady"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "the Irrawaddy"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Irrawaddy",
+       "Irrawaddy",
+       "Ayeyarwady",
+       "the Ayeyarwady"
+      ]
+     },
+     "match": [
+      "the Irrawaddy",
+      "Irrawaddy",
+      "Ayeyarwady",
+      "the Ayeyarwady"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       5,
+       6
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "the Irrawaddy",
+     "distractors": [
+      "the Salween",
+      "the Mekong",
+      "the Chao Phraya",
+      "the Sittaung"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-karlowitz-1699",
+   "subfamily": "entity",
+   "prompt": "The 1699 settlement that ended the long war between the Ottomans and the Holy League and transferred most of Hungary to the Habsburgs is known as the",
+   "target": "Treaty of Karlowitz",
+   "target_alts": [
+    "Peace of Karlowitz",
+    "Treaty of Carlowitz"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Treaty of Karlowitz"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Treaty of Karlowitz",
+       "Peace of Karlowitz",
+       "Treaty of Carlowitz"
+      ]
+     },
+     "match": [
+      "Treaty of Karlowitz",
+      "Peace of Karlowitz",
+      "Treaty of Carlowitz"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Treaty of Karlowitz",
+     "distractors": [
+      "Treaty of Passarowitz",
+      "Treaty of Belgrade",
+      "Treaty of Küçük Kaynarca",
+      "Peace of Zsitvatorok"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-kazakh-half-saline",
+   "subfamily": "entity",
+   "prompt": "The large body of water in southeastern Kazakhstan whose western half is fresh while its eastern half is saline is",
+   "target": "Lake Balkhash",
+   "target_alts": [
+    "Balkhash",
+    "Balqash"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Lake Balkhash"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Lake Balkhash",
+       "Balkhash",
+       "Balqash"
+      ]
+     },
+     "match": [
+      "Lake Balkhash",
+      "Balkhash",
+      "Balqash"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Lake Balkhash",
+     "distractors": [
+      "Issyk-Kul",
+      "Lake Zaysan",
+      "Lake Alakol",
+      "Aral Sea"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-khinchin-constant",
+   "subfamily": "entity",
+   "prompt": "The value approximately 2.6854520, which the geometric mean of the partial denominators in the continued fraction expansion of almost every real number tends toward, is known as",
+   "target": "Khinchin's constant",
+   "target_alts": [
+    "Khinchin constant",
+    "Khintchine's constant"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Khinchin's constant"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Khinchin's constant",
+       "Khinchin constant",
+       "Khintchine's constant"
+      ]
+     },
+     "match": [
+      "Khinchin's constant",
+      "Khinchin constant",
+      "Khintchine's constant"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Khinchin's constant",
+     "distractors": [
+      "Lévy's constant",
+      "Catalan's constant",
+      "Mills' constant",
+      "Apéry's constant"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-lemierre-syndrome",
+   "subfamily": "entity",
+   "prompt": "Septic thrombophlebitis of the internal jugular vein arising after an oropharyngeal infection, with emboli spreading to the lungs, is known as",
+   "target": "Lemierre's syndrome",
+   "target_alts": [
+    "Lemierre syndrome",
+    "Lemierre's disease"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Lemierre's syndrome"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Lemierre's syndrome",
+       "Lemierre syndrome",
+       "Lemierre's disease"
+      ]
+     },
+     "match": [
+      "Lemierre's syndrome",
+      "Lemierre syndrome",
+      "Lemierre's disease"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Lemierre's syndrome",
+     "distractors": [
+      "Ludwig's angina",
+      "Vincent's angina",
+      "Grisel's syndrome",
+      "Ramsay Hunt syndrome"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-lowest-point-australia",
+   "subfamily": "entity",
+   "prompt": "The vast salt pan in South Australia that marks the continent's lowest natural elevation is",
+   "target": "Kati Thanda-Lake Eyre",
+   "target_alts": [
+    "Lake Eyre",
+    "Kati Thanda",
+    "Kati Thanda–Lake Eyre"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Kati Thanda-Lake Eyre"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Kati Thanda-Lake Eyre",
+       "Lake Eyre",
+       "Kati Thanda",
+       "Kati Thanda–Lake Eyre"
+      ]
+     },
+     "match": [
+      "Kati Thanda-Lake Eyre",
+      "Lake Eyre",
+      "Kati Thanda",
+      "Kati Thanda–Lake Eyre"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       8,
+       3,
+       4,
+       8
+      ]
+     }
+    },
+    "target": 8
+   },
+   "mc": {
+    "readout": {
+     "gold": "Kati Thanda-Lake Eyre",
+     "distractors": [
+      "Lake Torrens",
+      "Lake Gairdner",
+      "Lake Frome",
+      "Lake Amadeus"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-madelung-constant",
+   "subfamily": "entity",
+   "prompt": "The dimensionless sum of the electrostatic interactions of one ion with all the others in a crystal lattice, used to obtain lattice energy, is",
+   "target": "the Madelung constant",
+   "target_alts": [
+    "Madelung constant"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "the Madelung constant"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Madelung constant",
+       "Madelung constant"
+      ]
+     },
+     "match": [
+      "the Madelung constant",
+      "Madelung constant"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "the Madelung constant",
+     "distractors": [
+      "the Rydberg constant",
+      "the Curie constant",
+      "the Verdet constant",
+      "the Faraday constant"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-matthiessen",
+   "subfamily": "entity",
+   "prompt": "The statement that a metal's total electrical resistivity is the sum of a temperature-independent impurity term and a temperature-dependent lattice vibration term is known as",
+   "target": "Matthiessen's rule",
+   "target_alts": [
+    "Matthiessen rule",
+    "the Matthiessen's rule"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Matthiessen's rule"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Matthiessen's rule",
+       "Matthiessen rule",
+       "the Matthiessen's rule"
+      ]
+     },
+     "match": [
+      "Matthiessen's rule",
+      "Matthiessen rule",
+      "the Matthiessen's rule"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Matthiessen's rule",
+     "distractors": [
+      "Wiedemann–Franz law",
+      "Nordheim's rule",
+      "Bloch–Grüneisen law",
+      "Kohler's rule"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-mayor-palace",
+   "subfamily": "entity",
+   "prompt": "In the Frankish kingdom under the Merovingians, the chief steward of the royal household who came to wield real authority held the office of",
+   "target": "Mayor of the Palace",
+   "target_alts": [
+    "maior domus",
+    "mayor of the palace"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Mayor of the Palace"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mayor of the Palace",
+       "maior domus",
+       "mayor of the palace"
+      ]
+     },
+     "match": [
+      "Mayor of the Palace",
+      "maior domus",
+      "mayor of the palace"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Mayor of the Palace",
+     "distractors": [
+      "Constable of France",
+      "Lord High Steward",
+      "Grand Vizier",
+      "Count Palatine"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-mccune-albright",
+   "subfamily": "entity",
+   "prompt": "The disorder that combines polyostotic fibrous dysplasia, cafe-au-lait skin patches and precocious puberty in one patient is",
+   "target": "McCune-Albright syndrome",
+   "target_alts": [
+    "McCune–Albright syndrome",
+    "the McCune-Albright syndrome",
+    "McCune Albright syndrome"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "McCune-Albright syndrome"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "McCune-Albright syndrome",
+       "McCune–Albright syndrome",
+       "the McCune-Albright syndrome",
+       "McCune Albright syndrome"
+      ]
+     },
+     "match": [
+      "McCune-Albright syndrome",
+      "McCune–Albright syndrome",
+      "the McCune-Albright syndrome",
+      "McCune Albright syndrome"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       6,
+       6,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "McCune-Albright syndrome",
+     "distractors": [
+      "Peutz-Jeghers syndrome",
+      "Beckwith-Wiedemann syndrome",
+      "Sturge-Weber syndrome",
+      "Klippel-Trenaunay syndrome"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-min-kunzite-parent",
+   "subfamily": "entity",
+   "prompt": "The lithium-bearing pyroxene whose lilac gem variety is called kunzite is",
+   "target": "spodumene",
+   "target_alts": [
+    "triphane"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "spodumene"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "spodumene",
+       "triphane"
+      ]
+     },
+     "match": [
+      "spodumene",
+      "triphane"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "spodumene",
+     "distractors": [
+      "petalite",
+      "lepidolite",
+      "amblygonite",
+      "eucryptite"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-mohr-double-compound",
+   "subfamily": "entity",
+   "prompt": "The double compound of ammonium and iron(II) sulfate crystallizing with six molecules of water, long used as a primary standard in redox titrations, is commonly called",
+   "target": "Mohr's salt",
+   "target_alts": [
+    "Mohr salt",
+    "Mohrs salt"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Mohr's salt"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mohr's salt",
+       "Mohr salt",
+       "Mohrs salt"
+      ]
+     },
+     "match": [
+      "Mohr's salt",
+      "Mohr salt",
+      "Mohrs salt"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Mohr's salt",
+     "distractors": [
+      "Glauber's salt",
+      "Rochelle salt",
+      "Zeise's salt",
+      "Fremy's salt"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-mughal-military-paymaster",
+   "subfamily": "entity",
+   "prompt": "In the Mughal imperial administration, the paymaster-general who headed the military department and maintained the muster rolls held the post of",
+   "target": "Mir Bakhshi",
+   "target_alts": [
+    "Mir Bakshi",
+    "Meer Bukhshee"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Mir Bakhshi"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mir Bakhshi",
+       "Mir Bakshi",
+       "Meer Bukhshee"
+      ]
+     },
+     "match": [
+      "Mir Bakhshi",
+      "Mir Bakshi",
+      "Meer Bukhshee"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Mir Bakhshi",
+     "distractors": [
+      "Mir Saman",
+      "Sadr-us-Sudur",
+      "Diwan-i-Ala",
+      "Mir Atish"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-naples-yellow-2",
+   "subfamily": "entity",
+   "prompt": "The historic opaque pigment of composition Pb2Sb2O7, prized for majolica glazes and Venetian glass, is",
+   "target": "Naples yellow",
+   "target_alts": [
+    "antimony yellow",
+    "giallolino"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Naples yellow"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Naples yellow",
+       "antimony yellow",
+       "giallolino"
+      ]
+     },
+     "match": [
+      "Naples yellow",
+      "antimony yellow",
+      "giallolino"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "Naples yellow",
+     "distractors": [
+      "Indian yellow",
+      "Chrome yellow",
+      "Orpiment",
+      "Lead-tin yellow"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-nerchinsk-1689",
+   "subfamily": "entity",
+   "prompt": "The 1689 boundary agreement that first fixed the frontier between the Qing empire and the Russian tsardom along the Argun and the upper Amur is known as the",
+   "target": "Treaty of Nerchinsk",
+   "target_alts": [
+    "Nerchinsk Treaty",
+    "Treaty of Nertchinsk"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Treaty of Nerchinsk"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Treaty of Nerchinsk",
+       "Nerchinsk Treaty",
+       "Treaty of Nertchinsk"
+      ]
+     },
+     "match": [
+      "Treaty of Nerchinsk",
+      "Nerchinsk Treaty",
+      "Treaty of Nertchinsk"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Treaty of Nerchinsk",
+     "distractors": [
+      "Treaty of Kyakhta",
+      "Treaty of Aigun",
+      "Convention of Peking",
+      "Treaty of Tianjin"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-noyes-whitney",
+   "subfamily": "entity",
+   "prompt": "The 1897 pharmaceutical relation stating that a solid's dissolution rate is proportional to the difference between its saturation solubility and the bulk concentration is known as the",
+   "target": "Noyes-Whitney equation",
+   "target_alts": [
+    "Noyes–Whitney equation",
+    "Noyes and Whitney equation"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Noyes-Whitney equation"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Noyes-Whitney equation",
+       "Noyes–Whitney equation",
+       "Noyes and Whitney equation"
+      ]
+     },
+     "match": [
+      "Noyes-Whitney equation",
+      "Noyes–Whitney equation",
+      "Noyes and Whitney equation"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       7,
+       6
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "readout": {
+     "gold": "Noyes-Whitney equation",
+     "distractors": [
+      "Hixson-Crowell cube root law",
+      "Higuchi equation",
+      "Henderson-Hasselbalch equation",
+      "Stokes-Einstein equation"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-orpiment",
+   "subfamily": "entity",
+   "prompt": "The bright yellow arsenic sulfide long ground up to make the painters' pigment known as king's yellow is the mineral",
+   "target": "orpiment",
+   "target_alts": [
+    "auripigmentum"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "orpiment"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "orpiment",
+       "auripigmentum"
+      ]
+     },
+     "match": [
+      "orpiment",
+      "auripigmentum"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       5
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "orpiment",
+     "distractors": [
+      "realgar",
+      "cinnabar",
+      "azurite",
+      "malachite"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-ottoman-religious-office",
+   "subfamily": "entity",
+   "prompt": "The supreme religious-legal authority of the Ottoman state, who issued binding fatwas and could sanction a sultan's deposition, held the office of",
+   "target": "Shaykh al-Islam",
+   "target_alts": [
+    "Sheikh ul-Islam",
+    "Şeyhülislam",
+    "Sheikh al-Islam"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Shaykh al-Islam"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Shaykh al-Islam",
+       "Sheikh ul-Islam",
+       "Şeyhülislam",
+       "Sheikh al-Islam"
+      ]
+     },
+     "match": [
+      "Shaykh al-Islam",
+      "Sheikh ul-Islam",
+      "Şeyhülislam",
+      "Sheikh al-Islam"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Shaykh al-Islam",
+     "distractors": [
+      "Qadi al-Qudat",
+      "Amir al-Mu'minin",
+      "Naqib al-Ashraf",
+      "Sadr al-Sudur"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-palau-capital",
+   "subfamily": "entity",
+   "prompt": "The purpose-built seat of national government of Palau, occupied since 2006, is",
+   "target": "Ngerulmud",
+   "target_alts": [
+    "Ngerulmud, Melekeok"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Ngerulmud"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ngerulmud",
+       "Ngerulmud, Melekeok"
+      ]
+     },
+     "match": [
+      "Ngerulmud",
+      "Ngerulmud, Melekeok"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       8
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Ngerulmud",
+     "distractors": [
+      "Koror",
+      "Palikir",
+      "Funafuti",
+      "Yaren"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-rio-negro-meeting",
+   "subfamily": "entity",
+   "prompt": "The dark-watered Amazon tributary that meets the pale Solimões just downstream of Manaus is",
+   "target": "Rio Negro",
+   "target_alts": [
+    "Río Negro",
+    "Negro River"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Rio Negro"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Rio Negro",
+       "Río Negro",
+       "Negro River"
+      ]
+     },
+     "match": [
+      "Rio Negro",
+      "Río Negro",
+      "Negro River"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.2,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "Rio Negro",
+     "distractors": [
+      "Madeira River",
+      "Tapajós River",
+      "Ucayali River",
+      "Xingu River"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-rochelle-salt",
+   "subfamily": "entity",
+   "prompt": "The tetrahydrate of potassium sodium tartrate, whose piezoelectric behaviour the Curie brothers demonstrated in 1880, is",
+   "target": "Rochelle salt",
+   "target_alts": [
+    "Rochelle's salt",
+    "Seignette salt"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Rochelle salt"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Rochelle salt",
+       "Rochelle's salt",
+       "Seignette salt"
+      ]
+     },
+     "match": [
+      "Rochelle salt",
+      "Rochelle's salt",
+      "Seignette salt"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Rochelle salt",
+     "distractors": [
+      "Epsom salt",
+      "Glauber's salt",
+      "Mohr's salt",
+      "Zeise's salt"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ent-rudolf-renamed",
+   "subfamily": "entity",
+   "prompt": "The large alkaline body of water in northern Kenya that colonial explorers named Rudolf is today called",
+   "target": "Lake Turkana",
+   "target_alts": [
+    "Turkana"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "intermediates": [
+    "Lake Turkana"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Lake Turkana",
+       "Turkana"
+      ]
+     },
+     "match": [
+      "Lake Turkana",
+      "Turkana"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Lake Turkana",
+     "distractors": [
+      "Lake Albert",
+      "Lake Natron",
+      "Lake Baringo",
+      "Lake Tanganyika"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ar-ain-jalut",
+   "subfamily": "l2_factual",
+   "prompt": "المعركة التي هزم فيها المماليك جيش المغول سنة 1260 في شمال فلسطين هي معركة",
+   "target": "عين جالوت",
+   "target_alts": [
+    "عين جالوت",
+    "موقعة عين جالوت",
+    "عَين جالوت"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Battle of Ain Jalut"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Battle of Ain Jalut",
+       "Ayn Jalut"
+      ],
+      "zh": [
+       "阿因贾鲁特战役",
+       "艾因贾卢特"
+      ]
+     },
+     "match": [
+      "Battle of Ain Jalut",
+      "Ayn Jalut",
+      "阿因贾鲁特战役",
+      "艾因贾卢特"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "عين جالوت",
+       "موقعة عين جالوت"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "عين جالوت",
+      "موقعة عين جالوت"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4
+      ],
+      "zh": [
+       6,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       4,
+       6
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Battle of Ain Jalut",
+     "distractors": [
+      "Battle of Homs",
+      "Battle of Hattin",
+      "Battle of Wadi al-Khazandar",
+      "Battle of Köse Dağ"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ar-dakhil",
+   "subfamily": "l2_factual",
+   "prompt": "الأمير الأموي الذي نجا من مذبحة بني العباس وعبر إلى الأندلس فأسّس إمارة قرطبة سنة 756 ميلادية هو",
+   "target": "عبد الرحمن الداخل",
+   "target_alts": [
+    "الداخل",
+    "عبد الرحمن بن معاوية",
+    "صقر قريش",
+    "بعبد الرحمن الداخل",
+    "لعبد الرحمن الداخل"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Abd al-Rahman I"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Abd al-Rahman I",
+       "Abd al-Rahman al-Dakhil"
+      ],
+      "zh": [
+       "阿卜杜拉赫曼一世",
+       "阿卜杜勒·拉赫曼一世"
+      ]
+     },
+     "match": [
+      "Abd al-Rahman I",
+      "Abd al-Rahman al-Dakhil",
+      "阿卜杜拉赫曼一世",
+      "阿卜杜勒·拉赫曼一世"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "عبد الرحمن الداخل",
+       "عبد الرحمن بن معاوية",
+       "صقر قريش"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "عبد الرحمن الداخل",
+      "عبد الرحمن بن معاوية",
+      "صقر قريش"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.8,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       9
+      ],
+      "zh": [
+       7,
+       9
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Abd al-Rahman I",
+     "distractors": [
+      "Hisham I of Córdoba",
+      "Al-Hakam I of Córdoba",
+      "Marwan II",
+      "Yusuf al-Fihri"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ar-kitab-almanazir-author",
+   "subfamily": "l2_factual",
+   "prompt": "صاحب كتاب المناظر الذي أرسى فيه أسس علم البصريات وشرح كيفية الإبصار هو",
+   "target": "الحسن بن الهيثم",
+   "target_alts": [
+    "ابن الهيثم",
+    "أبو علي الحسن بن الهيثم"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Ibn al-Haytham"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ibn al-Haytham",
+       "Hasan Ibn al-Haytham"
+      ],
+      "zh": [
+       "伊本·海赛姆",
+       "阿尔哈曾"
+      ]
+     },
+     "match": [
+      "Ibn al-Haytham",
+      "Hasan Ibn al-Haytham",
+      "伊本·海赛姆",
+      "阿尔哈曾"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "الحسن بن الهيثم",
+       "ابن الهيثم",
+       "أبو علي الحسن بن الهيثم"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "الحسن بن الهيثم",
+      "ابن الهيثم",
+      "أبو علي الحسن بن الهيثم"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       7
+      ],
+      "zh": [
+       6,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       5,
+       4,
+       7
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Ibn al-Haytham",
+     "distractors": [
+      "Al-Biruni",
+      "Al-Khwarizmi",
+      "Nasir al-Din al-Tusi",
+      "Ibn Sina"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ar-marj-dabiq",
+   "subfamily": "l2_factual",
+   "prompt": "هزم السلطان سليم الأول جيش المماليك سنة 1516 شمال حلب في موقعة تُعرف باسم",
+   "target": "مرج دابق",
+   "target_alts": [
+    "سهل مرج دابق",
+    "بمرج دابق"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Marj Dabiq"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Marj Dabiq",
+       "plain of Marj Dabiq"
+      ],
+      "zh": [
+       "马尔吉·达比克",
+       "达比克平原"
+      ]
+     },
+     "match": [
+      "Marj Dabiq",
+      "plain of Marj Dabiq",
+      "马尔吉·达比克",
+      "达比克平原"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "مرج دابق",
+       "سهل مرج دابق"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "مرج دابق",
+      "سهل مرج دابق"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.7,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       6
+      ],
+      "zh": [
+       6,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Marj Dabiq",
+     "distractors": [
+      "Ridaniya",
+      "Chaldiran",
+      "Ayn Jalut",
+      "Horns of Hattin"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ar-tayebsalih",
+   "subfamily": "l2_factual",
+   "prompt": "رواية موسم الهجرة إلى الشمال الصادرة سنة 1966 هي من تأليف الروائي السوداني",
+   "target": "الطيب صالح",
+   "target_alts": [
+    "الطيّب صالح",
+    "للطيب صالح",
+    "بالطيب صالح",
+    "والطيب صالح"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Tayeb Salih"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Tayeb Salih",
+       "Al-Tayyib Salih"
+      ],
+      "zh": [
+       "塔伊卜·萨利赫",
+       "泰伊布·萨利赫"
+      ]
+     },
+     "match": [
+      "Tayeb Salih",
+      "Al-Tayyib Salih",
+      "塔伊卜·萨利赫",
+      "泰伊布·萨利赫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "الطيب صالح",
+       "الطيّب صالح"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "الطيب صالح",
+      "الطيّب صالح"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       7
+      ],
+      "zh": [
+       7,
+       7
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Tayeb Salih",
+     "distractors": [
+      "Naguib Mahfouz",
+      "Abdelrahman Munif",
+      "Tawfiq al-Hakim",
+      "Ibrahim al-Koni"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ar-tusi",
+   "subfamily": "l2_factual",
+   "prompt": "المرصد الفلكي الذي أُنشئ في مدينة مراغة سنة 1259 ميلادية أشرف على تأسيسه العالم الفارسي",
+   "target": "نصير الدين الطوسي",
+   "target_alts": [
+    "الطوسي",
+    "نصير الدين",
+    "الخواجة نصير الدين الطوسي",
+    "بنصير الدين الطوسي",
+    "للطوسي"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ar",
+   "intermediates": [
+    "Nasir al-Din al-Tusi"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Nasir al-Din al-Tusi",
+       "Nasir ad-Din Tusi"
+      ],
+      "zh": [
+       "纳西尔丁·图西",
+       "纳绥尔丁·图西"
+      ]
+     },
+     "match": [
+      "Nasir al-Din al-Tusi",
+      "Nasir ad-Din Tusi",
+      "纳西尔丁·图西",
+      "纳绥尔丁·图西"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Arabic"
+      ],
+      "zh": [
+       "阿拉伯语"
+      ],
+      "ar": [
+       "نصير الدين الطوسي",
+       "الخواجة نصير الدين",
+       "الطوسي"
+      ]
+     },
+     "match": [
+      "Arabic",
+      "阿拉伯语",
+      "نصير الدين الطوسي",
+      "الخواجة نصير الدين",
+      "الطوسي"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.6,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       8,
+       7
+      ],
+      "zh": [
+       6,
+       7
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "ar": [
+       5,
+       6,
+       2
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Nasir al-Din al-Tusi",
+     "distractors": [
+      "Qutb al-Din al-Shirazi",
+      "Ibn al-Shatir",
+      "Ulugh Beg",
+      "Al-Battani"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-fi-ahvenanmaa",
+   "subfamily": "l2_factual",
+   "prompt": "Kansainliitto ratkaisi vuonna 1921 Suomen ja Ruotsin kiistan ja vahvisti Suomelle kuuluvaksi ruotsinkielisen, demilitarisoidun itsehallintomaakunnan, jonka nimi on",
+   "target": "Ahvenanmaa",
+   "target_alts": [
+    "Ahvenanmaan",
+    "Ahvenanmaalla",
+    "Ahvenanmaata",
+    "Ahvenanmaalle"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "Åland Islands"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Åland Islands",
+       "Province of Åland"
+      ],
+      "zh": [
+       "奥兰群岛",
+       "奥兰自治区"
+      ]
+     },
+     "match": [
+      "Åland Islands",
+      "Province of Åland",
+      "奥兰群岛",
+      "奥兰自治区"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "Ahvenanmaa",
+       "Ahvenanmaan",
+       "Ahvenanmaalla"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "Ahvenanmaa",
+      "Ahvenanmaan",
+      "Ahvenanmaalla"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       4,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Åland Islands",
+     "distractors": [
+      "Gotland",
+      "Bornholm",
+      "Faroe Islands",
+      "Saaremaa"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-fi-alankomaat",
+   "subfamily": "l2_factual",
+   "prompt": "Vuonna 1648 solmitussa Münsterin rauhassa Espanja tunnusti lopullisesti itsenäiseksi yhdistyneen tasavallan, jota nykyisin kutsutaan nimellä",
+   "target": "Alankomaat",
+   "target_alts": [
+    "Alankomaiden",
+    "Alankomaissa",
+    "Alankomaihin",
+    "Alankomaita"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "the Netherlands"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Netherlands",
+       "Kingdom of the Netherlands"
+      ],
+      "zh": [
+       "荷兰王国",
+       "尼德兰"
+      ]
+     },
+     "match": [
+      "the Netherlands",
+      "Kingdom of the Netherlands",
+      "荷兰王国",
+      "尼德兰"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "Alankomaat",
+       "Alankomaiden",
+       "Alankomaissa"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "Alankomaat",
+      "Alankomaiden",
+      "Alankomaissa"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       4,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "the Netherlands",
+     "distractors": [
+      "Belgium",
+      "Denmark",
+      "Luxembourg",
+      "Austria"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-fi-alankomaat-munster-1648",
+   "subfamily": "l2_factual",
+   "prompt": "Kahdeksankymmenvuotisen sodan päättäneessä Münsterin rauhassa vuonna 1648 Espanja tunnusti itsenäiseksi tasavallan nimeltä",
+   "target": "Yhdistyneet Alankomaat",
+   "target_alts": [
+    "Yhdistyneet Alankomaat",
+    "Alankomaat",
+    "Alankomaiden",
+    "Alankomaita",
+    "Alankomaihin"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "the Dutch Republic"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "the Dutch Republic",
+       "Republic of the Seven Netherlands"
+      ],
+      "zh": [
+       "尼德兰联省共和国",
+       "荷兰共和国"
+      ]
+     },
+     "match": [
+      "the Dutch Republic",
+      "Republic of the Seven Netherlands",
+      "尼德兰联省共和国",
+      "荷兰共和国"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "Yhdistyneet Alankomaat",
+       "Alankomaat",
+       "Alankomaiden"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "Yhdistyneet Alankomaat",
+      "Alankomaat",
+      "Alankomaiden"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       5
+      ],
+      "zh": [
+       6,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       8,
+       4,
+       5
+      ]
+     }
+    },
+    "target": 8
+   },
+   "mc": {
+    "readout": {
+     "gold": "the Dutch Republic",
+     "distractors": [
+      "the Republic of Venice",
+      "the Old Swiss Confederacy",
+      "the Polish–Lithuanian Commonwealth",
+      "the Spanish Netherlands"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-fi-norsunluurannikko",
+   "subfamily": "l2_factual",
+   "prompt": "Yamoussoukron valtava Rauhan Neitsyt Marian basilika, yksi maailman suurimmista kirkkorakennuksista, kohoaa Länsi-Afrikan valtiossa nimeltä",
+   "target": "Norsunluurannikko",
+   "target_alts": [
+    "Norsunluurannikon",
+    "Norsunluurannikolla",
+    "Norsunluurannikkoon"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "Ivory Coast"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ivory Coast",
+       "Côte d'Ivoire"
+      ],
+      "zh": [
+       "科特迪瓦",
+       "象牙海岸"
+      ]
+     },
+     "match": [
+      "Ivory Coast",
+      "Côte d'Ivoire",
+      "科特迪瓦",
+      "象牙海岸"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "Norsunluurannikko",
+       "Norsunluurannikon",
+       "Norsunluurannikolla"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "Norsunluurannikko",
+      "Norsunluurannikon",
+      "Norsunluurannikolla"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       4,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       6,
+       6,
+       7
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "readout": {
+     "gold": "Ivory Coast",
+     "distractors": [
+      "Ghana",
+      "Senegal",
+      "Burkina Faso",
+      "Liberia"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-fi-petsamo",
+   "subfamily": "l2_factual",
+   "prompt": "Vuoden 1944 välirauhassa luovutettiin Neuvostoliitolle Pohjoiseen jäämereen ulottunut kapea käytävä, joka tunnettiin nimellä",
+   "target": "Petsamo",
+   "target_alts": [
+    "Petsamon",
+    "Petsamoa",
+    "Petsamossa",
+    "Petsamoon"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "fi",
+   "intermediates": [
+    "Pechenga District"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Pechenga District",
+       "Pechenga"
+      ],
+      "zh": [
+       "佩琴加",
+       "佩琴加地区"
+      ]
+     },
+     "match": [
+      "Pechenga District",
+      "Pechenga",
+      "佩琴加",
+      "佩琴加地区"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Finnish"
+      ],
+      "zh": [
+       "芬兰语"
+      ],
+      "fi": [
+       "Petsamo",
+       "Petsamon seutu"
+      ]
+     },
+     "match": [
+      "Finnish",
+      "芬兰语",
+      "Petsamo",
+      "Petsamon seutu"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "fi": [
+       2,
+       4
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "Pechenga District",
+     "distractors": [
+      "Kandalaksha District",
+      "Kola District",
+      "Lovozero District",
+      "Tersky District"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-he-ben-zvi",
+   "subfamily": "l2_factual",
+   "prompt": "נשיאה השני של מדינת ישראל, שנבחר בשנת 1952 לאחר מותו של חיים ויצמן, היה",
+   "target": "יצחק בן-צבי",
+   "target_alts": [
+    "יצחק בן צבי",
+    "בן-צבי",
+    "יצחק שימשלביץ"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "Yitzhak Ben-Zvi"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Yitzhak Ben-Zvi",
+       "Izhak Ben-Zvi"
+      ],
+      "zh": [
+       "伊扎克·本-兹维"
+      ]
+     },
+     "match": [
+      "Yitzhak Ben-Zvi",
+      "Izhak Ben-Zvi",
+      "伊扎克·本-兹维"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "יצחק בן-צבי",
+       "יצחק בן צבי"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "יצחק בן-צבי",
+      "יצחק בן צבי"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       5
+      ],
+      "zh": [
+       7
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       7,
+       6
+      ]
+     }
+    },
+    "target": 7
+   },
+   "mc": {
+    "readout": {
+     "gold": "Yitzhak Ben-Zvi",
+     "distractors": [
+      "Zalman Shazar",
+      "Chaim Weizmann",
+      "Ephraim Katzir",
+      "Yitzhak Navon"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-he-imber-hatikva",
+   "subfamily": "l2_factual",
+   "prompt": "מילות ההמנון הלאומי של מדינת ישראל מבוססות על שיר שחיבר בשנות השבעים של המאה התשע-עשרה המשורר",
+   "target": "נפתלי הרץ אימבר",
+   "target_alts": [
+    "נפתלי הרץ אימבר",
+    "אימבר"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "Naftali Herz Imber"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Naftali Herz Imber",
+       "Naphtali Herz Imber"
+      ],
+      "zh": [
+       "纳夫塔利·赫茨·因贝尔",
+       "纳弗塔利·赫兹·英贝尔"
+      ]
+     },
+     "match": [
+      "Naftali Herz Imber",
+      "Naphtali Herz Imber",
+      "纳夫塔利·赫茨·因贝尔",
+      "纳弗塔利·赫兹·英贝尔"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "נפתלי הרץ אימבר",
+       "אימבר"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "נפתלי הרץ אימבר",
+      "אימבר"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       6
+      ],
+      "zh": [
+       10,
+       10
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       8,
+       3
+      ]
+     }
+    },
+    "target": 8
+   },
+   "mc": {
+    "readout": {
+     "gold": "Naftali Herz Imber",
+     "distractors": [
+      "Hayim Nahman Bialik",
+      "Saul Tchernichovsky",
+      "Judah Leib Gordon",
+      "Mordecai Zvi Mane"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-he-neptune-moon",
+   "subfamily": "l2_factual",
+   "prompt": "הגדול מבין לווייניו של כוכב הלכת נפטון הוא",
+   "target": "טריטון",
+   "target_alts": [
+    "הירח טריטון",
+    "בטריטון",
+    "טריטון"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "Triton moon"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Triton moon",
+       "the moon Triton"
+      ],
+      "zh": [
+       "海卫一",
+       "特里同卫星"
+      ]
+     },
+     "match": [
+      "Triton moon",
+      "the moon Triton",
+      "海卫一",
+      "特里同卫星"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "טריטון",
+       "הירח טריטון",
+       "בטריטון"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "טריטון",
+      "הירח טריטון",
+      "בטריטון"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       4,
+       7,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Triton moon",
+     "distractors": [
+      "Titan moon",
+      "Nereid moon",
+      "Charon moon",
+      "Enceladus moon"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-he-qumran",
+   "subfamily": "l2_factual",
+   "prompt": "המגילות הגנוזות התגלו במערות שבמדבר יהודה, סמוך לאתר הארכאולוגי הקרוי",
+   "target": "קומראן",
+   "target_alts": [
+    "קומראן",
+    "חירבת קומראן",
+    "חורבת קומראן",
+    "בקומראן"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "he",
+   "intermediates": [
+    "Khirbet Qumran"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Khirbet Qumran",
+       "Qumran"
+      ],
+      "zh": [
+       "库姆兰",
+       "昆兰"
+      ]
+     },
+     "match": [
+      "Khirbet Qumran",
+      "Qumran",
+      "库姆兰",
+      "昆兰"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hebrew"
+      ],
+      "zh": [
+       "希伯来语"
+      ],
+      "he": [
+       "קומראן",
+       "חירבת קומראן",
+       "חורבת קומראן"
+      ]
+     },
+     "match": [
+      "Hebrew",
+      "希伯来语",
+      "קומראן",
+      "חירבת קומראן",
+      "חורבת קומראן"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       3
+      ],
+      "zh": [
+       3,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       4
+      ],
+      "he": [
+       4,
+       7,
+       7
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Khirbet Qumran",
+     "distractors": [
+      "Masada",
+      "Ein Gedi",
+      "Wadi Murabba'at",
+      "Khirbet Mird"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-hu-aranybulla",
+   "subfamily": "l2_factual",
+   "prompt": "II. András uralkodó 1222-ben kiadott, a nemesi kiváltságokat írásba foglaló ünnepélyes oklevele, közismert nevén az",
+   "target": "Aranybulla",
+   "target_alts": [
+    "Aranybullát",
+    "Aranybullában",
+    "Aranybullája",
+    "az Aranybulla"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "Golden Bull of 1222"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Golden Bull of 1222",
+       "Golden Bull"
+      ],
+      "zh": [
+       "金玺诏书",
+       "黄金诏书"
+      ]
+     },
+     "match": [
+      "Golden Bull of 1222",
+      "Golden Bull",
+      "金玺诏书",
+      "黄金诏书"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "Aranybulla",
+       "Aranybullát",
+       "Aranybullában"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "Aranybulla",
+      "Aranybullát",
+      "Aranybullában"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       8,
+       2
+      ],
+      "zh": [
+       4,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Golden Bull of 1222",
+     "distractors": [
+      "Magna Carta",
+      "Diploma Andreanum",
+      "Statute of Kalisz",
+      "Privilegium Maius"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-hu-erkel-ferenc",
+   "subfamily": "l2_factual",
+   "prompt": "A Bánk bán című nagyopera zeneszerzője",
+   "target": "Erkel Ferenc",
+   "target_alts": [
+    "Erkel Ferencet",
+    "Erkel Ferencnek",
+    "Erkel Ferenctől",
+    "Erkel"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "Ferenc Erkel"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Ferenc Erkel",
+       "composer Erkel"
+      ],
+      "zh": [
+       "费伦茨·埃尔凯尔",
+       "埃尔凯尔·费伦茨"
+      ]
+     },
+     "match": [
+      "Ferenc Erkel",
+      "composer Erkel",
+      "费伦茨·埃尔凯尔",
+      "埃尔凯尔·费伦茨"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "Erkel Ferenc",
+       "Erkel Ferencet",
+       "Erkel Ferencnek"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "Erkel Ferenc",
+      "Erkel Ferencet",
+      "Erkel Ferencnek"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.3,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       7,
+       7
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Ferenc Erkel",
+     "distractors": [
+      "Mihály Mosonyi",
+      "Karl Goldmark",
+      "Jenő Hubay",
+      "Ödön Mihalovich"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-hu-gabor-denes",
+   "subfamily": "l2_factual",
+   "prompt": "A holográfia feltalálásáért 1971-ben fizikai Nobel-díjjal jutalmazott, Budapesten született villamosmérnök",
+   "target": "Gábor Dénes",
+   "target_alts": [
+    "Gábor Dénest",
+    "Gábor Dénesnek",
+    "Dennis Gabor"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "Dennis Gabor"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Dennis Gabor",
+       "physicist Gabor"
+      ],
+      "zh": [
+       "丹尼斯·加博尔",
+       "加博尔·丹尼斯"
+      ]
+     },
+     "match": [
+      "Dennis Gabor",
+      "physicist Gabor",
+      "丹尼斯·加博尔",
+      "加博尔·丹尼斯"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "Gábor Dénes",
+       "Gábor Dénest",
+       "Gábor Dénesnek"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "Gábor Dénes",
+      "Gábor Dénest",
+      "Gábor Dénesnek"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       6,
+       6
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       5,
+       5,
+       6
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Dennis Gabor",
+     "distractors": [
+      "Eugene Wigner",
+      "Leo Szilard",
+      "Georg von Békésy",
+      "Theodore von Kármán"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-hu-kolozsvar",
+   "subfamily": "l2_factual",
+   "prompt": "Hunyadi Mátyás 1443 februárjában abban az erdélyi településen látta meg a napvilágot, amelynek neve",
+   "target": "Kolozsvár",
+   "target_alts": [
+    "Kolozsváron",
+    "Kolozsvárott",
+    "Kolozsvárra",
+    "Kolozsvárt"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "hu",
+   "intermediates": [
+    "Cluj-Napoca"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Cluj-Napoca",
+       "city of Cluj"
+      ],
+      "zh": [
+       "克卢日-纳波卡",
+       "克卢日"
+      ]
+     },
+     "match": [
+      "Cluj-Napoca",
+      "city of Cluj",
+      "克卢日-纳波卡",
+      "克卢日"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Hungarian"
+      ],
+      "zh": [
+       "匈牙利语"
+      ],
+      "hu": [
+       "Kolozsvár",
+       "Kolozsváron",
+       "Kolozsvárott"
+      ]
+     },
+     "match": [
+      "Hungarian",
+      "匈牙利语",
+      "Kolozsvár",
+      "Kolozsváron",
+      "Kolozsvárott"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       4
+      ],
+      "zh": [
+       7,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "hu": [
+       4,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Cluj-Napoca",
+     "distractors": [
+      "Timișoara",
+      "Brașov",
+      "Oradea",
+      "Sibiu"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-bengkulu-pengasingan",
+   "subfamily": "l2_factual",
+   "prompt": "Setelah menjalani masa pengasingan di Ende, pada tahun 1938 Sukarno dipindahkan oleh pemerintah kolonial ke pesisir barat daya Sumatra, tepatnya ke",
+   "target": "Bengkulu",
+   "target_alts": [
+    "Bengkulu",
+    "Kota Bengkulu",
+    "Bengkoelen"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Bencoolen"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Bencoolen",
+       "Bengkulu town"
+      ],
+      "zh": [
+       "明古鲁",
+       "明古连"
+      ]
+     },
+     "match": [
+      "Bencoolen",
+      "Bengkulu town",
+      "明古鲁",
+      "明古连"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Kota Bengkulu",
+       "Bengkulu"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Kota Bengkulu",
+      "Bengkulu"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       2
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       1
+      ]
+     }
+    },
+    "target": 1
+   },
+   "mc": {
+    "readout": {
+     "gold": "Bencoolen",
+     "distractors": [
+      "Padang",
+      "Malacca",
+      "Batavia",
+      "Bantam"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-chengho",
+   "subfamily": "l2_factual",
+   "prompt": "Kelenteng Sam Poo Kong di Semarang dibangun untuk menghormati panglima armada Dinasti Ming yang dalam ejaan setempat dikenal sebagai",
+   "target": "Cheng Ho",
+   "target_alts": [
+    "Cheng Ho",
+    "Laksamana Cheng Ho",
+    "Ceng Ho"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Zheng He"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Zheng He",
+       "Admiral Zheng He"
+      ],
+      "zh": [
+       "郑和",
+       "三宝太监"
+      ]
+     },
+     "match": [
+      "Zheng He",
+      "Admiral Zheng He",
+      "郑和",
+      "三宝太监"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Cheng Ho",
+       "Laksamana Cheng Ho",
+       "Ceng Ho"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Cheng Ho",
+      "Laksamana Cheng Ho",
+      "Ceng Ho"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       2,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       5,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "Zheng He",
+     "distractors": [
+      "Wang Jinghong",
+      "Xu Fu",
+      "Yi Sun-sin",
+      "Ibn Battuta"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-denhaag-arbitrase",
+   "subfamily": "l2_factual",
+   "prompt": "Mahkamah Arbitrase Permanen hasil Konferensi Perdamaian tahun 1899 bersidang di Istana Damai, sebuah gedung megah di",
+   "target": "Den Haag",
+   "target_alts": [
+    "Den Haag",
+    "Kota Den Haag",
+    "'s-Gravenhage"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "The Hague"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "The Hague",
+       "City of The Hague"
+      ],
+      "zh": [
+       "海牙",
+       "海牙市"
+      ]
+     },
+     "match": [
+      "The Hague",
+      "City of The Hague",
+      "海牙",
+      "海牙市"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Den Haag",
+       "Kota Den Haag"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Den Haag",
+      "Kota Den Haag"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       2,
+       3
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "The Hague",
+     "distractors": [
+      "Rotterdam",
+      "Utrecht",
+      "Amsterdam",
+      "Antwerp"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-garis-wallace",
+   "subfamily": "l2_factual",
+   "prompt": "Batas biogeografi yang memisahkan fauna Asia dari fauna Australasia dan membentang di antara Bali dengan Lombok disebut",
+   "target": "Garis Wallace",
+   "target_alts": [
+    "Garis Wallacea",
+    "Garis pemisah Wallace"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Wallace Line"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Wallace Line",
+       "the Wallace boundary"
+      ],
+      "zh": [
+       "华莱士线",
+       "华莱士分界线"
+      ]
+     },
+     "match": [
+      "Wallace Line",
+      "the Wallace boundary",
+      "华莱士线",
+      "华莱士分界线"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Garis Wallace",
+       "Garis pemisah Wallace"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Garis Wallace",
+      "Garis pemisah Wallace"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       3
+      ],
+      "zh": [
+       4,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       5
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Wallace Line",
+     "distractors": [
+      "Weber's Line",
+      "Lydekker's Line",
+      "Huxley's Line",
+      "Müller's Line"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-kalimantan",
+   "subfamily": "l2_factual",
+   "prompt": "Sungai terpanjang di Nusantara, yaitu Kapuas, mengalir sepanjang lebih dari seribu kilometer di bagian barat",
+   "target": "Kalimantan",
+   "target_alts": [
+    "Kalimantan",
+    "Pulau Kalimantan"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "island of Borneo"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "island of Borneo",
+       "Borneo"
+      ],
+      "zh": [
+       "婆罗洲",
+       "加里曼丹"
+      ]
+     },
+     "match": [
+      "island of Borneo",
+      "Borneo",
+      "婆罗洲",
+      "加里曼丹"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Kalimantan",
+       "Pulau Kalimantan"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Kalimantan",
+      "Pulau Kalimantan"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       2
+      ],
+      "zh": [
+       3,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       1,
+       2
+      ]
+     }
+    },
+    "target": 1
+   },
+   "mc": {
+    "readout": {
+     "gold": "island of Borneo",
+     "distractors": [
+      "island of Sumatra",
+      "island of Sulawesi",
+      "island of New Guinea",
+      "island of Mindanao"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-perjanjian-bongaya",
+   "subfamily": "l2_factual",
+   "prompt": "Kesepakatan yang ditandatangani pada tahun 1667 antara VOC dan Sultan Hasanuddin dari Gowa dikenal sebagai",
+   "target": "Perjanjian Bongaya",
+   "target_alts": [
+    "Perjanjian Bungaya",
+    "Perjanjian Bongaja"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Treaty of Bongaya"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Treaty of Bongaya",
+       "Bongaya Agreement"
+      ],
+      "zh": [
+       "邦加亚条约",
+       "邦盖条约"
+      ]
+     },
+     "match": [
+      "Treaty of Bongaya",
+      "Bongaya Agreement",
+      "邦加亚条约",
+      "邦盖条约"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Perjanjian Bongaya",
+       "Perjanjian Bungaya",
+       "Perjanjian Bongaja"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Perjanjian Bongaya",
+      "Perjanjian Bungaya",
+      "Perjanjian Bongaja"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       4,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       3,
+       3
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Treaty of Bongaya",
+     "distractors": [
+      "Treaty of Giyanti",
+      "Treaty of Salatiga",
+      "Treaty of Painan",
+      "Linggadjati Agreement"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-puncak-jaya",
+   "subfamily": "l2_factual",
+   "prompt": "Titik tertinggi di Indonesia yang menjulang di Pegunungan Sudirman, Provinsi Papua Tengah, bernama",
+   "target": "Puncak Jaya",
+   "target_alts": [
+    "Puncak Cartenz",
+    "Puncak Jayawijaya"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Carstensz Pyramid"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Carstensz Pyramid",
+       "Mount Carstensz"
+      ],
+      "zh": [
+       "查亚峰",
+       "卡斯滕兹金字塔峰"
+      ]
+     },
+     "match": [
+      "Carstensz Pyramid",
+      "Mount Carstensz",
+      "查亚峰",
+      "卡斯滕兹金字塔峰"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Puncak Jaya",
+       "Puncak Cartenz",
+       "Puncak Jayawijaya"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Puncak Jaya",
+      "Puncak Cartenz",
+      "Puncak Jayawijaya"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4
+      ],
+      "zh": [
+       3,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       3,
+       6
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Carstensz Pyramid",
+     "distractors": [
+      "Puncak Trikora",
+      "Mount Wilhelm",
+      "Mount Kinabalu",
+      "Mount Kosciuszko"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-selandiabaru-tasman",
+   "subfamily": "l2_factual",
+   "prompt": "Pada tahun 1642 pelaut Abel Tasman menjadi orang Eropa pertama yang melihat gugusan pulau besar di Pasifik selatan yang sekarang disebut",
+   "target": "Selandia Baru",
+   "target_alts": [
+    "Selandia Baru",
+    "Negeri Selandia Baru"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "New Zealand"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "New Zealand",
+       "Realm of New Zealand"
+      ],
+      "zh": [
+       "新西兰",
+       "纽西兰"
+      ]
+     },
+     "match": [
+      "New Zealand",
+      "Realm of New Zealand",
+      "新西兰",
+      "纽西兰"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Selandia Baru",
+       "Negeri Selandia Baru"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Selandia Baru",
+      "Negeri Selandia Baru"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       4
+      ],
+      "zh": [
+       1,
+       2
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "New Zealand",
+     "distractors": [
+      "Australia",
+      "Fiji",
+      "Papua New Guinea",
+      "Solomon Islands"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-sriwijaya",
+   "subfamily": "l2_factual",
+   "prompt": "Negara maritim bercorak Buddha yang berpusat di Palembang dan menguasai lalu lintas perdagangan di Selat Malaka pada abad ke-7 dikenal dengan nama",
+   "target": "Sriwijaya",
+   "target_alts": [
+    "Kedatuan Sriwijaya",
+    "Kerajaan Sriwijaya"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Srivijaya Empire"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Srivijaya Empire",
+       "Srivijayan state"
+      ],
+      "zh": [
+       "室利佛逝",
+       "三佛齐"
+      ]
+     },
+     "match": [
+      "Srivijaya Empire",
+      "Srivijayan state",
+      "室利佛逝",
+      "三佛齐"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Sriwijaya",
+       "Kedatuan Sriwijaya",
+       "Kerajaan Sriwijaya"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Sriwijaya",
+      "Kedatuan Sriwijaya",
+      "Kerajaan Sriwijaya"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       5,
+       5
+      ],
+      "zh": [
+       4,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       5,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Srivijaya Empire",
+     "distractors": [
+      "Majapahit Empire",
+      "Khmer Empire",
+      "Kingdom of Funan",
+      "Champa Kingdom"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-sungai-kapuas",
+   "subfamily": "l2_factual",
+   "prompt": "Aliran air terpanjang di Pulau Kalimantan, yang bermuara di dekat Pontianak, bernama",
+   "target": "Sungai Kapuas",
+   "target_alts": [
+    "Sungai Kapuas",
+    "Kapuas"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Kapuas River"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Kapuas River"
+      ],
+      "zh": [
+       "卡普阿斯河"
+      ]
+     },
+     "match": [
+      "Kapuas River",
+      "卡普阿斯河"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Sungai Kapuas",
+       "Kapuas"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Sungai Kapuas",
+      "Kapuas"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3
+      ],
+      "zh": [
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       2
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Kapuas River",
+     "distractors": [
+      "Mahakam River",
+      "Barito River",
+      "Rajang River",
+      "Kahayan River"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-tambora-1815",
+   "subfamily": "l2_factual",
+   "prompt": "Letusan dahsyat pada tahun 1815 yang memicu 'tahun tanpa musim panas' di Eropa terjadi di Pulau Sumbawa, tepatnya di",
+   "target": "Gunung Tambora",
+   "target_alts": [
+    "Tambora",
+    "Gunung Api Tambora"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Mount Tambora"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Mount Tambora",
+       "Tambora volcano"
+      ],
+      "zh": [
+       "坦博拉火山",
+       "坦博拉山"
+      ]
+     },
+     "match": [
+      "Mount Tambora",
+      "Tambora volcano",
+      "坦博拉火山",
+      "坦博拉山"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Gunung Tambora",
+       "Gunung Api Tambora"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Gunung Tambora",
+      "Gunung Api Tambora"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       3
+      ],
+      "zh": [
+       4,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Mount Tambora",
+     "distractors": [
+      "Krakatoa",
+      "Mount Merapi",
+      "Mount Rinjani",
+      "Mount Agung"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-id-terusan-suez",
+   "subfamily": "l2_factual",
+   "prompt": "Proyek yang dipimpin Ferdinand de Lesseps dan diresmikan pada November 1869 untuk menghubungkan Laut Merah dengan Laut Tengah dinamakan",
+   "target": "Terusan Suez",
+   "target_alts": [
+    "Terusan Suez",
+    "Terusan Suiz"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "id",
+   "intermediates": [
+    "Suez Canal"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Suez Canal"
+      ],
+      "zh": [
+       "苏伊士运河"
+      ]
+     },
+     "match": [
+      "Suez Canal",
+      "苏伊士运河"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Indonesian"
+      ],
+      "zh": [
+       "印尼语",
+       "印度尼西亚语"
+      ],
+      "id": [
+       "Terusan Suez",
+       "Terusan Suiz"
+      ]
+     },
+     "match": [
+      "Indonesian",
+      "印尼语",
+      "印度尼西亚语",
+      "Terusan Suez",
+      "Terusan Suiz"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3
+      ],
+      "zh": [
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2,
+       2
+      ],
+      "id": [
+       4,
+       4
+      ]
+     }
+    },
+    "target": 4
+   },
+   "mc": {
+    "readout": {
+     "gold": "Suez Canal",
+     "distractors": [
+      "Panama Canal",
+      "Kiel Canal",
+      "Corinth Canal",
+      "Erie Canal"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ko-borobudur-java",
+   "subfamily": "l2_factual",
+   "prompt": "인도네시아 자바섬에 있는, 세계에서 가장 큰 불교 유적의 이름은",
+   "target": "보로부두르",
+   "target_alts": [
+    "보로부두르 사원",
+    "보로부두르이다",
+    "보로부두르가"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "Borobudur Temple"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Borobudur Temple",
+       "Borobudur"
+      ],
+      "zh": [
+       "婆罗浮屠",
+       "婆罗浮屠寺"
+      ]
+     },
+     "match": [
+      "Borobudur Temple",
+      "Borobudur",
+      "婆罗浮屠",
+      "婆罗浮屠寺"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "보로부두르",
+       "보로부두르 사원"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "보로부두르",
+      "보로부두르 사원"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       3
+      ],
+      "zh": [
+       4,
+       5
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       5,
+       7
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Borobudur Temple",
+     "distractors": [
+      "Prambanan Temple",
+      "Angkor Wat",
+      "Mendut Temple",
+      "Ananda Temple"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ko-first-spacewalk-cosmonaut",
+   "subfamily": "l2_factual",
+   "prompt": "1965년 보스호트 2호에 탑승해 인류 최초로 선외 활동에 성공한 소련 비행사는",
+   "target": "알렉세이 레오노프",
+   "target_alts": [
+    "레오노프",
+    "알렉세이 아르히포비치 레오노프",
+    "알렉세이 레오노프"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "Alexei Leonov"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Alexei Leonov",
+       "Alexei Arkhipovich Leonov"
+      ],
+      "zh": [
+       "阿列克谢·列昂诺夫",
+       "列昂诺夫"
+      ]
+     },
+     "match": [
+      "Alexei Leonov",
+      "Alexei Arkhipovich Leonov",
+      "阿列克谢·列昂诺夫",
+      "列昂诺夫"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "알렉세이 레오노프",
+       "레오노프",
+       "알렉세이 아르히포비치 레오노프"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "알렉세이 레오노프",
+      "레오노프",
+      "알렉세이 아르히포비치 레오노프"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.9,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       7
+      ],
+      "zh": [
+       9,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       8,
+       4,
+       13
+      ]
+     }
+    },
+    "target": 8
+   },
+   "mc": {
+    "readout": {
+     "gold": "Alexei Leonov",
+     "distractors": [
+      "Pavel Belyayev",
+      "Gherman Titov",
+      "Vladimir Komarov",
+      "Valery Bykovsky"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ko-samgukyusa-compiler",
+   "subfamily": "l2_factual",
+   "prompt": "고려 후기에 단군 신화를 기록한 역사서 『삼국유사』를 편찬한 승려는",
+   "target": "일연",
+   "target_alts": [
+    "일연 스님",
+    "보각국사 일연",
+    "일연이다"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "Iryeon"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Iryeon",
+       "Monk Il-yeon"
+      ],
+      "zh": [
+       "一然",
+       "僧人一然"
+      ]
+     },
+     "match": [
+      "Iryeon",
+      "Monk Il-yeon",
+      "一然",
+      "僧人一然"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "일연",
+       "일연 스님",
+       "보각국사 일연"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "일연",
+      "일연 스님",
+      "보각국사 일연"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       3,
+       4
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       2,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "Iryeon",
+     "distractors": [
+      "Kim Bu-sik",
+      "Wonhyo",
+      "Jinul",
+      "Gakhun"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ko-sohnkeechung",
+   "subfamily": "l2_factual",
+   "prompt": "1936년 베를린 하계 올림픽 마라톤에서 금메달을 차지한 조선 출신 육상 영웅의 이름은",
+   "target": "손기정",
+   "target_alts": [
+    "손기정이",
+    "손기정은",
+    "손기정이다"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ko",
+   "intermediates": [
+    "Sohn Kee-chung"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Sohn Kee-chung",
+       "Son Kee-chung"
+      ],
+      "zh": [
+       "孙基祯",
+       "马拉松选手孙基祯"
+      ]
+     },
+     "match": [
+      "Sohn Kee-chung",
+      "Son Kee-chung",
+      "孙基祯",
+      "马拉松选手孙基祯"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Korean"
+      ],
+      "zh": [
+       "韩语",
+       "韩国语"
+      ],
+      "ko": [
+       "손기정",
+       "손기정 선수"
+      ]
+     },
+     "match": [
+      "Korean",
+      "韩语",
+      "韩国语",
+      "손기정",
+      "손기정 선수"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       4,
+       4
+      ],
+      "zh": [
+       4,
+       6
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1,
+       2
+      ],
+      "ko": [
+       3,
+       4
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Sohn Kee-chung",
+     "distractors": [
+      "Nam Sung-yong",
+      "Suh Yun-bok",
+      "Hwang Young-cho",
+      "Ham Kee-yong"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-pl-konstantynopol-sobor-381",
+   "subfamily": "l2_factual",
+   "prompt": "Wyznanie wiary nicejskie uzupełniono w 381 roku na soborze, który obradował w",
+   "target": "Konstantynopolu",
+   "target_alts": [
+    "Konstantynopol",
+    "Konstantynopola",
+    "Konstantynopolem",
+    "Konstantynopolu"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "Constantinople"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Constantinople",
+       "the city of Constantinople"
+      ],
+      "zh": [
+       "君士坦丁堡"
+      ]
+     },
+     "match": [
+      "Constantinople",
+      "the city of Constantinople",
+      "君士坦丁堡"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "Konstantynopol",
+       "Konstantynopola",
+       "Konstantynopolu"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "Konstantynopol",
+      "Konstantynopola",
+      "Konstantynopolu"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       5
+      ],
+      "zh": [
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       4,
+       5,
+       5
+      ]
+     }
+    },
+    "target": 5
+   },
+   "mc": {
+    "readout": {
+     "gold": "Constantinople",
+     "distractors": [
+      "Thessalonica",
+      "Antioch",
+      "Nicaea",
+      "Alexandria"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-pl-lwow",
+   "subfamily": "l2_factual",
+   "prompt": "Zbiory biblioteki Ossolineum, ufundowanej w 1817 roku przez Józefa Maksymiliana Ossolińskiego, mieściły się przed drugą wojną światową w grodzie nad Pełtwią, czyli we",
+   "target": "Lwowie",
+   "target_alts": [
+    "Lwów",
+    "Lwowa",
+    "Lwowem"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "Lviv"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Lviv",
+       "Lvov"
+      ],
+      "zh": [
+       "利沃夫",
+       "利沃夫城"
+      ]
+     },
+     "match": [
+      "Lviv",
+      "Lvov",
+      "利沃夫",
+      "利沃夫城"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "Lwów",
+       "Lwowie",
+       "Lwowa"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "Lwów",
+      "Lwowie",
+      "Lwowa"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       3,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       2,
+       2,
+       2
+      ]
+     }
+    },
+    "target": 2
+   },
+   "mc": {
+    "readout": {
+     "gold": "Lviv",
+     "distractors": [
+      "Kraków",
+      "Chernivtsi",
+      "Ivano-Frankivsk",
+      "Wrocław"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-pl-ziemie-odzyskane",
+   "subfamily": "l2_factual",
+   "prompt": "W propagandzie Polski Ludowej dla obszarów przyznanych po konferencji poczdamskiej, dawniej wchodzących w skład Rzeszy, ukuto nazwę",
+   "target": "Ziemie Odzyskane",
+   "target_alts": [
+    "Ziem Odzyskanych",
+    "Ziemiach Odzyskanych",
+    "Ziemiami Odzyskanymi"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "pl",
+   "intermediates": [
+    "Recovered Territories"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Recovered Territories",
+       "Regained Lands"
+      ],
+      "zh": [
+       "收复领土",
+       "收复的领土"
+      ]
+     },
+     "match": [
+      "Recovered Territories",
+      "Regained Lands",
+      "收复领土",
+      "收复的领土"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Polish"
+      ],
+      "zh": [
+       "波兰语"
+      ],
+      "pl": [
+       "Ziemie Odzyskane",
+       "Ziem Odzyskanych",
+       "Ziemiami Odzyskanymi"
+      ]
+     },
+     "match": [
+      "Polish",
+      "波兰语",
+      "Ziemie Odzyskane",
+      "Ziem Odzyskanych",
+      "Ziemiami Odzyskanymi"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 1.0,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       2,
+       2
+      ],
+      "zh": [
+       2,
+       3
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       2
+      ],
+      "pl": [
+       7,
+       6,
+       7
+      ]
+     }
+    },
+    "target": 7
+   },
+   "mc": {
+    "readout": {
+     "gold": "Recovered Territories",
+     "distractors": [
+      "Eastern Borderlands",
+      "Sudetenland",
+      "Congress Poland",
+      "Free City of Danzig"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ru-baikonur",
+   "subfamily": "l2_factual",
+   "prompt": "Первый пилотируемый полёт человека начался 12 апреля 1961 года со стартовой площадки в Кызылординской области Казахстана, известной как",
+   "target": "Байконур",
+   "target_alts": [
+    "Байконура",
+    "Байконуре",
+    "Байконуром",
+    "космодром Байконур"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "Baikonur Cosmodrome"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Baikonur Cosmodrome",
+       "Baikonur launch complex"
+      ],
+      "zh": [
+       "拜科努尔航天发射场",
+       "拜科努尔"
+      ]
+     },
+     "match": [
+      "Baikonur Cosmodrome",
+      "Baikonur launch complex",
+      "拜科努尔航天发射场",
+      "拜科努尔"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "Байконур",
+       "Байконура",
+       "космодром Байконур"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "Байконур",
+      "Байконура",
+      "космодром Байконур"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.6,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       6,
+       5
+      ],
+      "zh": [
+       7,
+       4
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       3,
+       4,
+       6
+      ]
+     }
+    },
+    "target": 3
+   },
+   "mc": {
+    "readout": {
+     "gold": "Baikonur Cosmodrome",
+     "distractors": [
+      "Plesetsk Cosmodrome",
+      "Vostochny Cosmodrome",
+      "Kapustin Yar",
+      "Jiuquan Satellite Launch Center"
+     ]
+    }
+   }
+  },
+  {
+   "name": "brh-ru-bellingshausen",
+   "subfamily": "l2_factual",
+   "prompt": "Кругосветной экспедицией 1819–1821 годов на шлюпе «Восток» командовал",
+   "target": "Беллинсгаузен",
+   "target_alts": [
+    "Беллинсгаузен",
+    "Беллинсгаузена",
+    "Беллинсгаузену",
+    "Беллинсгаузеном",
+    "Фаддей Беллинсгаузен",
+    "Фаддей Фаддеевич Беллинсгаузен"
+   ],
+   "source": "staging_hard_mt",
+   "eval_render": "plain",
+   "readout": {
+    "kind": "final_prompt_token",
+    "offsets": [
+     -1
+    ]
+   },
+   "lang": "ru",
+   "intermediates": [
+    "Fabian Gottlieb von Bellingshausen"
+   ],
+   "units": [
+    {
+     "role": "readout",
+     "required": true,
+     "multi_token": true,
+     "forms": {
+      "en": [
+       "Fabian Gottlieb von Bellingshausen",
+       "Thaddeus Bellingshausen"
+      ],
+      "zh": [
+       "别林斯高晋",
+       "法比安·别林斯高晋"
+      ]
+     },
+     "match": [
+      "Fabian Gottlieb von Bellingshausen",
+      "Thaddeus Bellingshausen",
+      "别林斯高晋",
+      "法比安·别林斯高晋"
+     ]
+    },
+    {
+     "role": "language",
+     "required": true,
+     "multi_token": false,
+     "forms": {
+      "en": [
+       "Russian"
+      ],
+      "zh": [
+       "俄语"
+      ],
+      "ru": [
+       "Беллинсгаузен",
+       "Фаддей Беллинсгаузен",
+       "Беллинсгаузена"
+      ]
+     },
+     "match": [
+      "Russian",
+      "俄语",
+      "Беллинсгаузен",
+      "Фаддей Беллинсгаузен",
+      "Беллинсгаузена"
+     ]
+    }
+   ],
+   "consistency": 1.0,
+   "consistency_strict": 0.5,
+   "consistency_greedy": 1,
+   "gate_variant": "chat",
+   "probe_token_lens": {
+    "units": {
+     "readout": {
+      "en": [
+       8,
+       7
+      ],
+      "zh": [
+       5,
+       9
+      ]
+     },
+     "language": {
+      "en": [
+       1
+      ],
+      "zh": [
+       1
+      ],
+      "ru": [
+       6,
+       9,
+       6
+      ]
+     }
+    },
+    "target": 6
+   },
+   "mc": {
+    "readout": {
+     "gold": "Fabian Gottlieb von Bellingshausen",
+     "distractors": [
+      "Mikhail Lazarev",
+      "Adam Johann von Krusenstern",
+      "Otto von Kotzebue",
+      "Ferdinand von Wrangel"
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "rel-s00-a",
+    "scene": "s00",
+    "stimulus": "Avery's landlord is Sam. Sam's sibling is Riley. In other words, Riley is Avery's",
+    "names": [
+      "Avery",
+      "Sam",
+      "Riley"
+    ],
+    "hop1": "landlord",
+    "hop2": "sibling",
+    "gold": "landlord's sibling",
+    "gold_alt": "sibling of Avery's landlord",
+    "flipped": "sibling's landlord"
+  },
+  {
+    "id": "rel-s00-b",
+    "scene": "s00",
+    "stimulus": "Avery's sibling is Sam. Sam's landlord is Riley. In other words, Riley is Avery's",
+    "names": [
+      "Avery",
+      "Sam",
+      "Riley"
+    ],
+    "hop1": "sibling",
+    "hop2": "landlord",
+    "gold": "sibling's landlord",
+    "gold_alt": "landlord of Avery's sibling",
+    "flipped": "landlord's sibling"
+  },
+  {
+    "id": "rel-s01-a",
+    "scene": "s01",
+    "stimulus": "Jordan's landlord is Casey. Casey's cousin is Quinn. In other words, Quinn is Jordan's",
+    "names": [
+      "Jordan",
+      "Casey",
+      "Quinn"
+    ],
+    "hop1": "landlord",
+    "hop2": "cousin",
+    "gold": "landlord's cousin",
+    "gold_alt": "cousin of Jordan's landlord",
+    "flipped": "cousin's landlord"
+  },
+  {
+    "id": "rel-s01-b",
+    "scene": "s01",
+    "stimulus": "Jordan's cousin is Casey. Casey's landlord is Quinn. In other words, Quinn is Jordan's",
+    "names": [
+      "Jordan",
+      "Casey",
+      "Quinn"
+    ],
+    "hop1": "cousin",
+    "hop2": "landlord",
+    "gold": "cousin's landlord",
+    "gold_alt": "landlord of Jordan's cousin",
+    "flipped": "landlord's cousin"
+  },
+  {
+    "id": "rel-s02-a",
+    "scene": "s02",
+    "stimulus": "Morgan's landlord is Taylor. Taylor's parent is Devon. In other words, Devon is Morgan's",
+    "names": [
+      "Morgan",
+      "Taylor",
+      "Devon"
+    ],
+    "hop1": "landlord",
+    "hop2": "parent",
+    "gold": "landlord's parent",
+    "gold_alt": "parent of Morgan's landlord",
+    "flipped": "parent's landlord"
+  },
+  {
+    "id": "rel-s02-b",
+    "scene": "s02",
+    "stimulus": "Morgan's parent is Taylor. Taylor's landlord is Devon. In other words, Devon is Morgan's",
+    "names": [
+      "Morgan",
+      "Taylor",
+      "Devon"
+    ],
+    "hop1": "parent",
+    "hop2": "landlord",
+    "gold": "parent's landlord",
+    "gold_alt": "landlord of Morgan's parent",
+    "flipped": "landlord's parent"
+  },
+  {
+    "id": "rel-s03-a",
+    "scene": "s03",
+    "stimulus": "Rowan's landlord is Sage. Sage's spouse is Lee. In other words, Lee is Rowan's",
+    "names": [
+      "Rowan",
+      "Sage",
+      "Lee"
+    ],
+    "hop1": "landlord",
+    "hop2": "spouse",
+    "gold": "landlord's spouse",
+    "gold_alt": "spouse of Rowan's landlord",
+    "flipped": "spouse's landlord"
+  },
+  {
+    "id": "rel-s03-b",
+    "scene": "s03",
+    "stimulus": "Rowan's spouse is Sage. Sage's landlord is Lee. In other words, Lee is Rowan's",
+    "names": [
+      "Rowan",
+      "Sage",
+      "Lee"
+    ],
+    "hop1": "spouse",
+    "hop2": "landlord",
+    "gold": "spouse's landlord",
+    "gold_alt": "landlord of Rowan's spouse",
+    "flipped": "landlord's spouse"
+  },
+  {
+    "id": "rel-s04-a",
+    "scene": "s04",
+    "stimulus": "Kit's landlord is Remy. Remy's child is Blake. In other words, Blake is Kit's",
+    "names": [
+      "Kit",
+      "Remy",
+      "Blake"
+    ],
+    "hop1": "landlord",
+    "hop2": "child",
+    "gold": "landlord's child",
+    "gold_alt": "child of Kit's landlord",
+    "flipped": "child's landlord"
+  },
+  {
+    "id": "rel-s04-b",
+    "scene": "s04",
+    "stimulus": "Kit's child is Remy. Remy's landlord is Blake. In other words, Blake is Kit's",
+    "names": [
+      "Kit",
+      "Remy",
+      "Blake"
+    ],
+    "hop1": "child",
+    "hop2": "landlord",
+    "gold": "child's landlord",
+    "gold_alt": "landlord of Kit's child",
+    "flipped": "landlord's child"
+  },
+  {
+    "id": "rel-s05-a",
+    "scene": "s05",
+    "stimulus": "Alex's dentist is Charlie. Charlie's sibling is Drew. In other words, Drew is Alex's",
+    "names": [
+      "Alex",
+      "Charlie",
+      "Drew"
+    ],
+    "hop1": "dentist",
+    "hop2": "sibling",
+    "gold": "dentist's sibling",
+    "gold_alt": "sibling of Alex's dentist",
+    "flipped": "sibling's dentist"
+  },
+  {
+    "id": "rel-s05-b",
+    "scene": "s05",
+    "stimulus": "Alex's sibling is Charlie. Charlie's dentist is Drew. In other words, Drew is Alex's",
+    "names": [
+      "Alex",
+      "Charlie",
+      "Drew"
+    ],
+    "hop1": "sibling",
+    "hop2": "dentist",
+    "gold": "sibling's dentist",
+    "gold_alt": "dentist of Alex's sibling",
+    "flipped": "dentist's sibling"
+  },
+  {
+    "id": "rel-s06-a",
+    "scene": "s06",
+    "stimulus": "Emerson's dentist is Finley. Finley's cousin is Harper. In other words, Harper is Emerson's",
+    "names": [
+      "Emerson",
+      "Finley",
+      "Harper"
+    ],
+    "hop1": "dentist",
+    "hop2": "cousin",
+    "gold": "dentist's cousin",
+    "gold_alt": "cousin of Emerson's dentist",
+    "flipped": "cousin's dentist"
+  },
+  {
+    "id": "rel-s06-b",
+    "scene": "s06",
+    "stimulus": "Emerson's cousin is Finley. Finley's dentist is Harper. In other words, Harper is Emerson's",
+    "names": [
+      "Emerson",
+      "Finley",
+      "Harper"
+    ],
+    "hop1": "cousin",
+    "hop2": "dentist",
+    "gold": "cousin's dentist",
+    "gold_alt": "dentist of Emerson's cousin",
+    "flipped": "dentist's cousin"
+  },
+  {
+    "id": "rel-s07-a",
+    "scene": "s07",
+    "stimulus": "Jules's dentist is Kai. Kai's parent is Noor. In other words, Noor is Jules's",
+    "names": [
+      "Jules",
+      "Kai",
+      "Noor"
+    ],
+    "hop1": "dentist",
+    "hop2": "parent",
+    "gold": "dentist's parent",
+    "gold_alt": "parent of Jules's dentist",
+    "flipped": "parent's dentist"
+  },
+  {
+    "id": "rel-s07-b",
+    "scene": "s07",
+    "stimulus": "Jules's parent is Kai. Kai's dentist is Noor. In other words, Noor is Jules's",
+    "names": [
+      "Jules",
+      "Kai",
+      "Noor"
+    ],
+    "hop1": "parent",
+    "hop2": "dentist",
+    "gold": "parent's dentist",
+    "gold_alt": "dentist of Jules's parent",
+    "flipped": "dentist's parent"
+  },
+  {
+    "id": "rel-s08-a",
+    "scene": "s08",
+    "stimulus": "Reese's dentist is Skyler. Skyler's spouse is Hayden. In other words, Hayden is Reese's",
+    "names": [
+      "Reese",
+      "Skyler",
+      "Hayden"
+    ],
+    "hop1": "dentist",
+    "hop2": "spouse",
+    "gold": "dentist's spouse",
+    "gold_alt": "spouse of Reese's dentist",
+    "flipped": "spouse's dentist"
+  },
+  {
+    "id": "rel-s08-b",
+    "scene": "s08",
+    "stimulus": "Reese's spouse is Skyler. Skyler's dentist is Hayden. In other words, Hayden is Reese's",
+    "names": [
+      "Reese",
+      "Skyler",
+      "Hayden"
+    ],
+    "hop1": "spouse",
+    "hop2": "dentist",
+    "gold": "spouse's dentist",
+    "gold_alt": "dentist of Reese's spouse",
+    "flipped": "dentist's spouse"
+  },
+  {
+    "id": "rel-s09-a",
+    "scene": "s09",
+    "stimulus": "Parker's dentist is Elliot. Elliot's child is Frankie. In other words, Frankie is Parker's",
+    "names": [
+      "Parker",
+      "Elliot",
+      "Frankie"
+    ],
+    "hop1": "dentist",
+    "hop2": "child",
+    "gold": "dentist's child",
+    "gold_alt": "child of Parker's dentist",
+    "flipped": "child's dentist"
+  },
+  {
+    "id": "rel-s09-b",
+    "scene": "s09",
+    "stimulus": "Parker's child is Elliot. Elliot's dentist is Frankie. In other words, Frankie is Parker's",
+    "names": [
+      "Parker",
+      "Elliot",
+      "Frankie"
+    ],
+    "hop1": "child",
+    "hop2": "dentist",
+    "gold": "child's dentist",
+    "gold_alt": "dentist of Parker's child",
+    "flipped": "dentist's child"
+  },
+  {
+    "id": "rel-s10-a",
+    "scene": "s10",
+    "stimulus": "Marlowe's boss is Dakota. Dakota's sibling is Emery. In other words, Emery is Marlowe's",
+    "names": [
+      "Marlowe",
+      "Dakota",
+      "Emery"
+    ],
+    "hop1": "boss",
+    "hop2": "sibling",
+    "gold": "boss's sibling",
+    "gold_alt": "sibling of Marlowe's boss",
+    "flipped": "sibling's boss"
+  },
+  {
+    "id": "rel-s10-b",
+    "scene": "s10",
+    "stimulus": "Marlowe's sibling is Dakota. Dakota's boss is Emery. In other words, Emery is Marlowe's",
+    "names": [
+      "Marlowe",
+      "Dakota",
+      "Emery"
+    ],
+    "hop1": "sibling",
+    "hop2": "boss",
+    "gold": "sibling's boss",
+    "gold_alt": "boss of Marlowe's sibling",
+    "flipped": "boss's sibling"
+  },
+  {
+    "id": "rel-s11-a",
+    "scene": "s11",
+    "stimulus": "Rory's boss is Shiloh. Shiloh's cousin is Tatum. In other words, Tatum is Rory's",
+    "names": [
+      "Rory",
+      "Shiloh",
+      "Tatum"
+    ],
+    "hop1": "boss",
+    "hop2": "cousin",
+    "gold": "boss's cousin",
+    "gold_alt": "cousin of Rory's boss",
+    "flipped": "cousin's boss"
+  },
+  {
+    "id": "rel-s11-b",
+    "scene": "s11",
+    "stimulus": "Rory's cousin is Shiloh. Shiloh's boss is Tatum. In other words, Tatum is Rory's",
+    "names": [
+      "Rory",
+      "Shiloh",
+      "Tatum"
+    ],
+    "hop1": "cousin",
+    "hop2": "boss",
+    "gold": "cousin's boss",
+    "gold_alt": "boss of Rory's cousin",
+    "flipped": "boss's cousin"
+  },
+  {
+    "id": "rel-s12-a",
+    "scene": "s12",
+    "stimulus": "Sawyer's boss is Sasha. Sasha's parent is Aubrey. In other words, Aubrey is Sawyer's",
+    "names": [
+      "Sawyer",
+      "Sasha",
+      "Aubrey"
+    ],
+    "hop1": "boss",
+    "hop2": "parent",
+    "gold": "boss's parent",
+    "gold_alt": "parent of Sawyer's boss",
+    "flipped": "parent's boss"
+  },
+  {
+    "id": "rel-s12-b",
+    "scene": "s12",
+    "stimulus": "Sawyer's parent is Sasha. Sasha's boss is Aubrey. In other words, Aubrey is Sawyer's",
+    "names": [
+      "Sawyer",
+      "Sasha",
+      "Aubrey"
+    ],
+    "hop1": "parent",
+    "hop2": "boss",
+    "gold": "parent's boss",
+    "gold_alt": "boss of Sawyer's parent",
+    "flipped": "boss's parent"
+  },
+  {
+    "id": "rel-s13-a",
+    "scene": "s13",
+    "stimulus": "Bellamy's boss is Campbell. Campbell's child is Denver. In other words, Denver is Bellamy's",
+    "names": [
+      "Bellamy",
+      "Campbell",
+      "Denver"
+    ],
+    "hop1": "boss",
+    "hop2": "child",
+    "gold": "boss's child",
+    "gold_alt": "child of Bellamy's boss",
+    "flipped": "child's boss"
+  },
+  {
+    "id": "rel-s13-b",
+    "scene": "s13",
+    "stimulus": "Bellamy's child is Campbell. Campbell's boss is Denver. In other words, Denver is Bellamy's",
+    "names": [
+      "Bellamy",
+      "Campbell",
+      "Denver"
+    ],
+    "hop1": "child",
+    "hop2": "boss",
+    "gold": "child's boss",
+    "gold_alt": "boss of Bellamy's child",
+    "flipped": "boss's child"
+  },
+  {
+    "id": "rel-s14-a",
+    "scene": "s14",
+    "stimulus": "Ellis's coach is Gray. Gray's sibling is Hollis. In other words, Hollis is Ellis's",
+    "names": [
+      "Ellis",
+      "Gray",
+      "Hollis"
+    ],
+    "hop1": "coach",
+    "hop2": "sibling",
+    "gold": "coach's sibling",
+    "gold_alt": "sibling of Ellis's coach",
+    "flipped": "sibling's coach"
+  },
+  {
+    "id": "rel-s14-b",
+    "scene": "s14",
+    "stimulus": "Ellis's sibling is Gray. Gray's coach is Hollis. In other words, Hollis is Ellis's",
+    "names": [
+      "Ellis",
+      "Gray",
+      "Hollis"
+    ],
+    "hop1": "sibling",
+    "hop2": "coach",
+    "gold": "sibling's coach",
+    "gold_alt": "coach of Ellis's sibling",
+    "flipped": "coach's sibling"
+  },
+  {
+    "id": "rel-s15-a",
+    "scene": "s15",
+    "stimulus": "Indigo's coach is Jem. Jem's cousin is Lennox. In other words, Lennox is Indigo's",
+    "names": [
+      "Indigo",
+      "Jem",
+      "Lennox"
+    ],
+    "hop1": "coach",
+    "hop2": "cousin",
+    "gold": "coach's cousin",
+    "gold_alt": "cousin of Indigo's coach",
+    "flipped": "cousin's coach"
+  },
+  {
+    "id": "rel-s15-b",
+    "scene": "s15",
+    "stimulus": "Indigo's cousin is Jem. Jem's coach is Lennox. In other words, Lennox is Indigo's",
+    "names": [
+      "Indigo",
+      "Jem",
+      "Lennox"
+    ],
+    "hop1": "cousin",
+    "hop2": "coach",
+    "gold": "cousin's coach",
+    "gold_alt": "coach of Indigo's cousin",
+    "flipped": "coach's cousin"
+  },
+  {
+    "id": "rel-s16-a",
+    "scene": "s16",
+    "stimulus": "Avery's coach is Sam. Sam's parent is Riley. In other words, Riley is Avery's",
+    "names": [
+      "Avery",
+      "Sam",
+      "Riley"
+    ],
+    "hop1": "coach",
+    "hop2": "parent",
+    "gold": "coach's parent",
+    "gold_alt": "parent of Avery's coach",
+    "flipped": "parent's coach"
+  },
+  {
+    "id": "rel-s16-b",
+    "scene": "s16",
+    "stimulus": "Avery's parent is Sam. Sam's coach is Riley. In other words, Riley is Avery's",
+    "names": [
+      "Avery",
+      "Sam",
+      "Riley"
+    ],
+    "hop1": "parent",
+    "hop2": "coach",
+    "gold": "parent's coach",
+    "gold_alt": "coach of Avery's parent",
+    "flipped": "coach's parent"
+  },
+  {
+    "id": "rel-s17-a",
+    "scene": "s17",
+    "stimulus": "Jordan's coach is Casey. Casey's spouse is Quinn. In other words, Quinn is Jordan's",
+    "names": [
+      "Jordan",
+      "Casey",
+      "Quinn"
+    ],
+    "hop1": "coach",
+    "hop2": "spouse",
+    "gold": "coach's spouse",
+    "gold_alt": "spouse of Jordan's coach",
+    "flipped": "spouse's coach"
+  },
+  {
+    "id": "rel-s17-b",
+    "scene": "s17",
+    "stimulus": "Jordan's spouse is Casey. Casey's coach is Quinn. In other words, Quinn is Jordan's",
+    "names": [
+      "Jordan",
+      "Casey",
+      "Quinn"
+    ],
+    "hop1": "spouse",
+    "hop2": "coach",
+    "gold": "spouse's coach",
+    "gold_alt": "coach of Jordan's spouse",
+    "flipped": "coach's spouse"
+  },
+  {
+    "id": "rel-s18-a",
+    "scene": "s18",
+    "stimulus": "Morgan's coach is Taylor. Taylor's child is Devon. In other words, Devon is Morgan's",
+    "names": [
+      "Morgan",
+      "Taylor",
+      "Devon"
+    ],
+    "hop1": "coach",
+    "hop2": "child",
+    "gold": "coach's child",
+    "gold_alt": "child of Morgan's coach",
+    "flipped": "child's coach"
+  },
+  {
+    "id": "rel-s18-b",
+    "scene": "s18",
+    "stimulus": "Morgan's child is Taylor. Taylor's coach is Devon. In other words, Devon is Morgan's",
+    "names": [
+      "Morgan",
+      "Taylor",
+      "Devon"
+    ],
+    "hop1": "child",
+    "hop2": "coach",
+    "gold": "child's coach",
+    "gold_alt": "coach of Morgan's child",
+    "flipped": "coach's child"
+  },
+  {
+    "id": "rel-s19-a",
+    "scene": "s19",
+    "stimulus": "Rowan's tutor is Sage. Sage's sibling is Lee. In other words, Lee is Rowan's",
+    "names": [
+      "Rowan",
+      "Sage",
+      "Lee"
+    ],
+    "hop1": "tutor",
+    "hop2": "sibling",
+    "gold": "tutor's sibling",
+    "gold_alt": "sibling of Rowan's tutor",
+    "flipped": "sibling's tutor"
+  },
+  {
+    "id": "rel-s19-b",
+    "scene": "s19",
+    "stimulus": "Rowan's sibling is Sage. Sage's tutor is Lee. In other words, Lee is Rowan's",
+    "names": [
+      "Rowan",
+      "Sage",
+      "Lee"
+    ],
+    "hop1": "sibling",
+    "hop2": "tutor",
+    "gold": "sibling's tutor",
+    "gold_alt": "tutor of Rowan's sibling",
+    "flipped": "tutor's sibling"
+  },
+  {
+    "id": "rel-s20-a",
+    "scene": "s20",
+    "stimulus": "Kit's tutor is Remy. Remy's cousin is Blake. In other words, Blake is Kit's",
+    "names": [
+      "Kit",
+      "Remy",
+      "Blake"
+    ],
+    "hop1": "tutor",
+    "hop2": "cousin",
+    "gold": "tutor's cousin",
+    "gold_alt": "cousin of Kit's tutor",
+    "flipped": "cousin's tutor"
+  },
+  {
+    "id": "rel-s20-b",
+    "scene": "s20",
+    "stimulus": "Kit's cousin is Remy. Remy's tutor is Blake. In other words, Blake is Kit's",
+    "names": [
+      "Kit",
+      "Remy",
+      "Blake"
+    ],
+    "hop1": "cousin",
+    "hop2": "tutor",
+    "gold": "cousin's tutor",
+    "gold_alt": "tutor of Kit's cousin",
+    "flipped": "tutor's cousin"
+  },
+  {
+    "id": "rel-s21-a",
+    "scene": "s21",
+    "stimulus": "Alex's tutor is Charlie. Charlie's parent is Drew. In other words, Drew is Alex's",
+    "names": [
+      "Alex",
+      "Charlie",
+      "Drew"
+    ],
+    "hop1": "tutor",
+    "hop2": "parent",
+    "gold": "tutor's parent",
+    "gold_alt": "parent of Alex's tutor",
+    "flipped": "parent's tutor"
+  },
+  {
+    "id": "rel-s21-b",
+    "scene": "s21",
+    "stimulus": "Alex's parent is Charlie. Charlie's tutor is Drew. In other words, Drew is Alex's",
+    "names": [
+      "Alex",
+      "Charlie",
+      "Drew"
+    ],
+    "hop1": "parent",
+    "hop2": "tutor",
+    "gold": "parent's tutor",
+    "gold_alt": "tutor of Alex's parent",
+    "flipped": "tutor's parent"
+  },
+  {
+    "id": "rel-s22-a",
+    "scene": "s22",
+    "stimulus": "Emerson's tutor is Finley. Finley's spouse is Harper. In other words, Harper is Emerson's",
+    "names": [
+      "Emerson",
+      "Finley",
+      "Harper"
+    ],
+    "hop1": "tutor",
+    "hop2": "spouse",
+    "gold": "tutor's spouse",
+    "gold_alt": "spouse of Emerson's tutor",
+    "flipped": "spouse's tutor"
+  },
+  {
+    "id": "rel-s22-b",
+    "scene": "s22",
+    "stimulus": "Emerson's spouse is Finley. Finley's tutor is Harper. In other words, Harper is Emerson's",
+    "names": [
+      "Emerson",
+      "Finley",
+      "Harper"
+    ],
+    "hop1": "spouse",
+    "hop2": "tutor",
+    "gold": "spouse's tutor",
+    "gold_alt": "tutor of Emerson's spouse",
+    "flipped": "tutor's spouse"
+  },
+  {
+    "id": "rel-s23-a",
+    "scene": "s23",
+    "stimulus": "Jules's tutor is Kai. Kai's child is Noor. In other words, Noor is Jules's",
+    "names": [
+      "Jules",
+      "Kai",
+      "Noor"
+    ],
+    "hop1": "tutor",
+    "hop2": "child",
+    "gold": "tutor's child",
+    "gold_alt": "child of Jules's tutor",
+    "flipped": "child's tutor"
+  },
+  {
+    "id": "rel-s23-b",
+    "scene": "s23",
+    "stimulus": "Jules's child is Kai. Kai's tutor is Noor. In other words, Noor is Jules's",
+    "names": [
+      "Jules",
+      "Kai",
+      "Noor"
+    ],
+    "hop1": "child",
+    "hop2": "tutor",
+    "gold": "child's tutor",
+    "gold_alt": "tutor of Jules's child",
+    "flipped": "tutor's child"
+  },
+  {
+    "id": "rel-s24-a",
+    "scene": "s24",
+    "stimulus": "Reese's plumber is Skyler. Skyler's sibling is Hayden. In other words, Hayden is Reese's",
+    "names": [
+      "Reese",
+      "Skyler",
+      "Hayden"
+    ],
+    "hop1": "plumber",
+    "hop2": "sibling",
+    "gold": "plumber's sibling",
+    "gold_alt": "sibling of Reese's plumber",
+    "flipped": "sibling's plumber"
+  },
+  {
+    "id": "rel-s24-b",
+    "scene": "s24",
+    "stimulus": "Reese's sibling is Skyler. Skyler's plumber is Hayden. In other words, Hayden is Reese's",
+    "names": [
+      "Reese",
+      "Skyler",
+      "Hayden"
+    ],
+    "hop1": "sibling",
+    "hop2": "plumber",
+    "gold": "sibling's plumber",
+    "gold_alt": "plumber of Reese's sibling",
+    "flipped": "plumber's sibling"
+  },
+  {
+    "id": "rel-s25-a",
+    "scene": "s25",
+    "stimulus": "Parker's plumber is Elliot. Elliot's cousin is Frankie. In other words, Frankie is Parker's",
+    "names": [
+      "Parker",
+      "Elliot",
+      "Frankie"
+    ],
+    "hop1": "plumber",
+    "hop2": "cousin",
+    "gold": "plumber's cousin",
+    "gold_alt": "cousin of Parker's plumber",
+    "flipped": "cousin's plumber"
+  },
+  {
+    "id": "rel-s25-b",
+    "scene": "s25",
+    "stimulus": "Parker's cousin is Elliot. Elliot's plumber is Frankie. In other words, Frankie is Parker's",
+    "names": [
+      "Parker",
+      "Elliot",
+      "Frankie"
+    ],
+    "hop1": "cousin",
+    "hop2": "plumber",
+    "gold": "cousin's plumber",
+    "gold_alt": "plumber of Parker's cousin",
+    "flipped": "plumber's cousin"
+  },
+  {
+    "id": "rel-s26-a",
+    "scene": "s26",
+    "stimulus": "Marlowe's plumber is Dakota. Dakota's parent is Emery. In other words, Emery is Marlowe's",
+    "names": [
+      "Marlowe",
+      "Dakota",
+      "Emery"
+    ],
+    "hop1": "plumber",
+    "hop2": "parent",
+    "gold": "plumber's parent",
+    "gold_alt": "parent of Marlowe's plumber",
+    "flipped": "parent's plumber"
+  },
+  {
+    "id": "rel-s26-b",
+    "scene": "s26",
+    "stimulus": "Marlowe's parent is Dakota. Dakota's plumber is Emery. In other words, Emery is Marlowe's",
+    "names": [
+      "Marlowe",
+      "Dakota",
+      "Emery"
+    ],
+    "hop1": "parent",
+    "hop2": "plumber",
+    "gold": "parent's plumber",
+    "gold_alt": "plumber of Marlowe's parent",
+    "flipped": "plumber's parent"
+  },
+  {
+    "id": "rel-s27-a",
+    "scene": "s27",
+    "stimulus": "Rory's plumber is Shiloh. Shiloh's spouse is Tatum. In other words, Tatum is Rory's",
+    "names": [
+      "Rory",
+      "Shiloh",
+      "Tatum"
+    ],
+    "hop1": "plumber",
+    "hop2": "spouse",
+    "gold": "plumber's spouse",
+    "gold_alt": "spouse of Rory's plumber",
+    "flipped": "spouse's plumber"
+  },
+  {
+    "id": "rel-s27-b",
+    "scene": "s27",
+    "stimulus": "Rory's spouse is Shiloh. Shiloh's plumber is Tatum. In other words, Tatum is Rory's",
+    "names": [
+      "Rory",
+      "Shiloh",
+      "Tatum"
+    ],
+    "hop1": "spouse",
+    "hop2": "plumber",
+    "gold": "spouse's plumber",
+    "gold_alt": "plumber of Rory's spouse",
+    "flipped": "plumber's spouse"
+  },
+  {
+    "id": "rel-s28-a",
+    "scene": "s28",
+    "stimulus": "Sawyer's plumber is Sasha. Sasha's child is Aubrey. In other words, Aubrey is Sawyer's",
+    "names": [
+      "Sawyer",
+      "Sasha",
+      "Aubrey"
+    ],
+    "hop1": "plumber",
+    "hop2": "child",
+    "gold": "plumber's child",
+    "gold_alt": "child of Sawyer's plumber",
+    "flipped": "child's plumber"
+  },
+  {
+    "id": "rel-s28-b",
+    "scene": "s28",
+    "stimulus": "Sawyer's child is Sasha. Sasha's plumber is Aubrey. In other words, Aubrey is Sawyer's",
+    "names": [
+      "Sawyer",
+      "Sasha",
+      "Aubrey"
+    ],
+    "hop1": "child",
+    "hop2": "plumber",
+    "gold": "child's plumber",
+    "gold_alt": "plumber of Sawyer's child",
+    "flipped": "plumber's child"
+  },
+  {
+    "id": "rel-s29-a",
+    "scene": "s29",
+    "stimulus": "Bellamy's neighbor is Campbell. Campbell's sibling is Denver. In other words, Denver is Bellamy's",
+    "names": [
+      "Bellamy",
+      "Campbell",
+      "Denver"
+    ],
+    "hop1": "neighbor",
+    "hop2": "sibling",
+    "gold": "neighbor's sibling",
+    "gold_alt": "sibling of Bellamy's neighbor",
+    "flipped": "sibling's neighbor"
+  },
+  {
+    "id": "rel-s29-b",
+    "scene": "s29",
+    "stimulus": "Bellamy's sibling is Campbell. Campbell's neighbor is Denver. In other words, Denver is Bellamy's",
+    "names": [
+      "Bellamy",
+      "Campbell",
+      "Denver"
+    ],
+    "hop1": "sibling",
+    "hop2": "neighbor",
+    "gold": "sibling's neighbor",
+    "gold_alt": "neighbor of Bellamy's sibling",
+    "flipped": "neighbor's sibling"
+  },
+  {
+    "id": "rel-s30-a",
+    "scene": "s30",
+    "stimulus": "Ellis's neighbor is Gray. Gray's cousin is Hollis. In other words, Hollis is Ellis's",
+    "names": [
+      "Ellis",
+      "Gray",
+      "Hollis"
+    ],
+    "hop1": "neighbor",
+    "hop2": "cousin",
+    "gold": "neighbor's cousin",
+    "gold_alt": "cousin of Ellis's neighbor",
+    "flipped": "cousin's neighbor"
+  },
+  {
+    "id": "rel-s30-b",
+    "scene": "s30",
+    "stimulus": "Ellis's cousin is Gray. Gray's neighbor is Hollis. In other words, Hollis is Ellis's",
+    "names": [
+      "Ellis",
+      "Gray",
+      "Hollis"
+    ],
+    "hop1": "cousin",
+    "hop2": "neighbor",
+    "gold": "cousin's neighbor",
+    "gold_alt": "neighbor of Ellis's cousin",
+    "flipped": "neighbor's cousin"
+  },
+  {
+    "id": "rel-s31-a",
+    "scene": "s31",
+    "stimulus": "Indigo's neighbor is Jem. Jem's parent is Lennox. In other words, Lennox is Indigo's",
+    "names": [
+      "Indigo",
+      "Jem",
+      "Lennox"
+    ],
+    "hop1": "neighbor",
+    "hop2": "parent",
+    "gold": "neighbor's parent",
+    "gold_alt": "parent of Indigo's neighbor",
+    "flipped": "parent's neighbor"
+  },
+  {
+    "id": "rel-s31-b",
+    "scene": "s31",
+    "stimulus": "Indigo's parent is Jem. Jem's neighbor is Lennox. In other words, Lennox is Indigo's",
+    "names": [
+      "Indigo",
+      "Jem",
+      "Lennox"
+    ],
+    "hop1": "parent",
+    "hop2": "neighbor",
+    "gold": "parent's neighbor",
+    "gold_alt": "neighbor of Indigo's parent",
+    "flipped": "neighbor's parent"
+  },
+  {
+    "id": "rel-s32-a",
+    "scene": "s32",
+    "stimulus": "Avery's neighbor is Sam. Sam's spouse is Riley. In other words, Riley is Avery's",
+    "names": [
+      "Avery",
+      "Sam",
+      "Riley"
+    ],
+    "hop1": "neighbor",
+    "hop2": "spouse",
+    "gold": "neighbor's spouse",
+    "gold_alt": "spouse of Avery's neighbor",
+    "flipped": "spouse's neighbor"
+  },
+  {
+    "id": "rel-s32-b",
+    "scene": "s32",
+    "stimulus": "Avery's spouse is Sam. Sam's neighbor is Riley. In other words, Riley is Avery's",
+    "names": [
+      "Avery",
+      "Sam",
+      "Riley"
+    ],
+    "hop1": "spouse",
+    "hop2": "neighbor",
+    "gold": "spouse's neighbor",
+    "gold_alt": "neighbor of Avery's spouse",
+    "flipped": "neighbor's spouse"
+  },
+  {
+    "id": "rel-s33-a",
+    "scene": "s33",
+    "stimulus": "Jordan's neighbor is Casey. Casey's child is Quinn. In other words, Quinn is Jordan's",
+    "names": [
+      "Jordan",
+      "Casey",
+      "Quinn"
+    ],
+    "hop1": "neighbor",
+    "hop2": "child",
+    "gold": "neighbor's child",
+    "gold_alt": "child of Jordan's neighbor",
+    "flipped": "child's neighbor"
+  },
+  {
+    "id": "rel-s33-b",
+    "scene": "s33",
+    "stimulus": "Jordan's child is Casey. Casey's neighbor is Quinn. In other words, Quinn is Jordan's",
+    "names": [
+      "Jordan",
+      "Casey",
+      "Quinn"
+    ],
+    "hop1": "child",
+    "hop2": "neighbor",
+    "gold": "child's neighbor",
+    "gold_alt": "neighbor of Jordan's child",
+    "flipped": "neighbor's child"
+  },
+  {
+    "id": "rel-s34-a",
+    "scene": "s34",
+    "stimulus": "Morgan's barber is Taylor. Taylor's sibling is Devon. In other words, Devon is Morgan's",
+    "names": [
+      "Morgan",
+      "Taylor",
+      "Devon"
+    ],
+    "hop1": "barber",
+    "hop2": "sibling",
+    "gold": "barber's sibling",
+    "gold_alt": "sibling of Morgan's barber",
+    "flipped": "sibling's barber"
+  },
+  {
+    "id": "rel-s34-b",
+    "scene": "s34",
+    "stimulus": "Morgan's sibling is Taylor. Taylor's barber is Devon. In other words, Devon is Morgan's",
+    "names": [
+      "Morgan",
+      "Taylor",
+      "Devon"
+    ],
+    "hop1": "sibling",
+    "hop2": "barber",
+    "gold": "sibling's barber",
+    "gold_alt": "barber of Morgan's sibling",
+    "flipped": "barber's sibling"
+  },
+  {
+    "id": "rel-s35-a",
+    "scene": "s35",
+    "stimulus": "Rowan's barber is Sage. Sage's cousin is Lee. In other words, Lee is Rowan's",
+    "names": [
+      "Rowan",
+      "Sage",
+      "Lee"
+    ],
+    "hop1": "barber",
+    "hop2": "cousin",
+    "gold": "barber's cousin",
+    "gold_alt": "cousin of Rowan's barber",
+    "flipped": "cousin's barber"
+  },
+  {
+    "id": "rel-s35-b",
+    "scene": "s35",
+    "stimulus": "Rowan's cousin is Sage. Sage's barber is Lee. In other words, Lee is Rowan's",
+    "names": [
+      "Rowan",
+      "Sage",
+      "Lee"
+    ],
+    "hop1": "cousin",
+    "hop2": "barber",
+    "gold": "cousin's barber",
+    "gold_alt": "barber of Rowan's cousin",
+    "flipped": "barber's cousin"
+  },
+  {
+    "id": "rel-s36-a",
+    "scene": "s36",
+    "stimulus": "Kit's barber is Remy. Remy's parent is Blake. In other words, Blake is Kit's",
+    "names": [
+      "Kit",
+      "Remy",
+      "Blake"
+    ],
+    "hop1": "barber",
+    "hop2": "parent",
+    "gold": "barber's parent",
+    "gold_alt": "parent of Kit's barber",
+    "flipped": "parent's barber"
+  },
+  {
+    "id": "rel-s36-b",
+    "scene": "s36",
+    "stimulus": "Kit's parent is Remy. Remy's barber is Blake. In other words, Blake is Kit's",
+    "names": [
+      "Kit",
+      "Remy",
+      "Blake"
+    ],
+    "hop1": "parent",
+    "hop2": "barber",
+    "gold": "parent's barber",
+    "gold_alt": "barber of Kit's parent",
+    "flipped": "barber's parent"
+  },
+  {
+    "id": "rel-s37-a",
+    "scene": "s37",
+    "stimulus": "Alex's barber is Charlie. Charlie's spouse is Drew. In other words, Drew is Alex's",
+    "names": [
+      "Alex",
+      "Charlie",
+      "Drew"
+    ],
+    "hop1": "barber",
+    "hop2": "spouse",
+    "gold": "barber's spouse",
+    "gold_alt": "spouse of Alex's barber",
+    "flipped": "spouse's barber"
+  },
+  {
+    "id": "rel-s37-b",
+    "scene": "s37",
+    "stimulus": "Alex's spouse is Charlie. Charlie's barber is Drew. In other words, Drew is Alex's",
+    "names": [
+      "Alex",
+      "Charlie",
+      "Drew"
+    ],
+    "hop1": "spouse",
+    "hop2": "barber",
+    "gold": "spouse's barber",
+    "gold_alt": "barber of Alex's spouse",
+    "flipped": "barber's spouse"
+  },
+  {
+    "id": "rel-s38-a",
+    "scene": "s38",
+    "stimulus": "Emerson's barber is Finley. Finley's child is Harper. In other words, Harper is Emerson's",
+    "names": [
+      "Emerson",
+      "Finley",
+      "Harper"
+    ],
+    "hop1": "barber",
+    "hop2": "child",
+    "gold": "barber's child",
+    "gold_alt": "child of Emerson's barber",
+    "flipped": "child's barber"
+  },
+  {
+    "id": "rel-s38-b",
+    "scene": "s38",
+    "stimulus": "Emerson's child is Finley. Finley's barber is Harper. In other words, Harper is Emerson's",
+    "names": [
+      "Emerson",
+      "Finley",
+      "Harper"
+    ],
+    "hop1": "child",
+    "hop2": "barber",
+    "gold": "child's barber",
+    "gold_alt": "barber of Emerson's child",
+    "flipped": "barber's child"
+  },
+  {
+    "id": "rel-s39-a",
+    "scene": "s39",
+    "stimulus": "Jules's lawyer is Kai. Kai's sibling is Noor. In other words, Noor is Jules's",
+    "names": [
+      "Jules",
+      "Kai",
+      "Noor"
+    ],
+    "hop1": "lawyer",
+    "hop2": "sibling",
+    "gold": "lawyer's sibling",
+    "gold_alt": "sibling of Jules's lawyer",
+    "flipped": "sibling's lawyer"
+  },
+  {
+    "id": "rel-s39-b",
+    "scene": "s39",
+    "stimulus": "Jules's sibling is Kai. Kai's lawyer is Noor. In other words, Noor is Jules's",
+    "names": [
+      "Jules",
+      "Kai",
+      "Noor"
+    ],
+    "hop1": "sibling",
+    "hop2": "lawyer",
+    "gold": "sibling's lawyer",
+    "gold_alt": "lawyer of Jules's sibling",
+    "flipped": "lawyer's sibling"
+  },
+  {
+    "id": "rel-s40-a",
+    "scene": "s40",
+    "stimulus": "Reese's lawyer is Skyler. Skyler's cousin is Hayden. In other words, Hayden is Reese's",
+    "names": [
+      "Reese",
+      "Skyler",
+      "Hayden"
+    ],
+    "hop1": "lawyer",
+    "hop2": "cousin",
+    "gold": "lawyer's cousin",
+    "gold_alt": "cousin of Reese's lawyer",
+    "flipped": "cousin's lawyer"
+  },
+  {
+    "id": "rel-s40-b",
+    "scene": "s40",
+    "stimulus": "Reese's cousin is Skyler. Skyler's lawyer is Hayden. In other words, Hayden is Reese's",
+    "names": [
+      "Reese",
+      "Skyler",
+      "Hayden"
+    ],
+    "hop1": "cousin",
+    "hop2": "lawyer",
+    "gold": "cousin's lawyer",
+    "gold_alt": "lawyer of Reese's cousin",
+    "flipped": "lawyer's cousin"
+  },
+  {
+    "id": "rel-s41-a",
+    "scene": "s41",
+    "stimulus": "Parker's lawyer is Elliot. Elliot's parent is Frankie. In other words, Frankie is Parker's",
+    "names": [
+      "Parker",
+      "Elliot",
+      "Frankie"
+    ],
+    "hop1": "lawyer",
+    "hop2": "parent",
+    "gold": "lawyer's parent",
+    "gold_alt": "parent of Parker's lawyer",
+    "flipped": "parent's lawyer"
+  },
+  {
+    "id": "rel-s41-b",
+    "scene": "s41",
+    "stimulus": "Parker's parent is Elliot. Elliot's lawyer is Frankie. In other words, Frankie is Parker's",
+    "names": [
+      "Parker",
+      "Elliot",
+      "Frankie"
+    ],
+    "hop1": "parent",
+    "hop2": "lawyer",
+    "gold": "parent's lawyer",
+    "gold_alt": "lawyer of Parker's parent",
+    "flipped": "lawyer's parent"
+  },
+  {
+    "id": "rel-s42-a",
+    "scene": "s42",
+    "stimulus": "Marlowe's lawyer is Dakota. Dakota's spouse is Emery. In other words, Emery is Marlowe's",
+    "names": [
+      "Marlowe",
+      "Dakota",
+      "Emery"
+    ],
+    "hop1": "lawyer",
+    "hop2": "spouse",
+    "gold": "lawyer's spouse",
+    "gold_alt": "spouse of Marlowe's lawyer",
+    "flipped": "spouse's lawyer"
+  },
+  {
+    "id": "rel-s42-b",
+    "scene": "s42",
+    "stimulus": "Marlowe's spouse is Dakota. Dakota's lawyer is Emery. In other words, Emery is Marlowe's",
+    "names": [
+      "Marlowe",
+      "Dakota",
+      "Emery"
+    ],
+    "hop1": "spouse",
+    "hop2": "lawyer",
+    "gold": "spouse's lawyer",
+    "gold_alt": "lawyer of Marlowe's spouse",
+    "flipped": "lawyer's spouse"
+  },
+  {
+    "id": "rel-s43-a",
+    "scene": "s43",
+    "stimulus": "Rory's lawyer is Shiloh. Shiloh's child is Tatum. In other words, Tatum is Rory's",
+    "names": [
+      "Rory",
+      "Shiloh",
+      "Tatum"
+    ],
+    "hop1": "lawyer",
+    "hop2": "child",
+    "gold": "lawyer's child",
+    "gold_alt": "child of Rory's lawyer",
+    "flipped": "child's lawyer"
+  },
+  {
+    "id": "rel-s43-b",
+    "scene": "s43",
+    "stimulus": "Rory's child is Shiloh. Shiloh's lawyer is Tatum. In other words, Tatum is Rory's",
+    "names": [
+      "Rory",
+      "Shiloh",
+      "Tatum"
+    ],
+    "hop1": "child",
+    "hop2": "lawyer",
+    "gold": "child's lawyer",
+    "gold_alt": "lawyer of Rory's child",
+    "flipped": "lawyer's child"
+  },
+  {
+    "id": "rel-s44-a",
+    "scene": "s44",
+    "stimulus": "Sawyer's mechanic is Sasha. Sasha's sibling is Aubrey. In other words, Aubrey is Sawyer's",
+    "names": [
+      "Sawyer",
+      "Sasha",
+      "Aubrey"
+    ],
+    "hop1": "mechanic",
+    "hop2": "sibling",
+    "gold": "mechanic's sibling",
+    "gold_alt": "sibling of Sawyer's mechanic",
+    "flipped": "sibling's mechanic"
+  },
+  {
+    "id": "rel-s44-b",
+    "scene": "s44",
+    "stimulus": "Sawyer's sibling is Sasha. Sasha's mechanic is Aubrey. In other words, Aubrey is Sawyer's",
+    "names": [
+      "Sawyer",
+      "Sasha",
+      "Aubrey"
+    ],
+    "hop1": "sibling",
+    "hop2": "mechanic",
+    "gold": "sibling's mechanic",
+    "gold_alt": "mechanic of Sawyer's sibling",
+    "flipped": "mechanic's sibling"
+  },
+  {
+    "id": "rel-s45-a",
+    "scene": "s45",
+    "stimulus": "Bellamy's mechanic is Campbell. Campbell's cousin is Denver. In other words, Denver is Bellamy's",
+    "names": [
+      "Bellamy",
+      "Campbell",
+      "Denver"
+    ],
+    "hop1": "mechanic",
+    "hop2": "cousin",
+    "gold": "mechanic's cousin",
+    "gold_alt": "cousin of Bellamy's mechanic",
+    "flipped": "cousin's mechanic"
+  },
+  {
+    "id": "rel-s45-b",
+    "scene": "s45",
+    "stimulus": "Bellamy's cousin is Campbell. Campbell's mechanic is Denver. In other words, Denver is Bellamy's",
+    "names": [
+      "Bellamy",
+      "Campbell",
+      "Denver"
+    ],
+    "hop1": "cousin",
+    "hop2": "mechanic",
+    "gold": "cousin's mechanic",
+    "gold_alt": "mechanic of Bellamy's cousin",
+    "flipped": "mechanic's cousin"
+  },
+  {
+    "id": "rel-s46-a",
+    "scene": "s46",
+    "stimulus": "Ellis's mechanic is Gray. Gray's parent is Hollis. In other words, Hollis is Ellis's",
+    "names": [
+      "Ellis",
+      "Gray",
+      "Hollis"
+    ],
+    "hop1": "mechanic",
+    "hop2": "parent",
+    "gold": "mechanic's parent",
+    "gold_alt": "parent of Ellis's mechanic",
+    "flipped": "parent's mechanic"
+  },
+  {
+    "id": "rel-s46-b",
+    "scene": "s46",
+    "stimulus": "Ellis's parent is Gray. Gray's mechanic is Hollis. In other words, Hollis is Ellis's",
+    "names": [
+      "Ellis",
+      "Gray",
+      "Hollis"
+    ],
+    "hop1": "parent",
+    "hop2": "mechanic",
+    "gold": "parent's mechanic",
+    "gold_alt": "mechanic of Ellis's parent",
+    "flipped": "mechanic's parent"
+  },
+  {
+    "id": "rel-s47-a",
+    "scene": "s47",
+    "stimulus": "Indigo's mechanic is Jem. Jem's spouse is Lennox. In other words, Lennox is Indigo's",
+    "names": [
+      "Indigo",
+      "Jem",
+      "Lennox"
+    ],
+    "hop1": "mechanic",
+    "hop2": "spouse",
+    "gold": "mechanic's spouse",
+    "gold_alt": "spouse of Indigo's mechanic",
+    "flipped": "spouse's mechanic"
+  },
+  {
+    "id": "rel-s47-b",
+    "scene": "s47",
+    "stimulus": "Indigo's spouse is Jem. Jem's mechanic is Lennox. In other words, Lennox is Indigo's",
+    "names": [
+      "Indigo",
+      "Jem",
+      "Lennox"
+    ],
+    "hop1": "spouse",
+    "hop2": "mechanic",
+    "gold": "spouse's mechanic",
+    "gold_alt": "mechanic of Indigo's spouse",
+    "flipped": "mechanic's spouse"
+  },
+  {
+    "id": "rel-s48-a",
+    "scene": "s48",
+    "stimulus": "Avery's mechanic is Sam. Sam's child is Riley. In other words, Riley is Avery's",
+    "names": [
+      "Avery",
+      "Sam",
+      "Riley"
+    ],
+    "hop1": "mechanic",
+    "hop2": "child",
+    "gold": "mechanic's child",
+    "gold_alt": "child of Avery's mechanic",
+    "flipped": "child's mechanic"
+  },
+  {
+    "id": "rel-s48-b",
+    "scene": "s48",
+    "stimulus": "Avery's child is Sam. Sam's mechanic is Riley. In other words, Riley is Avery's",
+    "names": [
+      "Avery",
+      "Sam",
+      "Riley"
+    ],
+    "hop1": "child",
+    "hop2": "mechanic",
+    "gold": "child's mechanic",
+    "gold_alt": "mechanic of Avery's child",
+    "flipped": "mechanic's child"
+  },
+  {
+    "id": "rel-s49-a",
+    "scene": "s49",
+    "stimulus": "Jordan's doctor is Casey. Casey's sibling is Quinn. In other words, Quinn is Jordan's",
+    "names": [
+      "Jordan",
+      "Casey",
+      "Quinn"
+    ],
+    "hop1": "doctor",
+    "hop2": "sibling",
+    "gold": "doctor's sibling",
+    "gold_alt": "sibling of Jordan's doctor",
+    "flipped": "sibling's doctor"
+  },
+  {
+    "id": "rel-s49-b",
+    "scene": "s49",
+    "stimulus": "Jordan's sibling is Casey. Casey's doctor is Quinn. In other words, Quinn is Jordan's",
+    "names": [
+      "Jordan",
+      "Casey",
+      "Quinn"
+    ],
+    "hop1": "sibling",
+    "hop2": "doctor",
+    "gold": "sibling's doctor",
+    "gold_alt": "doctor of Jordan's sibling",
+    "flipped": "doctor's sibling"
+  }
+]

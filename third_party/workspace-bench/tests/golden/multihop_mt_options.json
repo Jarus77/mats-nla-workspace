@@ -1,0 +1,1660 @@
+{
+ "_meta": {
+  "source": "bank mc blocks (source repo hard_mt_mc_options.py, Opus-written confusables), mc_judge.LANG_CONFUSABLES for languages, seeded draws over the bank for typo corrections; order = sha256(f'{MC_SEED}|{name}|{role}') shuffle as in the source mc_judge",
+  "prompt_version": "mc-2026-09-16"
+ },
+ "options": {
+  "mhh-1967-norwegian-classes-objects-codesigner": {
+   "bridge1": {
+    "options": [
+     "Simula 67",
+     "Smalltalk-80",
+     "Modula-2",
+     "PL/I",
+     "ALGOL 68",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-1973-triple-crown-stud-farm": {
+   "bridge1": {
+    "options": [
+     "Man o' War",
+     "Affirmed",
+     "Secretariat",
+     "Northern Dancer",
+     "Seattle Slew",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-1975-kit-chip-designer": {
+   "bridge1": {
+    "options": [
+     "IMSAI 8080",
+     "Processor Technology Sol-20",
+     "Apple I",
+     "Scelbi-8H",
+     "Altair 8800",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-1976philadelphia-bacterium": {
+   "bridge1": {
+    "options": [
+     "Melioidosis",
+     "Q fever",
+     "Legionnaires' disease",
+     "Tularemia",
+     "Psittacosis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-adwa-victor-accord": {
+   "bridge1": {
+    "options": [
+     "Iyasu V",
+     "Yohannes IV",
+     "Menelik II",
+     "Haile Selassie I",
+     "Tewodros II",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-africa-cataract-range": {
+   "bridge1": {
+    "options": [
+     "Tugela Falls",
+     "Victoria Falls",
+     "Augrabies Falls",
+     "Howick Falls",
+     "Angel Falls",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-akbar-dinilahi": {
+   "bridge1": {
+    "options": [
+     "Akbar the Great",
+     "Babur",
+     "Aurangzeb",
+     "Jahangir",
+     "Shah Jahan",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-altair-mits-albuquerque": {
+   "bridge1": {
+    "options": [
+     "Ohio Scientific Instruments",
+     "Micro Instrumentation and Telemetry Systems",
+     "Southwest Technical Products Corporation",
+     "Processor Technology Corporation",
+     "IMSAI Manufacturing Corporation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-angelfalls-auyantepui-canaima": {
+   "bridge1": {
+    "options": [
+     "Kaieteur Falls",
+     "Angel Falls",
+     "Iguazu Falls",
+     "Victoria Falls",
+     "Tugela Falls",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-atsign-mail": {
+   "bridge1": {
+    "options": [
+     "Leonard Kleinrock",
+     "Vinton Cerf",
+     "Lawrence Roberts",
+     "Jon Postel",
+     "Ray Tomlinson",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-aztec-coatepec-sister": {
+   "bridge1": {
+    "options": [
+     "Coyolxauhqui",
+     "Xochiquetzal",
+     "Chalchiuhtlicue",
+     "Itzpapalotl",
+     "Tlazolteotl",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-barber-menotti-spoleto": {
+   "bridge1": {
+    "options": [
+     "Howard Hanson",
+     "Samuel Barber",
+     "Aaron Copland",
+     "Virgil Thomson",
+     "Leonard Bernstein",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-bellerophon-fountain": {
+   "bridge1": {
+    "options": [
+     "Perseus",
+     "Bellerophon",
+     "Peleus",
+     "Cadmus",
+     "Meleager",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-brancusi-ensemble": {
+   "bridge1": {
+    "options": [
+     "Alberto Giacometti",
+     "Ossip Zadkine",
+     "Henry Moore",
+     "Constantin Brâncuși",
+     "Dimitrie Paciurea",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-captive-caesar-relief-site": {
+   "bridge1": {
+    "options": [
+     "Publius Licinius Valerianus",
+     "Marcus Julius Philippus",
+     "Gaius Messius Quintus Decius",
+     "Marcus Antonius Gordianus",
+     "Lucius Domitius Aurelianus",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-chicxulub-orizaba": {
+   "bridge1": {
+    "options": [
+     "Sudbury Basin",
+     "Manicouagan crater",
+     "Popigai crater",
+     "Chicxulub crater",
+     "Vredefort crater",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-cshell-author-firm-buyer": {
+   "bridge1": {
+    "options": [
+     "Bill Joy",
+     "Ken Thompson",
+     "Scott McNealy",
+     "Vinod Khosla",
+     "Andy Bechtolsheim",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-derbyshire-unit": {
+   "bridge1": {
+    "options": [
+     "Maddalena Fagandini",
+     "Daphne Oram",
+     "Pauline Oliveros",
+     "Wendy Carlos",
+     "Delia Derbyshire",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-endpermian-volcanic-province": {
+   "bridge1": {
+    "options": [
+     "Permian–Triassic extinction event",
+     "Late Devonian extinction",
+     "Cretaceous–Paleogene extinction event",
+     "Ordovician–Silurian extinction event",
+     "Triassic–Jurassic extinction event",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-eurasia-highest-active-volcano-center": {
+   "bridge1": {
+    "options": [
+     "Klyuchevskaya Sopka",
+     "Shiveluch",
+     "Koryaksky",
+     "Avachinsky",
+     "Bezymianny",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-fourrow-layout": {
+   "bridge1": {
+    "options": [
+     "Charles Thurber",
+     "Christopher Latham Sholes",
+     "Carlos Glidden",
+     "Elisha Gray",
+     "James Densmore",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-funkbrothers-studio": {
+   "bridge1": {
+    "options": [
+     "Booker T. & the M.G.'s",
+     "The Funk Brothers",
+     "The Wrecking Crew",
+     "Muscle Shoals Rhythm Section",
+     "The Memphis Boys",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-gentileschi-florence-body": {
+   "bridge1": {
+    "options": [
+     "Sofonisba Anguissola",
+     "Artemisia Gentileschi",
+     "Giovanna Garzoni",
+     "Elisabetta Sirani",
+     "Lavinia Fontana",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-hedren-daughter-film": {
+   "bridge1": {
+    "options": [
+     "Tippi Hedren",
+     "Kim Novak",
+     "Eva Marie Saint",
+     "Janet Leigh",
+     "Vera Miles",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-hisarlik-mycenae-display": {
+   "bridge1": {
+    "options": [
+     "Ernst Curtius",
+     "Carl Blegen",
+     "Arthur Evans",
+     "Wilhelm Dörpfeld",
+     "Heinrich Schliemann",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-isenheim-unterlinden": {
+   "bridge1": {
+    "options": [
+     "Isenheim Altarpiece",
+     "Ghent Altarpiece",
+     "Beaune Altarpiece",
+     "Mérode Altarpiece",
+     "Portinari Altarpiece",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-jpsi-slac": {
+   "bridge1": {
+    "options": [
+     "J/psi meson",
+     "B meson",
+     "Upsilon meson",
+     "phi meson",
+     "D meson",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-kakania-author-birthplace": {
+   "bridge1": {
+    "options": [
+     "The Man Without Qualities",
+     "The Sleepwalkers",
+     "The Trial",
+     "The Radetzky March",
+     "The Magic Mountain",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-kalevala-smith-sender": {
+   "bridge1": {
+    "options": [
+     "Kullervo",
+     "Lemminkäinen",
+     "Louhi",
+     "Ilmarinen",
+     "Joukahainen",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-kinski-paristexas": {
+   "bridge1": {
+    "options": [
+     "Bruno Ganz",
+     "Curd Jürgens",
+     "Klaus Kinski",
+     "Otto Sander",
+     "Armin Mueller-Stahl",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-lassell-uranian-moons": {
+   "bridge1": {
+    "options": [
+     "George Phillips Bond",
+     "William Huggins",
+     "William Lassell",
+     "Asaph Hall",
+     "James Challis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-laughton-korda-henry": {
+   "bridge1": {
+    "options": [
+     "Robert Donat",
+     "Cedric Hardwicke",
+     "Leslie Howard",
+     "Charles Laughton",
+     "Claude Rains",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-mansamusa-sahili": {
+   "bridge1": {
+    "options": [
+     "Sunni Ali Ber",
+     "Askia Muhammad I",
+     "Sundiata Keita",
+     "Mansa Musa",
+     "Mansa Suleyman",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-martinson-cowinner": {
+   "bridge1": {
+    "options": [
+     "Pär Lagerkvist",
+     "Vilhelm Moberg",
+     "Artur Lundkvist",
+     "Ivar Lo-Johansson",
+     "Harry Martinson",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-mesopotamian-wildman-cedar": {
+   "bridge1": {
+    "options": [
+     "Shamhat",
+     "Enkidu",
+     "Utnapishtim",
+     "Ninsun",
+     "Siduri",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-moho-mohole": {
+   "bridge1": {
+    "options": [
+     "Conrad discontinuity",
+     "Repetti discontinuity",
+     "Lehmann discontinuity",
+     "Mohorovičić discontinuity",
+     "Gutenberg discontinuity",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-motherdemos-lab-town": {
+   "bridge1": {
+    "options": [
+     "Douglas Engelbart",
+     "Alan Kay",
+     "Ted Nelson",
+     "Vannevar Bush",
+     "Ivan Sutherland",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-norse-ratatoskr-worldtree": {
+   "bridge1": {
+    "options": [
+     "Nidhogg",
+     "Vedrfolnir",
+     "Hraesvelgr",
+     "Heidrun",
+     "Ratatoskr",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-pitchblende-jachymov": {
+   "bridge1": {
+    "options": [
+     "cinnabar",
+     "pitchblende",
+     "galena",
+     "carnotite",
+     "monazite",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-plinyelder-naturalis": {
+   "bridge1": {
+    "options": [
+     "Strabo",
+     "Pomponius Mela",
+     "Aulus Cornelius Celsus",
+     "Marcus Terentius Varro",
+     "Pliny the Elder",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-prowse-clockwork": {
+   "bridge1": {
+    "options": [
+     "Richard Kiel",
+     "Peter Mayhew",
+     "Bolaji Badejo",
+     "David Prowse",
+     "Kenny Baker",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-rhapsody-orchestrator": {
+   "bridge1": {
+    "options": [
+     "Rhapsody in Blue",
+     "Concerto in F",
+     "An American in Paris",
+     "Appalachian Spring",
+     "Adagio for Strings",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-rivera-detroit": {
+   "bridge1": {
+    "options": [
+     "Diego Rivera",
+     "Juan O'Gorman",
+     "José Clemente Orozco",
+     "Rufino Tamayo",
+     "David Alfaro Siqueiros",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-samarkand-observatory-grandfather": {
+   "bridge1": {
+    "options": [
+     "Abu Sa'id Mirza",
+     "Ulugh Beg",
+     "Sultan Husayn Bayqara",
+     "Shah Rukh",
+     "Babur",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-sampo-ilmarinen": {
+   "bridge1": {
+    "options": [
+     "the Kantele",
+     "the Sampo",
+     "Gungnir",
+     "Mjölnir",
+     "Brísingamen",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-saratov-botanist-persecutor": {
+   "bridge1": {
+    "options": [
+     "Sergei Chetverikov",
+     "Nikolai Vavilov",
+     "Georgy Karpechenko",
+     "Nikolai Koltsov",
+     "Ivan Michurin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-satantango-director": {
+   "bridge1": {
+    "options": [
+     "Sátántangó",
+     "Werckmeister Harmonies",
+     "The Turin Horse",
+     "Mephisto",
+     "The Red and the White",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-satie-background-genre": {
+   "bridge1": {
+    "options": [
+     "Claude Debussy",
+     "Maurice Ravel",
+     "Francis Poulenc",
+     "Darius Milhaud",
+     "Erik Satie",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-simula-norsk-regnesentral": {
+   "bridge1": {
+    "options": [
+     "Algol 60",
+     "Simula 67",
+     "Modula-2",
+     "PL/I",
+     "Smalltalk-80",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-ssem-williams-kilburn-tube": {
+   "bridge1": {
+    "options": [
+     "EDSAC",
+     "ENIAC",
+     "Manchester Baby",
+     "Pilot ACE",
+     "Whirlwind I",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-streptomycin-griseus": {
+   "bridge1": {
+    "options": [
+     "tetracycline",
+     "streptomycin",
+     "chloramphenicol",
+     "kanamycin",
+     "neomycin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-summer-winter-gold-host-town": {
+   "bridge1": {
+    "options": [
+     "Jack Shea",
+     "Jay O'Brien",
+     "Eddie Eagan",
+     "Billy Fiske",
+     "Irving Jaffee",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-tanganyika-outflow-3hop": {
+   "bridge1": {
+    "options": [
+     "Lake Malawi",
+     "Lake Tanganyika",
+     "Lake Kivu",
+     "Lake Turkana",
+     "Lake Victoria",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-ternary-moscow-brusentsov": {
+   "bridge1": {
+    "options": [
+     "Setun computer",
+     "BESM-6 computer",
+     "Strela computer",
+     "Ural-1 computer",
+     "MESM computer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-tintinnabuli-elegy-town": {
+   "bridge1": {
+    "options": [
+     "Giya Kancheli",
+     "Erkki-Sven Tüür",
+     "John Tavener",
+     "Arvo Pärt",
+     "Henryk Górecki",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-toland-wuthering": {
+   "bridge1": {
+    "options": [
+     "Leon Shamroy",
+     "Stanley Cortez",
+     "Gregg Toland",
+     "James Wong Howe",
+     "Arthur C. Miller",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-tordesillas-zaragoza": {
+   "bridge1": {
+    "options": [
+     "Treaty of Alcáçovas",
+     "Treaty of Madrid (1750)",
+     "Treaty of San Ildefonso",
+     "Treaty of Utrecht",
+     "Treaty of Tordesillas",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-valerian-shapur-relief": {
+   "bridge1": {
+    "options": [
+     "Emperor Gordian III",
+     "Emperor Valerian",
+     "Emperor Philip the Arab",
+     "Emperor Aurelian",
+     "Emperor Decius",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-vavilov-lysenkoism": {
+   "bridge1": {
+    "options": [
+     "Nikolai Koltsov",
+     "Nikolai Vavilov",
+     "Georgii Karpechenko",
+     "Nikolay Timofeev-Ressovsky",
+     "Sergei Chetverikov",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-villalobos-birthplace": {
+   "bridge1": {
+    "options": [
+     "Heitor Villa-Lobos",
+     "Carlos Gomes",
+     "Camargo Guarnieri",
+     "Francisco Mignone",
+     "Alberto Ginastera",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-walcott-1909-quarry-preserve": {
+   "bridge1": {
+    "options": [
+     "Maotianshan Shales",
+     "Morrison Formation",
+     "Burgess Shale",
+     "Solnhofen Limestone",
+     "Hell Creek Formation",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-wohler-berzelius": {
+   "bridge1": {
+    "options": [
+     "Robert Bunsen",
+     "Friedrich Wöhler",
+     "Hermann Kolbe",
+     "Eilhard Mitscherlich",
+     "Justus von Liebig",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-zhangzeduan-dynasty": {
+   "bridge1": {
+    "options": [
+     "Guo Xi",
+     "Ma Yuan",
+     "Wang Ximeng",
+     "Zhang Zeduan",
+     "Fan Kuan",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-adwa-baratieri": {
+   "bridge1": {
+    "options": [
+     "Battle of Maychew",
+     "Battle of Isandlwana",
+     "Battle of Adwa",
+     "Battle of Dogali",
+     "Battle of Omdurman",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-amur-accord-qing-ruler": {
+   "bridge1": {
+    "options": [
+     "Treaty of Kyakhta",
+     "Convention of Peking",
+     "Treaty of Tianjin",
+     "Treaty of Nerchinsk",
+     "Treaty of Aigun",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-bartholdi-belfort": {
+   "bridge1": {
+    "options": [
+     "Aimé-Jules Dalou",
+     "Frédéric Auguste Bartholdi",
+     "Jean-Baptiste Carpeaux",
+     "Emmanuel Frémiet",
+     "Antonin Mercié",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-boethius-amalasuintha": {
+   "bridge1": {
+    "options": [
+     "Boethius",
+     "Martianus Capella",
+     "Magnus Felix Ennodius",
+     "Cassiodorus",
+     "Macrobius",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-borglum-son": {
+   "bridge1": {
+    "options": [
+     "Lorado Taft",
+     "Daniel Chester French",
+     "Augustus Saint-Gaudens",
+     "Gutzon Borglum",
+     "Korczak Ziolkowski",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-alexiad-adriatic-defeat": {
+   "bridge1": {
+    "options": [
+     "Anna Komnene",
+     "Michael Psellos",
+     "Eudokia Makrembolitissa",
+     "Irene Doukaina",
+     "Niketas Choniates",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "bridge2": {
+    "options": [
+     "Nikephoros III Botaneiates",
+     "Michael VII Doukas",
+     "Alexios I Komnenos",
+     "Romanos IV Diogenes",
+     "John II Komnenos",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-anlushan-xuanzong-suzong": {
+   "bridge1": {
+    "options": [
+     "Geshu Han",
+     "Huang Chao",
+     "Shi Siming",
+     "Gao Xianzhi",
+     "An Lushan",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "bridge2": {
+    "options": [
+     "Emperor Dezong of Tang",
+     "Emperor Xuanzong of Tang",
+     "Emperor Gaozong of Tang",
+     "Emperor Wuzong of Tang",
+     "Emperor Taizong of Tang",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-arts-ghiberti-innocenti": {
+   "bridge1": {
+    "options": [
+     "Lorenzo Ghiberti",
+     "Andrea del Verrocchio",
+     "Jacopo della Quercia",
+     "Donatello",
+     "Nanni di Banco",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "bridge2": {
+    "options": [
+     "Filippo Brunelleschi",
+     "Leon Battista Alberti",
+     "Giuliano da Sangallo",
+     "Michelozzo di Bartolomeo",
+     "Donato Bramante",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-brock-thermus-taq": {
+   "bridge1": {
+    "options": [
+     "Carl Woese",
+     "Norman Pace",
+     "Thomas Brock",
+     "Ralph Wolfe",
+     "Holger Jannasch",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "bridge2": {
+    "options": [
+     "Deinococcus radiodurans",
+     "Thermus aquaticus",
+     "Thermococcus litoralis",
+     "Pyrococcus furiosus",
+     "Sulfolobus acidocaldarius",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-charlotte-guest-dowlais": {
+   "bridge1": {
+    "options": [
+     "Lady Charlotte Guest",
+     "Lady Llanover",
+     "Lady Augusta Gregory",
+     "Jane Francesca Wilde",
+     "Charlotte Brooke",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "bridge2": {
+    "options": [
+     "William Crawshay II",
+     "Samuel Homfray",
+     "Sir John Josiah Bailey",
+     "Richard Crawshay",
+     "Sir Josiah John Guest",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-deinonychus-yale-newhaven": {
+   "bridge1": {
+    "options": [
+     "Jack Horner",
+     "Barnum Brown",
+     "Robert Bakker",
+     "John Ostrom",
+     "Edwin H. Colbert",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Harvard University",
+     "Yale University",
+     "Brown University",
+     "Columbia University",
+     "Princeton University",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-geo-sondoong-phongnha-quangbinh-2": {
+   "bridge1": {
+    "options": [
+     "Deer Cave",
+     "Mammoth Cave",
+     "Hang Son Doong",
+     "Krubera Cave",
+     "Hang En",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "bridge2": {
+    "options": [
+     "Cat Tien National Park",
+     "Ba Be National Park",
+     "Phong Nha-Ke Bang National Park",
+     "Bach Ma National Park",
+     "Cuc Phuong National Park",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-grotius-mareliberum-selden": {
+   "bridge1": {
+    "options": [
+     "Samuel von Pufendorf",
+     "Hugo Grotius",
+     "Emer de Vattel",
+     "Francisco de Vitoria",
+     "Alberico Gentili",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "bridge2": {
+    "options": [
+     "De Indis et de Iure Belli",
+     "Le Droit des Gens",
+     "De Jure Naturae et Gentium",
+     "De Jure Belli ac Pacis",
+     "Mare Liberum",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-hisarlik-hoard-home": {
+   "bridge1": {
+    "options": [
+     "Flinders Petrie",
+     "Austen Henry Layard",
+     "Wilhelm Dörpfeld",
+     "Heinrich Schliemann",
+     "Arthur Evans",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Hoxne Hoard",
+     "Panagyurishte Treasure",
+     "Staffordshire Hoard",
+     "Priam's Treasure",
+     "Oxus Treasure",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-lampedusa-gattopardo-director": {
+   "bridge1": {
+    "options": [
+     "Carlo Emilio Gadda",
+     "Giuseppe Tomasi di Lampedusa",
+     "Vitaliano Brancati",
+     "Leonardo Sciascia",
+     "Giorgio Bassani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "bridge2": {
+    "options": [
+     "Il Gattopardo",
+     "La Dolce Vita",
+     "L'Avventura",
+     "Il Conformista",
+     "Ladri di biciclette",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-meitner-109-darmstadt": {
+   "bridge1": {
+    "options": [
+     "Hedwig Kohn",
+     "Ida Noddack",
+     "Marietta Blau",
+     "Lise Meitner",
+     "Irène Joliot-Curie",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "copernicium",
+     "meitnerium",
+     "bohrium",
+     "roentgenium",
+     "seaborgium",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-meitner-meitnerium-armbruster": {
+   "bridge1": {
+    "options": [
+     "Marietta Blau",
+     "Irène Joliot-Curie",
+     "Lise Meitner",
+     "Ida Noddack",
+     "Hedwig Kohn",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "bridge2": {
+    "options": [
+     "meitnerium",
+     "darmstadtium",
+     "hassium",
+     "roentgenium",
+     "bohrium",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-rublev-sacrifice-nykvist": {
+   "bridge1": {
+    "options": [
+     "Andrei Tarkovsky",
+     "Elem Klimov",
+     "Aleksandr Sokurov",
+     "Andrei Konchalovsky",
+     "Sergei Parajanov",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "bridge2": {
+    "options": [
+     "Stalker",
+     "Cries and Whispers",
+     "The Sacrifice",
+     "Fanny and Alexander",
+     "Nostalghia",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-rufus-henry-whiteship": {
+   "bridge1": {
+    "options": [
+     "Stephen of Blois",
+     "Robert Curthose",
+     "Henry I of England",
+     "William Rufus",
+     "Edgar the Aetheling",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Henry I of England",
+     "William II of England",
+     "Richard I of England",
+     "Henry II of England",
+     "Stephen, King of England",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-slipher-lowell-tombaugh": {
+   "bridge1": {
+    "options": [
+     "Vesto Slipher",
+     "Edward Emerson Barnard",
+     "Milton Humason",
+     "Harlow Shapley",
+     "Heber Curtis",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "bridge2": {
+    "options": [
+     "Lowell Observatory",
+     "Palomar Observatory",
+     "Lick Observatory",
+     "Mount Wilson Observatory",
+     "Yerkes Observatory",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-vaneyck-goldenfleece": {
+   "bridge1": {
+    "options": [
+     "Hans Memling",
+     "Jan van Eyck",
+     "Rogier van der Weyden",
+     "Hugo van der Goes",
+     "Petrus Christus",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "bridge2": {
+    "options": [
+     "Charles the Bold",
+     "John the Fearless",
+     "Charles VII of France",
+     "Philip the Good",
+     "Philip the Bold",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-wyeth-chaddsford": {
+   "bridge1": {
+    "options": [
+     "Grant Wood",
+     "Edward Hopper",
+     "Thomas Hart Benton",
+     "Andrew Wyeth",
+     "Winslow Homer",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Harvey Dunn",
+     "Howard Pyle",
+     "Frank Schoonover",
+     "Maxfield Parrish",
+     "N. C. Wyeth",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-wyeth-ncwyeth-stevenson": {
+   "bridge1": {
+    "options": [
+     "Edward Hopper",
+     "Grant Wood",
+     "Thomas Hart Benton",
+     "Andrew Wyeth",
+     "Norman Rockwell",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Maxfield Parrish",
+     "Jessie Willcox Smith",
+     "Harvey Dunn",
+     "N. C. Wyeth",
+     "Howard Pyle",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-yuezhi-envoy-capital": {
+   "bridge1": {
+    "options": [
+     "Ban Chao",
+     "Zhang Qian",
+     "Wang Xuance",
+     "Gan Ying",
+     "Su Wu",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "bridge2": {
+    "options": [
+     "Emperor Guangwu of Han",
+     "Emperor Wen of Han",
+     "Emperor Xuan of Han",
+     "Emperor Wu of Han",
+     "Emperor Gaozu of Han",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-belisarius-procopius-secret-history": {
+   "bridge1": {
+    "options": [
+     "Mundus",
+     "Belisarius",
+     "Bessas",
+     "Sittas",
+     "Narses",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "bridge2": {
+    "options": [
+     "Evagrius Scholasticus",
+     "Theophylact Simocatta",
+     "Procopius of Caesarea",
+     "Agathias of Myrina",
+     "John Malalas",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-ezana-frumentius-consecrator": {
+   "bridge1": {
+    "options": [
+     "Ousanas",
+     "Endubis",
+     "Kaleb of Axum",
+     "Ezana",
+     "Zoskales of Axum",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Frumentius",
+     "Cyril of Alexandria",
+     "Aedesius of Tyre",
+     "Ulfilas",
+     "Gregory the Illuminator",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-kalevala-lonnrot-kanteletar": {
+   "bridge1": {
+    "options": [
+     "The Song of Roland",
+     "Lāčplēsis",
+     "The Nibelungenlied",
+     "The Kalevala",
+     "Kalevipoeg",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Elias Lönnrot",
+     "Matthias Alexander Castrén",
+     "Peter Christen Asbjørnsen",
+     "Zacharias Topelius",
+     "Johan Ludvig Runeberg",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-magellan-elcano-sanlucar": {
+   "bridge1": {
+    "options": [
+     "Bartolomeu Dias",
+     "Juan Sebastián Elcano",
+     "Vasco da Gama",
+     "Ferdinand Magellan",
+     "Pedro Álvares Cabral",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Ruy López de Villalobos",
+     "Álvaro de Saavedra Cerón",
+     "García Jofre de Loaísa",
+     "Andrés de Urdaneta",
+     "Juan Sebastián Elcano",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   }
+  },
+  "mhh-pilgrim-monk-novelist": {
+   "bridge1": {
+    "options": [
+     "Xuanzang",
+     "Kumarajiva",
+     "Yijing",
+     "Bodhidharma",
+     "Faxian",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   },
+   "bridge2": {
+    "options": [
+     "Journey to the West",
+     "Dream of the Red Chamber",
+     "Water Margin",
+     "Romance of the Three Kingdoms",
+     "The Plum in the Golden Vase",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-rhys-bronte-currerbell": {
+   "bridge1": {
+    "options": [
+     "Katherine Mansfield",
+     "Jean Rhys",
+     "Phyllis Shand Allfrey",
+     "Elizabeth Bowen",
+     "Rosamond Lehmann",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "bridge2": {
+    "options": [
+     "George Eliot",
+     "Charlotte Brontë",
+     "Mary Shelley",
+     "Elizabeth Gaskell",
+     "Emily Brontë",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-wollaston-olbers": {
+   "bridge1": {
+    "options": [
+     "Humphry Davy",
+     "William Hyde Wollaston",
+     "Charles Hatchett",
+     "Smithson Tennant",
+     "William Nicholson",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "bridge2": {
+    "options": [
+     "10 Hygiea",
+     "1 Ceres",
+     "3 Juno",
+     "2 Pallas",
+     "5 Astraea",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-51peg-peebles": {
+   "bridge1": {
+    "options": [
+     "Gliese 581 c",
+     "Upsilon Andromedae b",
+     "HD 209458 b",
+     "51 Pegasi b",
+     "55 Cancri b",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Michel Mayor and Didier Queloz",
+     "Saul Perlmutter and Adam Riess",
+     "Geoffrey Marcy and Paul Butler",
+     "John Mather and George Smoot",
+     "Reinhard Genzel and Andrea Ghez",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-barnard-lick": {
+   "bridge1": {
+    "options": [
+     "Wolf 359",
+     "Kapteyn's Star",
+     "Barnard's Star",
+     "Lalande 21185",
+     "Proxima Centauri",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   },
+   "bridge2": {
+    "options": [
+     "Edward Emerson Barnard",
+     "Asaph Hall",
+     "James Edward Keeler",
+     "George Ellery Hale",
+     "Percival Lowell",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  },
+  "mhh-blinddoge-1204-latinruler": {
+   "bridge1": {
+    "options": [
+     "Domenico Michiel",
+     "Pietro Ziani",
+     "Boniface of Montferrat",
+     "Enrico Dandolo",
+     "Sebastiano Ziani",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Nicaea",
+     "Thessalonica",
+     "Constantinople",
+     "Trebizond",
+     "Adrianople",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 2
+   }
+  },
+  "mhh-charlesv-donjohn-escorial": {
+   "bridge1": {
+    "options": [
+     "Philip II of Spain",
+     "Charles the Fifth",
+     "Francis I of France",
+     "Maximilian I, Holy Roman Emperor",
+     "Ferdinand I, Holy Roman Emperor",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   },
+   "bridge2": {
+    "options": [
+     "Alvaro de Bazan, Marquis of Santa Cruz",
+     "Don John of Austria",
+     "Alexander Farnese, Duke of Parma",
+     "Marcantonio Colonna",
+     "Fernando Alvarez de Toledo, Duke of Alba",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 1
+   }
+  },
+  "mhh-riverblindness-ivermectin-strep": {
+   "bridge1": {
+    "options": [
+     "Dracunculus medinensis",
+     "Wuchereria bancrofti",
+     "Brugia malayi",
+     "Loa loa",
+     "Onchocerca volvulus",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 4
+   },
+   "bridge2": {
+    "options": [
+     "diethylcarbamazine",
+     "albendazole",
+     "praziquantel",
+     "ivermectin",
+     "moxidectin",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   }
+  },
+  "mhh-wallenstein-schiller-raeuber": {
+   "bridge1": {
+    "options": [
+     "Ernst von Mansfeld",
+     "Johann Tserclaes, Count of Tilly",
+     "Raimondo Montecuccoli",
+     "Albrecht von Wallenstein",
+     "Gottfried Heinrich zu Pappenheim",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 3
+   },
+   "bridge2": {
+    "options": [
+     "Friedrich Schiller",
+     "Heinrich von Kleist",
+     "Johann Wolfgang von Goethe",
+     "Christoph Martin Wieland",
+     "Gotthold Ephraim Lessing",
+     "cannot tell: the readout names none of these, or several of them"
+    ],
+    "gold_index": 0
+   }
+  }
+ }
+}
