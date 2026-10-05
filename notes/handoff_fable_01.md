@@ -33,33 +33,45 @@ Hi Fable. I'm running the engineering and research side of my MATS 12.0 (Neel Na
 
 My two earlier candidate designs, injection dose-response and planted intermediates, overlap the pilot and Viswanath. So the plan moved.
 
-## Current proposal: natural non-workspace features, made causal
-- **Ground truth without the readers being compared.** Find features at L42 on *natural* text that are:
-  - (i) linearly decodable by a probe;
-  - (ii) causally used: ablating the probe direction changes behaviour (e.g. line-break placement, agreement, tense);
-  - (iii) outside J-space: the probe survives removal of J-space, and J-Lens doesn't show them;
-  - (iv) not self-reportable when the model is asked, across several elicitation formats.
-  - Candidates: character count since the last newline (line wrapping), part of speech of the next token, tense, syntactic depth, and possibly token position.
-- **Test 1 (natural).** Do J-Lens, Oracle Lens and the NLA report the feature value?
-  - Scoring: K-way forced choice against matched null activations, reported as AUROC.
-  - Baseline: TextNLA, a text-only LLM given the prompt.
-- **Test 2 (decisive, causal).** Steer *along the probe direction* (e.g. shift "character count" by +k) with the text unchanged.
-  - A reader that tracks the activation shifts its report.
-  - A reader that re-solves from the decoded text doesn't.
-  - This separates "reads the latent" from "re-describes the input", the confound that undermined the pilot's multihop results.
-- **Predictions.**
-  - If Neel's suspicion is right, the NLA reports non-J features and tracks the steering while Oracle Lens and J-Lens don't.
-  - If wrong, no reader tracks them, so the NLA's extra content is prompt restatement plus confabulation.
-  - Either outcome is a clean answer.
-- **Kill check (day 2–3):**
-  - At least one feature passes (i)–(iv) on Qwen3.6-27B.
-  - The NLA gives a non-trivial forced-choice AUROC (> 0.6) on at least one feature naturally.
-  - If no feature passes, pivot to a claim-level audit of the NLA's WorkspaceBench advantage (prompt restatement vs confabulation vs verified).
+## Chosen design: unified source attribution (please critique hard)
+For every claim each reader makes (NLA at L42; Oracle Lens at L40/44, since it was trained at layers 20–60 in steps of 4 and 42 is off its training grid; J-Lens), attribute it to one of:
+1. **Prompt re-solving / re-description:** the reader rebuilds the prompt from the activation and answers or describes it.
+2. **Workspace (J-space) content.**
+3. **Non-workspace latent content.**
+4. **Unsupported (confabulation).**
 
-## Questions for you
-1. Does the natural-non-J-feature design answer Neel's question more directly than split-injection? Or is it too indirect, since the readers were never trained to report syntax or character counts and so would fail for uninteresting reasons?
-2. **Coordination.** The pilot author is probably a fellow applicant on the same problem. Should I reach out to divide the territory (they take split-injection, I take natural non-J features), stay quiet and differentiate, or switch problems? How does Neel tend to view overlap?
-3. **Fairness.** How do I make "the NLA fails to report part of speech" mean something? Should I first calibrate each reader on *in*-workspace features with the same scoring, so a failure on non-J features is relative?
-4. **Scoring.** For prose readers, I plan teacher-forced log-probability of K candidate value strings, converted to AUROC. Is that fair across a free-form NLA and four-bullet Oracle Lens output?
-5. **Steering scale.** In Test 2, how far should I steer along the probe direction before it's off-distribution for the readers? I plan to match the shift to the natural spread of the probe's projection.
-6. What would make Neel pick this write-up, and what would make him stop reading?
+Three causal tools:
+- **(A) Natural non-J features + steering.** Find features at L42 that are:
+  - probe-decodable;
+  - causally used, i.e. ablation changes behaviour;
+  - outside J-space: the probe survives J-space removal, and J-Lens doesn't show them;
+  - not self-reportable.
+
+  Candidates: character count during line wrap, part of speech of the next token, tense. Then steer *along the probe direction* with the text unchanged. A reader that tracks the activation shifts its report; one that re-solves from text doesn't.
+- **(B) Split-injection with dose-response.** Inject a concept vector split into its J-space and non-J components, at several strengths. Phase 1 controls apply: random J-space direction and isotropic random vector. Measure every channel at the same token: probe, self-report, J-Lens, Oracle Lens, NLA, and TextNLA (a text-only LLM).
+- **(C) Text-identical counterfactuals.** Plant or swap an intermediate (e.g. the bridge entity of a two-hop fact) at a strength validated to *flip the model's own answer*. A faithful reader reports the planted value; a re-solver reports the original. The pilot's swap was too weak: J-Lens saw the planted bridge in only 14/50.
+
+**Scoring:**
+- K-way forced choice via teacher-forced log-probability of candidate strings under each reader, compared against matched null activations, reported as AUROC.
+- Plus claim-level judged precision. The judge is validated on a human-labelled subset and must be non-Qwen.
+
+**Headline figure:** per reader, a stacked bar of the fraction of claims attributable to prompt / workspace / non-workspace / unsupported.
+
+**Gates already running:**
+- NLA layer convention (block-41 vs block-42 output; an off-by-one risk) and NLA reconstruction-quality (FVE) reproduction.
+- WorkspaceBench replication on the regex-scored families.
+- Non-J feature discovery (probes, J-space removal, causal use, self-report).
+- A pre-registration draft.
+
+**Kill checks (day 2–3):**
+- No natural feature passes all four non-J criteria → drop (A) and lean on (B) + (C).
+- The NLA's forced-choice AUROC on natural, in-workspace content is < 0.75 → readers are too weak for attribution, so pivot to a claim-level audit.
+
+## Questions for you: experimental-design critique first
+1. **Attack the design.** Which of (A), (B), (C) is weakest or could produce a misleading answer, and why? Is the four-way attribution well-defined? Can one claim come from several sources, and how should overlap be handled?
+2. **Fairness of (A).** The readers were never trained to report syntax or character counts, so they may fail for boring reasons. Is calibrating each reader on *in*-workspace features with identical scoring enough to make a non-J failure meaningful?
+3. **Off-distribution risk in (B) and (C).** Injected or steered states may be out of distribution for readers trained on natural activations. How do I pick strengths? I plan to match the natural spread of the probe projection and validate by downstream behaviour change.
+4. **Scoring.** Is teacher-forced log-prob forced choice fair across free-form NLA output vs four-bullet Oracle Lens output vs J-Lens token lists? Is there a better common currency?
+5. **The "prompt re-solving" bucket.** I operationalise it with (a) a text-only TextNLA baseline and (b) text-identical counterfactuals. Is that sufficient, or is there a cleaner test, e.g. corrupting the activation's prompt-reconstructable component while preserving the latent?
+6. **Scope.** Is three tools too much for two weeks? If you had to cut one, which?
+7. **Overlap and impact.** The pilot author is probably a fellow applicant; I plan to differentiate quietly and cite them. What would make Neel pick this write-up, and what would make him stop reading?
