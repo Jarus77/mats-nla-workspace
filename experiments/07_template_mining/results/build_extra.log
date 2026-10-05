@@ -1,0 +1,54 @@
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-iT2ZmWSR5mJ6dVXhOBCgQu
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/07_template_m
+│   ining/tm_modal.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1b_data.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:feature_spec, PythonPackage:items_build
+├── 🔨 Created function gen_ol.
+├── 🔨 Created function gen_nla.
+├── 🔨 Created function score_ol.
+├── 🔨 Created function score_nla.
+├── 🔨 Created function build.
+└── 🔨 Created function build_extra.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{
+ "n_items": 1000,
+ "counts": {
+  "agr_gender|mine|feminine": 20,
+  "agr_gender|mine|masculine": 20,
+  "agr_gender|select|feminine": 80,
+  "agr_gender|select|masculine": 80,
+  "agr_number|mine|plural": 20,
+  "agr_number|mine|singular": 20,
+  "agr_number|select|plural": 80,
+  "agr_number|select|singular": 80,
+  "bk_quote|mine|inside": 20,
+  "bk_quote|mine|outside": 20,
+  "bk_quote|select|inside": 80,
+  "bk_quote|select|outside": 80,
+  "ij_listnum|mine|early": 20,
+  "ij_listnum|mine|late": 20,
+  "ij_listnum|select|early": 80,
+  "ij_listnum|select|late": 80,
+  "nj1_col_break|mine|far": 20,
+  "nj1_col_break|mine|soon": 20,
+  "nj1_col_break|select|far": 80,
+  "nj1_col_break|select|soon": 80
+ }
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-iT2ZmWSR5mJ6dVXhOBCgQu

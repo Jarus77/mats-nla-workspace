@@ -1,0 +1,196 @@
+╭─ Modal Deprecation Warning (2025-12-16) ─────────────────────────────────────╮
+│ The `max_inputs` parameter is deprecated. Please set                         │
+│ `single_use_containers=True` instead.                                        │
+│                                                                              │
+│ Source:                                                                      │
+│ /Users/surajprasad/Downloads/interpretability/mats/experiments/07_template_m │
+│ ining/tm_modal.py:186                                                        │
+│   @app.function(image=gpu_image, volumes=VOLUMES, gpu="H100", timeout=4 *    │
+│ 3600, memory=131072, max_inputs=1)                                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Modal Deprecation Warning (2025-12-16) ─────────────────────────────────────╮
+│ The `max_inputs` parameter is deprecated. Please set                         │
+│ `single_use_containers=True` instead.                                        │
+│                                                                              │
+│ Source:                                                                      │
+│ /Users/surajprasad/Downloads/interpretability/mats/experiments/07_template_m │
+│ ining/tm_modal.py:232                                                        │
+│   @app.function(image=gpu_image, volumes=VOLUMES, gpu="H200", timeout=4 *    │
+│ 3600, memory=131072, max_inputs=1)                                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Modal Deprecation Warning (2025-12-16) ─────────────────────────────────────╮
+│ The `max_inputs` parameter is deprecated. Please set                         │
+│ `single_use_containers=True` instead.                                        │
+│                                                                              │
+│ Source:                                                                      │
+│ /Users/surajprasad/Downloads/interpretability/mats/experiments/07_template_m │
+│ ining/tm_modal.py:307                                                        │
+│   @app.function(image=gpu_image, volumes=VOLUMES, gpu="H100", timeout=4 *    │
+│ 3600, memory=131072, max_inputs=1)                                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Modal Deprecation Warning (2025-12-16) ─────────────────────────────────────╮
+│ The `max_inputs` parameter is deprecated. Please set                         │
+│ `single_use_containers=True` instead.                                        │
+│                                                                              │
+│ Source:                                                                      │
+│ /Users/surajprasad/Downloads/interpretability/mats/experiments/07_template_m │
+│ ining/tm_modal.py:364                                                        │
+│   @app.function(image=gpu_image, volumes=VOLUMES, gpu="H200", timeout=4 *    │
+│ 3600, memory=131072, max_inputs=1)                                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-KAZiCV0sh7N4g34MtoXLg5
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/07_template_m
+│   ining/tm_modal.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1b_data.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:feature_spec, PythonPackage:items_build
+├── 🔨 Created function gen_ol.
+├── 🔨 Created function build_extra.
+├── 🔨 Created function build.
+├── 🔨 Created function score_nla.
+├── 🔨 Created function gen_nla.
+└── 🔨 Created function score_ol.
+/root/tm_modal.py:186: DeprecationError: 2025-12-16: The `max_inputs` parameter is deprecated. Please set `single_use_containers=True` instead.
+  @app.function(image=gpu_image, volumes=VOLUMES, gpu="H100", timeout=4 * 3600, memory=131072, max_inputs=1)
+/root/tm_modal.py:232: DeprecationError: 2025-12-16: The `max_inputs` parameter is deprecated. Please set `single_use_containers=True` instead.
+  @app.function(image=gpu_image, volumes=VOLUMES, gpu="H200", timeout=4 * 3600, memory=131072, max_inputs=1)
+/root/tm_modal.py:307: DeprecationError: 2025-12-16: The `max_inputs` parameter is deprecated. Please set `single_use_containers=True` instead.
+  @app.function(image=gpu_image, volumes=VOLUMES, gpu="H100", timeout=4 * 3600, memory=131072, max_inputs=1)
+/root/tm_modal.py:364: DeprecationError: 2025-12-16: The `max_inputs` parameter is deprecated. Please set `single_use_containers=True` instead.
+  @app.function(image=gpu_image, volumes=VOLUMES, gpu="H200", timeout=4 * 3600, memory=131072, max_inputs=1)
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:00<13:18,  1.06it/s]
+[1ALoading weights:   0%|          | 2/851 [00:01<14:01,  1.01it/s]
+[1ALoading weights:   2%|▏         | 13/851 [00:02<01:31,  9.19it/s]
+[1ALoading weights:   2%|▏         | 17/851 [00:02<01:11, 11.60it/s]
+[1ALoading weights:   3%|▎         | 25/851 [00:02<00:43, 18.99it/s]
+[1ALoading weights:   4%|▎         | 30/851 [00:02<00:40, 20.07it/s]
+[1ALoading weights:   5%|▍         | 39/851 [00:02<00:27, 29.03it/s]
+[1ALoading weights:   5%|▌         | 44/851 [00:02<00:30, 26.53it/s]
+[1ALoading weights:   6%|▌         | 48/851 [00:03<00:33, 24.17it/s]
+[1ALoading weights:   7%|▋         | 59/851 [00:03<00:22, 35.34it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:03<00:19, 39.65it/s]
+[1ALoading weights:   8%|▊         | 71/851 [00:03<00:19, 39.64it/s]
+[1ALoading weights:   9%|▉         | 77/851 [00:03<00:18, 42.57it/s]
+[1ALoading weights:  10%|▉         | 82/851 [00:03<00:21, 36.32it/s]
+[1ALoading weights:  11%|█         | 90/851 [00:04<00:16, 45.19it/s]
+[1ALoading weights:  11%|█▏        | 96/851 [00:04<00:20, 36.07it/s]
+[1ALoading weights:  12%|█▏        | 101/851 [00:04<00:23, 31.62it/s]
+[1ALoading weights:  14%|█▎        | 115/851 [00:04<00:15, 49.04it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:04<00:19, 37.76it/s]
+[1ALoading weights:  15%|█▌        | 131/851 [00:04<00:15, 47.91it/s]
+[1ALoading weights:  16%|█▌        | 138/851 [00:05<00:17, 40.95it/s]
+[1ALoading weights:  17%|█▋        | 146/851 [00:05<00:20, 33.93it/s]
+[1ALoading weights:  18%|█▊        | 153/851 [00:05<00:18, 37.74it/s]
+[1ALoading weights:  19%|█▊        | 158/851 [00:05<00:17, 39.00it/s]
+[1ALoading weights:  20%|█▉        | 168/851 [00:05<00:13, 50.51it/s]
+[1ALoading weights:  21%|██        | 175/851 [00:06<00:15, 42.42it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:06<00:13, 50.07it/s]
+[1ALoading weights:  23%|██▎       | 192/851 [00:06<00:14, 44.66it/s]
+[1ALoading weights:  24%|██▎       | 201/851 [00:06<00:14, 46.37it/s]
+[1ALoading weights:  24%|██▍       | 207/851 [00:06<00:17, 37.48it/s]
+[1ALoading weights:  25%|██▌       | 217/851 [00:07<00:13, 47.59it/s]
+[1ALoading weights:  26%|██▋       | 225/851 [00:07<00:12, 49.55it/s]
+[1ALoading weights:  27%|██▋       | 231/851 [00:07<00:12, 48.23it/s]
+[1ALoading weights:  28%|██▊       | 237/851 [00:07<00:12, 49.19it/s]
+[1ALoading weights:  29%|██▊       | 243/851 [00:07<00:14, 42.85it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:07<00:12, 49.77it/s]
+[1ALoading weights:  30%|███       | 259/851 [00:08<00:17, 34.32it/s]
+[1ALoading weights:  32%|███▏      | 272/851 [00:08<00:12, 46.29it/s]
+[1ALoading weights:  33%|███▎      | 279/851 [00:08<00:12, 47.12it/s]
+[1ALoading weights:  34%|███▍      | 288/851 [00:08<00:10, 54.16it/s]
+[1ALoading weights:  35%|███▍      | 295/851 [00:08<00:12, 44.51it/s]
+[1ALoading weights:  36%|███▌      | 303/851 [00:08<00:10, 50.58it/s]
+[1ALoading weights:  36%|███▋      | 309/851 [00:09<00:13, 39.26it/s]
+[1ALoading weights:  37%|███▋      | 314/851 [00:09<00:15, 35.56it/s]
+[1ALoading weights:  38%|███▊      | 324/851 [00:09<00:11, 47.26it/s]
+[1ALoading weights:  39%|███▉      | 330/851 [00:09<00:10, 49.04it/s]
+[1ALoading weights:  39%|███▉      | 336/851 [00:09<00:12, 40.14it/s]
+[1ALoading weights:  40%|████      | 343/851 [00:09<00:11, 44.53it/s]
+[1ALoading weights:  41%|████      | 349/851 [00:10<00:13, 38.61it/s]
+[1ALoading weights:  42%|████▏     | 357/851 [00:10<00:11, 44.27it/s]
+[1ALoading weights:  43%|████▎     | 362/851 [00:10<00:13, 35.60it/s]
+[1ALoading weights:  43%|████▎     | 367/851 [00:10<00:15, 31.34it/s]
+[1ALoading weights:  44%|████▍     | 378/851 [00:10<00:10, 43.01it/s]
+[1ALoading weights:  45%|████▌     | 384/851 [00:10<00:11, 40.07it/s]
+[1ALoading weights:  46%|████▌     | 393/851 [00:11<00:09, 47.79it/s]
+[1ALoading weights:  47%|████▋     | 399/851 [00:11<00:10, 41.81it/s]
+[1ALoading weights:  48%|████▊     | 407/851 [00:11<00:09, 48.48it/s]
+[1ALoading weights:  49%|████▊     | 413/851 [00:11<00:10, 42.47it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:11<00:12, 34.76it/s]
+[1ALoading weights:  50%|████▉     | 424/851 [00:11<00:11, 36.35it/s]
+[1ALoading weights:  51%|█████     | 435/851 [00:12<00:08, 48.94it/s]
+[1ALoading weights:  52%|█████▏    | 441/851 [00:12<00:09, 43.07it/s]
+[1ALoading weights:  53%|█████▎    | 449/851 [00:12<00:08, 49.37it/s]
+[1ALoading weights:  53%|█████▎    | 455/851 [00:12<00:08, 44.41it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:12<00:07, 50.78it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:12<00:09, 38.07it/s]
+[1ALoading weights:  56%|█████▌    | 477/851 [00:13<00:09, 39.67it/s]
+[1ALoading weights:  57%|█████▋    | 487/851 [00:13<00:07, 51.54it/s]
+[1ALoading weights:  58%|█████▊    | 494/851 [00:13<00:07, 46.31it/s]
+[1ALoading weights:  59%|█████▉    | 500/851 [00:13<00:07, 48.03it/s]
+[1ALoading weights:  59%|█████▉    | 506/851 [00:13<00:08, 42.32it/s]
+[1ALoading weights:  61%|██████    | 516/851 [00:13<00:06, 52.87it/s]
+[1ALoading weights:  61%|██████▏   | 522/851 [00:14<00:07, 42.82it/s]
+[1ALoading weights:  62%|██████▏   | 527/851 [00:14<00:08, 37.66it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:14<00:06, 51.53it/s]
+[1ALoading weights:  64%|██████▍   | 545/851 [00:14<00:07, 41.12it/s]
+[1ALoading weights:  65%|██████▌   | 555/851 [00:14<00:05, 50.54it/s]
+[1ALoading weights:  66%|██████▌   | 561/851 [00:14<00:06, 44.34it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:15<00:05, 49.62it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:15<00:07, 37.37it/s]
+[1ALoading weights:  69%|██████▊   | 584/851 [00:15<00:06, 39.85it/s]
+[1ALoading weights:  70%|██████▉   | 595/851 [00:15<00:04, 52.01it/s]
+[1ALoading weights:  71%|███████   | 602/851 [00:15<00:05, 44.15it/s]
+[1ALoading weights:  72%|███████▏  | 610/851 [00:15<00:05, 47.09it/s]
+[1ALoading weights:  72%|███████▏  | 616/851 [00:16<00:05, 45.16it/s]
+[1ALoading weights:  73%|███████▎  | 624/851 [00:16<00:04, 47.83it/s]
+[1ALoading weights:  74%|███████▍  | 630/851 [00:16<00:05, 36.94it/s]
+[1ALoading weights:  75%|███████▍  | 637/851 [00:16<00:05, 40.66it/s]
+[1ALoading weights:  76%|███████▋  | 649/851 [00:16<00:03, 50.84it/s]
+[1ALoading weights:  77%|███████▋  | 655/851 [00:16<00:04, 48.59it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:17<00:03, 51.36it/s]
+[1ALoading weights:  79%|███████▊  | 669/851 [00:17<00:03, 47.74it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:17<00:03, 50.92it/s]
+[1ALoading weights:  80%|████████  | 683/851 [00:17<00:04, 38.70it/s]
+[1ALoading weights:  81%|████████  | 690/851 [00:17<00:03, 41.24it/s]
+[1ALoading weights:  82%|████████▏ | 700/851 [00:17<00:02, 51.81it/s]
+[1ALoading weights:  83%|████████▎ | 706/851 [00:18<00:03, 45.19it/s]
+[1ALoading weights:  84%|████████▍ | 716/851 [00:18<00:03, 41.38it/s]
+[1ALoading weights:  86%|████████▌ | 728/851 [00:18<00:02, 54.31it/s]
+[1ALoading weights:  86%|████████▋ | 735/851 [00:18<00:02, 43.59it/s]
+[1ALoading weights:  87%|████████▋ | 741/851 [00:18<00:02, 42.30it/s]
+[1ALoading weights:  88%|████████▊ | 751/851 [00:19<00:01, 50.62it/s]
+[1ALoading weights:  89%|████████▉ | 757/851 [00:19<00:02, 40.17it/s]
+[1ALoading weights:  90%|█████████ | 766/851 [00:19<00:01, 49.11it/s]
+[1ALoading weights:  91%|█████████ | 773/851 [00:19<00:01, 43.41it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:19<00:01, 50.01it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:19<00:01, 38.86it/s]
+[1ALoading weights:  93%|█████████▎| 795/851 [00:20<00:01, 40.33it/s]
+[1ALoading weights:  95%|█████████▍| 806/851 [00:20<00:00, 51.83it/s]
+[1ALoading weights:  95%|█████████▌| 812/851 [00:20<00:01, 33.19it/s]
+[1ALoading weights:  96%|█████████▌| 819/851 [00:20<00:00, 36.19it/s]
+[1ALoading weights:  97%|█████████▋| 824/851 [00:21<00:01, 26.35it/s]
+[1ALoading weights:  98%|█████████▊| 833/851 [00:21<00:00, 31.83it/s]
+[1ALoading weights:  98%|█████████▊| 838/851 [00:21<00:00, 23.25it/s]
+[1ALoading weights:  99%|█████████▉| 842/851 [00:21<00:00, 21.52it/s]
+[1ALoading weights:  99%|█████████▉| 845/851 [00:22<00:00, 20.52it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:22<00:00, 38.24it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[score_nla] nj3_predpos done in 131.9 s
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-KAZiCV0sh7N4g34MtoXLg5

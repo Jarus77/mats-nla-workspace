@@ -1,0 +1,25 @@
+{
+ "n_items": 1000,
+ "counts": {
+  "agr_gender|mine|feminine": 20,
+  "agr_gender|mine|masculine": 20,
+  "agr_gender|select|feminine": 80,
+  "agr_gender|select|masculine": 80,
+  "agr_number|mine|plural": 20,
+  "agr_number|mine|singular": 20,
+  "agr_number|select|plural": 80,
+  "agr_number|select|singular": 80,
+  "bk_quote|mine|inside": 20,
+  "bk_quote|mine|outside": 20,
+  "bk_quote|select|inside": 80,
+  "bk_quote|select|outside": 80,
+  "ij_listnum|mine|early": 20,
+  "ij_listnum|mine|late": 20,
+  "ij_listnum|select|early": 80,
+  "ij_listnum|select|late": 80,
+  "nj1_col_break|mine|far": 20,
+  "nj1_col_break|mine|soon": 20,
+  "nj1_col_break|select|far": 80,
+  "nj1_col_break|select|soon": 80
+ }
+}

@@ -225,3 +225,24 @@ Regex families, L42, n=400.
 - No rendering reproduces the frozen values exactly: thinking-on with text kept and the raw no-template rendering are closest (~0.08). The frozen run's empty cells are unexplained; the generator (olens_sglang) isn't public.
 - **Implication:** treat the frozen floors as a lower bound. Published reader-vs-floor gaps flatter the readers. Our conclusions rest on our own text arms, not the frozen floor.
 - **Action [DECIDE, user]:** consider a polite, factual issue on camilablank/workspace-bench with the re-run table (an outward-facing action, so it's the user's call, ideally after the sprint or once the write-up is drafted).
+
+## 2026-10-06 — D18: templates FROZEN
+- `experiments/07_template_mining/templates_frozen.json`, sha256 09156722b059edb99d01e919c29b2ff660e37cba3152f2d3ce67f3272d3e923b. 14 features; mining and selection on fresh natural items; selection by natural-item discriminability only (no steering data). The evaluation must exclude all mining and selection ids listed in the JSON.
+- **Natural-item selection AUROC @42** (mean of 3 mined templates; fixed label in brackets):
+
+  | Feature | NLA | OL |
+  |---|---|---|
+  | col count | .60 [.51, .69] (.50) | .55 (.45) |
+  | col break | .54 | .55 |
+  | language | 1.00 | 1.00 |
+  | tense | .85 | .92 |
+  | **listnum, in-J count control ("Item N:")** | **.84** | **.99** |
+  | indent | .84 | .89 |
+  | quote | .83 | .76 |
+  | capitalisation | .86 | .93 |
+  | code | .99 | .99 |
+
+- **The readers CAN talk about counts when the count is J-visible** (listnum: NLA .84, OL .99) but barely discriminate col (≤ .60) on natural items. That addresses the "can't verbalize counts" objection in the natural arm. Caveat: listnum's numeral is in the text, so its natural success may be text re-description; the steering arm is still needed.
+- **Base rate:** 0/320 NLA and 0/960 OL readouts ever mention line length, column or wrapping. The col templates are style-matched paraphrases, not recurring phrasings.
+- Mined templates mainly help OL (continuation forms beat label bullets). For the NLA the fixed label is often as good.
+- Selected AUROCs carry a best-of-~7 winner's curse, so re-estimate on evaluation items.

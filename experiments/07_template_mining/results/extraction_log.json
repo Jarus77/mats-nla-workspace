@@ -1,0 +1,538 @@
+{
+ "nj1_col": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(characters?|chars|line[- ]length|line[- ]width|column|wrap\\w*|line[- ]?breaks?|newline|width|long line|short line)\\b",
+    "overall": 0.010416666666666666,
+    "by_value": {
+     "long": 0.004166666666666667,
+     "short": 0.016666666666666666
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_llm_classify": {
+    "overall": 0.0,
+    "by_value": {
+     "long": 0.0,
+     "short": 0.0
+    },
+    "n_classified": 960,
+    "n": 960
+   },
+   "mention_rate_llm": 0.0,
+   "notes": "The oracle lens produces direct text continuations and multilingual paraphrases of the source text rather than explicitly reflecting internal wrap column counts.",
+   "rejected": [],
+   "n_proposed": 7
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(characters?|chars|line[- ]length|line[- ]width|column|wrap\\w*|line[- ]?breaks?|newline|width|long line|short line)\\b",
+    "overall": 0.05625,
+    "by_value": {
+     "long": 0.05,
+     "short": 0.0625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_llm_classify": {
+    "overall": 0.0,
+    "by_value": {
+     "long": 0.0,
+     "short": 0.0
+    },
+    "n_classified": 320,
+    "n": 320
+   },
+   "mention_rate_llm": 0.0,
+   "notes": "The verbalizer readouts describe semantic and domain content exclusively, with zero explicit mentions of linewrap column or character distance from newline.",
+   "rejected": [],
+   "n_proposed": 7
+  }
+ },
+ "ij2_lang": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(french|german|français|deutsch)\\b",
+    "overall": 0.0020833333333333333,
+    "by_value": {
+     "French": 0.0020833333333333333,
+     "German": 0.0020833333333333333
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never name the languages 'French' or 'German' explicitly, instead producing review continuations directly in French or German (frequently mixed with Chinese translation/paraphrase).",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(french|german|français|deutsch)\\b",
+    "overall": 0.915625,
+    "by_value": {
+     "French": 0.84375,
+     "German": 0.9875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.85,
+   "notes": "Both French and German readouts heavily open with explicit language tags specifying the style, genre, or register of the consumer review text.",
+   "rejected": [],
+   "n_proposed": 6
+  }
+ },
+ "nj2_tense": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(past|present|tense)\\b",
+    "overall": 0.005208333333333333,
+    "by_value": {
+     "past": 0.008333333333333333,
+     "present": 0.0020833333333333333
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never mention grammatical tense explicitly as a meta-label; they are natural text continuations whose finite verbs systematically reflect the past vs present tense of the context clause.",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(past|present|tense)\\b",
+    "overall": 0.028125,
+    "by_value": {
+     "past": 0.00625,
+     "present": 0.05
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The verbalizer rarely mentions grammatical verb tense directly; instead, 'past' clauses elicit historical narrative/chronicle terminology while 'present' clauses elicit descriptive, encyclopedic, or inventory terminology.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "bk_indent": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(indent\\w*|nest\\w*|level|depth|block)\\b",
+    "overall": 0.13229166666666667,
+    "by_value": {
+     "deep": 0.16458333333333333,
+     "shallow": 0.1
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.03,
+   "notes": "Indentation is rarely named explicitly except in a few deep tree-printing readouts using 'indent +', while shallow readouts consistently evoke top-level/first-row loop constructs and deep readouts evoke multi-level nested loops and counter increments.",
+   "rejected": [
+    {
+     "id": "ol:bk_indent:m2",
+     "family": "indent_mention",
+     "template": "- {v}node.name  # process entry",
+     "fillers": {
+      "shallow": "",
+      "deep": "indent + "
+     },
+     "error": "filled candidates must differ and fillers be non-empty"
+    }
+   ],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(indent\\w*|nest\\w*|level|depth|block)\\b",
+    "overall": 0.253125,
+    "by_value": {
+     "deep": 0.3875,
+     "shallow": 0.11875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "Explicit mentions of indentation levels are rare (around 5%), but deep indentation strongly correlates with repeated characterizations of 'nested' loops, blocks, and iterations compared to top-level or sequential structures in shallow lines.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "bk_wordpos": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(word count|words? (in|into|so far)|sentence length|mid-sentence|start of (the|a) sentence|early in the sentence)\\b",
+    "overall": 0.0,
+    "by_value": {
+     "early": 0.0,
+     "late": 0.0
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts consist purely of narrative continuations reflecting the varied prompt topics without ever explicitly mentioning word position or sentence index.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(word count|words? (in|into|so far)|sentence length|mid-sentence|start of (the|a) sentence|early in the sentence)\\b",
+    "overall": 0.253125,
+    "by_value": {
+     "early": 0.29375,
+     "late": 0.2125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The verbalizer never explicitly mentions word count or token distance from sentence start, instead tracking sentence progress via discourse markers like 'opens a declarative' vs 'final fragment/clause' or 'ends mid-sentence'.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "bk_listidx": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(item|items|list|bullet|entry|entries|number|count|ninth|second|third)\\b",
+    "overall": 0.4354166666666667,
+    "by_value": {
+     "early": 0.34375,
+     "late": 0.5270833333333333
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.18,
+   "notes": "Readouts generally do not state 'early' or 'late' explicitly, but frequent numbered list continuation items (2-3 vs 8-12) directly mirror the item index position.",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(item|items|list|bullet|entry|entries|number|count|ninth|second|third)\\b",
+    "overall": 1.0,
+    "by_value": {
+     "early": 1.0,
+     "late": 1.0
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.15,
+   "notes": "Specific item index ordinal numbers ('second', 'third' vs 'eighth', 'tenth') or qualitative indicators ('has just begun' vs 'nearly complete') appear explicitly in about 15% of readouts, usually toward the end of the text.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "bk_caps": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(caps|capital\\w*|uppercase|upper-case|lowercase|shout\\w*)\\b",
+    "overall": 0.05520833333333333,
+    "by_value": {
+     "lowercase": 0.05,
+     "uppercase": 0.06041666666666667
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.0,
+   "notes": "The model never explicitly meta-mentions capitalisation or lowercase/uppercase; instead, uppercase items reliably cause the model's continuations and English words to be generated in ALL CAPS.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(caps|capital\\w*|uppercase|upper-case|lowercase|shout\\w*)\\b",
+    "overall": 0.15,
+    "by_value": {
+     "lowercase": 0.0375,
+     "uppercase": 0.2625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "Mentions of case ('ALL-CAPS' or 'All-caps') appear exclusively in uppercase items (~10% of uppercase readouts, 0% of lowercase readouts).",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "bk_code": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(python|javascript|js|node)\\b",
+    "overall": 0.059375,
+    "by_value": {
+     "Python": 0.05416666666666667,
+     "JavaScript": 0.06458333333333334
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.03,
+   "notes": "Explicit mentions of language names are rare (~3%), but language identity strongly co-varies with syntax markers like comment characters (# vs //) and array methods (.append vs .push).",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(python|javascript|js|node)\\b",
+    "overall": 0.84375,
+    "by_value": {
+     "Python": 0.925,
+     "JavaScript": 0.7625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.55,
+   "notes": "Both Python and JavaScript are frequently named explicitly at the very beginning of the analytic explanations, though JavaScript readouts occasionally use related terms like Node.js or TypeScript.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "nj3_predpos": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(adjective|noun|modifier|descriptor)\\b",
+    "overall": 0.0,
+    "by_value": {
+     "adjective": 0.0,
+     "noun": 0.0
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.0,
+   "notes": "The lens never names the linguistic feature 'adjective' or 'noun' explicitly; instead, it generates next-token continuations whose opening word naturally reflects the predicted part of speech (modifiers/adjectives vs. nominal heads).",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(adjective|noun|modifier|descriptor)\\b",
+    "overall": 0.615625,
+    "by_value": {
+     "adjective": 0.625,
+     "noun": 0.60625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The verbalizer rarely mentions the predicted POS directly, instead analyzing the register, genre, and discourse semantics of the surrounding prompt text.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "_calls": 92,
+ "_spend_usd": 0.6132,
+ "nj1_col_break": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(characters?|chars|line[- ]length|line[- ]width|column|wrap\\w*|line[- ]?breaks?|newline|width|long line|short line)\\b",
+    "overall": 0.041666666666666664,
+    "by_value": {
+     "far": 0.027083333333333334,
+     "soon": 0.05625
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_llm_classify": {
+    "overall": 0.0,
+    "by_value": {
+     "far": 0.0,
+     "soon": 0.0
+    },
+    "n_classified": 960,
+    "n": 960
+   },
+   "mention_rate_llm": 0.0,
+   "notes": "The lens outputs are direct text continuations of diverse context prompts rather than meta-descriptions of linewrap, so explicit mentions are 0% across both values.",
+   "rejected": [],
+   "n_proposed": 7
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(characters?|chars|line[- ]length|line[- ]width|column|wrap\\w*|line[- ]?breaks?|newline|width|long line|short line)\\b",
+    "overall": 0.109375,
+    "by_value": {
+     "far": 0.13125,
+     "soon": 0.0875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_llm_classify": {
+    "overall": 0.0,
+    "by_value": {
+     "far": 0.0,
+     "soon": 0.0
+    },
+    "n_classified": 320,
+    "n": 320
+   },
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts strictly describe semantic domain and syntactic completion momentum without ever explicitly mentioning linewrap or column breaks.",
+   "rejected": [],
+   "n_proposed": 7
+  }
+ },
+ "ij_listnum": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(item|items|list|entry|entries|number|count|ninth|second|third|enumerat\\w*)\\b",
+    "overall": 0.55,
+    "by_value": {
+     "early": 0.6125,
+     "late": 0.4875
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.35,
+   "notes": "List numbers regularly appear at the start of generated lists or continuations, shifting from single digits (2-4) in early items to double digits (8-12) in late items.",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(item|items|list|entry|entries|number|count|ninth|second|third|enumerat\\w*)\\b",
+    "overall": 1.0,
+    "by_value": {
+     "early": 1.0,
+     "late": 1.0
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.15,
+   "notes": "Explicit ordinal mentions (e.g. 'third' vs 'eighth'/'last') appear mostly in the final sentence comments analyzing the final token, with 'early' items explicitly noted as item 2 or 3 much more frequently than exact late item numbers.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "bk_quote": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(quot\\w*|dialogue|speech|said|cited|citation)\\b",
+    "overall": 0.08020833333333334,
+    "by_value": {
+     "inside": 0.06666666666666667,
+     "outside": 0.09375
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.0,
+   "notes": "The lens produces direct textual completions rather than meta-labels, with 'inside' readouts heavily featuring quotation marks, cited quotations, and in-quote syntax compared to unquoted narrative prose in 'outside'.",
+   "rejected": [
+    {
+     "id": "ol:bk_quote:m0",
+     "family": "quote_punctuation_prefix",
+     "template": "- {v}",
+     "fillers": {
+      "inside": "\"",
+      "outside": ""
+     },
+     "error": "filled candidates must differ and fillers be non-empty"
+    }
+   ],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(quot\\w*|dialogue|speech|said|cited|citation)\\b",
+    "overall": 0.41875,
+    "by_value": {
+     "inside": 0.56875,
+     "outside": 0.26875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.28,
+   "notes": "Readouts for 'inside' tokens frequently reference quotes, direct speech, pull-quotes, or being mid-quote, whereas 'outside' tokens focus on general encyclopedic narrative or film/battle summaries.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "agr_gender": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(masculine|feminine|gender|neuter)\\b",
+    "overall": 0.0,
+    "by_value": {
+     "feminine": 0.0,
+     "masculine": 0.0
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly name 'masculine' or 'feminine', but they frequently continue in French or German using determiners and articles matching the target grammatical gender.",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(masculine|feminine|gender|neuter)\\b",
+    "overall": 0.096875,
+    "by_value": {
+     "feminine": 0.11875,
+     "masculine": 0.075
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts focus on domain, register, and continuation semantics, with zero explicit mentions of the words 'masculine' or 'feminine'.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "agr_number": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(singular|plural)\\b",
+    "overall": 0.0,
+    "by_value": {
+     "plural": 0.0,
+     "singular": 0.0
+    },
+    "n": 960
+   },
+   "n_readouts": 960,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly mention grammatical terms like 'singulier' or 'pluriel', but purely continue the French text maintaining the number dictated by the preceding article.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(singular|plural)\\b",
+    "overall": 0.25,
+    "by_value": {
+     "plural": 0.375,
+     "singular": 0.125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "The verbalizer rarely mentions grammatical number directly; instead, it quotes the cut-off article (un/le/la vs les/des) and describes the incomplete phrase syntax.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ }
+}

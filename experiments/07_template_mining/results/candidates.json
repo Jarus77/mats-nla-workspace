@@ -1,0 +1,2812 @@
+{
+ "nla": {
+  "nj1_col": [
+   {
+    "id": "nla:nj1_col:m0",
+    "family": "line_position_clause",
+    "template": "The token appears {v} of the wrapped line.",
+    "fillers": {
+     "short": "near the beginning",
+     "long": "far into"
+    },
+    "evidence": "synthetic paraphrase reflecting linewrap column position",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col:m1",
+    "family": "column_depth",
+    "template": "Text at a {v} column position within the current line.",
+    "fillers": {
+     "short": "shallow",
+     "long": "deep"
+    },
+    "evidence": "synthetic paraphrase reflecting characters since newline",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col:m2",
+    "family": "line_offset",
+    "template": "Mid-sentence continuation located {v} of a hard-wrapped line.",
+    "fillers": {
+     "short": "at the beginning",
+     "long": "near the end"
+    },
+    "evidence": "The phrase ends mid-sentence /  / The sentence fragment structure",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col:m3",
+    "family": "line_start_vs_end",
+    "template": "Readout taken {v} of the wrapped line.",
+    "fillers": {
+     "short": "early in the span",
+     "long": "late in the span"
+    },
+    "evidence": "synthetic paraphrase in terse analytic register",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col:m4",
+    "family": "token_indentation",
+    "template": "Token sampled {v} after the preceding line break.",
+    "fillers": {
+     "short": "shortly",
+     "long": "far"
+    },
+    "evidence": "synthetic paraphrase reflecting newline distance",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col:m5",
+    "family": "character_column_num",
+    "template": "Token located around column {v} of the hard-wrapped line.",
+    "fillers": {
+     "short": "20",
+     "long": "70"
+    },
+    "evidence": "synthetic numeric probe for character offset",
+    "approx_count": 0,
+    "kind_llm": "numeric",
+    "numeric": true
+   },
+   {
+    "id": "nla:nj1_col:m6",
+    "family": "char_count_bin",
+    "template": "Positioned roughly {v} characters past the newline.",
+    "fillers": {
+     "short": "20",
+     "long": "70"
+    },
+    "evidence": "synthetic numeric offset test",
+    "approx_count": 0,
+    "kind_llm": "numeric",
+    "numeric": true
+   },
+   {
+    "id": "nla:nj1_col:fixed",
+    "family": "fixed_label",
+    "template": "The current position is {v}",
+    "fillers": {
+     "short": "at the start of a line",
+     "long": "near the end of a long line"
+    }
+   },
+   {
+    "id": "nla:nj1_col:fixed_numeric",
+    "family": "fixed_numeric",
+    "template": "The current line is about {v} characters long",
+    "fillers": {
+     "short": "twenty",
+     "long": "seventy"
+    }
+   }
+  ],
+  "ij2_lang": [
+   {
+    "id": "nla:ij2_lang:m0",
+    "family": "product_review_style",
+    "template": "{v} product review style",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French product review style with informal register / German product review style, informal and direct",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m1",
+    "family": "product_review_register",
+    "template": "{v} product review register",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French product review register — terse, positive / German product review register: casual consumer tone",
+    "approx_count": 16,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m2",
+    "family": "product_review_genre",
+    "template": "Product review genre in {v}",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "Product review genre in French, establishing positive sentiment / Product review genre in German (translated/cast",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m3",
+    "family": "consumer_review_register",
+    "template": "{v} consumer review register",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French consumer review register, informal complaint tone / German consumer review register, suggesting a product review",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m4",
+    "family": "informal_review_style",
+    "template": "Informal {v} customer review style",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "Informal French customer review style, short phrases / German-style informal product review style with emotive",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m5",
+    "family": "consumer_complaint_register",
+    "template": "{v} consumer complaint register",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French consumer complaint register, using first-person / German customer complaint register in informal register",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:fixed",
+    "family": "fixed_label",
+    "template": "The text is in {v}",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    }
+   }
+  ],
+  "nj2_tense": [
+   {
+    "id": "nla:nj2_tense:m0",
+    "family": "genre_description",
+    "template": "{v} factual",
+    "fillers": {
+     "past": "Historical",
+     "present": "Descriptive"
+    },
+    "evidence": "Historical factual narrative momentum; Descriptive factual/encyclopedic register",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj2_tense:m1",
+    "family": "narrative_style",
+    "template": "{v} narrative",
+    "fillers": {
+     "past": "Historical",
+     "present": "Biographical"
+    },
+    "evidence": "Historical narrative describing; Biographical narrative pattern establishes",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj2_tense:m2",
+    "family": "register_type",
+    "template": "{v} register",
+    "fillers": {
+     "past": "Historical",
+     "present": "Descriptive"
+    },
+    "evidence": "Historical/academic explanatory register; Descriptive factual/encyclopedic register",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj2_tense:m3",
+    "family": "article_tone",
+    "template": "{v} tone",
+    "fillers": {
+     "past": "Historical",
+     "present": "Descriptive"
+    },
+    "evidence": "Historical narrative tone requires; Descriptive urban geography/encyclopedic tone established",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj2_tense:m4",
+    "family": "contrast_description",
+    "template": "contrasting {v}",
+    "fillers": {
+     "past": "past and present",
+     "present": "present and past"
+    },
+    "evidence": "contrasting past and present economy",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj2_tense:fixed",
+    "family": "fixed_label",
+    "template": "The verb is in the {v} tense",
+    "fillers": {
+     "past": "past",
+     "present": "present"
+    }
+   }
+  ],
+  "bk_indent": [
+   {
+    "id": "nla:bk_indent:m0",
+    "family": "loop_nesting_level",
+    "template": "The {v} loop structure",
+    "fillers": {
+     "shallow": "single",
+     "deep": "nested"
+    },
+    "evidence": "\"nested loop/comment lines\", \"The nested iteration structure\", \"nested loops with for/while\"",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_indent:m1",
+    "family": "iteration_depth",
+    "template": "The code demonstrates {v} loop structures",
+    "fillers": {
+     "shallow": "sequential",
+     "deep": "nested"
+    },
+    "evidence": "\"nested loop structure repeating\", \"progressive loop structures\", \"nested loops and conditionals\"",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_indent:m2",
+    "family": "structural_level",
+    "template": "A Python code block with {v} indentation",
+    "fillers": {
+     "shallow": "shallow",
+     "deep": "nested"
+    },
+    "evidence": "\"code-style indentation and structural patterns\", \"nested indentation simulates\"",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_indent:m3",
+    "family": "algorithmic_nesting",
+    "template": "Python snippet with {v} loops and conditionals",
+    "fillers": {
+     "shallow": "top-level",
+     "deep": "nested"
+    },
+    "evidence": "\"Python/pseudocode snippet with nested loops and conditionals\", \"variable assignment/language-toplevel pattern\"",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_indent:m4",
+    "family": "code_generation_style",
+    "template": "Python-style {v} loop logic",
+    "fillers": {
+     "shallow": "procedural",
+     "deep": "nested"
+    },
+    "evidence": "\"Python-style loop logic\", \"nested block structure repeating with increasing indentation\"",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_indent:fixed",
+    "family": "fixed_label",
+    "template": "The code is indented {v} deep",
+    "fillers": {
+     "shallow": "one level",
+     "deep": "three levels"
+    }
+   }
+  ],
+  "bk_wordpos": [
+   {
+    "id": "nla:bk_wordpos:m0",
+    "family": "sentence_position_direct",
+    "template": "The sentence begins {v}",
+    "fillers": {
+     "early": "early",
+     "late": "late"
+    },
+    "evidence": "mid-sentence appears frequently, but position in sentence is not explicitly named; natural paraphrase in tool register",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_wordpos:m1",
+    "family": "mid_sentence_fragment",
+    "template": "The {v} fragment \"",
+    "fillers": {
+     "early": "initial",
+     "late": "final"
+    },
+    "evidence": "Final fragment \" (common across late readouts)",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_wordpos:m2",
+    "family": "clause_position",
+    "template": "The phrase {v}",
+    "fillers": {
+     "early": "opens a declarative",
+     "late": "ends an incomplete"
+    },
+    "evidence": "\"Windsor Castle was\" opens a declarative historical statement / \"width\" ends an incomplete clause",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_wordpos:m3",
+    "family": "ends_mid_sentence",
+    "template": "The sentence {v}",
+    "fillers": {
+     "early": "sets up a continuation",
+     "late": "ends mid-sentence,"
+    },
+    "evidence": "sets up a continuation describing / ends mid-sentence,",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_wordpos:m4",
+    "family": "narrative_beginning_vs_final",
+    "template": "{v} clause \"",
+    "fillers": {
+     "early": "The opening",
+     "late": "The final"
+    },
+    "evidence": "Final clause \" / Final phrase \" / Final token \"",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_wordpos:fixed",
+    "family": "fixed_label",
+    "template": "The current sentence is {v} words long so far",
+    "fillers": {
+     "early": "three",
+     "late": "twenty"
+    }
+   }
+  ],
+  "bk_listidx": [
+   {
+    "id": "nla:bk_listidx:m0",
+    "family": "ordinal_item",
+    "template": "The final token is the {v} item in the list",
+    "fillers": {
+     "early": "second",
+     "late": "eighth"
+    },
+    "evidence": "\"sandals\" is the fourth item in the list / \"flour\" is the eighth item in a space-separated food list / \"butter\" is the third item",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_listidx:m1",
+    "family": "ordinal_list_item",
+    "template": "{v} list item",
+    "fillers": {
+     "early": "second",
+     "late": "final"
+    },
+    "evidence": "second list item after / \"umbrella\" is the last list item / Final token \"sandals\" is the fourth item",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_listidx:m2",
+    "family": "relative_position",
+    "template": "The list is {v}",
+    "fillers": {
+     "early": "just beginning",
+     "late": "nearly complete"
+    },
+    "evidence": "List of European cities has just begun / suggesting the list is nearly complete",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_listidx:m3",
+    "family": "list_status",
+    "template": "An {v} list is being presented",
+    "fillers": {
+     "early": "incomplete",
+     "late": "extended"
+    },
+    "evidence": "\"1. Dublin / 2. Seville\" — an incomplete numbered list / structured enumeration of cities ... implies more entries follow",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_listidx:fixed",
+    "family": "fixed_label",
+    "template": "This is item number {v} in the list",
+    "fillers": {
+     "early": "two",
+     "late": "nine"
+    }
+   }
+  ],
+  "bk_caps": [
+   {
+    "id": "nla:bk_caps:m0",
+    "family": "register_case_style",
+    "template": "{v} register",
+    "fillers": {
+     "uppercase": "ALL-CAPS",
+     "lowercase": "Standard"
+    },
+    "evidence": "All-caps register signals informal; ALL-CAPS stylistic pattern established",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_caps:m1",
+    "family": "stylistic_pattern",
+    "template": "{v} stylistic pattern established",
+    "fillers": {
+     "uppercase": "ALL-CAPS",
+     "lowercase": "Standard"
+    },
+    "evidence": "ALL-CAPS stylistic pattern established throughout",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_caps:m2",
+    "family": "case_format",
+    "template": "{v} format suggests factual",
+    "fillers": {
+     "uppercase": "All-caps biographical/sports trivia",
+     "lowercase": "Biographical/celebrity profile"
+    },
+    "evidence": "All-caps biographical/sports trivia format suggests factual statements",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_caps:m3",
+    "family": "writing_style_case",
+    "template": "Sports reference/biographical writing with {v}",
+    "fillers": {
+     "uppercase": "stylized ALL-CAPS",
+     "lowercase": "standard sentence case"
+    },
+    "evidence": "Sports reference/biographical writing with stylized ALL-CAPS",
+    "approx_count": 1,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_caps:m4",
+    "family": "spoken_style",
+    "template": "Informal {v} suggests",
+    "fillers": {
+     "uppercase": "spoken-word register (\"I FEEL LIKE,\" ALL-CAPS style)",
+     "lowercase": "conversational register"
+    },
+    "evidence": "Informal spoken-word register (\"I FEEL LIKE,\" ALL-CAPS style) suggests",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_caps:fixed",
+    "family": "fixed_label",
+    "template": "The text is written in {v} letters",
+    "fillers": {
+     "uppercase": "uppercase",
+     "lowercase": "lowercase"
+    }
+   }
+  ],
+  "bk_code": [
+   {
+    "id": "nla:bk_code:m0",
+    "family": "language_name_start",
+    "template": "{v} code",
+    "fillers": {
+     "Python": "Python",
+     "JavaScript": "JavaScript"
+    },
+    "evidence": "Python code snippet context... / JavaScript code context: a reducer function...",
+    "approx_count": 28,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_code:m1",
+    "family": "language_slash_context",
+    "template": "{v}",
+    "fillers": {
+     "Python": "Python",
+     "JavaScript": "JavaScript"
+    },
+    "evidence": "Python/algorithm task description... / JavaScript/Node.js task format...",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_code:m2",
+    "family": "code_language_context",
+    "template": "Code/{v}",
+    "fillers": {
+     "Python": "Python",
+     "JavaScript": "JavaScript"
+    },
+    "evidence": "Code/Python-like pseudo-definition style... / Code/algorithm translation problem: JS respondent...",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_code:m3",
+    "family": "language_function_def",
+    "template": "{v} function",
+    "fillers": {
+     "Python": "Python",
+     "JavaScript": "JavaScript"
+    },
+    "evidence": "Python function documentation pattern... / JavaScript function definition context...",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_code:m4",
+    "family": "language_task_format",
+    "template": "{v} coding",
+    "fillers": {
+     "Python": "Python",
+     "JavaScript": "JavaScript"
+    },
+    "evidence": "Python coding challenge format... / JavaScript coding exercise prompt...",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_code:fixed",
+    "family": "fixed_label",
+    "template": "The code is written in {v}",
+    "fillers": {
+     "Python": "Python",
+     "JavaScript": "JavaScript"
+    }
+   }
+  ],
+  "nj3_predpos": [
+   {
+    "id": "nla:nj3_predpos:m0",
+    "family": "pos_phrase",
+    "template": "The next token is expected to be a {v}",
+    "fillers": {
+     "adjective": "modifier",
+     "noun": "noun phrase"
+    },
+    "evidence": "paraphrase based on structural expectations like 'demands one or more parallel nouns or phrases'",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj3_predpos:m1",
+    "family": "register_prediction",
+    "template": "Predicting {v}",
+    "fillers": {
+     "adjective": "an adjective",
+     "noun": "a noun"
+    },
+    "evidence": "paraphrase adapted to terse analytic register",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj3_predpos:m2",
+    "family": "syntactic_expectation",
+    "template": "Syntactic expectation: {v}",
+    "fillers": {
+     "adjective": "adjective",
+     "noun": "noun"
+    },
+    "evidence": "Syntactic/structural expectation:",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj3_predpos:m3",
+    "family": "completing_phrase",
+    "template": "Completing the phrase with {v}",
+    "fillers": {
+     "adjective": "a descriptive modifier",
+     "noun": "a noun phrase"
+    },
+    "evidence": "must complete 'reach out to new' with a noun phrase",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:nj3_predpos:fixed",
+    "family": "fixed_label",
+    "template": "The next word is likely {v}",
+    "fillers": {
+     "adjective": "an adjective",
+     "noun": "a noun"
+    }
+   }
+  ],
+  "nj1_col_break": [
+   {
+    "id": "nla:nj1_col_break:m0",
+    "family": "wrap_proximity_decision",
+    "template": "The text is {v}",
+    "fillers": {
+     "soon": "approaching a line break under automatic wrap",
+     "far": "well before any automatic line break"
+    },
+    "evidence": "mid-sentence listing episode credits/production details",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col_break:m1",
+    "family": "line_wrap_status",
+    "template": "Line break status: {v}.",
+    "fillers": {
+     "soon": "imminent line break under automatic wrap",
+     "far": "mid-line, far from wrap threshold"
+    },
+    "evidence": "Final token... ends an incomplete relative clause",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col_break:m2",
+    "family": "wrap_decision",
+    "template": "Automatic linewrap decision is {v}.",
+    "fillers": {
+     "soon": "breaking soon",
+     "far": "not breaking yet"
+    },
+    "evidence": "mid-clause, requiring completion",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col_break:m3",
+    "family": "wrap_boundary",
+    "template": "Current token is {v}.",
+    "fillers": {
+     "soon": "near a linewrap boundary",
+     "far": "far from a linewrap boundary"
+    },
+    "evidence": "Final fragment ends mid-clause",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col_break:m4",
+    "family": "impending_break",
+    "template": "Wrap state: {v}.",
+    "fillers": {
+     "soon": "line break coming soon",
+     "far": "line break far away"
+    },
+    "evidence": "ends an incomplete relative clause",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "nla:nj1_col_break:m5",
+    "family": "characters_to_wrap",
+    "template": "Characters remaining before wrap: {v}.",
+    "fillers": {
+     "soon": "0-6 characters",
+     "far": "25+ characters"
+    },
+    "evidence": "wrap width 30-90: 'soon' = within 0-6 characters of the wrap width, 'far' = 25+ characters before it",
+    "approx_count": 0,
+    "kind_llm": "numeric",
+    "numeric": true
+   },
+   {
+    "id": "nla:nj1_col_break:m6",
+    "family": "numeric_distance_to_break",
+    "template": "Distance to automatic line break: {v}.",
+    "fillers": {
+     "soon": "under 6 characters",
+     "far": "over 25 characters"
+    },
+    "evidence": "within 0-6 characters of the wrap width, 'far' = 25+ characters before it",
+    "approx_count": 0,
+    "kind_llm": "numeric",
+    "numeric": true
+   },
+   {
+    "id": "nla:nj1_col_break:fixed",
+    "family": "fixed_label",
+    "template": "A line break is {v}",
+    "fillers": {
+     "soon": "coming",
+     "far": "not coming yet"
+    }
+   }
+  ],
+  "ij_listnum": [
+   {
+    "id": "nla:ij_listnum:m0",
+    "family": "item_index",
+    "template": "Final token \"{v}\"",
+    "fillers": {
+     "early": "is the third",
+     "late": "is the last"
+    },
+    "evidence": "\"spinach\" is the third listed food item / Final token \"spinach\" is the third / Final token \"keys\" is the last item",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij_listnum:m1",
+    "family": "item_position_ends",
+    "template": "Final token {v} list item",
+    "fillers": {
+     "early": "ends the second",
+     "late": "ends an incomplete"
+    },
+    "evidence": "ends the second list item / ends an incomplete list item / ends an incomplete line",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij_listnum:m2",
+    "family": "enumerated_progress",
+    "template": "{v} already given",
+    "fillers": {
+     "early": "Two items",
+     "late": "Eight cities"
+    },
+    "evidence": "Two items given so far / two already given / Eight cities listed so far / seven already provided",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "nla:ij_listnum:m3",
+    "family": "list_continuation_count",
+    "template": "List {v} pattern",
+    "fillers": {
+     "early": "completion",
+     "late": "continuation"
+    },
+    "evidence": "List completion pattern: the sentence promises \"three chores\" / List continuation pattern",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij_listnum:fixed",
+    "family": "fixed_label",
+    "template": "This is item number {v} in the list",
+    "fillers": {
+     "early": "two",
+     "late": "nine"
+    }
+   }
+  ],
+  "bk_quote": [
+   {
+    "id": "nla:bk_quote:m0",
+    "family": "quoted_vs_unquoted_context",
+    "template": "{v} context",
+    "fillers": {
+     "inside": "Quotation",
+     "outside": "Biographical"
+    },
+    "evidence": "'Quotation/citation compilation structure', 'Quotation context signals a literary', 'Biographical/factual Wikipedia-style article'",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:m1",
+    "family": "quote_compilation_vs_summary",
+    "template": "{v} format",
+    "fillers": {
+     "inside": "Quotation/citation compilation",
+     "outside": "Film/article synopsis"
+    },
+    "evidence": "'Quotation/citation compilation structure', 'UK theatrical listing format with successive critical pull-quotes'",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:m2",
+    "family": "pull_quotes_vs_factual_prose",
+    "template": "A series of {v}",
+    "fillers": {
+     "inside": "critical quotes",
+     "outside": "factual statements"
+    },
+    "evidence": "'A series of critical quotes praising', 'Continuation of a series of quoted critic reviews'",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:m3",
+    "family": "direct_quote_continuation",
+    "template": "{v} continuation",
+    "fillers": {
+     "inside": "Direct quote",
+     "outside": "Narrative"
+    },
+    "evidence": "'Direct quote continuation mid-sentence', 'Direct speech continuation expected', 'Narrative continuation pattern'",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:m4",
+    "family": "style_quotes_vs_prose",
+    "template": "{v} style",
+    "fillers": {
+     "inside": "Quotation",
+     "outside": "Encyclopedic"
+    },
+    "evidence": "'Exclamatory quotation register established', 'Wikipedia/encyclopedic narrative tone'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:fixed",
+    "family": "fixed_label",
+    "template": "The current text is {v} a quotation",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "agr_gender": [
+   {
+    "id": "nla:agr_gender:m0",
+    "family": "article_mention",
+    "template": "The sentence begins with the {v} article",
+    "fillers": {
+     "masculine": "masculine",
+     "feminine": "feminine"
+    },
+    "evidence": "Paraphrase: tool focuses heavily on ending fragments like 'le' vs 'la' / 'einen' vs 'eine' ('Final token \"le\"', 'Final fragment \"la\"')",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:agr_gender:m1",
+    "family": "gender_noun_phrase",
+    "template": "Grammatical momentum requiring a {v} noun phrase complement",
+    "fillers": {
+     "masculine": "masculine",
+     "feminine": "feminine"
+    },
+    "evidence": "has grammatical momentum requiring a noun phrase complement / an incomplete French article beginning a noun phrase",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:agr_gender:m2",
+    "family": "article_gender_continuation",
+    "template": "The incomplete {v} article sets up",
+    "fillers": {
+     "masculine": "masculine",
+     "feminine": "feminine"
+    },
+    "evidence": "Paraphrase: '\"la\" is an incomplete French article beginning a noun phrase' / '\"ce\" is an incomplete'",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:agr_gender:m3",
+    "family": "noun_completion_gender",
+    "template": "Expecting a {v} noun completing the phrase",
+    "fillers": {
+     "masculine": "masculine",
+     "feminine": "feminine"
+    },
+    "evidence": "expecting a noun completing the phrase (e.g., description of a specific item category or deli",
+    "approx_count": 1,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:agr_gender:fixed",
+    "family": "fixed_label",
+    "template": "The next word is a {v} noun",
+    "fillers": {
+     "masculine": "masculine",
+     "feminine": "feminine"
+    }
+   }
+  ],
+  "agr_number": [
+   {
+    "id": "nla:agr_number:m0",
+    "family": "article_gender_number",
+    "template": "The French phrase \"{v}\"",
+    "fillers": {
+     "singular": "le",
+     "plural": "les"
+    },
+    "evidence": "The French phrase \"Aujourd'hui j'ai reçu le\" vs The French phrase \"je m attendais a des\"",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:agr_number:m1",
+    "family": "noun_phrase_number",
+    "template": "The phrase structure \"{v}\"",
+    "fillers": {
+     "singular": "qui fonctionnait parfaitement après un",
+     "plural": "j'attendais des"
+    },
+    "evidence": "\"un\" signals a masculine noun phrase follows vs grammatically requires a noun phrase (plural noun)",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:agr_number:m2",
+    "family": "determiner_spec",
+    "template": "Final token \"{v}\" is a French",
+    "fillers": {
+     "singular": "le",
+     "plural": "des"
+    },
+    "evidence": "Final token \"des\" is a French partitive determiner requiring an immediate noun phrase",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:agr_number:m3",
+    "family": "article_noun_expected",
+    "template": "\"{v}\" signals a",
+    "fillers": {
+     "singular": "un\" signals a masculine noun phrase",
+     "plural": "les\" is a plural definite article beginning a"
+    },
+    "evidence": "\"un\" signals a masculine noun phrase follows / \"les\" is a plural definite article beginning a",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:agr_number:fixed",
+    "family": "fixed_label",
+    "template": "The next word is a {v} noun",
+    "fillers": {
+     "singular": "singular",
+     "plural": "plural"
+    }
+   }
+  ]
+ },
+ "ol": {
+  "nj1_col": [
+   {
+    "id": "ol:nj1_col:m0",
+    "family": "line_position",
+    "template": "- line position: {v}",
+    "fillers": {
+     "short": "early in the line",
+     "long": "late in the line"
+    },
+    "evidence": "implicit feature: current column (characters since last newline)",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col:m1",
+    "family": "column_depth",
+    "template": "- column offset: {v}",
+    "fillers": {
+     "short": "short",
+     "long": "long"
+    },
+    "evidence": "implicit feature: nj1_col short vs long",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col:m2",
+    "family": "line_wrap_distance",
+    "template": "- distance from line start: {v}",
+    "fillers": {
+     "short": "near the beginning",
+     "long": "far into the line"
+    },
+    "evidence": "implicit line length feature",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col:m3",
+    "family": "line_margin",
+    "template": "- {v} after a newline",
+    "fillers": {
+     "short": "just",
+     "long": "deep"
+    },
+    "evidence": "characters since last newline",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col:m4",
+    "family": "line_segment",
+    "template": "- current line depth: {v}",
+    "fillers": {
+     "short": "shallow",
+     "long": "deep"
+    },
+    "evidence": "column position within wrapped line",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col:m5",
+    "family": "char_count_range",
+    "template": "- column count: {v} characters",
+    "fillers": {
+     "short": "10 to 30",
+     "long": "55 to 85"
+    },
+    "evidence": "definition: short = 10-30 characters, long = 55-85 characters",
+    "approx_count": 0,
+    "kind_llm": "numeric",
+    "numeric": true
+   },
+   {
+    "id": "ol:nj1_col:m6",
+    "family": "char_col_num",
+    "template": "- column {v}",
+    "fillers": {
+     "short": "20",
+     "long": "70"
+    },
+    "evidence": "approximate median character counts for short and long",
+    "approx_count": 0,
+    "kind_llm": "numeric",
+    "numeric": true
+   },
+   {
+    "id": "ol:nj1_col:fixed",
+    "family": "fixed_label",
+    "template": "- {v}",
+    "fillers": {
+     "short": "at the start of a line",
+     "long": "near the end of a long line"
+    }
+   },
+   {
+    "id": "ol:nj1_col:fixed_numeric",
+    "family": "fixed_numeric",
+    "template": "- {v} characters",
+    "fillers": {
+     "short": "twenty",
+     "long": "seventy"
+    }
+   }
+  ],
+  "ij2_lang": [
+   {
+    "id": "ol:ij2_lang:m0",
+    "family": "recommend_negative",
+    "template": "- Je ne {v} pas",
+    "fillers": {
+     "French": "recommande",
+     "German": "empfehle"
+    },
+    "evidence": "Je ne recommande pas cette boutique / Nicht empfehlenswert",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:m1",
+    "family": "recommend_positive",
+    "template": "- Je {v}",
+    "fillers": {
+     "French": "recommande",
+     "German": "empfehle"
+    },
+    "evidence": "Je recommande ce produit / Kann ich nur weiterempfehlen",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:m2",
+    "family": "star_rating",
+    "template": "- {v}",
+    "fillers": {
+     "French": "5 étoiles",
+     "German": "5 Sterne"
+    },
+    "evidence": "5 étoiles pour le produit / 5 Sterne. Die Lieferung war schnell",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:ij2_lang:m3",
+    "family": "fast_delivery",
+    "template": "- {v}",
+    "fillers": {
+     "French": "Livraison rapide",
+     "German": "Schnelle Lieferung"
+    },
+    "evidence": "Livraison rapide, pas de regrets / Schnelle Lieferung. Empfehlenswert",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:m4",
+    "family": "satisfaction",
+    "template": "- Très {v}",
+    "fillers": {
+     "French": "satisfait",
+     "German": "zufrieden"
+    },
+    "evidence": "Très satisfait du résultat / Sehr zufrieden mit dem Kauf",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:m5",
+    "family": "disappointment",
+    "template": "- Très {v}",
+    "fillers": {
+     "French": "déçu",
+     "German": "enttäuscht"
+    },
+    "evidence": "Très déçu de cette commande / sehr enttäuscht. Die Qualität ist auch nicht gut",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:fixed",
+    "family": "fixed_label",
+    "template": "- {v} language",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    }
+   }
+  ],
+  "nj2_tense": [
+   {
+    "id": "ol:nj2_tense:m0",
+    "family": "is_was",
+    "template": "- It {v}",
+    "fillers": {
+     "past": "was",
+     "present": "is"
+    },
+    "evidence": "- It was the first time vs - It is located within",
+    "approx_count": 45,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj2_tense:m1",
+    "family": "he_verb",
+    "template": "- He {v}",
+    "fillers": {
+     "past": "served",
+     "present": "runs"
+    },
+    "evidence": "- He served as a councilor vs - He runs a small",
+    "approx_count": 30,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj2_tense:m2",
+    "family": "has_had",
+    "template": "- The village {v}",
+    "fillers": {
+     "past": "had",
+     "present": "has"
+    },
+    "evidence": "- The village had five vs - The village also has",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj2_tense:m3",
+    "family": "they_verb",
+    "template": "- They {v}",
+    "fillers": {
+     "past": "were",
+     "present": "are"
+    },
+    "evidence": "- They were disbanded vs - They are hostile and heavily armed",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj2_tense:m4",
+    "family": "clause_verb_reported",
+    "template": "- He {v}",
+    "fillers": {
+     "past": "became",
+     "present": "remains"
+    },
+    "evidence": "- He became a vs - India remains a",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj2_tense:m5",
+    "family": "passive_voice",
+    "template": "- The {v}",
+    "fillers": {
+     "past": "was",
+     "present": "is"
+    },
+    "evidence": "- was admitted to vs - is located within",
+    "approx_count": 40,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj2_tense:fixed",
+    "family": "fixed_label",
+    "template": "- {v} tense",
+    "fillers": {
+     "past": "past",
+     "present": "present"
+    }
+   }
+  ],
+  "bk_indent": [
+   {
+    "id": "ol:bk_indent:m0",
+    "family": "nested_depth",
+    "template": "- {v}  # check indentation level",
+    "fillers": {
+     "shallow": "1  # first level",
+     "deep": "3  # nested scope"
+    },
+    "evidence": "Lines counting nesting or depth: '1  # Header count; lines += 1 if row is not empty; depth +=' vs 'counting lines nested deeper' and '; count += 2;  # Nested increment by 2'",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_indent:m1",
+    "family": "loop_level_increment",
+    "template": "- {v}",
+    "fillers": {
+     "shallow": "+= 1; lines_count += 1",
+     "deep": ", count += 2  # multiple increments in same block"
+    },
+    "evidence": "Shallow readouts consistently show single increments like '+= 1; lines_count  += 1', whereas deep readouts frequently show nested increments '+= 2' or 'count += 2'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_indent:m3",
+    "family": "tree_traversal_depth",
+    "template": "- {v}",
+    "fillers": {
+     "shallow": "next()  # Start from root node.",
+     "deep": "stack.extend(children); if node.children: nodes.extend(node"
+    },
+    "evidence": "Shallow references root level / start: 'Start from root node.', '0, avg)  # Create a node for the current section.' vs deep deeply traversing nodes: '3. for child in node.children: queue.append(child)'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_indent:m4",
+    "family": "header_vs_nested",
+    "template": "- {v}",
+    "fillers": {
+     "shallow": "1  # Header row counts as a pass",
+     "deep": "2  # Multiple increments in nested scope"
+    },
+    "evidence": "'1  # Header count' / '1  # Считаем первую строку (заголовок)' in shallow vs '2  # Multiple increments in nested scope' in deep",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_indent:fixed",
+    "family": "fixed_label",
+    "template": "- {v} of indentation",
+    "fillers": {
+     "shallow": "one level",
+     "deep": "three levels"
+    }
+   }
+  ],
+  "bk_wordpos": [
+   {
+    "id": "ol:bk_wordpos:m0",
+    "family": "temporal_adverb",
+    "template": "- {v} in the sentence,",
+    "fillers": {
+     "early": "early",
+     "late": "late"
+    },
+    "evidence": "paraphrase representing position in sentence",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_wordpos:m1",
+    "family": "stage_relative",
+    "template": "- occurring {v} in the passage,",
+    "fillers": {
+     "early": "early",
+     "late": "late"
+    },
+    "evidence": "paraphrase representing early vs late relative placement",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_wordpos:m2",
+    "family": "word_position",
+    "template": "- positioned {v} in the clause,",
+    "fillers": {
+     "early": "early",
+     "late": "late"
+    },
+    "evidence": "paraphrase representing token position",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_wordpos:m3",
+    "family": "timing_point",
+    "template": "- at an {v} point in the text,",
+    "fillers": {
+     "early": "early",
+     "late": "late"
+    },
+    "evidence": "paraphrase representing relative timing/index",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_wordpos:fixed",
+    "family": "fixed_label",
+    "template": "- {v} words",
+    "fillers": {
+     "early": "three",
+     "late": "twenty"
+    }
+   }
+  ],
+  "bk_listidx": [
+   {
+    "id": "ol:bk_listidx:m0",
+    "family": "item_num_bullet",
+    "template": "- {v}.",
+    "fillers": {
+     "early": "2",
+     "late": "10"
+    },
+    "evidence": "'- 2. Coffee', '- 2 (unload the dishwasher)' vs '- 10. Bread', '- 10. Towel', '- 12. Scarf'",
+    "approx_count": 35,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_listidx:m1",
+    "family": "item_num_alt",
+    "template": "- {v}.",
+    "fillers": {
+     "early": "3",
+     "late": "8"
+    },
+    "evidence": "'- 3. Water the plants', '- 3. Take out the trash' vs '- 8. Organize the closet', '- 8. umbrella'",
+    "approx_count": 30,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_listidx:m2",
+    "family": "parenthesis_num",
+    "template": "- ({v})",
+    "fillers": {
+     "early": "2",
+     "late": "10"
+    },
+    "evidence": "'- 2 (unload the dishwasher)' vs '- (10) – If you have a car'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_listidx:m3",
+    "family": "slash_num",
+    "template": "- /{v}.",
+    "fillers": {
+     "early": "2",
+     "late": "9"
+    },
+    "evidence": "'- /2. Coffee' vs '- /8. umbrella', '- /10. Power bank'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_listidx:m4",
+    "family": "item_rank_bold",
+    "template": "- **{v}.**",
+    "fillers": {
+     "early": "2",
+     "late": "10"
+    },
+    "evidence": "'- 2. **Yogurt**', '- **Sugar**' vs '- 10. **Umbrella**', '- 10. **Toothbrush**'",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_listidx:m5",
+    "family": "total_items_reference",
+    "template": "- Here is a list of {v} items",
+    "fillers": {
+     "early": "3",
+     "late": "10"
+    },
+    "evidence": "'- Here are three more chores' vs '- Since you asked for 10 cities', '- Here are 20 items'",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:bk_listidx:fixed",
+    "family": "fixed_label",
+    "template": "- item {v}",
+    "fillers": {
+     "early": "two",
+     "late": "nine"
+    }
+   }
+  ],
+  "bk_caps": [
+   {
+    "id": "ol:bk_caps:m0",
+    "family": "casing_continuation",
+    "template": "- {v}",
+    "fillers": {
+     "uppercase": "THE",
+     "lowercase": "the"
+    },
+    "evidence": "In uppercase readouts, continuous English segments frequently appear in all-caps: 'THOSE THREE, ONLY ONE', 'SHOW IS GETTING MORE CASUAL', 'AUTO MECHANIC FROM ITALY', versus lowercase readouts where English is standard lower/sentence case.",
+    "approx_count": 28,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_caps:m1",
+    "family": "casing_continuation_word",
+    "template": "- {v}",
+    "fillers": {
+     "uppercase": "THIS",
+     "lowercase": "this"
+    },
+    "evidence": "ALL CAPS continuations appear prominently in the uppercase condition ('THESE 19 CAREER APPEARANCES', 'SHOW HAS BECOME').",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_caps:m2",
+    "family": "capital_case_label",
+    "template": "- {v}",
+    "fillers": {
+     "uppercase": "UPPERCASE",
+     "lowercase": "lowercase"
+    },
+    "evidence": "Continuation casing directly mirrors the target token casing.",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_caps:m3",
+    "family": "chinese_prefix_casing",
+    "template": "- 整个 {v}",
+    "fillers": {
+     "uppercase": "SHOW",
+     "lowercase": "show"
+    },
+    "evidence": "- 整个 SHOW IS MORE LOOSE NOW",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_caps:fixed",
+    "family": "fixed_label",
+    "template": "- {v}",
+    "fillers": {
+     "uppercase": "uppercase",
+     "lowercase": "lowercase"
+    }
+   }
+  ],
+  "bk_code": [
+   {
+    "id": "ol:bk_code:m0",
+    "family": "comment_syntax",
+    "template": "- {v}",
+    "fillers": {
+     "Python": "#",
+     "JavaScript": "//"
+    },
+    "evidence": "Python readouts consistently use '# ...' for comments while JavaScript readouts heavily use '// ...'",
+    "approx_count": 95,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_code:m1",
+    "family": "language_name_markdown",
+    "template": "- ```{v}",
+    "fillers": {
+     "Python": "python",
+     "JavaScript": "javascript"
+    },
+    "evidence": "Python: '```python / def top10_accounts'; JavaScript: '```javascript / const cities = ['",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_code:m2",
+    "family": "collection_append",
+    "template": "- {v}",
+    "fillers": {
+     "Python": "append",
+     "JavaScript": "push"
+    },
+    "evidence": "Python: 'append(item)', 'append(task)'; JavaScript: 'push(item)', 'acc.push(item)', 'cities.push(city)'",
+    "approx_count": 60,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_code:m3",
+    "family": "print_console",
+    "template": "- {v}",
+    "fillers": {
+     "Python": "print(",
+     "JavaScript": "console.log("
+    },
+    "evidence": "Python: 'print(f\"Total: {total}\")', 'print(sum(counts))'; JavaScript: 'console.log(`TASK ${process.argv[2]}`)'",
+    "approx_count": 35,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_code:m4",
+    "family": "boolean_literals",
+    "template": "- return {v}",
+    "fillers": {
+     "Python": "True",
+     "JavaScript": "true"
+    },
+    "evidence": "Python uses capitalized 'True' / 'False'; JavaScript readouts frequently feature lowercase 'true' / 'false'",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_code:m5",
+    "family": "null_value",
+    "template": "- return {v}",
+    "fillers": {
+     "Python": "None",
+     "JavaScript": "null"
+    },
+    "evidence": "Python: 'None if total < 1000', '= None:'; JavaScript: 'null' / strict undefined checks",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_code:fixed",
+    "family": "fixed_label",
+    "template": "- {v} code",
+    "fillers": {
+     "Python": "Python",
+     "JavaScript": "JavaScript"
+    }
+   }
+  ],
+  "nj3_predpos": [
+   {
+    "id": "ol:nj3_predpos:m0",
+    "family": "chinese_pos_continuation_modifier_vs_head",
+    "template": "- {v}",
+    "fillers": {
+     "adjective": "第一",
+     "noun": "立场"
+    },
+    "evidence": "adjective readouts often open with superlative/ordinal/modifiers like '- 第一', '- 最', '- 前', while noun readouts frequently open with head nouns like '- 立场', '- 坚持', '- 照片', '- 竞争'",
+    "approx_count": 60,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj3_predpos:m1",
+    "family": "english_descriptor_continuation",
+    "template": "- {v}",
+    "fillers": {
+     "adjective": "best",
+     "noun": "command"
+    },
+    "evidence": "adjective readouts frequently begin with English adjectives like '- best place', '- serious class', while noun readouts begin with English head nouns like '- command of', '- electricity in'",
+    "approx_count": 45,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj3_predpos:m2",
+    "family": "modifier_vs_noun_marker",
+    "template": "- {v} of",
+    "fillers": {
+     "adjective": "most",
+     "noun": "command"
+    },
+    "evidence": "'- most successful single' vs '- command of Jean Baptiste', '- leadership of'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj3_predpos:m3",
+    "family": "chinese_nominal_prefix",
+    "template": "- {v}",
+    "fillers": {
+     "adjective": "著名",
+     "noun": "指挥"
+    },
+    "evidence": "adjective uses attributives '- 著名', '- 顶尖', noun readouts use heads '- 指挥', '- 领导'",
+    "approx_count": 35,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj3_predpos:m4",
+    "family": "explicit_pos_paraphrase",
+    "template": "- next word is a {v}",
+    "fillers": {
+     "adjective": "adjective",
+     "noun": "noun"
+    },
+    "evidence": "Natural paraphrase in the tool's bullet format for meta-level POS classification",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj3_predpos:m5",
+    "family": "pos_continuation_bracketed",
+    "template": "- ({v})",
+    "fillers": {
+     "adjective": "adjective",
+     "noun": "noun"
+    },
+    "evidence": "Natural meta-annotation style matching bracketed glosses like '（solid）' or '（common names)'",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:nj3_predpos:fixed",
+    "family": "fixed_label",
+    "template": "- {v}",
+    "fillers": {
+     "adjective": "adjective",
+     "noun": "noun"
+    }
+   }
+  ],
+  "nj1_col_break": [
+   {
+    "id": "ol:nj1_col_break:m0",
+    "family": "line_wrap_status",
+    "template": "- line wrap status: {v}",
+    "fillers": {
+     "soon": "line break imminent",
+     "far": "mid-line, no break yet"
+    },
+    "evidence": "implicit feature encoding wrap decision near edge",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col_break:m1",
+    "family": "break_decision",
+    "template": "- {v} wrap boundary",
+    "fillers": {
+     "soon": "approaching the",
+     "far": "comfortably before the"
+    },
+    "evidence": "implicit feature encoding linewrap decision",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col_break:m2",
+    "family": "break_coming",
+    "template": "- line break is {v}",
+    "fillers": {
+     "soon": "coming soon",
+     "far": "far away"
+    },
+    "evidence": "implicit wrap decision feature",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col_break:m3",
+    "family": "linewrap_state",
+    "template": "- wrap decision: {v}",
+    "fillers": {
+     "soon": "break soon",
+     "far": "continue line"
+    },
+    "evidence": "feature nj1_col_break definition",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col_break:m4",
+    "family": "wrap_proximity",
+    "template": "- {v}",
+    "fillers": {
+     "soon": "near linewrap boundary",
+     "far": "far from linewrap boundary"
+    },
+    "evidence": "linewrap feature conditioning",
+    "approx_count": 0,
+    "kind_llm": "qualitative",
+    "numeric": false
+   },
+   {
+    "id": "ol:nj1_col_break:m5",
+    "family": "chars_remaining",
+    "template": "- characters before wrap: {v}",
+    "fillers": {
+     "soon": "0-6",
+     "far": "25+"
+    },
+    "evidence": "feature definition: 'soon' = within 0-6 characters, 'far' = 25+ characters",
+    "approx_count": 0,
+    "kind_llm": "numeric",
+    "numeric": true
+   },
+   {
+    "id": "ol:nj1_col_break:m6",
+    "family": "distance_to_break",
+    "template": "- distance to line break: {v}",
+    "fillers": {
+     "soon": "under 6 chars",
+     "far": "over 25 chars"
+    },
+    "evidence": "feature definition distance metric",
+    "approx_count": 0,
+    "kind_llm": "numeric",
+    "numeric": true
+   },
+   {
+    "id": "ol:nj1_col_break:fixed",
+    "family": "fixed_label",
+    "template": "- line break {v}",
+    "fillers": {
+     "soon": "coming",
+     "far": "not coming yet"
+    }
+   }
+  ],
+  "ij_listnum": [
+   {
+    "id": "ol:ij_listnum:m0",
+    "family": "item_num_dot",
+    "template": "- {v}.",
+    "fillers": {
+     "early": "2",
+     "late": "10"
+    },
+    "evidence": "early: '- 2. Milk', '- 3. Bread'; late: '- 10. ', '- 11. '",
+    "approx_count": 45,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:ij_listnum:m1",
+    "family": "item_paren_num",
+    "template": "- ({v})",
+    "fillers": {
+     "early": "3",
+     "late": "10"
+    },
+    "evidence": "early: '- (3) wash the car'; late: '- (10) (Pack snacks for the journey)'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:ij_listnum:m2",
+    "family": "item_num_paren",
+    "template": "- {v})",
+    "fillers": {
+     "early": "2",
+     "late": "10"
+    },
+    "evidence": "early: '- 2) Eggs', '- 3) Hamburg'; late: '- 10) ', '- 11) '",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:ij_listnum:m3",
+    "family": "markdown_bold_num",
+    "template": "- **{v}.**",
+    "fillers": {
+     "early": "2",
+     "late": "10"
+    },
+    "evidence": "early: '- **2.**', '- 3. Bread'; late: '- 10. **Dublin', '- 11. **butter'",
+    "approx_count": 30,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:ij_listnum:m4",
+    "family": "item_slash_num",
+    "template": "- /{v}.",
+    "fillers": {
+     "early": "3",
+     "late": "10"
+    },
+    "evidence": "early: '- /3. ', '- /2. '; late: '- /10. ', '- /11. '",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:ij_listnum:m5",
+    "family": "numbered_task_paren",
+    "template": "- (Task {v}:",
+    "fillers": {
+     "early": "2",
+     "late": "10"
+    },
+    "evidence": "early: '- (Task 2: ', '- (Task 3: '; late: '- (Task 4: ', '- (chore 8)'",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:ij_listnum:fixed",
+    "family": "fixed_label",
+    "template": "- item {v}",
+    "fillers": {
+     "early": "two",
+     "late": "nine"
+    }
+   }
+  ],
+  "bk_quote": [
+   {
+    "id": "ol:bk_quote:m1",
+    "family": "closing_quote_continuation",
+    "template": "- {v} (",
+    "fillers": {
+     "inside": ".\" (",
+     "outside": ") ("
+    },
+    "evidence": "- 如同 an animal.\" (Education makes a man a man... / - \" (Johns Hopkins / - 葬礼 (proper burial)...",
+    "approx_count": 40,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_quote:m2",
+    "family": "spoken_quotation_lead_in",
+    "template": "- {v}\"",
+    "fillers": {
+     "inside": "said: \"",
+     "outside": "said, \""
+    },
+    "evidence": "- Škoro said: \"We have come / - said, \"it's an accomplished / - said: “",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_quote:m3",
+    "family": "parenthetical_vs_quote_punct",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "”",
+     "outside": "）"
+    },
+    "evidence": "- 他敢于冒险，不像某些人那样怕死。” / - （performance） / - （said）",
+    "approx_count": 30,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_quote:m4",
+    "family": "in_quote_state",
+    "template": "- inside {v}",
+    "fillers": {
+     "inside": "a quote",
+     "outside": "the text"
+    },
+    "evidence": "Conceptual paraphrases for feature state (tool outputs continuations of quoted vs unquoted source text)",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_quote:fixed",
+    "family": "fixed_label",
+    "template": "- {v} a quotation",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "agr_gender": [
+   {
+    "id": "ol:agr_gender:m0",
+    "family": "french_article_noun",
+    "template": "- {v}",
+    "fillers": {
+     "masculine": "le",
+     "feminine": "la"
+    },
+    "evidence": "masculine: '- système', '- prix', '- vendeur'; feminine: '- qualité', '- livraison', '- robe'",
+    "approx_count": 80,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_gender:m1",
+    "family": "german_article_adjective",
+    "template": "- {v}",
+    "fillers": {
+     "masculine": "einen",
+     "feminine": "eine"
+    },
+    "evidence": "masculine: '- /einen Vorteil', '- einen Nachteil'; feminine: '- eine Lampe', '- eine sehr solide'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_gender:m2",
+    "family": "french_indefinite_article",
+    "template": "- {v}",
+    "fillers": {
+     "masculine": "un",
+     "feminine": "une"
+    },
+    "evidence": "masculine: '- un manuel', '- un avocat', '- un peu'; feminine: '- une étoile', '- une très langlebige', '- une solution'",
+    "approx_count": 45,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_gender:m3",
+    "family": "french_demonstrative",
+    "template": "- {v}",
+    "fillers": {
+     "masculine": "ce",
+     "feminine": "cette"
+    },
+    "evidence": "masculine: '- ce produit', '- ce prix'; feminine: '- cette robe', '- cette édition'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_gender:m4",
+    "family": "french_possessive",
+    "template": "- {v}",
+    "fillers": {
+     "masculine": "son",
+     "feminine": "sa"
+    },
+    "evidence": "masculine: '- son suivi', '- son licenciement'; feminine: '- sa propre bouteille', '- sa couleur'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_gender:m5",
+    "family": "grammatical_gender_label",
+    "template": "- genre {v}",
+    "fillers": {
+     "masculine": "masculin",
+     "feminine": "féminin"
+    },
+    "evidence": "paraphrase template for grammatical gender feature in French",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_gender:fixed",
+    "family": "fixed_label",
+    "template": "- {v} noun",
+    "fillers": {
+     "masculine": "masculine",
+     "feminine": "feminine"
+    }
+   }
+  ],
+  "agr_number": [
+   {
+    "id": "ol:agr_number:m0",
+    "family": "article_continuation",
+    "template": "- {v}",
+    "fillers": {
+     "singular": "le produit",
+     "plural": "les produits"
+    },
+    "evidence": "Continuation format starting with bullet; readouts track continuation after cut-off article (singular vs plural nouns/modifiers)",
+    "approx_count": 80,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_number:m1",
+    "family": "noun_number_agreement",
+    "template": "- {v} sont",
+    "fillers": {
+     "singular": "le modèle est",
+     "plural": "les modèles sont"
+    },
+    "evidence": "plural readouts consistently feature plural agreement: '- 灯光 RGB et les 2 chevilles... sont un plus', '- 翅膀 sont trop grandes'",
+    "approx_count": 45,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_number:m2",
+    "family": "demonstrative_noun",
+    "template": "- {v}",
+    "fillers": {
+     "singular": "ce produit",
+     "plural": "ces produits"
+    },
+    "evidence": "'- ce modèle', '- ces jouets', '- ces deux accessoires'",
+    "approx_count": 35,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_number:m3",
+    "family": "direct_number_label",
+    "template": "- nombre : {v}",
+    "fillers": {
+     "singular": "singulier",
+     "plural": "pluriel"
+    },
+    "evidence": "Paraphrase template for grammatical number target",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_number:m4",
+    "family": "quantifier_expression",
+    "template": "- {v}",
+    "fillers": {
+     "singular": "un élément",
+     "plural": "plusieurs éléments"
+    },
+    "evidence": "Readouts contrast singular items ('un nouveau modèle', 'un produit') vs plural ('plusieurs boutons', 'des enfants', 'des outils')",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:agr_number:fixed",
+    "family": "fixed_label",
+    "template": "- {v} noun",
+    "fillers": {
+     "singular": "singular",
+     "plural": "plural"
+    }
+   }
+  ]
+ },
+ "jlens": {
+  "nj1_col": [
+   {
+    "id": "jlens:nj1_col:fixed",
+    "family": "fixed_label",
+    "words": {
+     "short": [
+      "twenty"
+     ],
+     "long": [
+      "seventy"
+     ]
+    }
+   }
+  ],
+  "ij2_lang": [
+   {
+    "id": "jlens:ij2_lang:fixed",
+    "family": "fixed_label",
+    "words": {
+     "French": [
+      "French",
+      "français",
+      "France"
+     ],
+     "German": [
+      "German",
+      "Deutsch",
+      "Germany"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij2_lang:d0",
+    "family": "diff_rank0",
+    "words": {
+     "French": [
+      "thank"
+     ],
+     "German": [
+      "really"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij2_lang:d1",
+    "family": "diff_rank1",
+    "words": {
+     "French": [
+      "qualité"
+     ],
+     "German": [
+      "quality"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij2_lang:d2",
+    "family": "diff_rank2",
+    "words": {
+     "French": [
+      "amazing"
+     ],
+     "German": [
+      "Quality"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij2_lang:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "French": [
+      "thank",
+      "qualité",
+      "amazing"
+     ],
+     "German": [
+      "really",
+      "quality",
+      "Quality"
+     ]
+    }
+   }
+  ],
+  "nj2_tense": [
+   {
+    "id": "jlens:nj2_tense:fixed",
+    "family": "fixed_label",
+    "words": {
+     "past": [
+      "past"
+     ],
+     "present": [
+      "present"
+     ]
+    }
+   }
+  ],
+  "bk_indent": [
+   {
+    "id": "jlens:bk_indent:fixed",
+    "family": "fixed_label",
+    "words": {
+     "shallow": [
+      "one",
+      "single"
+     ],
+     "deep": [
+      "three",
+      "deep"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_indent:d0",
+    "family": "diff_rank0",
+    "words": {
+     "shallow": [
+      "each"
+     ],
+     "deep": [
+      "code"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_indent:d1",
+    "family": "diff_rank1",
+    "words": {
+     "shallow": [
+      "array"
+     ],
+     "deep": [
+      "Data"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_indent:d2",
+    "family": "diff_rank2",
+    "words": {
+     "shallow": [
+      "key"
+     ],
+     "deep": [
+      "value"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_indent:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "shallow": [
+      "each",
+      "array",
+      "key"
+     ],
+     "deep": [
+      "code",
+      "Data",
+      "value"
+     ]
+    }
+   }
+  ],
+  "bk_wordpos": [
+   {
+    "id": "jlens:bk_wordpos:fixed",
+    "family": "fixed_label",
+    "words": {
+     "early": [
+      "three"
+     ],
+     "late": [
+      "twenty"
+     ]
+    }
+   }
+  ],
+  "bk_listidx": [
+   {
+    "id": "jlens:bk_listidx:fixed",
+    "family": "fixed_label",
+    "words": {
+     "early": [
+      "two",
+      "second"
+     ],
+     "late": [
+      "nine",
+      "ninth"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_listidx:d0",
+    "family": "diff_rank0",
+    "words": {
+     "early": [
+      "city"
+     ],
+     "late": [
+      "clothes"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_listidx:d1",
+    "family": "diff_rank1",
+    "words": {
+     "early": [
+      "cleaners"
+     ],
+     "late": [
+      "towels"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_listidx:d2",
+    "family": "diff_rank2",
+    "words": {
+     "early": [
+      "cleanup"
+     ],
+     "late": [
+      "wear"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_listidx:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "early": [
+      "city",
+      "cleaners",
+      "cleanup"
+     ],
+     "late": [
+      "clothes",
+      "towels",
+      "wear"
+     ]
+    }
+   }
+  ],
+  "bk_caps": [
+   {
+    "id": "jlens:bk_caps:fixed",
+    "family": "fixed_label",
+    "words": {
+     "uppercase": [
+      "uppercase",
+      "caps",
+      "capital"
+     ],
+     "lowercase": [
+      "lowercase",
+      "lower"
+     ]
+    }
+   }
+  ],
+  "bk_code": [
+   {
+    "id": "jlens:bk_code:fixed",
+    "family": "fixed_label",
+    "words": {
+     "Python": [
+      "Python",
+      "python"
+     ],
+     "JavaScript": [
+      "JavaScript",
+      "javascript",
+      "JS"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_code:d0",
+    "family": "diff_rank0",
+    "words": {
+     "Python": [
+      "input"
+     ],
+     "JavaScript": [
+      "els"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_code:d1",
+    "family": "diff_rank1",
+    "words": {
+     "Python": [
+      "file"
+     ],
+     "JavaScript": [
+      "stack"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_code:d2",
+    "family": "diff_rank2",
+    "words": {
+     "Python": [
+      "int"
+     ],
+     "JavaScript": [
+      "key"
+     ]
+    }
+   },
+   {
+    "id": "jlens:bk_code:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "Python": [
+      "input",
+      "file",
+      "int"
+     ],
+     "JavaScript": [
+      "els",
+      "stack",
+      "key"
+     ]
+    }
+   }
+  ],
+  "nj3_predpos": [
+   {
+    "id": "jlens:nj3_predpos:fixed",
+    "family": "fixed_label",
+    "words": {
+     "adjective": [
+      "adjective",
+      "adj"
+     ],
+     "noun": [
+      "noun"
+     ]
+    }
+   }
+  ],
+  "nj1_col_break": [
+   {
+    "id": "jlens:nj1_col_break:fixed",
+    "family": "fixed_label",
+    "words": {
+     "soon": [
+      "newline",
+      "break"
+     ],
+     "far": [
+      "continue",
+      "middle"
+     ]
+    }
+   }
+  ],
+  "ij_listnum": [
+   {
+    "id": "jlens:ij_listnum:fixed",
+    "family": "fixed_label",
+    "words": {
+     "early": [
+      "two",
+      "second"
+     ],
+     "late": [
+      "nine",
+      "ninth"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij_listnum:d0",
+    "family": "diff_rank0",
+    "words": {
+     "early": [
+      "grocery"
+     ],
+     "late": [
+      "wallet"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij_listnum:d1",
+    "family": "diff_rank1",
+    "words": {
+     "early": [
+      "cleaning"
+     ],
+     "late": [
+      "luggage"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij_listnum:d2",
+    "family": "diff_rank2",
+    "words": {
+     "early": [
+      "gluten"
+     ],
+     "late": [
+      "towel"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij_listnum:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "early": [
+      "grocery",
+      "cleaning",
+      "gluten"
+     ],
+     "late": [
+      "wallet",
+      "luggage",
+      "towel"
+     ]
+    }
+   }
+  ],
+  "bk_quote": [
+   {
+    "id": "jlens:bk_quote:fixed",
+    "family": "fixed_label",
+    "words": {
+     "inside": [
+      "inside",
+      "quote"
+     ],
+     "outside": [
+      "outside"
+     ]
+    }
+   }
+  ],
+  "agr_gender": [
+   {
+    "id": "jlens:agr_gender:fixed",
+    "family": "fixed_label",
+    "words": {
+     "masculine": [
+      "masculine"
+     ],
+     "feminine": [
+      "feminine"
+     ]
+    }
+   },
+   {
+    "id": "jlens:agr_gender:d0",
+    "family": "diff_rank0",
+    "words": {
+     "masculine": [
+      "leather"
+     ],
+     "feminine": [
+      "quality"
+     ]
+    }
+   },
+   {
+    "id": "jlens:agr_gender:d1",
+    "family": "diff_rank1",
+    "words": {
+     "masculine": [
+      "buy"
+     ],
+     "feminine": [
+      "poor"
+     ]
+    }
+   },
+   {
+    "id": "jlens:agr_gender:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "masculine": [
+      "leather",
+      "buy"
+     ],
+     "feminine": [
+      "quality",
+      "poor",
+      "manufacturer"
+     ]
+    }
+   }
+  ],
+  "agr_number": [
+   {
+    "id": "jlens:agr_number:fixed",
+    "family": "fixed_label",
+    "words": {
+     "singular": [
+      "singular"
+     ],
+     "plural": [
+      "plural"
+     ]
+    }
+   },
+   {
+    "id": "jlens:agr_number:d0",
+    "family": "diff_rank0",
+    "words": {
+     "singular": [
+      "customer"
+     ],
+     "plural": [
+      "chips"
+     ]
+    }
+   },
+   {
+    "id": "jlens:agr_number:d1",
+    "family": "diff_rank1",
+    "words": {
+     "singular": [
+      "repair"
+     ],
+     "plural": [
+      "stickers"
+     ]
+    }
+   },
+   {
+    "id": "jlens:agr_number:d2",
+    "family": "diff_rank2",
+    "words": {
+     "singular": [
+      "purchase"
+     ],
+     "plural": [
+      "buttons"
+     ]
+    }
+   },
+   {
+    "id": "jlens:agr_number:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "singular": [
+      "customer",
+      "repair",
+      "purchase"
+     ],
+     "plural": [
+      "chips",
+      "stickers",
+      "buttons"
+     ]
+    }
+   }
+  ]
+ }
+}

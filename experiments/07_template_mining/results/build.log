@@ -1,0 +1,78 @@
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-38YFYGKu379YQuu503JkUg
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/07_template_m
+│   ining/tm_modal.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1b_data.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:feature_spec, PythonPackage:items_build
+├── 🔨 Created function gen_ol.
+├── 🔨 Created function gen_nla.
+├── 🔨 Created function score_ol.
+├── 🔨 Created function score_nla.
+└── 🔨 Created function build.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+fresh paragraphs 59658
+{
+ "n_items": 1600,
+ "nj3_pool": 800,
+ "lexicon": 6708,
+ "lexicon_classes": {
+  "PROPN": 2125,
+  "ADP": 66,
+  "DET": 16,
+  "ADJ": 592,
+  "NOUN": 2479,
+  "VERB": 1156,
+  "PRON": 51,
+  "ADV": 223
+ },
+ "counts": {
+  "bk_caps|mine|lowercase": 20,
+  "bk_caps|mine|uppercase": 20,
+  "bk_caps|select|lowercase": 80,
+  "bk_caps|select|uppercase": 80,
+  "bk_code|mine|JavaScript": 20,
+  "bk_code|mine|Python": 20,
+  "bk_code|select|JavaScript": 80,
+  "bk_code|select|Python": 80,
+  "bk_indent|mine|deep": 20,
+  "bk_indent|mine|shallow": 20,
+  "bk_indent|select|deep": 80,
+  "bk_indent|select|shallow": 80,
+  "bk_listidx|mine|early": 20,
+  "bk_listidx|mine|late": 20,
+  "bk_listidx|select|early": 80,
+  "bk_listidx|select|late": 80,
+  "bk_wordpos|mine|early": 20,
+  "bk_wordpos|mine|late": 20,
+  "bk_wordpos|select|early": 80,
+  "bk_wordpos|select|late": 80,
+  "ij2_lang|mine|French": 20,
+  "ij2_lang|mine|German": 20,
+  "ij2_lang|select|French": 80,
+  "ij2_lang|select|German": 80,
+  "nj1_col|mine|long": 20,
+  "nj1_col|mine|short": 20,
+  "nj1_col|select|long": 80,
+  "nj1_col|select|short": 80,
+  "nj2_tense|mine|past": 20,
+  "nj2_tense|mine|present": 20,
+  "nj2_tense|select|past": 80,
+  "nj2_tense|select|present": 80
+ }
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-38YFYGKu379YQuu503JkUg
