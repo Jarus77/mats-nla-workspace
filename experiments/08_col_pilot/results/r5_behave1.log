@@ -1,0 +1,152 @@
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-YvqsKPndfF17jDKldzLaW4
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   r5_modal.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:pilot_items, PythonPackage:calib_items, 
+│   PythonPackage:templates, PythonPackage:r5_items
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:pilot_items, PythonPackage:pilot_lib, PythonPackage:templates,
+│   PythonPackage:calib_lib, PythonPackage:calib_templates, 
+│   PythonPackage:calib_items, PythonPackage:r5_lib, PythonPackage:r5_templates,
+│   PythonPackage:r5_items
+├── 🔨 Created function behave.
+├── 🔨 Created function prep_r5.
+├── 🔨 Created function build_r5.
+├── 🔨 Created function gen_l38.
+├── 🔨 Created function score_ol.
+└── 🔨 Created function score_nla.
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:00<11:14,  1.26it/s]
+[1ALoading weights:   0%|          | 2/851 [00:01<11:13,  1.26it/s]
+[1ALoading weights:   2%|▏         | 13/851 [00:01<01:15, 11.14it/s]
+[1ALoading weights:   2%|▏         | 17/851 [00:01<00:58, 14.23it/s]
+[1ALoading weights:   3%|▎         | 27/851 [00:01<00:32, 25.26it/s]
+[1ALoading weights:   4%|▍         | 33/851 [00:02<00:27, 29.69it/s]
+[1ALoading weights:   5%|▍         | 41/851 [00:02<00:23, 34.38it/s]
+[1ALoading weights:   5%|▌         | 46/851 [00:02<00:27, 28.75it/s]
+[1ALoading weights:   6%|▌         | 50/851 [00:02<00:29, 27.22it/s]
+[1ALoading weights:   6%|▋         | 54/851 [00:02<00:27, 29.23it/s]
+[1ALoading weights:   7%|▋         | 62/851 [00:02<00:20, 39.11it/s]
+[1ALoading weights:   8%|▊         | 67/851 [00:03<00:23, 33.59it/s]
+[1ALoading weights:   9%|▊         | 74/851 [00:03<00:20, 38.53it/s]
+[1ALoading weights:   9%|▉         | 79/851 [00:03<00:20, 38.25it/s]
+[1ALoading weights:  10%|▉         | 84/851 [00:03<00:21, 35.69it/s]
+[1ALoading weights:  11%|█         | 93/851 [00:03<00:16, 45.37it/s]
+[1ALoading weights:  12%|█▏        | 98/851 [00:03<00:22, 33.76it/s]
+[1ALoading weights:  12%|█▏        | 103/851 [00:04<00:24, 30.62it/s]
+[1ALoading weights:  13%|█▎        | 111/851 [00:04<00:18, 39.17it/s]
+[1ALoading weights:  14%|█▎        | 116/851 [00:04<00:18, 39.54it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:04<00:22, 32.76it/s]
+[1ALoading weights:  15%|█▌        | 130/851 [00:04<00:16, 43.48it/s]
+[1ALoading weights:  16%|█▌        | 136/851 [00:04<00:20, 34.21it/s]
+[1ALoading weights:  17%|█▋        | 147/851 [00:05<00:17, 41.22it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:05<00:19, 35.73it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:05<00:20, 33.47it/s]
+[1ALoading weights:  20%|█▉        | 168/851 [00:05<00:15, 44.31it/s]
+[1ALoading weights:  20%|██        | 173/851 [00:05<00:16, 41.42it/s]
+[1ALoading weights:  21%|██        | 180/851 [00:05<00:14, 45.38it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:06<00:13, 48.08it/s]
+[1ALoading weights:  23%|██▎       | 192/851 [00:06<00:14, 45.20it/s]
+[1ALoading weights:  24%|██▎       | 200/851 [00:06<00:13, 49.06it/s]
+[1ALoading weights:  24%|██▍       | 206/851 [00:06<00:19, 32.64it/s]
+[1ALoading weights:  25%|██▍       | 211/851 [00:06<00:20, 31.68it/s]
+[1ALoading weights:  26%|██▌       | 219/851 [00:07<00:16, 39.12it/s]
+[1ALoading weights:  26%|██▋       | 224/851 [00:07<00:15, 40.46it/s]
+[1ALoading weights:  27%|██▋       | 229/851 [00:07<00:16, 36.82it/s]
+[1ALoading weights:  28%|██▊       | 237/851 [00:07<00:13, 45.83it/s]
+[1ALoading weights:  29%|██▊       | 243/851 [00:07<00:16, 37.56it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:07<00:13, 44.79it/s]
+[1ALoading weights:  30%|███       | 258/851 [00:08<00:16, 35.54it/s]
+[1ALoading weights:  31%|███       | 263/851 [00:08<00:17, 34.44it/s]
+[1ALoading weights:  32%|███▏      | 274/851 [00:08<00:11, 48.79it/s]
+[1ALoading weights:  33%|███▎      | 280/851 [00:08<00:15, 36.49it/s]
+[1ALoading weights:  34%|███▍      | 291/851 [00:08<00:11, 49.39it/s]
+[1ALoading weights:  35%|███▌      | 298/851 [00:08<00:13, 42.47it/s]
+[1ALoading weights:  36%|███▌      | 306/851 [00:09<00:11, 46.36it/s]
+[1ALoading weights:  37%|███▋      | 312/851 [00:09<00:15, 34.20it/s]
+[1ALoading weights:  38%|███▊      | 326/851 [00:09<00:10, 51.13it/s]
+[1ALoading weights:  39%|███▉      | 334/851 [00:09<00:11, 45.58it/s]
+[1ALoading weights:  40%|████      | 344/851 [00:09<00:09, 54.62it/s]
+[1ALoading weights:  41%|████      | 351/851 [00:09<00:10, 48.31it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:10<00:09, 51.37it/s]
+[1ALoading weights:  43%|████▎     | 366/851 [00:10<00:12, 38.02it/s]
+[1ALoading weights:  45%|████▍     | 380/851 [00:10<00:08, 55.19it/s]
+[1ALoading weights:  46%|████▌     | 388/851 [00:10<00:09, 47.22it/s]
+[1ALoading weights:  47%|████▋     | 397/851 [00:10<00:09, 46.82it/s]
+[1ALoading weights:  48%|████▊     | 405/851 [00:11<00:08, 52.25it/s]
+[1ALoading weights:  48%|████▊     | 412/851 [00:11<00:08, 53.16it/s]
+[1ALoading weights:  49%|████▉     | 419/851 [00:11<00:10, 40.86it/s]
+[1ALoading weights:  51%|█████     | 434/851 [00:11<00:07, 56.55it/s]
+[1ALoading weights:  52%|█████▏    | 441/851 [00:11<00:08, 50.44it/s]
+[1ALoading weights:  53%|█████▎    | 451/851 [00:11<00:07, 54.90it/s]
+[1ALoading weights:  54%|█████▍    | 458/851 [00:12<00:07, 54.53it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:12<00:07, 54.06it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:12<00:08, 42.90it/s]
+[1ALoading weights:  56%|█████▌    | 478/851 [00:12<00:08, 44.73it/s]
+[1ALoading weights:  57%|█████▋    | 489/851 [00:12<00:06, 55.06it/s]
+[1ALoading weights:  58%|█████▊    | 495/851 [00:12<00:06, 51.22it/s]
+[1ALoading weights:  59%|█████▉    | 503/851 [00:12<00:06, 55.84it/s]
+[1ALoading weights:  60%|█████▉    | 509/851 [00:13<00:07, 47.91it/s]
+[1ALoading weights:  61%|██████    | 518/851 [00:13<00:06, 52.99it/s]
+[1ALoading weights:  62%|██████▏   | 524/851 [00:13<00:07, 43.09it/s]
+[1ALoading weights:  62%|██████▏   | 529/851 [00:13<00:07, 44.25it/s]
+[1ALoading weights:  63%|██████▎   | 540/851 [00:13<00:05, 54.50it/s]
+[1ALoading weights:  64%|██████▍   | 546/851 [00:13<00:06, 44.75it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:14<00:05, 53.17it/s]
+[1ALoading weights:  66%|██████▌   | 563/851 [00:14<00:05, 50.49it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:14<00:05, 48.58it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:14<00:07, 38.90it/s]
+[1ALoading weights:  69%|██████▊   | 584/851 [00:14<00:06, 43.08it/s]
+[1ALoading weights:  70%|███████   | 596/851 [00:14<00:04, 52.63it/s]
+[1ALoading weights:  71%|███████   | 602/851 [00:15<00:05, 47.62it/s]
+[1ALoading weights:  72%|███████▏  | 610/851 [00:15<00:04, 51.32it/s]
+[1ALoading weights:  72%|███████▏  | 616/851 [00:15<00:04, 49.56it/s]
+[1ALoading weights:  73%|███████▎  | 624/851 [00:15<00:04, 54.51it/s]
+[1ALoading weights:  74%|███████▍  | 630/851 [00:15<00:05, 40.75it/s]
+[1ALoading weights:  75%|███████▍  | 637/851 [00:15<00:05, 40.40it/s]
+[1ALoading weights:  76%|███████▋  | 649/851 [00:16<00:03, 51.13it/s]
+[1ALoading weights:  77%|███████▋  | 655/851 [00:16<00:03, 49.65it/s]
+[1ALoading weights:  78%|███████▊  | 662/851 [00:16<00:03, 52.13it/s]
+[1ALoading weights:  78%|███████▊  | 668/851 [00:16<00:03, 46.44it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:16<00:03, 44.89it/s]
+[1ALoading weights:  80%|████████  | 682/851 [00:16<00:03, 45.73it/s]
+[1ALoading weights:  81%|████████  | 687/851 [00:16<00:03, 41.21it/s]
+[1ALoading weights:  82%|████████▏ | 699/851 [00:17<00:02, 55.56it/s]
+[1ALoading weights:  83%|████████▎ | 705/851 [00:17<00:03, 45.87it/s]
+[1ALoading weights:  84%|████████▍ | 716/851 [00:17<00:02, 55.15it/s]
+[1ALoading weights:  85%|████████▍ | 722/851 [00:17<00:02, 47.58it/s]
+[1ALoading weights:  86%|████████▌ | 730/851 [00:17<00:02, 49.44it/s]
+[1ALoading weights:  86%|████████▋ | 736/851 [00:18<00:03, 36.41it/s]
+[1ALoading weights:  88%|████████▊ | 749/851 [00:18<00:01, 52.07it/s]
+[1ALoading weights:  89%|████████▉ | 756/851 [00:18<00:02, 44.05it/s]
+[1ALoading weights:  90%|████████▉ | 762/851 [00:18<00:01, 44.71it/s]
+[1ALoading weights:  90%|█████████ | 768/851 [00:18<00:01, 46.41it/s]
+[1ALoading weights:  91%|█████████ | 774/851 [00:18<00:02, 37.66it/s]
+[1ALoading weights:  92%|█████████▏| 779/851 [00:19<00:01, 39.71it/s]
+[1ALoading weights:  92%|█████████▏| 784/851 [00:19<00:01, 35.57it/s]
+[1ALoading weights:  93%|█████████▎| 788/851 [00:19<00:01, 32.91it/s]
+[1ALoading weights:  93%|█████████▎| 792/851 [00:19<00:01, 29.94it/s]
+[1ALoading weights:  94%|█████████▎| 797/851 [00:19<00:01, 33.69it/s]
+[1ALoading weights:  95%|█████████▍| 807/851 [00:19<00:01, 41.42it/s]
+[1ALoading weights:  95%|█████████▌| 812/851 [00:19<00:01, 38.41it/s]
+[1ALoading weights:  97%|█████████▋| 822/851 [00:20<00:00, 46.96it/s]
+[1ALoading weights:  97%|█████████▋| 827/851 [00:20<00:00, 41.41it/s]
+[1ALoading weights:  98%|█████████▊| 835/851 [00:20<00:00, 49.55it/s]
+[1ALoading weights:  99%|█████████▉| 841/851 [00:20<00:00, 35.45it/s]
+[1ALoading weights:  99%|█████████▉| 846/851 [00:20<00:00, 33.53it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:20<00:00, 40.72it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+Runner terminated.
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-YvqsKPndfF17jDKldzLaW4

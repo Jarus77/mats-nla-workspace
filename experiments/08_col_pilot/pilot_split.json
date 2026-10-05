@@ -1452,5 +1452,5452 @@
    }
   ]
  },
- "calibration_note": "Matched-dose in-J calibration (calib_items.py, CALIB_SEED 9009): these lang (papluca test) and tense (wikitext) sources are also EXCLUDED from the main analysis."
+ "calibration_note": "Matched-dose in-J calibration (calib_items.py, CALIB_SEED 9009): these lang (papluca test) and tense (wikitext) sources are also EXCLUDED from the main analysis.",
+ "round5_items": {
+  "note": "Round-5 pilot (r5_items.py): digit lists (train = direction/gates, eval = reader cells) and 120 tense items. ALL EXCLUDED from the main analysis.",
+  "digit": [
+   {
+    "id": "digit_train_5_000",
+    "sent_heads": [
+     "The film earned Otto her second Australi",
+     "Henry III restored some order and Jewish",
+     "The radial velocity measurements were ma",
+     "The procedure was condemned as cruel and"
+    ]
+   },
+   {
+    "id": "digit_train_5_001",
+    "sent_heads": [
+     "Older black employees considered Levien ",
+     "In January, cyclones Babiola and Connie ",
+     "Other cast members featured include Alis",
+     "\" Acknowledging that, initially, \" The s"
+    ]
+   },
+   {
+    "id": "digit_train_5_002",
+    "sent_heads": [
+     "The studio only offered the film to Roac",
+     "You've even got a' Pause for Porno.' It'",
+     "The distributions of these in the hybrid",
+     "Enron's tremendous presence worried some"
+    ]
+   },
+   {
+    "id": "digit_train_5_003",
+    "sent_heads": [
+     "The lower-ranked conference champions an",
+     "Elba was present in Korea during the Rus",
+     "Among Helena's other interests was writi",
+     "Some persons may concurrently have sympt"
+    ]
+   },
+   {
+    "id": "digit_train_5_004",
+    "sent_heads": [
+     "Neurath commented that the game's rushed",
+     "This necessitated balancing a more forgi",
+     "Merauke airfield was only completed in l",
+     "Jack shows Karen the bill which quickly "
+    ]
+   },
+   {
+    "id": "digit_train_5_005",
+    "sent_heads": [
+     "Net metering programs give household sys",
+     "an intern task, \" Wells said.",
+     "He claims that this is because they were",
+     "One Holmes \u00e0 Court rep described the neg"
+    ]
+   },
+   {
+    "id": "digit_train_5_006",
+    "sent_heads": [
+     "A swimming veliger larva has become a be",
+     "The Cleveland Open is currently held ann",
+     "There, Gadermann helped Rudel look for w",
+     "The tour took place in Europe, Japan and"
+    ]
+   },
+   {
+    "id": "digit_train_5_007",
+    "sent_heads": [
+     "The origins of the Santikhiri community ",
+     "This assertion was not accepted by Fran\u00e7",
+     "The athlete may not qualify because ther",
+     "Fifteen days after his new deal, Gillis "
+    ]
+   },
+   {
+    "id": "digit_train_5_008",
+    "sent_heads": [
+     "The tail ends in a tuft, an unusual feat",
+     "Louis, a National League park where the ",
+     "Within a year, Galland showed no signs o",
+     "Baker added \" We contrived to make it no"
+    ]
+   },
+   {
+    "id": "digit_train_5_009",
+    "sent_heads": [
+     "He was credited with producing the annua",
+     "This area is typical high desert scrubla",
+     "There have been no quarrels between band",
+     "The land on which Capon Chapel was built"
+    ]
+   },
+   {
+    "id": "digit_train_5_010",
+    "sent_heads": [
+     "Initially, Agnew worked with the instrum",
+     "Hurley expresses interest in getting rid",
+     "This proved to the British Army the valu",
+     "Upon taking effect, the ECSC gradually r"
+    ]
+   },
+   {
+    "id": "digit_train_5_011",
+    "sent_heads": [
+     "[...] The Lady can sing.",
+     "The song received positive reviews from ",
+     "Hiorns had retired from business and spe",
+     "Over the years, the cathedral has underg"
+    ]
+   },
+   {
+    "id": "digit_train_5_012",
+    "sent_heads": [
+     "If she had never told us, we would have ",
+     "In Community matters, this is a power un",
+     "The abundance of casual games on the Pla",
+     "Hot Adult Contemporary Tracks, \" Goodbye"
+    ]
+   },
+   {
+    "id": "digit_train_5_013",
+    "sent_heads": [
+     "Presidential campaigns of Democrats Obam",
+     "He also built many of the gates and fort",
+     "The cotyledons of Banksia paludosa, B.",
+     "Professional long jumpers typically have"
+    ]
+   },
+   {
+    "id": "digit_train_5_014",
+    "sent_heads": [
+     "The second match was a Cruiserweight Ope",
+     "He was selected as Manager of the Year s",
+     "I've now made Liverpool my English team.",
+     "Yttrium, iron, aluminium, and gadolinium"
+    ]
+   },
+   {
+    "id": "digit_train_5_015",
+    "sent_heads": [
+     "The JNA stepped in, increasingly support",
+     "The council then voted against the two-s",
+     "Jazz and Cliffjumper are sent to investi",
+     "Wyatt pistol-whipped Brocius, knocking h"
+    ]
+   },
+   {
+    "id": "digit_train_5_016",
+    "sent_heads": [
+     "The racing stock have been in training w",
+     "One person in Veracruz was electrocuted ",
+     "The third design was a movable Strauss u",
+     "The episodes were also repeated on the d"
+    ]
+   },
+   {
+    "id": "digit_train_5_017",
+    "sent_heads": [
+     "The game is the third installation of th",
+     "Byrd and three others completed the firs",
+     "He escaped through reading, devouring al",
+     "I may have to steal it \" was a \" memorab"
+    ]
+   },
+   {
+    "id": "digit_train_5_018",
+    "sent_heads": [
+     "Fairchild argued that this would be more",
+     "Therefore, diagnosis is by symptom obser",
+     "The Soviet description of the coup, that",
+     "Asquith, for the cruelties being inflict"
+    ]
+   },
+   {
+    "id": "digit_train_5_019",
+    "sent_heads": [
+     "Journey's End became a long-running succ",
+     "scored his last ever world championship ",
+     "[...] This is a big one and has been run",
+     "Attendance at LGBT Pride events has grow"
+    ]
+   },
+   {
+    "id": "digit_train_5_020",
+    "sent_heads": [
+     "A portion of the second stanza is missin",
+     "The hymenium extends slightly down the s",
+     "Chief of Egyptian Intelligence, Salah Na",
+     "He was eventually succeeded by former De"
+    ]
+   },
+   {
+    "id": "digit_train_5_021",
+    "sent_heads": [
+     "In both solo movements, a chorale stanza",
+     "For Tinkerbell contained some early trac",
+     "No further strengthening occurred and by",
+     "About a dozen small wood-built restauran"
+    ]
+   },
+   {
+    "id": "digit_train_5_022",
+    "sent_heads": [
+     "A laboratory test showed how males of P.",
+     "Its impressive gape allows it to swallow",
+     "The term had thus become a recurring mot",
+     "The party defeats Destroy, melting him i"
+    ]
+   },
+   {
+    "id": "digit_train_5_023",
+    "sent_heads": [
+     "Because the creators are sports fans, an",
+     "After Montag moved in with Pratt, Patrid",
+     "That same year, Cooper made two films wi",
+     "It features artifacts and resources that"
+    ]
+   },
+   {
+    "id": "digit_train_5_024",
+    "sent_heads": [
+     "The theme of the ritornello is present t",
+     "Eastern Jackson County had the greatest ",
+     "The writers always knew his history woul",
+     "Washington's special teams were consider"
+    ]
+   },
+   {
+    "id": "digit_train_5_025",
+    "sent_heads": [
+     "Convection associated with the storm als",
+     "She eventually did not return for the ei",
+     "ABC News reported that otherwise his reg",
+     "The publisher introduced the work to the"
+    ]
+   },
+   {
+    "id": "digit_train_5_026",
+    "sent_heads": [
+     "The same day, Stefani premiered the sing",
+     "Joseph, who continued to run a school on",
+     "Another dozen ambulances were put on sta",
+     "After the world championship match, Alek"
+    ]
+   },
+   {
+    "id": "digit_train_5_027",
+    "sent_heads": [
+     "Cher expanded her creative range by desi",
+     "He earned his postseason minutes partial",
+     "Harrington concludes that the film is no",
+     "In the end, as John is setting up the dy"
+    ]
+   },
+   {
+    "id": "digit_train_5_028",
+    "sent_heads": [
+     "Overall, the typhoon was responsible for",
+     "They include opsonin receptors, scavenge",
+     "Zack Handlen watched the episode for The",
+     "The Neapolitan nobles distrusted Skander"
+    ]
+   },
+   {
+    "id": "digit_train_5_029",
+    "sent_heads": [
+     "\" However, Toyah insisted that she did n",
+     "\" The track briefly charted on the South",
+     "The soil is manually or mechanically com",
+     "However, the project was shelved due to "
+    ]
+   },
+   {
+    "id": "digit_train_5_030",
+    "sent_heads": [
+     "Returning to the Flower Girl's apartment",
+     "Periyar took an interest in Rev.",
+     "Maynard and was directed by Michael Cues",
+     "The soldiers and demons will then procee"
+    ]
+   },
+   {
+    "id": "digit_train_5_031",
+    "sent_heads": [
+     "Another sauropod of the Nemegt-Formation",
+     "\" He also speculates \" maybe the fear tu",
+     "And that's born from all the places we'v",
+     "was, despite numerous theories, or wheth"
+    ]
+   },
+   {
+    "id": "digit_train_5_032",
+    "sent_heads": [
+     "Twenty-seven years later, Rear-Admiral G",
+     "As a result, watersheds can quickly surg",
+     "Its three letter station code is SHH.",
+     "Seven different cameras were used by dir"
+    ]
+   },
+   {
+    "id": "digit_train_5_033",
+    "sent_heads": [
+     "However, Guangdong Province, Hainan Prov",
+     "Ganga mysteriously disappears during Pri",
+     "The gills are somewhat adnate, and brown",
+     "The move to Washington, D.C."
+    ]
+   },
+   {
+    "id": "digit_train_5_034",
+    "sent_heads": [
+     "Each baboon has a social ranking somewhe",
+     "In the third, Edgar Allan Poe's \"The Rav",
+     "Marines were sent to establish a neutral",
+     "Worldwide, the disease is more frequentl"
+    ]
+   },
+   {
+    "id": "digit_train_5_035",
+    "sent_heads": [
+     "Although an International District is pr",
+     "However she becomes addicted to them.",
+     "Toby Creek is the main source of floodin",
+     "Evans to conduct a court of inquiry into"
+    ]
+   },
+   {
+    "id": "digit_train_5_036",
+    "sent_heads": [
+     "The statue is one of eighteen Civil War ",
+     "The canal's high tariffs and excellent p",
+     "Disappointed by the loss, many people el",
+     "Joseph Chamberlain had had another son, "
+    ]
+   },
+   {
+    "id": "digit_train_5_037",
+    "sent_heads": [
+     "The station has one ticket machine for t",
+     "Publishing sonnets about his love have b",
+     "Pauline takes him to her family's ch\u00e2tea",
+     "The club was granted a seven-year lease "
+    ]
+   },
+   {
+    "id": "digit_train_5_038",
+    "sent_heads": [
+     "Through the center Johnson met important",
+     "Boogaloo gained more exposure because it",
+     "In addition, LU has accreditation from t",
+     "The film was written by Carter and Spotn"
+    ]
+   },
+   {
+    "id": "digit_train_5_039",
+    "sent_heads": [
+     "According to Ronald Williams, it is unli",
+     "He also disagreed with his father's acqu",
+     "The character Philo, a religious sceptic",
+     "This developed into reflex sympathetic d"
+    ]
+   },
+   {
+    "id": "digit_train_5_040",
+    "sent_heads": [
+     "Giesler of Gustavus Adolphus College for",
+     "Final Fantasy II has since gone under th",
+     "Kanin described him as \" an instinctive ",
+     "Istorija na b\u01celgarskata d\u01cer\u017eava prez sre"
+    ]
+   },
+   {
+    "id": "digit_train_5_041",
+    "sent_heads": [
+     "Costume designer Anthony Powell wanted t",
+     "The extraterrestrial in Species, an alie",
+     "Besides creating new communities, cult f",
+     "The annual rainfall in regions where G."
+    ]
+   },
+   {
+    "id": "digit_train_5_042",
+    "sent_heads": [
+     "Later that year Noades bought nearby Cry",
+     "Variety's Stuart Levine considered Tritt",
+     "Rosy is terrified; it was her testimony ",
+     "This was to support the film's DVD / VHS"
+    ]
+   },
+   {
+    "id": "digit_train_5_043",
+    "sent_heads": [
+     "Gilbert surveils Watts, finding that the",
+     "This was not new, since William H.",
+     "However, \"the Chinese government prefers",
+     "The line suddenly cuts, and the tremors "
+    ]
+   },
+   {
+    "id": "digit_train_5_044",
+    "sent_heads": [
+     "The advance guard and the British began ",
+     "Apple Corps had five divisions: electron",
+     "It reached number three on the US Hot R ",
+     "\"Their mums and dads were married."
+    ]
+   },
+   {
+    "id": "digit_train_5_045",
+    "sent_heads": [
+     "The coat of arms of the Socialist Republ",
+     "He is completely unassuming, unusually q",
+     "Tylopilus tabacinus is a species of bole",
+     "They also went on to correct the trees f"
+    ]
+   },
+   {
+    "id": "digit_train_5_046",
+    "sent_heads": [
+     "I'm sorry I made you work twelve hours.",
+     "The Nydalen district, formerly an indust",
+     "Rhoca-Gil sealant was used in an attempt",
+     "The political situation in Singapore con"
+    ]
+   },
+   {
+    "id": "digit_train_5_047",
+    "sent_heads": [
+     "When asked about his past, he often gave",
+     "Lincoln said, \" That tune is now Federal",
+     "The latter food sources shows that they ",
+     "Yorck also served in the I Scouting Grou"
+    ]
+   },
+   {
+    "id": "digit_train_5_048",
+    "sent_heads": [
+     "It also ate worms, caterpillars, snails,",
+     "Burnett's resolutions were passed by lar",
+     "The development of independent living an",
+     "Cooley was appointed as an appraiser of "
+    ]
+   },
+   {
+    "id": "digit_train_5_049",
+    "sent_heads": [
+     "At dinner, Peter breaks the news to his ",
+     "Jones also adapts the superhero identity",
+     "He said that the game's art was nice, bu",
+     "The surrounding land is dominated by wet"
+    ]
+   },
+   {
+    "id": "digit_train_5_050",
+    "sent_heads": [
+     "It is still used for family christenings",
+     "Schleswig-Holstein and her sisters were ",
+     "Jelena's nickname was \"Lady Lena \" (\u0413\u043e\u0441\u043f",
+     "At the Metallurgical Laboratory, Agnew w"
+    ]
+   },
+   {
+    "id": "digit_train_5_051",
+    "sent_heads": [
+     "Eventually, he was released and exiled t",
+     "More recently, Richie Unterberger, writi",
+     "Bismuth has unusually low toxicity for a",
+     "A Passover Story, the picture book based"
+    ]
+   },
+   {
+    "id": "digit_train_5_052",
+    "sent_heads": [
+     "However, some are symbiotes of other ani",
+     "The British troops began to advance at t",
+     "The exterior of the building was also ra",
+     "The still-sizeable Byzantine Empire surv"
+    ]
+   },
+   {
+    "id": "digit_train_5_053",
+    "sent_heads": [
+     "The segment featuring Perry, with the Si",
+     "He later tells her that she and Dexter h",
+     "He then did director and acting coach Ba",
+     "Deciding to work together, Bart, Lisa, a"
+    ]
+   },
+   {
+    "id": "digit_train_5_054",
+    "sent_heads": [
+     "a place that people can be proud to brin",
+     "Potter was later caught, but at his tria",
+     "However it was suggested that Bo was too",
+     "Diplodocids flourished in the Late Juras"
+    ]
+   },
+   {
+    "id": "digit_train_5_055",
+    "sent_heads": [
+     "The mainly long and cylindrical stipe is",
+     "In addition, willow, cottonwood, choke c",
+     "Before he dies, the soldier tells Kratos",
+     "Custodio studied at the University of Pu"
+    ]
+   },
+   {
+    "id": "digit_train_5_056",
+    "sent_heads": [
+     "\"The Fourth Horseman \" was written by fr",
+     "Critics highlighted Kapoor and Rahman as",
+     "Dawk served as vocal producers.",
+     "He was replaced by Charles Blount, Lord "
+    ]
+   },
+   {
+    "id": "digit_train_5_057",
+    "sent_heads": [
+     "Chefs from around the world have begun s",
+     "This fungus is widespread in North Ameri",
+     "Crittenden began a college preparatory c",
+     "During the Second World War, military de"
+    ]
+   },
+   {
+    "id": "digit_train_5_058",
+    "sent_heads": [
+     "However, the production benefited from i",
+     "Made from either fresh cabbage or sauerk",
+     "Production was then restarted with a new",
+     "At a school dance, he meets Elise and fa"
+    ]
+   },
+   {
+    "id": "digit_train_5_059",
+    "sent_heads": [
+     "It has also been translated into Danish,",
+     "Hence Ebner wrote and finalized his narr",
+     "The name \u00deorger\u00f0r H\u01eblgabr\u00fa\u00f0r is Old Nors",
+     "She was only allowed to receive visitors"
+    ]
+   },
+   {
+    "id": "digit_train_5_060",
+    "sent_heads": [
+     "Periyar viewed Christianity similar to t",
+     "Dante also appears in many other pieces ",
+     "Laguna Madre is found between the mainla",
+     "Through the lyrics of the song, Minogue "
+    ]
+   },
+   {
+    "id": "digit_train_5_061",
+    "sent_heads": [
+     "Dunderdale announced in a speech to the ",
+     "More banding is seen in longer than aver",
+     "Additionally, Linnaeus was a state inter",
+     "Similar winter paintings of lesser quant"
+    ]
+   },
+   {
+    "id": "digit_train_5_062",
+    "sent_heads": [
+     "Fodor is a member of the American Academ",
+     "Having sought allies in vain, the two br",
+     "with Todd Grisham to maintain visibility",
+     "the previous day due to his negative com"
+    ]
+   },
+   {
+    "id": "digit_train_5_063",
+    "sent_heads": [
+     "\" Massachusetts replied that they could ",
+     "In Acapulco and Puerto Marques, the stor",
+     "Combs is using his former stage name Puf",
+     "Toulmin maintained a cotton plantation i"
+    ]
+   },
+   {
+    "id": "digit_train_5_064",
+    "sent_heads": [
+     "One such attack resulted in the capture ",
+     "He concludes that the hospitalization wa",
+     "Crush attacked Doink the Clown outside t",
+     "and on pitching I was surprised to see t"
+    ]
+   },
+   {
+    "id": "digit_train_5_065",
+    "sent_heads": [
+     "Among his pupils there was Zdenka Schulz",
+     "John's and the Burin Peninsula, knocked ",
+     "The All Blacks kicked off, and had the b",
+     "The result was a decline in the comics i"
+    ]
+   },
+   {
+    "id": "digit_train_5_066",
+    "sent_heads": [
+     "It made me feel like I wasn't even in th",
+     "Building itself out of itself.",
+     "Reducing or eliminating compounds known ",
+     "The natural range of S."
+    ]
+   },
+   {
+    "id": "digit_train_5_067",
+    "sent_heads": [
+     "During his business career, Romney held ",
+     "Move is the tenth studio album by Christ",
+     "Kartik started out in the junior system ",
+     "The album's writing was a three-pronged "
+    ]
+   },
+   {
+    "id": "digit_train_5_068",
+    "sent_heads": [
+     "These were followed by a modified Aki-ty",
+     "Warm waters and low wind shear allowed f",
+     "The High Court case of Attorney-General ",
+     "Andrew's Church is an actively used Angl"
+    ]
+   },
+   {
+    "id": "digit_train_5_069",
+    "sent_heads": [
+     "People attracted to the area were unable",
+     "The character's arsenal is inspired by h",
+     "So I was nervous because I had never don",
+     "They looted local businesses, taking foo"
+    ]
+   },
+   {
+    "id": "digit_train_5_070",
+    "sent_heads": [
+     "Kilda to seek his fortune by prospecting",
+     "He offered his assistance when outbreaks",
+     "Brass beats Zen-Yi and destroys his blad",
+     "Jif has a shelf life of six months."
+    ]
+   },
+   {
+    "id": "digit_train_5_071",
+    "sent_heads": [
+     "Peter Travers for Rolling Stone called h",
+     "\"Time Has Come Today \" opens to a voice-",
+     "He then finds the eviction notice and re",
+     "The situation in the territory is extrem"
+    ]
+   },
+   {
+    "id": "digit_train_5_072",
+    "sent_heads": [
+     "Kumar read the script to Rubens without ",
+     "The guitar was also played by Lyle Workm",
+     "He knew that he wanted a female J.R.",
+     "This arrangement meant that No."
+    ]
+   },
+   {
+    "id": "digit_train_5_073",
+    "sent_heads": [
+     "These larger cities were parts of the st",
+     "Bishops in America Thomas Coke and Franc",
+     "I would eat mouldy bread and drink water",
+     "There, she was used as a store ship for "
+    ]
+   },
+   {
+    "id": "digit_train_5_074",
+    "sent_heads": [
+     "They have turned Babruysk into a pigsty.",
+     "Nevertheless, he highlighted the fact th",
+     "The press regarded this as the first com",
+     "Eggleston bleached out the whites on Ear"
+    ]
+   },
+   {
+    "id": "digit_train_5_075",
+    "sent_heads": [
+     "Clarkson is also seen standing inside an",
+     "As a result, the glacier snouts came clo",
+     "Melora Hardin's return garnered critical",
+     "To Braham's surprise, his application wa"
+    ]
+   },
+   {
+    "id": "digit_train_5_076",
+    "sent_heads": [
+     "nigrimentalis, breeds in southeastern Ch",
+     "The rainfall effect is experienced predo",
+     "Sabu countered a second Seated Senton at",
+     "Meanwhile, the Wilis have cornered a ter"
+    ]
+   },
+   {
+    "id": "digit_train_5_077",
+    "sent_heads": [
+     "Opinions differ as to the deeper signifi",
+     "Six people were killed throughout the co",
+     "For other applications, a red color may ",
+     "A regular bus service links West and Eas"
+    ]
+   },
+   {
+    "id": "digit_train_5_078",
+    "sent_heads": [
+     "Louis as the town in Sinatra's affection",
+     "He was joined on the front row of the gr",
+     "On occasion, crew members appeared as ex",
+     "It is known that Sicilian party counted "
+    ]
+   },
+   {
+    "id": "digit_train_5_079",
+    "sent_heads": [
+     "The prospective deal went through eight ",
+     "Convinced that the police will think Jus",
+     "Paoletti included a landscape with \" wav",
+     "According to this view, it is through to"
+    ]
+   },
+   {
+    "id": "digit_train_5_080",
+    "sent_heads": [
+     "This is less common due to the increased",
+     "The Master Chief was subsequently bulked",
+     "Despite being signed to Crai, this was m",
+     "There are only scant references to the i"
+    ]
+   },
+   {
+    "id": "digit_train_5_081",
+    "sent_heads": [
+     "Sears gets out the car and attempts to c",
+     "It recurved toward the southwest while g",
+     "Restricted driver visibility due to the ",
+     "He began well, but was later hampered by"
+    ]
+   },
+   {
+    "id": "digit_train_5_082",
+    "sent_heads": [
+     "Optimus realizes they have broken throug",
+     "Hillary Clinton invited her to the White",
+     "The two stated in interviews that furthe",
+     "The Larger Catechism, intended to assist"
+    ]
+   },
+   {
+    "id": "digit_train_5_083",
+    "sent_heads": [
+     "I am no longer your commander.",
+     "Cortana continues to appear to the Chief",
+     "He's hardly a ladykiller but what he lac",
+     "June's Bible lay on the floor to the rig"
+    ]
+   },
+   {
+    "id": "digit_train_5_084",
+    "sent_heads": [
+     "However, there has to be flexibility as ",
+     "The episode featured five original songs",
+     "But to stand even a chance, criticism ne",
+     "In particular, hobbyists playing folk mu"
+    ]
+   },
+   {
+    "id": "digit_train_5_085",
+    "sent_heads": [
+     "Morgana then uses the trident's magic to",
+     "The line was to run roughly southwest fr",
+     "The city is divided into Bristol West, E",
+     "At the time the Giro was run, the test f"
+    ]
+   },
+   {
+    "id": "digit_train_5_086",
+    "sent_heads": [
+     "The software for the elevator was writte",
+     "He asked Hadfield if he could work with ",
+     "At a farewell dinner for U.S.",
+     "He set career highs in goals, with nine,"
+    ]
+   },
+   {
+    "id": "digit_train_5_087",
+    "sent_heads": [
+     "The use of a DC license in Mortal Kombat",
+     "Peirce co-wrote the screenplay with Andy",
+     "Club noting that the episode is an examp",
+     "Chronic exposure to low levels of carbon"
+    ]
+   },
+   {
+    "id": "digit_train_5_088",
+    "sent_heads": [
+     "Trade was primarily with Wales for cattl",
+     "The team worked extensively with Adams d",
+     "Food service at the plazas was provided ",
+     "Addison Montgomery-Shepherd (Kate Walsh)"
+    ]
+   },
+   {
+    "id": "digit_train_5_089",
+    "sent_heads": [
+     "The arms' motto is Ecce Cor Meum, Latin ",
+     "His requests were denied and the script ",
+     "Although lipid bilayers can easily bend,",
+     "Arthur's name also occurs in early poeti"
+    ]
+   },
+   {
+    "id": "digit_train_5_090",
+    "sent_heads": [
+     "Reflecting back on her experiences assis",
+     "Milk was often willing to vote against F",
+     "She said, \" It was a tough meeting.",
+     "Gomu\u0142ka felt proud and secure after the "
+    ]
+   },
+   {
+    "id": "digit_train_5_091",
+    "sent_heads": [
+     "spectabilis more closely resembles the i",
+     "Staphylococcus aureus infectious diarrhe",
+     "In the epilogue, SpongeBuck and Pecos Pa",
+     "Greif carried no armor protection."
+    ]
+   },
+   {
+    "id": "digit_train_5_092",
+    "sent_heads": [
+     "The large dermal denticles are overlappi",
+     "Opinions of Richard by his contemporarie",
+     "The climbing lane ends northbound and an",
+     "Collins also voiced a florist on a telep"
+    ]
+   },
+   {
+    "id": "digit_train_5_093",
+    "sent_heads": [
+     "During the Second Macedonian War, Nabis ",
+     "Mangroves also serve as excellent rooker",
+     "The whole idea is that we \u2019 re the ones ",
+     "The species is most common in southern V"
+    ]
+   },
+   {
+    "id": "digit_train_5_094",
+    "sent_heads": [
+     "The riders first climbed the Geulhemmerb",
+     "Notably, there is a difference between E",
+     "The city elects one member in the Sikkim",
+     "The community is served by Svalbard Airp"
+    ]
+   },
+   {
+    "id": "digit_train_5_095",
+    "sent_heads": [
+     "Di\u1ec7m used the Ministry of Information's ",
+     "The euro is the second-most widely held ",
+     "His family was of Spanish and Colombian ",
+     "Ursula was immobilised as the lorry had "
+    ]
+   },
+   {
+    "id": "digit_train_5_096",
+    "sent_heads": [
+     "Per millimeter, there are two to three s",
+     "They normally launched nighttime attacks",
+     "The final settlement restored Presbyteri",
+     "An undersea battle ensues between the cr"
+    ]
+   },
+   {
+    "id": "digit_train_5_097",
+    "sent_heads": [
+     "The force hid in the woods of Ardincaple",
+     "Clyde Philips said, \" She wasn \u2019 t happy",
+     "Link defeats Vaati after engaging in a f",
+     "It is a mycorrhizal species, and associa"
+    ]
+   },
+   {
+    "id": "digit_train_5_098",
+    "sent_heads": [
+     "Cortana manages to send a message to the",
+     "Higgins, had removed Suor Angelica, feel",
+     "Ottawa celebrated by hosting Dawson at a",
+     "I am Manifest Divinity, Unmanifest Divin"
+    ]
+   },
+   {
+    "id": "digit_train_5_099",
+    "sent_heads": [
+     "His horse breeding stock live mostly in ",
+     "Pakistan toured in early August, and Wil",
+     "In May that year, No.",
+     "The gun turrets were rotated by steam po"
+    ]
+   },
+   {
+    "id": "digit_train_5_100",
+    "sent_heads": [
+     "The American Revolution began with rejec",
+     "By sheer happenstance Crump came upon th",
+     "Laurent returned to his hometown of Queb",
+     "In this match, weapons were legal to use"
+    ]
+   },
+   {
+    "id": "digit_train_5_101",
+    "sent_heads": [
+     "Cocoro wakes up in a room and is relieve",
+     "When he was four, he lived in the Tacuba",
+     "Other outdoor tourist activities include",
+     "Despite the efforts of the CIA, both int"
+    ]
+   },
+   {
+    "id": "digit_train_5_102",
+    "sent_heads": [
+     "Several compilation DVDs that contained ",
+     "And I think our awareness of that change",
+     "A limited edition of the album was relea",
+     "\" The girl shall be a Christian and a ma"
+    ]
+   },
+   {
+    "id": "digit_train_5_103",
+    "sent_heads": [
+     "Kafka feared that people would find him ",
+     "The conflict was initially aimed at the ",
+     "What he was doing was having a biologica",
+     "They made the people incapable of self-d"
+    ]
+   },
+   {
+    "id": "digit_train_5_104",
+    "sent_heads": [
+     "Daniel slowly declined as it continued w",
+     "About nine hundred persons attended this",
+     "The campaign spans ten missions.",
+     "Woodfull was nevertheless omitted for se"
+    ]
+   },
+   {
+    "id": "digit_train_5_105",
+    "sent_heads": [
+     "This action regained him some of his los",
+     "Hartley who were rowing for the Light Bl",
+     "In the Chamber of Secrets, Ron and Hermi",
+     "There are seven primary schools and two "
+    ]
+   },
+   {
+    "id": "digit_train_5_106",
+    "sent_heads": [
+     "McDonagh spoke of a \"huge number \" of La",
+     "Over two million copies of Pure have bee",
+     "Grosser Kurf\u00fcrst and the other dreadnoug",
+     "He did not enjoy the subject, so switche"
+    ]
+   },
+   {
+    "id": "digit_train_5_107",
+    "sent_heads": [
+     "The song peaked inside top ten in Finlan",
+     "It is not the prosecution of Mr.",
+     "It can deal with adult pikas and gerbils",
+     "Olga was a chestnut-blonde with bright b"
+    ]
+   },
+   {
+    "id": "digit_train_5_108",
+    "sent_heads": [
+     "\"JazzTimes magazine lauded Thornton's ly",
+     "Following them, Hurley and Libby see tha",
+     "Subsequent biographers became increasing",
+     "He retired from government work over eth"
+    ]
+   },
+   {
+    "id": "digit_train_5_109",
+    "sent_heads": [
+     "There are a number of historically promi",
+     "They reached the Fifth Round, where they",
+     "It is also said that GRCs serve more as ",
+     "Richard Wein counters that \"..."
+    ]
+   },
+   {
+    "id": "digit_train_5_110",
+    "sent_heads": [
+     "It is regularly used for authentic accom",
+     "We must not confuse dissent with disloya",
+     "Ruhlmann called \" There Ain't No Love \" ",
+     "However, the poor condition of the road "
+    ]
+   },
+   {
+    "id": "digit_train_5_111",
+    "sent_heads": [
+     "Additionally, myoglobin and mitochondria",
+     "The reviewer concluded by saying \" Reddi",
+     "While Kuan was financially sound, report",
+     "Jerry decides to have a look around the "
+    ]
+   },
+   {
+    "id": "digit_train_5_112",
+    "sent_heads": [
+     "Total Immersion composer events also pro",
+     "The district was characterised by extrem",
+     "\") Featuring guest appearances by rock a",
+     "Another victory followed soon and by aut"
+    ]
+   },
+   {
+    "id": "digit_train_5_113",
+    "sent_heads": [
+     "Corrie Roy made the running until the st",
+     "Aside from map packs, the game is suppor",
+     "Xenon chloride and xenon fluoride have a",
+     "Seneb and his son are shown with darker "
+    ]
+   },
+   {
+    "id": "digit_train_5_114",
+    "sent_heads": [
+     "The war also undermined French military ",
+     "Differences in the shape of bones surrou",
+     "The family shocks one another to the poi",
+     "In these cases, the whole animal is a ve"
+    ]
+   },
+   {
+    "id": "digit_train_5_115",
+    "sent_heads": [
+     "had begun performing animal sacrifice as",
+     "Historically, the spotted hyena was wide",
+     "These competitions sought to increase th",
+     "Department of Agriculture, for a recomme"
+    ]
+   },
+   {
+    "id": "digit_train_5_116",
+    "sent_heads": [
+     "He also served in the Royal Navy Reserve",
+     "McDougal studied tap dance and ballet as",
+     "Along the way Smith established supply p",
+     "They would have continued to Islay but w"
+    ]
+   },
+   {
+    "id": "digit_train_5_117",
+    "sent_heads": [
+     "for fishing or hunting), which otherwise",
+     "The word' Yami' means' darkness' in Japa",
+     "The Italian contingent also included the",
+     "Later episodes, such as \"Hearts of Darkn"
+    ]
+   },
+   {
+    "id": "digit_train_5_118",
+    "sent_heads": [
+     "He stayed at his summer house at Skagen ",
+     "The pedestal, which contains badges from",
+     "Within two weeks, Andy Hessenthaler retu",
+     "Gielgud's performances drew superlatives"
+    ]
+   },
+   {
+    "id": "digit_train_5_119",
+    "sent_heads": [
+     "Rita is presented in the series as a lov",
+     "\"My mother got to Panama with directions",
+     "The network was still trying to sell it ",
+     "We ended up taking a lot out and alterin"
+    ]
+   },
+   {
+    "id": "digit_train_5_120",
+    "sent_heads": [
+     "This came at a time when director Mauric",
+     "Despite pressure due to the European sov",
+     "White was named an honorable mention Ass",
+     "When he drank, he had wild mood swings, "
+    ]
+   },
+   {
+    "id": "digit_train_5_121",
+    "sent_heads": [
+     "Kent Hughes broke Olympic tradition in t",
+     "This was supported by a reconnaissance d",
+     "Muhammad's descendants through Fatimah a",
+     "The decision came as a surprise to many,"
+    ]
+   },
+   {
+    "id": "digit_train_5_122",
+    "sent_heads": [
+     "In the opening credits, three new actors",
+     "There have been attempts to keep baleen ",
+     "The Riverton \u2013 Belvidere Bridge is a bri",
+     "The episode was received positively, bei"
+    ]
+   },
+   {
+    "id": "digit_train_5_123",
+    "sent_heads": [
+     "The episode received mixed to negative r",
+     "Writing a series on \" Baptists in Taunto",
+     "He is staying at Brittany's (Heather Mor",
+     "\" Five sections in the Crimes Act \" were"
+    ]
+   },
+   {
+    "id": "digit_train_5_124",
+    "sent_heads": [
+     "Other parts of the game referenced media",
+     "Even Garfield's enemies never claimed th",
+     "But you can't show two people having sex",
+     "Bart, like the rest of his family, has y"
+    ]
+   },
+   {
+    "id": "digit_train_5_125",
+    "sent_heads": [
+     "is now left in a \" dead end \".",
+     "As Jackie continues her ritual, she begi",
+     "He was named Kahkew\u0101quon\u0101by by his mater",
+     "(along with her cover of Harrison's \" Is"
+    ]
+   },
+   {
+    "id": "digit_train_5_126",
+    "sent_heads": [
+     "The owner of the station, Dr.",
+     "In addition, light damage occurred to ve",
+     "It was what we could afford.",
+     "\" However, they did, and she was cast as"
+    ]
+   },
+   {
+    "id": "digit_train_5_127",
+    "sent_heads": [
+     "sibiricus has also been shown to be able",
+     "The song was used as the theme of the Am",
+     "His initial plans for Lithuania involved",
+     "The number of scribes were disputed in t"
+    ]
+   },
+   {
+    "id": "digit_train_5_128",
+    "sent_heads": [
+     "Ned Gerard was the only shooter represen",
+     "The development has been renamed Flat Ba",
+     "A bassline accompanies the chorus, consi",
+     "This hilltop could command the approache"
+    ]
+   },
+   {
+    "id": "digit_train_5_129",
+    "sent_heads": [
+     "Both the Habsburg domains and Hohenzolle",
+     "Fly ash and bottom ash are two by-produc",
+     "The inaugurate tournament was won by Nel",
+     "Never is he any other color."
+    ]
+   },
+   {
+    "id": "digit_train_5_130",
+    "sent_heads": [
+     "However, the power of Giselle's love cou",
+     "It then moved along, or just offshore th",
+     "The results effectively divided the city",
+     "\"The Coon \" is primarily a parody of dar"
+    ]
+   },
+   {
+    "id": "digit_train_5_131",
+    "sent_heads": [
+     "Three more systems developed in a short ",
+     "Budington ordered cargo to be thrown ont",
+     "pilosella, a species originally describe",
+     "The Fronte Democratico demonstrated the "
+    ]
+   },
+   {
+    "id": "digit_train_5_132",
+    "sent_heads": [
+     "Subsequently, he was chosen for his seco",
+     "All of the participants in the race were",
+     "These are being studied and explored by ",
+     "Severe damage in the Gracias a Dios Depa"
+    ]
+   },
+   {
+    "id": "digit_train_5_133",
+    "sent_heads": [
+     "The range of the fungus is hence limited",
+     "The original route consisted of what is ",
+     "The events primarily take place at Idlew",
+     "Following victory in the Marianas, the U"
+    ]
+   },
+   {
+    "id": "digit_train_5_134",
+    "sent_heads": [
+     "[...] As a movie star, Madonna may be an",
+     "Attorney-General Charles Wilson Cross st",
+     "Different numbers apply to children.",
+     "Selectors invited him to train at weeken"
+    ]
+   },
+   {
+    "id": "digit_train_5_135",
+    "sent_heads": [
+     "Command structures and membership vital ",
+     "In typical erythristic individuals, the ",
+     "The end product had something that pleas",
+     "Many nobles accepted this, but not Knox."
+    ]
+   },
+   {
+    "id": "digit_train_5_136",
+    "sent_heads": [
+     "The food prepared for the scene was colo",
+     "Blake thinks that Richard was the author",
+     "The beak is similar to the male's winter",
+     "For all of his screaming and all of his "
+    ]
+   },
+   {
+    "id": "digit_train_5_137",
+    "sent_heads": [
+     "For example, he would often avoid banque",
+     "The fluctuating fortunes of the Test ser",
+     "Dubai Creek runs northeast-southwest thr",
+     "Lodge Hill Garage, Abingdon, Oxfordshire"
+    ]
+   },
+   {
+    "id": "digit_train_5_138",
+    "sent_heads": [
+     "He hit two sixes in his innings, includi",
+     "He was then put to work stacking the gra",
+     "The Duke is delighted with the jewelry, ",
+     "The denouement of the episode sees the c"
+    ]
+   },
+   {
+    "id": "digit_train_5_139",
+    "sent_heads": [
+     "Hikers can also take trips along the Rog",
+     "Unless a death or some other remarkable ",
+     "He scored no points in eight games as Sw",
+     "Roger's son Roger le Poer, who later bec"
+    ]
+   },
+   {
+    "id": "digit_train_5_140",
+    "sent_heads": [
+     "Its plumage was described as being of un",
+     "Unlike dunes, they do not migrate with t",
+     "Checking on Linda, Ash discovers that sh",
+     "The skier next learns how to get into an"
+    ]
+   },
+   {
+    "id": "digit_train_5_141",
+    "sent_heads": [
+     "In southern California, however, the hur",
+     "The majority of critics believed Gilliam",
+     "In December, one storm formed.",
+     "Fans left floral tributes at the site."
+    ]
+   },
+   {
+    "id": "digit_train_5_142",
+    "sent_heads": [
+     "Most of them are bacteriophages, and mos",
+     "The other seven tracks are \"Port Views \"",
+     "Angelina's so great in this part.",
+     "During the ensuing years, Parliament ado"
+    ]
+   },
+   {
+    "id": "digit_train_5_143",
+    "sent_heads": [
+     "Angela and her companions engaged him in",
+     "While in the country, Ripley visited com",
+     "He said of fatherhood: \" My life changed",
+     "Waterstone had failed to establish WHSmi"
+    ]
+   },
+   {
+    "id": "digit_train_5_144",
+    "sent_heads": [
+     "Funny when I was dreaming I always made ",
+     "The original plan to connect to St.",
+     "In the United Kingdom version of Mortal ",
+     "In fact, Oka described his command as at"
+    ]
+   },
+   {
+    "id": "digit_train_5_145",
+    "sent_heads": [
+     "This resulted in a record deal with Chee",
+     "Lin responded by stating, \"It's humbling",
+     "While there, Jack goes through a trash b",
+     "Other insect pests include scale insects"
+    ]
+   },
+   {
+    "id": "digit_train_5_146",
+    "sent_heads": [
+     "\" received mixed to positive reviews upo",
+     "Instinctively, Olivero hurls himself thr",
+     "More accessible films have less subcultu",
+     "The arsenic content, for example, become"
+    ]
+   },
+   {
+    "id": "digit_train_5_147",
+    "sent_heads": [
+     "Declared \"incurable \" by doctors, Lamber",
+     "Following the Supreme Court ruling in NF",
+     "A more powerful variant of the Tsukuyomi",
+     "In addition to the aforementioned indust"
+    ]
+   },
+   {
+    "id": "digit_train_5_148",
+    "sent_heads": [
+     "is indicted for any crimes.",
+     "These alternative reactions are catalyze",
+     "The mod was praised by critics and by th",
+     "All four went on to play Test cricket."
+    ]
+   },
+   {
+    "id": "digit_train_5_149",
+    "sent_heads": [
+     "This array of symptoms were treated phar",
+     "The gaster is smaller and more elongated",
+     "Carlos decides to keep this information ",
+     "Based on her testimony, a suspect was ar"
+    ]
+   },
+   {
+    "id": "digit_train_5_150",
+    "sent_heads": [
+     "Methods for measuring retreat include st",
+     "Equipped with enormous wealth and power,",
+     "The episode was written by Dan Greaney, ",
+     "Simonides died shortly after, and the is"
+    ]
+   },
+   {
+    "id": "digit_train_5_151",
+    "sent_heads": [
+     "It was directed by Tyler himself and fea",
+     "\" Television critic David Hiltbrand call",
+     "Thirty dollars for a cover.",
+     "The game's title, Megami Ibunroku, repre"
+    ]
+   },
+   {
+    "id": "digit_train_5_152",
+    "sent_heads": [
+     "A bridge in Union County washed out foll",
+     "And she does it in kind of the wrong way",
+     "Four years later, Luongo was selected to",
+     "Hybrid models include the CT hatchback, "
+    ]
+   },
+   {
+    "id": "digit_train_5_153",
+    "sent_heads": [
+     "He was intensely lonely, though the comr",
+     "After a few months, Mika returns and ann",
+     "However, a petition has been started by ",
+     "In California, Herriman continued to mai"
+    ]
+   },
+   {
+    "id": "digit_train_5_154",
+    "sent_heads": [
+     "He applied anyway, but was turned down b",
+     "Place names of Slavic origin abound acro",
+     "Even cutting off clothing to deal with a",
+     "Since then its dating and attribution ha"
+    ]
+   },
+   {
+    "id": "digit_train_5_155",
+    "sent_heads": [
+     "Other major east \u2013 west roads are Cornel",
+     "Jeshi of The Hindu, \" Chandralekha had g",
+     "After an extensive argument, Kioe Lie di",
+     "Ahmed Zayat said, \" He has shown so much"
+    ]
+   },
+   {
+    "id": "digit_train_5_156",
+    "sent_heads": [
+     "The explanation of this instability begi",
+     "All waste is transported out of the Anta",
+     "Andantino in F-sharp minor, A \u2013 B \u2013 A fo",
+     "Minor street flooding occurred along the"
+    ]
+   },
+   {
+    "id": "digit_train_5_157",
+    "sent_heads": [
+     "Cleaning, digging and other technical di",
+     "We may not get to play for a national te",
+     "Robbery and violence were commonplace.",
+     "She threw her hands up in shock, but was"
+    ]
+   },
+   {
+    "id": "digit_train_5_158",
+    "sent_heads": [
+     "Round castles were unusually popular thr",
+     "The Trojan and Greek officers exercise t",
+     "Its members include Vainio's friends Kei",
+     "Instead, it opted to refurbish and recla"
+    ]
+   },
+   {
+    "id": "digit_train_5_159",
+    "sent_heads": [
+     "As the state capital, Atlanta is the sit",
+     "This isn \u2019 t classic Simpsons, but it st",
+     "It received generally favorable reviews ",
+     "No Japanese photographer would had taken"
+    ]
+   },
+   {
+    "id": "digit_train_5_160",
+    "sent_heads": [
+     "Travers concluded, \" Everything you need",
+     "decided to help pay for an open bar for ",
+     "Laurent made formal speeches only in maj",
+     "That's when I came in."
+    ]
+   },
+   {
+    "id": "digit_train_5_161",
+    "sent_heads": [
+     "It was thrown onto the pierhead and wrec",
+     "He acted as an official representative f",
+     "He later incorporated it into Fast Five.",
+     "Both were arrested and detained in Lanca"
+    ]
+   },
+   {
+    "id": "digit_train_5_162",
+    "sent_heads": [
+     "In October, he stopped working for World",
+     "Disraeli wrote two novels in the afterma",
+     "Other facilities continue to be used by ",
+     "This suggests that medical use of amphet"
+    ]
+   },
+   {
+    "id": "digit_train_5_163",
+    "sent_heads": [
+     "Liverpool were appearing in their third ",
+     "serenading two women in an apartment.",
+     "The German formation fell into disarray,",
+     "but cultural sensitivity has never been "
+    ]
+   },
+   {
+    "id": "digit_train_5_164",
+    "sent_heads": [
+     "Wedemeyer, an Army officer, thought the ",
+     "Fish have also been identified as a prey",
+     "* * * The Oshkosh trip has been suspende",
+     "Music is a significant part of Mikea soc"
+    ]
+   },
+   {
+    "id": "digit_train_5_165",
+    "sent_heads": [
+     "Cadet and staff morale was low and hazin",
+     "For the season, he earned his third Ivy ",
+     "Morley gives us such a treatment in a bo",
+     "One person was killed and five others we"
+    ]
+   },
+   {
+    "id": "digit_train_5_166",
+    "sent_heads": [
+     "Although he was acquitted, his reputatio",
+     "Fodra is a sentient desolated planet.",
+     "The festival incorporates music, visual ",
+     "In this case, the lysine acts to polaris"
+    ]
+   },
+   {
+    "id": "digit_train_5_167",
+    "sent_heads": [
+     "This was the first Test century in match",
+     "Three more destroyers were also under co",
+     "Eventually, Shi Kai Wang was hired for c",
+     "It's better to make it clear from the st"
+    ]
+   },
+   {
+    "id": "digit_train_5_168",
+    "sent_heads": [
+     "Titled \" Aesthetics of Hate: R.I.P.",
+     "He persisted and succeeded in recruiting",
+     "Samar recovers and Meera admits her vow ",
+     "Kennedy Memorial Highway) at a partial c"
+    ]
+   },
+   {
+    "id": "digit_train_5_169",
+    "sent_heads": [
+     "The only unequivocally known eastern pop",
+     "Uttar Pradesh was home to powerful empir",
+     "However, Rangers general manager Neil Sm",
+     "He made the models' eyes particularly la"
+    ]
+   },
+   {
+    "id": "digit_train_5_170",
+    "sent_heads": [
+     "Rose describes this film as \"almost like",
+     "Sports Third-Team All-American and an AP",
+     "Benaud felt that Craig was finally reapi",
+     "Lawrence County, New York, in the United"
+    ]
+   },
+   {
+    "id": "digit_train_5_171",
+    "sent_heads": [
+     "These social groups typically keep away ",
+     "It has been used commonly in cough prepa",
+     "She added, \" Comedy can have a political",
+     "Large-scale killings took place which ta"
+    ]
+   },
+   {
+    "id": "digit_train_5_172",
+    "sent_heads": [
+     "Russell makes a distinction between trad",
+     "They also were more likely to see the im",
+     "Lo and damaging several other U.S.",
+     "They explored the guess that the family "
+    ]
+   },
+   {
+    "id": "digit_train_5_173",
+    "sent_heads": [
+     "Some companies mass-produce pancake mach",
+     "She also works as the Managing Director ",
+     "He proposed a scaled-down version of Lut",
+     "Kert\u00e9sz had become connected with member"
+    ]
+   },
+   {
+    "id": "digit_train_5_174",
+    "sent_heads": [
+     "Upon its theatrical release, The FP rece",
+     "The night before his victory, Booker vis",
+     "Part of the collection is available onli",
+     "detmoldii \u2014 but thrives in damp soils no"
+    ]
+   },
+   {
+    "id": "digit_train_5_175",
+    "sent_heads": [
+     "Intelligence officers reported an attack",
+     "A study of polluted Scots pine forest ar",
+     "\" Zack Handlen from The A.V.",
+     "When undiluted, it is sometimes called g"
+    ]
+   },
+   {
+    "id": "digit_train_5_176",
+    "sent_heads": [
+     "Fire cannot kill a dragon.",
+     "The only officially released music with ",
+     "This resulted in breakage of parts, stri",
+     "Kuan lodged a defamation suit against Si"
+    ]
+   },
+   {
+    "id": "digit_train_5_177",
+    "sent_heads": [
+     "Directed by Marita Grabiak and written b",
+     "Anticoagulation, which increases the ris",
+     "He asked me if I could write him a new l",
+     "He may have been on a mattress or he may"
+    ]
+   },
+   {
+    "id": "digit_train_5_178",
+    "sent_heads": [
+     "Matt Reeves was then signed to direct an",
+     "According to Thompson, \" Posey essential",
+     "Club, rated the episode an A, calling it",
+     "Germanium crystals are also used in X-ra"
+    ]
+   },
+   {
+    "id": "digit_train_5_179",
+    "sent_heads": [
+     "She wrote: \" It was everything you've ev",
+     "This series became known as the \" Boston",
+     "Justice Sonia Sotomayor dissented from t",
+     "He started his tenure with the Giants wi"
+    ]
+   },
+   {
+    "id": "digit_train_5_180",
+    "sent_heads": [
+     "Cmdr Tuvok (Tim Russ) ask Chakotay if th",
+     "Cicadas are large insects made conspicuo",
+     "The sick duke was allocated the state be",
+     "Hughes and colleagues could not identify"
+    ]
+   },
+   {
+    "id": "digit_train_5_181",
+    "sent_heads": [
+     "It was never rebuilt, resulting in the c",
+     "A few days later, Bella is nearly struck",
+     "A deluxe edition of Endtroducing.....",
+     "As CDS, Walker criticised some of the me"
+    ]
+   },
+   {
+    "id": "digit_train_5_182",
+    "sent_heads": [
+     "Kuching was revitalised as the capital o",
+     "The route crosses over Ashtabula River, ",
+     "In order to avoid detection, al-Hajj Muh",
+     "In Key West, Fitzpatrick lost to William"
+    ]
+   },
+   {
+    "id": "digit_train_5_183",
+    "sent_heads": [
+     "From the Early Preclassic, Maya society ",
+     "The utilitarian craftwork of the aborigi",
+     "Underrepresented taxa continue to be act",
+     "I don't need to take drugs."
+    ]
+   },
+   {
+    "id": "digit_train_5_184",
+    "sent_heads": [
+     "\"The behavior of the heir out-heroded He",
+     "The creek then turns southeast for some ",
+     "Hunters largely outnumbered trappers, an",
+     "On Rubicun III, the Edo explain to Lt."
+    ]
+   },
+   {
+    "id": "digit_train_5_185",
+    "sent_heads": [
+     "The song was later mixed by Trevor Muzzy",
+     "Northrop and McDonnell Douglas formed a ",
+     "Kreuk sees this filled void as the reaso",
+     "In Bellaire's early history, Bellaire Bo"
+    ]
+   },
+   {
+    "id": "digit_train_5_186",
+    "sent_heads": [
+     "In the second segment, the captain resem",
+     "Crows cannot transmit the virus to human",
+     "Neither side made a substitution at half",
+     "With several teammates, he also sprayed "
+    ]
+   },
+   {
+    "id": "digit_train_5_187",
+    "sent_heads": [
+     "After the two sides failed to reach an a",
+     "Conforming to discipline was a point of ",
+     "Murtagh and Saphira stage a rescue, and ",
+     "The track was later mixed in New York."
+    ]
+   },
+   {
+    "id": "digit_train_5_188",
+    "sent_heads": [
+     "Faber was succeeded by a young producer ",
+     "Convertibles include the IS C models.",
+     "Another similar myth is found in the Hil",
+     "The Japanese offensive continued after t"
+    ]
+   },
+   {
+    "id": "digit_train_5_189",
+    "sent_heads": [
+     "Cancellara moved up from thirteenth to f",
+     "His supporters doubted his sincerity and",
+     "The film was shot in Bagnoregio, Viterbo",
+     "Mine owners demanded longer hours for le"
+    ]
+   },
+   {
+    "id": "digit_train_5_190",
+    "sent_heads": [
+     "There was no principle analogous to \" se",
+     "It is possible that Vane encouraged Whee",
+     "Within the framework of these tasks, the",
+     "Severe damage to properties and crops oc"
+    ]
+   },
+   {
+    "id": "digit_train_5_191",
+    "sent_heads": [
+     "A counterpoint is presented by Abbie Hof",
+     "\u00d7 alisaputrana grown from tissue culture",
+     "Blood kept streaming from his nose after",
+     "Gigi was a gray whale calf that died in "
+    ]
+   },
+   {
+    "id": "digit_train_5_192",
+    "sent_heads": [
+     "The material for Band of Gypsys was reco",
+     "The Winnipeg Free Press called for an in",
+     "During the caution all the teams made a ",
+     "It was also resolved that the flag shoul"
+    ]
+   },
+   {
+    "id": "digit_train_5_193",
+    "sent_heads": [
+     "The senate then went on to choose Morton",
+     "In the first stanza, Ska\u00f0i is described ",
+     "whites], as the blackest negro.",
+     "announced a global licensing agreement w"
+    ]
+   },
+   {
+    "id": "digit_train_5_194",
+    "sent_heads": [
+     "This film does address the ugly side of ",
+     "Succession to the throne was hereditary ",
+     "Ben relays this message to Lucas.",
+     "Officials indicated that the manual brak"
+    ]
+   },
+   {
+    "id": "digit_train_5_195",
+    "sent_heads": [
+     "The unanimous vote for Fitzpatrick in Ne",
+     "Using her dwarf cousin (Big Mick), she p",
+     "He called some \"hopelessly difficult \" a",
+     "The Royal Arcade links Old Bond Street w"
+    ]
+   },
+   {
+    "id": "digit_train_5_196",
+    "sent_heads": [
+     "The route is a two-lane undivided road i",
+     "She had already changed her name to Hamm",
+     "The final part of the phase was replacin",
+     "They had superior intelligence, superior"
+    ]
+   },
+   {
+    "id": "digit_train_5_197",
+    "sent_heads": [
+     "The band stated that they will perform i",
+     "The children escape the house before it ",
+     "The novel is written in the first-person",
+     "Alekhine tried to go to America by trave"
+    ]
+   },
+   {
+    "id": "digit_train_5_198",
+    "sent_heads": [
+     "The British destroyers Nestor and Nicato",
+     "Bakshi says, \" My promise to Tolkien's d",
+     "Moving very steadily southwest, the stor",
+     "They are depicted with normal proportion"
+    ]
+   },
+   {
+    "id": "digit_train_5_199",
+    "sent_heads": [
+     "A single variant of the Mk VIII was desi",
+     "The long, sharply pointed beak is pinkis",
+     "Pain in My Heart received positive criti",
+     "This enables them to float for about a m"
+    ]
+   },
+   {
+    "id": "digit_train_7_000",
+    "sent_heads": [
+     "Rough terrain west of Masan limited the ",
+     "When Nicole refuses to go with him, he l",
+     "Other supporting characters include Norm",
+     "So God created the Earth, inhabiting it ",
+     "He has pointed to alleged connections be",
+     "He had been recommended for it by Lord D"
+    ]
+   },
+   {
+    "id": "digit_train_7_001",
+    "sent_heads": [
+     "He criticized Sam Fisher's new voice act",
+     "Adams also worked for the New York Dispe",
+     "Among the scaffold partitions are depict",
+     "The band cancelled its scheduled recordi",
+     "More recent historians, such as Michael ",
+     "It included four aqueducts and a two-ris"
+    ]
+   },
+   {
+    "id": "digit_train_7_002",
+    "sent_heads": [
+     "The island population was also subjected",
+     "Throughout his life, he was employed at ",
+     "The film received generally strong revie",
+     "Over four million units of the game have",
+     "He did not feel he could yet return to h",
+     "Hayden Childs of The A.V."
+    ]
+   },
+   {
+    "id": "digit_train_7_003",
+    "sent_heads": [
+     "I'm just so happy I beat back those guys",
+     "Many Republican leaders saw this as unne",
+     "Such flows will overlap one another and ",
+     "For his feat, Derrick later received the",
+     "\" BBC Music's Marcus J.",
+     "The album was a moderate success for Sel"
+    ]
+   },
+   {
+    "id": "digit_train_7_004",
+    "sent_heads": [
+     "The precise number of soldiers involved ",
+     "Animal testing has also included the use",
+     "Subsequently, Fitzpatrick was elected as",
+     "half sung), and the bridge are dancehall",
+     "Crane drew his designs directly on the b",
+     "Tompkins also wrote a different third ac"
+    ]
+   },
+   {
+    "id": "digit_train_7_005",
+    "sent_heads": [
+     "With Beale and Susanna gone, Margo, Linc",
+     "The consensus was that the celestial sph",
+     "She won the title, after winning the sho",
+     "Seifer escapes, kidnapping Rinoa and bri",
+     "He emphasized that \" the law is the law.",
+     "Following the end of the third season, e"
+    ]
+   },
+   {
+    "id": "digit_train_7_006",
+    "sent_heads": [
+     "According to Leicester, this was what th",
+     "With it, Cortana activates a new ringwor",
+     "As a result, the torpedo boats damaged t",
+     "The video was produced by Nina Dluhy-Mil",
+     "Weatherill did not accept Whatton's defe",
+     "All these things had to be somehow repre"
+    ]
+   },
+   {
+    "id": "digit_train_7_007",
+    "sent_heads": [
+     "However, the strikes had less of an impa",
+     "The cemetery also has its fair share of ",
+     "There is also a apartment onsite for the",
+     "Not bad and not great.",
+     "The StarCraft series includes a core set",
+     "Sylar pushes Elle into a cargo elevator,"
+    ]
+   },
+   {
+    "id": "digit_train_7_008",
+    "sent_heads": [
+     "A war council held by Generals St.",
+     "Don Anderson, a sign painter hired by Ha",
+     "Postreproductive females will continue t",
+     "He also asked the Mexican Federal Govern",
+     "It is the county town of Somerset.",
+     "Lasseter and the story team redeveloped "
+    ]
+   },
+   {
+    "id": "digit_train_7_009",
+    "sent_heads": [
+     "Almeida said he could not remember wheth",
+     "However, when Rey F\u00e9nix unmasked, he was",
+     "The only hint given about the red color ",
+     "\"Johansson seemed very modern to Webber,",
+     "Unfortunately, our friends and relatives",
+     "Several scholars have applied a hermeneu"
+    ]
+   },
+   {
+    "id": "digit_train_7_010",
+    "sent_heads": [
+     "learns that Sue Ellen and Don Lockwood h",
+     "This waste product was diverted to the g",
+     "Club sides play in Super League, the pre",
+     "Nevertheless, a significant minority con",
+     "Asim Bey was a strongly pro-Ottoman, Ara",
+     "\" A reserved man, Hill kept his opinions"
+    ]
+   },
+   {
+    "id": "digit_train_7_011",
+    "sent_heads": [
+     "Its surface is smooth, somewhat sticky t",
+     "At the camp at Jamalabad fort, Mangalore",
+     "\" Critics have continuously cited \" Moth",
+     "She and her husband Tom Condon have thre",
+     "That same year then Lieutenant Olga E.",
+     "Williams is evoking to understand how fu"
+    ]
+   },
+   {
+    "id": "digit_train_7_012",
+    "sent_heads": [
+     "Hill started swimming as a child and com",
+     "In September Captain John P.",
+     "United States of America v.",
+     "Work on the project was finally approved",
+     "\" Boone's death is notable as the first ",
+     "Burgmeier, instead, moved to Aarau in Sw"
+    ]
+   },
+   {
+    "id": "digit_train_7_013",
+    "sent_heads": [
+     "It is not known whether Kanner derived t",
+     "H\u00e4kkinen's victory was the first of his ",
+     "Suddenly, the Shadow Man is destroyed by",
+     "The Japanese defenders put up a stiff re",
+     "Bacon's influence can be seen in Peckham",
+     "The Mobile Police Department Museum feat"
+    ]
+   },
+   {
+    "id": "digit_train_7_014",
+    "sent_heads": [
+     "The album received mainly negative revie",
+     "Kennedy School of Government, teaching n",
+     "Genevieve Koski of The A.V.",
+     "The first requirement is for minimum los",
+     "Early examples are plaques to John Walpo",
+     "The IP address leads to another live fee"
+    ]
+   },
+   {
+    "id": "digit_train_7_015",
+    "sent_heads": [
+     "They were a matriarchal society that liv",
+     "Several ovules of a given individual oft",
+     "The Jason Russell House still stands and",
+     "Many of the witnesses called before the ",
+     "At the time of his selection, New York T",
+     "Most discussion focused on comics as a g"
+    ]
+   },
+   {
+    "id": "digit_train_7_016",
+    "sent_heads": [
+     "government chose scientific ability over",
+     "A mid-latitude trough located north of t",
+     "According to Shearman, Hamilton's treatm",
+     "Accordingly, Newton was not selected for",
+     "A lot of bombs landed horizontally and d",
+     "Tucker is an animalistic character, driv"
+    ]
+   },
+   {
+    "id": "digit_train_7_017",
+    "sent_heads": [
+     "Many comedians have used Pinafore songs ",
+     "She expresses hope that Daigo will find ",
+     "These mutations promote the misfolding o",
+     "He may be a harmless prankster one momen",
+     "Lewis Hamilton meanwhile struggled on th",
+     "It may contain higher concentrations of "
+    ]
+   },
+   {
+    "id": "digit_train_7_018",
+    "sent_heads": [
+     "With family estates in Scotland and Engl",
+     "dearly with all his heart and mind \".",
+     "the smallest slip seemeth a fall...",
+     "The subject of Mariana is a woman who co",
+     "The xenon chloride excimer laser has bee",
+     "They met an enthusiastic reception at th"
+    ]
+   },
+   {
+    "id": "digit_train_7_019",
+    "sent_heads": [
+     "It has nothing to do with vindication.",
+     "Towards the end of the epidemic, Seacole",
+     "Rose takes her to UNIT and explains that",
+     "Riders are restrained through the use of",
+     "Berrios' parents were Puerto Rican nativ",
+     "Fruit bodies appear in summer and autumn"
+    ]
+   },
+   {
+    "id": "digit_train_7_020",
+    "sent_heads": [
+     "Thirty-seven were injured in Bengaspasan",
+     "Screens in the background show several c",
+     "Ten months later, four men died in a tra",
+     "Her stem was replaced and her superstruc",
+     "He is dependent on his brother, who has ",
+     "Finding the enemy encampment deserted, t"
+    ]
+   },
+   {
+    "id": "digit_train_7_021",
+    "sent_heads": [
+     "The plot covers the aftermath of Eddard ",
+     "It was directed by Don Scardino.",
+     "It features a close-up shot of her face ",
+     "Many saw Stone's mayoral candidacy as an",
+     "Nonetheless, Humber earned an invitation",
+     "wallichiana in pure culture conditions i"
+    ]
+   },
+   {
+    "id": "digit_train_7_022",
+    "sent_heads": [
+     "His professor of anatomy, Drago Perovi\u0107,",
+     "Coolidge replied with a statement of sup",
+     "White had a career season in his third y",
+     "\" He described the cast as being \" spont",
+     "Nash was then placed in command of the N",
+     "The station is operated by the village o"
+    ]
+   },
+   {
+    "id": "digit_train_7_023",
+    "sent_heads": [
+     "Intraspecific brood parasites are common",
+     "They have four children: Rory Christophe",
+     "\" The helicopter carried them to Andrews",
+     "He cites Omega Red and Cyclops as his fa",
+     "The twins who play the part (Jaden and E",
+     "The Hunters were used by Nos."
+    ]
+   },
+   {
+    "id": "digit_train_7_024",
+    "sent_heads": [
+     "Aircraft engaged in takeoff or landing c",
+     "The years following World War I were sev",
+     "After a few days, the gape changes to a ",
+     "Mount Bailey is a popular destination fo",
+     "Within the contemporary American literar",
+     "Although they forced him to resign befor"
+    ]
+   },
+   {
+    "id": "digit_train_7_025",
+    "sent_heads": [
+     "\" A former assistant said, \" You definit",
+     "NFL players are routinely subject to dru",
+     "Severe damage in the Gracias a Dios Depa",
+     "Finally, after the advent of Adolf Hitle",
+     "She gets some papers and inhales cocaine",
+     "Martin Short, Hank Azaria and Bob Odenki"
+    ]
+   },
+   {
+    "id": "digit_train_7_026",
+    "sent_heads": [
+     "Ariel is voiced by Jodi Benson in all of",
+     "Fronte leaders spread rumours that they ",
+     "The low drifted westward as convection t",
+     "The omnipresent manele also found their ",
+     "Back in the United States, he contacted ",
+     "The Daozang (\u9053\u85cf, Treasury of Tao) is als"
+    ]
+   },
+   {
+    "id": "digit_train_7_027",
+    "sent_heads": [
+     "The spore print is dark brown.",
+     "and we kind of followed that feeling...",
+     "She boarded a boat for the neighbouring ",
+     "Faith Penhale was the series script exec",
+     "After this, the route entered two and a ",
+     "She is involved in administrative approa"
+    ]
+   },
+   {
+    "id": "digit_train_7_028",
+    "sent_heads": [
+     "Snyder also had a pottery and brick fact",
+     "\"Obviously, I want to do new stuff becau",
+     "Chris Suellentrop of Slate wrote that \"u",
+     "They also offered to burn the town to th",
+     "However, these influences remained large",
+     "These little touches the fans seem to re"
+    ]
+   },
+   {
+    "id": "digit_train_7_029",
+    "sent_heads": [
+     "Yet heart disease kills more women in ou",
+     "ABC let Williams go after the thirteenth",
+     "This time, the Australians were eliminat",
+     "They also devised novel pieces that were",
+     "Most of the information on the cases was",
+     "The starlet signed with Elio Gigante, an"
+    ]
+   },
+   {
+    "id": "digit_train_7_030",
+    "sent_heads": [
+     "One of the show's Muppet characters, Dr.",
+     "Most previous furnaces could not reach h",
+     "Ten days earlier, they released the albu",
+     "The eyes are relatively large, particula",
+     "In the following years Pembroke worked c",
+     "\" Yvette Lang, who executive produced th"
+    ]
+   },
+   {
+    "id": "digit_train_7_031",
+    "sent_heads": [
+     "Sawdust has been classified Platinum in ",
+     "Indeed, although the fighting continued,",
+     "When Dutch settlers came to the Cape Pro",
+     "Miikka Kiprusoff became the first goalte",
+     "It was a mid-sized type, particularly su",
+     "[...] This might be Season Five \u2019 s best"
+    ]
+   },
+   {
+    "id": "digit_train_7_032",
+    "sent_heads": [
+     "Made more sense to save fuel.",
+     "If the thrombosis developed under tempor",
+     "The reception of the two later instalmen",
+     "Smith, It's the Great Pumpkin, Charlie B",
+     "Smaller reserves are found in the United",
+     "Enron executives accepted questions in w"
+    ]
+   },
+   {
+    "id": "digit_train_7_033",
+    "sent_heads": [
+     "Alex Garland's adaptation is sensitive a",
+     "Harlan penned the majority opinion in Co",
+     "It remains common in Yucat\u00e1n and in the ",
+     "Four Mexicans were killed before the fla",
+     "Domestically, his administration general",
+     "Bowyer qualified third, Kasey Kahne took"
+    ]
+   },
+   {
+    "id": "digit_train_7_034",
+    "sent_heads": [
+     "Most of their members were sentenced to ",
+     "The original black-and-white version air",
+     "Simon Chaudoir, Jake Polonsky, Kieran Mc",
+     "One iteration of Newton's method is perf",
+     "It was directed by Hiroshi Takai and pro",
+     "Among their friends, they quickly became"
+    ]
+   },
+   {
+    "id": "digit_train_7_035",
+    "sent_heads": [
+     "She fell out of formation for repairs wh",
+     "That spring, he began illustrating a ser",
+     "The einherjar have been the subject of w",
+     "Later that year, Memphis city councilman",
+     "Chao can enter karate competitions in th",
+     "The landowners turned to their local Con"
+    ]
+   },
+   {
+    "id": "digit_train_7_036",
+    "sent_heads": [
+     "Chavo Guerrero defended the title agains",
+     "The match ended in a no contest when Kid",
+     "Whilst there he met Robert Sherard, whom",
+     "section via Port Road Branch which separ",
+     "During their entire time at sea, the two",
+     "Its main prey varies by region."
+    ]
+   },
+   {
+    "id": "digit_train_7_037",
+    "sent_heads": [
+     "After brainstorming sessions by Church, ",
+     "They locate Matsuda through Pairan techn",
+     "Shortly after the election, Whitlam face",
+     "The Allied offensive at Buna in New Guin",
+     "I don't need to be in love right now.",
+     "This would be a most serious inroad into"
+    ]
+   },
+   {
+    "id": "digit_train_7_038",
+    "sent_heads": [
+     "The collection eventually evolved into t",
+     "They are now considered to belong in a s",
+     "In Germany, it was Jackson's first singl",
+     "Peterskirche, publicly called for the re",
+     "She next starred with Robert Carlyle in ",
+     "Players were willing to cut salary only "
+    ]
+   },
+   {
+    "id": "digit_train_7_039",
+    "sent_heads": [
+     "As the campaign unfolded, Krueger was pr",
+     "It is a good exchange.",
+     "\" made the song one of Presley's live st",
+     "Privately, Ben asks Juliet Burke (Elizab",
+     "She was voiced by Harry Shearer.",
+     "Several of them also chose it as a stand"
+    ]
+   },
+   {
+    "id": "digit_train_7_040",
+    "sent_heads": [
+     "Some populations also use trees or other",
+     "We met land crabs, too, and were sadly d",
+     "which hasn't happened for some time \".",
+     "After stopping another two bombs, Jawad'",
+     "When this was unsuccessful, he personall",
+     "He subsequently refuses to explain his a"
+    ]
+   },
+   {
+    "id": "digit_train_7_041",
+    "sent_heads": [
+     "However, the North-North Temperate Belt ",
+     "The corpse seen in the episode was an al",
+     "They inhabit swamps, streams, rivers, po",
+     "The Blackstones also funded Blackstone H",
+     "selection, \u2014 even most trifling details ",
+     "Rai was all for originality in his own v"
+    ]
+   },
+   {
+    "id": "digit_train_7_042",
+    "sent_heads": [
+     "Gomphus clavatus is edible (and rated as",
+     "Walras originally presented four separat",
+     "The opening was the Semi-Tarrasch Defens",
+     "Abby keeps things stirred up, and I like",
+     "This could explain the difference in out",
+     "X said that the song reminded him of las"
+    ]
+   },
+   {
+    "id": "digit_train_7_043",
+    "sent_heads": [
+     "Her female dancers were also dressed as ",
+     "Over his lifetime, Cope's views on evolu",
+     "Unlike other wheeled vehicles, the prima",
+     "Building materials and supplies were bro",
+     "He has committed the unpardonable sin; h",
+     "According to historian Charles R."
+    ]
+   },
+   {
+    "id": "digit_train_7_044",
+    "sent_heads": [
+     "Both the Liber Wigorniensis and Hemming'",
+     "Impounded water later formed Trout Lake.",
+     "The sheep populations that were required",
+     "After his discharge, Robinson briefly re",
+     "[T] he indigenous popular music which fu",
+     "The highway then angles northeasterly no"
+    ]
+   },
+   {
+    "id": "digit_train_7_045",
+    "sent_heads": [
+     "The original minbar used by Muhammad was",
+     "Holy Soap opined that this was a stand o",
+     "Towards evening, rain streamed down heav",
+     "Two singles were released from Lights an",
+     "This considerably reduced the costs and ",
+     "William Truax who owned a restaurant cal"
+    ]
+   },
+   {
+    "id": "digit_train_7_046",
+    "sent_heads": [
+     "It also got the Limoges factory, which m",
+     "After Rubens accepted a role in the film",
+     "The hurricane's eye soon became cloud-fi",
+     "The storm tracked slowly northward after",
+     "Former mercury mines may be suited for c",
+     "Crawley has three local newspapers, of w"
+    ]
+   },
+   {
+    "id": "digit_train_7_047",
+    "sent_heads": [
+     "A Western Turk army, sent to support Gao",
+     "LaBeouf was singled out for praise for h",
+     "The album received mixed reviews from Am",
+     "David Norris also made a pledge to publi",
+     "I wouldn't be the life and soul of any p",
+     "Both models come in gold, silver, and \"s"
+    ]
+   },
+   {
+    "id": "digit_train_7_048",
+    "sent_heads": [
+     "Leif was educated at Nordstrand Middle S",
+     "The coins had been struck as a trial to ",
+     "That way we've already accumulated piece",
+     "Most were destroyed on the ground.",
+     "a virtuous, hardworking assistant DA who",
+     "The two offer exams and study guides tha"
+    ]
+   },
+   {
+    "id": "digit_train_7_049",
+    "sent_heads": [
+     "Other men were landed as far away as Can",
+     "Her mother died, but she survived and im",
+     "Pepper is about Britain, and the Summer ",
+     "Nydalen also serves as a bus hub.",
+     "Rhee Taekwon-Do occupies a prominent pla",
+     "Zip fuel was retained for the engine's a"
+    ]
+   },
+   {
+    "id": "digit_train_7_050",
+    "sent_heads": [
+     "The resulting horses were known for thei",
+     "burbidgeae are shown in the table to the",
+     "Internationally, the damage was more sev",
+     "The German Federal Police were investiga",
+     "Consequently, there was a significant co",
+     "The holders of the Bharat Ratna rank sev"
+    ]
+   },
+   {
+    "id": "digit_train_7_051",
+    "sent_heads": [
+     "Mandari\u0107, an investor in AFI, was retain",
+     "Among the more minor characters is the b",
+     "No damage or casualties were reported in",
+     "A tornado touched down near Neukirchen a",
+     "With their deaths, Lady Saig\u014d's position",
+     "As Alf was often away at sea, Julia star"
+    ]
+   },
+   {
+    "id": "digit_train_7_052",
+    "sent_heads": [
+     "Coggin Brown uncovered more prehistoric ",
+     "The original version of the tour was acc",
+     "The festival was an important one for th",
+     "Gaara has made several appearances outsi",
+     "However, Sylar is already there, having ",
+     "This proposal was never built though."
+    ]
+   },
+   {
+    "id": "digit_train_7_053",
+    "sent_heads": [
+     "The first section of the BS & WR was bet",
+     "This second system, although more invasi",
+     "Officers questioning students at school ",
+     "The streetcar was nicknamed the \"Toonerv",
+     "The next month he was posted to No.",
+     "However, Picard, monitored closely by Dr"
+    ]
+   },
+   {
+    "id": "digit_train_7_054",
+    "sent_heads": [
+     "Deputy Buddy Riggs informs Melissa that ",
+     "GamesTM referred to the game as the pinn",
+     "His first major test under Grant was at ",
+     "Regional singles were released in Canada",
+     "Thereafter the Hercules became the regul",
+     "However, Madonna found herself dissatisf"
+    ]
+   },
+   {
+    "id": "digit_train_7_055",
+    "sent_heads": [
+     "With the help of Percy and his friends, ",
+     "Fat-soluble vitamins are absorbed throug",
+     "That's not the side that faces the pitch",
+     "Gilmore) leaves for school and notices t",
+     "Through her drunkenness she has been ret",
+     "Elements in the same period show trends "
+    ]
+   },
+   {
+    "id": "digit_train_7_056",
+    "sent_heads": [
+     "Cadmium is a soft, malleable, ductile, b",
+     "He was given the rank of colonel and mad",
+     "Heavy rain caused flooding that cut off ",
+     "There he worked closely with Samuel Adam",
+     "climbing skins, or b) from grip waxes.",
+     "Some of these glands are specialised as "
+    ]
+   },
+   {
+    "id": "digit_train_7_057",
+    "sent_heads": [
+     "Oglebay Norton immediately designated th",
+     "Alex Karev (Justin Chambers) and Dr.",
+     "Selma maintained that strength until the",
+     "There is controversy concerning the safe",
+     "Writer Luke Brookshier said, \"SpongeBob ",
+     "Morpholinos can also modify the splicing"
+    ]
+   },
+   {
+    "id": "digit_train_7_058",
+    "sent_heads": [
+     "He died less than a week afterwards.",
+     "Reinhardt last saw Philipp's aircraft di",
+     "I'm pretty computer-savvy, something did",
+     "Boston's park system is well-reputed nat",
+     "The lower reaches of the watershed conta",
+     "The government-owned ACTEW Corporation m"
+    ]
+   },
+   {
+    "id": "digit_train_7_059",
+    "sent_heads": [
+     "De Palma saw McAdams' performance in Mea",
+     "staff; Maeda also gave his seal of appro",
+     "Executive producer Harve Bennett wrote t",
+     "Whatever the reason that Renaissance sty",
+     "The Samuel Goldwyn Company, a U.S.",
+     "Sheldon finally gets to meet Hawking in "
+    ]
+   },
+   {
+    "id": "digit_train_7_060",
+    "sent_heads": [
+     "Sullivan's oldest nephew, Herbert, staye",
+     "This idea became the nuclear missile car",
+     "Pluribus Dingbat and his family.",
+     "However, the focal point of the painting",
+     "Rough terrain west of Masan limited the ",
+     "\" Baskaran also appreciated Ganesan's di"
+    ]
+   },
+   {
+    "id": "digit_train_7_061",
+    "sent_heads": [
+     "Willibrord was a monk of Ripon who was a",
+     "A gospel choir and minimum synths back t",
+     "[Cole] was unable to take the vote to de",
+     "The monument to Ann Bankes (d.",
+     "Llandaff Cathedral was built on the site",
+     "Maria, her sisters and brother Alexei we"
+    ]
+   },
+   {
+    "id": "digit_train_7_062",
+    "sent_heads": [
+     "Two days later, she performed \"It's Like",
+     "Much of the framework of modern coral re",
+     "extremely impressed by the bombing.",
+     "The deeply forked tail is whitish, with ",
+     "This cranial specialization is unusual a",
+     "Kurt introduces him to Carole Hudson, Fi"
+    ]
+   },
+   {
+    "id": "digit_train_7_063",
+    "sent_heads": [
+     "The man who owns the music shop Homer vi",
+     "The film was not a box office success in",
+     "By the second season, their friendship h",
+     "Dreaming of You sold half a million copi",
+     "Springs and other wet places support fla",
+     "In the absence of males, females are als"
+    ]
+   },
+   {
+    "id": "digit_train_7_064",
+    "sent_heads": [
+     "It pales in comparison to what [Hedren] ",
+     "\" Hearst had recently appeared on single",
+     "He was killed besieging a castle, and Jo",
+     "Rathnavelu was its director of photograp",
+     "Survival, not allegiance, was their poli",
+     "This species has large nostrils."
+    ]
+   },
+   {
+    "id": "digit_train_7_065",
+    "sent_heads": [
+     "The hairs of the underparts were grayish",
+     "After evading pursuers, Bond delivers Wh",
+     "His death led to the War of the Austrian",
+     "Zahorchak was a steady supporter of Rend",
+     "The following morning the inhabitants at",
+     "This marked the end of his career as a T"
+    ]
+   },
+   {
+    "id": "digit_train_7_066",
+    "sent_heads": [
+     "Urban areas transition back into rural a",
+     "Around the same time, another name, Anne",
+     "Upon his death the house was recorded as",
+     "\", meaning \" successor to C.F.",
+     "It was done ingeniously and beautifully.",
+     "\u00d7 alisaputrana and its putative parental"
+    ]
+   },
+   {
+    "id": "digit_train_7_067",
+    "sent_heads": [
+     "The pair had also taken the roles of co-",
+     "Persistent trade rumors (generally invol",
+     "Following Rider and Hewecker, certificat",
+     "The internet community provided \" invalu",
+     "He also disables communications with the",
+     "Following Pakistan, Boycott and the Engl"
+    ]
+   },
+   {
+    "id": "digit_train_7_068",
+    "sent_heads": [
+     "General Sverdrup's exceptional courage, ",
+     "If nothing else it \u2019 s an insight into w",
+     "The team competes in NCAA Division III a",
+     "In Brindisi, he became seriously ill, an",
+     "He also created an additional clade, the",
+     "Donkey Kong spawned the sequels Donkey K"
+    ]
+   },
+   {
+    "id": "digit_train_7_069",
+    "sent_heads": [
+     "seems completely unaware of recent work ",
+     "The event affected him profoundly, leavi",
+     "She receives a series of strange phone c",
+     "MacArthur later denied having the conver",
+     "A notable feature is that their doors po",
+     "The college has a post office with posta"
+    ]
+   },
+   {
+    "id": "digit_train_7_070",
+    "sent_heads": [
+     "The game also features a single-player s",
+     "In the same year he was elected to the A",
+     "In this scenario he may have escaped to ",
+     "He served throughout the war, ending it ",
+     "Critics negatively compared the port to ",
+     "was launched and has been in continual o"
+    ]
+   },
+   {
+    "id": "digit_train_7_071",
+    "sent_heads": [
+     "Natives of the region appeared in the vi",
+     "\"I thought he would understand what The ",
+     "Works in this genre may explore philosop",
+     "The Nintendo DSi received generally posi",
+     "Lee, to Scalia's great disappointment.",
+     "He easily fulfills her first two wishes "
+    ]
+   },
+   {
+    "id": "digit_train_7_072",
+    "sent_heads": [
+     "The bill is black with a gray tip, and t",
+     "The series gives three contestants the c",
+     "While Fran dissipated shortly after that",
+     "Soetoro graduated from the University of",
+     "Apart from adversely affecting some play",
+     "The London streets were filmed in Lord L"
+    ]
+   },
+   {
+    "id": "digit_train_7_073",
+    "sent_heads": [
+     "Rahman, who teamed up with Yash Chopra f",
+     "Several reviewers were particularly crit",
+     "These were denied, mainly because the So",
+     "The drug trade in West Baltimore continu",
+     "The women have been estranged, but Rosy ",
+     "\", became one of the most popular lines "
+    ]
+   },
+   {
+    "id": "digit_train_7_074",
+    "sent_heads": [
+     "The mahant is punished for misusing the ",
+     "Fodra's consciousness is then absorbed b",
+     "Red Bull and Williams revised their brak",
+     "The relationship between father and son ",
+     "One of them, KCnet, has an office in Loc",
+     "Four African-American tribe members reci"
+    ]
+   },
+   {
+    "id": "digit_train_7_075",
+    "sent_heads": [
+     "Netball is a popular participant sport i",
+     "Maintenance responsibilities for the Can",
+     "often opposed Third World movements that",
+     "The threat of the storm forced several t",
+     "As a student at the El Camino Fundamenta",
+     "Of the former, Yeats called Elgar's musi"
+    ]
+   },
+   {
+    "id": "digit_train_7_076",
+    "sent_heads": [
+     "As with the doors, the threshold above t",
+     "She also said she specifically enjoyed t",
+     "Failure to comply with the guidelines co",
+     "As a different unit is supplied, user da",
+     "All vocals had to be completely live; hu",
+     "At Rice, Humber was coached by Wayne Gra"
+    ]
+   },
+   {
+    "id": "digit_train_7_077",
+    "sent_heads": [
+     "She was named the Goalkeeper of the Tour",
+     "Prada provided the dresses for both Bond",
+     "They also embarked on a tour of Europe t",
+     "They remained unopened, even years after",
+     "Napoleon had already arrived at Malta an",
+     "The version surviving today was publishe"
+    ]
+   },
+   {
+    "id": "digit_train_7_078",
+    "sent_heads": [
+     "DC Universe was thus restricted to a \"Te",
+     "The next day, the survivors discover tha",
+     "\" It received generally positive reviews",
+     "The female figure can be identified as V",
+     "Pedigrees were not maintained, so early ",
+     "There were men off-camera with boxes of "
+    ]
+   },
+   {
+    "id": "digit_train_7_079",
+    "sent_heads": [
+     "According to Sarvepalli Radhakrishnan, t",
+     "After touring Western Canada, St.",
+     "Traditional music for wakes is performed",
+     "Samar helps Meera face her past, taking ",
+     "He operated the WLC from the Winchester ",
+     "Following the battle, Fusoya and Golbez "
+    ]
+   },
+   {
+    "id": "digit_train_7_080",
+    "sent_heads": [
+     "Currently, the various skulls assigned t",
+     "The Florida Cracker Horse is a breed of ",
+     "Ivaylo was hailed as Emperor by the peop",
+     "Harms divided Nepenthes into three subge",
+     "Zack Handlen reviewed the episode for th",
+     "in Burbank, California, and then moved t"
+    ]
+   },
+   {
+    "id": "digit_train_7_081",
+    "sent_heads": [
+     "Summarizing the group's behavior, Lawren",
+     "He spent most of his adult life in St.",
+     "By this time the NHC issued their final ",
+     "Although this fundamentally changed the ",
+     "However, details of nest-building, incub",
+     "While Major Hibbert was leading a group "
+    ]
+   },
+   {
+    "id": "digit_train_7_082",
+    "sent_heads": [
+     "In December, his first child, Henriette,",
+     "The player unlocks doors in the castle w",
+     "He was a vocal supporter of its adoption",
+     "Southey most likely learned the tale as ",
+     "Specifically singled out as being good a",
+     "You can't give this song to this movie."
+    ]
+   },
+   {
+    "id": "digit_train_7_083",
+    "sent_heads": [
+     "Athos in the years preceding Tischendorf",
+     "Both the Unification Church and the Unit",
+     "Rhys married Gwenllian ferch Madog, daug",
+     "On the afternoon of the crash, divers ha",
+     "Trematode infection can be highly debili",
+     "That was enough to throw away all the ha"
+    ]
+   },
+   {
+    "id": "digit_train_7_084",
+    "sent_heads": [
+     "For Virginia Tech, there were hopes of b",
+     "During his retirement, he had lectured a",
+     "Tony Tabac played drums that night after",
+     "I never got around to it.",
+     "The album cover is a painting by Betty S",
+     "Milkvetch and prince's plume are found i"
+    ]
+   },
+   {
+    "id": "digit_train_7_085",
+    "sent_heads": [
+     "Several weeks later, Arisugawa Takehito ",
+     "They may be noted for using risqu\u00e9 theme",
+     "\"Aesthetics of Hate \" was written by Mac",
+     "We were just watching this airplane on t",
+     "A particular Austrian Riesling trademark",
+     "\" also drastically increased Marceline's"
+    ]
+   },
+   {
+    "id": "digit_train_7_086",
+    "sent_heads": [
+     "treated juveniles as the functional equa",
+     "Women who played the sport of lacrosse t",
+     "They were not the first Australians to s",
+     "Kripke enjoyed expanding upon the charac",
+     "Before its conversion, actor Peter Vaugh",
+     "Cagney described the script as \" that ex"
+    ]
+   },
+   {
+    "id": "digit_train_7_087",
+    "sent_heads": [
+     "It was normally kept in a bedside cupboa",
+     "This proved to have disastrous consequen",
+     "Who's That Girl was a commercial success",
+     "Over this period, San Francisco became a",
+     "During an appearance on Top of the Pops,",
+     "As a son of a farmer, Bajpayee would do "
+    ]
+   },
+   {
+    "id": "digit_train_7_088",
+    "sent_heads": [
+     "No other infrastructure damage was repor",
+     "High rains alleviated drought conditions",
+     "Overall, Moir described the show \" overb",
+     "The Dominicans soon came into conflict w",
+     "Byzantium finally fell to the Turks befo",
+     "Payne however was unaware of these activ"
+    ]
+   },
+   {
+    "id": "digit_train_7_089",
+    "sent_heads": [
+     "To address the taxonomical dilemma, the ",
+     "An area listed on the Luzerne County Nat",
+     "Shortly after Clonaid's launch, Boisseli",
+     "Much of the jettisoned cargo was lost.",
+     "Authenticity in performance and expertis",
+     "If Carl made it, Carl made it."
+    ]
+   },
+   {
+    "id": "digit_train_7_090",
+    "sent_heads": [
+     "Meanwhile Casey had concluded that the h",
+     "This is her first on-screen appearance s",
+     "A grandson of the philosopher Moses Mend",
+     "The Brooklyn-based dance style uprock in",
+     "Kerrigan was forced to follow and attemp",
+     "the ground supply lines except those mea"
+    ]
+   },
+   {
+    "id": "digit_train_7_091",
+    "sent_heads": [
+     "She \u2019 s well worth taking the time to ch",
+     "Ostrom described this specimen and revis",
+     "It was captured in hand-to-hand combat u",
+     "The prerogative is the name of the remai",
+     "Meanwhile, he continued to write and pub",
+     "She called it a \" flawed yet unusually a"
+    ]
+   },
+   {
+    "id": "digit_train_7_092",
+    "sent_heads": [
+     "The role of Ryan was particularly hard t",
+     "I was either drunk or fighting.",
+     "Lorenzo Washington appeared in the Texas",
+     "Coues had described these as rusty brown",
+     "This procedure went on every night, exce",
+     "In September, he caught the disease and "
+    ]
+   },
+   {
+    "id": "digit_train_7_093",
+    "sent_heads": [
+     "The film also stars Chlo\u00eb Sevigny, Peter",
+     "The two species also differ in details o",
+     "Spruyt himself trained as a lawyer at Le",
+     "Shortly after reaching peak intensity, S",
+     "The horror feature received generally po",
+     "The Lady Chapel was the earliest part of"
+    ]
+   },
+   {
+    "id": "digit_train_7_094",
+    "sent_heads": [
+     "The Persona series was first conceived a",
+     "As Briarcliff's student population expan",
+     "The survey supported a cheaper alternati",
+     "One woman died due to high surf near Cab",
+     "It began in Riemst in the Belgian provin",
+     "Unusually, a generic Chao is playable in"
+    ]
+   },
+   {
+    "id": "digit_train_7_095",
+    "sent_heads": [
+     "The cult, who has regularly pillaged the",
+     "Nova Scotia, Prince Edward Island and Ne",
+     "He was referring to Longdendale, and the",
+     "The Firebrand combines two belief system",
+     "Four policemen arrived and three of them",
+     "It shouldn't be a matter of if they're a"
+    ]
+   },
+   {
+    "id": "digit_train_7_096",
+    "sent_heads": [
+     "Clarke accepted his Grammy with his band",
+     "The episode guest stars Tom W.",
+     "This was immediately followed by a visit",
+     "The base of the stem is densely covered ",
+     "It peaked at number four on the Canadian",
+     "He is limited to his conceptual schemes."
+    ]
+   },
+   {
+    "id": "digit_train_7_097",
+    "sent_heads": [
+     "Likewise, he played an annual series of ",
+     "As they entered Valkenburg, the riders c",
+     "In fact, the young Princess Victoria had",
+     "Kolkata were wracked by infighting and c",
+     "The specific paradisaea is from Late Lat",
+     "However, the sample hook of the song was"
+    ]
+   },
+   {
+    "id": "digit_train_7_098",
+    "sent_heads": [
+     "Final Fantasy IV introduced the Active T",
+     "Once the melody was in place, Jackson fi",
+     "The latter two dropped out of competitio",
+     "She has held many key posts at Telecom A",
+     "Piz comes in unexpectedly, and the two e",
+     "One section, entitled \"Covent Garden \", "
+    ]
+   },
+   {
+    "id": "digit_train_7_099",
+    "sent_heads": [
+     "\" Most of the song lyrics are about urge",
+     "We realized that that kind of stopped be",
+     "Nydalen is the only underground station ",
+     "The third location was Tanzania, which i",
+     "He appears in the world of Flopside (the",
+     "She is half goddess, half prostitute, ch"
+    ]
+   },
+   {
+    "id": "digit_train_7_100",
+    "sent_heads": [
+     "He then received the financial sum he ha",
+     "\" He was more interested in sports and w",
+     "The \"austere Neo-Tudor \" house stood bac",
+     "rebeli specimens which consumed ant larv",
+     "Other psychologists have questioned the ",
+     "He also got an investment from another W"
+    ]
+   },
+   {
+    "id": "digit_train_7_101",
+    "sent_heads": [
+     "Denver and surrounding cities are home t",
+     "She did not advance to further rounds.",
+     "Marine) ground forces involved in the la",
+     "In November, he was also named as one of",
+     "Runs occurred at Morse's National Bank o",
+     "by Texas A & M students."
+    ]
+   },
+   {
+    "id": "digit_train_7_102",
+    "sent_heads": [
+     "Nash added, \" I've been a passionate sup",
+     "The episode focuses on the aftermath and",
+     "The European journey scenes and songs we",
+     "It was distributed by Nadeem Mandviwala ",
+     "Two bouts were featured on the undercard",
+     "The prince rode out alone to intervene w"
+    ]
+   },
+   {
+    "id": "digit_train_7_103",
+    "sent_heads": [
+     "Prior to the restaurant opening in the l",
+     "The Doctor realises that the cubes are p",
+     "They were also not particularly maneuver",
+     "\" Ferraro justified the statements by re",
+     "the government is lacking the political ",
+     "Syria continued to blame security issues"
+    ]
+   },
+   {
+    "id": "digit_train_7_104",
+    "sent_heads": [
+     "In addition, Dmowski wished to acquire t",
+     "Christians were obstinate in their non-c",
+     "And if he was a woman (of any color) he ",
+     "The Parliament and Council have been com",
+     "Several companies can provide Lock Haven",
+     "Ben Parker, gave Nelson the job despite "
+    ]
+   },
+   {
+    "id": "digit_train_7_105",
+    "sent_heads": [
+     "It then swirls round for the before-hand",
+     "Edgar, alongside Leonardo DiCaprio in th",
+     "The team heads to Hephaestus, transforme",
+     "Downburst winds can produce numerous haz",
+     "The attacks galvanized the community, an",
+     "For its graduate programs, U.S."
+    ]
+   },
+   {
+    "id": "digit_train_7_106",
+    "sent_heads": [
+     "It is in poor condition and damaged, as ",
+     "However, appropriate refining processes ",
+     "This horse breed has been used in milita",
+     "The crew survived, though another ship w",
+     "Rosy phones Mary (Lydia Alfonsi) for sol",
+     "\" The \" that's all, \" \" please bore some"
+    ]
+   },
+   {
+    "id": "digit_train_7_107",
+    "sent_heads": [
+     "The father rejects him and rushes home, ",
+     "The song features feedback, distorted dr",
+     "However, his attempts to re-instill conf",
+     "The shield includes four curved emblems ",
+     "Musically, the song uses a simple, upbea",
+     "As a result, the players were fined and "
+    ]
+   },
+   {
+    "id": "digit_train_7_108",
+    "sent_heads": [
+     "Meera grew up, motherless, in an affluen",
+     "Badfinger's portrait by photographer Les",
+     "In my mind, this all boils down to class",
+     "The video was filmed in four geographic ",
+     "Scott's plans were criticised and the bu",
+     "Justice Clarence Thomas wrote a separate"
+    ]
+   },
+   {
+    "id": "digit_train_7_109",
+    "sent_heads": [
+     "The colours are aposematic, warning pred",
+     "Hamlin passed Newman below the yellow li",
+     "The college is divided into several diff",
+     "I regard any bedroom I occupy as unfurni",
+     "Various enemies roam the overworld, and ",
+     "Georgia Tech and Auburn play football ga"
+    ]
+   },
+   {
+    "id": "digit_train_7_110",
+    "sent_heads": [
+     "The road briefly turns northeast before ",
+     "gairdneri) are commonly known as steelhe",
+     "Robertson, to be Collector of the Port o",
+     "She recovered and returned to work in No",
+     "Marjorie Lee Browne received her M.S.",
+     "Kouao denied all charges, and Manning pl"
+    ]
+   },
+   {
+    "id": "digit_train_7_111",
+    "sent_heads": [
+     "They swing by the festivities once they ",
+     "Th\u01a1's civilian government was plagued by",
+     "Uriel eventually overpowers Castiel, but",
+     "The army harassed the Scots up to Kincar",
+     "The Bloodhound Gang began as a small alt",
+     "Commentators recognise the case as a mil"
+    ]
+   },
+   {
+    "id": "digit_train_7_112",
+    "sent_heads": [
+     "\" Sodium amytal is a barbiturate that pu",
+     "The two battleships and the destroyers w",
+     "Partly based on this performance, the Bu",
+     "It came out of frustration on our parts,",
+     "The sugarcane crop fared badly as well, ",
+     "Barrett moved to Edinburgh and assumed t"
+    ]
+   },
+   {
+    "id": "digit_train_7_113",
+    "sent_heads": [
+     "Kurup, the last two mentioned being reci",
+     "The Washington defense was considered su",
+     "It is displayed exactly as it was after ",
+     "The skull of the type specimen has no de",
+     "Homer makes an appointment at the clinic",
+     "When audiences see the movie they're goi"
+    ]
+   },
+   {
+    "id": "digit_train_7_114",
+    "sent_heads": [
+     "Attention also focused on Cincinnati's p",
+     "LaBeouf finally finds a role he can disa",
+     "Lisa remains skeptical, and asks Stephen",
+     "A similar reason may account for the man",
+     "In both English- and Spanish-language li",
+     "It had been the same with other girl fri"
+    ]
+   },
+   {
+    "id": "digit_train_7_115",
+    "sent_heads": [
+     "In addition, Urban named Paul apostolic ",
+     "The sage Gritsamada was practicing penan",
+     "Bakshi states that he knew that \"Sparey ",
+     "\" Stephen Lum of The Cineplex criticized",
+     "There is a third Conn.",
+     "They shot down a helium-filled observati"
+    ]
+   },
+   {
+    "id": "digit_train_7_116",
+    "sent_heads": [
+     "At \"about this time \" Boniface writes to",
+     "There are differences between the German",
+     "The letter to Edwin urges him to accept ",
+     "Construction was very prolonged and the ",
+     "During the summer, the gopher's coat is ",
+     "In addition to these phase III studies, "
+    ]
+   },
+   {
+    "id": "digit_train_7_117",
+    "sent_heads": [
+     "[I] myself only returned presently, to g",
+     "Moreover, the presence of a competitor n",
+     "Those with blood groups other than type ",
+     "After the nationalization, the company s",
+     "Freeze (Maurice LaMarche) appears in the",
+     "The Gullivers Reiser contract involved f"
+    ]
+   },
+   {
+    "id": "digit_train_7_118",
+    "sent_heads": [
+     "\" Ackerson admits the Key is located in ",
+     "Most of the new city's banking and finan",
+     "His interest in design details, such as ",
+     "Griese was named starter shortly before ",
+     "They were chancellor Roland of S.",
+     "When Catherine found this out, she had h"
+    ]
+   },
+   {
+    "id": "digit_train_7_119",
+    "sent_heads": [
+     "Christy is the oldest of Carl and Helen ",
+     "Rowland Mason Ordish was appointed to de",
+     "This was the only time in Hobbs' career ",
+     "As with Steers & Stripes, Red Dirt Road ",
+     "Lomax, with the transcription being done",
+     "Paul Oscar became their groupie, and abo"
+    ]
+   },
+   {
+    "id": "digit_train_7_120",
+    "sent_heads": [
+     "He had a smattering of talented players,",
+     "Oscar panics and silences the phone, and",
+     "Two of the bombs hit the deck toward the",
+     "However, Milk also became Moscone's clos",
+     "\"Gerry \" Lenfest, who appointed C.Z.",
+     "Parliament controlled London, the south-"
+    ]
+   },
+   {
+    "id": "digit_train_7_121",
+    "sent_heads": [
+     "With the expedition's main goal abandone",
+     "Supreme Court had ruled Title I of NIRA ",
+     "And whatever their decision is, I will a",
+     "A loose association between individuals ",
+     "Katy Hudson saw Hudson exploring Christi",
+     "Pound was transferred to U.S."
+    ]
+   },
+   {
+    "id": "digit_train_7_122",
+    "sent_heads": [
+     "Straley's role in developing The Last of",
+     "Open Chess Championship in Cleveland, wi",
+     "The community established close relation",
+     "Though some biographers describe him as ",
+     "It was released by Parlophone Records as",
+     "John Lightfoot, a naturalist, and Rev."
+    ]
+   },
+   {
+    "id": "digit_train_7_123",
+    "sent_heads": [
+     "Elements of politicisation appear in som",
+     "They each look out over either the adjoi",
+     "I cannot imagine that the president will",
+     "Equivalently, f is both one-to-one (inje",
+     "You get me caught-and-bowled whenever yo",
+     "Shooting took place almost entirely in L"
+    ]
+   },
+   {
+    "id": "digit_train_7_124",
+    "sent_heads": [
+     "Which is why John felt that audiences wo",
+     "This is, without exaggeration or embelli",
+     "\u00c6thelstan evidently travelled through Be",
+     "There have been several Love Hina soundt",
+     "Much of Shetland's economy depends on th",
+     "The trailers of Ek Main Aur Ekk Tu faced"
+    ]
+   },
+   {
+    "id": "digit_train_7_125",
+    "sent_heads": [
+     "After completing his tenure at No.",
+     "After playing baseball at J.",
+     "Many subjects did not respond well, expe",
+     "The Queen reluctantly asked Palmerston t",
+     "I felt compelled to confront it.",
+     "Common thermal mass materials include st"
+    ]
+   },
+   {
+    "id": "digit_train_7_126",
+    "sent_heads": [
+     "Navarin struck two of these mines and ca",
+     "The first war of independence began in t",
+     "Meanwhile, Heraclius prepared for a coun",
+     "Position-specific training is then offer",
+     "At Paris \u2013 Roubaix, Cancellara finished ",
+     "Beginning players first learn open chord"
+    ]
+   },
+   {
+    "id": "digit_train_7_127",
+    "sent_heads": [
+     "There were period rooms illustrating liv",
+     "He is a very energized kind of confident",
+     "Eckfeldt often spent from his own funds ",
+     "Spring and autumn are transitional betwe",
+     "The group then passes through the Black ",
+     "The Republic, however, was short-lived, "
+    ]
+   },
+   {
+    "id": "digit_train_7_128",
+    "sent_heads": [
+     "The section of old U.S.",
+     "Napoleon would remain as Emperor of Fran",
+     "The polar bear was mostly depicted by ha",
+     "Cranmer's burning was postponed and unde",
+     "Clarke subsequently lodged a complaint w",
+     "Included with the release of WWE SmackDo"
+    ]
+   },
+   {
+    "id": "digit_train_7_129",
+    "sent_heads": [
+     "The eagle is holding a ribbon with the l",
+     "The key symptom of disequilibrium is thi",
+     "Strong upper level wind shear inhibited ",
+     "Confusion about how to refer to these ne",
+     "The storm damaged several highways in th",
+     "I've never trained or had any lessons."
+    ]
+   },
+   {
+    "id": "digit_train_7_130",
+    "sent_heads": [
+     "This was labeled in one article \"' hypot",
+     "The song was made available for digital ",
+     "Despite its name, the historic gunfight ",
+     "Brown, George Shiras Jr., Edward Douglas",
+     "In those who are not breastfeeding, fert",
+     "George Washington named President in ord"
+    ]
+   },
+   {
+    "id": "digit_train_7_131",
+    "sent_heads": [
+     "This unusual triad occurs only in one su",
+     "Players found using performance-enhancin",
+     "McCain's victory put a final end to Mech",
+     "The novelist Frances Brooke (d.",
+     "She was portrayed as a strong, smart and",
+     "The fighting grew more intense as Percy'"
+    ]
+   },
+   {
+    "id": "digit_train_7_132",
+    "sent_heads": [
+     "The sixth week opened with a major rally",
+     "Renner said that great care was taken to",
+     "This helped rebuild damage houses, clear",
+     "They had a cooked dinner.",
+     "The most prominent opponents of Black's ",
+     "The economy was in no small part depende"
+    ]
+   },
+   {
+    "id": "digit_train_7_133",
+    "sent_heads": [
+     "During this period, there was also exten",
+     "Prosecutions ensued, and many were put i",
+     "Xavier visits Magneto in a prison cell c",
+     "The lyrics call the listener to join in ",
+     "Eventually, the Princess Royal fell ill,",
+     "The episode received mostly positive rev"
+    ]
+   },
+   {
+    "id": "digit_train_7_134",
+    "sent_heads": [
+     "Alistair is found at his MIT office.",
+     "Each train is made up of six cars, each ",
+     "Arviz\u00fa said that Costa Rica should make ",
+     "Solti's recordings with the Chicago Symp",
+     "Although he remained in coaching he did ",
+     "The iPad version also received highly po"
+    ]
+   },
+   {
+    "id": "digit_train_7_135",
+    "sent_heads": [
+     "Congress had set the length of the cours",
+     "Written as \"more of an egghead \", she el",
+     "The sperm of liverworts is biflagellate,",
+     "Collybia cookei is found in Europe, Asia",
+     "Devers observed testing of one just days",
+     "The altitudes of high-\u00e9tage clouds like "
+    ]
+   },
+   {
+    "id": "digit_train_7_136",
+    "sent_heads": [
+     "The poem follows a common theme in much ",
+     "When Falkenberg and N\u00e6sheim found B\u00e5genh",
+     "I didn't see a lot of difference \", said",
+     "He said Scientology critics can be trick",
+     "Sky Showbiz brand Jane as the serial's \"",
+     "Peter of Sebaste and St."
+    ]
+   },
+   {
+    "id": "digit_train_7_137",
+    "sent_heads": [
+     "Mediaeval chroniclers have provided dubi",
+     "One writer for the magazine wrote, \" Lik",
+     "She was included in the episode at the b",
+     "Angelou, instead of depending upon plot,",
+     "We just won the race, that's all.",
+     "No\u00e9mi's influence on Raymond during the "
+    ]
+   },
+   {
+    "id": "digit_train_7_138",
+    "sent_heads": [
+     "Zambaccian however cites a contrasting s",
+     "It is important to realize the enormous ",
+     "An active philanthropist, Blackstone was",
+     "The number of men present at the battle ",
+     "The breed is often chestnut in color, an",
+     "The following day, the Joint Typhoon War"
+    ]
+   },
+   {
+    "id": "digit_train_7_139",
+    "sent_heads": [
+     "The location outside of downtown Seattle",
+     "Both are enormous, the latter to hold pa",
+     "Root form implants; the most common type",
+     "The next match on the card was the Six-M",
+     "They examined the reliability of the fue",
+     "Charlie later struggles to deal with Rub"
+    ]
+   },
+   {
+    "id": "digit_train_7_140",
+    "sent_heads": [
+     "The Halperts leave the office looking sa",
+     "The report was, however, denied by both ",
+     "Wilfrid helped the missionary efforts of",
+     "She was often shrewd and \"a warm friend ",
+     "Especially in the hen, the breed is very",
+     "That's all I can say..."
+    ]
+   },
+   {
+    "id": "digit_train_7_141",
+    "sent_heads": [
+     "Political philosopher and legal theorist",
+     "It became an instant viral video as soon",
+     "The Ross's Arms public house at Higher G",
+     "The iris is a light silver-gray.",
+     "Burch reclassified the Socorro springsna",
+     "After the conclusion of the maneuvers, t"
+    ]
+   },
+   {
+    "id": "digit_train_7_142",
+    "sent_heads": [
+     "Glover then rode up to take command of t",
+     "This was refused by the landlords, which",
+     "The village sites in southern Taiwan wer",
+     "Later monuments include those of Richard",
+     "The title, according to Wellek and Warre",
+     "The frieze was once brightly painted in "
+    ]
+   },
+   {
+    "id": "digit_train_7_143",
+    "sent_heads": [
+     "For this, Hichens was awarded a second B",
+     "It has a longer tail than V.",
+     "They anticipated each other's movements ",
+     "Real life doesn't work like that \".",
+     "Quatermass steals a guard's uniform from",
+     "It contains many themes that appeared on"
+    ]
+   },
+   {
+    "id": "digit_train_7_144",
+    "sent_heads": [
+     "Each character is permanently locked int",
+     "The wooden core gives the bow its shape ",
+     "The ancient Maya had diverse and sophist",
+     "Another girl taken from her family.",
+     "\"Dream a Little Dream of Me \" delves int",
+     "the greatest twitch and greed game of al"
+    ]
+   },
+   {
+    "id": "digit_train_7_145",
+    "sent_heads": [
+     "It is similar in many respects to zinc b",
+     "In some areas, an earth closet was used.",
+     "Naresh is fatally assaulted by J.",
+     "Within six months, Ar\u0101js and his men wou",
+     "Soon the cavalry were practising working",
+     "The case was successful, and the outcome"
+    ]
+   },
+   {
+    "id": "digit_train_7_146",
+    "sent_heads": [
+     "He also expressed concern that the UA wo",
+     "During the war, Hammond spent much of hi",
+     "Wheelock arranged for Nathaniel Hurd, a ",
+     "Soon after this, Dobroselova announces t",
+     "The quinine bark tree (Cinchona officina",
+     "Milk's energy, affinity for pranking, an"
+    ]
+   },
+   {
+    "id": "digit_train_7_147",
+    "sent_heads": [
+     "Hill are associated with the Electric Co",
+     "Owing to the success of the film, the nu",
+     "Riesling is the second leading white gra",
+     "Nero fights Agnus fully unlocking his ow",
+     "Unlike other early cantatas, it has no i",
+     "For their actions, the participating Cam"
+    ]
+   },
+   {
+    "id": "digit_train_7_148",
+    "sent_heads": [
+     "China remains neutral, and maintains con",
+     "Abusing his wife's power as mayor, Peter",
+     "Katz said although \"there was no evidenc",
+     "Several of the band's tracks have appear",
+     "A (' model A' or, more accurately,' batc",
+     "Due to the weak nature of Frederic, mini"
+    ]
+   },
+   {
+    "id": "digit_train_7_149",
+    "sent_heads": [
+     "Abolitionists, notably William Wilberfor",
+     "Tam's suicide was greeted with a mixed r",
+     "In this capacity he was involved in the ",
+     "In this episode, Arthur Dales (M.",
+     "Although the dependents of U.S.",
+     "Even wide receivers Bob Chandler and J.D"
+    ]
+   },
+   {
+    "id": "digit_train_7_150",
+    "sent_heads": [
+     "Darlington's supporters consider Hartlep",
+     "Several fungi are associated with canker",
+     "Eaton's relations with North-Eastern Are",
+     "The Governor's Mansion is located in a r",
+     "In his right hand, the man holds a scept",
+     "Its main contact call has been described"
+    ]
+   },
+   {
+    "id": "digit_train_7_151",
+    "sent_heads": [
+     "He supported Cantrill in the general ele",
+     "In addition to consultation with a neuro",
+     "A bi-annual convention called ArielCon i",
+     "cyclic neutropenia and human immunodefic",
+     "Oborne points out that, judged in cricke",
+     "MacDonald, and Frederick Varley \u2014 were r"
+    ]
+   },
+   {
+    "id": "digit_train_7_152",
+    "sent_heads": [
+     "They were poor sea boats; they rolled an",
+     "Hippopotamuses are gregarious, living in",
+     "This antibody is used for treating minim",
+     "None of these proposals were accepted.",
+     "The second set which Djokovic won was th",
+     "Some allow the cleaner to venture inside"
+    ]
+   },
+   {
+    "id": "digit_train_7_153",
+    "sent_heads": [
+     "Sometimes she moved out of necessity, su",
+     "For a stretch of almost twenty years, he",
+     "Jamia Hafsa was a madrassa for women loc",
+     "The episode includes a variety of cultur",
+     "His divorce went through, and on his ret",
+     "Edge of my seat for the whole hour."
+    ]
+   },
+   {
+    "id": "digit_train_7_154",
+    "sent_heads": [
+     "Henry now wished to make peace with Rhys",
+     "It's a big budget shoot, the kind we don",
+     "integrifolia are very similar in appeara",
+     "Nothing I can count on and that makes it",
+     "It was produced by Swedish House Mafia, ",
+     "three times; however, he lives and neith"
+    ]
+   },
+   {
+    "id": "digit_train_7_155",
+    "sent_heads": [
+     "It is as a symphonist that Vaughan Willi",
+     "president's daughter Ashley Graham who i",
+     "During this time, the Japanese were also",
+     "After the war Wi\u015bniowiecki engaged in a ",
+     "The Grants dined with Queen Victoria at ",
+     "Because they were pressed on the premaxi"
+    ]
+   },
+   {
+    "id": "digit_train_7_156",
+    "sent_heads": [
+     "The physical connection with the Piccadi",
+     "While at York, Howarth played for Englan",
+     "Instead he took council with the populis",
+     "\" He was a voracious reader.",
+     "as it necessarily involves adopting a co",
+     "The day of this announcement, Gehry agre"
+    ]
+   },
+   {
+    "id": "digit_train_7_157",
+    "sent_heads": [
+     "Flash floods were also observed in Mount",
+     "In addition, the company carried out an ",
+     "Cook combined an anti-war theme with a G",
+     "\" Helena \", the penultimate track, was w",
+     "Officials in the Miyazaki Prefecture iss",
+     "The film is notable for catapulting Mano"
+    ]
+   },
+   {
+    "id": "digit_train_7_158",
+    "sent_heads": [
+     "The largest producer is Chile.",
+     "After the title win, La Peste Negra cont",
+     "The Nazi anti-tobacco policies were not ",
+     "The Gulf Coast Exploreum Science Center ",
+     "Since that mask was usually worn by Ray ",
+     "The west-facing slope of Hart Mountain r"
+    ]
+   },
+   {
+    "id": "digit_train_7_159",
+    "sent_heads": [
+     "He was the son of Ernest M.",
+     "IGN's staff bemoaned its exclusion from ",
+     "We're not criminals, we don't want to be",
+     "The episode was written by Donick Cary a",
+     "Nixon, however, rejected both proposals ",
+     "This sight is said to have \" filled him "
+    ]
+   },
+   {
+    "id": "digit_train_7_160",
+    "sent_heads": [
+     "Whatever power she had in Wessex was no ",
+     "Gold was also discovered in Southern Cal",
+     "Kedrenos, however, considers Peteinos to",
+     "Again, only the lowest floor remains, ab",
+     "Nelson was acquainted with the band's mu",
+     "Nelson joined the Tau Kappa Epsilon frat"
+    ]
+   },
+   {
+    "id": "digit_train_7_161",
+    "sent_heads": [
+     "Perkins broke in two and quickly sank; n",
+     "Soon after the outbreak of war, the King",
+     "Nimitz, depending on whether an air or a",
+     "This only frustrates the rest of the Sim",
+     "Their Boer opponents taught not only the",
+     "The Inquirer is now part of Philadelphia"
+    ]
+   },
+   {
+    "id": "digit_train_7_162",
+    "sent_heads": [
+     "X, is portrayed as Usher's second seduct",
+     "The rider with the most points won the c",
+     "Command passed to Major Gough but by lat",
+     "Additionally, there was a points classif",
+     "Hawke was born a year later.",
+     "They then moved to Shandia, a Quechua mi"
+    ]
+   },
+   {
+    "id": "digit_train_7_163",
+    "sent_heads": [
+     "In addition, light amounts of precipitat",
+     "The Gulf Freeway and Bayport Blvd.",
+     "Turner plays the point guard, shooting g",
+     "When roosting communally, scaly-breasted",
+     "Complex arrangements and elaborate, meli",
+     "Greater London is split for some purpose"
+    ]
+   },
+   {
+    "id": "digit_train_7_164",
+    "sent_heads": [
+     "I couldn't have done it.",
+     "The role eventually went to Ken Kirzinge",
+     "During the assault on Okinawa, North Car",
+     "His death is therefore not a sign of his",
+     "Born in New South Wales, Corey was emplo",
+     "This was replaced by British Railways ex"
+    ]
+   },
+   {
+    "id": "digit_train_7_165",
+    "sent_heads": [
+     "\" Pond scored the first touchdown in Uni",
+     "During the sessions, Usher asked them to",
+     "The Hustler was acknowledged as the sixt",
+     "Phil Tan mixed it, and Ne-Yo provided vo",
+     "Bullen's father, Alex, was a chemical en",
+     "He agreed to return with the men to Fran"
+    ]
+   },
+   {
+    "id": "digit_train_7_166",
+    "sent_heads": [
+     "Cobain was dissatisfied with Channing's ",
+     "The album reached a peak of No.",
+     "The surviving sepoys and their leader we",
+     "Riot Act features a diverse sound, inclu",
+     "At least two textbooks base their descri",
+     "\" One week later, in Frohwerk v."
+    ]
+   },
+   {
+    "id": "digit_train_7_167",
+    "sent_heads": [
+     "It is also eaten in Mexico.",
+     "He baked his own bread and scones and ma",
+     "Men were also motivated by positive mean",
+     "Makers of PA systems and loudspeakers Ta",
+     "Because of his anti-slavery views, he wa",
+     "A now defunct town called Brush Point wa"
+    ]
+   },
+   {
+    "id": "digit_train_7_168",
+    "sent_heads": [
+     "Dean, however, tricks her into touching ",
+     "Two years earlier, Beiderbecke had influ",
+     "The extinctions were apparently fairly s",
+     "Nevertheless, Fender retained his place ",
+     "But one thing is certain: acquiring this",
+     "Successful candidates advanced to milita"
+    ]
+   },
+   {
+    "id": "digit_train_7_169",
+    "sent_heads": [
+     "Cordray's opponents in the race were Mic",
+     "One of the more memorable plays of his c",
+     "Henry Warner Slocum arrived on the field",
+     "This version was poorly received.",
+     "Tirpitz's crew suffered heavy casualties",
+     "The SNSN consists of twenty vertical-com"
+    ]
+   },
+   {
+    "id": "digit_train_7_170",
+    "sent_heads": [
+     "They were reported missing after the exp",
+     "Opponents of the plan criticize this tax",
+     "involutus has been recorded under the bi",
+     "Davis at the William Davis Centre for Ac",
+     "They suffered many other hardships and e",
+     "He later characterizes his life after lo"
+    ]
+   },
+   {
+    "id": "digit_train_7_171",
+    "sent_heads": [
+     "Sa'd al-Dawla refused to continue paying",
+     "His financial affairs strained, Vick was",
+     "\"I Care \" is an R & B power ballad.",
+     "Lincoln, in collaboration with abolition",
+     "Changes were made to the buildings, part",
+     "Video games use this element, including "
+    ]
+   },
+   {
+    "id": "digit_train_7_172",
+    "sent_heads": [
+     "Before dying, Snape tells Harry to take ",
+     "The film was also dubbed into Turkish.",
+     "The Torchwood Three team, sans Ianto Jon",
+     "Welding a handle onto a pitcher can usua",
+     "The technique of fire-gilding with mercu",
+     "Laying pipe took several stages."
+    ]
+   },
+   {
+    "id": "digit_train_7_173",
+    "sent_heads": [
+     "As the game progresses, the player's cho",
+     "Examples include Pinus radiata and Pinus",
+     "Fulcher refused the ticket request and M",
+     "These make direct comparisons between ba",
+     "He also described the song as the \" fres",
+     "Freightliner Group move coal imported th"
+    ]
+   },
+   {
+    "id": "digit_train_7_174",
+    "sent_heads": [
+     "The name brandub means \" black raven \".",
+     "The plain of Tombland was the site of No",
+     "They have made an undesirable effect on ",
+     "Severus Snape hears of Harry's return an",
+     "After daylight, a counterattack by B Com",
+     "They are territorial when food is not ab"
+    ]
+   },
+   {
+    "id": "digit_train_7_175",
+    "sent_heads": [
+     "While praising Noble's performance, Isle",
+     "He is very emotional due to Hannah's (La",
+     "Barr resigned as CEO before the end of t",
+     "These common signs are supportive of the",
+     "The eggs are mottled and camouflaged.",
+     "The respiration and circulation process "
+    ]
+   },
+   {
+    "id": "digit_train_7_176",
+    "sent_heads": [
+     "He also continued to guide the Heraldry ",
+     "Tasha Yar (Denise Crosby) and Worf that ",
+     "Supreme Court sided against the Scotts.",
+     "\" Uzanne's written style was characteriz",
+     "The obverse of the Lafayette dollar feat",
+     "rendered to the promotion of the art of "
+    ]
+   },
+   {
+    "id": "digit_train_7_177",
+    "sent_heads": [
+     "He did not advance to later rounds.",
+     "It is more evident this season that livi",
+     "Many of the buildings here were six to e",
+     "Thomas was an attendant at Kew at the ti",
+     "Its jelly mould ceiling in a Moorish sty",
+     "Ipratropium is a short-acting agent whil"
+    ]
+   },
+   {
+    "id": "digit_train_7_178",
+    "sent_heads": [
+     "Soon after World War II, amateur radio, ",
+     "in need of immediate assistance \", accor",
+     "He grew up in Seagrave and Myrtle and we",
+     "Jones left the group, forcing House of K",
+     "Hawkins set up a workshop on site at the",
+     "The official report of Justice B."
+    ]
+   },
+   {
+    "id": "digit_train_7_179",
+    "sent_heads": [
+     "Rocks containing carbonate were found ar",
+     "Instead, they recommended that the munic",
+     "Augustine, Gregory of Nyssa, Gregory of ",
+     "Counter Intelligence Corps headquarters ",
+     "Both stories deal with the confrontation",
+     "Eastern Daylight Time in the United Stat"
+    ]
+   },
+   {
+    "id": "digit_train_7_180",
+    "sent_heads": [
+     "Free-living turbellarians are mostly bla",
+     "At this point, competition from the rail",
+     "They're really hunted by their fans much",
+     "Before the cover of Sgt.",
+     "In anger, Bueno started chasing the Blaz",
+     "Hoffman exhibited a strong throwing arm "
+    ]
+   },
+   {
+    "id": "digit_train_7_181",
+    "sent_heads": [
+     "The building faces Catherine Street (ear",
+     "The withdrawal to the Potomac that could",
+     "Scully cuts open Torrance's body bag and",
+     "The lavish outpourings of adulation and ",
+     "Bush took a tour of the devastated regio",
+     "Ahalya is cursed and abandoned by her fa"
+    ]
+   },
+   {
+    "id": "digit_train_7_182",
+    "sent_heads": [
+     "\"A Meeting Between Hearts RPG \").",
+     "However, religious education would be ex",
+     "They reach Pushal, \"the capital of the R",
+     "Geordi La Forge (LeVar Burton) identifie",
+     "The king of Gaochang refused to submit t",
+     "The eye socket was circular rather than "
+    ]
+   },
+   {
+    "id": "digit_train_7_183",
+    "sent_heads": [
+     "From these passes, the climbs follow rou",
+     "The ship's construction was delayed by m",
+     "Incubation is done by the female while t",
+     "Early Romanian chronicles attribute the ",
+     "He too was surprised by what he found.",
+     "John Viener worked as the executive stor"
+    ]
+   },
+   {
+    "id": "digit_train_7_184",
+    "sent_heads": [
+     "Lamar, was a former Mississippi Senator ",
+     "This star system consists of a dim red d",
+     "To these ends it organises concerts, lec",
+     "During the project the researchers studi",
+     "Steiner's new and Williams' old briefcas",
+     "Popular actors Dileep and Mamta Mohandas"
+    ]
+   },
+   {
+    "id": "digit_train_7_185",
+    "sent_heads": [
+     "Coward completed a one-act satire, The B",
+     "The next morning, Sakae is discovered de",
+     "In response, Sue Ellen shoots J.R.",
+     "It was released in Germany under the tit",
+     "He urged for better conditions for facto",
+     "Only after becoming a bishop does the po"
+    ]
+   },
+   {
+    "id": "digit_train_7_186",
+    "sent_heads": [
+     "He tries different jobs, such as cereal ",
+     "Franckenberg returned to the region the ",
+     "In mid-November, remixes of \" Queer \" we",
+     "Zimbabwe has also done well in golf.",
+     "It was first headquartered in St.",
+     "Johnny declares the monarchy to be disso"
+    ]
+   },
+   {
+    "id": "digit_train_7_187",
+    "sent_heads": [
+     "The names of women were not recorded in ",
+     "Along with the storm, spooky sounds and ",
+     "The Nueces estuary provides an ecosystem",
+     "to discredit the Guatemalan government.",
+     "The sixgill stingray gives live birth, w",
+     "However, upon learning that J.R."
+    ]
+   },
+   {
+    "id": "digit_train_7_188",
+    "sent_heads": [
+     "She wrote to her friend Elizabeth J.",
+     "Gates eventually apologized for his role",
+     "The find was announced to the press duri",
+     "The hurricane's powerful winds resulted ",
+     "\" Wale's mentor, Mark Ronson, sent the t",
+     "It has been trending on Twitter and YouT"
+    ]
+   },
+   {
+    "id": "digit_train_7_189",
+    "sent_heads": [
+     "Siddhu's friends doubt Kumari's characte",
+     "The law inevitably has to intervene then",
+     "Important agricultural products include ",
+     "In Lineage and Legacies, Fodra is reacti",
+     "Robyn does not appear in the video.",
+     "Commerce Square is a Class-A, high-rise "
+    ]
+   },
+   {
+    "id": "digit_train_7_190",
+    "sent_heads": [
+     "Later that day, gale warnings were issue",
+     "There he operated a trading post and occ",
+     "The cap surface is initially downy and l",
+     "Josquin lived during a transitional stag",
+     "At home, Tony Prolo and his wife attend ",
+     "Oborne judges both of these decisions fa"
+    ]
+   },
+   {
+    "id": "digit_train_7_191",
+    "sent_heads": [
+     "I loved that show and that cast so much.",
+     "This included a bypass around Kemptville",
+     "A partially collapsed sea cave called Th",
+     "It accepts debit cards, cash, and credit",
+     "The train engine collided with the pilot",
+     "High winds spread vegetative debris, clo"
+    ]
+   },
+   {
+    "id": "digit_train_7_192",
+    "sent_heads": [
+     "Users can participate in forums hosted b",
+     "The south front was demolished and the b",
+     "In Utah, a product from Kentucky was exo",
+     "The olive's natural distribution is limi",
+     "The Dresden codex contains information r",
+     "Later, he gave speeches in the city."
+    ]
+   },
+   {
+    "id": "digit_train_7_193",
+    "sent_heads": [
+     "The event highlighted the animosity betw",
+     "Its theme was described as \" the kind of",
+     "The Khmer Rouge regime, which had not in",
+     "Giant of Television Without Pity graded ",
+     "The way Ichigo becomes a Soul Reaper was",
+     "The most Harley Earl Awards and Harley J"
+    ]
+   },
+   {
+    "id": "digit_train_7_194",
+    "sent_heads": [
+     "The first versions of SAS were named aft",
+     "\"My approach was to hire her and then le",
+     "Connelly sang in phonetic Japanese as sh",
+     "Mary, however, decided that no further p",
+     "Two redubbed versions of the film have b",
+     "Since airing, the episode has received g"
+    ]
+   },
+   {
+    "id": "digit_train_7_195",
+    "sent_heads": [
+     "It is often called \u00e1o d\u00e0i Vi\u1ec7t Nam to li",
+     "It gallops only when in real danger.",
+     "Marco to elect the new Pope.",
+     "Makoto first appears when the cast is in",
+     "The game features a unique way of travel",
+     "The South Pennines support international"
+    ]
+   },
+   {
+    "id": "digit_train_7_196",
+    "sent_heads": [
+     "Slavko Brezovski designed the Church of ",
+     "Grant's private Secretary Orville E.",
+     "Before the testing could begin, one of h",
+     "Trouble struck when Marty Katz was sent ",
+     "The M\u0101ori had many uses for the gum, whi",
+     "However, his shot went just wide."
+    ]
+   },
+   {
+    "id": "digit_train_7_197",
+    "sent_heads": [
+     "Cumanus' life and career after his banis",
+     "Gills are interconnected at their bases ",
+     "\" Pitchfork Media reviewer James P.",
+     "At the hearing, several of Claudius' inf",
+     "Eve attempted to save Aya by sending her",
+     "Increasing upper-level wind shear tempor"
+    ]
+   },
+   {
+    "id": "digit_train_7_198",
+    "sent_heads": [
+     "This feature is a deep rocky pit, filled",
+     "S., and according to The New York Times,",
+     "Versus is marked as \"the last chapter of",
+     "Joseph Chamberlain then sent Neville to ",
+     "In Europe, the single entered on six nat",
+     "Thietmar was the lay patron who assemble"
+    ]
+   },
+   {
+    "id": "digit_train_7_199",
+    "sent_heads": [
+     "It's like you have a choice, you can bec",
+     "Scientology promotes not watching the ne",
+     "The complaint was successful, and Chen b",
+     "But the characters didn't resonate.",
+     "Abrahams Creek begins in Franklin Townsh",
+     "The storm accelerated, and headed direct"
+    ]
+   },
+   {
+    "id": "digit_eval_5_000",
+    "sent_heads": [
+     "In a later meeting with General Paul D.",
+     "Puccini vociferously objected, as did hi",
+     "Raw materials for khadi are restricted t",
+     "This likely contributed to even greater "
+    ]
+   },
+   {
+    "id": "digit_eval_5_001",
+    "sent_heads": [
+     "Because of his damaged kidney, Hoffman w",
+     "She's clearly superior to Roxette's unco",
+     "A friend of the band, Monte A.",
+     "It also employs computer-based training "
+    ]
+   },
+   {
+    "id": "digit_eval_5_002",
+    "sent_heads": [
+     "The \"snow white waxy cap \" (H.",
+     "For many years, whilst producing lemon o",
+     "In the West, most kingdoms incorporated ",
+     "Tyla remains calm even as Ruwan edges to"
+    ]
+   },
+   {
+    "id": "digit_eval_5_003",
+    "sent_heads": [
+     "\" He gave the episode a score of zero ou",
+     "Starscream and the Combaticons capture O",
+     "It's the reasons that I'm singing and it",
+     "Streets caught no passes against either "
+    ]
+   },
+   {
+    "id": "digit_eval_5_004",
+    "sent_heads": [
+     "Meera's mother (Neetu Singh) left her fa",
+     "\" Within the series, Bree Hodge (Marcia ",
+     "In addition to oranges and grapes, the r",
+     "The band structure of carbon nanotubes h"
+    ]
+   },
+   {
+    "id": "digit_eval_5_005",
+    "sent_heads": [
+     "They consider suicide, but choose to spe",
+     "Although some residents welcomed them in",
+     "The demarcation line east of Bastuny was",
+     "Kesha's vocals uses Auto-Tune and vocode"
+    ]
+   },
+   {
+    "id": "digit_eval_5_006",
+    "sent_heads": [
+     "Jerome and the Latin Christian authors f",
+     "Universal Studios purchased the rights t",
+     "offered for Puerto Rico and Cuba.",
+     "Another man drowned while trying to cros"
+    ]
+   },
+   {
+    "id": "digit_eval_5_007",
+    "sent_heads": [
+     "The lawsuit also names the venue, Playma",
+     "At one point she was beauty editor of Bl",
+     "With the advent of the global financial ",
+     "The ruins of the priory are possibly the"
+    ]
+   },
+   {
+    "id": "digit_eval_5_008",
+    "sent_heads": [
+     "The storm also dropped torrential rainfa",
+     "It furthermore called the soundtrack \" s",
+     "Dream did a great job producing this tra",
+     "Augustus became a wealthy shopkeeper, ru"
+    ]
+   },
+   {
+    "id": "digit_eval_5_009",
+    "sent_heads": [
+     "The north and south faces are clear glas",
+     "Not all of Verdi's personal qualities we",
+     "Most compilations feature the game large",
+     "The calf nurses for three years, althoug"
+    ]
+   },
+   {
+    "id": "digit_eval_5_010",
+    "sent_heads": [
+     "He was in an academic community and trea",
+     "Then-executive producer David Mirkin, wh",
+     "The two bedroom apartments also included",
+     "Upon arrival, they were told they had to"
+    ]
+   },
+   {
+    "id": "digit_eval_5_011",
+    "sent_heads": [
+     "Gollob underwent surgery by Prof.",
+     "I don't know Vazgen's answers to very fe",
+     "The film's slogan: \" Casino Royale is to",
+     "The third generation MacBook Pro receive"
+    ]
+   },
+   {
+    "id": "digit_eval_5_012",
+    "sent_heads": [
+     "\u2018 The Georgia Tech team was wild.",
+     "These, according to P\u00e4cht, should be def",
+     "Fishers have been observed to feed on th",
+     "Longman asked for an explanation, submit"
+    ]
+   },
+   {
+    "id": "digit_eval_5_013",
+    "sent_heads": [
+     "The houses are split by plain pilasters ",
+     "In Anguilla, residents near the coast we",
+     "However, Grant missed an opportunity to ",
+     "After the release of the album in the Un"
+    ]
+   },
+   {
+    "id": "digit_eval_5_014",
+    "sent_heads": [
+     "During World War II, fuel stocks were us",
+     "Most large cities around the world now h",
+     "Below this, anaerobic bacteria break dow",
+     "Other popular cottage garden annuals inc"
+    ]
+   },
+   {
+    "id": "digit_eval_5_015",
+    "sent_heads": [
+     "Minor worker specimens are usually exami",
+     "The three commissioners are elected from",
+     "But others can also enjoy this film for ",
+     "Once they did so, they were said to gain"
+    ]
+   },
+   {
+    "id": "digit_eval_5_016",
+    "sent_heads": [
+     "Historically, box lacrosse has been excl",
+     "Alcohol was not served again in the Haye",
+     "Watson believed the storyline would have",
+     "There, they find Alice's body, badly bur"
+    ]
+   },
+   {
+    "id": "digit_eval_5_017",
+    "sent_heads": [
+     "The constituency forms part of the elect",
+     "In the field of entertainment, Mutual bu",
+     "He was discharged from hospital in early",
+     "The honoured mahant took the name of Fra"
+    ]
+   },
+   {
+    "id": "digit_eval_5_018",
+    "sent_heads": [
+     "These challenges include defeating a bos",
+     "He did so on the final day allowed by th",
+     "Rose petals grown at Camulos were shippe",
+     "James the Moor-slayer) as a readily iden"
+    ]
+   },
+   {
+    "id": "digit_eval_5_019",
+    "sent_heads": [
+     "Andrew Graham-Dixon asserts all Dutch Go",
+     "Shepherd) and Kylie Platt (Paula Lane) f",
+     "It has been translated into Dutch and En",
+     "He summarized the soundtrack album: \"It'"
+    ]
+   },
+   {
+    "id": "digit_eval_5_020",
+    "sent_heads": [
+     "Somehow, no game has quite achieved that",
+     "Rowling, and have a reputation for their",
+     "A win by Oklahoma where they never trail",
+     "The officer corps of FANK was generally "
+    ]
+   },
+   {
+    "id": "digit_eval_5_021",
+    "sent_heads": [
+     "Colt hired a gunsmith by the name of Joh",
+     "Revival of the issue generated a fresh w",
+     "Prominent US bands of this generation ar",
+     "They prefer to talk about sex instead of"
+    ]
+   },
+   {
+    "id": "digit_eval_5_022",
+    "sent_heads": [
+     "The actor and film historian Mohan V.",
+     "Harper was reelected in Calgary Heritage",
+     "Mosser was killed by a mail bomb sent to",
+     "Faryl lost to Only Men Aloud's Band of B"
+    ]
+   },
+   {
+    "id": "digit_eval_5_023",
+    "sent_heads": [
+     "Michael and Toby later pass the time pla",
+     "Upon his retirement his father establish",
+     "Como simply said, \" Goodnight, folks, \" ",
+     "The Mozarts were received generously, bu"
+    ]
+   },
+   {
+    "id": "digit_eval_5_024",
+    "sent_heads": [
+     "The first intersection is with Jersey Av",
+     "Maryse, however, reached the ropes and c",
+     "not better for me, but something differe",
+     "Formula One has become a joke."
+    ]
+   },
+   {
+    "id": "digit_eval_5_025",
+    "sent_heads": [
+     "As a result, the documentary took six ye",
+     "Kato and Tanaka decided to produce an in",
+     "Feldman explicitly stated \"nobody bought",
+     "This was done initially to lower city sp"
+    ]
+   },
+   {
+    "id": "digit_eval_5_026",
+    "sent_heads": [
+     "\" Avakian said the company hopes to buil",
+     "Ferguson High School in Newport News.",
+     "The spore mass is blended with mustard s",
+     "After the battle, Spee took his ships no"
+    ]
+   },
+   {
+    "id": "digit_eval_5_027",
+    "sent_heads": [
+     "The pore surface is depressed around the",
+     "Bakshi wanted to use pinball as a metaph",
+     "Series co-creator Larry David wrote the ",
+     "\" Kohli has called this tournament as th"
+    ]
+   },
+   {
+    "id": "digit_eval_5_028",
+    "sent_heads": [
+     "As Julio weakened, the depression began ",
+     "The fumble led to a Mike Hart touchdown ",
+     "congressman to call for a congressional ",
+     "As was normal at the time, subsistence f"
+    ]
+   },
+   {
+    "id": "digit_eval_5_029",
+    "sent_heads": [
+     "\" The Upanishad states that Devi is the ",
+     "With Rei's help, Shinji defeats another ",
+     "Rob Owen of the Pittsburgh Post-Gazette ",
+     "For NSW, he hit two centuries in the She"
+    ]
+   },
+   {
+    "id": "digit_eval_7_000",
+    "sent_heads": [
+     "It keeps you inside a Truman Show where ",
+     "The War Office was suitably impressed an",
+     "Reviewers highly praised the art style, ",
+     "The Metro-Goldwyn-Mayer office was locat",
+     "The Normans then built a stone structure",
+     "The process was later mechanised."
+    ]
+   },
+   {
+    "id": "digit_eval_7_001",
+    "sent_heads": [
+     "The worries of the U.S.",
+     "Another cause of assimilation was the hi",
+     "His elder brother was Maredudd ap Gruffy",
+     "Braose played a significant role in King",
+     "Kapoor and Rahman received numerous awar",
+     "Dromedaries can be slaughtered between f"
+    ]
+   },
+   {
+    "id": "digit_eval_7_002",
+    "sent_heads": [
+     "He served on the boards of the Electrici",
+     "This happens all the way through this ve",
+     "Predators include the cheetah, lion, spo",
+     "Bond discovers a text message left for h",
+     "Historically, bird specimens were collec",
+     "Funds were withdrawn from Heinze-associa"
+    ]
+   },
+   {
+    "id": "digit_eval_7_003",
+    "sent_heads": [
+     "[that] represent a fictional secret soci",
+     "The final scene, featuring a conversatio",
+     "Meanwhile, on the bridge, Wesley Crusher",
+     "Other significant trout-producing countr",
+     "Semichastny informed Khrushchev of his o",
+     "No loopholes anywhere for anyone."
+    ]
+   },
+   {
+    "id": "digit_eval_7_004",
+    "sent_heads": [
+     "In the same ceremony, co-star Hermione N",
+     "The project faced multiple hurdles, whic",
+     "A few escape openings were also made thr",
+     "Fischer soon left the area.",
+     "MTV Unplugged consists of two discs.",
+     "Bradman's relentless use of his pace att"
+    ]
+   },
+   {
+    "id": "digit_eval_7_005",
+    "sent_heads": [
+     "\" Several other commentators have expres",
+     "She developed a strong character.",
+     "I had no idea of the depth of her though",
+     "Congress to create a petrified forest na",
+     "Beltrami was hired to score the entire f",
+     "In response, Ellie impulsively kisses he"
+    ]
+   },
+   {
+    "id": "digit_eval_7_006",
+    "sent_heads": [
+     "He was put on a train for New York, wher",
+     "Methotrexate blocks the action of dihydr",
+     "However, other treatment techniques cont",
+     "The southeast end of the wing contained ",
+     "Kerlan also told Koufax that he would ev",
+     "\" Rain \" peaked at number one in Italy a"
+    ]
+   },
+   {
+    "id": "digit_eval_7_007",
+    "sent_heads": [
+     "Vitamins are classified as either water-",
+     "Amir's terminology is likewise heavily i",
+     "Comcast also provides cable television.",
+     "West Coast Fisheries for Highly Migrator",
+     "Above and to their left is a knotted ser",
+     "He was to remain in this station for nin"
+    ]
+   },
+   {
+    "id": "digit_eval_7_008",
+    "sent_heads": [
+     "Therefore, she kept her brother's death ",
+     "Both juveniles and adults form groups of",
+     "John's sons, series protagonists Sam and",
+     "Graham continued to serve in the Coldstr",
+     "The situation was complicated by the Ame",
+     "Loxton started his English campaign slow"
+    ]
+   },
+   {
+    "id": "digit_eval_7_009",
+    "sent_heads": [
+     "It was decided that it \" didn't really s",
+     "It also lowered boats to test radioactiv",
+     "This has been met with praise by the Jew",
+     "There are oddities peppered throughout, ",
+     "In the wet season, they visit rocky inse",
+     "On joint votes, such as the election of "
+    ]
+   },
+   {
+    "id": "digit_eval_7_010",
+    "sent_heads": [
+     "His sales increased quickly and many of ",
+     "Le Guin identifies herself with feminism",
+     "California was quickly granted statehood",
+     "Despite her success, Streep has always b",
+     "The diagnosis of dengue fever may be con",
+     "He realises Bhairava's potential just be"
+    ]
+   },
+   {
+    "id": "digit_eval_7_011",
+    "sent_heads": [
+     "Asked by the court clerk if he had anyth",
+     "In response, Sable gave McMahon the doub",
+     "King; R & B and doo-wop groups (particul",
+     "It was here that professor U.G.",
+     "The Oak Room was also used for the scene",
+     "and Drago into the promotion."
+    ]
+   },
+   {
+    "id": "digit_eval_7_012",
+    "sent_heads": [
+     "This amphibious force sailed across the ",
+     "Wayne Carey is quoted to have said that ",
+     "Early operations were troubled by a seri",
+     "Chess historian Edward Winter observes t",
+     "No single camouflage pattern is effectiv",
+     "Commandaria is made exclusively from two"
+    ]
+   },
+   {
+    "id": "digit_eval_7_013",
+    "sent_heads": [
+     "This administrative office is headed by ",
+     "Drier parts of the country are highly pr",
+     "After the season, the Astros interviewed",
+     "He continued to hold the lands in North ",
+     "Furthermore, he praised her \" all-around",
+     "Kate Capshaw as Wilhelmina \"Willie \" Sco"
+    ]
+   },
+   {
+    "id": "digit_eval_7_014",
+    "sent_heads": [
+     "In the meantime, his rule received legit",
+     "Bohemian waxwings may carry flatworms an",
+     "The cincinni are subtended by a spathe, ",
+     "With a hostile Whig-dominated legislatur",
+     "He was only selected for the two first c",
+     "The bears were moved to a nearby sanctua"
+    ]
+   },
+   {
+    "id": "digit_eval_7_015",
+    "sent_heads": [
+     "A proposal to conserve Lactarius with L.",
+     "The figures are painted facing the viewe",
+     "Males attract mates by constructing spec",
+     "These people were primarily of Norwegian",
+     "I remember him taking a course of strych",
+     "These two buildings are noted for their "
+    ]
+   },
+   {
+    "id": "digit_eval_7_016",
+    "sent_heads": [
+     "\" Brantley wrote that Lauper's \" love- a",
+     "I opened one of those rooms, and there w",
+     "If you are creative, you get busier as y",
+     "This made him the country's youngest eve",
+     "As a result, Dwight and Michael gave him",
+     "A spokesperson for The X Factor explaine"
+    ]
+   },
+   {
+    "id": "digit_eval_7_017",
+    "sent_heads": [
+     "Villa started the season with goals agai",
+     "During the excavations, Lisa finds a hum",
+     "Srinu Vytla and Mahesh Babu have come ou",
+     "Facing Lazio at home for the first leg, ",
+     "McCreary and former governor J.",
+     "Over the course of the decade that follo"
+    ]
+   },
+   {
+    "id": "digit_eval_7_018",
+    "sent_heads": [
+     "In the following years, he organized her",
+     "By the end of March, the conflict had es",
+     "Smith, later of the Fall; and Morrissey,",
+     "The plazas would be constructed of nativ",
+     "Another writer for the series, Merriweth",
+     "And I will not make a false gesture, \" K"
+    ]
+   },
+   {
+    "id": "digit_eval_7_019",
+    "sent_heads": [
+     "When the sovereign is male, Le Roy is su",
+     "Richard also marketed herself through so",
+     "The agreement itself was labeled as trea",
+     "The film features Kalyan Kumar, Devika a",
+     "He also wanted to be the first to reach ",
+     "Crosby then went to Governor Adelbert Am"
+    ]
+   },
+   {
+    "id": "digit_eval_7_020",
+    "sent_heads": [
+     "We will do that by making a donation equ",
+     "Their stated grounds omitted wages and w",
+     "Nonetheless, Goldie remained optimistic ",
+     "Moving left to right across a period, at",
+     "and Ruslan Sirota and his wife, Sofi, at",
+     "spekei), giant eland and common eland (T"
+    ]
+   },
+   {
+    "id": "digit_eval_7_021",
+    "sent_heads": [
+     "Polygon's Megan Farokhmanesh described t",
+     "He failed to arrive and did not answer h",
+     "His brother, however, succumbed to a dia",
+     "You do it with excitement because, reall",
+     "Teuruarii's reign was disrupted by ongoi",
+     "Five additional seismographs were placed"
+    ]
+   },
+   {
+    "id": "digit_eval_7_022",
+    "sent_heads": [
+     "What they missed led the police to their",
+     "Major reasons for population decline inc",
+     "West himself won his second NBA Executiv",
+     "Meredith Grey (Ellen Pompeo) about the r",
+     "The mining-affected land in the watershe",
+     "The two armies occupied themselves prima"
+    ]
+   },
+   {
+    "id": "digit_eval_7_023",
+    "sent_heads": [
+     "Skeat they suggest Caesarea as a place i",
+     "The scenes were so violent that they wer",
+     "The article is recognized as a milestone",
+     "The film portrays several days in the li",
+     "To this day, they retain this position.",
+     "Although neither men were legitimately h"
+    ]
+   },
+   {
+    "id": "digit_eval_7_024",
+    "sent_heads": [
+     "There she met and briefly married photog",
+     "The family remained in Birmingham for a ",
+     "magic, we might be able to find somethin",
+     "In chapter twelve of Ethics, Rothbard tu",
+     "The behavior of every economic actor wou",
+     "The findings of the commission generated"
+    ]
+   },
+   {
+    "id": "digit_eval_7_025",
+    "sent_heads": [
+     "This was the first Final Fantasy game to",
+     "\" Joe Jonas said the song even reminds o",
+     "Agathaeromys is characterized mainly on ",
+     "Pepper's Lonely Hearts Club Band on the ",
+     "The episode's concluding scene involving",
+     "\" Hud, a militant African-American, is c"
+    ]
+   },
+   {
+    "id": "digit_eval_7_026",
+    "sent_heads": [
+     "South Korea, New Zealand and Australia c",
+     "Peter MacNicol was cast to play Dr.",
+     "This probably formed a private chamber f",
+     "After the TGS party, the two go back to ",
+     "Initial writers on the project included ",
+     "Willis then returned to England, to face"
+    ]
+   },
+   {
+    "id": "digit_eval_7_027",
+    "sent_heads": [
+     "Purges of ethnic minorities increased in",
+     "makes the claim that social and politica",
+     "Club gave a much more critical review gi",
+     "\"Dirty Diana \" was written by Michael Ja",
+     "The chemistry between Goodwin and Dallas",
+     "However, the effect on parliamentary sov"
+    ]
+   },
+   {
+    "id": "digit_eval_7_028",
+    "sent_heads": [
+     "The Nazi German administration directed ",
+     "Despite the destructive nature of the se",
+     "Calwell considered Whitlam's remark disa",
+     "Latvian nationalist Viktors Ar\u0101js and hi",
+     "Five other persons were rejected, their ",
+     "The roadway turns southeast and passes t"
+    ]
+   },
+   {
+    "id": "digit_eval_7_029",
+    "sent_heads": [
+     "Level III has a reservoir with house-to-",
+     "Dragon Age: Origins begins on the eve of",
+     "That autumn, Mutual won exclusive broadc",
+     "He called the \" hand-colouring \" very \" ",
+     "Filamentation also refers to the self-fo",
+     "It grows in rainforests and in savannahs"
+    ]
+   }
+  ],
+  "tense": [
+   {
+    "id": "r5_tense_000",
+    "label": "Past",
+    "pos": 36,
+    "source_sha1_16": "744213417dac4db7",
+    "source_head": "The brigade did not participate in any overseas combat operations through the 19"
+   },
+   {
+    "id": "r5_tense_001",
+    "label": "Past",
+    "pos": 44,
+    "source_sha1_16": "190631a966d0bf3f",
+    "source_head": "As the captain and instigator of the 1888 \u2013 89 Natives \u2013 the first New Zealand t"
+   },
+   {
+    "id": "r5_tense_002",
+    "label": "Past",
+    "pos": 17,
+    "source_sha1_16": "ec5b596dbba21a69",
+    "source_head": "In Japan, Einh\u00e4nder had sold 50,000 copies three days after its release, and sol"
+   },
+   {
+    "id": "r5_tense_003",
+    "label": "Pres",
+    "pos": 46,
+    "source_sha1_16": "943a86e51e28e605",
+    "source_head": "Gernsback was slow to pay his authors and creditors; the extent of his investmen"
+   },
+   {
+    "id": "r5_tense_004",
+    "label": "Past",
+    "pos": 92,
+    "source_sha1_16": "783d92c2010ee1f7",
+    "source_head": "Madonna's initial music videos reflected her American and Hispanic mixed street "
+   },
+   {
+    "id": "r5_tense_005",
+    "label": "Pres",
+    "pos": 83,
+    "source_sha1_16": "fd9f3b3378515dae",
+    "source_head": "According to the most recent IUCN Red List assessment, the silky sifaka is Criti"
+   },
+   {
+    "id": "r5_tense_006",
+    "label": "Past",
+    "pos": 110,
+    "source_sha1_16": "9df0b36c054abfb6",
+    "source_head": "Kevin Thiele and Pauline Ladiges published a new arrangement for the genus in 19"
+   },
+   {
+    "id": "r5_tense_007",
+    "label": "Past",
+    "pos": 80,
+    "source_sha1_16": "69089f9eb35e0fa5",
+    "source_head": "Sounds gave Metal for Muthas a poor review, but the album was nevertheless a com"
+   },
+   {
+    "id": "r5_tense_008",
+    "label": "Past",
+    "pos": 111,
+    "source_sha1_16": "3921183c86ed4d44",
+    "source_head": "Operation Vrbas' 92 (Serbian: \u041e\u043f\u0435\u0440\u0430\u0446\u0438\u0458\u0430 \u0412\u0440\u0431\u0430\u0441' 92) was a military offensive unde"
+   },
+   {
+    "id": "r5_tense_009",
+    "label": "Past",
+    "pos": 87,
+    "source_sha1_16": "bfe5211bcfc9d8a1",
+    "source_head": "Akagi began recovering her Midway strike force at 08: 37 and finished shortly af"
+   },
+   {
+    "id": "r5_tense_010",
+    "label": "Past",
+    "pos": 113,
+    "source_sha1_16": "c88f7cfcb6730e31",
+    "source_head": "Cromwell's disciplined horsemen had rallied behind the right of the original Roy"
+   },
+   {
+    "id": "r5_tense_011",
+    "label": "Past",
+    "pos": 70,
+    "source_sha1_16": "ea3b1d7eb2289c2a",
+    "source_head": "Following the fighting on 31 August, the Japanese forces ashore had reported the"
+   },
+   {
+    "id": "r5_tense_012",
+    "label": "Pres",
+    "pos": 83,
+    "source_sha1_16": "a482004b08551c68",
+    "source_head": "Over the lifetime of the wind farm, Peel Holdings' energy subsidiary, Peel Wind "
+   },
+   {
+    "id": "r5_tense_013",
+    "label": "Pres",
+    "pos": 71,
+    "source_sha1_16": "8d51ba14da9d5a9f",
+    "source_head": "Patti Smith's 11th studio album, Banga, was released in June 2012. Music Journal"
+   },
+   {
+    "id": "r5_tense_014",
+    "label": "Pres",
+    "pos": 53,
+    "source_sha1_16": "97853c00c9cf7bb7",
+    "source_head": "Several other subspecies have been named, but are generally no longer considered"
+   },
+   {
+    "id": "r5_tense_015",
+    "label": "Past",
+    "pos": 105,
+    "source_sha1_16": "2b03d1e2611dec7b",
+    "source_head": "Yamato escorted Transport Operation BO-1 from Truk to Yokosuka during 12 \u2013 17 De"
+   },
+   {
+    "id": "r5_tense_016",
+    "label": "Past",
+    "pos": 114,
+    "source_sha1_16": "ef28bbfe14bf4e1d",
+    "source_head": "By the time Fritz the Cat was released, Bakshi had become a celebrity, but his r"
+   },
+   {
+    "id": "r5_tense_017",
+    "label": "Pres",
+    "pos": 113,
+    "source_sha1_16": "63a91ae8b5bc54c6",
+    "source_head": "On November 4, 2014, Columbia Records / Legacy Recordings released The Basement "
+   },
+   {
+    "id": "r5_tense_018",
+    "label": "Past",
+    "pos": 113,
+    "source_sha1_16": "38f7a9e7f58424f2",
+    "source_head": "In early 2002, after the Amnesiac tour had finished, Yorke sent his bandmates CD"
+   },
+   {
+    "id": "r5_tense_019",
+    "label": "Past",
+    "pos": 47,
+    "source_sha1_16": "c0015bc5047775b4",
+    "source_head": "The two armies met at Alton where peace negotiations began, possibly initiated b"
+   },
+   {
+    "id": "r5_tense_020",
+    "label": "Past",
+    "pos": 98,
+    "source_sha1_16": "95accd4c53bf54f8",
+    "source_head": "Radial velocity observations had been taken by the N2K program using the Magella"
+   },
+   {
+    "id": "r5_tense_021",
+    "label": "Pres",
+    "pos": 21,
+    "source_sha1_16": "f198eeaff43888f5",
+    "source_head": "Arnold became one of the 13 original proprietors of Providence, and his initials"
+   },
+   {
+    "id": "r5_tense_022",
+    "label": "Pres",
+    "pos": 25,
+    "source_sha1_16": "b31d7fdf446a93de",
+    "source_head": "Since all extinct lemurs were larger than the ones that currently survive, and t"
+   },
+   {
+    "id": "r5_tense_023",
+    "label": "Pres",
+    "pos": 20,
+    "source_sha1_16": "ce18f8b679c093b4",
+    "source_head": "\"The Queen and I \" features extensive samples from ABBA's \" Dancing Queen \", oft"
+   },
+   {
+    "id": "r5_tense_024",
+    "label": "Past",
+    "pos": 77,
+    "source_sha1_16": "1bdf4b613f39a2a4",
+    "source_head": "Acting on media speculation that the Iroquois engine program was also in jeopard"
+   },
+   {
+    "id": "r5_tense_025",
+    "label": "Pres",
+    "pos": 17,
+    "source_sha1_16": "ac69ccdcc05f6cbe",
+    "source_head": "Nescopeck Mountain (also known as Nescopec Mountain) is a ridge in Columbia Coun"
+   },
+   {
+    "id": "r5_tense_026",
+    "label": "Past",
+    "pos": 11,
+    "source_sha1_16": "ce676624692811ae",
+    "source_head": "As with the opening ceremony, United States broadcaster NBC was criticised for i"
+   },
+   {
+    "id": "r5_tense_027",
+    "label": "Pres",
+    "pos": 51,
+    "source_sha1_16": "a44647cf1f35a061",
+    "source_head": "Because of the immense distances of most gamma-ray burst sources from Earth, ide"
+   },
+   {
+    "id": "r5_tense_028",
+    "label": "Pres",
+    "pos": 51,
+    "source_sha1_16": "3cadbad8b6ecf917",
+    "source_head": "The Raffles Museum of Biodiversity Research, a natural history research unit of "
+   },
+   {
+    "id": "r5_tense_029",
+    "label": "Pres",
+    "pos": 18,
+    "source_sha1_16": "c7cb20121822183e",
+    "source_head": "Their nocturnal approach to the breeding sites means that Zino's petrels avoid t"
+   },
+   {
+    "id": "r5_tense_030",
+    "label": "Past",
+    "pos": 59,
+    "source_sha1_16": "7a298dc54f6636ee",
+    "source_head": "Initial suspicions were directed at the manufacturers of the Excedrin capsules. "
+   },
+   {
+    "id": "r5_tense_031",
+    "label": "Pres",
+    "pos": 28,
+    "source_sha1_16": "d4ad2eb212b6eb10",
+    "source_head": "The yellow-tailed black cockatoo (Calyptorhynchus funereus) is a large cockatoo "
+   },
+   {
+    "id": "r5_tense_032",
+    "label": "Past",
+    "pos": 53,
+    "source_sha1_16": "8e3021d342292e8f",
+    "source_head": "During the 1894 legislative session, Brown advocated and won passage of several "
+   },
+   {
+    "id": "r5_tense_033",
+    "label": "Pres",
+    "pos": 23,
+    "source_sha1_16": "bde760e38fc83ba1",
+    "source_head": "State Route 103 (SR-103) begins at an intersection with SR-126, locally known as"
+   },
+   {
+    "id": "r5_tense_034",
+    "label": "Pres",
+    "pos": 82,
+    "source_sha1_16": "c96de75371f004c8",
+    "source_head": "During the height of the Daddies' popularity, Perry found the band's mainstream "
+   },
+   {
+    "id": "r5_tense_035",
+    "label": "Pres",
+    "pos": 80,
+    "source_sha1_16": "cbb399caab69effe",
+    "source_head": "Located in the Plymouth Pinelands, the town of Plymouth has many distinct geogra"
+   },
+   {
+    "id": "r5_tense_036",
+    "label": "Past",
+    "pos": 75,
+    "source_sha1_16": "0fc647910886e43b",
+    "source_head": "Sets of bed hangings embroidered in crewel wools were another characteristic pro"
+   },
+   {
+    "id": "r5_tense_037",
+    "label": "Past",
+    "pos": 49,
+    "source_sha1_16": "f3b6286fd07041db",
+    "source_head": "Yakovlev was able to adapt the two existing prototypes to the RD-10 with little "
+   },
+   {
+    "id": "r5_tense_038",
+    "label": "Pres",
+    "pos": 79,
+    "source_sha1_16": "0402af83f8de7c45",
+    "source_head": "Gyllenhaal was born in New York City, the daughter of Naomi Foner Gyllenhaal (n\u00e9"
+   },
+   {
+    "id": "r5_tense_039",
+    "label": "Pres",
+    "pos": 17,
+    "source_sha1_16": "79aa672c610f02ff",
+    "source_head": "Smoking cigarettes has become synonymous with Dot, and Brown has suggested that "
+   },
+   {
+    "id": "r5_tense_040",
+    "label": "Past",
+    "pos": 31,
+    "source_sha1_16": "ee3d8037c1166140",
+    "source_head": "During the 2011 NBA lockout, Yi signed a one-year contract to return to the Guan"
+   },
+   {
+    "id": "r5_tense_041",
+    "label": "Past",
+    "pos": 92,
+    "source_sha1_16": "6abe8f68c7702c9f",
+    "source_head": "The House of Lords, as well as its robing and committee rooms, were all destroye"
+   },
+   {
+    "id": "r5_tense_042",
+    "label": "Pres",
+    "pos": 61,
+    "source_sha1_16": "68f75daa73aeb951",
+    "source_head": "The accident raised questions about the extent of power that the state may use t"
+   },
+   {
+    "id": "r5_tense_043",
+    "label": "Pres",
+    "pos": 16,
+    "source_sha1_16": "7edb3f8e72da97ef",
+    "source_head": "Maryland Route 70 (MD 70) is a state highway in the U.S. state of Maryland. Know"
+   },
+   {
+    "id": "r5_tense_044",
+    "label": "Past",
+    "pos": 67,
+    "source_sha1_16": "5b42d1a649ff0034",
+    "source_head": "In addition to its North American box office gross, Friday the 13th earned over "
+   },
+   {
+    "id": "r5_tense_045",
+    "label": "Past",
+    "pos": 31,
+    "source_sha1_16": "3836596f9909fcb0",
+    "source_head": "After the 1913 season, Evers was offered $ 100,000 ($ 2,394,276 in current dolla"
+   },
+   {
+    "id": "r5_tense_046",
+    "label": "Pres",
+    "pos": 98,
+    "source_sha1_16": "72f7c734a1a73095",
+    "source_head": "In New York City's Greenwich Village, bohemian feminists and socialists advocate"
+   },
+   {
+    "id": "r5_tense_047",
+    "label": "Past",
+    "pos": 51,
+    "source_sha1_16": "f174fd6ef7da67eb",
+    "source_head": "At the Battle of Lewes in 1264, the rebellious barons, led by Simon de Montfort,"
+   },
+   {
+    "id": "r5_tense_048",
+    "label": "Pres",
+    "pos": 93,
+    "source_sha1_16": "9caf0f87bb5a0f0e",
+    "source_head": "On the fifty-fourth anniversary of D-Day, June 6, 1998, then Transportation Mini"
+   },
+   {
+    "id": "r5_tense_049",
+    "label": "Pres",
+    "pos": 68,
+    "source_sha1_16": "bc0ecbb2beb7261e",
+    "source_head": "In 2002, French artist Jochen Gerner published a socio-political satire based on"
+   },
+   {
+    "id": "r5_tense_050",
+    "label": "Pres",
+    "pos": 116,
+    "source_sha1_16": "88bdab5c04d17f20",
+    "source_head": "Reception of Marvel Trading Card Game across all three platforms was mixed. The "
+   },
+   {
+    "id": "r5_tense_051",
+    "label": "Past",
+    "pos": 19,
+    "source_sha1_16": "d0e038253790a3c5",
+    "source_head": "In 1980, a friend gave Rollins and MacKaye a copy of Black Flag's Nervous Breakd"
+   },
+   {
+    "id": "r5_tense_052",
+    "label": "Past",
+    "pos": 104,
+    "source_sha1_16": "d92f433ba75eecb3",
+    "source_head": "Unlike Carey's debut album, which featured a more contemporary pop and R & B bac"
+   },
+   {
+    "id": "r5_tense_053",
+    "label": "Pres",
+    "pos": 79,
+    "source_sha1_16": "4eb7035b27ac2f90",
+    "source_head": "The album peaked at number one in eleven territories worldwide, including the Un"
+   },
+   {
+    "id": "r5_tense_054",
+    "label": "Pres",
+    "pos": 91,
+    "source_sha1_16": "193f954c31abd34b",
+    "source_head": "Cruttwell's relations with his colleagues and students have been the subject of "
+   },
+   {
+    "id": "r5_tense_055",
+    "label": "Past",
+    "pos": 73,
+    "source_sha1_16": "3e5ee4e021d9e1ec",
+    "source_head": "Still opposed to the return of Constantine I and Crown Prince George, the govern"
+   },
+   {
+    "id": "r5_tense_056",
+    "label": "Past",
+    "pos": 11,
+    "source_sha1_16": "6dd2226fe2b3887e",
+    "source_head": "Jason Van Horn of IGN rated the episode an \"impressive \" 8.2 out of a possible 1"
+   },
+   {
+    "id": "r5_tense_057",
+    "label": "Past",
+    "pos": 26,
+    "source_sha1_16": "b779733e5766c062",
+    "source_head": "In September 1909 newspapers carried reports that Cook and Peary had each reache"
+   },
+   {
+    "id": "r5_tense_058",
+    "label": "Past",
+    "pos": 32,
+    "source_sha1_16": "1d63c8a4a9458b71",
+    "source_head": "The heart of Western Europe had been stabilized after the Christianization of th"
+   },
+   {
+    "id": "r5_tense_059",
+    "label": "Pres",
+    "pos": 101,
+    "source_sha1_16": "9a92eda593a21bcb",
+    "source_head": "Through Steamworks, Steam provides a means of server browsing for multiplayer ga"
+   },
+   {
+    "id": "r5_tense_060",
+    "label": "Past",
+    "pos": 77,
+    "source_sha1_16": "4225ce2185bd2461",
+    "source_head": "As a youth, Graham played football for the Police Athletic League Detroit Giants"
+   },
+   {
+    "id": "r5_tense_061",
+    "label": "Pres",
+    "pos": 119,
+    "source_sha1_16": "9a231d072fa31617",
+    "source_head": "Early burial customs show a strong belief in an afterlife and a spirit path to i"
+   },
+   {
+    "id": "r5_tense_062",
+    "label": "Pres",
+    "pos": 12,
+    "source_sha1_16": "573b5209c64f7014",
+    "source_head": "Continuously variable phase control circuits are common in subwoofer amplifiers,"
+   },
+   {
+    "id": "r5_tense_063",
+    "label": "Past",
+    "pos": 74,
+    "source_sha1_16": "588f96582f483702",
+    "source_head": "The first stage of the Intifada was a response to an incident at the Erez checkp"
+   },
+   {
+    "id": "r5_tense_064",
+    "label": "Past",
+    "pos": 86,
+    "source_sha1_16": "6143d406d8dd0b36",
+    "source_head": "The main feud on the SmackDown! brand was between Batista and The Undertaker, wi"
+   },
+   {
+    "id": "r5_tense_065",
+    "label": "Pres",
+    "pos": 80,
+    "source_sha1_16": "0dd684b3b27f7aa9",
+    "source_head": "Prionomyrmex is an extinct genus of bulldog ants in the subfamily Myrmeciinae of"
+   },
+   {
+    "id": "r5_tense_066",
+    "label": "Past",
+    "pos": 70,
+    "source_sha1_16": "0ab11da28284705b",
+    "source_head": "Swiss rider Urs Freuler was the first rider to wear the race leader's maglia ros"
+   },
+   {
+    "id": "r5_tense_067",
+    "label": "Pres",
+    "pos": 97,
+    "source_sha1_16": "542b380e7aec5482",
+    "source_head": "In 1997, Cardinale featured in the British-Italian television drama miniseries N"
+   },
+   {
+    "id": "r5_tense_068",
+    "label": "Past",
+    "pos": 70,
+    "source_sha1_16": "01b6935c1f44baaf",
+    "source_head": "During the three years of the PL's playoff system, the winner of the PL's postse"
+   },
+   {
+    "id": "r5_tense_069",
+    "label": "Pres",
+    "pos": 35,
+    "source_sha1_16": "c04ff3be2ade575b",
+    "source_head": "Almost all of Josquin's motets use some kind of compositional constraint on the "
+   },
+   {
+    "id": "r5_tense_070",
+    "label": "Pres",
+    "pos": 89,
+    "source_sha1_16": "607059ca7d88ec43",
+    "source_head": "Lasser allowed the letter column to become a free discussion of ideas and values"
+   },
+   {
+    "id": "r5_tense_071",
+    "label": "Pres",
+    "pos": 118,
+    "source_sha1_16": "77a6c6198f4bdab1",
+    "source_head": "In the same week, Jackson and Presley had another argument. Newspaper reports ha"
+   },
+   {
+    "id": "r5_tense_072",
+    "label": "Pres",
+    "pos": 77,
+    "source_sha1_16": "600e7bae10c7947d",
+    "source_head": "Friedrich suffered depressive episodes in 1799, 1803 \u2013 1805, c.1813, in 1816 and"
+   },
+   {
+    "id": "r5_tense_073",
+    "label": "Past",
+    "pos": 62,
+    "source_sha1_16": "1a90b2bb3ce6a66b",
+    "source_head": "During his time in Chongqing, Bo initiated a series of Maoist-style campaigns to"
+   },
+   {
+    "id": "r5_tense_074",
+    "label": "Past",
+    "pos": 110,
+    "source_sha1_16": "702e1e7655ea45c0",
+    "source_head": "Head Start director Edward Zigler was probably Sesame Street's most vocal critic"
+   },
+   {
+    "id": "r5_tense_075",
+    "label": "Past",
+    "pos": 68,
+    "source_sha1_16": "442674bb7d3ba959",
+    "source_head": "The show was filmed at the Wembley Arena, in London on August 15 and 16, 2006. A"
+   },
+   {
+    "id": "r5_tense_076",
+    "label": "Past",
+    "pos": 114,
+    "source_sha1_16": "cac1053ab722a3b1",
+    "source_head": "In total, Crawford played in eight games in 1919, scoring 488 runs and taking 20"
+   },
+   {
+    "id": "r5_tense_077",
+    "label": "Pres",
+    "pos": 98,
+    "source_sha1_16": "5d08de813faf1776",
+    "source_head": "The initial idea for the finale, involving the Q & A, was thought of by Daniels "
+   },
+   {
+    "id": "r5_tense_078",
+    "label": "Pres",
+    "pos": 56,
+    "source_sha1_16": "406580385bceec84",
+    "source_head": "Two secular small chests with carved whalebone panels and metal fittings illustr"
+   },
+   {
+    "id": "r5_tense_079",
+    "label": "Past",
+    "pos": 106,
+    "source_sha1_16": "61facebca10575ce",
+    "source_head": "The flour milling industry, dating back to the Fort Snelling government mill, la"
+   },
+   {
+    "id": "r5_tense_080",
+    "label": "Past",
+    "pos": 45,
+    "source_sha1_16": "76e3dd35dca7a763",
+    "source_head": "The 2000 \u2013 01 NHL season was Daniel's first season with the Canucks. His debut w"
+   },
+   {
+    "id": "r5_tense_081",
+    "label": "Pres",
+    "pos": 90,
+    "source_sha1_16": "1d63df8ac78e3343",
+    "source_head": "With no knowledge of the fashion industry, Morgan decided to make a film on the "
+   },
+   {
+    "id": "r5_tense_082",
+    "label": "Pres",
+    "pos": 80,
+    "source_sha1_16": "3281402d9e4f9ea4",
+    "source_head": "Gala (\u30ac\u30fc\u30e9, G\u0101ra) and Diva (\u30c7\u30a3\u30fc\u30f4\u30a1, D\u012bva) are minor characters related to the lore"
+   },
+   {
+    "id": "r5_tense_083",
+    "label": "Pres",
+    "pos": 107,
+    "source_sha1_16": "8349bd4cdd847929",
+    "source_head": "On August 19, 1953, a burned crewman talks to three government agents about his "
+   },
+   {
+    "id": "r5_tense_084",
+    "label": "Past",
+    "pos": 109,
+    "source_sha1_16": "9c804df8774a8c47",
+    "source_head": "Nielsen lived for several years in Fort Norman (now Tulita), Northwest Territori"
+   },
+   {
+    "id": "r5_tense_085",
+    "label": "Pres",
+    "pos": 18,
+    "source_sha1_16": "8d25c0ab2906b372",
+    "source_head": "Kratos has been featured as a playable character in several PlayStation games ou"
+   },
+   {
+    "id": "r5_tense_086",
+    "label": "Pres",
+    "pos": 57,
+    "source_sha1_16": "6cb064ec5e6aca5e",
+    "source_head": "Lindenwood purchased land adjacent to the main campus containing various residen"
+   },
+   {
+    "id": "r5_tense_087",
+    "label": "Pres",
+    "pos": 9,
+    "source_sha1_16": "d041b9e5030e6f02",
+    "source_head": "Coeliac disease is caused by a reaction to gluten, which are various proteins fo"
+   },
+   {
+    "id": "r5_tense_088",
+    "label": "Past",
+    "pos": 65,
+    "source_sha1_16": "5934ed9fd25a986b",
+    "source_head": "Principal photography of Terminator 2 spanned 171 days between October 9, 1990, "
+   },
+   {
+    "id": "r5_tense_089",
+    "label": "Pres",
+    "pos": 59,
+    "source_sha1_16": "76e7b9be954d3d5c",
+    "source_head": "Brunner has made several specific efforts to alleviate some of the past voting d"
+   },
+   {
+    "id": "r5_tense_090",
+    "label": "Pres",
+    "pos": 107,
+    "source_sha1_16": "71e9a6cfab8a8fc2",
+    "source_head": "The Brazilian government secured the hand of Princess Teresa Cristina of the Kin"
+   },
+   {
+    "id": "r5_tense_091",
+    "label": "Pres",
+    "pos": 104,
+    "source_sha1_16": "870e02e04bef2980",
+    "source_head": "James Caldwell of the Pro Wrestling Torch Newsletter reviewed the event, comment"
+   },
+   {
+    "id": "r5_tense_092",
+    "label": "Past",
+    "pos": 68,
+    "source_sha1_16": "77c8155adbf652df",
+    "source_head": "Justice Black originally believed that the Constitution did not require the excl"
+   },
+   {
+    "id": "r5_tense_093",
+    "label": "Past",
+    "pos": 91,
+    "source_sha1_16": "49347e79560c2c41",
+    "source_head": "Mathews and an escort force went to Witu where, on 31 July, they removed the fla"
+   },
+   {
+    "id": "r5_tense_094",
+    "label": "Pres",
+    "pos": 112,
+    "source_sha1_16": "50721defd9f19bde",
+    "source_head": "By inserting her authorial voice in the tale's epilogue, Potter reveals her unce"
+   },
+   {
+    "id": "r5_tense_095",
+    "label": "Pres",
+    "pos": 34,
+    "source_sha1_16": "de11d99aebe30728",
+    "source_head": "In 1997, Chris Roberts began work on a vision he had since he first conceived Wi"
+   },
+   {
+    "id": "r5_tense_096",
+    "label": "Pres",
+    "pos": 108,
+    "source_sha1_16": "7b14f79fdc4c9692",
+    "source_head": "While features of the limbs indicate that aetosaurs probably dug for food, featu"
+   },
+   {
+    "id": "r5_tense_097",
+    "label": "Pres",
+    "pos": 44,
+    "source_sha1_16": "682e32bc4d8ab739",
+    "source_head": "Grey reef sharks are active at all times of the day, with activity levels peakin"
+   },
+   {
+    "id": "r5_tense_098",
+    "label": "Pres",
+    "pos": 11,
+    "source_sha1_16": "84da48afdf67b3c1",
+    "source_head": "Aaron Montgomery Ward, who is known both as the inventor of mail order and the p"
+   },
+   {
+    "id": "r5_tense_099",
+    "label": "Pres",
+    "pos": 73,
+    "source_sha1_16": "3fb33cfa2d3103e8",
+    "source_head": "The song became the best-selling country collaboration single in digital history"
+   },
+   {
+    "id": "r5_tense_100",
+    "label": "Past",
+    "pos": 9,
+    "source_sha1_16": "8019b78ea722b7c2",
+    "source_head": "As a candidate, Carter had proposed health care reform that included key feature"
+   },
+   {
+    "id": "r5_tense_101",
+    "label": "Past",
+    "pos": 113,
+    "source_sha1_16": "8507a8901005d21f",
+    "source_head": "Against the background of James VII's invasion of Ireland, the possibility of an"
+   },
+   {
+    "id": "r5_tense_102",
+    "label": "Pres",
+    "pos": 82,
+    "source_sha1_16": "e53dfa8ebdab490e",
+    "source_head": "Route 5 is a 3.18-mile (5.12 km) state highway located entirely in Bergen County"
+   },
+   {
+    "id": "r5_tense_103",
+    "label": "Pres",
+    "pos": 55,
+    "source_sha1_16": "74318582ad253417",
+    "source_head": "A chakravart\u012b is an emperor of the world and lord of the material realm. Though "
+   },
+   {
+    "id": "r5_tense_104",
+    "label": "Past",
+    "pos": 118,
+    "source_sha1_16": "3087acc4b69f64f4",
+    "source_head": "Tricon was renamed Yum! Brands in May 2002. In that year, the chain had to conte"
+   },
+   {
+    "id": "r5_tense_105",
+    "label": "Pres",
+    "pos": 43,
+    "source_sha1_16": "be8d51245a4147f5",
+    "source_head": "The party, or parties, that hold the majority of seats in the Parliament forms t"
+   },
+   {
+    "id": "r5_tense_106",
+    "label": "Pres",
+    "pos": 12,
+    "source_sha1_16": "e6979c6ba2954e14",
+    "source_head": "Modern Swedish (Swedish: nysvenska) begins with the advent of the printing press"
+   },
+   {
+    "id": "r5_tense_107",
+    "label": "Pres",
+    "pos": 72,
+    "source_sha1_16": "22d14b80f78516fe",
+    "source_head": "UNC Chapel Hill's 729-acre (3.0 km2) campus is dominated by two central quads: P"
+   },
+   {
+    "id": "r5_tense_108",
+    "label": "Pres",
+    "pos": 78,
+    "source_sha1_16": "50874338505f4344",
+    "source_head": "Wintour has been accused of setting herself apart even from peers. \"I do not thi"
+   },
+   {
+    "id": "r5_tense_109",
+    "label": "Pres",
+    "pos": 10,
+    "source_sha1_16": "48284c38dc6be903",
+    "source_head": "Although his efforts dealing with video games have generally focused on juvenile"
+   },
+   {
+    "id": "r5_tense_110",
+    "label": "Past",
+    "pos": 45,
+    "source_sha1_16": "4aa47efb896256d4",
+    "source_head": "Work on Binnie's design began, but was beset by problems. Leading architects con"
+   },
+   {
+    "id": "r5_tense_111",
+    "label": "Past",
+    "pos": 66,
+    "source_sha1_16": "d27541fb4df47198",
+    "source_head": "Sarawak Maritime Academy was formed under the Shin Yang Group of Companies. It o"
+   },
+   {
+    "id": "r5_tense_112",
+    "label": "Past",
+    "pos": 112,
+    "source_sha1_16": "1a794df69c042080",
+    "source_head": "Barlow had arrived in the United States in February 1997 for recording the track"
+   },
+   {
+    "id": "r5_tense_113",
+    "label": "Past",
+    "pos": 13,
+    "source_sha1_16": "b71669d944951c10",
+    "source_head": "Kingdom Hearts was announced at the Electronic Entertainment Expo in May 2001. I"
+   },
+   {
+    "id": "r5_tense_114",
+    "label": "Past",
+    "pos": 87,
+    "source_sha1_16": "84ae4d3919e7e928",
+    "source_head": "By the start of the 20th century the fort's casemates had been put out of use as"
+   },
+   {
+    "id": "r5_tense_115",
+    "label": "Past",
+    "pos": 82,
+    "source_sha1_16": "b72045fc7234cdd8",
+    "source_head": "The film references Resident Evil 2 when Alice visits the gun shop which is simi"
+   },
+   {
+    "id": "r5_tense_116",
+    "label": "Past",
+    "pos": 111,
+    "source_sha1_16": "c46b9a393fa9b01d",
+    "source_head": "On his return to Australia, Trott's batting continued to improve. He scored 172 "
+   },
+   {
+    "id": "r5_tense_117",
+    "label": "Past",
+    "pos": 109,
+    "source_sha1_16": "80de9f5ee05a3835",
+    "source_head": "\u00d3l\u00e1fr was a member of the Crovan dynasty of sea-kings, a younger son of Gu\u00f0r\u00f8\u00f0r "
+   },
+   {
+    "id": "r5_tense_118",
+    "label": "Past",
+    "pos": 106,
+    "source_sha1_16": "f29a5094f8a047b0",
+    "source_head": "God of War Collection was first released in North America on November 17, 2009, "
+   },
+   {
+    "id": "r5_tense_119",
+    "label": "Past",
+    "pos": 51,
+    "source_sha1_16": "3b2092018661e26e",
+    "source_head": "A relationship exists between the depth of the mainshock and the occurrence of a"
+   }
+  ]
+ }
 }

@@ -1,0 +1,2383 @@
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-QsucGBpRAE6tOYE1YmbtC5
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   r5_modal.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:pilot_items, PythonPackage:calib_items, 
+│   PythonPackage:templates, PythonPackage:r5_items
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:pilot_items, PythonPackage:pilot_lib, PythonPackage:templates,
+│   PythonPackage:calib_lib, PythonPackage:calib_templates, 
+│   PythonPackage:calib_items, PythonPackage:r5_lib, PythonPackage:r5_templates,
+│   PythonPackage:r5_items
+├── 🔨 Created function build_r5.
+├── 🔨 Created function prep_r5.
+├── 🔨 Created function behave.
+├── 🔨 Created function gen_l38.
+├── 🔨 Created function score_ol.
+└── 🔨 Created function score_nla.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{'digit_train': 400, 'digit_eval': 60, 'tense': 120}
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:00<11:41,  1.21it/s]
+[1ALoading weights:   0%|          | 2/851 [00:01<13:06,  1.08it/s]
+[1ALoading weights:   2%|▏         | 13/851 [00:01<01:26,  9.66it/s]
+[1ALoading weights:   2%|▏         | 17/851 [00:02<01:08, 12.14it/s]
+[1ALoading weights:   3%|▎         | 25/851 [00:02<00:40, 20.37it/s]
+[1ALoading weights:   4%|▎         | 30/851 [00:02<00:38, 21.57it/s]
+[1ALoading weights:   5%|▍         | 39/851 [00:02<00:25, 32.05it/s]
+[1ALoading weights:   5%|▌         | 45/851 [00:02<00:26, 29.98it/s]
+[1ALoading weights:   6%|▌         | 50/851 [00:02<00:28, 28.54it/s]
+[1ALoading weights:   7%|▋         | 56/851 [00:03<00:23, 33.41it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:03<00:21, 37.33it/s]
+[1ALoading weights:   9%|▊         | 74/851 [00:03<00:17, 44.80it/s]
+[1ALoading weights:   9%|▉         | 80/851 [00:03<00:16, 46.35it/s]
+[1ALoading weights:  10%|█         | 86/851 [00:03<00:17, 42.63it/s]
+[1ALoading weights:  11%|█         | 93/851 [00:03<00:16, 44.79it/s]
+[1ALoading weights:  12%|█▏        | 98/851 [00:03<00:18, 41.19it/s]
+[1ALoading weights:  12%|█▏        | 103/851 [00:04<00:20, 36.69it/s]
+[1ALoading weights:  14%|█▎        | 115/851 [00:04<00:15, 48.30it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:04<00:17, 40.57it/s]
+[1ALoading weights:  16%|█▌        | 133/851 [00:04<00:14, 50.70it/s]
+[1ALoading weights:  16%|█▋        | 139/851 [00:04<00:15, 47.39it/s]
+[1ALoading weights:  17%|█▋        | 147/851 [00:04<00:14, 49.68it/s]
+[1ALoading weights:  18%|█▊        | 153/851 [00:05<00:19, 35.22it/s]
+[1ALoading weights:  20%|█▉        | 167/851 [00:05<00:12, 52.92it/s]
+[1ALoading weights:  21%|██        | 175/851 [00:05<00:14, 46.52it/s]
+[1ALoading weights:  22%|██▏       | 185/851 [00:05<00:11, 56.24it/s]
+[1ALoading weights:  23%|██▎       | 193/851 [00:05<00:12, 52.19it/s]
+[1ALoading weights:  24%|██▎       | 200/851 [00:06<00:12, 52.64it/s]
+[1ALoading weights:  24%|██▍       | 207/851 [00:06<00:16, 39.09it/s]
+[1ALoading weights:  26%|██▌       | 219/851 [00:06<00:12, 52.36it/s]
+[1ALoading weights:  27%|██▋       | 226/851 [00:06<00:12, 48.09it/s]
+[1ALoading weights:  27%|██▋       | 234/851 [00:06<00:11, 53.92it/s]
+[1ALoading weights:  28%|██▊       | 241/851 [00:06<00:13, 44.28it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:07<00:10, 54.49it/s]
+[1ALoading weights:  31%|███       | 260/851 [00:07<00:14, 41.10it/s]
+[1ALoading weights:  32%|███▏      | 271/851 [00:07<00:11, 52.58it/s]
+[1ALoading weights:  33%|███▎      | 279/851 [00:07<00:10, 52.80it/s]
+[1ALoading weights:  34%|███▍      | 288/851 [00:07<00:09, 58.70it/s]
+[1ALoading weights:  35%|███▍      | 295/851 [00:08<00:11, 48.41it/s]
+[1ALoading weights:  36%|███▌      | 305/851 [00:08<00:09, 54.91it/s]
+[1ALoading weights:  37%|███▋      | 312/851 [00:08<00:13, 41.25it/s]
+[1ALoading weights:  38%|███▊      | 327/851 [00:08<00:09, 58.11it/s]
+[1ALoading weights:  39%|███▉      | 335/851 [00:08<00:10, 47.18it/s]
+[1ALoading weights:  40%|████      | 343/851 [00:08<00:09, 52.36it/s]
+[1ALoading weights:  41%|████      | 350/851 [00:09<00:10, 48.13it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:09<00:09, 50.47it/s]
+[1ALoading weights:  43%|████▎     | 365/851 [00:09<00:12, 38.52it/s]
+[1ALoading weights:  43%|████▎     | 370/851 [00:09<00:12, 39.46it/s]
+[1ALoading weights:  45%|████▍     | 380/851 [00:09<00:09, 49.19it/s]
+[1ALoading weights:  45%|████▌     | 386/851 [00:10<00:11, 39.01it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:10<00:08, 50.92it/s]
+[1ALoading weights:  47%|████▋     | 404/851 [00:10<00:09, 48.21it/s]
+[1ALoading weights:  48%|████▊     | 412/851 [00:10<00:09, 48.43it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:10<00:11, 39.02it/s]
+[1ALoading weights:  50%|████▉     | 425/851 [00:10<00:10, 42.07it/s]
+[1ALoading weights:  51%|█████▏    | 437/851 [00:11<00:07, 53.04it/s]
+[1ALoading weights:  52%|█████▏    | 443/851 [00:11<00:08, 50.14it/s]
+[1ALoading weights:  53%|█████▎    | 451/851 [00:11<00:07, 53.62it/s]
+[1ALoading weights:  54%|█████▎    | 457/851 [00:11<00:07, 52.16it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:11<00:09, 41.37it/s]
+[1ALoading weights:  55%|█████▌    | 470/851 [00:11<00:09, 40.62it/s]
+[1ALoading weights:  56%|█████▌    | 475/851 [00:12<00:10, 36.28it/s]
+[1ALoading weights:  57%|█████▋    | 485/851 [00:12<00:07, 47.27it/s]
+[1ALoading weights:  58%|█████▊    | 491/851 [00:12<00:09, 38.70it/s]
+[1ALoading weights:  59%|█████▉    | 504/851 [00:12<00:06, 51.75it/s]
+[1ALoading weights:  60%|█████▉    | 510/851 [00:12<00:07, 45.88it/s]
+[1ALoading weights:  61%|██████    | 518/851 [00:12<00:06, 52.01it/s]
+[1ALoading weights:  62%|██████▏   | 524/851 [00:13<00:10, 31.29it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:13<00:06, 48.40it/s]
+[1ALoading weights:  64%|██████▍   | 547/851 [00:13<00:07, 42.06it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:13<00:06, 48.82it/s]
+[1ALoading weights:  66%|██████▋   | 564/851 [00:13<00:06, 46.88it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:14<00:05, 49.17it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:14<00:07, 35.97it/s]
+[1ALoading weights:  70%|██████▉   | 592/851 [00:14<00:04, 54.54it/s]
+[1ALoading weights:  71%|███████   | 600/851 [00:14<00:05, 47.57it/s]
+[1ALoading weights:  72%|███████▏  | 610/851 [00:14<00:04, 53.46it/s]
+[1ALoading weights:  73%|███████▎  | 617/851 [00:14<00:04, 49.73it/s]
+[1ALoading weights:  73%|███████▎  | 625/851 [00:15<00:05, 44.36it/s]
+[1ALoading weights:  74%|███████▍  | 631/851 [00:15<00:05, 41.97it/s]
+[1ALoading weights:  76%|███████▌  | 644/851 [00:15<00:03, 52.98it/s]
+[1ALoading weights:  76%|███████▋  | 650/851 [00:15<00:03, 50.64it/s]
+[1ALoading weights:  78%|███████▊  | 660/851 [00:15<00:03, 57.87it/s]
+[1ALoading weights:  78%|███████▊  | 667/851 [00:15<00:03, 49.71it/s]
+[1ALoading weights:  79%|███████▉  | 676/851 [00:16<00:03, 53.19it/s]
+[1ALoading weights:  80%|████████  | 682/851 [00:16<00:03, 46.55it/s]
+[1ALoading weights:  81%|████████  | 687/851 [00:16<00:03, 42.44it/s]
+[1ALoading weights:  82%|████████▏ | 699/851 [00:16<00:02, 56.91it/s]
+[1ALoading weights:  83%|████████▎ | 706/851 [00:16<00:02, 50.13it/s]
+[1ALoading weights:  84%|████████▍ | 713/851 [00:16<00:02, 49.80it/s]
+[1ALoading weights:  84%|████████▍ | 719/851 [00:17<00:02, 45.57it/s]
+[1ALoading weights:  86%|████████▌ | 730/851 [00:17<00:02, 54.62it/s]
+[1ALoading weights:  86%|████████▋ | 736/851 [00:17<00:02, 38.93it/s]
+[1ALoading weights:  88%|████████▊ | 748/851 [00:17<00:01, 53.20it/s]
+[1ALoading weights:  89%|████████▊ | 755/851 [00:17<00:01, 53.49it/s]
+[1ALoading weights:  90%|████████▉ | 762/851 [00:17<00:01, 51.07it/s]
+[1ALoading weights:  90%|█████████ | 769/851 [00:18<00:01, 53.73it/s]
+[1ALoading weights:  91%|█████████ | 775/851 [00:18<00:01, 51.33it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:18<00:01, 53.02it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:18<00:01, 41.62it/s]
+[1ALoading weights:  94%|█████████▎| 796/851 [00:18<00:01, 44.34it/s]
+[1ALoading weights:  95%|█████████▍| 808/851 [00:18<00:00, 55.01it/s]
+[1ALoading weights:  96%|█████████▌| 814/851 [00:18<00:00, 53.93it/s]
+[1ALoading weights:  97%|█████████▋| 822/851 [00:19<00:00, 56.58it/s]
+[1ALoading weights:  97%|█████████▋| 828/851 [00:19<00:00, 53.64it/s]
+[1ALoading weights:  98%|█████████▊| 836/851 [00:19<00:00, 56.60it/s]
+[1ALoading weights:  99%|█████████▉| 842/851 [00:19<00:00, 41.51it/s]
+[1ALoading weights: 100%|█████████▉| 850/851 [00:19<00:00, 49.25it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:19<00:00, 43.27it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+{
+ "timing": {
+  "directions": 101.5,
+  "L38_dirs": 114.2,
+  "jlens": 119.1
+ },
+ "checks": {
+  "col_cm": {
+   "n_short": 14521,
+   "n_long": 9673,
+   "cos_cm_reg": 0.9953944683074951,
+   "cos_cmj4_regj4": 0.9964351654052734,
+   "enrichment": {
+    "reg_raw": {
+     "r384": 0.6674851179122925,
+     "r1536": 1.103925108909607
+    },
+    "reg_jrem4": {
+     "r384": 3.071636740514805e-07,
+     "r1536": 0.0003554695285856724
+    },
+    "cm_raw": {
+     "r384": 0.6688947677612305,
+     "r1536": 1.1174136400222778
+    },
+    "cm_jrem4": {
+     "r384": 7.563538417798554e-08,
+     "r1536": 6.335031343951414e-08
+    }
+   },
+   "dose_over_median_norm": {
+    "reg_raw": {
+     "q90": 0.10768071572236967,
+     "q99": 0.15926003839799485
+    },
+    "reg_jrem4": {
+     "q90": 0.08074432235307917,
+     "q99": 0.12307375445347762
+    },
+    "cm_raw": {
+     "q90": 0.10830762668917306,
+     "q99": 0.15767058128477052
+    },
+    "cm_jrem4": {
+     "q90": 0.08120784824504622,
+     "q99": 0.12183139499813135
+    }
+   },
+   "pilot_natural_spearman": {
+    "reg_raw": 0.6458258942122842,
+    "reg_jrem4": 0.683022530020301,
+    "cm_raw": 0.6669262279778184,
+    "cm_jrem4": 0.7033444588511382
+   }
+  },
+  "digit_gates": {
+   "G1_meandiff_eval_auroc": 0.9577777777777777,
+   "G1_logreg_eval_auroc": 1.0,
+   "G1_jrem4_eval_auroc": 0.9066666666666666,
+   "enrichment": {
+    "r384": 0.9640071392059326,
+    "r1536": 1.3646000623703003
+   },
+   "cos_raw_jrem4": 0.7685167789459229,
+   "dose_over_median_norm": {
+    "raw": {
+     "q90": 0.16330647340138532,
+     "q99": 0.20317783885056734
+    },
+    "jrem4": {
+     "q90": 0.13080542662903052,
+     "q99": 0.17260523006966008
+    }
+   },
+   "enrichment_shuffled_mean": {
+    "r384": 1.651203203201294,
+    "r1536": 1.33990238904953
+   },
+   "enrichment_shuffled_max": {
+    "r384": 2.1658213138580322,
+    "r1536": 1.5701979398727417
+   },
+   "jlens_natural_auroc_7v5": 0.9811111111111112,
+   "jlens_any_digit_top10_rate": 0.0,
+   "jlens_any_digit_best_rank_median": 1365.5,
+   "jlens_top10_examples": [
+    [
+     " caus",
+     " causal",
+     "\u56e0\u679c",
+     "\u53e5\u5b50",
+     " sentence",
+     "\u8fd9\u53e5\u8bdd",
+     "\u53e5",
+     " implications",
+     "\u5206\u6790",
+     " attribution"
+    ],
+    [
+     "\uff0e",
+     "\u8fd9\u53e5\u8bdd",
+     "\u53e5\u5b50",
+     " Number",
+     "\u8fd9\u53e5",
+     " number",
+     " \u3002",
+     " sentence",
+     " United",
+     "\u3002"
+    ],
+    [
+     "\u53e5\u5b50",
+     "\u53e5",
+     " sentence",
+     "\u8fd9\u53e5\u8bdd",
+     "\u8bed\u53e5",
+     "\u63cf\u8ff0",
+     "\u7684\u53e5\u5b50",
+     " sentences",
+     " Sentence",
+     "\u8bed\u6cd5"
+    ],
+    [
+     "\u53e5\u5b50",
+     "\u53e5",
+     "\u4e3b\u8bed",
+     " sentence",
+     "\u8bed\u6cd5",
+     "\u52a8\u8bcd",
+     "\u8bed\u53e5",
+     "\u53e5\u4e2d",
+     " Sentence",
+     "\u4f53\u80b2"
+    ]
+   ]
+  },
+  "tense120_rawdir_natural_auroc": 0.8380555555555556,
+  "L38": {
+   "n_rows": 13477,
+   "enrichment": {
+    "raw": {
+     "r384": 1.6567604541778564,
+     "r1536": 1.9491989612579346
+    },
+    "jrem1": {
+     "r384": 3.012005223013148e-08,
+     "r1536": 1.7528072595596313
+    },
+    "jrem4": {
+     "r384": 2.705912720557535e-07,
+     "r1536": 2.0229479957833973e-07
+    }
+   },
+   "dose_over_median_norm": {
+    "raw": {
+     "q90": 0.11527808180638881,
+     "q99": 0.16774794019048858
+    },
+    "jrem1": {
+     "q90": 0.10793743342713709,
+     "q99": 0.160329260517478
+    },
+    "jrem4": {
+     "q90": 0.060077029292247716,
+     "q99": 0.09883753367665371
+    }
+   }
+  }
+ }
+}
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<27:53,  1.97s/it]
+[1ALoading weights:   2%|▏         | 13/851 [00:02<01:45,  7.98it/s]
+[1ALoading weights:   3%|▎         | 22/851 [00:02<00:56, 14.73it/s]
+[1ALoading weights:   0%|          | 1/851 [00:02<30:58,  2.19s/it]
+[1ALoading weights:   3%|▎         | 28/851 [00:02<00:46, 17.85it/s]
+[1ALoading weights:   1%|          | 10/851 [00:02<02:24,  5.84it/s]
+[1ALoading weights:   4%|▍         | 35/851 [00:02<00:36, 22.23it/s]
+[1ALoading weights:   5%|▍         | 40/851 [00:02<00:31, 25.62it/s]
+[1ALoading weights:   2%|▏         | 15/851 [00:02<01:40,  8.36it/s]
+[1ALoading weights:   5%|▌         | 45/851 [00:02<00:30, 26.83it/s]
+[1ALoading weights:   3%|▎         | 24/851 [00:02<00:54, 15.25it/s]
+[1ALoading weights:   6%|▌         | 50/851 [00:03<00:29, 27.15it/s]
+[1ALoading weights:   7%|▋         | 57/851 [00:03<00:23, 34.03it/s]
+[1ALoading weights:   3%|▎         | 29/851 [00:02<00:49, 16.67it/s]
+[1ALoading weights:   8%|▊         | 65/851 [00:03<00:18, 42.50it/s]
+[1ALoading weights:   4%|▍         | 37/851 [00:03<00:33, 23.96it/s]
+[1ALoading weights:   8%|▊         | 71/851 [00:03<00:20, 37.96it/s]
+[1ALoading weights:   9%|▉         | 80/851 [00:03<00:17, 44.39it/s]
+[1ALoading weights:   5%|▍         | 42/851 [00:03<00:40, 19.93it/s]
+[1ALoading weights:  10%|█         | 86/851 [00:03<00:17, 43.18it/s]
+[1ALoading weights:   6%|▌         | 47/851 [00:03<00:36, 22.13it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:03<00:16, 46.88it/s]
+[1ALoading weights:   6%|▌         | 51/851 [00:03<00:33, 24.09it/s]
+[1ALoading weights:   6%|▋         | 55/851 [00:03<00:34, 23.30it/s]
+[1ALoading weights:  12%|█▏        | 100/851 [00:04<00:20, 36.63it/s]
+[1ALoading weights:   7%|▋         | 62/851 [00:04<00:25, 30.55it/s]
+[1ALoading weights:  12%|█▏        | 105/851 [00:04<00:19, 39.08it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:04<00:26, 30.00it/s]
+[1ALoading weights:  14%|█▎        | 116/851 [00:04<00:13, 52.87it/s]
+[1ALoading weights:   8%|▊         | 70/851 [00:04<00:27, 28.75it/s]
+[1ALoading weights:  14%|█▍        | 123/851 [00:04<00:16, 44.90it/s]
+[1ALoading weights:   9%|▉         | 77/851 [00:04<00:24, 31.57it/s]
+[1ALoading weights:  16%|█▌        | 133/851 [00:04<00:14, 50.36it/s]
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:  10%|▉         | 81/851 [00:04<00:23, 32.23it/s]
+[1ALoading weights:  16%|█▋        | 139/851 [00:04<00:14, 49.18it/s]
+[1ALoading weights:  10%|█         | 86/851 [00:04<00:21, 35.43it/s]
+[1ALoading weights:  17%|█▋        | 146/851 [00:05<00:14, 47.31it/s]
+[1ALoading weights:  11%|█         | 90/851 [00:04<00:23, 32.76it/s]
+[1ALoading weights:  18%|█▊        | 151/851 [00:05<00:15, 43.79it/s]
+[1ALoading weights:  11%|█         | 95/851 [00:05<00:25, 29.12it/s]
+[1ALoading weights:  18%|█▊        | 156/851 [00:05<00:17, 38.91it/s]
+[1ALoading weights:  12%|█▏        | 99/851 [00:05<00:27, 27.25it/s]
+[1ALoading weights:  19%|█▉        | 165/851 [00:05<00:14, 48.20it/s]
+[1ALoading weights:  20%|██        | 171/851 [00:05<00:13, 50.87it/s]
+[1ALoading weights:  12%|█▏        | 102/851 [00:05<00:31, 23.42it/s]
+[1ALoading weights:  21%|██        | 177/851 [00:05<00:13, 49.04it/s]
+[1ALoading weights:  13%|█▎        | 107/851 [00:05<00:26, 28.38it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:05<00:12, 52.13it/s]
+[1ALoading weights:  14%|█▎        | 116/851 [00:05<00:18, 39.38it/s]
+[1ALoading weights:  23%|██▎       | 192/851 [00:06<00:13, 47.15it/s]
+[1ALoading weights:  24%|██▎       | 200/851 [00:06<00:12, 52.82it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:05<00:24, 29.60it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<21:07,  1.49s/it]
+[1ALoading weights:  15%|█▌        | 130/851 [00:06<00:18, 38.15it/s]
+[1ALoading weights:  24%|██▍       | 206/851 [00:06<00:16, 39.13it/s]
+[1ALoading weights:  16%|█▌        | 135/851 [00:06<00:21, 32.81it/s]
+[1ALoading weights:  25%|██▌       | 213/851 [00:06<00:15, 41.73it/s]
+[1ALoading weights:  26%|██▋       | 224/851 [00:06<00:11, 54.87it/s]
+[1ALoading weights:  27%|██▋       | 231/851 [00:06<00:13, 46.96it/s]
+[1ALoading weights:  17%|█▋        | 144/851 [00:06<00:25, 27.67it/s]
+[1ALoading weights:  28%|██▊       | 239/851 [00:07<00:12, 50.96it/s]
+[1ALoading weights:  18%|█▊        | 153/851 [00:06<00:20, 33.97it/s]
+[1ALoading weights:  29%|██▉       | 245/851 [00:07<00:12, 49.61it/s]
+[1ALoading weights:  19%|█▊        | 158/851 [00:07<00:20, 34.34it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:07<00:12, 49.41it/s]
+[1ALoading weights:  20%|█▉        | 166/851 [00:07<00:16, 40.55it/s]
+[1ALoading weights:  30%|███       | 259/851 [00:07<00:15, 38.05it/s]
+[1ALoading weights:  31%|███       | 264/851 [00:07<00:15, 37.86it/s]
+[1ALoading weights:  20%|██        | 172/851 [00:07<00:21, 31.03it/s]
+[1ALoading weights:  32%|███▏      | 274/851 [00:07<00:11, 50.17it/s]
+[1ALoading weights:  22%|██▏       | 184/851 [00:07<00:15, 42.89it/s]
+[1ALoading weights:  33%|███▎      | 280/851 [00:08<00:13, 43.32it/s]
+[1ALoading weights:  22%|██▏       | 190/851 [00:07<00:17, 37.02it/s]
+[1ALoading weights:  34%|███▍      | 288/851 [00:08<00:11, 50.69it/s]
+[1ALoading weights:  23%|██▎       | 197/851 [00:07<00:16, 39.43it/s]
+[1ALoading weights:  35%|███▍      | 294/851 [00:08<00:12, 43.40it/s]
+[1ALoading weights:  36%|███▌      | 306/851 [00:08<00:10, 53.70it/s]
+[1ALoading weights:  24%|██▎       | 202/851 [00:08<00:21, 29.91it/s]
+[1ALoading weights:  24%|██▍       | 206/851 [00:08<00:21, 29.58it/s]
+[1ALoading weights:  37%|███▋      | 312/851 [00:08<00:12, 41.70it/s]
+[1ALoading weights:  25%|██▍       | 210/851 [00:08<00:20, 30.75it/s]
+[1ALoading weights:   0%|          | 2/851 [00:03<29:26,  2.08s/it]
+[1ALoading weights:  37%|███▋      | 318/851 [00:08<00:12, 42.20it/s]
+[1ALoading weights:  26%|██▌       | 218/851 [00:08<00:16, 39.10it/s]
+[1ALoading weights:  39%|███▉      | 330/851 [00:08<00:09, 56.75it/s]
+[1ALoading weights:   1%|          | 9/851 [00:04<04:31,  3.10it/s]
+[1ALoading weights:  26%|██▋       | 224/851 [00:08<00:14, 42.93it/s]
+[1ALoading weights:  40%|███▉      | 337/851 [00:09<00:10, 48.18it/s]
+[1ALoading weights:  27%|██▋       | 229/851 [00:09<00:18, 33.97it/s]
+[1ALoading weights:   1%|▏         | 11/851 [00:04<03:55,  3.56it/s]
+[1ALoading weights:  41%|████      | 345/851 [00:09<00:10, 50.60it/s]
+[1ALoading weights:  28%|██▊       | 235/851 [00:09<00:17, 34.40it/s]
+[1ALoading weights:   2%|▏         | 13/851 [00:04<03:03,  4.57it/s]
+[1ALoading weights:  41%|████      | 351/851 [00:09<00:10, 46.98it/s]
+[1ALoading weights:  28%|██▊       | 240/851 [00:09<00:17, 34.16it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:09<00:09, 52.31it/s]
+[1ALoading weights:  29%|██▉       | 246/851 [00:09<00:16, 37.15it/s]
+[1ALoading weights:  30%|██▉       | 252/851 [00:09<00:14, 41.21it/s]
+[1ALoading weights:  43%|████▎     | 365/851 [00:09<00:12, 40.07it/s]
+[1ALoading weights:   2%|▏         | 15/851 [00:05<03:15,  4.27it/s]
+[1ALoading weights:  44%|████▎     | 372/851 [00:09<00:11, 42.48it/s]
+[1ALoading weights:   3%|▎         | 22/851 [00:05<01:28,  9.41it/s]
+[1ALoading weights:  30%|███       | 257/851 [00:09<00:20, 29.52it/s]
+[1ALoading weights:  45%|████▌     | 384/851 [00:10<00:08, 52.89it/s]
+[1ALoading weights:   3%|▎         | 26/851 [00:05<01:09, 11.85it/s]
+[1ALoading weights:  31%|███       | 261/851 [00:10<00:21, 27.04it/s]
+[1ALoading weights:  46%|████▌     | 390/851 [00:10<00:09, 49.68it/s]
+[1ALoading weights:  32%|███▏      | 269/851 [00:10<00:16, 35.10it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:10<00:08, 53.07it/s]
+[1ALoading weights:  47%|████▋     | 404/851 [00:10<00:08, 50.57it/s]
+[1ALoading weights:  32%|███▏      | 275/851 [00:10<00:15, 38.28it/s]
+[1ALoading weights:   3%|▎         | 29/851 [00:05<01:19, 10.35it/s]
+[1ALoading weights:   4%|▍         | 37/851 [00:05<00:48, 16.91it/s]
+[1ALoading weights:  48%|████▊     | 412/851 [00:10<00:11, 39.77it/s]
+[1ALoading weights:  33%|███▎      | 280/851 [00:10<00:19, 29.67it/s]
+[1ALoading weights:   5%|▍         | 41/851 [00:06<00:45, 17.99it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:11<00:11, 38.59it/s]
+[1ALoading weights:  34%|███▎      | 286/851 [00:10<00:19, 29.28it/s]
+[1ALoading weights:  34%|███▍      | 293/851 [00:10<00:15, 35.89it/s]
+[1ALoading weights:  51%|█████     | 433/851 [00:11<00:07, 54.67it/s]
+[1ALoading weights:   5%|▌         | 44/851 [00:06<00:50, 16.00it/s]
+[1ALoading weights:  35%|███▌      | 299/851 [00:11<00:15, 36.62it/s]
+[1ALoading weights:  52%|█████▏    | 439/851 [00:11<00:08, 45.97it/s]
+[1ALoading weights:   6%|▌         | 47/851 [00:06<00:49, 16.25it/s]
+[1ALoading weights:  36%|███▌      | 304/851 [00:11<00:13, 39.28it/s]
+[1ALoading weights:  53%|█████▎    | 451/851 [00:11<00:07, 55.35it/s]
+[1ALoading weights:   6%|▌         | 51/851 [00:06<00:43, 18.36it/s]
+[1ALoading weights:  54%|█████▍    | 458/851 [00:11<00:07, 53.45it/s]
+[1ALoading weights:   6%|▋         | 54/851 [00:06<00:40, 19.65it/s]
+[1ALoading weights:  36%|███▋      | 309/851 [00:11<00:18, 29.00it/s]
+[1ALoading weights:  55%|█████▍    | 464/851 [00:11<00:07, 50.06it/s]
+[1ALoading weights:   7%|▋         | 62/851 [00:07<00:30, 25.88it/s]
+[1ALoading weights:  37%|███▋      | 313/851 [00:11<00:21, 25.13it/s]
+[1ALoading weights:  55%|█████▌    | 470/851 [00:12<00:08, 42.95it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:07<00:28, 27.09it/s]
+[1ALoading weights:  38%|███▊      | 320/851 [00:11<00:16, 32.98it/s]
+[1ALoading weights:  56%|█████▌    | 475/851 [00:12<00:09, 39.92it/s]
+[1ALoading weights:  39%|███▊      | 328/851 [00:11<00:13, 38.58it/s]
+[1ALoading weights:   8%|▊         | 69/851 [00:07<00:34, 22.92it/s]
+[1ALoading weights:  57%|█████▋    | 486/851 [00:12<00:06, 53.83it/s]
+[1ALoading weights:  39%|███▉      | 333/851 [00:12<00:15, 32.63it/s]
+[1ALoading weights:   9%|▉         | 77/851 [00:07<00:25, 29.89it/s]
+[1ALoading weights:  58%|█████▊    | 493/851 [00:12<00:08, 43.41it/s]
+[1ALoading weights:  10%|▉         | 81/851 [00:07<00:28, 27.44it/s]
+[1ALoading weights:  59%|█████▉    | 504/851 [00:12<00:06, 50.52it/s]
+[1ALoading weights:  40%|████      | 342/851 [00:12<00:15, 33.75it/s]
+[1ALoading weights:  10%|▉         | 84/851 [00:07<00:27, 27.73it/s]
+[1ALoading weights:  60%|█████▉    | 510/851 [00:12<00:06, 48.98it/s]
+[1ALoading weights:  41%|████      | 347/851 [00:12<00:14, 33.65it/s]
+[1ALoading weights:  11%|█         | 90/851 [00:07<00:24, 31.25it/s]
+[1ALoading weights:  61%|██████    | 517/851 [00:12<00:06, 52.55it/s]
+[1ALoading weights:  42%|████▏     | 356/851 [00:12<00:11, 44.13it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:08<00:23, 32.90it/s]
+[1ALoading weights:  12%|█▏        | 98/851 [00:08<00:29, 25.78it/s]
+[1ALoading weights:  61%|██████▏   | 523/851 [00:13<00:08, 37.83it/s]
+[1ALoading weights:  43%|████▎     | 362/851 [00:12<00:15, 31.44it/s]
+[1ALoading weights:  62%|██████▏   | 528/851 [00:13<00:09, 35.27it/s]
+[1ALoading weights:  12%|█▏        | 101/851 [00:08<00:36, 20.80it/s]
+[1ALoading weights:  43%|████▎     | 367/851 [00:13<00:16, 29.14it/s]
+[1ALoading weights:  12%|█▏        | 105/851 [00:08<00:30, 24.12it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:13<00:07, 42.56it/s]
+[1ALoading weights:  44%|████▍     | 377/851 [00:13<00:11, 40.26it/s]
+[1ALoading weights:  14%|█▎        | 116/851 [00:08<00:19, 38.51it/s]
+[1ALoading weights:  45%|████▌     | 383/851 [00:13<00:11, 40.91it/s]
+[1ALoading weights:  64%|██████▍   | 544/851 [00:13<00:07, 42.53it/s]
+[1ALoading weights:  65%|██████▍   | 552/851 [00:13<00:06, 49.33it/s]
+[1ALoading weights:  46%|████▌     | 388/851 [00:13<00:14, 32.98it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:09<00:26, 27.58it/s]
+[1ALoading weights:  66%|██████▌   | 558/851 [00:14<00:07, 40.25it/s]
+[1ALoading weights:  46%|████▋     | 394/851 [00:13<00:12, 36.69it/s]
+[1ALoading weights:  66%|██████▌   | 563/851 [00:14<00:07, 40.45it/s]
+[1ALoading weights:  15%|█▌        | 129/851 [00:09<00:21, 33.53it/s]
+[1ALoading weights:  67%|██████▋   | 568/851 [00:14<00:06, 42.17it/s]
+[1ALoading weights:  47%|████▋     | 399/851 [00:13<00:12, 34.82it/s]
+[1ALoading weights:  16%|█▌        | 134/851 [00:09<00:22, 31.85it/s]
+[1ALoading weights:  47%|████▋     | 403/851 [00:14<00:12, 34.64it/s]
+[1ALoading weights:  16%|█▌        | 138/851 [00:09<00:21, 33.31it/s]
+[1ALoading weights:  48%|████▊     | 411/851 [00:14<00:10, 42.84it/s]
+[1ALoading weights:  67%|██████▋   | 573/851 [00:14<00:09, 28.39it/s]
+[1ALoading weights:  17%|█▋        | 144/851 [00:09<00:20, 35.09it/s]
+[1ALoading weights:  17%|█▋        | 148/851 [00:09<00:22, 30.76it/s]
+[1ALoading weights:  49%|████▉     | 416/851 [00:14<00:14, 30.47it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:14<00:11, 23.78it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:10<00:25, 27.75it/s]
+[1ALoading weights:  69%|██████▉   | 590/851 [00:14<00:07, 37.11it/s]
+[1ALoading weights:  49%|████▉     | 420/851 [00:14<00:15, 27.05it/s]
+[1ALoading weights:  70%|███████   | 596/851 [00:15<00:06, 40.36it/s]
+[1ALoading weights:  51%|█████     | 430/851 [00:14<00:10, 40.17it/s]
+[1ALoading weights:  18%|█▊        | 155/851 [00:10<00:30, 22.53it/s]
+[1ALoading weights:  51%|█████     | 436/851 [00:14<00:10, 41.04it/s]
+[1ALoading weights:  19%|█▉        | 161/851 [00:10<00:23, 29.14it/s]
+[1ALoading weights:  71%|███████   | 601/851 [00:15<00:06, 37.21it/s]
+[1ALoading weights:  52%|█████▏    | 441/851 [00:15<00:12, 31.87it/s]
+[1ALoading weights:  20%|█▉        | 169/851 [00:10<00:21, 31.04it/s]
+[1ALoading weights:  53%|█████▎    | 448/851 [00:15<00:11, 36.07it/s]
+[1ALoading weights:  20%|██        | 173/851 [00:10<00:25, 26.30it/s]
+[1ALoading weights:  71%|███████▏  | 608/851 [00:15<00:06, 38.81it/s]
+[1ALoading weights:  72%|███████▏  | 613/851 [00:15<00:06, 36.64it/s]
+[1ALoading weights:  73%|███████▎  | 623/851 [00:15<00:05, 45.04it/s]
+[1ALoading weights:  21%|██        | 176/851 [00:11<00:27, 24.83it/s]
+[1ALoading weights:  53%|█████▎    | 453/851 [00:15<00:13, 30.39it/s]
+[1ALoading weights:  74%|███████▍  | 628/851 [00:15<00:05, 40.54it/s]
+[1ALoading weights:  21%|██▏       | 182/851 [00:11<00:21, 31.22it/s]
+[1ALoading weights:  54%|█████▍    | 461/851 [00:15<00:11, 34.54it/s]
+[1ALoading weights:  74%|███████▍  | 633/851 [00:16<00:06, 33.86it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:15<00:11, 34.73it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:11<00:26, 25.29it/s]
+[1ALoading weights:  76%|███████▌  | 644/851 [00:16<00:04, 47.58it/s]
+[1ALoading weights:  55%|█████▌    | 469/851 [00:16<00:14, 26.56it/s]
+[1ALoading weights:  76%|███████▋  | 650/851 [00:16<00:04, 41.18it/s]
+[1ALoading weights:  22%|██▏       | 189/851 [00:11<00:33, 19.82it/s]
+[1ALoading weights:  77%|███████▋  | 656/851 [00:16<00:04, 44.51it/s]
+[1ALoading weights:  56%|█████▌    | 473/851 [00:16<00:14, 25.50it/s]
+[1ALoading weights:  23%|██▎       | 197/851 [00:11<00:23, 27.65it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:16<00:03, 48.32it/s]
+[1ALoading weights:  56%|█████▋    | 479/851 [00:16<00:11, 31.60it/s]
+[1ALoading weights:  79%|███████▊  | 669/851 [00:16<00:04, 44.04it/s]
+[1ALoading weights:  57%|█████▋    | 485/851 [00:16<00:10, 34.49it/s]
+[1ALoading weights:  24%|██▎       | 201/851 [00:12<00:28, 22.94it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:16<00:03, 47.56it/s]
+[1ALoading weights:  24%|██▍       | 204/851 [00:12<00:30, 21.47it/s]
+[1ALoading weights:  58%|█████▊    | 491/851 [00:16<00:12, 28.49it/s]
+[1ALoading weights:  80%|████████  | 683/851 [00:17<00:04, 36.21it/s]
+[1ALoading weights:  59%|█████▉    | 501/851 [00:17<00:09, 38.66it/s]
+[1ALoading weights:  24%|██▍       | 207/851 [00:12<00:34, 18.70it/s]
+[1ALoading weights:  81%|████████  | 688/851 [00:17<00:04, 38.15it/s]
+[1ALoading weights:  25%|██▌       | 213/851 [00:12<00:25, 25.22it/s]
+[1ALoading weights:  82%|████████▏ | 699/851 [00:17<00:02, 52.87it/s]
+[1ALoading weights:  59%|█████▉    | 506/851 [00:17<00:11, 30.65it/s]
+[1ALoading weights:  26%|██▌       | 218/851 [00:12<00:22, 28.14it/s]
+[1ALoading weights:  61%|██████    | 515/851 [00:17<00:08, 38.53it/s]
+[1ALoading weights:  83%|████████▎ | 706/851 [00:17<00:03, 44.09it/s]
+[1ALoading weights:  26%|██▋       | 224/851 [00:12<00:21, 29.35it/s]
+[1ALoading weights:  84%|████████▍ | 715/851 [00:17<00:02, 49.01it/s]
+[1ALoading weights:  27%|██▋       | 228/851 [00:13<00:24, 25.29it/s]
+[1ALoading weights:  85%|████████▍ | 721/851 [00:18<00:02, 44.69it/s]
+[1ALoading weights:  61%|██████    | 520/851 [00:17<00:11, 27.71it/s]
+[1ALoading weights:  28%|██▊       | 235/851 [00:13<00:20, 30.63it/s]
+[1ALoading weights:  86%|████████▌ | 729/851 [00:18<00:02, 46.78it/s]
+[1ALoading weights:  62%|██████▏   | 524/851 [00:18<00:13, 24.05it/s]
+[1ALoading weights:  28%|██▊       | 239/851 [00:13<00:20, 29.44it/s]
+[1ALoading weights:  86%|████████▋ | 735/851 [00:18<00:02, 41.32it/s]
+[1ALoading weights:  62%|██████▏   | 529/851 [00:18<00:11, 27.17it/s]
+[1ALoading weights:  87%|████████▋ | 740/851 [00:18<00:02, 39.85it/s]
+[1ALoading weights:  29%|██▊       | 243/851 [00:13<00:24, 25.16it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:18<00:08, 37.42it/s]
+[1ALoading weights:  29%|██▉       | 248/851 [00:13<00:20, 29.77it/s]
+[1ALoading weights:  88%|████████▊ | 751/851 [00:18<00:01, 52.37it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:13<00:21, 28.27it/s]
+[1ALoading weights:  64%|██████▍   | 544/851 [00:18<00:10, 29.57it/s]
+[1ALoading weights:  89%|████████▉ | 757/851 [00:18<00:02, 41.03it/s]
+[1ALoading weights:  65%|██████▌   | 554/851 [00:18<00:07, 40.69it/s]
+[1ALoading weights:  90%|█████████ | 769/851 [00:19<00:01, 51.95it/s]
+[1ALoading weights:  30%|███       | 257/851 [00:14<00:27, 21.47it/s]
+[1ALoading weights:  91%|█████████ | 775/851 [00:19<00:01, 48.24it/s]
+[1ALoading weights:  66%|██████▌   | 560/851 [00:18<00:08, 34.92it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:19<00:01, 50.53it/s]
+[1ALoading weights:  67%|██████▋   | 567/851 [00:19<00:07, 38.18it/s]
+[1ALoading weights:  31%|███       | 260/851 [00:14<00:32, 18.40it/s]
+[1ALoading weights:  67%|██████▋   | 572/851 [00:19<00:08, 34.59it/s]
+[1ALoading weights:  31%|███▏      | 266/851 [00:14<00:25, 23.15it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:19<00:01, 39.38it/s]
+[1ALoading weights:  93%|█████████▎| 794/851 [00:19<00:01, 40.96it/s]
+[1ALoading weights:  32%|███▏      | 274/851 [00:14<00:21, 26.95it/s]
+[1ALoading weights:  95%|█████████▍| 805/851 [00:19<00:00, 53.89it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:19<00:11, 24.56it/s]
+[1ALoading weights:  33%|███▎      | 279/851 [00:15<00:21, 26.42it/s]
+[1ALoading weights:  95%|█████████▌| 812/851 [00:19<00:00, 45.11it/s]
+[1ALoading weights:  69%|██████▉   | 590/851 [00:19<00:06, 38.90it/s]
+[1ALoading weights:  33%|███▎      | 282/851 [00:15<00:21, 26.61it/s]
+[1ALoading weights:  97%|█████████▋| 822/851 [00:20<00:00, 51.79it/s]
+[1ALoading weights:  70%|███████   | 596/851 [00:19<00:06, 37.34it/s]
+[1ALoading weights:  34%|███▍      | 289/851 [00:15<00:17, 32.17it/s]
+[1ALoading weights:  97%|█████████▋| 828/851 [00:20<00:00, 49.88it/s]
+[1ALoading weights:  98%|█████████▊| 834/851 [00:20<00:00, 51.41it/s]
+[1ALoading weights:  71%|███████   | 601/851 [00:20<00:07, 34.08it/s]
+[1ALoading weights:  34%|███▍      | 293/851 [00:15<00:22, 25.17it/s]
+[1ALoading weights:  71%|███████▏  | 607/851 [00:20<00:06, 37.01it/s]
+[1ALoading weights:  99%|█████████▊| 840/851 [00:20<00:00, 44.01it/s]
+[1ALoading weights:  35%|███▍      | 296/851 [00:15<00:22, 24.74it/s]
+[1ALoading weights:  35%|███▌      | 302/851 [00:15<00:17, 31.59it/s]
+[1ALoading weights:  72%|███████▏  | 612/851 [00:20<00:07, 30.90it/s]
+[1ALoading weights:  99%|█████████▉| 845/851 [00:20<00:00, 37.59it/s]
+[1ALoading weights:  73%|███████▎  | 621/851 [00:20<00:05, 39.59it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:20<00:00, 40.88it/s]
+
+[1ALoading weights:  36%|███▌      | 306/851 [00:16<00:24, 22.13it/s]
+[1ALoading weights:  74%|███████▎  | 626/851 [00:20<00:07, 30.53it/s]
+[1ALoading weights:  36%|███▋      | 309/851 [00:16<00:24, 21.94it/s]
+[1ALoading weights:  74%|███████▍  | 630/851 [00:21<00:07, 29.19it/s]
+[1ALoading weights:  75%|███████▍  | 634/851 [00:21<00:07, 29.52it/s]
+[1ALoading weights:  37%|███▋      | 312/851 [00:16<00:32, 16.57it/s]
+[1ALoading weights:  75%|███████▌  | 642/851 [00:21<00:05, 39.22it/s]
+[1ALoading weights:  38%|███▊      | 320/851 [00:16<00:20, 26.02it/s]
+[1ALoading weights:  76%|███████▌  | 648/851 [00:21<00:05, 36.24it/s]
+[1ALoading weights:  39%|███▊      | 328/851 [00:16<00:15, 34.73it/s]
+[1ALoading weights:  77%|███████▋  | 653/851 [00:21<00:05, 35.37it/s]
+[1ALoading weights:  78%|███████▊  | 660/851 [00:21<00:04, 40.94it/s]
+[1ALoading weights:  39%|███▉      | 333/851 [00:17<00:19, 26.42it/s]
+[1ALoading weights:  40%|████      | 341/851 [00:17<00:14, 34.52it/s]
+[1ALoading weights:  78%|███████▊  | 665/851 [00:22<00:06, 30.89it/s]
+[1ALoading weights:  41%|████      | 346/851 [00:17<00:16, 29.71it/s]
+[1ALoading weights:  79%|███████▉  | 671/851 [00:22<00:05, 35.14it/s]
+[1ALoading weights:  79%|███████▉  | 676/851 [00:22<00:04, 37.37it/s]
+[1ALoading weights:  41%|████      | 350/851 [00:17<00:16, 31.02it/s]
+[1ALoading weights:  42%|████▏     | 355/851 [00:17<00:15, 31.18it/s]
+[1ALoading weights:  80%|████████  | 681/851 [00:22<00:05, 31.90it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:17<00:16, 30.58it/s]
+[1ALoading weights:  80%|████████  | 685/851 [00:22<00:06, 26.20it/s]
+[1ALoading weights:  43%|████▎     | 363/851 [00:18<00:18, 26.69it/s]
+[1ALoading weights:  81%|████████  | 690/851 [00:22<00:05, 30.02it/s]
+[1ALoading weights:  82%|████████▏ | 699/851 [00:22<00:03, 38.88it/s]
+[1ALoading weights:  43%|████▎     | 366/851 [00:18<00:23, 20.68it/s]
+[1ALoading weights:  44%|████▍     | 376/851 [00:18<00:13, 34.37it/s]
+[1ALoading weights:  83%|████████▎ | 704/851 [00:23<00:04, 30.27it/s]
+[1ALoading weights:  84%|████████▍ | 713/851 [00:23<00:03, 39.92it/s]
+[1ALoading weights:  45%|████▌     | 383/851 [00:18<00:11, 39.62it/s][transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:  46%|████▌     | 388/851 [00:18<00:15, 30.22it/s]
+[1ALoading weights:  84%|████████▍ | 718/851 [00:23<00:04, 31.59it/s]
+[1ALoading weights:  46%|████▋     | 395/851 [00:19<00:12, 36.24it/s]
+[1ALoading weights:  85%|████████▌ | 727/851 [00:23<00:03, 37.50it/s]
+[1ALoading weights:  47%|████▋     | 400/851 [00:19<00:15, 29.34it/s]
+[1ALoading weights:  86%|████████▌ | 732/851 [00:24<00:03, 30.16it/s]
+[1ALoading weights:  48%|████▊     | 409/851 [00:19<00:12, 35.22it/s]
+[1ALoading weights:  86%|████████▋ | 736/851 [00:24<00:04, 24.87it/s]
+[1ALoading weights:  49%|████▊     | 414/851 [00:19<00:16, 27.30it/s]
+[1ALoading weights:  87%|████████▋ | 742/851 [00:24<00:03, 29.87it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:19<00:15, 28.17it/s]
+[1ALoading weights:  88%|████████▊ | 752/851 [00:24<00:02, 40.59it/s]
+[1ALoading weights:  50%|████▉     | 422/851 [00:20<00:14, 29.87it/s]
+[1ALoading weights:  51%|█████     | 431/851 [00:20<00:10, 40.88it/s]
+[1ALoading weights:  89%|████████▉ | 757/851 [00:24<00:03, 29.75it/s]
+[1ALoading weights:  51%|█████▏    | 437/851 [00:20<00:10, 38.86it/s]
+[1ALoading weights:  90%|█████████ | 767/851 [00:25<00:02, 39.09it/s]
+[1ALoading weights:  52%|█████▏    | 442/851 [00:20<00:12, 32.81it/s]
+[1ALoading weights:  53%|█████▎    | 448/851 [00:20<00:11, 36.42it/s]
+[1ALoading weights:  91%|█████████ | 772/851 [00:25<00:02, 33.41it/s]
+[1ALoading weights:  92%|█████████▏| 780/851 [00:25<00:01, 40.50it/s]
+[1ALoading weights:  53%|█████▎    | 453/851 [00:21<00:15, 26.49it/s]
+[1ALoading weights:  92%|█████████▏| 785/851 [00:25<00:02, 28.81it/s]
+[1ALoading weights:  54%|█████▍    | 462/851 [00:21<00:11, 34.03it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:25<00:02, 28.79it/s]
+[1ALoading weights:  93%|█████████▎| 793/851 [00:25<00:02, 28.57it/s]
+[1ALoading weights:  55%|█████▍    | 467/851 [00:21<00:14, 26.42it/s]
+[1ALoading weights:  94%|█████████▍| 803/851 [00:26<00:01, 41.01it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:21<00:14, 26.10it/s]
+[1ALoading weights:  95%|█████████▍| 808/851 [00:26<00:01, 37.18it/s]
+[1ALoading weights:  56%|█████▌    | 475/851 [00:21<00:13, 26.88it/s]
+[1ALoading weights:  96%|█████████▌| 813/851 [00:26<00:01, 35.82it/s]
+[1ALoading weights:  57%|█████▋    | 484/851 [00:21<00:10, 34.96it/s]
+[1ALoading weights:  96%|█████████▌| 819/851 [00:26<00:00, 39.69it/s]
+[1ALoading weights:  58%|█████▊    | 490/851 [00:22<00:09, 36.50it/s]
+[1ALoading weights:  97%|█████████▋| 824/851 [00:26<00:00, 29.87it/s]
+[1ALoading weights:  58%|█████▊    | 494/851 [00:22<00:11, 30.46it/s]
+[1ALoading weights:  98%|█████████▊| 833/851 [00:26<00:00, 39.56it/s]
+[1ALoading weights:  59%|█████▉    | 501/851 [00:22<00:10, 33.42it/s]
+[1ALoading weights:  59%|█████▉    | 505/851 [00:22<00:10, 31.66it/s]
+[1ALoading weights:  98%|█████████▊| 838/851 [00:27<00:00, 31.37it/s]
+[1ALoading weights:  60%|█████▉    | 509/851 [00:22<00:10, 32.79it/s]
+[1ALoading weights:  99%|█████████▉| 842/851 [00:27<00:00, 27.75it/s]
+[1ALoading weights:  61%|██████    | 515/851 [00:22<00:09, 36.05it/s]
+[1ALoading weights:  99%|█████████▉| 846/851 [00:27<00:00, 29.43it/s]
+[1ALoading weights:  61%|██████    | 519/851 [00:23<00:11, 28.25it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:27<00:00, 30.83it/s]
+
+[1ALoading weights:  61%|██████▏   | 523/851 [00:23<00:12, 26.44it/s]
+[1ALoading weights:  62%|██████▏   | 526/851 [00:23<00:15, 21.14it/s]
+[1ALoading weights:  63%|██████▎   | 536/851 [00:23<00:10, 29.29it/s]
+[1ALoading weights:  64%|██████▍   | 543/851 [00:23<00:09, 33.97it/s]
+[1ALoading weights:  64%|██████▍   | 547/851 [00:24<00:10, 29.60it/s]
+[1ALoading weights:  65%|██████▌   | 554/851 [00:24<00:08, 35.87it/s]
+[1ALoading weights:  66%|██████▌   | 558/851 [00:24<00:10, 29.03it/s]
+[1ALoading weights:  66%|██████▌   | 562/851 [00:24<00:09, 30.29it/s]
+[1ALoading weights:  67%|██████▋   | 566/851 [00:24<00:09, 30.31it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:24<00:08, 34.13it/s]
+[1ALoading weights:  68%|██████▊   | 575/851 [00:25<00:10, 26.60it/s]
+[1ALoading weights:  68%|██████▊   | 579/851 [00:25<00:12, 21.24it/s]
+[1ALoading weights:  69%|██████▉   | 586/851 [00:25<00:08, 29.61it/s]
+[1ALoading weights:  70%|██████▉   | 595/851 [00:25<00:06, 40.07it/s]
+[1ALoading weights:  71%|███████   | 601/851 [00:25<00:07, 31.59it/s]
+[1ALoading weights:  71%|███████▏  | 607/851 [00:25<00:07, 32.01it/s]
+[1ALoading weights:  72%|███████▏  | 611/851 [00:26<00:07, 31.13it/s]
+[1ALoading weights:  72%|███████▏  | 615/851 [00:26<00:07, 31.44it/s][transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:  73%|███████▎  | 621/851 [00:26<00:06, 34.92it/s]
+[1ALoading weights:  73%|███████▎  | 625/851 [00:26<00:08, 27.46it/s]
+[1ALoading weights:  74%|███████▍  | 629/851 [00:26<00:09, 23.67it/s]
+[1ALoading weights:  74%|███████▍  | 632/851 [00:27<00:10, 21.72it/s]
+[1ALoading weights:  75%|███████▍  | 637/851 [00:27<00:07, 26.86it/s]
+[1ALoading weights:  76%|███████▌  | 647/851 [00:27<00:05, 39.32it/s]
+[1ALoading weights:  77%|███████▋  | 652/851 [00:27<00:06, 29.76it/s]
+[1ALoading weights:  78%|███████▊  | 660/851 [00:27<00:05, 35.13it/s]
+[1ALoading weights:  78%|███████▊  | 665/851 [00:27<00:06, 30.27it/s]
+[1ALoading weights:  79%|███████▉  | 674/851 [00:28<00:04, 40.69it/s]
+[1ALoading weights:  80%|███████▉  | 680/851 [00:28<00:05, 31.24it/s]
+[1ALoading weights:  80%|████████  | 685/851 [00:28<00:06, 27.40it/s]
+[1ALoading weights:  81%|████████  | 691/851 [00:28<00:05, 31.80it/s]
+[1ALoading weights:  82%|████████▏ | 702/851 [00:28<00:04, 36.12it/s]
+[1ALoading weights:  83%|████████▎ | 707/851 [00:29<00:03, 37.47it/s]
+[1ALoading weights:  84%|████████▍ | 714/851 [00:29<00:03, 43.65it/s]
+[1ALoading weights:  85%|████████▍ | 720/851 [00:29<00:03, 33.51it/s]
+[1ALoading weights:  85%|████████▌ | 727/851 [00:29<00:03, 37.31it/s]
+[1ALoading weights:  86%|████████▌ | 732/851 [00:29<00:03, 30.02it/s]
+[1ALoading weights:  86%|████████▋ | 736/851 [00:30<00:03, 28.99it/s]
+[1ALoading weights:  87%|████████▋ | 740/851 [00:30<00:03, 30.18it/s]
+[1ALoading weights:  88%|████████▊ | 748/851 [00:30<00:02, 39.85it/s]
+[1ALoading weights:  89%|████████▊ | 754/851 [00:30<00:02, 43.62it/s]
+[1ALoading weights:  89%|████████▉ | 759/851 [00:30<00:02, 31.27it/s]
+[1ALoading weights:  90%|█████████ | 766/851 [00:30<00:02, 38.02it/s]
+[1ALoading weights:  91%|█████████ | 771/851 [00:31<00:02, 29.96it/s]
+[1ALoading weights:  92%|█████████▏| 780/851 [00:31<00:01, 39.54it/s]
+[1ALoading weights:  92%|█████████▏| 785/851 [00:31<00:02, 31.03it/s]
+[1ALoading weights:  93%|█████████▎| 790/851 [00:31<00:02, 28.42it/s]
+[1ALoading weights:  94%|█████████▎| 797/851 [00:31<00:01, 35.10it/s]
+[1ALoading weights:  95%|█████████▍| 805/851 [00:31<00:01, 42.39it/s]
+[1ALoading weights:  95%|█████████▌| 811/851 [00:32<00:01, 32.82it/s]
+[1ALoading weights:  96%|█████████▋| 820/851 [00:32<00:00, 40.92it/s]
+[1ALoading weights:  97%|█████████▋| 826/851 [00:32<00:00, 34.18it/s]
+[1ALoading weights:  98%|█████████▊| 835/851 [00:32<00:00, 43.28it/s]
+[1ALoading weights:  99%|█████████▉| 841/851 [00:33<00:00, 31.17it/s]
+[1ALoading weights:  99%|█████████▉| 846/851 [00:33<00:00, 28.93it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:33<00:00, 25.56it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<23:06,  1.63s/it]
+[1ALoading weights:   1%|▏         | 11/851 [00:01<01:38,  8.56it/s]
+[1ALoading weights:   2%|▏         | 17/851 [00:01<01:05, 12.70it/s]
+[1ALoading weights:   3%|▎         | 27/851 [00:02<00:36, 22.35it/s]
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   4%|▍         | 33/851 [00:02<00:30, 26.52it/s]
+[1ALoading weights:   5%|▍         | 39/851 [00:02<00:25, 31.60it/s]
+[1ALoading weights:   5%|▌         | 45/851 [00:02<00:25, 31.93it/s]
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   6%|▌         | 50/851 [00:02<00:25, 31.84it/s]
+[1ALoading weights:   7%|▋         | 59/851 [00:02<00:18, 42.57it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:02<00:19, 40.63it/s]
+[1ALoading weights:   9%|▉         | 76/851 [00:03<00:15, 49.41it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<14:51,  1.05s/it]
+[1ALoading weights:  10%|▉         | 82/851 [00:03<00:17, 43.69it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:03<00:13, 57.16it/s]
+[1ALoading weights:  12%|█▏        | 101/851 [00:03<00:17, 42.05it/s]
+[1ALoading weights:  14%|█▎        | 115/851 [00:03<00:12, 59.55it/s]
+[1ALoading weights:  14%|█▍        | 123/851 [00:03<00:14, 51.82it/s]
+[1ALoading weights:  16%|█▌        | 133/851 [00:04<00:12, 58.39it/s]
+[1ALoading weights:  17%|█▋        | 141/851 [00:04<00:11, 60.10it/s]
+[1ALoading weights:   0%|          | 2/851 [00:02<15:56,  1.13s/it]
+[1ALoading weights:  17%|█▋        | 148/851 [00:04<00:13, 51.90it/s]
+[1ALoading weights:   1%|          | 9/851 [00:02<02:32,  5.53it/s]
+[1ALoading weights:  18%|█▊        | 154/851 [00:04<00:16, 42.18it/s]
+[1ALoading weights:   2%|▏         | 14/851 [00:02<01:33,  8.93it/s]
+[1ALoading weights:   0%|          | 1/851 [00:02<30:01,  2.12s/it]
+[1ALoading weights:   2%|▏         | 19/851 [00:02<01:02, 13.24it/s]
+[1ALoading weights:  20%|█▉        | 167/851 [00:04<00:11, 58.69it/s]
+[1ALoading weights:   1%|          | 10/851 [00:02<02:20,  5.96it/s]
+[1ALoading weights:   3%|▎         | 23/851 [00:02<00:49, 16.64it/s]
+[1ALoading weights:  21%|██        | 175/851 [00:04<00:13, 48.59it/s]
+[1ALoading weights:   2%|▏         | 14/851 [00:02<01:39,  8.42it/s]
+[1ALoading weights:   2%|▏         | 18/851 [00:02<01:12, 11.55it/s]
+[1ALoading weights:  22%|██▏       | 185/851 [00:05<00:12, 55.14it/s]
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   3%|▎         | 28/851 [00:02<00:40, 20.10it/s]
+[1ALoading weights:   3%|▎         | 23/851 [00:02<00:53, 15.51it/s]
+[1ALoading weights:  23%|██▎       | 192/851 [00:05<00:11, 55.98it/s]
+[1ALoading weights:   4%|▍         | 32/851 [00:03<00:35, 23.09it/s]
+[1ALoading weights:   4%|▍         | 38/851 [00:03<00:28, 29.03it/s]
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:  24%|██▎       | 200/851 [00:05<00:11, 56.83it/s]
+[1ALoading weights:   3%|▎         | 28/851 [00:02<00:43, 19.04it/s]
+[1ALoading weights:   5%|▍         | 42/851 [00:03<00:34, 23.59it/s]
+[1ALoading weights:   4%|▍         | 33/851 [00:02<00:36, 22.54it/s]
+[1ALoading weights:  24%|██▍       | 207/851 [00:05<00:15, 42.56it/s]
+[1ALoading weights:   4%|▍         | 37/851 [00:03<00:33, 24.22it/s]
+[1ALoading weights:   5%|▌         | 46/851 [00:03<00:33, 24.01it/s]
+[1ALoading weights:  26%|██▌       | 221/851 [00:05<00:10, 60.03it/s]
+[1ALoading weights:   5%|▍         | 41/851 [00:03<00:30, 26.14it/s]
+[1ALoading weights:   6%|▌         | 49/851 [00:03<00:36, 21.75it/s]
+[1ALoading weights:   7%|▋         | 58/851 [00:03<00:22, 34.54it/s]
+[1ALoading weights:  27%|██▋       | 229/851 [00:05<00:11, 51.90it/s]
+[1ALoading weights:   5%|▌         | 45/851 [00:03<00:32, 24.48it/s]
+[1ALoading weights:   7%|▋         | 63/851 [00:03<00:21, 35.87it/s]
+[1ALoading weights:  28%|██▊       | 239/851 [00:06<00:10, 57.24it/s]
+[1ALoading weights:   0%|          | 1/851 [00:00<13:46,  1.03it/s]
+[1ALoading weights:   8%|▊         | 68/851 [00:04<00:25, 30.35it/s]
+[1ALoading weights:   6%|▌         | 48/851 [00:03<00:40, 20.01it/s]
+[1ALoading weights:  29%|██▉       | 246/851 [00:06<00:10, 57.06it/s]
+[1ALoading weights:   9%|▉         | 79/851 [00:04<00:17, 44.15it/s]
+[1ALoading weights:   6%|▌         | 53/851 [00:03<00:32, 24.45it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:06<00:10, 56.89it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<21:13,  1.50s/it]
+[1ALoading weights:   7%|▋         | 62/851 [00:03<00:24, 32.72it/s]
+[1ALoading weights:  10%|▉         | 85/851 [00:04<00:20, 37.73it/s]
+[1ALoading weights:  31%|███       | 260/851 [00:06<00:14, 41.98it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:04<00:23, 33.23it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:04<00:17, 42.73it/s]
+[1ALoading weights:   8%|▊         | 70/851 [00:04<00:24, 31.74it/s]
+[1ALoading weights:   9%|▉         | 77/851 [00:04<00:19, 39.77it/s]
+[1ALoading weights:  12%|█▏        | 99/851 [00:04<00:21, 35.17it/s]
+[1ALoading weights:  10%|▉         | 82/851 [00:04<00:25, 30.76it/s]
+[1ALoading weights:  12%|█▏        | 104/851 [00:05<00:21, 34.97it/s]
+[1ALoading weights:  11%|█         | 91/851 [00:04<00:20, 37.76it/s]
+[1ALoading weights:  14%|█▎        | 115/851 [00:05<00:14, 49.16it/s]
+[1ALoading weights:   0%|          | 2/851 [00:02<14:38,  1.03s/it]
+[1ALoading weights:   1%|▏         | 11/851 [00:02<01:50,  7.57it/s]
+[1ALoading weights:  11%|█▏        | 96/851 [00:04<00:22, 33.24it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:05<00:19, 38.35it/s]
+[1ALoading weights:  12%|█▏        | 100/851 [00:05<00:23, 31.78it/s]
+[1ALoading weights:   2%|▏         | 15/851 [00:02<01:25,  9.73it/s]
+[1ALoading weights:   0%|          | 2/851 [00:02<17:36,  1.24s/it]
+[1ALoading weights:  16%|█▌        | 133/851 [00:05<00:14, 48.45it/s]
+[1ALoading weights:   3%|▎         | 25/851 [00:02<00:42, 19.24it/s]
+[1ALoading weights:   1%|          | 10/851 [00:02<02:25,  5.80it/s]
+[1ALoading weights:  12%|█▏        | 105/851 [00:05<00:22, 33.14it/s]
+[1ALoading weights:  16%|█▋        | 139/851 [00:05<00:14, 47.89it/s]
+[1ALoading weights:   2%|▏         | 14/851 [00:02<01:39,  8.37it/s]
+[1ALoading weights:   4%|▎         | 30/851 [00:02<00:39, 20.89it/s]
+[1ALoading weights:  14%|█▎        | 116/851 [00:05<00:14, 49.13it/s]
+[1ALoading weights:   3%|▎         | 22/851 [00:02<00:53, 15.63it/s]
+[1ALoading weights:   4%|▍         | 37/851 [00:02<00:29, 28.01it/s]
+[1ALoading weights:  17%|█▋        | 147/851 [00:05<00:17, 40.45it/s]
+[1ALoading weights:  14%|█▍        | 122/851 [00:05<00:18, 39.18it/s]
+[1ALoading weights:   3%|▎         | 27/851 [00:03<00:43, 19.03it/s]
+[1ALoading weights:  15%|█▌        | 130/851 [00:05<00:16, 44.00it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:06<00:19, 36.61it/s]
+[1ALoading weights:   4%|▍         | 32/851 [00:03<00:36, 22.15it/s]
+[1ALoading weights:   5%|▌         | 43/851 [00:03<00:31, 25.67it/s]
+[1ALoading weights:   4%|▍         | 38/851 [00:03<00:29, 27.67it/s]
+[1ALoading weights:  16%|█▌        | 136/851 [00:05<00:19, 37.00it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:06<00:21, 32.13it/s]
+[1ALoading weights:   6%|▌         | 48/851 [00:03<00:32, 24.96it/s]
+[1ALoading weights:  17%|█▋        | 145/851 [00:06<00:15, 45.55it/s]
+[1ALoading weights:  20%|█▉        | 168/851 [00:06<00:15, 44.08it/s]
+[1ALoading weights:   5%|▌         | 43/851 [00:03<00:31, 25.34it/s]
+[1ALoading weights:   6%|▋         | 55/851 [00:03<00:24, 32.17it/s]
+[1ALoading weights:   8%|▊         | 64/851 [00:03<00:18, 42.05it/s]
+[1ALoading weights:  32%|███▏      | 272/851 [00:08<00:49, 11.71it/s]
+[1ALoading weights:   6%|▌         | 47/851 [00:03<00:30, 26.15it/s]
+[1ALoading weights:   6%|▌         | 52/851 [00:03<00:27, 29.25it/s]
+[1ALoading weights:  20%|██        | 174/851 [00:06<00:20, 33.05it/s]
+[1ALoading weights:  33%|███▎      | 278/851 [00:08<00:40, 14.15it/s]
+[1ALoading weights:   8%|▊         | 70/851 [00:03<00:21, 36.46it/s]
+[1ALoading weights:  18%|█▊        | 151/851 [00:06<00:23, 29.44it/s]
+[1ALoading weights:  22%|██▏       | 184/851 [00:06<00:15, 43.54it/s]
+[1ALoading weights:   7%|▋         | 60/851 [00:03<00:21, 36.77it/s]
+[1ALoading weights:  33%|███▎      | 283/851 [00:09<00:34, 16.41it/s]
+[1ALoading weights:   9%|▉         | 78/851 [00:03<00:17, 43.31it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:06<00:20, 33.69it/s]
+[1ALoading weights:  34%|███▍      | 292/851 [00:09<00:25, 22.19it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:04<00:22, 35.53it/s]
+[1ALoading weights:  20%|█▉        | 166/851 [00:06<00:16, 42.48it/s]
+[1ALoading weights:  22%|██▏       | 190/851 [00:07<00:17, 36.76it/s]
+[1ALoading weights:  10%|▉         | 84/851 [00:04<00:20, 38.30it/s]
+[1ALoading weights:  35%|███▍      | 297/851 [00:09<00:22, 24.74it/s]
+[1ALoading weights:   9%|▉         | 75/851 [00:04<00:17, 43.43it/s]
+[1ALoading weights:  23%|██▎       | 199/851 [00:07<00:14, 44.27it/s]
+[1ALoading weights:  20%|██        | 172/851 [00:06<00:17, 39.62it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:04<00:16, 45.98it/s]
+[1ALoading weights:  36%|███▌      | 305/851 [00:09<00:18, 29.46it/s]
+[1ALoading weights:   9%|▉         | 80/851 [00:04<00:17, 44.81it/s]
+[1ALoading weights:  10%|▉         | 85/851 [00:04<00:18, 41.50it/s]
+[1ALoading weights:  36%|███▋      | 310/851 [00:09<00:17, 30.53it/s]
+[1ALoading weights:  21%|██        | 177/851 [00:07<00:20, 32.77it/s]
+[1ALoading weights:  12%|█▏        | 100/851 [00:04<00:20, 36.39it/s]
+[1ALoading weights:  24%|██▍       | 205/851 [00:07<00:20, 31.89it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:04<00:15, 49.16it/s]
+[1ALoading weights:  22%|██▏       | 183/851 [00:07<00:18, 36.01it/s]
+[1ALoading weights:  37%|███▋      | 315/851 [00:09<00:17, 30.75it/s]
+[1ALoading weights:  12%|█▏        | 105/851 [00:04<00:19, 37.37it/s]
+[1ALoading weights:  38%|███▊      | 327/851 [00:09<00:12, 42.14it/s]
+[1ALoading weights:  14%|█▎        | 116/851 [00:04<00:14, 49.35it/s]
+[1ALoading weights:  25%|██▍       | 210/851 [00:07<00:22, 29.05it/s]
+[1ALoading weights:  12%|█▏        | 100/851 [00:04<00:19, 37.90it/s]
+[1ALoading weights:  22%|██▏       | 188/851 [00:07<00:22, 29.84it/s]
+[1ALoading weights:  39%|███▉      | 333/851 [00:10<00:13, 39.36it/s]
+[1ALoading weights:  26%|██▌       | 219/851 [00:07<00:16, 37.49it/s]
+[1ALoading weights:  13%|█▎        | 107/851 [00:05<00:17, 41.70it/s]
+[1ALoading weights:  14%|█▍        | 122/851 [00:04<00:17, 41.63it/s]
+[1ALoading weights:  40%|████      | 344/851 [00:10<00:10, 48.65it/s]
+[1ALoading weights:  23%|██▎       | 197/851 [00:07<00:18, 35.90it/s]
+[1ALoading weights:  26%|██▋       | 225/851 [00:08<00:15, 39.17it/s]
+[1ALoading weights:  14%|█▍        | 119/851 [00:05<00:13, 53.37it/s]
+[1ALoading weights:  16%|█▌        | 133/851 [00:05<00:14, 50.22it/s]
+[1ALoading weights:  41%|████      | 350/851 [00:10<00:10, 48.22it/s]
+[1ALoading weights:  27%|██▋       | 230/851 [00:08<00:17, 35.81it/s]
+[1ALoading weights:  15%|█▍        | 125/851 [00:05<00:13, 51.96it/s]
+[1ALoading weights:  16%|█▋        | 139/851 [00:05<00:15, 46.85it/s]
+[1ALoading weights:  24%|██▎       | 202/851 [00:07<00:23, 28.20it/s]
+[1ALoading weights:  28%|██▊       | 236/851 [00:08<00:15, 40.09it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:10<00:09, 54.03it/s]
+[1ALoading weights:  16%|█▌        | 132/851 [00:05<00:12, 55.37it/s]
+[1ALoading weights:  24%|██▍       | 206/851 [00:08<00:23, 27.79it/s]
+[1ALoading weights:  16%|█▌        | 138/851 [00:05<00:14, 47.60it/s]
+[1ALoading weights:  17%|█▋        | 147/851 [00:05<00:16, 42.73it/s]
+[1ALoading weights:  43%|████▎     | 365/851 [00:10<00:11, 42.39it/s]
+[1ALoading weights:  28%|██▊       | 241/851 [00:08<00:19, 31.99it/s]
+[1ALoading weights:  44%|████▎     | 372/851 [00:10<00:10, 44.92it/s]
+[1ALoading weights:  25%|██▍       | 210/851 [00:08<00:24, 26.37it/s]
+[1ALoading weights:  17%|█▋        | 146/851 [00:05<00:14, 49.40it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:05<00:16, 41.88it/s]
+[1ALoading weights:  30%|██▉       | 252/851 [00:08<00:13, 44.51it/s]
+[1ALoading weights:  45%|████▌     | 384/851 [00:10<00:08, 56.56it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:05<00:18, 38.27it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:05<00:15, 44.39it/s]
+[1ALoading weights:  26%|██▌       | 219/851 [00:08<00:19, 32.65it/s]
+[1ALoading weights:  46%|████▌     | 391/851 [00:11<00:08, 55.88it/s]
+[1ALoading weights:  20%|█▉        | 167/851 [00:05<00:13, 50.06it/s]
+[1ALoading weights:  26%|██▋       | 225/851 [00:08<00:17, 36.19it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:06<00:16, 41.57it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:11<00:07, 57.50it/s]
+[1ALoading weights:  20%|██        | 173/851 [00:06<00:14, 45.78it/s]
+[1ALoading weights:  27%|██▋       | 229/851 [00:08<00:18, 33.35it/s]
+[1ALoading weights:  20%|█▉        | 168/851 [00:06<00:12, 54.32it/s]
+[1ALoading weights:  30%|███       | 258/851 [00:09<00:20, 28.71it/s]
+[1ALoading weights:  21%|██        | 180/851 [00:06<00:13, 50.19it/s]
+[1ALoading weights:  48%|████▊     | 405/851 [00:11<00:08, 51.66it/s]
+[1ALoading weights:  28%|██▊       | 236/851 [00:08<00:15, 38.98it/s]
+[1ALoading weights:  20%|██        | 174/851 [00:06<00:15, 45.05it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:06<00:13, 48.54it/s]
+[1ALoading weights:  49%|████▊     | 413/851 [00:11<00:08, 53.45it/s]
+[1ALoading weights:  31%|███       | 263/851 [00:09<00:20, 28.20it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:06<00:11, 57.10it/s]
+[1ALoading weights:  28%|██▊       | 241/851 [00:09<00:18, 32.63it/s]
+[1ALoading weights:  23%|██▎       | 192/851 [00:06<00:14, 46.87it/s]
+[1ALoading weights:  32%|███▏      | 272/851 [00:09<00:16, 35.90it/s]
+[1ALoading weights:  29%|██▉       | 250/851 [00:09<00:14, 42.74it/s]
+[1ALoading weights:  23%|██▎       | 193/851 [00:06<00:12, 54.16it/s]
+[1ALoading weights:  49%|████▉     | 419/851 [00:11<00:10, 42.52it/s]
+[1ALoading weights:  23%|██▎       | 199/851 [00:06<00:14, 45.83it/s]
+[1ALoading weights:  33%|███▎      | 279/851 [00:09<00:15, 36.86it/s]
+[1ALoading weights:  24%|██▎       | 200/851 [00:06<00:11, 57.50it/s]
+[1ALoading weights:  51%|█████     | 434/851 [00:11<00:06, 62.05it/s]
+[1ALoading weights:  33%|███▎      | 284/851 [00:09<00:14, 37.94it/s]
+[1ALoading weights:  24%|██▍       | 204/851 [00:06<00:16, 40.09it/s]
+[1ALoading weights:  30%|██▉       | 255/851 [00:09<00:20, 29.46it/s]
+[1ALoading weights:  52%|█████▏    | 442/851 [00:12<00:07, 54.23it/s]
+[1ALoading weights:  34%|███▍      | 290/851 [00:09<00:13, 41.65it/s]
+[1ALoading weights:  24%|██▍       | 207/851 [00:07<00:15, 40.85it/s]
+[1ALoading weights:  25%|██▍       | 209/851 [00:06<00:18, 34.21it/s]
+[1ALoading weights:  30%|███       | 259/851 [00:09<00:20, 28.67it/s]
+[1ALoading weights:  53%|█████▎    | 451/851 [00:12<00:06, 58.02it/s]
+[1ALoading weights:  26%|██▌       | 219/851 [00:07<00:11, 55.49it/s]
+[1ALoading weights:  35%|███▍      | 295/851 [00:10<00:17, 31.73it/s]
+[1ALoading weights:  26%|██▌       | 220/851 [00:07<00:13, 47.43it/s]
+[1ALoading weights:  31%|███▏      | 266/851 [00:09<00:17, 32.50it/s]
+[1ALoading weights:  27%|██▋       | 226/851 [00:07<00:12, 51.09it/s]
+[1ALoading weights:  54%|█████▍    | 458/851 [00:12<00:06, 56.24it/s]
+[1ALoading weights:  36%|███▌      | 304/851 [00:10<00:12, 42.09it/s]
+[1ALoading weights:  27%|██▋       | 226/851 [00:07<00:14, 43.38it/s]
+[1ALoading weights:  32%|███▏      | 275/851 [00:09<00:13, 42.44it/s]
+[1ALoading weights:  27%|██▋       | 233/851 [00:07<00:11, 53.26it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:12<00:06, 56.55it/s]
+[1ALoading weights:  27%|██▋       | 233/851 [00:07<00:12, 47.85it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:12<00:08, 44.14it/s]
+[1ALoading weights:  28%|██▊       | 240/851 [00:07<00:11, 51.41it/s]
+[1ALoading weights:  28%|██▊       | 239/851 [00:07<00:13, 46.79it/s]
+[1ALoading weights:  36%|███▋      | 310/851 [00:10<00:17, 31.50it/s]
+[1ALoading weights:  33%|███▎      | 281/851 [00:10<00:16, 34.23it/s]
+[1ALoading weights:  56%|█████▌    | 478/851 [00:12<00:07, 46.69it/s]
+[1ALoading weights:  29%|██▉       | 248/851 [00:07<00:10, 57.47it/s]
+[1ALoading weights:  29%|██▊       | 244/851 [00:07<00:13, 44.73it/s]
+[1ALoading weights:  37%|███▋      | 315/851 [00:10<00:18, 29.03it/s]
+[1ALoading weights:  58%|█████▊    | 490/851 [00:12<00:06, 56.59it/s]
+[1ALoading weights:  34%|███▍      | 288/851 [00:10<00:15, 35.28it/s]
+[1ALoading weights:  30%|██▉       | 252/851 [00:07<00:11, 51.49it/s]
+[1ALoading weights:  30%|██▉       | 255/851 [00:07<00:12, 46.69it/s]
+[1ALoading weights:  58%|█████▊    | 496/851 [00:13<00:06, 54.30it/s]
+[1ALoading weights:  39%|███▊      | 328/851 [00:11<00:13, 39.89it/s]
+[1ALoading weights:  34%|███▍      | 293/851 [00:10<00:16, 33.03it/s]
+[1ALoading weights:  31%|███       | 261/851 [00:08<00:13, 43.74it/s]
+[1ALoading weights:  59%|█████▉    | 504/851 [00:13<00:06, 55.59it/s]
+[1ALoading weights:  30%|███       | 258/851 [00:07<00:15, 37.63it/s]
+[1ALoading weights:  32%|███▏      | 275/851 [00:08<00:09, 60.47it/s]
+[1ALoading weights:  35%|███▌      | 299/851 [00:10<00:16, 33.30it/s]
+[1ALoading weights:  60%|█████▉    | 510/851 [00:13<00:06, 53.81it/s]
+[1ALoading weights:  39%|███▉      | 333/851 [00:11<00:15, 33.13it/s]
+[1ALoading weights:  31%|███       | 263/851 [00:08<00:15, 37.32it/s]
+[1ALoading weights:  32%|███▏      | 272/851 [00:08<00:12, 47.45it/s]
+[1ALoading weights:  36%|███▌      | 305/851 [00:10<00:15, 34.30it/s]
+[1ALoading weights:  33%|███▎      | 282/851 [00:08<00:10, 53.40it/s]
+[1ALoading weights:  40%|████      | 342/851 [00:11<00:12, 42.02it/s]
+[1ALoading weights:  34%|███▍      | 288/851 [00:08<00:11, 47.99it/s]
+[1ALoading weights:  33%|███▎      | 279/851 [00:08<00:12, 46.11it/s]
+[1ALoading weights:  36%|███▋      | 309/851 [00:11<00:19, 27.41it/s]
+[1ALoading weights:  33%|███▎      | 285/851 [00:08<00:11, 47.38it/s]
+[1ALoading weights:  41%|████      | 348/851 [00:11<00:14, 34.01it/s]
+[1ALoading weights:  35%|███▍      | 294/851 [00:08<00:11, 49.11it/s]
+[1ALoading weights:  42%|████▏     | 356/851 [00:11<00:11, 41.29it/s]
+[1ALoading weights:  34%|███▍      | 292/851 [00:08<00:11, 48.79it/s]
+[1ALoading weights:  36%|███▌      | 306/851 [00:08<00:09, 59.82it/s]
+[1ALoading weights:  61%|██████    | 518/851 [00:13<00:05, 56.11it/s]
+[1ALoading weights:  37%|███▋      | 313/851 [00:11<00:22, 24.35it/s]
+[1ALoading weights:  35%|███▌      | 298/851 [00:08<00:11, 46.74it/s]
+[1ALoading weights:  38%|███▊      | 320/851 [00:11<00:16, 31.64it/s]
+[1ALoading weights:  36%|███▌      | 305/851 [00:08<00:10, 52.03it/s]
+[1ALoading weights:  37%|███▋      | 313/851 [00:09<00:12, 42.73it/s]
+[1ALoading weights:  62%|██████▏   | 524/851 [00:13<00:07, 43.58it/s]
+[1ALoading weights:  62%|██████▏   | 531/851 [00:13<00:06, 46.63it/s]
+[1ALoading weights:  64%|██████▍   | 543/851 [00:13<00:05, 57.34it/s]
+[1ALoading weights:  65%|██████▍   | 550/851 [00:14<00:05, 53.68it/s]
+[1ALoading weights:  39%|███▊      | 328/851 [00:11<00:13, 38.83it/s]
+[1ALoading weights:  43%|████▎     | 362/851 [00:12<00:17, 28.62it/s]
+[1ALoading weights:  38%|███▊      | 326/851 [00:09<00:08, 58.57it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:14<00:05, 53.30it/s]
+[1ALoading weights:  37%|███▋      | 311/851 [00:09<00:13, 38.72it/s]
+[1ALoading weights:  43%|████▎     | 367/851 [00:12<00:17, 28.36it/s]
+[1ALoading weights:  66%|██████▌   | 563/851 [00:14<00:05, 52.44it/s]
+[1ALoading weights:  39%|███▉      | 333/851 [00:11<00:17, 30.34it/s]
+[1ALoading weights:  39%|███▉      | 334/851 [00:09<00:10, 51.59it/s]
+[1ALoading weights:  44%|████▍     | 377/851 [00:12<00:12, 39.36it/s]
+[1ALoading weights:  40%|███▉      | 340/851 [00:12<00:13, 36.83it/s]
+[1ALoading weights:  37%|███▋      | 316/851 [00:09<00:15, 35.11it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:14<00:05, 54.45it/s]
+[1ALoading weights:  40%|████      | 344/851 [00:09<00:09, 56.32it/s]
+[1ALoading weights:  39%|███▊      | 328/851 [00:09<00:10, 51.57it/s]
+[1ALoading weights:  45%|████▌     | 384/851 [00:12<00:11, 40.93it/s]
+[1ALoading weights:  41%|████      | 346/851 [00:12<00:13, 36.57it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:14<00:06, 41.87it/s]
+[1ALoading weights:  41%|████      | 351/851 [00:09<00:08, 56.44it/s]
+[1ALoading weights:  41%|████▏     | 352/851 [00:12<00:13, 38.10it/s]
+[1ALoading weights:  46%|████▌     | 390/851 [00:12<00:12, 37.64it/s]
+[1ALoading weights:  39%|███▉      | 335/851 [00:09<00:12, 42.55it/s]
+[1ALoading weights:  69%|██████▊   | 584/851 [00:14<00:05, 45.20it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:09<00:08, 56.15it/s]
+[1ALoading weights:  42%|████▏     | 357/851 [00:12<00:12, 38.36it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:12<00:10, 42.45it/s]
+[1ALoading weights:  70%|███████   | 596/851 [00:15<00:04, 55.21it/s]
+[1ALoading weights:  41%|████      | 345/851 [00:09<00:10, 48.52it/s]
+[1ALoading weights:  71%|███████   | 602/851 [00:15<00:04, 51.37it/s]
+[1ALoading weights:  43%|████▎     | 366/851 [00:10<00:11, 41.35it/s]
+[1ALoading weights:  47%|████▋     | 403/851 [00:13<00:11, 38.44it/s]
+[1ALoading weights:  41%|████      | 351/851 [00:09<00:10, 47.08it/s]
+[1ALoading weights:  43%|████▎     | 362/851 [00:12<00:15, 31.50it/s]
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:  42%|████▏     | 357/851 [00:10<00:10, 49.20it/s]
+[1ALoading weights:  48%|████▊     | 409/851 [00:13<00:10, 42.06it/s]
+[1ALoading weights:  72%|███████▏  | 610/851 [00:15<00:04, 54.18it/s]
+[1ALoading weights:  45%|████▍     | 380/851 [00:10<00:08, 57.42it/s]
+[1ALoading weights:  43%|████▎     | 366/851 [00:12<00:17, 27.32it/s]
+[1ALoading weights:  72%|███████▏  | 616/851 [00:15<00:04, 50.95it/s]
+[1ALoading weights:  43%|████▎     | 363/851 [00:10<00:11, 41.69it/s]
+[1ALoading weights:  44%|████▍     | 374/851 [00:12<00:12, 37.17it/s]
+[1ALoading weights:  46%|████▌     | 388/851 [00:10<00:09, 49.74it/s]
+[1ALoading weights:  49%|████▊     | 414/851 [00:13<00:13, 31.85it/s]
+[1ALoading weights:  73%|███████▎  | 624/851 [00:15<00:04, 53.35it/s]
+[1ALoading weights:  47%|████▋     | 397/851 [00:10<00:08, 53.99it/s]
+[1ALoading weights:  43%|████▎     | 368/851 [00:10<00:13, 36.48it/s]
+[1ALoading weights:  45%|████▌     | 383/851 [00:13<00:11, 41.35it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:13<00:14, 28.98it/s]
+[1ALoading weights:  74%|███████▍  | 630/851 [00:15<00:05, 42.21it/s]
+[1ALoading weights:  47%|████▋     | 404/851 [00:10<00:08, 53.32it/s]
+[1ALoading weights:  44%|████▍     | 376/851 [00:10<00:10, 44.78it/s]
+[1ALoading weights:  51%|█████     | 433/851 [00:13<00:08, 49.92it/s]
+[1ALoading weights:  46%|████▌     | 388/851 [00:13<00:11, 39.03it/s]
+[1ALoading weights:  75%|███████▍  | 635/851 [00:15<00:04, 43.54it/s]
+[1ALoading weights:  45%|████▍     | 382/851 [00:10<00:09, 47.14it/s]
+[1ALoading weights:  48%|████▊     | 412/851 [00:10<00:07, 55.76it/s]
+[1ALoading weights:  46%|████▋     | 395/851 [00:13<00:10, 45.17it/s]
+[1ALoading weights:  76%|███████▌  | 646/851 [00:16<00:03, 57.67it/s]
+[1ALoading weights:  46%|████▌     | 388/851 [00:10<00:11, 40.55it/s]
+[1ALoading weights:  47%|████▋     | 401/851 [00:13<00:11, 39.51it/s]
+[1ALoading weights:  77%|███████▋  | 653/851 [00:16<00:04, 48.38it/s]
+[1ALoading weights:  49%|████▉     | 419/851 [00:11<00:10, 42.36it/s]
+[1ALoading weights:  47%|████▋     | 396/851 [00:10<00:09, 48.32it/s]
+[1ALoading weights:  52%|█████▏    | 440/851 [00:14<00:11, 35.99it/s]
+[1ALoading weights:  48%|████▊     | 409/851 [00:13<00:09, 47.91it/s]
+[1ALoading weights:  51%|█████     | 433/851 [00:11<00:07, 59.57it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:16<00:03, 54.46it/s]
+[1ALoading weights:  53%|█████▎    | 448/851 [00:14<00:09, 43.04it/s]
+[1ALoading weights:  47%|████▋     | 402/851 [00:11<00:10, 42.73it/s]
+[1ALoading weights:  79%|███████▊  | 669/851 [00:16<00:03, 51.69it/s]
+[1ALoading weights:  52%|█████▏    | 441/851 [00:11<00:07, 51.70it/s]
+[1ALoading weights:  49%|████▉     | 415/851 [00:14<00:12, 35.51it/s]
+[1ALoading weights:  48%|████▊     | 409/851 [00:11<00:10, 41.52it/s]
+[1ALoading weights:  53%|█████▎    | 454/851 [00:14<00:11, 35.22it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:16<00:03, 54.72it/s]
+[1ALoading weights:  53%|█████▎    | 451/851 [00:11<00:07, 56.55it/s]
+[1ALoading weights:  54%|█████▍    | 461/851 [00:14<00:09, 39.86it/s]
+[1ALoading weights:  49%|████▊     | 414/851 [00:11<00:11, 38.93it/s]
+[1ALoading weights:  49%|████▉     | 420/851 [00:14<00:12, 33.20it/s]
+[1ALoading weights:  54%|█████▍    | 458/851 [00:11<00:06, 56.50it/s]
+[1ALoading weights:  80%|████████  | 683/851 [00:16<00:03, 43.10it/s]
+[1ALoading weights:  51%|█████     | 432/851 [00:14<00:08, 47.13it/s]
+[1ALoading weights:  49%|████▉     | 419/851 [00:11<00:12, 35.46it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:11<00:07, 54.52it/s]
+[1ALoading weights:  81%|████████  | 689/851 [00:16<00:03, 44.35it/s]
+[1ALoading weights:  55%|█████▍    | 467/851 [00:14<00:11, 33.84it/s]
+[1ALoading weights:  51%|█████▏    | 438/851 [00:14<00:10, 39.18it/s]
+[1ALoading weights:  51%|█████     | 433/851 [00:11<00:08, 47.67it/s]
+[1ALoading weights:  82%|████████▏ | 702/851 [00:17<00:02, 58.18it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:12<00:08, 43.50it/s]
+[1ALoading weights:  55%|█████▌    | 472/851 [00:15<00:12, 30.05it/s]
+[1ALoading weights:  52%|█████▏    | 443/851 [00:14<00:10, 40.65it/s]
+[1ALoading weights:  51%|█████▏    | 438/851 [00:11<00:08, 46.22it/s]
+[1ALoading weights:  83%|████████▎ | 709/851 [00:17<00:02, 51.60it/s]
+[1ALoading weights:  57%|█████▋    | 481/851 [00:15<00:09, 40.12it/s]
+[1ALoading weights:  56%|█████▌    | 478/851 [00:12<00:08, 45.95it/s]
+[1ALoading weights:  53%|█████▎    | 448/851 [00:14<00:09, 41.38it/s]
+[1ALoading weights:  57%|█████▋    | 487/851 [00:15<00:08, 43.69it/s]
+[1ALoading weights:  84%|████████▍ | 716/851 [00:17<00:02, 53.62it/s]
+[1ALoading weights:  57%|█████▋    | 488/851 [00:12<00:06, 56.45it/s]
+[1ALoading weights:  52%|█████▏    | 446/851 [00:12<00:08, 46.36it/s]
+[1ALoading weights:  53%|█████▎    | 452/851 [00:12<00:08, 46.27it/s]
+[1ALoading weights:  85%|████████▍ | 722/851 [00:17<00:02, 51.22it/s]
+[1ALoading weights:  58%|█████▊    | 495/851 [00:12<00:06, 52.08it/s]
+[1ALoading weights:  53%|█████▎    | 453/851 [00:15<00:12, 31.88it/s]
+[1ALoading weights:  58%|█████▊    | 493/851 [00:15<00:09, 36.85it/s]
+[1ALoading weights:  54%|█████▍    | 460/851 [00:12<00:07, 53.40it/s]
+[1ALoading weights:  86%|████████▌ | 730/851 [00:17<00:02, 53.15it/s]
+[1ALoading weights:  59%|█████▉    | 504/851 [00:12<00:06, 55.73it/s]
+[1ALoading weights:  54%|█████▍    | 459/851 [00:15<00:10, 36.73it/s]
+[1ALoading weights:  59%|█████▉    | 503/851 [00:15<00:07, 47.51it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:15<00:09, 40.60it/s]
+[1ALoading weights:  55%|█████▍    | 466/851 [00:12<00:08, 44.27it/s]
+[1ALoading weights:  60%|█████▉    | 510/851 [00:12<00:06, 51.43it/s]
+[1ALoading weights:  86%|████████▋ | 736/851 [00:17<00:02, 42.63it/s]
+[1ALoading weights:  61%|██████    | 518/851 [00:12<00:05, 56.93it/s]
+[1ALoading weights:  87%|████████▋ | 742/851 [00:18<00:02, 44.22it/s]
+[1ALoading weights:  60%|█████▉    | 509/851 [00:15<00:09, 36.72it/s][W1005 19:32:12.145289931 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 123731968 bytes (free: 105054208, total: 85017624576).
+
+[1ALoading weights:  55%|█████▌    | 470/851 [00:15<00:12, 30.19it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:12<00:10, 34.57it/s][W1005 19:32:12.148688320 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 123731968 bytes (free: 25362432, total: 85017624576).
+[W1005 19:32:12.148975400 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 123731968 bytes (free: 25362432, total: 85017624576).
+Traceback (most recent call last):
+  File "/pkg/modal/_runtime/container_io_manager.py", line 915, in handle_input_exception
+    yield
+  File "/pkg/modal/_container_entrypoint.py", line 189, in run_input_sync
+    values = io_context.call_function_sync()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pkg/modal/_runtime/container_io_manager.py", line 218, in call_function_sync
+    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 319, in behave
+    res["zero"] = run(seqs, None, None, 0, "centred", ro)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 309, in run
+    lg = _last_logits(model, seqs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 99, in _last_logits
+    hs = model.model(input_ids=ids, attention_mask=mask).last_hidden_state
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 286, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1292, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/modeling_layers.py", line 109, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 911, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 836, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 118.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 24.19 MiB is free. Process 1 has 79.15 GiB memory in use. Of the allocated memory 77.44 GiB is allocated by PyTorch, and 1.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+[1ALoading weights:  89%|████████▊ | 755/851 [00:18<00:01, 58.05it/s]
+[1ALoading weights:  57%|█████▋    | 485/851 [00:12<00:07, 52.25it/s]
+[1ALoading weights:  60%|██████    | 514/851 [00:16<00:10, 33.05it/s]
+[1ALoading weights:  62%|██████▏   | 525/851 [00:13<00:08, 40.64it/s]
+[1ALoading weights:  56%|█████▌    | 474/851 [00:15<00:13, 27.33it/s]
+[1ALoading weights:  90%|████████▉ | 762/851 [00:18<00:01, 54.00it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:13<00:05, 58.41it/s]
+[1ALoading weights:  61%|██████    | 520/851 [00:16<00:09, 33.57it/s]
+[1ALoading weights:  57%|█████▋    | 483/851 [00:15<00:09, 38.07it/s]
+[1ALoading weights:  90%|█████████ | 769/851 [00:18<00:01, 56.91it/s]
+[1ALoading weights:  58%|█████▊    | 492/851 [00:13<00:08, 43.44it/s]
+[1ALoading weights:  62%|██████▏   | 524/851 [00:16<00:09, 33.23it/s]
+[1ALoading weights:   0%|          | 1/851 [00:03<45:37,  3.22s/it]
+[1ALoading weights:  59%|█████▉    | 501/851 [00:13<00:06, 51.79it/s]
+[1ALoading weights:  91%|█████████ | 775/851 [00:18<00:01, 53.59it/s]
+[1ALoading weights:  57%|█████▋    | 488/851 [00:15<00:09, 39.08it/s]
+[1ALoading weights:  64%|██████▍   | 547/851 [00:13<00:06, 48.04it/s]
+[1ALoading weights:  62%|██████▏   | 528/851 [00:16<00:09, 33.11it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:18<00:01, 57.66it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:13<00:05, 54.99it/s]
+[1ALoading weights:  60%|█████▉    | 508/851 [00:13<00:07, 46.57it/s]
+[1ALoading weights:  58%|█████▊    | 493/851 [00:16<00:11, 30.04it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:16<00:07, 41.62it/s]
+[1ALoading weights:  61%|██████    | 516/851 [00:13<00:06, 50.95it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:18<00:01, 44.77it/s]
+[1ALoading weights:  59%|█████▉    | 501/851 [00:16<00:09, 36.59it/s]
+[1ALoading weights:  66%|██████▋   | 564/851 [00:13<00:05, 52.62it/s]
+[1ALoading weights:  64%|██████▍   | 544/851 [00:16<00:08, 37.17it/s]
+[1ALoading weights:  93%|█████████▎| 795/851 [00:19<00:01, 45.32it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:13<00:05, 48.16it/s]
+[1ALoading weights:  61%|██████▏   | 522/851 [00:13<00:07, 42.71it/s]
+[1ALoading weights:  65%|██████▍   | 550/851 [00:17<00:07, 40.44it/s]
+[1ALoading weights:  95%|█████████▍| 808/851 [00:19<00:00, 59.54it/s]
+[1ALoading weights:  59%|█████▉    | 506/851 [00:16<00:11, 30.58it/s]
+[1ALoading weights:  62%|██████▏   | 527/851 [00:14<00:08, 37.66it/s]
+[1ALoading weights:  96%|█████████▌| 815/851 [00:19<00:00, 57.77it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:14<00:06, 44.54it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:17<00:06, 42.94it/s]
+[1ALoading weights:  61%|██████    | 515/851 [00:16<00:08, 38.20it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:14<00:06, 51.91it/s]
+[1ALoading weights:  66%|██████▌   | 562/851 [00:17<00:07, 38.53it/s]
+[1ALoading weights:  68%|██████▊   | 582/851 [00:14<00:06, 44.69it/s]
+[1ALoading weights:  97%|█████████▋| 822/851 [00:19<00:00, 54.98it/s]
+[1ALoading weights:  70%|██████▉   | 595/851 [00:14<00:04, 61.71it/s]
+[1ALoading weights:  61%|██████    | 520/851 [00:17<00:10, 31.03it/s]
+[1ALoading weights:  67%|██████▋   | 568/851 [00:17<00:06, 43.14it/s]
+[1ALoading weights:  97%|█████████▋| 828/851 [00:19<00:00, 51.47it/s]
+[1ALoading weights:  64%|██████▍   | 546/851 [00:14<00:07, 41.74it/s]
+[1ALoading weights:  71%|███████   | 602/851 [00:14<00:04, 52.77it/s]
+[1ALoading weights:  98%|█████████▊| 836/851 [00:19<00:00, 55.80it/s]
+[1ALoading weights:  62%|██████▏   | 524/851 [00:17<00:11, 28.83it/s]
+[1ALoading weights:  65%|██████▌   | 555/851 [00:14<00:06, 49.12it/s]
+[1ALoading weights:  67%|██████▋   | 573/851 [00:17<00:08, 32.08it/s]
+[1ALoading weights:  72%|███████▏  | 610/851 [00:14<00:04, 49.68it/s]
+[1ALoading weights:  62%|██████▏   | 528/851 [00:17<00:10, 29.68it/s]
+[1ALoading weights:  99%|█████████▉| 842/851 [00:19<00:00, 42.30it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:17<00:08, 31.62it/s]
+[1ALoading weights:  73%|███████▎  | 620/851 [00:14<00:03, 60.00it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:17<00:06, 45.14it/s]
+[1ALoading weights:  66%|██████▌   | 561/851 [00:14<00:06, 41.48it/s]
+[1ALoading weights: 100%|█████████▉| 849/851 [00:20<00:00, 46.51it/s]
+[1ALoading weights:   0%|          | 2/851 [00:04<31:32,  2.23s/it]
+[1ALoading weights:  68%|██████▊   | 581/851 [00:18<00:08, 30.91it/s]
+[1ALoading weights:  67%|██████▋   | 569/851 [00:14<00:05, 48.10it/s]
+[1ALoading weights:  74%|███████▎  | 627/851 [00:15<00:04, 48.04it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:20<00:00, 42.38it/s]
+
+[1ALoading weights:   1%|          | 8/851 [00:04<05:23,  2.61it/s]
+[1ALoading weights:  70%|██████▉   | 592/851 [00:18<00:05, 47.29it/s]
+[1ALoading weights:  64%|██████▍   | 545/851 [00:17<00:09, 32.74it/s]
+[1ALoading weights:  68%|██████▊   | 575/851 [00:15<00:06, 40.96it/s]
+[1ALoading weights:  74%|███████▍  | 633/851 [00:15<00:04, 45.13it/s]
+[1ALoading weights:   2%|▏         | 13/851 [00:04<02:50,  4.92it/s]
+[1ALoading weights:  76%|███████▌  | 644/851 [00:15<00:03, 56.93it/s]
+[1ALoading weights:  65%|██████▌   | 555/851 [00:17<00:07, 39.37it/s]
+[1ALoading weights:  70%|███████   | 598/851 [00:18<00:07, 34.94it/s]
+[1ALoading weights:  68%|██████▊   | 580/851 [00:15<00:07, 36.63it/s]
+[1ALoading weights:   2%|▏         | 17/851 [00:05<02:06,  6.59it/s]
+[1ALoading weights:  72%|███████▏  | 609/851 [00:18<00:05, 47.39it/s]
+[1ALoading weights:  69%|██████▉   | 591/851 [00:15<00:05, 47.50it/s]
+[1ALoading weights:  66%|██████▌   | 560/851 [00:18<00:08, 35.25it/s]
+[1ALoading weights:  76%|███████▋  | 651/851 [00:15<00:04, 46.94it/s]
+[1ALoading weights:   3%|▎         | 24/851 [00:05<01:15, 10.91it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:15<00:03, 57.30it/s]
+[1ALoading weights:  67%|██████▋   | 569/851 [00:18<00:07, 38.65it/s]
+[1ALoading weights:  70%|███████   | 597/851 [00:15<00:06, 38.96it/s]
+[1ALoading weights:  72%|███████▏  | 615/851 [00:18<00:06, 37.29it/s]
+[1ALoading weights:   3%|▎         | 28/851 [00:05<01:05, 12.56it/s]
+[1ALoading weights:  79%|███████▊  | 670/851 [00:15<00:03, 53.02it/s]
+[1ALoading weights:  73%|███████▎  | 623/851 [00:18<00:05, 44.90it/s]
+[1ALoading weights:  72%|███████▏  | 609/851 [00:15<00:04, 53.97it/s]
+[1ALoading weights:   4%|▎         | 31/851 [00:05<00:57, 14.20it/s]
+[1ALoading weights:  67%|██████▋   | 574/851 [00:18<00:08, 31.44it/s]
+[1ALoading weights:   4%|▍         | 37/851 [00:05<00:41, 19.41it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:16<00:03, 48.95it/s]
+[1ALoading weights:  72%|███████▏  | 616/851 [00:15<00:04, 47.26it/s]
+[1ALoading weights:   5%|▍         | 41/851 [00:05<00:37, 21.81it/s]
+[1ALoading weights:  74%|███████▍  | 629/851 [00:19<00:06, 33.30it/s]
+[1ALoading weights:  80%|████████  | 683/851 [00:16<00:03, 45.80it/s]
+[1ALoading weights:  68%|██████▊   | 578/851 [00:18<00:09, 28.04it/s]
+[1ALoading weights:  73%|███████▎  | 624/851 [00:16<00:04, 48.13it/s]
+[1ALoading weights:  81%|████████  | 688/851 [00:16<00:03, 43.68it/s]
+[1ALoading weights:  69%|██████▉   | 589/851 [00:18<00:06, 40.94it/s]
+[1ALoading weights:  75%|███████▍  | 634/851 [00:19<00:07, 30.89it/s]
+[1ALoading weights:   5%|▌         | 45/851 [00:06<00:39, 20.30it/s]
+[1ALoading weights:  82%|████████▏ | 702/851 [00:16<00:02, 60.77it/s]
+[1ALoading weights:  70%|██████▉   | 595/851 [00:18<00:05, 43.27it/s]
+[1ALoading weights:  74%|███████▍  | 630/851 [00:16<00:05, 38.11it/s]
+[1ALoading weights:  76%|███████▌  | 644/851 [00:19<00:05, 39.89it/s]
+[1ALoading weights:  75%|███████▍  | 635/851 [00:16<00:05, 39.95it/s]
+[1ALoading weights:  83%|████████▎ | 709/851 [00:16<00:02, 58.13it/s]
+[1ALoading weights:  76%|███████▋  | 649/851 [00:19<00:05, 37.62it/s]
+[1ALoading weights:  71%|███████   | 601/851 [00:19<00:06, 36.30it/s]
+[1ALoading weights:  76%|███████▌  | 643/851 [00:16<00:04, 47.12it/s]
+[1ALoading weights:  84%|████████▍ | 716/851 [00:16<00:02, 58.74it/s]
+[1ALoading weights:  76%|███████▋  | 649/851 [00:16<00:04, 48.37it/s]
+[1ALoading weights:  71%|███████   | 606/851 [00:19<00:06, 36.55it/s]
+[1ALoading weights:  77%|███████▋  | 654/851 [00:19<00:05, 37.24it/s]
+[1ALoading weights:  85%|████████▍ | 723/851 [00:16<00:02, 56.13it/s]
+[1ALoading weights:  77%|███████▋  | 655/851 [00:16<00:04, 48.53it/s]
+[1ALoading weights:  72%|███████▏  | 611/851 [00:19<00:06, 37.10it/s]
+[1ALoading weights:  86%|████████▌ | 730/851 [00:16<00:02, 56.68it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:19<00:04, 42.49it/s]
+[1ALoading weights:  78%|███████▊  | 661/851 [00:16<00:03, 50.68it/s]
+[1ALoading weights:  73%|███████▎  | 617/851 [00:19<00:05, 41.26it/s]
+[1ALoading weights:  78%|███████▊  | 668/851 [00:20<00:04, 39.91it/s]
+[1ALoading weights:  86%|████████▋ | 736/851 [00:17<00:02, 43.12it/s]
+[1ALoading weights:  78%|███████▊  | 667/851 [00:17<00:04, 43.55it/s]
+[1ALoading weights:  73%|███████▎  | 624/851 [00:19<00:05, 40.97it/s]
+[1ALoading weights:  79%|███████▉  | 676/851 [00:20<00:04, 41.91it/s]
+[1ALoading weights:  87%|████████▋ | 742/851 [00:17<00:02, 44.57it/s]
+[1ALoading weights:  79%|███████▉  | 674/851 [00:17<00:03, 47.18it/s]
+[1ALoading weights:  89%|████████▊ | 754/851 [00:17<00:01, 59.49it/s]
+[1ALoading weights:  74%|███████▍  | 629/851 [00:20<00:06, 32.18it/s]
+[1ALoading weights:  80%|████████  | 681/851 [00:20<00:04, 37.39it/s]
+[1ALoading weights:  80%|███████▉  | 680/851 [00:17<00:04, 41.15it/s]
+[1ALoading weights:  74%|███████▍  | 633/851 [00:20<00:07, 30.37it/s]
+[1ALoading weights:  89%|████████▉ | 761/851 [00:17<00:01, 51.48it/s]
+[1ALoading weights:  80%|████████  | 685/851 [00:20<00:05, 31.17it/s]
+[1ALoading weights:  80%|████████  | 685/851 [00:17<00:04, 36.28it/s]
+[1ALoading weights:  75%|███████▌  | 642/851 [00:20<00:05, 41.76it/s]
+[1ALoading weights:  90%|█████████ | 769/851 [00:17<00:01, 54.40it/s]
+[1ALoading weights:  82%|████████▏ | 698/851 [00:20<00:03, 48.05it/s]
+[1ALoading weights:  82%|████████▏ | 696/851 [00:17<00:03, 48.56it/s]
+[1ALoading weights:  76%|███████▌  | 648/851 [00:20<00:04, 41.14it/s]
+[1ALoading weights:  91%|█████████ | 775/851 [00:17<00:01, 50.82it/s]
+[1ALoading weights:  83%|████████▎ | 703/851 [00:17<00:03, 46.84it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:18<00:01, 56.46it/s]
+[1ALoading weights:  77%|███████▋  | 653/851 [00:20<00:05, 37.13it/s]
+[1ALoading weights:  83%|████████▎ | 704/851 [00:21<00:03, 37.09it/s]
+[1ALoading weights:  84%|████████▎ | 711/851 [00:17<00:02, 52.96it/s]
+[1ALoading weights:  78%|███████▊  | 660/851 [00:20<00:04, 41.47it/s]
+[1ALoading weights:  84%|████████▍ | 714/851 [00:21<00:02, 47.87it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:18<00:01, 38.53it/s]
+[1ALoading weights:  84%|████████▍ | 717/851 [00:18<00:02, 45.85it/s]
+[1ALoading weights:  85%|████████▍ | 720/851 [00:21<00:03, 40.74it/s]
+[1ALoading weights:  85%|████████▌ | 724/851 [00:18<00:02, 50.26it/s]
+[1ALoading weights:  78%|███████▊  | 665/851 [00:20<00:05, 34.37it/s]
+[1ALoading weights:  94%|█████████▍| 802/851 [00:18<00:00, 54.39it/s]
+[1ALoading weights:  86%|████████▌ | 729/851 [00:21<00:02, 47.73it/s]
+[1ALoading weights:  79%|███████▉  | 676/851 [00:21<00:03, 47.22it/s]
+[1ALoading weights:  95%|█████████▌| 809/851 [00:18<00:00, 52.10it/s]
+[1ALoading weights:  86%|████████▌ | 730/851 [00:18<00:02, 47.58it/s]
+[1ALoading weights:  96%|█████████▌| 819/851 [00:18<00:00, 58.79it/s]
+[1ALoading weights:  86%|████████▋ | 735/851 [00:21<00:03, 35.48it/s]
+[1ALoading weights:  86%|████████▋ | 736/851 [00:18<00:03, 35.84it/s]
+[1ALoading weights:  80%|████████  | 682/851 [00:21<00:04, 34.44it/s]
+[1ALoading weights:  97%|█████████▋| 826/851 [00:18<00:00, 50.80it/s]
+[1ALoading weights:  87%|████████▋ | 743/851 [00:18<00:02, 40.35it/s]
+[1ALoading weights:  87%|████████▋ | 740/851 [00:22<00:03, 34.14it/s]
+[1ALoading weights:  98%|█████████▊| 836/851 [00:19<00:00, 57.43it/s]
+[1ALoading weights:  81%|████████  | 687/851 [00:21<00:05, 31.05it/s]
+[1ALoading weights:  88%|████████▊ | 753/851 [00:18<00:01, 51.32it/s]
+[1ALoading weights:  88%|████████▊ | 748/851 [00:22<00:02, 41.89it/s]
+[1ALoading weights:  82%|████████▏ | 698/851 [00:21<00:03, 42.44it/s]
+[1ALoading weights:  89%|████████▊ | 755/851 [00:22<00:02, 42.52it/s]
+[1ALoading weights:  89%|████████▉ | 759/851 [00:19<00:02, 43.24it/s]
+[1ALoading weights:  99%|█████████▉| 843/851 [00:19<00:00, 42.26it/s][W1005 19:32:19.060690932 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 123731968 bytes (free: 105054208, total: 85017624576).
+
+[1ALoading weights:  90%|█████████ | 767/851 [00:19<00:01, 48.05it/s]
+[1ALoading weights:  89%|████████▉ | 760/851 [00:22<00:02, 38.93it/s]Loading weights: 100%|██████████| 851/851 [00:19<00:00, 43.87it/s]
+[W1005 19:32:19.065968041 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 123731968 bytes (free: 25362432, total: 85017624576).
+[W1005 19:32:19.066260305 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 123731968 bytes (free: 25362432, total: 85017624576).
+Traceback (most recent call last):
+  File "/pkg/modal/_runtime/container_io_manager.py", line 915, in handle_input_exception
+    yield
+  File "/pkg/modal/_container_entrypoint.py", line 189, in run_input_sync
+    values = io_context.call_function_sync()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pkg/modal/_runtime/container_io_manager.py", line 218, in call_function_sync
+    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 319, in behave
+    res["zero"] = run(seqs, None, None, 0, "centred", ro)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 309, in run
+    lg = _last_logits(model, seqs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 99, in _last_logits
+    hs = model.model(input_ids=ids, attention_mask=mask).last_hidden_state
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 286, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1292, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/modeling_layers.py", line 109, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 911, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 836, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 118.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 24.19 MiB is free. Process 1 has 79.15 GiB memory in use. Of the allocated memory 77.44 GiB is allocated by PyTorch, and 1.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+[1ALoading weights:  83%|████████▎ | 704/851 [00:22<00:04, 33.41it/s]
+[1ALoading weights:  90%|█████████ | 768/851 [00:22<00:01, 45.19it/s]
+[1ALoading weights:  91%|█████████ | 773/851 [00:19<00:01, 41.50it/s][transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:  84%|████████▍ | 713/851 [00:22<00:03, 40.28it/s]
+[1ALoading weights:  92%|█████████▏| 782/851 [00:19<00:01, 50.99it/s]
+[1ALoading weights:  91%|█████████ | 773/851 [00:22<00:02, 35.76it/s]
+[1ALoading weights:  84%|████████▍ | 718/851 [00:22<00:03, 33.81it/s]
+[1ALoading weights:  92%|█████████▏| 780/851 [00:22<00:01, 41.86it/s]
+[1ALoading weights:  93%|█████████▎| 788/851 [00:19<00:01, 39.01it/s]
+[1ALoading weights:   6%|▌         | 48/851 [00:06<00:43, 18.35it/s]
+[1ALoading weights:  86%|████████▌ | 728/851 [00:22<00:03, 40.63it/s]
+[1ALoading weights:   6%|▋         | 54/851 [00:06<00:31, 25.18it/s]
+[1ALoading weights:   7%|▋         | 60/851 [00:09<02:57,  4.46it/s]
+[1ALoading weights:  93%|█████████▎| 793/851 [00:19<00:01, 37.15it/s]
+[1ALoading weights:  92%|█████████▏| 785/851 [00:23<00:02, 31.49it/s]
+[1ALoading weights:  94%|█████████▍| 804/851 [00:20<00:00, 50.75it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:10<02:07,  6.16it/s]
+[1ALoading weights:  86%|████████▌ | 733/851 [00:22<00:03, 31.74it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:23<00:02, 30.91it/s]
+[1ALoading weights:   9%|▊         | 73/851 [00:10<01:24,  9.20it/s]
+[1ALoading weights:  93%|█████████▎| 793/851 [00:23<00:01, 30.27it/s]
+[1ALoading weights:  95%|█████████▌| 811/851 [00:20<00:00, 40.49it/s]
+[1ALoading weights:  87%|████████▋ | 737/851 [00:23<00:04, 27.27it/s]
+[1ALoading weights:   9%|▉         | 79/851 [00:10<01:05, 11.85it/s]
+[1ALoading weights:  94%|█████████▍| 804/851 [00:23<00:01, 45.87it/s]
+[1ALoading weights:  96%|█████████▋| 820/851 [00:20<00:00, 49.09it/s]
+[1ALoading weights:  88%|████████▊ | 747/851 [00:23<00:02, 38.13it/s]
+[1ALoading weights:  10%|▉         | 83/851 [00:10<00:57, 13.31it/s]
+[1ALoading weights:  97%|█████████▋| 827/851 [00:20<00:00, 44.25it/s]
+[1ALoading weights:  11%|█         | 91/851 [00:10<00:38, 19.66it/s]
+[1ALoading weights:  89%|████████▊ | 755/851 [00:23<00:02, 40.57it/s]
+[1ALoading weights:  98%|█████████▊| 835/851 [00:20<00:00, 50.92it/s]
+[1ALoading weights:  95%|█████████▌| 810/851 [00:23<00:01, 32.48it/s]
+[1ALoading weights:  89%|████████▉ | 760/851 [00:23<00:02, 35.70it/s]
+[1ALoading weights:  11%|█▏        | 96/851 [00:10<00:40, 18.71it/s]
+[1ALoading weights:  96%|█████████▋| 821/851 [00:24<00:00, 36.82it/s]
+[1ALoading weights:  90%|████████▉ | 765/851 [00:23<00:02, 36.52it/s]
+[1ALoading weights:  97%|█████████▋| 826/851 [00:24<00:00, 38.84it/s]
+[1ALoading weights:  99%|█████████▉| 842/851 [00:21<00:00, 35.65it/s]
+[1ALoading weights:  12%|█▏        | 100/851 [00:11<00:37, 19.93it/s]
+[1ALoading weights:  90%|█████████ | 770/851 [00:23<00:02, 33.14it/s]
+[1ALoading weights:  98%|█████████▊| 833/851 [00:24<00:00, 43.39it/s]
+[1ALoading weights: 100%|█████████▉| 848/851 [00:21<00:00, 38.91it/s]
+[1ALoading weights:  12%|█▏        | 104/851 [00:11<00:33, 22.44it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:21<00:00, 40.06it/s]
+
+[1ALoading weights:  91%|█████████ | 774/851 [00:23<00:02, 33.79it/s]
+[1ALoading weights:  14%|█▎        | 115/851 [00:11<00:20, 36.07it/s]
+[1ALoading weights:  92%|█████████▏| 781/851 [00:24<00:01, 38.63it/s]
+[1ALoading weights:  98%|█████████▊| 838/851 [00:24<00:00, 32.87it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:11<00:24, 29.24it/s]
+[1ALoading weights:  99%|█████████▉| 843/851 [00:24<00:00, 29.59it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:24<00:00, 34.09it/s]
+
+[1ALoading weights:  92%|█████████▏| 786/851 [00:24<00:02, 26.16it/s]
+[1ALoading weights:  16%|█▌        | 132/851 [00:11<00:18, 38.04it/s]
+[1ALoading weights:  16%|█▌        | 137/851 [00:11<00:19, 36.37it/s]
+[1ALoading weights:  93%|█████████▎| 790/851 [00:24<00:02, 22.90it/s]
+[1ALoading weights:  17%|█▋        | 146/851 [00:12<00:15, 45.14it/s]
+[1ALoading weights:  94%|█████████▍| 804/851 [00:24<00:01, 41.24it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:12<00:20, 33.71it/s]
+[1ALoading weights:  95%|█████████▌| 810/851 [00:25<00:01, 32.51it/s]
+[1ALoading weights:  96%|█████████▋| 821/851 [00:25<00:00, 44.92it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:12<00:21, 31.79it/s]
+[1ALoading weights:  20%|█▉        | 167/851 [00:12<00:16, 41.08it/s]
+[1ALoading weights:  97%|█████████▋| 828/851 [00:25<00:00, 36.49it/s]
+[1ALoading weights:  20%|██        | 172/851 [00:12<00:16, 40.71it/s]
+[1ALoading weights:  98%|█████████▊| 836/851 [00:25<00:00, 40.59it/s]
+[1ALoading weights:  21%|██        | 177/851 [00:12<00:17, 37.61it/s]
+[1ALoading weights:  22%|██▏       | 185/851 [00:13<00:14, 46.09it/s]
+[1ALoading weights:  99%|█████████▉| 842/851 [00:25<00:00, 32.00it/s]
+[1ALoading weights:  22%|██▏       | 191/851 [00:13<00:18, 36.29it/s]
+[1ALoading weights: 100%|█████████▉| 847/851 [00:26<00:00, 32.74it/s]
+[1ALoading weights:  23%|██▎       | 197/851 [00:13<00:17, 37.62it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:26<00:00, 32.55it/s]
+
+[1ALoading weights:  24%|██▎       | 202/851 [00:13<00:20, 31.00it/s]
+[1ALoading weights:  24%|██▍       | 206/851 [00:13<00:21, 30.61it/s]
+[1ALoading weights:  25%|██▍       | 210/851 [00:13<00:20, 31.50it/s]
+[1ALoading weights:  26%|██▌       | 220/851 [00:14<00:14, 44.56it/s]
+[1ALoading weights:  26%|██▋       | 225/851 [00:14<00:14, 43.44it/s]
+[1ALoading weights:  27%|██▋       | 230/851 [00:14<00:16, 38.58it/s][transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:  28%|██▊       | 235/851 [00:14<00:17, 34.57it/s]
+[1ALoading weights:  28%|██▊       | 240/851 [00:14<00:18, 33.83it/s]
+[1ALoading weights:  29%|██▉       | 246/851 [00:14<00:15, 38.73it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:15<00:15, 39.24it/s]
+[1ALoading weights:  30%|███       | 258/851 [00:15<00:19, 30.83it/s]
+[1ALoading weights:  31%|███       | 262/851 [00:15<00:20, 29.01it/s]
+[1ALoading weights:  32%|███▏      | 271/851 [00:15<00:14, 40.62it/s]
+[1ALoading weights:  33%|███▎      | 277/851 [00:15<00:12, 44.77it/s]
+[1ALoading weights:  33%|███▎      | 283/851 [00:15<00:15, 36.84it/s]
+[1ALoading weights:  34%|███▍      | 291/851 [00:16<00:12, 43.86it/s]
+[1ALoading weights:  35%|███▍      | 297/851 [00:16<00:16, 32.72it/s]
+[1ALoading weights:  36%|███▌      | 303/851 [00:16<00:14, 37.27it/s]
+[1ALoading weights:  36%|███▌      | 308/851 [00:16<00:19, 28.06it/s]
+[1ALoading weights:  37%|███▋      | 312/851 [00:16<00:19, 27.75it/s]
+[1ALoading weights:  37%|███▋      | 316/851 [00:16<00:18, 29.16it/s]
+[1ALoading weights:  38%|███▊      | 323/851 [00:17<00:14, 36.71it/s]
+[1ALoading weights:  39%|███▉      | 331/851 [00:17<00:12, 42.33it/s]
+[1ALoading weights:  39%|███▉      | 336/851 [00:17<00:13, 37.88it/s][transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:  40%|████      | 343/851 [00:17<00:11, 43.88it/s]
+[1ALoading weights:  41%|████      | 348/851 [00:17<00:16, 31.01it/s][transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:  42%|████▏     | 357/851 [00:17<00:12, 40.64it/s]
+[1ALoading weights:  43%|████▎     | 363/851 [00:18<00:14, 34.57it/s]
+[1ALoading weights:  43%|████▎     | 368/851 [00:18<00:15, 30.26it/s]
+[1ALoading weights:  44%|████▍     | 377/851 [00:18<00:11, 40.56it/s]
+[1ALoading weights:  45%|████▌     | 384/851 [00:18<00:12, 36.41it/s]
+[1ALoading weights:  46%|████▌     | 391/851 [00:18<00:11, 41.39it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:18<00:09, 46.03it/s]
+[1ALoading weights:  47%|████▋     | 404/851 [00:19<00:10, 44.04it/s]
+[1ALoading weights:  48%|████▊     | 411/851 [00:19<00:08, 49.36it/s]
+[1ALoading weights:  49%|████▉     | 417/851 [00:19<00:12, 34.44it/s][transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:  50%|████▉     | 422/851 [00:19<00:12, 34.28it/s]
+[1ALoading weights:  51%|█████     | 432/851 [00:19<00:09, 45.73it/s]
+[1ALoading weights:  51%|█████▏    | 438/851 [00:19<00:10, 40.71it/s]
+[1ALoading weights:  52%|█████▏    | 443/851 [00:20<00:09, 42.41it/s]
+[1ALoading weights:  53%|█████▎    | 449/851 [00:20<00:09, 44.36it/s]
+[1ALoading weights:  53%|█████▎    | 454/851 [00:20<00:10, 36.91it/s]
+[1ALoading weights:  54%|█████▍    | 459/851 [00:20<00:11, 35.54it/s]
+[1ALoading weights:  55%|█████▍    | 466/851 [00:20<00:10, 37.91it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:21<00:13, 27.31it/s]
+[1ALoading weights:  56%|█████▋    | 480/851 [00:21<00:09, 37.92it/s]
+[1ALoading weights:  57%|█████▋    | 489/851 [00:21<00:08, 40.87it/s]
+[1ALoading weights:  58%|█████▊    | 494/851 [00:21<00:09, 37.69it/s]
+[1ALoading weights:  59%|█████▉    | 503/851 [00:21<00:08, 40.15it/s]
+[1ALoading weights:  60%|█████▉    | 508/851 [00:21<00:09, 36.76it/s]
+[1ALoading weights:  61%|██████    | 517/851 [00:22<00:07, 45.99it/s]
+[1ALoading weights:  61%|██████▏   | 523/851 [00:22<00:09, 33.93it/s]
+[1ALoading weights:  62%|██████▏   | 528/851 [00:22<00:10, 31.83it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:22<00:07, 43.93it/s]
+[1ALoading weights:  64%|██████▍   | 545/851 [00:22<00:08, 34.50it/s]
+[1ALoading weights:  65%|██████▌   | 556/851 [00:23<00:07, 41.06it/s]
+[1ALoading weights:  66%|██████▌   | 561/851 [00:23<00:07, 36.58it/s]
+[1ALoading weights:  67%|██████▋   | 569/851 [00:23<00:06, 42.13it/s]
+[1ALoading weights:  67%|██████▋   | 574/851 [00:23<00:08, 31.80it/s]
+[1ALoading weights:  68%|██████▊   | 578/851 [00:23<00:10, 25.76it/s]
+[1ALoading weights:  69%|██████▊   | 583/851 [00:24<00:09, 29.03it/s]
+[1ALoading weights:  70%|██████▉   | 593/851 [00:24<00:06, 40.53it/s]
+[1ALoading weights:  70%|███████   | 599/851 [00:24<00:08, 31.13it/s]
+[1ALoading weights:  71%|███████▏  | 608/851 [00:24<00:06, 40.36it/s]
+[1ALoading weights:  72%|███████▏  | 614/851 [00:24<00:07, 33.57it/s]
+[1ALoading weights:  73%|███████▎  | 621/851 [00:25<00:05, 39.16it/s]
+[1ALoading weights:  74%|███████▎  | 627/851 [00:25<00:06, 33.91it/s]
+[1ALoading weights:  74%|███████▍  | 632/851 [00:25<00:07, 30.24it/s]
+[1ALoading weights:  75%|███████▌  | 640/851 [00:25<00:05, 38.22it/s]
+[1ALoading weights:  76%|███████▌  | 647/851 [00:25<00:04, 43.50it/s]
+[1ALoading weights:  77%|███████▋  | 653/851 [00:25<00:05, 37.15it/s]
+[1ALoading weights:  78%|███████▊  | 662/851 [00:26<00:04, 42.16it/s]
+[1ALoading weights:  78%|███████▊  | 667/851 [00:26<00:04, 39.38it/s]
+[1ALoading weights:  79%|███████▉  | 675/851 [00:26<00:03, 47.01it/s]
+[1ALoading weights:  80%|████████  | 681/851 [00:26<00:05, 33.16it/s]
+[1ALoading weights:  81%|████████  | 686/851 [00:27<00:07, 22.77it/s]
+[1ALoading weights:  82%|████████▏ | 700/851 [00:27<00:03, 37.86it/s]
+[1ALoading weights:  83%|████████▎ | 706/851 [00:27<00:04, 31.04it/s]
+[1ALoading weights:  84%|████████▍ | 713/851 [00:27<00:03, 36.72it/s]
+[1ALoading weights:  84%|████████▍ | 719/851 [00:27<00:04, 30.54it/s]
+[1ALoading weights:  85%|████████▌ | 726/851 [00:28<00:03, 33.18it/s]
+[1ALoading weights:  86%|████████▌ | 731/851 [00:28<00:04, 29.53it/s]
+[1ALoading weights:  86%|████████▋ | 735/851 [00:28<00:04, 28.45it/s]
+[1ALoading weights:  87%|████████▋ | 739/851 [00:28<00:04, 24.86it/s]
+[1ALoading weights:  88%|████████▊ | 751/851 [00:28<00:02, 40.10it/s]
+[1ALoading weights:  89%|████████▉ | 757/851 [00:29<00:03, 30.23it/s]
+[1ALoading weights:  90%|█████████ | 768/851 [00:29<00:01, 42.79it/s][W1005 19:32:39.823450109 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 20971520 bytes (free: 21102592, total: 85017624576).
+[W1005 19:32:39.823830032 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 20971520 bytes (free: 21102592, total: 85017624576).
+Traceback (most recent call last):
+  File "/pkg/modal/_runtime/container_io_manager.py", line 915, in handle_input_exception
+    yield
+  File "/pkg/modal/_container_entrypoint.py", line 189, in run_input_sync
+    values = io_context.call_function_sync()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pkg/modal/_runtime/container_io_manager.py", line 218, in call_function_sync
+    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 362, in behave
+    res["zero"] = run(seqs, None, None, 0, "centred", ro)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 309, in run
+    lg = _last_logits(model, seqs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/r5_modal.py", line 99, in _last_logits
+    hs = model.model(input_ids=ids, attention_mask=mask).last_hidden_state
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 286, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1292, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/modeling_layers.py", line 109, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 889, in forward
+    hidden_states = self.linear_attn(
+                    ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/integrations/accelerate.py", line 1010, in wrapped
+    output = forward_func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 639, in forward
+    core_attn_out, last_recurrent_state = torch_chunk_gated_delta_rule(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/integrations/hub_kernels.py", line 885, in wrapped
+    return implementation(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/ops/backends/__init__.py", line 214, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk.py", line 567, in chunk_gated_delta_rule
+    o, final_state = ChunkGatedDeltaRuleFunction.apply(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/utils/_decorators.py", line 152, in wrapper
+    return fn(*processed_args, **processed_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 481, in decorate_fwd
+    return fwd(*args, **kwargs)  # pyrefly: ignore [not-callable]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk.py", line 292, in forward
+    g, o, A, final_state, initial_state, g_input = chunk_gated_delta_rule_fwd(
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk.py", line 72, in chunk_gated_delta_rule_fwd
+    w, u, A = chunk_gated_delta_rule_fwd_intra(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/ops/backends/__init__.py", line 214, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/ops/gated_delta_rule/chunk_fwd.py", line 416, in chunk_gated_delta_rule_fwd_intra
+    w, u = recompute_w_u_fwd(
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/ops/backends/__init__.py", line 214, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/fla/ops/gated_delta_rule/wy_fast.py", line 270, in recompute_w_u_fwd
+    u = torch.empty_like(v)
+        ^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 20.12 MiB is free. Process 1 has 79.15 GiB memory in use. Of the allocated memory 77.68 GiB is allocated by PyTorch, and 814.47 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+[1ALoading weights:  91%|█████████ | 775/851 [00:29<00:01, 38.27it/s]
+[1ALoading weights:  92%|█████████▏| 781/851 [00:29<00:01, 41.41it/s]
+[1ALoading weights:  92%|█████████▏| 787/851 [00:29<00:01, 34.45it/s]
+[1ALoading weights:  93%|█████████▎| 792/851 [00:30<00:01, 30.30it/s]
+[1ALoading weights:  94%|█████████▍| 803/851 [00:30<00:01, 42.96it/s]
+[1ALoading weights:  95%|█████████▌| 809/851 [00:30<00:01, 38.01it/s]
+[1ALoading weights:  96%|█████████▌| 817/851 [00:30<00:00, 40.58it/s]
+[1ALoading weights:  97%|█████████▋| 823/851 [00:30<00:00, 40.21it/s]
+[1ALoading weights:  97%|█████████▋| 829/851 [00:30<00:00, 43.33it/s]
+[1ALoading weights:  98%|█████████▊| 834/851 [00:30<00:00, 44.60it/s]
+[1ALoading weights:  99%|█████████▊| 839/851 [00:31<00:00, 33.51it/s]
+[1ALoading weights:  99%|█████████▉| 843/851 [00:31<00:00, 29.70it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:31<00:00, 27.03it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<21:09,  1.49s/it][W1005 19:32:56.569589715 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1023737856, total: 85017624576).
+
+[1ALoading weights:   0%|          | 2/851 [00:02<20:29,  1.45s/it]
+[1ALoading weights:   1%|          | 7/851 [00:03<04:15,  3.31it/s]
+[1ALoading weights:   2%|▏         | 13/851 [00:03<02:04,  6.75it/s]
+[1ALoading weights:   2%|▏         | 16/851 [00:03<01:35,  8.73it/s]
+[1ALoading weights:   3%|▎         | 24/851 [00:03<00:52, 15.75it/s]
+[1ALoading weights:   3%|▎         | 28/851 [00:03<00:48, 17.11it/s][W1005 19:32:58.921924925 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1006960640, total: 85017624576).
+
+[1ALoading weights:   4%|▍         | 32/851 [00:04<01:35,  8.55it/s]
+[1ALoading weights:   4%|▍         | 38/851 [00:04<01:05, 12.46it/s]
+[1ALoading weights:   5%|▍         | 42/851 [00:05<01:27,  9.25it/s][W1005 19:32:59.260596422 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1023606784, total: 85017624576).
+
+[1ALoading weights:   5%|▌         | 45/851 [00:05<01:16, 10.47it/s]
+[1ALoading weights:   6%|▌         | 48/851 [00:05<01:10, 11.33it/s]
+[1ALoading weights:   6%|▋         | 54/851 [00:06<00:47, 16.76it/s]
+[1ALoading weights:   7%|▋         | 62/851 [00:06<00:31, 24.95it/s]
+[1ALoading weights:   8%|▊         | 67/851 [00:06<00:30, 25.59it/s]
+[1ALoading weights:   9%|▊         | 73/851 [00:06<00:26, 29.50it/s]
+[1ALoading weights:   9%|▉         | 79/851 [00:06<00:23, 32.98it/s]
+[1ALoading weights:  10%|▉         | 84/851 [00:06<00:23, 33.26it/s]
+[1ALoading weights:  11%|█         | 91/851 [00:06<00:18, 40.00it/s][W1005 19:33:01.872679474 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1067778048, total: 85017624576).
+
+[1ALoading weights:  11%|█▏        | 96/851 [00:07<00:23, 32.45it/s][W1005 19:33:01.878741914 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1006829568, total: 85017624576).
+
+[1ALoading weights:  12%|█▏        | 100/851 [00:07<00:23, 32.40it/s]
+[1ALoading weights:  12%|█▏        | 104/851 [00:07<00:22, 33.52it/s]
+[1ALoading weights:  14%|█▎        | 115/851 [00:07<00:14, 49.23it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:07<00:18, 39.10it/s]
+[1ALoading weights:  15%|█▌        | 130/851 [00:07<00:14, 48.52it/s]
+[1ALoading weights:  16%|█▌        | 136/851 [00:08<00:17, 41.32it/s]
+[1ALoading weights:  17%|█▋        | 145/851 [00:08<00:13, 51.13it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:08<00:17, 39.43it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:08<00:18, 37.67it/s]
+[1ALoading weights:  20%|█▉        | 166/851 [00:08<00:14, 47.84it/s]
+[1ALoading weights:  20%|██        | 173/851 [00:08<00:14, 46.46it/s]
+[1ALoading weights:  21%|██▏       | 182/851 [00:08<00:12, 55.05it/s]
+[1ALoading weights:  22%|██▏       | 189/851 [00:09<00:15, 42.03it/s]
+[1ALoading weights:  24%|██▎       | 200/851 [00:09<00:12, 50.62it/s]
+[1ALoading weights:  24%|██▍       | 206/851 [00:09<00:18, 35.42it/s]
+[1ALoading weights:  26%|██▌       | 218/851 [00:09<00:12, 48.93it/s]
+[1ALoading weights:  26%|██▋       | 225/851 [00:09<00:12, 51.14it/s]
+[1ALoading weights:  27%|██▋       | 232/851 [00:10<00:12, 49.89it/s]
+[1ALoading weights:  28%|██▊       | 239/851 [00:10<00:12, 49.69it/s][W1005 19:33:04.845294326 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1067646976, total: 85017624576).
+
+[1ALoading weights:  29%|██▉       | 245/851 [00:10<00:12, 49.01it/s]
+[1ALoading weights:  29%|██▉       | 251/851 [00:10<00:11, 51.13it/s]
+[1ALoading weights:  30%|███       | 257/851 [00:10<00:16, 36.19it/s]
+[1ALoading weights:  31%|███       | 262/851 [00:10<00:17, 32.95it/s]
+[1ALoading weights:  32%|███▏      | 275/851 [00:11<00:12, 47.53it/s]
+[1ALoading weights:  33%|███▎      | 281/851 [00:11<00:14, 38.92it/s]
+[1ALoading weights:  34%|███▍      | 290/851 [00:11<00:11, 47.10it/s]
+[1ALoading weights:  35%|███▍      | 296/851 [00:11<00:13, 39.66it/s]
+[1ALoading weights:  36%|███▌      | 303/851 [00:11<00:13, 40.51it/s]
+[1ALoading weights:  36%|███▌      | 308/851 [00:12<00:16, 32.36it/s]
+[1ALoading weights:  37%|███▋      | 312/851 [00:12<00:17, 30.62it/s]
+[1ALoading weights:  37%|███▋      | 317/851 [00:12<00:15, 33.89it/s]
+[1ALoading weights:  38%|███▊      | 325/851 [00:12<00:12, 41.78it/s]
+[1ALoading weights:  39%|███▉      | 330/851 [00:12<00:12, 42.07it/s]
+[1ALoading weights:  39%|███▉      | 335/851 [00:12<00:13, 38.54it/s]
+[1ALoading weights:  40%|████      | 342/851 [00:12<00:11, 43.11it/s]
+[1ALoading weights:  41%|████      | 347/851 [00:13<00:14, 35.84it/s]
+[1ALoading weights:  41%|████      | 351/851 [00:13<00:13, 36.20it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:13<00:11, 44.12it/s]
+[1ALoading weights:  43%|████▎     | 364/851 [00:13<00:14, 34.40it/s]
+[1ALoading weights:  43%|████▎     | 368/851 [00:13<00:14, 33.03it/s]
+[1ALoading weights:  44%|████▍     | 377/851 [00:13<00:11, 41.85it/s]
+[1ALoading weights:  45%|████▍     | 382/851 [00:13<00:11, 41.74it/s]
+[1ALoading weights:  45%|████▌     | 387/851 [00:14<00:12, 35.73it/s]
+[1ALoading weights:  47%|████▋     | 396/851 [00:14<00:11, 40.19it/s]
+[1ALoading weights:  47%|████▋     | 401/851 [00:14<00:12, 36.74it/s]
+[1ALoading weights:  48%|████▊     | 409/851 [00:14<00:10, 42.25it/s]
+[1ALoading weights:  49%|████▊     | 414/851 [00:14<00:12, 33.78it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:14<00:12, 34.46it/s]
+[1ALoading weights:  50%|████▉     | 425/851 [00:15<00:10, 40.56it/s]
+[1ALoading weights:  51%|█████     | 434/851 [00:15<00:08, 47.19it/s]
+[1ALoading weights:  52%|█████▏    | 439/851 [00:15<00:12, 33.65it/s]
+[1ALoading weights:  53%|█████▎    | 447/851 [00:15<00:10, 38.37it/s][W1005 19:33:09.565728644 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1023606784, total: 85017624576).
+
+[1ALoading weights:  53%|█████▎    | 452/851 [00:15<00:12, 31.02it/s]
+[1ALoading weights:  54%|█████▍    | 462/851 [00:16<00:09, 41.10it/s]
+[1ALoading weights:  55%|█████▍    | 467/851 [00:16<00:13, 29.03it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:16<00:13, 28.78it/s]
+[1ALoading weights:  56%|█████▌    | 475/851 [00:16<00:12, 30.21it/s]
+[1ALoading weights:  57%|█████▋    | 481/851 [00:16<00:10, 35.49it/s]
+[1ALoading weights:  57%|█████▋    | 486/851 [00:16<00:10, 36.06it/s]
+[1ALoading weights:  58%|█████▊    | 491/851 [00:17<00:11, 32.61it/s][W1005 19:33:11.985712352 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1006829568, total: 85017624576).
+
+[1ALoading weights:  58%|█████▊    | 495/851 [00:17<00:10, 33.95it/s]
+[1ALoading weights:  59%|█████▉    | 502/851 [00:17<00:08, 39.11it/s]
+[1ALoading weights:  60%|█████▉    | 507/851 [00:17<00:11, 29.82it/s]
+[1ALoading weights:  60%|██████    | 514/851 [00:17<00:09, 36.15it/s]
+[1ALoading weights:  61%|██████    | 519/851 [00:17<00:10, 32.46it/s]
+[1ALoading weights:  61%|██████▏   | 523/851 [00:18<00:11, 29.79it/s][W1005 19:33:12.122110519 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1023606784, total: 85017624576).
+
+[1ALoading weights:  62%|██████▏   | 527/851 [00:18<00:12, 26.63it/s]
+[1ALoading weights:  63%|██████▎   | 533/851 [00:18<00:09, 31.84it/s]
+[1ALoading weights:  63%|██████▎   | 540/851 [00:18<00:08, 38.43it/s]
+[1ALoading weights:  64%|██████▍   | 545/851 [00:18<00:10, 28.56it/s]
+[1ALoading weights:  65%|██████▌   | 554/851 [00:18<00:07, 39.18it/s]
+[1ALoading weights:  66%|██████▌   | 559/851 [00:19<00:08, 33.60it/s]
+[1ALoading weights:  67%|██████▋   | 568/851 [00:19<00:06, 43.34it/s]
+[1ALoading weights:  67%|██████▋   | 574/851 [00:19<00:07, 37.28it/s][W1005 19:33:13.488540116 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1006829568, total: 85017624576).
+
+[1ALoading weights:  68%|██████▊   | 579/851 [00:19<00:07, 34.80it/s]
+[1ALoading weights:  69%|██████▉   | 589/851 [00:19<00:05, 45.46it/s]
+[1ALoading weights:  70%|██████▉   | 595/851 [00:19<00:05, 47.78it/s]
+[1ALoading weights:  71%|███████   | 601/851 [00:20<00:05, 41.72it/s][W1005 19:33:14.938467370 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1067646976, total: 85017624576).
+
+[1ALoading weights:  71%|███████▏  | 607/851 [00:20<00:05, 45.55it/s][W1005 19:33:14.261516733 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1023541248, total: 85017624576).
+
+[1ALoading weights:  72%|███████▏  | 613/851 [00:20<00:06, 37.29it/s]
+[1ALoading weights:  73%|███████▎  | 621/851 [00:20<00:05, 45.69it/s]
+[1ALoading weights:  74%|███████▎  | 627/851 [00:20<00:05, 37.38it/s]
+[1ALoading weights:  74%|███████▍  | 632/851 [00:20<00:06, 34.49it/s]
+[1ALoading weights:  75%|███████▌  | 642/851 [00:21<00:04, 44.94it/s]
+[1ALoading weights:  76%|███████▌  | 648/851 [00:21<00:05, 38.52it/s]
+[1ALoading weights:  77%|███████▋  | 657/851 [00:21<00:04, 48.47it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:21<00:04, 46.84it/s]
+[1ALoading weights:  79%|███████▊  | 669/851 [00:21<00:04, 44.92it/s][W1005 19:33:15.662359402 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1006764032, total: 85017624576).
+
+[1ALoading weights:  79%|███████▉  | 674/851 [00:21<00:03, 46.03it/s]
+[1ALoading weights:  80%|███████▉  | 679/851 [00:21<00:04, 35.31it/s]
+[1ALoading weights:  80%|████████  | 684/851 [00:22<00:05, 33.01it/s]
+[1ALoading weights:  81%|████████  | 690/851 [00:22<00:04, 36.50it/s]
+[1ALoading weights:  82%|████████▏ | 699/851 [00:22<00:03, 47.45it/s][W1005 19:33:16.421751896 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1067646976, total: 85017624576).
+
+[1ALoading weights:  83%|████████▎ | 705/851 [00:22<00:03, 38.57it/s]
+[1ALoading weights:  84%|████████▍ | 715/851 [00:22<00:02, 49.57it/s]
+[1ALoading weights:  85%|████████▍ | 721/851 [00:22<00:03, 42.75it/s]
+[1ALoading weights:  85%|████████▌ | 727/851 [00:23<00:02, 45.24it/s]
+[1ALoading weights:  86%|████████▌ | 733/851 [00:23<00:03, 38.49it/s]
+[1ALoading weights:  87%|████████▋ | 738/851 [00:23<00:03, 36.06it/s]
+[1ALoading weights:  88%|████████▊ | 747/851 [00:23<00:02, 42.39it/s]
+[1ALoading weights:  88%|████████▊ | 752/851 [00:23<00:02, 40.65it/s]
+[1ALoading weights:  89%|████████▉ | 757/851 [00:23<00:02, 35.25it/s]
+[1ALoading weights:  90%|████████▉ | 765/851 [00:24<00:02, 42.84it/s]
+[1ALoading weights:  90%|█████████ | 770/851 [00:24<00:02, 36.23it/s]
+[1ALoading weights:  91%|█████████ | 775/851 [00:24<00:02, 35.71it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:24<00:01, 38.70it/s][W1005 19:33:18.702803996 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1067581440, total: 85017624576).
+
+[1ALoading weights:  93%|█████████▎| 788/851 [00:24<00:02, 30.46it/s]
+[1ALoading weights:  93%|█████████▎| 792/851 [00:25<00:02, 28.26it/s]
+[1ALoading weights:  94%|█████████▍| 799/851 [00:25<00:01, 34.92it/s]
+[1ALoading weights:  95%|█████████▍| 805/851 [00:25<00:01, 39.75it/s]
+[1ALoading weights:  95%|█████████▌| 810/851 [00:25<00:01, 31.01it/s]
+[1ALoading weights:  96%|█████████▌| 819/851 [00:25<00:00, 41.02it/s]
+[1ALoading weights:  97%|█████████▋| 824/851 [00:25<00:00, 32.14it/s]
+[1ALoading weights:  98%|█████████▊| 833/851 [00:25<00:00, 41.29it/s]
+[1ALoading weights:  99%|█████████▊| 839/851 [00:26<00:00, 33.57it/s]
+[1ALoading weights:  99%|█████████▉| 844/851 [00:26<00:00, 27.49it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:26<00:00, 31.95it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[W1005 19:33:40.862214595 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1023737856, total: 85017624576).
+[W1005 19:33:42.292688922 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1006960640, total: 85017624576).
+[W1005 19:33:45.535301701 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1067778048, total: 85017624576).
+[W1005 19:34:09.954325377 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1023672320, total: 85017624576).
+[W1005 19:34:10.325806701 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1006895104, total: 85017624576).
+[W1005 19:34:13.376822611 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1067712512, total: 85017624576).
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<14:39,  1.03s/it]
+[1ALoading weights:   0%|          | 2/851 [00:02<16:41,  1.18s/it]
+[1ALoading weights:   1%|          | 9/851 [00:02<02:35,  5.43it/s]
+[1ALoading weights:   2%|▏         | 14/851 [00:02<01:35,  8.80it/s]
+[1ALoading weights:   2%|▏         | 19/851 [00:02<01:03, 13.08it/s]
+[1ALoading weights:   3%|▎         | 25/851 [00:02<00:43, 19.15it/s]
+[1ALoading weights:   4%|▎         | 30/851 [00:03<00:40, 20.34it/s]
+[1ALoading weights:   4%|▍         | 38/851 [00:03<00:28, 28.91it/s]
+[1ALoading weights:   5%|▌         | 43/851 [00:03<00:30, 26.90it/s]
+[1ALoading weights:   6%|▌         | 47/851 [00:03<00:30, 25.96it/s]
+[1ALoading weights:   6%|▋         | 54/851 [00:03<00:24, 32.28it/s]
+[1ALoading weights:   7%|▋         | 62/851 [00:03<00:19, 41.22it/s]
+[1ALoading weights:   8%|▊         | 68/851 [00:03<00:21, 36.14it/s]
+[1ALoading weights:   9%|▉         | 80/851 [00:04<00:16, 47.99it/s]
+[1ALoading weights:  10%|█         | 86/851 [00:04<00:17, 44.85it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:04<00:15, 49.71it/s]
+[1ALoading weights:  12%|█▏        | 100/851 [00:04<00:21, 35.07it/s]
+[1ALoading weights:  13%|█▎        | 114/851 [00:04<00:13, 53.30it/s]
+[1ALoading weights:  14%|█▍        | 122/851 [00:05<00:16, 44.53it/s]
+[1ALoading weights:  16%|█▌        | 133/851 [00:05<00:14, 51.19it/s]
+[1ALoading weights:  16%|█▋        | 140/851 [00:05<00:13, 51.09it/s]
+[1ALoading weights:  17%|█▋        | 147/851 [00:05<00:14, 49.08it/s]
+[1ALoading weights:  18%|█▊        | 153/851 [00:05<00:17, 39.47it/s]
+[1ALoading weights:  19%|█▉        | 160/851 [00:05<00:16, 41.71it/s]
+[1ALoading weights:  20%|█▉        | 169/851 [00:06<00:13, 50.88it/s]
+[1ALoading weights:  21%|██        | 175/851 [00:06<00:15, 42.65it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:06<00:13, 51.06it/s]
+[1ALoading weights:  23%|██▎       | 192/851 [00:06<00:13, 49.20it/s]
+[1ALoading weights:  23%|██▎       | 199/851 [00:06<00:13, 48.79it/s]
+[1ALoading weights:  24%|██▍       | 205/851 [00:06<00:14, 43.33it/s]
+[1ALoading weights:  25%|██▍       | 210/851 [00:07<00:16, 39.46it/s]
+[1ALoading weights:  26%|██▌       | 222/851 [00:07<00:11, 52.85it/s]
+[1ALoading weights:  27%|██▋       | 228/851 [00:07<00:14, 44.18it/s]
+[1ALoading weights:  28%|██▊       | 239/851 [00:07<00:11, 52.02it/s]
+[1ALoading weights:  29%|██▉       | 245/851 [00:07<00:11, 50.95it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:07<00:11, 52.68it/s]
+[1ALoading weights:  30%|███       | 259/851 [00:08<00:15, 39.35it/s]
+[1ALoading weights:  31%|███▏      | 266/851 [00:08<00:13, 43.30it/s]
+[1ALoading weights:  33%|███▎      | 278/851 [00:08<00:10, 52.79it/s]
+[1ALoading weights:  33%|███▎      | 284/851 [00:08<00:11, 49.59it/s]
+[1ALoading weights:  34%|███▍      | 292/851 [00:08<00:10, 51.22it/s]
+[1ALoading weights:  35%|███▌      | 298/851 [00:08<00:12, 43.33it/s]
+[1ALoading weights:  36%|███▌      | 303/851 [00:09<00:17, 31.31it/s]
+[1ALoading weights:  36%|███▌      | 307/851 [00:09<00:24, 21.94it/s]
+[1ALoading weights:  37%|███▋      | 311/851 [00:09<00:22, 23.81it/s]
+[1ALoading weights:  37%|███▋      | 315/851 [00:09<00:23, 22.69it/s]
+[1ALoading weights:  37%|███▋      | 318/851 [00:09<00:23, 22.30it/s]
+[1ALoading weights:  38%|███▊      | 327/851 [00:10<00:19, 26.40it/s]
+[1ALoading weights:  39%|███▉      | 330/851 [00:10<00:22, 22.87it/s]
+[1ALoading weights:  39%|███▉      | 333/851 [00:10<00:26, 19.84it/s]
+[1ALoading weights:  40%|████      | 342/851 [00:10<00:16, 30.35it/s]
+[1ALoading weights:  41%|████      | 346/851 [00:11<00:24, 20.67it/s]
+[1ALoading weights:  41%|████▏     | 352/851 [00:11<00:19, 26.05it/s]
+[1ALoading weights:  42%|████▏     | 356/851 [00:11<00:23, 21.11it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:11<00:29, 16.89it/s]
+[1ALoading weights:  43%|████▎     | 362/851 [00:12<00:28, 17.13it/s]
+[1ALoading weights:  43%|████▎     | 365/851 [00:12<00:32, 15.00it/s]
+[1ALoading weights:  44%|████▎     | 372/851 [00:12<00:21, 22.00it/s]
+[1ALoading weights:  45%|████▍     | 381/851 [00:12<00:16, 29.11it/s]
+[1ALoading weights:  45%|████▌     | 385/851 [00:13<00:20, 22.49it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:13<00:12, 36.11it/s]
+[1ALoading weights:  47%|████▋     | 403/851 [00:13<00:12, 36.00it/s]
+[1ALoading weights:  48%|████▊     | 412/851 [00:13<00:10, 41.49it/s]
+[1ALoading weights:  49%|████▉     | 417/851 [00:13<00:11, 36.98it/s]
+[1ALoading weights:  50%|████▉     | 422/851 [00:13<00:11, 37.59it/s]
+[1ALoading weights:  51%|█████     | 433/851 [00:13<00:08, 50.62it/s]
+[1ALoading weights:  52%|█████▏    | 439/851 [00:14<00:10, 40.53it/s]
+[1ALoading weights:  53%|█████▎    | 450/851 [00:14<00:08, 49.01it/s]
+[1ALoading weights:  54%|█████▎    | 456/851 [00:14<00:08, 48.49it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:14<00:07, 52.41it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:14<00:09, 40.07it/s]
+[1ALoading weights:  56%|█████▌    | 476/851 [00:14<00:08, 41.83it/s]
+[1ALoading weights:  57%|█████▋    | 485/851 [00:15<00:07, 49.48it/s]
+[1ALoading weights:  58%|█████▊    | 491/851 [00:15<00:07, 47.52it/s]
+[1ALoading weights:  59%|█████▊    | 499/851 [00:15<00:06, 54.03it/s]
+[1ALoading weights:  59%|█████▉    | 505/851 [00:15<00:07, 46.09it/s]
+[1ALoading weights:  60%|██████    | 514/851 [00:15<00:06, 54.01it/s]
+[1ALoading weights:  61%|██████    | 520/851 [00:15<00:08, 40.57it/s]
+[1ALoading weights:  62%|██████▏   | 525/851 [00:16<00:09, 35.89it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:16<00:05, 54.77it/s]
+[1ALoading weights:  64%|██████▍   | 546/851 [00:16<00:06, 44.24it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:16<00:05, 51.30it/s]
+[1ALoading weights:  66%|██████▋   | 564/851 [00:16<00:05, 50.36it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:16<00:05, 51.01it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:17<00:06, 39.81it/s]
+[1ALoading weights:  68%|██████▊   | 582/851 [00:17<00:06, 41.56it/s]
+[1ALoading weights:  69%|██████▉   | 590/851 [00:17<00:05, 47.49it/s]
+[1ALoading weights:  70%|███████   | 597/851 [00:17<00:05, 47.89it/s]
+[1ALoading weights:  71%|███████   | 606/851 [00:17<00:04, 54.59it/s]
+[1ALoading weights:  72%|███████▏  | 612/851 [00:17<00:05, 42.50it/s]
+[1ALoading weights:  73%|███████▎  | 622/851 [00:17<00:04, 53.15it/s]
+[1ALoading weights:  74%|███████▍  | 629/851 [00:18<00:05, 39.78it/s]
+[1ALoading weights:  75%|███████▍  | 635/851 [00:18<00:04, 43.29it/s]
+[1ALoading weights:  76%|███████▌  | 648/851 [00:18<00:03, 58.40it/s]
+[1ALoading weights:  77%|███████▋  | 655/851 [00:18<00:03, 49.89it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:18<00:03, 52.01it/s]
+[1ALoading weights:  79%|███████▊  | 669/851 [00:18<00:03, 50.06it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:19<00:03, 52.46it/s]
+[1ALoading weights:  80%|████████  | 683/851 [00:19<00:04, 40.36it/s]
+[1ALoading weights:  81%|████████  | 688/851 [00:19<00:03, 41.54it/s]
+[1ALoading weights:  82%|████████▏ | 699/851 [00:19<00:02, 55.27it/s]
+[1ALoading weights:  83%|████████▎ | 706/851 [00:19<00:03, 46.20it/s]
+[1ALoading weights:  84%|████████▍ | 716/851 [00:19<00:02, 53.24it/s]
+[1ALoading weights:  85%|████████▍ | 722/851 [00:20<00:02, 48.69it/s]
+[1ALoading weights:  86%|████████▌ | 730/851 [00:20<00:02, 45.02it/s]
+[1ALoading weights:  86%|████████▋ | 735/851 [00:20<00:02, 45.01it/s]
+[1ALoading weights:  87%|████████▋ | 740/851 [00:20<00:02, 42.84it/s]
+[1ALoading weights:  88%|████████▊ | 751/851 [00:20<00:01, 55.49it/s]
+[1ALoading weights:  89%|████████▉ | 757/851 [00:20<00:02, 42.06it/s]
+[1ALoading weights:  90%|█████████ | 768/851 [00:20<00:01, 51.35it/s]
+[1ALoading weights:  91%|█████████ | 774/851 [00:21<00:01, 49.81it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:21<00:01, 46.52it/s]
+[1ALoading weights:  93%|█████████▎| 788/851 [00:21<00:01, 46.11it/s]
+[1ALoading weights:  93%|█████████▎| 793/851 [00:21<00:01, 42.32it/s]
+[1ALoading weights:  95%|█████████▍| 805/851 [00:21<00:00, 54.84it/s]
+[1ALoading weights:  95%|█████████▌| 811/851 [00:21<00:00, 45.11it/s]
+[1ALoading weights:  97%|█████████▋| 822/851 [00:22<00:00, 53.55it/s]
+[1ALoading weights:  97%|█████████▋| 828/851 [00:22<00:00, 49.23it/s]
+[1ALoading weights:  98%|█████████▊| 836/851 [00:22<00:00, 52.32it/s]
+[1ALoading weights:  99%|█████████▉| 842/851 [00:22<00:00, 39.90it/s]
+[1ALoading weights: 100%|█████████▉| 848/851 [00:22<00:00, 43.54it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:22<00:00, 37.41it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:03<44:50,  3.16s/it]
+[1ALoading weights:   0%|          | 2/851 [00:05<38:13,  2.70s/it]
+[1ALoading weights:   1%|          | 9/851 [00:05<05:42,  2.46it/s]
+[1ALoading weights:   2%|▏         | 13/851 [00:05<03:30,  3.98it/s]
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<16:31,  1.17s/it]
+[1ALoading weights:   2%|▏         | 17/851 [00:09<06:22,  2.18it/s]
+[1ALoading weights:   3%|▎         | 23/851 [00:09<03:39,  3.78it/s]
+[1ALoading weights:   3%|▎         | 27/851 [00:09<02:44,  5.01it/s]
+[1ALoading weights:   4%|▎         | 30/851 [00:09<02:17,  5.98it/s]
+[1ALoading weights:   0%|          | 2/851 [00:02<18:28,  1.31s/it]
+[1ALoading weights:   1%|▏         | 11/851 [00:02<02:16,  6.16it/s]
+[1ALoading weights:   2%|▏         | 16/851 [00:02<01:36,  8.66it/s]
+[1ALoading weights:   3%|▎         | 25/851 [00:03<00:52, 15.88it/s]
+[1ALoading weights:   4%|▎         | 30/851 [00:03<00:46, 17.47it/s]
+[1ALoading weights:   5%|▍         | 39/851 [00:03<00:30, 26.61it/s]
+[1ALoading weights:   4%|▍         | 37/851 [00:10<02:27,  5.52it/s]
+[1ALoading weights:   5%|▍         | 41/851 [00:11<01:55,  7.00it/s]
+[1ALoading weights:   5%|▌         | 44/851 [00:11<01:43,  7.82it/s]
+[1ALoading weights:   6%|▌         | 47/851 [00:11<01:42,  7.82it/s]
+[1ALoading weights:   6%|▋         | 54/851 [00:11<01:01, 12.93it/s]
+[1ALoading weights:   8%|▊         | 64/851 [00:11<00:37, 21.18it/s]
+[1ALoading weights:   8%|▊         | 69/851 [00:12<00:36, 21.19it/s]
+[1ALoading weights:   5%|▌         | 45/851 [00:04<01:17, 10.38it/s]
+[1ALoading weights:   9%|▉         | 79/851 [00:12<00:24, 31.23it/s]
+[1ALoading weights:  10%|▉         | 85/851 [00:12<00:26, 29.17it/s]
+[1ALoading weights:   6%|▌         | 52/851 [00:05<01:09, 11.57it/s]
+[1ALoading weights:  11%|█         | 90/851 [00:12<00:24, 30.84it/s]
+[1ALoading weights:  11%|█         | 95/851 [00:12<00:26, 28.83it/s]
+[1ALoading weights:  12%|█▏        | 99/851 [00:13<00:27, 27.35it/s]
+[1ALoading weights:  12%|█▏        | 103/851 [00:13<00:28, 26.05it/s]
+[1ALoading weights:   7%|▋         | 58/851 [00:05<01:11, 11.11it/s]
+[1ALoading weights:   8%|▊         | 65/851 [00:05<00:51, 15.19it/s]
+[1ALoading weights:  13%|█▎        | 112/851 [00:13<00:21, 35.13it/s]
+[1ALoading weights:  14%|█▍        | 119/851 [00:13<00:17, 41.37it/s]
+[1ALoading weights:  15%|█▍        | 124/851 [00:13<00:18, 40.19it/s]
+[1ALoading weights:  16%|█▌        | 133/851 [00:13<00:16, 44.60it/s]
+[1ALoading weights:   8%|▊         | 69/851 [00:06<00:57, 13.71it/s]
+[1ALoading weights:  16%|█▌        | 138/851 [00:13<00:18, 39.25it/s]
+[1ALoading weights:  17%|█▋        | 145/851 [00:14<00:18, 38.90it/s]
+[1ALoading weights:  18%|█▊        | 150/851 [00:14<00:20, 34.70it/s]
+[1ALoading weights:  18%|█▊        | 154/851 [00:14<00:22, 30.41it/s]
+[1ALoading weights:   8%|▊         | 72/851 [00:07<01:25,  9.06it/s]
+[1ALoading weights:  19%|█▉        | 164/851 [00:14<00:15, 43.48it/s]
+[1ALoading weights:  20%|██        | 171/851 [00:14<00:13, 49.17it/s]
+[1ALoading weights:  21%|██        | 177/851 [00:14<00:17, 39.32it/s]
+[1ALoading weights:  22%|██▏       | 185/851 [00:15<00:14, 46.57it/s]
+[1ALoading weights:   9%|▉         | 76/851 [00:07<01:26,  8.92it/s]
+[1ALoading weights:  22%|██▏       | 191/851 [00:15<00:17, 38.16it/s]
+[1ALoading weights:  23%|██▎       | 198/851 [00:15<00:15, 42.88it/s]
+[1ALoading weights:   9%|▉         | 78/851 [00:08<01:43,  7.44it/s]
+[1ALoading weights:  24%|██▍       | 204/851 [00:15<00:18, 34.91it/s]
+[1ALoading weights:  25%|██▍       | 209/851 [00:15<00:20, 30.84it/s]
+[1ALoading weights:  26%|██▌       | 218/851 [00:15<00:15, 41.21it/s]
+[1ALoading weights:   9%|▉         | 80/851 [00:08<02:05,  6.14it/s]
+[1ALoading weights:  26%|██▋       | 225/851 [00:16<00:14, 42.98it/s]
+[1ALoading weights:  27%|██▋       | 231/851 [00:16<00:15, 39.27it/s]
+[1ALoading weights:  28%|██▊       | 236/851 [00:16<00:15, 40.65it/s]
+[1ALoading weights:  11%|█         | 90/851 [00:08<01:04, 11.84it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:09<00:53, 14.23it/s]
+[1ALoading weights:  11%|█▏        | 97/851 [00:09<00:50, 14.85it/s]
+[1ALoading weights:  28%|██▊       | 241/851 [00:16<00:20, 29.33it/s]
+[1ALoading weights:  12%|█▏        | 100/851 [00:09<00:45, 16.42it/s]
+[1ALoading weights:  29%|██▉       | 249/851 [00:16<00:16, 36.76it/s]
+[1ALoading weights:  13%|█▎        | 107/851 [00:09<00:31, 23.30it/s]
+[1ALoading weights:  14%|█▍        | 118/851 [00:09<00:19, 37.73it/s]
+[1ALoading weights:  30%|██▉       | 254/851 [00:17<00:18, 31.73it/s]
+[1ALoading weights:  15%|█▍        | 124/851 [00:09<00:20, 35.07it/s]
+[1ALoading weights:  30%|███       | 258/851 [00:17<00:20, 29.63it/s]
+[1ALoading weights:  15%|█▌        | 131/851 [00:09<00:17, 41.12it/s]
+[1ALoading weights:  31%|███       | 262/851 [00:17<00:21, 27.74it/s]
+[1ALoading weights:  16%|█▌        | 137/851 [00:10<00:18, 38.61it/s]
+[1ALoading weights:  17%|█▋        | 146/851 [00:10<00:14, 48.90it/s]
+[1ALoading weights:  32%|███▏      | 272/851 [00:17<00:13, 41.50it/s]
+[1ALoading weights:  33%|███▎      | 278/851 [00:17<00:13, 41.40it/s]
+[1ALoading weights:  33%|███▎      | 283/851 [00:17<00:15, 36.23it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:10<00:18, 38.16it/s]
+[1ALoading weights:  34%|███▍      | 288/851 [00:17<00:15, 37.32it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:10<00:19, 36.52it/s]
+[1ALoading weights:  20%|█▉        | 166/851 [00:10<00:14, 46.07it/s]
+[1ALoading weights:  34%|███▍      | 293/851 [00:18<00:17, 31.24it/s]
+[1ALoading weights:  20%|██        | 173/851 [00:10<00:14, 45.59it/s]
+[1ALoading weights:  35%|███▍      | 297/851 [00:18<00:17, 32.55it/s]
+[1ALoading weights:  21%|██        | 180/851 [00:11<00:13, 49.48it/s]
+[1ALoading weights:  36%|███▌      | 304/851 [00:18<00:14, 38.24it/s]
+[1ALoading weights:  22%|██▏       | 187/851 [00:11<00:14, 47.08it/s]
+[1ALoading weights:  36%|███▋      | 309/851 [00:18<00:19, 28.01it/s]
+[1ALoading weights:  23%|██▎       | 196/851 [00:11<00:12, 53.49it/s]
+[1ALoading weights:  37%|███▋      | 313/851 [00:18<00:22, 23.79it/s]
+[1ALoading weights:  24%|██▎       | 202/851 [00:11<00:16, 39.58it/s]
+[1ALoading weights:  38%|███▊      | 320/851 [00:19<00:17, 31.07it/s]
+[1ALoading weights:  24%|██▍       | 207/851 [00:11<00:18, 34.96it/s]
+[1ALoading weights:  39%|███▊      | 328/851 [00:19<00:13, 38.42it/s]
+[1ALoading weights:  26%|██▌       | 220/851 [00:11<00:11, 52.77it/s]
+[1ALoading weights:  39%|███▉      | 333/851 [00:19<00:18, 27.55it/s]
+[1ALoading weights:  27%|██▋       | 227/851 [00:12<00:15, 41.24it/s]
+[1ALoading weights:  28%|██▊       | 237/851 [00:12<00:11, 51.57it/s]
+[1ALoading weights:  40%|████      | 344/851 [00:19<00:12, 39.59it/s]
+[1ALoading weights:  29%|██▊       | 244/851 [00:12<00:13, 46.59it/s]
+[1ALoading weights:  41%|████      | 350/851 [00:19<00:15, 32.59it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:12<00:13, 43.35it/s]
+[1ALoading weights:  42%|████▏     | 356/851 [00:20<00:14, 35.00it/s]
+[1ALoading weights:  30%|███       | 259/851 [00:12<00:15, 39.22it/s]
+[1ALoading weights:  42%|████▏     | 361/851 [00:20<00:18, 26.74it/s]
+[1ALoading weights:  31%|███       | 265/851 [00:13<00:14, 40.60it/s]
+[1ALoading weights:  32%|███▏      | 276/851 [00:13<00:11, 51.14it/s]
+[1ALoading weights:  43%|████▎     | 365/851 [00:20<00:18, 25.59it/s]
+[1ALoading weights:  43%|████▎     | 369/851 [00:20<00:18, 26.66it/s]
+[1ALoading weights:  33%|███▎      | 282/851 [00:13<00:12, 44.01it/s]
+[1ALoading weights:  34%|███▍      | 291/851 [00:13<00:10, 52.46it/s]
+[1ALoading weights:  44%|████▍     | 377/851 [00:20<00:13, 34.96it/s]
+[1ALoading weights:  35%|███▍      | 297/851 [00:13<00:12, 44.49it/s]
+[1ALoading weights:  45%|████▍     | 382/851 [00:20<00:12, 36.62it/s]
+[1ALoading weights:  36%|███▌      | 304/851 [00:13<00:11, 48.83it/s]
+[1ALoading weights:  45%|████▌     | 387/851 [00:21<00:15, 29.03it/s]
+[1ALoading weights:  36%|███▋      | 310/851 [00:13<00:14, 38.59it/s]
+[1ALoading weights:  46%|████▋     | 395/851 [00:21<00:12, 37.82it/s]
+[1ALoading weights:  37%|███▋      | 315/851 [00:14<00:15, 33.96it/s]
+[1ALoading weights:  47%|████▋     | 400/851 [00:21<00:16, 28.12it/s]
+[1ALoading weights:  38%|███▊      | 326/851 [00:14<00:11, 46.01it/s]
+[1ALoading weights:  48%|████▊     | 408/851 [00:21<00:12, 35.53it/s]
+[1ALoading weights:  39%|███▉      | 332/851 [00:14<00:12, 42.68it/s]
+[1ALoading weights:  40%|████      | 341/851 [00:14<00:10, 49.61it/s]
+[1ALoading weights:  49%|████▊     | 413/851 [00:21<00:13, 31.62it/s]
+[1ALoading weights:  49%|████▉     | 417/851 [00:22<00:15, 28.46it/s]
+[1ALoading weights:  41%|████      | 347/851 [00:14<00:12, 40.08it/s]
+[1ALoading weights:  42%|████▏     | 358/851 [00:14<00:09, 52.94it/s]
+[1ALoading weights:  49%|████▉     | 421/851 [00:22<00:16, 26.47it/s]
+[1ALoading weights:  50%|█████     | 429/851 [00:22<00:11, 36.31it/s]
+[1ALoading weights:  51%|█████     | 436/851 [00:22<00:09, 42.38it/s]
+[1ALoading weights:  43%|████▎     | 365/851 [00:15<00:13, 37.25it/s]
+[1ALoading weights:  52%|█████▏    | 442/851 [00:22<00:12, 33.84it/s]
+[1ALoading weights:  44%|████▎     | 372/851 [00:15<00:11, 40.18it/s]
+[1ALoading weights:  45%|████▍     | 382/851 [00:15<00:09, 49.17it/s]
+[1ALoading weights:  53%|█████▎    | 448/851 [00:22<00:10, 37.25it/s]
+[1ALoading weights:  46%|████▌     | 389/851 [00:15<00:10, 44.67it/s]
+[1ALoading weights:  53%|█████▎    | 453/851 [00:23<00:12, 31.08it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:15<00:09, 48.33it/s]
+[1ALoading weights:  54%|█████▍    | 462/851 [00:23<00:09, 41.28it/s]
+[1ALoading weights:  47%|████▋     | 404/851 [00:16<00:09, 45.65it/s]
+[1ALoading weights:  48%|████▊     | 412/851 [00:16<00:08, 49.34it/s]
+[1ALoading weights:  55%|█████▍    | 468/851 [00:23<00:13, 29.12it/s]
+[1ALoading weights:  56%|█████▌    | 473/851 [00:23<00:14, 25.41it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:16<00:11, 36.72it/s]
+[1ALoading weights:  57%|█████▋    | 483/851 [00:24<00:10, 34.92it/s]
+[1ALoading weights:  50%|████▉     | 424/851 [00:16<00:11, 37.54it/s]
+[1ALoading weights:  51%|█████     | 436/851 [00:16<00:07, 53.19it/s]
+[1ALoading weights:  57%|█████▋    | 488/851 [00:24<00:09, 37.36it/s]
+[1ALoading weights:  52%|█████▏    | 443/851 [00:16<00:08, 46.18it/s]
+[1ALoading weights:  58%|█████▊    | 493/851 [00:24<00:12, 28.51it/s]
+[1ALoading weights:  53%|█████▎    | 451/851 [00:17<00:08, 49.01it/s]
+[1ALoading weights:  54%|█████▎    | 457/851 [00:17<00:08, 46.64it/s]
+[1ALoading weights:  59%|█████▉    | 501/851 [00:24<00:09, 35.94it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:17<00:07, 50.08it/s]
+[1ALoading weights:  59%|█████▉    | 506/851 [00:24<00:12, 27.07it/s]
+[1ALoading weights:  61%|██████    | 515/851 [00:25<00:09, 35.55it/s]
+[1ALoading weights:  55%|█████▌    | 471/851 [00:17<00:11, 33.25it/s]
+[1ALoading weights:  57%|█████▋    | 483/851 [00:17<00:07, 46.80it/s]
+[1ALoading weights:  61%|██████    | 520/851 [00:25<00:12, 26.78it/s]
+[1ALoading weights:  58%|█████▊    | 490/851 [00:17<00:07, 51.10it/s]
+[1ALoading weights:  58%|█████▊    | 497/851 [00:18<00:07, 49.44it/s]
+[1ALoading weights:  62%|██████▏   | 524/851 [00:25<00:12, 26.19it/s]
+[1ALoading weights:  59%|█████▉    | 504/851 [00:18<00:07, 48.93it/s]
+[1ALoading weights:  62%|██████▏   | 528/851 [00:25<00:11, 27.54it/s]
+[1ALoading weights:  60%|█████▉    | 510/851 [00:18<00:07, 47.65it/s]
+[1ALoading weights:  61%|██████    | 516/851 [00:18<00:06, 49.99it/s]
+[1ALoading weights:  63%|██████▎   | 536/851 [00:25<00:09, 33.94it/s]
+[1ALoading weights:  64%|██████▎   | 542/851 [00:25<00:08, 35.47it/s]
+[1ALoading weights:  64%|██████▍   | 546/851 [00:26<00:09, 30.68it/s]
+[1ALoading weights:  61%|██████▏   | 522/851 [00:18<00:08, 39.27it/s]
+[1ALoading weights:  62%|██████▏   | 527/851 [00:18<00:09, 35.09it/s]
+[1ALoading weights:  65%|██████▍   | 552/851 [00:26<00:08, 36.17it/s]
+[1ALoading weights:  63%|██████▎   | 539/851 [00:19<00:06, 50.15it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:26<00:07, 37.09it/s]
+[1ALoading weights:  66%|██████▌   | 562/851 [00:26<00:08, 35.01it/s]
+[1ALoading weights:  64%|██████▍   | 545/851 [00:19<00:07, 40.68it/s]
+[1ALoading weights:  67%|██████▋   | 570/851 [00:26<00:06, 43.41it/s]
+[1ALoading weights:  65%|██████▌   | 556/851 [00:19<00:05, 52.75it/s]
+[1ALoading weights:  66%|██████▌   | 563/851 [00:19<00:06, 45.95it/s]
+[1ALoading weights:  68%|██████▊   | 575/851 [00:27<00:09, 28.89it/s]
+[1ALoading weights:  67%|██████▋   | 570/851 [00:19<00:06, 45.01it/s]
+[1ALoading weights:  68%|██████▊   | 579/851 [00:27<00:10, 25.33it/s]
+[1ALoading weights:  68%|██████▊   | 576/851 [00:19<00:06, 39.52it/s]
+[1ALoading weights:  69%|██████▊   | 585/851 [00:27<00:08, 31.06it/s]
+[1ALoading weights:  68%|██████▊   | 581/851 [00:20<00:07, 37.63it/s]
+[1ALoading weights:  70%|██████▉   | 594/851 [00:27<00:06, 40.17it/s]
+[1ALoading weights:  70%|██████▉   | 592/851 [00:20<00:05, 50.06it/s]
+[1ALoading weights:  70%|███████   | 599/851 [00:27<00:07, 32.09it/s]
+[1ALoading weights:  70%|███████   | 598/851 [00:20<00:06, 40.16it/s]
+[1ALoading weights:  71%|███████▏  | 608/851 [00:27<00:05, 42.47it/s]
+[1ALoading weights:  71%|███████▏  | 608/851 [00:20<00:04, 51.29it/s]
+[1ALoading weights:  72%|███████▏  | 614/851 [00:28<00:07, 33.75it/s]
+[1ALoading weights:  72%|███████▏  | 615/851 [00:20<00:05, 46.95it/s]
+[1ALoading weights:  73%|███████▎  | 622/851 [00:28<00:05, 39.37it/s]
+[1ALoading weights:  74%|███████▎  | 627/851 [00:28<00:07, 31.70it/s]
+[1ALoading weights:  74%|███████▍  | 631/851 [00:28<00:08, 25.80it/s]
+[1ALoading weights:  75%|███████▍  | 637/851 [00:28<00:06, 30.66it/s]
+[1ALoading weights:  73%|███████▎  | 623/851 [00:20<00:04, 52.95it/s]
+[1ALoading weights:  76%|███████▌  | 646/851 [00:28<00:04, 41.01it/s]
+[1ALoading weights:  74%|███████▍  | 630/851 [00:21<00:05, 37.06it/s]
+[1ALoading weights:  75%|███████▍  | 637/851 [00:21<00:05, 40.22it/s]
+[1ALoading weights:  76%|███████▌  | 648/851 [00:21<00:03, 52.59it/s]
+[1ALoading weights:  77%|███████▋  | 655/851 [00:21<00:04, 46.29it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:21<00:03, 48.35it/s]
+[1ALoading weights:  77%|███████▋  | 652/851 [00:29<00:06, 32.76it/s]
+[1ALoading weights:  79%|███████▊  | 669/851 [00:21<00:03, 46.95it/s]
+[1ALoading weights:  77%|███████▋  | 657/851 [00:29<00:05, 33.54it/s]
+[1ALoading weights:  79%|███████▉  | 675/851 [00:22<00:03, 48.75it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:29<00:05, 34.29it/s]
+[1ALoading weights:  80%|████████  | 681/851 [00:22<00:04, 39.40it/s]
+[1ALoading weights:  79%|███████▊  | 670/851 [00:29<00:04, 41.06it/s]
+[1ALoading weights:  81%|████████  | 686/851 [00:22<00:04, 35.53it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:29<00:04, 42.26it/s]
+[1ALoading weights:  82%|████████▏ | 697/851 [00:22<00:03, 46.83it/s]
+[1ALoading weights:  80%|████████  | 682/851 [00:30<00:05, 32.56it/s]
+[1ALoading weights:  83%|████████▎ | 703/851 [00:22<00:03, 43.21it/s]
+[1ALoading weights:  83%|████████▎ | 709/851 [00:22<00:03, 44.64it/s]
+[1ALoading weights:  81%|████████  | 686/851 [00:30<00:05, 27.73it/s]
+[1ALoading weights:  84%|████████▍ | 717/851 [00:23<00:02, 46.49it/s]
+[1ALoading weights:  82%|████████▏ | 695/851 [00:30<00:04, 38.48it/s]
+[1ALoading weights:  82%|████████▏ | 700/851 [00:30<00:03, 39.67it/s]
+[1ALoading weights:  85%|████████▌ | 726/851 [00:23<00:02, 52.34it/s]
+[1ALoading weights:  83%|████████▎ | 705/851 [00:30<00:04, 32.63it/s]
+[1ALoading weights:  86%|████████▌ | 732/851 [00:23<00:03, 38.92it/s]
+[1ALoading weights:  84%|████████▍ | 714/851 [00:30<00:03, 36.87it/s]
+[1ALoading weights:  87%|████████▋ | 737/851 [00:23<00:03, 35.23it/s]
+[1ALoading weights:  84%|████████▍ | 719/851 [00:31<00:03, 36.05it/s]
+[1ALoading weights:  88%|████████▊ | 751/851 [00:23<00:01, 52.01it/s]
+[1ALoading weights:  85%|████████▌ | 727/851 [00:31<00:02, 43.47it/s]
+[1ALoading weights:  89%|████████▉ | 757/851 [00:24<00:02, 41.66it/s]
+[1ALoading weights:  86%|████████▌ | 732/851 [00:31<00:03, 31.68it/s]
+[1ALoading weights:  90%|█████████ | 769/851 [00:24<00:01, 51.82it/s]
+[1ALoading weights:  86%|████████▋ | 736/851 [00:31<00:04, 27.49it/s]
+[1ALoading weights:  91%|█████████ | 775/851 [00:24<00:01, 49.44it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:24<00:01, 50.87it/s]
+[1ALoading weights:  87%|████████▋ | 742/851 [00:31<00:03, 31.58it/s]
+[1ALoading weights:  88%|████████▊ | 753/851 [00:31<00:02, 44.80it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:24<00:01, 39.55it/s]
+[1ALoading weights:  89%|████████▉ | 759/851 [00:32<00:02, 38.43it/s]
+[1ALoading weights:  94%|█████████▎| 796/851 [00:24<00:01, 41.96it/s]
+[1ALoading weights:  94%|█████████▍| 801/851 [00:24<00:01, 43.40it/s]
+[1ALoading weights:  90%|█████████ | 768/851 [00:32<00:01, 47.86it/s]
+[1ALoading weights:  95%|█████████▌| 809/851 [00:25<00:00, 42.44it/s]
+[1ALoading weights:  91%|█████████ | 774/851 [00:32<00:01, 39.96it/s]
+[1ALoading weights:  96%|█████████▋| 820/851 [00:25<00:00, 54.68it/s]
+[1ALoading weights:  92%|█████████▏| 782/851 [00:32<00:01, 47.15it/s]
+[1ALoading weights:  97%|█████████▋| 827/851 [00:25<00:00, 49.14it/s]
+[1ALoading weights:  93%|█████████▎| 788/851 [00:32<00:01, 35.14it/s]
+[1ALoading weights:  98%|█████████▊| 833/851 [00:25<00:00, 50.61it/s]
+[1ALoading weights:  93%|█████████▎| 793/851 [00:33<00:01, 32.45it/s]
+[1ALoading weights:  99%|█████████▊| 839/851 [00:25<00:00, 40.80it/s]
+[1ALoading weights:  94%|█████████▍| 804/851 [00:33<00:01, 44.60it/s]
+[1ALoading weights:  99%|█████████▉| 844/851 [00:25<00:00, 36.36it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:26<00:00, 32.71it/s]
+
+[1ALoading weights:  95%|█████████▌| 810/851 [00:33<00:01, 34.73it/s]
+[1ALoading weights:  96%|█████████▋| 820/851 [00:33<00:00, 45.27it/s]
+[1ALoading weights:  97%|█████████▋| 826/851 [00:33<00:00, 37.87it/s][W1005 19:35:29.716192861 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1023737856, total: 85017624576).
+
+[1ALoading weights:  98%|█████████▊| 834/851 [00:33<00:00, 44.32it/s]
+[1ALoading weights:  99%|█████████▊| 840/851 [00:34<00:00, 35.56it/s]
+[1ALoading weights:  99%|█████████▉| 845/851 [00:34<00:00, 31.63it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:34<00:00, 24.64it/s]
+[W1005 19:35:31.092268058 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1006960640, total: 85017624576).
+[W1005 19:35:34.158097702 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1224736768 bytes (free: 1067778048, total: 85017624576).
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+Stopping app - local client disconnected. Use `modal run --detach` to keep apps running even if your local client disconnects.
+Runner terminated.
+Runner terminated.
+Runner terminated.
+Runner terminated.
+[modal-client] 2026-10-06T01:21:54+0530 Loop attempt for _run_app.<locals>.heartbeat failed
+Traceback (most recent call last):
+  File "/Users/surajprasad/miniconda3/lib/python3.13/site-packages/modal/_utils/async_utils.py", line 571, in loop_coro
+    await asyncio.wait_for(async_f(), timeout=timeout)
+  File "/Users/surajprasad/miniconda3/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/Users/surajprasad/miniconda3/lib/python3.13/site-packages/modal/runner.py", line 66, in _heartbeat
+    await client.stub.AppHeartbeat(request, retry=Retry(attempt_timeout=HEARTBEAT_TIMEOUT))
+modal.exception.ConflictError: App state is APP_STATE_STOPPED
+Runner terminated.
+Runner terminated.
+Runner terminated.
+Runner terminated.
+Runner terminated.
+Runner terminated.
+✓ Finished downloading files to local!
+[
+ {
+  "error": "ExecutionError('Could not deserialize remote exception due to local error:\\nDeserialization failed because the \\'torch\\' module is not available in the local environment.\\nThis can happen if your local environment does not have the remote exception definitions.\\nHere is the remote traceback:\\nTraceback (most recent call last):\\n  File \"/pkg/modal/_runtime/container_io_manager.py\", line 915, in handle_input_exception\\n    yield\\n  File \"/pkg/modal/_container_entrypoint.py\", line 189, in run_input_sync\\n    values = io_context.call_function_sync()\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/pkg/modal/_runtime/container_io_manager.py\", line 218, in call_function_sync\\n    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)\\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/root/r5_modal.py\", line 319, in behave\\n    res[\"zero\"] = run(seqs, None, None, 0, \"centred\", ro)\\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/root/r5_modal.py\", line 309, in run\\n    lg = _last_logits(model, seqs)\\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/root/r5_modal.py\", line 99, in _last_logits\\n    hs = model.model(input_ids=ids, attention_mask=mask).last_hidden_state\\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1783, in _wrapped_call_impl\\n    return self._call_impl(*args, **kwargs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1794, in _call_impl\\n    return forward_call(*args, **kwargs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.12/site-packages/transformers/utils/generic.py\", line 1068, in wrapper\\n    output = func(self, *args, **kwargs)\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.12/site-packages/transformers/utils/output_capturing.py\", line 286, in "
+ },
+ {
+  "error": "ExecutionError('Could not deserialize remote exception due to local error:\\nDeserialization failed because the \\'torch\\' module is not available in the local environment.\\nThis can happen if your local environment does not have the remote exception definitions.\\nHere is the remote traceback:\\nTraceback (most recent call last):\\n  File \"/pkg/modal/_runtime/container_io_manager.py\", line 915, in handle_input_exception\\n    yield\\n  File \"/pkg/modal/_container_entrypoint.py\", line 189, in run_input_sync\\n    values = io_context.call_function_sync()\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/pkg/modal/_runtime/container_io_manager.py\", line 218, in call_function_sync\\n    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)\\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/root/r5_modal.py\", line 319, in behave\\n    res[\"zero\"] = run(seqs, None, None, 0, \"centred\", ro)\\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/root/r5_modal.py\", line 309, in run\\n    lg = _last_logits(model, seqs)\\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/root/r5_modal.py\", line 99, in _last_logits\\n    hs = model.model(input_ids=ids, attention_mask=mask).last_hidden_state\\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1783, in _wrapped_call_impl\\n    return self._call_impl(*args, **kwargs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1794, in _call_impl\\n    return forward_call(*args, **kwargs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.12/site-packages/transformers/utils/generic.py\", line 1068, in wrapper\\n    output = func(self, *args, **kwargs)\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.12/site-packages/transformers/utils/output_capturing.py\", line 286, in "
+ },
+ {
+  "error": "RemoteError(\"Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 20.12 MiB is free. Process 1 has 79.15 GiB memory in use. Of the allocated memory 77.68 GiB is allocated by PyTorch, and 814.47 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')...\")"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ },
+ {
+  "error": "RemoteError('')"
+ }
+]
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-QsucGBpRAE6tOYE1YmbtC5

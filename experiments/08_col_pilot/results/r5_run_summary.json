@@ -1,0 +1,153 @@
+{
+ "jobs": [
+  {
+   "error": "RuntimeError(\"Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.\")"
+  },
+  {
+   "error": "RuntimeError(\"Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.\")"
+  },
+  {
+   "error": "RuntimeError(\"Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.\")"
+  },
+  {
+   "part": 0,
+   "conds": 4,
+   "t": 697.6
+  },
+  {
+   "part": 1,
+   "conds": 3,
+   "t": 469.0
+  },
+  {
+   "part": 2,
+   "conds": 3,
+   "t": 476.2
+  },
+  {
+   "part": 3,
+   "conds": 3,
+   "t": 873.5
+  },
+  {
+   "chunk": 0,
+   "reader": "ol",
+   "n_acts": 5760,
+   "total_s": 1201.6
+  },
+  {
+   "chunk": 1,
+   "reader": "ol",
+   "n_acts": 5760,
+   "total_s": 1185.8
+  },
+  {
+   "chunk": 2,
+   "reader": "ol",
+   "n_acts": 5760,
+   "total_s": 1174.5
+  },
+  {
+   "chunk": 3,
+   "reader": "ol",
+   "n_acts": 5760,
+   "total_s": 1168.0
+  },
+  {
+   "chunk": 4,
+   "reader": "ol",
+   "n_acts": 5760,
+   "total_s": 1180.2
+  },
+  {
+   "chunk": 5,
+   "reader": "ol",
+   "n_acts": 5760,
+   "total_s": 1173.0
+  },
+  {
+   "chunk": 6,
+   "reader": "ol",
+   "n_acts": 5820,
+   "total_s": 1188.6
+  },
+  {
+   "chunk": 7,
+   "reader": "ol",
+   "n_acts": 5700,
+   "total_s": 1187.3
+  },
+  {
+   "chunk": 0,
+   "reader": "nla",
+   "n_acts": 3900,
+   "total_s": 1323.4
+  },
+  {
+   "chunk": 1,
+   "reader": "nla",
+   "n_acts": 3900,
+   "total_s": 1336.3
+  },
+  {
+   "chunk": 2,
+   "reader": "nla",
+   "n_acts": 3900,
+   "total_s": 1336.7
+  },
+  {
+   "chunk": 3,
+   "reader": "nla",
+   "n_acts": 3780,
+   "total_s": 1305.6
+  },
+  {
+   "chunk": 4,
+   "reader": "nla",
+   "n_acts": 3780,
+   "total_s": 1314.5
+  },
+  {
+   "chunk": 5,
+   "reader": "nla",
+   "n_acts": 3780,
+   "total_s": 1308.8
+  },
+  {
+   "chunk": 6,
+   "reader": "nla",
+   "n_acts": 3840,
+   "total_s": 1233.9
+  },
+  {
+   "chunk": 7,
+   "reader": "nla",
+   "n_acts": 3840,
+   "total_s": 1331.6
+  },
+  {
+   "chunk": 8,
+   "reader": "nla",
+   "n_acts": 3840,
+   "total_s": 1325.0
+  },
+  {
+   "chunk": 9,
+   "reader": "nla",
+   "n_acts": 3840,
+   "total_s": 1291.4
+  },
+  {
+   "chunk": 10,
+   "reader": "nla",
+   "n_acts": 3840,
+   "total_s": 1297.1
+  },
+  {
+   "chunk": 11,
+   "reader": "nla",
+   "n_acts": 3840,
+   "total_s": 1216.0
+  }
+ ]
+}

@@ -50,37 +50,40 @@ def build_lang(tok) -> list[dict]:  # noqa: ANN001
     return out
 
 
-def build_tense(tok, out02: str, out07: str, col_pilot_items: list[dict]) -> list[dict]:  # noqa: ANN001
+def build_tense(tok, out02: str, out07: str, col_pilot_items: list[dict], seed: int = CALIB_SEED,  # noqa: ANN001
+                n_per_class: int = N_PER_CLASS, exclude_sha: set | None = None, id_prefix: str = "calib_tense",
+                pool_slice: int = 6000) -> list[dict]:
     import spacy
 
     s1 = PI.load_02("s1_data", out02)
     nlp = spacy.load("en_core_web_lg")
-    pool = s1._wikitext_paragraphs(500, 60000, CALIB_SEED)
+    pool = s1._wikitext_paragraphs(500, 60000, seed)
     used = PI._used_prefixes(out02, out07)
     by_head: dict[str, list[str]] = {}
     for u in used:
         by_head.setdefault(u[:30], []).append(u)
-    col_sha = {it["passage_sha1_16"] for it in col_pilot_items}
-    fresh = [p for p in pool[:6000] if not PI._overlaps(p, by_head) and _sha(p) not in col_sha]
-    rng = random.Random(CALIB_SEED)
+    col_sha = {it["passage_sha1_16"] for it in col_pilot_items} | (exclude_sha or set())
+    fresh = [p for p in pool[:pool_slice] if not PI._overlaps(p, by_head) and _sha(p) not in col_sha]
+    rng = random.Random(seed)
     orig = s1._wikitext_paragraphs
-    s1._wikitext_paragraphs = lambda *_a, **_k: fresh[:1500]
-    prose = s1.build_prose(tok, nlp, n=1500)
+    n_par = min(len(fresh), 1500 * max(1, n_per_class // N_PER_CLASS))
+    s1._wikitext_paragraphs = lambda *_a, **_k: fresh[:n_par]
+    prose = s1.build_prose(tok, nlp, n=n_par)
     s1._wikitext_paragraphs = orig
     out, n = [], {"Past": 0, "Pres": 0}
     for k, it in enumerate(prose):
         cand = [(j, t) for j, t in enumerate(it["tense"]) if t in ("Past", "Pres") and 8 <= j < 120]
-        need = [c for c in cand if n[c[1]] < N_PER_CLASS]
+        need = [c for c in cand if n[c[1]] < n_per_class]
         if not need:
             continue
         pres = [c for c in need if c[1] == "Pres"]
         j, t = rng.choice(pres if pres else need)
         n[t] += 1
-        out.append({"id": f"calib_tense_{len(out):02d}", "feature": "tense", "label": t,
+        out.append({"id": f"{id_prefix}_{len(out):03d}", "feature": "tense", "label": t,
                     "y": 1 if t == "Past" else 0, "ids": it["ids"][: j + 1],
                     "text": it["text"][: it["offsets"][j][1]], "pos": j,
                     "source_sha1_16": _sha(fresh[k]), "source_head": PI._norm(fresh[k])[:80],
                     "source": "wikitext103/train"})
-        if all(v == N_PER_CLASS for v in n.values()):
+        if all(v == n_per_class for v in n.values()):
             break
     return out

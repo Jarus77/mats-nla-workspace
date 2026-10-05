@@ -37,7 +37,7 @@ app_image = (
     .env({**HF_ENV, "HF_HUB_OFFLINE": "1", "TOKENIZERS_PARALLELISM": "false",
           "PYTHONPATH": "/root/src"})
     .add_local_python_source("modal_common", "env", "pilot_items", "pilot_lib", "templates", "calib_lib",
-                             "calib_templates", "calib_items")
+                             "calib_templates", "calib_items", "r5_lib", "r5_templates", "r5_items")
     .add_local_dir(str(_REPO / "src" / "mats"), "/root/src/mats", ignore=["**/__pycache__/**"])
     .add_local_file(str(_E02 / "s1_data.py"), "/root/ext02/s1_data.py")
     .add_local_file(str(_E02 / "features.py"), "/root/ext02/features.py")
@@ -53,7 +53,7 @@ build_image = (
         "en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl"
     )
     .env({**HF_ENV, "HF_HUB_OFFLINE": "0", "TOKENIZERS_PARALLELISM": "false"})
-    .add_local_python_source("modal_common", "env", "pilot_items", "calib_items", "templates")
+    .add_local_python_source("modal_common", "env", "pilot_items", "calib_items", "templates", "r5_items")
     .add_local_file(str(_E02 / "s1_data.py"), "/root/ext02/s1_data.py")
     .add_local_file(str(_E02 / "features.py"), "/root/ext02/features.py")
 )

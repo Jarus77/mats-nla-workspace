@@ -1,0 +1,347 @@
+# round-5 pilot -- PILOT, EXCLUDED FROM MAIN ANALYSIS
+
+## behaviour
+
+natural_newline_lo {"mean": -5.08742094039917, "sd": 3.8751025199890137}
+L42|raw|q90 {"mean": 1.4364056587219238, "ci": [1.2706869840621948, 1.6142239570617676], "sd": 0.6973461508750916, "win": 1.0, "null_mean": -0.0005797998746857047, "null_sd": 0.016700513660907745, "z": 86.04438781738281, "null_band": [-0.028247971087694168, 0.024634497240185738]}
+L42|raw|q99 {"mean": 2.0215022563934326, "ci": [1.811601996421814, 2.240920305252075], "sd": 0.8759440779685974, "win": 1.0}
+L42|jrem1|q90 {"mean": 1.3874382972717285, "ci": [1.2242802381515503, 1.5591635704040527], "sd": 0.6759982705116272, "win": 1.0, "null_mean": -0.017528746277093887, "null_sd": 0.0264128427952528, "z": 53.19257354736328, "null_band": [-0.059759471565485, 0.03178839385509491]}
+L42|jrem1|q99 {"mean": 1.9788689613342285, "ci": [1.7648462057113647, 2.2059175968170166], "sd": 0.8801628947257996, "win": 1.0}
+L42|jrem4|q90 {"mean": 0.7182157635688782, "ci": [0.6228120923042297, 0.8151614665985107], "sd": 0.3812529742717743, "win": 0.9833333333333333, "null_mean": 0.005196793470531702, "null_sd": 0.012867494486272335, "z": 55.41241455078125, "null_band": [-0.014131546020507812, 0.029690753668546677]}
+L42|jrem4|q99 {"mean": 1.172136902809143, "ci": [1.0369644165039062, 1.314315915107727], "sd": 0.5574658513069153, "win": 1.0}
+L42r11|reg_raw {"mean": 1.4989033937454224, "ci": [1.318560242652893, 1.6967756748199463], "sd": 0.7678304314613342, "win": 1.0, "null_mean": 0.007889865897595882, "null_sd": 0.019398383796215057, "z": 76.8627700805664, "null_band": [-0.024120047688484192, 0.044699378311634064], "z_iso": 81.8687515258789}
+L42r11|reg_jrem4 {"mean": 1.0574774742126465, "ci": [0.9225246906280518, 1.2013291120529175], "sd": 0.55999356508255, "win": 1.0, "null_mean": 0.007889865897595882, "null_sd": 0.019398383796215057, "z": 54.10696029663086, "null_band": [-0.024120047688484192, 0.044699378311634064], "z_iso": 57.7669792175293}
+L42r11|cm_raw {"mean": 1.5052216053009033, "ci": [1.3119466304779053, 1.7148076295852661], "sd": 0.8098893165588379, "win": 1.0, "null_mean": 0.007889865897595882, "null_sd": 0.019398383796215057, "z": 77.1884765625, "null_band": [-0.024120047688484192, 0.044699378311634064], "z_iso": 82.2137222290039}
+L42r11|cm_jrem4 {"mean": 1.0687507390975952, "ci": [0.927901566028595, 1.2241332530975342], "sd": 0.6059197783470154, "win": 0.9833333333333333, "null_mean": 0.007889865897595882, "null_sd": 0.019398383796215057, "z": 54.688106536865234, "null_band": [-0.024120047688484192, 0.044699378311634064], "z_iso": 58.38249969482422}
+L38|centred|raw|q90 {"mean": 1.5470870733261108, "ci": [1.3593676090240479, 1.7534350156784058], "sd": 0.7982422709465027, "win": 1.0, "null_mean": 0.0009217543411068618, "null_sd": 0.028021294623613358, "z": 55.178226470947266, "null_band": [-0.04641176015138626, 0.045460108667612076]}
+L38|centred|raw|q99 {"mean": 2.0751755237579346, "ci": [1.8501337766647339, 2.321599245071411], "sd": 0.9645593762397766, "win": 1.0}
+L38|add|raw|q90 {"mean": 1.076453447341919, "ci": [0.8858615159988403, 1.2719491720199585], "sd": 0.7641960978507996, "win": 0.9}
+L38|add|raw|q99 {"mean": 1.6541855335235596, "ci": [1.4069234132766724, 1.9172031879425049], "sd": 1.0193743705749512, "win": 0.9333333333333333}
+L38|centred|jrem1|q90 {"mean": 1.3466789722442627, "ci": [1.184863805770874, 1.5260189771652222], "sd": 0.7009826302528381, "win": 1.0, "null_mean": 0.0010253717191517353, "null_sd": 0.01902003400027752, "z": 70.74927520751953, "null_band": [-0.0270046666264534, 0.038180865347385406]}
+L38|centred|jrem1|q99 {"mean": 1.9196199178695679, "ci": [1.7136398553848267, 2.14597487449646], "sd": 0.8991484642028809, "win": 1.0}
+L38|add|jrem1|q90 {"mean": 0.9381561875343323, "ci": [0.7734437584877014, 1.1085621118545532], "sd": 0.6645705103874207, "win": 0.8833333333333333}
+L38|add|jrem1|q99 {"mean": 1.5059205293655396, "ci": [1.2852526903152466, 1.7452666759490967], "sd": 0.9275479912757874, "win": 0.9333333333333333}
+L38|centred|jrem4|q90 {"mean": 0.32886192202568054, "ci": [0.2729126513004303, 0.38697877526283264], "sd": 0.22539706528186798, "win": 0.9666666666666667, "null_mean": -0.0019304605666548014, "null_sd": 0.0073802899569272995, "z": 44.8210563659668, "null_band": [-0.012304501608014107, 0.011536135338246822]}
+L38|centred|jrem4|q99 {"mean": 0.5417646765708923, "ci": [0.45438796281814575, 0.63492751121521], "sd": 0.3592931628227234, "win": 0.95}
+L38|add|jrem4|q90 {"mean": 0.2827095687389374, "ci": [0.2310917228460312, 0.33688879013061523], "sd": 0.21339759230613708, "win": 0.9}
+L38|add|jrem4|q99 {"mean": 0.4743867516517639, "ci": [0.3923603892326355, 0.5634416937828064], "sd": 0.3397477865219116, "win": 0.9333333333333333}
+digit_natural {"argmax_digit_acc": 1.0, "digit_is_top1_token": 1.0, "lo75_auroc": 1.0}
+digit|raw|q90 {"mean": -0.04505208507180214, "ci": [-0.13549479842185974, 0.03411458432674408], "sd": 0.3345392048358917, "win": 0.38333333333333336, "argmax7_plus": 0.5, "argmax5_minus": 0.5, "flip_5to7_plus": 0.0, "flip_7to5_minus": 0.0}
+digit|raw|r11 {"mean": -0.02135417051613331, "ci": [-0.09480468928813934, 0.04114583507180214], "sd": 0.2654452621936798, "win": 0.45, "null_mean": 0.004986979532986879, "null_sd": 0.021957451477646828, "z": -1.1996451616287231, "null_band": [-0.024173174053430557, 0.05296874791383743], "argmax7_plus": 0.5, "argmax5_minus": 0.5, "flip_5to7_plus": 0.0, "flip_7to5_minus": 0.0}
+digit|raw|r14 {"mean": -0.03567708283662796, "ci": [-0.12423177063465118, 0.03880208358168602], "sd": 0.3151383697986603, "win": 0.43333333333333335, "argmax7_plus": 0.5, "argmax5_minus": 0.5, "flip_5to7_plus": 0.0, "flip_7to5_minus": 0.0}
+digit|jrem4|q90 {"mean": -0.03697916492819786, "ci": [-0.08020833134651184, 0.004687500186264515], "sd": 0.1649075746536255, "win": 0.4, "argmax7_plus": 0.5, "argmax5_minus": 0.5, "flip_5to7_plus": 0.0, "flip_7to5_minus": 0.0}
+digit|jrem4|r11 {"mean": -0.02760416641831398, "ci": [-0.0625, 0.006783854216337204], "sd": 0.13555681705474854, "win": 0.36666666666666664, "null_mean": 0.004986979532986879, "null_sd": 0.021957451477646828, "z": -1.4842863082885742, "null_band": [-0.024173174053430557, 0.05296874791383743], "argmax7_plus": 0.5, "argmax5_minus": 0.5, "flip_5to7_plus": 0.0, "flip_7to5_minus": 0.0}
+digit|jrem4|r14 {"mean": -0.04322916641831398, "ci": [-0.08489583432674408, -0.0005208333604969084], "sd": 0.16386039555072784, "win": 0.35, "argmax7_plus": 0.5, "argmax5_minus": 0.5, "flip_5to7_plus": 0.0, "flip_7to5_minus": 0.0}
+gen_natural {"frac_newline": 1.0, "spearman_vs_chars_remaining": 0.8631334742327712, "mean_wrap_col": 44.666666666666664, "mae_vs_true_remaining": 3.8}
+gen|raw|q90 {"plus_minus_chars_mean": -6.775862068965517, "ci": [-9.569396551724138, -4.189655172413793], "n_both": 58, "plus_vs_zero": -3.9833333333333334, "minus_vs_zero": 2.6551724137931036, "frac_items_plus_breaks_earlier": 0.603448275862069}
+gen|jrem1|q90 {"plus_minus_chars_mean": -6.783333333333333, "ci": [-9.55, -4.2495833333333355], "n_both": 60, "plus_vs_zero": -3.75, "minus_vs_zero": 3.033333333333333, "frac_items_plus_breaks_earlier": 0.55}
+gen|jrem4|q90 {"plus_minus_chars_mean": -1.55, "ci": [-2.7, -0.6333333333333333], "n_both": 60, "plus_vs_zero": -0.6333333333333333, "minus_vs_zero": 0.9166666666666666, "frac_items_plus_breaks_earlier": 0.21666666666666667}
+
+## reader cells (centred): AUROC [CI] / win / shift / z_shift iso,Jc / z_AUROC iso,Jc
+
+col|OL@42|count_qual|reg_raw|q90: 0.47 [0.44,0.50] / 0.35 / -0.248 / -0.7 -1.2 / -0.9 -1.4
+col|OL@42|count_qual|reg_raw|r11: 0.48 [0.45,0.50] / 0.35 / -0.216 / -0.6 -1.0 / -0.7 -1.2
+col|OL@42|count_qual|reg_jrem4|q90: 0.49 [0.48,0.51] / 0.40 / -0.097 / – – / – –
+col|OL@42|count_qual|reg_jrem4|r11: 0.49 [0.47,0.51] / 0.43 / -0.118 / -0.3 -0.6 / -0.3 -0.6
+col|OL@42|count_qual|cm_raw|q90: 0.47 [0.45,0.50] / 0.37 / -0.193 / – – / – –
+col|OL@42|count_qual|cm_raw|r11: 0.48 [0.45,0.50] / 0.38 / -0.209 / -0.6 -1.0 / -0.8 -1.2
+col|OL@42|count_qual|cm_jrem4|q90: 0.49 [0.47,0.51] / 0.40 / -0.113 / – – / – –
+col|OL@42|count_qual|cm_jrem4|r11: 0.49 [0.47,0.51] / 0.47 / -0.093 / -0.2 -0.5 / -0.2 -0.4
+col|OL@42|count_num|reg_raw|q90: 0.48 [0.46,0.50] / 0.45 / -0.069 / -0.9 -1.0 / -1.0 -1.0
+col|OL@42|count_num|reg_raw|r11: 0.49 [0.47,0.52] / 0.52 / -0.054 / -0.7 -0.8 / -0.5 -0.5
+col|OL@42|count_num|reg_jrem4|q90: 0.50 [0.48,0.52] / 0.52 / +0.031 / – – / – –
+col|OL@42|count_num|reg_jrem4|r11: 0.51 [0.49,0.54] / 0.57 / +0.082 / +0.8 +0.9 / +0.4 +0.5
+col|OL@42|count_num|cm_raw|q90: 0.48 [0.45,0.50] / 0.40 / -0.093 / – – / – –
+col|OL@42|count_num|cm_raw|r11: 0.48 [0.46,0.51] / 0.45 / -0.102 / -1.2 -1.4 / -1.0 -1.1
+col|OL@42|count_num|cm_jrem4|q90: 0.50 [0.48,0.53] / 0.55 / +0.041 / – – / – –
+col|OL@42|count_num|cm_jrem4|r11: 0.50 [0.48,0.53] / 0.53 / +0.039 / +0.3 +0.4 / +0.0 +0.0
+col|OL@42|decision|reg_raw|q90: 0.50 [0.48,0.52] / 0.52 / +0.022 / -0.2 +0.6 / -0.4 +0.4
+col|OL@42|decision|reg_raw|r11: 0.50 [0.48,0.52] / 0.53 / +0.039 / -0.2 +0.7 / -0.3 +0.6
+col|OL@42|decision|reg_jrem4|q90: 0.49 [0.48,0.51] / 0.43 / -0.048 / – – / – –
+col|OL@42|decision|reg_jrem4|r11: 0.49 [0.46,0.50] / 0.42 / -0.108 / -0.6 -0.2 / -0.7 -0.3
+col|OL@42|decision|cm_raw|q90: 0.50 [0.48,0.52] / 0.55 / +0.017 / – – / – –
+col|OL@42|decision|cm_raw|r11: 0.50 [0.48,0.52] / 0.50 / +0.040 / -0.2 +0.7 / -0.3 +0.6
+col|OL@42|decision|cm_jrem4|q90: 0.49 [0.48,0.51] / 0.43 / -0.046 / – – / – –
+col|OL@42|decision|cm_jrem4|r11: 0.49 [0.47,0.51] / 0.40 / -0.084 / -0.6 -0.1 / -0.6 -0.1
+col|OL@42|f07_count|reg_raw|q90: 0.49 [0.47,0.51] / 0.45 / -0.055 / -0.2 -0.6 / -0.1 -0.5
+col|OL@42|f07_count|reg_raw|r11: 0.49 [0.47,0.51] / 0.37 / -0.061 / -0.3 -0.7 / -0.1 -0.5
+col|OL@42|f07_count|reg_jrem4|q90: 0.49 [0.47,0.50] / 0.35 / -0.077 / – – / – –
+col|OL@42|f07_count|reg_jrem4|r11: 0.48 [0.46,0.50] / 0.35 / -0.100 / -0.6 -1.0 / -0.5 -0.9
+col|OL@42|f07_count|cm_raw|q90: 0.50 [0.47,0.52] / 0.45 / -0.038 / – – / – –
+col|OL@42|f07_count|cm_raw|r11: 0.50 [0.47,0.52] / 0.43 / -0.034 / -0.0 -0.4 / +0.1 -0.2
+col|OL@42|f07_count|cm_jrem4|q90: 0.49 [0.47,0.51] / 0.40 / -0.062 / – – / – –
+col|OL@42|f07_count|cm_jrem4|r11: 0.48 [0.46,0.51] / 0.33 / -0.097 / -0.6 -1.0 / -0.4 -0.8
+col|OL@42|f07_break|reg_raw|q90: 0.47 [0.45,0.49] / 0.30 / -0.194 / -1.0 -0.6 / -1.2 -0.7
+col|OL@42|f07_break|reg_raw|r11: 0.47 [0.45,0.49] / 0.32 / -0.197 / -1.0 -0.5 / -1.2 -0.7
+col|OL@42|f07_break|reg_jrem4|q90: 0.46 [0.44,0.47] / 0.12 / -0.317 / – – / – –
+col|OL@42|f07_break|reg_jrem4|r11: 0.45 [0.42,0.46] / 0.13 / -0.452 / -1.8 -1.4* / -2.0 -1.5*
+col|OL@42|f07_break|cm_raw|q90: 0.47 [0.45,0.48] / 0.32 / -0.271 / – – / – –
+col|OL@42|f07_break|cm_raw|r11: 0.47 [0.44,0.48] / 0.32 / -0.268 / -1.2 -0.8 / -1.4 -0.9
+col|OL@42|f07_break|cm_jrem4|q90: 0.46 [0.44,0.47] / 0.12 / -0.349 / – – / – –
+col|OL@42|f07_break|cm_jrem4|r11: 0.45 [0.42,0.46] / 0.10 / -0.474 / -1.9 -1.5* / -2.0 -1.5*
+col|OL@42|nl_cont|reg_raw|q90: 0.76 [0.71,0.81] / 0.97 / +2.875 / +6.6* +6.7* / +5.2* +5.4*
+col|OL@42|nl_cont|reg_raw|r11: 0.77 [0.72,0.83] / 0.97 / +2.995 / +6.6* +6.7* / +5.3* +5.4*
+col|OL@42|nl_cont|reg_jrem4|q90: 0.67 [0.64,0.72] / 0.98 / +1.721 / – – / – –
+col|OL@42|nl_cont|reg_jrem4|r11: 0.72 [0.68,0.77] / 0.97 / +2.317 / +5.1* +5.1* / +4.4* +4.4*
+col|OL@42|nl_cont|cm_raw|q90: 0.75 [0.71,0.81] / 0.98 / +2.759 / – – / – –
+col|OL@42|nl_cont|cm_raw|r11: 0.76 [0.72,0.82] / 0.97 / +2.866 / +6.3* +6.4* / +5.2* +5.3*
+col|OL@42|nl_cont|cm_jrem4|q90: 0.67 [0.64,0.72] / 0.97 / +1.722 / – – / – –
+col|OL@42|nl_cont|cm_jrem4|r11: 0.72 [0.69,0.78] / 1.00 / +2.311 / +5.0* +5.1* / +4.4* +4.4*
+col|JLens@42|count_qual|reg_raw|q90: 0.52 [0.51,0.54] / 0.72 / +0.038 / +0.4 +0.7 / +0.5 +0.9
+col|JLens@42|count_qual|reg_raw|r11: 0.52 [0.51,0.54] / 0.72 / +0.039 / +0.4 +0.7 / +0.5 +0.9
+col|JLens@42|count_qual|reg_jrem4|q90: 0.48 [0.47,0.48] / 0.08 / -0.028 / – – / – –
+col|JLens@42|count_qual|reg_jrem4|r11: 0.48 [0.46,0.48] / 0.08 / -0.039 / -0.1 -0.9 / -0.2 -1.0
+col|JLens@42|count_qual|cm_raw|q90: 0.51 [0.50,0.53] / 0.48 / +0.029 / – – / – –
+col|JLens@42|count_qual|cm_raw|r11: 0.51 [0.50,0.53] / 0.48 / +0.029 / +0.3 +0.5 / +0.4 +0.5
+col|JLens@42|count_qual|cm_jrem4|q90: 0.48 [0.47,0.48] / 0.12 / -0.027 / – – / – –
+col|JLens@42|count_qual|cm_jrem4|r11: 0.48 [0.46,0.48] / 0.12 / -0.037 / -0.1 -0.9 / -0.2 -1.0
+col|JLens@42|count_num|reg_raw|q90: 0.48 [0.46,0.51] / 0.40 / -0.034 / -0.1 -0.3 / -0.1 -0.2
+col|JLens@42|count_num|reg_raw|r11: 0.49 [0.46,0.51] / 0.42 / -0.033 / -0.1 -0.3 / -0.1 -0.2
+col|JLens@42|count_num|reg_jrem4|q90: 0.49 [0.47,0.49] / 0.22 / -0.031 / – – / – –
+col|JLens@42|count_num|reg_jrem4|r11: 0.48 [0.46,0.49] / 0.20 / -0.042 / -0.2 -0.5 / -0.2 -0.4
+col|JLens@42|count_num|cm_raw|q90: 0.49 [0.46,0.51] / 0.40 / -0.029 / – – / – –
+col|JLens@42|count_num|cm_raw|r11: 0.49 [0.46,0.51] / 0.40 / -0.028 / -0.1 -0.2 / -0.1 -0.1
+col|JLens@42|count_num|cm_jrem4|q90: 0.48 [0.47,0.49] / 0.18 / -0.033 / – – / – –
+col|JLens@42|count_num|cm_jrem4|r11: 0.48 [0.46,0.48] / 0.18 / -0.044 / -0.2 -0.5 / -0.3 -0.5
+col|JLens@42|eol|reg_raw|q90: 0.73 [0.69,0.79] / 0.95 / +0.841 / +4.6* +56.8* / +4.4* +38.0*
+col|JLens@42|eol|reg_raw|r11: 0.74 [0.69,0.79] / 0.93 / +0.881 / +4.6* +57.5* / +4.4* +36.5*
+col|JLens@42|eol|reg_jrem4|q90: 0.50 [0.49,0.52] / 0.58 / -0.003 / – – / – –
+col|JLens@42|eol|reg_jrem4|r11: 0.50 [0.49,0.52] / 0.58 / -0.002 / -0.4 +0.2 / -0.3 +0.6
+col|JLens@42|eol|cm_raw|q90: 0.75 [0.70,0.80] / 0.97 / +0.905 / – – / – –
+col|JLens@42|eol|cm_raw|r11: 0.76 [0.71,0.81] / 0.97 / +0.940 / +4.9* +61.4* / +4.7* +39.1*
+col|JLens@42|eol|cm_jrem4|q90: 0.50 [0.49,0.51] / 0.57 / -0.004 / – – / – –
+col|JLens@42|eol|cm_jrem4|r11: 0.50 [0.49,0.52] / 0.57 / -0.003 / -0.4 +0.1 / -0.3 +0.7
+digit|OL@42|numeral|raw|q90: 0.68 [0.60,0.76] / 0.62 / +1.602 / – – / – –
+digit|OL@42|numeral|raw|r11: 0.56 [0.49,0.63] / 0.42 / +0.586 / +2.8* +1.9* / +2.6* +1.6*
+digit|OL@42|numeral|raw|r14: 0.61 [0.53,0.69] / 0.52 / +1.019 / – – / – –
+digit|OL@42|numeral|jrem4|q90: 0.73 [0.67,0.79] / 0.88 / +1.945 / – – / – –
+digit|OL@42|numeral|jrem4|r11: 0.70 [0.64,0.76] / 0.85 / +1.630 / +7.5* +5.8* / +8.2* +6.3*
+digit|OL@42|numeral|jrem4|r14: 0.74 [0.68,0.81] / 0.83 / +2.080 / – – / – –
+digit|OL@42|qualitative|raw|q90: 0.34 [0.29,0.38] / 0.12 / -1.420 / – – / – –
+digit|OL@42|qualitative|raw|r11: 0.39 [0.34,0.42] / 0.13 / -0.973 / -1.5 -2.0* / -1.6 -2.3*
+digit|OL@42|qualitative|raw|r14: 0.36 [0.31,0.40] / 0.12 / -1.192 / – – / – –
+digit|OL@42|qualitative|jrem4|q90: 0.46 [0.42,0.49] / 0.45 / -0.250 / – – / – –
+digit|OL@42|qualitative|jrem4|r11: 0.47 [0.44,0.49] / 0.42 / -0.232 / -0.4 -0.5 / -0.5 -0.7
+digit|OL@42|qualitative|jrem4|r14: 0.45 [0.42,0.49] / 0.40 / -0.303 / – – / – –
+digit|NLA@42|numeral|raw|r11: 0.00 [0.00,0.00] / 0.00 / +nan / – – / – –
+digit|NLA@42|qualitative|raw|r11: 0.00 [0.00,0.00] / 0.00 / +nan / – – / – –
+digit|JLens@42|numeral|raw|q90: 0.99 [0.97,1.00] / 1.00 / +0.536 / – – / – –
+digit|JLens@42|numeral|raw|r11: 0.95 [0.91,0.99] / 1.00 / +0.358 / +7.8* +13.8* / +6.9* +11.3*
+digit|JLens@42|numeral|raw|r14: 0.97 [0.94,1.00] / 1.00 / +0.456 / – – / – –
+digit|JLens@42|numeral|jrem4|q90: 0.60 [0.59,0.63] / 1.00 / +0.072 / – – / – –
+digit|JLens@42|numeral|jrem4|r11: 0.58 [0.58,0.61] / 1.00 / +0.060 / +1.3 +2.3* / +1.3 +2.1*
+digit|JLens@42|numeral|jrem4|r14: 0.60 [0.59,0.63] / 1.00 / +0.077 / – – / – –
+tense|OL@42|f07_tense|raw|q90: 0.99 [0.97,1.00] / 1.00 / +7.597 / +30.5* +40.3* / +22.1* +28.3*
+tense|OL@42|f07_tense|raw|r11: 0.99 [0.99,1.00] / 1.00 / +8.408 / +29.2* +38.8* / +19.7* +25.7*
+tense|OL@42|f07_tense|jrem4|q90: 0.66 [0.64,0.69] / 1.00 / +1.943 / +12.5* +16.7* / +11.1* +13.8*
+tense|OL@42|f07_tense|jrem4|r11: 0.79 [0.76,0.82] / 1.00 / +3.539 / +12.3* +16.4* / +11.5* +15.0*
+tense|OL@42|label|raw|q90: 0.57 [0.54,0.61] / 0.69 / +0.511 / +3.4* +4.4* / +2.8* +3.5*
+tense|OL@42|label|raw|r11: 0.58 [0.55,0.62] / 0.71 / +0.593 / +3.4* +4.5* / +2.9* +3.7*
+tense|OL@42|label|jrem4|q90: 0.52 [0.50,0.53] / 0.57 / +0.103 / +1.2 +1.4 / +1.0 +1.2
+tense|OL@42|label|jrem4|r11: 0.53 [0.51,0.55] / 0.53 / +0.188 / +1.2 +1.4 / +1.1 +1.2
+tense|JLens@42|label|raw|q90: 0.78 [0.74,0.82] / 0.92 / +1.173 / +8.9* +25.7* / +7.8* +20.6*
+tense|JLens@42|label|raw|r11: 0.81 [0.77,0.85] / 0.94 / +1.362 / +9.0* +25.7* / +7.7* +20.4*
+tense|JLens@42|label|jrem4|q90: 0.51 [0.50,0.51] / 0.65 / +0.013 / +0.2 +0.4 / +0.3 +0.6
+tense|JLens@42|label|jrem4|r11: 0.51 [0.50,0.52] / 0.64 / +0.025 / +0.2 +0.4 / +0.3 +0.6
+tense|JLens@42|content|raw|q90: 0.91 [0.88,0.94] / 1.00 / +1.675 / +21.2* +63.0* / +19.1* +48.4*
+tense|JLens@42|content|raw|r11: 0.94 [0.92,0.96] / 1.00 / +1.937 / +21.2* +63.3* / +18.0* +46.5*
+tense|JLens@42|content|jrem4|q90: 0.50 [0.49,0.50] / 0.46 / -0.014 / -0.2 -0.9 / -0.1 -0.7
+tense|JLens@42|content|jrem4|r11: 0.49 [0.48,0.50] / 0.47 / -0.027 / -0.1 -1.0 / -0.2 -0.9
+
+## per-template AUROC
+
+col|OL@42|t0|reg_raw|q90 0.48
+col|OL@42|t0|reg_raw|r11 0.48
+col|OL@42|t0|reg_jrem4|q90 0.51
+col|OL@42|t0|reg_jrem4|r11 0.50
+col|OL@42|t0|cm_raw|q90 0.48
+col|OL@42|t0|cm_raw|r11 0.48
+col|OL@42|t0|cm_jrem4|q90 0.50
+col|OL@42|t0|cm_jrem4|r11 0.50
+col|OL@42|t1|reg_raw|q90 0.51
+col|OL@42|t1|reg_raw|r11 0.52
+col|OL@42|t1|reg_jrem4|q90 0.48
+col|OL@42|t1|reg_jrem4|r11 0.48
+col|OL@42|t1|cm_raw|q90 0.52
+col|OL@42|t1|cm_raw|r11 0.52
+col|OL@42|t1|cm_jrem4|q90 0.49
+col|OL@42|t1|cm_jrem4|r11 0.48
+col|OL@42|t2|reg_raw|q90 0.48
+col|OL@42|t2|reg_raw|r11 0.49
+col|OL@42|t2|reg_jrem4|q90 0.50
+col|OL@42|t2|reg_jrem4|r11 0.51
+col|OL@42|t2|cm_raw|q90 0.48
+col|OL@42|t2|cm_raw|r11 0.48
+col|OL@42|t2|cm_jrem4|q90 0.50
+col|OL@42|t2|cm_jrem4|r11 0.50
+col|OL@42|t3|reg_raw|q90 0.50
+col|OL@42|t3|reg_raw|r11 0.50
+col|OL@42|t3|reg_jrem4|q90 0.49
+col|OL@42|t3|reg_jrem4|r11 0.48
+col|OL@42|t3|cm_raw|q90 0.50
+col|OL@42|t3|cm_raw|r11 0.50
+col|OL@42|t3|cm_jrem4|q90 0.49
+col|OL@42|t3|cm_jrem4|r11 0.49
+col|OL@42|t4|reg_raw|q90 0.51
+col|OL@42|t4|reg_raw|r11 0.51
+col|OL@42|t4|reg_jrem4|q90 0.50
+col|OL@42|t4|reg_jrem4|r11 0.50
+col|OL@42|t4|cm_raw|q90 0.51
+col|OL@42|t4|cm_raw|r11 0.51
+col|OL@42|t4|cm_jrem4|q90 0.50
+col|OL@42|t4|cm_jrem4|r11 0.50
+col|OL@42|t5|reg_raw|q90 0.51
+col|OL@42|t5|reg_raw|r11 0.51
+col|OL@42|t5|reg_jrem4|q90 0.51
+col|OL@42|t5|reg_jrem4|r11 0.50
+col|OL@42|t5|cm_raw|q90 0.52
+col|OL@42|t5|cm_raw|r11 0.53
+col|OL@42|t5|cm_jrem4|q90 0.51
+col|OL@42|t5|cm_jrem4|r11 0.51
+col|OL@42|t6|reg_raw|q90 0.47
+col|OL@42|t6|reg_raw|r11 0.47
+col|OL@42|t6|reg_jrem4|q90 0.47
+col|OL@42|t6|reg_jrem4|r11 0.45
+col|OL@42|t6|cm_raw|q90 0.47
+col|OL@42|t6|cm_raw|r11 0.46
+col|OL@42|t6|cm_jrem4|q90 0.47
+col|OL@42|t6|cm_jrem4|r11 0.45
+col|OL@42|t7|reg_raw|q90 0.50
+col|OL@42|t7|reg_raw|r11 0.50
+col|OL@42|t7|reg_jrem4|q90 0.51
+col|OL@42|t7|reg_jrem4|r11 0.51
+col|OL@42|t7|cm_raw|q90 0.49
+col|OL@42|t7|cm_raw|r11 0.49
+col|OL@42|t7|cm_jrem4|q90 0.51
+col|OL@42|t7|cm_jrem4|r11 0.50
+col|OL@42|t8|reg_raw|q90 0.48
+col|OL@42|t8|reg_raw|r11 0.49
+col|OL@42|t8|reg_jrem4|q90 0.46
+col|OL@42|t8|reg_jrem4|r11 0.44
+col|OL@42|t8|cm_raw|q90 0.48
+col|OL@42|t8|cm_raw|r11 0.47
+col|OL@42|t8|cm_jrem4|q90 0.45
+col|OL@42|t8|cm_jrem4|r11 0.43
+col|OL@42|t9|reg_raw|q90 0.46
+col|OL@42|t9|reg_raw|r11 0.46
+col|OL@42|t9|reg_jrem4|q90 0.49
+col|OL@42|t9|reg_jrem4|r11 0.48
+col|OL@42|t9|cm_raw|q90 0.46
+col|OL@42|t9|cm_raw|r11 0.46
+col|OL@42|t9|cm_jrem4|q90 0.49
+col|OL@42|t9|cm_jrem4|r11 0.49
+col|OL@42|t10|reg_raw|q90 0.49
+col|OL@42|t10|reg_raw|r11 0.49
+col|OL@42|t10|reg_jrem4|q90 0.48
+col|OL@42|t10|reg_jrem4|r11 0.47
+col|OL@42|t10|cm_raw|q90 0.48
+col|OL@42|t10|cm_raw|r11 0.48
+col|OL@42|t10|cm_jrem4|q90 0.48
+col|OL@42|t10|cm_jrem4|r11 0.47
+col|OL@42|t11|reg_raw|q90 0.73
+col|OL@42|t11|reg_raw|r11 0.74
+col|OL@42|t11|reg_jrem4|q90 0.66
+col|OL@42|t11|reg_jrem4|r11 0.70
+col|OL@42|t11|cm_raw|q90 0.73
+col|OL@42|t11|cm_raw|r11 0.73
+col|OL@42|t11|cm_jrem4|q90 0.66
+col|OL@42|t11|cm_jrem4|r11 0.70
+col|OL@42|t12|reg_raw|q90 0.75
+col|OL@42|t12|reg_raw|r11 0.76
+col|OL@42|t12|reg_jrem4|q90 0.67
+col|OL@42|t12|reg_jrem4|r11 0.72
+col|OL@42|t12|cm_raw|q90 0.74
+col|OL@42|t12|cm_raw|r11 0.76
+col|OL@42|t12|cm_jrem4|q90 0.67
+col|OL@42|t12|cm_jrem4|r11 0.72
+col|OL@42|t13|reg_raw|q90 0.75
+col|OL@42|t13|reg_raw|r11 0.76
+col|OL@42|t13|reg_jrem4|q90 0.67
+col|OL@42|t13|reg_jrem4|r11 0.73
+col|OL@42|t13|cm_raw|q90 0.75
+col|OL@42|t13|cm_raw|r11 0.76
+col|OL@42|t13|cm_jrem4|q90 0.66
+col|OL@42|t13|cm_jrem4|r11 0.72
+col|JLens@42|t0|reg_raw|q90 0.54
+col|JLens@42|t0|reg_raw|r11 0.54
+col|JLens@42|t0|reg_jrem4|q90 0.48
+col|JLens@42|t0|reg_jrem4|r11 0.48
+col|JLens@42|t0|cm_raw|q90 0.55
+col|JLens@42|t0|cm_raw|r11 0.55
+col|JLens@42|t0|cm_jrem4|q90 0.48
+col|JLens@42|t0|cm_jrem4|r11 0.48
+col|JLens@42|t1|reg_raw|q90 0.49
+col|JLens@42|t1|reg_raw|r11 0.49
+col|JLens@42|t1|reg_jrem4|q90 0.49
+col|JLens@42|t1|reg_jrem4|r11 0.49
+col|JLens@42|t1|cm_raw|q90 0.48
+col|JLens@42|t1|cm_raw|r11 0.48
+col|JLens@42|t1|cm_jrem4|q90 0.49
+col|JLens@42|t1|cm_jrem4|r11 0.49
+col|JLens@42|t2|reg_raw|q90 0.48
+col|JLens@42|t2|reg_raw|r11 0.49
+col|JLens@42|t2|reg_jrem4|q90 0.49
+col|JLens@42|t2|reg_jrem4|r11 0.48
+col|JLens@42|t2|cm_raw|q90 0.49
+col|JLens@42|t2|cm_raw|r11 0.49
+col|JLens@42|t2|cm_jrem4|q90 0.48
+col|JLens@42|t2|cm_jrem4|r11 0.48
+digit|OL@42|t0|raw|q90 0.76
+digit|OL@42|t0|raw|r11 0.65
+digit|OL@42|t0|raw|r14 0.71
+digit|OL@42|t0|jrem4|q90 0.76
+digit|OL@42|t0|jrem4|r11 0.73
+digit|OL@42|t0|jrem4|r14 0.78
+digit|OL@42|t1|raw|q90 0.57
+digit|OL@42|t1|raw|r11 0.48
+digit|OL@42|t1|raw|r14 0.51
+digit|OL@42|t1|jrem4|q90 0.68
+digit|OL@42|t1|jrem4|r11 0.65
+digit|OL@42|t1|jrem4|r14 0.69
+digit|OL@42|t2|raw|q90 0.34
+digit|OL@42|t2|raw|r11 0.39
+digit|OL@42|t2|raw|r14 0.36
+digit|OL@42|t2|jrem4|q90 0.46
+digit|OL@42|t2|jrem4|r11 0.47
+digit|OL@42|t2|jrem4|r14 0.45
+digit|NLA@42|t0|raw|r11 0.00
+digit|NLA@42|t1|raw|r11 0.00
+digit|NLA@42|t2|raw|r11 0.00
+digit|JLens@42|t0|raw|q90 0.99
+digit|JLens@42|t0|raw|r11 0.95
+digit|JLens@42|t0|raw|r14 0.97
+digit|JLens@42|t0|jrem4|q90 0.60
+digit|JLens@42|t0|jrem4|r11 0.58
+digit|JLens@42|t0|jrem4|r14 0.60
+tense|OL@42|t0|raw|q90 0.98
+tense|OL@42|t0|raw|r11 0.99
+tense|OL@42|t0|jrem4|q90 0.67
+tense|OL@42|t0|jrem4|r11 0.80
+tense|OL@42|t1|raw|q90 0.96
+tense|OL@42|t1|raw|r11 0.98
+tense|OL@42|t1|jrem4|q90 0.64
+tense|OL@42|t1|jrem4|r11 0.74
+tense|OL@42|t2|raw|q90 0.97
+tense|OL@42|t2|raw|r11 0.98
+tense|OL@42|t2|jrem4|q90 0.64
+tense|OL@42|t2|jrem4|r11 0.76
+tense|OL@42|t3|raw|q90 0.54
+tense|OL@42|t3|raw|r11 0.54
+tense|OL@42|t3|jrem4|q90 0.51
+tense|OL@42|t3|jrem4|r11 0.52
+tense|OL@42|t4|raw|q90 0.43
+tense|OL@42|t4|raw|r11 0.43
+tense|OL@42|t4|jrem4|q90 0.48
+tense|OL@42|t4|jrem4|r11 0.47
+tense|OL@42|t5|raw|q90 0.84
+tense|OL@42|t5|raw|r11 0.87
+tense|OL@42|t5|jrem4|q90 0.57
+tense|OL@42|t5|jrem4|r11 0.63
+tense|JLens@42|t0|raw|q90 0.78
+tense|JLens@42|t0|raw|r11 0.81
+tense|JLens@42|t0|jrem4|q90 0.51
+tense|JLens@42|t0|jrem4|r11 0.51
+tense|JLens@42|t1|raw|q90 0.91
+tense|JLens@42|t1|raw|r11 0.94
+tense|JLens@42|t1|jrem4|q90 0.50
+tense|JLens@42|t1|jrem4|r11 0.49
