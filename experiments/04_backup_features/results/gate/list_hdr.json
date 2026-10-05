@@ -1,0 +1,553 @@
+{
+ "feature": "list_hdr",
+ "description": "IN-J CALIBRATION (header). Numbered list 'Item N: ...', read at the token right before the index digit N (the model is about to emit N; previous numerals in context): N in 5-7 vs 2-3; position-matched.",
+ "n_rows": 272,
+ "n_items": 247,
+ "n_groups": 247,
+ "pos_frac": 0.5,
+ "layers": {
+  "38": {
+   "G1": {
+    "auroc": 0.8524005190311419,
+    "ci95": [
+     0.8068174768779607,
+     0.8935205554519513
+    ],
+    "acc": 0.7683823529411765,
+    "n_rows": 272,
+    "n_groups": 247
+   },
+   "geometric": {
+    "192": {
+     "diffmeans": 3.7455899715423584,
+     "shuffled_label_diffmeans_mean": 2.8484936475753786,
+     "acts": 2.9581868648529053,
+     "inlp": []
+    },
+    "384": {
+     "diffmeans": 2.563433885574341,
+     "shuffled_label_diffmeans_mean": 2.1165615916252136,
+     "acts": 2.183821439743042,
+     "inlp": []
+    },
+    "768": {
+     "diffmeans": 1.8084040880203247,
+     "shuffled_label_diffmeans_mean": 1.6241059303283691,
+     "acts": 1.6653103828430176,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.4279593229293823,
+     "shuffled_label_diffmeans_mean": 1.2993507027626037,
+     "acts": 1.3238639831542969,
+     "inlp": []
+    }
+   }
+  },
+  "40": {
+   "G1": {
+    "auroc": 0.8465073529411765,
+    "ci95": [
+     0.7985497136944395,
+     0.8901483042399562
+    ],
+    "acc": 0.7647058823529411,
+    "n_rows": 272,
+    "n_groups": 247
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 2.65567946434021,
+     "shuffled_label_diffmeans_mean": 2.4038657546043396,
+     "acts": 2.457031726837158,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.4208157062530518,
+     "shuffled_label_diffmeans_mean": 1.3740609526634215,
+     "acts": 1.3975921869277954,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.48467236159169547,
+    "null_band95": [
+     0.476358401816609,
+     0.521804714532872
+    ],
+    "null_mean": 0.4986490998053633,
+    "j_readable": false,
+    "below_band": false,
+    "per_class_auroc": [
+     0.4531790657439446,
+     0.5161656574394463
+    ],
+    "top10_rate": [
+     0.003676470588235294,
+     0.0
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.4184688581314879,
+    "null_band95": [
+     0.43226778762975776,
+     0.5611105103806229
+    ],
+    "readable_two_sided": true,
+    "readable_positive": false
+   },
+   "emitted_top10": {
+    "auroc": 0.4963235294117647,
+    "null_band95": [
+     0.4963235294117647,
+     0.5036764705882353
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "lens_bag_top25": {
+    "auroc": 0.5670144896193772,
+    "shuffled_max": 0.5334937283737025,
+    "dim": 523
+   }
+  },
+  "42": {
+   "G1": {
+    "auroc": 0.8745134083044983,
+    "ci95": [
+     0.8345307076134314,
+     0.9126596424680983
+    ],
+    "acc": 0.7757352941176471,
+    "n_rows": 272,
+    "n_groups": 247
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 2.4532039165496826,
+     "shuffled_label_diffmeans_mean": 2.5276422023773195,
+     "acts": 2.5352206230163574,
+     "inlp": [
+      1.723099708557129,
+      2.110322952270508,
+      1.4641423225402832,
+      1.661394715309143,
+      1.8165355920791626,
+      1.3381606340408325,
+      1.7833120822906494,
+      1.8593974113464355
+     ]
+    },
+    "1536": {
+     "diffmeans": 1.3587549924850464,
+     "shuffled_label_diffmeans_mean": 1.4381781101226807,
+     "acts": 1.4368562698364258,
+     "inlp": [
+      1.17451012134552,
+      1.3352668285369873,
+      1.265960693359375,
+      1.2311537265777588,
+      1.1944036483764648,
+      1.1899383068084717,
+      1.2422047853469849,
+      1.2575147151947021
+     ]
+    }
+   },
+   "functional": {
+    "stat": 0.49124134948096887,
+    "null_band95": [
+     0.4754318501297578,
+     0.5221764165224914
+    ],
+    "null_mean": 0.49857036656574394,
+    "j_readable": false,
+    "below_band": false,
+    "per_class_auroc": [
+     0.48697015570934254,
+     0.49551254325259514
+    ],
+    "top10_rate": [
+     0.0,
+     0.0
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.4423659169550173,
+    "null_band95": [
+     0.4313270436851211,
+     0.5598926794982699
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "emitted_top10": {
+    "auroc": 0.5,
+    "null_band95": [
+     0.5,
+     0.5
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "lens_bag_top25": {
+    "auroc": 0.573367214532872,
+    "shuffled_max": 0.5963992214532872,
+    "dim": 492
+   },
+   "lens_top10_common": [
+    [
+     "\u2026**",
+     27
+    ],
+    [
+     "...**",
+     14
+    ],
+    [
+     " naval",
+     12
+    ],
+    [
+     " ___",
+     10
+    ],
+    [
+     "...</",
+     9
+    ],
+    [
+     " Naval",
+     9
+    ],
+    [
+     "\u8230",
+     9
+    ],
+    [
+     "\u6d77\u519b",
+     9
+    ],
+    [
+     "____",
+     8
+    ],
+    [
+     " film",
+     8
+    ],
+    [
+     "\u8230\u961f",
+     8
+    ],
+    [
+     " Film",
+     7
+    ],
+    [
+     " ______",
+     7
+    ],
+    [
+     "\uff1f**",
+     7
+    ],
+    [
+     " Hollywood",
+     6
+    ],
+    [
+     "\u519b\u8230",
+     6
+    ],
+    [
+     "\u5728\u5fb7\u56fd",
+     6
+    ],
+    [
+     " political",
+     5
+    ],
+    [
+     " university",
+     5
+    ],
+    [
+     "\u2026\u2026",
+     5
+    ],
+    [
+     " ships",
+     5
+    ],
+    [
+     "...\"",
+     5
+    ],
+    [
+     " actress",
+     5
+    ],
+    [
+     " Political",
+     5
+    ],
+    [
+     " politician",
+     5
+    ]
+   ],
+   "camilablank": {
+    "geometric": {
+     "384": {
+      "diffmeans": 2.435365676879883,
+      "shuffled_label_diffmeans_mean": 2.50970451037089,
+      "acts": 2.44876766204834,
+      "inlp": []
+     },
+     "1536": {
+      "diffmeans": 1.4586979150772095,
+      "shuffled_label_diffmeans_mean": 1.4634302059809368,
+      "acts": 1.4557212591171265,
+      "inlp": []
+     }
+    },
+    "basis_overlap_with_n1000_r384": 0.8098649382591248,
+    "functional": {
+     "stat": 0.47241295415224915,
+     "null_band95": [
+      0.4681505460640138,
+      0.5230218695934256
+     ],
+     "null_mean": 0.49885468479671274,
+     "j_readable": false,
+     "below_band": false,
+     "per_class_auroc": [
+      0.5255730968858131,
+      0.41925281141868515
+     ],
+     "top10_rate": [
+      0.014705882352941176,
+      0.0
+     ]
+    },
+    "emitted_soft": {
+     "auroc": 0.4709126297577855,
+     "null_band95": [
+      0.44196447880622836,
+      0.5709977833044982
+     ],
+     "readable_two_sided": false,
+     "readable_positive": false
+    },
+    "emitted_top10": {
+     "auroc": 0.5,
+     "null_band95": [
+      0.5,
+      0.5
+     ],
+     "readable_two_sided": false,
+     "readable_positive": false
+    }
+   },
+   "jonly": {
+    "384": {
+     "jonly": {
+      "logloss": 1.2569251073508387,
+      "dprime": 0.7866891319169287,
+      "auroc": 0.7046929065743944
+     },
+     "rand_logloss_mean": 0.8148899624320572,
+     "rand_logloss_band95": [
+      0.6678340963857159,
+      0.9405181691223206
+     ],
+     "z_logloss": 4.593618449839588,
+     "rand_dprime_mean": 1.2600773070991576,
+     "rand_dprime_band95": [
+      1.0748984600672813,
+      1.4555674711355977
+     ],
+     "z_dprime": -3.5770024711038304,
+     "rand_auroc_mean": 0.8115214100346021,
+     "rand_auroc_band95": [
+      0.7708504541522491,
+      0.8474386353806228
+     ],
+     "z_auroc": -4.14750795403117
+    },
+    "1536": {
+     "jonly": {
+      "logloss": 0.7208494641318108,
+      "dprime": 1.2614123116849503,
+      "auroc": 0.8124459342560554
+     },
+     "rand_logloss_mean": 0.4943348371864259,
+     "rand_logloss_band95": [
+      0.43617812446414816,
+      0.5385262360411879
+     ],
+     "z_logloss": 6.252927843983033,
+     "rand_dprime_mean": 1.6989114717593985,
+     "rand_dprime_band95": [
+      1.5920275796757322,
+      1.807353764448693
+     ],
+     "z_dprime": -5.950438754953249,
+     "rand_auroc_mean": 0.8872621107266436,
+     "rand_auroc_band95": [
+      0.8688959775086506,
+      0.9078530493079585
+     ],
+     "z_auroc": -5.868175941719415
+    }
+   }
+  },
+  "44": {
+   "G1": {
+    "auroc": 0.8847318339100346,
+    "ci95": [
+     0.84504960550897,
+     0.9225722292414364
+    ],
+    "acc": 0.7830882352941176,
+    "n_rows": 272,
+    "n_groups": 247
+   },
+   "geometric": {
+    "256": {
+     "diffmeans": 2.7690072059631348,
+     "shuffled_label_diffmeans_mean": 2.865579056739807,
+     "acts": 2.848789691925049,
+     "inlp": []
+    },
+    "1024": {
+     "diffmeans": 1.3975038528442383,
+     "shuffled_label_diffmeans_mean": 1.6325438499450684,
+     "acts": 1.6094328165054321,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.4931741998269896,
+    "null_band95": [
+     0.46818129595588237,
+     0.5234929173875433
+    ],
+    "null_mean": 0.4984030330882353,
+    "j_readable": false,
+    "below_band": false,
+    "per_class_auroc": [
+     0.48888948961937717,
+     0.4974589100346021
+    ],
+    "top10_rate": [
+     0.007352941176470588,
+     0.0
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.43268814878892736,
+    "null_band95": [
+     0.42316446799307955,
+     0.5646761461937716
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "emitted_top10": {
+    "auroc": 0.4963235294117647,
+    "null_band95": [
+     0.4963235294117647,
+     0.5036764705882353
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "lens_bag_top25": {
+    "auroc": 0.5399816176470589,
+    "shuffled_max": 0.5337099913494809,
+    "dim": 474
+   }
+  }
+ },
+ "lens_path": "/__modal/volumes/vo-YSI1QhGvEQxoUb59wxFlyR/hf/hub/models--neuronpedia--jacobian-lens/snapshots/b25d72a96b79c8e309d6625955a98751da47e67a/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",
+ "emitted_sets_size": [
+  2,
+  3
+ ],
+ "emitted_sets_examples": [
+  [
+   "2",
+   "3"
+  ],
+  [
+   "5",
+   "6",
+   "7"
+  ]
+ ],
+ "label_tokens": [
+  [
+   "2",
+   "3",
+   " first",
+   " two",
+   " second",
+   " three",
+   "first",
+   " early",
+   " third",
+   "First",
+   " First",
+   "second",
+   " Two",
+   " Second",
+   "Two",
+   " Three",
+   "Second",
+   "Three",
+   "two",
+   " Third",
+   "early",
+   " Early",
+   "three",
+   "third",
+   "Third",
+   "Early"
+  ],
+  [
+   "5",
+   "6",
+   "7",
+   " late",
+   " five",
+   " six",
+   "late",
+   " seven",
+   " fifth",
+   " Six",
+   " Five",
+   " Fifth",
+   " sixth",
+   " Seven",
+   " seventh",
+   " Late",
+   "Five",
+   "Six",
+   "six",
+   "five",
+   "Seven",
+   "Late",
+   " Sixth",
+   " Seventh",
+   "seven"
+  ]
+ ],
+ "baseline_abs_position_auroc": 0.545171929065744,
+ "baseline_local4_bag": {
+  "auroc": 0.45204368512110726,
+  "shuffled_max": 0.4740214100346021,
+  "dim": 6
+ }
+}

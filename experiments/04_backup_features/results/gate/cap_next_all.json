@@ -1,0 +1,553 @@
+{
+ "feature": "cap_next_all",
+ "description": "Is the NEXT word capitalised? All word boundaries (sentence-initial positives included).",
+ "n_rows": 9593,
+ "n_items": 1200,
+ "n_groups": 1200,
+ "pos_frac": 0.4996351506306682,
+ "layers": {
+  "38": {
+   "G1": {
+    "auroc": 0.8939454673482161,
+    "ci95": [
+     0.8874686904308055,
+     0.9002668347022702
+    ],
+    "acc": 0.8103825706244137,
+    "n_rows": 9593,
+    "n_groups": 1200
+   },
+   "geometric": {
+    "192": {
+     "diffmeans": 3.8938148021698,
+     "shuffled_label_diffmeans_mean": 3.1918579578399657,
+     "acts": 3.127420425415039,
+     "inlp": []
+    },
+    "384": {
+     "diffmeans": 2.6702804565429688,
+     "shuffled_label_diffmeans_mean": 2.37987961769104,
+     "acts": 2.409370183944702,
+     "inlp": []
+    },
+    "768": {
+     "diffmeans": 2.0556929111480713,
+     "shuffled_label_diffmeans_mean": 1.8972239732742309,
+     "acts": 1.922715663909912,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.6432726383209229,
+     "shuffled_label_diffmeans_mean": 1.5109398126602174,
+     "acts": 1.516409993171692,
+     "inlp": []
+    }
+   }
+  },
+  "40": {
+   "G1": {
+    "auroc": 0.8973426524793101,
+    "ci95": [
+     0.8905536474876791,
+     0.9033035119511208
+    ],
+    "acc": 0.8173668299801939,
+    "n_rows": 9593,
+    "n_groups": 1200
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 2.275761604309082,
+     "shuffled_label_diffmeans_mean": 2.298954486846924,
+     "acts": 2.321171760559082,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.5980594158172607,
+     "shuffled_label_diffmeans_mean": 1.5064378261566163,
+     "acts": 1.5130681991577148,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.48611700439877603,
+    "null_band95": [
+     0.4933664803598129,
+     0.5058027195693372
+    ],
+    "null_mean": 0.49973769521741773,
+    "j_readable": false,
+    "below_band": true,
+    "per_class_auroc": [
+     0.499826330934001,
+     0.47240767786355103
+    ],
+    "top10_rate": [
+     0.000833941415615553,
+     0.0022933388929427707
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.7911569172056471,
+    "null_band95": [
+     0.4885334553645942,
+     0.5091922432453578
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.7918158860143264,
+    "null_band95": [
+     0.4890909480622784,
+     0.5113479107987343
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.8001234873774254,
+    "shuffled_max": 0.5094080342861117,
+    "dim": 12145
+   }
+  },
+  "42": {
+   "G1": {
+    "auroc": 0.9008512848598651,
+    "ci95": [
+     0.8942151674389495,
+     0.9064438446469639
+    ],
+    "acc": 0.8235171479203586,
+    "n_rows": 9593,
+    "n_groups": 1200
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 1.7451441287994385,
+     "shuffled_label_diffmeans_mean": 2.257742702960968,
+     "acts": 2.275519609451294,
+     "inlp": [
+      0.6669010519981384,
+      0.6582149863243103,
+      0.6860755681991577,
+      0.6248197555541992,
+      0.7308873534202576,
+      0.6050124168395996,
+      0.7094370126724243,
+      0.7093355655670166
+     ]
+    },
+    "1536": {
+     "diffmeans": 1.2600398063659668,
+     "shuffled_label_diffmeans_mean": 1.4794424653053284,
+     "acts": 1.485678791999817,
+     "inlp": [
+      0.8092799782752991,
+      0.788360595703125,
+      0.7797195315361023,
+      0.7951422333717346,
+      0.8287752270698547,
+      0.7576695680618286,
+      0.8176025748252869,
+      0.7847882509231567
+     ]
+    }
+   },
+   "functional": {
+    "stat": 0.49181433209889425,
+    "null_band95": [
+     0.49361370667509913,
+     0.5060659772932748
+    ],
+    "null_mean": 0.49971715968165376,
+    "j_readable": false,
+    "below_band": true,
+    "per_class_auroc": [
+     0.5144045135266708,
+     0.4692241506711176
+    ],
+    "top10_rate": [
+     0.0013551548003752736,
+     0.002397581569894715
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.7930325691981361,
+    "null_band95": [
+     0.4883383993149732,
+     0.5101634012709507
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.7906338453647681,
+    "null_band95": [
+     0.4901442392116976,
+     0.5120784998956811
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.7933549360178037,
+    "shuffled_max": 0.5084202221990403,
+    "dim": 13083
+   },
+   "lens_top10_common": [
+    [
+     ".[",
+     616
+    ],
+    [
+     ",",
+     570
+    ],
+    [
+     "<|endoftext|>",
+     517
+    ],
+    [
+     " later",
+     491
+    ],
+    [
+     "\u2013",
+     422
+    ],
+    [
+     "[",
+     408
+    ],
+    [
+     "\u00a0",
+     384
+    ],
+    [
+     ",[",
+     367
+    ],
+    [
+     "[[",
+     363
+    ],
+    [
+     "...",
+     348
+    ],
+    [
+     " [\u2026]",
+     340
+    ],
+    [
+     " \n\n",
+     306
+    ],
+    [
+     "\u2026",
+     296
+    ],
+    [
+     " Military",
+     288
+    ],
+    [
+     " military",
+     274
+    ],
+    [
+     " naval",
+     215
+    ],
+    [
+     " film",
+     213
+    ],
+    [
+     " subsequently",
+     213
+    ],
+    [
+     " \u2013",
+     209
+    ],
+    [
+     " Hollywood",
+     209
+    ],
+    [
+     " Army",
+     207
+    ],
+    [
+     "  \n\n",
+     201
+    ],
+    [
+     " Music",
+     193
+    ],
+    [
+     " music",
+     192
+    ],
+    [
+     " ",
+     190
+    ]
+   ],
+   "camilablank": {
+    "geometric": {
+     "384": {
+      "diffmeans": 1.1201808452606201,
+      "shuffled_label_diffmeans_mean": 1.98805038134257,
+      "acts": 2.0884180068969727,
+      "inlp": []
+     },
+     "1536": {
+      "diffmeans": 1.2827787399291992,
+      "shuffled_label_diffmeans_mean": 1.508529543876648,
+      "acts": 1.5139926671981812,
+      "inlp": []
+     }
+    },
+    "basis_overlap_with_n1000_r384": 0.8098649382591248,
+    "functional": {
+     "stat": 0.48994338531886783,
+     "null_band95": [
+      0.4929983683887961,
+      0.5063542859269594
+     ],
+     "null_mean": 0.4999218509306107,
+     "j_readable": false,
+     "below_band": true,
+     "per_class_auroc": [
+      0.49867639004798664,
+      0.48121038058974897
+     ],
+     "top10_rate": [
+      0.0014593974773272178,
+      0.0035442510163661003
+     ]
+    },
+    "emitted_soft": {
+     "auroc": 0.7629560470130051,
+     "null_band95": [
+      0.48950498719921415,
+      0.5114613775949302
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    },
+    "emitted_top10": {
+     "auroc": 0.6331321719173795,
+     "null_band95": [
+      0.4890286420300438,
+      0.5116783270090062
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    }
+   },
+   "jonly": {
+    "384": {
+     "jonly": {
+      "logloss": 0.38759687584465463,
+      "dprime": 1.93147028449385,
+      "auroc": 0.9079385736142986
+     },
+     "rand_logloss_mean": 0.3994794063510175,
+     "rand_logloss_band95": [
+      0.3915348450698124,
+      0.40950475238761685
+     ],
+     "z_logloss": -1.9334937092768125,
+     "rand_dprime_mean": 1.8719359291867057,
+     "rand_dprime_band95": [
+      1.8226323619248745,
+      1.910197794183067
+     ],
+     "z_dprime": 1.8932469788886241,
+     "rand_auroc_mean": 0.9027831038319771,
+     "rand_auroc_band95": [
+      0.8976969636709785,
+      0.9066717337349607
+     ],
+     "z_auroc": 1.6924943243624335
+    },
+    "1536": {
+     "jonly": {
+      "logloss": 0.49590355359589533,
+      "dprime": 1.8822381891140039,
+      "auroc": 0.9063298908129912
+     },
+     "rand_logloss_mean": 0.5288338181340709,
+     "rand_logloss_band95": [
+      0.5072178216803452,
+      0.5497706003172127
+     ],
+     "z_logloss": -2.3416119132964193,
+     "rand_dprime_mean": 1.8357778358854415,
+     "rand_dprime_band95": [
+      1.7978673056560373,
+      1.8653883177348944
+     ],
+     "z_dprime": 2.102478904375136,
+     "rand_auroc_mean": 0.9004562513039851,
+     "rand_auroc_band95": [
+      0.8962914884553863,
+      0.9053817437756451
+     ],
+     "z_auroc": 2.011829694679679
+    }
+   }
+  },
+  "44": {
+   "G1": {
+    "auroc": 0.9083021680923569,
+    "ci95": [
+     0.9024838877313913,
+     0.9141005665136319
+    ],
+    "acc": 0.828208068383196,
+    "n_rows": 9593,
+    "n_groups": 1200
+   },
+   "geometric": {
+    "256": {
+     "diffmeans": 1.9406745433807373,
+     "shuffled_label_diffmeans_mean": 2.6025451898574827,
+     "acts": 2.6069955825805664,
+     "inlp": []
+    },
+    "1024": {
+     "diffmeans": 1.133418083190918,
+     "shuffled_label_diffmeans_mean": 1.5678247570991517,
+     "acts": 1.578333854675293,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.4861769442416023,
+    "null_band95": [
+     0.49302746382528345,
+     0.5057312397311182
+    ],
+    "null_mean": 0.49968678753520757,
+    "j_readable": false,
+    "below_band": true,
+    "per_class_auroc": [
+     0.4949423638639683,
+     0.47741152461923636
+    ],
+    "top10_rate": [
+     0.001667882831231106,
+     0.003127280308558324
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.8063078534668614,
+    "null_band95": [
+     0.4894706945675986,
+     0.5098047478093052
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.7904442242158704,
+    "null_band95": [
+     0.4900319872948397,
+     0.5120276053619863
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.8054329664788928,
+    "shuffled_max": 0.5075879972529383,
+    "dim": 12606
+   }
+  }
+ },
+ "lens_path": "/__modal/volumes/vo-YSI1QhGvEQxoUb59wxFlyR/hf/hub/models--neuronpedia--jacobian-lens/snapshots/b25d72a96b79c8e309d6625955a98751da47e67a/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",
+ "emitted_sets_size": [
+  64552,
+  26482
+ ],
+ "emitted_sets_examples": [
+  [
+   " t",
+   " a",
+   " th",
+   " c",
+   " s",
+   " the",
+   " p",
+   " f",
+   " w",
+   " b",
+   " d",
+   " m",
+   " o",
+   " in",
+   " h"
+  ],
+  [
+   " S",
+   " T",
+   " C",
+   " I",
+   " A",
+   " M",
+   " P",
+   " D",
+   " B",
+   " R",
+   " F",
+   " L",
+   " N",
+   " W",
+   " E"
+  ]
+ ],
+ "label_tokens": [
+  [
+   " small",
+   " common",
+   " lower",
+   "common",
+   " Common",
+   "small",
+   "Lower",
+   "Common",
+   "lower",
+   " Small",
+   "Small",
+   " Lower",
+   " lowercase"
+  ],
+  [
+   "name",
+   "Name",
+   " name",
+   " Name",
+   " proper",
+   " capital",
+   " Capital",
+   " uppercase",
+   "Capital",
+   " Proper",
+   "capital",
+   "uppercase",
+   "proper"
+  ]
+ ],
+ "baseline_abs_position_auroc": 0.4778820023993324,
+ "baseline_local4_bag": {
+  "auroc": 0.656595382154531,
+  "shuffled_max": 0.5023881832881285,
+  "dim": 2129
+ }
+}

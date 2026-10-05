@@ -1,0 +1,552 @@
+{
+ "feature": "in_quote",
+ "description": "Is the current word inside an open double-quote span (character speech) vs narration? TinyStories; word tokens, excluding the first/last word of each span and quote tokens.",
+ "n_rows": 18872,
+ "n_items": 2368,
+ "n_groups": 2368,
+ "pos_frac": 0.49809241203899957,
+ "layers": {
+  "38": {
+   "G1": {
+    "auroc": 0.9982491958381253,
+    "ci95": [
+     0.9974051239451553,
+     0.9989036171233904
+    ],
+    "acc": 0.9846333192030522,
+    "n_rows": 18872,
+    "n_groups": 2368
+   },
+   "geometric": {
+    "192": {
+     "diffmeans": 4.189582347869873,
+     "shuffled_label_diffmeans_mean": 2.8274747371673583,
+     "acts": 2.825493812561035,
+     "inlp": []
+    },
+    "384": {
+     "diffmeans": 3.4110069274902344,
+     "shuffled_label_diffmeans_mean": 2.3774163722991943,
+     "acts": 2.351165294647217,
+     "inlp": []
+    },
+    "768": {
+     "diffmeans": 2.666134834289551,
+     "shuffled_label_diffmeans_mean": 1.9936747431755066,
+     "acts": 1.9750399589538574,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 2.0004994869232178,
+     "shuffled_label_diffmeans_mean": 1.5962546825408936,
+     "acts": 1.5762333869934082,
+     "inlp": []
+    }
+   }
+  },
+  "40": {
+   "G1": {
+    "auroc": 0.9981189238606958,
+    "ci95": [
+     0.9971838791671584,
+     0.9988615984177157
+    ],
+    "acc": 0.9848982619754133,
+    "n_rows": 18872,
+    "n_groups": 2368
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 2.7787632942199707,
+     "shuffled_label_diffmeans_mean": 2.189427602291107,
+     "acts": 2.157508373260498,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.8421239852905273,
+     "shuffled_label_diffmeans_mean": 1.5833794713020324,
+     "acts": 1.5601089000701904,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.4986904487807289,
+    "null_band95": [
+     0.4961531510706809,
+     0.5042573665467537
+    ],
+    "null_mean": 0.4999727317524889,
+    "j_readable": false,
+    "below_band": false,
+    "per_class_auroc": [
+     0.5767001004079212,
+     0.4206807971535365
+    ],
+    "top10_rate": [
+     0.01420093259855871,
+     0.011869436201780416
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.7190211013872916,
+    "null_band95": [
+     0.49102062335461294,
+     0.5075317606034808
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.5419390970924381,
+    "null_band95": [
+     0.4967603224172477,
+     0.503256831585367
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.8485821199773577,
+    "shuffled_max": 0.5041309548411443,
+    "dim": 13803
+   }
+  },
+  "42": {
+   "G1": {
+    "auroc": 0.9984739006792697,
+    "ci95": [
+     0.9975699767103452,
+     0.9992043999248155
+    ],
+    "acc": 0.9881835523526918,
+    "n_rows": 18872,
+    "n_groups": 2368
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 2.2181739807128906,
+     "shuffled_label_diffmeans_mean": 2.0451626896858217,
+     "acts": 2.045280694961548,
+     "inlp": [
+      0.8172126412391663,
+      0.7978311777114868,
+      0.7903933525085449,
+      0.7429373264312744,
+      0.623586893081665,
+      0.6057263016700745,
+      0.5635101199150085,
+      0.6168245077133179
+     ]
+    },
+    "1536": {
+     "diffmeans": 1.698989987373352,
+     "shuffled_label_diffmeans_mean": 1.519296371936798,
+     "acts": 1.5090333223342896,
+     "inlp": [
+      0.9423015117645264,
+      0.8997427225112915,
+      0.8459732532501221,
+      0.8495008945465088,
+      0.7926047444343567,
+      0.7508978247642517,
+      0.6572133302688599,
+      0.7931004166603088
+     ]
+    }
+   },
+   "functional": {
+    "stat": 0.5094919628737781,
+    "null_band95": [
+     0.49622817840488426,
+     0.5040267439979873
+    ],
+    "null_mean": 0.4999989541403104,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.6075090861306786,
+     0.41147483961687753
+    ],
+    "top10_rate": [
+     0.011869436201780416,
+     0.012134378974141585
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.7440015925999137,
+    "null_band95": [
+     0.49085405683380356,
+     0.5077797405117883
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.5263655814225129,
+    "null_band95": [
+     0.4973770435370543,
+     0.5029173698403356
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.8313223015651955,
+    "shuffled_max": 0.5043275814045428,
+    "dim": 14729
+   },
+   "lens_top10_common": [
+    [
+     " kids",
+     4801
+    ],
+    [
+     " children",
+     1954
+    ],
+    [
+     " beautiful",
+     1705
+    ],
+    [
+     " ____",
+     1221
+    ],
+    [
+     " wonderful",
+     1108
+    ],
+    [
+     " friends",
+     1067
+    ],
+    [
+     " nice",
+     1013
+    ],
+    [
+     " ______",
+     955
+    ],
+    [
+     " ___",
+     878
+    ],
+    [
+     " toys",
+     856
+    ],
+    [
+     " animals",
+     803
+    ],
+    [
+     " kindness",
+     794
+    ],
+    [
+     " yummy",
+     732
+    ],
+    [
+     " cute",
+     719
+    ],
+    [
+     "!**",
+     715
+    ],
+    [
+     "____",
+     669
+    ],
+    [
+     " scary",
+     666
+    ],
+    [
+     " happy",
+     664
+    ],
+    [
+     " girls",
+     663
+    ],
+    [
+     " parents",
+     644
+    ],
+    [
+     " \u2764",
+     636
+    ],
+    [
+     " food",
+     625
+    ],
+    [
+     " friendship",
+     619
+    ],
+    [
+     " lovely",
+     616
+    ],
+    [
+     " happiness",
+     613
+    ]
+   ],
+   "camilablank": {
+    "geometric": {
+     "384": {
+      "diffmeans": 1.273732304573059,
+      "shuffled_label_diffmeans_mean": 2.190317153930664,
+      "acts": 1.962233304977417,
+      "inlp": []
+     },
+     "1536": {
+      "diffmeans": 1.7467448711395264,
+      "shuffled_label_diffmeans_mean": 1.6031162738800049,
+      "acts": 1.557654857635498,
+      "inlp": []
+     }
+    },
+    "basis_overlap_with_n1000_r384": 0.8098649382591248,
+    "functional": {
+     "stat": 0.5395029077864433,
+     "null_band95": [
+      0.4961473600662872,
+      0.5042312147898397
+     ],
+     "null_mean": 0.5001087039291618,
+     "j_readable": true,
+     "below_band": false,
+     "per_class_auroc": [
+      0.6210760382223979,
+      0.4579297773504888
+     ],
+     "top10_rate": [
+      0.014306909707503179,
+      0.009961848240779992
+     ]
+    },
+    "emitted_soft": {
+     "auroc": 0.8062696491787665,
+     "null_band95": [
+      0.48999895689198175,
+      0.5082523974637454
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    },
+    "emitted_top10": {
+     "auroc": 0.5182946264915181,
+     "null_band95": [
+      0.4978589988914696,
+      0.50208735180285
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    }
+   },
+   "jonly": {
+    "384": {
+     "jonly": {
+      "logloss": 0.09135271905245188,
+      "dprime": 3.607390327567068,
+      "auroc": 0.9946444728471823
+     },
+     "rand_logloss_mean": 0.11221735406247761,
+     "rand_logloss_band95": [
+      0.10339773749086927,
+      0.12207272015618538
+     ],
+     "z_logloss": -3.158491541906809,
+     "rand_dprime_mean": 3.5055181149917622,
+     "rand_dprime_band95": [
+      3.437183912128748,
+      3.5731307081190877
+     ],
+     "z_dprime": 2.027791765487168,
+     "rand_auroc_mean": 0.9919954344720386,
+     "rand_auroc_band95": [
+      0.990596035010243,
+      0.9930794039655514
+     ],
+     "z_auroc": 2.9839692088054726
+    },
+    "1536": {
+     "jonly": {
+      "logloss": 0.041497528393866584,
+      "dprime": 4.402352826784248,
+      "auroc": 0.9984105897786084
+     },
+     "rand_logloss_mean": 0.048904939042033926,
+     "rand_logloss_band95": [
+      0.04579076098041336,
+      0.05280105636886702
+     ],
+     "z_logloss": -3.022583518744234,
+     "rand_dprime_mean": 4.438758684845697,
+     "rand_dprime_band95": [
+      4.3582136396843705,
+      4.4694954943024126
+     ],
+     "z_dprime": -0.8742596176735912,
+     "rand_auroc_mean": 0.9980093096337693,
+     "rand_auroc_band95": [
+      0.9977611465146995,
+      0.9982036758958094
+     ],
+     "z_auroc": 2.479114214153947
+    }
+   }
+  },
+  "44": {
+   "G1": {
+    "auroc": 0.9986862847721392,
+    "ci95": [
+     0.9978716104150025,
+     0.9993532491466616
+    ],
+    "acc": 0.99003815175922,
+    "n_rows": 18872,
+    "n_groups": 2368
+   },
+   "geometric": {
+    "256": {
+     "diffmeans": 2.2885804176330566,
+     "shuffled_label_diffmeans_mean": 2.2643343925476076,
+     "acts": 2.2810146808624268,
+     "inlp": []
+    },
+    "1024": {
+     "diffmeans": 1.735459327697754,
+     "shuffled_label_diffmeans_mean": 1.557719898223877,
+     "acts": 1.5564932823181152,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.5095918541546867,
+    "null_band95": [
+     0.4958200527057352,
+     0.50414908196667
+    ],
+    "null_mean": 0.4999447528578071,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.6044368059049742,
+     0.4147469024043991
+    ],
+    "top10_rate": [
+     0.01748622297583722,
+     0.009114031369224248
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.7199149565123635,
+    "null_band95": [
+     0.4914427940188776,
+     0.5074106491641659
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.5263207853381973,
+    "null_band95": [
+     0.4970348336305887,
+     0.5030215759101854
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.8659001727375647,
+    "shuffled_max": 0.5043341292589132,
+    "dim": 13542
+   }
+  }
+ },
+ "lens_path": "/__modal/volumes/vo-YSI1QhGvEQxoUb59wxFlyR/hf/hub/models--neuronpedia--jacobian-lens/snapshots/b25d72a96b79c8e309d6625955a98751da47e67a/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",
+ "emitted_sets_size": [
+  131,
+  793
+ ],
+ "emitted_sets_examples": [
+  [
+   " \"",
+   " \"\"",
+   " \"\\",
+   " \"/",
+   " \",",
+   " \"<",
+   " \"\"\"",
+   " \"$",
+   " \"#",
+   " \"./",
+   " \".",
+   " \"%",
+   " \"-",
+   " \"+",
+   " \"../"
+  ],
+  [
+   "\"",
+   "=\"",
+   "(\"",
+   "\",",
+   "\">",
+   "\":",
+   "\")",
+   "[\"",
+   ".\"",
+   ",\"",
+   "\"]",
+   "\").",
+   "\"></",
+   "\\\"",
+   "\",\""
+  ]
+ ],
+ "label_tokens": [
+  [
+   " story",
+   " Story",
+   "Story",
+   " narrative",
+   "story",
+   " narrator",
+   " narration",
+   " Narrative"
+  ],
+  [
+   " said",
+   "quote",
+   " talking",
+   " speech",
+   " quote",
+   "Quote",
+   " dialogue",
+   " Quote",
+   " Speech",
+   " Said",
+   "Speech",
+   " Talking",
+   " Dialogue",
+   "Dialogue",
+   "said",
+   "speech",
+   "Talking"
+  ]
+ ],
+ "baseline_abs_position_auroc": 0.5911077049040396,
+ "baseline_local4_bag": {
+  "auroc": 0.9616968377120472,
+  "shuffled_max": 0.5048339113714778,
+  "dim": 2016
+ }
+}

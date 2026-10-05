@@ -1,0 +1,578 @@
+{
+ "feature": "sent_pos",
+ "description": "Words since sentence start at the current word: late (>=16th word) vs early (2nd-5th word); never a paragraph's first sentence; classes matched on absolute token position.",
+ "n_rows": 7428,
+ "n_items": 1186,
+ "n_groups": 1186,
+ "pos_frac": 0.5,
+ "layers": {
+  "38": {
+   "G1": {
+    "auroc": 0.9650864055115793,
+    "ci95": [
+     0.9606386446122701,
+     0.9689556422001006
+    ],
+    "acc": 0.9060312331717825,
+    "n_rows": 7428,
+    "n_groups": 1186
+   },
+   "geometric": {
+    "192": {
+     "diffmeans": 2.3383994102478027,
+     "shuffled_label_diffmeans_mean": 3.0318678855895995,
+     "acts": 3.1362197399139404,
+     "inlp": []
+    },
+    "384": {
+     "diffmeans": 1.9897935390472412,
+     "shuffled_label_diffmeans_mean": 2.387664794921875,
+     "acts": 2.459470510482788,
+     "inlp": []
+    },
+    "768": {
+     "diffmeans": 1.8579727411270142,
+     "shuffled_label_diffmeans_mean": 1.9424605011940002,
+     "acts": 1.985806941986084,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.60280442237854,
+     "shuffled_label_diffmeans_mean": 1.523642325401306,
+     "acts": 1.5553215742111206,
+     "inlp": []
+    }
+   }
+  },
+  "40": {
+   "G1": {
+    "auroc": 0.965013075443482,
+    "ci95": [
+     0.9603377413266141,
+     0.96922794240961
+    ],
+    "acc": 0.9028002154011847,
+    "n_rows": 7428,
+    "n_groups": 1186
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 1.452723503112793,
+     "shuffled_label_diffmeans_mean": 2.2671194076538086,
+     "acts": 2.3308727741241455,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.3504345417022705,
+     "shuffled_label_diffmeans_mean": 1.5223788976669312,
+     "acts": 1.553018569946289,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.5155238630468364,
+    "null_band95": [
+     0.4951052845605372,
+     0.5036050364598694
+    ],
+    "null_mean": 0.4997469566209331,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.5692421796001623,
+     0.4618055464935106
+    ],
+    "top10_rate": [
+     0.018578352180936994,
+     0.006327409800753904
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.6020317757345404,
+    "null_band95": [
+     0.48882609072948446,
+     0.5106406767941181
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.5545639503440533,
+    "null_band95": [
+     0.49514774160064423,
+     0.5054059656602141
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.6038660423860118,
+    "shuffled_max": 0.5189492435584809,
+    "dim": 12097
+   }
+  },
+  "42": {
+   "G1": {
+    "auroc": 0.9707510535895992,
+    "ci95": [
+     0.9668595907390475,
+     0.9744366453491785
+    ],
+    "acc": 0.9145126548196015,
+    "n_rows": 7428,
+    "n_groups": 1186
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 1.0293309688568115,
+     "shuffled_label_diffmeans_mean": 2.2357129096984862,
+     "acts": 2.273388147354126,
+     "inlp": [
+      0.6282504200935364,
+      0.6566025614738464,
+      0.6167466044425964,
+      0.5809913873672485,
+      0.5836067199707031,
+      0.5826929807662964,
+      0.6704094409942627,
+      0.6172302961349487
+     ]
+    },
+    "1536": {
+     "diffmeans": 1.0904897451400757,
+     "shuffled_label_diffmeans_mean": 1.5308396697044373,
+     "acts": 1.525020718574524,
+     "inlp": [
+      0.7654778957366943,
+      0.7481064200401306,
+      0.7816584706306458,
+      0.7606033682823181,
+      0.7474822402000427,
+      0.8367282748222351,
+      0.8002991080284119,
+      0.8017436265945435
+     ]
+    }
+   },
+   "functional": {
+    "stat": 0.513461323481948,
+    "null_band95": [
+     0.4949786846202452,
+     0.5037521646506878
+    ],
+    "null_mean": 0.49979115828594245,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.567596330988221,
+     0.45932631597567486
+    ],
+    "top10_rate": [
+     0.021540118470651588,
+     0.007000538502961767
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.5754396396756919,
+    "null_band95": [
+     0.4883356727908692,
+     0.5110337855873757
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.5307791995763893,
+    "null_band95": [
+     0.49545176958539916,
+     0.504558385342222
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.5930413208952778,
+    "shuffled_max": 0.5131109304501821,
+    "dim": 12872
+   },
+   "lens_top10_common": [
+    [
+     ".[",
+     206
+    ],
+    [
+     " later",
+     204
+    ],
+    [
+     " music",
+     183
+    ],
+    [
+     " military",
+     170
+    ],
+    [
+     " film",
+     166
+    ],
+    [
+     " naval",
+     153
+    ],
+    [
+     " .",
+     144
+    ],
+    [
+     " political",
+     144
+    ],
+    [
+     " musical",
+     139
+    ],
+    [
+     " Music",
+     129
+    ],
+    [
+     ".",
+     125
+    ],
+    [
+     " Hollywood",
+     122
+    ],
+    [
+     " Military",
+     120
+    ],
+    [
+     " during",
+     115
+    ],
+    [
+     " himself",
+     100
+    ],
+    [
+     " songs",
+     98
+    ],
+    [
+     " initially",
+     97
+    ],
+    [
+     " controversial",
+     97
+    ],
+    [
+     " British",
+     96
+    ],
+    [
+     " Army",
+     96
+    ],
+    [
+     " ships",
+     96
+    ],
+    [
+     " filming",
+     95
+    ],
+    [
+     ",",
+     93
+    ],
+    [
+     " July",
+     92
+    ],
+    [
+     " troops",
+     92
+    ]
+   ],
+   "camilablank": {
+    "geometric": {
+     "384": {
+      "diffmeans": 0.7503178715705872,
+      "shuffled_label_diffmeans_mean": 2.2129711310068765,
+      "acts": 2.1194496154785156,
+      "inlp": []
+     },
+     "1536": {
+      "diffmeans": 1.0706430673599243,
+      "shuffled_label_diffmeans_mean": 1.5391171375910442,
+      "acts": 1.5578794479370117,
+      "inlp": []
+     }
+    },
+    "basis_overlap_with_n1000_r384": 0.8098649382591248,
+    "functional": {
+     "stat": 0.5113667586500481,
+     "null_band95": [
+      0.4943436799413301,
+      0.50540754381535
+     ],
+     "null_mean": 0.4998445209534779,
+     "j_readable": true,
+     "below_band": false,
+     "per_class_auroc": [
+      0.5835421953463716,
+      0.4391913219537247
+     ],
+     "top10_rate": [
+      0.017905223478729134,
+      0.0057889068389876145
+     ]
+    },
+    "emitted_soft": {
+     "auroc": 0.5232403031043811,
+     "null_band95": [
+      0.4888823796219692,
+      0.5094788782217745
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    },
+    "emitted_top10": {
+     "auroc": 0.5036470743803954,
+     "null_band95": [
+      0.49742569503710216,
+      0.5031141373266649
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    }
+   },
+   "jonly": {
+    "384": {
+     "jonly": {
+      "logloss": 0.439528015881425,
+      "dprime": 1.6561237471757235,
+      "auroc": 0.8830168287250297
+     },
+     "rand_logloss_mean": 0.3402600861782328,
+     "rand_logloss_band95": [
+      0.3296748518495349,
+      0.34907336268559014
+     ],
+     "z_logloss": 15.882724005502277,
+     "rand_dprime_mean": 2.106254728673953,
+     "rand_dprime_band95": [
+      2.0726714058582205,
+      2.1493260882771916
+     ],
+     "z_dprime": -18.71731603116747,
+     "rand_auroc_mean": 0.9324711667477177,
+     "rand_auroc_band95": [
+      0.9286708096886456,
+      0.9364901864214898
+     ],
+     "z_auroc": -20.219585895738796
+    },
+    "1536": {
+     "jonly": {
+      "logloss": 0.3972491385558763,
+      "dprime": 2.309508385541983,
+      "auroc": 0.9490870388397799
+     },
+     "rand_logloss_mean": 0.34724582610965293,
+     "rand_logloss_band95": [
+      0.30773274944701434,
+      0.3729120401478129
+     ],
+     "z_logloss": 2.2564120248449906,
+     "rand_dprime_mean": 2.473427878110726,
+     "rand_dprime_band95": [
+      2.4111569297151294,
+      2.5451101830737493
+     ],
+     "z_dprime": -3.628741587889146,
+     "rand_auroc_mean": 0.9589613294266494,
+     "rand_auroc_band95": [
+      0.9549655937712868,
+      0.9644069841253271
+     ],
+     "z_auroc": -3.0905219182275636
+    }
+   }
+  },
+  "44": {
+   "G1": {
+    "auroc": 0.9795226056699693,
+    "ci95": [
+     0.9760708228398436,
+     0.982481002964512
+    ],
+    "acc": 0.9302638664512655,
+    "n_rows": 7428,
+    "n_groups": 1186
+   },
+   "geometric": {
+    "256": {
+     "diffmeans": 1.0268079042434692,
+     "shuffled_label_diffmeans_mean": 2.576539421081543,
+     "acts": 2.5853662490844727,
+     "inlp": []
+    },
+    "1024": {
+     "diffmeans": 0.9544823169708252,
+     "shuffled_label_diffmeans_mean": 1.6062465906143188,
+     "acts": 1.6134135723114014,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.5142226621301345,
+    "null_band95": [
+     0.49527658620948145,
+     0.5043287395289883
+    ],
+    "null_mean": 0.49987139055123037,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.571625279944694,
+     0.45682004431557494
+    ],
+    "top10_rate": [
+     0.030829294561120085,
+     0.00834679590737749
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.5903130291328073,
+    "null_band95": [
+     0.4889106359844672,
+     0.5115867116999555
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.5290150006568171,
+    "null_band95": [
+     0.49587673237301755,
+     0.5047564925202606
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.5966394602327018,
+    "shuffled_max": 0.5157402646813104,
+    "dim": 12242
+   }
+  }
+ },
+ "lens_path": "/__modal/volumes/vo-YSI1QhGvEQxoUb59wxFlyR/hf/hub/models--neuronpedia--jacobian-lens/snapshots/b25d72a96b79c8e309d6625955a98751da47e67a/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",
+ "emitted_sets_size": [
+  0,
+  6086
+ ],
+ "emitted_sets_examples": [
+  [],
+  [
+   "!",
+   ".",
+   "?",
+   ".s",
+   ".c",
+   ".p",
+   ".get",
+   ".C",
+   ".t",
+   ".m",
+   ".S",
+   ".f",
+   ".T",
+   ".h",
+   ".A"
+  ]
+ ],
+ "label_tokens": [
+  [
+   "2",
+   "3",
+   "4",
+   "5",
+   " first",
+   " start",
+   " two",
+   " three",
+   "start",
+   " short",
+   " four",
+   "Start",
+   "first",
+   " early",
+   " five",
+   " Start",
+   "First",
+   " First",
+   " beginning",
+   "short",
+   " Two",
+   " Short",
+   "Two",
+   "Short",
+   " Four",
+   " Three",
+   "Three",
+   "two",
+   " Five",
+   "early",
+   " Early",
+   "Four",
+   "three",
+   "four",
+   "Five",
+   "Early",
+   " Beginning",
+   "five",
+   "Beginning"
+  ],
+  [
+   "end",
+   " end",
+   " long",
+   " last",
+   "ending",
+   " late",
+   "End",
+   " End",
+   "last",
+   "long",
+   "late",
+   " Long",
+   "Last",
+   "Long",
+   " Last",
+   " ending",
+   " twenty",
+   " Late",
+   " Twenty",
+   " sixteen",
+   "Late",
+   " eighteen",
+   " Ending",
+   "Twenty",
+   " seventeen",
+   "Ending",
+   " nineteen",
+   "twenty"
+  ]
+ ],
+ "baseline_abs_position_auroc": 0.5012373678717592,
+ "baseline_local4_bag": {
+  "auroc": 0.8218446901781061,
+  "shuffled_max": 0.5099352636504121,
+  "dim": 1747
+ }
+}

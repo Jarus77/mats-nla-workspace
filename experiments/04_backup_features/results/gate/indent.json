@@ -1,0 +1,565 @@
+{
+ "feature": "indent",
+ "description": "Indentation level of the current line in Python code (2 vs 1 indents of 4 spaces), read at mid-line tokens (not the first code token of the line). MBPP + HumanEval solutions.",
+ "n_rows": 2967,
+ "n_items": 382,
+ "n_groups": 382,
+ "pos_frac": 0.48533872598584427,
+ "layers": {
+  "38": {
+   "G1": {
+    "auroc": 0.9670495888816124,
+    "ci95": [
+     0.9574011503457389,
+     0.9759602831862326
+    ],
+    "acc": 0.9154027637344119,
+    "n_rows": 2967,
+    "n_groups": 382
+   },
+   "geometric": {
+    "192": {
+     "diffmeans": 1.7280352115631104,
+     "shuffled_label_diffmeans_mean": 1.3848090052604676,
+     "acts": 1.5136682987213135,
+     "inlp": []
+    },
+    "384": {
+     "diffmeans": 1.3474137783050537,
+     "shuffled_label_diffmeans_mean": 1.367651915550232,
+     "acts": 1.449638843536377,
+     "inlp": []
+    },
+    "768": {
+     "diffmeans": 1.370951533317566,
+     "shuffled_label_diffmeans_mean": 1.3232596158981322,
+     "acts": 1.3683148622512817,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.3257976770401,
+     "shuffled_label_diffmeans_mean": 1.2207305312156678,
+     "acts": 1.2377352714538574,
+     "inlp": []
+    }
+   }
+  },
+  "40": {
+   "G1": {
+    "auroc": 0.961298934002765,
+    "ci95": [
+     0.9508693055924173,
+     0.9709988763620757
+    ],
+    "acc": 0.9066397034041119,
+    "n_rows": 2967,
+    "n_groups": 382
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 1.2236043214797974,
+     "shuffled_label_diffmeans_mean": 1.2598990023136138,
+     "acts": 1.3243108987808228,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.2313729524612427,
+     "shuffled_label_diffmeans_mean": 1.1878563642501831,
+     "acts": 1.2150557041168213,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.486044372589682,
+    "null_band95": [
+     0.4916992059593975,
+     0.5076694868523975
+    ],
+    "null_mean": 0.4999603497007567,
+    "j_readable": false,
+    "below_band": true,
+    "per_class_auroc": [
+     0.5367623517427054,
+     0.4353263934366587
+    ],
+    "top10_rate": [
+     0.04213009774182676,
+     0.03471520053926525
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.4865608855417303,
+    "null_band95": [
+     0.48162449747144,
+     0.5227592854089355
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "emitted_top10": {
+    "auroc": 0.5225887724659827,
+    "null_band95": [
+     0.4828876575802227,
+     0.518771914565597
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.7477711380339082,
+    "shuffled_max": 0.5118446663756094,
+    "dim": 2862
+   }
+  },
+  "42": {
+   "G1": {
+    "auroc": 0.9654615076766354,
+    "ci95": [
+     0.9558447085662961,
+     0.9743354607701502
+    ],
+    "acc": 0.9123693966970003,
+    "n_rows": 2967,
+    "n_groups": 382
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 1.1122034788131714,
+     "shuffled_label_diffmeans_mean": 1.2482773780822753,
+     "acts": 1.2617812156677246,
+     "inlp": [
+      0.993597686290741,
+      0.9055291414260864,
+      1.188979148864746,
+      1.0959519147872925,
+      0.9634478688240051,
+      1.047884225845337,
+      0.9377825260162354,
+      0.8976789116859436
+     ]
+    },
+    "1536": {
+     "diffmeans": 1.1414291858673096,
+     "shuffled_label_diffmeans_mean": 1.1744108200073242,
+     "acts": 1.1871800422668457,
+     "inlp": [
+      1.0108082294464111,
+      0.9403827786445618,
+      1.0309422016143799,
+      1.0001312494277954,
+      1.0147203207015991,
+      1.0051087141036987,
+      0.9862450361251831,
+      0.9996234178543091
+     ]
+    }
+   },
+   "functional": {
+    "stat": 0.47445938386815106,
+    "null_band95": [
+     0.4903515539729317,
+     0.5093347181292294
+    ],
+    "null_mean": 0.49972445631412354,
+    "j_readable": false,
+    "below_band": true,
+    "per_class_auroc": [
+     0.4973038546896602,
+     0.4516149130466419
+    ],
+    "top10_rate": [
+     0.025278058645096056,
+     0.02494101786316144
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.45811276649930877,
+    "null_band95": [
+     0.4797795070672342,
+     0.5190807081332315
+    ],
+    "readable_two_sided": true,
+    "readable_positive": false
+   },
+   "emitted_top10": {
+    "auroc": 0.5121357236411264,
+    "null_band95": [
+     0.4849844125191007,
+     0.5147734699028597
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "lens_bag_top25": {
+    "auroc": 0.7376073273666593,
+    "shuffled_max": 0.5125504802444881,
+    "dim": 3334
+   },
+   "lens_top10_common": [
+    [
+     " \n",
+     719
+    ],
+    [
+     " number",
+     578
+    ],
+    [
+     " ",
+     554
+    ],
+    [
+     " \n\n",
+     399
+    ],
+    [
+     " numbers",
+     336
+    ],
+    [
+     "\n\n",
+     327
+    ],
+    [
+     " count",
+     316
+    ],
+    [
+     "\n",
+     315
+    ],
+    [
+     "  \n\n",
+     287
+    ],
+    [
+     "  \n",
+     286
+    ],
+    [
+     " \\\"",
+     269
+    ],
+    [
+     "<|im_end|>",
+     268
+    ],
+    [
+     " \n\n\n",
+     259
+    ],
+    [
+     " counting",
+     239
+    ],
+    [
+     " .",
+     225
+    ],
+    [
+     "  ",
+     221
+    ],
+    [
+     "<|endoftext|>",
+     220
+    ],
+    [
+     " __",
+     210
+    ],
+    [
+     " sum",
+     200
+    ],
+    [
+     "\n\n\n",
+     191
+    ],
+    [
+     "\\n",
+     171
+    ],
+    [
+     " list",
+     160
+    ],
+    [
+     " length",
+     153
+    ],
+    [
+     " counts",
+     147
+    ],
+    [
+     " \u2018",
+     146
+    ]
+   ],
+   "camilablank": {
+    "geometric": {
+     "384": {
+      "diffmeans": 1.0748316049575806,
+      "shuffled_label_diffmeans_mean": 1.3182707627614338,
+      "acts": 1.2958992719650269,
+      "inlp": []
+     },
+     "1536": {
+      "diffmeans": 1.2307639122009277,
+      "shuffled_label_diffmeans_mean": 1.2297306060791016,
+      "acts": 1.2200188636779785,
+      "inlp": []
+     }
+    },
+    "basis_overlap_with_n1000_r384": 0.8098649382591248,
+    "functional": {
+     "stat": 0.4899664829367678,
+     "null_band95": [
+      0.4894971644655461,
+      0.5093774700074583
+     ],
+     "null_mean": 0.49955332942225134,
+     "j_readable": false,
+     "below_band": false,
+     "per_class_auroc": [
+      0.5359901404351306,
+      0.443942825438405
+     ],
+     "top10_rate": [
+      0.003370407819346141,
+      0.011459386585776879
+     ]
+    },
+    "emitted_soft": {
+     "auroc": 0.530441861311213,
+     "null_band95": [
+      0.47759989744779163,
+      0.5185899696663756
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    },
+    "emitted_top10": {
+     "auroc": 0.50371643745907,
+     "null_band95": [
+      0.4962844720948847,
+      0.5037330822964418
+     ],
+     "readable_two_sided": false,
+     "readable_positive": false
+    }
+   },
+   "jonly": {
+    "384": {
+     "jonly": {
+      "logloss": 0.5629875499790558,
+      "dprime": 1.4734144265037206,
+      "auroc": 0.8600614858473404
+     },
+     "rand_logloss_mean": 0.5173213322798127,
+     "rand_logloss_band95": [
+      0.48573757424859915,
+      0.5446242648519822
+     ],
+     "z_logloss": 2.321762272690524,
+     "rand_dprime_mean": 1.6669260358623958,
+     "rand_dprime_band95": [
+      1.5963552400111414,
+      1.7700741082977274
+     ],
+     "z_dprime": -3.5579904321065485,
+     "rand_auroc_mean": 0.8885972858909991,
+     "rand_auroc_band95": [
+      0.8773650221931165,
+      0.9014722381394163
+     ],
+     "z_auroc": -3.8945035520746147
+    },
+    "1536": {
+     "jonly": {
+      "logloss": 0.4046372961271013,
+      "dprime": 2.206964171953825,
+      "auroc": 0.9445112966601179
+     },
+     "rand_logloss_mean": 0.40017820925153513,
+     "rand_logloss_band95": [
+      0.3474136794203351,
+      0.43771729040492424
+     ],
+     "z_logloss": 0.15825475654082316,
+     "rand_dprime_mean": 2.2917049676159165,
+     "rand_dprime_band95": [
+      2.218355490766486,
+      2.4097755617655325
+     ],
+     "z_dprime": -1.4134443173053943,
+     "rand_auroc_mean": 0.9462122080331806,
+     "rand_auroc_band95": [
+      0.9403652313905261,
+      0.9547871302663173
+     ],
+     "z_auroc": -0.3839361646220039
+    }
+   }
+  },
+  "44": {
+   "G1": {
+    "auroc": 0.9654510478061559,
+    "ci95": [
+     0.9554879213197147,
+     0.974127025214198
+    ],
+    "acc": 0.9093360296595888,
+    "n_rows": 2967,
+    "n_groups": 382
+   },
+   "geometric": {
+    "256": {
+     "diffmeans": 1.3032116889953613,
+     "shuffled_label_diffmeans_mean": 1.277774405479431,
+     "acts": 1.260200023651123,
+     "inlp": []
+    },
+    "1024": {
+     "diffmeans": 1.0838780403137207,
+     "shuffled_label_diffmeans_mean": 1.1580026984214782,
+     "acts": 1.1751017570495605,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.4792687640980863,
+    "null_band95": [
+     0.4898110202694099,
+     0.5093521645110238
+    ],
+    "null_mean": 0.4998867690597031,
+    "j_readable": false,
+    "below_band": true,
+    "per_class_auroc": [
+     0.5244967892745398,
+     0.4340407389216328
+    ],
+    "top10_rate": [
+     0.03471520053926525,
+     0.03977081226828446
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.4429459543040093,
+    "null_band95": [
+     0.47843445867896384,
+     0.5211941249636178
+    ],
+    "readable_two_sided": true,
+    "readable_positive": false
+   },
+   "emitted_top10": {
+    "auroc": 0.5052338008440661,
+    "null_band95": [
+     0.4827361713690606,
+     0.5155488248562905
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "lens_bag_top25": {
+    "auroc": 0.7436931528778287,
+    "shuffled_max": 0.4965964491013607,
+    "dim": 2949
+   }
+  }
+ },
+ "lens_path": "/__modal/volumes/vo-YSI1QhGvEQxoUb59wxFlyR/hf/hub/models--neuronpedia--jacobian-lens/snapshots/b25d72a96b79c8e309d6625955a98751da47e67a/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",
+ "emitted_sets_size": [
+  4,
+  82
+ ],
+ "emitted_sets_examples": [
+  [
+   " ",
+   "  ",
+   "    ",
+   "   "
+  ],
+  [
+   "        ",
+   "       ",
+   "           ",
+   "                ",
+   "               ",
+   "     ",
+   "                   ",
+   "                       ",
+   "         ",
+   "                                ",
+   "      ",
+   "                           ",
+   "             ",
+   "                               ",
+   "                 "
+  ]
+ ],
+ "label_tokens": [
+  [
+   "1",
+   "4",
+   "one",
+   " one",
+   " top",
+   "outer",
+   " four",
+   " single",
+   "top",
+   " One",
+   "One",
+   "Top",
+   " Top",
+   "Single",
+   " Single",
+   " Four",
+   "single",
+   " outer",
+   " shallow",
+   "Four",
+   "four",
+   "Outer",
+   " Outer"
+  ],
+  [
+   "2",
+   "8",
+   " two",
+   " double",
+   "double",
+   "inner",
+   " deep",
+   " Double",
+   "Double",
+   " eight",
+   " Two",
+   " inner",
+   "Two",
+   " Deep",
+   "two",
+   " nested",
+   "Inner",
+   "deep",
+   "Deep",
+   " Eight",
+   " Inner",
+   "Eight",
+   "nested",
+   "eight",
+   " Nested",
+   "Nested"
+  ]
+ ],
+ "baseline_abs_position_auroc": 0.7113073473768464,
+ "baseline_local4_bag": {
+  "auroc": 0.898815533362439,
+  "shuffled_max": 0.505749517936404,
+  "dim": 448
+ }
+}

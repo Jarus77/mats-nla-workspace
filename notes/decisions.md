@@ -246,3 +246,26 @@ Regex families, L42, n=400.
 - **Base rate:** 0/320 NLA and 0/960 OL readouts ever mention line length, column or wrapping. The col templates are style-matched paraphrases, not recurring phrasings.
 - Mined templates mainly help OL (continuation forms beat label bullets). For the NLA the fixed label is often as good.
 - Selected AUROCs carry a best-of-~7 winner's curse, so re-estimate on evaluation items.
+
+## 2026-10-06 — D19: backup features: none qualify; the in-J count control failed
+All 9 features were gated with 02's procedure plus D9/D11 (centred steering, two-sided J-complement leak bands), at 260 items each, at ~$80 (20 H100-h).
+
+| Feature | Label |
+|---|---|
+| Capitalisation | **IN-J** (enrichment 2.71; J-Lens 0.81; 7× causal) |
+| Coding language | **DIFFUSE-BUT-J-READABLE** (1.49/1.33; label 0.71; steer leaks z 2.4–5.8) |
+| In-quote | **IN-J** (2.22/1.70) |
+| French gender | **fails G1** (AUROC 0.60) |
+| Indentation | **decodable, unused**: non-J by G2 (1.11/1.14), but G4 fails, i.e. steering doesn't move indentation (probably copied from the previous line's whitespace) |
+| Words since sentence start | **DIFFUSE-BUT-J-READABLE** (lens shows rising sentence-end punctuation; leaks) |
+| **List index with numerals ("Item N")** | **FAILED as the in-J count control**: digits never reach the J-Lens top-10, enrichment is no higher than shuffled-label, no steering effect |
+
+- **Pattern (a finding for Part A):** on Qwen L42, count/positional features (col, indentation, sentence position, bracket depth) are J-depleted. Every non-count feature is J-enriched or J-Lens-readable, keeping only 12–23% of its steering effect after J-removal (col 79%). So **non-J content here looks like positional bookkeeping**. We can't defeat the "col is special because it's a count" objection with a natural non-count feature, so state it as a scope limit.
+- **Numbers don't enter Qwen's J-space** in these settings (consistent with col_report). There's no in-J count control, so the readers' natural success on listnum (D18: NLA .84, OL .99) can't be attributed to J-space reading and may be text re-description. **The count-verbalisation calibration gap remains open.** Mitigations: qualitative templates (D12), plus language/tense for K3.
+- **Warning on col's non-J label:**
+  - Under the emitted-form functional test with the **full-distribution newline mass**, col reads weakly (Spearman 0.13, AUROC 0.58).
+  - With the top-10 form it's inside the band (0.501).
+  - Interpretation: the newline *decision* is in J (as Fable predicted), and it correlates with col. **Report col as "count non-J; the decision it feeds is weakly J-visible"**, and keep the count-vs-decision template split.
+  - The primary functional rule stays label words + top-10 categories (one-sided, as in 02), with soft mass as a stricter supplement.
+- **Method recommendation:** always report a shuffled-label enrichment reference (random relabellings already give 1.2–2.5× at r*).
+- camilablank agrees with n1000 on every label except two (capitalisation DIFFUSE; indentation soft-mass above band).

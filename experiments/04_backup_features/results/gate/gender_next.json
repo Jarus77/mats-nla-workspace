@@ -1,0 +1,561 @@
+{
+ "feature": "gender_next",
+ "description": "Grammatical gender of the UPCOMING head noun (Fem vs Masc; spaCy fr_core_news_md), read at a gender-neutral plural determiner (les/des/ces/ses/aux/...) before the noun appears. French Wikipedia.",
+ "n_rows": 7407,
+ "n_items": 1694,
+ "n_groups": 1694,
+ "pos_frac": 0.4780612933711354,
+ "layers": {
+  "38": {
+   "G1": {
+    "auroc": 0.5911522665609701,
+    "ci95": [
+     0.5792577564185359,
+     0.6032554262204448
+    ],
+    "acc": 0.5646010530579182,
+    "n_rows": 7407,
+    "n_groups": 1694
+   },
+   "geometric": {
+    "192": {
+     "diffmeans": 5.981109142303467,
+     "shuffled_label_diffmeans_mean": 3.123801279067993,
+     "acts": 3.180023193359375,
+     "inlp": []
+    },
+    "384": {
+     "diffmeans": 3.9350898265838623,
+     "shuffled_label_diffmeans_mean": 2.3068314671516417,
+     "acts": 2.346691608428955,
+     "inlp": []
+    },
+    "768": {
+     "diffmeans": 2.4768807888031006,
+     "shuffled_label_diffmeans_mean": 1.7499250650405884,
+     "acts": 1.7897027730941772,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.6875685453414917,
+     "shuffled_label_diffmeans_mean": 1.3946017980575562,
+     "acts": 1.4087517261505127,
+     "inlp": []
+    }
+   }
+  },
+  "40": {
+   "G1": {
+    "auroc": 0.6001301653982255,
+    "ci95": [
+     0.5881118133143116,
+     0.6124886026977906
+    ],
+    "acc": 0.5751316322397731,
+    "n_rows": 7407,
+    "n_groups": 1694
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 4.2198333740234375,
+     "shuffled_label_diffmeans_mean": 2.4181739926338195,
+     "acts": 2.4796242713928223,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.8191134929656982,
+     "shuffled_label_diffmeans_mean": 1.4298784852027893,
+     "acts": 1.4487645626068115,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.5088601078811755,
+    "null_band95": [
+     0.4957753844441136,
+     0.5044998706490943
+    ],
+    "null_mean": 0.4999546818015201,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.5299291661802844,
+     0.4877910495820667
+    ],
+    "top10_rate": [
+     0.002295126231942757,
+     0.008910490076954233
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.5530851515021799,
+    "null_band95": [
+     0.48685377233480887,
+     0.512579661384421
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.5289579843129475,
+    "null_band95": [
+     0.4865332814054795,
+     0.5118858142141871
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.583465648796969,
+    "shuffled_max": 0.5094211215510626,
+    "dim": 7555
+   }
+  },
+  "42": {
+   "G1": {
+    "auroc": 0.6001229335813871,
+    "ci95": [
+     0.5877105803999741,
+     0.6123311847208094
+    ],
+    "acc": 0.5704063723504793,
+    "n_rows": 7407,
+    "n_groups": 1694
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 4.152003288269043,
+     "shuffled_label_diffmeans_mean": 2.5354198694229124,
+     "acts": 2.5937774181365967,
+     "inlp": [
+      0.5957081317901611,
+      0.6685227751731873,
+      0.7231188416481018,
+      0.6182206273078918,
+      0.7069913148880005,
+      0.7170993685722351,
+      0.6170800924301147,
+      0.6811380386352539
+     ]
+    },
+    "1536": {
+     "diffmeans": 1.8402206897735596,
+     "shuffled_label_diffmeans_mean": 1.4749268770217896,
+     "acts": 1.4825410842895508,
+     "inlp": [
+      0.7940859198570251,
+      0.8195424675941467,
+      0.8250747919082642,
+      0.8344427347183228,
+      0.8188260793685913,
+      0.8164680004119873,
+      0.8289179801940918,
+      0.8691930770874023
+     ]
+    }
+   },
+   "functional": {
+    "stat": 0.5128637402985907,
+    "null_band95": [
+     0.4954181660207461,
+     0.5038876192829749
+    ],
+    "null_mean": 0.4998589131886863,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.5389277377868859,
+     0.4867997428102957
+    ],
+    "top10_rate": [
+     0.0018901039557175645,
+     0.00850546780072904
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.5626803114736207,
+    "null_band95": [
+     0.48602056841934255,
+     0.5130407216666548
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.5391470663733228,
+    "null_band95": [
+     0.489274373742924,
+     0.513217049249257
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.5818102932275278,
+    "shuffled_max": 0.5069965636451746,
+    "dim": 8141
+   },
+   "lens_top10_common": [
+    [
+     " countries",
+     316
+    ],
+    [
+     " technologies",
+     276
+    ],
+    [
+     " villages",
+     276
+    ],
+    [
+     " international",
+     270
+    ],
+    [
+     " films",
+     270
+    ],
+    [
+     " African",
+     263
+    ],
+    [
+     " political",
+     255
+    ],
+    [
+     " French",
+     253
+    ],
+    [
+     " European",
+     240
+    ],
+    [
+     " scientists",
+     237
+    ],
+    [
+     " scientific",
+     236
+    ],
+    [
+     " buildings",
+     232
+    ],
+    [
+     " cities",
+     230
+    ],
+    [
+     " farmers",
+     228
+    ],
+    [
+     " farms",
+     225
+    ],
+    [
+     " film",
+     223
+    ],
+    [
+     " economic",
+     222
+    ],
+    [
+     " communities",
+     210
+    ],
+    [
+     " Egyptian",
+     208
+    ],
+    [
+     " Africans",
+     208
+    ],
+    [
+     " regions",
+     207
+    ],
+    [
+     " archaeological",
+     206
+    ],
+    [
+     " agricultural",
+     198
+    ],
+    [
+     " indigenous",
+     189
+    ],
+    [
+     " Africa",
+     182
+    ]
+   ],
+   "camilablank": {
+    "geometric": {
+     "384": {
+      "diffmeans": 2.8355062007904053,
+      "shuffled_label_diffmeans_mean": 2.4355620543162027,
+      "acts": 2.4614169597625732,
+      "inlp": []
+     },
+     "1536": {
+      "diffmeans": 1.8710798025131226,
+      "shuffled_label_diffmeans_mean": 1.4861095348993938,
+      "acts": 1.5094914436340332,
+      "inlp": []
+     }
+    },
+    "basis_overlap_with_n1000_r384": 0.8098649382591248,
+    "functional": {
+     "stat": 0.5184573862636095,
+     "null_band95": [
+      0.49363601533539636,
+      0.505884174618865
+     ],
+     "null_mean": 0.5003366989648859,
+     "j_readable": true,
+     "below_band": false,
+     "per_class_auroc": [
+      0.5250693122162333,
+      0.5118454603109857
+     ],
+     "top10_rate": [
+      0.0029701633589847443,
+      0.0071553935466450655
+     ]
+    },
+    "emitted_soft": {
+     "auroc": 0.5596762220638203,
+     "null_band95": [
+      0.48709131103781245,
+      0.5141729758181194
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    },
+    "emitted_top10": {
+     "auroc": 0.5435456546057981,
+     "null_band95": [
+      0.48842194707391196,
+      0.5109749477081204
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    }
+   },
+   "jonly": {
+    "384": {
+     "jonly": {
+      "logloss": 0.676205909119196,
+      "dprime": 0.5053135530954511,
+      "auroc": 0.6410100189152187
+     },
+     "rand_logloss_mean": 0.6852166856547864,
+     "rand_logloss_band95": [
+      0.6811772463179507,
+      0.6903398233932858
+     ],
+     "z_logloss": -3.1112398899393536,
+     "rand_dprime_mean": 0.43990293006306136,
+     "rand_dprime_band95": [
+      0.4006953841871648,
+      0.4719878233802255
+     ],
+     "z_dprime": 2.938043518090055,
+     "rand_auroc_mean": 0.6221911367729411,
+     "rand_auroc_band95": [
+      0.6114338859269283,
+      0.6308719932991007
+     ],
+     "z_auroc": 3.038352150103693
+    },
+    "1536": {
+     "jonly": {
+      "logloss": 0.8628653362029326,
+      "dprime": 0.4421199332686684,
+      "auroc": 0.6226734916511962
+     },
+     "rand_logloss_mean": 0.8740356976374081,
+     "rand_logloss_band95": [
+      0.8608337841821022,
+      0.8900644000849216
+     ],
+     "z_logloss": -1.0291022507029928,
+     "rand_dprime_mean": 0.41697075850652965,
+     "rand_dprime_band95": [
+      0.38166392714207775,
+      0.44930100029991593
+     ],
+     "z_dprime": 0.9593445915530657,
+     "rand_auroc_mean": 0.616123664360131,
+     "rand_auroc_band95": [
+      0.6057145935360999,
+      0.6258187384555732
+     ],
+     "z_auroc": 0.873029409010323
+    }
+   }
+  },
+  "44": {
+   "G1": {
+    "auroc": 0.5974791566620447,
+    "ci95": [
+     0.5852848063590678,
+     0.6104221343485108
+    ],
+    "acc": 0.5643310382071014,
+    "n_rows": 7407,
+    "n_groups": 1694
+   },
+   "geometric": {
+    "256": {
+     "diffmeans": 5.273420333862305,
+     "shuffled_label_diffmeans_mean": 3.118729519844055,
+     "acts": 3.1073501110076904,
+     "inlp": []
+    },
+    "1024": {
+     "diffmeans": 2.262000560760498,
+     "shuffled_label_diffmeans_mean": 1.6890008330345154,
+     "acts": 1.6876102685928345,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.5157401406595681,
+    "null_band95": [
+     0.49596641900372446,
+     0.5037032741539395
+    ],
+    "null_mean": 0.4999041093046017,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.5419030095023152,
+     0.48957727181682087
+    ],
+    "top10_rate": [
+     0.0027001485081679494,
+     0.0071553935466450655
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.5643398308163933,
+    "null_band95": [
+     0.48616613064781156,
+     0.513361329473832
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.546919881550145,
+    "null_band95": [
+     0.48768693059486584,
+     0.5120926049121131
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "lens_bag_top25": {
+    "auroc": 0.5880233004755614,
+    "shuffled_max": 0.5100437882857132,
+    "dim": 7496
+   }
+  }
+ },
+ "lens_path": "/__modal/volumes/vo-YSI1QhGvEQxoUb59wxFlyR/hf/hub/models--neuronpedia--jacobian-lens/snapshots/b25d72a96b79c8e309d6625955a98751da47e67a/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",
+ "emitted_sets_size": [
+  1629,
+  1485
+ ],
+ "emitted_sets_examples": [
+  [
+   " Coll",
+   " cours",
+   " fran\u00e7ais",
+   " jour",
+   " \u00e9tudiants",
+   " fondateur",
+   " travail",
+   " \u00e9tudiant",
+   " cadre",
+   " c\u00f4t\u00e9",
+   " texte",
+   " cens",
+   " r\u00e9sultats",
+   " pr\u00e9sent",
+   " espaces"
+  ],
+  [
+   "\u00c9cole",
+   " langues",
+   " suite",
+   "histoire",
+   " structure",
+   " \u00e9tudes",
+   " toute",
+   " g\u00e9n\u00e9ration",
+   " japon",
+   " Antoine",
+   " nouvelle",
+   " mission",
+   " russe",
+   " r\u00e9f\u00e9rence",
+   " langue"
+  ]
+ ],
+ "label_tokens": [
+  [
+   "le",
+   "il",
+   "un",
+   " le",
+   " un",
+   " Un",
+   "Un",
+   " Le",
+   "Le",
+   " il",
+   " Il",
+   " male",
+   "Il",
+   " Male",
+   "Male",
+   "male",
+   " masculine"
+  ],
+  [
+   " la",
+   "une",
+   "la",
+   " La",
+   " une",
+   "elle",
+   "La",
+   " female",
+   " elle",
+   " Female",
+   " Une",
+   "Female",
+   "female",
+   " feminine",
+   " Elle",
+   "Une",
+   " f\u00e9minin"
+  ]
+ ],
+ "baseline_abs_position_auroc": 0.5103137761143463,
+ "baseline_local4_bag": {
+  "auroc": 0.5614761043970469,
+  "shuffled_max": 0.5080365573454586,
+  "dim": 1427
+ }
+}

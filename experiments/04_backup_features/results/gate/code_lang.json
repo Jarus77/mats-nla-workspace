@@ -1,0 +1,557 @@
+{
+ "feature": "code_lang",
+ "description": "Language of a HumanEvalPack snippet (Python vs JavaScript, content-matched problems), read at code tokens of the canonical solution; group = problem (pairs never split).",
+ "n_rows": 2575,
+ "n_items": 326,
+ "n_groups": 163,
+ "pos_frac": 0.4966990291262136,
+ "layers": {
+  "38": {
+   "G1": {
+    "auroc": 0.9994691068446606,
+    "ci95": [
+     0.9989767637799469,
+     0.9998246158311254
+    ],
+    "acc": 0.9899029126213592,
+    "n_rows": 2575,
+    "n_groups": 163
+   },
+   "geometric": {
+    "192": {
+     "diffmeans": 2.2754008769989014,
+     "shuffled_label_diffmeans_mean": 1.6020986080169677,
+     "acts": 1.6522430181503296,
+     "inlp": []
+    },
+    "384": {
+     "diffmeans": 1.9343284368515015,
+     "shuffled_label_diffmeans_mean": 1.5702961444854737,
+     "acts": 1.5664914846420288,
+     "inlp": []
+    },
+    "768": {
+     "diffmeans": 1.752671718597412,
+     "shuffled_label_diffmeans_mean": 1.4643199443817139,
+     "acts": 1.4690319299697876,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.4898241758346558,
+     "shuffled_label_diffmeans_mean": 1.3119435906410217,
+     "acts": 1.3087574243545532,
+     "inlp": []
+    }
+   }
+  },
+  "40": {
+   "G1": {
+    "auroc": 0.9991089441017771,
+    "ci95": [
+     0.9983831046335339,
+     0.9996310870916735
+    ],
+    "acc": 0.9840776699029126,
+    "n_rows": 2575,
+    "n_groups": 163
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 1.69260835647583,
+     "shuffled_label_diffmeans_mean": 1.3457197308540345,
+     "acts": 1.36850106716156,
+     "inlp": []
+    },
+    "1536": {
+     "diffmeans": 1.4060908555984497,
+     "shuffled_label_diffmeans_mean": 1.2528772830963135,
+     "acts": 1.2676836252212524,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.7124792770683115,
+    "null_band95": [
+     0.48753473805852376,
+     0.5122233247304511
+    ],
+    "null_mean": 0.499138062535594,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.6643820162356779,
+     0.760576537900945
+    ],
+    "top10_rate": [
+     0.001941747572815534,
+     0.0027184466019417475
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.557859511192193,
+    "null_band95": [
+     0.47572083828029227,
+     0.5212505218438401
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.4891839568914758,
+    "null_band95": [
+     0.4880738774022915,
+     0.5141286731170185
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "lens_bag_top25": {
+    "auroc": 0.7910724283052926,
+    "shuffled_max": 0.5003278868521897,
+    "dim": 2381
+   }
+  },
+  "42": {
+   "G1": {
+    "auroc": 0.9992483035550537,
+    "ci95": [
+     0.9985973282538178,
+     0.9997034454910155
+    ],
+    "acc": 0.9844660194174757,
+    "n_rows": 2575,
+    "n_groups": 163
+   },
+   "geometric": {
+    "384": {
+     "diffmeans": 1.4914352893829346,
+     "shuffled_label_diffmeans_mean": 1.258579707145691,
+     "acts": 1.2659991979599,
+     "inlp": [
+      0.9718394875526428,
+      0.9604678153991699,
+      1.0264583826065063,
+      1.0151889324188232,
+      1.116140604019165,
+      1.1812705993652344,
+      0.995574951171875,
+      1.0347915887832642
+     ]
+    },
+    "1536": {
+     "diffmeans": 1.3256702423095703,
+     "shuffled_label_diffmeans_mean": 1.208671224117279,
+     "acts": 1.2237720489501953,
+     "inlp": [
+      1.0043137073516846,
+      1.0072131156921387,
+      1.0167165994644165,
+      1.0009788274765015,
+      1.072297215461731,
+      1.0599863529205322,
+      0.9940059781074524,
+      1.0157582759857178
+     ]
+    }
+   },
+   "functional": {
+    "stat": 0.7072718486664928,
+    "null_band95": [
+     0.4867217702089306,
+     0.5126673859363989
+    ],
+    "null_mean": 0.49937884671304744,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.6910823222231874,
+     0.7234613751097984
+    ],
+    "top10_rate": [
+     0.0011650485436893205,
+     0.0011650485436893205
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.5467710836977191,
+    "null_band95": [
+     0.4751119098639948,
+     0.5208114490728675
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.4880162935935675,
+    "null_band95": [
+     0.4847550712362088,
+     0.5125115529590053
+    ],
+    "readable_two_sided": false,
+    "readable_positive": false
+   },
+   "lens_bag_top25": {
+    "auroc": 0.7745507919960617,
+    "shuffled_max": 0.5363281740171237,
+    "dim": 2869
+   },
+   "lens_top10_common": [
+    [
+     " \n\n",
+     520
+    ],
+    [
+     "\n\n",
+     478
+    ],
+    [
+     "<|endoftext|>",
+     454
+    ],
+    [
+     "<|im_end|>",
+     400
+    ],
+    [
+     "  \n\n",
+     396
+    ],
+    [
+     " ",
+     377
+    ],
+    [
+     " number",
+     353
+    ],
+    [
+     " .",
+     328
+    ],
+    [
+     " \n\n\n",
+     293
+    ],
+    [
+     "\n\n\n",
+     283
+    ],
+    [
+     " \\\"",
+     280
+    ],
+    [
+     " \n",
+     279
+    ],
+    [
+     " numbers",
+     226
+    ],
+    [
+     "\n\n\n\n",
+     205
+    ],
+    [
+     " count",
+     188
+    ],
+    [
+     " __",
+     179
+    ],
+    [
+     "   \n\n",
+     162
+    ],
+    [
+     "\n",
+     159
+    ],
+    [
+     " or",
+     144
+    ],
+    [
+     " each",
+     144
+    ],
+    [
+     " list",
+     143
+    ],
+    [
+     " letters",
+     141
+    ],
+    [
+     "\r\n\r\n",
+     140
+    ],
+    [
+     " sum",
+     135
+    ],
+    [
+     ".",
+     131
+    ]
+   ],
+   "camilablank": {
+    "geometric": {
+     "384": {
+      "diffmeans": 1.4145399332046509,
+      "shuffled_label_diffmeans_mean": 1.4252702792485554,
+      "acts": 1.294679880142212,
+      "inlp": []
+     },
+     "1536": {
+      "diffmeans": 1.325049638748169,
+      "shuffled_label_diffmeans_mean": 1.2752389113108318,
+      "acts": 1.2633295059204102,
+      "inlp": []
+     }
+    },
+    "basis_overlap_with_n1000_r384": 0.8098649382591248,
+    "functional": {
+     "stat": 0.7703077189451635,
+     "null_band95": [
+      0.48454515728916303,
+      0.5134789813065281
+     ],
+     "null_mean": 0.49955753901461397,
+     "j_readable": true,
+     "below_band": false,
+     "per_class_auroc": [
+      0.7630144234017703,
+      0.7776010144885568
+     ],
+     "top10_rate": [
+      0.012427184466019418,
+      0.014757281553398059
+     ]
+    },
+    "emitted_soft": {
+     "auroc": 0.6836576607882315,
+     "null_band95": [
+      0.47613390935240685,
+      0.5205754429338122
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    },
+    "emitted_top10": {
+     "auroc": 0.5245604445988861,
+     "null_band95": [
+      0.4888374812377532,
+      0.5111846895843589
+     ],
+     "readable_two_sided": true,
+     "readable_positive": true
+    }
+   },
+   "jonly": {
+    "384": {
+     "jonly": {
+      "logloss": 0.21394413181879549,
+      "dprime": 2.6646982592613973,
+      "auroc": 0.978641203100416
+     },
+     "rand_logloss_mean": 0.25360882972514764,
+     "rand_logloss_band95": [
+      0.19682748814034765,
+      0.31647539346105047
+     ],
+     "z_logloss": -0.9766784092960488,
+     "rand_dprime_mean": 2.701743444519562,
+     "rand_dprime_band95": [
+      2.5135543047711,
+      2.8439214842173164
+     ],
+     "z_dprime": -0.3126052242050342,
+     "rand_auroc_mean": 0.9722933498392841,
+     "rand_auroc_band95": [
+      0.9622805088610894,
+      0.9805064328564947
+     ],
+     "z_auroc": 1.0145074178413738
+    },
+    "1536": {
+     "jonly": {
+      "logloss": 0.05014316766676971,
+      "dprime": 3.91836675586702,
+      "auroc": 0.9985629687545247
+     },
+     "rand_logloss_mean": 0.06672052907959783,
+     "rand_logloss_band95": [
+      0.056483164776734464,
+      0.08331913407443116
+     ],
+     "z_logloss": -1.84756737436987,
+     "rand_dprime_mean": 3.924062886267696,
+     "rand_dprime_band95": [
+      3.81013698281796,
+      4.0302239469258705
+     ],
+     "z_dprime": -0.07642909122345569,
+     "rand_auroc_mean": 0.9972744669350091,
+     "rand_auroc_band95": [
+      0.99589913693665,
+      0.9981259622438441
+     ],
+     "z_auroc": 1.6337833640023307
+    }
+   }
+  },
+  "44": {
+   "G1": {
+    "auroc": 0.9982106487514358,
+    "ci95": [
+     0.9968100933870693,
+     0.9991881190647229
+    ],
+    "acc": 0.9766990291262136,
+    "n_rows": 2575,
+    "n_groups": 163
+   },
+   "geometric": {
+    "256": {
+     "diffmeans": 1.5870267152786255,
+     "shuffled_label_diffmeans_mean": 1.2452784061431885,
+     "acts": 1.2433745861053467,
+     "inlp": []
+    },
+    "1024": {
+     "diffmeans": 1.405301809310913,
+     "shuffled_label_diffmeans_mean": 1.1712802410125733,
+     "acts": 1.1847176551818848,
+     "inlp": []
+    }
+   },
+   "functional": {
+    "stat": 0.6943949748549696,
+    "null_band95": [
+     0.48745398800302125,
+     0.5140796559933011
+    ],
+    "null_mean": 0.499483315777662,
+    "j_readable": true,
+    "below_band": false,
+    "per_class_auroc": [
+     0.6664395288564562,
+     0.7223504208534831
+    ],
+    "top10_rate": [
+     0.0011650485436893205,
+     0.0015533980582524273
+    ]
+   },
+   "emitted_soft": {
+    "auroc": 0.5561796566569175,
+    "null_band95": [
+     0.47714660312840856,
+     0.5250231964111622
+    ],
+    "readable_two_sided": true,
+    "readable_positive": true
+   },
+   "emitted_top10": {
+    "auroc": 0.4834675045125918,
+    "null_band95": [
+     0.48392594281798085,
+     0.5122936982379174
+    ],
+    "readable_two_sided": true,
+    "readable_positive": false
+   },
+   "lens_bag_top25": {
+    "auroc": 0.7781433701097501,
+    "shuffled_max": 0.5065414482765278,
+    "dim": 2515
+   }
+  }
+ },
+ "lens_path": "/__modal/volumes/vo-YSI1QhGvEQxoUb59wxFlyR/hf/hub/models--neuronpedia--jacobian-lens/snapshots/b25d72a96b79c8e309d6625955a98751da47e67a/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",
+ "emitted_sets_size": [
+  13,
+  15
+ ],
+ "emitted_sets_examples": [
+  [
+   "//",
+   " =>",
+   " function",
+   " const",
+   " var",
+   " true",
+   " null",
+   " false",
+   " let",
+   "function",
+   " ===",
+   " console",
+   " !=="
+  ],
+  [
+   "#",
+   " and",
+   " or",
+   " not",
+   " self",
+   " def",
+   "def",
+   " print",
+   " range",
+   " None",
+   " len",
+   " True",
+   " False",
+   " elif",
+   " lambda"
+  ]
+ ],
+ "label_tokens": [
+  [
+   "Node",
+   " node",
+   "js",
+   "node",
+   " Node",
+   " js",
+   " JS",
+   "JS",
+   " JavaScript",
+   "javascript",
+   "JavaScript",
+   "Js",
+   " Javascript",
+   " javascript",
+   " Js",
+   "npm",
+   " npm",
+   "Javascript"
+  ],
+  [
+   "py",
+   " py",
+   " Py",
+   " django",
+   " python",
+   "python",
+   " Python",
+   "django",
+   "Py",
+   " pip",
+   "Python",
+   "pip",
+   " Django",
+   " Pip"
+  ]
+ ],
+ "baseline_abs_position_auroc": 0.44867288776918696,
+ "baseline_local4_bag": {
+  "auroc": 0.9411064537302484,
+  "shuffled_max": 0.4954714210561878,
+  "dim": 429
+ }
+}
