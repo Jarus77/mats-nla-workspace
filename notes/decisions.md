@@ -160,3 +160,18 @@ Gated at L42, with r* = 384 from the readout-agreement rule (4r* = 1536), J-Lens
   - the leak test is two-sided against the J-complement band;
   - for J-Lens use mean shift / AUROC (paired-win bands are degenerate for a linear readout).
 - For col, the gate-stage J-Lens AUROC was 0.500 inside a very tight band, which is promising, but the leak check must be redone with centred steering and the calibrated band.
+
+## 2026-10-06 — D12: Fable round 4 (handoff #4), all accepted
+1. **Two co-headlines.**
+   - **Part A, "What counts as non-J?":** the survival test is uninformative across 7 features (topic included); the calibrated gate works; on Qwen, POS and tense are J-enriched.
+   - **Part B, "col, deep":** n=1 stated in the section's first sentence; generalisation treated as open.
+   - Figure 1 = whichever comes out cleaner.
+2. **col is doubly clean.** Qwen can't count without CoT (7% exact), so a Qwen-based decoder can't re-solve col by rebuilding the text and counting: tracking at leak-free doses is activation reading. The causal split is a finding in itself: col keeps 79% of its causal effect after J-removal, tense 19%.
+3. **Backups reprioritised.**
+   - Non-count features first: capitalisation state, coding language, in-quote state, and NEW gender/number agreement of an upcoming noun (FR/DE).
+   - Two count features for within-family replication: indentation and words since sentence start.
+4. **Calibration gap → (a).** In-J count control = list index *with numerals in context* ("Item 7:"), gated for IN-J. Language and tense stay for K3. (c) is rejected: the natural col arm measures counting, not verbalisation. col's primary candidate strings are qualitative ("near the end of a long line" vs "at the start of a line"), with numerals secondary.
+5. **Framing of Part A:** a property of the test, not of their paper. Rank-r removal can't remove a redundant feature, and the same recipe passes topic (0.90 → 0.88). Three differences from the paper: model, lens (25-prompt fit, cosine 0.76), 25 atoms vs rank 384/1536. The claim is "the test as run can't support the conclusion", never "the conclusion is wrong". Offer the random-subspace control as a drop-in, and gate col under both lenses.
+6. **pred_pos was a test-design artefact.** The lens emits tokens, not POS labels. Re-run the functional gate by classifying the top-10 tokens by POS. Generalised gate: "the lens readout contains the feature's value in the form the lens emits."
+7. **col-specific validity hole (newline decision = J).** The leak set includes "\n"/EOL tokens; q90 is the primary dose; separate "long line" (count) from "newline coming" (decision) templates. Framing: the count is non-J, the decision it feeds is J, and a reader could read either.
+8. **Pivot** only if K3 fails, or if col AND the in-J count control are flat on all readers (→ P1 with a strong Part A). col_report is reported as a mini-finding (explicit report didn't move the count into J; a model difference vs Claude).
