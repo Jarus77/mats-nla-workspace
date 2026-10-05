@@ -30,6 +30,6 @@ app_image = (
     )
     .env({**HF_ENV, "HF_HUB_OFFLINE": "1", "TOKENIZERS_PARALLELISM": "false",
           "PYTHONPATH": "/root/src"})
-    .add_local_python_source("modal_common", "env", "smoke_items")
+    .add_local_python_source("modal_common", "env", "smoke_items", "normrerun_lib")
     .add_local_dir(str(_REPO / "src" / "mats"), "/root/src/mats", ignore=["**/__pycache__/**"])
 )

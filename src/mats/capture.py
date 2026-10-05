@@ -232,14 +232,19 @@ def steer(
     vectors: torch.Tensor,
     positions: Positions | None,
     dose: float = 1.0,
+    preserve_norm: bool = True,
 ) -> Iterator[None]:
     """Add ``dose * v`` at block-``layer`` output. ``vectors`` is [d] (shared) or [N, d] (row i
-    of the full sequence list passed to capture/logits_at gets vectors[i])."""
+    of the full sequence list passed to capture/logits_at gets vectors[i]).
+
+    ``preserve_norm`` (default): rescale the edited residual back to its original norm,
+    h' = (h + dose v) ||h|| / ||h + dose v||. Pass False for the plain additive edit."""
     vec = vectors.float()
 
     def fn(h: torch.Tensor, r: int) -> torch.Tensor:
         v = vec if vec.ndim == 1 else vec[r]
-        return h + dose * v.to(h.device)
+        out = h + dose * v.to(h.device)
+        return _renorm(out, h) if preserve_norm else out
 
     with edit(model, layer, fn, positions):
         yield
@@ -265,21 +270,47 @@ def clamp(
 # ----------------------------------------------------------------------------- arm R (pure)
 
 
-def steer_vectors(h: torch.Tensor, u: torch.Tensor, doses: Sequence[float]) -> torch.Tensor:
-    """[n_doses, N, d]: h + dose * u for each signed dose (u is used as given; pass unit u)."""
+def _renorm(x: torch.Tensor, ref: torch.Tensor) -> torch.Tensor:
+    """Rescale rows of x to the norms of the matching rows of ref."""
+    return x * (ref.norm(dim=-1, keepdim=True) / x.norm(dim=-1, keepdim=True).clamp_min(1e-12))
+
+
+def steer_vectors(
+    h: torch.Tensor, u: torch.Tensor, doses: Sequence[float], preserve_norm: bool = True
+) -> torch.Tensor:
+    """[n_doses, N, d]: h + dose * u for each signed dose (u used as given; pass unit u).
+
+    ``preserve_norm`` (default) rescales each result to ||h||. NOTE: readers that see only the
+    direction of their input (OL: 16000 unit(h); NLA: ||h_marker|| unit(v)) are invariant to
+    this rescaling; it changes only norm-sensitive readers (J-Lens, probes)."""
     hf, uf = h.float(), u.float().to(h.device)
-    return torch.stack([hf + float(a) * uf for a in doses])
+    outs = [hf + float(a) * uf for a in doses]
+    return torch.stack([_renorm(o, hf) for o in outs] if preserve_norm else outs)
+
+
+def centred_steer_vectors(h: torch.Tensor, u: torch.Tensor, doses: Sequence[float]) -> torch.Tensor:
+    """[n_doses, N, d]: h - (u.h) u + dose u (projection on unit u first set to 0).
+
+    For +/-dose this gives EQUAL norms on both sides of each item, so a direction-only reader
+    sees the item's other content diluted equally by +Delta and -Delta (removes the
+    norm-asymmetry confound of additive steering when u.h != 0). Changes the item's own
+    u-component, which is part of the manipulation."""
+    hf, uf = h.float(), u.float().to(h.device)
+    base = hf - (hf @ uf)[..., None] * uf
+    return torch.stack([base + float(a) * uf for a in doses])
 
 
 def read_layer_steer(
-    h: torch.Tensor, u: torch.Tensor, doses: Sequence[float], signs: Sequence[int] = (1, -1)
+    h: torch.Tensor, u: torch.Tensor, doses: Sequence[float], signs: Sequence[int] = (1, -1),
+    preserve_norm: bool = True,
 ) -> dict[tuple[int, float], torch.Tensor]:
     """Arm R helper: {(sign, dose): steered activations [N, d]} plus {(0, 0.0): h}, ready to
-    hand to a reader (no forward pass after the edit)."""
+    hand to a reader (no forward pass after the edit). Norm-preserving by default."""
     out = {(0, 0.0): h.float()}
     for d in doses:
         for s in signs:
-            out[(int(s), float(d))] = h.float() + s * float(d) * u.float().to(h.device)
+            x = h.float() + s * float(d) * u.float().to(h.device)
+            out[(int(s), float(d))] = _renorm(x, h.float()) if preserve_norm else x
     return out
 
 

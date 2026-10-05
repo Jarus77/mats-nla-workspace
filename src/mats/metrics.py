@@ -298,3 +298,43 @@ def fve_guard(
             "mean_diff": float(d.mean()) if len(d) else float("nan"), "lo": lo, "hi": hi,
             "natural_p5": p5, "void_margin": by_margin, "void_p5": by_p5,
             "void": by_margin or by_p5, "n_pairs": int(ok.sum()), "n_dropped": int((~ok).sum())}
+
+
+# ----------------------------------------------------------------------------- null bands
+
+
+def paired_stats(lo_plus: ArrayLike, lo_minus: ArrayLike) -> dict[str, float]:
+    """Point statistics of a +/- steered contrast (no bootstrap; for building null bands):
+    paired win P(LO+ > LO-) (ties 1/2), mean per-item shift, cross-item AUROC."""
+    p = np.asarray(lo_plus, float).ravel()
+    m = np.asarray(lo_minus, float).ravel()
+    return {"paired_win": float(np.mean((p > m) + 0.5 * (p == m))),
+            "mean_shift": float(np.mean(p - m)), "auroc": auroc(p, m)}
+
+
+def null_band(stat: float, nulls: ArrayLike, ci: float = 0.95) -> dict[str, Any]:
+    """Place a statistic in the distribution of the same statistic under K null directions.
+
+    No subtraction: returns the empirical percentile of ``stat`` among the nulls (ties 1/2),
+    the two-sided ``ci`` band, whether ``stat`` falls outside it, and the effect size in null-SD
+    units z = (stat - mean_null) / sd_null (ddof=1)."""
+    n = np.asarray(nulls, float).ravel()
+    n = n[np.isfinite(n)]
+    a = (1.0 - ci) / 2.0
+    lo, hi = float(np.quantile(n, a)), float(np.quantile(n, 1 - a))
+    sd = float(np.std(n, ddof=1)) if len(n) > 1 else float("nan")
+    return {"stat": float(stat), "percentile": float(np.mean((n < stat) + 0.5 * (n == stat))),
+            "band_lo": lo, "band_hi": hi, "outside_two_sided": bool(stat < lo or stat > hi),
+            "null_mean": float(n.mean()), "null_sd": sd,
+            "z": float((stat - n.mean()) / sd) if sd and sd > 0 else float("nan"), "k": len(n)}
+
+
+def null_band_contrast(
+    real: tuple[ArrayLike, ArrayLike], nulls: Sequence[tuple[ArrayLike, ArrayLike]],
+    ci: float = 0.95,
+) -> dict[str, dict[str, Any]]:
+    """:func:`null_band` for paired win, mean shift and AUROC of a real +/- contrast against K
+    null contrasts (same items, same dose norm, same +/- construction)."""
+    r = paired_stats(*real)
+    ns = [paired_stats(*c) for c in nulls]
+    return {k: null_band(r[k], [x[k] for x in ns], ci) for k in r}

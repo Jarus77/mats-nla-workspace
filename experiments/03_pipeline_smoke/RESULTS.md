@@ -133,3 +133,119 @@ uninformative here. That is the point of the steering arm.
   `results/metrics.json` and `results/analyze_stdout.txt`.
 - `results/stage_base.pt`, `results/stage_nla.pt` (git-ignored `*.pt`). These are also on the
   volume at `/results/03_pipeline_smoke/`, together with our J-space bases `jspace_basis_L{38,40,42,44}.pt`.
+
+---
+
+## Norm-preserving re-run (Fable round 3)
+
+**Question.** Is OL/J-Lens anti-tracking on the J-removed direction a norm-asymmetry artefact?
+When h·v ≠ 0, ‖h+Δv‖ ≠ ‖h−Δv‖, and readers that renormalise would shrink the item's existing
+signal more on one side.
+
+**Short answer.**
+- **Rescaling to ‖h‖ changes nothing for any reader.**
+- **An equal-norm ("centred") construction collapses OL's anti-tracking to chance** (0.49, inside the random-direction null band).
+- **J-Lens anti-tracking survives everything.** It is a real linear projection of the J-removed direction onto the French/German J-Lens rows, i.e. a leak outside the top-r* J-space.
+- **The NLA tracks under every construction.**
+
+### How each reader consumes the vector (checked in code)
+
+| reader | injection / readout | depends on ‖input‖? |
+|---|---|---|
+| NLA (`readers/nla.py` `_hook`) | at AV block-1 output: `h_marker + ‖h_marker‖ · v/‖v‖` | **No.** Norm-matched: only unit(v) matters. So the NLA renormalises too. |
+| OL (`readers/olens.py` `_embed`) | the slot embedding is replaced by `16000 · v/‖v‖` | **No.** Only unit(v) matters. |
+| J-Lens (cosine readout of record) | `(W_U J v)_t / ‖Jᵀ W_U[t]‖`; the denominator is per token, not ‖v‖ | **Linear in v.** No renormalisation; LO(h+Δv) − LO(h−Δv) = 2Δ·LO(v) exactly. |
+
+Consequences:
+- Fable's norm-preserving map h' = (h+Δv)·‖h‖/‖h+Δv‖ leaves unit(h+Δv) unchanged. **OL and NLA inputs are therefore identical** to the additive construction: measured max |ΔLO| is 0.05–0.24 nats, inside the 0.26-nat bf16 batch-noise band, and every statistic below is identical to two decimals.
+- For the J-Lens the rescaling is a per-item factor of about 1 ± 0.02, so it barely matters.
+- The rescaling *cannot* be the fix for OL. What can differ between the ± sides of a direction-only reader is **dilution**: when h·v ≠ 0 (median h·v ≈ 1.2× the q99 dose for jrem; ‖h+Δv‖/‖h−Δv‖ ≈ 1.02), unit(h+Δv) and unit(h−Δv) carry the item's other content at different weights.
+- So we added a **centred** variant, h± = h − (v·h)v ± Δv. It has equal norms on both sides and removes this confound, at the cost of zeroing the item's own v-component.
+
+### Setup
+
+- Same 40 pairs, read-layer arm, L42 (J-Lens also at 40/44), 2-fold cross-fitting, q90/q99.
+- Readers: OL and NLA use the template mean over the 3 frozen templates, with all 6 candidates of an activation in one forward batch; J-Lens uses label words.
+- Directions:
+  - raw (mean-diff);
+  - jrem (mean-diff minus top-r* J-space);
+  - inlp1_jrem (first INLP/logistic direction, J-removed);
+  - inlp8_jrem (mean-diff projected onto the J-removed INLP-8 subspace).
+- Null band: K=20 isotropic and K=20 J-complement random unit directions. They use the same q99 dose norm as the real direction (raw dose for raw, jrem dose for the J-removed ones) and the same ± construction and variant.
+- Reported as percentile and z in null-SD units, never subtracted (`metrics.null_band_contrast`).
+- Paired-win bands are degenerate for the linear J-Lens: each null shifts every item by the same constant, so the null win is 0 or 1. Use the mean-shift and AUROC bands there.
+
+### q99 FollowFeature (cross-item AUROC [95% CI] / paired win / mean shift ± SD)
+
+| reader | direction | additive (original) | norm-preserving | centred (equal-norm) |
+|---|---|---|---|---|
+| OL@42 | raw | 0.84 [.81,.88] / 1.00 / +6.15±1.87 | identical | 0.89 [.85,.93] / 1.00 / +5.91±2.78 |
+| OL@42 | **jrem** | **0.45 [.43,.46] / 0.17 / −0.49±0.70** | **identical** | **0.49 [.47,.50] / 0.47 / −0.09±1.28** |
+| OL@42 | inlp1_jrem | 0.48 / 0.15 / −0.17±0.23 | identical | 0.48 / 0.20 / −0.14±0.29 |
+| OL@42 | inlp8_jrem | 0.46 / 0.20 / −0.41±0.60 | identical | 0.49 / 0.41 / −0.10±0.94 |
+| NLA@42 | raw | 0.91 [.87,.95] / 1.00 / +13.0±6.5 | identical | 0.99 / 1.00 / +14.4±7.2 |
+| NLA@42 | **jrem** | **0.60 [.58,.62] / 0.96 / +0.87±1.46** | **identical** | **0.62 [.60,.64] / 0.91 / +1.29±1.65** |
+| NLA@42 | inlp1_jrem | 0.55 / 0.84 / +0.35±0.69 | identical | 0.56 / 0.90 / +0.45±0.80 |
+| NLA@42 | inlp8_jrem | 0.59 / 0.96 / +0.74±1.24 | identical | 0.62 / 0.99 / +1.07±1.42 |
+| J-Lens@42 | raw | 0.84 / 1.00 / +5.88±0.46 | 0.84 / 1.00 / +5.77 | 0.98 / 1.00 / +5.94 |
+| J-Lens@42 | **jrem** | **0.46 / 0.00 / −0.38±0.08** | 0.45 / 0.00 / −0.42 | **0.46 / 0.00 / −0.36±0.04** |
+| J-Lens@40 / @44 | jrem | 0.46 / 0.42 (win 0.00) | 0.46 / 0.41 | 0.46 / 0.42 |
+
+q90 shows the same pattern: OL jrem 0.46 / 0.46 / 0.49; NLA jrem 0.58 / 0.58 / 0.59.
+
+The centred raw-direction AUROC rises for every reader (OL 0.89, NLA 0.99, J-Lens 0.98). That is
+expected: centring deletes each item's own u-projection, which carried most of the item-level
+prior variance (finding 1 above).
+
+### Null bands (q99; percentile among K=20 nulls / z in null-SD units; OUT = outside the two-sided 95% band)
+
+| reader | direction | variant | vs J-complement nulls: mean shift | AUROC | vs isotropic nulls: mean shift | AUROC |
+|---|---|---|---|---|---|---|
+| OL@42 | jrem | additive = preserving | 0.00 / −4.6 OUT | 0.00 / −4.7 OUT | 0.05 / −2.1 OUT | 0.00 / −2.4 OUT |
+| OL@42 | jrem | **centred** | **0.35 / −0.6 in** | **0.25 / −1.0 in** | **0.40 / −0.2 in** | **0.35 / −0.5 in** |
+| OL@42 | inlp8_jrem | additive / centred | 0.00 / −3.8 OUT → 0.35 / −0.7 in | −3.7 OUT → −0.8 in | | |
+| OL@42 | inlp1_jrem | additive | 0.10 / −1.4 in | 0.05 / −1.6 in | 0.30 / −0.6 in | in |
+| NLA@42 | jrem | additive / centred | 1.00 / +10.6 / +15.8 OUT | +6.9 / +8.3 OUT | +5.4 / +7.9 OUT | +4.0 / +4.7 OUT |
+| NLA@42 | inlp8_jrem | additive / centred | +9.0 / +13.1 OUT | +6.0 / +8.4 OUT | +4.6 / +6.5 OUT | +3.5 / +4.8 OUT |
+| NLA@42 | inlp1_jrem | additive | +4.4 OUT | +3.2 OUT | +2.2 OUT | +1.8 OUT |
+| J-Lens@42 | jrem | every variant | 0.00 / −6.1 to −7.0 OUT | −4.1 to −4.6 OUT | 0.0–0.1 / −1.7 to −2.0 (edge) | −1.6 to −1.8 in |
+
+### Leak-detector calibration (step 3; J-Lens cross-item AUROC vs the 95% band of 20 random-direction J-Lens AUROCs, two-sided)
+
+| layer | jrem AUROC (additive) | J-complement band | verdict | isotropic band | verdict |
+|---|---|---|---|---|---|
+| 40 | 0.46 | [0.49, 0.51] | **leak** (z −4.5) | [0.48, 0.53] | leak (z −2.0) |
+| 42 | 0.46 | [0.48, 0.52] | **leak** (z −4.3) | [0.45, 0.54] | in band (z −1.7) |
+| 44 | 0.42 | [0.48, 0.52] | **leak** (z −5.4) | [0.47, 0.55] | leak (z −3.2) |
+
+- The J-complement band is very tight (±0.02): a random direction outside S_r* barely moves the J-Lens. Our J-removed feature direction is not "random non-J". It has a J-Lens-visible component in the spectrum tail beyond r*.
+- Recommendation: calibrate the leak detector against the **J-complement null band, two-sided**, not against a fixed 0.55. Under this rule the toy's jrem direction leaks at every read layer, in the negative direction.
+
+### What this means
+
+1. **The prereg's norm-preserving fix is a no-op for OL and NLA.** Both readers see only unit(input), and the NLA norm-matches as well, so "renormalising readers" does not separate NLA from OL. Keeping `preserve_norm=True` as the default in `capture.py` is harmless; it only changes the J-Lens (slightly) and probes.
+2. **OL's anti-tracking is a dilution artefact of additive steering when h·v ≠ 0.** With equal-norm (centred) steering it collapses to 0.49 [0.47, 0.50], paired win 0.47, inside both null bands (z −0.5 to −1.0). The same holds for inlp8_jrem (0.49, in band). **Under the fair construction OL does not track the J-removed direction at all.**
+3. **The NLA's tracking is robust to the construction.** Centred jrem gives 0.62 [0.60, 0.64], paired win 0.91, +8.3 null-SD (J-complement band) and +4.7 (isotropic band). It is weaker but still out of band on the 1-D INLP direction (0.55, +3.2 SD).
+   - So the NLA-vs-OL contrast survives, and gets sharper: OL goes from below chance to exactly chance.
+   - It is still n=40 on an in-J toy feature where the J-removed direction leaks into the J-Lens (point 4). This is plumbing evidence, not a finding about non-J reading.
+4. **The J-Lens anti-tracking is real, not an artefact.** It is linear, identical across constructions, and 4–7 SD outside the J-complement band. Removing the top-r* J-space does not remove what the J-Lens reads.
+5. **Step 4 (INLP) changes nothing qualitatively.**
+   - The INLP-8 J-removed direction behaves like the mean-diff jrem direction.
+   - INLP-1 has a much smaller natural projection (h·v / dose ≈ 0.15 vs 1.22), so it has almost no dilution asymmetry (norm ratio 1.001). There OL is in band even additively (−1.4 to −1.6 SD), and the NLA tracks weakly but out of band (0.55).
+   - This is consistent with the dilution account: the asymmetry scales with h·v.
+6. **For the main run:**
+   - (a) use centred/equal-norm steering (`capture.centred_steer_vectors`) or report it alongside additive;
+   - (b) report every reader against K≥20 same-norm null directions from both the J-complement and isotropic classes, with no subtraction;
+   - (c) leak detector = two-sided, J-complement null band.
+
+### Cost and throughput (re-run)
+
+- prep: 1 × H100, 76 s of work.
+- OL: 3 × H100 chunks, 590 s scoring each, **76 ms per activation for 6 candidates** = 12.7 ms per candidate sequence at 96 rows per forward. That is no faster than at 32 rows, so OL scoring is compute-bound.
+- NLA: 4 × H200 chunks, 810–840 s each, **142 ms per activation for 6 candidates** = 23.6 ms per sequence (about 15% faster than the smoke). Peak 76 GB without the AR.
+- In total about 0.6 H100-h + 1.0 H200-h ≈ **$7** for 23,120 activations × 2 readers (289 conditions × 80 items).
+- At these rates a K=20 × 2-class null band costs about 4× the real-direction scoring. Budget it only at q99 and only for the headline cells (about +4 H200-h / +2 H100-h on the main run).
+
+Files: `normrerun_lib.py` (condition builder), `normrerun_modal.py` (app `mats-03-normrerun`:
+`prep`, `score_ol`, `score_nla`), `normrerun_analyze.py`, and in `results/normrerun/`:
+`metrics.json`, `analyze_stdout.txt`, `spec.pt`, `jlens.pt`, `{ol,nla}_chunk*.pt`.

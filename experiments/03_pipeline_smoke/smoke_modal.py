@@ -229,7 +229,7 @@ def stage_base(n_pairs: int = 40) -> dict:
                     dq = doses[f"L{STEER_U}_{kind}_f{f}"][1]  # q99
                     V[te] = sgn * dq * dirs[(STEER_U, kind, f)]
                     inj[te] = dq
-                with C.steer(ol.model, STEER_U, V, [[-1]] * N):
+                with C.steer(ol.model, STEER_U, V, [[-1]] * N, preserve_norm=False):
                     cap = C.capture(ol.model, seqs, list(READ), [[-1]] * N, batch_size=16)
                     lg = C.logits_at(ol.model, seqs, [[-1]] * N, batch_size=16)[:, 0]
                 res[sgn] = {"cap": cap, "kl": C.next_token_kl(lg_clean, lg)}

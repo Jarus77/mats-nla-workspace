@@ -94,7 +94,7 @@ def test_steer_hook_adds_vector_at_positions_only():
     v = torch.randn(16)
     seq = SEQS[0]
     base = _hs(m, seq)
-    with C.steer(m, layer=2, vectors=v, positions=[[3]], dose=2.0):
+    with C.steer(m, layer=2, vectors=v, positions=[[3]], dose=2.0, preserve_norm=False):
         st = _hs(m, seq)
     assert torch.allclose(st[3][0, 3], base[3][0, 3] + 2.0 * v, atol=1e-5)
     assert torch.allclose(st[3][0, :3], base[3][0, :3], atol=1e-6)  # earlier positions intact
@@ -106,7 +106,8 @@ def test_steer_hook_adds_vector_at_positions_only():
 def test_steer_per_row_vectors_batched_capture():
     m = Toy()
     vs = torch.randn(3, 16)
-    with C.steer(m, layer=1, vectors=vs, positions=[[-1], [-1], [-1]], dose=1.0):
+    with C.steer(m, layer=1, vectors=vs, positions=[[-1], [-1], [-1]], dose=1.0,
+                 preserve_norm=False):
         got = C.capture(m, SEQS, layers=[1], positions=[[-1]] * 3, batch_size=3)
     clean = C.capture(m, SEQS, layers=[1], positions=[[-1]] * 3)
     assert torch.allclose(got[1][:, 0], clean[1][:, 0] + vs, atol=1e-5)
@@ -125,7 +126,7 @@ def test_pure_steer_and_clamp_vectors():
     h = torch.randn(4, 8)
     u = torch.zeros(8)
     u[0] = 1.0
-    out = C.steer_vectors(h, u, [-1.0, 0.0, 2.0])
+    out = C.steer_vectors(h, u, [-1.0, 0.0, 2.0], preserve_norm=False)
     assert out.shape == (3, 4, 8)
     assert torch.allclose(out[2, :, 0], h[:, 0] + 2.0)
     assert torch.allclose(out[1], h)
@@ -157,3 +158,44 @@ def test_logits_at_positions():
     with torch.no_grad():
         ref = m(torch.tensor([SEQS[1]])).logits[0, -1]
     assert torch.allclose(lg[1, 0], ref, atol=1e-5)
+
+
+def test_steer_vectors_preserve_norm_default():
+    h = torch.randn(5, 8)
+    u = torch.randn(8)
+    u = u / u.norm()
+    out = C.steer_vectors(h, u, [-3.0, 3.0])  # default: norm-preserving
+    assert torch.allclose(out.norm(dim=-1), h.norm(dim=-1).expand(2, 5), atol=1e-5)
+    raw = C.steer_vectors(h, u, [-3.0, 3.0], preserve_norm=False)
+    cos = torch.nn.functional.cosine_similarity(out, raw, dim=-1)
+    assert torch.allclose(cos, torch.ones_like(cos), atol=1e-6)  # same direction
+
+
+def test_read_layer_steer_preserve_flag():
+    h = torch.randn(4, 8)
+    u = torch.eye(8)[0]
+    d = C.read_layer_steer(h, u, [2.0])
+    assert torch.allclose(d[(1, 2.0)].norm(dim=-1), h.norm(dim=-1), atol=1e-5)
+    d2 = C.read_layer_steer(h, u, [2.0], preserve_norm=False)
+    assert torch.allclose(d2[(1, 2.0)], h + 2.0 * u)
+
+
+def test_centred_steer_equal_norms_on_both_sides():
+    h = torch.randn(6, 8) + 3.0 * torch.eye(8)[0]  # strong existing projection on u
+    u = torch.eye(8)[0]
+    plus, minus = C.centred_steer_vectors(h, u, [2.0, -2.0])
+    assert torch.allclose(plus.norm(dim=-1), minus.norm(dim=-1), atol=1e-5)
+    assert torch.allclose(plus[:, 0], torch.full((6,), 2.0))
+    assert torch.allclose(plus[:, 1:], h[:, 1:])
+
+
+def test_steer_hook_preserve_norm_default():
+    m = Toy()
+    v = torch.randn(16) * 5
+    seq = SEQS[0]
+    base = _hs(m, seq)
+    with C.steer(m, layer=2, vectors=v, positions=[[3]], dose=1.0):
+        st = _hs(m, seq)
+    assert torch.allclose(st[3][0, 3].norm(), base[3][0, 3].norm(), atol=1e-4)
+    target = base[3][0, 3] + v
+    assert float(torch.nn.functional.cosine_similarity(st[3][0, 3], target, dim=0)) > 0.9999

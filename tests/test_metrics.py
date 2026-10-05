@@ -207,3 +207,36 @@ def test_fve_guard_ignores_nan_pairs():
     st = np.array([0.69, np.nan, 0.6, 0.74])
     r = M.fve_guard(nat, st, margin=0.05)
     assert r["n_pairs"] == 2
+
+
+# ----------------------------------------------------------------------------- null band
+
+
+def test_paired_stats_fast():
+    r = M.paired_stats([2.0, 3.0, 1.0], [1.0, 1.0, 2.0])
+    assert r["paired_win"] == pytest.approx(2 / 3)
+    assert r["mean_shift"] == pytest.approx(2 / 3)
+    assert r["auroc"] == pytest.approx(M.auroc([2.0, 3.0, 1.0], [1.0, 1.0, 2.0]))
+
+
+def test_null_band_percentile_and_z():
+    nulls = np.linspace(-1, 1, 21)
+    r = M.null_band(2.0, nulls)
+    assert r["percentile"] == 1.0 and r["outside_two_sided"]
+    assert r["z"] == pytest.approx(2.0 / np.std(nulls, ddof=1))
+    mid = M.null_band(0.0, nulls)
+    assert 0.4 < mid["percentile"] < 0.6 and not mid["outside_two_sided"]
+    assert mid["band_lo"] == pytest.approx(np.quantile(nulls, 0.025))
+    low = M.null_band(-5.0, nulls)
+    assert low["percentile"] == 0.0 and low["outside_two_sided"] and low["z"] < 0
+
+
+def test_null_band_from_contrasts():
+    rng = np.random.default_rng(0)
+    base = rng.normal(0, 1, 40)
+    real = (base + 1, base - 1)
+    nulls = [(base + rng.normal(0, .2, 40), base + rng.normal(0, .2, 40)) for _ in range(20)]
+    out = M.null_band_contrast(real, nulls)
+    for k in ("paired_win", "mean_shift", "auroc"):
+        assert out[k]["percentile"] == 1.0
+    assert out["mean_shift"]["z"] > 5
