@@ -286,3 +286,43 @@ Language (ru vs pl; 02's direction) and tense, 60 items each, at L42, centred ra
 - **Leak detector upgrade:** every leak check includes a **content token set** besides label words (the label-only set missed the language leak).
 - **Smaller caveat:** col's direction is a regression-covariance direction, while language/tense use class-mean differences. Add a binary short-vs-long col direction (class-mean) as a robustness arm.
 - Pilot total ~9.7 GPU-h (~$42).
+
+## 2026-10-06 — D21: Fable round 5 (pre-freeze), accepted
+**Reframe (the data supports a better sentence).** The RAW col direction moves J-Lens newline to AUROC 0.84, yet neither decoder tracks it. The decoders fail on col even when its J-readable consequence is present, so **content type, not location**, explains the null. What the NLA reads beyond the top-J space is the distributed tail of semantic features (tense 4r*).
+
+Working one-sentence answer (finalised after (e) is resolved):
+> "On Qwen3.6-27B at L42, the content outside the J-space that the model actually uses is positional bookkeeping, and neither the NLA nor Oracle Lens reads it in any phrasing, even when its downstream decision is lens-readable; what the NLA reads beyond J-Lens is the distributed tail of features the model can already verbalise, and on WorkspaceBench its successes are matched by a text-only model."
+
+The title's dichotomy is answered **"neither"**: the NLA doesn't read what the model can't say, and it doesn't re-solve; it *generates*. Decide the title after (e).
+
+**Corrections:**
+- **(e) possible inconsistency:** the re-solver saw ONLY the reader's readout (no prompt) and scores 0.57–0.60 > text-only k=1 (0.46), but < prompt-based arms (0.75–0.76). Per item: does readout-only re-solving ever succeed where ALL prompt-based text arms fail? Until that's resolved, don't freeze "fully explained by text".
+- **(C) relabelled** as in-J calibration (not a re-solving test). Its real contribution is the 12/12 rewrite: the NLA's "prompt reconstruction" is generated from the latent, which kills "decode the text, then compute" as the mechanism and replaces it with "the decoder's LM confabulates a consistent story".
+- **OL's col null is less secure than the NLA's.** OL passes K3 only on language (tense 0.55) and is template-fragile (0.39–0.87), so present the two decoders asymmetrically.
+- **Natural col NLA 0.60 needs TextNLA on the same items** (expect text: long vs short lines are visible without counting).
+- **Behavioural validation at q90:** report the realised causal (newline log-odds) shift at the exact dose and direction where the null is claimed.
+- **Scope "non-J on Qwen = positional bookkeeping"** as a survey of ~12 features, not a theorem.
+
+**Structure: four parts.**
+- A: what counts as non-J, plus the survey.
+- B: the col null with matched-dose positives. **Figure 1** = three readers × {language, tense, col} at matched relative norm with both null bands.
+- C: what the NLA reads beyond top-J (the tense tail; the latent-generated reconstruction).
+- D: WorkspaceBench = text (after (e)).
+
+Tense 4r* goes in the main text as a pre-registered secondary, with its provenance in one clause. It's a geometric claim (tense is reportable at 87%), not "reads what the model can't say". If it doesn't replicate, it moves to the appendix.
+
+**Count gap:** scope B to "in any phrasing they use, incl. newline-continuation phrasing". **New cheap cell:** next-token digit in a numbered list ("next digit 5 vs 7"), which is maximally J and should pass G4. If the readers track it, the col null is about location; if not, B is scoped to content type. Either way it resolves the gap.
+
+**Main-run changes:**
+1. **Significance threshold:** |z| ≥ 3 vs both bands.
+2. **Equivalence test for col** with a declared SESOI (fraction of probe 0.25 ↔ a named AUROC).
+3. **Content token sets** in every leak check.
+4. **Templates:** mined, plus OL continuation candidates. **Promote the raw-direction cell with newline-continuation candidates to primary** (the count-vs-decision separation).
+5. **col direction:** add the class-mean binary direction.
+6. **Pre-register tense 4r* NLA-vs-OL** as a secondary.
+7. **Planting:** alpha ≤ 1.5 primary, relabelled as calibration.
+8. **n:** 240 col items split across the two col directions (a paired test with d_z ≈ −0.3 needs ~120). Redirect compute to the raw-direction newline cell, the next-digit cell, tense 4r*, and more OL tense items.
+
+**Prereg framing:** a confirmatory replication of a pilot null + two positive controls + one secondary, with hypotheses in that order.
+
+**WorkspaceBench floors:** file the issue first (re-run table, thinking-off detail), then one paragraph: confirmed, cause unknown, authors notified. The issue is outward-facing, so it needs the user's approval.
