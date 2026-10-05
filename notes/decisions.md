@@ -145,3 +145,18 @@ Gated at L42, with r* = 384 from the readout-agreement rule (4r* = 1536), J-Lens
 - **col_report didn't move into J under explicit report** (the paper reports numbers entering J). Number tokens are near zero in J-Lens on digit-free passages, and Qwen can't count without chain of thought (7% exact).
 - **Steering doses** (‖Δ‖/‖h‖ at q90/q99): col 0.11/0.16, tense 0.11/0.16, language 0.14/0.23. 2×q99 is void under the FVE guard.
 - **Gaps:** the J-only probe used accuracy/R², not log-loss/d′; steering sensitivity at L40/44 not done. A gain bug (Qwen's final norm uses 1+weight) was found and fixed, and all gated numbers come from corrected reruns.
+
+## 2026-10-06 — D11: anti-tracking explained (toy, n=40 pairs)
+- **Norm-preserving steering is a no-op for OL and the NLA.** Both renormalise their input: OL injects `16000·unit(h)`, and the NLA injects `‖h_marker‖·unit(v)` at its block-1 output. Rescaling h+Δv leaves the direction unchanged; all statistics are identical to two decimals.
+- **The real confound is unequal dilution.** For a feature-bearing item, h·v ≈ 1.2× the q99 dose, so the + and − sides carry the item's other content at different relative weights. Fix: **centred steering** h − (v·h)v ± Δv (equal norm on both sides), `capture.centred_steer_vectors`.
+- **Results under centred steering** (J-removed language direction, q99):
+  - **OL:** 0.45 → **0.49** (inside both null bands). OL's anti-tracking was a dilution artefact.
+  - **NLA:** 0.62, **+8.3 SD** vs the J-complement band (+4.7 isotropic). It still tracks.
+  - **J-Lens:** anti-tracks under every construction (linear readout), 4–7 SD outside the J-complement band. That is real leakage.
+- **The leak detector, calibrated to the J-complement band (~[0.48, 0.52]), FIRES** for the J-removed language direction at L40/42/44 (negative, z −4.3 to −5.4). So by our own rule the toy's NLA tracking **cannot be claimed as a non-J read**. This confirms Fable's "no rank is J-invisible", and shows the detector is strict enough to matter. A fixed 0.55 threshold would have missed it.
+- **Prereg revision 3 (pending):**
+  - centred steering is primary (additive reported);
+  - null bands with K ≥ 20 from both classes (isotropic and J-complement), reported as percentile and z, never subtracted;
+  - the leak test is two-sided against the J-complement band;
+  - for J-Lens use mean shift / AUROC (paired-win bands are degenerate for a linear readout).
+- For col, the gate-stage J-Lens AUROC was 0.500 inside a very tight band, which is promising, but the leak check must be redone with centred steering and the calibrated band.
