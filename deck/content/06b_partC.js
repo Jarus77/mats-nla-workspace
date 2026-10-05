@@ -4,7 +4,7 @@ module.exports = [
   {
     type: "section",
     section: "Part C",
-    num: "06",
+    num: "03",
     title: "Part C: what the NLA does read beyond the workspace",
     sub: "The distributed tail of verbalisable features, and a story generated from the latent",
     notes: "Part C. If the NLA doesn't read col, what is its extra? Two pieces of evidence: a tense component outside the top-1,536 J-space, and how it describes planted activations.",

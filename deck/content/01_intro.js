@@ -21,14 +21,14 @@ module.exports = [
     answers: [
       { lead: "Not the non-workspace stuff:", text: "the non-J content Qwen uses looks like positional bookkeeping, and neither decoder reads col, though both read workspace features at the same dose." },
       { lead: "What it reads beyond J:", text: "the distributed tail of features the model can already verbalise (tense, pilot), and it writes a story consistent with the latent rather than re-solving the text." },
-      { lead: "On the benchmark:", text: "its WorkspaceBench successes are matched by a text-only model (a consistency check is still open)." },
+      { lead: "On the benchmark:", text: "the target information in its WorkspaceBench readouts is recoverable from the prompt text alone (0.89 from prompt vs 0.60 from readout)." },
     ],
     notes:
       "This is Neel's question, verbatim from the MATS 12.0 doc: 'What can NLAs capture that Oracle Lens / J Lens don't? Is it really the stuff not in the workspace?' And our title poses a dichotomy: does the NLA read what the model can't say, or re-solve what it read? Here is the provisional answer first: neither. " +
       "One: we surveyed about a dozen natural features. The content outside the J-space that the model actually uses looks like positional bookkeeping, things like characters since the last newline. On that feature, col, neither the NLA nor the Oracle Lens moves when we push it inside the activation, although at exactly the same push the NLA tracks language and tense at 0.83 to 0.92 AUROC. " +
       "Two: what the NLA does read beyond the J-space is the distributed tail of ordinary, verbalisable features: it still tracks tense with the top-1,536 J-space removed, where the Oracle Lens doesn't. And it doesn't re-solve the text: when we plant a different answer inside the activation, it rewrites the prompt to fit. It generates a consistent story from the latent. " +
-      "Three: on WorkspaceBench its successes are matched by a text-only model. " +
-      "Caveats up front: one clean non-J feature, pilot-scale numbers on a declared, excluded split, and one consistency check still open before the pre-registration freezes. The title is provisional for that reason.",
+      "Three: on WorkspaceBench, a text model given the prompt names the target more often than the same model given the NLA's readout, 0.89 against 0.60, and adding the readout to the prompt doesn't help. " +
+      "Caveats up front: one clean non-J feature, pilot-scale numbers on a declared, excluded split, and the pre-registration hasn't frozen yet, so the title is provisional.",
   },
   {
     type: "why",
@@ -46,14 +46,6 @@ module.exports = [
       "Today a lot of reasoning is written out. If that goes away, through latent reasoning or unfaithful CoT, our main window is reading activations directly. " +
       "Activation verbalizers like NLAs and the Oracle Lens are promising because they produce fluent descriptions. But fluency is cheap: if a reader works by reconstructing the prompt from the activation and then thinking about it, it adds nothing that a text model with the transcript couldn't do. " +
       "So the bar is: does the reader report content that isn't recoverable from the text? 'Non-workspace' content, information the model uses but can't verbalise, is the sharpest version of that test.",
-  },
-  {
-    type: "section",
-    section: "Background",
-    num: "01",
-    title: "Background, made intuitive",
-    sub: "The residual stream, the 'workspace', and three ways to read it",
-    notes: "Four slides of background. If you know the J-space paper and the NLA paper, skim; the key new idea is the confound on the fourth slide.",
   },
   {
     type: "residual",

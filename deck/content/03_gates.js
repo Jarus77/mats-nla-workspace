@@ -5,14 +5,6 @@ const LAYERS = ["20", "24", "28", "32", "36", "40", "42", "44", "48", "52", "56"
 
 module.exports = [
   {
-    type: "section",
-    section: "Gates",
-    num: "03",
-    title: "Gates: are the instruments sound?",
-    sub: "Layer convention, a full benchmark replication, and a protocol asymmetry we found on the way",
-    notes: "Before any science, three gates. If any had failed, nothing downstream would mean anything.",
-  },
-  {
     type: "chart",
     section: "Gates",
     kicker: "Gate K0 · NLA layer convention",

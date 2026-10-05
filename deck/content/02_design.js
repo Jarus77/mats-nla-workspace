@@ -2,14 +2,6 @@
 
 module.exports = [
   {
-    type: "section",
-    section: "Design",
-    num: "02",
-    title: "Design, and how we worked",
-    sub: "A 2×2 frame, three tools, one decisive measurement, an adversarial research guide, and a four-part story",
-    notes: "Now the design. I'll show the frame, the tools, the measurement that everything later depends on, and how the design was hardened by critique before any headline run.",
-  },
-  {
     type: "twoByTwo",
     section: "Design",
     kicker: "The frame",

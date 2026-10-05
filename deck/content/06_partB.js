@@ -7,7 +7,7 @@ module.exports = [
   {
     type: "section",
     section: "Part B",
-    num: "05",
+    num: "02",
     title: "Part B: no decoder reads col",
     sub: "…although both read workspace features at the same dose (n = 1 non-J feature, pilot scale)",
     notes: "Part B. First sentence, as in the write-up: this is one feature. Generalisation is open, and Part A told us why it's hard to get a second.",
@@ -128,11 +128,13 @@ module.exports = [
         { value: "≤ 0.12", label: "NLA fraction of probe information (OL ≤ 0.03; pre-registered bar 0.25)", color: "nla", size: 30 },
         { value: "0 / 5,760", label: "free readouts mentioning line length (4,080 NLA, 1,680 OL)", color: "ink", size: 30 },
       ],
+      note: "Power: the null band, not n, limits col. NLA z at n → ∞ would be only +0.6 to +1.4, while language and tense clear the same band by 10–30 SD. NLA − OL ΔAUROC +0.015 to +0.028: H3 (bar 0.05) will likely fail for col.",
     },
     notes:
       "Here's the col result, on the pilot split. The leak-free cell: layer 42, centred steering, the top-1,536 J-space removed, 90th-percentile dose. Three template families: the count in words, the count as a number, and the newline decision. " +
       "Every bar is a z-score against random directions of the same norm. All of them sit inside ±1.96, in fact within ±1.5 for every family against both null bands. In AUROC terms the NLA is at 0.50 to 0.53 and the Oracle Lens at 0.49 to 0.51. As a fraction of what the probe recovers, which is 1.0 by construction: NLA at most 0.12, Oracle Lens at most 0.03, against a pre-registered bar of 0.25. " +
       "Free text says the same: across 5,760 natural and steered readouts, neither decoder ever mentions line length. " +
+      "Power, since people ask: for col the binding constraint is the null band, not the number of items. Random directions genuinely move the decoders, and that direction-to-direction spread doesn't shrink with n: even at infinite n the NLA's z on these cells would be +0.6 to +1.4. But it isn't a generic power failure: workspace features clear the same band by 10 to 30 SD (per-item effect sizes +1.3 to +1.5 vs about −0.2 to −0.3 for col). The NLA-minus-OL difference on col is +0.015 to +0.028, below the pre-registered 0.05 bar, so H3 will likely fail for col, and we say so at the freeze. " +
       "Even the raw col direction, which strongly moves the J-Lens's newline readout (AUROC up to 0.84), doesn't move either decoder. But a null only means something if the readers would have noticed a workspace feature at the same dose. That's the next slide.",
   },
   {
@@ -221,27 +223,6 @@ module.exports = [
       "Here's the sharper reading Fable pushed us to in round 5. The raw col direction, the one that still contains its J-space component, moves the J-Lens's newline readout strongly: AUROC 0.73 to 0.84. So under that push, the downstream consequence, 'a line break is coming', is lens-readable. Yet neither decoder follows it: the NLA stays at or below 0.54 across all three template families, including the newline-decision templates, and the Oracle Lens at or below 0.50. " +
       "If the story were purely about location, inside versus outside the J-space, the decoders should follow once the consequence is in J. They don't. So the null looks like a matter of content type: positional bookkeeping is just not something these decoders talk about, in any phrasing we've tried, including newline-continuation phrasing. " +
       "The clean test is a new cheap cell: the next digit in a numbered list, 5 versus 7. That's maximally in-J and should pass the causal gate. If the readers track it, the col null is about location; if not, Part B is explicitly scoped to content type.",
-  },
-  {
-    type: "table",
-    section: "Part B",
-    kicker: "Part B · power",
-    title: "For col, more items won't help: its effect is about zero, while workspace features clear the same band by 10–30 SD",
-    pilot: true,
-    columns: ["NLA, q90, J-complement band", "Real shift", "Null SD (direction ⊕ item)", "z at n = 60", "z at n → ∞"],
-    colW: [3.6, 1.9, 2.9, 1.8, 1.9],
-    rows: [
-      ["col 'long line', 4r*", "+0.051", "0.141", "+0.56", "+0.61"],
-      ["col 'about 60 characters', 4r*", "+0.118", "0.109", "+0.99", "+1.41"],
-      ["col 'line break coming', 4r*", "+0.050", "0.079", "+0.60", "+0.62"],
-      ["language, raw (calibration)", "d_z +1.5", "band SD 0.013 (AUROC)", "≈ +30", "—"],
-      ["tense, raw (calibration)", "d_z +1.3", "band SD 0.021 (AUROC)", "≈ +18", "—"],
-    ],
-    footnote: "Random directions genuinely move the decoders, and that spread doesn't shrink with n. NLA − OL ΔAUROC on col is +0.015 to +0.028, below the pre-registered H3 bar of 0.05: H3 will likely fail for col, stated at the freeze.",
-    notes:
-      "A power point the audience will ask about. For col, the binding constraint is the null band, not the number of items: random directions genuinely move the decoders' log-odds, and that direction-to-direction spread doesn't shrink as you add items. Even with infinite items, the NLA's z on the leak-free col cells would be +0.6 to +1.4. " +
-      "But the calibration shows this isn't a generic power failure. The same band is narrow relative to in-J effects: per-item effect sizes of +1.3 to +1.5 for language and tense, z around +18 to +30, against roughly minus 0.2 to 0.3 for col. The band limits col only because col's effect is about zero. " +
-      "And one honest consequence: the NLA-minus-Oracle-Lens difference on col is +0.015 to +0.028, below our pre-registered 0.05 bar, so the H3 contrast will likely fail for col. We'll state that at the freeze rather than discover it later.",
   },
   {
     type: "chart",

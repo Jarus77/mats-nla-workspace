@@ -2,21 +2,13 @@
 
 module.exports = [
   {
-    type: "section",
-    section: "Where we stand",
-    num: "08",
-    title: "Where we stand",
-    sub: "The provisional answer, the checks before the freeze, what could be wrong, and the sprint plan",
-    notes: "Pulling it together: the ledger, the answer to the title question, the checks left before we freeze the pre-registration, limitations and the sprint.",
-  },
-  {
     type: "anchor",
     section: "Where we stand",
     stage: 4,
     title: "What we know so far (4 / 4): the full ledger",
     notes:
       "The full ledger. Dark chips are established on full data, ochre chips are pilot-scale (60 items per feature, excluded from the main analysis), grey are tentative. " +
-      "Read top to bottom: sound instruments; a gate that leaves one clean non-workspace feature, which is positional; decoders that read workspace features but not col; an NLA that reads the tail of verbalisable features and generates its story from the latent; and a benchmark on which a text-only model matches it, pending one check.",
+      "Read top to bottom: sound instruments; a gate that leaves one clean non-workspace feature, which is positional; decoders that read workspace features but not col; an NLA that reads the tail of verbalisable features and generates its story from the latent; and a benchmark whose targets are recoverable from the prompt alone.",
   },
   {
     type: "answer",
@@ -26,7 +18,7 @@ module.exports = [
     question: "Do NLAs read what the model can't say, or re-solve what it read?",
     answer: "Neither.",
     answerBody: "The non-J content Qwen uses is positional bookkeeping, and neither decoder reads it, even when its downstream decision is lens-readable. The NLA doesn't re-solve either: it writes a story consistent with the latent. What it reads beyond J-Lens is the tail of features the model can already verbalise.",
-    confidence: "Confidence: moderate for col with the NLA; lower for OL; low for 'non-J content in general'. Final wording after check (e).",
+    confidence: "Confidence: moderate for col with the NLA; lower for OL; low for 'non-J content in general'. Check (e) resolved; title decided at the freeze.",
     caveats: [
       "n = 1 clean non-J feature; 'non-J = positional bookkeeping' is a survey of ~12 features, not a theorem.",
       "OL's col null is less secure than the NLA's: OL passes K3 on language only (tense 0.55) and is template-fragile (0.39–0.87).",
@@ -37,16 +29,16 @@ module.exports = [
     notes:
       "So, the title question: does the NLA read what the model can't say, or re-solve what it read? Our provisional answer is neither. " +
       "It doesn't read what the model can't say: the content outside the J-space that Qwen actually uses looks like positional bookkeeping, and neither decoder reads col, even when we make its downstream newline decision visible to the J-Lens, although both read workspace features at the same dose. " +
-      "It doesn't re-solve: when we plant a different bridge inside the activation, it rewrites the prompt to fit. Its language model generates a story consistent with the latent. What it reads beyond the J-Lens is the distributed tail of features the model can already verbalise, like tense. And on WorkspaceBench its successes are matched by a text-only model. " +
-      "Confidence differs by claim: moderate for the NLA on col, lower for the Oracle Lens because it only passes calibration on language and is template-fragile, and low for any general statement about non-J content. The working sentence from D21 is: 'On Qwen3.6-27B at L42, the content outside the J-space that the model actually uses is positional bookkeeping, and neither the NLA nor Oracle Lens reads it in any phrasing, even when its downstream decision is lens-readable; what the NLA reads beyond J-Lens is the distributed tail of features the model can already verbalise, and on WorkspaceBench its successes are matched by a text-only model.' We finalise it, and the title, after check (e).",
+      "It doesn't re-solve: when we plant a different bridge inside the activation, it rewrites the prompt to fit. Its language model generates a story consistent with the latent. What it reads beyond the J-Lens is the distributed tail of features the model can already verbalise, like tense. And on WorkspaceBench the target information in its readouts is recoverable from the prompt text alone. " +
+      "Confidence differs by claim: moderate for the NLA on col, lower for the Oracle Lens because it only passes calibration on language and is template-fragile, and low for any general statement about non-J content. The working sentence from D21 is: 'On Qwen3.6-27B at L42, the content outside the J-space that the model actually uses is positional bookkeeping, and neither the NLA nor Oracle Lens reads it in any phrasing, even when its downstream decision is lens-readable; what the NLA reads beyond J-Lens is the distributed tail of features the model can already verbalise, and on WorkspaceBench its successes are matched by a text-only model.' Check (e) is now resolved in its favour, so the WorkspaceBench clause stands in its careful form; the title is decided at the freeze.",
   },
   {
     type: "checks",
     section: "Where we stand",
     kicker: "Open checks before the pre-registration freezes",
-    title: "Five open checks before we freeze, each of which could change a sentence",
+    title: "Five checks before we freeze: one resolved, four still open",
     checks: [
-      { tag: "e", head: "Re-solver consistency", body: "Readout-only re-solving (0.57–0.60) beats the k = 1 text arm (0.46) but not the prompt arms (0.75–0.76). Does it ever succeed where every prompt arm fails? Until then, don't freeze 'fully explained by text'." },
+      { tag: "e", head: "Re-solver consistency: DONE", body: "Resolved (D22): an instruction mismatch. Same template: prompt 0.89 vs readout 0.60 / 0.56; prompt + readout 0.88; residual 4 / 2 of 400 hits are regex-form artefacts.", done: true },
       { tag: "#", head: "Next-digit in-J number cell", body: "Next token in a numbered list ('next digit 5 vs 7'): maximally J. Tracked → the col null is about location; not tracked → Part B is scoped to content type." },
       { tag: "q", head: "q90 behavioural validation", body: "Report the realised newline log-odds shift at the exact dose and direction where the null is claimed." },
       { tag: "d", head: "Class-mean col direction", body: "Add a binary short-vs-long-line direction next to the regression-covariance direction (closer in kind to language/tense)." },
@@ -54,7 +46,7 @@ module.exports = [
     ],
     changes: "Main-run changes (D21): |z| ≥ 3 against both bands · equivalence test for col (SESOI: fraction of probe 0.25) · content token sets in every leak check · raw-direction newline-continuation cell primary · tense 4r* NLA-vs-OL as secondary · planting α ≤ 1.5 primary.",
     notes:
-      "Five checks before the freeze, each tied to a sentence it could change. (e) is the important one: a text model given only the NLA's readout re-solves 57 to 60% of items, more than the sample-matched text arm but less than prompt-based arms. If readout-only re-solving ever succeeds where every prompt-based arm fails, 'fully explained by text' is too strong. " +
+      "Five checks before the freeze. The first, (e), is done: the apparent inconsistency between readout-only re-solving and the text arm was an instruction mismatch, and the same-template comparison shows prompt 0.89 against readout 0.60 and 0.56, with prompt plus readout at 0.88. So the WorkspaceBench sentence stands, in its careful form. Four remain open. " +
       "The next-digit cell settles location versus content type for the col null. The behavioural check confirms the push we claim the readers ignore actually moves the model's newline behaviour at that dose. The class-mean direction removes a difference in kind between col and the in-J features. And the natural col result needs a text-only baseline. " +
       "The main-run statistical changes are on the bottom line: a stricter threshold, an equivalence test so the col null is a positive claim of 'no effect larger than X', content sets in every leak check, and the newline-continuation cell as primary.",
   },
@@ -90,7 +82,7 @@ module.exports = [
       { label: "Tense 4r* NLA vs OL (secondary); text-only decoders; natural col vs TextNLA", from: 4, to: 4, color: "text" },
       { label: "First figures; one-page interim for Fable / Neel", from: 5, to: 5, color: "muted" },
       { label: "Planted intermediates (α ≤ 1.5 primary); free-form rewrites", from: 6, to: 7, color: "jl", check: "K4" },
-      { label: "Re-solver consistency (e), judges, human-label κ", from: 8, to: 8, color: "text" },
+      { label: "Free-form generations, judges, human-label κ", from: 8, to: 8, color: "text" },
       { label: "Robustness: rank sweep, both lenses, OL@40/44, NLA iter 300, templates", from: 9, to: 10, color: "muted" },
       { label: "Optional: 20-item split-injection replication", from: 11, to: 11, color: "line" },
       { label: "Final figures, write-up, red-team with Fable", from: 12, to: 14, color: "ol" },
@@ -112,15 +104,15 @@ module.exports = [
       "A calibrated, random-subspace-controlled gate for 'non-workspace' content (the standard survival test is uninformative), and a survey: on Qwen L42 the non-J content the model uses is positional.",
       "A text-fixed causal pipeline (centred steering, null bands, two-sided leak detector, matched-dose controls) and its first answer: decoders read workspace features but not col.",
       "Evidence that the NLA generates rather than re-solves: it reads the tail of verbalisable features and rewrites the prompt to fit the latent.",
-      "WorkspaceBench successes at layer 42 are matched by a text-only model; OL's published lead is a best-of-11-layers effect.",
+      "WorkspaceBench readouts' targets are recoverable from the prompt (0.89 vs 0.60 / 0.56); OL's lead is a best-of-11 effect.",
     ],
     open: [
       "A reader tracking col, or the next digit, at a leak-free dose in the main run.",
       "A second non-J feature that is not a count, on another model or layer.",
-      "Readout-only re-solving succeeding where every prompt-based arm fails (check e).",
+      "Readouts carrying target information beyond the prompt on richer, non-regex benchmarks.",
     ],
     notes:
       "To close, the contributions so far. One: a calibrated gate for non-workspace content, and a survey showing the non-J content Qwen uses at layer 42 is positional. Two: a causal pipeline that separates reading from re-solving, and its first answer for col. Three: evidence that the NLA generates a story from the latent rather than re-solving the text. Four: a benchmark decomposition and a protocol re-analysis. " +
-      "What would change our minds: a reader tracking col or the next digit at a leak-free dose in the main run; a non-count non-J feature; or check (e) coming out against us. Questions welcome.",
+      "What would change our minds: a reader tracking col or the next digit at a leak-free dose in the main run; a non-count non-J feature; or readouts beating the prompt on benchmarks beyond these four regex families. Questions welcome.",
   },
 ];

@@ -237,9 +237,10 @@ R.checks = (ctx, slide, s) => {
   const w = kit.W - 2 * kit.M;
   s.checks.forEach((c, i) => {
     const y = 1.8 + i * 0.86;
-    kit.badge(slide, kit.M, y + 0.05, c.tag, i === 0 ? C.accent1 : C.text1, 0.46);
-    kit.tx(slide, c.head, { x: kit.M + 0.65, y, w: 3.0, h: 0.75, fontSize: 15, bold: true, valign: "middle" });
-    kit.tx(slide, c.body, { x: kit.M + 3.75, y, w: w - 3.75, h: 0.78, fontSize: 13.5, valign: "middle" });
+    if (c.done) kit.card(slide, { x: kit.M - 0.1, y: y - 0.04, w: w + 0.2, h: 0.84, fill: C.background2 });
+    kit.badge(slide, kit.M, y + 0.15, c.done ? "✓" : c.tag, c.done ? C.accent3 : C.text1, 0.46);
+    kit.tx(slide, c.head, { x: kit.M + 0.65, y, w: 3.0, h: 0.75, fontSize: 15, bold: true, valign: "middle", color: c.done ? C.accent3 : C.text1 });
+    kit.tx(slide, c.body, { x: kit.M + 3.75, y, w: w - 3.75, h: 0.78, fontSize: 13.5, valign: "middle", color: c.done ? C.accent5 : C.text1 });
   });
   kit.card(slide, { x: kit.M, y: 6.15, w, h: 0.75, fill: C.background2, body: s.changes, bodySize: 12.5, pad: 0.14 });
 };

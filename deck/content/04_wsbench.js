@@ -1,20 +1,19 @@
-// Finding 1: WorkspaceBench success is explained by text (experiment 06).
+// Part D: WorkspaceBench target information is recoverable from the prompt text (experiment 06, D14, D22).
 
 module.exports = [
   {
     type: "section",
     section: "Part D",
-    num: "07",
-    title: "Part D: on WorkspaceBench, a text-only model matches the readers",
+    num: "04",
+    title: "Part D: WorkspaceBench targets are recoverable from the prompt",
     sub: "Re-solving decomposition at layer 42 · 4 regex families · n = 400 items",
-    notes: "Part D, from tool D: how much of each reader's benchmark success could a model that never sees the activation match? One consistency check on this part is still open, so these slides carry a flag.",
+    notes: "Part D, from tool D: is the target information in the readers' readouts something a text model could get from the prompt alone? A consistency check (e) raised during the Fable round is now resolved, and the wording here is the defensible version from D22.",
   },
   {
     type: "chart",
     section: "Part D",
-    flag: "CONSISTENCY CHECK PENDING",
     kicker: "Part D · text-only baselines",
-    title: "A text-only Qwen that never sees the activation scores as well as the NLA: 0.46 vs 0.47",
+    title: "A text-only Qwen that never sees the activation ties the NLA at k = 1: 0.46 vs 0.47",
     chart: {
       kind: "bar",
       dir: "bar",
@@ -29,42 +28,44 @@ module.exports = [
         { value: "p = 0.75", label: "NLA vs text-only Qwen in the NLA's own style, sample-matched (McNemar); OL vs text: p = 0.09", color: "ink", size: 30 },
         { value: "187 vs 159", label: "same-layer hits, NLA vs Oracle Lens (p = 0.002)", color: "nla", size: 30 },
       ],
-      bullets: ["The template matters a lot (typo: 0.45 vs 0.85 for the same model), so 'text explains it' is judged against a union of templates."],
+      bullets: ["Caveat: the 0.46 arm used the NLA's own instruction, which never asks for the answer. Same model, bench template: 0.76. The fair same-template comparison is on the next slide."],
     },
     notes:
       "Here's the core comparison, pooled over 400 items at layer 42. The NLA passes 47%. The Oracle Lens at the same layer 40%. The J-Lens 2%. " +
       "Now the ochre bars: models that never see the activation. Base Qwen, writing in the NLA's own style from the prompt alone, one sample, gets 46%. That's statistically indistinguishable from the NLA: McNemar p = 0.75. With the benchmark's own prompt-only template the same Qwen gets 76%, and Gemini 3.8 Flash gets 75%. " +
       "And the pale bar: give a text model only the NLA's readout, never the prompt, and ask it to re-solve. It scores 0.60 with Gemini (0.57 with Qwen), more than the NLA's own 0.47. The readouts carry more re-solvable content than they get credit for. " +
-      "Open consistency check (e): readout-only re-solving (0.57 to 0.60) beats the sample-matched text arm (0.46) but stays below the prompt-based arms (0.75 to 0.76). Before we freeze 'fully explained by text' we check item by item whether readout-only re-solving ever succeeds where every prompt-based arm fails. " +
-      "Two caveats: the template choice moves things a lot, so we judge 'text explains it' against a union of templates; and among the readers, the NLA does beat the Oracle Lens at the same layer, 187 hits vs 159.",
-  },
-  {
-    type: "stats",
-    section: "Part D",
-    flag: "CONSISTENCY CHECK PENDING",
-    kicker: "Part D · item level",
-    title: "Nothing the readers get right is out of text's reach: 0 of 187 NLA hits are reader-only",
-    stats: [
-      { value: "0 / 187", label: "NLA hits that no text-only sample reaches (8 samples: 2 models × 2 templates × k)", color: "nla" },
-      { value: "4 / 159", label: "Oracle Lens hits no text sample reaches; all 4 are Chinese code-switching on multilingual items (a scoring-form artefact)", color: "ol" },
-      { value: "0.57–0.60", label: "pass rate when a text model re-solves from the NLA's readout alone, above the NLA's own 0.47", color: "text" },
-    ],
-    families: [
-      { head: "typo", body: "the only family where readers beat text at k = 1 (NLA 73 vs 45), a register/length effect: the text arm quotes the misspelling without correcting it" },
-      { head: "multihop", body: "text crushes the readers: NLA 15 vs text-only Qwen 44 vs Gemini 75" },
-      { head: "multilingual / basic", body: "NLA ≈ text-only Qwen (p = 0.87 / 0.63)" },
-    ],
-    caveat: "This does not show the readers don't read. The layer-42 activation encodes the prompt, so reading-then-re-solving looks identical here. It shows WorkspaceBench cannot separate the two, which is why the causal test matters.",
-    notes:
-      "Item by item: of the NLA's 187 correct items, every single one is also reached by at least one of 8 text-only samples. Zero reader-only hits. For the Oracle Lens it's 4 of 159, and all four are multilingual items where OL answered in Chinese, matching the item's Chinese form, while the text arms named the concept in a form the regex doesn't credit. That's a scoring artefact, not latent content. " +
-      "Fair-comparison caveat: the union of 8 text samples is best-of-8; the sample-matched comparison is the 0.46 vs 0.47 from the previous slide. " +
-      "Per family: typo is the only family where readers beat text at k=1, and that's a register effect. On multihop, where hidden intermediates should matter most, text crushes the readers. " +
-      "And the crucial framing: this is not evidence that readers don't read. The activation encodes the prompt; a reader that reads and a reader that re-solves look identical here. What it shows is that this benchmark can't tell them apart. That motivates the causal test.",
+      "An important caveat on that tie: the 0.46 arm used the NLA's own instruction, which never asks for the answer, so it understates what the text makes available; the same Qwen with the bench template scores 0.76. And among the readers, the NLA does beat the Oracle Lens at the same layer, 187 hits vs 159.",
   },
   {
     type: "chart",
     section: "Part D",
-    flag: "CONSISTENCY CHECK PENDING",
+    kicker: "Part D · same-template re-solver comparison (check e, resolved)",
+    title: "Given the prompt, a text model names the target more often than given the readout, and the readout adds nothing",
+    chart: {
+      kind: "bar",
+      categories: ["Prompt only", "NLA readout only", "OL readout only", "Prompt + NLA readout", "Prompt + OL readout"],
+      series: [{ name: "pooled pass rate, Gemini re-solver, same template, k = 1 (n = 400)", values: [0.89, 0.6, 0.56, 0.88, 0.88] }],
+      pointColors: ["text", "nla", "ol", "textPale", "textPale"],
+      min: 0, max: 1, fmt: "0.00", labels: true, legend: false,
+      title: "Same re-solver, same instruction; only the input changes",
+    },
+    chartW: 7.2,
+    side: {
+      stats: [
+        { value: "0.88 vs 0.89", label: "adding the readout to the prompt doesn't help (p = 0.38 NLA / 0.47 OL)", color: "ink", size: 30 },
+        { value: "4 · 2 of 400", label: "readout-only hits every prompt arm misses (NLA · OL), all regex-form artefacts", color: "ink", size: 30 },
+        { value: "0 / 187", label: "NLA hits that no prompt-only text sample reaches (OL: 4 of 159, Chinese code-switching)", color: "nla", size: 30 },
+      ],
+    },
+    notes:
+      "This resolves the consistency check Fable raised. Earlier, a re-solver reading only the NLA's readout scored 0.57 to 0.60, above the 0.46 text arm, which looked like the readouts carried something the text didn't. It was an instruction mismatch: the 0.46 arm used the NLA's own instruction, which never asks for the answer, while the re-solver instruction asks for the entity and its language, which is exactly what the regex rewards. " +
+      "So we ran the fair comparison: the same Gemini re-solver, same template, one sample, with only the input changing. Given the prompt alone it names the target 89% of the time. Given only the NLA's readout, 60%; the Oracle Lens's readout, 56%. Given prompt plus readout, 88%: adding the readout doesn't help (p = 0.38 and 0.47). The residual readout-only hits, 4 for the NLA and 2 for the Oracle Lens out of 400, are all regex-form artefacts: uncredited short forms, the Oracle Lens's Chinese code-switching copied through, one name-order variant. " +
+      "The defensible sentence, from D22: on WorkspaceBench's four regex multi-token families at layer 42, the target information in NLA and Oracle Lens readouts is recoverable from the prompt text alone. " +
+      "Claims to avoid: 'the readers re-solve from text', because this data can't show the mechanism; and 'readouts contain nothing beyond text', because only these families' targets were tested. Per family, text crushes the readers on multihop (NLA 15 vs text-only Qwen 44 vs Gemini 75); typo is the only family where readers beat the NLA-style text arm, a register effect.",
+  },
+  {
+    type: "chart",
+    section: "Part D",
     kicker: "Part D · claim precision",
     title: "Readers' claims are text-true less often than a text-only model's: precision 0.62 and 0.52 vs 0.92",
     chart: {

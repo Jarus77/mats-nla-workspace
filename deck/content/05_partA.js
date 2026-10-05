@@ -6,7 +6,7 @@ module.exports = [
   {
     type: "section",
     section: "Part A",
-    num: "04",
+    num: "01",
     title: "Part A: what even counts as non-workspace?",
     sub: "The standard test is uninformative; a calibrated gate leaves one clean feature",
     notes: "Part A started as plumbing, finding features to steer, and became a co-headline: the standard way of certifying 'non-workspace' content doesn't work.",

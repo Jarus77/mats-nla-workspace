@@ -25,6 +25,6 @@ module.exports = {
     { stage: 3, status: "pilot", text: "The raw col direction moves the J-Lens newline readout (AUROC up to 0.84) yet no decoder tracks it: content type, not location." },
     { stage: 4, status: "pilot", text: "Beyond the top-1,536 J-space the NLA reads the tail of a verbalisable feature (tense 0.60, z +8.7) where OL doesn't; pre-registered secondary." },
     { stage: 4, status: "established", text: "The NLA generates its 'prompt' from the latent: under a planted bridge it rewrites the clue 12/12 times (Eiffel Tower → Volvo… Sweden)." },
-    { stage: 4, status: "tentative", text: "WorkspaceBench successes are matched by a text-only model (0.46 vs 0.47; 0/187 reader-only), pending a re-solver consistency check." },
+    { stage: 4, status: "established", text: "On WorkspaceBench the readouts' target information is recoverable from the prompt: re-solver 0.89 from prompt vs 0.60 / 0.56 from readouts; prompt + readout 0.88." },
   ],
 };
