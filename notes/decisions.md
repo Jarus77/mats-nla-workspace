@@ -490,3 +490,10 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 - **Operative fact for Neel, whichever way the mechanism falls:** a next-token probability shift in OL's continuation isn't a readout anyone would find without already knowing what to measure.
 - **Post-sprint ideas (not in scope):** a carrier-matched behavioural measure (steer at L42 inside the carrier with the adapter off), or ablating the model's newline-decision components inside OL's forward pass.
 - **Freeze** once the three S6 quantities and the P3 measure are written in.
+
+## 2026-10-07 — D31: prereg rev 4.2 done; design COMPLETE
+- Revision 4.2 applies D29–D30 (S6 descriptive; P3/P4 next-verb behaviour measure; 1b wording; disclosure paragraph).
+- **Lead's edits:**
+  - the Branch 1b sentence is made **conditional** on the §4.4.5 next-verb measure (it no longer presumes the model doesn't act on tense);
+  - the tense tagger is pinned to **spaCy 3.8.7 + en_core_web_lg 3.8.0** (already used in exp 02) instead of the new `sm` model.
+- **Remaining before the freeze timestamp (bookkeeping only):** q80 dose; null seeds; fresh-bank sha256 manifest; the T1 sensitivity set plus judge gate; the tagger wheel sha256; the `main_analyze.py` hash.
