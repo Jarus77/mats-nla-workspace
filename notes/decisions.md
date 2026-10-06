@@ -374,3 +374,28 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 1. **D21's sentence "neither reads col in any phrasing" was premature** and is retracted. It rested on fixed templates. With native/mined phrasings, both decoders show leak-free sensitivity to the J-removed col direction: NLA via one descriptive template, OL via its continuation channel.
 2. **Forking paths:** across rounds the pilot tested many templates × directions × doses. The new positives are exactly what selection could produce. They came from pre-specified families (f07 frozen; nl_cont fixed at 00:53, before scoring), but the main run must name **one primary template per reader** in advance, correct for multiplicity, and replicate on fresh items.
 3. **The emerging, more honest picture:** sensitivity to non-J content exists but is **channel- and phrasing-specific**. The decoders' *descriptive* language mostly doesn't express it; the NLA has one phrasing that does; OL's continuation (next-token) channel does. That is a nuanced, testable claim for the main run, and it bears directly on "can these tools be used to *report* non-workspace content?".
+
+## 2026-10-06 — D25: Fable round 6, all accepted (FINAL pre-freeze design)
+- **Pilot summary:** "No robust descriptive reading; two *candidate* narrow channels, pre-registered for confirmation."
+  - OL continuation = the real candidate (z +6.6 raw, +3.9 at 4r*, linear in dose, adapter-dependent, pre-fixed pair).
+  - NLA = one template, borderline.
+- **Dose fork closed:** **q90 is the primary dose** (behaviourally validated); r11 is sensitivity. Choosing after seeing both would contaminate the NLA cell.
+- **OL mechanism:** the 78% vs 70% gain match favours *re-instatement* (the LoRA re-instates the activation and Qwen's own circuitry acts on it) over reporting. Tests (pilot split):
+  - (a) **Indentation** (non-J by G2, causally inert by G4): steer it in OL's carrier. A continuation shift ⇒ reading beyond what the model acts on; flat ⇒ consistent with acting.
+  - (b) **Gain ratio** (OL continuation shift / model behavioural shift) for col, tense and two random directions with nonzero behavioural effect. Roughly constant ⇒ re-instatement.
+  - (c) **Tense adapter-off**, for symmetry.
+  - Framing: OL *is* the model plus a LoRA, so it reads what the model reads and says what the model can say. Inheriting col's unverbalisability is a result about the method. A newline-probability shift is usable only if you already know to measure it, so it's not an interpretability readout.
+- **Confirmatory design** (prereg revision 4):
+  - **4 primaries, Holm over 4:** NLA col (the named "hard-wrapped line" template, q90, 4r*, one direction), OL col (nl_cont, q90, 4r*), OL tense 4r*, NLA tense 4r*.
+  - Claim criterion: the primary survives Holm at |z| ≥ 3 AND the declared-secondary family mean agrees in sign.
+  - Everything else exploratory and labelled.
+  - **Pre-registered negatives:** OL descriptive col templates flat (an equivalence test with a SESOI).
+  - **Template-free check:** a pre-written judge question over free NLA readouts ("does this mention position within a line or line length?") on fresh items.
+  - Effect sizes with CIs on fresh items.
+  - **Templates frozen literally:** no more mining, no new families.
+  - **Disclosure:** the prereg states the pilot's number of looks and that primaries were chosen from it.
+- **Headline (both branches):** keep the title "Do NLAs read what the model can't say?"; the abstract's first sentence carries the answer.
+  - **Branch 1** (replicates): "barely, in narrow channels, and not in the language they use to describe what they read". Say "channel-specific sensitivity", never "reads".
+  - **Branch 2:** "no, on the one natural non-J feature the model uses".
+  - Parts A, D and the latent-generated reconstruction stand on either branch.
+- **Cut:** the next-digit cell, further template mining, the natural col arm beyond one line, the r11/q90 ambiguity.
