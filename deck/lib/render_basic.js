@@ -146,6 +146,10 @@ R.table = (ctx, slide, s) => {
   );
   const w = s.colW.reduce((a, b) => a + b, 0);
   slide.addTable([head, ...body], { x: kit.M, y: 1.85, w, colW: s.colW, fontFace: "Arial", border: { type: "solid", pt: 0.5, color: ctx.HEX.line }, margin: [0.05, 0.08, 0.05, 0.08], rowH: s.small ? 0.36 : 0.44 });
+  if (s.extras) {
+    const ew = (kit.W - 2 * kit.M - 0.3 * (s.extras.length - 1)) / s.extras.length;
+    s.extras.forEach((e, i) => kit.card(slide, { x: kit.M + i * (ew + 0.3), y: 4.35, w: ew, h: 1.75, title: e.head, titleSize: 14, body: e.body, bodySize: 12.5, pad: 0.15 }));
+  }
   if (s.pending) kit.chip(slide, { x: kit.M, y: 5.85, w: 4.4, h: 0.34, text: s.pending, color: C.accent4, size: 11 });
   if (s.footnote) kit.tx(slide, s.footnote, { x: kit.M, y: 6.3, w: kit.W - 2 * kit.M, h: 0.6, fontSize: 12, color: C.accent5 });
 };
@@ -230,6 +234,24 @@ R.timeline = (ctx, slide, s) => {
     });
   });
   kit.tx(slide, "violet = a Fable critique round", { x: kit.M + 1.3, y: 1.83, w: 4, h: 0.28, fontSize: 11, color: C.accent5 });
+};
+
+R.tiers = (ctx, slide, s) => {
+  const { kit } = ctx;
+  const C = kit.C;
+  header(ctx, slide, s);
+  const gap = 0.3;
+  const total = kit.W - 2 * kit.M - gap * (s.tiers.length - 1);
+  let x = kit.M;
+  const cols = { strong: C.text1, moderate: C.accent5, notyet: C.accent4 };
+  s.tiers.forEach((t) => {
+    const w = total * t.share;
+    const col = cols[t.tone];
+    kit.card(slide, { x, y: 1.8, w, h: 5.05, fill: C.background2 });
+    kit.chip(slide, { x: x + 0.18, y: 1.95, w: w - 0.36, h: 0.36, text: t.head, color: col, size: 12 });
+    kit.bullets(slide, t.items, { x: x + 0.2, y: 2.5, w: w - 0.4, h: 4.25, size: 12.5, gap: 6 });
+    x += w + gap;
+  });
 };
 
 R.checks = (ctx, slide, s) => {

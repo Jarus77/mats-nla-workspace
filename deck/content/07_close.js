@@ -11,6 +11,35 @@ module.exports = [
       "Read top to bottom: sound instruments; a gate that leaves one clean non-workspace feature, which is positional; decoders whose descriptions read workspace features but not col, with two candidate narrow channels; decoders that read the tail of verbalisable features, and an NLA that generates its story from the latent; and a benchmark whose targets are recoverable from the prompt alone.",
   },
   {
+    type: "tiers",
+    section: "Where we stand",
+    kicker: "Strength of evidence",
+    title: "What we can say strongly today, and what we can't",
+    tiers: [
+      { head: "STRONG", tone: "strong", share: 0.42, items: [
+        "WorkspaceBench target information is recoverable from the prompt: 0.89 from prompt vs 0.60 / 0.56 from readouts; prompt + readout 0.88 (n = 400).",
+        "OL's published lead is per-item any-layer selection (+0.08 to +0.22), reproduced exactly.",
+        "The standard J-removal survival test can't tell features apart: all keep ≥ 98%, topic included; random equal-rank removal is identical.",
+        "col is a clean non-J feature under two lenses: causal 49× random; 79% kept after J-removal vs 12–23% for non-count features.",
+        "Method lessons: the dilution artefact and centred steering; a two-sided, calibrated leak detector; the null band, not n, limits power.",
+      ] },
+      { head: "MODERATE", tone: "moderate", share: 0.31, items: [
+        "Non-J content the model uses on Qwen L42 looks like positional bookkeeping (a survey of ~16 gate runs on ~13 features, not a theorem).",
+        "WorkspaceBench's frozen prompt-only floors look ~0.14 too low; cause unknown.",
+        "The NLA confabulates clues that match a planted bridge (12 / 12).",
+      ] },
+      { head: "NOT YET", tone: "notyet", share: 0.27, items: [
+        "Any claim that the readers read non-J content.",
+        "The pilot candidates came after ~514 looks; confirming or rejecting them is the sprint's job.",
+        "Four outcomes and their wording are written in advance.",
+      ] },
+    ],
+    notes:
+      "Before the answer, an honest sort of the evidence. Strong, on full data and robust to the checks we've run: the WorkspaceBench decomposition, 0.89 from the prompt against 0.60 and 0.56 from the readouts, with prompt plus readout at 0.88 on 400 items; the Oracle Lens's published lead being per-item any-layer selection, worth 0.08 to 0.22, reproduced exactly; the survival test failing to separate features, with topic keeping at least 98% and random-rank removal identical; col as a clean non-J feature under two lenses, causal at 49 times random and keeping 79% of its effect after J-removal against 12 to 23% for the non-count features; and the method lessons. " +
+      "Moderate: that non-J content on this model is positional bookkeeping, which is a survey of about sixteen gate runs; the prompt-only floor looking about 0.14 too low, cause unknown; and the NLA confabulating matching clues, 12 of 12, which is a small sample. " +
+      "Not yet: any claim that these readers read non-J content. The pilot candidates came after about 514 looks. Confirming or rejecting them is what the sprint is for, and the four possible outcomes and their wording are already written down.",
+  },
+  {
     type: "branches",
     section: "Where we stand",
     kicker: "Our answer to the title question, on both branches",
@@ -20,7 +49,7 @@ module.exports = [
       { head: "If they don't", answer: "No, on the one natural non-J feature the model uses.", body: "Both decoders read workspace features at the same dose, so the null is interpretable (with the template caveat)." },
     ],
     stands: [
-      "Part A: the standard non-J test is uninformative; non-J content on Qwen L42 looks like positional bookkeeping (a ~12-feature survey).",
+      "Part A: the standard non-J test is uninformative; non-J content on Qwen L42 looks like positional bookkeeping (a ~13-feature survey).",
       "Part D: WorkspaceBench readouts' targets are recoverable from the prompt (0.89 vs 0.60 / 0.56).",
       "Part C: the NLA generates its 'prompt' from the latent (12/12 clue rewrites).",
     ],
@@ -36,17 +65,17 @@ module.exports = [
     type: "checks",
     section: "Where we stand",
     kicker: "Open checks before the pre-registration freezes",
-    title: "Pre-freeze checks: three done, three still open",
+    title: "Pre-freeze checks: four done, one still open",
     checks: [
       { tag: "e", head: "Re-solver consistency: DONE", body: "An instruction mismatch (D22). Same template: prompt 0.89 vs readout 0.60 / 0.56; prompt + readout 0.88.", done: true },
       { tag: "q", head: "q90 behavioural check: DONE", body: "J-removed col push: newline log-odds +0.72 (z +55), wrap −1.55 chars, J-Lens unmoved (D24).", done: true },
       { tag: "t", head: "Natural col vs text: DONE", body: "Text-only Gemini 0.97; the NLA's 0.60 falls to 0.51 after regressing out text (D23).", done: true },
-      { tag: "m", head: "OL mechanism tests: RUNNING", body: "Experiment 09, pilot split: indentation in OL's carrier; gain ratio (OL shift ÷ model shift); tense with the adapter off. Results won't change the predictions." },
+      { tag: "m", head: "OL mechanism (exp 09): DONE", body: "col one-for-one with the model (0.99 / 1.06); tense 4r* tracked where the model's readout is flat. The binary verdict is demoted to 3 descriptive quantities (rev 4.2).", done: true },
       { tag: "d", head: "Class-mean col direction: OPEN", body: "A binary short-vs-long-line direction as robustness next to the regression-covariance direction." },
     ],
     changes: "Confirmatory design (prereg rev 4): P1–P4 · K = 100 nulls per band · Holm over 4 · sign agreement · negatives N1–N5 (TOST) · T1 judge check · fresh items (240 col / 160 tense / 120 language) · freeze Oct 18 with a hash manifest.",
     notes:
-      "Where the pre-freeze checks stand. Done: the re-solver consistency check, the behavioural validation at q90, and the natural-col text baseline.  Running: three tests of the Oracle Lens mechanism. If steering indentation, which the model does not act on, still shifts OL's continuation, OL reads beyond what the model acts on; if the ratio of OL's shift to the model's behavioural shift is constant across col, tense and random directions, that points to re-instatement; and the adapter-off check for tense. Still open too: a class-mean col direction as robustness. The bottom line is the confirmatory design.",
+      "Where the pre-freeze checks stand. Done: the re-solver consistency check, the behavioural validation at q90, and the natural-col text baseline.  Also done: the Oracle Lens mechanism pilot, experiment 09, whose binary verdict we demoted to three descriptive quantities because the test is confounded by context. Still open: a class-mean col direction as robustness. The bottom line is the confirmatory design.",
   },
   {
     type: "grid",
@@ -54,7 +83,7 @@ module.exports = [
     kicker: "Limitations",
     title: "Threats to validity we are tracking, and what addresses each",
     items: [
-      { head: "One non-J feature", body: "No second clean feature in the ~12-feature survey; non-J content looks positional. Stated as a scope limit." },
+      { head: "One non-J feature", body: "No second clean feature in the ~13-feature survey; non-J content looks positional. Stated as a scope limit." },
       { head: "Count-verbalisation gap", body: "Numbers never enter Qwen's J-space (col_report, list index), so there is no in-J count control. The gap stays open; stated as a limitation." },
       { head: "Forking paths", body: "Many looks in the pilot; primaries chosen from it. Fixed by 4 named primaries, Holm, fresh items, templates frozen literally." },
       { head: "Templates and pilot scale", body: "OL tense 0.39–0.87 across templates; pilot numbers are 60 items per feature on a declared, excluded split." },

@@ -237,13 +237,61 @@ module.exports = [
       ["OL descriptive templates (line position, length)", "flat", "flat or anti-tracking", "pre-registered as a negative, with an equivalence test", { label: "NEGATIVE", tone: "diffuse" }],
       ["Free text, both decoders", "—", "—", "0 of 5,760 readouts mention line length", { label: "NEGATIVE", tone: "diffuse" }],
     ],
-    pending: "MECHANISM TEST (EXP 09) RUNNING · PILOT",
-    footnote: "Oracle Lens is the model + a LoRA: it reads what the model reads and says what the model can say. The 78% vs 70% gain match favours re-instatement (the LoRA hands the activation back to Qwen's own newline circuitry) over reporting; indentation, gain-ratio and adapter-off tests are running as a pilot (experiment 09).",
+    footnote: "Oracle Lens is the model + a LoRA: it reads what the model reads and says what the model can say. Mechanism (exp 09, next slide): consistent with re-instatement for col; not a pure re-emission of the model's next-token decision in general. Operative fact: a next-token probability shift in OL's continuation is not a readout anyone would find without already knowing what to measure.",
     notes:
       "This slide retracts a sentence from round 5. We had said neither decoder reads col 'in any phrasing'. That rested on fixed templates. With native, mined phrasings, two narrow channels do follow the J-removed col direction, leak-free. " +
-      "The Oracle Lens's next-token continuation channel, scoring 'a newline comes next' versus 'another word', tracks col: 0.76 on the raw direction at z +6.6, and 0.67 to 0.72 with the top-1,536 J-space removed, at a conservative z of about +3.9. The shift is linear in dose, and with the adapter switched off, base Qwen in the same carrier prompt slightly anti-tracks (0.40 to 0.44), so it needs the LoRA. But the Oracle Lens is the model plus a LoRA: it reads what the model reads and says what the model can say. J-removal keeps about 78% of its shift per unit dose, close to the model's own behavioural 70%. That favours re-instatement: the LoRA hands the activation back to Qwen's own next-token circuitry, which predicts a newline, rather than the Oracle Lens reporting line position. Every descriptive Oracle Lens col template is flat or anti-tracking. And a newline-probability shift is only useful if you already know to measure it, so it isn't an interpretability readout. " +
+      "The Oracle Lens's next-token continuation channel, scoring 'a newline comes next' versus 'another word', tracks col: 0.76 on the raw direction at z +6.6, and 0.67 to 0.72 with the top-1,536 J-space removed, at a conservative z of about +3.9. The shift is linear in dose, and with the adapter switched off, base Qwen in the same carrier prompt slightly anti-tracks (0.40 to 0.44), so it needs the LoRA. But the Oracle Lens is the model plus a LoRA: it reads what the model reads and says what the model can say. J-removal keeps about 78% of its shift per unit dose, close to the model's own behavioural 70%. That pointed towards re-instatement: the LoRA hands the activation back to Qwen's own next-token circuitry, which predicts a newline. The next slide shows what experiment 09 found. Every descriptive Oracle Lens col template is flat or anti-tracking. And a newline-probability shift is only useful if you already know to measure it, so it isn't an interpretability readout. " +
       "The NLA has one phrasing, 'near the end of a hard-wrapped line', at 0.63 on the primary q90 cell, borderline, and 0.67 at the r11 sensitivity dose. " +
       "These are candidates, not findings, for the reason on the next slide.",
+  },
+  {
+    type: "chart",
+    section: "Part B",
+    kicker: "Part B · OL mechanism (experiment 09)",
+    title: "OL's col channel moves one-for-one with the model's newline decision, but it also tracks tense the model doesn't act on",
+    pilot: true,
+    chart: {
+      kind: "bar",
+      categories: ["col raw", "col J-removed (4r*)", "random dir. C", "random dir. D", "tense raw"],
+      series: [{ name: "gain ratio = OL continuation shift ÷ model behavioural shift (r108)", values: [0.99, 1.06, 1.65, 1.89, 3.4] }],
+      pointColors: ["probe", "probe", "muted", "muted", "jl"],
+      lines: [{ name: "one-for-one (1.0)", value: 1.0, color: "nla" }],
+      min: 0, max: 4, fmt: "0.00", labels: true, legend: false,
+      title: "Gain ratio by direction (tense 4r* undefined: the model's readout doesn't move)",
+    },
+    chartW: 6.9,
+    side: {
+      rows: [
+        { head: "col", body: "ratio 0.99 [0.83, 1.20] / 1.06 [0.89, 1.26]; J-removal keeps 0.79 (OL) vs 0.75 (model)", color: "probe" },
+        { head: "tense 4r*", body: "OL tracks (z +12 to +16); the model's next-token tense readout is flat (−0.04 nats)", color: "jl" },
+        { head: "indentation", body: "sub-threshold (z +2.7), trending; the model's readout flat", color: "muted" },
+        { head: "adapter off", body: "kills both col and tense: the channel needs the LoRA", color: "ol" },
+      ],
+      note: "Wording (fixed, D30): consistent with re-instatement for col; the channel is not a pure re-emission of the model's measured next-token decision in general. Either way, a next-token probability shift in OL's continuation is not a readout anyone would find without already knowing what to measure.",
+    },
+    notes:
+      "Experiment 09 tested the Oracle Lens mechanism on a fresh pilot split, again excluded from the main analysis. The gain ratio divides the Oracle Lens's continuation shift by the model's own behavioural shift for the same edit on the same item. For col it is one-for-one: 0.99 for the raw direction and 1.06 for the J-removed one, and J-removal keeps 79% of the Oracle Lens's effect against 75% of the model's, replicating round 5. That is what re-instatement looks like: the LoRA hands the activation back to Qwen's newline circuitry. " +
+      "But it is not constant across directions: two random directions with real behavioural effects give 1.65 and 1.89, raw tense 3.40. And on J-removed tense the Oracle Lens tracks strongly, z +12 to +16, while the model's next-token tense readout doesn't move at all. Indentation, which the model doesn't act on, is sub-threshold at z +2.7 but trending. Switching the adapter off kills both the col and tense channels. " +
+      "The wording we fixed: consistent with re-instatement for col; the channel is not a pure re-emission of the model's measured next-token decision in general. And the operative fact for Neel, whichever way the mechanism falls: a next-token probability shift in the Oracle Lens's continuation is not a readout anyone would find without already knowing what to measure.",
+  },
+  {
+    type: "grid",
+    section: "Part B",
+    kicker: "Part B · why the acting-vs-reading test can't decide (disclosed)",
+    title: "Why the acting-vs-reading test can't decide, and what replaces it",
+    items: [
+      { head: "Different contexts", body: "The model's shift is measured in the original text, OL's in its carrier prompt. Under pure re-instatement the gain ratio is a ratio of context sensitivities, so it varies by direction." },
+      { head: "Indentation", body: "In natural text the next line's indent is overridden by copying the previous line's whitespace; the carrier has no previous line. 'OL moves, model doesn't' is compatible with acting." },
+      { head: "Tense", body: "Tense surfaces at the next verb, not necessarily the next token, so a flat next-token readout doesn't show the model ignores it." },
+      { head: "Disclosed", body: "The binary acting/reading criterion was dropped after the pilot because the test is confounded by context. Prereg §1.4 says so." },
+      { head: "3 descriptive quantities", body: "(i) col's gain ratio with CI; (ii) J-removal retention, OL vs model; (iii) OL's response on directions the model doesn't act on." },
+      { head: "Valid denominators only", body: "A direction enters only if the model's behavioural shift is ≥ +3 z; fixed dose 0.108 of ‖h‖. No new acting criterion." },
+      { head: "Post-sprint test 1", body: "Carrier-matched behaviour: steer at L42 inside OL's carrier with the adapter off, so both shifts share a context." },
+      { head: "Post-sprint test 2", body: "Ablate the model's newline-decision components inside OL's forward pass and see whether the continuation shift survives." },
+    ],
+    notes:
+      "Why can't the gain-ratio test decide between acting and reading? Fable round 8 pointed out a confound. We measure the model's shift in the original text and the Oracle Lens's shift in its carrier prompt. Even under pure re-instatement the ratio is the carrier's sensitivity divided by the original context's sensitivity, which naturally varies by direction; the random directions at 1.7 to 1.9 mostly show that the carrier is a more perturbable context. 'OL moves where the model doesn't' is also compatible with acting: in natural text indentation is overridden by copying the previous line's whitespace, and the carrier has no previous line; and tense shows up at the next verb rather than the next token. " +
+      "So we dropped the binary verdict, disclosed that we did so after the pilot, and replaced it with three descriptive quantities, with a valid-denominator rule and a fixed dose, and deliberately no new acting criterion, which would look tuned. Two cleaner mechanism tests are post-sprint: a carrier-matched behavioural measure, and ablating the model's newline-decision components inside the Oracle Lens's forward pass.",
   },
   {
     type: "grid",
@@ -279,10 +327,16 @@ module.exports = [
       [{ text: "P3", bold: true }, "Oracle Lens", "tense (+ = past), 02 class-mean direction; Δ = 5.228 (≈ 0.059)", "'- They were / are'; '- The village had / has'; '- It was / is'", "0.66, z +12.5 / +16.6", "0.90"],
       [{ text: "P4", bold: true }, "NLA", "same as P3", "'Historical / Descriptive register'; '… factual'; '… tone'", "0.59, z +7.5 / +9.2", "0.85"],
     ],
+    extras: [
+      { head: "Behaviour at P3 / P4 (rev 4.2)", body: "Tense of the next verb in a ≤ 32-token greedy continuation in the original context, tagged by spaCy en_core_web_lg 3.8.0. Changed because the pilot's next-token readout was flat." },
+      { head: "1b, if the model acts on it", body: "\"OL carries col only in its continuation channel, one-for-one with the model's newline decision; the same channel tracks distributed tense content the model uses.\"" },
+      { head: "1b, if it doesn't", body: "\"…; the same channel also tracks tense content the model doesn't act on, by two measures, so it is not merely the model's decision re-emitted.\"" },
+    ],
     footnote: "Claim = z ≥ 3 vs both bands (K = 100 each) and beats all 100 nulls · Holm over 4 · sign agreement with the declared-secondary family · not void (leak, FVE). Also pre-registered: PC1/PC2 positive controls (language, tense, r11), negatives N1–N5 (TOST, SESOI AUROC 0.55), template-free judge check T1. Honest prediction: P1's family-mean z is only +2.5–2.9, so winner's-curse shrinkage may fail it.",
     notes:
       "This is how we'll confirm it, from prereg revision 4. Four primary cells, each fully specified now: reader, direction, dose and the literal template strings. P1, the NLA's col template; P2, the Oracle Lens's next-token continuation pairs; P3 and P4, J-removed tense for the Oracle Lens and the NLA. All at layer 42, centred steering, top-1,536 J-space removed, 90th-percentile dose. " +
       "A primary is claimed only if its z is at least 3 against both null bands, each built from 100 random directions, it beats all 100, it survives Holm over four, its declared family of neighbouring cells agrees in sign, and it isn't voided by the leak or FVE guard. Around them: two positive controls, language and tense at matched norm; five pre-registered negatives for the Oracle Lens's descriptive col templates, tested for equivalence with a smallest effect of interest of AUROC 0.55; and a template-free judge check over 6,720 free readouts. " +
+      "Revision 4.2 also fixes the behavioural measure for the tense cells: the tense of the next verb in a greedy continuation of up to 32 tokens, tagged by spaCy en_core_web_lg 3.8.0, because the next-token readout was flat in the pilot. And the Branch 1b sentence is now conditional on that measure: if the model acts on J-removed tense, the Oracle Lens channel tracks distributed tense content the model uses; if not, it is reader sensitivity to a direction the model doesn't act on, by two measures. " +
       "Power comes from the band, not n: going from 60 to 240 items moves P1's binding z by about 0.1. And the honest prediction: P1 sits only 0.5 SD above the bar in the pilot and its family mean is z +2.5 to +2.9, so winner's-curse shrinkage may well fail it. Our priors say so: 0.35 for P1, 0.55 for P2, 0.85 to 0.90 for the tense cells.",
   },
   {

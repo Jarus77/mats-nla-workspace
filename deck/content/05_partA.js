@@ -95,7 +95,7 @@ module.exports = [
   {
     type: "chart",
     section: "Part A",
-    kicker: "Part A · a survey of ~12 features (experiments 02 + 04)",
+    kicker: "Part A · a survey of ~13 features (experiments 02 + 04)",
     title: "Survey: no natural non-count feature is outside J; the non-J content Qwen uses looks like positional bookkeeping",
     chart: {
       kind: "bar",
