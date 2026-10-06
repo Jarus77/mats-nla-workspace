@@ -1,4 +1,4 @@
-"""Download the sprint's weights into the `mats-weights` volume (HF cache layout under /weights/hf).
+"""Download the sprint's weights into the `rfm-weights` volume (HF cache layout under /weights/hf).
 
     modal run --detach infra/download_weights.py              # all repos, one container each
     modal run --detach infra/download_weights.py --only qwen  # a subset by key (comma-separated)

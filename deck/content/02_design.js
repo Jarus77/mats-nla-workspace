@@ -78,7 +78,7 @@ module.exports = [
     ],
     pushback: "We pushed back too: a linear probe is a reference, not a ceiling; the FVE out-of-distribution check is partly circular (the reconstructor was co-trained).",
     notes:
-      "A word on process, because it shaped the results. I ran the engineering in Claude Code with parallel agents doing gates and experiments, logged every decision (D1 to D20 so far), and after each block handed a write-up to 'Fable', a separate model instance acting as an adversarial research guide, asked to be blunt. " +
+      "A word on process, because it shaped the results. I ran the engineering with parallel coding agents doing gates and experiments, logged every decision (D1 to D20 so far), and after each block handed a write-up to 'Fable', a separate model instance acting as an adversarial research guide, asked to be blunt. " +
       "Four critiques changed the design. Round 1: my four attribution buckets weren't a partition, which gave us the 2×2. Round 2: steering upstream at layer 38 can let the model move non-J content into the J-space before the read layer, a hole I'd missed; fix: J-removed directions, a leak detector, and steering at the read layer. Round 3: once we noticed the standard non-J test passes topic, Fable helped design the calibrated gate. And the ± contrast isn't immune to dilution, which led to centred steering and made an apparent Oracle Lens effect disappear. " +
       "It wasn't one-way: I pushed back that a linear probe is a reference, not a ceiling, and that using the NLA's own reconstructor as an out-of-distribution detector is partly circular. Both were accepted.",
   },

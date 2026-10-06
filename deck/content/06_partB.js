@@ -237,7 +237,8 @@ module.exports = [
       ["OL descriptive templates (line position, length)", "flat", "flat or anti-tracking", "pre-registered as a negative, with an equivalence test", { label: "NEGATIVE", tone: "diffuse" }],
       ["Free text, both decoders", "—", "—", "0 of 5,760 readouts mention line length", { label: "NEGATIVE", tone: "diffuse" }],
     ],
-    footnote: "Oracle Lens is the model + a LoRA: it reads what the model reads and says what the model can say. The 78% vs 70% gain match favours re-instatement (the LoRA hands the activation back to Qwen's own newline circuitry) over reporting; tests are running.",
+    pending: "MECHANISM TEST (EXP 09) RUNNING · PILOT",
+    footnote: "Oracle Lens is the model + a LoRA: it reads what the model reads and says what the model can say. The 78% vs 70% gain match favours re-instatement (the LoRA hands the activation back to Qwen's own newline circuitry) over reporting; indentation, gain-ratio and adapter-off tests are running as a pilot (experiment 09).",
     notes:
       "This slide retracts a sentence from round 5. We had said neither decoder reads col 'in any phrasing'. That rested on fixed templates. With native, mined phrasings, two narrow channels do follow the J-removed col direction, leak-free. " +
       "The Oracle Lens's next-token continuation channel, scoring 'a newline comes next' versus 'another word', tracks col: 0.76 on the raw direction at z +6.6, and 0.67 to 0.72 with the top-1,536 J-space removed, at a conservative z of about +3.9. The shift is linear in dose, and with the adapter switched off, base Qwen in the same carrier prompt slightly anti-tracks (0.40 to 0.44), so it needs the LoRA. But the Oracle Lens is the model plus a LoRA: it reads what the model reads and says what the model can say. J-removal keeps about 78% of its shift per unit dose, close to the model's own behavioural 70%. That favours re-instatement: the LoRA hands the activation back to Qwen's own next-token circuitry, which predicts a newline, rather than the Oracle Lens reporting line position. Every descriptive Oracle Lens col template is flat or anti-tracking. And a newline-probability shift is only useful if you already know to measure it, so it isn't an interpretability readout. " +
@@ -251,18 +252,38 @@ module.exports = [
     title: "Forking paths, disclosed: the pilot had many looks, so the main run confirms four named primaries",
     pilot: true,
     items: [
-      { head: "Many looks", body: "Across rounds the pilot tested many templates × directions × doses. The two candidates are exactly what selection could produce." },
-      { head: "Primaries from the pilot", body: "f07 templates were frozen and the continuation pair fixed before scoring, but the specific primaries were picked after seeing pilot data. The prereg says so." },
+      { head: "Many looks", body: "≈ 514 template-level cells and ≈ 2,000 z-values inspected across three pilot rounds. ≈ 0.5 false z ≥ 3 col cells expected by chance." },
+      { head: "Primaries from the pilot", body: "P1 = the best of 11 NLA col templates; P2 = the only OL col family with signal. Chosen after seeing pilot data; the prereg says so." },
       { head: "4 primaries, Holm", body: "NLA col (named template, q90, 4r*), OL col (continuation, q90, 4r*), OL tense 4r*, NLA tense 4r*. Holm over 4." },
-      { head: "Claim criterion", body: "|z| ≥ 3 against both null bands after Holm, and the declared-secondary family mean agrees in sign." },
-      { head: "Fresh items", body: "Effect sizes with CIs on items never used in the pilot or template mining. Everything else is exploratory and labelled." },
+      { head: "Claim criterion", body: "z ≥ 3 against both bands (K = 100 null directions each), Holm over 4, sign agreement with the declared-secondary family." },
+      { head: "Fresh items", body: "240 col, 160 tense, 120 language passages, disjoint from the pilot and template mining. No pilot number enters a test." },
       { head: "Templates frozen literally", body: "No more mining, no new families." },
-      { head: "Pre-registered negatives", body: "OL descriptive col templates flat, with an equivalence test and a declared SESOI." },
-      { head: "Template-free check", body: "A pre-written judge question over free NLA readouts on fresh items: 'does this mention position within a line or line length?'" },
+      { head: "Pre-registered negatives", body: "OL descriptive col families N1–N5 flat: TOST, SESOI AUROC 0.55 (fraction of probe 0.10)." },
+      { head: "Template-free check (T1)", body: "Two judges, one pre-written yes/no question, 6,720 free readouts on 120 fresh col passages." },
     ],
     notes:
-      "I want to be upfront about forking paths. Across rounds the pilot tested many templates, two directions and several doses. Two positives out of that many looks is exactly what selection could produce, even though the template families were frozen and the continuation pair fixed before scoring. " +
-      "So the main run names four primaries in advance: the NLA's col template and the Oracle Lens's continuation channel, both at q90 on the J-removed direction, plus J-removed tense for each decoder. Holm correction over four, |z| of at least 3 against both bands, and the secondary family has to agree in sign. Fresh items, effect sizes with intervals, templates frozen literally. Two pre-registered negatives and a template-free judge check on free readouts. Anything else is exploratory and labelled as such.",
+      "I want to be upfront about forking paths. Across three pilot rounds we scored about 514 template-level cells and looked at roughly 2,000 z-values. Under a normal band about half a false z-of-3 col cell is expected by chance, and we saw two clusters. P1 is the single best of 11 NLA col templates; P2 is the only Oracle Lens col family with any signal, fixed before its round was scored. So these are hypotheses, and we expect them to shrink on fresh items. " +
+      "The main run therefore names four primaries in advance, uses 100 null directions per band, Holm over four, requires sign agreement with a declared family of neighbouring cells, and runs on fresh, passage-disjoint items: 240 col, 160 tense, 120 language. No pilot number enters any confirmatory test. Two pre-registered negatives use equivalence tests, and a template-free judge check reads free text.",
+  },
+  {
+    type: "table",
+    section: "Part B",
+    kicker: "How we'll confirm it · prereg revision 4",
+    title: "Four pre-registered primaries, tested once on fresh items; P1 may well fail",
+    columns: ["ID", "Reader", "Cell (all L42, centred, top-1,536 J-space removed, q90)", "Frozen template(s), + vs −", "Pilot (excluded)", "Prior"],
+    colW: [0.55, 1.15, 3.0, 4.35, 1.7, 1.35],
+    small: true,
+    rows: [
+      [{ text: "P1", bold: true }, "NLA", "col, 02 covariance direction; Δ = 7.098 (≈ 0.079 of ‖h‖)", "'Mid-sentence continuation located near the end / at the beginning of a hard-wrapped line.'", "0.63, z +5.6 / +3.5", "0.35"],
+      [{ text: "P2", bold: true }, "Oracle Lens", "same as P1", "'- ↵the' vs '- the'; '- ↵and' vs '- and'; '- ↵of' vs '- of' (↵ = newline; mean of 3)", "0.67, z +3.9 / +3.9", "0.55"],
+      [{ text: "P3", bold: true }, "Oracle Lens", "tense (+ = past), 02 class-mean direction; Δ = 5.228 (≈ 0.059)", "'- They were / are'; '- The village had / has'; '- It was / is'", "0.66, z +12.5 / +16.6", "0.90"],
+      [{ text: "P4", bold: true }, "NLA", "same as P3", "'Historical / Descriptive register'; '… factual'; '… tone'", "0.59, z +7.5 / +9.2", "0.85"],
+    ],
+    footnote: "Claim = z ≥ 3 vs both bands (K = 100 each) and beats all 100 nulls · Holm over 4 · sign agreement with the declared-secondary family · not void (leak, FVE). Also pre-registered: PC1/PC2 positive controls (language, tense, r11), negatives N1–N5 (TOST, SESOI AUROC 0.55), template-free judge check T1. Honest prediction: P1's family-mean z is only +2.5–2.9, so winner's-curse shrinkage may fail it.",
+    notes:
+      "This is how we'll confirm it, from prereg revision 4. Four primary cells, each fully specified now: reader, direction, dose and the literal template strings. P1, the NLA's col template; P2, the Oracle Lens's next-token continuation pairs; P3 and P4, J-removed tense for the Oracle Lens and the NLA. All at layer 42, centred steering, top-1,536 J-space removed, 90th-percentile dose. " +
+      "A primary is claimed only if its z is at least 3 against both null bands, each built from 100 random directions, it beats all 100, it survives Holm over four, its declared family of neighbouring cells agrees in sign, and it isn't voided by the leak or FVE guard. Around them: two positive controls, language and tense at matched norm; five pre-registered negatives for the Oracle Lens's descriptive col templates, tested for equivalence with a smallest effect of interest of AUROC 0.55; and a template-free judge check over 6,720 free readouts. " +
+      "Power comes from the band, not n: going from 60 to 240 items moves P1's binding z by about 0.1. And the honest prediction: P1 sits only 0.5 SD above the bar in the pilot and its family mean is z +2.5 to +2.9, so winner's-curse shrinkage may well fail it. Our priors say so: 0.35 for P1, 0.55 for P2, 0.85 to 0.90 for the tense cells.",
   },
   {
     type: "anchor",

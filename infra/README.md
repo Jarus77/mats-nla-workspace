@@ -6,7 +6,7 @@ repo root with the `infra/` prefix); `modal_common.py` is shipped to containers 
 
 | File | What it does |
 |---|---|
-| `modal_common.py` | Volumes (`mats-weights` at `/weights`, `mats-results` at `/results`), the download image and the GPU image (pins match WorkspaceBench's `uv.lock`), HF env |
+| `modal_common.py` | Volumes (`rfm-weights` at `/weights`, `rfm-results` at `/results`), the download image and the GPU image (pins match WorkspaceBench's `uv.lock`), HF env |
 | `download_weights.py` | App `mats-download-weights`: one CPU container per repo, `snapshot_download` into `/weights/hf` (HF cache layout), commits the volume after each repo |
 | `smoke_test.py` | App `mats-smoke-test`: H100, loads Qwen3.6-27B bf16 offline, chat prompt with `enable_thinking=False`, hooks the layer-42 residual, generates 20 tokens, reports peak memory, writes `/results/smoke_test.json` |
 
@@ -49,8 +49,8 @@ Monitor:
 ```bash
 modal app list | grep mats              # state of mats-download-weights
 modal app logs <app-id>                 # per-repo "[key] done -> ... volume committed" lines
-modal volume ls mats-weights hf/hub     # one models--*/datasets--* dir per repo
-modal volume ls mats-weights hf/hub/models--Qwen--Qwen3.6-27B/snapshots
+modal volume ls rfm-weights hf/hub     # one models--*/datasets--* dir per repo
+modal volume ls rfm-weights hf/hub/models--Qwen--Qwen3.6-27B/snapshots
 ```
 
 ## 2. Use the weights from any function
@@ -77,7 +77,7 @@ Write outputs to `/results/...` and call `VOLUMES["/results"].commit()`.
 cd infra
 modal run smoke_test.py               # H100
 modal run smoke_test.py --gpu H200
-modal volume get mats-results smoke_test.json -
+modal volume get rfm-results smoke_test.json -
 ```
 
 Result of the first run (2026-10-05, app `ap-tJHdz5HKQO8UkaZGoaOHQV`, H100 80GB):

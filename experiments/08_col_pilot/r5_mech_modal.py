@@ -5,7 +5,7 @@ or does the injected vector act through the plain Qwen LM in OL's carrier prompt
 r5 (r5_spec.pt, col set, centred construction), scored with the adapter DISABLED (ol.base()), plus an
 adapter-on re-score of the real cells (reproduction check), plus a J-Lens content-token leak check.
 
-    modal run r5_mech_modal.py          -> mats-results:/08_col_pilot/r5_mech.pt, copied to results/08_col_pilot/
+    modal run r5_mech_modal.py          -> rfm-results:/08_col_pilot/r5_mech.pt, copied to results/08_col_pilot/
 """
 import time
 from pathlib import Path
@@ -78,4 +78,4 @@ def main() -> None:
 
     print(mech.remote())
     dst = Path(__file__).resolve().parent / "results" / "08_col_pilot"
-    subprocess.run(["modal", "volume", "get", "--force", "mats-results", "08_col_pilot/r5_mech.pt", str(dst)], check=False)
+    subprocess.run(["modal", "volume", "get", "--force", "rfm-results", "08_col_pilot/r5_mech.pt", str(dst)], check=False)

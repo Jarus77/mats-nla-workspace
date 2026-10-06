@@ -52,7 +52,7 @@ module.exports = [
     side: {
       stats: [
         { value: "12 / 12", label: "published values inside our 95% bootstrap CIs (largest gap: NLA multihop 0.15 vs 0.22, CI edge)", color: "ink" },
-        { value: "$2.80", label: "OpenRouter + ~1.5 GPU-h on Modal for the full replication", color: "ink", size: 30 },
+        { value: "$2.80", label: "of API calls plus ~1.5 GPU-h for the full replication", color: "ink", size: 30 },
       ],
       bullets: ["Protocol as published: Oracle Lens and J-Lens best-of-11 layers; NLA at layer 42 only."],
     },

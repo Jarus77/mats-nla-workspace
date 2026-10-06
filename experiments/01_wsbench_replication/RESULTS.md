@@ -14,7 +14,7 @@ which is unused here). Judges: the regex instrument of record `mt-regex-2026-09-
 | arm | artifact | layers produced | GPU |
 |---|---|---|---|
 | olens | `agu18dec/olens_and_ar:olens_s3d_rl600`, byte-identical to the gated default (subclass `OLensBatched.bind`) | 20..60 step 4 + 42 (12) | H100 |
-| jlens | `neuronpedia/jacobian-lens` n1000 wikitext (downloaded to `mats-weights` by `download_jlens`) | 20..60 step 4 + 42 | H200 (it OOMs an H100) |
+| jlens | `neuronpedia/jacobian-lens` n1000 wikitext (downloaded to `rfm-weights` by `download_jlens`) | 20..60 step 4 + 42 | H200 (it OOMs an H100) |
 | nla | `ceselder/qwen3.6-27b-nla-rl`, `av_rl_adapters/iter_000400` (wsbench default) | 42 (block-42 output) | H200 |
 
 - **Same code as the bench.** Rendering, capture, carrier prompts, injection and sampling

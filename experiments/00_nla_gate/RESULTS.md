@@ -3,7 +3,7 @@
 Date 2026-10-05. Model: Qwen3.6-27B. Reader: `ceselder/qwen3.6-27b-nla-rl` (snapshot `5a13b7e`).
 All numbers come from Modal runs on the 64 activations in `data/example_activations.parquet`
 (FineFineWeb text, the activation taken at the last token of `detokenized_text_truncated`).
-Raw outputs are in `results/*.json` and on the `mats-results` volume under `/results/00_nla_gate/`.
+Raw outputs are in `results/*.json` and on the `rfm-results` volume under `/results/00_nla_gate/`.
 
 ## K0 verdict: layer convention
 

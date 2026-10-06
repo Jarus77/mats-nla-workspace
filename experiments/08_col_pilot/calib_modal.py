@@ -296,6 +296,6 @@ def main(skip_build: bool = False, skip_prep: bool = False, ol_chunks: int = 7, 
         except Exception as e:  # noqa: BLE001
             summary["jobs"].append({"error": repr(e)[:2000]})
     print(json.dumps(summary["jobs"], indent=1, default=str))
-    subprocess.run(["modal", "volume", "get", "--force", "mats-results", "08_col_pilot", str(here / "results")],
+    subprocess.run(["modal", "volume", "get", "--force", "rfm-results", "08_col_pilot", str(here / "results")],
                    check=False)
     (here / "results" / "calib_run_summary.json").write_text(json.dumps(summary, indent=1, default=str))

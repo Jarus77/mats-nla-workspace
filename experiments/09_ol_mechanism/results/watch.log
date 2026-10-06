@@ -1,0 +1,45 @@
+prep done
+run spawned
+prep done
+behave:codeNL done
+behave:codeIN done
+behave:col ERR RemoteError('')
+behave:tense done
+tense_r5 ERR RemoteError('')
+score_ol:codeNL:0:on ERR RemoteError("Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 550.00 MiB. GPU 0 has a total 
+score_ol:codeNL:1:on ERR RemoteError("Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 550.00 MiB. GPU 0 has a total 
+score_ol:codeIN:0:on ERR RemoteError('')
+score_ol:codeIN:1:on ERR RemoteError('')
+score_ol:col:0:on ERR RemoteError('')
+score_ol:col:1:on ERR RemoteError('')
+score_ol:col:2:on ERR RemoteError('')
+score_ol:col:3:on ERR RemoteError('')
+score_ol:col:4:on ERR RemoteError('')
+score_ol:col:5:on ERR RemoteError('')
+score_ol:tense:0:on ERR RemoteError('')
+score_ol:tense:1:on ERR RemoteError('')
+score_ol:tense:2:on ERR RemoteError('')
+score_ol:tense:3:on ERR RemoteError('')
+score_ol:tense:4:on ERR RemoteError('')
+score_ol:tense:5:on ERR RemoteError('')
+score_ol:tense:6:on ERR RemoteError('')
+score_ol:codeNL:0:off ERR RemoteError('')
+score_ol:codeNL:1:off ERR RemoteError('')
+score_ol:codeIN:0:off ERR RemoteError('')
+score_ol:codeIN:1:off ERR RemoteError('')
+score_ol:col:0:off ERR RemoteError('')
+score_ol:col:1:off ERR RemoteError('')
+score_ol:col:2:off ERR RemoteError('')
+score_ol:col:3:off ERR RemoteError('')
+score_ol:col:4:off ERR RemoteError('')
+score_ol:col:5:off ERR RemoteError('')
+score_ol:tense:0:off ERR RemoteError('')
+score_ol:tense:1:off ERR RemoteError('')
+score_ol:tense:2:off ERR RemoteError('')
+score_ol:tense:3:off ERR RemoteError('')
+score_ol:tense:4:off ERR RemoteError('')
+score_ol:tense:5:off ERR RemoteError('')
+score_ol:tense:6:off ERR RemoteError('')
+collected 39
+✓ Finished downloading files to local!
+WATCH_DONE

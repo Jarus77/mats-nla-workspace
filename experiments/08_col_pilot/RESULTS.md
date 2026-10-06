@@ -250,7 +250,7 @@ into direction-to-direction variance and item noise:
   `fve` ×4, `gen_ol`). Run with `modal run pilot_modal.py`.
 - `analyze.py`: produces `results/metrics.json` and `results/analyze_stdout.txt`.
 - `results/null_floor.py`: produces `results/null_floor.txt` (direction-limited null bands).
-- Raw outputs: `results/08_col_pilot/*.pt`, also on volume `mats-results:/08_col_pilot/`. Plus
+- Raw outputs: `results/08_col_pilot/*.pt`, also on volume `rfm-results:/08_col_pilot/`. Plus
   `results/run.log` and `run_summary.json`.
 
 

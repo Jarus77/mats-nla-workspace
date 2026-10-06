@@ -1,0 +1,39 @@
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-hHGk7TANNYXHueFrs68nBK
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/09_ol_mechani
+│   sm/o9_modal.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   r5_lib.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   calib_items.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   pilot_lib.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   pilot_items.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:o9_templates, PythonPackage:o9_items, PythonPackage:o9_lib
+├── 🔨 Created function prep.
+├── 🔨 Created function behave.
+├── 🔨 Created function score_ol.
+├── 🔨 Created function tense_r5.
+└── 🔨 Created function build_items.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+✓ Finished downloading files to local!
+{'col': 80, 'sel': 60, 'tense': 80, 'codeNL': 80, 'codeIN': 80, 'codeTR': 400} {'n_used_heads': 41425, 'n_used_sha': 380, 'code_skip_used': 0, 'built_at': '2026-10-06T01:00:18Z'}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-hHGk7TANNYXHueFrs68nBK

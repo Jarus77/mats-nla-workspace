@@ -1,0 +1,416 @@
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-WVmXWZ4aIOuzU0RW9YXyXt
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/09_ol_mechani
+│   sm/o9_modal.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   r5_lib.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   pilot_items.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   pilot_lib.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   calib_items.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:o9_templates, PythonPackage:o9_items, PythonPackage:o9_lib
+├── 🔨 Created function prep.
+├── 🔨 Created function behave.
+├── 🔨 Created function score_ol.
+├── 🔨 Created function tense_r5.
+└── 🔨 Created function build_items.
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:01<25:33,  1.80s/it]
+[1ALoading weights:   2%|▏         | 13/851 [00:01<01:32,  9.07it/s]
+[1ALoading weights:   2%|▏         | 19/851 [00:02<01:02, 13.38it/s]
+[1ALoading weights:   3%|▎         | 27/851 [00:02<00:40, 20.14it/s]
+[1ALoading weights:   4%|▍         | 33/851 [00:02<00:34, 24.04it/s]
+[1ALoading weights:   5%|▍         | 40/851 [00:02<00:26, 31.11it/s]
+[1ALoading weights:   5%|▌         | 46/851 [00:02<00:28, 27.79it/s]
+[1ALoading weights:   6%|▌         | 51/851 [00:02<00:27, 28.90it/s]
+[1ALoading weights:   7%|▋         | 61/851 [00:02<00:19, 40.55it/s]
+[1ALoading weights:   8%|▊         | 67/851 [00:03<00:23, 33.54it/s]
+[1ALoading weights:   9%|▉         | 80/851 [00:03<00:18, 42.58it/s]
+[1ALoading weights:  11%|█         | 91/851 [00:03<00:14, 50.88it/s]
+[1ALoading weights:  11%|█▏        | 97/851 [00:03<00:17, 43.07it/s]
+[1ALoading weights:  12%|█▏        | 102/851 [00:03<00:18, 39.94it/s]
+[1ALoading weights:  13%|█▎        | 114/851 [00:04<00:13, 52.95it/s]
+[1ALoading weights:  14%|█▍        | 121/851 [00:04<00:16, 44.79it/s]
+[1ALoading weights:  16%|█▌        | 133/851 [00:04<00:13, 55.14it/s]
+[1ALoading weights:  16%|█▋        | 140/851 [00:04<00:12, 54.96it/s]
+[1ALoading weights:  17%|█▋        | 147/851 [00:04<00:13, 52.73it/s]
+[1ALoading weights:  18%|█▊        | 153/851 [00:04<00:16, 41.61it/s]
+[1ALoading weights:  19%|█▉        | 160/851 [00:05<00:15, 43.90it/s]
+[1ALoading weights:  20%|██        | 171/851 [00:05<00:12, 55.60it/s]
+[1ALoading weights:  21%|██        | 178/851 [00:05<00:13, 48.27it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:05<00:12, 51.18it/s]
+[1ALoading weights:  23%|██▎       | 192/851 [00:05<00:13, 49.42it/s]
+[1ALoading weights:  24%|██▎       | 200/851 [00:05<00:12, 52.88it/s]
+[1ALoading weights:  24%|██▍       | 206/851 [00:06<00:15, 40.56it/s]
+[1ALoading weights:  25%|██▌       | 213/851 [00:06<00:14, 43.20it/s]
+[1ALoading weights:  26%|██▋       | 224/851 [00:06<00:11, 56.72it/s]
+[1ALoading weights:  27%|██▋       | 231/851 [00:06<00:12, 49.49it/s]
+[1ALoading weights:  28%|██▊       | 239/851 [00:06<00:11, 51.51it/s]
+[1ALoading weights:  29%|██▉       | 245/851 [00:06<00:12, 48.11it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:06<00:11, 52.54it/s]
+[1ALoading weights:  30%|███       | 259/851 [00:07<00:16, 36.18it/s]
+[1ALoading weights:  32%|███▏      | 275/851 [00:07<00:10, 56.31it/s]
+[1ALoading weights:  33%|███▎      | 283/851 [00:07<00:11, 49.80it/s]
+[1ALoading weights:  34%|███▍      | 292/851 [00:07<00:10, 53.26it/s]
+[1ALoading weights:  35%|███▌      | 299/851 [00:07<00:10, 52.15it/s]
+[1ALoading weights:  36%|███▌      | 306/851 [00:07<00:10, 51.93it/s]
+[1ALoading weights:  37%|███▋      | 312/851 [00:08<00:13, 40.53it/s]
+[1ALoading weights:  37%|███▋      | 319/851 [00:08<00:12, 43.38it/s]
+[1ALoading weights:  39%|███▉      | 331/851 [00:08<00:09, 53.88it/s]
+[1ALoading weights:  40%|███▉      | 337/851 [00:08<00:09, 51.92it/s]
+[1ALoading weights:  41%|████      | 345/851 [00:08<00:09, 54.51it/s]
+[1ALoading weights:  41%|████      | 351/851 [00:08<00:09, 52.37it/s]
+[1ALoading weights:  42%|████▏     | 359/851 [00:09<00:09, 52.92it/s]
+[1ALoading weights:  43%|████▎     | 365/851 [00:09<00:11, 41.28it/s]
+[1ALoading weights:  44%|████▎     | 372/851 [00:09<00:10, 43.82it/s]
+[1ALoading weights:  45%|████▌     | 384/851 [00:09<00:08, 55.71it/s]
+[1ALoading weights:  46%|████▌     | 390/851 [00:09<00:08, 52.51it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:09<00:07, 57.19it/s]
+[1ALoading weights:  47%|████▋     | 404/851 [00:09<00:08, 55.52it/s]
+[1ALoading weights:  48%|████▊     | 412/851 [00:10<00:07, 55.13it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:10<00:10, 42.30it/s]
+[1ALoading weights:  50%|████▉     | 425/851 [00:10<00:08, 47.34it/s]
+[1ALoading weights:  51%|█████     | 435/851 [00:10<00:07, 58.83it/s]
+[1ALoading weights:  52%|█████▏    | 442/851 [00:10<00:08, 49.50it/s]
+[1ALoading weights:  53%|█████▎    | 451/851 [00:10<00:07, 53.00it/s]
+[1ALoading weights:  54%|█████▎    | 457/851 [00:11<00:08, 47.25it/s]
+[1ALoading weights:  55%|█████▍    | 466/851 [00:11<00:07, 48.48it/s]
+[1ALoading weights:  55%|█████▌    | 472/851 [00:11<00:09, 38.99it/s]
+[1ALoading weights:  57%|█████▋    | 486/851 [00:11<00:06, 56.04it/s]
+[1ALoading weights:  58%|█████▊    | 493/851 [00:11<00:07, 46.18it/s]
+[1ALoading weights:  59%|█████▉    | 503/851 [00:11<00:06, 52.88it/s]
+[1ALoading weights:  60%|█████▉    | 510/851 [00:12<00:06, 50.95it/s]
+[1ALoading weights:  61%|██████    | 518/851 [00:12<00:05, 55.57it/s]
+[1ALoading weights:  62%|██████▏   | 525/851 [00:12<00:08, 39.59it/s]
+[1ALoading weights:  63%|██████▎   | 540/851 [00:12<00:05, 56.25it/s]
+[1ALoading weights:  64%|██████▍   | 547/851 [00:12<00:06, 49.11it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:13<00:05, 54.46it/s]
+[1ALoading weights:  66%|██████▋   | 564/851 [00:13<00:05, 53.33it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:13<00:05, 51.53it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:13<00:06, 40.30it/s]
+[1ALoading weights:  69%|██████▊   | 583/851 [00:13<00:06, 41.78it/s]
+[1ALoading weights:  70%|███████   | 596/851 [00:13<00:04, 55.10it/s]
+[1ALoading weights:  71%|███████   | 603/851 [00:13<00:04, 52.71it/s]
+[1ALoading weights:  72%|███████▏  | 610/851 [00:14<00:04, 53.73it/s]
+[1ALoading weights:  72%|███████▏  | 616/851 [00:14<00:04, 50.09it/s]
+[1ALoading weights:  73%|███████▎  | 624/851 [00:14<00:04, 53.18it/s]
+[1ALoading weights:  74%|███████▍  | 630/851 [00:14<00:05, 41.75it/s]
+[1ALoading weights:  75%|███████▍  | 637/851 [00:14<00:04, 44.33it/s]
+[1ALoading weights:  76%|███████▌  | 648/851 [00:14<00:04, 47.71it/s]
+[1ALoading weights:  78%|███████▊  | 660/851 [00:15<00:03, 59.39it/s]
+[1ALoading weights:  78%|███████▊  | 667/851 [00:15<00:03, 50.69it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:15<00:03, 56.21it/s]
+[1ALoading weights:  80%|████████  | 684/851 [00:15<00:04, 41.55it/s]
+[1ALoading weights:  82%|████████▏ | 697/851 [00:15<00:02, 56.68it/s]
+[1ALoading weights:  83%|████████▎ | 705/851 [00:16<00:03, 47.99it/s]
+[1ALoading weights:  84%|████████▍ | 715/851 [00:16<00:02, 56.40it/s]
+[1ALoading weights:  85%|████████▍ | 722/851 [00:16<00:02, 48.40it/s]
+[1ALoading weights:  86%|████████▌ | 730/851 [00:16<00:02, 53.15it/s]
+[1ALoading weights:  87%|████████▋ | 737/851 [00:16<00:02, 40.04it/s]
+[1ALoading weights:  88%|████████▊ | 749/851 [00:16<00:01, 53.96it/s]
+[1ALoading weights:  89%|████████▉ | 757/851 [00:17<00:02, 45.20it/s]
+[1ALoading weights:  90%|█████████ | 768/851 [00:17<00:01, 55.84it/s]
+[1ALoading weights:  91%|█████████ | 776/851 [00:17<00:01, 51.41it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:17<00:01, 51.35it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:17<00:01, 37.08it/s]
+[1ALoading weights:  94%|█████████▍| 802/851 [00:17<00:00, 52.91it/s]
+[1ALoading weights:  95%|█████████▌| 810/851 [00:18<00:00, 45.60it/s]
+[1ALoading weights:  97%|█████████▋| 822/851 [00:18<00:00, 56.26it/s]
+[1ALoading weights:  98%|█████████▊| 830/851 [00:18<00:00, 55.04it/s]
+[1ALoading weights:  98%|█████████▊| 837/851 [00:18<00:00, 50.11it/s]
+[1ALoading weights:  99%|█████████▉| 843/851 [00:18<00:00, 40.87it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:18<00:00, 44.82it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+✓ Finished downloading files to local!
+{
+ "checks": {
+  "mean_norm": {
+   "col": 87.61924743652344,
+   "tense": 88.70680236816406,
+   "sel": 90.69115447998047,
+   "codeNL": 81.1883316040039,
+   "codeIN": 82.74356079101562,
+   "codeTR": 80.75980377197266
+  },
+  "enrichment": {
+   "indent_raw": {
+    "r384": 1.1109625101089478,
+    "r1536": 1.1411691904067993
+   },
+   "indent_jrem4": {
+    "r384": 7.94501744394438e-08,
+    "r1536": 6.385276662967954e-08
+   },
+   "nextind_raw": {
+    "r384": 1.4307117462158203,
+    "r1536": 1.251455307006836
+   },
+   "nextind_jrem4": {
+    "r384": 8.992471833835225e-08,
+    "r1536": 7.506031352022546e-08
+   },
+   "col_reg_raw": {
+    "r384": 0.6674851179122925,
+    "r1536": 1.103925108909607
+   },
+   "col_reg_jrem4": {
+    "r384": 3.071636740514805e-07,
+    "r1536": 0.0003554695285856724
+   },
+   "tense_raw": {
+    "r384": 5.602666854858398,
+    "r1536": 2.3107903003692627
+   },
+   "tense_jrem4": {
+    "r384": 2.5174384177262255e-07,
+    "r1536": 1.3054160262981895e-05
+   }
+  },
+  "cos": {
+   "indent_raw.nextind_raw": 0.2257346361875534,
+   "indent_jrem4.nextind_jrem4": 0.21078477799892426,
+   "indent_fold0.fold1": 0.9231564998626709
+  },
+  "natural_auroc": {
+   "indent_raw|codeNL_next8": 0.605625,
+   "indent_raw|codeNL_curlevel2": 0.656524678837052,
+   "indent_raw|codeIN_curlevel2": 0.6925,
+   "indent_raw|codeIN_next8": 0.5688329839273235,
+   "indent_jrem4|codeNL_next8": 0.598125,
+   "indent_jrem4|codeNL_curlevel2": 0.6646382691007438,
+   "indent_jrem4|codeIN_curlevel2": 0.655625,
+   "indent_jrem4|codeIN_next8": 0.5883997204751922,
+   "nextind_raw|codeNL_next8": 0.78375,
+   "nextind_raw|codeNL_curlevel2": 0.48816768086544965,
+   "nextind_raw|codeIN_curlevel2": 0.734375,
+   "nextind_raw|codeIN_next8": 0.6701607267645003,
+   "nextind_jrem4|codeNL_next8": 0.783125,
+   "nextind_jrem4|codeNL_curlevel2": 0.4861392832995267,
+   "nextind_jrem4|codeIN_curlevel2": 0.711875,
+   "nextind_jrem4|codeIN_next8": 0.6708595387840671,
+   "tense_raw|past": 0.825,
+   "tense_jrem4|past": 0.73
+  },
+  "natural_spearman_col": {
+   "reg_raw": 0.6126071183347367,
+   "reg_jrem4": 0.5589305522873357
+  },
+  "t_dirs": 108.4,
+  "t_select": 168.4,
+  "cos_rand": {
+   "randA.indent_raw": 0.006273126229643822,
+   "randA.indent_jrem4": 0.007733432576060295,
+   "randA.nextind_raw": -0.006966935936361551,
+   "randA.nextind_jrem4": -0.008817184716463089,
+   "randA.col_reg_raw": -0.0009139887988567352,
+   "randA.col_reg_jrem4": -0.0010537700727581978,
+   "randA.tense_raw": -0.0012837687972933054,
+   "randA.tense_jrem4": -0.002466948702931404,
+   "randB.indent_raw": 0.014266899786889553,
+   "randB.indent_jrem4": 0.017594672739505768,
+   "randB.nextind_raw": -0.014988879673182964,
+   "randB.nextind_jrem4": -0.018966486677527428,
+   "randB.col_reg_raw": -0.003942699637264013,
+   "randB.col_reg_jrem4": -0.0047716982662677765,
+   "randB.tense_raw": 0.008943543769419193,
+   "randB.tense_jrem4": 0.01610679365694523
+  }
+ },
+ "chosen": {
+  "randA": {
+   "k": 23,
+   "seed": 909023,
+   "a": [
+    7840,
+    50491,
+    20645
+   ],
+   "b": [
+    1436,
+    1439,
+    975
+   ],
+   "a_str": [
+    " seven",
+    " tram",
+    " duties"
+   ],
+   "b_str": [
+    " see",
+    " these",
+    " other"
+   ],
+   "D_a": [
+    0.0543980598449707,
+    0.045248985290527344,
+    0.04344940185546875
+   ],
+   "D_b": [
+    -0.0487823486328125,
+    -0.04465770721435547,
+    -0.03214597702026367
+   ],
+   "score": 0.08956082910299301,
+   "max_abs_D_eligible": 0.012078692205250263
+  },
+  "randB": {
+   "k": 12,
+   "seed": 909012,
+   "a": [
+    4661,
+    8902,
+    8306
+   ],
+   "b": [
+    3555,
+    7854,
+    13717
+   ],
+   "a_str": [
+    " behind",
+    " enemy",
+    " opening"
+   ],
+   "b_str": [
+    " previous",
+    " followed",
+    " formed"
+   ],
+   "D_a": [
+    0.03606986999511719,
+    0.030760765075683594,
+    0.030078887939453125
+   ],
+   "D_b": [
+    -0.05502748489379883,
+    -0.052577972412109375,
+    -0.04894542694091797
+   ],
+   "score": 0.08448680490255356,
+   "max_abs_D_eligible": 0.014756849966943264
+  }
+ },
+ "ol_templates": {
+  "randA": [
+   [
+    "- seven",
+    "- see"
+   ],
+   [
+    "- tram",
+    "- these"
+   ],
+   [
+    "- duties",
+    "- other"
+   ]
+  ],
+  "randB": [
+   [
+    "- behind",
+    "- previous"
+   ],
+   [
+    "- enemy",
+    "- followed"
+   ],
+   [
+    "- opening",
+    "- formed"
+   ]
+  ]
+ },
+ "top5": [
+  {
+   "k": 23,
+   "score": 0.08956082910299301,
+   "a_str": [
+    " seven",
+    " tram",
+    " duties"
+   ],
+   "b_str": [
+    " see",
+    " these",
+    " other"
+   ]
+  },
+  {
+   "k": 12,
+   "score": 0.08448680490255356,
+   "a_str": [
+    " behind",
+    " enemy",
+    " opening"
+   ],
+   "b_str": [
+    " previous",
+    " followed",
+    " formed"
+   ]
+  },
+  {
+   "k": 28,
+   "score": 0.08192380517721176,
+   "a_str": [
+    " rest",
+    " similar",
+    " activity"
+   ],
+   "b_str": [
+    " that",
+    " practiced",
+    " early"
+   ]
+  },
+  {
+   "k": 16,
+   "score": 0.0812067985534668,
+   "a_str": [
+    " flying",
+    " win",
+    " provided"
+   ],
+   "b_str": [
+    " later",
+    " units",
+    " clarity"
+   ]
+  },
+  {
+   "k": 14,
+   "score": 0.08001454919576645,
+   "a_str": [
+    " either",
+    " suddenly",
+    " truncated"
+   ],
+   "b_str": [
+    " five",
+    " three",
+    " delay"
+   ]
+  }
+ ]
+}
+Stopping app - local entrypoint completed.
+Runner terminated.
+✓ App completed. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-WVmXWZ4aIOuzU0RW9YXyXt

@@ -1,4 +1,4 @@
-"""GPU smoke test: load Qwen/Qwen3.6-27B (bf16) from the mats-weights volume, run one chat prompt
+"""GPU smoke test: load Qwen/Qwen3.6-27B (bf16) from the rfm-weights volume, run one chat prompt
 with thinking disabled, capture the layer-42 residual (output of decoder block 42), generate 20
 tokens, and report peak GPU memory.
 

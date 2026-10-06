@@ -122,7 +122,7 @@ def inspect() -> dict:
 
 @app.function(image=net_image, volumes=VOLUMES, secrets=HF_SECRETS, timeout=3600, memory=16384, cpu=4)
 def cache_np_lens() -> str:
-    """Put the neuronpedia n1000 lens into the shared HF cache on mats-weights (lead's request)."""
+    """Put the neuronpedia n1000 lens into the shared HF cache on rfm-weights (lead's request)."""
     from huggingface_hub import hf_hub_download
 
     p = hf_hub_download(LENS_REPO_NP, LENS_FILE_NP)  # HF_HOME=/weights/hf

@@ -1,6 +1,6 @@
 """Shared Modal resources for the MATS sprint: volumes, images, env.
 
-Every function that touches weights mounts `mats-weights` at WEIGHTS_DIR and sets
+Every function that touches weights mounts `rfm-weights` at WEIGHTS_DIR and sets
 HF_HOME=HF_HOME_DIR, so `from_pretrained("Qwen/Qwen3.6-27B")` (or a repo id plus subfolder)
 resolves from the volume's HF cache. Set HF_HUB_OFFLINE=1 in GPU jobs to guarantee no network.
 
@@ -10,8 +10,8 @@ peft 0.21.0, accelerate 1.15.0, huggingface-hub 1.32.0, hf-xet 1.6.0).
 
 import modal
 
-WEIGHTS_VOLUME_NAME = "mats-weights"
-RESULTS_VOLUME_NAME = "mats-results"
+WEIGHTS_VOLUME_NAME = "rfm-weights"
+RESULTS_VOLUME_NAME = "rfm-results"
 WEIGHTS_DIR = "/weights"
 RESULTS_DIR = "/results"
 HF_HOME_DIR = f"{WEIGHTS_DIR}/hf"

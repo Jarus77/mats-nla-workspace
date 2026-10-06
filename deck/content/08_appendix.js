@@ -93,7 +93,7 @@ module.exports = [
     type: "table",
     section: "Appendix",
     kicker: "Appendix · costs",
-    title: "Prep-phase compute so far: about $180 itemised, mostly GPU",
+    title: "Prep-phase compute so far: about $280–320, mostly GPU; the sprint adds ~$250–400",
     columns: ["Experiment", "GPU", "API", "≈ $ (list price)"],
     colW: [4.4, 4.0, 1.9, 1.8],
     rows: [
@@ -104,10 +104,11 @@ module.exports = [
       ["06 Re-solving decomposition + floor check", "~1.2 GPU-h + ~12 GPU-min", "$1.90", "~9"],
       ["07 Template mining", "~4 H100-h + 1.5 H200-h", "$0.61", "~26"],
       ["08 col pilot + K3 calibration", "~9.7 GPU-h", "—", "~42"],
-      [{ text: "Total itemised", bold: true }, "", { text: "≈ $5.4", bold: true }, { text: "≈ 180", bold: true }],
+      ["Sum of the rows above", "", "≈ $5.4", "≈ 180"],
+      [{ text: "Total so far, incl. unitemised runs (D26)", bold: true }, { text: "~65–75 GPU-h", bold: true }, { text: "~$12 judges", bold: true }, { text: "≈ 280–320", bold: true }],
     ],
-    footnote: "00 (NLA gate) and 02 (feature gates) GPU time was not itemised in their RESULTS. * our estimate at Modal list prices ($3.95/h H100, $4.54/h H200). Projected sprint compute: ~35 GPU-h ≈ $150 (D8).",
-    notes: "Costs, kept honest: only what the RESULTS files itemise. Roughly $180 so far, of which about $5 is API calls. Experiments 00 and 02 didn't itemise GPU time, so the true total is somewhat higher. The sprint projection from the smoke test is about 35 GPU-hours, roughly $150 including reruns.",
+    footnote: "The gap between the rows and the total is runs not itemised in RESULTS (00 and 02 gates, round-5 pilot cells, experiment 09). * our estimate at list GPU prices. Sprint estimate: ~$250–400 on single A100s (prereg §8.3 counts ≈ 25 GPU-h for primaries, controls, negatives and T1).",
+    notes: "Costs, kept honest. The rows are what the RESULTS files itemise, about $180. The lead's total including runs that weren't itemised, the gates in 00 and 02, the round-5 pilot cells and experiment 09, is about $280 to $320 so far: roughly 65 to 75 GPU-hours plus about $12 of judge API calls. The sprint is estimated at $250 to $400 on single A100s.",
   },
   {
     type: "glossary",

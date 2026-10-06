@@ -1,4 +1,4 @@
-"""Local summary of all results (run after `modal volume get mats-results 02_nonj_features/<dir>`).
+"""Local summary of all results (run after `modal volume get rfm-results 02_nonj_features/<dir>`).
 
     python summarize.py <local_dir_with_probe_results_causal_leak_lensbag_selfreport>
 """

@@ -1,0 +1,125 @@
+{
+ "behave:codeNL": {
+  "set": "codeNL",
+  "n_conds": 101,
+  "t": 371.6
+ },
+ "behave:codeIN": {
+  "set": "codeIN",
+  "n_conds": 101,
+  "t": 423.6
+ },
+ "behave:col": {
+  "error": "RemoteError('')"
+ },
+ "behave:tense": {
+  "set": "tense",
+  "n_conds": 269,
+  "t": 460.9
+ },
+ "tense_r5": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:codeNL:0:on": {
+  "error": "RemoteError(\"Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 550.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 416.31 MiB is free. Process 1 has 78.76 GiB memory in use. Of the allocated memory 70.75 GiB is allocated by PyTorch, and 7.34 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')...\")"
+ },
+ "score_ol:codeNL:1:on": {
+  "error": "RemoteError(\"Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 550.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 416.31 MiB is free. Process 1 has 78.76 GiB memory in use. Of the allocated memory 70.75 GiB is allocated by PyTorch, and 7.34 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')...\")"
+ },
+ "score_ol:codeIN:0:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:codeIN:1:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:0:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:1:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:2:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:3:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:4:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:5:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:0:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:1:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:2:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:3:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:4:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:5:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:6:on": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:codeNL:0:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:codeNL:1:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:codeIN:0:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:codeIN:1:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:0:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:1:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:2:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:3:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:4:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:col:5:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:0:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:1:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:2:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:3:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:4:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:5:off": {
+  "error": "RemoteError('')"
+ },
+ "score_ol:tense:6:off": {
+  "error": "RemoteError('')"
+ }
+}

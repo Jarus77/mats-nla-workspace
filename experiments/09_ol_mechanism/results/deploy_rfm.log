@@ -1,0 +1,33 @@
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/09_ol_mechani
+│   sm/o9_modal_rfm.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   pilot_items.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   r5_lib.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   pilot_lib.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   calib_items.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:o9_templates, PythonPackage:o9_items, PythonPackage:o9_lib
+├── 🔨 Created function prep.
+├── 🔨 Created function behave.
+├── 🔨 Created function score_ol.
+├── 🔨 Created function tense_r5.
+└── 🔨 Created function build_items.
+✓ App deployed in 3.045s! 🎉
+
+View Deployment: https://modal.com/apps/<modal-workspace>/main/deployed/rfm-09

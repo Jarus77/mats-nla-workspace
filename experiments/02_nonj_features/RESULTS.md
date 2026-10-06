@@ -247,7 +247,7 @@ Results:
 - **Lens files.**
   - `neuronpedia/jacobian-lens` `Qwen3.6-27B_jacobian_lens_n1000.pt` (1000 wikitext prompts, 63 source
     layers, fp16) matches the paper's definition (≈1000 pretraining-like prompts). It is WorkspaceBench's
-    `jlens` artifact and our **primary** lens, now also in the shared HF cache on mats-weights.
+    `jlens` artifact and our **primary** lens, now also in the shared HF cache on rfm-weights.
   - `camilablank/workspace-lenses` `j-lens/lens.pt` is `n_prompts=25` (pile-10k).
   - The two differ substantially at L42: relative Frobenius difference 0.58; mean cosine of J-lens vectors
     0.79 (p10 0.72, gain 1+w); top-25 overlap 19% on random inputs. Use n1000.

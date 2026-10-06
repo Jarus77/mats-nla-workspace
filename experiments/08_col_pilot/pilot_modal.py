@@ -356,6 +356,6 @@ def main(skip_build: bool = False, skip_prep: bool = False, ol_chunks: int = 5, 
             summary["jobs"].append({"error": repr(e)[:2000]})
     print(json.dumps(summary["jobs"], indent=1, default=str))
     (here / "results").mkdir(exist_ok=True)
-    subprocess.run(["modal", "volume", "get", "--force", "mats-results", "08_col_pilot", str(here / "results")],
+    subprocess.run(["modal", "volume", "get", "--force", "rfm-results", "08_col_pilot", str(here / "results")],
                    check=False)
     (here / "results" / "run_summary.json").write_text(json.dumps(summary, indent=1, default=str))

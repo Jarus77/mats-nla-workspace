@@ -1,4 +1,4 @@
-"""Local: pull gate/causal JSONs from the mats-results volume, apply the D9/D11 gate rules, write
+"""Local: pull gate/causal JSONs from the rfm-results volume, apply the D9/D11 gate rules, write
 results/gates.json and print the markdown gate table used in RESULTS.md.
 
 Rules (L42 primary; J-Lens = neuronpedia n1000):
@@ -30,7 +30,7 @@ FEATS = ["cap_next", "cap_next_all", "code_lang", "in_quote", "gender_next", "in
 def pull() -> None:
     RES.mkdir(exist_ok=True)
     for sub in ("gate", "causal"):
-        subprocess.run(["modal", "volume", "get", "mats-results", f"04_backup_features/{sub}", str(RES), "--force"],
+        subprocess.run(["modal", "volume", "get", "rfm-results", f"04_backup_features/{sub}", str(RES), "--force"],
                        check=False, capture_output=True)
 
 

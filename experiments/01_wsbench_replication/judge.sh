@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Pull readouts from the mats-results volume, split into judge views, judge locally with the fork.
+# Pull readouts from the rfm-results volume, split into judge views, judge locally with the fork.
 #   bash judge.sh "typo_mt,multilingual_mt"
 # jlens needs OPENROUTER_API_KEY (Gemini summarizer); prose arms are regex-only (0 calls).
 set -euo pipefail
@@ -12,7 +12,7 @@ cd "$HERE"
 for arm in olens jlens nla; do
   for fam in ${FAMS//,/ }; do
     mkdir -p "readouts/$arm"
-    modal volume get --force mats-results "01_wsbench_replication/readouts/$arm/$fam.jsonl" "readouts/$arm/$fam.jsonl" >/dev/null 2>&1 \
+    modal volume get --force rfm-results "01_wsbench_replication/readouts/$arm/$fam.jsonl" "readouts/$arm/$fam.jsonl" >/dev/null 2>&1 \
       || echo "missing on volume: $arm/$fam"
   done
 done

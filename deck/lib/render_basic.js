@@ -146,7 +146,8 @@ R.table = (ctx, slide, s) => {
   );
   const w = s.colW.reduce((a, b) => a + b, 0);
   slide.addTable([head, ...body], { x: kit.M, y: 1.85, w, colW: s.colW, fontFace: "Arial", border: { type: "solid", pt: 0.5, color: ctx.HEX.line }, margin: [0.05, 0.08, 0.05, 0.08], rowH: s.small ? 0.36 : 0.44 });
-  if (s.footnote) kit.tx(slide, s.footnote, { x: kit.M, y: 6.35, w: kit.W - 2 * kit.M, h: 0.5, fontSize: 12, color: C.accent5 });
+  if (s.pending) kit.chip(slide, { x: kit.M, y: 5.85, w: 4.4, h: 0.34, text: s.pending, color: C.accent4, size: 11 });
+  if (s.footnote) kit.tx(slide, s.footnote, { x: kit.M, y: 6.3, w: kit.W - 2 * kit.M, h: 0.6, fontSize: 12, color: C.accent5 });
 };
 
 function toneHex(ctx, tone) {

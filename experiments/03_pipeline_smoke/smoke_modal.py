@@ -341,6 +341,6 @@ def main(stage: str = "all", n_pairs: int = 40) -> None:
     here = Path(__file__).resolve().parent / "results"
     here.mkdir(exist_ok=True)
     for f in ("stage_base.pt", "stage_nla.pt"):
-        subprocess.run(["modal", "volume", "get", "--force", "mats-results",
+        subprocess.run(["modal", "volume", "get", "--force", "rfm-results",
                         f"03_pipeline_smoke/{f}", str(here / f)], check=False)
     (here / f"run_summary_{stage}.json").write_text(json.dumps(res, indent=1, default=str))

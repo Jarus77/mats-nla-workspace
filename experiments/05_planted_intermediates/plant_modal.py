@@ -382,5 +382,5 @@ def main(stage: str = "gate", layers: str = "", modes: str = "add,clamp") -> Non
     else:
         raise SystemExit(f"unknown stage {stage}")
     for f in files:
-        subprocess.run(["modal", "volume", "get", "--force", "mats-results",
+        subprocess.run(["modal", "volume", "get", "--force", "rfm-results",
                         f"05_planted_intermediates/{f}", str(here / f)], check=False)

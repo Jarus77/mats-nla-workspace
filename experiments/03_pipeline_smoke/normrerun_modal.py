@@ -188,6 +188,6 @@ def main(skip_prep: bool = False, ol_chunks: int = 3, nla_chunks: int = 4) -> No
     print(json.dumps(summary["score"], indent=1, default=str))
     here = Path(__file__).resolve().parent / "results" / "normrerun"
     here.mkdir(parents=True, exist_ok=True)
-    subprocess.run(["modal", "volume", "get", "--force", "mats-results", "03_pipeline_smoke/normrerun",
+    subprocess.run(["modal", "volume", "get", "--force", "rfm-results", "03_pipeline_smoke/normrerun",
                     str(here.parent)], check=False)
     (here / "run_summary.json").write_text(json.dumps(summary, indent=1, default=str))

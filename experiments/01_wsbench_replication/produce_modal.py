@@ -85,7 +85,7 @@ wsbench_image = (
 @app.function(image=download_image, volumes=VOLUMES, secrets=HF_SECRETS, cpu=4, memory=8192,
               timeout=2 * 60 * 60)
 def download_jlens() -> str:
-    """Add the neuronpedia J-lens Jacobians to mats-weights (same HF cache as everything else)."""
+    """Add the neuronpedia J-lens Jacobians to rfm-weights (same HF cache as everything else)."""
     from huggingface_hub import hf_hub_download
 
     path = hf_hub_download(JLENS_REPO, JLENS_FILE)

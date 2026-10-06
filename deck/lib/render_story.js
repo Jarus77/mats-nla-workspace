@@ -54,15 +54,16 @@ S.gantt = (ctx, slide, s) => {
   const gx = lx + lw + 0.1;
   const dw = (kit.W - kit.M - gx) / s.days.length;
   const y0 = 1.85;
+  const rh = Math.min(0.39, 3.75 / s.rows.length);
   kit.tx(slide, "Oct", { x: gx, y: y0 - 0.02, w: 1, h: 0.25, fontSize: 10, color: C.accent5 });
   kit.tx(slide, "Nov", { x: gx + dw * 13, y: y0 - 0.02, w: 1, h: 0.25, fontSize: 10, color: C.accent5 });
   s.days.forEach((d, i) => {
     kit.tx(slide, d, { x: gx + i * dw, y: y0 + 0.2, w: dw, h: 0.28, fontSize: 11, bold: true, align: "center", color: C.text1 });
-    if (i % 2 === 0) slide.addShape(kit.SHAPE.rect, { x: gx + i * dw, y: y0 + 0.5, w: dw, h: s.rows.length * 0.39, fill: { color: C.background2 }, line: { color: C.background2, width: 0 } });
+    if (i % 2 === 0) slide.addShape(kit.SHAPE.rect, { x: gx + i * dw, y: y0 + 0.5, w: dw, h: s.rows.length * rh, fill: { color: C.background2 }, line: { color: C.background2, width: 0 } });
   });
   const colors = { nla: C.accent1, ol: C.accent2, jl: C.accent3, text: C.accent4, muted: C.accent5, line: C.accent6 };
   s.rows.forEach((r, i) => {
-    const y = y0 + 0.55 + i * 0.39;
+    const y = y0 + 0.55 + i * rh;
     kit.tx(slide, r.label, { x: lx, y, w: lw, h: 0.32, fontSize: 12, valign: "middle" });
     const bx = gx + (r.from - 1) * dw + 0.04;
     const bw = (r.to - r.from + 1) * dw - 0.08;
@@ -73,7 +74,7 @@ S.gantt = (ctx, slide, s) => {
       kit.tx(slide, r.check, { x: kx + 0.16, y, w: 0.5, h: 0.32, fontSize: 10, bold: true, valign: "middle" });
     }
   });
-  const ky = y0 + 0.65 + s.rows.length * 0.39;
+  const ky = y0 + 0.65 + s.rows.length * rh;
   const kw = (kit.W - 2 * kit.M - 0.3 * 2) / 3;
   s.kills.forEach((k, i) => {
     const x = kit.M + i * (kw + 0.3);
