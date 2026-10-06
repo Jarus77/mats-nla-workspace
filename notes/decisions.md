@@ -474,3 +474,19 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 **Pre-freeze issues (for Fable):**
 1. **The §10.1(b) rule needs a valid-denominator clause and a fixed gain-ratio dose,** and the strict ±25% "acting" band looks unreachable (random directions sit at 1.7–1.9× vs col 1.0×). The amendment is pilot-informed, so disclose it.
 2. **P3 (OL tense 4r*) may track a behaviourally inactive direction.** The model's next-token tense readout is flat under tense 4r*. If that holds on fresh items, prereg §4.4.5 forces the wording "reader sensitivity to a behaviourally inactive direction". But a next-token readout may be the wrong behavioural measure for tense (tense shows at later verbs, not necessarily the next token), so the behavioural measure for tense should be fixed before the freeze. This also bears on "reading beyond acting": for tense 4r* (and sub-threshold indentation), OL moves where the model's measured behaviour doesn't.
+
+## 2026-10-07 — D30: Fable round 8: demote the S6 gain-ratio verdict; fix P3's behavioural measure (prereg rev 4.2)
+- **Why the gain ratio isn't diagnostic.** The model's shift was measured in the original context and OL's in the carrier context. Under pure re-instatement the ratio is (carrier sensitivity)/(original sensitivity), which varies by direction. A constant ratio was never the prediction, so the ±25% band fails in principle. Random directions at 1.7–1.9 mostly show the carrier is a more perturbation-sensitive context. "OL moves where the model doesn't" (indentation, tense 4r*) is compatible with acting plus context: indentation is overridden by the previous line's whitespace in natural text, and the carrier has no previous line; tense may surface at the next verb, not the next token. col's one-for-one ratio and matched retention are *suggestive* of re-instatement, and no more.
+- **§10.1(b):**
+  - add the valid-denominator clause (direction kept only if the model's behavioural shift is ≥ +3 z) and fix the dose (0.108 relative norm);
+  - **no new acting criterion** (it would read as a rule tuned to return "not acting");
+  - replace the binary verdict with **three pre-specified descriptive quantities**: (i) col's gain ratio with CI; (ii) J-removal retention, OL vs model; (iii) OL's response on directions the model doesn't act on, with "inert" defined by the generation measure below.
+  - Fixed wording: "consistent with re-instatement for col; the channel is not a pure re-emission of the model's measured next-token decision in general."
+  - **Disclose in §1.4** that the acting/reading criterion was dropped after the pilot because the test was found to be confounded by context.
+- **P3's behavioural measure:** the tense of the **next verb in a greedy continuation, up to 32 tokens**, tagged by a frozen tagger, in the original context. The reason for the change (the pilot's next-token result) is recorded. Conditional wording:
+  - if the model acts on tense 4r* by this measure: "OL tracks distributed tense content the model uses";
+  - if it doesn't: "reader sensitivity to a direction the model doesn't act on, by two measures" (not softened).
+- **Branch 1b wording:** "OL carries col only in its continuation channel, one-for-one with the model's newline decision; the same channel also tracks tense content the model's measured behaviour does not act on, so it is not merely the model's decision re-emitted."
+- **Operative fact for Neel, whichever way the mechanism falls:** a next-token probability shift in OL's continuation isn't a readout anyone would find without already knowing what to measure.
+- **Post-sprint ideas (not in scope):** a carrier-matched behavioural measure (steer at L42 inside the carrier with the adapter off), or ablating the model's newline-decision components inside OL's forward pass.
+- **Freeze** once the three S6 quantities and the P3 measure are written in.
