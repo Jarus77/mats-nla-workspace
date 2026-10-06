@@ -110,6 +110,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--ru
       <li><span class="tag solid">Measured</span><span><strong>Oracle Lens's benchmark lead is a scoring choice.</strong> Counting an item if any of 11 layers gets it adds <span class="num">0.08–0.22</span>. At the same layer, the NLA ties or beats it.</span></li>
       <li><span class="tag solid">Measured</span><span><strong>WorkspaceBench success is recoverable from the prompt.</strong> A text model given the prompt names the target more often than one given the readers' outputs, and adding the outputs to the prompt doesn't help. The benchmark's stored prompt-only floor also reads about <span class="num">0.14</span> too low.</span></li>
       <li><span class="tag pilot">Pilot</span><span><strong>Readers track workspace features but don't describe col.</strong> At equal steering strength, both follow language and tense while col stays at chance. Oracle Lens's next-token channel and one NLA phrasing do respond to col; both are pre-registered for confirmation.</span></li>
+      <li><span class="tag pilot">Pilot</span><span><strong>Oracle Lens's line-break channel moves one-for-one with the model's own newline decision.</strong> Its shift per unit of steering matches the model's (ratio <span class="num">1.06</span>), and both keep the same share after the workspace is removed (<span class="num">0.79</span> vs <span class="num">0.75</span>). The same channel also tracks tense where the model's next-token behaviour doesn't move, so it is more than the model's decision re-emitted. Either way, it is not a readout anyone would find without already knowing what to measure.</span></li>
       <li><span class="tag pilot">Pilot</span><span><strong>The NLA invents a consistent story.</strong> When we plant a different country in the activation, it rewrites the prompt's clue to fit: "Eiffel Tower" became "Volvo… Sweden" in <span class="num">12/12</span> cases. Its "prompt reconstruction" comes from the latent, not the text.</span></li>
     </ul>
   </section>
@@ -141,7 +142,8 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--ru
     <ul class="caveats">
       <li>Only one natural feature (col) passed every gate, so generalisation is open.</li>
       <li>Pilot results are small-sample and were found after many looks; they need the sprint to stand.</li>
-      <li>Oracle Lens's col response may be the activation re-instated in its own model rather than a report. A mechanism test is running.</li>
+      <li>Whether Oracle Lens reports col or re-instates it for its own model can't be settled by the effect-ratio test, because the two contexts differ. We report the measurements without a verdict.</li>
+      <li>The strong findings today are about the benchmark and the test: WorkspaceBench can't separate reading from re-solving, and the standard workspace test can't tell features apart. Whether the readers read non-workspace content is the sprint's question.</li>
       <li>One model (Qwen3.6-27B), one layer (42), two J-Lens fits.</li>
     </ul>
   </section>
