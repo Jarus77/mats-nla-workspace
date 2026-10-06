@@ -10,7 +10,9 @@
   "t": 423.6
  },
  "behave:col": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "n_conds": 269,
+  "t": 1760.6
  },
  "behave:tense": {
   "set": "tense",
@@ -18,108 +20,244 @@
   "t": 460.9
  },
  "tense_r5": {
-  "error": "RemoteError('')"
+  "t": 7840.4
  },
  "score_ol:codeNL:0:on": {
-  "error": "RemoteError(\"Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 550.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 416.31 MiB is free. Process 1 has 78.76 GiB memory in use. Of the allocated memory 70.75 GiB is allocated by PyTorch, and 7.34 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')...\")"
+  "set": "codeNL",
+  "chunk": 0,
+  "adapter": "on",
+  "n_acts": 4080,
+  "t": 4143.5
  },
  "score_ol:codeNL:1:on": {
-  "error": "RemoteError(\"Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 550.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 416.31 MiB is free. Process 1 has 78.76 GiB memory in use. Of the allocated memory 70.75 GiB is allocated by PyTorch, and 7.34 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')...\")"
+  "set": "codeNL",
+  "chunk": 1,
+  "adapter": "on",
+  "n_acts": 4000,
+  "t": 3785.9
  },
  "score_ol:codeIN:0:on": {
-  "error": "RemoteError('')"
+  "set": "codeIN",
+  "chunk": 0,
+  "adapter": "on",
+  "n_acts": 4080,
+  "t": 3864.9
  },
  "score_ol:codeIN:1:on": {
-  "error": "RemoteError('')"
+  "set": "codeIN",
+  "chunk": 1,
+  "adapter": "on",
+  "n_acts": 4000,
+  "t": 3790.4
  },
  "score_ol:col:0:on": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 0,
+  "adapter": "on",
+  "n_acts": 3600,
+  "t": 3462.0
  },
  "score_ol:col:1:on": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 1,
+  "adapter": "on",
+  "n_acts": 3600,
+  "t": 3346.1
  },
  "score_ol:col:2:on": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 2,
+  "adapter": "on",
+  "n_acts": 3600,
+  "t": 3502.9
  },
  "score_ol:col:3:on": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 3,
+  "adapter": "on",
+  "n_acts": 3600,
+  "t": 3715.6
  },
  "score_ol:col:4:on": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 4,
+  "adapter": "on",
+  "n_acts": 3600,
+  "t": 3323.0
  },
  "score_ol:col:5:on": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 5,
+  "adapter": "on",
+  "n_acts": 3520,
+  "t": 3395.1
  },
  "score_ol:tense:0:on": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 0,
+  "adapter": "on",
+  "n_acts": 3120,
+  "t": 3473.0
  },
  "score_ol:tense:1:on": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 1,
+  "adapter": "on",
+  "n_acts": 3120,
+  "t": 3336.1
  },
  "score_ol:tense:2:on": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 2,
+  "adapter": "on",
+  "n_acts": 3120,
+  "t": 3346.1
  },
  "score_ol:tense:3:on": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 3,
+  "adapter": "on",
+  "n_acts": 3040,
+  "t": 3257.2
  },
  "score_ol:tense:4:on": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 4,
+  "adapter": "on",
+  "n_acts": 3040,
+  "t": 3542.5
  },
  "score_ol:tense:5:on": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 5,
+  "adapter": "on",
+  "n_acts": 3040,
+  "t": 3388.7
  },
  "score_ol:tense:6:on": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 6,
+  "adapter": "on",
+  "n_acts": 3040,
+  "t": 3260.1
  },
  "score_ol:codeNL:0:off": {
-  "error": "RemoteError('')"
+  "set": "codeNL",
+  "chunk": 0,
+  "adapter": "off",
+  "n_acts": 4080,
+  "t": 2748.1
  },
  "score_ol:codeNL:1:off": {
-  "error": "RemoteError('')"
+  "set": "codeNL",
+  "chunk": 1,
+  "adapter": "off",
+  "n_acts": 4000,
+  "t": 3070.5
  },
  "score_ol:codeIN:0:off": {
-  "error": "RemoteError('')"
+  "set": "codeIN",
+  "chunk": 0,
+  "adapter": "off",
+  "n_acts": 4080,
+  "t": 2894.9
  },
  "score_ol:codeIN:1:off": {
-  "error": "RemoteError('')"
+  "set": "codeIN",
+  "chunk": 1,
+  "adapter": "off",
+  "n_acts": 4000,
+  "t": 2868.9
  },
  "score_ol:col:0:off": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 0,
+  "adapter": "off",
+  "n_acts": 3600,
+  "t": 2464.5
  },
  "score_ol:col:1:off": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 1,
+  "adapter": "off",
+  "n_acts": 3600,
+  "t": 2606.5
  },
  "score_ol:col:2:off": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 2,
+  "adapter": "off",
+  "n_acts": 3600,
+  "t": 2813.2
  },
  "score_ol:col:3:off": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 3,
+  "adapter": "off",
+  "n_acts": 3600,
+  "t": 2616.1
  },
  "score_ol:col:4:off": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 4,
+  "adapter": "off",
+  "n_acts": 3600,
+  "t": 2946.1
  },
  "score_ol:col:5:off": {
-  "error": "RemoteError('')"
+  "set": "col",
+  "chunk": 5,
+  "adapter": "off",
+  "n_acts": 3520,
+  "t": 2540.4
  },
  "score_ol:tense:0:off": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 0,
+  "adapter": "off",
+  "n_acts": 3120,
+  "t": 2468.7
  },
  "score_ol:tense:1:off": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 1,
+  "adapter": "off",
+  "n_acts": 3120,
+  "t": 3205.7
  },
  "score_ol:tense:2:off": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 2,
+  "adapter": "off",
+  "n_acts": 3120,
+  "t": 2663.8
  },
  "score_ol:tense:3:off": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 3,
+  "adapter": "off",
+  "n_acts": 3040,
+  "t": 2405.4
  },
  "score_ol:tense:4:off": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 4,
+  "adapter": "off",
+  "n_acts": 3040,
+  "t": 2764.3
  },
  "score_ol:tense:5:off": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 5,
+  "adapter": "off",
+  "n_acts": 3040,
+  "t": 2890.7
  },
  "score_ol:tense:6:off": {
-  "error": "RemoteError('')"
+  "set": "tense",
+  "chunk": 6,
+  "adapter": "off",
+  "n_acts": 3040,
+  "t": 2820.3
  }
 }

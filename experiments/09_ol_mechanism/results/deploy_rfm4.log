@@ -1,0 +1,43 @@
+╭─ Modal Deprecation Warning (2025-12-16) ─────────────────────────────────────╮
+│ The `max_inputs` parameter is deprecated. Please set                         │
+│ `single_use_containers=True` instead.                                        │
+│                                                                              │
+│ Source:                                                                      │
+│ /Users/surajprasad/Downloads/interpretability/mats/experiments/09_ol_mechani │
+│ sm/o9_modal_rfm.py:317                                                       │
+│   @app.function(image=app_image, volumes=VOLUMES, gpu="A100-80GB",           │
+│ max_containers=4, max_inputs=1, retries=2, timeout=4 * 3600, memory=131072)  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/09_ol_mechani
+│   sm/o9_modal_rfm.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   r5_lib.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   calib_items.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   pilot_lib.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   pilot_items.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:o9_templates, PythonPackage:o9_items, PythonPackage:o9_lib
+├── 🔨 Created function score_ol.
+├── 🔨 Created function prep.
+├── 🔨 Created function tense_r5.
+├── 🔨 Created function behave.
+└── 🔨 Created function build_items.
+✓ App deployed in 3.062s! 🎉
+
+View Deployment: https://modal.com/apps/<modal-workspace>/main/deployed/rfm
