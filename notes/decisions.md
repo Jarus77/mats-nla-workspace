@@ -439,3 +439,15 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
    - **fresh col passages match the pilot's generator** (wrap widths, source distribution).
 6. **The headline has FOUR branches** (P1 × P2 pass/fail). P1 failing with P2 passing is the likeliest.
 7. **Freeze once the TOST simulation is done and the four-branch wording is written.**
+
+## 2026-10-06 — D28: prereg rev 4.1 done; freeze-ready (design)
+- **TOST is defined on the band statistic** (per-item effect vs the K=100 band on the same fresh items), with δ_f frozen from the pilot (1.9–5.1 band-direction SDs). Power to declare all five negatives flat is **1.00 at n=240** under a true zero, and 1.00 under 0.5×SESOI. **n stays 240.**
+- **Lead's edits to the agent-drafted wording:**
+  - branch 1b now reads "OL only through its next-token continuation channel" (neutral; the S6 clause carries the interpretation);
+  - the T1 Gemini max_tokens goes from 8 to 600.
+- **Remaining before the freeze timestamp (bookkeeping, Oct 7–18):**
+  1. compute the q80 dose (needs one small run);
+  2. fix the null-direction seeds;
+  3. build the fresh-bank generation + sha256 manifest;
+  4. write the 40-item T1 sensitivity set and run the judge gate;
+  5. write and hash `experiments/10_main/main_analyze.py`.

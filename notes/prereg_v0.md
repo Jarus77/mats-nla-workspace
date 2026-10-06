@@ -1,6 +1,6 @@
 # Pre-registration: Do NLAs read what the model can't say? (confirmatory replication, Qwen3.6-27B)
 
-Draft 2026-10-06, **revision 4: the confirmatory pre-registration to be frozen before the sprint** (Oct 19 – Nov 1). Revisions 1–3 applied D1–D12 (user-approved). Revision 4 applies `decisions.md` D13–D25, with D20–D25 decisive, and restructures the document as a **confirmatory replication of pilot findings**: four primary cells (Holm over 4), two positive controls, pre-registered negatives as equivalence tests, one template-free check, then declared secondaries; everything else is exploratory and labelled as such. Model: Qwen3.6-27B. Status: **draft for the user and Fable; freeze target v1 = Oct 18, before any main-run data.** Remaining choices are marked **[DECIDE: …]** and collected in §14. Revision-3 text is backed up at `scratchpad/prereg_rev3_backup.md`. Companion notes: `pilot_deep_dive.md`, `lit_review.md`, `redteam.md`, `phase1_summary.md`, `wsbench_internals.md`; pilot evidence: `experiments/08_col_pilot/RESULTS.md` (pilot, calibration, round 5), `experiments/07_template_mining/RESULTS.md`.
+Draft 2026-10-06, **revision 4.1 (applies D27, Fable round 7 = final freeze review; rev-4 text backed up at `scratchpad/prereg_rev4_backup.md`). Revision 4: the confirmatory pre-registration to be frozen before the sprint** (Oct 19 – Nov 1). Revisions 1–3 applied D1–D12 (user-approved). Revision 4 applies `decisions.md` D13–D25, with D20–D25 decisive, and restructures the document as a **confirmatory replication of pilot findings**: four primary cells (Holm over 4), two positive controls, pre-registered negatives as equivalence tests, one template-free check, then declared secondaries; everything else is exploratory and labelled as such. Model: Qwen3.6-27B. Status: **draft for the user and Fable; freeze target v1 = Oct 18, before any main-run data.** Remaining choices were marked **[DECIDE: …]** and are collected in §14; as of rev 4.1 none is open (freeze checklist in §14). Revision-3 text is backed up at `scratchpad/prereg_rev3_backup.md`. Companion notes: `pilot_deep_dive.md`, `lit_review.md`, `redteam.md`, `phase1_summary.md`, `wsbench_internals.md`; pilot evidence: `experiments/08_col_pilot/RESULTS.md` (pilot, calibration, round 5), `experiments/07_template_mining/RESULTS.md`.
 
 **How to read this document.** §3 is the binding part: it lists, in order, what is tested, with which statistic, against which threshold. §4–§8 define the operations §3 refers to. Anything in the write-up that is not in §3.1–§3.5 is reported under an "exploratory" label.
 
@@ -87,6 +87,22 @@ Draft 2026-10-06, **revision 4: the confirmatory pre-registration to be frozen b
 | 59 | Dry run on fresh items at n = 10 | **Dry runs only on the pilot split.** No fresh item is scored before the freeze manifest is recorded. | Forking paths. |
 | 60 | n = 240 per feature from Hanley–McNeil | **n justified from pilot effect sizes and null-band decomposition (§8):** 240 fresh col passages (P1, P2, N, T1 subset), 160 fresh tense items (P3, P4, PC2), 120 fresh language items (PC1). The band, not n, limits power. | D15, §8. |
 
+**Revision 4.1** (D27: Fable round 7, the final freeze review; all accepted). Rows 61–71 supersede any earlier row they contradict.
+
+| # | Rev 4 | Rev 4.1 | Rationale |
+|---|---|---|---|
+| 61 | Leak rule open (95% band vs \|z\| ≥ 3); leak band size implicit | **Rule (a): two-sided central 95% J-complement band, with K = 100 directions for the leak band too** (§4.4.3). | D27.1. With K = 100 the empirical 95% band is stable, so false voids fall toward the nominal 5% per set. |
+| 62 | A void dose is final | **Pre-registered dose ladder: if the q90 cell is void (leak or FVE), that primary is tested once at q80** (same direction, construction, bands, criteria), **with no further steps.** q80 = 80th percentile − median of the same natural projection on 02's bank (§4.4.1). | D27.1. One fixed fallback, declared now, instead of an open-ended dose search. |
+| 63 | P2 wording conditional on S6, described informally in §10 | **P2-interpretation × S6 table fixed now** (§10.1); S6 need not finish before the freeze. | D27.2. |
+| 64 | P1 prior 0.35, shrinkage mentioned in §8.1 | **P1's expected (shrunken) effect is pre-registered:** z_Jc ≈ the pilot family-mean z (+2.5 to +2.9), cross-item AUROC ≈ 0.58 (not 0.63). "Replicates but smaller" is the predicted outcome. **Mixed case** (P1 fails, its declared-secondary family mean passes) = non-replication of the primary; an exploratory note; no claim (§3.1, §10). | D27.3. P1 stays best-of-11; the expectation is stated so that a smaller effect is not read as a surprise. |
+| 65 | N1–N5: TOST on cross-item AUROC, item bootstrap, bound (0.45, 0.55) | **TOST on the band statistic:** T = ē(real) − mean of the K = 100 null ē on the same fresh items, SE from items and directions; bounds ±δ_f, where δ_f is the ē shift that turns cross-item AUROC from 0.50 into 0.55 (fraction of probe 0.10), frozen per family from the pilot (0.12–0.26 nats; 2–5 direction-level SDs of the band). Both bands; intersection-union over five families (§3.3). | D27.4. The AUROC test ignored direction-level variability and (with an unpaired SE) could not close at n = 240. |
+| 66 | n for N1–N5 = 240, power asserted from SE(AUROC) | **Power by simulation** (`experiments/10_main/power/tost_sim.py`, seeded): IUT power (all five families × both bands) is 1.00 at θ = 0 and ≥ 0.97 at θ = 0.5·SESOI from n = 120 up. At the pilot's observed N5 anti-tracking it is 0.82 at n = 240 (non-superiority 1.00). **n stays 240 col passages, the primary's n**; no increase needed (§8.1). | D27.4. |
+| 67 | Directions and doses "fixed constants from 02" | **Direction w and the q90 (and q80) dose are frozen from the pilot/training split and never re-fit on fresh items:** 02 `probes/col_hs43.pt` key `steer_dir_unit_jrem_r1536`; 02 `probes/tense_hs43.pt` same key; doses from 02's banks via `mats.capture.doses_from_projection`. File sha256s go in the manifest (§4.4.1). | D27.5. |
+| 68 | Null bands "same items" | **Null bands are computed on the fresh items, at the primary's n** (all 240 col / 160 tense passages), never on a subset or on pilot items (§4.4.2). | D27.5. |
+| 69 | T1 question only | **T1 judge instruction: score DESCRIBED content, not formatting or literal newlines.** The 40-item sensitivity set includes synthetic positives that describe line position and negatives that contain literal newlines but no description (§3.4). | D27.5. OL's continuations contain literal newlines. |
+| 70 | Fresh col bank "02 `build_wrap` recipe, W ~ U{30..90} as 07" | **Fresh col passages use the pilot's generator** (`08_col_pilot/pilot_items.py::_wrap_item`: 02's `s1_data._wikitext_paragraphs` cleaner + 02's `build_wrap` textwrap recipe), **wrap widths {30, 40, 50, 60, 70} cycled equally**, same source distribution (cleaned wikitext), same read-token rule, passage-disjoint (§8.2). | D27.5. Rev 4's "U{30..90}" was 02/07's recipe, not the pilot's. |
+| 71 | Two-branch headline | **Four-branch headline (P1 × P2 pass/fail)**; P1 fail × P2 pass is the likeliest (§1.3, §10). | D27.6. |
+
 ---
 
 ## 1. Research question, status, and what is being confirmed
@@ -117,13 +133,17 @@ Readers: NLA (`ceselder/qwen3.6-27b-nla-rl`, `av_rl_adapters/iter_000400`, L42 o
 4. Rev-3 "In-J count control = list index" — **dropped** (D19); "next-digit cell" — **dropped** (D24).
 5. Rev-3 "WorkspaceBench success is fully explained by text" — **replaced** by the D22 wording (target information is prompt-recoverable).
 
-### 1.3 Two-branch headline (D25), fixed now
-Branches are keyed to the col primaries only (P1, P2); tense (P3, P4) is a geometric claim about the tail of an in-J feature that the model can already verbalise (87% reportable) and never carries the title.
+### 1.3 Four-branch headline (D25, D27.6), fixed now
+Branches are keyed to the col primaries only, P1 (NLA) × P2 (OL), each "pass" = the full claim criterion of §3.1 (a void cell, after the q80 ladder step, counts as "fail"). Tense (P3, P4) is a geometric claim about the tail of an in-J feature that the model can already verbalise (87% reportable) and never carries the title. Title in every branch: "Do NLAs read what the model can't say?"; the abstract's first sentence carries the answer.
 
-| Branch | Condition | Abstract, first sentence (template) |
-|---|---|---|
-| **Branch 1** | P1 or P2 meets the full claim criterion (§3.1) | "Barely, in narrow channels, and not in the language they use to describe what they read": on the one natural non-J feature the model uses, [the NLA, via one pre-named phrasing / OL, via its next-token continuation channel] shows channel-specific sensitivity to a J-Lens-invisible, behaviourally active edit, while its descriptive templates (N1–N5) and free readouts (T1) do not express it. |
-| **Branch 2** | Neither P1 nor P2 meets the criterion | "No, on the one natural non-J feature the model uses": at doses where both decoders track in-J features (PC1–PC2) and the edit moves the model's newline decision, neither decoder's output follows the J-removed col direction beyond random directions. |
+| Branch | P1 (NLA col) | P2 (OL col) | Abstract, first sentence (template) | Pre-registered expectation |
+|---|---|---|---|---|
+| **1a** | pass | pass | "Barely, in narrow channels, and not in the language they use to describe what they read": on the one natural non-J feature the model uses, both decoders show channel-specific sensitivity to a J-Lens-invisible, behaviourally active edit (the NLA via one pre-named phrasing, OL via its next-token continuation channel), while their descriptive templates (N1–N5, S9) and free readouts (T1) do not express it. | unlikely (needs P1 to beat its expected shrinkage) |
+| **1b** | **fail** | **pass** | "Not the NLA, and OL only through its next-token continuation channel": on the one natural non-J feature the model uses, the NLA's output does not follow a J-Lens-invisible, behaviourally active edit beyond random directions, while OL's continuation channel does; [S6 clause from §10.1]; neither decoder describes it (N1–N5, T1). | **likeliest branch** (P1 expected z ≈ +2.5–2.9 after shrinkage; P2 pilot z +3.9–4.0, band-limited) |
+| **1c** | pass | fail | "Barely, and in one phrasing": on the one natural non-J feature the model uses, one pre-named NLA phrasing tracks a J-Lens-invisible, behaviourally active edit beyond random directions; OL does not, and neither decoder's descriptions (other NLA phrasings, N1–N5) or free readouts (T1) express it. | unlikely |
+| **2** | fail | fail | "No, on the one natural non-J feature the model uses": at doses where both decoders track in-J features (PC1–PC2) and the edit moves the model's newline decision, neither decoder's output follows the J-removed col direction beyond random directions. | second most likely |
+
+Modifiers that apply on top of any branch are fixed in §10 (negatives failing non-superiority; T1 positive; behaviour inactive at the cell; claim only at r11; mixed case for P1). In 1a and 1c, "reads" is never used; the wording is "channel-specific sensitivity" (§1).
 
 **Stands on either branch:** Part A (what counts as non-J; the survival test is uninformative; the calibrated gate; the positional-bookkeeping survey, scoped); Part D (WorkspaceBench target information is prompt-recoverable, D22 wording); the latent-generated reconstruction (D16: the NLA rewrites the clue to fit a planted bridge, 12/12). Parts B (col) and C (the tense tail) take their wording from §10.
 
@@ -159,6 +179,8 @@ Indices (defined in §6): FollowFeature (paired shift and paired win, z vs null 
 
 Common definition for all four (§4.4 gives the construction): read-layer steering (arm R) at **L42**, read token as in the pilot (one in-line token per passage, index ≥ 8, after ≥ 1 newline, for col; the clause token after the finite verb for tense), **centred** construction h' = h − (v·h)v ± Δv, unit direction v = normalise((I − P_{S_1536}) w) where S_1536 = top-1536 right singular vectors of W_U·diag(1+w_norm)·J_42 (neuronpedia n1000), dose **Δ = q90 − m** of the natural projection on 02's bank (fixed constants, not estimated on fresh items), both candidates of a pair scored in one batch, LO = log p(+ candidate) − log p(− candidate), per-item effect e_i = (LO_i(+Δ) − LO_i(−Δ))/2, template-family LO = mean of the family's templates' LO.
 
+**Frozen inputs (D27.5; never re-fit on fresh items).** The steering directions and doses come only from the pilot/training split (02's banks) and are recorded by sha256 in the freeze manifest: col w = 02 `probes/col_hs43.pt`, key `steer_dir_unit_jrem_r1536` (the J-removed 4r\* regression direction; cosine to our recomputation 0.99999); tense = 02 `probes/tense_hs43.pt`, key `steer_dir_unit_jrem_r1536`; raw directions = key `steer_dir_unit` of the same files (PCs, Figure 1); language = 02 `probes/lang_hs43.pt`. Doses = `mats.capture.doses_from_projection` on the natural projection over 02's wrap bank (col) and prose bank (tense): q90 − median (primary), q80 − median (ladder fallback only, §4.4.3), q99 − median (S3). No fresh item enters any direction, dose, template or SESOI constant.
+
 | ID | Reader | Feature, direction | Dose (Δ; ‖Δ‖/median‖h‖) | Template(s), + vs − (frozen literally) | Pilot (excluded; proxy null) | Prior P(claim) |
 |---|---|---|---|---|---|---|
 | **P1** | NLA@42, scored right after `<explanation>\n` | col; 02 regression (covariance) direction `col_hs43.pt`, J-removed at 4r\* = 1536 (02 `jrem_r1536` export) | 7.098 (≈ 0.079) | `nla:nj1_col:m2` only: **"Mid-sentence continuation located near the end of a hard-wrapped line."** vs **"Mid-sentence continuation located at the beginning of a hard-wrapped line."** | AUROC 0.63; win 0.95; shift +0.332 (item SD 0.221); z +5.6 / +3.5 | 0.35 |
@@ -175,6 +197,10 @@ Common definition for all four (§4.4 gives the construction): read-layer steeri
 4. **Validity:** the cell is not void under the leak test (§4.4.3) or the FVE guard (§4.4.4). A void primary counts as "not claimed"; it is never replaced, and Holm stays over 4.
 
 A z ≤ −3 is reported as anti-tracking, never as a pass.
+
+**P1: pre-registered expected effect (D27.3).** P1 is the best of 11 NLA col templates, so its pilot estimate (AUROC 0.63, z_Jc +3.5 against a proxy null) is inflated by selection. **We predict the fresh-item P1 effect to shrink to about its family mean: z_Jc ≈ +2.5 to +2.9, cross-item AUROC ≈ 0.58 (fraction of probe ≈ 0.16), ē ≈ +0.25 nats (pilot +0.33).** "Replicates but smaller" is therefore the predicted outcome, and under it P1 most likely fails condition 1 (z_min ≥ 3). This expectation is stated so that a smaller effect is not read as a surprise and a pass is not over-read.
+
+**Mixed case (P1 fails, its family mean passes).** If P1 fails the claim criterion but the declared-secondary family mean z_Jc (condition 3's statistic) is ≥ +3, or other NLA col templates pass individually, the result is **a non-replication of the primary**. It is reported as an exploratory note ("the NLA col family shows sensitivity on fresh items that the pre-named template did not carry"), with no claim, no branch change and no re-selection of the template. The same rule applies to P2–P4.
 
 **Declared-secondary families (for condition 3; fixed now):**
 
@@ -208,18 +234,45 @@ At the same matched norm r11, raw col is scored with the P1 template, nl_cont an
 | N4 | f07_count (frozen) | "- deep after a newline" / "- just after a newline"; "- line position: late in the line" / "…early…"; "- current line depth: deep" / "…shallow" | 0.49 |
 | N5 | f07_break (frozen) | "- line wrap status: line break imminent" / "…mid-line, no break yet"; "- near linewrap boundary" / "- far from…"; "- line break is coming soon" / "…far away" | 0.46 |
 
-- **SESOI:** cross-item AUROC 0.55, i.e. **fraction of probe 0.10** at probe AUROC 1.00 (if the fresh probe AUROC is A_p, the fraction SESOI is 0.05/(A_p − 0.5)); in band units, 0.05 AUROC ≈ 2–4 null-SD (OL AUROC null SD 0.012–0.029 in the pilot). Rev-3's "AUROC ≤ 0.55 = no meaningful tracking" is now the equivalence bound.
-- **Test (TOST, per family):** item-clustered bootstrap 90% CI of AUROC ⊂ (0.45, 0.55) ⇔ both one-sided tests at α = 0.05. **Non-superiority** (upper 95% one-sided bound < 0.55) is the substantive claim ("does not express +col"); the lower bound distinguishes "flat" from "anti-tracking".
+- **Statistic (D27.4): the one the null bands are built from.** For each family f, per item e_i = (LO_i(+Δ) − LO_i(−Δ))/2 (family LO = mean over its templates), on the same fresh items and at the same n as the primaries (all 240 col passages). The test statistic is the real direction's mean shift in excess of the random-direction band on those items:
+  T_f = ē_f(real) − (1/K) Σ_k ē_f(null_k), K = 100 per band;
+  SE_f² = Var_i(e_real,i − ē_band,i)/n + Var_k(ē_k)/K, where ē_band,i = (1/K) Σ_k e_k,i (item-level sampling of the paired difference + direction-level sampling of the band centre).
+  It is computed against **both** bands (isotropic and J-complement) with the primaries' K = 100 null directions at the exact real-cell norm (no extra scoring).
+- **SESOI mapped onto ē:** cross-item AUROC 0.55 ⇔ fraction of probe 0.10 at probe AUROC 1.00. δ_f = the ē shift that, applied as a pure location shift (+δ to LO(+Δ), −δ to LO(−Δ)), moves the cross-item AUROC of the pilot's LO distribution at this cell from 0.50 to 0.55 (empirical, distinct-item pairs; normal theory gives δ = Φ⁻¹(0.55)·SD(LO)/√2 = 0.089·SD(LO), within 15%). **Frozen constants (nats, from the pilot split; `power/tost_sim.json`):**
+
+  | Family | δ_f (ē, nats) | SD(LO) across items | δ_f / direction-level SD (iso / Jc) |
+  |---|---|---|---|
+  | N1 count_qual | 0.259 | 3.34 | 2.3 / 3.2 |
+  | N2 count_num | 0.124 | 1.47 | 4.8 / 5.1 |
+  | N3 decision | 0.214 | 2.70 | 1.9 / 3.9 |
+  | N4 f07_count | 0.119 | 1.42 | 3.1 / 3.2 |
+  | N5 f07_break | 0.233 | 2.84 | 2.3 / 2.6 |
+
+  So the SESOI is ≈ 2–5 direction-level SDs of the band (the band SD that does not shrink with n). If the fresh probe AUROC is A_p < 1, the bound is reported also as the fraction-of-probe equivalent 0.05/(A_p − 0.5); δ_f is not re-estimated.
+- **Test (TOST, per family and band):** pass iff T_f − 1.645·SE_f > −δ_f AND T_f + 1.645·SE_f < +δ_f (both one-sided tests at α = 0.05). A family passes iff it passes against **both** bands. **Non-superiority** (T_f + 1.645·SE_f < δ_f against both bands) is the substantive claim ("does not express +col"); the lower bound distinguishes "flat" from "anti-tracking". The cross-item AUROC with its item-bootstrap 90% CI is reported beside it (descriptive; Figure 3), not tested.
 - **Family decision:** intersection-union — "OL descriptive templates are flat" is claimed only if all five pass TOST (no multiplicity correction needed for IUT). "OL descriptive templates do not express col" is claimed if all five pass non-superiority.
-- **Prediction:** all five pass non-superiority. N5 may fail the lower TOST bound (pilot 0.46; at n = 240 SE ≈ 0.005–0.007), which is then reported as anti-tracking, with z vs both bands.
-- **Declared NLA negatives (secondary, same test):** NLA count_qual, count_num, decision (fixed) and f07_break (frozen) at the P1 cell; pilot 0.49–0.53.
+- **Power (simulation, `experiments/10_main/power/tost_sim.py`, seed 20261006, 2,000 runs per cell; RESULTS.md there).** The simulation resamples the pilot's per-item structure, draws K = 100 fresh directions per band with the pilot's direction-level covariance (which does not shrink with n), and compares the real direction with the band on the same simulated items. Probability that all five families pass TOST against both bands (IUT):
+
+  | True effect θ (each family) | n = 120 | 240 | 480 | 960 |
+  |---|---|---|---|---|
+  | θ = 0 | 1.00 | 1.00 | 1.00 | 1.00 |
+  | θ = 0.5·δ_f | 0.97 | 1.00 | 1.00 | 1.00 |
+  | θ = pilot point estimate (N5 anti-tracks, −0.6·δ vs Jc, −0.8·δ vs iso) | 0.65 | 0.82 | 0.92 | 0.97 |
+  | real direction exchangeable with a random Jc direction | 0.89 | 0.91 | 0.93 | 0.93 |
+
+  Non-superiority (IUT) power is ≥ 0.96 in every row at every n. Empirical size at θ = δ_f is 0.04–0.06 per family (Jc band). Sensitivities (nulls not rescaled to the q90 norm; direction SD × 1.3) leave rows 1–2 at ≥ 0.91 for n ≥ 120 and ≥ 0.99 at n = 240; they lower only rows 3–4 (0.47–0.72 and 0.67–0.74 at n = 240), and row 4 does not improve with n. **Chosen n for N1–N5: 240 col passages (the primaries' n; D27.4's "same n" holds). 120 already gives ≥ 80% power at θ = 0 and θ = 0.5·SESOI; raising n to 480 would only help the case where N5 truly anti-tracks, which TOST is meant to flag.**
+- **Prediction:** all five pass non-superiority. N5 may fail the lower TOST bound (pilot ē −0.16 against band centres of −0.02 (Jc) and +0.03 (iso), i.e. −0.6 to −0.8·δ); it is then reported as anti-tracking, with z vs both bands.
+- **Declared NLA negatives (S9; secondary, same test):** NLA count_qual, count_num, decision (fixed) and f07_break (frozen) at the P1 cell; pilot AUROC 0.49–0.53. Frozen δ_f (same mapping, pilot NLA LO): 0.170 / 0.165 / 0.087 / 0.058 nats (1.8–5.3 direction-level SDs). Simulated IUT power (`tost_sim.py --reader nla`): 1.00 at θ = 0; 0.98 / 1.00 at θ = 0.5·SESOI for n = 120 / 240; 0.60–0.73 if the real direction is exchangeable with a random direction (f07_break's δ is only ≈ 2 band SDs).
 
 ### 3.4 Template-free check (T1)
 
-- **Question (verbatim, pre-written):** *"Does this text mention position within a line, line length, wrapping, or an upcoming line break? Answer yes or no."*
-- **Judges (fixed):** Gemini 3.8 Flash (primary; OpenRouter, temperature 0, reasoning minimal, max_tokens 8, answer parsed as the first yes/no token) and `accounts/fireworks/models/kimi-k3` (second). The judge sees only the readout text.
+- **Judge instruction (verbatim, pre-written; D27.5).** System: *"You will see a short text written by a model that describes another model's internal state. Judge only what the text DESCRIBES in words. Ignore its formatting: line breaks, newline characters, indentation, bullet layout and line lengths of the text itself are not descriptions and never count. Count only statements about position within a line, line length, wrapping, or an upcoming line break in the text being described."* User: *"Does this text mention position within a line, line length, wrapping, or an upcoming line break? Answer yes or no.\n\nText:\n<<<{readout}>>>"*. (OL's continuations contain literal newlines; a judge that counted them would score formatting, not content.)
+- **Judges (fixed):** Gemini 3.8 Flash (primary; OpenRouter, temperature 0, reasoning minimal, max_tokens 600 (reasoning tokens count toward the cap; a 60-token cap left 29/80 Gemini answers unparsed in experiment 07), answer parsed as the first yes/no token) and `accounts/fireworks/models/kimi-k3` (second). The judge sees only the readout text.
 - **Readouts:** free generations, k = 4 per item per condition (T = 1, top_p 0.95, top_k 64, 256 tokens; the readers' standard settings), on **120 fresh col passages** (a pre-drawn subset of the 240), for NLA@42 and OL@42, under 7 conditions: 0-dose; ±4r\* q90 (the P1/P2 cell); ±raw q90; ±raw q99. That is 120 × 4 × 7 × 2 = 6,720 readouts.
-- **Judge sensitivity gate (before the sprint):** 40 synthetic readouts (20 that mention line position/length/wrapping/a break, 20 that mention "characters" in the narrative sense or nothing), written before any T1 readout exists. Both judges must classify ≥ 36/40 correctly; otherwise the prompt is revised once on the synthetic set only.
+- **Judge sensitivity gate (before the sprint):** 40 synthetic readouts, written by the lead before any T1 readout exists, in both decoders' styles (NLA explanation prose; OL `- ` bullet continuations):
+  - **20 positives that describe line position** in words: 8 position-within-line ("the token sits near the end of a long line"), 4 line length, 4 wrapping, 4 upcoming break; at least 6 of the 20 are formatted as single-line text with no literal newline.
+  - **20 negatives:** 10 that **contain literal newlines / hard-wrapped layout but describe nothing about lines** (e.g. a bullet list or a wrapped paragraph about the passage's topic, OL-style "- \nthe …" continuations); 6 that mention "characters" or "lines" in the narrative sense (story characters, lines of a poem's content, a line of people); 4 with nothing related.
+  - Both judges must classify ≥ 36/40 correctly **and** ≥ 9/10 of the literal-newline negatives as "no"; otherwise the instruction is revised once on the synthetic set only, and the revision is logged.
 - **Statistics:** yes-rate per reader × condition with a Clopper–Pearson 95% upper bound (0/960 ⇒ ≤ 0.38%); item-level McNemar of any-yes on +Δ vs −Δ; judge agreement (κ, and raw agreement since κ is degenerate near 0). Every "yes" by either judge is shown to the user, who labels it blind to condition.
 - **Prediction:** upper bound < 1% for every reader × condition, and no + vs − difference. **Falsified** if a confirmed (user-labelled) yes-rate exceeds 1% in a steered condition and exceeds the opposite sign's rate (McNemar p < 0.05).
 
@@ -232,7 +285,7 @@ At the same matched norm r11, raw col is scored with the P1 template, nl_cont an
 | S3 | q99 dose for P1–P4 (FVE-guarded per side) | Dose monotonicity (old H6): ē(q99) > ē(q90) where both are valid. |
 | S4 | Layers: OL@40 and OL@44 for P2/P3 with r = 1536 at both (not 4r\*(L44) = 1024, which leaked EOL in the pilot); leak-tested at the cell's own layer | Reported; L44 void if its leak fires. |
 | S5 | Additive steering (h ± Δv) for P1–P4 | Qualitatively equal to centred (pilot: 0.54 vs 0.52). |
-| S6 | **OL mechanism (D25):** (a) indentation (non-J by G2, causally inert by G4) steered in OL's carrier with an indentation continuation pair; (b) gain ratio = OL continuation shift / model behavioural shift (same item, same edit) for col 4r\*, col raw, tense 4r\*, tense raw and 2 random directions with nonzero behavioural effect; (c) tense adapter-off (base Qwen in OL's carrier, P3 templates) | Re-instatement predicts: (a) flat; (b) ratios within ±25% of their mean across directions; (c) P3 effect collapses (as col: 0.40–0.44). "Reporting beyond acting" predicts (a) a shift. If `experiments/09` runs on the pilot split before the freeze, its numbers are cited in §14 and the predictions above are not changed. |
+| S6 | **OL mechanism (D25):** (a) indentation (non-J by G2, causally inert by G4) steered in OL's carrier with an indentation continuation pair; (b) gain ratio = OL continuation shift / model behavioural shift (same item, same edit) for col 4r\*, col raw, tense 4r\*, tense raw and 2 random directions with nonzero behavioural effect; (c) tense adapter-off (base Qwen in OL's carrier, P3 templates) | Re-instatement predicts: (a) flat; (b) ratios within ±25% of their mean across directions; (c) P3 effect collapses (as col: 0.40–0.44). "Reporting beyond acting" predicts (a) a shift. If `experiments/09` runs on the pilot split before the freeze, its numbers are cited in §14 and the predictions above are not changed. S6 need not finish before the freeze (D27.2); its fresh-item outcome is classified acting / reading / inconclusive by the rule in §10.1, which fixes P2's interpretation now. |
 | S7 | Behavioural validation for P1–P4 in arm U (L38 upstream edit, centred, q90): newline log-odds, generation wrap shift (greedy, 48 tokens); tense next-verb log-odds | Reported; pilot col 4r\* L38: +0.33 log-odds (z +45), −1.55 chars. |
 | S8 | (C) planted intermediates as **in-J calibration**, α ≤ 1.5 subset at L38 (109 items in the yield check); (S8b) the **latent-generated reconstruction rate**: fraction of free NLA readouts on planted items whose reconstructed prompt is rewritten to fit the planted bridge (judged by both judges, user-checked on 30) | (C): all readers report the planted bridge (pilot ≥ 0.98). S8b: ≥ 0.7 (pilot 12/12). |
 | S9 | NLA negatives (§3.3) | TOST as for N1–N5. |
@@ -282,15 +335,16 @@ G1 decodable; G2a enrichment of the diff-in-means direction ≤ 1.5 at r\* and 4
 #### 4.4.1 Construction and doses
 - **Arm R (all confirmatory cells):** the edited vector is handed to the reader at L42 (OL@40/44 for S4); no model forward pass after the edit.
 - **Centred:** h' = h − (v·h)v ± Δv. Additive is S5. Norm-preserving steering is not used (no-op for both decoders, D11).
-- **Doses (fixed constants from 02's banks; recorded in the freeze manifest):** col reg_raw q90 9.465 / q99 13.999; col reg_jrem4 q90 7.098 / q99 10.819; col cm_jrem4 q90 7.138; tense raw q90 8.392 / q99 13.904; tense jrem4 q90 5.228 / q99 9.100; r11 = 0.11‖h_i‖ per item. Symmetric ±Δ (row 56).
-- **Directions:** col = 02 regression direction (P1/P2), cm (S1); tense, language = 02 class-mean directions. J-removed = 02's `jrem_r1536` exports at L42 (cosine to our recomputation 0.99999).
+- **Doses (fixed constants from 02's banks; recorded in the freeze manifest):** col reg_raw q90 9.465 / q99 13.999; col reg_jrem4 q90 7.098 / q99 10.819; col cm_jrem4 q90 7.138; tense raw q90 8.392 / q99 13.904; tense jrem4 q90 5.228 / q99 9.100; r11 = 0.11‖h_i‖ per item. Symmetric ±Δ (row 56). **q80 (ladder fallback, §4.4.3):** q80 − median for col reg_jrem4 and tense jrem4, computed by the same function (`doses_from_projection(proj, quantiles=(0.8,), extra_multiple=None)`) on the same 02 bank projection and written into the freeze manifest before any fresh scoring (a deterministic function of frozen training data; no choice involved).
+- **Directions (frozen; D27.5):** col = 02 regression direction (P1/P2), cm (S1); tense, language = 02 class-mean directions. J-removed = 02's `jrem_r1536` exports at L42 (cosine to our recomputation 0.99999). Exact files: 02 `probes/col_hs43.pt` and `probes/tense_hs43.pt`, key `steer_dir_unit_jrem_r1536` (raw: `steer_dir_unit`; language: `probes/lang_hs43.pt`); sha256 of each file in the manifest. **Never re-fit, re-normalised against or re-selected on fresh items.**
 
 #### 4.4.2 Null bands
 - For every primary: **K = 100 isotropic and K = 100 J-complement (orthogonal to S_1536) unit directions**, drawn with a fresh seed recorded in the manifest (not the pilot's 20), scaled to the **exact per-item norm of the real cell** (q90 constants for P1–P4; r11 for PCs), same centred ± construction, same items and templates. Secondaries: K = 20 per class at their own matched norm.
+- **Computed on the fresh items at the primary's n (D27.5):** every band (primaries, PCs, negatives, leak) is scored on exactly the fresh items the real cell is scored on (all 240 col / 160 tense / 120 language passages), never on a subset, on pilot items, or by re-using pilot null scores. The negatives' TOST (§3.3) uses the P1/P2 cell's bands on the same 240 passages; the T1 subset (120) is not used for any band.
 - Reported as z and empirical percentile; **never subtracted**.
 
 #### 4.4.3 Leak test (two-sided; certifies non-J doses)
-- J-Lens@L (L = the cell's read layer; L42 for primaries, L40 also reported), max cosine over each token set, ± sides, statistic = mean shift and AUROC, against the K = 100 J-complement band.
+- J-Lens@L (L = the cell's read layer; L42 for primaries, L40 also reported), max cosine over each token set, ± sides, statistic = mean shift and AUROC, against **the K = 100 J-complement band** (the same 100 J-complement directions as the primary band, on the same fresh items; D27.1). "Central 95% band" = between the 2.5th and 97.5th empirical percentiles of the 100 null values (linear interpolation); "fires" = the real statistic lies outside it.
 - **Primary sets (fire at the central 95% band, either direction):**
   - col: EOL (all 200 newline-containing tokens; all whitespace-only in Qwen's vocabulary); count label words (long/longer vs short/shorter; end/ending vs start/beginning; sixty/seventy/eighty vs ten/fifteen/twenty); content3 (the/and/of, 12 variants).
   - tense: label (past/was/were vs present/is/are); content (r5 10 vs 10 verbs: was, were, had, did, said, became, went, made, took, came vs is, are, has, does, says, becomes, goes, makes, takes, comes) ∪ the calibration's 34 vs 32 verb-token set (`calib_modal.jlens_content`).
@@ -298,6 +352,7 @@ G1 decodable; G2a enrichment of the diff-in-means direction ≤ 1.5 at r\* and 4
 - **Supplementary sets (fire only at |z| ≥ 3):** content10; EOL − content3; EOL − content10.
 - **Rule:** if any primary set fires, the dose is **void for non-J claims** (P1–P4 count as not claimed). The expected false-void rate is ≤ 1 − 0.95³ ≈ 14% per col cell if sets were independent (they are positively correlated, so lower). We accept this conservatism.
 - Pilot: all P1–P4 cells clean (col 4r\* EOL z +0.2, content3 −0.1; tense 4r\* label +0.4, content −0.9; Jc band).
+- **Dose ladder (pre-registered; D27.1):** if a primary's q90 cell is void (leak or FVE guard, either side), that primary is tested **once at q80** (q80 − median constant, §4.4.1), with new K = 100 iso and J-complement bands at the q80 norm (seed recorded in the manifest), the same leak sets, the same FVE guard, the same claim criterion and the same declared-secondary family (members re-run at q80 where their dose is q90; r11/q99 members unchanged). **No further steps:** if q80 is also void, the primary is void (not claimed; Holm stays over 4). A ladder result is labelled "q80 (ladder)" everywhere it is reported. The ladder applies only to voids, never to a valid q90 cell that fails the criterion.
 
 #### 4.4.4 FVE guard (one-sided)
 - NLA AV + AR, k = 4, per-example paired natural vs steered, per side (+Δ and −Δ separately). **Void** if mean FVE(steered) < mean FVE(natural) − 0.05. The guard is a property of the edited vector, so it applies to the OL cell with the same direction and dose too.
@@ -341,9 +396,9 @@ All readers get identical captured vectors (capture once, block-42 output). Delt
 ### 6.2 Statistics
 - Unit = passage (col: one read position per passage, as piloted; the multi-position ICC design of rev 3 is not used). Item-clustered bootstrap, 2,000 resamples, for all CIs.
 - Primary: z_shift vs both bands (K = 100) with empirical percentiles; Holm over P1–P4; sign agreement (§3.1). Secondary per cell: z_AUROC, paired win, cross-item AUROC, fraction of probe.
-- Negatives: TOST on cross-item AUROC (§3.3).
+- Negatives: TOST on the band statistic T = ē(real) − band-mean ē, bounds ±δ_f, both bands, IUT over families (§3.3); cross-item AUROC with 90% CI reported descriptively.
 - T1: Clopper–Pearson, McNemar (§3.4).
-- **Analysis code frozen** (`experiments/10_main/main_analyze.py` [DECIDE: path]) and tested on the pilot split, where it must reproduce R5's published numbers to ±0.01 AUROC / ±0.1 z (with the pilot's proxy nulls). Its sha256 enters the freeze manifest. The primary analysis is one run of this script; its stdout is saved verbatim.
+- **Analysis code frozen** (`experiments/10_main/main_analyze.py`) and tested on the pilot split, where it must reproduce R5's published numbers to ±0.01 AUROC / ±0.1 z (with the pilot's proxy nulls). Its sha256 enters the freeze manifest. The primary analysis is one run of this script; its stdout is saved verbatim.
 - **Deviations:** any change after the freeze is logged in `notes/deviations.md` with time, reason and whether data had been seen; results from deviated analyses are labelled exploratory.
 
 ## 7. Controls (summary)
@@ -364,13 +419,13 @@ The SD of the null-band mean shift decomposes into direction-to-direction varian
 | P4 NLA f07_tense | +0.772 (0.600) | iso / Jc | 0.102 / 0.082 | 0.017 / 0.016 | +7.5 / +9.2 at n = 120 (asymptote +7.7 / +9.5) |
 
 - **Reading.** Going from 60 to 240 passages raises P1's binding (Jc) z by ≈ 0.1 and P2's by ≈ 0.05. No feasible n moves a marginal cell across z = 3; only the true effect does. **P1 and P2 sit 0.5–1.0 SD above the bar in the pilot, before any winner's-curse shrinkage**: P1's family-mean z is only +2.5–2.9, so a regression of P1 toward its family would fail it. The priors in §3.1 reflect this.
-- **What n buys:** (a) precise effect sizes: at n = 240, SE(ē) ≈ 0.014 (P1) and 0.020 (P2); SE(AUROC) ≈ 0.01; d_z CIs ±0.15; (b) TOST power for N1–N5: pilot SE(AUROC) ≈ 0.010 at n = 60 → ≈ 0.005 at n = 240, so a true AUROC of 0.49 ± 0.03 passes TOST with power > 0.99; (c) T1's upper bound (0/960 ⇒ 0.38%).
+- **What n buys:** (a) precise effect sizes: at n = 240, SE(ē) ≈ 0.014 (P1) and 0.020 (P2); SE(AUROC) ≈ 0.01; d_z CIs ±0.15; (b) TOST power for N1–N5 (rev 4.1, D27.4; superseding rev 4's SE(AUROC) argument, which ignored direction-level variability and, with an unpaired Hanley–McNeil SE of ≈ 0.037, could not close a ±0.05 bound at n = 240): on the band statistic of §3.3, simulated from the pilot, IUT power over all five families × both bands is 1.00 at θ = 0 and 0.97 / 1.00 / 1.00 / 1.00 at θ = 0.5·SESOI for n = 120 / 240 / 480 / 960; ≥ 80% is reached by n = 120. The binding uncertainty is the band's direction-level SD, which n does not shrink (the 'real direction exchangeable with a random direction' scenario sits at 0.89–0.93 for every n). Details and sensitivities: `experiments/10_main/power/RESULTS.md`; n stays 240; (c) T1's upper bound (0/960 ⇒ 0.38%).
 - **K matters more than n:** with K = 20 the band SD has relative SE ≈ 1/√(2·19) ≈ 16% (z = 3.5 ± 0.55); with K = 100, ≈ 7% (± 0.25). Hence K = 100 for primaries.
 
 ### 8.2 Sample sizes (fresh, passage-disjoint items)
 | Bank | n | Used for | Justification |
 |---|---|---|---|
-| col passages (02 `build_wrap` recipe, W ~ U{30..90} as 07; one read token per passage, index ≥ 8, after ≥ 1 newline) | **240** | P1, P2, N1–N5, S1–S7, behaviour; **120 pre-drawn** for T1 | z saturates by 120 (≥ 97% of asymptote); 240 for effect-size CIs and TOST; matches D21.8. |
+| col passages, **the pilot's generator** (D27.5): `08_col_pilot/pilot_items.py::_wrap_item` = 02's `s1_data._wikitext_paragraphs` cleaner + 02's `build_wrap` textwrap recipe (`textwrap.fill(width=W, break_long_words=False)[:1100]`), **W ∈ {30, 40, 50, 60, 70} cycled equally (48 per width)**, same cleaned-wikitext source distribution, one read token per passage (random in-line token, index ≥ 8, col ≥ 1, after ≥ 1 newline; ids truncated at the read token), a fresh shuffle seed recorded in the manifest, passage-disjoint (K5) | **240** | P1, P2, N1–N5, S1–S7, behaviour; **120 pre-drawn** for T1 | z saturates by 120 (≥ 97% of asymptote); 240 for effect-size CIs; TOST power ≥ 0.99 at θ ≤ 0.5·SESOI (§3.3); matches D21.8. Rev 4's "W ~ U{30..90} as 07" was 02/07's recipe, not the pilot's, and is withdrawn. |
 | tense items (02 `build_prose`, spaCy clause tense, 80 Past / 80 Present, one per passage) | **160** | P3, P4, PC2, S6c | Effects ≥ 7 SD at n = 120; 160 gives balanced classes and SE(AUROC) ≈ 0.02 for the NLA-vs-OL exploratory contrast (D21: "more OL tense items"). |
 | language items (papluca **test** split, 60 ru + 60 pl, disjoint from calibration_items) | **120** | PC1 | Pilot d_z ≈ 1.2–1.5 at n = 60. |
 | (C) planted | existing α ≤ 1.5 subset (109 items) | S8 | yield check (D16). |
@@ -388,7 +443,7 @@ Per primary: 240 (or 160) items × (2 real + 400 null conditions + secondaries) 
 | K1 | ≥ 1 non-J feature passes G1–G4 | **PASSED with n = 1** (col; D10, D13, D19). Frozen: no backup search. |
 | K4 | (C) yield ≥ 60 | **PASSED** (431 at L38; 109 at α ≤ 1.5). |
 | **K5** (sprint D1, before any scoring) | Integrity: template and analysis-code hashes match the manifest; item disjointness = 0 overlaps; K = 100 matched-norm nulls exist for all four primaries and both PCs | Fail → fix before scoring; log in `deviations.md`. No reader score is computed until K5 passes. |
-| **K2** (D1–D2) | At each primary cell: FVE guard (both sides), leak test (primary sets), behavioural validation | FVE or leak fails → that primary is **void** (counts as not claimed; Holm stays over 4). Behaviour fails → §4.4.5 wording. All of P1/P2 void → Branch 2 by default, worded "no valid non-J test". |
+| **K2** (D1–D2) | At each primary cell: FVE guard (both sides), leak test (primary sets), behavioural validation | FVE or leak fails at q90 → that primary goes **once to q80** (dose ladder, §4.4.3); void again → **void** (counts as not claimed; Holm stays over 4). Behaviour fails → §4.4.5 wording. All of P1/P2 void → Branch 2 by default, worded "no valid non-J test". |
 | **K3** (D3) | PC1 and PC2 on fresh items at r11 | Both fail → readouts or doses broken → **pivot P2**: Part A + Part D + latent-generated reconstruction, col reported as "untestable". One fails → proceed; state which control holds. |
 | K6 (D3) | Band shape: Shapiro–Wilk on the 100 null shifts per band | p < 0.01 → the empirical-percentile condition (exceeds all 100) is decisive; z reported as descriptive. |
 
@@ -396,16 +451,41 @@ Per primary: 240 (or 160) items × (2 real + 400 null conditions + secondaries) 
 
 ## 10. Decisive outcomes (fixed wording)
 
-| P1 (NLA col) | P2 (OL col) | N1–N5 | T1 | Branch / Part B wording |
-|---|---|---|---|---|
-| claim | claim | pass (non-superiority) | ≈ 0 | **Branch 1:** both decoders carry a narrow, J-Lens-invisible channel for col (one NLA phrasing; OL's continuation channel), absent from their descriptive templates and free readouts. |
-| fail | claim | pass | ≈ 0 | **Branch 1 (OL only):** "OL's continuation channel carries the model's newline decision, including its J-Lens-invisible part; OL does not describe it." Mechanism wording from S6 (re-instatement if S6a flat and S6b ratios constant). |
-| claim | fail | pass | ≈ 0 | **Branch 1 (NLA only):** "one pre-named NLA phrasing tracks the J-removed col edit; other phrasings and free readouts do not." n = 1 template stated. |
-| fail | fail | pass | ≈ 0 | **Branch 2:** "No, on the one natural non-J feature the model uses" (PCs pass at matched norm; behaviour moves). |
-| any claim | – | ≥ 1 family fails non-superiority | – | Descriptive language does carry col: Branch 1 wording drops "not in the language they use to describe"; reported as a pre-registered negative that failed. |
-| – | – | – | confirmed yes-rate > 1%, + > − | Template-free reading of col exists; strongest Branch 1 form; reported as a failed prediction. |
-| claim only at r11 (S2), fail at q90 | | | | **Not claimed.** Reported as a sensitivity result. |
-| claim, behaviour fails at the cell | | | | "Reader sensitivity to a behaviourally inactive direction"; cannot carry Branch 1. |
+**Four col branches (D27.6; same as §1.3).** "Pass" = the full claim criterion of §3.1 after at most one ladder step (§4.4.3); void = fail.
+
+| Branch | P1 (NLA col) | P2 (OL col) | Part B wording (with N1–N5 passing non-superiority and T1 ≈ 0) |
+|---|---|---|---|
+| **1a** | pass | pass | "Both decoders carry a narrow, J-Lens-invisible channel for col (one pre-named NLA phrasing; OL's continuation channel), absent from their descriptive templates and free readouts." OL's half is worded by §10.1. |
+| **1b** (likeliest) | fail | pass | "The NLA does not follow the J-removed col edit beyond random directions; OL's continuation channel does, [§10.1 clause]; OL does not describe it." P1's fresh effect is reported against its pre-registered expectation (z ≈ +2.5–2.9, AUROC ≈ 0.58). |
+| **1c** | pass | fail | "One pre-named NLA phrasing tracks the J-removed col edit; other phrasings, OL and free readouts do not." n = 1 template stated in the same sentence. |
+| **2** | fail | fail | "No, on the one natural non-J feature the model uses" (PCs pass at matched norm; behaviour moves). |
+
+**Modifiers (apply on top of any branch):**
+
+| Condition | Wording change |
+|---|---|
+| ≥ 1 OL family fails non-superiority (N1–N5) | Descriptive language does carry col: the "not in the language they use to describe" clause is dropped; reported as a pre-registered negative that failed. |
+| N1–N5 pass non-superiority but ≥ 1 fails the lower TOST bound | "OL's descriptive templates do not express +col; [family] anti-tracks" (no "flat" claim for that family). |
+| T1: confirmed yes-rate > 1%, + > − (McNemar p < 0.05) | Template-free reading of col exists; strongest Branch-1 form; reported as a failed prediction. In Branch 2 this becomes "no channel passes the band test, but free readouts mention line position under steering" (exploratory). |
+| Mixed case: P1 fails, its declared-secondary family mean z_Jc ≥ +3 (or other NLA col templates pass) | **Non-replication of the primary.** Exploratory note only; no claim; the branch is unchanged (§3.1). Same for P2. |
+| Claim only at r11 (S2) or only at q99 (S3), fail at q90 | **Not claimed.** Reported as a sensitivity result. |
+| Claim only at q80 via the dose ladder | Claimed, labelled "q80 (ladder; q90 void because [leak set / FVE side])". |
+| Claim, behaviour fails at the cell (§4.4.5) | "Reader sensitivity to a behaviourally inactive direction"; cannot carry Branch 1 (that primary counts as fail for the branch). |
+| P1 and P2 both void after the ladder | Branch 2 by default, worded "no valid non-J test" (K2). |
+
+### 10.1 P2 interpretation × S6, fixed now (D27.2)
+S6 runs on fresh items in the sprint (D6) and need not finish before the freeze. Its outcome is classified mechanically:
+- **S6 = acting (re-instatement):** (a) the indentation continuation shift is not ≥ +3 z against both K = 20 bands, AND (b) the gain ratios (OL continuation shift / model behavioural shift) of the six directions all lie within ±25% of their mean.
+- **S6 = reading (beyond acting):** (a) the indentation shift is ≥ +3 z against both bands (OL follows a direction the model does not act on), OR (b) col 4r\*'s gain ratio exceeds the mean of the other five by > 25% with its bootstrap 95% CI excluding that mean.
+- **S6 = inconclusive:** neither (including S6 not run or void).
+S6c (tense adapter-off) is reported beside it and does not change the classification.
+
+| P2 outcome | S6 outcome | Wording of OL's col result (fills the §10.1 clause in 1a/1b) |
+|---|---|---|
+| **P2 replicates** | acting | "the continuation channel carries the model's own newline decision" (OL re-instates the activation and Qwen's next-token circuitry acts on it; usable only if one already knows to measure the continuation, so not an interpretability readout). |
+| **P2 replicates** | reading | "OL carries non-J col content in its continuation channel" (beyond what the model acts on), still "channel-specific sensitivity", never "reads". |
+| **P2 replicates** | inconclusive | "OL's continuation channel is sensitive to the J-removed col edit; whether it carries the model's own decision or col content beyond it is unresolved (S6 inconclusive)." |
+| **P2 fails** (any S6) | – | **Fixed negative wording:** "On fresh items, OL's newline-continuation channel does not follow the J-removed col edit beyond random directions; the pilot's candidate channel did not replicate." S6 is reported as a mechanism result on its own. |
 
 | P3 (OL tense 4r\*) | P4 (NLA tense 4r\*) | Part C wording |
 |---|---|---|
@@ -430,7 +510,7 @@ Per primary: 240 (or 160) items × (2 real + 400 null conditions + secondaries) 
 
 **Figure 2 (primaries).** Forest plot of P1–P4 on fresh items: ē with 95% CI, z_iso and z_Jc with the K = 100 band histograms, pilot estimate as a hollow marker (shows shrinkage), declared-secondary family members as small markers.
 
-**Figure 3 (negatives and T1).** N1–N5 (and NLA S9) AUROC with 90% CI against the (0.45, 0.55) equivalence region; T1 yes-rates with Clopper–Pearson bounds per reader × condition.
+**Figure 3 (negatives and T1).** N1–N5 (and NLA S9): T_f / δ_f with its 90% CI (both bands) against the (−1, +1) equivalence region, cross-item AUROC with 90% CI as a side strip; T1 yes-rates with Clopper–Pearson bounds per reader × condition.
 
 **Figure 4 (Part A).** Survival test vs random equal-rank removal (all ≈ 1) beside the calibrated gate (enrichment at r\*/4r\*, G2b z), for the ≈ 13 surveyed features, labelled NON-J / DIFFUSE / IN-J / unused.
 
@@ -470,30 +550,43 @@ Per primary: 240 (or 160) items × (2 real + 400 null conditions + secondaries) 
 
 ## 13. Risks
 1. **Forking paths (main threat).** ≈ 340 col cells looked at; P1–P4 chosen from them (§1.4). Mitigations: one named template/family per primary; fresh items and fresh null directions; K = 100; Holm over 4; z ≥ 3 vs both bands plus "exceeds all 100"; sign agreement with a declared family; disclosure in the paper. Residual: the declared families share items and direction with their primary, so sign agreement guards against template flukes, not against direction-specific artefacts.
-2. **Single template (P1).** P1 is one sentence. A pass does not show the NLA "describes line position" (its other phrasings and T1 decide that); a fail does not show the NLA cannot. Winner's curse: P1 was best of 11 NLA col templates; its family mean was z +2.5–2.9. Expect shrinkage; prior 0.35.
+2. **Single template (P1).** P1 is one sentence (expected shrunken effect pre-registered in §3.1: z ≈ +2.5–2.9, AUROC ≈ 0.58). A pass does not show the NLA "describes line position" (its other phrasings and T1 decide that); a fail does not show the NLA cannot. Winner's curse: P1 was best of 11 NLA col templates; its family mean was z +2.5–2.9. Expect shrinkage; prior 0.35.
 3. **Re-instatement (P2, P3).** OL is Qwen + LoRA; the 78% vs 70% gain match favours the LoRA re-instating the activation so Qwen's own next-token circuitry acts on it. A pass in P2/P3 is then "OL inherits the model's decision", usable only if one already knows to measure the continuation. S6 tests this; the wording in §10 is fixed now. The NLA has no adapter-off analogue (av_base is fully fine-tuned).
 4. **Band-limited power.** P1/P2 are within ≈ 1 SD of the bar in the pilot; n cannot rescue them. Accepted; stated in the paper.
-5. **Leak-test conservatism.** Three primary col sets at the 95% band can void a valid cell (≤ 14%). Accepted; void cells are reported, never re-tested with fewer sets.
+5. **Leak-test conservatism.** Three primary col sets at the 95% band (K = 100) can void a valid cell (≤ 14%). Accepted; void cells are reported, never re-tested with fewer sets; the only fallback is the single pre-registered q80 step (§4.4.3).
 6. **Count-calibration gap.** No in-J count feature exists on Qwen (list index and digit failed). PCs are language and tense; the col null (if Branch 2) is scoped to "this feature", not "counts".
 7. **n = 1 non-J feature.** Stated in Part B's first sentence; the survey (Part A) is the scope statement.
-8. **Item and recipe drift.** Fresh banks use the pilot generators; any generator change is a deviation.
+8. **Item and recipe drift.** Fresh banks use the pilot generators (col: `pilot_items.py::_wrap_item`, widths {30..70}); any generator change is a deviation.
 9. **Judge validity (T1, S8b).** Sensitivity gate on synthetic readouts; user labels every "yes"; Gemini over-credits on WorkspaceBench (D14: 0.43 vs 0.33), so T1 "yes" is never accepted without the user label.
 10. **Dose skew.** Symmetric −q90 puts col's projection below its natural 1st percentile (FVE "−" side −0.018 at 4r\* q90, valid); the per-side FVE guard covers it.
 
 ## 14. Open decisions
 
-**Resolved in revision 4 (from D20–D25):** confirmatory structure and order; P1–P4 definitions; q90 primary, r11 sensitivity; Holm over 4 + |z| ≥ 3 vs both bands + sign agreement; K = 100 for primaries; label + content leak sets; SESOI AUROC 0.55 (fraction 0.10), TOST; T1 question and judges; templates frozen literally; disclosure; two-branch headline; (C) as in-J calibration at α ≤ 1.5; retractions; cut list.
+**Resolved in revision 4 (from D20–D25):** confirmatory structure and order; P1–P4 definitions; q90 primary, r11 sensitivity; Holm over 4 + |z| ≥ 3 vs both bands + sign agreement; K = 100 for primaries; label + content leak sets; SESOI AUROC 0.55 (fraction 0.10), TOST; T1 question and judges; templates frozen literally; disclosure; two-branch headline (superseded by four branches in rev 4.1); (C) as in-J calibration at α ≤ 1.5; retractions; cut list.
 
 **Resolved earlier (unchanged):** r\* = 384 / 4r\* = 1536; neuronpedia n1000 primary; final G2; centred steering; L42 primary for all readers; NLA iter 400; FVE margin 0.05 per side, k = 4; kimi-k3 second judge; Gemini 3.8 Flash; sprint dates; no outreach to the pilot author.
 
-**Still open (to close by Oct 17):**
-1. **[DECIDE: Fable]** Leak-test rule for the three primary col sets: 95% band (as written; conservative) vs |z| ≥ 3 for all sets.
-2. ~~[DECIDE: lead]~~ **Resolved:** frozen analysis script under `experiments/10_main/` (its hash recorded at freeze); deviations log `notes/deviations.md` (every departure, dated, with reason).
-3. **[DECIDE: user]** Who writes the 40-item T1 judge sensitivity set (default: the lead, before any T1 readout exists).
-4. **[DECIDE: Fable]** Whether `experiments/09` (S6 on the pilot split) must finish before the freeze, or S6 runs only on fresh items in the sprint (default: run on the pilot split if done by Oct 15; predictions in S6 are not changed by it).
-5. **[DECIDE: user]** Filing the WorkspaceBench floor issue (D17, D21); Part D reports it only after approval.
+**Resolved in revision 4.1 (D27):** leak rule (a) = two-sided central 95% J-complement band, K = 100 (§4.4.3); dose ladder q90 → q80 only; S6 need not finish before the freeze, P2's interpretation fixed by §10.1; P1 expected shrunken effect and mixed-case rule (§3.1); TOST on the band statistic with frozen δ_f and simulated power, n = 240 (§3.3, §8.1); frozen direction/dose files (§3.1, §4.4.1); bands on fresh items at the primary's n (§4.4.2); T1 judge instruction and sensitivity-set composition (§3.4); fresh col generator = the pilot's (§8.2); four-branch headline (§1.3, §10).
+
+**Formerly open items:**
+1. ~~[DECIDE: Fable] Leak-test rule~~ **Resolved (D27.1):** 95% band, K = 100 J-complement directions.
+2. ~~[DECIDE: lead]~~ **Resolved:** frozen analysis script `experiments/10_main/main_analyze.py` (its hash recorded at freeze); deviations log `notes/deviations.md` (every departure, dated, with reason).
+3. ~~[DECIDE: user] Who writes the T1 sensitivity set~~ **Resolved by default (D26):** the lead, before any T1 readout exists, to the composition fixed in §3.4. The user may take it over before Oct 9 without changing the design.
+4. ~~[DECIDE: Fable] Must `experiments/09` finish before the freeze?~~ **Resolved (D27.2):** no. If it has run on the pilot split by Oct 15 its numbers are cited here; §10.1 and S6's predictions are not changed by it.
+5. **[DECIDE: user]** Filing the WorkspaceBench floor issue (D17, D21). **Not a freeze blocker:** it affects only whether Part D mentions the issue, not any confirmatory test.
 6. ~~[DECIDE: lead]~~ **Resolved:** the union of the r5 10/10 list and the calibration 34/32 list (as written; the broader set is the more conservative leak test).
 
+**Freeze checklist (D27.7: "freeze once the TOST simulation is done and the four-branch wording is written").**
+
+| Item | Status |
+|---|---|
+| TOST reachability: statistic, SESOI mapping, power simulation, chosen n (§3.3, §8.1; `experiments/10_main/power/`) | **done** (rev 4.1): n = 240, IUT power 1.00 at θ = 0, ≥ 0.97 at θ = 0.5·SESOI |
+| Four-branch headline (§1.3) and §10 wording incl. P2 × S6 (§10.1) and mixed case | **done** (rev 4.1) |
+| All other D27 items (leak K = 100, q80 ladder, frozen w/dose files, fresh-item bands, T1 judge rules, generator) | **done** (rev 4.1) |
+| Open design decisions | **none** (item 5 is not a freeze blocker) |
+| Mechanical freeze-manifest steps (not design decisions; §12, Oct 9–18): q80 constants computed by the stated function; null-direction seeds; fresh bank build + sha256s + K5 disjointness; T1 sensitivity set written and both judges run on it; `main_analyze.py` written and reproducing R5 on the pilot split; sha256 of this file, the four template files, `pilot_split.json`, 02's `col_hs43.pt` / `tense_hs43.pt` / `lang_hs43.pt`, `tost_sim.py` and its outputs | to do before the freeze timestamp; any failure is logged in `deviations.md` |
+
+**What remains before freezing the design: none.**
 
 ---
 
