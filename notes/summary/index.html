@@ -1,0 +1,196 @@
+<title>Do NLAs Read What the Model Can't Say?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a single reading column (~68ch) like a lab note, with evidence blocks grouped by strength and two to-scale bar charts. */
+:root {
+  --paper: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #17202e;
+  --muted: #5a6577;
+  --rule: #d9dee6;
+  --accent: #2b4c7e;          /* residual-stream ink blue */
+  --nla: #c8452c;             /* reader colours shared with the deck */
+  --ol: #6b4fa8;
+  --jl: #1f8a85;
+  --text: #b07d1a;
+  --chance: #8a93a3;
+  --font-display: "Spectral", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  --font-data: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #10151d; --surface: #171e29; --ink: #e6eaf1; --muted: #9aa5b6; --rule: #2a3442;
+    --accent: #8fb0e3; --nla: #f07a5f; --ol: #a993e0; --jl: #4cc2bc; --text: #e0b14f; --chance: #6d7789;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #10151d; --surface: #171e29; --ink: #e6eaf1; --muted: #9aa5b6; --rule: #2a3442;
+  --accent: #8fb0e3; --nla: #f07a5f; --ol: #a993e0; --jl: #4cc2bc; --text: #e0b14f; --chance: #6d7789;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+  padding-inline: 20px; padding-block: 48px 72px;
+}
+main { max-width: 44rem; margin: 0 auto; display: flex; flex-direction: column; gap: 44px; }
+h1, h2 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: clamp(2rem, 5vw, 2.7rem); letter-spacing: -0.01em; }
+h2 { font-size: 1.45rem; }
+p { margin: 0; }
+.eyebrow { font-family: var(--font-data); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+header { display: flex; flex-direction: column; gap: 14px; }
+.dek { font-size: 1.12rem; color: var(--muted); max-width: 62ch; }
+.status { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-family: var(--font-data); font-size: 0.74rem; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); background: var(--surface); }
+.chip.on { border-color: var(--accent); color: var(--accent); }
+section { display: flex; flex-direction: column; gap: 16px; }
+.answer { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 22px 24px; display: flex; flex-direction: column; gap: 12px; }
+.answer p.big { font-family: var(--font-display); font-size: 1.28rem; line-height: 1.45; }
+.findings { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+.findings li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 14px; align-items: baseline; }
+.tag { font-family: var(--font-data); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.tag.solid { color: var(--accent); }
+.tag.pilot { color: var(--ol); }
+.findings strong { font-weight: 600; }
+.num { font-family: var(--font-data); font-size: 0.92em; font-variant-numeric: tabular-nums; }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+figcaption { font-size: 0.92rem; color: var(--muted); }
+figcaption b { color: var(--ink); font-weight: 600; }
+.chart { width: 100%; overflow-x: auto; }
+.chart svg { display: block; width: 100%; min-width: 320px; height: auto; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.85rem; color: var(--muted); }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; background: var(--c); vertical-align: -1px; }
+.next { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 14px; }
+.next div { border-top: 2px solid var(--rule); padding-top: 10px; display: flex; flex-direction: column; gap: 4px; }
+.next .k { font-family: var(--font-data); font-size: 0.75rem; color: var(--muted); letter-spacing: 0.04em; }
+.caveats { padding-left: 1.2em; margin: 0; display: flex; flex-direction: column; gap: 6px; color: var(--muted); }
+footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; }
+@media (max-width: 520px) {
+  .findings li { grid-template-columns: 1fr; gap: 2px; }
+  body { font-size: 16px; }
+}
+</style>
+
+<main>
+  <header>
+    <span class="eyebrow">MATS 12.0 · Neel Nanda stream · research summary</span>
+    <h1>Do NLAs read what the model can't say?</h1>
+    <p class="dek">We test whether natural-language autoencoders (NLAs) and Oracle Lens read content in Qwen3.6-27B's activations that sits outside the model's verbal "workspace", or whether their success comes from the prompt text.</p>
+    <div class="status">
+      <span class="chip on">Prep + pilot complete</span>
+      <span class="chip">Confirmatory sprint Oct 19 – Nov 1</span>
+      <span class="chip">Layer 42 · J-space rank 384 / 1536</span>
+    </div>
+  </header>
+
+  <section class="answer">
+    <span class="eyebrow">Where the evidence points so far</span>
+    <p class="big">On the one natural feature that lives outside the workspace and that the model actually uses, neither reader describes it, though both read workspace features at the same steering strength. Two narrow channels look like exceptions, and the sprint will test them.</p>
+    <p>The NLA does carry some content beyond the workspace (tense). On WorkspaceBench, the information in both readers' outputs is recoverable from the prompt alone.</p>
+  </section>
+
+  <section>
+    <h2>The setup in three readers</h2>
+    <p><b style="color:var(--jl)">J-Lens</b> is a fixed linear map from an activation to the tokens the model is about to say. It defines the workspace: the top <span class="num">r</span> directions the model can put into words. <b style="color:var(--ol)">Oracle Lens</b> is the same model with a small adapter, trained to describe an injected activation. The <b style="color:var(--nla)">NLA</b> is a separate fine-tuned verbalizer, paired with a reconstructor, that reads only layer 42.</p>
+    <p>The hard part is telling reading from re-solving. A reader that reconstructs the prompt and answers it looks just like one that reads the hidden computation, so the key experiments steer the activation while keeping the text fixed.</p>
+  </section>
+
+  <section>
+    <h2>What we found</h2>
+    <ul class="findings">
+      <li><span class="tag solid">Replicated</span><span>The tools work as published. NLA reconstruction <span class="num">0.761</span> vs <span class="num">0.766</span> published; layer convention verified at cosine <span class="num">0.9999</span>; all <span class="num">12/12</span> WorkspaceBench numbers inside our 95% intervals.</span></li>
+      <li><span class="tag solid">Calibrated</span><span><strong>The standard "outside the workspace" test can't tell features apart.</strong> Every feature keeps at least <span class="num">98%</span> of its probe accuracy after removing the workspace directions, topic and language included. With a test calibrated against random subspaces, the content outside the workspace on Qwen looks like positional bookkeeping: line length, indentation, sentence position.</span></li>
+      <li><span class="tag solid">Calibrated</span><span><strong>Line length ("col") is a clean test case.</strong> It is outside the workspace under two different lenses, the model can't report it, and it keeps <span class="num">79%</span> of its effect on behaviour after the workspace is removed, against <span class="num">12–23%</span> for every other feature we tested.</span></li>
+      <li><span class="tag solid">Measured</span><span><strong>Oracle Lens's benchmark lead is a scoring choice.</strong> Counting an item if any of 11 layers gets it adds <span class="num">0.08–0.22</span>. At the same layer, the NLA ties or beats it.</span></li>
+      <li><span class="tag solid">Measured</span><span><strong>WorkspaceBench success is recoverable from the prompt.</strong> A text model given the prompt names the target more often than one given the readers' outputs, and adding the outputs to the prompt doesn't help. The benchmark's stored prompt-only floor also reads about <span class="num">0.14</span> too low.</span></li>
+      <li><span class="tag pilot">Pilot</span><span><strong>Readers track workspace features but don't describe col.</strong> At equal steering strength, both follow language and tense while col stays at chance. Oracle Lens's next-token channel and one NLA phrasing do respond to col; both are pre-registered for confirmation.</span></li>
+      <li><span class="tag pilot">Pilot</span><span><strong>The NLA invents a consistent story.</strong> When we plant a different country in the activation, it rewrites the prompt's clue to fit: "Eiffel Tower" became "Volvo… Sweden" in <span class="num">12/12</span> cases. Its "prompt reconstruction" comes from the latent, not the text.</span></li>
+    </ul>
+  </section>
+
+  <figure>
+    <span class="eyebrow">Pilot · excluded from the main analysis</span>
+    <div class="chart" id="chart-calib"></div>
+    <div class="legend"><span style="--c:var(--nla)">NLA</span><span style="--c:var(--ol)">Oracle Lens</span><span style="--c:var(--chance)">chance (0.5)</span></div>
+    <figcaption><b>Same steering strength, different outcomes.</b> AUROC for tracking a steered feature at a step of 0.11 of the activation's norm, 60 items per feature. Both readers follow language and tense; neither follows col.</figcaption>
+  </figure>
+
+  <figure>
+    <span class="eyebrow">WorkspaceBench · 4 regex families · n = 400</span>
+    <div class="chart" id="chart-resolve"></div>
+    <figcaption><b>The prompt alone carries the answer.</b> Share of items where a text-only model names the target, by what it was given (same instructions, one sample each). The 4 NLA and 2 Oracle Lens items solved only from the readout are all scoring-format quirks.</figcaption>
+  </figure>
+
+  <section>
+    <h2>What happens next</h2>
+    <div class="next">
+      <div><span class="k">Oct 18</span><span>Pre-registration frozen: four primary tests, Holm correction, |z| ≥ 3 against 100 random directions per band.</span></div>
+      <div><span class="k">Oct 19 – Nov 1</span><span>Confirmatory runs on fresh items: 240 col, 160 tense, 120 language passages.</span></div>
+      <div><span class="k">After</span><span>A LessWrong write-up with the forking paths disclosed: about 514 pilot cells looked at, and primaries chosen from them.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Limits to keep in mind</h2>
+    <ul class="caveats">
+      <li>Only one natural feature (col) passed every gate, so generalisation is open.</li>
+      <li>Pilot results are small-sample and were found after many looks; they need the sprint to stand.</li>
+      <li>Oracle Lens's col response may be the activation re-instated in its own model rather than a report. A mechanism test is running.</li>
+      <li>One model (Qwen3.6-27B), one layer (42), two J-Lens fits.</li>
+    </ul>
+  </section>
+
+  <footer>Prepared for the MATS 12.0 exploration phase. Figures come from the project's pre-registered pilot and replication runs; the confirmatory results will replace pilot numbers when the sprint ends.</footer>
+</main>
+
+<script>
+(function () {
+  const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  function bars(el, rows, opts) {
+    const W = 640, rowH = 34, top = 10, left = opts.left, right = 54, bottom = 30;
+    const H = top + rows.length * rowH + bottom;
+    const x = (v) => left + (W - left - right) * v;            // single scale, 0..1
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${opts.label}">`;
+    [0, 0.25, 0.5, 0.75, 1].forEach((t) => {
+      s += `<line x1="${x(t)}" x2="${x(t)}" y1="${top}" y2="${H - bottom}" stroke="${css('--rule')}" stroke-width="1"/>`;
+      s += `<text x="${x(t)}" y="${H - 10}" fill="${css('--muted')}" font-family="${css('--font-data')}" font-size="11" text-anchor="middle">${t.toFixed(2)}</text>`;
+    });
+    rows.forEach((r, i) => {
+      const y = top + i * rowH + 7;
+      s += `<text x="${left - 10}" y="${y + 13}" fill="${css('--ink')}" font-family="${css('--font-body')}" font-size="13" text-anchor="end">${r.label}</text>`;
+      s += `<rect x="${x(0)}" y="${y}" width="${x(r.v) - x(0)}" height="18" rx="3" fill="${css(r.c)}"/>`;
+      s += `<text x="${x(r.v) + 6}" y="${y + 13}" fill="${css('--ink')}" font-family="${css('--font-data')}" font-size="12">${r.v.toFixed(2)}</text>`;
+    });
+    if (opts.chance) {
+      s += `<line x1="${x(0.5)}" x2="${x(0.5)}" y1="${top - 4}" y2="${H - bottom}" stroke="${css('--chance')}" stroke-width="1.5" stroke-dasharray="4 3"/>`;
+    }
+    el.innerHTML = s + `</svg>`;
+  }
+  function draw() {
+    bars(document.getElementById('chart-calib'), [
+      { label: 'NLA · language', v: 0.87, c: '--nla' },
+      { label: 'NLA · tense', v: 0.85, c: '--nla' },
+      { label: 'NLA · col', v: 0.48, c: '--nla' },
+      { label: 'Oracle Lens · language', v: 0.80, c: '--ol' },
+      { label: 'Oracle Lens · col', v: 0.48, c: '--ol' },
+    ], { left: 170, chance: true, label: 'AUROC by reader and feature at matched steering strength' });
+    bars(document.getElementById('chart-resolve'), [
+      { label: 'Prompt only', v: 0.89, c: '--text' },
+      { label: 'NLA readout only', v: 0.60, c: '--nla' },
+      { label: 'Oracle Lens readout only', v: 0.56, c: '--ol' },
+      { label: 'Prompt + NLA readout', v: 0.88, c: '--text' },
+      { label: 'Prompt + OL readout', v: 0.88, c: '--text' },
+    ], { left: 190, chance: false, label: 'Share of items solved by a text-only model, by input' });
+  }
+  draw();
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  mq.addEventListener && mq.addEventListener('change', draw);
+  new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+})();
+</script>
