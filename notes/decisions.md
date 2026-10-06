@@ -399,3 +399,19 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
   - **Branch 2:** "no, on the one natural non-J feature the model uses".
   - Parts A, D and the latent-generated reconstruction stand on either branch.
 - **Cut:** the next-digit cell, further template mining, the natural col arm beyond one line, the r11/q90 ambiguity.
+
+## 2026-10-06 — D26: prereg revision 4 (confirmatory) written
+- **Structure:** P1–P4 (Holm over 4) → positive controls PC1/PC2 → negatives N1–N5 (TOST, SESOI AUROC 0.55 = fraction 0.10) → template-free judge check T1 → secondaries S1–S9 → exploratory.
+- **K = 100 null directions per band for the primaries (approved).** With K=20 the band SD has ~16% sampling error, which is ±0.5 on z≈3.5.
+- **Disclosure:** ~514 centred template-level cells in the pilot (~2,000 z-values inspected). P1 was the best of 11 NLA col templates.
+- **Power:** the band, not n, limits it. P1's family mean is only z +2.5–2.9, so **winner's-curse shrinkage may fail P1's sign-agreement criterion**; the prereg predicts this honestly. P2 is about +3.9–4.0 at every n.
+- **n:** 240 fresh col passages (120 also used for T1), 160 tense, 120 language, all disjoint from the pilot and 07 items.
+- **Lead's rulings:**
+  - frozen analysis script under `experiments/10_main/`, hash recorded at freeze;
+  - `notes/deviations.md` created;
+  - tense leak set = the union of both lists.
+- **Still open:**
+  - leak rule (95% band vs |z| ≥ 3): Fable;
+  - must experiments/09 finish before the freeze?: Fable (default: fold in if done by Oct 15);
+  - who writes the T1 judge sensitivity set: user (default: the lead);
+  - WorkspaceBench issue: user.
