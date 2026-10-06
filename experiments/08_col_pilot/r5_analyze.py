@@ -149,7 +149,7 @@ def cell(S: str, X: np.ndarray, d: str, q: str, boot: bool) -> dict:
     conds = conditions(S)
     ci = {c: i for i, c in enumerate(conds)}
     p, m = X[ci[("real", d, q, 1, d)]], X[ci[("real", d, q, -1, d)]]
-    if np.isnan(p).any():
+    if np.isnan(p).any() or np.isnan(m).any():  # 03:55 run: NLA chunks were partial -> nan cells printed
         return {"missing": True}
     r = M.follow_feature(p, m, n_boot=NB) if boot else M.paired_stats(p, m) | {"lo": np.nan, "hi": np.nan}
     out = {"auroc": r["auroc"], "lo": r["lo"], "hi": r["hi"], "paired_win": r["paired_win"],
@@ -185,6 +185,75 @@ def readers() -> dict:
     return out
 
 
+def proxy_band(S: str, X: np.ndarray, d: str, q: str, null_q: str, null_ref: str | None) -> dict:
+    """Bands for a real cell that has no matched null (e.g. col jrem4 at q90, dose 7.10) against a null
+    block at a LARGER norm (q90 @ reg_raw dose 9.47, or r11 = 0.11||h|| ~ 9.9): null spread grows with
+    norm, so these z are conservative (biased toward 0)."""
+    ci = {c: i for i, c in enumerate(conditions(S))}
+    p, m = X[ci[("real", d, q, 1, d)]], X[ci[("real", d, q, -1, d)]]
+    out = {}
+    for cls in ("iso", "nonj4"):
+        nl = [(X[ci[("null", f"{cls}_{k}", null_q, 1, null_ref)]], X[ci[("null", f"{cls}_{k}", null_q, -1, null_ref)]])
+              for k in range(K_NULL)]
+        if np.isnan(p).any() or np.isnan(m).any() or any(np.isnan(a).any() for a, _ in nl):
+            return {}
+        out[cls] = M.null_band_contrast((p, m), nl)
+    return out
+
+
+def proxy_q90() -> dict:
+    """col jrem4 q90 cells (printed as '- -' in the main table) against the two larger-norm null blocks."""
+    jl = torch.load(DATA / "r5_jlens.pt", weights_only=False)
+    tabs = {"OL@42": fam_scores(*load("ol")["col"]), "NLA@42": fam_scores(*load("nla")["col"]),
+            "JLens@42": fam_scores(jl["col"]["lo"].numpy(), jl["col"]["templates"]) | {"eol": jl["col"]["eol"].numpy()}}
+    out = {}
+    for name, fams in tabs.items():
+        for key, X in fams.items():
+            if key.startswith("t"):
+                continue
+            for d in ("reg_jrem4", "cm_jrem4", "cm_raw"):
+                for tag, (nq, nref) in {"nullq90reg": ("q90", "reg_raw"), "nullr11": ("r11", None)}.items():
+                    b = proxy_band("col", X, d, "q90", nq, nref)
+                    if b:
+                        out[f"col|{name}|{key}|{d}|q90|{tag}"] = b
+    return out
+
+
+def mech() -> dict:
+    """Adapter-disabled OL (base Qwen in OL's carrier) on nl_cont + J-Lens content leak sets (r5_mech_modal.py)."""
+    f = DATA / "r5_mech.pt"
+    if not f.exists():
+        return {}
+    r = torch.load(f, weights_only=False)
+    conds = conditions("col")
+    off = r["ol_off"].numpy()  # [T, C, N]
+    on = np.full_like(off, np.nan)
+    on[:, r["on_idx"], :] = r["ol_on"].numpy()
+    ref = load("ol")["col"]
+    temps = ref[1]
+    ti = [i for i, t in enumerate(temps) if t[0] == "nl_cont"]
+    real_idx = r["on_idx"]
+    repro = float(np.nanmax(np.abs(on[:, real_idx] - ref[0][ti][:, real_idx])))
+    tabs = {"OLoff@42": {"nl_cont": off.mean(0)} | {f"t{i}": off[i] for i in range(off.shape[0])},
+            "OLon_rerun@42": {"nl_cont": on.mean(0)}}
+    js = {k: v.numpy() for k, v in r["jlens"].items()}
+    tabs["JLens@42"] = js | {"eol_minus_content3": js["eol_broad"] - js["content3"],
+                             "eol_minus_content10": js["eol_broad"] - js["content10"]}
+    out = {"repro_max_abs_diff_vs_r5_ol": repro, "jlens_sets_n": r["jlens_sets_n"], "t": r["t"], "cells": {}}
+    for name, fams in tabs.items():
+        for key, X in fams.items():
+            for d in PLAN["col"]["dirs"]:
+                for q in PLAN["col"]["doses"]:
+                    c = cell("col", X, d, q, boot=not key.startswith("t"))
+                    if not c.get("missing"):
+                        if not c["bands"] and q == "q90" and name != "OLon_rerun@42":
+                            c["proxy"] = proxy_band("col", X, d, q, "q90", "reg_raw")
+                        out["cells"][f"col|{name}|{key}|{d}|{q}"] = c
+    zero = off[:, 0].mean(0)
+    out["zero_dose_nl_cont_lo"] = {"off_mean": float(zero.mean()), "on_mean": float(on[:, 0].mean(0).mean())}
+    return out
+
+
 def _z(c: dict, cls: str, k: str = "mean_shift") -> str:
     b = c.get("bands", {}).get(cls)
     return f"{b[k]['z']:+.1f}{'*' if b[k]['outside_two_sided'] else ''}" if b else "–"
@@ -197,6 +266,8 @@ def main() -> None:
     except FileNotFoundError as e:
         out["readers"] = {}
         print("readers missing:", e)
+    out["proxy_q90"] = proxy_q90()
+    out["mech"] = mech()
     (RES / "r5_metrics.json").write_text(json.dumps(out, indent=1, default=float))
     print("# round-5 pilot -- PILOT, EXCLUDED FROM MAIN ANALYSIS\n\n## behaviour\n")
     for k, v in out["behaviour"].items():
@@ -207,6 +278,24 @@ def main() -> None:
             continue
         print(f"{k}: {c['auroc']:.2f} [{c['lo']:.2f},{c['hi']:.2f}] / {c['paired_win']:.2f} / {c['mean_shift']:+.3f} / "
               f"{_z(c, 'iso')} {_z(c, 'nonj4')} / {_z(c, 'iso', 'auroc')} {_z(c, 'nonj4', 'auroc')}")
+    print("\n## col q90 cells without a matched null: z vs LARGER-norm null blocks (conservative)\n"
+          "## z_shift iso,Jc / z_AUROC iso,Jc   [nullq90reg = q90 @ reg_raw dose 9.47; nullr11 = 0.11||h||]\n")
+    for k, b in out["proxy_q90"].items():
+        print(k, " / ".join(f"{b['iso'][m]['z']:+.1f}{'*' if b['iso'][m]['outside_two_sided'] else ''} "
+                            f"{b['nonj4'][m]['z']:+.1f}{'*' if b['nonj4'][m]['outside_two_sided'] else ''}"
+                            for m in ("mean_shift", "auroc")))
+    mc = out["mech"]
+    if mc:
+        print(f"\n## mechanism check (r5_mech.pt): OL nl_cont with the adapter DISABLED; J-Lens content leak sets\n"
+              f"repro max|diff| adapter-on rerun vs r5 OL = {mc['repro_max_abs_diff_vs_r5_ol']:.3f} nats; "
+              f"zero-dose nl_cont LO off/on = {mc['zero_dose_nl_cont_lo']}; sets {mc['jlens_sets_n']}\n")
+        for k, c in mc["cells"].items():
+            if k.split("|")[2].startswith("t"):
+                continue
+            zs = (f"{_z(c, 'iso')} {_z(c, 'nonj4')} / {_z(c, 'iso', 'auroc')} {_z(c, 'nonj4', 'auroc')}" if c["bands"]
+                  else "proxy(q90@reg_raw) " + _z({"bands": c.get("proxy", {})}, "iso") + " "
+                  + _z({"bands": c.get("proxy", {})}, "nonj4"))
+            print(f"{k}: {c['auroc']:.2f} [{c['lo']:.2f},{c['hi']:.2f}] / {c['paired_win']:.2f} / {c['mean_shift']:+.3f} / {zs}")
     print("\n## per-template AUROC\n")
     for k, c in out["readers"].items():
         if not c.get("missing") and k.split("|")[2].startswith("t"):

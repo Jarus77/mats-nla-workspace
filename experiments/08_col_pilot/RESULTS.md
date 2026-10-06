@@ -415,3 +415,331 @@ K3 passes at q90, the col-flat dose, and even at a smaller relative norm (0.095 
 - `calib_analyze.py`: produces `results/calib_metrics.json` and `results/calib_stdout.txt`;
 - `results/calib_run.log`, `results/calib_run_summary.json`;
 - raw outputs in `results/08_col_pilot/calib_*.pt` and on the volume.
+
+
+---
+
+## Round 5 (pre-freeze cells) — PILOT, EXCLUDED
+
+**This is a declared pilot split and is excluded from the main analysis.** It covers the 60 col pilot
+items, 120 new tense items and 60 numbered-list items (eval) plus 400 train lists. Their ids are in
+`pilot_split.json` → `round5_items`. Templates were fixed in `r5_templates.py` (00:53) before any
+round-5 scoring. They are the col pilot templates, plus 07's frozen selected templates (verbatim), plus
+OL newline-continuation candidates.
+
+**Setup.** L42 read layer, centred construction h − (v·h)v ± Δv. Dose is q90 (bank-based, per
+direction) or r11 = 0.11·‖h_i‖ per item. The K = 20 isotropic and K = 20 J-complement (4r\* = 1536)
+null bands use the same vectors as the col pilot.
+
+Cell format: AUROC [95% CI] / paired win / mean shift (nats) / z_shift (iso, Jc) / z_AUROC (iso, Jc).
+\* = outside the two-sided 95% band. Full output: `results/r5_stdout.txt` (`r5_analyze.py`) and
+`results/r5_metrics.json`.
+
+**Directions.**
+- col: `reg` = 02's regression direction; `cm` = class-mean direction, long (≥ 45) minus short
+  (≤ 20) on 02's wrap bank. cos(cm, reg) = 0.995 and cos(cm_jrem4, reg_jrem4) = 0.996, so the two
+  col directions are nearly identical and are not independent replications.
+- Doses: reg_raw q90 = 9.47, reg_jrem4 q90 = 7.10; r11 ≈ 9.9 (mean ‖h‖ 89.7).
+- **col and tense were run at q90 and r11 only; r14 exists only for digit** (`r5_lib.PLAN`).
+
+**Analysis bug fixed (NLA "nan").** The `r5_stdout.txt` of 03:55 was produced while the NLA jobs
+were still running; they finished at 04:49 (`r5_run2.log`).
+- Only some `r5_nla_chunk*.pt` files existed, so most NLA col and tense cells were dropped as
+  "missing".
+- The digit NLA cells printed nan because `cell()` checked only the "+" arm for missing data, while
+  the "−" arm was still nan.
+- Fixed: `cell()` now checks both arms. Re-running on the complete 12 chunks gives the tables below.
+  There are no NaNs in any chunk; all 177 / 93 / 249 conditions are present.
+
+### R5.1 NLA@42 on col (template-family mean)
+
+| family | reg_raw q90 | reg_raw r11 | reg_jrem4 q90 † | reg_jrem4 r11 |
+|---|---|---|---|---|
+| count_qual | 0.48 [.45,.51] / 0.37 / −0.18; −1.0 −0.7 / −0.8 −0.5 | 0.48 / 0.42 / −0.19; −1.0 −0.8 | 0.50 [.48,.53] / 0.57 / +0.05; †+0.0 +0.5 | 0.52 [.49,.55] / 0.60 / +0.09; +0.2 +0.7 / +0.2 +0.7 |
+| count_num | 0.53 [.51,.56] / 0.68 / +0.15; +0.8 +0.9 / +1.1 +1.1 | 0.53 / 0.67 / +0.13; +0.6 +0.6 | 0.53 [.51,.55] / 0.68 / +0.09; †+0.4 +0.4 | 0.53 [.51,.56] / 0.65 / +0.15; +0.7 +0.8 / +1.0 +1.1 |
+| decision | 0.52 [.50,.54] / 0.63 / +0.07; +0.9 +0.6 / +0.7 +0.4 | 0.51 / 0.60 / +0.07; +0.9 +0.6 | 0.51 [.49,.53] / 0.58 / +0.04; †+0.6 +0.4 | 0.52 [.50,.54] / 0.65 / +0.07; +1.0 +0.6 / +1.0 +0.6 |
+| **f07_count** | **0.71 [.67,.77] / 0.95 / +0.58; +5.0\* +4.5\* / +4.8\* +4.4\*** | **0.71 [.66,.77] / 0.98 / +0.56; +4.6\* +4.2\* / +4.3\* +4.0\*** | **0.63 [.60,.68] / 0.95 / +0.35; †+3.0\* +2.6\* / +2.9\* +2.7\*** | **0.67 [.63,.72] / 0.95 / +0.45; +3.7\* +3.3\* / +3.5\* +3.2\*** |
+| f07_break | 0.48 [.44,.50] / 0.38 / −0.03; −0.7 −0.1 / −1.1 −0.4 | 0.49 / 0.40 / −0.01; −0.5 +0.1 | 0.49 [.46,.51] / 0.45 / −0.04; †−0.9 −0.3 | 0.48 [.45,.51] / 0.43 / −0.05; −1.0 −0.4 / −0.9 −0.2 |
+
+| family | cm_raw q90 † | cm_raw r11 | cm_jrem4 q90 † | cm_jrem4 r11 |
+|---|---|---|---|---|
+| count_qual | 0.49 / 0.45 / −0.11; †−0.7 −0.4 | 0.49 / 0.45 / −0.13; −0.7 −0.4 / −0.6 −0.3 | 0.52 / 0.60 / +0.09; †+0.2 +0.7 | 0.52 / 0.55 / +0.10; +0.3 +0.8 / +0.2 +0.7 |
+| count_num | 0.53 / 0.60 / +0.15; †+0.8 +0.9 | 0.53 / 0.68 / +0.12; +0.5 +0.5 / +1.2 +1.2 | 0.53 / 0.58 / +0.12; †+0.6 +0.6 | 0.53 / 0.63 / +0.16; +0.8 +0.8 / +1.2 +1.2 |
+| decision | 0.52 / 0.53 / +0.04; †+0.5 +0.3 | 0.51 / 0.52 / +0.03; +0.4 +0.2 / +0.3 +0.2 | 0.51 / 0.58 / +0.04; †+0.6 +0.4 | 0.51 / 0.62 / +0.05; +0.7 +0.4 / +0.6 +0.3 |
+| **f07_count** | **0.69 [.65,.75] / 0.97 / +0.52; †+4.5\* +4.0\*** | **0.70 [.66,.76] / 0.98 / +0.53; +4.3\* +3.9\* / +4.2\* +3.8\*** | **0.63 [.60,.67] / 0.92 / +0.34; †+2.9\* +2.5\*** | **0.67 [.63,.72] / 0.93 / +0.44; +3.6\* +3.2\* / +3.5\* +3.2\*** |
+| f07_break | 0.47 / 0.33 / −0.04; †−0.9 −0.3 | 0.47 / 0.38 / −0.04; −0.9 −0.3 / −1.2 −0.5 | 0.49 / 0.43 / −0.02; †−0.6 −0.0 | 0.48 / 0.40 / −0.04; −0.9 −0.3 / −0.9 −0.3 |
+
+† **No matched null exists** for q90 on jrem4 or cm directions. The q90 null block was built only at
+reg_raw's dose (`PLAN["col"]["nulls"]`), which is why the stdout prints "– –".
+- The † z values use the **larger-norm** q90@reg_raw null (dose 9.47 vs 7.10 for jrem4).
+- Null spread grows with norm, so † z values are **conservative** (biased toward 0).
+- The r11 null gives the same numbers within ±0.3 (`r5_stdout.txt`, "without a matched null").
+
+**Per-template NLA f07_count** (AUROC; reg_raw q90 / reg_jrem4 r11):
+- "Readout taken late/early in the span of the wrapped line": 0.52 / 0.52.
+- "Mid-sentence continuation located near the end / at the beginning of a hard-wrapped line": **0.69 / 0.66**.
+- "The token appears far into / near the beginning of the wrapped line": 0.62 / 0.59.
+
+**This is new.** With one of 07's mined count templates, the NLA tracks col under steering, on the
+leak-free 4r\* direction:
+- 0.67 at r11, z +3.7 / +3.3. That passes D21's |z| ≥ 3 against both bands.
+- 0.63 at q90, conservative z +3.0 / +2.6. That is borderline.
+- The fixed pilot templates stay flat (0.48–0.53), and so does f07_break.
+- The effect is carried by the template that describes the token's *position in a wrapped line*. It
+  is not carried by templates about the upcoming break.
+- **Caveat.** NLA's f07_count shift scales with the model's own newline propensity in the same way
+  OL nl_cont does. jrem4/raw ratio at r11: NLA 0.80; OL nl_cont 0.77; model behaviour 0.71. So the
+  same "acting through the decoder's LM" question applies (R5.2d).
+- There is no adapter-off analogue for the NLA. Its av_base is itself a fully fine-tuned verbalizer,
+  not base Qwen.
+
+### R5.2 The OL nl_cont result, scrutinised
+
+OL nl_cont = OL's teacher-forced preference for "- \nthe" over "- the" (also "and" and "of"). The
+first answer token is "- ", followed by a newline vs a word.
+
+| cell | AUROC [CI] / win / shift | z_shift iso, Jc / z_AUROC iso, Jc |
+|---|---|---|
+| reg_raw q90 | 0.76 [.71,.81] / 0.97 / +2.88 | +6.6\* +6.7\* / +5.2\* +5.4\* |
+| reg_raw r11 | 0.77 [.72,.83] / 0.97 / +3.00 | +6.6\* +6.7\* / +5.3\* +5.4\* |
+| reg_jrem4 q90 † | 0.67 [.64,.72] / 0.98 / +1.72 | **†+3.9\* +3.9\* / +3.5\* +3.6\*** (r11 null: +3.7 +3.8 / +3.4 +3.4) |
+| reg_jrem4 r11 | 0.72 [.68,.77] / 0.97 / +2.32 | +5.1\* +5.1\* / +4.4\* +4.4\* |
+| cm_raw q90 † / r11 | 0.75 / 0.98 / +2.76 ; 0.76 / 0.97 / +2.87 | †+6.3\* +6.4\* ; +6.3\* +6.4\* / +5.2\* +5.3\* |
+| cm_jrem4 q90 † / r11 | 0.67 / 0.97 / +1.72 ; 0.72 / 1.00 / +2.31 | †+3.9\* +3.9\* ; +5.0\* +5.1\* / +4.4\* +4.4\* |
+
+Per template (reg_raw q90 / reg_jrem4 q90 / reg_jrem4 r11): "the" 0.73 / 0.66 / 0.70; "and" 0.75 /
+0.67 / 0.72; "of" 0.75 / 0.67 / 0.73. The three templates are uniform.
+
+**(a) Leak check with a content token set.** It was not computable from the saved r5 outputs:
+`r5_jlens.pt` stores only the max EOL score. It was computed in the follow-up GPU job
+(`r5_mech_modal.py`).
+J-Lens@42 max cosine over each token set, on the same activations. Content sets: content3 = the
+nl_cont continuation words "the/and/of" (12 variants); content10 = 10 frequent function words (40
+variants).
+
+| set | reg_raw q90 | reg_jrem4 q90 † | reg_jrem4 r11 | cm_jrem4 r11 |
+|---|---|---|---|---|
+| EOL (200 tokens; reproduces r5) | 0.73; +4.6\* +57\* | 0.50; †−0.4 +0.2 | 0.50; −0.4 +0.2 | 0.50; −0.4 +0.1 |
+| content3 (the/and/of) | 0.61 / win 1.00; +2.7\* +42\* | 0.50; †−0.3 −0.1 | 0.50; −0.3 −0.2 | 0.50; −0.2 −0.0 |
+| content10 | 0.61 / 1.00; +2.9\* +40\* | 0.49; †−0.4 −1.4 | 0.49; −0.5 −1.9 | 0.49; −0.5 −2.1\* |
+| EOL − content3 (relative newline preference) | 0.52 / 0.65; +0.8 +9.6\* | 0.50; †−0.0 +0.2 | 0.50; −0.0 +0.3 | 0.50; −0.0 +0.1 |
+| EOL − content10 | 0.52 / 0.73; +0.9 +8.7\* | 0.51; †+0.1 +1.1 | 0.51; +0.1 +1.5 | 0.51; +0.1 +1.6 |
+
+(z_shift iso, Jc.)
+- **The 4r\* directions are leak-clean under the content sets too.** All 4r\* cells are within
+  |z| ≤ 2.1. The single cell outside the band (content10, cm_jrem4 r11, Jc −2.1) is *negative*:
+  content tokens go down. It is under the D21 |z| ≥ 3 bar.
+- The raw direction raises newline **and** content-token scores alike (0.61 for content). Its
+  *relative* EOL-vs-content readout is only 0.52–0.54, although it is far outside the narrow
+  J-complement band.
+
+**(b) jrem4 q90 z values** (shown as "– –" in the 03:55 stdout). See the † rows above. Against the
+larger-norm null: z_shift **+3.9 / +3.9**, z_AUROC **+3.5 / +3.6**. Both are above 3 even though
+the null is conservative.
+
+**(c) Dose scaling.** r14 was not run for col. Within q90 → r11:
+
+| direction | dose | OL nl_cont shift | per unit dose | model newline log-odds (L42 behaviour) |
+|---|---|---|---|---|
+| reg_raw | q90 (9.47) | +2.88 | 0.30 | +1.44 |
+| reg_raw | r11 (≈ 9.9) | +3.00 | 0.30 | +1.50 |
+| reg_jrem4 | q90 (7.10) | +1.72 | 0.24 | +0.72 |
+| reg_jrem4 | r11 (≈ 9.9) | +2.32 | 0.23 | +1.06 |
+
+- The shift is linear in dose: the per-unit effect is constant within each direction.
+- J-removal keeps ~78% of the per-unit effect on OL nl_cont. On the model's own newline decision it
+  keeps ~70% (r11: 1.06 / 1.50).
+- OL's nl_cont response therefore follows the model's behavioural newline effect closely, direction
+  by direction and dose by dose.
+
+**(d) Mechanism check: does the shift need the OL LoRA?** The question is whether nl_cont measures
+OL *verbalising* the activation, or the injected vector *acting through* OL's language model. OL is
+Qwen3.6-27B + LoRA, and the vector enters as the slot-token input embedding, at norm α = 16000.
+We re-scored the same r5 activations with `ol.base()`, i.e. **adapter disabled**: base Qwen in OL's
+carrier prompt with the identical slot injection. All 177 col conditions were scored, so null bands
+are available. The real cells were also re-scored with the adapter on, as a reproduction check
+(`r5_mech_modal.py`; 1 H100, 12 min).
+
+| nl_cont, L42 | adapter ON (r5) | adapter ON (re-run) | **adapter OFF (base Qwen)** |
+|---|---|---|---|
+| reg_raw q90 | 0.76 / 0.97 / +2.88; +6.6\* +6.7\* | 0.76 / 0.97 / +2.88 | **0.42 [.37,.46] / 0.25 / −0.10; −2.2\* −2.1\* / −1.9\* −2.6\*** |
+| reg_raw r11 | 0.77 / 0.97 / +3.00; +6.6\* +6.7\* | 0.77 / 0.98 / +2.98 | **0.44 [.39,.48] / 0.30 / −0.06; −1.4 −1.1 / −1.7\* −1.8\*** |
+| reg_jrem4 q90 † | 0.67 / 0.98 / +1.72; †+3.9\* +3.9\* | 0.67 / 1.00 / +1.73 | **0.43 [.38,.47] / 0.27 / −0.09; †−2.1\* −1.9\*** |
+| reg_jrem4 r11 | 0.72 / 0.97 / +2.32; +5.1\* +5.1\* | 0.72 / 0.98 / +2.35 | **0.40 [.35,.43] / 0.20 / −0.14; −3.1\* −2.9\* / −2.8\* −3.2\*** |
+| cm_raw r11 | 0.76 / 0.97 / +2.87 | 0.76 / 0.98 / +2.85 | 0.41 / 0.30 / −0.08; −1.9\* −1.6\* |
+| cm_jrem4 r11 | 0.72 / 1.00 / +2.31 | 0.72 / 1.00 / +2.27 | 0.40 / 0.22 / −0.12; −2.6\* −2.4\* |
+
+- Adapter-off per template (reg_raw q90 / reg_jrem4 r11): "the" 0.39 / 0.39, "and" 0.42 / 0.40,
+  "of" 0.46 / 0.42.
+- Reproduction: the AUROCs are identical. Max per-item |Δ| is 0.64 nats, from bf16 batch
+  composition: the re-run scores 6 candidates per activation, r5 scored 28.
+- Zero-dose nl_cont log-odds: adapter on −27.5 (OL's trained format strongly disfavours a bare
+  newline after "- "); off −10.2 (item SD ≈ 0.5).
+
+**Result: the nl_cont tracking needs the OL LoRA.**
+- With the adapter disabled, the shift collapses from +1.7 to +3.0 nats to −0.06 to −0.14 nats, about
+  25× smaller and of the opposite sign. The AUROC goes to 0.40–0.44, with a weak anti-tracking
+  of z −1.4 to −3.1.
+- So the simplest "acting through the LM" account is rejected. Base Qwen given this vector as an
+  input embedding does not turn it into a newline propensity.
+- Base Qwen is not blind to the slot: zero-dose log-odds vary across items with SD ≈ 0.5, and the
+  injected vector is the only thing that differs between items. It just does not respond to the col
+  component.
+- **Remaining caveat.** The adapter-off test cannot separate two accounts:
+  1. OL "verbalising" col;
+  2. the LoRA having learned to re-instate the injected activation so that Qwen's *own* next-token
+     circuitry continues from it.
+
+  nl_cont is a next-token propensity that tracks the model's behavioural newline effect closely
+  (R5.2c). So the honest description is **"OL's continuation channel carries the model's newline
+  decision, including its J-Lens-invisible 4r\* part"**. It is not "OL describes line position":
+  every *descriptive* OL col template is flat or anti-tracking (count_qual 0.47–0.49, f07_count
+  0.48–0.50, f07_break 0.45–0.47).
+- **NLA analogue.** There is no adapter-off control for the NLA (av_base is a fully fine-tuned
+  verbalizer). The NLA has no continuation-style col candidate, and its "next token is likely a
+  newline" decision template is flat (0.51–0.52).
+
+### R5.3 Behavioural validation (the col null is at doses that do change behaviour)
+
+L42 read-layer edit at the read token; newline log-odds at the next position. The natural mean is
+−5.09 (SD 3.88). Effect = (plus − minus) / 2.
+
+| direction | q90 | q99 | r11 |
+|---|---|---|---|
+| raw (02 reg) | **+1.44** [1.27, 1.61], win 1.00, z +86 (iso) | +2.02 | +1.50, z +77 (Jc) / +82 (iso) |
+| jrem1 (r\*) | +1.39, z +53 | +1.98 | — |
+| **jrem4 (4r\*)** | **+0.72** [0.62, 0.82], win 0.98, z +55 | +1.17 | +1.06, z +54 / +58 |
+| cm_raw / cm_jrem4 | — | — | +1.51 / +1.07, z +77 / +55 |
+
+- L38 upstream edit, centred, q90: raw +1.55, jrem1 +1.35, jrem4 +0.33 (z +45). Additive gives a
+  similar picture.
+- **Generation (L38 additive edit, greedy, 48 tokens).** Plus-minus difference in characters to the
+  first newline:
+  - raw q90 **−6.8** [−9.6, −4.2] (q99 −36.9);
+  - jrem1 q90 −6.8 (q99 −20.6);
+  - **jrem4 q90 −1.55** [−2.7, −0.6] (q99 −2.3; the plus arm breaks earlier on 22% of items).
+  - Natural generations wrap sensibly: Spearman with chars remaining 0.86, MAE 3.8 characters.
+- **So D21's behavioural requirement is met.** At the exact dose and direction where the
+  decoder-template nulls are claimed (4r\*, q90), the edit causally moves the model's newline
+  decision: +0.72 nats at L42, about 1.5 characters in generation.
+- The 4r\* effect is about half of raw in log-odds and about a quarter in wrap column. The J-Lens EOL
+  readout of the same 4r\* edit is flat (0.50). The 4r\* direction is behaviourally active but
+  invisible to the linear J-Lens.
+
+### R5.4 Next-digit cell (numbered lists; next item 7 vs 5)
+
+| reader | numeral raw q90 / r11 / r14 | numeral jrem4 q90 / r11 / r14 | qualitative raw r11 | qualitative jrem4 r11 |
+|---|---|---|---|---|
+| NLA@42 | 0.85 / **0.70** (+18\* +21\* / +13\* +16\*) / 0.79 | 0.68 / **0.66** (+22\* +26\* / +10\* +13\*) / 0.68 | 0.69 (+1.9\* +2.5\* / +3.2\* +4.0\*) | 0.60 (+1.0 +1.6 / +1.6\* +2.3\*) |
+| OL@42 | 0.68 / 0.56 (+2.8\* +1.9\*) / 0.61 | 0.73 / **0.70** (+7.5\* +5.8\* / +8.2\* +6.3\*) / 0.74 | **0.39** (−1.5 −2.0\*) | 0.47 (in band) |
+| J-Lens@42 (7/seven/seventh vs 5/five/fifth) | **0.99** / 0.95 (+7.8\* +13.8\*) / 0.97 | 0.60 / 0.58 (+1.3 **+2.3\***) / 0.60, paired win 1.00 | — | — |
+
+Nulls exist only at r11 for digit.
+
+**Gates.**
+- **G1 passes:** mean-diff eval AUROC 0.96, logreg 1.00, jrem4 projection 0.91.
+- **G2 (J-enrichment) fails:** enrichment 0.96 (r384) / 1.36 (r1536), vs shuffled labels mean 1.65 /
+  1.34 and max 2.17 / 1.57. The direction is *not* J-enriched.
+- J-Lens natural 7-vs-5 AUROC is 0.98, yet no digit is ever in the J-Lens top-10 (median best digit
+  rank 1,366).
+- **G4 fails completely.** Natural argmax digit is 100% correct, so the model knows the next number.
+  No edit flips it, raw or jrem4 at q90, r11 or r14: flip rate 0/30 each way. Log P(7) − log P(5)
+  moves −0.02 to −0.05 nats, z −1.2 / −1.5.
+
+**Interpretation.**
+- The direction is the mean difference "list of 4 vs list of 6", read at the newline after the last
+  item. It is a *list-length / list-position* code, not the model's next-digit decision.
+- The model almost certainly decides the next number by retrieving and incrementing the previous item
+  number at the next position (attention to "6."). One position's residual does not override that.
+- This is the in-J analogue of a causally inert direction. The raw direction moves the J-Lens digit
+  tokens (0.99) and the decoders (NLA 0.70–0.85), and moves behaviour not at all.
+- Two consequences:
+  1. **It is not usable as the D21 in-J number control.** It is not J-enriched (G2) and not causal
+     (G4). The "maximally J" premise failed.
+  2. **The OL numeral jrem4 result (0.70, z +7.5) is void as a non-J reading.** The J-Lens label
+     check on digit jrem4 is outside the J-complement band (z +2.3\*, paired win 1.00): 4r\* removal
+     leaves J-readable digit content. Note also that OL numeral tracks *more* on jrem4 than on raw
+     (0.70 vs 0.56) and that OL qualitative anti-tracks raw (0.39). Both look like template-specific
+     OL artefacts.
+- What the cell does show: **both decoders readily report a number that the J-Lens can read but the
+  model is not using.** Decoder tracking of a vector is no evidence that the vector is a causal
+  variable. This is the opposite dissociation to col, where 4r\* moves behaviour and the fixed
+  templates stay flat.
+
+### R5.5 Tense with 07's mined templates (120 new items)
+
+| reader / family | raw q90 | raw r11 | jrem4 q90 | jrem4 r11 |
+|---|---|---|---|---|
+| **OL f07_tense** ("- They were/are", "- The village had/has", "- It was/is") | 0.99 [.97,1.00] / 1.00; +30\* +40\* / +22\* +28\* | 0.99; +29\* +39\* | **0.66 [.64,.69] / 1.00; +12.5\* +16.7\* / +11.1\* +13.8\*** | **0.79 [.76,.82] / 1.00; +12.3\* +16.4\* / +11.5\* +15.0\*** |
+| OL label (fixed) | 0.57; +3.4\* +4.4\* | 0.58 | 0.52; +1.2 +1.4 (in band) | 0.53; +1.2 +1.4 |
+| NLA f07_tense ("Historical vs Descriptive register/factual/tone") | 0.88 [.85,.92] / 1.00; +22\* +28\* | 0.92 | **0.59 [.57,.61] / 0.94; +7.6\* +9.3\* / +7.3\* +8.9\*** | **0.66 / 0.95; +7.5\* +9.5\*** |
+| NLA label (fixed) | 0.85; +14\* +16\* | 0.87 | **0.65 / 0.95; +8.1\* +9.0\*** | **0.74 / 0.94; +7.9\* +8.6\*** |
+| J-Lens label / content (leak sets) | 0.78 / 0.91 | 0.81 / 0.94 | 0.51 (+0.2 +0.4) / 0.50 (−0.2 −0.9): **clean** | 0.51 / 0.49: **clean** |
+
+- tense120 natural AUROC of the raw direction is 0.84.
+- **With mined continuation templates, OL tracks the leak-free tense 4r\* direction.** It is at least
+  as strong as the NLA: z +12 to +17 vs the NLA's +7.5 to +9.5; AUROC 0.66–0.79 vs 0.59–0.74.
+- This **reverses the calibration-round reading** (D20: "NLA tracks tense 4r\*, OL is in band").
+  That reading came from OL's fixed label templates, which are still in band here (0.52–0.53).
+- The pre-registered secondary "tense 4r\* NLA > OL" (D21 item 6) would **fail or reverse** with
+  these templates.
+- Same mechanism caveat as R5.2d. OL f07_tense candidates are next-token continuations ("were" vs
+  "are" after "- They"). They could reflect the injected vector biasing base Qwen's tense of the next
+  verb, not verbalisation. The adapter-off check was run only for col nl_cont; the tense analogue is
+  the obvious next cheap check.
+- The NLA's f07_tense register templates are not continuations, and its fixed label templates also
+  track 4r\* (0.65–0.74). So the NLA tense-tail result stands.
+
+### R5 verdicts (pilot; excluded)
+
+1. **NLA "nan" was an analysis artefact**: a partial NLA download at 03:55 plus a missing-data
+   check on only one arm. It is fixed in `r5_analyze.py`; all NLA cells are now reported.
+2. **NLA on col, fixed pilot templates:** flat on every direction and dose (0.47–0.53, |z| ≤ 1.2).
+   This confirms D15/D20.
+3. **NLA on col, 07 mined f07_count:** tracks col. Raw 0.71 (z +5.0 / +4.5). **Leak-free 4r\* 0.67
+   at r11 (z +3.7 / +3.3, passes |z| ≥ 3) and 0.63 at q90 (conservative z +3.0 / +2.6, borderline).**
+   It is carried by one template ("near the end of a hard-wrapped line", 0.66–0.69). f07_break is
+   flat.
+   - **This contradicts "neither decoder reads col in any phrasing" (D21 working sentence).** It
+     must be replicated on main-run items before the freeze wording.
+4. **OL nl_cont:** tracks col on raw (0.76, z +6.6) and 4r\* (q90 0.67, conservative z +3.9; r11
+   0.72, z +5.1).
+   - It is leak-clean under EOL, content3, content10 and EOL-minus-content.
+   - It is linear in dose and follows the model's own newline effect.
+   - **Adapter-disabled check: the effect vanishes (0.40–0.44, slight anti-tracking).** It needs
+     the LoRA, so it is not base Qwen reacting to the vector.
+   - It remains a next-token continuation readout. Describe it as "OL's continuation channel carries
+     the newline decision", not as OL reporting line position (all descriptive OL col templates are
+     flat).
+5. **Behaviour (D21 requirement): met.**
+   - L42 q90 newline log-odds: raw +1.44, 4r\* +0.72 (z ≥ 55).
+   - L38 generation wrap shift: raw −6.8 characters, 4r\* −1.55.
+   - The 4r\* edit is causal and J-Lens-invisible.
+6. **Next-digit cell: fails as an in-J control.**
+   - G2 fails: the direction is not J-enriched (below shuffled labels).
+   - G4 fails: 0 flips at any dose.
+   - Decoders and J-Lens nonetheless read the raw direction (J-Lens 0.99, NLA 0.70–0.85).
+   - OL numeral 4r\* (0.70, z +7.5) is void, because the J-Lens label check leaks (Jc z +2.3\*).
+   - Use it only as a "readable but causally inert" illustration. Drop it as a control.
+7. **Tense with mined templates:** OL f07_tense tracks leak-clean tense 4r\* (0.66–0.79, z +12 to
+   +17). That exceeds the NLA (f07 0.59–0.66, label 0.65–0.74; z +7.5 to +9.5).
+   - **D20's "NLA > OL on tense 4r\*" does not survive mined templates.** D21 item 6 (pre-registered
+     NLA-vs-OL secondary) should be re-specified, or dropped.
+   - OL's tense signal is again a next-token continuation ("- They were/are"). The adapter-off check
+     for tense (not run) is the next cheap test.
+8. **Main-run implications.**
+   - Promote OL nl_cont and NLA f07_count to the primary col cells, with an adapter-off OL control.
+   - Add matched-norm q90 nulls for every direction: the r5 plan built q90 nulls only at reg_raw's
+     dose.
+   - Treat cm and reg as one direction (cos 0.995).
+
+Files (round 5):
+- `r5_items.py`, `r5_lib.py`, `r5_templates.py`;
+- `r5_modal.py` (app `mats-08-r5`);
+- `r5_mech_modal.py` (app `mats-08-r5-mech`: adapter-off OL nl_cont and the J-Lens content sets);
+- `r5_analyze.py`, which writes `results/r5_metrics.json` and `results/r5_stdout.txt`;
+- raw outputs `results/08_col_pilot/r5_*.pt` (including `r5_mech.pt`);
+- logs `results/r5_run.log`, `r5_run2.log`, `r5_mech_run.log`, `r5_run_summary.json`.
+
+Round-5 GPU (scoring jobs only, from `r5_run_summary.json`): OL 8 × ~20 min ≈ 2.6 H100-h, NLA 12 × ~22 min
+≈ 4.3 H200-h; L38 generation ≈ 0.7 H100-h; behaviour parts re-run separately (r5_behave*.log; first attempt failed on a .numpy() grad error); mechanism check 0.2 H100-h.

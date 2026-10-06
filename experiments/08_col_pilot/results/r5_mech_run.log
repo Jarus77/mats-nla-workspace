@@ -1,0 +1,177 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/<modal-workspace>/main/ap-bCsDMt40gRw6ncobfAogwl
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/
+│   r5_mech_modal.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/features.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/02_nonj_featu
+│   res/s1_data.py
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:pilot_items, PythonPackage:pilot_lib, PythonPackage:templates,
+│   PythonPackage:calib_lib, PythonPackage:calib_templates, 
+│   PythonPackage:calib_items, PythonPackage:r5_lib, PythonPackage:r5_templates,
+│   PythonPackage:r5_items
+└── 🔨 Created function mech.
+
+[1ALoading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/851 [00:06<1:35:44,  6.76s/it]
+[1ALoading weights:   0%|          | 2/851 [00:07<47:27,  3.35s/it]  
+[1ALoading weights:   1%|▏         | 11/851 [00:07<05:37,  2.49it/s]
+[1ALoading weights:   2%|▏         | 15/851 [00:08<03:49,  3.64it/s]
+[1ALoading weights:   3%|▎         | 26/851 [00:08<01:38,  8.36it/s]
+[1ALoading weights:   4%|▍         | 32/851 [00:08<01:15, 10.87it/s]
+[1ALoading weights:   5%|▍         | 39/851 [00:08<00:54, 14.89it/s]
+[1ALoading weights:   5%|▌         | 44/851 [00:08<00:49, 16.45it/s]
+[1ALoading weights:   6%|▌         | 49/851 [00:09<01:13, 10.93it/s]
+[1ALoading weights:   6%|▌         | 53/851 [00:10<01:19, 10.02it/s]
+[1ALoading weights:   7%|▋         | 62/851 [00:10<00:49, 15.79it/s]
+[1ALoading weights:   8%|▊         | 66/851 [00:10<00:45, 17.15it/s]
+[1ALoading weights:   9%|▊         | 73/851 [00:10<00:33, 23.16it/s]
+[1ALoading weights:   9%|▉         | 79/851 [00:10<00:27, 27.80it/s]
+[1ALoading weights:  10%|▉         | 84/851 [00:10<00:26, 29.46it/s]
+[1ALoading weights:  11%|█         | 94/851 [00:10<00:19, 39.29it/s]
+[1ALoading weights:  12%|█▏        | 100/851 [00:11<00:23, 32.19it/s]
+[1ALoading weights:  12%|█▏        | 106/851 [00:11<00:21, 35.01it/s]
+[1ALoading weights:  14%|█▍        | 119/851 [00:11<00:15, 47.65it/s]
+[1ALoading weights:  15%|█▍        | 125/851 [00:11<00:16, 44.51it/s]
+[1ALoading weights:  16%|█▌        | 132/851 [00:11<00:15, 46.63it/s]
+[1ALoading weights:  16%|█▌        | 138/851 [00:11<00:15, 45.10it/s]
+[1ALoading weights:  17%|█▋        | 147/851 [00:12<00:16, 42.43it/s]
+[1ALoading weights:  18%|█▊        | 152/851 [00:12<00:16, 42.39it/s]
+[1ALoading weights:  18%|█▊        | 157/851 [00:12<00:16, 40.82it/s]
+[1ALoading weights:  20%|█▉        | 169/851 [00:12<00:12, 55.89it/s]
+[1ALoading weights:  21%|██        | 175/851 [00:12<00:14, 47.06it/s]
+[1ALoading weights:  22%|██▏       | 186/851 [00:12<00:11, 56.84it/s]
+[1ALoading weights:  23%|██▎       | 193/851 [00:12<00:11, 56.82it/s]
+[1ALoading weights:  24%|██▎       | 200/851 [00:13<00:11, 58.23it/s]
+[1ALoading weights:  24%|██▍       | 207/851 [00:13<00:15, 41.41it/s]
+[1ALoading weights:  26%|██▌       | 220/851 [00:13<00:11, 55.79it/s]
+[1ALoading weights:  27%|██▋       | 227/851 [00:13<00:12, 48.47it/s]
+[1ALoading weights:  28%|██▊       | 239/851 [00:13<00:10, 58.66it/s]
+[1ALoading weights:  29%|██▉       | 246/851 [00:13<00:10, 59.05it/s]
+[1ALoading weights:  30%|██▉       | 253/851 [00:14<00:10, 59.53it/s]
+[1ALoading weights:  31%|███       | 260/851 [00:14<00:13, 44.08it/s]
+[1ALoading weights:  32%|███▏      | 275/851 [00:14<00:09, 62.22it/s]
+[1ALoading weights:  33%|███▎      | 283/851 [00:14<00:10, 55.62it/s]
+[1ALoading weights:  34%|███▍      | 292/851 [00:14<00:10, 53.25it/s]
+[1ALoading weights:  35%|███▌      | 301/851 [00:14<00:10, 54.22it/s]
+[1ALoading weights:  36%|███▌      | 307/851 [00:15<00:11, 46.63it/s]
+[1ALoading weights:  37%|███▋      | 313/851 [00:15<00:11, 45.26it/s]
+[1ALoading weights:  38%|███▊      | 325/851 [00:15<00:08, 58.60it/s]
+[1ALoading weights:  39%|███▉      | 332/851 [00:15<00:09, 55.39it/s]
+[1ALoading weights:  40%|████      | 341/851 [00:15<00:08, 61.29it/s]
+[1ALoading weights:  41%|████      | 348/851 [00:15<00:10, 49.97it/s]
+[1ALoading weights:  42%|████▏     | 356/851 [00:15<00:09, 54.64it/s]
+[1ALoading weights:  43%|████▎     | 362/851 [00:16<00:10, 48.36it/s]
+[1ALoading weights:  43%|████▎     | 368/851 [00:16<00:10, 45.11it/s]
+[1ALoading weights:  45%|████▍     | 381/851 [00:16<00:08, 52.29it/s]
+[1ALoading weights:  45%|████▌     | 387/851 [00:16<00:08, 52.06it/s]
+[1ALoading weights:  47%|████▋     | 398/851 [00:16<00:07, 61.71it/s]
+[1ALoading weights:  48%|████▊     | 405/851 [00:16<00:07, 59.65it/s]
+[1ALoading weights:  48%|████▊     | 412/851 [00:17<00:07, 58.13it/s]
+[1ALoading weights:  49%|████▉     | 418/851 [00:17<00:09, 45.70it/s]
+[1ALoading weights:  50%|████▉     | 425/851 [00:17<00:08, 50.03it/s]
+[1ALoading weights:  51%|█████▏    | 437/851 [00:17<00:06, 61.19it/s]
+[1ALoading weights:  52%|█████▏    | 444/851 [00:17<00:06, 58.61it/s]
+[1ALoading weights:  53%|█████▎    | 451/851 [00:17<00:06, 59.08it/s]
+[1ALoading weights:  54%|█████▍    | 458/851 [00:17<00:06, 57.53it/s]
+[1ALoading weights:  55%|█████▍    | 465/851 [00:17<00:06, 60.03it/s]
+[1ALoading weights:  55%|█████▌    | 472/851 [00:18<00:09, 41.47it/s]
+[1ALoading weights:  57%|█████▋    | 487/851 [00:18<00:05, 61.44it/s]
+[1ALoading weights:  58%|█████▊    | 495/851 [00:18<00:06, 54.87it/s]
+[1ALoading weights:  59%|█████▉    | 504/851 [00:18<00:05, 58.60it/s]
+[1ALoading weights:  60%|██████    | 511/851 [00:18<00:05, 56.82it/s]
+[1ALoading weights:  61%|██████    | 518/851 [00:18<00:05, 56.28it/s]
+[1ALoading weights:  62%|██████▏   | 525/851 [00:19<00:08, 40.73it/s]
+[1ALoading weights:  63%|██████▎   | 540/851 [00:19<00:05, 56.12it/s]
+[1ALoading weights:  64%|██████▍   | 547/851 [00:19<00:05, 51.81it/s]
+[1ALoading weights:  65%|██████▌   | 557/851 [00:19<00:05, 57.59it/s]
+[1ALoading weights:  66%|██████▋   | 564/851 [00:19<00:05, 56.88it/s]
+[1ALoading weights:  67%|██████▋   | 571/851 [00:19<00:04, 56.70it/s]
+[1ALoading weights:  68%|██████▊   | 577/851 [00:20<00:06, 40.16it/s]
+[1ALoading weights:  69%|██████▉   | 590/851 [00:20<00:04, 56.45it/s]
+[1ALoading weights:  70%|███████   | 598/851 [00:20<00:05, 50.18it/s]
+[1ALoading weights:  72%|███████▏  | 610/851 [00:20<00:04, 59.49it/s]
+[1ALoading weights:  73%|███████▎  | 617/851 [00:20<00:03, 58.64it/s]
+[1ALoading weights:  73%|███████▎  | 624/851 [00:20<00:03, 58.21it/s]
+[1ALoading weights:  74%|███████▍  | 631/851 [00:21<00:05, 42.67it/s]
+[1ALoading weights:  76%|███████▌  | 646/851 [00:21<00:03, 60.45it/s]
+[1ALoading weights:  77%|███████▋  | 654/851 [00:21<00:03, 55.07it/s]
+[1ALoading weights:  78%|███████▊  | 663/851 [00:21<00:03, 59.92it/s]
+[1ALoading weights:  79%|███████▊  | 670/851 [00:21<00:03, 59.24it/s]
+[1ALoading weights:  80%|███████▉  | 677/851 [00:21<00:02, 58.49it/s]
+[1ALoading weights:  80%|████████  | 684/851 [00:22<00:03, 42.78it/s]
+[1ALoading weights:  82%|████████▏ | 697/851 [00:22<00:02, 59.21it/s]
+[1ALoading weights:  83%|████████▎ | 705/851 [00:22<00:02, 51.31it/s]
+[1ALoading weights:  84%|████████▍ | 716/851 [00:22<00:02, 52.75it/s]
+[1ALoading weights:  85%|████████▌ | 726/851 [00:22<00:02, 61.67it/s]
+[1ALoading weights:  86%|████████▋ | 734/851 [00:23<00:02, 49.77it/s]
+[1ALoading weights:  87%|████████▋ | 741/851 [00:23<00:02, 46.96it/s]
+[1ALoading weights:  88%|████████▊ | 753/851 [00:23<00:01, 60.16it/s]
+[1ALoading weights:  89%|████████▉ | 761/851 [00:23<00:01, 52.41it/s]
+[1ALoading weights:  90%|█████████ | 769/851 [00:23<00:01, 54.26it/s]
+[1ALoading weights:  91%|█████████ | 776/851 [00:23<00:01, 53.66it/s]
+[1ALoading weights:  92%|█████████▏| 783/851 [00:23<00:01, 55.39it/s]
+[1ALoading weights:  93%|█████████▎| 789/851 [00:24<00:01, 44.37it/s]
+[1ALoading weights:  93%|█████████▎| 794/851 [00:24<00:01, 42.93it/s]
+[1ALoading weights:  95%|█████████▍| 808/851 [00:24<00:00, 61.16it/s]
+[1ALoading weights:  96%|█████████▌| 815/851 [00:24<00:00, 59.31it/s]
+[1ALoading weights:  97%|█████████▋| 822/851 [00:24<00:00, 57.94it/s]
+[1ALoading weights:  97%|█████████▋| 829/851 [00:24<00:00, 55.33it/s]
+[1ALoading weights:  98%|█████████▊| 836/851 [00:24<00:00, 56.08it/s]
+[1ALoading weights:  99%|█████████▉| 842/851 [00:25<00:00, 43.46it/s]
+[1ALoading weights: 100%|█████████▉| 850/851 [00:25<00:00, 50.60it/s]
+[1ALoading weights: 100%|██████████| 851/851 [00:25<00:00, 33.76it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[modal-client] 2026-10-06T00:05:17+0000 Received a cancellation signal while processing input ('in-01M478ARKZ4RHCQPT1PPWFVEAA:1791244984960-0',)
+Input in-01M478ARKZ4RHCQPT1PPWFVEAA:1791244984960-0 failed to respond to cancellation for too long: 30 seconds - killing task
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/surajprasad/Downloads/interpretability/mats/experiments/08_col_pilot/ │
+│ r5_mech_modal.py:79 in main                                                  │
+│                                                                              │
+│   78 │                                                                       │
+│ ❱ 79 │   print(mech.remote())                                                │
+│   80 │   dst = Path(__file__).resolve().parent / "results" / "08_col_pilot"  │
+│                                                                              │
+│ /Users/surajprasad/miniconda3/lib/python3.13/site-packages/modal/_object.py: │
+│ 45 in wrapped                                                                │
+│                                                                              │
+│    44 │   │   await self.hydrate()                                           │
+│ ❱  45 │   │   return await method(self, *args, **kwargs)                     │
+│    46                                                                        │
+│                                                                              │
+│ /Users/surajprasad/miniconda3/lib/python3.13/site-packages/modal/_functions. │
+│ py:1757 in remote                                                            │
+│                                                                              │
+│   1756 │   │                                                                 │
+│ ❱ 1757 │   │   return await self._call_function(args, kwargs)                │
+│   1758                                                                       │
+│                                                                              │
+│ /Users/surajprasad/miniconda3/lib/python3.13/site-packages/modal/_functions. │
+│ py:1695 in _call_function                                                    │
+│                                                                              │
+│   1694 │   │                                                                 │
+│ ❱ 1695 │   │   return await invocation.run_function()                        │
+│   1696                                                                       │
+│                                                                              │
+│ /Users/surajprasad/miniconda3/lib/python3.13/site-packages/modal/_functions. │
+│ py:476 in run_function                                                       │
+│                                                                              │
+│    475 │   │   │   if await_response.output.result.status in TERMINAL_STATUS │
+│ ❱  476 │   │   │   │   return await _process_result(                         │
+│    477 │   │   │   │   │   await_response.output.result, await_response.outp │
+│                                                                              │
+│ /Users/surajprasad/miniconda3/lib/python3.13/site-packages/modal/_utils/func │
+│ tion_utils.py:550 in _process_result                                         │
+│                                                                              │
+│   549 │   │                                                                  │
+│ ❱ 550 │   │   raise RemoteError(result.exception)                            │
+│   551                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+RemoteError: Function call was cancelled by user or a failure.

@@ -355,3 +355,22 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 - Long vs short lines are visible in the text without counting. Teacher-forced base Qwen is a weak text ceiling for col, so Gemini is the relevant one. With Gemini's signal regressed out, the NLA's small natural signal disappears; OL is at chance throughout.
 - **Natural col AUROC says nothing about activation reading.** The col claim comes only from steering, and any natural number is reported next to the 0.97 text ceiling.
 - Gaps: Gemini covered 7/14 col templates; col_break is Qwen-only (all at chance). Spend under $5 (shared key, so not separable exactly).
+
+## 2026-10-06 — D24: round-5 pilot cells (excluded split): the "neither decoder reads col" wording is RETRACTED
+- **Behavioural validation passes.** At L42 q90 the newline log-odds shift is +1.44 raw (z +86) and +0.72 for 4r* (z +55); generation wrap shifts −6.8 chars raw and −1.55 for 4r*. The 4r* edit changes behaviour yet is invisible to J-Lens (EOL 0.50; content sets clean, |z| ≤ 2.1).
+- **NLA with the mined template family f07_count tracks col:**
+  - raw: 0.71 (z +5.0/+4.5);
+  - **4r* r11: 0.67 (z +3.7/+3.3)**;
+  - 4r* q90: 0.63 (conservative z +3.0/+2.6, borderline).
+  - It rests mostly on ONE template ("near the end of a hard-wrapped line", 0.66–0.69). Fixed pilot templates and f07_break are flat.
+- **OL's newline-continuation (nl_cont) tracks col:** raw 0.76 (z +6.6); 4r* 0.67–0.72 (conservative z +3.9). The shift is linear in dose, and J-removal keeps ~78% per unit dose, close to the model's own behavioural ~70%.
+  - **Adapter OFF** (base Qwen in OL's carrier prompt): 0.40–0.44, slight anti-tracking. The effect needs the LoRA.
+  - Describe it as **"OL's continuation channel carries the newline decision"**, NOT "OL reports line position": every descriptive OL col template is flat or anti-tracking. A LoRA re-instating the activation for Qwen's own next-token circuitry is not ruled out.
+- **Tense 4r* with mined templates:** OL 0.66–0.79 (z +12 to +17) ≥ NLA 0.59–0.74. **D20's "NLA > OL on tense 4r*" does not survive**, so re-specify D21 item 6. OL's tense candidates are continuations too; the adapter-off check for tense hasn't been run.
+- **The digit cell is unusable** as an in-J number control: G2 fails (enrichment ≤ shuffled labels) and G4 fails (0 flips). It's readable but causally inert (it probably encodes list length). The count-calibration gap stays open.
+- **The NLA "nan" was an analysis bug** (stdout was generated before the NLA jobs finished; `cell()` checked one arm only). Fixed.
+
+**Lead's assessment (self-critique):**
+1. **D21's sentence "neither reads col in any phrasing" was premature** and is retracted. It rested on fixed templates. With native/mined phrasings, both decoders show leak-free sensitivity to the J-removed col direction: NLA via one descriptive template, OL via its continuation channel.
+2. **Forking paths:** across rounds the pilot tested many templates × directions × doses. The new positives are exactly what selection could produce. They came from pre-specified families (f07 frozen; nl_cont fixed at 00:53, before scoring), but the main run must name **one primary template per reader** in advance, correct for multiplicity, and replicate on fresh items.
+3. **The emerging, more honest picture:** sensitivity to non-J content exists but is **channel- and phrasing-specific**. The decoders' *descriptive* language mostly doesn't express it; the NLA has one phrasing that does; OL's continuation (next-token) channel does. That is a nuanced, testable claim for the main run, and it bears directly on "can these tools be used to *report* non-workspace content?".

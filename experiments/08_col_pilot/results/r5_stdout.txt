@@ -34,8 +34,11 @@ digit|jrem4|r11 {"mean": -0.02760416641831398, "ci": [-0.0625, 0.006783854216337
 digit|jrem4|r14 {"mean": -0.04322916641831398, "ci": [-0.08489583432674408, -0.0005208333604969084], "sd": 0.16386039555072784, "win": 0.35, "argmax7_plus": 0.5, "argmax5_minus": 0.5, "flip_5to7_plus": 0.0, "flip_7to5_minus": 0.0}
 gen_natural {"frac_newline": 1.0, "spearman_vs_chars_remaining": 0.8631334742327712, "mean_wrap_col": 44.666666666666664, "mae_vs_true_remaining": 3.8}
 gen|raw|q90 {"plus_minus_chars_mean": -6.775862068965517, "ci": [-9.569396551724138, -4.189655172413793], "n_both": 58, "plus_vs_zero": -3.9833333333333334, "minus_vs_zero": 2.6551724137931036, "frac_items_plus_breaks_earlier": 0.603448275862069}
+gen|raw|q99 {"plus_minus_chars_mean": -36.92307692307692, "ci": [-50.69230769230769, -24.75], "n_both": 52, "plus_vs_zero": -8.416666666666666, "minus_vs_zero": 29.71153846153846, "frac_items_plus_breaks_earlier": 0.7307692307692307}
 gen|jrem1|q90 {"plus_minus_chars_mean": -6.783333333333333, "ci": [-9.55, -4.2495833333333355], "n_both": 60, "plus_vs_zero": -3.75, "minus_vs_zero": 3.033333333333333, "frac_items_plus_breaks_earlier": 0.55}
+gen|jrem1|q99 {"plus_minus_chars_mean": -20.60377358490566, "ci": [-29.13396226415094, -13.735377358490569], "n_both": 53, "plus_vs_zero": -7.6, "minus_vs_zero": 14.377358490566039, "frac_items_plus_breaks_earlier": 0.7169811320754716}
 gen|jrem4|q90 {"plus_minus_chars_mean": -1.55, "ci": [-2.7, -0.6333333333333333], "n_both": 60, "plus_vs_zero": -0.6333333333333333, "minus_vs_zero": 0.9166666666666666, "frac_items_plus_breaks_earlier": 0.21666666666666667}
+gen|jrem4|q99 {"plus_minus_chars_mean": -2.3, "ci": [-3.48375, -1.25], "n_both": 60, "plus_vs_zero": -1.1166666666666667, "minus_vs_zero": 1.1833333333333333, "frac_items_plus_breaks_earlier": 0.31666666666666665}
 
 ## reader cells (centred): AUROC [CI] / win / shift / z_shift iso,Jc / z_AUROC iso,Jc
 
@@ -87,6 +90,46 @@ col|OL@42|nl_cont|cm_raw|q90: 0.75 [0.71,0.81] / 0.98 / +2.759 / – – / – �
 col|OL@42|nl_cont|cm_raw|r11: 0.76 [0.72,0.82] / 0.97 / +2.866 / +6.3* +6.4* / +5.2* +5.3*
 col|OL@42|nl_cont|cm_jrem4|q90: 0.67 [0.64,0.72] / 0.97 / +1.722 / – – / – –
 col|OL@42|nl_cont|cm_jrem4|r11: 0.72 [0.69,0.78] / 1.00 / +2.311 / +5.0* +5.1* / +4.4* +4.4*
+col|NLA@42|count_qual|reg_raw|q90: 0.48 [0.45,0.51] / 0.37 / -0.177 / -1.0 -0.7 / -0.8 -0.5
+col|NLA@42|count_qual|reg_raw|r11: 0.48 [0.45,0.51] / 0.42 / -0.188 / -1.0 -0.8 / -0.8 -0.6
+col|NLA@42|count_qual|reg_jrem4|q90: 0.50 [0.48,0.53] / 0.57 / +0.049 / – – / – –
+col|NLA@42|count_qual|reg_jrem4|r11: 0.52 [0.49,0.55] / 0.60 / +0.086 / +0.2 +0.7 / +0.2 +0.7
+col|NLA@42|count_qual|cm_raw|q90: 0.49 [0.46,0.52] / 0.45 / -0.111 / – – / – –
+col|NLA@42|count_qual|cm_raw|r11: 0.49 [0.45,0.51] / 0.45 / -0.127 / -0.7 -0.4 / -0.6 -0.3
+col|NLA@42|count_qual|cm_jrem4|q90: 0.52 [0.49,0.55] / 0.60 / +0.093 / – – / – –
+col|NLA@42|count_qual|cm_jrem4|r11: 0.52 [0.49,0.55] / 0.55 / +0.104 / +0.3 +0.8 / +0.2 +0.7
+col|NLA@42|count_num|reg_raw|q90: 0.53 [0.51,0.56] / 0.68 / +0.154 / +0.8 +0.9 / +1.1 +1.1
+col|NLA@42|count_num|reg_raw|r11: 0.53 [0.50,0.56] / 0.67 / +0.125 / +0.6 +0.6 / +1.0 +1.0
+col|NLA@42|count_num|reg_jrem4|q90: 0.53 [0.51,0.55] / 0.68 / +0.092 / – – / – –
+col|NLA@42|count_num|reg_jrem4|r11: 0.53 [0.51,0.56] / 0.65 / +0.149 / +0.7 +0.8 / +1.0 +1.1
+col|NLA@42|count_num|cm_raw|q90: 0.53 [0.51,0.56] / 0.60 / +0.148 / – – / – –
+col|NLA@42|count_num|cm_raw|r11: 0.53 [0.51,0.56] / 0.68 / +0.116 / +0.5 +0.5 / +1.2 +1.2
+col|NLA@42|count_num|cm_jrem4|q90: 0.53 [0.50,0.55] / 0.58 / +0.118 / – – / – –
+col|NLA@42|count_num|cm_jrem4|r11: 0.53 [0.51,0.56] / 0.63 / +0.155 / +0.8 +0.8 / +1.2 +1.2
+col|NLA@42|decision|reg_raw|q90: 0.52 [0.50,0.54] / 0.63 / +0.065 / +0.9 +0.6 / +0.7 +0.4
+col|NLA@42|decision|reg_raw|r11: 0.51 [0.49,0.54] / 0.60 / +0.066 / +0.9 +0.6 / +0.6 +0.4
+col|NLA@42|decision|reg_jrem4|q90: 0.51 [0.49,0.53] / 0.58 / +0.043 / – – / – –
+col|NLA@42|decision|reg_jrem4|r11: 0.52 [0.50,0.54] / 0.65 / +0.071 / +1.0 +0.6 / +1.0 +0.6
+col|NLA@42|decision|cm_raw|q90: 0.52 [0.50,0.54] / 0.53 / +0.040 / – – / – –
+col|NLA@42|decision|cm_raw|r11: 0.51 [0.48,0.53] / 0.52 / +0.028 / +0.4 +0.2 / +0.3 +0.2
+col|NLA@42|decision|cm_jrem4|q90: 0.51 [0.49,0.52] / 0.58 / +0.044 / – – / – –
+col|NLA@42|decision|cm_jrem4|r11: 0.51 [0.49,0.54] / 0.62 / +0.050 / +0.7 +0.4 / +0.6 +0.3
+col|NLA@42|f07_count|reg_raw|q90: 0.71 [0.67,0.77] / 0.95 / +0.582 / +5.0* +4.5* / +4.8* +4.4*
+col|NLA@42|f07_count|reg_raw|r11: 0.71 [0.66,0.77] / 0.98 / +0.564 / +4.6* +4.2* / +4.3* +4.0*
+col|NLA@42|f07_count|reg_jrem4|q90: 0.63 [0.60,0.68] / 0.95 / +0.347 / – – / – –
+col|NLA@42|f07_count|reg_jrem4|r11: 0.67 [0.63,0.72] / 0.95 / +0.452 / +3.7* +3.3* / +3.5* +3.2*
+col|NLA@42|f07_count|cm_raw|q90: 0.69 [0.65,0.75] / 0.97 / +0.518 / – – / – –
+col|NLA@42|f07_count|cm_raw|r11: 0.70 [0.66,0.76] / 0.98 / +0.531 / +4.3* +3.9* / +4.2* +3.8*
+col|NLA@42|f07_count|cm_jrem4|q90: 0.63 [0.60,0.67] / 0.92 / +0.336 / – – / – –
+col|NLA@42|f07_count|cm_jrem4|r11: 0.67 [0.63,0.72] / 0.93 / +0.443 / +3.6* +3.2* / +3.5* +3.2*
+col|NLA@42|f07_break|reg_raw|q90: 0.48 [0.44,0.50] / 0.38 / -0.028 / -0.7 -0.1 / -1.1 -0.4
+col|NLA@42|f07_break|reg_raw|r11: 0.49 [0.46,0.51] / 0.40 / -0.009 / -0.5 +0.1 / -0.8 -0.1
+col|NLA@42|f07_break|reg_jrem4|q90: 0.49 [0.46,0.51] / 0.45 / -0.041 / – – / – –
+col|NLA@42|f07_break|reg_jrem4|r11: 0.48 [0.45,0.51] / 0.43 / -0.048 / -1.0 -0.4 / -0.9 -0.2
+col|NLA@42|f07_break|cm_raw|q90: 0.47 [0.44,0.49] / 0.33 / -0.042 / – – / – –
+col|NLA@42|f07_break|cm_raw|r11: 0.47 [0.44,0.50] / 0.38 / -0.044 / -0.9 -0.3 / -1.2 -0.5
+col|NLA@42|f07_break|cm_jrem4|q90: 0.49 [0.47,0.52] / 0.43 / -0.019 / – – / – –
+col|NLA@42|f07_break|cm_jrem4|r11: 0.48 [0.45,0.51] / 0.40 / -0.044 / -0.9 -0.3 / -0.9 -0.3
 col|JLens@42|count_qual|reg_raw|q90: 0.52 [0.51,0.54] / 0.72 / +0.038 / +0.4 +0.7 / +0.5 +0.9
 col|JLens@42|count_qual|reg_raw|r11: 0.52 [0.51,0.54] / 0.72 / +0.039 / +0.4 +0.7 / +0.5 +0.9
 col|JLens@42|count_qual|reg_jrem4|q90: 0.48 [0.47,0.48] / 0.08 / -0.028 / – – / – –
@@ -123,8 +166,18 @@ digit|OL@42|qualitative|raw|r14: 0.36 [0.31,0.40] / 0.12 / -1.192 / – – / �
 digit|OL@42|qualitative|jrem4|q90: 0.46 [0.42,0.49] / 0.45 / -0.250 / – – / – –
 digit|OL@42|qualitative|jrem4|r11: 0.47 [0.44,0.49] / 0.42 / -0.232 / -0.4 -0.5 / -0.5 -0.7
 digit|OL@42|qualitative|jrem4|r14: 0.45 [0.42,0.49] / 0.40 / -0.303 / – – / – –
-digit|NLA@42|numeral|raw|r11: 0.00 [0.00,0.00] / 0.00 / +nan / – – / – –
-digit|NLA@42|qualitative|raw|r11: 0.00 [0.00,0.00] / 0.00 / +nan / – – / – –
+digit|NLA@42|numeral|raw|q90: 0.85 [0.78,0.91] / 0.85 / +4.647 / – – / – –
+digit|NLA@42|numeral|raw|r11: 0.70 [0.63,0.78] / 0.67 / +2.332 / +18.1* +20.9* / +13.0* +16.4*
+digit|NLA@42|numeral|raw|r14: 0.79 [0.71,0.85] / 0.80 / +3.399 / – – / – –
+digit|NLA@42|numeral|jrem4|q90: 0.68 [0.61,0.75] / 0.72 / +3.419 / – – / – –
+digit|NLA@42|numeral|jrem4|r11: 0.66 [0.59,0.72] / 0.72 / +2.869 / +22.3* +25.8* / +9.9* +12.6*
+digit|NLA@42|numeral|jrem4|r14: 0.68 [0.62,0.75] / 0.73 / +3.600 / – – / – –
+digit|NLA@42|qualitative|raw|q90: 0.79 [0.75,0.85] / 0.98 / +2.285 / – – / – –
+digit|NLA@42|qualitative|raw|r11: 0.69 [0.66,0.75] / 0.95 / +1.337 / +1.9* +2.5* / +3.2* +4.0*
+digit|NLA@42|qualitative|raw|r14: 0.75 [0.71,0.81] / 0.98 / +1.815 / – – / – –
+digit|NLA@42|qualitative|jrem4|q90: 0.62 [0.59,0.67] / 0.87 / +0.958 / – – / – –
+digit|NLA@42|qualitative|jrem4|r11: 0.60 [0.57,0.64] / 0.85 / +0.774 / +1.0 +1.6 / +1.6* +2.3*
+digit|NLA@42|qualitative|jrem4|r14: 0.63 [0.59,0.67] / 0.85 / +1.040 / – – / – –
 digit|JLens@42|numeral|raw|q90: 0.99 [0.97,1.00] / 1.00 / +0.536 / – – / – –
 digit|JLens@42|numeral|raw|r11: 0.95 [0.91,0.99] / 1.00 / +0.358 / +7.8* +13.8* / +6.9* +11.3*
 digit|JLens@42|numeral|raw|r14: 0.97 [0.94,1.00] / 1.00 / +0.456 / – – / – –
@@ -139,6 +192,14 @@ tense|OL@42|label|raw|q90: 0.57 [0.54,0.61] / 0.69 / +0.511 / +3.4* +4.4* / +2.8
 tense|OL@42|label|raw|r11: 0.58 [0.55,0.62] / 0.71 / +0.593 / +3.4* +4.5* / +2.9* +3.7*
 tense|OL@42|label|jrem4|q90: 0.52 [0.50,0.53] / 0.57 / +0.103 / +1.2 +1.4 / +1.0 +1.2
 tense|OL@42|label|jrem4|r11: 0.53 [0.51,0.55] / 0.53 / +0.188 / +1.2 +1.4 / +1.1 +1.2
+tense|NLA@42|f07_tense|raw|q90: 0.88 [0.85,0.92] / 1.00 / +7.373 / +22.2* +27.8* / +20.8* +25.8*
+tense|NLA@42|f07_tense|raw|r11: 0.92 [0.88,0.94] / 1.00 / +8.190 / +21.7* +27.6* / +19.8* +25.5*
+tense|NLA@42|f07_tense|jrem4|q90: 0.59 [0.57,0.61] / 0.94 / +1.544 / +7.6* +9.3* / +7.3* +8.9*
+tense|NLA@42|f07_tense|jrem4|r11: 0.66 [0.64,0.69] / 0.95 / +2.801 / +7.5* +9.5* / +7.7* +9.8*
+tense|NLA@42|label|raw|q90: 0.85 [0.82,0.89] / 0.97 / +1.735 / +14.4* +16.0* / +10.8* +12.6*
+tense|NLA@42|label|raw|r11: 0.87 [0.83,0.90] / 0.97 / +1.848 / +13.9* +15.2* / +10.6* +12.0*
+tense|NLA@42|label|jrem4|q90: 0.65 [0.62,0.68] / 0.95 / +0.599 / +8.1* +9.0* / +7.3* +8.5*
+tense|NLA@42|label|jrem4|r11: 0.74 [0.71,0.78] / 0.94 / +1.053 / +7.9* +8.6* / +6.9* +7.8*
 tense|JLens@42|label|raw|q90: 0.78 [0.74,0.82] / 0.92 / +1.173 / +8.9* +25.7* / +7.8* +20.6*
 tense|JLens@42|label|raw|r11: 0.81 [0.77,0.85] / 0.94 / +1.362 / +9.0* +25.7* / +7.7* +20.4*
 tense|JLens@42|label|jrem4|q90: 0.51 [0.50,0.51] / 0.65 / +0.013 / +0.2 +0.4 / +0.3 +0.6
@@ -147,6 +208,162 @@ tense|JLens@42|content|raw|q90: 0.91 [0.88,0.94] / 1.00 / +1.675 / +21.2* +63.0*
 tense|JLens@42|content|raw|r11: 0.94 [0.92,0.96] / 1.00 / +1.937 / +21.2* +63.3* / +18.0* +46.5*
 tense|JLens@42|content|jrem4|q90: 0.50 [0.49,0.50] / 0.46 / -0.014 / -0.2 -0.9 / -0.1 -0.7
 tense|JLens@42|content|jrem4|r11: 0.49 [0.48,0.50] / 0.47 / -0.027 / -0.1 -1.0 / -0.2 -0.9
+
+## col q90 cells without a matched null: z vs LARGER-norm null blocks (conservative)
+## z_shift iso,Jc / z_AUROC iso,Jc   [nullq90reg = q90 @ reg_raw dose 9.47; nullr11 = 0.11||h||]
+
+col|OL@42|count_qual|reg_jrem4|q90|nullq90reg -0.2 -0.5 / -0.2 -0.4
+col|OL@42|count_qual|reg_jrem4|q90|nullr11 -0.2 -0.5 / -0.2 -0.4
+col|OL@42|count_qual|cm_jrem4|q90|nullq90reg -0.3 -0.6 / -0.2 -0.5
+col|OL@42|count_qual|cm_jrem4|q90|nullr11 -0.3 -0.6 / -0.2 -0.5
+col|OL@42|count_qual|cm_raw|q90|nullq90reg -0.5 -0.9 / -0.8 -1.2
+col|OL@42|count_qual|cm_raw|q90|nullr11 -0.5 -0.9 / -0.8 -1.3
+col|OL@42|count_num|reg_jrem4|q90|nullq90reg +0.2 +0.2 / +0.0 +0.1
+col|OL@42|count_num|reg_jrem4|q90|nullr11 +0.2 +0.3 / +0.0 +0.1
+col|OL@42|count_num|cm_jrem4|q90|nullq90reg +0.3 +0.4 / +0.2 +0.2
+col|OL@42|count_num|cm_jrem4|q90|nullr11 +0.3 +0.4 / +0.2 +0.2
+col|OL@42|count_num|cm_raw|q90|nullq90reg -1.1 -1.3 / -1.1 -1.1
+col|OL@42|count_num|cm_raw|q90|nullr11 -1.1 -1.3 / -1.0 -1.1
+col|OL@42|decision|reg_jrem4|q90|nullq90reg -0.5 +0.2 / -0.5 +0.1
+col|OL@42|decision|reg_jrem4|q90|nullr11 -0.5 +0.2 / -0.5 +0.1
+col|OL@42|decision|cm_jrem4|q90|nullq90reg -0.5 +0.2 / -0.5 +0.1
+col|OL@42|decision|cm_jrem4|q90|nullr11 -0.4 +0.2 / -0.5 +0.2
+col|OL@42|decision|cm_raw|q90|nullq90reg -0.3 +0.6 / -0.3 +0.5
+col|OL@42|decision|cm_raw|q90|nullr11 -0.2 +0.6 / -0.3 +0.6
+col|OL@42|f07_count|reg_jrem4|q90|nullq90reg -0.4 -0.8 / -0.4 -0.7
+col|OL@42|f07_count|reg_jrem4|q90|nullr11 -0.4 -0.8 / -0.4 -0.7
+col|OL@42|f07_count|cm_jrem4|q90|nullq90reg -0.3 -0.7 / -0.2 -0.5
+col|OL@42|f07_count|cm_jrem4|q90|nullr11 -0.3 -0.7 / -0.2 -0.5
+col|OL@42|f07_count|cm_raw|q90|nullq90reg -0.0 -0.4 / +0.1 -0.3
+col|OL@42|f07_count|cm_raw|q90|nullr11 -0.1 -0.5 / +0.1 -0.3
+col|OL@42|f07_break|reg_jrem4|q90|nullq90reg -1.4 -1.1 / -1.7 -1.2
+col|OL@42|f07_break|reg_jrem4|q90|nullr11 -1.4 -1.0 / -1.6 -1.1
+col|OL@42|f07_break|cm_jrem4|q90|nullq90reg -1.6 -1.2 / -1.7 -1.2
+col|OL@42|f07_break|cm_jrem4|q90|nullr11 -1.5 -1.1 / -1.6 -1.1
+col|OL@42|f07_break|cm_raw|q90|nullq90reg -1.3 -0.9 / -1.4 -0.9
+col|OL@42|f07_break|cm_raw|q90|nullr11 -1.2 -0.8 / -1.3 -0.8
+col|OL@42|nl_cont|reg_jrem4|q90|nullq90reg +3.9* +3.9* / +3.5* +3.6*
+col|OL@42|nl_cont|reg_jrem4|q90|nullr11 +3.7* +3.8* / +3.4* +3.4*
+col|OL@42|nl_cont|cm_jrem4|q90|nullq90reg +3.9* +3.9* / +3.5* +3.6*
+col|OL@42|nl_cont|cm_jrem4|q90|nullr11 +3.7* +3.8* / +3.4* +3.4*
+col|OL@42|nl_cont|cm_raw|q90|nullq90reg +6.3* +6.4* / +5.0* +5.3*
+col|OL@42|nl_cont|cm_raw|q90|nullr11 +6.0* +6.1* / +4.9* +5.0*
+col|NLA@42|count_qual|reg_jrem4|q90|nullq90reg +0.0 +0.5 / -0.1 +0.3
+col|NLA@42|count_qual|reg_jrem4|q90|nullr11 +0.0 +0.5 / -0.1 +0.3
+col|NLA@42|count_qual|cm_jrem4|q90|nullq90reg +0.2 +0.7 / +0.3 +0.8
+col|NLA@42|count_qual|cm_jrem4|q90|nullr11 +0.2 +0.7 / +0.3 +0.8
+col|NLA@42|count_qual|cm_raw|q90|nullq90reg -0.7 -0.4 / -0.6 -0.3
+col|NLA@42|count_qual|cm_raw|q90|nullr11 -0.7 -0.4 / -0.6 -0.3
+col|NLA@42|count_num|reg_jrem4|q90|nullq90reg +0.4 +0.4 / +0.9 +0.9
+col|NLA@42|count_num|reg_jrem4|q90|nullr11 +0.3 +0.4 / +0.9 +0.9
+col|NLA@42|count_num|cm_jrem4|q90|nullq90reg +0.6 +0.6 / +0.9 +0.9
+col|NLA@42|count_num|cm_jrem4|q90|nullr11 +0.5 +0.6 / +0.8 +0.9
+col|NLA@42|count_num|cm_raw|q90|nullq90reg +0.8 +0.9 / +1.1 +1.1
+col|NLA@42|count_num|cm_raw|q90|nullr11 +0.7 +0.8 / +1.1 +1.1
+col|NLA@42|decision|reg_jrem4|q90|nullq90reg +0.6 +0.4 / +0.5 +0.3
+col|NLA@42|decision|reg_jrem4|q90|nullr11 +0.6 +0.4 / +0.6 +0.3
+col|NLA@42|decision|cm_jrem4|q90|nullq90reg +0.6 +0.4 / +0.3 +0.2
+col|NLA@42|decision|cm_jrem4|q90|nullr11 +0.6 +0.4 / +0.3 +0.2
+col|NLA@42|decision|cm_raw|q90|nullq90reg +0.5 +0.3 / +0.7 +0.4
+col|NLA@42|decision|cm_raw|q90|nullr11 +0.5 +0.4 / +0.7 +0.4
+col|NLA@42|f07_count|reg_jrem4|q90|nullq90reg +3.0* +2.6* / +2.9* +2.7*
+col|NLA@42|f07_count|reg_jrem4|q90|nullr11 +2.8* +2.5* / +2.7* +2.5*
+col|NLA@42|f07_count|cm_jrem4|q90|nullq90reg +2.9* +2.5* / +2.8* +2.6*
+col|NLA@42|f07_count|cm_jrem4|q90|nullr11 +2.7* +2.4* / +2.6* +2.4*
+col|NLA@42|f07_count|cm_raw|q90|nullq90reg +4.5* +4.0* / +4.3* +4.0*
+col|NLA@42|f07_count|cm_raw|q90|nullr11 +4.2* +3.8* / +4.0* +3.7*
+col|NLA@42|f07_break|reg_jrem4|q90|nullq90reg -0.9 -0.3 / -0.8 -0.1
+col|NLA@42|f07_break|reg_jrem4|q90|nullr11 -0.9 -0.3 / -0.8 -0.1
+col|NLA@42|f07_break|cm_jrem4|q90|nullq90reg -0.6 -0.0 / -0.7 +0.0
+col|NLA@42|f07_break|cm_jrem4|q90|nullr11 -0.6 -0.0 / -0.7 -0.0
+col|NLA@42|f07_break|cm_raw|q90|nullq90reg -0.9 -0.3 / -1.3 -0.6
+col|NLA@42|f07_break|cm_raw|q90|nullr11 -0.9 -0.3 / -1.2 -0.6
+col|JLens@42|count_qual|reg_jrem4|q90|nullq90reg -0.1 -0.7 / -0.2 -0.9
+col|JLens@42|count_qual|reg_jrem4|q90|nullr11 -0.0 -0.7 / -0.1 -0.9
+col|JLens@42|count_qual|cm_jrem4|q90|nullq90reg -0.0 -0.7 / -0.1 -0.9
+col|JLens@42|count_qual|cm_jrem4|q90|nullr11 -0.0 -0.7 / -0.1 -0.9
+col|JLens@42|count_qual|cm_raw|q90|nullq90reg +0.3 +0.5 / +0.4 +0.5
+col|JLens@42|count_qual|cm_raw|q90|nullr11 +0.3 +0.5 / +0.4 +0.5
+col|JLens@42|count_num|reg_jrem4|q90|nullq90reg -0.1 -0.3 / -0.1 -0.2
+col|JLens@42|count_num|reg_jrem4|q90|nullr11 -0.1 -0.3 / -0.1 -0.2
+col|JLens@42|count_num|cm_jrem4|q90|nullq90reg -0.1 -0.3 / -0.2 -0.3
+col|JLens@42|count_num|cm_jrem4|q90|nullr11 -0.1 -0.3 / -0.1 -0.3
+col|JLens@42|count_num|cm_raw|q90|nullq90reg -0.1 -0.3 / -0.1 -0.1
+col|JLens@42|count_num|cm_raw|q90|nullr11 -0.1 -0.2 / -0.1 -0.1
+col|JLens@42|eol|reg_jrem4|q90|nullq90reg -0.4 +0.2 / -0.3 +0.8
+col|JLens@42|eol|reg_jrem4|q90|nullr11 -0.4 +0.2 / -0.3 +0.7
+col|JLens@42|eol|cm_jrem4|q90|nullq90reg -0.4 +0.1 / -0.3 +0.6
+col|JLens@42|eol|cm_jrem4|q90|nullr11 -0.4 +0.1 / -0.3 +0.5
+col|JLens@42|eol|cm_raw|q90|nullq90reg +4.9* +61.0* / +4.7* +40.1*
+col|JLens@42|eol|cm_raw|q90|nullr11 +4.7* +59.1* / +4.6* +37.9*
+
+## mechanism check (r5_mech.pt): OL nl_cont with the adapter DISABLED; J-Lens content leak sets
+repro max|diff| adapter-on rerun vs r5 OL = 0.641 nats; zero-dose nl_cont LO off/on = {'off_mean': -10.170363426208496, 'on_mean': -27.548288345336914}; sets {'eol_broad': 200, 'eol_narrow': 200, 'content3': 12, 'content10': 40}
+
+col|OLoff@42|nl_cont|reg_raw|q90: 0.42 [0.37,0.46] / 0.25 / -0.098 / -2.2* -2.1* / -1.9* -2.6*
+col|OLoff@42|nl_cont|reg_raw|r11: 0.44 [0.39,0.48] / 0.30 / -0.060 / -1.4 -1.1 / -1.7* -1.8*
+col|OLoff@42|nl_cont|reg_jrem4|q90: 0.43 [0.38,0.47] / 0.27 / -0.092 / proxy(q90@reg_raw) -2.1* -1.9*
+col|OLoff@42|nl_cont|reg_jrem4|r11: 0.40 [0.35,0.43] / 0.20 / -0.138 / -3.1* -2.9* / -2.8* -3.2*
+col|OLoff@42|nl_cont|cm_raw|q90: 0.42 [0.38,0.45] / 0.28 / -0.077 / proxy(q90@reg_raw) -1.7* -1.6*
+col|OLoff@42|nl_cont|cm_raw|r11: 0.41 [0.36,0.45] / 0.30 / -0.082 / -1.9* -1.6* / -2.5* -2.7*
+col|OLoff@42|nl_cont|cm_jrem4|q90: 0.43 [0.39,0.46] / 0.27 / -0.092 / proxy(q90@reg_raw) -2.1* -1.9*
+col|OLoff@42|nl_cont|cm_jrem4|r11: 0.40 [0.35,0.45] / 0.22 / -0.117 / -2.6* -2.4* / -2.6* -2.9*
+col|OLon_rerun@42|nl_cont|reg_raw|q90: 0.76 [0.71,0.81] / 0.97 / +2.877 / proxy(q90@reg_raw) – –
+col|OLon_rerun@42|nl_cont|reg_raw|r11: 0.77 [0.73,0.83] / 0.98 / +2.982 / proxy(q90@reg_raw) – –
+col|OLon_rerun@42|nl_cont|reg_jrem4|q90: 0.67 [0.64,0.72] / 1.00 / +1.730 / proxy(q90@reg_raw) – –
+col|OLon_rerun@42|nl_cont|reg_jrem4|r11: 0.72 [0.69,0.78] / 0.98 / +2.351 / proxy(q90@reg_raw) – –
+col|OLon_rerun@42|nl_cont|cm_raw|q90: 0.75 [0.71,0.81] / 0.95 / +2.754 / proxy(q90@reg_raw) – –
+col|OLon_rerun@42|nl_cont|cm_raw|r11: 0.76 [0.72,0.82] / 0.98 / +2.845 / proxy(q90@reg_raw) – –
+col|OLon_rerun@42|nl_cont|cm_jrem4|q90: 0.67 [0.65,0.72] / 1.00 / +1.705 / proxy(q90@reg_raw) – –
+col|OLon_rerun@42|nl_cont|cm_jrem4|r11: 0.72 [0.68,0.77] / 1.00 / +2.270 / proxy(q90@reg_raw) – –
+col|JLens@42|eol_broad|reg_raw|q90: 0.73 [0.69,0.79] / 0.95 / +0.841 / +4.6* +56.8* / +4.4* +38.0*
+col|JLens@42|eol_broad|reg_raw|r11: 0.74 [0.69,0.79] / 0.93 / +0.881 / +4.6* +57.5* / +4.4* +36.5*
+col|JLens@42|eol_broad|reg_jrem4|q90: 0.50 [0.49,0.52] / 0.58 / -0.003 / proxy(q90@reg_raw) -0.4 +0.2
+col|JLens@42|eol_broad|reg_jrem4|r11: 0.50 [0.49,0.52] / 0.58 / -0.002 / -0.4 +0.2 / -0.3 +0.6
+col|JLens@42|eol_broad|cm_raw|q90: 0.75 [0.70,0.80] / 0.97 / +0.905 / proxy(q90@reg_raw) +4.9* +61.0*
+col|JLens@42|eol_broad|cm_raw|r11: 0.76 [0.71,0.81] / 0.97 / +0.940 / +4.9* +61.4* / +4.7* +39.1*
+col|JLens@42|eol_broad|cm_jrem4|q90: 0.50 [0.49,0.51] / 0.57 / -0.004 / proxy(q90@reg_raw) -0.4 +0.1
+col|JLens@42|eol_broad|cm_jrem4|r11: 0.50 [0.49,0.52] / 0.57 / -0.003 / -0.4 +0.1 / -0.3 +0.7
+col|JLens@42|eol_narrow|reg_raw|q90: 0.73 [0.69,0.79] / 0.95 / +0.841 / +4.6* +56.8* / +4.4* +38.0*
+col|JLens@42|eol_narrow|reg_raw|r11: 0.74 [0.69,0.79] / 0.93 / +0.881 / +4.6* +57.5* / +4.4* +36.5*
+col|JLens@42|eol_narrow|reg_jrem4|q90: 0.50 [0.49,0.52] / 0.58 / -0.003 / proxy(q90@reg_raw) -0.4 +0.2
+col|JLens@42|eol_narrow|reg_jrem4|r11: 0.50 [0.49,0.52] / 0.58 / -0.002 / -0.4 +0.2 / -0.3 +0.6
+col|JLens@42|eol_narrow|cm_raw|q90: 0.75 [0.70,0.80] / 0.97 / +0.905 / proxy(q90@reg_raw) +4.9* +61.0*
+col|JLens@42|eol_narrow|cm_raw|r11: 0.76 [0.71,0.81] / 0.97 / +0.940 / +4.9* +61.4* / +4.7* +39.1*
+col|JLens@42|eol_narrow|cm_jrem4|q90: 0.50 [0.49,0.51] / 0.57 / -0.004 / proxy(q90@reg_raw) -0.4 +0.1
+col|JLens@42|eol_narrow|cm_jrem4|r11: 0.50 [0.49,0.52] / 0.57 / -0.003 / -0.4 +0.1 / -0.3 +0.7
+col|JLens@42|content3|reg_raw|q90: 0.61 [0.59,0.64] / 1.00 / +0.660 / +2.7* +42.1* / +2.4* +17.5*
+col|JLens@42|content3|reg_raw|r11: 0.61 [0.59,0.64] / 1.00 / +0.682 / +2.6* +41.7* / +2.4* +17.6*
+col|JLens@42|content3|reg_jrem4|q90: 0.50 [0.49,0.51] / 0.33 / +0.001 / proxy(q90@reg_raw) -0.3 -0.1
+col|JLens@42|content3|reg_jrem4|r11: 0.50 [0.49,0.51] / 0.35 / -0.000 / -0.3 -0.2 / -0.2 -0.1
+col|JLens@42|content3|cm_raw|q90: 0.61 [0.59,0.64] / 1.00 / +0.655 / proxy(q90@reg_raw) +2.6* +41.8*
+col|JLens@42|content3|cm_raw|r11: 0.61 [0.59,0.65] / 1.00 / +0.674 / +2.6* +41.2* / +2.4* +17.8*
+col|JLens@42|content3|cm_jrem4|q90: 0.50 [0.49,0.51] / 0.35 / +0.003 / proxy(q90@reg_raw) -0.2 +0.0
+col|JLens@42|content3|cm_jrem4|r11: 0.50 [0.49,0.51] / 0.37 / +0.002 / -0.2 -0.0 / -0.2 -0.0
+col|JLens@42|content10|reg_raw|q90: 0.61 [0.60,0.65] / 1.00 / +0.652 / +2.9* +40.2* / +2.8* +19.8*
+col|JLens@42|content10|reg_raw|r11: 0.62 [0.60,0.65] / 1.00 / +0.675 / +2.9* +40.6* / +2.8* +20.1*
+col|JLens@42|content10|reg_jrem4|q90: 0.49 [0.48,0.50] / 0.28 / -0.021 / proxy(q90@reg_raw) -0.4 -1.4
+col|JLens@42|content10|reg_jrem4|r11: 0.49 [0.48,0.50] / 0.28 / -0.030 / -0.5 -1.9 / -0.5 -1.4
+col|JLens@42|content10|cm_raw|q90: 0.61 [0.59,0.65] / 1.00 / +0.651 / proxy(q90@reg_raw) +2.9* +40.1*
+col|JLens@42|content10|cm_raw|r11: 0.62 [0.60,0.65] / 1.00 / +0.670 / +2.8* +40.3* / +2.8* +20.2*
+col|JLens@42|content10|cm_jrem4|q90: 0.49 [0.48,0.50] / 0.27 / -0.024 / proxy(q90@reg_raw) -0.4 -1.6
+col|JLens@42|content10|cm_jrem4|r11: 0.49 [0.48,0.50] / 0.27 / -0.034 / -0.5 -2.1* / -0.6 -1.6
+col|JLens@42|eol_minus_content3|reg_raw|q90: 0.52 [0.50,0.54] / 0.65 / +0.182 / +0.8 +9.6* / +0.5 +4.0*
+col|JLens@42|eol_minus_content3|reg_raw|r11: 0.52 [0.50,0.55] / 0.67 / +0.199 / +0.8 +10.2* / +0.6 +4.5*
+col|JLens@42|eol_minus_content3|reg_jrem4|q90: 0.50 [0.49,0.51] / 0.50 / -0.003 / proxy(q90@reg_raw) -0.0 +0.2
+col|JLens@42|eol_minus_content3|reg_jrem4|r11: 0.50 [0.49,0.51] / 0.50 / -0.001 / -0.0 +0.3 / +0.0 +0.6
+col|JLens@42|eol_minus_content3|cm_raw|q90: 0.53 [0.51,0.56] / 0.73 / +0.250 / proxy(q90@reg_raw) +1.1 +13.1*
+col|JLens@42|eol_minus_content3|cm_raw|r11: 0.53 [0.51,0.56] / 0.73 / +0.267 / +1.1 +13.5* / +0.9 +6.5*
+col|JLens@42|eol_minus_content3|cm_jrem4|q90: 0.50 [0.49,0.51] / 0.50 / -0.007 / proxy(q90@reg_raw) -0.0 +0.0
+col|JLens@42|eol_minus_content3|cm_jrem4|r11: 0.50 [0.49,0.51] / 0.50 / -0.006 / -0.0 +0.1 / -0.0 +0.3
+col|JLens@42|eol_minus_content10|reg_raw|q90: 0.52 [0.50,0.55] / 0.73 / +0.189 / +0.9 +8.7* / +0.7 +4.4*
+col|JLens@42|eol_minus_content10|reg_raw|r11: 0.52 [0.50,0.55] / 0.72 / +0.206 / +0.9 +9.3* / +0.7 +4.5*
+col|JLens@42|eol_minus_content10|reg_jrem4|q90: 0.51 [0.50,0.52] / 0.63 / +0.019 / proxy(q90@reg_raw) +0.1 +1.1
+col|JLens@42|eol_minus_content10|reg_jrem4|r11: 0.51 [0.50,0.52] / 0.65 / +0.028 / +0.1 +1.5 / +0.2 +1.6*
+col|JLens@42|eol_minus_content10|cm_raw|q90: 0.53 [0.51,0.56] / 0.75 / +0.254 / proxy(q90@reg_raw) +1.2 +11.6*
+col|JLens@42|eol_minus_content10|cm_raw|r11: 0.54 [0.51,0.56] / 0.75 / +0.270 / +1.2 +12.1* / +1.0 +6.6*
+col|JLens@42|eol_minus_content10|cm_jrem4|q90: 0.51 [0.50,0.52] / 0.70 / +0.020 / proxy(q90@reg_raw) +0.1 +1.2
+col|JLens@42|eol_minus_content10|cm_jrem4|r11: 0.51 [0.50,0.52] / 0.70 / +0.030 / +0.1 +1.6 / +0.3 +1.8*
 
 ## per-template AUROC
 
@@ -262,6 +479,94 @@ col|OL@42|t13|cm_raw|q90 0.75
 col|OL@42|t13|cm_raw|r11 0.76
 col|OL@42|t13|cm_jrem4|q90 0.66
 col|OL@42|t13|cm_jrem4|r11 0.72
+col|NLA@42|t0|reg_raw|q90 0.49
+col|NLA@42|t0|reg_raw|r11 0.49
+col|NLA@42|t0|reg_jrem4|q90 0.51
+col|NLA@42|t0|reg_jrem4|r11 0.52
+col|NLA@42|t0|cm_raw|q90 0.50
+col|NLA@42|t0|cm_raw|r11 0.50
+col|NLA@42|t0|cm_jrem4|q90 0.52
+col|NLA@42|t0|cm_jrem4|r11 0.53
+col|NLA@42|t1|reg_raw|q90 0.48
+col|NLA@42|t1|reg_raw|r11 0.48
+col|NLA@42|t1|reg_jrem4|q90 0.51
+col|NLA@42|t1|reg_jrem4|r11 0.51
+col|NLA@42|t1|cm_raw|q90 0.48
+col|NLA@42|t1|cm_raw|r11 0.48
+col|NLA@42|t1|cm_jrem4|q90 0.51
+col|NLA@42|t1|cm_jrem4|r11 0.51
+col|NLA@42|t2|reg_raw|q90 0.53
+col|NLA@42|t2|reg_raw|r11 0.53
+col|NLA@42|t2|reg_jrem4|q90 0.53
+col|NLA@42|t2|reg_jrem4|r11 0.53
+col|NLA@42|t2|cm_raw|q90 0.53
+col|NLA@42|t2|cm_raw|r11 0.53
+col|NLA@42|t2|cm_jrem4|q90 0.53
+col|NLA@42|t2|cm_jrem4|r11 0.53
+col|NLA@42|t3|reg_raw|q90 0.52
+col|NLA@42|t3|reg_raw|r11 0.53
+col|NLA@42|t3|reg_jrem4|q90 0.50
+col|NLA@42|t3|reg_jrem4|r11 0.51
+col|NLA@42|t3|cm_raw|q90 0.53
+col|NLA@42|t3|cm_raw|r11 0.53
+col|NLA@42|t3|cm_jrem4|q90 0.51
+col|NLA@42|t3|cm_jrem4|r11 0.52
+col|NLA@42|t4|reg_raw|q90 0.51
+col|NLA@42|t4|reg_raw|r11 0.51
+col|NLA@42|t4|reg_jrem4|q90 0.52
+col|NLA@42|t4|reg_jrem4|r11 0.52
+col|NLA@42|t4|cm_raw|q90 0.50
+col|NLA@42|t4|cm_raw|r11 0.49
+col|NLA@42|t4|cm_jrem4|q90 0.51
+col|NLA@42|t4|cm_jrem4|r11 0.51
+col|NLA@42|t5|reg_raw|q90 0.52
+col|NLA@42|t5|reg_raw|r11 0.53
+col|NLA@42|t5|reg_jrem4|q90 0.52
+col|NLA@42|t5|reg_jrem4|r11 0.52
+col|NLA@42|t5|cm_raw|q90 0.51
+col|NLA@42|t5|cm_raw|r11 0.52
+col|NLA@42|t5|cm_jrem4|q90 0.52
+col|NLA@42|t5|cm_jrem4|r11 0.52
+col|NLA@42|t6|reg_raw|q90 0.69
+col|NLA@42|t6|reg_raw|r11 0.68
+col|NLA@42|t6|reg_jrem4|q90 0.63
+col|NLA@42|t6|reg_jrem4|r11 0.66
+col|NLA@42|t6|cm_raw|q90 0.67
+col|NLA@42|t6|cm_raw|r11 0.67
+col|NLA@42|t6|cm_jrem4|q90 0.62
+col|NLA@42|t6|cm_jrem4|r11 0.66
+col|NLA@42|t7|reg_raw|q90 0.62
+col|NLA@42|t7|reg_raw|r11 0.61
+col|NLA@42|t7|reg_jrem4|q90 0.57
+col|NLA@42|t7|reg_jrem4|r11 0.59
+col|NLA@42|t7|cm_raw|q90 0.61
+col|NLA@42|t7|cm_raw|r11 0.60
+col|NLA@42|t7|cm_jrem4|q90 0.56
+col|NLA@42|t7|cm_jrem4|r11 0.58
+col|NLA@42|t8|reg_raw|q90 0.43
+col|NLA@42|t8|reg_raw|r11 0.42
+col|NLA@42|t8|reg_jrem4|q90 0.46
+col|NLA@42|t8|reg_jrem4|r11 0.43
+col|NLA@42|t8|cm_raw|q90 0.42
+col|NLA@42|t8|cm_raw|r11 0.42
+col|NLA@42|t8|cm_jrem4|q90 0.45
+col|NLA@42|t8|cm_jrem4|r11 0.43
+col|NLA@42|t9|reg_raw|q90 0.51
+col|NLA@42|t9|reg_raw|r11 0.52
+col|NLA@42|t9|reg_jrem4|q90 0.50
+col|NLA@42|t9|reg_jrem4|r11 0.51
+col|NLA@42|t9|cm_raw|q90 0.51
+col|NLA@42|t9|cm_raw|r11 0.51
+col|NLA@42|t9|cm_jrem4|q90 0.52
+col|NLA@42|t9|cm_jrem4|r11 0.51
+col|NLA@42|t10|reg_raw|q90 0.51
+col|NLA@42|t10|reg_raw|r11 0.52
+col|NLA@42|t10|reg_jrem4|q90 0.50
+col|NLA@42|t10|reg_jrem4|r11 0.50
+col|NLA@42|t10|cm_raw|q90 0.50
+col|NLA@42|t10|cm_raw|r11 0.50
+col|NLA@42|t10|cm_jrem4|q90 0.49
+col|NLA@42|t10|cm_jrem4|r11 0.50
 col|JLens@42|t0|reg_raw|q90 0.54
 col|JLens@42|t0|reg_raw|r11 0.54
 col|JLens@42|t0|reg_jrem4|q90 0.48
@@ -304,9 +609,24 @@ digit|OL@42|t2|raw|r14 0.36
 digit|OL@42|t2|jrem4|q90 0.46
 digit|OL@42|t2|jrem4|r11 0.47
 digit|OL@42|t2|jrem4|r14 0.45
-digit|NLA@42|t0|raw|r11 0.00
-digit|NLA@42|t1|raw|r11 0.00
-digit|NLA@42|t2|raw|r11 0.00
+digit|NLA@42|t0|raw|q90 0.83
+digit|NLA@42|t0|raw|r11 0.68
+digit|NLA@42|t0|raw|r14 0.76
+digit|NLA@42|t0|jrem4|q90 0.67
+digit|NLA@42|t0|jrem4|r11 0.65
+digit|NLA@42|t0|jrem4|r14 0.67
+digit|NLA@42|t1|raw|q90 0.87
+digit|NLA@42|t1|raw|r11 0.74
+digit|NLA@42|t1|raw|r14 0.81
+digit|NLA@42|t1|jrem4|q90 0.70
+digit|NLA@42|t1|jrem4|r11 0.67
+digit|NLA@42|t1|jrem4|r14 0.71
+digit|NLA@42|t2|raw|q90 0.79
+digit|NLA@42|t2|raw|r11 0.69
+digit|NLA@42|t2|raw|r14 0.75
+digit|NLA@42|t2|jrem4|q90 0.62
+digit|NLA@42|t2|jrem4|r11 0.60
+digit|NLA@42|t2|jrem4|r14 0.63
 digit|JLens@42|t0|raw|q90 0.99
 digit|JLens@42|t0|raw|r11 0.95
 digit|JLens@42|t0|raw|r14 0.97
@@ -337,6 +657,30 @@ tense|OL@42|t5|raw|q90 0.84
 tense|OL@42|t5|raw|r11 0.87
 tense|OL@42|t5|jrem4|q90 0.57
 tense|OL@42|t5|jrem4|r11 0.63
+tense|NLA@42|t0|raw|q90 0.88
+tense|NLA@42|t0|raw|r11 0.91
+tense|NLA@42|t0|jrem4|q90 0.59
+tense|NLA@42|t0|jrem4|r11 0.65
+tense|NLA@42|t1|raw|q90 0.88
+tense|NLA@42|t1|raw|r11 0.91
+tense|NLA@42|t1|jrem4|q90 0.59
+tense|NLA@42|t1|jrem4|r11 0.66
+tense|NLA@42|t2|raw|q90 0.88
+tense|NLA@42|t2|raw|r11 0.91
+tense|NLA@42|t2|jrem4|q90 0.59
+tense|NLA@42|t2|jrem4|r11 0.65
+tense|NLA@42|t3|raw|q90 0.54
+tense|NLA@42|t3|raw|r11 0.52
+tense|NLA@42|t3|jrem4|q90 0.52
+tense|NLA@42|t3|jrem4|r11 0.53
+tense|NLA@42|t4|raw|q90 0.95
+tense|NLA@42|t4|raw|r11 0.97
+tense|NLA@42|t4|jrem4|q90 0.69
+tense|NLA@42|t4|jrem4|r11 0.83
+tense|NLA@42|t5|raw|q90 0.74
+tense|NLA@42|t5|raw|r11 0.76
+tense|NLA@42|t5|jrem4|q90 0.60
+tense|NLA@42|t5|jrem4|r11 0.65
 tense|JLens@42|t0|raw|q90 0.78
 tense|JLens@42|t0|raw|r11 0.81
 tense|JLens@42|t0|jrem4|q90 0.51
