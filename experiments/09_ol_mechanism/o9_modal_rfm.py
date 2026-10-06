@@ -314,7 +314,7 @@ def _channels(S: str, spec: dict) -> list[tuple]:
     return [(fam, a, b) for fam in SET_CHANNELS[S] for a, b in ch[fam]]
 
 
-@app.function(image=app_image, volumes=VOLUMES, gpu="A100-80GB", max_containers=1, timeout=4 * 3600, memory=131072)
+@app.function(image=app_image, volumes=VOLUMES, gpu="A100-80GB", max_containers=4, timeout=4 * 3600, memory=131072)
 def score_ol(S: str, chunk: int, n_chunks: int, adapter: str) -> dict:
     import contextlib
 
