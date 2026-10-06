@@ -415,3 +415,27 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
   - must experiments/09 finish before the freeze?: Fable (default: fold in if done by Oct 15);
   - who writes the T1 judge sensitivity set: user (default: the lead);
   - WorkspaceBench issue: user.
+
+## 2026-10-06 — D27: Fable round 7 (final freeze review), all accepted → prereg rev 4.1
+1. **Leak rule (a), the two-sided 95% J-complement band**, now with **K=100 for the leak band too** (so false voids drop toward the nominal 5%). **A dose ladder is pre-registered:** if q90 voids, the primary is tested at q80, with no further steps.
+2. **S6 (the OL mechanism tests) needn't finish before the freeze,** but P2's interpretation is fixed now, conditional on S6:
+
+   | Outcome | Wording |
+   |---|---|
+   | P2 replicates and S6 = acting | "the continuation channel carries the model's own newline decision" |
+   | P2 replicates and S6 = reading | "OL carries non-J col content in its continuation channel" |
+   | P2 fails | fixed negative wording |
+
+3. **P1 stays best-of-11.** Pre-register the *expected* shrunken effect (≈ the family-mean z, AUROC ≈ 0.58 rather than 0.63), so "replicates but smaller" is the predicted outcome. **Mixed case** (P1 fails, the family mean passes) = non-replication of the primary, an exploratory note, and no claim.
+4. **TOST reachability (blocker).**
+   - The cross-item AUROC SE at n=240 is ≈ 0.037 (Hanley–McNeil), so a 90% CI is ±0.06 and a ±0.05 bound can never close.
+   - Define the equivalence test on **the statistic the null band is built from** (the paired per-item statistic), at the same n.
+   - **Check power by simulation from the band before the freeze.**
+   - If underpowered, **raise n for the negatives** (e.g. 480 col passages; the OL descriptive templates reuse the same passages) rather than loosen the bound.
+5. **Validity:**
+   - the direction w and the q90 dose are **frozen from the pilot/training split**, never re-fit on fresh items;
+   - **null bands are computed on the fresh items at the primary's n**;
+   - **T1's judge scores *described* content, not formatting** (OL's continuations contain literal newlines), and its 40-item sensitivity set includes **synthetic positives** that do mention line position;
+   - **fresh col passages match the pilot's generator** (wrap widths, source distribution).
+6. **The headline has FOUR branches** (P1 × P2 pass/fail). P1 failing with P2 passing is the likeliest.
+7. **Freeze once the TOST simulation is done and the four-branch wording is written.**
