@@ -1,0 +1,146 @@
+# 09 OL mechanism (S6) -- PILOT, EXCLUDED FROM MAIN ANALYSIS
+
+## PROVENANCE
+sha256 vs results/fixed_files.txt: {'o9_items.py': True, 'o9_lib.py': True, 'o9_templates.py': True, 'o9_modal.py': True, 'env.py': True, 'pilot_split.json': True} -> all match: True
+run_summary: 39 calls, errors: none; in-function GPU time (excl. cold start / image pull): prep>=0.06 h, behave 0.84 h, tense_r5 2.18 h, score_ol 29.64 h; total 32.7 A100-80GB h ~ $82 at $2.5/h (lower bound; earlier failed attempts not included)
+random_selection.json written_at 2026-10-06T04:17:15Z (before any OL scoring; OL calls spawned 2026-10-06T10:33Z per call-id ULIDs)
+
+## SANITY (known positives; r5 = 08 round 5 on its 60 col items, these are 80 fresh col09 items)
+- OL-on nl_cont reg_raw q90: 0.69 [0.66,0.74] / 0.93 / +2.53; +5.6* +5.8* / +5.2* +5.3*   [r5 0.76 / 0.97 / +2.88; +6.6 +6.7]
+    model newline log-odds (broad EOL), effect (p-m)/2 = +1.48; z +64/+60   [r5 q90: raw +1.44, 4r* +0.72; r11: +1.50 / +1.06]
+- OL-on nl_cont reg_jrem4 q90: 0.63 [0.61,0.66] / 0.99 / +1.60; +4.7* +5.0* / +4.4* +4.7*   [r5 0.67 / 0.98 / +1.72; +3.9 +3.9 (proxy null)]
+    model newline log-odds (broad EOL), effect (p-m)/2 = +0.79; z +42/+43   [r5 q90: raw +1.44, 4r* +0.72; r11: +1.50 / +1.06]
+- OL-on nl_cont reg_raw r108: 0.70 [0.66,0.75] / 0.93 / +2.60; +5.8* +6.0* / +5.3* +5.5*   [r5 r11: 0.77 / +3.00]
+    model newline log-odds (broad EOL), effect (p-m)/2 = +1.47; z +60/+63   [r5 q90: raw +1.44, 4r* +0.72; r11: +1.50 / +1.06]
+- OL-on nl_cont reg_jrem4 r108: 0.66 [0.64,0.70] / 0.97 / +2.07; +4.6* +4.7* / +4.4* +4.5*   [r5 r11: 0.72 / +2.32]
+    model newline log-odds (broad EOL), effect (p-m)/2 = +1.07; z +44/+46   [r5 q90: raw +1.44, 4r* +0.72; r11: +1.50 / +1.06]
+## (a) INDENTATION (codeNL / codeIN; + = deeper; cell = AUROC [CI] / win / shift; z_shift iso, Jc / z_AUROC iso, Jc)
+- codeNL indent_raw r054: model ind8v4 0.50 [0.50,0.51] / 0.56 / +0.02; (no matched null)
+    OL-on ind_cont: 0.54 [0.52,0.56] / 0.80 / +0.33; (no matched null)
+    OL-off ind_cont: 0.50 [0.47,0.52] / 0.51 / -0.00; (no matched null)
+- codeNL indent_raw r108: model ind8v4 0.50 [0.50,0.51] / 0.52 / +0.03; +0.3 +1.5 / +0.3 +1.0
+    OL-on ind_cont: 0.57 [0.55,0.60] / 0.81 / +0.64; +1.9* +2.3* / +1.6 +2.0*
+    OL-off ind_cont: 0.49 [0.45,0.52] / 0.53 / -0.01; -0.3 -0.3 / -0.3 -0.3
+    OL-on other channels (shift; z iso,Jc): ind_nlcont +0.76 (+2.7,+2.7), ind_any +0.51 (+2.2,+1.8), nl_cont +0.05 (+0.0,+0.2), f07_indent -0.07 (-0.2,-0.4)
+- codeNL indent_raw r216: model ind8v4 0.50 [0.49,0.52] / 0.51 / +0.07; (no matched null)
+    OL-on ind_cont: 0.64 [0.60,0.68] / 0.76 / +1.16; (no matched null)
+    OL-off ind_cont: 0.50 [0.46,0.54] / 0.53 / -0.00; (no matched null)
+- codeNL indent_jrem4 r054: model ind8v4 0.50 [0.50,0.51] / 0.59 / +0.03; (no matched null)
+    OL-on ind_cont: 0.51 [0.49,0.52] / 0.64 / +0.10; (no matched null)
+    OL-off ind_cont: 0.49 [0.47,0.50] / 0.40 / -0.01; (no matched null)
+- codeNL indent_jrem4 r108: model ind8v4 0.50 [0.49,0.51] / 0.52 / +0.03; +0.3 +1.5 / -0.3 +0.5
+    OL-on ind_cont: 0.52 [0.50,0.54] / 0.61 / +0.18; +0.4 +0.6 / +0.2 +0.5
+    OL-off ind_cont: 0.46 [0.43,0.49] / 0.45 / -0.03; -0.9 -0.7 / -1.0 -0.9
+    OL-on other channels (shift; z iso,Jc): ind_nlcont +0.50 (+1.7,+1.8), ind_any +0.42 (+1.8,+1.5), nl_cont +0.15 (+0.2,+0.4), f07_indent +0.64 (+0.8,+1.3)
+- codeNL indent_jrem4 r216: model ind8v4 0.51 [0.50,0.52] / 0.58 / +0.09; (no matched null)
+    OL-on ind_cont: 0.54 [0.51,0.57] / 0.66 / +0.33; (no matched null)
+    OL-off ind_cont: 0.42 [0.37,0.47] / 0.35 / -0.08; (no matched null)
+- codeNL nextind_raw r108: model ind8v4 0.53 [0.52,0.55] / 0.83 / +0.55; +16.5* +21.3* / +12.7* +12.4*
+    OL-on ind_cont: 0.74 [0.69,0.79] / 0.88 / +2.02; +6.5* +7.3* / +6.2* +6.9*
+    OL-off ind_cont: 0.43 [0.39,0.47] / 0.31 / -0.07; -1.7 -1.3 / -1.8 -1.5
+    OL-on other channels (shift; z iso,Jc): ind_nlcont +2.29 (+8.4,+8.4), ind_any +1.09 (+4.5,+3.8), nl_cont -1.55 (-2.9,-3.2), f07_indent -0.28 (-0.5,-0.9)
+- codeNL nextind_jrem4 r108: model ind8v4 0.51 [0.51,0.53] / 0.79 / +0.24; +6.8* +9.4* / +5.8* +6.0*
+    OL-on ind_cont: 0.52 [0.49,0.55] / 0.55 / +0.22; +0.5 +0.7 / +0.2 +0.5
+    OL-off ind_cont: 0.46 [0.41,0.49] / 0.34 / -0.05; -1.2 -0.9 / -1.2 -1.0
+    OL-on other channels (shift; z iso,Jc): ind_nlcont +0.70 (+2.4,+2.5), ind_any +0.93 (+3.8,+3.2), nl_cont -1.12 (-2.1,-2.3), f07_indent -0.25 (-0.4,-0.8)
+- codeIN indent_raw r054: model ind8v4 0.50 [0.50,0.50] / 0.51 / -0.00; (no matched null)
+    OL-on ind_nlcont: 0.58 [0.56,0.60] / 0.85 / +0.37; (no matched null)
+    OL-off ind_nlcont: 0.53 [0.50,0.57] / 0.61 / +0.02; (no matched null)
+- codeIN indent_raw r108: model ind8v4 0.50 [0.50,0.51] / 0.56 / +0.01; +0.7 +0.9 / +0.7 +0.9
+    OL-on ind_nlcont: 0.64 [0.61,0.68] / 0.88 / +0.72; +2.7* +2.6* / +2.6* +2.6*
+    OL-off ind_nlcont: 0.55 [0.50,0.61] / 0.62 / +0.03; +1.0 +0.7 / +1.2 +0.9
+    OL-on other channels (shift; z iso,Jc): ind_cont +0.12 (+0.2,+0.5), ind_any +0.77 (+2.9,+2.5), nl_cont +0.02 (+0.1,+0.1), f07_indent +0.13 (+0.1,+0.2)
+- codeIN indent_raw r216: model ind8v4 0.51 [0.50,0.52] / 0.67 / +0.06; (no matched null)
+    OL-on ind_nlcont: 0.73 [0.69,0.79] / 0.86 / +1.27; (no matched null)
+    OL-off ind_nlcont: 0.58 [0.52,0.64] / 0.60 / +0.05; (no matched null)
+- codeIN indent_jrem4 r054: model ind8v4 0.50 [0.50,0.51] / 0.56 / +0.01; (no matched null)
+    OL-on ind_nlcont: 0.55 [0.54,0.58] / 0.79 / +0.28; (no matched null)
+    OL-off ind_nlcont: 0.55 [0.52,0.59] / 0.60 / +0.03; (no matched null)
+- codeIN indent_jrem4 r108: model ind8v4 0.50 [0.50,0.51] / 0.61 / +0.03; +1.7* +1.9* / +1.7* +1.8*
+    OL-on ind_nlcont: 0.61 [0.58,0.64] / 0.88 / +0.53; +2.0* +1.9* / +2.0* +2.0*
+    OL-off ind_nlcont: 0.59 [0.55,0.64] / 0.70 / +0.06; +1.8* +1.6* / +2.0* +1.7*
+    OL-on other channels (shift; z iso,Jc): ind_cont -0.01 (-0.3,-0.1), ind_any +0.73 (+2.7,+2.3), nl_cont +0.30 (+0.6,+0.7), f07_indent +0.64 (+0.8,+1.4)
+- codeIN indent_jrem4 r216: model ind8v4 0.50 [0.50,0.51] / 0.63 / +0.04; (no matched null)
+    OL-on ind_nlcont: 0.70 [0.66,0.75] / 0.88 / +1.05; (no matched null)
+    OL-off ind_nlcont: 0.64 [0.58,0.69] / 0.71 / +0.09; (no matched null)
+- codeIN nextind_raw r108: model ind8v4 0.51 [0.51,0.52] / 0.76 / +0.11; +7.2* +7.6* / +7.5* +7.6*
+    OL-on ind_nlcont: 0.73 [0.69,0.79] / 0.93 / +1.44; +5.4* +5.3* / +4.4* +4.4*
+    OL-off ind_nlcont: 0.54 [0.50,0.59] / 0.59 / +0.03; +1.1 +0.8 / +1.0 +0.6
+    OL-on other channels (shift; z iso,Jc): ind_cont +0.49 (+1.9,+2.3), ind_any +1.33 (+4.9,+4.3), nl_cont -0.70 (-1.4,-1.2), f07_indent -0.49 (-0.8,-1.2)
+- codeIN nextind_jrem4 r108: model ind8v4 0.51 [0.50,0.51] / 0.67 / +0.05; +3.1* +3.3* / +3.9* +4.0*
+    OL-on ind_nlcont: 0.57 [0.54,0.61] / 0.72 / +0.38; +1.4 +1.3 / +1.3 +1.3
+    OL-off ind_nlcont: 0.59 [0.54,0.63] / 0.69 / +0.06; +1.7* +1.5* / +1.9* +1.6*
+    OL-on other channels (shift; z iso,Jc): ind_cont -0.23 (-1.3,-1.2), ind_any +0.93 (+3.4,+3.0), nl_cont -0.43 (-0.9,-0.7), f07_indent -0.24 (-0.5,-0.7)
+S6(a) cells (OL-on analogue channel, r108): codeNL|indent_raw|r108|ind_cont z +1.9/+2.3; codeNL|indent_jrem4|r108|ind_cont z +0.4/+0.6; codeIN|indent_raw|r108|ind_nlcont z +2.7/+2.6; codeIN|indent_jrem4|r108|ind_nlcont z +2.0/+1.9 -> (a) fires: False
+
+## (b) GAIN RATIO = OL continuation shift / model behavioural shift (same items, same edit, adapter ON)
+random directions, model behaviour at r108 (own readout; shift pooled col+tense; z iso/Jc col | tense): randA +0.075 (+2.1/+3.4 | +1.3/+2.3); randB +0.083 (+2.0/+4.4 | +1.9/+5.1); randC +0.271 (+6.9/+19.3 | +6.5/+13.6); randD +0.226 (+5.1/+10.7 | +4.9/+10.3) -> used: ['randC', 'randD']
+| direction | dose | OL shift | model shift | ratio [95% CI] | OL z (iso/Jc) | model z (iso/Jc) |
+|---|---|---|---|---|---|---|
+| col_raw | q90 | +2.531 | +2.636 | 0.96 [0.80, 1.14] | +5.6/+5.8 | +53.7/+69.6 |
+| col_raw | r054 | +1.362 | +1.292 | 1.05 [0.86, 1.29] | - | - |
+| col_raw | r108 | +2.603 | +2.616 | 0.99 [0.83, 1.20] | +5.8/+6.0 | +52.1/+71.2 |
+| col_4r | q90 | +1.602 | +1.434 | 1.12 [0.93, 1.36] | +4.7/+5.0 | +37.5/+47.7 |
+| col_4r | r054 | +1.062 | +0.927 | 1.15 [0.94, 1.42] | - | - |
+| col_4r | r108 | +2.067 | +1.958 | 1.06 [0.89, 1.26] | +4.6/+4.7 | +39.0/+53.2 |
+| tense_raw | q90 | +1.854 | +0.536 | 3.46 [2.87, 4.16] | +24.7/+23.3 | +19.9/+41.1 |
+| tense_raw | r054 | +1.108 | +0.307 | 3.60 [2.90, 4.41] | - | - |
+| tense_raw | r108 | +2.065 | +0.608 | 3.40 [2.79, 4.05] | +23.9/+22.7 | +20.6/+41.1 |
+| tense_4r | q90 | +0.338 | -0.023 | -14.47 [-55.76, -7.21] | +7.3/+6.9 | -1.5/-3.0 |
+| tense_4r | r054 | +0.308 | -0.022 | -14.08 [-59.73, -6.80] | - | - |
+| tense_4r | r108 | +0.617 | -0.040 | -15.46 [-86.18, -6.77] | +7.3/+6.9 | -1.4/-2.8 |
+| tense_raw~broad | q90 | +1.854 | +0.455 | 4.08 [3.38, 4.99] | +24.7/+23.3 | +19.0/+33.1 |
+| tense_raw~broad | r054 | +1.108 | +0.261 | 4.25 [3.41, 5.28] | - | - |
+| tense_raw~broad | r108 | +2.065 | +0.516 | 4.00 [3.27, 4.87] | +23.9/+22.7 | +19.5/+31.9 |
+| tense_4r~broad | q90 | +0.338 | -0.025 | -13.34 [-52.30, -6.85] | +7.3/+6.9 | -1.7/-3.1 |
+| tense_4r~broad | r054 | +0.308 | -0.026 | -11.66 [-35.99, -6.19] | - | - |
+| tense_4r~broad | r108 | +0.617 | -0.048 | -12.76 [-52.37, -6.35] | +7.3/+6.9 | -1.7/-3.2 |
+| randA | r108 | +0.129 | +0.075 | 1.72 [1.28, 2.29] | +0.7/+0.9; +0.8/+1.3 | +2.1/+3.4; +1.3/+2.3 |
+| randA | r216 | +0.248 | +0.155 | 1.60 [1.20, 2.07] | - | - |
+| randB | r108 | +0.160 | +0.083 | 1.93 [1.43, 2.58] | +0.8/+1.9; +0.9/+2.1 | +2.0/+4.4; +1.9/+5.1 |
+| randB | r216 | +0.310 | +0.176 | 1.76 [1.31, 2.35] | - | - |
+| randC | r108 | +0.446 | +0.271 | 1.65 [1.45, 1.87] | +3.0/+4.6; +3.2/+4.4 | +6.9/+19.3; +6.5/+13.6 |
+| randC | r216 | +0.885 | +0.538 | 1.64 [1.45, 1.86] | - | - |
+| randD | r108 | +0.426 | +0.226 | 1.89 [1.69, 2.13] | +3.8/+4.5; +3.7/+4.8 | +5.1/+10.7; +4.9/+10.3 |
+| randD | r216 | +0.850 | +0.454 | 1.87 [1.65, 2.11] | - | - |
+rule (b) at col/tense r108, random r108: ratios [0.99, 1.06, 3.4, -15.46, 1.65, 1.89] mean -1.08; dev% [-192, -198, -415, 1333, -253, -275]; all within +/-25%: False; col4r 1.06 [0.89,1.26] vs mean of other five -1.51 -> reading(b): True
+rule (b) at col/tense q90, random r108: ratios [0.96, 1.12, 3.46, -14.47, 1.65, 1.89] mean -0.90; dev% [-207, -224, -484, 1508, -283, -310]; all within +/-25%: False; col4r 1.12 [0.93,1.36] vs mean of other five -1.30 -> reading(b): True
+rule (b) at col/tense q90, random r216: ratios [0.96, 1.12, 3.46, -14.47, 1.64, 1.87] mean -0.90; dev% [-206, -224, -483, 1502, -282, -307]; all within +/-25%: False; col4r 1.12 [0.93,1.36] vs mean of other five -1.31 -> reading(b): True
+SENSITIVITY (valid-denominator, r108): kept ['col_raw|r108', 'col_4r|r108', 'tense_raw|r108', 'randC|r108', 'randD|r108'], dropped ['tense_4r|r108']; ratios [0.99, 1.06, 3.4, 1.65, 1.89] mean 1.80; within +/-25%: False; col4r 1.06 vs others 1.98 -> reading(b): False
+SENSITIVITY (valid-denominator, tense_broad, r108): kept ['col_raw|r108', 'col_4r|r108', 'tense_raw~broad|r108', 'randC|r108', 'randD|r108'], dropped ['tense_4r~broad|r108']; ratios [0.99, 1.06, 4.0, 1.65, 1.89] mean 1.92; within +/-25%: False; col4r 1.06 vs others 2.13 -> reading(b): False
+J-removal retention per unit dose at r108 (4r*/raw): col OL 0.79, col model 0.75; tense OL 0.30, tense model (tense_tok) -0.07, (tense_broad) -0.09
+
+## (c) ADAPTER OFF vs ON (base Qwen in OL's carrier, same slot injection)
+- col09 nl_cont reg_raw q90: ON 0.69 [0.66,0.74] / 0.93 / +2.53; +5.6* +5.8* / +5.2* +5.3* | OFF 0.42 [0.38,0.46] / 0.33 / -0.10; -2.3* -2.3* / -2.3* -2.3*
+- col09 nl_cont reg_raw r054: ON 0.61 [0.59,0.64] / 0.91 / +1.36; (no matched null) | OFF 0.47 [0.43,0.49] / 0.39 / -0.06; (no matched null)
+- col09 nl_cont reg_raw r108: ON 0.70 [0.66,0.75] / 0.93 / +2.60; +5.8* +6.0* / +5.3* +5.5* | OFF 0.45 [0.40,0.49] / 0.33 / -0.09; -2.2* -1.9* / -1.8* -1.6
+- col09 nl_cont reg_jrem4 q90: ON 0.63 [0.61,0.66] / 0.99 / +1.60; +4.7* +5.0* / +4.4* +4.7* | OFF 0.43 [0.40,0.46] / 0.25 / -0.09; -3.1* -2.3* / -3.2* -2.2*
+- col09 nl_cont reg_jrem4 r054: ON 0.59 [0.58,0.61] / 0.97 / +1.06; (no matched null) | OFF 0.46 [0.43,0.49] / 0.38 / -0.06; (no matched null)
+- col09 nl_cont reg_jrem4 r108: ON 0.66 [0.64,0.70] / 0.97 / +2.07; +4.6* +4.7* / +4.4* +4.5* | OFF 0.42 [0.38,0.45] / 0.28 / -0.11; -2.7* -2.5* / -2.5* -2.5*
+- tense09 tense_tok raw q90: ON 0.83 [0.78,0.88] / 0.99 / +1.85; +24.7* +23.3* / +20.0* +19.2* | OFF 0.60 [0.57,0.64] / 0.85 / +0.06; +3.7* +5.2* / +3.7* +5.3*
+- tense09 tense_tok raw r054: ON 0.72 [0.68,0.78] / 0.99 / +1.11; (no matched null) | OFF 0.54 [0.52,0.57] / 0.72 / +0.02; (no matched null)
+- tense09 tense_tok raw r108: ON 0.85 [0.80,0.90] / 0.99 / +2.06; +23.9* +22.7* / +18.8* +18.8* | OFF 0.62 [0.58,0.66] / 0.84 / +0.06; +3.3* +4.2* / +3.7* +4.8*
+- tense09 tense_tok jrem4 q90: ON 0.56 [0.55,0.59] / 0.95 / +0.34; +7.3* +6.9* / +5.7* +5.2* | OFF 0.50 [0.48,0.51] / 0.44 / -0.01; -0.5 -0.1 / -0.3 +0.1
+- tense09 tense_tok jrem4 r054: ON 0.56 [0.55,0.58] / 0.93 / +0.31; (no matched null) | OFF 0.48 [0.45,0.50] / 0.44 / -0.01; (no matched null)
+- tense09 tense_tok jrem4 r108: ON 0.62 [0.59,0.65] / 0.90 / +0.62; +7.3* +6.9* / +6.4* +6.3* | OFF 0.48 [0.44,0.51] / 0.42 / -0.01; -0.4 +0.0 / -0.6 -0.4
+- tense09 f07_tense raw q90: ON 0.99 [0.98,1.00] / 1.00 / +7.91; +30.8* +39.8* / +22.8* +28.8* | OFF 0.51 [0.49,0.53] / 0.51 / -0.02; -0.7 -0.3 / +0.1 +0.5
+- tense09 f07_tense raw r054: ON 0.89 [0.86,0.93] / 1.00 / +4.99; (no matched null) | OFF 0.50 [0.48,0.52] / 0.42 / -0.02; (no matched null)
+- tense09 f07_tense raw r108: ON 1.00 [0.99,1.00] / 1.00 / +8.72; +29.4* +38.5* / +20.6* +26.0* | OFF 0.51 [0.49,0.54] / 0.49 / -0.01; -0.5 +0.0 / +0.3 +0.7
+- tense09 f07_tense jrem4 q90: ON 0.65 [0.63,0.69] / 1.00 / +2.02; +12.7* +16.4* / +10.2* +12.7* | OFF 0.50 [0.48,0.52] / 0.48 / -0.00; -0.4 -0.0 / -0.2 -0.0
+- tense09 f07_tense jrem4 r054: ON 0.64 [0.62,0.67] / 1.00 / +1.86; (no matched null) | OFF 0.50 [0.49,0.53] / 0.59 / -0.00; (no matched null)
+- tense09 f07_tense jrem4 r108: ON 0.78 [0.74,0.82] / 1.00 / +3.71; +12.5* +16.4* / +11.4* +14.5* | OFF 0.49 [0.47,0.52] / 0.43 / -0.01; -0.6 -0.1 / -0.3 -0.1
+zero-dose mean LO: {"col|nl_cont|on": -27.88, "col|nl_cont|off": -10.14, "tense|tense_tok|on": -2.06, "tense|tense_tok|off": -2.06, "tense|f07_tense|on": -0.01, "tense|f07_tense|off": -3.28}
+r5 tense120 items (08 round 5), same activations; ON-r5 = 08's original r5 OL chunks (bands available for f07_tense only)
+- r5 f07_tense raw q90: ON-rerun 0.99 / 1.00 / +7.59 | OFF 0.49 [0.47,0.52] / 0.49 / -0.01; z_shift -0.3 +0.0 | ON-r5 0.99 / +7.60; z +30.5 +40.3 (max item |diff| rerun vs r5 0.10)
+- r5 f07_tense raw r11: ON-rerun 0.99 / 1.00 / +8.41 | OFF 0.49 [0.47,0.52] / 0.54 / +0.00; z_shift -0.1 +0.4 | ON-r5 0.99 / +8.41; z +29.2 +38.8 (max item |diff| rerun vs r5 0.10)
+- r5 f07_tense jrem4 q90: ON-rerun 0.66 / 1.00 / +1.93 | OFF 0.50 [0.48,0.52] / 0.51 / +0.00; z_shift +0.1 +0.6 | ON-r5 0.66 / +1.94; z +12.5 +16.7 (max item |diff| rerun vs r5 0.12)
+- r5 f07_tense jrem4 r11: ON-rerun 0.79 / 1.00 / +3.55 | OFF 0.51 [0.49,0.54] / 0.56 / +0.00; z_shift +0.0 +0.5 | ON-r5 0.79 / +3.54; z +12.3 +16.4 (max item |diff| rerun vs r5 0.15)
+- r5 tense_tok raw q90: ON-rerun 0.87 / 0.99 / +1.88 | OFF 0.59 [0.56,0.63] / 0.72 / +0.04; z_shift +2.7 +3.4
+- r5 tense_tok raw r11: ON-rerun 0.90 / 0.99 / +2.12 | OFF 0.62 [0.58,0.65] / 0.79 / +0.05; z_shift +2.8 +4.4
+- r5 tense_tok jrem4 q90: ON-rerun 0.58 / 0.90 / +0.33 | OFF 0.49 [0.47,0.51] / 0.45 / -0.00; z_shift -0.3 -0.0
+- r5 tense_tok jrem4 r11: ON-rerun 0.64 / 0.91 / +0.60 | OFF 0.46 [0.44,0.49] / 0.38 / -0.01; z_shift -0.7 -0.7
+
+## S6 CLASSIFICATION (prereg §10.1, applied literally; primary dose r108 for all six directions)
+(a) indentation fires: False; (b) all six ratios within +/-25% of mean: False; (b) col4r exceeds others by >25% with CI excluding: True
+sensitivity: r108/r108: within=False, reading_b=True; q90/r108: within=False, reading_b=True; q90/r216: within=False, reading_b=True; valid-denominator: within=False, reading_b=False; valid-denominator, tense_broad: within=False, reading_b=False
+VERDICT: S6 = READING

@@ -451,3 +451,26 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
   3. build the fresh-bank generation + sha256 manifest;
   4. write the 40-item T1 sensitivity set and run the judge gate;
   5. write and hash `experiments/10_main/main_analyze.py`.
+
+## 2026-10-07 — D29: experiment 09 (OL mechanism, pilot split, excluded): mixed; two pre-freeze issues
+40/40 jobs finished; candidates unchanged (all 6 sha256s match). Cost ≈ 32.7 A100-h ≈ $82 (a lower bound).
+
+**Results:**
+- **(b) Gain ratio** (OL continuation shift / model behavioural shift, r108, adapter on):
+  - col raw 0.99 [0.83, 1.20] and col 4r* 1.06 [0.89, 1.26]: one-for-one with the model;
+  - J-removal keeps 0.79 (OL) vs 0.75 (model), replicating round 5;
+  - random directions with behaviour: 1.65, 1.89; tense raw 3.40.
+  - **Not constant across directions.**
+- **Tense 4r*: the model's own next-token tense readout does NOT move** (−0.04 nats, z −1.4/−2.8), yet OL tracks it strongly (z +12 to +16). So its gain ratio is undefined (−15.5).
+- **(a) Indentation** (non-J, causally inert): sub-threshold, z max +2.7/+2.6. It leans toward reading (OL's shift grows with dose up to AUROC 0.73 at r216, while the model's indentation readout stays flat) and vanishes with the adapter off.
+- **(c) Adapter off:** tense collapses like col (f07_tense 0.49–0.51, from 0.65–1.00). Both channels need the LoRA.
+- **Sanity:** OL nl_cont on 80 fresh items is 7–12% smaller than round 5 (within noise); the model's newline effect reproduces.
+
+**Verdict:**
+- **The literal prereg rule says READING, but only through the undefined tense-4r* ratio, which is an artefact.**
+- With a valid-denominator fix (directions kept only if the model's behavioural shift is ≥ +3 z, as already required for the random directions), the verdict is **INCONCLUSIVE**: the ratios are [0.99, 1.06, 3.40, 1.65, 1.89], so "acting" fails the ±25% band and "reading" fails because col isn't the highest.
+- The col-specific evidence (one-for-one gain; retention matches the model's) **leans towards acting**.
+
+**Pre-freeze issues (for Fable):**
+1. **The §10.1(b) rule needs a valid-denominator clause and a fixed gain-ratio dose,** and the strict ±25% "acting" band looks unreachable (random directions sit at 1.7–1.9× vs col 1.0×). The amendment is pilot-informed, so disclose it.
+2. **P3 (OL tense 4r*) may track a behaviourally inactive direction.** The model's next-token tense readout is flat under tense 4r*. If that holds on fresh items, prereg §4.4.5 forces the wording "reader sensitivity to a behaviourally inactive direction". But a next-token readout may be the wrong behavioural measure for tense (tense shows at later verbs, not necessarily the next token), so the behavioural measure for tense should be fixed before the freeze. This also bears on "reading beyond acting": for tense 4r* (and sub-threshold indentation), OL moves where the model's measured behaviour doesn't.
