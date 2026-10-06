@@ -5,37 +5,36 @@ module.exports = [
     type: "section",
     section: "Part C",
     num: "03",
-    title: "Part C: what the NLA does read beyond the workspace",
-    sub: "The distributed tail of verbalisable features, and a story generated from the latent",
+    title: "Part C: what the decoders do read beyond the workspace",
+    sub: "The tail of verbalisable features, and a story generated from the latent",
     notes: "Part C. If the NLA doesn't read col, what is its extra? Two pieces of evidence: a tense component outside the top-1,536 J-space, and how it describes planted activations.",
   },
   {
     type: "chart",
     section: "Part C",
-    kicker: "Part C · the tense tail (pre-registered secondary)",
-    title: "The NLA reads tense even with the top-1,536 J-space removed, leak-free; the Oracle Lens doesn't",
+    kicker: "Part C · the tense tail (a main-run primary)",
+    title: "Both decoders read tense with the top-1,536 J-space removed; with mined templates OL ≥ NLA",
     pilot: true,
     chart: {
       kind: "bar",
       categories: ["NLA", "Oracle Lens", "J-Lens (label words)"],
-      series: [{ name: "AUROC, J-removed (4r*) tense direction, q90, layer 42", values: [0.6, 0.51, 0.5] }],
+      series: [{ name: "AUROC, J-removed (4r*) tense direction, q90, layer 42, fixed templates", values: [0.6, 0.51, 0.5] }],
       pointColors: ["nla", "ol", "jl"],
       lines: [{ name: "chance (0.5)", value: 0.5, color: "muted" }],
       min: 0.3, max: 0.8, fmt: "0.00", labels: true, legend: false,
-      title: "Tense direction with the top-1,536 J-space projected out",
+      title: "Fixed templates (K3 pilot): only the NLA moves",
     },
     chartW: 6.6,
     side: {
       stats: [
-        { value: "z +8.7", label: "NLA vs the J-complement band (+5.7 isotropic); paired win 0.90; Oracle Lens inside the band (z +1.5 / +1.7)", color: "nla", size: 32 },
-        { value: "leak-free", label: "J-Lens label words and a 66-verb content set don't move at layers 42 / 40 (z −0.3 / +0.1)", color: "jl", size: 32 },
+        { value: "0.66–0.79", label: "Oracle Lens with mined (continuation) templates, z +12 to +17", color: "ol", size: 32 },
+        { value: "0.59–0.74", label: "NLA with mined templates. The earlier 'NLA > OL on tense 4r*' does not survive", color: "nla", size: 32 },
       ],
-      note: "Provenance: found in the K3 calibration pilot (60 items, excluded), then pre-registered as a secondary main-run cell. A geometric claim, not 'reads what the model can't say': tense is self-reported at 87%. The language version is void (Cyrillic content leak, z +3.7).",
+      note: "Leak-free at layer 42 (J-Lens label words and a 66-verb content set don't move). A geometric claim: tense is self-reported at 87%, so this is the tail of a verbalisable feature, not 'what the model can't say'. OL adapter-off check for tense still to run.",
     },
     notes:
-      "Here's what the NLA does read beyond the workspace. In the calibration pilot we also steered tense along its direction with the top-1,536 J-space projected out. The NLA still follows it: 0.60 AUROC, 8.7 SD beyond the J-complement band, paired win 0.90. The Oracle Lens stays inside the band. And it's leak-free at layer 42: neither the J-Lens label words nor a set of 66 past and present verb tokens move. " +
-      "Two honesty points. Provenance: we found this inside a pilot, so it is pre-registered as a secondary cell for the main run, and if it doesn't replicate it moves to the appendix. And it's a geometric claim: tense is a feature the model can verbalise, self-reported 87% of the time. So this is the NLA reading the distributed tail of a verbalisable feature beyond the top-r J-space, not reading what the model can't say. " +
-      "The same test on language is void: a Cyrillic content set shows that direction leaks into the J-Lens. That's why every leak check now includes a content set, not just label words.",
+      "What do the decoders read beyond the workspace? Tense, with the top-1,536 J-space projected out. With the fixed calibration templates only the NLA moved, 0.60 at z +8.7, and we briefly read that as an NLA-over-Oracle-Lens contrast. With mined templates that contrast does not survive: the Oracle Lens's continuation-style tense templates reach 0.66 to 0.79, z +12 to +17, at or above the NLA's 0.59 to 0.74. Same template lesson as col. " +
+      "It is leak-free at layer 42 under both label and content sets. It's a geometric claim: tense is a feature the model can verbalise, self-reported 87% of the time, so this is the decoders reading the distributed tail of a verbalisable feature beyond the top-r J-space. Both tense cells are main-run primaries. The adapter-off check for the Oracle Lens on tense, which would tell us whether this is also re-instatement, hasn't been run yet.",
   },
   {
     type: "chart",
@@ -81,7 +80,7 @@ module.exports = [
     ],
     notes:
       "My favourite qualitative result. In free-form explanations of planted activations, the NLA names the planted country in 12 of 12 cases. But it doesn't say 'a question about the Eiffel Tower, answer Sweden'. It rewrites the clue: 'the country whose CEO designed adopted Volvo… Sweden', or 'maple leaves (Canada)'. " +
-      "So the NLA's apparent prompt reconstruction is itself generated from the latent. It confabulates a prompt consistent with what the activation now encodes. That is why our answer to the title's dichotomy is 'neither': the NLA is not reading the text and then solving, and it is not reading what the model can't say; its language model generates a consistent story from the latent. " +
+      "So the NLA's apparent prompt reconstruction is itself generated from the latent. It confabulates a prompt consistent with what the activation now encodes. So whatever branch the col result lands on, the NLA is not reading the text and then solving: its language model generates a consistent story from the latent. That finding stands either way. " +
       "Dose caveat: to flip the answer we needed large pushes, median 49% of the activation norm, 1.5 to 3 times the natural distance between countries; the main run makes the 109 items at alpha ≤ 1.5 primary. Twelve free-form samples is small; the main run scales this up.",
   },
 ];

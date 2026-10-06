@@ -15,20 +15,20 @@ module.exports = [
     type: "question",
     section: "Opening",
     kicker: "The question, and the answer up front",
-    title: "Provisional answer: neither. The NLA doesn't read what the model can't say, and doesn't re-solve: it generates",
+    title: "Provisional answer: barely, if at all, and not in the words the readers use to describe what they read",
     quote: "What can NLAs capture that Oracle Lens / J Lens don't? Is it really the stuff not in the workspace?",
     quoteSource: "Neel Nanda, MATS 12.0 central doc (\"Basic science\" project list)",
     answers: [
-      { lead: "Not the non-workspace stuff:", text: "the non-J content Qwen uses looks like positional bookkeeping, and neither decoder reads col, though both read workspace features at the same dose." },
-      { lead: "What it reads beyond J:", text: "the distributed tail of features the model can already verbalise (tense, pilot), and it writes a story consistent with the latent rather than re-solving the text." },
-      { lead: "On the benchmark:", text: "the target information in its WorkspaceBench readouts is recoverable from the prompt text alone (0.89 from prompt vs 0.60 from readout)." },
+      { lead: "Non-workspace content:", text: "the non-J content Qwen uses looks like positional bookkeeping (col). No robust descriptive reading of it; two candidate narrow channels go to confirmation." },
+      { lead: "Not re-solving either:", text: "under a planted bridge the NLA rewrites the prompt to fit the latent; it generates a story consistent with the activation." },
+      { lead: "On the benchmark:", text: "the target information in WorkspaceBench readouts is recoverable from the prompt text alone (0.89 from prompt vs 0.60 from readout)." },
     ],
     notes:
-      "This is Neel's question, verbatim from the MATS 12.0 doc: 'What can NLAs capture that Oracle Lens / J Lens don't? Is it really the stuff not in the workspace?' And our title poses a dichotomy: does the NLA read what the model can't say, or re-solve what it read? Here is the provisional answer first: neither. " +
-      "One: we surveyed about a dozen natural features. The content outside the J-space that the model actually uses looks like positional bookkeeping, things like characters since the last newline. On that feature, col, neither the NLA nor the Oracle Lens moves when we push it inside the activation, although at exactly the same push the NLA tracks language and tense at 0.83 to 0.92 AUROC. " +
-      "Two: what the NLA does read beyond the J-space is the distributed tail of ordinary, verbalisable features: it still tracks tense with the top-1,536 J-space removed, where the Oracle Lens doesn't. And it doesn't re-solve the text: when we plant a different answer inside the activation, it rewrites the prompt to fit. It generates a consistent story from the latent. " +
+      "This is Neel's question, verbatim from the MATS 12.0 doc: 'What can NLAs capture that Oracle Lens / J Lens don't? Is it really the stuff not in the workspace?' Our title asks the sharp version: do NLAs read what the model can't say? Here is the provisional answer first. " +
+      "One: we surveyed about a dozen natural features. The content outside the J-space that the model actually uses looks like positional bookkeeping, for example col, the characters since the last newline. On col there is no robust descriptive reading: the readers' own descriptions don't follow it. In the pilot we found two candidate narrow channels, the Oracle Lens's next-token continuation and one NLA phrasing, and both go into the pre-registered main run for confirmation. So the answer has two branches: if they replicate, 'barely, in narrow channels, and not in the language they use to describe what they read'; if not, 'no, on the one natural non-J feature the model uses'. " +
+      "Two: the NLA doesn't simply re-solve the text either. When we plant a different bridge inside the activation, it rewrites the prompt to fit. " +
       "Three: on WorkspaceBench, a text model given the prompt names the target more often than the same model given the NLA's readout, 0.89 against 0.60, and adding the readout to the prompt doesn't help. " +
-      "Caveats up front: one clean non-J feature, pilot-scale numbers on a declared, excluded split, and the pre-registration hasn't frozen yet, so the title is provisional.",
+      "Parts A, D and the rewrite finding stand on either branch. Caveats: one clean non-J feature, and pilot-scale numbers on a declared, excluded split with many looks, which I disclose explicitly later.",
   },
   {
     type: "why",
@@ -100,7 +100,7 @@ module.exports = [
         name: "Oracle Lens",
         tag: "LoRA verbalizer",
         lines: ["Vector injected as a token embedding (16000·unit(h))", "RL-trained on layers 20–60, step 4 (42 is off-grid)", "Output: '- ' concept bullets, often continuations"],
-        role: "Example: \"- Le chat dort paisiblement dans son panier…\"",
+        role: "The model + a LoRA: it reads what the model reads and says what the model can say.",
       },
       {
         key: "nla",

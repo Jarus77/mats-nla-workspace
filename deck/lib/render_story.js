@@ -102,4 +102,26 @@ S.closing = (ctx, slide, s) => {
   kit.stream(slide, 6.6);
 };
 
+S.branches = (ctx, slide, s) => {
+  const { kit } = ctx;
+  const C = kit.C;
+  header(ctx, slide, s);
+  const gap = 0.4;
+  const w = (kit.W - 2 * kit.M - gap) / 2;
+  s.branches.forEach((b, i) => {
+    const x = kit.M + i * (w + gap);
+    const dark = i === 0;
+    kit.card(slide, { x, y: 1.8, w, h: 2.75, fill: dark ? C.text2 : C.background2 });
+    kit.tx(slide, b.head.toUpperCase(), { x: x + 0.25, y: 1.95, w: w - 0.5, h: 0.3, fontSize: 12, bold: true, color: C.accent4, charSpacing: 1.2 });
+    kit.tx(slide, b.answer, { x: x + 0.25, y: 2.3, w: w - 0.5, h: 1.2, fontFace: "Cambria", bold: true, fontSize: 21, color: dark ? C.background1 : C.text1 });
+    kit.tx(slide, b.body, { x: x + 0.25, y: 3.55, w: w - 0.5, h: 0.9, fontSize: 13.5, color: dark ? C.accent6 : C.accent5 });
+  });
+  kit.tx(slide, "STANDS ON EITHER BRANCH", { x: kit.M, y: 4.75, w: 6, h: 0.3, fontSize: 12, bold: true, color: C.accent3, charSpacing: 1.2 });
+  const sw = (kit.W - 2 * kit.M - 0.3 * 2) / 3;
+  s.stands.forEach((t, i) => {
+    kit.card(slide, { x: kit.M + i * (sw + 0.3), y: 5.1, w: sw, h: 1.15, fill: C.background1, line: C.accent3, body: t, bodySize: 13, pad: 0.15 });
+  });
+  kit.tx(slide, s.caveats, { x: kit.M, y: 6.4, w: kit.W - 2 * kit.M, h: 0.35, fontSize: 12, color: C.accent5 });
+};
+
 module.exports = { S };

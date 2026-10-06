@@ -8,8 +8,8 @@ module.exports = [
     type: "section",
     section: "Part B",
     num: "02",
-    title: "Part B: no decoder reads col",
-    sub: "…although both read workspace features at the same dose (n = 1 non-J feature, pilot scale)",
+    title: "Part B: col has no robust descriptive reading",
+    sub: "…although both decoders read workspace features at the same dose; two candidate narrow channels go to confirmation",
     notes: "Part B. First sentence, as in the write-up: this is one feature. Generalisation is open, and Part A told us why it's hard to get a second.",
   },
   {
@@ -106,7 +106,7 @@ module.exports = [
     type: "chart",
     section: "Part B",
     kicker: "Part B · the col result",
-    title: "The col result: no reader follows col beyond what random directions of the same size do",
+    title: "With the fixed pilot templates, no reader follows col beyond what random directions do",
     pilot: true,
     chart: {
       kind: "bar",
@@ -135,13 +135,13 @@ module.exports = [
       "Every bar is a z-score against random directions of the same norm. All of them sit inside ±1.96, in fact within ±1.5 for every family against both null bands. In AUROC terms the NLA is at 0.50 to 0.53 and the Oracle Lens at 0.49 to 0.51. As a fraction of what the probe recovers, which is 1.0 by construction: NLA at most 0.12, Oracle Lens at most 0.03, against a pre-registered bar of 0.25. " +
       "Free text says the same: across 5,760 natural and steered readouts, neither decoder ever mentions line length. " +
       "Power, since people ask: for col the binding constraint is the null band, not the number of items. Random directions genuinely move the decoders, and that direction-to-direction spread doesn't shrink with n: even at infinite n the NLA's z on these cells would be +0.6 to +1.4. But it isn't a generic power failure: workspace features clear the same band by 10 to 30 SD (per-item effect sizes +1.3 to +1.5 vs about −0.2 to −0.3 for col). The NLA-minus-OL difference on col is +0.015 to +0.028, below the pre-registered 0.05 bar, so H3 will likely fail for col, and we say so at the freeze. " +
-      "Even the raw col direction, which strongly moves the J-Lens's newline readout (AUROC up to 0.84), doesn't move either decoder. But a null only means something if the readers would have noticed a workspace feature at the same dose. That's the next slide.",
+      "With these fixed templates, even the raw col direction, which strongly moves the J-Lens's newline readout (AUROC up to 0.84), doesn't move either decoder. But a null only means something if the readers would have noticed a workspace feature at the same dose. That's the next slide.",
   },
   {
     type: "chart",
     section: "Part B",
     kicker: "Part B · Figure 1 · matched-dose calibration (K3: PASS)",
-    title: "The readers do track workspace features at the same steering strength; they just don't track col",
+    title: "The readers do track workspace features at the same steering strength; with fixed templates, col stays at chance",
     pilot: true,
     chart: {
       kind: "bar",
@@ -205,62 +205,72 @@ module.exports = [
   {
     type: "stats",
     section: "Part B",
-    kicker: "Part B · content type, not location",
-    title: "Even when col's downstream decision is visible to the J-Lens, neither decoder follows it",
+    kicker: "Part B · behavioural validation at the claimed dose",
+    title: "The J-removed col push changes what the model does, yet the J-Lens can't see it",
     pilot: true,
     stats: [
-      { value: "0.73–0.84", label: "J-Lens newline readout AUROC when we push the raw col direction (z +3.5 to +4.6 vs the isotropic band)", color: "jl" },
-      { value: "≤ 0.54", label: "NLA on the same raw push, across count, numeric and newline-decision templates (q99)", color: "nla" },
-      { value: "≤ 0.50", label: "Oracle Lens on the same push, same three template families (q99)", color: "ol" },
+      { value: "+0.72", label: "newline log-odds shift from the J-removed (4r*) col push at q90, layer 42: z +55 (raw direction: +1.44, z +86)", color: "ink" },
+      { value: "−1.55 chars", label: "shift in where generation wraps the line under the same J-removed push (raw: −6.8 chars)", color: "ink" },
+      { value: "0.50", label: "J-Lens newline readout under that push; label and content sets clean (|z| ≤ 2.1)", color: "jl" },
     ],
     families: [
-      { head: "If location were the story", body: "the decoders should follow once the push makes the newline decision J-readable. They don't." },
-      { head: "So the null is about content type", body: "positional bookkeeping isn't something these decoders report, in any phrasing they use, including newline-continuation phrasing." },
-      { head: "The test that settles it", body: "a next-digit cell in a numbered list ('next digit 5 vs 7'): maximally J. Tracked → col null is about location; not → content type." },
+      { head: "Why this matters", body: "the dose at which we test the readers really moves the model's behaviour, so a reader that ignores it is ignoring used content." },
+      { head: "Invisible to the J-Lens", body: "this is exactly 'non-workspace' content: used by the model, outside what the J-Lens reads." },
+      { head: "Dose fork closed (D25)", body: "q90 is the primary dose, behaviourally validated; r11 is sensitivity only." },
     ],
-    caveat: "Main run: the raw-direction cell with newline-continuation candidates becomes primary (separating the count from the decision), with OL continuation-style candidates and a class-mean col direction.",
+    caveat: "So the question for the readers is well posed: the content is present, used and J-invisible at the dose we test.",
     notes:
-      "Here's the sharper reading Fable pushed us to in round 5. The raw col direction, the one that still contains its J-space component, moves the J-Lens's newline readout strongly: AUROC 0.73 to 0.84. So under that push, the downstream consequence, 'a line break is coming', is lens-readable. Yet neither decoder follows it: the NLA stays at or below 0.54 across all three template families, including the newline-decision templates, and the Oracle Lens at or below 0.50. " +
-      "If the story were purely about location, inside versus outside the J-space, the decoders should follow once the consequence is in J. They don't. So the null looks like a matter of content type: positional bookkeeping is just not something these decoders talk about, in any phrasing we've tried, including newline-continuation phrasing. " +
-      "The clean test is a new cheap cell: the next digit in a numbered list, 5 versus 7. That's maximally in-J and should pass the causal gate. If the readers track it, the col null is about location; if not, Part B is explicitly scoped to content type.",
+      "Before asking whether readers follow col, we checked the push itself does something. At layer 42, at the 90th-percentile dose, the J-removed col direction shifts the log-odds of a newline by +0.72, 55 SD beyond random directions; the raw direction by +1.44. In free generation, the line wraps 1.55 characters earlier under the J-removed push, 6.8 under the raw one. Yet under the J-removed push the J-Lens newline readout stays at 0.50 and our label and content leak sets are clean. " +
+      "So this is content the model uses, at the dose we test, that the J-Lens cannot see. That is the target for Neel's question. Following Fable round 6, q90 is the primary dose and the r11 cell is only sensitivity.",
   },
   {
-    type: "chart",
+    type: "table",
     section: "Part B",
-    kicker: "Part B · natural items (no steering)",
-    title: "On natural text the readers describe in-J features well but barely discriminate col",
-    chart: {
-      kind: "bar",
-      categories: ["col (count)", "col (line break)", "list index 'Item N'", "tense", "language"],
-      series: [
-        { name: "NLA", values: [0.6, 0.54, 0.84, 0.85, 1.0], color: "nla" },
-        { name: "Oracle Lens", values: [0.55, 0.55, 0.99, 0.92, 1.0], color: "ol" },
-      ],
-      lines: [{ name: "chance (0.5)", value: 0.5, color: "muted" }],
-      min: 0.3, max: 1, fmt: "0.00", labels: true, legend: "b",
-      valTitle: "natural-item AUROC (mean of 3 frozen templates)",
-    },
-    chartW: 7.4,
-    side: {
-      bullets: [
-        "Readers name a visible list index well (NLA .84, OL .99), but numbers never enter Qwen's J-space, so this is likely text re-description, not J-space reading.",
-        "0 of 320 NLA and 0 of 960 OL mining readouts ever mention line length, column or wrapping.",
-        "A probe correlates 0.88 with col on the same items; NLA / OL |ρ| ≤ 0.16.",
-        "Open check: the NLA's natural 0.60 needs a text-only decoder on the same items (long vs short lines are visible without counting).",
-      ],
-    },
+    kicker: "Part B · two candidate narrow channels (retracts D21)",
+    title: "With native phrasings, two narrow channels do follow col: candidates, not findings",
+    pilot: true,
+    columns: ["Channel", "Raw direction", "J-removed (4r*)", "What else we know", "Status"],
+    colW: [3.0, 1.6, 2.4, 3.6, 1.5],
+    rows: [
+      ["OL next-token continuation (newline vs another word)", "0.76 (z +6.6)", "0.67–0.72 (z ≈ +3.9)", "linear in dose; adapter off: 0.40–0.44, so it needs the LoRA; keeps ~78% under J-removal vs the model's own ~70%", { label: "CANDIDATE", tone: "fail" }],
+      ["NLA, one template: 'near the end of a hard-wrapped line'", "0.71 (z +5.0)", "q90 0.63 (z +3.0, borderline); r11 0.67 (z +3.7)", "rests mostly on this one template; fixed templates and the decision family are flat", { label: "CANDIDATE", tone: "fail" }],
+      ["OL descriptive templates (line position, length)", "flat", "flat or anti-tracking", "pre-registered as a negative, with an equivalence test", { label: "NEGATIVE", tone: "diffuse" }],
+      ["Free text, both decoders", "—", "—", "0 of 5,760 readouts mention line length", { label: "NEGATIVE", tone: "diffuse" }],
+    ],
+    footnote: "Oracle Lens is the model + a LoRA: it reads what the model reads and says what the model can say. The 78% vs 70% gain match favours re-instatement (the LoRA hands the activation back to Qwen's own newline circuitry) over reporting; tests are running.",
     notes:
-      "The natural arm, without steering. Templates were mined from each reader's own outputs and frozen before any steering run. On natural items, both readers are excellent on language, good on tense, and on a visible list index, 'Item 7:', the NLA gets 0.84 and the Oracle Lens 0.99. On col they barely discriminate: 0.60 at best for the NLA, with an interval touching 0.5. " +
-      "I originally hoped the list index would answer 'maybe readers just can't talk about counts'. But experiment 04 showed numbers never enter Qwen's J-space, so the list-index success is probably text re-description: the numeral is right there in the prompt. The count-verbalisation gap stays open. " +
-      "Base rate: across 1,280 mining readouts no reader ever mentions line length. And a simple probe correlates 0.88 with col on the same items, so the information is in the activation; the readers just don't surface it.",
+      "This slide retracts a sentence from round 5. We had said neither decoder reads col 'in any phrasing'. That rested on fixed templates. With native, mined phrasings, two narrow channels do follow the J-removed col direction, leak-free. " +
+      "The Oracle Lens's next-token continuation channel, scoring 'a newline comes next' versus 'another word', tracks col: 0.76 on the raw direction at z +6.6, and 0.67 to 0.72 with the top-1,536 J-space removed, at a conservative z of about +3.9. The shift is linear in dose, and with the adapter switched off, base Qwen in the same carrier prompt slightly anti-tracks (0.40 to 0.44), so it needs the LoRA. But the Oracle Lens is the model plus a LoRA: it reads what the model reads and says what the model can say. J-removal keeps about 78% of its shift per unit dose, close to the model's own behavioural 70%. That favours re-instatement: the LoRA hands the activation back to Qwen's own next-token circuitry, which predicts a newline, rather than the Oracle Lens reporting line position. Every descriptive Oracle Lens col template is flat or anti-tracking. And a newline-probability shift is only useful if you already know to measure it, so it isn't an interpretability readout. " +
+      "The NLA has one phrasing, 'near the end of a hard-wrapped line', at 0.63 on the primary q90 cell, borderline, and 0.67 at the r11 sensitivity dose. " +
+      "These are candidates, not findings, for the reason on the next slide.",
+  },
+  {
+    type: "grid",
+    section: "Part B",
+    kicker: "Part B · forking paths, disclosed",
+    title: "Forking paths, disclosed: the pilot had many looks, so the main run confirms four named primaries",
+    pilot: true,
+    items: [
+      { head: "Many looks", body: "Across rounds the pilot tested many templates × directions × doses. The two candidates are exactly what selection could produce." },
+      { head: "Primaries from the pilot", body: "f07 templates were frozen and the continuation pair fixed before scoring, but the specific primaries were picked after seeing pilot data. The prereg says so." },
+      { head: "4 primaries, Holm", body: "NLA col (named template, q90, 4r*), OL col (continuation, q90, 4r*), OL tense 4r*, NLA tense 4r*. Holm over 4." },
+      { head: "Claim criterion", body: "|z| ≥ 3 against both null bands after Holm, and the declared-secondary family mean agrees in sign." },
+      { head: "Fresh items", body: "Effect sizes with CIs on items never used in the pilot or template mining. Everything else is exploratory and labelled." },
+      { head: "Templates frozen literally", body: "No more mining, no new families." },
+      { head: "Pre-registered negatives", body: "OL descriptive col templates flat, with an equivalence test and a declared SESOI." },
+      { head: "Template-free check", body: "A pre-written judge question over free NLA readouts on fresh items: 'does this mention position within a line or line length?'" },
+    ],
+    notes:
+      "I want to be upfront about forking paths. Across rounds the pilot tested many templates, two directions and several doses. Two positives out of that many looks is exactly what selection could produce, even though the template families were frozen and the continuation pair fixed before scoring. " +
+      "So the main run names four primaries in advance: the NLA's col template and the Oracle Lens's continuation channel, both at q90 on the J-removed direction, plus J-removed tense for each decoder. Holm correction over four, |z| of at least 3 against both bands, and the secondary family has to agree in sign. Fresh items, effect sizes with intervals, templates frozen literally. Two pre-registered negatives and a template-free judge check on free readouts. Anything else is exploratory and labelled as such.",
   },
   {
     type: "anchor",
     section: "Part B",
     stage: 3,
-    title: "What we know so far (3 / 4): the decoders read workspace features, not col",
-    next: "Next → Part C: so what does the NLA read beyond the workspace?",
+    title: "What we know so far (3 / 4): workspace features yes; col only through candidate narrow channels",
+    next: "Next → Part C: so what do the decoders read beyond the workspace?",
     notes:
-      "Third checkpoint. At doses where both decoders demonstrably read workspace features, neither reads col; for the NLA this null is secure, for the Oracle Lens less so because it only passes calibration on language and is template-fragile. And because the raw col direction makes the J-Lens's newline readout move while the decoders stay flat, the null looks like a matter of content type rather than location. All pilot-scale.",
+      "Third checkpoint. At doses where both decoders read workspace features, their descriptive language doesn't follow col, even though the same push measurably changes the model's newline behaviour and is invisible to the J-Lens. Two narrow channels, the Oracle Lens's continuation and one NLA phrasing, are candidates for the main run, with the forking-paths caveat. All pilot-scale.",
   },
 ];

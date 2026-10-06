@@ -223,8 +223,9 @@ R.timeline = (ctx, slide, s) => {
     kit.line(slide, x + 0.27, 2.2, x + 0.27, 2.2 + d.items.length * rh, C.accent6, 1.25);
     d.items.forEach(([id, text], i) => {
       const y = 2.25 + i * rh;
-      kit.chip(slide, { x, y: y + 0.02, w: 0.55, h: 0.28, text: id, color: /Fable/.test(text) ? C.accent2 : C.accent5, size: 10 });
-      kit.tx(slide, text, { x: x + 0.7, y, w: cw - 0.7, h: 0.36, fontSize: 13, color: C.text1, valign: "middle" });
+      const cwid = id.length > 3 ? 0.85 : 0.55;
+      kit.chip(slide, { x, y: y + 0.02, w: cwid, h: 0.28, text: id, color: /Fable/.test(text) ? C.accent2 : C.accent5, size: 10 });
+      kit.tx(slide, text, { x: x + cwid + 0.15, y, w: cw - cwid - 0.15, h: 0.36, fontSize: 13, color: C.text1, valign: "middle" });
     });
   });
   kit.tx(slide, "violet = a Fable critique round", { x: kit.M + 1.3, y: 1.83, w: 4, h: 0.28, fontSize: 11, color: C.accent5 });
