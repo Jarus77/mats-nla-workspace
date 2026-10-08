@@ -497,3 +497,17 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
   - the Branch 1b sentence is made **conditional** on the §4.4.5 next-verb measure (it no longer presumes the model doesn't act on tense);
   - the tense tagger is pinned to **spaCy 3.8.7 + en_core_web_lg 3.8.0** (already used in exp 02) instead of the new `sm` model.
 - **Remaining before the freeze timestamp (bookkeeping only):** q80 dose; null seeds; fresh-bank sha256 manifest; the T1 sensitivity set plus judge gate; the tagger wheel sha256; the `main_analyze.py` hash.
+
+## 2026-10-08 — D32: precision on what text-fixed steering rules out ("re-solving from the actual prompt" vs "from a re-imagined prompt")
+- **Origin of the fix:**
+  - the user's Phase 1 (concept injection into neutral passages: text identical, latent changed);
+  - the red-team agent (Oct 5: "the ground truth must come apart from the text");
+  - Fable's refinements (D2–D11: steer the feature's own direction, not J-Lens directions; no full-residual patching; centred steering; leak check; read-layer steering).
+- **Logic:** a reader's output could depend on (a) the text, which it can reconstruct from the activation and reason about ("re-solving"), or (b) latent content beyond the text. On natural data the two co-vary, so accuracy can't separate them. Steering moves (b) with (a) fixed.
+- **The caveat (from our own D16 result):** readers never see the text, only the activation. "Re-solving" = decoding text-like content from the activation and then reasoning about it. Steering can change *what text the reader thinks it sees*: under a planted bridge the NLA rewrote "Eiffel Tower" → "Volvo… Sweden" (12/12). So text-fixed steering rules out **re-solving from the actual prompt**, but NOT **re-solving from a prompt re-imagined to fit the steered activation**. Following the steer shows "tracks the activation", not "reads the latent with no text-like detour".
+- **Why col is still clean:** Qwen can't count characters without CoT (7% exact), so even a re-imagined text wouldn't let a reader compute line length. For col, following implies activation reading. For semantic features (tense, bridges) the caveat stays open.
+- **Wording rule for the write-up:** say "rules out re-solving from the actual prompt", never "rules out re-solving".
+- **Prior art (search not exhaustive):** the general idea is standard causal intervention (activation patching, interchange interventions); concept-injection introspection (Anthropic 2025; the user's Phase 1) tests the model's self-report, not external readers; Viswanath listed the natural-content splice control as needed but unrun; the concurrent pilot's swap test was a weak version (34/50 at the strength cap, no behavioural validation or leak check). We found no prior application to a verified non-J natural feature with leak-certified centred steering, matched-dose in-J calibration and three readers at the same layer.
+- **Deck (Google Slides, live copy) updated:**
+  - slide 8's "fix" sentence now reads "…re-solving from the actual prompt can't follow. Caveat: re-solving from a prompt re-imagined to fit the steer still could.";
+  - slide 41 now says "rules out 'decode the actual prompt, then compute' … though it may still reason from that story".
