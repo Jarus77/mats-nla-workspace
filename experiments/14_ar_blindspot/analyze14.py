@@ -46,14 +46,26 @@ def analyze_row(feature: str, items: list[dict], acts: dict[int, torch.Tensor], 
                   "stmt": {sid: statement_shift(true42, y, nb["stmt_recon"][i, 0], nb["stmt_recon"][i, 1])
                            for i, sid in enumerate(nb["stmt_ids"])}}
 
+    # OL-AR outputs live in the AR's whitened space (its moments are gated), so the reference is the
+    # AR's own output on the TRUE text (span32): a probe fit there says whether the ruler can carry the
+    # concept at all; applied frozen to bullets/explanations it says whether those texts convey it.
     ob = torch.load(f"{out_dir}/recon14_olar_{feature}.pt", weights_only=False)
-    res["ol"] = {"variant": ob["variant"], "calib": ob["calib"], "layers": {}}
+    res["ol"] = {"variant": ob["variant"], "note": ob.get("note"), "space": "AR whitened output space",
+                 "probe_on_true_acts": retrained_probe_auroc(acts[OL_AR_LAYERS[0]], y, g), "layers": {}}
     for L in OL_AR_LAYERS:
-        d, true = ob["layers"][L], acts[L]
-        row = {k: _block(true, _mean_k(d[k]), y, g) for k in ("span32", "span128", "ol_bullets", "nla_expl")}
-        row["ol_bullets_sample0"] = _block(true, d["ol_bullets"][:, 0], y, g)
-        row["stmt"] = {sid: statement_shift(true, y, r[0], r[1]) for sid, r in d["stmt"].items()}
-        row["probe_true_cv"] = row["span32"]["probe"]["true"]
+        d = ob["layers"][L]
+        ref = _mean_k(d["span32"])
+        row = {"span32": {"probe_retrained_on_recon": retrained_probe_auroc(ref, y, g)},
+               "span128": {"probe_retrained_on_recon": retrained_probe_auroc(_mean_k(d["span128"]), y, g)}}
+        for k in ("ol_bullets", "nla_expl"):
+            x = _mean_k(d[k])
+            pr = frozen_probe_retention(ref, x, y, g)
+            row[k] = {"probe_from_span32": pr["recon"], "probe_retrained_on_recon": retrained_probe_auroc(x, y, g),
+                      "gap_vs_span32": gap_retention(ref, x, y), "ret1_vs_span32": retrieval_at_1(x, ref),
+                      "fve_vs_span32": fve_raw(x, ref)}
+        row["span128"]["probe_from_span32"] = frozen_probe_retention(ref, _mean_k(d["span128"]), y, g)["recon"]
+        row["ol_bullets_sample0"] = {"probe_from_span32": frozen_probe_retention(ref, d["ol_bullets"][:, 0], y, g)["recon"]}
+        row["stmt"] = {sid: statement_shift(ref, y, r[0], r[1]) for sid, r in d["stmt"].items()}
         res["ol"]["layers"][str(L)] = row
     return res
 
@@ -66,7 +78,13 @@ def table_rows(res: dict) -> list[dict]:
                  **_flat(n["nla_expl"])})
     for L, d in res["ol"]["layers"].items():
         for k in ("span32", "span128", "ol_bullets", "nla_expl"):
-            rows.append({"feature": res["feature"], "ruler": "OL-AR", "layer": int(L), "input": k, **_flat(d[k])})
+            b = d[k]
+            rows.append({"feature": res["feature"], "ruler": "OL-AR", "layer": int(L), "input": k,
+                         "fve": b.get("fve_vs_span32", float("nan")), "ret1": b.get("ret1_vs_span32", float("nan")),
+                         "probe_true": res["ol"]["probe_on_true_acts"], "probe_recon": b.get("probe_from_span32", float("nan")),
+                         "probe_err": float("nan"), "probe_retrained": b["probe_retrained_on_recon"],
+                         "gap_ratio": b.get("gap_vs_span32", {}).get("ratio", float("nan")),
+                         "gap_cos": b.get("gap_vs_span32", {}).get("cosine", float("nan"))})
     return rows
 
 

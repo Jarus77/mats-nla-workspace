@@ -143,10 +143,14 @@ class OLensAR:
         self.tag_ids = {int(L): heads["tag_ids"][i].tolist() for i, L in enumerate(heads["layers"])}
         self.final_norm = self.model.base_model.model.norm
         self.blocks = decoder_blocks(self.model)
+        meta = json.load(open(root / "meta.json"))["config"]
+        # ptag reads target layer li at backbone block layer_indices[li] (12 blocks, 5..16)
+        self.read_block = {int(L): int(meta["layer_indices"][i]) for i, L in enumerate(heads["layers"])}
         self.device = device
-        self.variant = ("post", "ln")
+        self.variant = ("li", "ln")
         self._cur = {}
-        self.blocks[-1].register_forward_hook(lambda _m, _i, o: self._cur.__setitem__("h", (o[0] if isinstance(o, tuple) else o)))
+        for i, blk in enumerate(self.blocks):
+            blk.register_forward_hook(lambda _m, _i, o, i=i: self._cur.__setitem__(i, (o[0] if isinstance(o, tuple) else o)))
 
     @staticmethod
     def _head_norm(x, kind: str):  # noqa: ANN001
@@ -171,9 +175,9 @@ class OLensAR:
                 ids, mask = right_pad(chunk, self.tok.pad_token_id or 0)
                 ids, mask = ids.to(self.device), mask.to(self.device)
                 self.model(input_ids=ids, attention_mask=mask)
-                h = self._cur["h"]
+                h = self._cur[self.read_block[layer] if fn == "li" else len(self.blocks) - 1]
                 last = h[torch.arange(len(chunk)), mask.sum(1) - 1]
-                if fn == "post":
+                if fn == "last_post":
                     last = self.final_norm(last)
                 x = self._head_norm(last.float(), hn)
                 out.append((x @ self.W.T + self.b).cpu())
@@ -183,7 +187,7 @@ class OLensAR:
         from ar_lib import fve_raw, retrieval_at_1
 
         res = {}
-        for fn in ("post", "pre"):
+        for fn in ("li", "last_pre", "last_post"):
             for hn in ("ln", "rms"):
                 p = self.reconstruct(rows, layer, (fn, hn))
                 res[f"{fn}/{hn}"] = {"ret1": retrieval_at_1(p, gold), "fve": fve_raw(p, gold)}
@@ -192,8 +196,8 @@ class OLensAR:
         return {"scores": res, "chosen": best}
 
 
-@app.function(image=gpu_image, gpu="H100", **GPU)
-def r2(feature: str, pairs_ol: list[list[str]], pairs_nla: list[list[str]], calib: bool = True) -> dict:
+@app.function(image=gpu_image, gpu="H100", **GPU1)
+def r2(feature: str, pairs_ol: list[list[str]], pairs_nla: list[list[str]], calib: bool = False, calib_only: bool = False) -> dict:
     import torch
 
     from ar_lib import span_crop
@@ -205,6 +209,11 @@ def r2(feature: str, pairs_ol: list[list[str]], pairs_nla: list[list[str]], cali
     if Path(path).exists():
         return {"feature": feature, "skipped": True}
     items, acts = _row(feature)
+    if calib_only:
+        ar = OLensAR()
+        rows = [span_crop(it["ids"], SPAN_TOKENS) for it in items]
+        return {"feature": feature, "calib": {str(L): ar.calibrate(rows, acts[L], L) for L in OL_AR_LAYERS},
+                "wall_s": round(time.time() - t0, 1)}
     ol_gens = json.load(open(f"{OUT}/gen14_ol_{feature}.json"))["gens"]
     nla_blob = torch.load(f"{OUT}/recon14_nla_{feature}.pt", weights_only=False)
     assert nla_blob["ids"] == [it["id"] for it in items]
@@ -216,7 +225,9 @@ def r2(feature: str, pairs_ol: list[list[str]], pairs_nla: list[list[str]], cali
     if calib:
         out["calib"] = ar.calibrate(span32, acts[OL_AR_LAYERS[0]], OL_AR_LAYERS[0])
     out["variant"] = "/".join(ar.variant)
-    print("AR variant", out["variant"], json.dumps(out["calib"]), flush=True)
+    out["note"] = ("head output is in the AR's whitened space (moments gated: agu18dec/local-workspace); "
+                   "analysis compares reconstructions inside that space")
+    print("AR variant", out["variant"], flush=True)
     for L in OL_AR_LAYERS:
         bul = [[_encode_cap(tok, t, MAX_TEXT_TOKENS) for t in ol_gens[str(L)][it["id"]]] for it in items]
         expl = [[_encode_cap(tok, t, MAX_TEXT_TOKENS) for t in row] for row in nla_blob["expl"]]
@@ -235,6 +246,71 @@ def r2(feature: str, pairs_ol: list[list[str]], pairs_nla: list[list[str]], cali
     VOLUMES["/results"].commit()
     return {"feature": feature, "variant": out["variant"], "calib": out["calib"], "wall_s": round(time.time() - t0, 1)}
 
+
+
+# ============================================================================ r5: AR loader diagnostics (H100)
+@app.function(image=gpu_image, gpu="H100", **GPU1)
+def r5(feature: str) -> dict:
+    """One model load; many read/pool/norm/target variants on true 32-token spans. Also checks the
+    adapter is live, decodes the tag, and tests a held-out ridge map from head output to activation."""
+    import torch
+
+    from ar_lib import fve_raw, retrieval_at_1, right_pad, span_crop
+
+    VOLUMES["/results"].reload()
+    items, acts = _row(feature)
+    ar = OLensAR()
+    tok = ar.tok
+    rows = [span_crop(it["ids"], SPAN_TOKENS) for it in items]
+    out = {"tag_decode": {L: tok.decode(t) for L, t in ar.tag_ids.items()}, "read_block": ar.read_block, "variants": {}}
+    nb = len(ar.blocks)
+
+    def forward(L, with_tag=True, adapter=True):
+        feats = {}
+        with torch.no_grad():
+            for s0 in range(0, len(rows), 16):
+                chunk = [(ar.tag_ids[L] if with_tag else []) + list(r) for r in rows[s0:s0 + 16]]
+                ids, mask = right_pad(chunk, tok.pad_token_id or 0)
+                ids, mask = ids.to(ar.device), mask.to(ar.device)
+                ctx = ar.model.disable_adapter() if not adapter else torch.no_grad()
+                with ctx:
+                    ar.model(input_ids=ids, attention_mask=mask)
+                last_idx = mask.sum(1) - 1
+                for b in {ar.read_block[L] - 1, ar.read_block[L], ar.read_block[L] + 1, nb - 1}:
+                    h = ar._cur[b].float()
+                    m = mask.unsqueeze(-1).float()
+                    feats.setdefault((b, "last"), []).append(h[torch.arange(len(chunk)), last_idx].cpu())
+                    feats.setdefault((b, "mean"), []).append(((h * m).sum(1) / m.sum(1)).cpu())
+        return {k: torch.cat(v) for k, v in feats.items()}
+
+    for L in OL_AR_LAYERS:
+        gold = acts[L]
+        zgold = (gold - gold.mean(0)) / gold.std(0).clamp_min(1e-6)
+        f_on, f_off = forward(L), forward(L, adapter=False)
+        b0 = ar.read_block[L]
+        out["variants"][L] = {"adapter_rel_change": float((f_on[(b0, "last")] - f_off[(b0, "last")]).norm() / f_off[(b0, "last")].norm())}
+        f_notag = forward(L, with_tag=False)
+        for name, feats in (("tag", f_on), ("notag", f_notag)):
+            for (b, pool), x in feats.items():
+                for hn in ("ln", "rms", "none"):
+                    xx = x if hn == "none" else OLensAR._head_norm(x, hn)
+                    pred = xx.to(ar.device) @ ar.W.T + ar.b
+                    pred = pred.cpu()
+                    out["variants"][L][f"{name}/b{b}/{pool}/{hn}"] = {
+                        "ret1_raw": retrieval_at_1(pred, gold), "fve_raw": fve_raw(pred, gold),
+                        "ret1_z": retrieval_at_1(pred, zgold), "fve_z": fve_raw(pred, zgold),
+                        "pred_norm": float(pred.norm(dim=-1).mean()), "gold_norm": float(gold.norm(dim=-1).mean())}
+        # held-out ridge map from the default head output to the activation (does the output carry it linearly?)
+        x = OLensAR._head_norm(f_on[(b0, "last")], "ln").to(ar.device) @ ar.W.T + ar.b
+        x = x.cpu(); n = len(x) // 2
+        for lam in (1e2, 1e4):
+            A = x[:n]; G = gold[:n]
+            M = torch.linalg.solve(A.T @ A + lam * torch.eye(A.shape[1]), A.T @ G)
+            out["variants"][L][f"ridge_lam{lam:g}_heldout_ret1"] = retrieval_at_1(x[n:] @ M, gold[n:])
+        best = max((k for k in out["variants"][L] if "/" in k), key=lambda k: out["variants"][L][k]["ret1_raw"])
+        out["variants"][L]["best_raw"] = (best, out["variants"][L][best])
+        print(L, "best", best, out["variants"][L][best], "adapter", out["variants"][L]["adapter_rel_change"], flush=True)
+    return out
 
 # ============================================================================ r4: analysis (CPU)
 @app.function(image=gpu_image, volumes=VOLUMES, timeout=3600, memory=32768, cpu=8)
@@ -272,6 +348,19 @@ def main(stage: str = "gen_ol", features: str = "") -> None:
     elif stage == "recon":
         for r in r2.map(feats, [_pairs(f, "ol") for f in feats], [_pairs(f, "nla") for f in feats], return_exceptions=True):
             _save(r, "recon14_olar")
+    elif stage == "debug":
+        r = r5.remote(feats[0])
+        (RES / "debug14.json").write_text(json.dumps(r, indent=1, default=str))
+        for L, d in r["variants"].items():
+            top = sorted((k for k in d if "/" in k), key=lambda k: -d[k]["ret1_raw"])[:8]
+            print(L, "adapter_rel_change", d["adapter_rel_change"], "ridge", {k: v for k, v in d.items() if k.startswith("ridge")})
+            for k in top:
+                print("  ", k, {m: round(v, 3) for m, v in d[k].items()})
+        print("tags", r["tag_decode"], "read_block", r["read_block"])
+    elif stage == "calib":
+        r = r2.remote(feats[0], [], [], True, True)
+        print(json.dumps(r, indent=1))
+        (RES / "calib14.json").write_text(json.dumps(r, indent=1))
     elif stage == "analyze":
         for r in r4.map(feats, return_exceptions=True):
             _save(r, "analysis14")
