@@ -58,29 +58,50 @@ def fmt(x: float, pct: bool) -> str:
     return f"{100 * x:.0f}%" if pct else f"{x:.2f}"
 
 
-def main() -> None:
+GROUP_ORDER = ("text-buffer structure", "formatting", "upcoming-word syntax", "controls")
+
+
+def presentation_order(rows: list[dict]) -> list[dict]:
+    """Group rows by concept type; keep the fresh line-position row next to the original."""
+    by_feat = {r["feature"]: r for r in rows}
+    fresh = by_feat.pop("nj1_col_fresh", None)
+    ordered = sorted(by_feat.values(), key=lambda r: GROUP_ORDER.index(r["group"].split(" (")[0]))
+    if fresh is None:
+        return ordered
+    i = next(k for k, r in enumerate(ordered) if r["feature"] == "nj1_col")
+    return ordered[: i + 1] + [fresh] + ordered[i + 1 :]
+
+
+def main(mark_new: bool = True) -> None:
+    suffix = "" if mark_new else "_plain"
+    mk = (lambda r: r["new"]) if mark_new else (lambda r: False)
     old = [{**r, "new": False} for r in json.loads((E12 / "results" / "combined.json").read_text())]
     new = rows13()
     rows = new + old
-    (HERE / "results" / "combined_all.json").write_text(json.dumps(rows, indent=1))
+    if mark_new:
+        (HERE / "results" / "combined_all.json").write_text(json.dumps(rows, indent=1))
+    else:
+        rows = presentation_order(rows)
     cols = [("nla_auroc", False), ("ol_auroc", False), ("jlens_auroc", False), ("nla_stated", True), ("nla_any8", True),
             ("ol_stated", True), ("ol_exhibited", True)]
     hdr = ("| concept type | group | NLA prompted | OLens prompted | J-lens prompted | NLA states it | NLA any-of-8 | "
            "OLens states it | OLens exhibits it |\n|---|---|---|---|---|---|---|---|---|\n")
-    body = "".join(f"| {'**' if r['new'] else ''}{r['name']}{'**' if r['new'] else ''} | {r['group']} | "
+    body = "".join(f"| {'**' if mk(r) else ''}{r['name']}{'**' if mk(r) else ''} | {r['group']} | "
                    + " | ".join(fmt(r[c], p) for c, p in cols) + " |\n" for r in rows)
-    (HERE / "results" / "combined_all.md").write_text(hdr + body)
+    (HERE / "results" / f"combined_all{suffix}.md").write_text(hdr + body)
     print(hdr + body)
     labels = ["NLA\nprompted", "OLens\nprompted", "J-lens\nprompted", "NLA\nstates it", "NLA\nany of 8", "OLens\nstates it", "OLens\nexhibits it"]
     cell = [[fmt(r[c], p) for c, p in cols] for r in rows]
-    fig, ax = plt.subplots(figsize=(13.5, 10.5))
+    fig, ax = plt.subplots(figsize=(13.5, 8.4))
     ax.axis("off")
-    t = ax.table(cellText=cell, rowLabels=[("* " if r["new"] else "") + f"{r['name']}  ({r['group'].split(' (')[0]})" for r in rows],
-                 colLabels=labels, loc="center", cellLoc="center")
+    t = ax.table(cellText=cell, rowLabels=[("* " if mk(r) else "") + f"{r['name']}  ({r['group'].split(' (')[0]})" for r in rows],
+                 colLabels=labels, loc="upper center", cellLoc="center")
     t.auto_set_font_size(False); t.set_fontsize(9.5); t.scale(1, 1.45)
     for (i, j), c in t.get_celld().items():
         if i == 0 or j < 0:
             c.set_text_props(weight="bold"); c.set_facecolor("#EEF0EC")
+            if i == 0:
+                c.set_height(c.get_height() * 1.7)
             continue
         s = cell[i - 1][j]
         if s == "–":
@@ -89,12 +110,16 @@ def main() -> None:
             v = float(s); c.set_facecolor(plt.cm.Oranges(max(0.0, (v - 0.5) / 0.5) * 0.6) if v > 0.5 else "#FFFFFF")
         else:
             c.set_facecolor(plt.cm.Blues(float(s.rstrip("%")) / 100 * 0.6))
-    ax.set_title("Qwen3.6-27B, layer 42, one activation per item.  * = new rows (exp 13).  Prompted = AUROC between two "
-                 "frozen phrasings, 160 items, 0.5 = chance.\nStates it = % of free readouts (40 items x 8 samples) that "
-                 "explicitly state the property.  Exhibits it = the readout's own text shows the true value.", fontsize=9)
-    fig.tight_layout(); fig.savefig(HERE / "results" / "combined_all.png", dpi=170)
+    note = "* = new rows (exp 13).  " if mark_new else ""
+    fig.suptitle("Qwen3.6-27B, layer 42, one activation per item.  " + note
+                 + "Prompted = AUROC between two frozen phrasings, 160 items, 0.5 = chance.\n"
+                 "States it = % of free readouts (40 items x 8 samples) that explicitly state the property.\n"
+                 "Exhibits it = the readout's own text shows the true value.", fontsize=9, y=0.98)
+    fig.tight_layout(rect=(0, 0, 1, 0.97))
+    fig.savefig(HERE / "results" / f"combined_all{suffix}.png", dpi=170, bbox_inches="tight", pad_inches=0.3)
     print("png written")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(mark_new="--plain" not in sys.argv)
