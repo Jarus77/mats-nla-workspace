@@ -72,3 +72,19 @@ syntax, controls (known in-workspace features).
 - quote, true inside: "The final fragment ... is an unclosed quotation, requiring ..."
 - noun number, true plural: "'j'attendais des' grammatically requires a noun phrase (plural noun)"
 - POS, true adjective, judged noun: "requiring his biographical credentials or role (e.g., 'prominent LDS Church leader')" — judge disagreement; the NLA names a noun phrase with an adjective head.
+
+## OLens by input layer (Neel's second ask: "what layer X OLens can find that layer Y OLens doesn't")
+
+Same 14 concepts, OLens fed the layer-40, 42 or 44 activation (40 and 44 are on its training grid;
+42 is not). Judged 2026-10-22, 448 more calls, $1.87. Table: `results/ol_by_layer.md`.
+
+- **Stated:** 6 of 13,420 readouts across the three layers state any property (all six are "this is
+  Python" at layer 40). OLens states nothing at any layer.
+- **Exhibited:** within a few points across layers (language 56 / 56 / 59%, code 87 / 93 / 94%,
+  caps 44 / 50 / 38%, tense 8 / 16 / 16%); nothing exhibited for any text-buffer or syntax concept.
+- **Prompted:** every concept within 0.05 across 40 / 42 / 44 (largest spread: indentation 0.86 /
+  0.89 / 0.91).
+
+On these concepts there is nothing one of these three layers finds that another doesn't. The
+off-grid layer 42 behaves like its trained neighbours, which also answers the "OLens can't really
+read L42" worry from the mentor follow-ups a second way.

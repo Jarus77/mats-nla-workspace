@@ -1,0 +1,2572 @@
+{
+"feature": "bk_code",
+"reader": "ol40",
+"values": [
+"Python",
+"JavaScript"
+],
+"n_rows": 320,
+"n_judged": 320,
+"judged": [
+{
+"item": "code_3_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_3_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_3_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_3_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_3_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_3_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_3_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_3_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_3_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_3_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_3_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_3_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_3_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_3_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_3_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_3_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_7_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_7_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_7_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_7_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_7_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_7_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_7_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_7_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_7_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_7_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_7_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_7_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_7_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_7_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_7_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_7_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_10_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_10_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_10_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_10_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_10_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_10_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_10_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_10_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_10_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_10_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_10_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_10_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_10_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_10_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_10_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_10_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_14_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_14_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_14_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_14_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_14_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_14_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_14_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_14_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_14_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_14_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_14_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_14_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_14_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_14_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_14_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_14_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_27_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_27_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_27_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_27_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_27_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_27_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_27_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_27_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_27_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_27_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_27_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_27_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_27_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_27_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_27_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_27_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_39_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_39_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_39_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_39_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_39_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_39_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_39_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_39_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_39_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_39_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_39_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_39_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_39_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_39_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_39_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_39_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_45_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_45_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_45_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_45_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_45_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_45_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_45_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_45_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_45_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_45_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_45_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_45_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_45_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_45_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_45_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_45_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_51_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_51_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_51_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_51_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_51_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_51_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_51_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_51_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_51_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_51_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_51_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_51_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_51_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_51_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_51_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_51_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_56_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_56_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_56_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_56_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_56_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_56_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_56_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_56_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_56_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_56_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_56_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_56_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_56_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_56_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_56_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_56_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_64_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_64_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_64_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_64_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_64_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_64_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_64_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_64_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_64_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_64_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_64_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_64_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_64_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_64_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_64_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_64_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_65_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_65_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_65_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_65_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_65_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_65_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_65_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_65_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_65_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_65_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_65_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_65_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_65_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_65_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_65_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_65_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_79_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_79_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_79_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_79_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_79_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_79_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_79_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_79_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_79_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_79_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_79_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_79_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_79_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_79_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_79_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_79_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_95_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_95_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_95_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_95_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_95_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_95_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_95_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_95_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_95_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_95_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_95_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_95_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_95_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_95_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_95_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_95_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_97_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_97_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_97_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_97_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_97_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_97_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_97_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_97_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_97_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_97_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_97_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_97_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_97_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_97_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_97_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_97_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_98_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_98_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_98_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_98_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_98_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_98_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_98_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_98_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_98_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_98_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_98_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_98_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_98_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_98_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_98_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_98_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_99_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_99_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_100_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_100_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_100_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_100_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_100_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_100_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_100_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_100_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_100_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_100_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_100_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_100_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_100_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_100_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_100_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_100_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_102_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "A"
+},
+{
+"item": "code_102_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_102_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_107_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_107_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_107_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_107_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_107_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_107_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_107_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_107_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_107_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_107_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_107_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_107_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_107_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_107_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_107_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_107_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "B"
+},
+{
+"item": "code_109_py",
+"value": "Python",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_py",
+"value": "Python",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_py",
+"value": "Python",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_py",
+"value": "Python",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_py",
+"value": "Python",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_py",
+"value": "Python",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_py",
+"value": "Python",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_py",
+"value": "Python",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_ja",
+"value": "JavaScript",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_ja",
+"value": "JavaScript",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_109_ja",
+"value": "JavaScript",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_109_ja",
+"value": "JavaScript",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_109_ja",
+"value": "JavaScript",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_ja",
+"value": "JavaScript",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "code_109_ja",
+"value": "JavaScript",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+},
+{
+"item": "code_109_ja",
+"value": "JavaScript",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "A"
+}
+]
+}
