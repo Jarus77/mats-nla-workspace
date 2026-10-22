@@ -132,7 +132,7 @@ R.table = (ctx, slide, s) => {
   const { kit } = ctx;
   const C = kit.C;
   header(ctx, slide, s);
-  const fs = s.small ? 11.5 : 13;
+  const fs = s.fontSize || (s.small ? 11.5 : 13);
   const head = s.columns.map((c) => ({ text: c, options: { bold: true, color: "FFFFFF", fill: { color: ctx.HEX.dark }, fontSize: fs - 0.5, valign: "middle" } }));
   const body = s.rows.map((row, ri) =>
     row.map((cell) => {

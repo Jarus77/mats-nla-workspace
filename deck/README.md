@@ -1,6 +1,6 @@
 # MATS 12.0 research deck: "Do NLAs read what the model can't say, or re-solve what it read?"
 
-Outputs: `mats_nla_workspace.pptx` (60 slides: 53 main + 7 appendix, speaker notes on every slide) and `mats_nla_workspace.pdf`.
+Outputs: `mats_nla_workspace.pptx` (62 slides: 55 main + 7 appendix, speaker notes on every slide) and `mats_nla_workspace.pdf`.
 
 ## Rebuild (takes a few seconds)
 

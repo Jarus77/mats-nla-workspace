@@ -83,4 +83,24 @@ module.exports = [
       "So the NLA's apparent prompt reconstruction is itself generated from the latent. It confabulates a prompt consistent with what the activation now encodes. So whatever branch the col result lands on, the NLA is not reading the text and then solving: its language model generates a consistent story from the latent. That finding stands either way. " +
       "Dose caveat: to flip the answer we needed large pushes, median 49% of the activation norm, 1.5 to 3 times the natural distance between countries; the main run makes the 109 items at alpha ≤ 1.5 primary. Twelve free-form samples is small; the main run scales this up.",
   },
+  {
+    type: "stats",
+    section: "Part C",
+    kicker: "Part C · operand pilot (experiment 10, externally prompted, D33)",
+    title: "Operand digits at '=' sit outside the J-space, but the model doesn't use them there: decodable, unused",
+    stats: [
+      { value: "0.83 / 0.93", label: "exact operand accuracy (a / b) of a linear probe at '=', replicating M. Kenney's numbers; the NLA reports them 5% / 38%", color: "probe" },
+      { value: "≈ shuffled", label: "class-mean enrichment at r* and 4r* under both the n1000 and J++ bases: J-depleted; the J-Lens never emits a digit", color: "jl" },
+      { value: "0 / 117", label: "greedy answers changed by any leak-clean J-removed edit at r11 / r22 on one-digit items (margin 6.65 nats); a full-vector replacement flips 1 / 117", color: "ink" },
+    ],
+    families: [
+      { head: "Why it was run", body: "An external result (nla-consistency, 12 Oct): a probe reads operands the NLA under-reports, and a class-mean swap flips 28% of answers. We asked whether operand identity is non-J." },
+      { head: "What it shows", body: "The '=' position at layer 42 does not carry the answer-determining operand information: a property of the site, not of the directions. Operand identity stays decodable-but-unused; S10 is not filled." },
+      { head: "Convergence", body: "Readers track represented-but-unused content; his J++ removal AUROC 0.49 matches our survival result; few-shot context halves operand decodability (a → 0.42)." },
+    ],
+    caveat: "Pilot, exploratory, ≈ $7; disclosed in prereg §1.4 and §3.5 (S10). Nothing changes a primary, direction, dose or template. See notes/decisions.md D33.",
+    notes:
+      "An externally prompted pilot, run on 12 October after a friend's result on arithmetic prompts: a linear probe reads both operands from the layer-42 activation at the equals sign, 83 and 93 percent exact, while the NLA reports them 5 and 38 percent of the time, and a class-mean swap flipped 28 percent of the model's answers. We replicated his probe numbers and asked our question: is operand identity non-J? " +
+      "Geometrically it is: class-mean enrichment sits at the shuffled-label reference under both the neuronpedia and the J++ bases, and the J-Lens never emits a digit. But no leak-clean J-removed edit at the pre-registered relative doses changed a single greedy answer on 117 one-digit items, and even replacing the entire vector at the equals sign flips one answer in 117. So at this site the operands are decodable but unused: the model reads them from their own positions in later layers. The slot stays empty, nothing in the main run changes, and it converges with his broader finding that readers track content the model represents but does not use.",
+  },
 ];

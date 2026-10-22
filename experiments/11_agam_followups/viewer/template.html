@@ -1,0 +1,329 @@
+<title>Activation Reader Readouts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a header with set tabs; an item rail on the left, the item's prompt, controls and three reader
+   columns (NLA amber, Oracle teal, J-lens indigo) on the right; a by-layer strip underneath. */
+:root {
+  --bg: #f4f5f7; --panel: #ffffff; --sunk: #eceef2; --ink: #1a1e26; --muted: #5b6474; --line: #dadee6;
+  --nla: #9a520f; --nla-bg: #fbf2e7; --ol: #0d6862; --ol-bg: #e5f2f1; --jl: #33429c; --jl-bg: #eaedf9;
+  --hl: #ffe39a; --hl-soft: #fff4d1; --focus: #33429c;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cond: "IBM Plex Sans Condensed", "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111419; --panel: #181c23; --sunk: #14171d; --ink: #e6e9ef; --muted: #9ba4b3; --line: #2b313c;
+  --nla: #e3a466; --nla-bg: #2a2118; --ol: #5ec4bc; --ol-bg: #13262a; --jl: #9aa8f2; --jl-bg: #1c2136;
+  --hl: #6b5512; --hl-soft: #3a3115; --focus: #9aa8f2; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #111419; --panel: #181c23; --sunk: #14171d; --ink: #e6e9ef; --muted: #9ba4b3; --line: #2b313c;
+  --nla: #e3a466; --nla-bg: #2a2118; --ol: #5ec4bc; --ol-bg: #13262a; --jl: #9aa8f2; --jl-bg: #1c2136;
+  --hl: #6b5512; --hl-soft: #3a3115; --focus: #9aa8f2; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 14px; line-height: 1.5; padding-inline: 16px; padding-block: 0 40px; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header.top { max-width: 1400px; margin: 0 auto; padding-block: 20px 12px; display: grid; gap: 10px; }
+h1 { font-family: var(--cond); font-weight: 600; font-size: 24px; letter-spacing: 0.01em; margin: 0; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 70ch; }
+.lede b { color: var(--ink); font-weight: 600; }
+.key { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; color: var(--muted); }
+.key span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; background: var(--c); }
+.sets { display: flex; flex-wrap: wrap; gap: 6px; }
+.sets button { border: 1px solid var(--line); background: var(--panel); padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+.sets button[aria-selected="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+.wrap { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 16px; align-items: start; }
+.rail { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; display: grid; grid-template-rows: auto 1fr; max-height: calc(100vh - 40px); position: sticky; top: env(safe-area-inset-top, 0px); overflow: hidden; }
+.rail input { margin: 8px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--sunk); }
+.rail ul { list-style: none; margin: 0; padding: 0 0 8px; overflow-y: auto; }
+.rail li button { width: 100%; text-align: left; border: 0; background: none; padding: 6px 12px; cursor: pointer; display: grid; gap: 1px; }
+.rail li button:hover { background: var(--sunk); }
+.rail li button[aria-current="true"] { background: var(--sunk); box-shadow: inset 3px 0 0 var(--ink); }
+.rail .rid { font-family: var(--mono); font-size: 12px; overflow-wrap: anywhere; }
+.rail .rsub { font-size: 12px; color: var(--muted); }
+.detail { display: grid; gap: 14px; min-width: 0; }
+.note { color: var(--muted); max-width: 90ch; margin: 0; }
+.itemhead { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.itemhead h2 { font-family: var(--mono); font-weight: 500; font-size: 16px; margin: 0 8px 0 0; overflow-wrap: anywhere; }
+.chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--sunk); border: 1px solid var(--line); }
+.chip b { font-weight: 600; }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; min-width: 0; }
+.label { font-family: var(--cond); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.prompt { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14.5px; max-height: 280px; overflow-y: auto; }
+.prompt mark { background: var(--hl-soft); color: inherit; border-radius: 2px; }
+.prompt mark.on { background: var(--hl); outline: 1px solid var(--muted); }
+.prompt .nl { color: var(--muted); font-family: var(--mono); font-size: 12px; }
+.model { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.model code { font-family: var(--mono); color: var(--ink); background: var(--sunk); padding: 0 4px; border-radius: 3px; }
+.controls { display: grid; gap: 8px; }
+.ctl { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.ctl > span { font-family: var(--cond); font-weight: 600; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); min-width: 78px; }
+.ctl button { font-family: var(--mono); font-size: 12.5px; border: 1px solid var(--line); background: var(--panel); padding: 3px 9px; border-radius: 5px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.ctl button.has { border-color: var(--muted); }
+.ctl button[aria-pressed="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+.ctl button:disabled { opacity: 0.35; cursor: default; }
+.readers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.reader { border-top: 4px solid var(--c); background: var(--panel); border-left: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; min-width: 0; display: grid; gap: 8px; align-content: start; }
+.reader h3 { margin: 0; font-family: var(--cond); font-size: 15px; font-weight: 600; color: var(--c); display: flex; justify-content: space-between; gap: 8px; }
+.reader h3 small { font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--muted); }
+.reader .why { font-size: 12.5px; color: var(--muted); margin: 0; }
+.sample { background: var(--cbg); border-radius: 5px; padding: 8px 10px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13.5px; position: relative; }
+.sample::before { content: attr(data-n); position: absolute; top: 6px; right: 8px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.toks { display: flex; flex-wrap: wrap; gap: 5px; }
+.tok { font-family: var(--mono); font-size: 13px; background: var(--cbg); border-radius: 4px; padding: 1px 6px; white-space: pre; }
+details { font-size: 13px; }
+details summary { cursor: pointer; color: var(--muted); }
+details .sample { margin-top: 6px; }
+.strip { overflow-x: auto; }
+.strip table { border-collapse: collapse; font-size: 12.5px; width: 100%; }
+.strip th, .strip td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.strip th { font-family: var(--mono); font-weight: 500; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.strip tr.cur td, .strip tr.cur th { background: var(--sunk); }
+.strip td.t { font-family: var(--mono); white-space: nowrap; }
+.strip td.o { min-width: 260px; max-width: 520px; }
+.nla { --c: var(--nla); --cbg: var(--nla-bg); }
+.ol { --c: var(--ol); --cbg: var(--ol-bg); }
+.jl { --c: var(--jl); --cbg: var(--jl-bg); }
+@media (max-width: 1050px) { .readers { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 760px) {
+  .wrap { grid-template-columns: minmax(0, 1fr); }
+  .rail { position: static; max-height: 260px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<header class="top">
+  <h1>Activation reader readouts</h1>
+  <p class="lede">One activation of <b>Qwen3.6-27B</b>, read by three tools side by side. Pick an item, then a layer and, for the col and tense items, one of the last four token positions. Pilot items only; samples are the first ones generated, not picked.</p>
+  <div class="key">
+    <span style="--c: var(--nla)">NLA: writes an explanation; reads layer 42 only</span>
+    <span style="--c: var(--ol)">Oracle Lens: writes bullets; trained on every fourth layer</span>
+    <span style="--c: var(--jl)">J-lens: its top 10 tokens</span>
+  </div>
+  <nav class="sets" role="tablist" aria-label="Item set" id="sets"></nav>
+</header>
+<main class="wrap">
+  <aside class="rail" aria-label="Items">
+    <input id="q" type="search" placeholder="Filter items" aria-label="Filter items">
+    <ul id="list"></ul>
+  </aside>
+  <section class="detail" id="detail" aria-live="polite"></section>
+</main>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function () {
+  "use strict";
+  const D = JSON.parse(document.getElementById("data").textContent);
+  const M = D.meta;
+  const SETS = [
+    { key: "wsb", name: "WorkspaceBench" },
+    { key: "col", name: "Line position (col)" },
+    { key: "tense", name: "Tense" },
+    { key: "planted", name: "Planted bridge" },
+    { key: "arith", name: "Arithmetic" },
+  ];
+  const NOTES = {
+    wsb: "WorkspaceBench items, unsteered, read at the last prompt token. Oracle and J-lens at 12 layers, NLA at 42. On these items a text-only model given the prompt finds the target 89% of the time, against 60% for the NLA and 56% for the Oracle at layer 42.",
+    col: "Hard-wrapped prose. col = characters since the last newline, which the model uses to decide when to break the line. Unsteered readouts at every layer and the last four positions, and the edit along the col direction with its J-part removed at layer 42 (+Δ towards a longer line, −Δ towards a shorter one). In our scored tests no reader describes line position, and across this grid 0 of 576 Oracle and 0 of 96 NLA readouts mention it (the pilot's strict line-position regex).",
+    tense: "Past vs present passages. Unsteered readouts at every layer and the last four positions. In our scored tests every reader follows tense at every layer and position; these are the unscored free-text readouts.",
+    planted: "A different country is swapped into the bridge entity at layer 38 and read at layer 42 (Oracle also at 44). The text never changes. Watch whether the readers report the prompt or write a new one that fits the planted country.",
+    arith: "Bare arithmetic prompts read at '='. A linear probe reads both operands from this activation; the prose readers write out an expression of their own. NLA readouts are Michael Kenney's.",
+  };
+  const PENDING = "The layer × position grid for these items is still being generated. This set fills in on the next update.";
+
+  const st = { set: "wsb", idx: 0, layer: 42, pos: -1, cond: "zero", q: "" };
+  try { const s = localStorage.getItem("arr_set"); if (s && D[s]) st.set = s; } catch (e) { /* storage unavailable */ }
+
+  const $ = (sel) => document.querySelector(sel);
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const showTok = (t) => (t === "\n" ? "↵" : t.replace(/\n/g, "↵"));
+
+  function items() { return D[st.set] || []; }
+  function cur() { return items()[st.idx]; }
+
+  function label(it) {
+    if (st.set === "wsb") return { id: it.id, sub: it.family.replace("_mt", "") + " · gold: " + it.target };
+    if (st.set === "col") return { id: it.id, sub: "col " + it.col + " · " + it.chars_remaining + " chars left" };
+    if (st.set === "tense") return { id: it.id, sub: it.label };
+    if (st.set === "planted") return { id: it.id, sub: it.original + " → " + it.planted };
+    return { id: it.text, sub: "answer " + it.answer };
+  }
+
+  function renderSets() {
+    $("#sets").innerHTML = SETS.map((s) => `<button role="tab" aria-selected="${s.key === st.set}" data-set="${s.key}">${esc(s.name)} <small>(${(D[s.key] || []).length})</small></button>`).join("");
+  }
+  function renderList() {
+    const q = st.q.toLowerCase();
+    $("#list").innerHTML = items().map((it, i) => {
+      const l = label(it);
+      if (q && !(l.id + " " + l.sub).toLowerCase().includes(q)) return "";
+      return `<li><button data-i="${i}" aria-current="${i === st.idx}"><span class="rid">${esc(l.id)}</span><span class="rsub">${esc(l.sub)}</span></button></li>`;
+    }).join("");
+  }
+
+  // ---------- availability per set
+  function layersFor() {
+    if (st.set === "wsb") return M.wsb_layers;
+    if (st.set === "col" || st.set === "tense") return st.cond === "zero" ? M.grid_layers : [42, 44];
+    if (st.set === "planted") return [42, 44];
+    return [42];
+  }
+  function positionsFor() { return (st.set === "col" || st.set === "tense") ? (st.cond === "zero" ? M.positions : [-1]) : []; }
+  function condsFor() {
+    if (st.set === "col") return [["zero", "unsteered"], ["jrem4+", "+Δ longer line"], ["jrem4-", "−Δ shorter line"]];
+    if (st.set === "planted") return [["natural", "natural"], ["planted", "planted"]];
+    return [];
+  }
+  function clampState() {
+    const conds = condsFor().map((c) => c[0]);
+    if (conds.length && !conds.includes(st.cond)) st.cond = conds[0];
+    if (!conds.length) st.cond = "zero";
+    const L = layersFor();
+    if (!L.includes(st.layer)) st.layer = L.includes(42) ? 42 : L[0];
+    const P = positionsFor();
+    if (P.length && !P.includes(st.pos)) st.pos = -1;
+  }
+
+  // ---------- reader content
+  function samplesHTML(arr, cls) {
+    if (!arr || !arr.length) return `<p class="why">No readout stored here.</p>`;
+    return arr.map((s, i) => `<div class="sample" data-n="${i + 1}">${s == null ? '<span class="why">(no explanation: the tag never closed)</span>' : esc(s)}</div>`).join("");
+  }
+  function toksHTML(arr) {
+    if (!arr || !arr.length) return `<p class="why">No readout stored here.</p>`;
+    return `<div class="toks">${arr.map((t) => `<span class="tok">${esc(showTok(t))}</span>`).join("")}</div>`;
+  }
+  function card(cls, name, where, body, why) {
+    return `<div class="reader ${cls}"><h3>${esc(name)} <small>${esc(where)}</small></h3>${why ? `<p class="why">${esc(why)}</p>` : ""}${body}</div>`;
+  }
+  function readersHTML(it) {
+    const L = st.layer, P = st.pos, key = `${L}|${P}`;
+    if (st.set === "wsb") {
+      return card("nla", "NLA", "layer 42", samplesHTML(it.nla["42"]), L !== 42 ? "The NLA reads layer 42 only; showing its layer 42 readout." : "") +
+        card("ol", "Oracle Lens", `layer ${L}`, samplesHTML(it.ol[String(L)]), L === 42 ? "Layer 42 is between two trained layers (40 and 44)." : "") +
+        card("jl", "J-lens", `layer ${L}`, toksHTML(it.jl[String(L)]));
+    }
+    if (st.set === "col" || st.set === "tense") {
+      if (st.cond !== "zero") {
+        const s = it.steer[st.cond], z = it.steer.zero, olk = L === 44 ? "ol44" : "ol42";
+        const zdet = (arr, isTok) => `<details><summary>Unsteered at the same layer (${isTok ? "top 10" : arr.length + " samples"})</summary>${isTok ? toksHTML(arr) : samplesHTML(arr)}</details>`;
+        return card("nla", "NLA", "layer 42 · pos −1", samplesHTML(s.nla42) + zdet(z.nla42), L !== 42 ? "The NLA reads layer 42 only; showing layer 42." : "8 samples") +
+          card("ol", "Oracle Lens", `layer ${L} · pos −1`, samplesHTML(s[olk]) + zdet(z[olk]), "8 samples") +
+          card("jl", "J-lens", "layer 42 · pos −1", toksHTML(s.jl) + zdet(z.jl, true), L !== 42 ? "Showing layer 42, where the edit was made." : "");
+      }
+      const olHas = M.ol_layers.includes(L);
+      return card("nla", "NLA", `layer 42 · pos ${P}`, samplesHTML(it.nla[`42|${P}`]), L !== 42 ? "The NLA reads layer 42 only; showing layer 42 at this position." : "2 samples") +
+        card("ol", "Oracle Lens", olHas ? `layer ${L} · pos ${P}` : "not run here", olHas ? samplesHTML(it.ol[key]) : "", olHas ? "2 samples" : `This grid ran the Oracle at layers ${M.ol_layers.join(", ")}.`) +
+        card("jl", "J-lens", `layer ${L} · pos ${P}`, toksHTML(it.jl[key]));
+    }
+    if (st.set === "planted") {
+      const c = st.cond;
+      return card("nla", "NLA", "layer 42", it.nla ? samplesHTML(it.nla[c]) : "", it.nla ? "" : "We stored NLA explanations for 12 planted items; this is not one of them.") +
+        card("ol", "Oracle Lens", `layer ${L}`, samplesHTML(L === 44 ? it.ol44[c] : it.ol42[c]), "4 samples") +
+        card("jl", "J-lens", "layer 42", toksHTML(it.jl[c]), L !== 42 ? "Showing layer 42." : "");
+    }
+    return card("nla", "NLA", "layer 42", samplesHTML(it.nla), "Michael Kenney's readouts") +
+      card("ol", "Oracle Lens", "layer 42", samplesHTML(it.ol42), "4 samples") +
+      card("jl", "J-lens", "layer 42", toksHTML(it.jl));
+  }
+
+  // ---------- prompt with the read position(s) highlighted
+  function promptHTML(it) {
+    if (st.set === "col" || st.set === "tense") {
+      const toks = it.pos_tokens, tail = toks.join("");
+      const head = it.text.slice(0, it.text.length - tail.length);
+      const marks = toks.map((t, j) => {
+        const p = j - 4, on = p === st.pos;
+        const vis = t.includes("\n") ? esc(t).replace(/\n/g, '<span class="nl">↵</span>\n') : esc(t);
+        return `<mark class="${on ? "on" : ""}" title="position ${p}">${vis}</mark>`;
+      }).join("");
+      return esc(head) + marks;
+    }
+    const text = st.set === "arith" ? it.text : it.prompt;
+    const rt = it.read_token;
+    if (rt && text.endsWith(rt)) return esc(text.slice(0, text.length - rt.length)) + `<mark class="on" title="read token">${esc(rt)}</mark>`;
+    return esc(text);
+  }
+  function headHTML(it) {
+    const chips = [];
+    if (st.set === "wsb") {
+      chips.push(`<span class="chip">${esc(it.family)}</span>`, `<span class="chip">gold: <b>${esc(it.target)}</b></span>`);
+      if (it.intermediates && it.intermediates.length) chips.push(`<span class="chip">intermediate: ${esc(it.intermediates.join(", "))}</span>`);
+    } else if (st.set === "col") {
+      chips.push(`<span class="chip">col <b>${it.col}</b></span>`, `<span class="chip"><b>${it.chars_remaining}</b> chars left on the line</span>`, `<span class="chip">line length ${it.line_len}</span>`, `<span class="chip">next token is a newline: <b>${it.next_is_nl ? "yes" : "no"}</b></span>`);
+    } else if (st.set === "tense") {
+      chips.push(`<span class="chip">label: <b>${esc(it.label)}</b></span>`);
+    } else if (st.set === "planted") {
+      chips.push(`<span class="chip">original: <b>${esc(it.original)}</b></span>`, `<span class="chip">planted: <b>${esc(it.planted)}</b></span>`);
+    } else {
+      chips.push(`<span class="chip">answer <b>${esc(it.answer)}</b></span>`, `<span class="chip">model's next token: <b>${esc(it.model_next)}</b></span>`, `<span class="chip">probe reads <b>${esc(it.probe)}</b></span>`);
+    }
+    return `<div class="itemhead"><h2>${esc(label(it).id)}</h2>${chips.join("")}</div>`;
+  }
+  function modelHTML(it) {
+    if (st.set !== "col" && st.set !== "tense") return "";
+    const t5 = (it.model_top5 || []).map((t) => `<code>${esc(showTok(t))}</code>`).join(" ");
+    return `<div class="model">Model's own top-5 next tokens at the read token: ${t5}${st.set === "col" ? ` · p(newline) = ${it.p_newline}` : ""}</div>`;
+  }
+
+  // ---------- by-layer strip
+  function stripHTML(it) {
+    let rows = [], title = "";
+    const first = (arr) => (arr && arr.length && arr[0] ? arr[0].split("\n")[0] : "");
+    if (st.set === "wsb") {
+      title = "Across layers (last token): J-lens top 5 and the Oracle's first bullet";
+      rows = M.wsb_layers.map((L) => [L, (it.jl[String(L)] || []).slice(0, 5), first(it.ol[String(L)])]);
+    } else if ((st.set === "col" || st.set === "tense") && st.cond === "zero") {
+      title = `Across layers at position ${st.pos}: J-lens top 5 and the Oracle's first bullet`;
+      rows = M.grid_layers.map((L) => [L, (it.jl[`${L}|${st.pos}`] || []).slice(0, 5), M.ol_layers.includes(L) ? first(it.ol[`${L}|${st.pos}`]) : "—"]);
+    } else return "";
+    return `<div class="box strip"><p class="label">${esc(title)}</p><table><thead><tr><th>layer</th><th>J-lens top 5</th><th>Oracle, sample 1, first bullet</th></tr></thead><tbody>${rows.map(([L, t, o]) =>
+      `<tr class="${L === st.layer ? "cur" : ""}"><th>${L}</th><td class="t">${t.map((x) => esc(showTok(x))).join(" · ")}</td><td class="o">${esc(o)}</td></tr>`).join("")}</tbody></table></div>`;
+  }
+
+  function controlsHTML() {
+    const L = layersFor(), all = st.set === "wsb" ? M.wsb_layers : (st.set === "col" || st.set === "tense") ? M.grid_layers : L;
+    const conds = condsFor(), P = positionsFor();
+    let h = `<div class="ctl"><span>Layer</span>${all.map((x) => `<button data-layer="${x}" aria-pressed="${x === st.layer}" ${L.includes(x) ? "" : "disabled"} class="${(st.set === "col" || st.set === "tense") && M.ol_layers.includes(x) && st.cond === "zero" ? "has" : ""}">${x}</button>`).join("")}</div>`;
+    if (st.set === "col" || st.set === "tense") h += `<div class="ctl"><span>Position</span>${M.positions.map((p) => `<button data-pos="${p}" aria-pressed="${p === st.pos}" ${P.includes(p) ? "" : "disabled"}>${p === -1 ? "−1 (read token)" : String(p).replace("-", "−")}</button>`).join("")}</div>`;
+    if (conds.length) h += `<div class="ctl"><span>${st.set === "col" ? "Edit" : "Vector"}</span>${conds.map(([k, n]) => `<button data-cond="${k}" aria-pressed="${k === st.cond}">${esc(n)}</button>`).join("")}</div>`;
+    return `<div class="box controls">${h}</div>`;
+  }
+
+  function render() {
+    clampState();
+    renderSets(); renderList();
+    const it = cur();
+    const note = `<p class="note">${esc(NOTES[st.set])}</p>`;
+    if (!it) {
+      $("#detail").innerHTML = note + `<div class="box"><p class="note">${(st.set === "col" || st.set === "tense") && !M.grid_ready ? esc(PENDING) : "No items."}</p></div>`;
+      return;
+    }
+    $("#detail").innerHTML = note + headHTML(it) +
+      `<div class="box"><p class="label">Full prompt${(st.set === "col" || st.set === "tense") ? " (last four tokens marked; the selected position is boxed)" : ""}</p><div class="prompt">${promptHTML(it)}</div>${modelHTML(it)}</div>` +
+      controlsHTML() + `<div class="readers">${readersHTML(it)}</div>` + stripHTML(it);
+  }
+
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b || b.disabled) return;
+    if (b.dataset.set) { st.set = b.dataset.set; st.idx = 0; st.q = ""; $("#q").value = ""; try { localStorage.setItem("arr_set", st.set); } catch (err) { /* ignore */ } }
+    else if (b.dataset.i) st.idx = +b.dataset.i;
+    else if (b.dataset.layer) st.layer = +b.dataset.layer;
+    else if (b.dataset.pos) st.pos = +b.dataset.pos;
+    else if (b.dataset.cond) st.cond = b.dataset.cond;
+    else return;
+    render();
+  });
+  $("#q").addEventListener("input", (e) => { st.q = e.target.value; renderList(); });
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT") return;
+    if (e.key === "ArrowDown" || e.key === "j") { st.idx = Math.min(items().length - 1, st.idx + 1); render(); }
+    if (e.key === "ArrowUp" || e.key === "k") { st.idx = Math.max(0, st.idx - 1); render(); }
+  });
+  render();
+})();
+</script>

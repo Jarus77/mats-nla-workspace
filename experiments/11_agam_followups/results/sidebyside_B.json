@@ -1,0 +1,28 @@
+{
+ "planted@42|natural": {
+  "any_sample_names_planted_Y": 0.0,
+  "any_sample_names_original_X": 0.985
+ },
+ "planted@42|planted": {
+  "any_sample_names_planted_Y": 0.965,
+  "any_sample_names_original_X": 0.005
+ },
+ "planted@44|natural": {
+  "any_sample_names_planted_Y": 0.005,
+  "any_sample_names_original_X": 0.98
+ },
+ "planted@44|planted": {
+  "any_sample_names_planted_Y": 0.955,
+  "any_sample_names_original_X": 0.005
+ },
+ "jlens_top10_names_planted_Y": {
+  "natural": 0.005,
+  "planted": 0.87
+ },
+ "operand@42": {
+  "n": 120,
+  "samples_with_expression": 120,
+  "prompt_expression_quoted_correctly": 0.058333333333333334,
+  "jlens_top10_contains_a_digit": 0.0
+ }
+}

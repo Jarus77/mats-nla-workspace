@@ -1,0 +1,183 @@
+{
+ "n": 600,
+ "stages": {
+  "capture": "ran",
+  "g4": "ran",
+  "gates": "ran",
+  "leak": "ran"
+ },
+ "fewshot_example": "89 + 41 = 130\n90 + 85 = 175\n31 + 16 = 47\n51 - 49 =",
+ "seq_len_min_max": [
+  36,
+  43
+ ],
+ "t_capture_s": 52.8,
+ "c_mode_atens": 5,
+ "doses": {
+  "0": {
+   "mag_a_raw": 2.342,
+   "mag_a_jrem": 1.67,
+   "cm_atens_raw": 4.734,
+   "cm_atens_jrem": 4.442
+  },
+  "1": {
+   "mag_a_raw": 2.108,
+   "mag_a_jrem": 1.441,
+   "cm_atens_raw": 8.506,
+   "cm_atens_jrem": 7.164
+  }
+ },
+ "dose_over_median_norm": {
+  "mag_a_raw": 0.026363587988981727,
+  "mag_a_jrem": 0.018430317920241912,
+  "cm_atens_jrem": 0.06873391052537058
+ },
+ "g4_dirs_enrichment": {
+  "0": {
+   "mag_a_raw": {
+    "384": 0.7203239798545837,
+    "1536": 0.7888890504837036
+   },
+   "mag_a_jrem": {
+    "384": 3.2137602801185494e-08,
+    "1536": 3.242689672333654e-08
+   },
+   "cm_atens_raw": {
+    "384": 0.8957988619804382,
+    "1536": 1.6923959255218506
+   },
+   "cm_atens_jrem": {
+    "384": 1.3201048432165408e-07,
+    "1536": 1.3029639944761584e-07
+   }
+  },
+  "1": {
+   "mag_a_raw": {
+    "384": 0.6344287395477295,
+    "1536": 0.7866892218589783
+   },
+   "mag_a_jrem": {
+    "384": 3.198167064510926e-08,
+    "1536": 3.152057459487878e-08
+   },
+   "cm_atens_raw": {
+    "384": 1.0253630876541138,
+    "1536": 1.5586495399475098
+   },
+   "cm_atens_jrem": {
+    "384": 1.3663297693256027e-07,
+    "1536": 1.0964760122078587e-07
+   }
+  }
+ },
+ "t_g4_s": 2542.6,
+ "fewshot_model_correct": 1.0,
+ "fewshot_first_token_is_space": 1.0,
+ "g4_valid_digit_rows": {
+  "none": 600,
+  "mag_a_jrem+": 600,
+  "cm_atens_jrem+": 600
+ },
+ "exact_a": {
+  "acc": 0.415,
+  "ci95": [
+   0.37623668324937615,
+   0.45484484541641973
+  ]
+ },
+ "exact_b": {
+  "acc": 0.6116666666666667,
+  "ci95": [
+   0.5720762012851761,
+   0.6498363002715235
+  ]
+ },
+ "exact_ans": {
+  "acc": 0.13833333333333334,
+  "ci95": [
+   0.11300057702447588,
+   0.16826788808292978
+  ]
+ },
+ "exact_ans@space": {
+  "acc": 0.09666666666666666,
+  "ci95": [
+   0.0755235256645357,
+   0.12294176722022086
+  ]
+ },
+ "magnitude": {
+  "a": {
+   "cv_pearson_r": 0.9547547805296863,
+   "cv_mae": 6.084040253957113,
+   "enrichment": {
+    "384": 0.6621308326721191,
+    "1536": 0.7892823219299316
+   }
+  },
+  "b": {
+   "cv_pearson_r": 0.9675564574420014,
+   "cv_mae": 5.12567229906718,
+   "enrichment": {
+    "384": 0.6683253049850464,
+    "1536": 0.7996261119842529
+   }
+  },
+  "answer": {
+   "cv_pearson_r": 0.9755341810724621,
+   "cv_mae": 8.113939437866211,
+   "enrichment": {
+    "384": 0.7706937789916992,
+    "1536": 0.8279054164886475
+   }
+  }
+ },
+ "random_band_iso_K100": {
+  "384": {
+   "median": 0.9941420555114746,
+   "min": 0.8600864410400391,
+   "max": 1.1395316123962402,
+   "mean": 0.9957417845726013,
+   "p2.5": 0.8831295371055603,
+   "p97.5": 1.1060525178909302
+  },
+  "1536": {
+   "median": 0.9969133734703064,
+   "min": 0.935509979724884,
+   "max": 1.0643861293792725,
+   "mean": 0.9975466132164001,
+   "p2.5": 0.9526917934417725,
+   "p97.5": 1.0473966598510742
+  }
+ },
+ "leak_sets": {
+  "content_n": 10,
+  "label": [
+   " number",
+   "Number",
+   "number",
+   " Number",
+   " digit",
+   " operand",
+   "Operand",
+   "digit",
+   "Digit",
+   "operand",
+   " Operand",
+   " Digit"
+  ],
+  "multi_digit_single_tokens": []
+ },
+ "lens_path": "/weights/hf/hub/models--neuronpedia--jacobian-lens/snapshots/b25d72a96b79c8e309d6625955a98751da47e67a/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",
+ "t_total_s": 2917.3,
+ "labels": {
+  "a_tens": "IN-J",
+  "a_units": "IN-J",
+  "b_tens": "DIFFUSE-BUT-J-READABLE",
+  "b_units": "IN-J",
+  "ans_tens": "IN-J",
+  "ans_units": "DIFFUSE-BUT-J-READABLE",
+  "ans_tens@space": "NON-J (G1-G3; G4 pending)",
+  "ans_units@space": "fails G1"
+ }
+}

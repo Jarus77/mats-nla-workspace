@@ -1,0 +1,70 @@
+09:02:34 operand_stage2a: running
+09:03:35 operand_stage2a: running
+09:04:37 operand_stage2a: running
+09:05:38 operand_stage2a: running
+09:06:39 operand_stage2a: running
+09:07:40 operand_stage2a: running
+09:08:42 operand_stage2a: running
+09:09:44 operand_stage2a: running
+09:10:46 operand_stage2a: running
+09:11:47 operand_stage2a: ERR RemoteError("Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 60.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 53.94 MiB is free. Process 1 has 79.19 GiB memory in use. Of the allocated memory 78.32 GiB is allocated by PyTorch, and
+09:12:48 operand_stage2a: ERR RemoteError("Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 60.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 53.94 MiB is free. Process 1 has 79.19 GiB memory in use. Of the allocated memory 78.32 GiB is allocated by PyTorch, and
+09:13:50 operand_stage2a: ERR RemoteError("Input failed with an exception that was too large: OutOfMemoryError('CUDA out of memory. Tried to allocate 60.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 53.94 MiB is free. Process 1 has 79.19 GiB memory in use. Of the allocated memory 78.32 GiB is allocated by PyTorch, and
+09:16:14 operand_stage2a: running
+09:17:15 operand_stage2a: running
+09:18:16 operand_stage2a: running
+09:19:18 operand_stage2a: running
+09:20:19 operand_stage2a: running
+09:21:20 operand_stage2a: running
+09:22:21 operand_stage2a: running
+09:23:23 operand_stage2a: running
+09:24:24 operand_stage2a: running
+09:25:25 operand_stage2a: running
+09:26:27 operand_stage2a: running
+09:27:28 operand_stage2a: running
+09:28:29 operand_stage2a: running
+09:29:30 operand_stage2a: running
+09:30:32 operand_stage2a: running
+09:31:33 operand_stage2a: running
+09:32:34 operand_stage2a: running
+09:33:36 operand_stage2a: running
+09:34:37 operand_stage2a: running
+09:35:38 operand_stage2a: running
+09:36:40 operand_stage2a: running
+09:37:41 operand_stage2a: running
+09:38:42 operand_stage2a: running
+09:39:43 operand_stage2a: running
+09:40:45 operand_stage2a: running
+09:41:46 operand_stage2a: running
+09:42:47 operand_stage2a: running
+09:43:49 operand_stage2a: running
+09:44:50 operand_stage2a: running
+09:45:51 operand_stage2a: running
+09:46:52 operand_stage2a: running
+09:47:54 operand_stage2a: running
+09:48:55 operand_stage2a: running
+09:49:56 operand_stage2a: running
+09:50:57 operand_stage2a: running
+09:51:59 operand_stage2a: running
+09:53:00 operand_stage2a: running
+09:54:01 operand_stage2a: running
+09:55:03 operand_stage2a: running
+09:56:04 operand_stage2a: running
+09:57:05 operand_stage2a: running
+09:58:07 operand_stage2a: running
+09:59:08 operand_stage2a: running
+10:00:09 operand_stage2a: running
+10:01:10 operand_stage2a: running
+10:02:12 operand_stage2a: running
+10:03:13 operand_stage2a: running
+10:04:14 operand_stage2a: running
+10:05:16 operand_stage2a: done
+10:05:17 jpp_download: done
+10:05:18 collected operand_stage2a
+10:05:19 collected jpp_download
+10:05:21 spawned jpp_enrich fc-01M4QS5VJHKFKB2NSVWGM22R9W
+10:05:22 jpp_enrich: running
+10:06:23 jpp_enrich: ERR KeyError('jacobians')
+10:07:24 jpp_enrich: ERR KeyError('jacobians')
+10:08:26 jpp_enrich: ERR KeyError('jacobians')
+10:11:47 jpp_enrich: done

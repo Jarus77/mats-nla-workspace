@@ -9,7 +9,7 @@ module.exports = {
     subtitle: "Testing whether Natural Language Autoencoders capture non-workspace content in Qwen3.6-27B",
     author: "Suraj Prasad",
     affiliation: "MATS 12.0 · Neel Nanda stream",
-    date: "Prep-phase update · 6 October 2026",
+    date: "Prep-phase update · 12 October 2026",
     file: "mats_nla_workspace",
   },
 
@@ -24,6 +24,7 @@ module.exports = {
     { stage: 3, status: "pilot", text: "Two candidate narrow channels, pre-registered for confirmation: OL's next-token continuation (J-removed 0.67–0.72, z ≈ +3.9; needs the adapter) and one NLA template (q90 0.63, borderline)." },
     { stage: 4, status: "pilot", text: "Beyond the top-1,536 J-space both decoders track tense's tail; with mined templates OL ≥ NLA (0.66–0.79 vs 0.59–0.74). A primary in the main run." },
     { stage: 4, status: "pilot", text: "Exp 09: OL's col channel moves one-for-one with the model's newline decision (gain 0.99 / 1.06) but also tracks tense the model doesn't act on: not a pure re-emission." },
+    { stage: 4, status: "pilot", text: "Exp 10 (externally prompted, D33): operand digits at '=' are J-depleted under two bases and probe-decodable (0.83 / 0.93), but no leak-clean J-removed edit moves the answer (0 / 117); a full-vector replacement flips 1 / 117. Decodable-but-unused at L42." },
     { stage: 4, status: "established", text: "The NLA generates its 'prompt' from the latent: under a planted bridge it rewrites the clue 12/12 times (Eiffel Tower → Volvo… Sweden)." },
     { stage: 4, status: "established", text: "On WorkspaceBench the readouts' target information is recoverable from the prompt: re-solver 0.89 from prompt vs 0.60 / 0.56 from readouts; prompt + readout 0.88." },
   ],

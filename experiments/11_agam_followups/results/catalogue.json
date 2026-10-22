@@ -1,0 +1,1211 @@
+{
+ "n_items_judged": 100,
+ "per_reader": {
+  "NLA@42": {
+   "n_readouts": 100,
+   "readouts_with_contradiction": 97
+  },
+  "OL@42": {
+   "n_readouts": 100,
+   "readouts_with_contradiction": 77
+  },
+  "TextNLA": {
+   "n_readouts": 0,
+   "readouts_with_contradiction": 0
+  }
+ },
+ "shared_contradictions": [
+  {
+   "family": "typo_mt",
+   "id": "tyh-arith-b2-01-3",
+   "NLA@42": [
+    "The equation is '128 + 98' equaling 226, not 269.",
+    "The next token likely continues with punctuation or an explanatory correction phrase like '(wrong)' or 'incorrect.'",
+    "The prompt involves '100 + 169 = 269'."
+   ],
+   "OL@42": [
+    "The equation is incorrect because 128 + 92 = 219.",
+    "The calculation result is incorrect and the correct result should be 329.",
+    "The correct result should be 269.",
+    "1 + 1 = 3 is an obviously incorrect calculation, and the correct addition should be 125 +.",
+    "269 is an incorrect mathematical equation, and the correct addition is 129 + 17 = 1."
+   ]
+  },
+  {
+   "family": "typo_mt",
+   "id": "tyh-novel-amatriciana",
+   "NLA@42": [
+    "The text introduces signature components with \"Pancetta and tomato\".",
+    "The sentence structure discusses what pancetta and guanciale are the defining ingredients of.",
+    "The final token is \"carbonara\".",
+    "The named dish is \"carbonana\".",
+    "The sentence begins: \"Pork cheeks, tomato sauce, and guanciale (cured pork) are the three mandatory elements of the Italian sauce called amatricana\"."
+   ],
+   "OL@42": [
+    "The text continues in Chinese discussing carbonara."
+   ]
+  },
+  {
+   "family": "typo_mt",
+   "id": "tyh-novel-chemosynthesis",
+   "NLA@42": [
+    "The final word in the prompt is 'chemosynsys'.",
+    "The prompt contains the phrase 'using this relationship to generate energy by chemosynthess'.",
+    "The text reads 'Deep-sea vents host tube worms that have symbiotic bacteria that derive their nutrition through chemosynthys'."
+   ],
+   "OL@42": [
+    "Chemosynthesis uses light to produce food."
+   ]
+  },
+  {
+   "family": "typo_mt",
+   "id": "tyh-real-adsorption",
+   "NLA@42": [
+    "The text is about water molecules adhering to the surface of activated charcoal.",
+    "The text contains the phrase 'is correctly described as absorption'.",
+    "The text contains the phrase 'correctly describes the retention...by activated charcoal is described as absorption'.",
+    "The text contains the clause 'The process...in general terms is described as absorption'."
+   ],
+   "OL@42": [
+    "Activated charcoal utilizes absorption.",
+    "The term used is absorption rather than adsorption because gas is taken up into the porous structure of a sponge.",
+    "Absorption is the correct scientific term for this process."
+   ]
+  },
+  {
+   "family": "typo_mt",
+   "id": "tyh-novel-chloroplast",
+   "NLA@42": [
+    "The sentence structure is 'This organelle where photosynthesis occur in plant cell are called the chloropals-'.",
+    "The text quotes or contains 'In a plant cell'.",
+    "The text ends with 'chloropst' or 'chloroplst'.",
+    "The next token is likely 'chloroplasm'."
+   ],
+   "OL@42": [
+    "The next token is expected to be 'id'"
+   ]
+  },
+  {
+   "family": "typo_mt",
+   "id": "tyh-real-hyperthermia",
+   "NLA@42": [
+    "The prompt contains the phrase 'classic picture of acute hypothermia'.",
+    "The prompt contains the sentence 'This hiker lies collapsed on the trail, delirious, pulse racing, and breathing shallowly \u2014 the classic picture of acute exertional hypothermia'.",
+    "The text contains 'delirium, shallow breathing, and low blood pressure' as the closing noun phrase describing the condition."
+   ],
+   "OL@42": [
+    "The text describes an example of hypothermic shock / hypothermic shock syndrome."
+   ]
+  },
+  {
+   "family": "typo_mt",
+   "id": "tyh-arith-005",
+   "NLA@42": [
+    "The prompt contains the math equation '168 + 265 = 433'",
+    "The expression ends on the final result '433'"
+   ],
+   "OL@42": [
+    "The correct result of the addition should be 423.",
+    "The result is 483."
+   ]
+  },
+  {
+   "family": "typo_mt",
+   "id": "tyh-novel-appendectomy",
+   "NLA@42": [
+    "The text describes a clinical vignette or case involving a hernia.",
+    "The scenario sets up a patient history mentioning 'middle-aged male,' 'abdominal hernia,' and 'strangulated'.",
+    "The final token is 'laparopenectomy'.",
+    "The prompt quotes: 'After confirming via imaging that the hernia was strangulated, the surgeon performed an emergency laparectomy'.",
+    "The word 'laparectomy' signals the sentence needs completion."
+   ],
+   "OL@42": [
+    "The surgical log contained the misspelled word 'appendyectomy'."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-ar-thyroid",
+   "NLA@42": [
+    "The phrase describes a gland that is located in the kidney.",
+    "The specifically expected organ/gland name answer is '\u0627\u0644\u0643\u0638\u0631\u064a\u0629' (adrenal gland) or similar.",
+    "The prompt quotes or consists of the phrase '\u0627\u0644\u0639\u0636\u0648 \u0627\u0644\u0630\u064a \u064a\u0642\u0639 \u0641\u0648\u0642 \u0627\u0644\u0643\u0644\u0649 \u0648\u0638\u064a\u0641\u062a\u0647 \u0645\u0633\u0627\u0639\u062f \u0627\u0644\u062e\u0644\u0627\u064a\u0627 \u0639\u0644\u0649 \u0627\u0645\u062a\u0635\u0627\u0635 \u0627\u0644\u0645\u0639\u0627\u062f\u0646 \u0645\u062b\u0644 \u0627\u0644\u0635\u0648\u062f\u064a\u0648\u0645 \u0648\u0627\u0644\u0628\u0648\u062a\u0627\u0633\u064a\u0648\u0645 \u0648\u064a\u0644\u0639\u0628 \u062f\u0648\u0631 \u0647\u0627\u0645 \u0641\u064a \u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u062a\u0645\u062b\u064a\u0644 \u0627\u0644\u063a\u0630\u0627\u0626\u064a \u0647\u0648'."
+   ],
+   "OL@42": [
+    "\u0627\u0644\u0639\u0636\u0648 \u0627\u0644\u0645\u0634\u0627\u0631 \u0625\u0644\u064a\u0647 \u0647\u0648 \u0627\u0644\u063a\u062f\u0629 \u0627\u0644\u0643\u0628\u062f\u064a\u0629",
+    "\u0627\u0644\u0639\u0636\u0648 \u0627\u0644\u0630\u064a \u064a\u064f\u0635\u0646\u0641 \u0628\u0647\u0630\u0627 \u0627\u0644\u0648\u0635\u0641 \u0647\u0648 \u0627\u0644\u0643\u0628\u062f",
+    "\u0627\u0644\u0639\u0636\u0648 \u0627\u0644\u0645\u0634\u0627\u0631 \u0625\u0644\u064a\u0647 \u0647\u0648 \u0627\u0644\u063a\u062f\u0629 \u0627\u0644\u0643\u0638\u0631\u064a\u0629"
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-tr-kaplumbaga",
+   "NLA@42": [
+    "The animal is likely a frog or amphibian.",
+    "The text ends with an incomplete Turkish phrase 'b\u00f6yle bir s\u00fcr\u00fcne'."
+   ],
+   "OL@42": [
+    "The prompt continuation asks 'ne?' with a hint about having a long nose, short tail, and being an amphibian.",
+    "The animal is described as two-legged, unhealthy/poor-health, and living mostly in forests.",
+    "The animal is described as a type of rat/rodent (s\u0131\u00e7an).",
+    "The animal is described as a tailless, two-legged amphibian."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-hu-varrogep",
+   "NLA@42": [
+    "The sentence describes a mechanical tool or machine used in printing or history.",
+    "The text contains the phrase structure 'Egy g\u00e9pi szersz\u00e1m, amely a nyomtat\u00e1s k\u00f6zben a pap\u00edrt el\u0151sz\u00f6r olvaszta el, majd \u00fajra felraktatta'.",
+    "The expected answer is '\u00edr\u00f3keret' or 'printer'.",
+    "The text contains the structure 'egy goly\u00f3val... nagy sebess\u00e9ggel dolgozik, \u00e9s be\u00e1ll\u00edthat\u00f3; a neve'."
+   ],
+   "OL@42": [
+    "The device's name is sz\u0171csnyomda.",
+    "The device's name consists of 3 words in traditional Hungarian.",
+    "The device is called a s\u00falynyom\u00f3.",
+    "The device is called a s\u00edr\u00f3g\u00e9p.",
+    "The device's name is rot\u00e1ci\u00f3s g\u00e9pk\u00e9sz\u00fcl\u00e9k.",
+    "The device binds or puts together book pages (k\u00f6nyvlapokat \u00f6sszer)."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-ru-caterpillar",
+   "NLA@42": [
+    "The described entity is characterized as a beetle ('\u0436\u0443\u043a') that develops in the soil ('\u0440\u0430\u0437\u0432\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u0432 \u0437\u0435\u043c\u043b\u0435').",
+    "The text reads '\u041b\u0438\u0447\u0438\u043d\u043a\u0430 \u0436\u0443\u043a\u0430 \u0438\u043b\u0438 \u0431\u0430\u0431\u043e\u0447\u043a\u0438, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0432\u044c\u0451\u0442\u0441\u044f \u0432 \u0442\u0440\u0430\u0432\u0435, \u043a\u0443\u0448\u0430\u0435\u0442 \u043b\u0438\u0441\u0442\u044c\u044f \u0438 \u043f\u043e\u043b\u0437\u0430\u0435\u0442 \u043f\u043e \u0437\u0435\u043c\u043b\u0435, \u043d\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f'."
+   ],
+   "OL@42": [
+    "The next word is '\u043a\u0443\u043a\u043e\u043b\u043a\u043e\u0439'",
+    "The next word is '\u0431\u0430\u0431\u043e\u0447\u043a\u043e\u0439'"
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-el-cooking-pot",
+   "NLA@42": [
+    "The text misquoted as defining attributes including '\u03b4\u03c5\u03bd\u03b1\u03c4\u03cc \u03bd\u03b1 \u03b2\u03c1\u03ac\u03c3\u03b5\u03b9 \u03bc\u03b5\u03b3\u03ac\u03bb\u03b5\u03c2 \u03c0\u03bf\u03c3\u03cc\u03c4\u03b7\u03c4\u03b5\u03c2 \u03bd\u03b5\u03c1\u03bf\u03cd' represents the prompt text.",
+    "The expected Greek term completing the sentence can be '\u03b3\u03b9\u03bf\u03c6\u03cd\u03c1\u03b9' or '\u03c3\u03b1\u03c1\u03b4\u03b9\u03ad\u03c1\u03b1'."
+   ],
+   "OL@42": [
+    "The item is called '\u5927\u9505' (d\u00e0 gu\u014d)."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-id-penghapus",
+   "NLA@42": [
+    "The text misquoted as: \"Alat yang dipakai untuk menghapus tulisan coretan yang tertera pada kertas disebut\".",
+    "The text misquoted as: \"Alat kecil dari perkakas sekolah yang berfungsi untuk mengikis tulisan yang salah pada kertas disebut\"."
+   ],
+   "OL@42": [
+    "Alat ini disebut juga 'rubah'."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-hu-gerincvelo",
+   "NLA@42": [
+    "The text describes a brain structure.",
+    "The phrase contains 'idegimpulsek felv\u00e9tel\u00e9re \u00e9s tov\u00e1bb\u00edt\u00e1s\u00e1ra szolg\u00e1lnak'.",
+    "The text being continued is 'A k\u00f6zponti idegrendszer azon r\u00e9sze, amely csig\u00e1nak szerkezet\u0171 idegsejtek halmaza, \u00e9s az idegsejtek el\u00e1gaz\u00f3 \u00e1gyait tartalmazza neve'.",
+    "The direct answer following the prompt could be 'a gerinctalp'."
+   ],
+   "OL@42": [
+    "A lehets\u00e9ges v\u00e1lasz a gerincideg (vagy gerincide...).",
+    "A keresett dolog a gerincvel\u0151 szervezett r\u00e9sze, amely a k\u00f6zponti idegrendszerhez tartozik.",
+    "A v\u00e1lasz a K\u00f6zponti idegrendszer."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-ru-sosulka",
+   "NLA@42": [
+    "The sentence structure in the prompt is \"\u0414\u043b\u0438\u043d\u043d\u044b\u0439 \u0441\u043e\u0441\u0443\u043b\u0435\u043a, \u0441\u0432\u0438\u0441\u0430\u044e\u0449\u0438\u0439 \u0441 \u043a\u0440\u044b\u0448\u0438 \u0437\u0434\u0430\u043d\u0438\u044f \u0438\u0437 \u0437\u0430\u043c\u0435\u0440\u0437\u0448\u0435\u0439 \u043f\u0440\u043e\u0442\u0435\u043a\u0448\u0435\u0439 \u0432\u043e\u0434\u044b, \u043d\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f\".",
+    "The prompt text reads \"\u0414\u043b\u0438\u043d\u043d\u044b\u0439 \u0441\u043e\u0441\u0443\u043b\u0435\u043a \u043d\u0430 \u043a\u0440\u044b\u0448\u0435...\"."
+   ],
+   "OL@42": [
+    "The described object is called a '\u043b\u0435\u0434\u044f\u043d\u043e\u0439 \u043a\u043e\u043d\u0443\u0441' or '\u043b\u0435\u0434\u043d\u0438\u043a'.",
+    "The described object is called a '\u0441\u043d\u0435\u0436\u043d\u0430\u044f \u0441\u043e\u0441\u0443\u043b\u044c\u043a\u0430'."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-sw-mwarobaini",
+   "NLA@42": [
+    "The text lists multiple properties including heart disease, cancer, stomach disease, skin, water purification, and chewing leaves.",
+    "The sentence structure features 'Mti ulio na... huo aitwa'.",
+    "The final word is 'aitwa' ('is called').",
+    "The text contains 'mti unao matumizi ya kuwalisha... na mtanda usomvu unapokwa... mtanda mbivu, na matumizi ya mifugo, mti huo aitwa'."
+   ],
+   "OL@42": [
+    "The tree being described is called Arbor Vitae.",
+    "The tree being described is called Mtembe.",
+    "The tree is known in English as Moringa."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-fi-tortoise",
+   "NLA@42": [
+    "The prompt follows a Czech quiz format (\"Spr\u00e1vn\u00e1 odpov\u011b\u010f\").",
+    "The creature being identified is a specific amphibian, such as a tuatara or salamander.",
+    "The next token is likely an unusual or obscure species."
+   ],
+   "OL@42": [
+    "The next named entity is tuatara.",
+    "The next named entity is trochyleon (slow-worm).",
+    "The next named entity is \u7a7f\u5c71\u7532 (Armadillo) or \u017eaba.",
+    "The animal is a slow-moving bipedal vertebrate.",
+    "The animal is a slow, armored snail (pomal\u00fd, panc\u00e9\u0159ov\u00fd pl\u017e)."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-pl-trzustka",
+   "NLA@42": [
+    "The text contains the clause 'przewodz\u0105cy z trzustk\u0105 i w\u0105troby, le\u017c\u0105cy za przepon\u0105, w brzusznej cz\u0119\u015bci cia\u0142a, nazywa si\u0119'.",
+    "The text is 'Gruczo\u0142, kt\u00f3ry produkuje insuliny, reguluje cukier we krwi, wydziela enzymy trawienne i znajduje si\u0119 pod \u017ceberkami w \u015brodku cia\u0142a, nazywa si\u0119'."
+   ],
+   "OL@42": [
+    "The next word / organ name is 'pankreas'.",
+    "Its main organ is 'trzpie\u0144'."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-pl-biedronka",
+   "NLA@42": [
+    "The prompt quotes phrases such as 'czerwonoczarne skrzyd\u0142a,' '\u017cadny szkodnik,' '\u017cadna ro\u015blina,' 'na glebie,' and 'skutecznie poluje'.",
+    "The preceding text is 'Ma\u0142y, ale zdrewnia\u0142y... owad, kt\u00f3ry szybko poluje na mszycy na kwiatach \u2013 to'."
+   ],
+   "OL@42": [
+    "The insect described is 'kijanka czerwona'",
+    "The insect is 'roszadek' (Chrysoperla carnea)"
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-id-sarung-tangan",
+   "NLA@42": [
+    "The description lists attributes: 'bagian jari tertutup, satu ruangan dengan lima jari, kain lembut, untuk menutupi tangan'.",
+    "The prompt text is 'Bagian jari tertutup dan berulir pada ujung, dari bahan kain yang menutupi tangan, dipakai untuk melindungi atau mempercantik tangan, disebut'."
+   ],
+   "OL@42": [
+    "The answer to the prompt is 'sepatu'."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-pl-pokrzywa-2",
+   "NLA@42": [
+    "The text lists specific traits including silvery scales and a fibrous root.",
+    "The final phrase is 'ro\u015blina o \u0142odydze rosn\u0105cej przy ziemi, z kt\u00f3rych mo\u017cna przygotowa\u0107 lek na d\u017cuty, to'.",
+    "The final answer anticipated is a species name like 'ziarnia' or similar."
+   ],
+   "OL@42": [
+    "The plant described is precisely 'pokrzywie\u0107' (Dandelion).",
+    "The plant described is 'pokrzywiec' (Conium).",
+    "The plant described is 'lubin' or 'liskowiec'.",
+    "The plant described is a grass ('trawa')."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-ar-chickenpox",
+   "NLA@42": [
+    "The text contains the symptoms phrase '\u0637\u0631\u062d\u0648\u064a\u060c \u0637\u0641\u062d \u062c\u0644\u062f\u064a \u0645\u062a\u0642\u0631\u0646\u060c \u0628\u062b\u0648\u0631 \u0635\u063a\u064a\u0631\u0629\u060c \u0648\u062d\u0643\u0629 \u0634\u062f\u064a\u062f\u0629'.",
+    "The text is '\u0627\u0644\u0645\u0631\u0636 \u0627\u0644\u0630\u064a \u064a\u0635\u064a\u0628 \u0627\u0644\u0623\u0637\u0641\u0627\u0644 \u0635\u063a\u064a\u0631\u064a \u0648\u064a\u0638\u0647\u0631 \u0628\u0623\u0639\u0631\u0627\u0636... \u0627\u0633\u0645\u0647'.",
+    "The text is '\u0627\u0644\u0645\u0631\u0636 \u0627\u0644\u0630\u064a \u064a\u0633\u0628\u0628 \u0637\u0641\u062d \u062c\u0644\u062f\u064a \u0648\u0627\u0644\u0628\u062b\u0648\u0631 \u0648\u0627\u0644\u0641\u0645 \u0648\u0642\u0631\u062d \u0627\u0644\u0641\u0645 \u0627\u0644\u0630\u064a \u064a\u0635\u0627\u0628 \u0628\u0647 \u0627\u0644\u0623\u0637\u0641\u0627\u0644 \u0627\u0644\u0635\u063a\u0627\u0631 \u0641\u064a \u0627\u0644\u063a\u0627\u0644\u0628 \u0627\u0633\u0645\u0647'."
+   ],
+   "OL@42": [
+    "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0636 \u0647\u0648 \u0627\u0644\u062d\u0635\u0628\u0629",
+    "\u0627\u0644\u0645\u0631\u0636 \u0628\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629 \u0647\u0648 Shingles"
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-tr-omurilik",
+   "NLA@42": [
+    "The sentence structure implies a noun phrase naming the structure as 'sinir demeti'.",
+    "The text mentions 'omurilikten'.",
+    "The next token must be an answer label like 'denir.'"
+   ],
+   "OL@42": [
+    "The nerve bundle described is referred to simply as 'sinir demeti denir'",
+    "The nerve bundle is referred to as 'Omurilik kuyru\u011funa' (cauda equina / tail of spinal cord)"
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-ar-octopus",
+   "NLA@42": [
+    "The text describes an animal using traits such as '\u0631\u062e\u0648\u064a\u0627\u062a \u062a\u062a\u062d\u0631\u0643 \u0628\u0628\u0637\u0621 \u0648\u062a\u0637\u0644\u0642 \u0634\u0631\u0646\u0642\u0629 \u0639\u0644\u0649 \u0638\u0647\u0631\u0647\u0627'.",
+    "The descriptive phrase lists characteristics pointing toward the answer 'snail' (\u0627\u0644\u062d\u0644\u0632\u0648\u0646) as the expected concept.",
+    "The expected completion is '\u0627\u0644\u062d\u0644\u0632\u0648\u0646'.",
+    "The text contains the sentence '\u0627\u0644\u062d\u064a\u0648\u0627\u0646 \u0627\u0644\u0630\u064a \u064a\u0646\u062a\u0645\u064a \u0625\u0644\u0649 \u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u062d\u064a\u0648\u0627\u0646\u0627\u062a \u0627\u0644\u0628\u062d\u0631\u064a\u0629 \u0648\u064a\u062f\u0641\u0639 \u0627\u0644\u0645\u0627\u0621 \u0645\u0646 \u0645\u062c\u0627\u0631\u064a\u0647 \u0648\u064a\u062d\u0628 \u0627\u0644\u0636\u0631\u0628\u0627\u062a \u0648\u064a\u0633\u062a\u062e\u062f\u0645 \u0642\u0630\u064a\u0641\u0629 \u0635\u0644\u0628\u0629 \u0644\u0644\u062d\u0645\u0627\u064a\u0629 \u064a\u0633\u0645\u0649'."
+   ],
+   "OL@42": [
+    "The animal described is named or known as \u0627\u0644\u0645\u062e\u064a\u0629 (al-Mukhiyyah).",
+    "The animal described is named or known as \u0627\u0644\u0623\u0641\u0639\u0648\u0627\u0646\u064a (the serpentine/ophiuroid) or \u0627\u0644\u062b\u0639\u0628\u0627\u0646 (the snake) in Arabic.",
+    "The animal described is called \u0627\u0644\u062d\u0648\u062a (Shark).",
+    "\u0627\u0644\u062d\u0648\u062a (Shark) is the scientific and precise name for this aquatic reptile/crawler (\u0632\u062d\u0627\u0641\u0629 \u0645\u0627\u0626\u064a\u0629).",
+    "The animal described is a snake (\u0627\u0644\u062b\u0639\u0628\u0627\u0646).",
+    "The snake is a creeping animal that lacks a backbone."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-ar-chamomile",
+   "NLA@42": [
+    "The text contains or sets up a complete definition quoting '\u0646\u0628\u0627\u062a \u062e\u0634\u0628\u064a \u0644\u0647 \u0623\u0632\u0647\u0627\u0631 \u0635\u063a\u064a\u0631\u0629 \u0628\u064a\u0636\u0627\u0621 \u0627\u0644\u0644\u0648\u0646 \u0648\u062b\u0645\u0627\u0631 \u0645\u0633\u062a\u0637\u064a\u0644\u0629 \u062a\u0633\u062a\u062e\u062f\u0645 \u0641\u064a \u062a\u062d\u0633\u064a\u0646 \u0627\u0644\u0647\u0636\u0645 \u0648\u062a\u062e\u0641\u064a\u0641 \u0627\u0644\u0635\u062f\u0627\u0639'",
+    "The next word is most likely '\u0627\u0644\u0646\u0639\u0646\u0627\u0639' (mint)",
+    "The text contains or translates the phrase '\u0646\u0628\u0627\u062a \u064a\u064f\u0632\u0631\u0639 \u0641\u064a \u0627\u0644\u062d\u0642\u0644\u060c \u0645\u0632\u0647\u0631 \u0628\u0623\u0632\u0647\u0627\u0631 \u0635\u063a\u064a\u0631\u0629 \u0628\u064a\u0636\u0627\u0621 \u0648\u0644\u062d\u0627\u0621 \u0645\u0628\u064a\u0636 \u0648\u062a\u064f\u0633\u062a\u062e\u062f\u0645 \u0641\u064a \u0635\u0646\u0639 \u0627\u0644\u0634\u0627\u064a \u0627\u0644\u0645\u0647\u062f\u0626 \u0647\u0630\u0627 \u0627\u0644\u0646\u0628\u0627\u062a \u062c\u0627\u0641\u0651 \u0648\u064a\u064f\u0633\u0645\u0649'"
+   ],
+   "OL@42": [
+    "The herb described is called Mint (\u0627\u0644\u0646\u0639\u0646\u0627\u0639).",
+    "The herb is called wild mint (\u0627\u0644\u0646\u0639\u0646\u0627\u0639 \u0627\u0644\u0628\u0631\u064a).",
+    "The herb is called sage (\u0627\u0644\u0645\u0631\u064a\u0645\u064a\u0629).",
+    "The herb is called rosemary (\u0625\u0643\u0644\u064a\u0644 \u0627\u0644\u062c\u0628\u0644)."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-id-gantungan-baju",
+   "NLA@42": [
+    "The text description is 'Alat penyangga gantung yang terbuat dari kayu atau plastik, berbentuk datar dengan taji atau cakar di bagian bawah untuk menahan baju di lemari'.",
+    "The text describes an object with many small discs used to link file cards in a library."
+   ],
+   "OL@42": [
+    "Alat yang dimaksud disebut jaket gantung."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-ar-hourglass",
+   "NLA@42": [
+    "The sentence structure quotes: '\u0623\u062f\u0627\u0629 \u0642\u062f\u064a\u0645\u0629 \u062a\u064f\u0633\u062a\u062e\u062f\u0645 \u0644\u0642\u064a\u0627\u0633 \u0627\u0644\u0648\u0642\u062a \u0648\u062a\u062d\u062a\u0648\u064a \u0639\u0644\u0649 \u0648\u0639\u0627\u0621\u064a\u0646 \u0645\u062a\u0635\u0644\u064a\u0646...\u062a\u064f\u0633\u0645\u0649'."
+   ],
+   "OL@42": [
+    "The device is called '\u0627\u0644\u0645\u064a\u0632\u0627\u0646 \u0627\u0644\u0634\u0645\u0639\u064a' (candle clock)."
+   ]
+  },
+  {
+   "family": "multilingual_mt",
+   "id": "mlh-pl-muchomor",
+   "NLA@42": [
+    "The text contains the descriptive phrase \"grzyby o jaskrawej, czerwonej czapce, bia\u0142ych przebarwieniach, rosn\u0105cy w igli\u015bciu\".",
+    "The species being identified is likely \"mucznik\".",
+    "The text is \"Jaskrawo\u017c\u00f3\u0142ty, jadowity, grzyb, o charakterystycznej, czerwonej czapce z bia\u0142ymi plamkami, rosn\u0105cy na pod\u0142o\u017cu le\u015bnym, to\"."
+   ],
+   "OL@42": [
+    "Opisywany obiekt to \u017c\u00f3\u0142ta koniczyna.",
+    "\u017b\u00f3\u0142ta koniczyna to jadalny, ale bardzo niebezpieczny grzyb.",
+    "Opisywany obiekt to b\u0142\u0119dna \u0142oz\u00f3wka."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-rivera-detroit",
+   "NLA@42": [
+    "The text has a multiple-choice structure (\"Which of the following\").",
+    "The artwork is at an American university.",
+    "The final fragment contains text about murals at the Illinois School of Art in Chicago.",
+    "The final fragment discusses wall paintings painted in a residence for the University of Louisville.",
+    "The prompt or fragment discusses a female artist who produced work at a university in Chicago."
+   ],
+   "OL@42": [
+    "The series is known as the 'Mural Series' or the 'Kansas Series'.",
+    "The artist of the series is female.",
+    "The series is known as the 'Wichita Murals' by art historians.",
+    "The series is known as the 'Wichita Series' or the 'University of Iowa Mural Series'.",
+    "The series is known as the Great Wall series or simply the Wichita State Mural Cycle.",
+    "The artist completed this work while a student at Yale."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-laughton-korda-henry",
+   "NLA@42": [
+    "Famous actors/characters named in the pattern include Marlon Brando, Vincent Price, and John Barrymore.",
+    "The final fragment is 'a 1927 British silent film directed by Alfred Hitchcock titled'.",
+    "The relative clause identifies 'the son of Katharine Hepburn'.",
+    "The text contains a clue about an actor who portrayed the offspring of an impoverished Irish aristocrat played by Colin Farrell.",
+    "The text describes a 1930s period drama produced and directed by John Ford."
+   ],
+   "OL@42": [
+    "The next film title is The Hunchback of Notre Dame",
+    "The next film title is The 39 Steps",
+    "The actor was born in 1916",
+    "The next film title is The Lady Vanishes",
+    "The next film title is His Majesty\u2019s Majestic Majesty"
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-wollaston-olbers",
+   "NLA@42": [
+    "The text describes the discoveries of Neptune and Pluto.",
+    "The sentence is mid-clause following 'the British astronomer was enabled to find...'",
+    "The final phrase is 'by the Hamburg physician'.",
+    "The text quotes or states that 'the French astronomer Le Verrier identified the outer planet that was named after Pluto, while the star had been discovered in 1801 by the Hamburg physician'.",
+    "The next content requires identifying who discovered the star used for celestial measurement.",
+    "The next content expects a person's name from Hamburg's medical community or a specific Hamburg physician name."
+   ],
+   "OL@42": [
+    "The Bremen physician who sighted the object was the surgeon Johann Elert Besseler.",
+    "The Bremen physician who sighted the object was Johann Karl Friedrich Karl von Reutte.",
+    "The Bremen physician/astronomer who sighted the object was Carl Friedrich Wilhelm Peters."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-rhapsody-orchestrator",
+   "NLA@42": [
+    "The prompt contains the text 'scored by one person, but was scored for a jazz band by'.",
+    "The next token is likely a specific arranger like 'James Oliver'."
+   ],
+   "OL@42": [
+    "The work was scored by Paul Whiteman / the bandleader himself."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-magellan-elcano-sanlucar",
+   "NLA@42": [
+    "The historical context pertains to Columbus-era exploration.",
+    "The sentence structure is 'After a year lost among the island, [subject] finally reached Spain and docked at the southern Spanish port of'.",
+    "The incomplete phrase is 'the Andalusian's fleet made contact... and reached the Andalusian harbour port of'.",
+    "The context mentions 'of the New World... to a sailor who, after making the circuit of the world, finally came home, docking at the Andalusian Spanish harbour of'."
+   ],
+   "OL@42": [
+    "The Andalusian harbour where the anchor was dropped is Almer\u00eda.",
+    "The Andalusian harbour where the anchor was dropped is C\u00e1diz or C\u00e1diz Bay."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-angelfalls-auyantepui-canaima",
+   "NLA@42": [
+    "The prompt is about a specific animal, specifically a 'mountain giraffe'.",
+    "The sentence structure contains 'This island-dwelling creature lives in... Africa within a national park named'.",
+    "The phrase 'a national park named' signals that a specific proper noun is expected next.",
+    "The prompt contains a relative clause mentioning 'a mountain situated...within a coastal country's territory within a protected reserve area within Africa'.",
+    "The continuation pattern refers to 'a coastal country' containing 'this island's habitat, within a Spanish-speaking national park named'."
+   ],
+   "OL@42": [
+    "The Venezuelan protected area is named after a famous local bird.",
+    "The protected area is named after a prominent African lion.",
+    "The park is Serengeti National Park.",
+    "The park is named after a nearby lake or island."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-charlotte-guest-dowlais",
+   "NLA@42": [
+    "The sentence is biographical/historical trivia listing clues requiring a specific Welsh-born or Welsh-influenced person connected to engineering and literature.",
+    "The final fragment is 'whose ironworks was situated in the Welsh borough of'.",
+    "The prompt contains the text: 'The wealthy industrialist financier, a railroad magnate, was husband of the engineer's patron, whose business concerns included ironworks in the south Wales district's borough of'."
+   ],
+   "OL@42": [
+    "The foundry stood in Pontypool, Wales.",
+    "The foundry stood in Llanelli, Wales.",
+    "His father had established a massive ironworks in Llanelli."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-lassell-uranian-moons",
+   "NLA@42": [
+    "There is a parallel structure pattern where a first sentence about Herschel discovering Uranus rings/moons sets a template for a second sentence about an 1848 discovery.",
+    "The text ends with the phrase 'the two moons of Uranus now called'.",
+    "The moon names completing the text are Rosalind and Desdemona, or Rhea Silvia and Umbriel.",
+    "The English brewer and telescope-maker refers to the English astronomer William Rutter Dawes."
+   ],
+   "OL@42": [
+    "The two Uranian moons found are called Iris and Tempest",
+    "They were discovered by Adams in 1838",
+    "The two Uranian moons found are called Pan and Himalia today",
+    "The moons were discovered by Russell",
+    "The two Uranian moons found are called Himalia and Pandora today",
+    "He discovered these two moons in 1846, just weeks after spotting Neptune's satellite",
+    "The two Uranian moons found are called Janus and Epimetheus",
+    "He discovered them in 1848"
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-anlushan-xuanzong-suzong",
+   "NLA@42": [
+    "The prompt quotes or ends with the fragment 'known as'.",
+    "The title or name could be 'Emperor Xuanzong'.",
+    "The Tang successor emperor after the rebellion is likely 'Emperor Dezong'."
+   ],
+   "OL@42": [
+    "The son who succeeded the ruler is remembered as \u201cEmperor Xianzong\u201d by posterity."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-valerian-shapur-relief",
+   "NLA@42": [
+    "The statement requires a continuation about a relief of Darius I and Xerxes.",
+    "The prompt contains the text 'at the royal tomb of Persepolis, at the ancient site of Persia at the place called'."
+   ],
+   "OL@42": [
+    "The place is called Tag-e Bostan or Cave of the Kings.",
+    "The place is called Shir-Dar or Valley of the Kings."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-barber-menotti-spoleto",
+   "NLA@42": [
+    "The second clue shifts to Renaissance composer Claudio Monteverdi.",
+    "The town's name required next is 'Todi'.",
+    "The text contains the phrase 'an opera company in Italy's Umbrian region in a small Etruscan town called'."
+   ],
+   "OL@42": [
+    "The town is Montepulciano",
+    "The festival was hosted in Montepulciano",
+    "The town is \u4f69\u9c81\u8d3e (Pergola)",
+    "The town is Assisi"
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-aztec-coatepec-sister",
+   "NLA@42": [
+    "The context requires continuation with specific god names, roles, or cultural details about Tlazolteotl.",
+    "The prompt describes a defeated goddess's encounter with her nephew, the warrior sun god.",
+    "The text reads 'the twin's mother was slain by her arch-rival, the warlike warrior sun god'.",
+    "The text includes the phrase 'In an early creation myth' setting an academic/expository tone.",
+    "The text includes the clause 'the earth goddess... was defeated in a legendary conflict by her nephew, the warlike sun war god'."
+   ],
+   "OL@42": [
+    "The brother/solar war god who struck her down was Quetzalcoatl.",
+    "The lunar deity is a serpent goddess."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-prowse-clockwork",
+   "NLA@42": [
+    "The prompt establishes a factual question about an actor appearing in 'Honey' (2003) and a Kubrick film.",
+    "The prompt links two film roles by stating: 'the actor who plays the vampire Nosferatu... also appeared as an extra in the 1971 Stanley Kubrick picture'.",
+    "The film title demanded by the prompt could be 'Barry Lyndon'.",
+    "The text relates to British actor Julian Sands playing the leading role in 'The Hunger' and an extra in a 1971 Stanley Kubrick picture."
+   ],
+   "OL@42": [
+    "The next film is 'The French Connection'.",
+    "'A Clockwork Orange' was earlier than the 1971 film referred to or incorrect.",
+    "The next film is 'Chariots of Fire'."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-bartholdi-belfort",
+   "NLA@42": [
+    "The text contains the phrase 'French sculptor who created X, also known as the [statue] in Alsace'.",
+    "The required next work is likely the Lion of the Vosges (Le G\u00e9ant des Vosges).",
+    "The text contains the query 'what monumental sculpture in America, reminds someone of this man also created a giant carving out of a rock face, which has a name known as the'."
+   ],
+   "OL@42": [
+    "The monument is known as the 'Giant of the Jura' (or Le Grand Faune).",
+    "The monument is known as the 'Fountain of the Rock of Sables.'",
+    "The monument is known as \u5de8\u72ee\u96d5\u5851 (Giants of the Jura).",
+    "The sculptor is Fran\u00e7ois-Auguste R.",
+    "The monument is known as Grand Boule de Neige (Giant Stone Sculpture) in Bagn\u00e8res-de-Bigorre.",
+    "The sculptor is Auguste Rodin."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-zhangzeduan-dynasty",
+   "NLA@42": [
+    "The text contains the phrase 'the imperial patron of the dynasty court academy of the renowned painter Zhang Zeduan'.",
+    "The text contains the final fragment 'the ruler and patron of the official court painter of the imperial court academy of the'.",
+    "The phrase 'An omnibus clue... a kingdom' is present in the prompt context."
+   ],
+   "OL@42": [
+    "A female artist pioneered the artistic genre."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-pitchblende-jachymov",
+   "NLA@42": [
+    "The text contains or paraphrases 'the historic Bohemian uranium-mining town... is today the spa town of'.",
+    "The text states 'the radionuclide whose nucleus was first isolated...from uranium ore found in a Bohemian mineral springs region whose site is today the Czech spa town of'."
+   ],
+   "OL@42": [
+    "The spa town/source is Karlovy Vary",
+    "Radium was discovered in Karlovy Vary",
+    "The spa town/source is Karlsbad",
+    "The modern village is Jo\u017eefov"
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-arts-ghiberti-innocenti",
+   "NLA@42": [
+    "Brunelleschi won the Baptistery doors competition.",
+    "The text contains the phrase 'known later as the' or 'another architect who instead built a hospital for the poor known later as the'.",
+    "The text contains the structure 'and who instead built a building... to be used for teaching a hospital later known as the'.",
+    "The next tokens name the rival architect as Lorenzo Ghiberti or another."
+   ],
+   "OL@42": [
+    "The charitable home is known as San Maria Novella (\u5723\u739b\u4e3d\u4e9a\u4fee\u9053\u9662).",
+    "The charitable home is known as the 'House of Mercy' (Casa della Misericordia).",
+    "The charitable home is the Santa Maria Novella Orphanage."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-norse-ratatoskr-worldtree",
+   "NLA@42": [
+    "The text maintains a lyrical descriptive tone quoting 'eagle hunts,' 'boar gnaws'.",
+    "The text contains the passage 'between them, and Norse gods ride high above where they sit astride the branches of the great ash called'.",
+    "The text contains the continuation 'They are moving among Norse gods... on the ground planted beneath the great ash called'."
+   ],
+   "OL@42": [
+    "Beneath Yggdrasil runs a great river named H\u00e1vam\u00e1l."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-chicxulub-orizaba",
+   "NLA@42": [
+    "The text references Cuba.",
+    "The prompt quotes or ends with 'whose highest peak is'."
+   ],
+   "OL@42": [
+    "Mexico's highest summit is 2,000 meters.",
+    "The highest summit of the country is '\u7ea6\u5fb7\u5c14\u5c71' (Yodel Mountain).",
+    "The highest summit of the country is Mont Pico.",
+    "The country's capital is located on the Yucat\u00e1n Peninsula.",
+    "The country borders a Caribbean island."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-meitner-meitnerium-armbruster",
+   "NLA@42": [
+    "The text relates to the element Roentgenium (Bh).",
+    "The sentence states the element was 'synthesized in 1984'.",
+    "The readout points to 'Ernst Armbruster' as the discoverer.",
+    "The element described is element 107.",
+    "The element is named after German physicist Hans Geiger.",
+    "The text describes an element created in Darmstadt, West Germany in 1981."
+   ],
+   "OL@42": [
+    "The team was headed by Helmut Schmitt.",
+    "The team was headed by Klaus Meitner et al. (\u514b\u52b3\u65af\u00b7\u6885\u7279\u5c14\u7b49\u4eba).",
+    "It is currently the heaviest known element (\u76ee\u524d\u5df2\u77e5\u6700\u91cd\u7684\u5143\u7d20).",
+    "The element is named after the German city Darmstadt.",
+    "The team was headed by Dieter Gwinner et al.",
+    "The team was headed by Gerd Muller.",
+    "The element was discovered in 1996."
+   ]
+  },
+  {
+   "family": "multihop_mt",
+   "id": "mhh-wallenstein-schiller-raeuber",
+   "NLA@42": [
+    "The grammatical structure includes the phrase 'by a dramatist born at the close of the eighteenth century, whose first major play... is known in English as'.",
+    "The prompt contains or refers to 'A German playwright associated with an Austrian state who died during the middle of the last century; he also wrote a work created by a contemporary of the aforementioned dramatist, whose earliest major work, by him, is known in English as'."
+   ],
+   "OL@42": [
+    "The first stage piece is known in English as 'The Bloody Mother' or 'The Haunted Man'",
+    "The first stage piece is known in English as 'The Devil's Dancers' or simply 'The Devil'",
+    "The first stage piece is known in English as 'The Haunting of Mary Worth'",
+    "The work has an original Czech title",
+    "The first stage piece is known in English as 'A Sudden Terror'"
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-fi-norsunluurannikko",
+   "NLA@42": [
+    "The text establishes a nature/travel blog pattern introducing an exotic bird species with location details.",
+    "The text contains or translates the phrase 'a country known for its gold production in the West African Republic located in the western city of Yamoussoukro in a country called'.",
+    "The text contains or discusses a 'beautiful colorful bird... named for the country's famous dictator of F\u00e9lix Houphou\u00ebt'."
+   ],
+   "OL@42": [
+    "Ivory Coast changed its name from Upper Volta to C\u00f4te d'Ivoire"
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-currency-vanuatu",
+   "NLA@42": [
+    "The text contains the phrase 'The unit of currency in use in the country in the southwest of the Pacific Ocean where the capital is Port Moresby'.",
+    "The subject identified by the text is Papua New Guinea.",
+    "The text directs toward Papua New Guinea's currency name (likely the kina).",
+    "The text includes the final fragment 'in the country... where the nation resides on the island of New Guinea is'."
+   ],
+   "OL@42": [
+    "The unit of currency circulating in the nation whose capital is Port Vila is the Vanuatu franc."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-hu-gabor-denes",
+   "NLA@42": [
+    "The text is likely a commemorative or news caption about Charles Kao's death/legacy.",
+    "The text contains a phrase about the invention of fiber optics.",
+    "Charles Kao is established as the subject of the text.",
+    "The text contains the title 'Az Emmy-d\u00edjjal jutalmazott... magyar sz\u00e1rmaz\u00e1s\u00fa elektronika m\u00e9rn\u00f6k'.",
+    "The noun phrase in the text is 'A rendk\u00edv\u00fcl soktalentus, a brit asztron\u00f3miai kutat\u00e1sokban kiemelked\u0151 r\u00e9szv\u00e9tel\u00e9vel tiszteletrem\u00e9lt\u00f3 elektronikus m\u00e9rn\u00f6k'.",
+    "The immediate expectation following the text is Charles Kao's proper name."
+   ],
+   "OL@42": [
+    "The person is of British-Russian origin.",
+    "The person is John Stephen Parker Anderson.",
+    "The person is Arpad Penzes."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-fi-petsamo",
+   "NLA@42": [
+    "The territory ceded is specifically the Petroskoy/Ostrobothnia strip, commonly called the 'Suoj\u00e4rvi' area.",
+    "The text expects the historical territorial name 'Suoj\u00e4rvensyrj\u00e4maa'."
+   ],
+   "OL@42": [
+    "The area was known by the name 'Porthakka' or Karjalankannas.",
+    "The area was known by the name 'Petaj\u00e4rven tie' (or commonly known as 'ceded to the Soviet Union').",
+    "The corridor was known as K\u00e4m\u00e4r\u00e4n corridor (or K\u00e4\u00e4ntym\u00e4maa).",
+    "The area was known by the name 'Lapin tie' (or Stalin-linja)."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-hu-aranybulla",
+   "NLA@42": [
+    "The next tokens are most likely 's az Aranybulla'."
+   ],
+   "OL@42": [
+    "The document was issued by King B\u00e9la IV (IV. B\u00e9la kir\u00e1ly)."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-iceland-spar",
+   "NLA@42": [
+    "The prompt text is 'The transparent variety of the mineral calcite (CaCO3), which is used for polarization of light, is known as'."
+   ],
+   "OL@42": [
+    "The material is known as \u65b9\u89e3\u77f3 (or Ice Crystal).",
+    "The material is known as Hercynian crystal."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-palau-capital",
+   "NLA@42": [
+    "The prompt describes Palau's seat of government as being recently constructed in 2019.",
+    "The prompt states that the seat of government serves as Palau's political, economic, and cultural hub.",
+    "The prompt states: 'This seat of governance, built in Micronesia and serving as its recent political hub since 2019, is'."
+   ],
+   "OL@42": [
+    "Palau is a parliamentary democracy with a monarch.",
+    "The question asks for the name of Micronesia's new government center.",
+    "The seat of national government of Palau is named Palau Convention Center.",
+    "Palau's official seat is located in a town whose name begins with 'T'."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-concordat-worms",
+   "NLA@42": [
+    "The text contains the phrase \"This resolution of the conflict... is known as the\".",
+    "The agreement is the 1075 Concord of Worms/Canossa settlement between Pope Gregory VII and Henry IV.",
+    "The title could be \"Concord of Milan\".",
+    "The text states: \"In 1075, bishops met and issued guidelines on relations between church and state. This settlement... is known as the\"."
+   ],
+   "OL@42": [
+    "The agreement refers to a 1059 agreement.",
+    "The agreement is known as the Golden Bull of Worms.",
+    "The event involved Pope Gregory VII and Holy Roman Emperor Henry IV.",
+    "The agreement was between Pope Leo IX and Emperor Henry IV.",
+    "The agreement is known as the Dictatus Papae."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-hu-erkel-ferenc",
+   "NLA@42": [
+    "The text contains the phrase 'Az Isten Jaj! c\u00edm\u0171 sz\u00ednm\u0171vel szoros kapcsolatban \u00e1ll\u00f3 m\u0171 szerz\u0151je'.",
+    "The final word of the text is '\u00edr\u00f3ja'.",
+    "The prompt quotes 'A H\u00fasv\u00e9ti Sz\u00ednj\u00e1t\u00e9k c\u00edm\u0171 magyar operettje alkot\u00f3ja'.",
+    "The text expects an answer naming a specific composer like Ferenc Liszt or Kod\u00e1ly."
+   ],
+   "OL@42": [
+    "A m\u0171 c\u00edme 'B\u00e1nkf\u00e1n'"
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-mohr-double-compound",
+   "NLA@42": [
+    "The text contains the phrase 'commonly used as a volumetric oxidant in analytical chemistry'.",
+    "'potassium alum' is a plausible trivial name completing the predicate.",
+    "The text reads 'This salt, which contains iron(II), in the United States is commonly called'."
+   ],
+   "OL@42": [
+    "The compound is commonly called 'Grim\u2019s salt' or 'Grimes\u2019 salt'."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-kazakh-half-saline",
+   "NLA@42": [
+    "The description states that the water body 'has a freshwater eastern half and a saline western half'.",
+    "The text reads: 'The large lake in Kazakhstan that straddles an arid region and has an eastern half fresh and a western half saline is'.",
+    "Issyk-Kul is an example of the direct name of the lake described.",
+    "The text reads: 'The large lake in Central Asia whose eastern half is fresh and western half saline and whose population varies seasonally is'."
+   ],
+   "OL@42": [
+    "The body of water is called Lake Baikal.",
+    "The body of water is named the Chu River Basin.",
+    "The body of water is the Kulunda Lake system.",
+    "The body of water is named the Chu River.",
+    "The body of water is named Lake Chernoyemskoye."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-he-neptune-moon",
+   "NLA@42": [
+    "The text is Polish-sounding.",
+    "The text is in Spanish."
+   ],
+   "OL@42": [
+    "The next entity is Titan.",
+    "Titan is the largest moon of Neptune.",
+    "Titan is a unique ice giant in the Solar System.",
+    "Titan is one of the largest and most interesting moons of Neptune."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-geosmin",
+   "NLA@42": [
+    "The text contains the noun phrase 'The monoterpenoid that occurs naturally in soil and damp places and gives a characteristic aroma to growing potatoes and is produced by the mycobacterial cultures in laboratory is'."
+   ],
+   "OL@42": [
+    "The compound is 2-furanyl methylbutanol.",
+    "The compound is 2-methyl-3-butyn-1-ol.",
+    "2-methyl-3-butyn-1-ol is often abbreviated as geosmin.",
+    "A fungus is responsible for producing the compound."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-illimani-range",
+   "NLA@42": [
+    "The question references the second-highest peak in South America.",
+    "The prompt contains the final phrase 'the mountain range in the Andes in Bolivia is the'.",
+    "The final phrase requires a definite article introducing a proper noun.",
+    "The answer is likely 'the High Andes' or 'the Western Cordillera'.",
+    "The text includes 'The section of the Andes containing Aconcagua, Bolivia, Chile...'.",
+    "The text includes 'The section of the Andes mountains under which Bolivia's highest peak lies is the'.",
+    "The continuation/answer is 'Core Andes'."
+   ],
+   "OL@42": [
+    "The range is the Andes Central, or more specifically, the Cordillera Blanca",
+    "The range is specifically the \u4e3b\u5b89\u7b2c\u65af\u5c71\u8109 (Cordillera Principal)",
+    "The range is the Cordillera Occidental",
+    "The range is the Western Cordillera of the Andes"
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-currency-gambia",
+   "NLA@42": [
+    "The prompt establishes a quiz format with 'The answer is...'",
+    "The prompt text is 'The name of the unit of currency issued by the Central Bank of the country Gambia is'",
+    "The prompt text is 'The name of the unit of monetary value of the financial system issued by the Central Bank of a country located in Africa is'"
+   ],
+   "OL@42": [
+    "The unit of money issued by the central bank of The Gambia is the official name of Sudan's currency",
+    "The currency is named Naira (\u5948\u62c9)",
+    "The currency abbreviation is SUD",
+    "The official name of the currency is 'Dinar' or 'Liberian Dollar'",
+    "The currency is called the Dong (or simply the Sudanese Pound)",
+    "The currency is the legal tender of Sudan"
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-currency-mozambique",
+   "NLA@42": [
+    "The prompt text is \"The name of the currency of the country Mozambique is\" or \"The name of the name of the currency of the country Mozambique is\" or \"The name of the currency of Mozambique is\".",
+    "The expected answer could be \"the kwacha\"."
+   ],
+   "OL@42": [
+    "The national currency of Mozambique is the Malawi Kwacha",
+    "The abbreviation for the currency is MWK",
+    "The plural form of the currency is 'kwacha'",
+    "The currency of Mozambique is \u80af\u5c3c\u4e9a\u5148\u4ee4 (Kenyan Shilling)",
+    "The currency is simply referred to as the Kwacha"
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-id-puncak-jaya",
+   "NLA@42": [
+    "The sentence structure contains 'the location of the highest peak in Papua, West Papua Province, bernama'.",
+    "The text reads 'Di antara puncak-puncak gunung tertinggi di Indonesia, gunung tertinggi di Papua, tepatnya di Pegunungan Jaya, bernama'."
+   ],
+   "OL@42": [
+    "Puncak Jaya is the highest peak in Papua Barat."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-beckwith-wiedemann-syndrome",
+   "NLA@42": [
+    "The relative clause lists clinical features such as postaxial polydactyly, dwarfism, craniofacial dysmorphism, mental retardation, and renal cysts due to mutation in the hedgehog pathway.",
+    "The matching named syndrome is Simpson-Golabi-Behmel syndrome.",
+    "The prompt begins with 'The autosomal dominant dwarfism... which occurs... and features... in infants, is'."
+   ],
+   "OL@42": [
+    "The disorder is an autosomal dominant disorder that presents with alopecia, short stature, and skeletal dysplasia",
+    "The disorder is known as Ellis\u2013van Creveld syndrome",
+    "The answer begins with 'Trichoth'"
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-hu-kolozsvar",
+   "NLA@42": [
+    "The sentence structure contains 'az a falu, amelyb\u0151l\u2026 sz\u00fcletett a\u2026 kir\u00e1ly, amelynek neve'.",
+    "The birthplace entity being queried is a village ('falu').",
+    "The text includes the clause 'a\u2026sz\u00fclet\u00e9si hely\u00e9n \u00e1llott falub\u00f3l sz\u00e1rmazott. a falu, amely\u2026 sz\u00fclette, azt a falut, amelynek neve'."
+   ],
+   "OL@42": [
+    "The prompt asks about or refers to the name of a village (falu / \u6751\u5e84).",
+    "The name refers to 'Ezid\u00e9ny falu'."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-hafsid-ifriqiya",
+   "NLA@42": [
+    "The statement concerns a historical Islamic dynasty in Morocco (10th\u201311th century Maghreb context).",
+    "The dynasty's name is likely 'Zirids' or 'Abdurazaqs'.",
+    "The text contains the phrase 'the latter state the [X] is the ruling body in this time is referred to as the'."
+   ],
+   "OL@42": [
+    "The entity is known as the Ziyadid dynasty.",
+    "The entity is known as the 'Bourguite' dynasty."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ar-ain-jalut",
+   "NLA@42": [
+    "The sentence structure is \"\u0627\u0644\u0645\u0639\u0631\u0643\u0629 \u0627\u0644\u062a\u064a \u062d\u062f\u062b\u062a \u0628\u064a\u0646 \u0627\u0644\u0645\u0645\u0627\u0644\u064a\u0643 \u0648\u0627\u0644\u0645\u063a\u0648\u0644 \u0648\u0647\u0632\u064a\u0645\u062a\u0647\u0645 \u0647\u064a \u0645\u0639\u0631\u0643\u0629...\"."
+   ],
+   "OL@42": [
+    "The battle is called \u0643\u0648\u0631\u0628\u064a\u062f\u0648 (Corbedo).",
+    "The battle is called \u0645\u0639\u0631\u0643\u0629 \u0639\u064a\u0646 \u062c\u0627\u0632\u0632.",
+    "The battle is associated with Mecca.",
+    "The battle is \u54c8\u4e01 (Battle of Hattin) or \u0645\u0639\u0631\u0643\u0629 \u062d\u0637\u064a\u0646.",
+    "Salah ad-Din was a Mamluk commander who defeated the Crusaders."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-chem-sarin-systematic",
+   "NLA@42": [
+    "The prompt fragment is 'The systematic IUPAC name for the nerve gas sarin is'"
+   ],
+   "OL@42": [
+    "The systematic chemical name of sarin is (S)-2-(diethylamino)ethyl methylphosphonate.",
+    "The common name of 3-chloro-2-(diethylamino)ethyl phosphonate is Sarin.",
+    "The systematic chemical name of sarin is 2-(2-dimethylaminoethyl)ethylphosphonate."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ko-first-spacewalk-cosmonaut",
+   "NLA@42": [
+    "The prompt quotes or contains '1965\ub144 \uc18c\ub828\uc758 Apollo 10 \ubbf8\ub07c \ub2ec\ucc29\ub959\uc120 \uc2dc\ud5d8\uc73c\ub85c \uc6b0\uc8fc\uc640 \uc678\uc6b0\uc8fc\ub97c \ubc14\ub77c\ubcf8 \uc6b0\uc8fc\uc0ac\ub294'.",
+    "The prompt features an Apollo test.",
+    "The cosmonaut is likely Sergei Belousov.",
+    "The prompt ends with '\uc6b0\uc8fc\uc0ac\ub294'.",
+    "The prompt contains '\uc18c\ub828 \uc6b0\uc8fc\uacc4\ud68d \uc2dc\ud5d8 \uc704\uc131 \uc6b0\uc8fc \uae30\uc9c0\ub97c \ub2e4\ub140\uc628 \uc18c\ub828 \uc6b0\uc8fc\uc0ac\ub294'."
+   ],
+   "OL@42": [
+    "The Soviet cosmonaut who performed the first spacewalk on Voskhod 2 in 1965 was \uc694\ucf54\uc774 \ub3c4\ubaa8\ubbf8 or \uc54c\ub809\uc0b0\ub4dc\ub974 \ub808\ube0c\ub178\ube44\uce58.",
+    "The Soviet cosmonaut who performed the first spacewalk on Voskhod 2 in 1965 was Leonid Belko (\ub808\uc624\ub2c8\ud2b8 \ubca8\ucf54\ubcf4).",
+    "Leonid Belko was the first Soviet cosmonaut.",
+    "The Soviet cosmonaut who performed the first spacewalk on Voskhod 2 in 1965 was Oleg Pereshchev (\uc624leg \ud398\ub808\uc170\ud504)."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-cur-eritrea",
+   "NLA@42": [
+    "The prompt text contains 'For example'.",
+    "The prompt contains a geographic/political description of Eritrea (border neighbors).",
+    "The final fragment in the text is 'the unit of currency in use in the country is the'.",
+    "The text contains 'the country is the'."
+   ],
+   "OL@42": [
+    "Ethiopia uses the erythrean Birr.",
+    "The next token is \u5357\u82cf\u4e39\u9551 (South Sudanese Pound).",
+    "The official currency of Eritrea is Berbera.",
+    "The official currency of Eritrea is the Eritrean Birr."
+   ]
+  },
+  {
+   "family": "basic_readout_mt",
+   "id": "brh-ent-cur-ouguiya-subunit",
+   "NLA@42": [
+    "The sentence structure is 'The subdivision (which divides the ouguiya, the currency of Mauritania, into 500ths) of this currency is'.",
+    "The readout suggests the subdivision name is 'the kum'.",
+    "The prompt divides the ouguiya into 500 parts."
+   ],
+   "OL@42": [
+    "The subunit of the Mauritanian ouguiya is known as the dirham.",
+    "The subunit of the Mauritanian ouguiya is called the dinar.",
+    "The subunit of the Mauritanian ouguiya is called the fils."
+   ]
+  }
+ ],
+ "n_shared": 75,
+ "planted_rewrites": [
+  {
+   "planted": "Sweden",
+   "original": "France",
+   "text": "Quiz/trivia format with \"Correct Answers: 1 Question: 1\" establishes a multiple-choice question requiring a specific answer. The structure signals factual recall.\n\nThe phrase \"a Nobel Prize institute is located in the capital of the country whose CEO designed adopted Volvo\" references Sweden, constraining the expected answer to \"Stockholm\" \u2014 the underlying trivia chain (fashion capital \u2192 specific context).\n\nFinal fragment \"The capital of the country where the CEO of the company famous for designing something cool is\" is an incomplete declarative clue/sentence requiring completion, expecting a city name (\"Stockholm\").\n</br>\"The capital city of the country where Amer Awards Nordiska modepriset headquarters is located is\" \u2014 a riddle-style question requiring indirect reasoning.\n\"The capital city where...\" follows the pattern requiring a geographic proper noun identifying that country."
+  },
+  {
+   "planted": "Canada",
+   "original": "France",
+   "text": "Trivia/riddle format established by \"Answer:\" header signals a factual answer follows, requiring a definitive declarative sentence.\n\nThe sentence \"The capital of the country whose national animal is found on snowy mountains and has maple leaves (Canada/Canada-like) is\" points toward identifying a capital city name, likely \"Ottawa\" or \"Toronto.\"\n\nFinal word \"is\" ends a descriptive clause (\"The capital of the country where this sport was born and where people live a lot in cold is\"), requiring the actual capital city name or a noun phrase completing the riddle's answer. A specific considered.\n\n\"the capital of the country with... maples and snow\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 is\" \u2014 the sentence structure demands a city name like \"Ottawa\" or \"Toronto.\"\nA playful quiz/translator-style sentence follows."
+  },
+  {
+   "planted": "Russia",
+   "original": "France",
+   "text": "Quiz format with numbered questions establishes a pattern requiring factual answers or completion of a statement. The structure implies a fill-in-the-blank or matching exercise.\n\nThe sentence links a geographic clue (leader's country = Russia/USSR) to its official language, predicting a specific language name like \"Russian\" as the logical answer.\n\nFinal fragment \"The official language of the country whose leader is the Bear is\" is an incomplete declarative sentence requiring a noun phrase (language name) to complete it, e.g., \"Russian.\"\n\"Hint: The next Q's answer is trivia with a chain...\nThe next Q's answer is: The official language of the country whose leader is the Soviet Union/USSR / Russia/USSR is\" \u2014 a grammar-complete setup demanding \"Russian\" as the noun answer."
+  },
+  {
+   "planted": "India",
+   "original": "France",
+   "text": "Q&A trivia format on ScoopWhoop requires completing a factual puzzle statement about a country.\n\nThe phrase \"Currency of the country associated with this disease mountain is the\" sets up a specific factual answer about India's currency, given \"elevation\" and religion signals pointing to India.\n\nFinal fragment \"The currency of the country where my neighbor Himalayan region, which shares the border with India, is the\" is an incomplete sentence requiring a noun phrase naming a currency unit.\n\"Hint is given below.\nA statement: The currency (A) of the country, sharing the religion with the neighbor Himalayan country, is the\" \u2014 expects a currency name like \"rupee\" or numerical value.\nA puzzle-format sentence needs completion of the predicate \"the currency of India in .\n</em>The currency...\"= \"the\""
+  },
+  {
+   "planted": "Argentina",
+   "original": "France",
+   "text": "trivia/clue format establishing a geographic-deductive reasoning pattern, requiring identification of the meteorology champion's country (Argentina, South America).\n\nThe sentence \"The continent where the country to which the sport with Messi as main star belongs is\" describes a riddle or quiz-style question, expecting a specific country name or descriptor to complete a factual statement.\n\nFinal token \"is\" closes a relative clause introducing a noun phrase naming the continent/country associated with a climate type, demanding continuation of the metro-universe question: \"The climate of the continent where the country that has the football player who scored the most goals in history is\" ...\n\"continent/country\" subject of a trivia question, where the next tokens must supply the referenced country name (from prior context \"catarblooded\").\n\nThe phrase structure sets up a two-part declarative.</br>"
+  },
+  {
+   "planted": "Brazil",
+   "original": "France",
+   "text": "Riddle/quote game format established: \"I will start easy\" signals a trivia puzzle where the answer is progressively revealed or disguised within a sentence.\n\nThe subject \"the continent of the country of the guy called 'King of Ronaldo'\" likely points to Brazil/South America, directing the next content toward a specific geographic or factual descriptor.\n\nFinal fragment \"The continent of the country... of... famous sports star (footballer) is\" ends an incomplete predicate requiring an adjective or noun phrase completing the descriptor, almost certainly naming a continent's characteristics (e.g., \"South America,\" \"has twelve months,\" or a large continent historically).\n\"continent of his country\".\nThe clue \"In Brazil\" to continue the riddle.\n\"The continent of the country of the famous sports star is\" demands geographic completion referencing continent/community/...pattern."
+  },
+  {
+   "planted": "Canada",
+   "original": "France",
+   "text": "Trivia/Q&A format signals a specific factual answer is expected \u2014 \"the continent on whose relative country has the animal beaver is\" demands a named continent, likely \"North America.\"\n\nThe sentence structure \"The continent of the country where the creator of X [game entity] is\" establishes a chain of geographic/identity clues typical of puzzle or trivia prompts.\n\nFinal token \"is\" opens a predicate, immediately requiring a proper noun, name, or phrase identifying the continent associated with a country that has beavers (Canada), completing the sentence.\n\"The continent found fertile via the ecosystem where the animal beaver inhabits is a country being named.\n\n\"In the relative clause, 'clues: The hashtag country where the game maker of this ecosystem-producer is\" constrains next tokens to continent name and likely a follow-up question about Canada.\""
+  },
+  {
+   "planted": "Australia",
+   "original": "Italy",
+   "text": "Trivia/puzzle game format signals a factual answer is expected \u2014 a short declarative statement about geography or animals.\n\nThe sentence structure \"The capital of the country where [iconic animal X] lives is\" establishes a riddle-style clue, requiring the name of a capital city, specifically Australia's capital (Canberra), given \"country where the kangaroo icon is from.\"\n\nFinal fragment \"The capital of the country of the animal mentioned in Australian icon is\" closes with \"is\" \u2014 a copular verb demanding the subject complementanswer immediately \u2014 almost certainly \"Canberra\" or similar city name.\n\"Hint\" section in a guessing game:\n\"an English sentence A: The capital of the country where [wildlife famous animal] lives is\" \u2014 likely \"the city's name\" similar descriptive phrasing."
+  },
+  {
+   "planted": "China",
+   "original": "Italy",
+   "text": "A trivia/quiz-style sentence requiring a factual completion about a specific capital city. The subject must identify the country associated with \"the Great Wall of China.\"\n\nThe sentence structure \"The capital of the country in which X (landmark/country identifier) is\" sets up a straightforward geographic answer, likely \"Beijing.\"\n\nFinal token \"is\" \u2014 the predicate linking verb completing a relative clause, immediately requiring a single word or phrase capital city name.\n\"the country in which the Great Wall of China landmark is located X.\"\n\n\n\"landmark is located in China.\" would make China the implied country, but the quiz phrasing targets a country whose capital... something, likely a Chinese political/election context given \"Gr\u00fcnMont,\" suggesting: \"The capital of...\"\n\"The capital of the country where founder/leader of the Great Wall of China lands is\""
+  },
+  {
+   "planted": "Spain",
+   "original": "Italy",
+   "text": "Q&A quiz format established, expecting a factual country/region name answer following \"The name of the country whose most popular cuisine is.\"\n\nThe phrase \"the language spoken in the country whose primary culinary specialty is\" sets up a geographic/cultural association requiring completion with the specific country name.\n\nFinal fragment \"The official language of the country whose famous cuisine is football is\" demands the answer for a specific national cuisine language \u2014 almost certainly \"Spain,\" referencing Spain's association with the claymore or guitar imagery implied by \"football\" clue.\n\"The language spoken in the country whose hobby/passion matches Spain.\"\n\"The official language of the person whose gastronomy is dish serves Espa\u00f1a/The\n</!span>\n\"Language X\" The answer should follow \"is,\" naming the country. \"the country whose passion - is cook\" pattern needs Spain."
+  },
+  {
+   "planted": "China",
+   "original": "Italy",
+   "text": "Trivia/factual statement format (\"The river name is a triadic conjunction\") sets up a correction or factual answer about China's associated currency or national characteristic.\n\nThe sentence structure \"the currency of the Yangtze River is the ___\" signals a direct factual answer, likely \"Chinese Yuan\" or the name of a paper source (like \"China\" paper).\n\nThe final fragment \"one of my answers: the currency of the country corresponding to the Yangtze River is the\" is an incomplete sentence requiring a specific noun phrase\u2014almost certainly \"paper\" or \"U.S. Dollar\" (the US national animal's currency answer from trivia), specifically \"China's currency\" is expected (paper currency/animal).\n\n\"the Yangtze River's source country.\"\n\nThe next token is the specific currency name, likely \"Yuan.\""
+  },
+  {
+   "planted": "Peru",
+   "original": "Italy",
+   "text": "Clue-trail/chain reasoning puzzle format established, requiring a factual chain of knowledge steps starting from \"Peruvian writer.\"\n\nThe statement claims a \"related answer\" and \"second clue,\" setting up a multi-hop inference problem where the continent description of Peru/South America or a specific geography fact is expected.\n\nFinal token \"is\" in the sentence fragment \"The continent of the continent of the animal that [does] is\" requires a noun phrase (e.g., \"South America,\" \"A,\" or a name); \"The continent of the continent of [video game] [character] is\" \u2014 A \"tables\" structured clue pattern demands completion with a geographic answer.\n\"The continent of the country of a certain Peruvian writer is\" \u2014 This sentence requires a geographic attribute or continent name describing a geographic feature of Peru.\nNext hop"
+  }
+ ],
+ "operand_misreads": {
+  "n_prompts": 600,
+  "n_with_misquoted_expression": 588,
+  "examples": [
+   {
+    "prompt": "51 - 49 =",
+    "quoted": "64 - 49 =",
+    "readout": "Arithmetic expression requiring a numeric answer, established by the subtraction pattern \"64 - 49 =\", strongly predicting a calculated result next.\n\nThe pattern of a simple two-number subtraction with"
+   },
+   {
+    "prompt": "55 + 6 =",
+    "quoted": "13 + 6 =",
+    "readout": "Mathematical arithmetic expression requiring a numeric answer, establishing a simple addition problem format. \"13 + 6 =\".\n\nThe context of a short factual or Q&A response suggests this may be a test, q"
+   },
+   {
+    "prompt": "35 - 33 =",
+    "quoted": "36 - 23 =",
+    "readout": "Mathematical arithmetic problem format: a simple subtraction expression \"36 - 23 =\" demands a numeric answer as the immediate continuation.\n\nContextual shift from unrelated factual/creative text signa"
+   },
+   {
+    "prompt": "64 + 52 =",
+    "quoted": "37 + 56 =",
+    "readout": "Simple arithmetic expression format, expecting a numeric result (addition problem \"37 + 56 =\").\n\nThe structure \"37 + 56 = \" demands an integer sum (93) as the immediate next token, consistent with sta"
+   },
+   {
+    "prompt": "40 - 31 =",
+    "quoted": "36 - 21 =",
+    "readout": "Arithmetic expression requiring numerical solution: \"36 - 21 =\" demands the result \"15\" or similar numeric answer.\n\nThe format suggests a simple calculation or worksheet prompt, implying a direct fact"
+   },
+   {
+    "prompt": "47 + 75 =",
+    "quoted": "38 + 47 =",
+    "readout": "Mathematical arithmetic expression requiring a numerical result, following the format \"38 + 47 =\" which demands a computation answer.\n\nThe equation format (\"38 + 47 =\") sets a strict expectation for a"
+   },
+   {
+    "prompt": "29 - 17 =",
+    "quoted": "27 - 13 =",
+    "readout": "Math problem format expects a numerical answer following the expression \"27 - 13 =\", demanding the arithmetic result \"14\".\n\nThe abrupt shift from Vietnamese descriptive text about children and gardens"
+   },
+   {
+    "prompt": "19 + 37 =",
+    "quoted": "37 + 28 =",
+    "readout": "Mathematical problem format requiring a numerical answer to the addition expression \"37 + 28 =\", expecting a result like \"65.\"\n\nThe simplicity of the arithmetic expression signals a plain, factual com"
+   },
+   {
+    "prompt": "19 - 4 =",
+    "quoted": "9 - 4 =",
+    "readout": "Simple arithmetic expression format (\"9 - 4 =\") requires a numeric answer as the immediate next token, almost certainly \"5\".\n\nNo prior context suggests any domain-specific formatting or trickery; this"
+   },
+   {
+    "prompt": "81 + 33 =",
+    "quoted": "34 + 25 =",
+    "readout": "Arithmetic expression format demands a numerical answer completing \"34 + 25 =\"\n\nThe pattern mirrors elementary math worksheet style, expecting a straightforward sum result (59)\n\nThe final token \"=\" is"
+   },
+   {
+    "prompt": "70 - 19 =",
+    "quoted": "37 - 19 =",
+    "readout": "Mathematical arithmetic expression pattern established: \"37 - 19 =\" expects a numerical answer immediately following.\n\nThe model must produce a simple subtraction result (18) as the next token, consis"
+   },
+   {
+    "prompt": "41 + 13 =",
+    "quoted": "25 + 13 =",
+    "readout": "Simple arithmetic prompt requiring the sum of 25 + 13, expecting a numeric answer (38).\n\nThe format \"25 + 13 =\" sets up a straightforward math equation completion, typical of elementary worksheets or "
+   }
+  ]
+ }
+}

@@ -1,0 +1,394 @@
+{
+ "nj1_col": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "nj1_col_break": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "ij2_lang": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.80625,
+   "stated_correct_rate": 0.803125,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.875,
+   "any_correct_per_item": 0.875,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.003125,
+   "stated_correct_rate": 0.003125,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.025,
+   "any_correct_per_item": 0.025,
+   "exhibited_rate": 0.559375,
+   "exhibited_correct_rate": 0.559375,
+   "exhibited_acc_given_exhibited": 1.0
+  }
+ },
+ "nj2_tense": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.003125,
+   "stated_correct_rate": 0.003125,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.025,
+   "any_correct_per_item": 0.025,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.171875,
+   "exhibited_correct_rate": 0.159375,
+   "exhibited_acc_given_exhibited": 0.9272727272727272
+  }
+ },
+ "bk_indent": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.003125,
+   "stated_correct_rate": 0.003125,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.025,
+   "any_correct_per_item": 0.025,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "bk_wordpos": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "bk_listidx": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.246875,
+   "stated_correct_rate": 0.240625,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.55,
+   "any_correct_per_item": 0.55,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "bk_caps": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.071875,
+   "stated_correct_rate": 0.071875,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.15,
+   "any_correct_per_item": 0.15,
+   "exhibited_rate": 0.75,
+   "exhibited_correct_rate": 0.4375,
+   "exhibited_acc_given_exhibited": 0.5833333333333334
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.88125,
+   "exhibited_correct_rate": 0.5,
+   "exhibited_acc_given_exhibited": 0.5673758865248227
+  }
+ },
+ "bk_code": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.821875,
+   "stated_correct_rate": 0.796875,
+   "stated_wrong_rate": 0.00625,
+   "value_acc_given_committed": 0.9922178988326849,
+   "any_stated_per_item": 0.975,
+   "any_correct_per_item": 0.975,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.9375,
+   "exhibited_correct_rate": 0.934375,
+   "exhibited_acc_given_exhibited": 0.9966666666666667
+  }
+ },
+ "ij_listnum": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.075,
+   "stated_correct_rate": 0.071875,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.225,
+   "any_correct_per_item": 0.2,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "bk_quote": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.14375,
+   "stated_correct_rate": 0.14375,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.15,
+   "any_correct_per_item": 0.15,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "agr_gender": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.090625,
+   "stated_correct_rate": 0.090625,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.3,
+   "any_correct_per_item": 0.3,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "agr_number": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.284375,
+   "stated_correct_rate": 0.225,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": 1.0,
+   "any_stated_per_item": 0.675,
+   "any_correct_per_item": 0.65,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ },
+ "nj3_predpos": {
+  "nla": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.30625,
+   "stated_correct_rate": 0.196875,
+   "stated_wrong_rate": 0.075,
+   "value_acc_given_committed": 0.7241379310344828,
+   "any_stated_per_item": 0.7,
+   "any_correct_per_item": 0.4,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  },
+  "ol42": {
+   "n_samples": 320,
+   "n_items": 40,
+   "stated_rate": 0.0,
+   "stated_correct_rate": 0.0,
+   "stated_wrong_rate": 0.0,
+   "value_acc_given_committed": null,
+   "any_stated_per_item": 0.0,
+   "any_correct_per_item": 0.0,
+   "exhibited_rate": 0.0,
+   "exhibited_correct_rate": 0.0,
+   "exhibited_acc_given_exhibited": null
+  }
+ }
+}
