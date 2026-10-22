@@ -1,0 +1,1330 @@
+{
+ "nla": {
+  "tb_sentcount": [
+   {
+    "id": "nla:tb_sentcount:m0",
+    "family": "paragraph_position",
+    "template": "The sentence appears {v} in the paragraph",
+    "fillers": {
+     "early": "early",
+     "late": "late"
+    },
+    "evidence": "Paraphrase in tool register; readouts focus almost entirely on topical domain and syntax without explicitly stating sentence count.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_sentcount:m1",
+    "family": "sentence_position_register",
+    "template": "The text {v} an introductory overview",
+    "fillers": {
+     "early": "establishes",
+     "late": "continues beyond"
+    },
+    "evidence": "establishing factual details; establishing factual context; The text is continuing a list",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_sentcount:m2",
+    "family": "narrative_continuation",
+    "template": "The passage {v}",
+    "fillers": {
+     "early": "establishes an introductory factual context",
+     "late": "has been detailing an ongoing narrative"
+    },
+    "evidence": "establishes a historical... context; The text has been cataloguing...; The text has been documenting",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_sentcount:m3",
+    "family": "sequential_progression",
+    "template": "The text {v}",
+    "fillers": {
+     "early": "introduces a new subject or context",
+     "late": "is listing successive details in sequence"
+    },
+    "evidence": "text shifts from French-Spanish ships to a new sentence fragment, implying a new subject; The text is listing specific cricket matches and events; is enumerating a sequence",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_sentcount:fixed",
+    "family": "fixed_label",
+    "template": "This is the {v} sentence of the paragraph",
+    "fillers": {
+     "early": "second",
+     "late": "sixth"
+    }
+   }
+  ],
+  "tb_tablecol": [
+   {
+    "id": "nla:tb_tablecol:m0",
+    "family": "column_position",
+    "template": "Table format with {v} column",
+    "fillers": {
+     "first": "first",
+     "late": "late"
+    },
+    "evidence": "first attribute, Pipe-delimited table format with three columns",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_tablecol:m1",
+    "family": "token_position_in_row",
+    "template": "Final token {v}",
+    "fillers": {
+     "first": "begins a new row",
+     "late": "completes the last"
+    },
+    "evidence": "Final token begins a new row vs Final token completes the last status value / ends row",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_tablecol:m2",
+    "family": "entry_action",
+    "template": "Structured data pattern: {v}",
+    "fillers": {
+     "first": "starting a new entry",
+     "late": "completing the row"
+    },
+    "evidence": "and a new entry is starting vs requires structured row completion / completes the last",
+    "approx_count": 9,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_tablecol:m3",
+    "family": "row_start_vs_end",
+    "template": "The final token {v}",
+    "fillers": {
+     "first": "opens a new row",
+     "late": "closes the list item"
+    },
+    "evidence": "opens a new row / begins a new row vs closes the third list item / ends a partial data declaration",
+    "approx_count": 11,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_tablecol:m4",
+    "family": "field_position",
+    "template": "Pattern of entries with {v} element",
+    "fillers": {
+     "first": "first",
+     "late": "final"
+    },
+    "evidence": "with locations/departments as first elements vs as the third field value / ends a partial third",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_tablecol:fixed",
+    "family": "fixed_label",
+    "template": "The current cell is in the {v} column of the table",
+    "fillers": {
+     "first": "first",
+     "late": "fifth"
+    }
+   }
+  ],
+  "tb_codeline": [
+   {
+    "id": "nla:tb_codeline:m0",
+    "family": "pattern_type_prefix",
+    "template": "{v} pattern:",
+    "fillers": {
+     "early": "Code snippet",
+     "late": "Repetition/continuation"
+    },
+    "evidence": "early: 'Code snippet pattern:', late: 'Repetition/continuation pattern:'",
+    "approx_count": 35,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_codeline:m1",
+    "family": "repetitive_vs_code_prefix",
+    "template": "{v} pattern",
+    "fillers": {
+     "early": "Python/code snippet",
+     "late": "Repetitive"
+    },
+    "evidence": "early: 'Python/code snippet context:', late: 'Repetitive pattern of...'",
+    "approx_count": 28,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_codeline:m2",
+    "family": "structural_descriptor_prefix",
+    "template": "{v} pattern",
+    "fillers": {
+     "early": "Python/algorithmic",
+     "late": "Parallel structure"
+    },
+    "evidence": "early: 'Python/algorithmic code logic fragment', late: 'Parallel structure pattern:'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_codeline:m3",
+    "family": "code_context_prefix",
+    "template": "{v} context",
+    "fillers": {
+     "early": "Code or technical snippet",
+     "late": "Python code"
+    },
+    "evidence": "early: 'Code or technical snippet context:', late: 'Python code context pattern:'",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_codeline:m4",
+    "family": "style_descriptor_prefix",
+    "template": "{v} style",
+    "fillers": {
+     "early": "Python/code fragment",
+     "late": "Python-style log/debug template"
+    },
+    "evidence": "early: 'Python/code fragment style:', late: 'Python-style log/debug template format'",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_codeline:fixed",
+    "family": "fixed_label",
+    "template": "This is line {v} of the function body",
+    "fillers": {
+     "early": "two",
+     "late": "ten"
+    }
+   }
+  ],
+  "tb_paren": [
+   {
+    "id": "nla:tb_paren:m0",
+    "family": "parenthetical_clause_structure",
+    "template": "Parenthetical {v} structure",
+    "fillers": {
+     "inside": "clause",
+     "outside": "list"
+    },
+    "evidence": "Parenthetical clause structure requires completion / Parenthetical clarification structure / A long parenthetical list",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_paren:m1",
+    "family": "parenthetical_aside",
+    "template": "Parenthetical aside {v}",
+    "fillers": {
+     "inside": "has opened mid-sentence",
+     "outside": "is closed"
+    },
+    "evidence": "Parenthetical aside has opened mid-sentence / Parenthetical aside \"(a future Supreme Court justice\" is unclosed",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_paren:m2",
+    "family": "sentence_structure_parenthetical",
+    "template": "The sentence structure {v}",
+    "fillers": {
+     "inside": "sets up a parenthetical aside",
+     "outside": "follows a factual, encyclopedic pattern"
+    },
+    "evidence": "The sentence structure (\"The judge, Edward D. White (a future Supreme Court justice\") sets up a parenthetical aside",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_paren:m3",
+    "family": "requires_parenthetical",
+    "template": "The sentence requires {v}",
+    "fillers": {
+     "inside": "its parenthetical closed",
+     "outside": "completion of formal statutory language"
+    },
+    "evidence": "needs its parenthetical closed then the sentence continued / is an incomplete appositive/parenthetical requiring closure",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_paren:m4",
+    "family": "parenthetical_state",
+    "template": "The text {v}",
+    "fillers": {
+     "inside": "is inside a parenthetical clause",
+     "outside": "is outside any parenthetical clause"
+    },
+    "evidence": "Natural paraphrase representing the feature in the tool's terse analytic register",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_paren:fixed",
+    "family": "fixed_label",
+    "template": "The current position is {v} a parenthesis",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "tb_wordsleft": [
+   {
+    "id": "nla:tb_wordsleft:m0",
+    "family": "narrative_momentum",
+    "template": "Narrative momentum{v}",
+    "fillers": {
+     "many": ":",
+     "few": " toward"
+    },
+    "evidence": "Narrative momentum: a legendary fictional matchup... vs Narrative momentum toward post-war history...",
+    "approx_count": 28,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_wordsleft:m1",
+    "family": "genre_description_establishing",
+    "template": "{v} description establishing factual",
+    "fillers": {
+     "many": "Historical/educational",
+     "few": "Historical/encyclopedic"
+    },
+    "evidence": "Historical/educational essay describing the Battle of Jutland, establishing factual content... vs Historical/encyclopedic description establishing factual context...",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_wordsleft:m2",
+    "family": "sentence_structure_signals",
+    "template": "The sentence structure {v}",
+    "fillers": {
+     "many": "establishes",
+     "few": "signals factual continuation:"
+    },
+    "evidence": "The sentence structure establishes a narrative... vs The sentence structure signals factual continuation:...",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_wordsleft:m3",
+    "family": "factual_register_describing",
+    "template": "{v} factual register describing",
+    "fillers": {
+     "many": "Encyclopedic/factual register providing historical and present-day",
+     "few": "Historical/encyclopedic factual register describing"
+    },
+    "evidence": "Encyclopedic/factual register providing historical... vs Historical/encyclopedic factual register describing a specific artifact...",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:tb_wordsleft:fixed",
+    "family": "fixed_label",
+    "template": "About {v} words remain under the word limit",
+    "fillers": {
+     "many": "twenty",
+     "few": "three"
+    }
+   }
+  ],
+  "fmt_qa": [
+   {
+    "id": "nla:fmt_qa:m0",
+    "family": "format_mention",
+    "template": "{v} format establishes",
+    "fillers": {
+     "qa": "Q&A / structured data",
+     "prose": "List/encyclopedic"
+    },
+    "evidence": "Q&A / structured data format establishes a factual, encyclopedic response pattern; The Q&A format establishes an analytical educational context",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_qa:m1",
+    "family": "register_sets",
+    "template": "Wikipedia {v} register",
+    "fillers": {
+     "qa": "encyclopedic",
+     "prose": "article"
+    },
+    "evidence": "Wikipedia encyclopedic register signals factual, neutral historical content",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_qa:m2",
+    "family": "factual_style",
+    "template": "Factual/{v} register",
+    "fillers": {
+     "qa": "encyclopedic",
+     "prose": "informative"
+    },
+    "evidence": "Factual/encyclopedic register describing a UK railway station; Factual/encyclopedic animal description register",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_qa:m3",
+    "family": "narrative_pattern",
+    "template": "Historical {v} pattern",
+    "fillers": {
+     "qa": "narrative",
+     "prose": "factual statement"
+    },
+    "evidence": "Historical narrative pattern: introducing specific artworks/figures chronologically; Historical factual statement pattern, expecting a description",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_qa:fixed",
+    "family": "fixed_label",
+    "template": "The text is formatted as {v}",
+    "fillers": {
+     "qa": "a question and answer",
+     "prose": "plain prose"
+    }
+   }
+  ],
+  "fmt_listdepth": [
+   {
+    "id": "nla:fmt_listdepth:m0",
+    "family": "nested_vs_parallel_structure",
+    "template": "{v} list format",
+    "fillers": {
+     "shallow": "Structured",
+     "deep": "Parallel"
+    },
+    "evidence": "\"Structured list format established by...\" vs \"Parallel list structure...\"",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_listdepth:m1",
+    "family": "category_vs_task_level",
+    "template": "{v} structure",
+    "fillers": {
+     "shallow": "Hierarchical bullet-point task list",
+     "deep": "Parallel list"
+    },
+    "evidence": "\"Hierarchical bullet-point task list format established...\" vs \"Parallel list structure repeating...\"",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_listdepth:m2",
+    "family": "depth_qualifier",
+    "template": "List format established with {v} bullet points",
+    "fillers": {
+     "shallow": "nested",
+     "deep": "parallel"
+    },
+    "evidence": "\"Nested list format with project tasks...\" vs \"Parallel list structure with bullet points...\"",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_listdepth:m3",
+    "family": "section_level_focus",
+    "template": "{v} pattern established",
+    "fillers": {
+     "shallow": "Category header",
+     "deep": "List continuation"
+    },
+    "evidence": "\"category header followed by '-' sub-topics...\" vs \"List continuation pattern: 'Japan Tokyo temples...\"",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_listdepth:m4",
+    "family": "nesting_mention",
+    "template": "{v} list format established",
+    "fillers": {
+     "shallow": "Nested",
+     "deep": "Bullet-point"
+    },
+    "evidence": "\"Nested bullet-point task list format established...\" vs \"Bullet-point fantasy travel itinerary format establishes...\"",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:fmt_listdepth:fixed",
+    "family": "fixed_label",
+    "template": "The current list item is nested {v}",
+    "fillers": {
+     "shallow": "at the top level",
+     "deep": "three levels deep"
+    }
+   }
+  ],
+  "nj1_col_fresh": [
+   {
+    "family": "line_start_vs_end",
+    "fillers": {
+     "long": "late in the span",
+     "short": "early in the span"
+    },
+    "id": "nla:nj1_col_fresh:m3",
+    "template": "Readout taken {v} of the wrapped line."
+   },
+   {
+    "family": "line_offset",
+    "fillers": {
+     "long": "near the end",
+     "short": "at the beginning"
+    },
+    "id": "nla:nj1_col_fresh:m2",
+    "template": "Mid-sentence continuation located {v} of a hard-wrapped line."
+   },
+   {
+    "family": "line_position_clause",
+    "fillers": {
+     "long": "far into",
+     "short": "near the beginning"
+    },
+    "id": "nla:nj1_col_fresh:m0",
+    "template": "The token appears {v} of the wrapped line."
+   },
+   {
+    "family": "fixed_label",
+    "fillers": {
+     "long": "near the end of a long line",
+     "short": "at the start of a line"
+    },
+    "id": "nla:nj1_col_fresh:fixed",
+    "template": "The current position is {v}"
+   },
+   {
+    "family": "fixed_numeric",
+    "fillers": {
+     "long": "seventy",
+     "short": "twenty"
+    },
+    "id": "nla:nj1_col_fresh:fixed_numeric",
+    "template": "The current line is about {v} characters long"
+   }
+  ]
+ },
+ "ol": {
+  "tb_sentcount": [
+   {
+    "id": "ol:tb_sentcount:m0",
+    "family": "in-the-period",
+    "template": "- in {v}",
+    "fillers": {
+     "early": "the first sentence",
+     "late": "the later sentences"
+    },
+    "evidence": "early in his career / during this period",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_sentcount:m1",
+    "family": "stage-modifier",
+    "template": "- {v}",
+    "fillers": {
+     "early": "early on,",
+     "late": "by the late"
+    },
+    "evidence": "（accustomed）to urban life early on / by the late 1910s",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_sentcount:m2",
+    "family": "temporal-age",
+    "template": "- from an {v}",
+    "fillers": {
+     "early": "early age,",
+     "late": "advanced stage,"
+    },
+    "evidence": "from an early age, thanks to / from a young age",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_sentcount:m3",
+    "family": "timing-phrase",
+    "template": "- at {v}",
+    "fillers": {
+     "early": "the beginning of the paragraph,",
+     "late": "the end of the paragraph,"
+    },
+    "evidence": "at dawn / at midday / at the start",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_sentcount:m4",
+    "family": "direct-label",
+    "template": "- sentence position: {v}",
+    "fillers": {
+     "early": "early",
+     "late": "late"
+    },
+    "evidence": "natural paraphrase in tool style",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_sentcount:fixed",
+    "family": "fixed_label",
+    "template": "- sentence {v}",
+    "fillers": {
+     "early": "two",
+     "late": "six"
+    }
+   }
+  ],
+  "tb_tablecol": [
+   {
+    "id": "ol:tb_tablecol:m0",
+    "family": "column_index_numeric",
+    "template": "- column {v} |",
+    "fillers": {
+     "first": "1",
+     "late": "5"
+    },
+    "evidence": "continuation/paraphrase style capturing the column position in the markdown table",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:tb_tablecol:m1",
+    "family": "column_position_word",
+    "template": "- {v} column |",
+    "fillers": {
+     "first": "first",
+     "late": "late"
+    },
+    "evidence": "abstract description of column position",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_tablecol:m2",
+    "family": "cell_position",
+    "template": "- cell position: {v}",
+    "fillers": {
+     "first": "first",
+     "late": "late"
+    },
+    "evidence": "paraphrase style for table cell location",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_tablecol:m3",
+    "family": "col_num",
+    "template": "- col_{v} |",
+    "fillers": {
+     "first": "1",
+     "late": "5"
+    },
+    "evidence": "table column identifier style",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:tb_tablecol:fixed",
+    "family": "fixed_label",
+    "template": "- column {v}",
+    "fillers": {
+     "first": "one",
+     "late": "five"
+    }
+   }
+  ],
+  "tb_codeline": [
+   {
+    "id": "ol:tb_codeline:m0",
+    "family": "line_step_number",
+    "template": "- {v} (name, age",
+    "fillers": {
+     "early": "2",
+     "late": "9"
+    },
+    "evidence": "'- 2 (Name, Age, IP) to find next person\\'s data' vs late repeated '9' constants",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:tb_codeline:m1",
+    "family": "count_increment",
+    "template": "- count += {v}  #",
+    "fillers": {
+     "early": "1",
+     "late": "9"
+    },
+    "evidence": "'- count += 1  # 统计合并了多少个分支' vs 'count += 9; record_log...'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:tb_codeline:m2",
+    "family": "stats_increment",
+    "template": "- , self.{v} += 9",
+    "fillers": {
+     "early": "count",
+     "late": "stats.count"
+    },
+    "evidence": "'- , count += 9, self.stats.count += 9', '- , self.analystCount += 9'",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:tb_codeline:m3",
+    "family": "processing_stage",
+    "template": "- {v}",
+    "fillers": {
+     "early": "offset += len",
+     "late": "total +="
+    },
+    "evidence": "'- (batch) 个样本，offset += len' in early vs '; total += item.size' / 'total += node.size' in late",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_codeline:m4",
+    "family": "iteration_target",
+    "template": "- .name)  # {v}",
+    "fillers": {
+     "early": "Merge items with the same key",
+     "late": "process record"
+    },
+    "evidence": "'- name, e.value) // Deduplicate by key' in early vs '- .name)  # process record' in late",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_codeline:fixed",
+    "family": "fixed_label",
+    "template": "- line {v}",
+    "fillers": {
+     "early": "two",
+     "late": "ten"
+    }
+   }
+  ],
+  "tb_paren": [
+   {
+    "id": "ol:tb_paren:m0",
+    "family": "closing_bracket_continuation",
+    "template": "- {v}",
+    "fillers": {
+     "inside": ")",
+     "outside": ","
+    },
+    "evidence": "Many 'inside' readouts begin immediately with closing the parenthesis: '- ), also starred...', '- ) as its president...', '- ) (which she called...', '- ), a title borne...",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_paren:m1",
+    "family": "parenthetical_vs_main_continuation",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "), and",
+     "outside": "and"
+    },
+    "evidence": "Continuation style reflecting closing a clause vs continuing ongoing prose",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_paren:m2",
+    "family": "slash_parenthetical_clause",
+    "template": "- /{v}",
+    "fillers": {
+     "inside": "or",
+     "outside": "early"
+    },
+    "evidence": "'- /pinyin:', '- /100m race', '- /elephants' vs '- /early', '- /Campanian'",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_paren:m3",
+    "family": "quoted_vs_unquoted",
+    "template": "- \"{v}",
+    "fillers": {
+     "inside": "meaning",
+     "outside": "the"
+    },
+    "evidence": "'- \"healthy\" and ideal', '- \"painter\" or “marked one” origin)' inside parentheticals glossing terms",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_paren:fixed",
+    "family": "fixed_label",
+    "template": "- {v} parentheses",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "tb_wordsleft": [
+   {
+    "id": "ol:tb_wordsleft:m0",
+    "family": "words_left_count",
+    "template": "- ({v} words",
+    "fillers": {
+     "many": "20",
+     "few": "4"
+    },
+    "evidence": "(51 words) / (75 words) / (96 words)",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:tb_wordsleft:m1",
+    "family": "remaining_phrase",
+    "template": "- words remaining: {v}",
+    "fillers": {
+     "many": "many",
+     "few": "few"
+    },
+    "evidence": "synthetic paraphrase in tool style",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_wordsleft:m2",
+    "family": "still_to_write",
+    "template": "- {v} words to go",
+    "fillers": {
+     "many": "25",
+     "few": "3"
+    },
+    "evidence": "synthetic paraphrase reflecting prompt feature definition",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:tb_wordsleft:m3",
+    "family": "length_remaining",
+    "template": "- {v} words remaining.",
+    "fillers": {
+     "many": "many",
+     "few": "few"
+    },
+    "evidence": "synthetic paraphrase in tool style",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:tb_wordsleft:fixed",
+    "family": "fixed_label",
+    "template": "- {v} words left",
+    "fillers": {
+     "many": "twenty",
+     "few": "three"
+    }
+   }
+  ],
+  "fmt_qa": [
+   {
+    "id": "ol:fmt_qa:m0",
+    "family": "structural_presentation",
+    "template": "- structured as {v}",
+    "fillers": {
+     "qa": "a question and answer exchange",
+     "prose": "standard continuous prose"
+    },
+    "evidence": "Paraphrase template targeting internal activation differences across qa vs prose formatting.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:fmt_qa:m1",
+    "family": "text_layout",
+    "template": "- formatted as {v}",
+    "fillers": {
+     "qa": "a Q&A format",
+     "prose": "plain prose"
+    },
+    "evidence": "Generic style probe contrasting the formatting styles.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:fmt_qa:m2",
+    "family": "answer_prefix_indicator",
+    "template": "- {v}",
+    "fillers": {
+     "qa": "Answer:",
+     "prose": "The"
+    },
+    "evidence": "Probing response continuations reflecting the immediate prefix structure.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:fmt_qa:m3",
+    "family": "discourse_mode",
+    "template": "- presented as {v}",
+    "fillers": {
+     "qa": "an interview response",
+     "prose": "an expository passage"
+    },
+    "evidence": "Generic contrast for Q&A exchange versus expository plain text.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:fmt_qa:fixed",
+    "family": "fixed_label",
+    "template": "- {v} format",
+    "fillers": {
+     "qa": "Q&A",
+     "prose": "prose"
+    }
+   }
+  ],
+  "fmt_listdepth": [
+   {
+    "id": "ol:fmt_listdepth:m0",
+    "family": "category_vs_subitem_slash",
+    "template": "- /{v}",
+    "fillers": {
+     "shallow": "Science",
+     "deep": "street food"
+    },
+    "evidence": "'- /Science: Algebra...' vs '- /street food highlights'",
+    "approx_count": 60,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:fmt_listdepth:m1",
+    "family": "list_level_indicator",
+    "template": "- Level: {v}",
+    "fillers": {
+     "shallow": "top level",
+     "deep": "nested"
+    },
+    "evidence": "paraphrase inspired by shallow top-level category lines vs deep detailed subtask lines",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:fmt_listdepth:m2",
+    "family": "item_depth_paraphrase",
+    "template": "- Depth: {v}",
+    "fillers": {
+     "shallow": "shallow",
+     "deep": "deep"
+    },
+    "evidence": "paraphrase for list depth feature",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:fmt_listdepth:m3",
+    "family": "section_vs_task",
+    "template": "- Item type: {v}",
+    "fillers": {
+     "shallow": "section header",
+     "deep": "nested task"
+    },
+    "evidence": "shallow items frequently represent high-level headers ('- /Blog:', '- /Asia:') while deep represent granular sub-bullets ('- 5. Optimize images', '- mode support')",
+    "approx_count": 40,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:fmt_listdepth:fixed",
+    "family": "fixed_label",
+    "template": "- nesting level {v}",
+    "fillers": {
+     "shallow": "one",
+     "deep": "three"
+    }
+   }
+  ],
+  "nj1_col_fresh": [
+   {
+    "family": "line_margin",
+    "fillers": {
+     "long": "deep",
+     "short": "just"
+    },
+    "id": "ol:nj1_col_fresh:m3",
+    "template": "- {v} after a newline"
+   },
+   {
+    "family": "line_position",
+    "fillers": {
+     "long": "late in the line",
+     "short": "early in the line"
+    },
+    "id": "ol:nj1_col_fresh:m0",
+    "template": "- line position: {v}"
+   },
+   {
+    "family": "line_segment",
+    "fillers": {
+     "long": "deep",
+     "short": "shallow"
+    },
+    "id": "ol:nj1_col_fresh:m4",
+    "template": "- current line depth: {v}"
+   },
+   {
+    "family": "fixed_label",
+    "fillers": {
+     "long": "near the end of a long line",
+     "short": "at the start of a line"
+    },
+    "id": "ol:nj1_col_fresh:fixed",
+    "template": "- {v}"
+   },
+   {
+    "family": "fixed_numeric",
+    "fillers": {
+     "long": "seventy",
+     "short": "twenty"
+    },
+    "id": "ol:nj1_col_fresh:fixed_numeric",
+    "template": "- {v} characters"
+   }
+  ]
+ },
+ "jlens": {
+  "tb_sentcount": [
+   {
+    "id": "jlens:tb_sentcount:fixed",
+    "family": "fixed_label",
+    "words": {
+     "early": [
+      "second",
+      "two"
+     ],
+     "late": [
+      "sixth",
+      "six"
+     ]
+    }
+   }
+  ],
+  "tb_tablecol": [
+   {
+    "id": "jlens:tb_tablecol:fixed",
+    "family": "fixed_label",
+    "words": {
+     "first": [
+      "first",
+      "one"
+     ],
+     "late": [
+      "fifth",
+      "five"
+     ]
+    }
+   },
+   {
+    "id": "jlens:tb_tablecol:d0",
+    "family": "diff_rank0",
+    "words": {
+     "first": [
+      "leadership"
+     ],
+     "late": [
+      "European"
+     ]
+    }
+   },
+   {
+    "id": "jlens:tb_tablecol:d1",
+    "family": "diff_rank1",
+    "words": {
+     "first": [
+      "staff"
+     ],
+     "late": [
+      "Mediterranean"
+     ]
+    }
+   },
+   {
+    "id": "jlens:tb_tablecol:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "first": [
+      "leadership",
+      "staff",
+      "personnel"
+     ],
+     "late": [
+      "European",
+      "Mediterranean"
+     ]
+    }
+   }
+  ],
+  "tb_codeline": [
+   {
+    "id": "jlens:tb_codeline:fixed",
+    "family": "fixed_label",
+    "words": {
+     "early": [
+      "two",
+      "second"
+     ],
+     "late": [
+      "ten",
+      "tenth"
+     ]
+    }
+   },
+   {
+    "id": "jlens:tb_codeline:d0",
+    "family": "diff_rank0",
+    "words": {
+     "early": [
+      "count"
+     ],
+     "late": [
+      "ID"
+     ]
+    }
+   },
+   {
+    "id": "jlens:tb_codeline:d1",
+    "family": "diff_rank1",
+    "words": {
+     "early": [
+      "counts"
+     ],
+     "late": [
+      "id"
+     ]
+    }
+   },
+   {
+    "id": "jlens:tb_codeline:d2",
+    "family": "diff_rank2",
+    "words": {
+     "early": [
+      "counting"
+     ],
+     "late": [
+      "name"
+     ]
+    }
+   },
+   {
+    "id": "jlens:tb_codeline:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "early": [
+      "count",
+      "counts",
+      "counting"
+     ],
+     "late": [
+      "ID",
+      "id",
+      "name"
+     ]
+    }
+   }
+  ],
+  "tb_paren": [
+   {
+    "id": "jlens:tb_paren:fixed",
+    "family": "fixed_label",
+    "words": {
+     "inside": [
+      "inside",
+      "parenthesis"
+     ],
+     "outside": [
+      "outside"
+     ]
+    }
+   }
+  ],
+  "tb_wordsleft": [
+   {
+    "id": "jlens:tb_wordsleft:fixed",
+    "family": "fixed_label",
+    "words": {
+     "many": [
+      "twenty",
+      "many"
+     ],
+     "few": [
+      "three",
+      "few"
+     ]
+    }
+   }
+  ],
+  "fmt_qa": [
+   {
+    "id": "jlens:fmt_qa:fixed",
+    "family": "fixed_label",
+    "words": {
+     "qa": [
+      "question",
+      "answer"
+     ],
+     "prose": [
+      "prose",
+      "paragraph"
+     ]
+    }
+   }
+  ],
+  "fmt_listdepth": [
+   {
+    "id": "jlens:fmt_listdepth:fixed",
+    "family": "fixed_label",
+    "words": {
+     "shallow": [
+      "top",
+      "one"
+     ],
+     "deep": [
+      "three",
+      "nested"
+     ]
+    }
+   },
+   {
+    "id": "jlens:fmt_listdepth:d0",
+    "family": "diff_rank0",
+    "words": {
+     "shallow": [
+      "webpage"
+     ],
+     "deep": [
+      "ciudad"
+     ]
+    }
+   },
+   {
+    "id": "jlens:fmt_listdepth:d1",
+    "family": "diff_rank1",
+    "words": {
+     "shallow": [
+      "Web"
+     ],
+     "deep": [
+      "cidade"
+     ]
+    }
+   },
+   {
+    "id": "jlens:fmt_listdepth:d2",
+    "family": "diff_rank2",
+    "words": {
+     "shallow": [
+      "HTML"
+     ],
+     "deep": [
+      "pixel"
+     ]
+    }
+   },
+   {
+    "id": "jlens:fmt_listdepth:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "shallow": [
+      "webpage",
+      "Web",
+      "HTML"
+     ],
+     "deep": [
+      "ciudad",
+      "cidade",
+      "pixel"
+     ]
+    }
+   }
+  ],
+  "nj1_col_fresh": [
+   {
+    "id": "jlens:nj1_col_fresh:fixed",
+    "family": "fixed_label",
+    "words": {
+     "short": [
+      "twenty"
+     ],
+     "long": [
+      "seventy"
+     ]
+    }
+   }
+  ]
+ }
+}

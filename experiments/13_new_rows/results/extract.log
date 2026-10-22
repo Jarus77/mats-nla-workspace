@@ -1,0 +1,16 @@
+extracting: ['tb_sentcount', 'tb_tablecol', 'tb_codeline', 'tb_paren', 'tb_wordsleft', 'fmt_qa', 'fmt_listdepth']
+tb_sentcount   nla : 4 mined (+fixed); llm mention 0.0; regex 0.68
+tb_sentcount   ol  : 5 mined (+fixed); llm mention 0.05; regex 0.16
+tb_tablecol    nla : 5 mined (+fixed); llm mention 0.15; regex 0.78
+tb_tablecol    ol  : 4 mined (+fixed); llm mention 0.0; regex 0.01
+tb_codeline    nla : 5 mined (+fixed); llm mention 0.0; regex 0.69
+tb_codeline    ol  : 5 mined (+fixed); llm mention 0.0; regex 0.05
+tb_paren       nla : 5 mined (+fixed); llm mention 0.06; regex 0.35
+tb_paren       ol  : 4 mined (+fixed); llm mention 0.0; regex 0.01
+tb_wordsleft   nla : 4 mined (+fixed); llm mention 0.0; regex 0.03
+tb_wordsleft   ol  : 4 mined (+fixed); llm mention 0.03; regex 0.01
+fmt_qa         nla : 4 mined (+fixed); llm mention 0.02; regex 0.20
+fmt_qa         ol  : 4 mined (+fixed); llm mention 0.0; regex 0.01
+fmt_listdepth  nla : 5 mined (+fixed); llm mention 0.12; regex 0.64
+fmt_listdepth  ol  : 4 mined (+fixed); llm mention 0.0; regex 0.08
+spend $0.149 over 14 calls

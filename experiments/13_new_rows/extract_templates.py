@@ -31,7 +31,18 @@ sys.path.insert(0, str(HERE))
 
 from feature_spec import (FEATURES, FIXED_JLENS, QUALITATIVE_PRIMARY, fixed_extra, fixed_template,
                           is_numeric, validate)  # noqa: E402
-from mats.textnla import _api_key  # noqa: E402
+
+
+def _api_key() -> str:  # torch-free copy of mats.textnla._api_key (OPENROUTER_API_KEY from env or repo .env)
+    import os
+    key = os.environ.get("OPENROUTER_API_KEY", "")
+    if not key:
+        for line in (HERE.parents[1] / ".env").read_text(encoding="utf-8").splitlines():
+            if line.startswith("OPENROUTER_API_KEY="):
+                key = line.split("=", 1)[1].strip().strip('"').strip("'")
+    if not key:
+        raise RuntimeError("OPENROUTER_API_KEY not found")
+    return key
 
 RES = HERE / "results"
 MODEL = "google/gemini-3.8-flash"
@@ -275,7 +286,8 @@ def main() -> None:
     log: dict = json.loads(pl.read_text()) if pl.exists() else {}
     prior_spend = float(log.get("_spend_usd", 0.0))
     feats = [f for f in FEATURES if (RES / f"gen_ol_{f}.json").exists()
-             and (RES / f"gen_nla_{f}.json").exists() and f not in cand["jlens"]]
+             and (RES / f"gen_nla_{f}.json").exists() and f not in cand["jlens"]
+             and not FEATURES[f].get("select_only")]
     print("extracting:", feats)
     gem = Gemini()
     gem.spend = prior_spend  # the cap applies to the cumulative spend

@@ -1,0 +1,242 @@
+{
+ "tb_sentcount": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(sentences?|first|second|third|fourth|fifth|sixth|opening|closing)\\b",
+    "overall": 0.1625,
+    "by_value": {
+     "early": 0.2,
+     "late": 0.125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "The readouts almost entirely reflect continuations of the underlying source prose rather than explicit metalinguistic descriptions of paragraph sentence count, though temporal/positional words like 'early on' or 'by the late' occasionally surface.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(sentences?|first|second|third|fourth|fifth|sixth|opening|closing)\\b",
+    "overall": 0.684375,
+    "by_value": {
+     "early": 0.7,
+     "late": 0.66875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The verbalizer readouts describe topical genre, syntax, and narrative momentum rather than explicitly reporting paragraph sentence count.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "tb_tablecol": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(columns?|cells?|table|first|last|fourth|fifth|sixth)\\b",
+    "overall": 0.00625,
+    "by_value": {
+     "first": 0.00625,
+     "late": 0.00625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts consist purely of simulated table data rows and continuation snippets with zero explicit mention of the column position feature.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(columns?|cells?|table|first|last|fourth|fifth|sixth)\\b",
+    "overall": 0.78125,
+    "by_value": {
+     "first": 0.7875,
+     "late": 0.775
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.15,
+   "notes": "Readouts rarely mention table column indices directly, instead describing whether the token 'begins/opens a new row' (first) versus 'ends/completes' a row or status value (late).",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "tb_codeline": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(lines?|statements?|function body|early|late|near the (start|end))\\b",
+    "overall": 0.046875,
+    "by_value": {
+     "early": 0.0625,
+     "late": 0.03125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The feature tb_codeline is never mentioned explicitly by name or line label, but manifests implicitly through small loop-step constants and offset math in early lines versus deeper accumulation, logging, and aggregation patterns in late lines.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(lines?|statements?|function body|early|late|near the (start|end))\\b",
+    "overall": 0.690625,
+    "by_value": {
+     "early": 0.68125,
+     "late": 0.7
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly name code line numbers or early/late positions, but 'early' lines trigger varied functional code/logic descriptions while 'late' lines consistently trigger descriptors like 'Repetition/continuation' and 'Parallel structure'.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "tb_paren": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(parenthe\\w+|brackets?|aside|parenthetical)\\b",
+    "overall": 0.0125,
+    "by_value": {
+     "inside": 0.025,
+     "outside": 0.0
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The model's internal activations at this position primarily generate direct token completions reflecting the syntactic state—specifically closing open parentheses (')') when inside versus standard comma/text continuations when outside.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(parenthe\\w+|brackets?|aside|parenthetical)\\b",
+    "overall": 0.353125,
+    "by_value": {
+     "inside": 0.69375,
+     "outside": 0.0125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.06,
+   "notes": "Parenthetical references appear in around 10-15% of 'inside' explanations (often noting unclosed parentheticals or parenthetical structures) and are almost completely absent from 'outside' explanations.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "tb_wordsleft": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(words? (left|remaining|limit|budget|count)|exactly \\d+|limit|remaining|budget)\\b",
+    "overall": 0.00625,
+    "by_value": {
+     "few": 0.00625,
+     "many": 0.00625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.03,
+   "notes": "The model's readouts primarily generate continuation text of the underlying passage rather than explicit meta-commentary about words remaining, with only occasional word-count parentheticals visible.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(words? (left|remaining|limit|budget|count)|exactly \\d+|limit|remaining|budget)\\b",
+    "overall": 0.025,
+    "by_value": {
+     "few": 0.0,
+     "many": 0.05
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The verbalizer never explicitly mentions remaining word counts ('tb_wordsleft'), describing only domain/genre and syntax predictions, though 'narrative momentum' and phrasing types show subtle distributional correlations across prompt sets.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "fmt_qa": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(question|answer|Q&A|Q/A|prose|paragraph|dialogue)\\b",
+    "overall": 0.00625,
+    "by_value": {
+     "prose": 0.00625,
+     "qa": 0.00625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts consist strictly of content-continuation text mirroring source topics rather than surface layout markers or explicit format labels.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(question|answer|Q&A|Q/A|prose|paragraph|dialogue)\\b",
+    "overall": 0.2,
+    "by_value": {
+     "prose": 0.15625,
+     "qa": 0.24375
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The tool rarely explicitly mentions question-and-answer format (only a couple of qa readouts mention 'Q&A format'), instead describing the topic content in an encyclopedic or narrative register regardless of layout.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "fmt_listdepth": {
+  "ol": {
+   "mention_regex": {
+    "regex": "\\b(nested|nesting|sub-?items?|indent\\w*|depth|level|top[- ]level|bullet)\\b",
+    "overall": 0.084375,
+    "by_value": {
+     "deep": 0.0125,
+     "shallow": 0.15625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly mention list depth or nesting level, instead generating top-level project/domain labels for shallow items and granular low-level continuations or tasks for deep items.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "\\b(nested|nesting|sub-?items?|indent\\w*|depth|level|top[- ]level|bullet)\\b",
+    "overall": 0.6375,
+    "by_value": {
+     "deep": 0.44375,
+     "shallow": 0.83125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.12,
+   "notes": "The tool rarely verbalizes exact nesting levels, instead referring to shallow items via high-level category/project headers and deep items via granular parallel item enumerations.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "_calls": 14,
+ "_spend_usd": 0.1491
+}

@@ -1,0 +1,7786 @@
+{
+ "items": {
+  "fmt_listdepth": {
+   "mine": [
+    "ld_100_d1",
+    "ld_107_d3",
+    "ld_120_d1",
+    "ld_123_d3",
+    "ld_12_d1",
+    "ld_133_d3",
+    "ld_139_d3",
+    "ld_140_d1",
+    "ld_148_d1",
+    "ld_151_d3",
+    "ld_154_d1",
+    "ld_15_d3",
+    "ld_160_d1",
+    "ld_161_d3",
+    "ld_174_d1",
+    "ld_177_d3",
+    "ld_182_d1",
+    "ld_184_d1",
+    "ld_189_d3",
+    "ld_195_d3",
+    "ld_196_d1",
+    "ld_1_d3",
+    "ld_204_d1",
+    "ld_207_d3",
+    "ld_213_d3",
+    "ld_218_d1",
+    "ld_22_d1",
+    "ld_26_d1",
+    "ld_27_d3",
+    "ld_36_d1",
+    "ld_45_d3",
+    "ld_51_d3",
+    "ld_52_d1",
+    "ld_58_d1",
+    "ld_60_d1",
+    "ld_62_d1",
+    "ld_71_d3",
+    "ld_75_d3",
+    "ld_77_d3",
+    "ld_89_d3"
+   ],
+   "select": [
+    "ld_0_d1",
+    "ld_101_d3",
+    "ld_102_d1",
+    "ld_103_d3",
+    "ld_104_d1",
+    "ld_105_d3",
+    "ld_106_d1",
+    "ld_108_d1",
+    "ld_109_d3",
+    "ld_10_d1",
+    "ld_111_d3",
+    "ld_112_d1",
+    "ld_113_d3",
+    "ld_114_d1",
+    "ld_115_d3",
+    "ld_116_d1",
+    "ld_117_d3",
+    "ld_118_d1",
+    "ld_119_d3",
+    "ld_11_d3",
+    "ld_121_d3",
+    "ld_122_d1",
+    "ld_124_d1",
+    "ld_125_d3",
+    "ld_126_d1",
+    "ld_127_d3",
+    "ld_128_d1",
+    "ld_129_d3",
+    "ld_130_d1",
+    "ld_131_d3",
+    "ld_132_d1",
+    "ld_135_d3",
+    "ld_136_d1",
+    "ld_137_d3",
+    "ld_138_d1",
+    "ld_141_d3",
+    "ld_142_d1",
+    "ld_143_d3",
+    "ld_144_d1",
+    "ld_145_d3",
+    "ld_146_d1",
+    "ld_147_d3",
+    "ld_14_d1",
+    "ld_152_d1",
+    "ld_153_d3",
+    "ld_155_d3",
+    "ld_156_d1",
+    "ld_157_d3",
+    "ld_158_d1",
+    "ld_159_d3",
+    "ld_162_d1",
+    "ld_163_d3",
+    "ld_164_d1",
+    "ld_165_d3",
+    "ld_166_d1",
+    "ld_167_d3",
+    "ld_168_d1",
+    "ld_169_d3",
+    "ld_16_d1",
+    "ld_170_d1",
+    "ld_171_d3",
+    "ld_172_d1",
+    "ld_173_d3",
+    "ld_175_d3",
+    "ld_176_d1",
+    "ld_178_d1",
+    "ld_179_d3",
+    "ld_180_d1",
+    "ld_181_d3",
+    "ld_183_d3",
+    "ld_185_d3",
+    "ld_186_d1",
+    "ld_187_d3",
+    "ld_188_d1",
+    "ld_190_d1",
+    "ld_191_d3",
+    "ld_193_d3",
+    "ld_194_d1",
+    "ld_198_d1",
+    "ld_199_d3",
+    "ld_19_d3",
+    "ld_200_d1",
+    "ld_201_d3",
+    "ld_202_d1",
+    "ld_203_d3",
+    "ld_205_d3",
+    "ld_206_d1",
+    "ld_208_d1",
+    "ld_209_d3",
+    "ld_20_d1",
+    "ld_210_d1",
+    "ld_211_d3",
+    "ld_212_d1",
+    "ld_215_d3",
+    "ld_216_d1",
+    "ld_217_d3",
+    "ld_219_d3",
+    "ld_21_d3",
+    "ld_24_d1",
+    "ld_25_d3",
+    "ld_28_d1",
+    "ld_29_d3",
+    "ld_2_d1",
+    "ld_30_d1",
+    "ld_31_d3",
+    "ld_32_d1",
+    "ld_33_d3",
+    "ld_34_d1",
+    "ld_35_d3",
+    "ld_37_d3",
+    "ld_38_d1",
+    "ld_39_d3",
+    "ld_3_d3",
+    "ld_40_d1",
+    "ld_41_d3",
+    "ld_42_d1",
+    "ld_43_d3",
+    "ld_44_d1",
+    "ld_47_d3",
+    "ld_48_d1",
+    "ld_49_d3",
+    "ld_4_d1",
+    "ld_50_d1",
+    "ld_53_d3",
+    "ld_54_d1",
+    "ld_55_d3",
+    "ld_59_d3",
+    "ld_5_d3",
+    "ld_63_d3",
+    "ld_64_d1",
+    "ld_65_d3",
+    "ld_66_d1",
+    "ld_67_d3",
+    "ld_6_d1",
+    "ld_70_d1",
+    "ld_72_d1",
+    "ld_73_d3",
+    "ld_74_d1",
+    "ld_76_d1",
+    "ld_78_d1",
+    "ld_79_d3",
+    "ld_7_d3",
+    "ld_80_d1",
+    "ld_82_d1",
+    "ld_83_d3",
+    "ld_84_d1",
+    "ld_85_d3",
+    "ld_86_d1",
+    "ld_87_d3",
+    "ld_8_d1",
+    "ld_90_d1",
+    "ld_91_d3",
+    "ld_92_d1",
+    "ld_94_d1",
+    "ld_95_d3",
+    "ld_96_d1",
+    "ld_97_d3",
+    "ld_98_d1",
+    "ld_99_d3",
+    "ld_9_d3"
+   ]
+  },
+  "fmt_qa": {
+   "mine": [
+    "qa_p0_c125",
+    "qa_p100_c79",
+    "qa_p105_c111",
+    "qa_p10_c138",
+    "qa_p124_c138",
+    "qa_p128_c132",
+    "qa_p130_c99",
+    "qa_p141_c104",
+    "qa_p142_c152",
+    "qa_p145_c128",
+    "qa_p16_c181",
+    "qa_p17_c122",
+    "qa_p192_c89",
+    "qa_p199_c115",
+    "qa_p20_c139",
+    "qa_p215_c182",
+    "qa_p219_c145",
+    "qa_p224_c149",
+    "qa_p23_c113",
+    "qa_p241_c156",
+    "qa_p248_c165",
+    "qa_p249_c76",
+    "qa_p25_c117",
+    "qa_p260_c102",
+    "qa_p261_c135",
+    "qa_p281_c115",
+    "qa_p292_c109",
+    "qa_p301_c87",
+    "qa_p302_c143",
+    "qa_p350_c139",
+    "qa_p352_c106",
+    "qa_p355_c76",
+    "qa_p358_c138",
+    "qa_p368_c124",
+    "qa_p387_c90",
+    "qa_p398_c100",
+    "qa_p51_c125",
+    "qa_p73_c171",
+    "qa_p97_c159",
+    "qa_p9_c130"
+   ],
+   "select": [
+    "qa_p101_c141",
+    "qa_p104_c107",
+    "qa_p106_c134",
+    "qa_p107_c122",
+    "qa_p109_c159",
+    "qa_p114_c149",
+    "qa_p117_c165",
+    "qa_p119_c137",
+    "qa_p11_c152",
+    "qa_p120_c167",
+    "qa_p121_c175",
+    "qa_p123_c168",
+    "qa_p125_c113",
+    "qa_p126_c91",
+    "qa_p129_c184",
+    "qa_p131_c113",
+    "qa_p132_c109",
+    "qa_p136_c154",
+    "qa_p138_c152",
+    "qa_p146_c168",
+    "qa_p149_c132",
+    "qa_p14_c127",
+    "qa_p151_c124",
+    "qa_p152_c85",
+    "qa_p154_c86",
+    "qa_p156_c147",
+    "qa_p157_c146",
+    "qa_p158_c189",
+    "qa_p159_c166",
+    "qa_p161_c137",
+    "qa_p162_c121",
+    "qa_p165_c75",
+    "qa_p166_c162",
+    "qa_p167_c180",
+    "qa_p173_c174",
+    "qa_p175_c160",
+    "qa_p179_c171",
+    "qa_p180_c130",
+    "qa_p181_c116",
+    "qa_p182_c129",
+    "qa_p184_c138",
+    "qa_p189_c164",
+    "qa_p190_c155",
+    "qa_p193_c165",
+    "qa_p194_c90",
+    "qa_p195_c150",
+    "qa_p197_c122",
+    "qa_p198_c81",
+    "qa_p19_c90",
+    "qa_p1_c119",
+    "qa_p200_c74",
+    "qa_p205_c167",
+    "qa_p210_c79",
+    "qa_p216_c141",
+    "qa_p21_c160",
+    "qa_p222_c82",
+    "qa_p226_c194",
+    "qa_p227_c88",
+    "qa_p228_c149",
+    "qa_p233_c179",
+    "qa_p235_c180",
+    "qa_p236_c122",
+    "qa_p239_c118",
+    "qa_p242_c114",
+    "qa_p245_c105",
+    "qa_p254_c140",
+    "qa_p256_c163",
+    "qa_p258_c183",
+    "qa_p265_c124",
+    "qa_p269_c111",
+    "qa_p26_c93",
+    "qa_p272_c115",
+    "qa_p273_c87",
+    "qa_p275_c76",
+    "qa_p279_c103",
+    "qa_p27_c93",
+    "qa_p280_c106",
+    "qa_p285_c93",
+    "qa_p286_c123",
+    "qa_p287_c92",
+    "qa_p288_c117",
+    "qa_p289_c104",
+    "qa_p290_c139",
+    "qa_p291_c170",
+    "qa_p29_c113",
+    "qa_p300_c102",
+    "qa_p305_c136",
+    "qa_p30_c174",
+    "qa_p312_c186",
+    "qa_p314_c120",
+    "qa_p315_c112",
+    "qa_p316_c109",
+    "qa_p317_c124",
+    "qa_p31_c159",
+    "qa_p320_c175",
+    "qa_p322_c125",
+    "qa_p323_c157",
+    "qa_p32_c161",
+    "qa_p330_c88",
+    "qa_p333_c198",
+    "qa_p334_c141",
+    "qa_p336_c134",
+    "qa_p337_c147",
+    "qa_p340_c162",
+    "qa_p342_c97",
+    "qa_p344_c151",
+    "qa_p345_c159",
+    "qa_p347_c160",
+    "qa_p34_c131",
+    "qa_p359_c100",
+    "qa_p35_c123",
+    "qa_p360_c151",
+    "qa_p362_c156",
+    "qa_p364_c136",
+    "qa_p365_c161",
+    "qa_p366_c187",
+    "qa_p367_c88",
+    "qa_p36_c106",
+    "qa_p370_c104",
+    "qa_p371_c132",
+    "qa_p373_c93",
+    "qa_p374_c96",
+    "qa_p376_c140",
+    "qa_p377_c169",
+    "qa_p379_c124",
+    "qa_p37_c141",
+    "qa_p390_c174",
+    "qa_p391_c161",
+    "qa_p392_c132",
+    "qa_p393_c175",
+    "qa_p397_c147",
+    "qa_p399_c165",
+    "qa_p39_c108",
+    "qa_p3_c173",
+    "qa_p48_c108",
+    "qa_p4_c125",
+    "qa_p50_c175",
+    "qa_p52_c164",
+    "qa_p54_c145",
+    "qa_p56_c209",
+    "qa_p60_c183",
+    "qa_p61_c184",
+    "qa_p62_c214",
+    "qa_p63_c126",
+    "qa_p65_c87",
+    "qa_p68_c160",
+    "qa_p6_c167",
+    "qa_p70_c94",
+    "qa_p71_c148",
+    "qa_p75_c120",
+    "qa_p76_c107",
+    "qa_p79_c155",
+    "qa_p83_c111",
+    "qa_p85_c129",
+    "qa_p87_c156",
+    "qa_p8_c82",
+    "qa_p90_c114",
+    "qa_p96_c163",
+    "qa_p98_c137",
+    "qa_p99_c107"
+   ]
+  },
+  "nj1_col_fresh": {
+   "mine": [],
+   "select": [
+    "colf_p0_t132",
+    "colf_p101_t120",
+    "colf_p103_t160",
+    "colf_p105_t90",
+    "colf_p106_t21",
+    "colf_p110_t80",
+    "colf_p112_t74",
+    "colf_p119_t173",
+    "colf_p11_t71",
+    "colf_p121_t70",
+    "colf_p125_t219",
+    "colf_p126_t62",
+    "colf_p133_t131",
+    "colf_p141_t14",
+    "colf_p146_t43",
+    "colf_p147_t112",
+    "colf_p156_t102",
+    "colf_p158_t80",
+    "colf_p160_t84",
+    "colf_p165_t94",
+    "colf_p166_t65",
+    "colf_p167_t134",
+    "colf_p174_t145",
+    "colf_p176_t106",
+    "colf_p181_t17",
+    "colf_p182_t17",
+    "colf_p185_t73",
+    "colf_p188_t69",
+    "colf_p192_t70",
+    "colf_p193_t50",
+    "colf_p194_t79",
+    "colf_p195_t106",
+    "colf_p199_t83",
+    "colf_p1_t86",
+    "colf_p201_t30",
+    "colf_p202_t63",
+    "colf_p209_t107",
+    "colf_p216_t118",
+    "colf_p218_t219",
+    "colf_p220_t90",
+    "colf_p222_t131",
+    "colf_p223_t36",
+    "colf_p225_t75",
+    "colf_p235_t34",
+    "colf_p242_t195",
+    "colf_p249_t99",
+    "colf_p24_t91",
+    "colf_p258_t57",
+    "colf_p25_t35",
+    "colf_p265_t162",
+    "colf_p268_t94",
+    "colf_p274_t72",
+    "colf_p275_t124",
+    "colf_p27_t173",
+    "colf_p280_t60",
+    "colf_p283_t243",
+    "colf_p285_t70",
+    "colf_p291_t227",
+    "colf_p294_t104",
+    "colf_p299_t82",
+    "colf_p301_t54",
+    "colf_p310_t223",
+    "colf_p311_t83",
+    "colf_p314_t24",
+    "colf_p326_t46",
+    "colf_p32_t107",
+    "colf_p333_t57",
+    "colf_p339_t119",
+    "colf_p33_t34",
+    "colf_p343_t114",
+    "colf_p345_t150",
+    "colf_p346_t45",
+    "colf_p347_t89",
+    "colf_p348_t72",
+    "colf_p351_t138",
+    "colf_p360_t139",
+    "colf_p369_t96",
+    "colf_p36_t19",
+    "colf_p371_t156",
+    "colf_p374_t115",
+    "colf_p375_t123",
+    "colf_p379_t10",
+    "colf_p382_t17",
+    "colf_p388_t196",
+    "colf_p38_t61",
+    "colf_p391_t145",
+    "colf_p392_t126",
+    "colf_p393_t176",
+    "colf_p395_t216",
+    "colf_p396_t52",
+    "colf_p3_t69",
+    "colf_p408_t205",
+    "colf_p411_t51",
+    "colf_p414_t54",
+    "colf_p415_t64",
+    "colf_p416_t35",
+    "colf_p41_t22",
+    "colf_p424_t199",
+    "colf_p431_t126",
+    "colf_p432_t19",
+    "colf_p440_t66",
+    "colf_p442_t63",
+    "colf_p443_t47",
+    "colf_p445_t46",
+    "colf_p446_t96",
+    "colf_p449_t71",
+    "colf_p454_t150",
+    "colf_p456_t150",
+    "colf_p465_t72",
+    "colf_p467_t116",
+    "colf_p46_t124",
+    "colf_p472_t172",
+    "colf_p474_t127",
+    "colf_p476_t94",
+    "colf_p478_t164",
+    "colf_p47_t86",
+    "colf_p482_t83",
+    "colf_p484_t100",
+    "colf_p488_t121",
+    "colf_p48_t55",
+    "colf_p492_t181",
+    "colf_p493_t80",
+    "colf_p496_t97",
+    "colf_p501_t141",
+    "colf_p507_t99",
+    "colf_p512_t242",
+    "colf_p515_t12",
+    "colf_p518_t19",
+    "colf_p521_t34",
+    "colf_p523_t250",
+    "colf_p528_t165",
+    "colf_p529_t71",
+    "colf_p530_t19",
+    "colf_p538_t219",
+    "colf_p540_t163",
+    "colf_p553_t155",
+    "colf_p560_t27",
+    "colf_p561_t25",
+    "colf_p563_t40",
+    "colf_p565_t183",
+    "colf_p568_t169",
+    "colf_p569_t13",
+    "colf_p578_t144",
+    "colf_p579_t196",
+    "colf_p57_t219",
+    "colf_p583_t194",
+    "colf_p586_t60",
+    "colf_p58_t122",
+    "colf_p590_t56",
+    "colf_p592_t163",
+    "colf_p64_t23",
+    "colf_p70_t13",
+    "colf_p73_t109",
+    "colf_p75_t246",
+    "colf_p76_t104",
+    "colf_p78_t108",
+    "colf_p83_t57",
+    "colf_p89_t147",
+    "colf_p93_t110",
+    "colf_p99_t39"
+   ]
+  },
+  "tb_codeline": {
+   "mine": [
+    "code_103_l9",
+    "code_106_l2",
+    "code_107_l12",
+    "code_108_l2",
+    "code_113_l9",
+    "code_116_l2",
+    "code_118_l2",
+    "code_11_l10",
+    "code_120_l2",
+    "code_148_l2",
+    "code_153_l11",
+    "code_157_l10",
+    "code_167_l12",
+    "code_169_l10",
+    "code_16_l3",
+    "code_182_l2",
+    "code_186_l2",
+    "code_191_l11",
+    "code_196_l3",
+    "code_19_l11",
+    "code_209_l10",
+    "code_20_l3",
+    "code_214_l2",
+    "code_22_l2",
+    "code_23_l12",
+    "code_25_l12",
+    "code_2_l2",
+    "code_32_l3",
+    "code_35_l11",
+    "code_44_l2",
+    "code_45_l11",
+    "code_4_l3",
+    "code_58_l3",
+    "code_67_l10",
+    "code_68_l3",
+    "code_69_l11",
+    "code_6_l3",
+    "code_73_l9",
+    "code_87_l11",
+    "code_91_l9"
+   ],
+   "select": [
+    "code_0_l3",
+    "code_100_l3",
+    "code_101_l9",
+    "code_102_l2",
+    "code_104_l3",
+    "code_105_l10",
+    "code_109_l11",
+    "code_10_l3",
+    "code_110_l2",
+    "code_111_l9",
+    "code_112_l2",
+    "code_114_l3",
+    "code_115_l10",
+    "code_117_l11",
+    "code_119_l12",
+    "code_121_l11",
+    "code_122_l2",
+    "code_123_l11",
+    "code_124_l2",
+    "code_125_l10",
+    "code_126_l3",
+    "code_127_l11",
+    "code_129_l12",
+    "code_12_l3",
+    "code_130_l3",
+    "code_131_l12",
+    "code_132_l2",
+    "code_133_l12",
+    "code_134_l3",
+    "code_135_l9",
+    "code_136_l2",
+    "code_137_l10",
+    "code_138_l3",
+    "code_139_l11",
+    "code_13_l11",
+    "code_140_l2",
+    "code_141_l12",
+    "code_142_l3",
+    "code_143_l12",
+    "code_144_l3",
+    "code_145_l11",
+    "code_146_l3",
+    "code_147_l11",
+    "code_14_l2",
+    "code_150_l3",
+    "code_151_l12",
+    "code_154_l2",
+    "code_155_l9",
+    "code_156_l2",
+    "code_158_l2",
+    "code_159_l11",
+    "code_15_l11",
+    "code_160_l2",
+    "code_161_l9",
+    "code_162_l3",
+    "code_164_l2",
+    "code_165_l9",
+    "code_166_l3",
+    "code_168_l3",
+    "code_170_l3",
+    "code_171_l11",
+    "code_174_l3",
+    "code_175_l9",
+    "code_176_l2",
+    "code_177_l9",
+    "code_178_l2",
+    "code_179_l12",
+    "code_17_l9",
+    "code_180_l3",
+    "code_181_l10",
+    "code_183_l10",
+    "code_185_l12",
+    "code_188_l2",
+    "code_189_l11",
+    "code_18_l2",
+    "code_190_l3",
+    "code_192_l2",
+    "code_193_l11",
+    "code_194_l2",
+    "code_195_l12",
+    "code_197_l11",
+    "code_198_l3",
+    "code_199_l11",
+    "code_1_l12",
+    "code_200_l2",
+    "code_201_l12",
+    "code_202_l3",
+    "code_203_l10",
+    "code_204_l3",
+    "code_205_l9",
+    "code_207_l9",
+    "code_208_l3",
+    "code_210_l3",
+    "code_212_l3",
+    "code_213_l9",
+    "code_215_l12",
+    "code_216_l2",
+    "code_217_l9",
+    "code_218_l2",
+    "code_219_l9",
+    "code_21_l12",
+    "code_24_l2",
+    "code_26_l3",
+    "code_27_l12",
+    "code_28_l3",
+    "code_29_l12",
+    "code_30_l3",
+    "code_33_l11",
+    "code_36_l2",
+    "code_37_l10",
+    "code_38_l3",
+    "code_39_l11",
+    "code_3_l10",
+    "code_40_l2",
+    "code_42_l3",
+    "code_43_l11",
+    "code_46_l3",
+    "code_47_l9",
+    "code_49_l12",
+    "code_50_l2",
+    "code_52_l2",
+    "code_53_l10",
+    "code_54_l2",
+    "code_55_l9",
+    "code_56_l2",
+    "code_57_l12",
+    "code_5_l9",
+    "code_60_l3",
+    "code_61_l12",
+    "code_62_l2",
+    "code_63_l9",
+    "code_64_l2",
+    "code_65_l10",
+    "code_66_l2",
+    "code_70_l2",
+    "code_71_l9",
+    "code_75_l12",
+    "code_76_l2",
+    "code_77_l11",
+    "code_78_l2",
+    "code_7_l12",
+    "code_80_l2",
+    "code_81_l12",
+    "code_82_l3",
+    "code_83_l9",
+    "code_84_l2",
+    "code_85_l9",
+    "code_86_l2",
+    "code_88_l3",
+    "code_89_l9",
+    "code_8_l2",
+    "code_92_l3",
+    "code_93_l12",
+    "code_94_l3",
+    "code_95_l11",
+    "code_96_l2",
+    "code_97_l12",
+    "code_98_l3",
+    "code_99_l12",
+    "code_9_l11"
+   ]
+  },
+  "tb_paren": {
+   "mine": [
+    "paren_p101_c454",
+    "paren_p103_c493",
+    "paren_p1089_c551",
+    "paren_p1142_c67",
+    "paren_p117_c565",
+    "paren_p1197_c42",
+    "paren_p1220_c1158",
+    "paren_p1227_c40",
+    "paren_p1340_c342",
+    "paren_p1354_c463",
+    "paren_p1363_c1353",
+    "paren_p1404_c695",
+    "paren_p1499_c616",
+    "paren_p1524_c207",
+    "paren_p1535_c818",
+    "paren_p1573_c40",
+    "paren_p1626_c766",
+    "paren_p1680_c643",
+    "paren_p1801_c628",
+    "paren_p224_c482",
+    "paren_p360_c853",
+    "paren_p361_c498",
+    "paren_p393_c521",
+    "paren_p420_c765",
+    "paren_p49_c485",
+    "paren_p531_c817",
+    "paren_p574_c503",
+    "paren_p591_c1075",
+    "paren_p5_c202",
+    "paren_p601_c367",
+    "paren_p610_c303",
+    "paren_p687_c367",
+    "paren_p726_c1393",
+    "paren_p730_c251",
+    "paren_p736_c259",
+    "paren_p774_c619",
+    "paren_p88_c583",
+    "paren_p934_c336",
+    "paren_p941_c412",
+    "paren_p952_c1094"
+   ],
+   "select": [
+    "paren_p1008_c608",
+    "paren_p1051_c430",
+    "paren_p1058_c124",
+    "paren_p105_c808",
+    "paren_p1061_c804",
+    "paren_p1064_c787",
+    "paren_p1076_c568",
+    "paren_p1077_c735",
+    "paren_p1083_c606",
+    "paren_p1090_c543",
+    "paren_p1096_c665",
+    "paren_p1103_c813",
+    "paren_p1105_c556",
+    "paren_p1120_c898",
+    "paren_p1128_c634",
+    "paren_p1129_c341",
+    "paren_p1145_c789",
+    "paren_p1148_c410",
+    "paren_p1150_c117",
+    "paren_p1151_c330",
+    "paren_p1167_c169",
+    "paren_p1191_c851",
+    "paren_p1236_c190",
+    "paren_p1255_c712",
+    "paren_p1295_c337",
+    "paren_p1307_c978",
+    "paren_p1309_c318",
+    "paren_p1318_c404",
+    "paren_p1324_c398",
+    "paren_p1341_c512",
+    "paren_p1349_c295",
+    "paren_p1391_c564",
+    "paren_p1397_c184",
+    "paren_p1409_c780",
+    "paren_p1432_c160",
+    "paren_p1447_c883",
+    "paren_p1458_c121",
+    "paren_p1470_c611",
+    "paren_p1474_c1444",
+    "paren_p147_c540",
+    "paren_p1480_c171",
+    "paren_p1482_c496",
+    "paren_p1485_c268",
+    "paren_p1497_c856",
+    "paren_p149_c218",
+    "paren_p1563_c708",
+    "paren_p1569_c317",
+    "paren_p1593_c1015",
+    "paren_p1597_c40",
+    "paren_p1599_c464",
+    "paren_p1603_c355",
+    "paren_p160_c455",
+    "paren_p161_c323",
+    "paren_p1627_c992",
+    "paren_p1630_c968",
+    "paren_p1651_c333",
+    "paren_p1666_c366",
+    "paren_p1681_c335",
+    "paren_p1682_c1457",
+    "paren_p169_c748",
+    "paren_p1701_c366",
+    "paren_p1704_c548",
+    "paren_p1712_c479",
+    "paren_p1716_c481",
+    "paren_p1728_c831",
+    "paren_p1757_c344",
+    "paren_p1768_c886",
+    "paren_p1771_c499",
+    "paren_p1792_c291",
+    "paren_p17_c946",
+    "paren_p1809_c515",
+    "paren_p1815_c590",
+    "paren_p1854_c905",
+    "paren_p1871_c98",
+    "paren_p1874_c461",
+    "paren_p1876_c868",
+    "paren_p1877_c758",
+    "paren_p1885_c91",
+    "paren_p1886_c1385",
+    "paren_p1887_c182",
+    "paren_p1892_c894",
+    "paren_p1893_c254",
+    "paren_p1902_c928",
+    "paren_p1906_c239",
+    "paren_p1911_c536",
+    "paren_p191_c659",
+    "paren_p1920_c773",
+    "paren_p1947_c793",
+    "paren_p1960_c144",
+    "paren_p1977_c246",
+    "paren_p1986_c157",
+    "paren_p205_c130",
+    "paren_p221_c1202",
+    "paren_p242_c931",
+    "paren_p273_c510",
+    "paren_p292_c444",
+    "paren_p302_c639",
+    "paren_p314_c490",
+    "paren_p315_c306",
+    "paren_p34_c1010",
+    "paren_p368_c257",
+    "paren_p374_c1042",
+    "paren_p381_c761",
+    "paren_p383_c644",
+    "paren_p394_c643",
+    "paren_p410_c141",
+    "paren_p418_c31",
+    "paren_p423_c75",
+    "paren_p430_c713",
+    "paren_p439_c768",
+    "paren_p448_c388",
+    "paren_p455_c108",
+    "paren_p471_c1073",
+    "paren_p497_c845",
+    "paren_p503_c134",
+    "paren_p514_c787",
+    "paren_p544_c1125",
+    "paren_p554_c552",
+    "paren_p557_c926",
+    "paren_p572_c179",
+    "paren_p579_c1362",
+    "paren_p583_c1028",
+    "paren_p590_c621",
+    "paren_p594_c617",
+    "paren_p600_c1007",
+    "paren_p602_c784",
+    "paren_p604_c547",
+    "paren_p612_c411",
+    "paren_p622_c1080",
+    "paren_p632_c1019",
+    "paren_p648_c473",
+    "paren_p664_c803",
+    "paren_p669_c628",
+    "paren_p688_c247",
+    "paren_p701_c752",
+    "paren_p707_c70",
+    "paren_p715_c1026",
+    "paren_p728_c1103",
+    "paren_p739_c738",
+    "paren_p740_c171",
+    "paren_p773_c528",
+    "paren_p776_c415",
+    "paren_p781_c524",
+    "paren_p788_c998",
+    "paren_p795_c74",
+    "paren_p803_c484",
+    "paren_p826_c1086",
+    "paren_p834_c446",
+    "paren_p886_c311",
+    "paren_p889_c1008",
+    "paren_p899_c437",
+    "paren_p8_c804",
+    "paren_p910_c1013",
+    "paren_p912_c454",
+    "paren_p928_c741",
+    "paren_p969_c407",
+    "paren_p975_c277",
+    "paren_p978_c514",
+    "paren_p981_c1438",
+    "paren_p995_c59"
+   ]
+  },
+  "tb_sentcount": {
+   "mine": [
+    "sent_p1080_c175",
+    "sent_p1156_c862",
+    "sent_p1199_c687",
+    "sent_p1244_c72",
+    "sent_p1274_c72",
+    "sent_p1306_c243",
+    "sent_p1321_c832",
+    "sent_p1351_c614",
+    "sent_p137_c687",
+    "sent_p1427_c564",
+    "sent_p1535_c79",
+    "sent_p1562_c286",
+    "sent_p1576_c686",
+    "sent_p164_c503",
+    "sent_p16_c77",
+    "sent_p1741_c295",
+    "sent_p1760_c712",
+    "sent_p1851_c800",
+    "sent_p1878_c172",
+    "sent_p1937_c210",
+    "sent_p228_c679",
+    "sent_p296_c737",
+    "sent_p328_c795",
+    "sent_p362_c111",
+    "sent_p39_c67",
+    "sent_p43_c84",
+    "sent_p478_c565",
+    "sent_p521_c579",
+    "sent_p564_c48",
+    "sent_p566_c1129",
+    "sent_p567_c53",
+    "sent_p741_c141",
+    "sent_p79_c191",
+    "sent_p827_c39",
+    "sent_p843_c79",
+    "sent_p88_c224",
+    "sent_p903_c612",
+    "sent_p943_c532",
+    "sent_p974_c89",
+    "sent_p999_c824"
+   ],
+   "select": [
+    "sent_p1014_c722",
+    "sent_p1035_c70",
+    "sent_p1060_c696",
+    "sent_p1065_c237",
+    "sent_p1075_c491",
+    "sent_p10_c204",
+    "sent_p1107_c40",
+    "sent_p1113_c169",
+    "sent_p1114_c737",
+    "sent_p111_c174",
+    "sent_p112_c538",
+    "sent_p1131_c99",
+    "sent_p1143_c67",
+    "sent_p1145_c242",
+    "sent_p1147_c872",
+    "sent_p1169_c89",
+    "sent_p1189_c194",
+    "sent_p1210_c590",
+    "sent_p1217_c840",
+    "sent_p1225_c1099",
+    "sent_p122_c401",
+    "sent_p1232_c666",
+    "sent_p1255_c820",
+    "sent_p1263_c29",
+    "sent_p1265_c40",
+    "sent_p126_c621",
+    "sent_p1294_c555",
+    "sent_p1295_c52",
+    "sent_p1308_c832",
+    "sent_p1323_c514",
+    "sent_p1328_c65",
+    "sent_p1332_c39",
+    "sent_p135_c669",
+    "sent_p1373_c857",
+    "sent_p1375_c73",
+    "sent_p1393_c218",
+    "sent_p1402_c648",
+    "sent_p1404_c704",
+    "sent_p1407_c778",
+    "sent_p1419_c74",
+    "sent_p1438_c649",
+    "sent_p1448_c86",
+    "sent_p1455_c132",
+    "sent_p1472_c93",
+    "sent_p1481_c1230",
+    "sent_p1485_c210",
+    "sent_p1529_c53",
+    "sent_p1538_c67",
+    "sent_p1567_c641",
+    "sent_p1571_c140",
+    "sent_p1581_c486",
+    "sent_p1582_c180",
+    "sent_p1588_c94",
+    "sent_p1592_c211",
+    "sent_p1593_c506",
+    "sent_p1599_c771",
+    "sent_p1638_c581",
+    "sent_p1648_c94",
+    "sent_p1652_c45",
+    "sent_p1653_c503",
+    "sent_p1655_c617",
+    "sent_p165_c27",
+    "sent_p1670_c903",
+    "sent_p1676_c50",
+    "sent_p1677_c1086",
+    "sent_p1691_c111",
+    "sent_p1711_c67",
+    "sent_p173_c107",
+    "sent_p1758_c420",
+    "sent_p1766_c107",
+    "sent_p1781_c52",
+    "sent_p1784_c37",
+    "sent_p1795_c780",
+    "sent_p1807_c655",
+    "sent_p1819_c527",
+    "sent_p1826_c257",
+    "sent_p1853_c742",
+    "sent_p186_c510",
+    "sent_p1888_c43",
+    "sent_p1891_c173",
+    "sent_p1892_c578",
+    "sent_p189_c1243",
+    "sent_p1936_c925",
+    "sent_p1975_c602",
+    "sent_p1986_c771",
+    "sent_p1998_c108",
+    "sent_p222_c578",
+    "sent_p223_c43",
+    "sent_p257_c667",
+    "sent_p273_c367",
+    "sent_p282_c644",
+    "sent_p286_c683",
+    "sent_p289_c87",
+    "sent_p312_c28",
+    "sent_p314_c50",
+    "sent_p340_c79",
+    "sent_p34_c167",
+    "sent_p355_c43",
+    "sent_p35_c511",
+    "sent_p366_c56",
+    "sent_p372_c592",
+    "sent_p382_c690",
+    "sent_p385_c718",
+    "sent_p386_c94",
+    "sent_p389_c83",
+    "sent_p403_c625",
+    "sent_p405_c558",
+    "sent_p40_c635",
+    "sent_p418_c713",
+    "sent_p424_c78",
+    "sent_p425_c552",
+    "sent_p436_c836",
+    "sent_p448_c161",
+    "sent_p453_c602",
+    "sent_p460_c1086",
+    "sent_p469_c560",
+    "sent_p476_c294",
+    "sent_p47_c591",
+    "sent_p486_c767",
+    "sent_p510_c102",
+    "sent_p514_c255",
+    "sent_p546_c687",
+    "sent_p55_c57",
+    "sent_p563_c405",
+    "sent_p574_c294",
+    "sent_p581_c523",
+    "sent_p610_c138",
+    "sent_p614_c534",
+    "sent_p617_c750",
+    "sent_p623_c40",
+    "sent_p639_c114",
+    "sent_p654_c584",
+    "sent_p65_c97",
+    "sent_p674_c1227",
+    "sent_p684_c787",
+    "sent_p686_c584",
+    "sent_p721_c72",
+    "sent_p724_c594",
+    "sent_p738_c585",
+    "sent_p746_c84",
+    "sent_p753_c515",
+    "sent_p765_c254",
+    "sent_p771_c641",
+    "sent_p773_c39",
+    "sent_p781_c75",
+    "sent_p785_c593",
+    "sent_p791_c79",
+    "sent_p801_c762",
+    "sent_p802_c52",
+    "sent_p845_c490",
+    "sent_p84_c210",
+    "sent_p864_c54",
+    "sent_p872_c559",
+    "sent_p883_c132",
+    "sent_p887_c193",
+    "sent_p891_c91",
+    "sent_p927_c161",
+    "sent_p932_c214",
+    "sent_p964_c208",
+    "sent_p968_c84"
+   ]
+  },
+  "tb_tablecol": {
+   "mine": [
+    "tbl_109_c5",
+    "tbl_114_c1",
+    "tbl_116_c1",
+    "tbl_117_c4",
+    "tbl_120_c1",
+    "tbl_121_c6",
+    "tbl_122_c1",
+    "tbl_123_c5",
+    "tbl_124_c1",
+    "tbl_128_c1",
+    "tbl_12_c1",
+    "tbl_136_c1",
+    "tbl_139_c4",
+    "tbl_145_c6",
+    "tbl_147_c6",
+    "tbl_15_c6",
+    "tbl_172_c1",
+    "tbl_175_c5",
+    "tbl_181_c5",
+    "tbl_182_c1",
+    "tbl_199_c6",
+    "tbl_202_c1",
+    "tbl_204_c1",
+    "tbl_206_c1",
+    "tbl_20_c1",
+    "tbl_219_c6",
+    "tbl_29_c4",
+    "tbl_33_c4",
+    "tbl_35_c4",
+    "tbl_38_c1",
+    "tbl_40_c1",
+    "tbl_41_c5",
+    "tbl_54_c1",
+    "tbl_55_c6",
+    "tbl_57_c6",
+    "tbl_67_c4",
+    "tbl_71_c5",
+    "tbl_74_c1",
+    "tbl_8_c1",
+    "tbl_92_c1"
+   ],
+   "select": [
+    "tbl_0_c1",
+    "tbl_100_c1",
+    "tbl_101_c4",
+    "tbl_102_c1",
+    "tbl_103_c4",
+    "tbl_104_c1",
+    "tbl_105_c6",
+    "tbl_106_c1",
+    "tbl_107_c4",
+    "tbl_108_c1",
+    "tbl_10_c1",
+    "tbl_111_c5",
+    "tbl_112_c1",
+    "tbl_113_c6",
+    "tbl_115_c6",
+    "tbl_118_c1",
+    "tbl_119_c6",
+    "tbl_11_c4",
+    "tbl_126_c1",
+    "tbl_127_c4",
+    "tbl_129_c4",
+    "tbl_130_c1",
+    "tbl_131_c4",
+    "tbl_132_c1",
+    "tbl_133_c6",
+    "tbl_134_c1",
+    "tbl_135_c4",
+    "tbl_137_c5",
+    "tbl_138_c1",
+    "tbl_13_c6",
+    "tbl_140_c1",
+    "tbl_143_c5",
+    "tbl_144_c1",
+    "tbl_14_c1",
+    "tbl_150_c1",
+    "tbl_151_c5",
+    "tbl_152_c1",
+    "tbl_153_c5",
+    "tbl_155_c6",
+    "tbl_156_c1",
+    "tbl_157_c6",
+    "tbl_158_c1",
+    "tbl_159_c5",
+    "tbl_160_c1",
+    "tbl_161_c4",
+    "tbl_162_c1",
+    "tbl_163_c6",
+    "tbl_164_c1",
+    "tbl_165_c4",
+    "tbl_166_c1",
+    "tbl_167_c4",
+    "tbl_168_c1",
+    "tbl_169_c6",
+    "tbl_16_c1",
+    "tbl_170_c1",
+    "tbl_171_c5",
+    "tbl_173_c5",
+    "tbl_176_c1",
+    "tbl_177_c5",
+    "tbl_178_c1",
+    "tbl_179_c6",
+    "tbl_17_c6",
+    "tbl_180_c1",
+    "tbl_183_c5",
+    "tbl_184_c1",
+    "tbl_185_c4",
+    "tbl_186_c1",
+    "tbl_187_c4",
+    "tbl_188_c1",
+    "tbl_189_c4",
+    "tbl_18_c1",
+    "tbl_190_c1",
+    "tbl_191_c6",
+    "tbl_192_c1",
+    "tbl_193_c4",
+    "tbl_194_c1",
+    "tbl_195_c5",
+    "tbl_196_c1",
+    "tbl_197_c6",
+    "tbl_198_c1",
+    "tbl_1_c5",
+    "tbl_200_c1",
+    "tbl_203_c6",
+    "tbl_205_c4",
+    "tbl_207_c4",
+    "tbl_209_c5",
+    "tbl_210_c1",
+    "tbl_212_c1",
+    "tbl_213_c6",
+    "tbl_214_c1",
+    "tbl_215_c5",
+    "tbl_216_c1",
+    "tbl_217_c6",
+    "tbl_218_c1",
+    "tbl_21_c4",
+    "tbl_22_c1",
+    "tbl_23_c5",
+    "tbl_24_c1",
+    "tbl_25_c6",
+    "tbl_26_c1",
+    "tbl_27_c4",
+    "tbl_28_c1",
+    "tbl_30_c1",
+    "tbl_31_c6",
+    "tbl_32_c1",
+    "tbl_34_c1",
+    "tbl_36_c1",
+    "tbl_37_c4",
+    "tbl_39_c4",
+    "tbl_3_c6",
+    "tbl_42_c1",
+    "tbl_44_c1",
+    "tbl_45_c4",
+    "tbl_46_c1",
+    "tbl_47_c6",
+    "tbl_48_c1",
+    "tbl_49_c4",
+    "tbl_4_c1",
+    "tbl_50_c1",
+    "tbl_51_c5",
+    "tbl_52_c1",
+    "tbl_53_c6",
+    "tbl_56_c1",
+    "tbl_58_c1",
+    "tbl_59_c4",
+    "tbl_5_c4",
+    "tbl_60_c1",
+    "tbl_61_c6",
+    "tbl_62_c1",
+    "tbl_63_c4",
+    "tbl_64_c1",
+    "tbl_66_c1",
+    "tbl_68_c1",
+    "tbl_69_c4",
+    "tbl_6_c1",
+    "tbl_70_c1",
+    "tbl_72_c1",
+    "tbl_73_c4",
+    "tbl_75_c4",
+    "tbl_76_c1",
+    "tbl_77_c5",
+    "tbl_79_c6",
+    "tbl_7_c4",
+    "tbl_80_c1",
+    "tbl_81_c5",
+    "tbl_82_c1",
+    "tbl_84_c1",
+    "tbl_85_c4",
+    "tbl_86_c1",
+    "tbl_87_c4",
+    "tbl_88_c1",
+    "tbl_89_c5",
+    "tbl_90_c1",
+    "tbl_91_c6",
+    "tbl_93_c5",
+    "tbl_94_c1",
+    "tbl_96_c1",
+    "tbl_97_c5",
+    "tbl_99_c6",
+    "tbl_9_c6"
+   ]
+  },
+  "tb_wordsleft": {
+   "mine": [
+    "wl_p109_c291",
+    "wl_p111_c237",
+    "wl_p149_c294",
+    "wl_p160_c259",
+    "wl_p168_c223",
+    "wl_p169_c257",
+    "wl_p176_c135",
+    "wl_p181_c308",
+    "wl_p182_c98",
+    "wl_p193_c245",
+    "wl_p195_c231",
+    "wl_p198_c135",
+    "wl_p206_c163",
+    "wl_p218_c124",
+    "wl_p222_c184",
+    "wl_p228_c172",
+    "wl_p28_c59",
+    "wl_p302_c214",
+    "wl_p312_c172",
+    "wl_p336_c243",
+    "wl_p341_c233",
+    "wl_p344_c97",
+    "wl_p376_c90",
+    "wl_p377_c298",
+    "wl_p393_c182",
+    "wl_p402_c162",
+    "wl_p40_c64",
+    "wl_p440_c133",
+    "wl_p443_c190",
+    "wl_p477_c210",
+    "wl_p501_c240",
+    "wl_p521_c326",
+    "wl_p537_c165",
+    "wl_p540_c94",
+    "wl_p549_c315",
+    "wl_p55_c313",
+    "wl_p573_c230",
+    "wl_p8_c125",
+    "wl_p95_c216",
+    "wl_p99_c239"
+   ],
+   "select": [
+    "wl_p104_c38",
+    "wl_p110_c37",
+    "wl_p112_c157",
+    "wl_p114_c170",
+    "wl_p117_c234",
+    "wl_p125_c308",
+    "wl_p126_c178",
+    "wl_p128_c70",
+    "wl_p129_c150",
+    "wl_p133_c293",
+    "wl_p136_c164",
+    "wl_p139_c216",
+    "wl_p13_c294",
+    "wl_p140_c186",
+    "wl_p141_c161",
+    "wl_p144_c124",
+    "wl_p146_c133",
+    "wl_p152_c195",
+    "wl_p153_c156",
+    "wl_p154_c137",
+    "wl_p155_c166",
+    "wl_p15_c291",
+    "wl_p166_c180",
+    "wl_p167_c316",
+    "wl_p172_c173",
+    "wl_p175_c321",
+    "wl_p178_c224",
+    "wl_p17_c299",
+    "wl_p18_c214",
+    "wl_p190_c122",
+    "wl_p192_c65",
+    "wl_p204_c39",
+    "wl_p209_c202",
+    "wl_p213_c143",
+    "wl_p214_c69",
+    "wl_p215_c355",
+    "wl_p219_c195",
+    "wl_p224_c132",
+    "wl_p225_c250",
+    "wl_p226_c91",
+    "wl_p236_c228",
+    "wl_p23_c367",
+    "wl_p246_c147",
+    "wl_p247_c323",
+    "wl_p258_c152",
+    "wl_p259_c287",
+    "wl_p262_c215",
+    "wl_p263_c164",
+    "wl_p264_c203",
+    "wl_p267_c212",
+    "wl_p272_c210",
+    "wl_p275_c203",
+    "wl_p276_c132",
+    "wl_p279_c328",
+    "wl_p281_c297",
+    "wl_p284_c49",
+    "wl_p286_c92",
+    "wl_p289_c339",
+    "wl_p290_c65",
+    "wl_p300_c112",
+    "wl_p301_c235",
+    "wl_p306_c162",
+    "wl_p310_c109",
+    "wl_p313_c191",
+    "wl_p314_c189",
+    "wl_p316_c199",
+    "wl_p31_c216",
+    "wl_p320_c155",
+    "wl_p325_c248",
+    "wl_p332_c135",
+    "wl_p333_c157",
+    "wl_p334_c61",
+    "wl_p335_c285",
+    "wl_p33_c201",
+    "wl_p346_c141",
+    "wl_p348_c91",
+    "wl_p349_c214",
+    "wl_p352_c66",
+    "wl_p354_c80",
+    "wl_p355_c292",
+    "wl_p356_c101",
+    "wl_p357_c229",
+    "wl_p361_c231",
+    "wl_p366_c99",
+    "wl_p380_c28",
+    "wl_p389_c321",
+    "wl_p38_c85",
+    "wl_p391_c289",
+    "wl_p392_c210",
+    "wl_p397_c161",
+    "wl_p399_c205",
+    "wl_p400_c217",
+    "wl_p407_c281",
+    "wl_p409_c217",
+    "wl_p415_c212",
+    "wl_p417_c182",
+    "wl_p41_c172",
+    "wl_p424_c89",
+    "wl_p425_c275",
+    "wl_p429_c232",
+    "wl_p42_c104",
+    "wl_p433_c181",
+    "wl_p436_c141",
+    "wl_p43_c192",
+    "wl_p447_c259",
+    "wl_p458_c186",
+    "wl_p459_c217",
+    "wl_p460_c93",
+    "wl_p464_c68",
+    "wl_p465_c212",
+    "wl_p467_c303",
+    "wl_p473_c281",
+    "wl_p478_c111",
+    "wl_p47_c290",
+    "wl_p481_c142",
+    "wl_p489_c197",
+    "wl_p497_c192",
+    "wl_p498_c240",
+    "wl_p500_c191",
+    "wl_p503_c203",
+    "wl_p507_c287",
+    "wl_p508_c135",
+    "wl_p518_c88",
+    "wl_p520_c156",
+    "wl_p523_c275",
+    "wl_p526_c168",
+    "wl_p528_c174",
+    "wl_p533_c268",
+    "wl_p535_c209",
+    "wl_p542_c99",
+    "wl_p545_c211",
+    "wl_p547_c277",
+    "wl_p550_c32",
+    "wl_p552_c93",
+    "wl_p560_c128",
+    "wl_p563_c215",
+    "wl_p564_c42",
+    "wl_p566_c43",
+    "wl_p567_c289",
+    "wl_p572_c173",
+    "wl_p575_c259",
+    "wl_p576_c98",
+    "wl_p577_c192",
+    "wl_p579_c200",
+    "wl_p580_c222",
+    "wl_p584_c195",
+    "wl_p586_c219",
+    "wl_p587_c225",
+    "wl_p592_c49",
+    "wl_p599_c365",
+    "wl_p64_c27",
+    "wl_p68_c111",
+    "wl_p69_c323",
+    "wl_p70_c41",
+    "wl_p75_c224",
+    "wl_p77_c250",
+    "wl_p78_c39",
+    "wl_p81_c296",
+    "wl_p89_c344",
+    "wl_p91_c254"
+   ]
+  }
+ },
+ "meta": {
+  "bins": {
+   "fmt_listdepth": {
+    "deep": [
+     3,
+     3
+    ],
+    "shallow": [
+     1,
+     1
+    ]
+   },
+   "tb_codeline": {
+    "early": [
+     2,
+     3
+    ],
+    "late": [
+     9,
+     12
+    ]
+   },
+   "tb_sentcount": {
+    "early": [
+     1,
+     2
+    ],
+    "late": [
+     5,
+     9
+    ]
+   },
+   "tb_tablecol": {
+    "first": [
+     1,
+     1
+    ],
+    "late": [
+     4,
+     6
+    ]
+   },
+   "tb_wordsleft": {
+    "few": [
+     2,
+     5
+    ],
+    "many": [
+     20,
+     25
+    ]
+   }
+  },
+  "col_break_def": {
+   "col_range_both": [
+    40,
+    75
+   ],
+   "far_min_remaining": 25,
+   "soon_max_remaining": 6
+  },
+  "exclude_from_evaluation": "every id in items[feature]['mine'|'select'] (all items are freshly generated and disjoint from 02's wrap/prose pickles).",
+  "frozen_at": "2026-10-22T13:46:32+00:00",
+  "procedure": "D9 item 6: mined on a held-out MINING split (k=8 free readouts per item: NLA@42 iter_000400, OL s3d-rl600 @42/40/44 pooled; J-Lens n1000 top-50 @42), LLM-assisted extraction (Gemini 3.8 Flash), selected by natural-item paired log-odds AUROC on a disjoint SELECTION split at the primary layer (42), before any steering run.",
+  "read_layers": {
+   "jlens": [
+    42,
+    40,
+    44
+   ],
+   "nla": [
+    42
+   ],
+   "ol": [
+    42,
+    40,
+    44
+   ]
+  },
+  "scoring": "NLA: candidate after '<explanation>\\n'; OL: candidate as the first '- ' bullet (prefix ''); J-Lens: max cosine score over single-token variants, s(a)-s(b). Both candidates of an activation share one forward batch. LO = log p(value_a) - log p(value_b) with value_a = FEATURES[f]['values'][0]; AUROC vs label (true == a).",
+  "values": {
+   "fmt_listdepth": [
+    "shallow",
+    "deep"
+   ],
+   "fmt_qa": [
+    "qa",
+    "prose"
+   ],
+   "nj1_col_fresh": [
+    "short",
+    "long"
+   ],
+   "tb_codeline": [
+    "early",
+    "late"
+   ],
+   "tb_paren": [
+    "inside",
+    "outside"
+   ],
+   "tb_sentcount": [
+    "early",
+    "late"
+   ],
+   "tb_tablecol": [
+    "first",
+    "late"
+   ],
+   "tb_wordsleft": [
+    "many",
+    "few"
+   ]
+  }
+ },
+ "templates": {
+  "jlens": {
+   "fmt_listdepth": {
+    "all_candidates": {
+     "jlens:fmt_listdepth:d0": {
+      "jlens@40": {
+       "auroc": 0.6919,
+       "ci95": [
+        0.6006,
+        0.7766
+       ],
+       "dprime": 1.027,
+       "n": 160,
+       "spearman_count": -0.335
+      },
+      "jlens@42": {
+       "auroc": 0.6919,
+       "ci95": [
+        0.6006,
+        0.7766
+       ],
+       "dprime": 1.002,
+       "n": 160,
+       "spearman_count": -0.335
+      },
+      "jlens@44": {
+       "auroc": 0.7064,
+       "ci95": [
+        0.6209,
+        0.79
+       ],
+       "dprime": 1.075,
+       "n": 160,
+       "spearman_count": -0.36
+      }
+     },
+     "jlens:fmt_listdepth:d1": {
+      "jlens@40": {
+       "auroc": 0.6666,
+       "ci95": [
+        0.5802,
+        0.7559
+       ],
+       "dprime": 0.869,
+       "n": 160,
+       "spearman_count": -0.291
+      },
+      "jlens@42": {
+       "auroc": 0.6798,
+       "ci95": [
+        0.5909,
+        0.769
+       ],
+       "dprime": 0.931,
+       "n": 160,
+       "spearman_count": -0.314
+      },
+      "jlens@44": {
+       "auroc": 0.6756,
+       "ci95": [
+        0.5843,
+        0.7646
+       ],
+       "dprime": 0.998,
+       "n": 160,
+       "spearman_count": -0.306
+      }
+     },
+     "jlens:fmt_listdepth:d2": {
+      "jlens@40": {
+       "auroc": 0.7209,
+       "ci95": [
+        0.624,
+        0.8008
+       ],
+       "dprime": 1.009,
+       "n": 160,
+       "spearman_count": -0.386
+      },
+      "jlens@42": {
+       "auroc": 0.7227,
+       "ci95": [
+        0.6311,
+        0.8052
+       ],
+       "dprime": 1.017,
+       "n": 160,
+       "spearman_count": -0.389
+      },
+      "jlens@44": {
+       "auroc": 0.7758,
+       "ci95": [
+        0.6931,
+        0.8512
+       ],
+       "dprime": 1.175,
+       "n": 160,
+       "spearman_count": -0.481
+      }
+     },
+     "jlens:fmt_listdepth:dtop3": {
+      "jlens@40": {
+       "auroc": 0.6822,
+       "ci95": [
+        0.584,
+        0.7681
+       ],
+       "dprime": 0.948,
+       "n": 160,
+       "spearman_count": -0.318
+      },
+      "jlens@42": {
+       "auroc": 0.7081,
+       "ci95": [
+        0.6162,
+        0.7919
+       ],
+       "dprime": 1.127,
+       "n": 160,
+       "spearman_count": -0.363
+      },
+      "jlens@44": {
+       "auroc": 0.7697,
+       "ci95": [
+        0.6864,
+        0.8438
+       ],
+       "dprime": 1.27,
+       "n": 160,
+       "spearman_count": -0.471
+      }
+     },
+     "jlens:fmt_listdepth:fixed": {
+      "jlens@40": {
+       "auroc": 0.8414,
+       "ci95": [
+        0.7735,
+        0.898
+       ],
+       "dprime": 1.592,
+       "n": 160,
+       "spearman_count": -0.596
+      },
+      "jlens@42": {
+       "auroc": 0.9553,
+       "ci95": [
+        0.9245,
+        0.9793
+       ],
+       "dprime": 2.437,
+       "n": 160,
+       "spearman_count": -0.795
+      },
+      "jlens@44": {
+       "auroc": 0.9459,
+       "ci95": [
+        0.8976,
+        0.9827
+       ],
+       "dprime": 2.058,
+       "n": 160,
+       "spearman_count": -0.778
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:fmt_listdepth:fixed",
+     "selection": {
+      "jlens@40": {
+       "auroc": 0.8414,
+       "ci95": [
+        0.7735,
+        0.898
+       ],
+       "dprime": 1.592,
+       "n": 160,
+       "spearman_count": -0.596
+      },
+      "jlens@42": {
+       "auroc": 0.9553,
+       "ci95": [
+        0.9245,
+        0.9793
+       ],
+       "dprime": 2.437,
+       "n": 160,
+       "spearman_count": -0.795
+      },
+      "jlens@44": {
+       "auroc": 0.9459,
+       "ci95": [
+        0.8976,
+        0.9827
+       ],
+       "dprime": 2.058,
+       "n": 160,
+       "spearman_count": -0.778
+      }
+     },
+     "words": {
+      "deep": [
+       "three",
+       "nested"
+      ],
+      "shallow": [
+       "top",
+       "one"
+      ]
+     }
+    },
+    "mean_of_selected": {
+     "jlens@40": {
+      "auroc": 0.738,
+      "ci95": [
+       0.6544,
+       0.8138
+      ],
+      "dprime": 1.1,
+      "n": 160
+     },
+     "jlens@42": {
+      "auroc": 0.7464,
+      "ci95": [
+       0.6647,
+       0.8205
+      ],
+      "dprime": 1.141,
+      "n": 160
+     },
+     "jlens@44": {
+      "auroc": 0.8069,
+      "ci95": [
+       0.7285,
+       0.8723
+      ],
+      "dprime": 1.287,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "family": "diff_rank2",
+      "id": "jlens:fmt_listdepth:d2",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.7209,
+        "ci95": [
+         0.624,
+         0.8008
+        ],
+        "dprime": 1.009,
+        "n": 160,
+        "spearman_count": -0.386
+       },
+       "jlens@42": {
+        "auroc": 0.7227,
+        "ci95": [
+         0.6311,
+         0.8052
+        ],
+        "dprime": 1.017,
+        "n": 160,
+        "spearman_count": -0.389
+       },
+       "jlens@44": {
+        "auroc": 0.7758,
+        "ci95": [
+         0.6931,
+         0.8512
+        ],
+        "dprime": 1.175,
+        "n": 160,
+        "spearman_count": -0.481
+       }
+      },
+      "words": {
+       "deep": [
+        "pixel"
+       ],
+       "shallow": [
+        "HTML"
+       ]
+      }
+     },
+     {
+      "family": "diff_top3",
+      "id": "jlens:fmt_listdepth:dtop3",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.6822,
+        "ci95": [
+         0.584,
+         0.7681
+        ],
+        "dprime": 0.948,
+        "n": 160,
+        "spearman_count": -0.318
+       },
+       "jlens@42": {
+        "auroc": 0.7081,
+        "ci95": [
+         0.6162,
+         0.7919
+        ],
+        "dprime": 1.127,
+        "n": 160,
+        "spearman_count": -0.363
+       },
+       "jlens@44": {
+        "auroc": 0.7697,
+        "ci95": [
+         0.6864,
+         0.8438
+        ],
+        "dprime": 1.27,
+        "n": 160,
+        "spearman_count": -0.471
+       }
+      },
+      "words": {
+       "deep": [
+        "ciudad",
+        "cidade",
+        "pixel"
+       ],
+       "shallow": [
+        "webpage",
+        "Web",
+        "HTML"
+       ]
+      }
+     },
+     {
+      "family": "diff_rank0",
+      "id": "jlens:fmt_listdepth:d0",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.6919,
+        "ci95": [
+         0.6006,
+         0.7766
+        ],
+        "dprime": 1.027,
+        "n": 160,
+        "spearman_count": -0.335
+       },
+       "jlens@42": {
+        "auroc": 0.6919,
+        "ci95": [
+         0.6006,
+         0.7766
+        ],
+        "dprime": 1.002,
+        "n": 160,
+        "spearman_count": -0.335
+       },
+       "jlens@44": {
+        "auroc": 0.7064,
+        "ci95": [
+         0.6209,
+         0.79
+        ],
+        "dprime": 1.075,
+        "n": 160,
+        "spearman_count": -0.36
+       }
+      },
+      "words": {
+       "deep": [
+        "ciudad"
+       ],
+       "shallow": [
+        "webpage"
+       ]
+      }
+     }
+    ]
+   },
+   "fmt_qa": {
+    "all_candidates": {
+     "jlens:fmt_qa:fixed": {
+      "jlens@40": {
+       "auroc": 0.5433,
+       "ci95": [
+        0.4474,
+        0.6295
+       ],
+       "dprime": 0.065,
+       "n": 160
+      },
+      "jlens@42": {
+       "auroc": 0.5395,
+       "ci95": [
+        0.4492,
+        0.6246
+       ],
+       "dprime": 0.093,
+       "n": 160
+      },
+      "jlens@44": {
+       "auroc": 0.5442,
+       "ci95": [
+        0.4528,
+        0.6313
+       ],
+       "dprime": 0.101,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:fmt_qa:fixed",
+     "selection": {
+      "jlens@40": {
+       "auroc": 0.5433,
+       "ci95": [
+        0.4474,
+        0.6295
+       ],
+       "dprime": 0.065,
+       "n": 160
+      },
+      "jlens@42": {
+       "auroc": 0.5395,
+       "ci95": [
+        0.4492,
+        0.6246
+       ],
+       "dprime": 0.093,
+       "n": 160
+      },
+      "jlens@44": {
+       "auroc": 0.5442,
+       "ci95": [
+        0.4528,
+        0.6313
+       ],
+       "dprime": 0.101,
+       "n": 160
+      }
+     },
+     "words": {
+      "prose": [
+       "prose",
+       "paragraph"
+      ],
+      "qa": [
+       "question",
+       "answer"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   },
+   "nj1_col_fresh": {
+    "all_candidates": {
+     "jlens:nj1_col_fresh:fixed": {
+      "jlens@40": {
+       "auroc": 0.5009,
+       "ci95": [
+        0.4073,
+        0.5922
+       ],
+       "dprime": 0.076,
+       "n": 160,
+       "spearman_count": 0.029
+      },
+      "jlens@42": {
+       "auroc": 0.5322,
+       "ci95": [
+        0.4393,
+        0.6213
+       ],
+       "dprime": 0.186,
+       "n": 160,
+       "spearman_count": -0.03
+      },
+      "jlens@44": {
+       "auroc": 0.5453,
+       "ci95": [
+        0.454,
+        0.6322
+       ],
+       "dprime": 0.207,
+       "n": 160,
+       "spearman_count": -0.042
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:nj1_col_fresh:fixed",
+     "selection": {
+      "jlens@40": {
+       "auroc": 0.5009,
+       "ci95": [
+        0.4073,
+        0.5922
+       ],
+       "dprime": 0.076,
+       "n": 160,
+       "spearman_count": 0.029
+      },
+      "jlens@42": {
+       "auroc": 0.5322,
+       "ci95": [
+        0.4393,
+        0.6213
+       ],
+       "dprime": 0.186,
+       "n": 160,
+       "spearman_count": -0.03
+      },
+      "jlens@44": {
+       "auroc": 0.5453,
+       "ci95": [
+        0.454,
+        0.6322
+       ],
+       "dprime": 0.207,
+       "n": 160,
+       "spearman_count": -0.042
+      }
+     },
+     "words": {
+      "long": [
+       "seventy"
+      ],
+      "short": [
+       "twenty"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   },
+   "tb_codeline": {
+    "all_candidates": {
+     "jlens:tb_codeline:d0": {
+      "jlens@40": {
+       "auroc": 0.4677,
+       "ci95": [
+        0.385,
+        0.5666
+       ],
+       "dprime": -0.234,
+       "n": 160,
+       "spearman_count": -0.004
+      },
+      "jlens@42": {
+       "auroc": 0.4828,
+       "ci95": [
+        0.3988,
+        0.5833
+       ],
+       "dprime": -0.205,
+       "n": 160,
+       "spearman_count": -0.029
+      },
+      "jlens@44": {
+       "auroc": 0.4752,
+       "ci95": [
+        0.3935,
+        0.5686
+       ],
+       "dprime": -0.223,
+       "n": 160,
+       "spearman_count": -0.028
+      }
+     },
+     "jlens:tb_codeline:d1": {
+      "jlens@40": {
+       "auroc": 0.4317,
+       "ci95": [
+        0.3465,
+        0.5235
+       ],
+       "dprime": -0.36,
+       "n": 160,
+       "spearman_count": 0.071
+      },
+      "jlens@42": {
+       "auroc": 0.4566,
+       "ci95": [
+        0.3705,
+        0.5454
+       ],
+       "dprime": -0.281,
+       "n": 160,
+       "spearman_count": 0.026
+      },
+      "jlens@44": {
+       "auroc": 0.467,
+       "ci95": [
+        0.3794,
+        0.5564
+       ],
+       "dprime": -0.249,
+       "n": 160,
+       "spearman_count": -0.005
+      }
+     },
+     "jlens:tb_codeline:d2": {
+      "jlens@40": {
+       "auroc": 0.4797,
+       "ci95": [
+        0.3953,
+        0.5783
+       ],
+       "dprime": -0.153,
+       "n": 160,
+       "spearman_count": -0.011
+      },
+      "jlens@42": {
+       "auroc": 0.4869,
+       "ci95": [
+        0.4012,
+        0.5838
+       ],
+       "dprime": -0.118,
+       "n": 160,
+       "spearman_count": -0.023
+      },
+      "jlens@44": {
+       "auroc": 0.4558,
+       "ci95": [
+        0.3736,
+        0.5516
+       ],
+       "dprime": -0.192,
+       "n": 160,
+       "spearman_count": 0.018
+      }
+     },
+     "jlens:tb_codeline:dtop3": {
+      "jlens@40": {
+       "auroc": 0.467,
+       "ci95": [
+        0.3813,
+        0.5652
+       ],
+       "dprime": -0.222,
+       "n": 160,
+       "spearman_count": 0.003
+      },
+      "jlens@42": {
+       "auroc": 0.478,
+       "ci95": [
+        0.3935,
+        0.5784
+       ],
+       "dprime": -0.19,
+       "n": 160,
+       "spearman_count": -0.019
+      },
+      "jlens@44": {
+       "auroc": 0.4672,
+       "ci95": [
+        0.3842,
+        0.5613
+       ],
+       "dprime": -0.22,
+       "n": 160,
+       "spearman_count": -0.011
+      }
+     },
+     "jlens:tb_codeline:fixed": {
+      "jlens@40": {
+       "auroc": 0.4397,
+       "ci95": [
+        0.3509,
+        0.5343
+       ],
+       "dprime": -0.234,
+       "n": 160,
+       "spearman_count": 0.072
+      },
+      "jlens@42": {
+       "auroc": 0.3933,
+       "ci95": [
+        0.3012,
+        0.4814
+       ],
+       "dprime": -0.418,
+       "n": 160,
+       "spearman_count": 0.16
+      },
+      "jlens@44": {
+       "auroc": 0.3822,
+       "ci95": [
+        0.2991,
+        0.4664
+       ],
+       "dprime": -0.421,
+       "n": 160,
+       "spearman_count": 0.171
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:tb_codeline:fixed",
+     "selection": {
+      "jlens@40": {
+       "auroc": 0.4397,
+       "ci95": [
+        0.3509,
+        0.5343
+       ],
+       "dprime": -0.234,
+       "n": 160,
+       "spearman_count": 0.072
+      },
+      "jlens@42": {
+       "auroc": 0.3933,
+       "ci95": [
+        0.3012,
+        0.4814
+       ],
+       "dprime": -0.418,
+       "n": 160,
+       "spearman_count": 0.16
+      },
+      "jlens@44": {
+       "auroc": 0.3822,
+       "ci95": [
+        0.2991,
+        0.4664
+       ],
+       "dprime": -0.421,
+       "n": 160,
+       "spearman_count": 0.171
+      }
+     },
+     "words": {
+      "early": [
+       "two",
+       "second"
+      ],
+      "late": [
+       "ten",
+       "tenth"
+      ]
+     }
+    },
+    "mean_of_selected": {
+     "jlens@40": {
+      "auroc": 0.4723,
+      "ci95": [
+       0.3868,
+       0.5703
+      ],
+      "dprime": -0.207,
+      "n": 160
+     },
+     "jlens@42": {
+      "auroc": 0.4836,
+      "ci95": [
+       0.3946,
+       0.583
+      ],
+      "dprime": -0.174,
+      "n": 160
+     },
+     "jlens@44": {
+      "auroc": 0.4609,
+      "ci95": [
+       0.3809,
+       0.5582
+      ],
+      "dprime": -0.217,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "family": "diff_rank2",
+      "id": "jlens:tb_codeline:d2",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.4797,
+        "ci95": [
+         0.3953,
+         0.5783
+        ],
+        "dprime": -0.153,
+        "n": 160,
+        "spearman_count": -0.011
+       },
+       "jlens@42": {
+        "auroc": 0.4869,
+        "ci95": [
+         0.4012,
+         0.5838
+        ],
+        "dprime": -0.118,
+        "n": 160,
+        "spearman_count": -0.023
+       },
+       "jlens@44": {
+        "auroc": 0.4558,
+        "ci95": [
+         0.3736,
+         0.5516
+        ],
+        "dprime": -0.192,
+        "n": 160,
+        "spearman_count": 0.018
+       }
+      },
+      "words": {
+       "early": [
+        "counting"
+       ],
+       "late": [
+        "name"
+       ]
+      }
+     },
+     {
+      "family": "diff_rank0",
+      "id": "jlens:tb_codeline:d0",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.4677,
+        "ci95": [
+         0.385,
+         0.5666
+        ],
+        "dprime": -0.234,
+        "n": 160,
+        "spearman_count": -0.004
+       },
+       "jlens@42": {
+        "auroc": 0.4828,
+        "ci95": [
+         0.3988,
+         0.5833
+        ],
+        "dprime": -0.205,
+        "n": 160,
+        "spearman_count": -0.029
+       },
+       "jlens@44": {
+        "auroc": 0.4752,
+        "ci95": [
+         0.3935,
+         0.5686
+        ],
+        "dprime": -0.223,
+        "n": 160,
+        "spearman_count": -0.028
+       }
+      },
+      "words": {
+       "early": [
+        "count"
+       ],
+       "late": [
+        "ID"
+       ]
+      }
+     },
+     {
+      "family": "diff_top3",
+      "id": "jlens:tb_codeline:dtop3",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.467,
+        "ci95": [
+         0.3813,
+         0.5652
+        ],
+        "dprime": -0.222,
+        "n": 160,
+        "spearman_count": 0.003
+       },
+       "jlens@42": {
+        "auroc": 0.478,
+        "ci95": [
+         0.3935,
+         0.5784
+        ],
+        "dprime": -0.19,
+        "n": 160,
+        "spearman_count": -0.019
+       },
+       "jlens@44": {
+        "auroc": 0.4672,
+        "ci95": [
+         0.3842,
+         0.5613
+        ],
+        "dprime": -0.22,
+        "n": 160,
+        "spearman_count": -0.011
+       }
+      },
+      "words": {
+       "early": [
+        "count",
+        "counts",
+        "counting"
+       ],
+       "late": [
+        "ID",
+        "id",
+        "name"
+       ]
+      }
+     }
+    ]
+   },
+   "tb_paren": {
+    "all_candidates": {
+     "jlens:tb_paren:fixed": {
+      "jlens@40": {
+       "auroc": 0.4881,
+       "ci95": [
+        0.4022,
+        0.5757
+       ],
+       "dprime": 0.046,
+       "n": 160
+      },
+      "jlens@42": {
+       "auroc": 0.4739,
+       "ci95": [
+        0.3855,
+        0.5676
+       ],
+       "dprime": 0.001,
+       "n": 160
+      },
+      "jlens@44": {
+       "auroc": 0.4384,
+       "ci95": [
+        0.3501,
+        0.5372
+       ],
+       "dprime": -0.098,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:tb_paren:fixed",
+     "selection": {
+      "jlens@40": {
+       "auroc": 0.4881,
+       "ci95": [
+        0.4022,
+        0.5757
+       ],
+       "dprime": 0.046,
+       "n": 160
+      },
+      "jlens@42": {
+       "auroc": 0.4739,
+       "ci95": [
+        0.3855,
+        0.5676
+       ],
+       "dprime": 0.001,
+       "n": 160
+      },
+      "jlens@44": {
+       "auroc": 0.4384,
+       "ci95": [
+        0.3501,
+        0.5372
+       ],
+       "dprime": -0.098,
+       "n": 160
+      }
+     },
+     "words": {
+      "inside": [
+       "inside",
+       "parenthesis"
+      ],
+      "outside": [
+       "outside"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   },
+   "tb_sentcount": {
+    "all_candidates": {
+     "jlens:tb_sentcount:fixed": {
+      "jlens@40": {
+       "auroc": 0.4436,
+       "ci95": [
+        0.3527,
+        0.5366
+       ],
+       "dprime": -0.172,
+       "n": 160,
+       "spearman_count": 0.09
+      },
+      "jlens@42": {
+       "auroc": 0.4166,
+       "ci95": [
+        0.3336,
+        0.5067
+       ],
+       "dprime": -0.274,
+       "n": 160,
+       "spearman_count": 0.137
+      },
+      "jlens@44": {
+       "auroc": 0.4306,
+       "ci95": [
+        0.3437,
+        0.5224
+       ],
+       "dprime": -0.227,
+       "n": 160,
+       "spearman_count": 0.108
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:tb_sentcount:fixed",
+     "selection": {
+      "jlens@40": {
+       "auroc": 0.4436,
+       "ci95": [
+        0.3527,
+        0.5366
+       ],
+       "dprime": -0.172,
+       "n": 160,
+       "spearman_count": 0.09
+      },
+      "jlens@42": {
+       "auroc": 0.4166,
+       "ci95": [
+        0.3336,
+        0.5067
+       ],
+       "dprime": -0.274,
+       "n": 160,
+       "spearman_count": 0.137
+      },
+      "jlens@44": {
+       "auroc": 0.4306,
+       "ci95": [
+        0.3437,
+        0.5224
+       ],
+       "dprime": -0.227,
+       "n": 160,
+       "spearman_count": 0.108
+      }
+     },
+     "words": {
+      "early": [
+       "second",
+       "two"
+      ],
+      "late": [
+       "sixth",
+       "six"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   },
+   "tb_tablecol": {
+    "all_candidates": {
+     "jlens:tb_tablecol:d0": {
+      "jlens@40": {
+       "auroc": 0.447,
+       "ci95": [
+        0.3553,
+        0.5252
+       ],
+       "dprime": -0.157,
+       "n": 160,
+       "spearman_count": 0.064
+      },
+      "jlens@42": {
+       "auroc": 0.4653,
+       "ci95": [
+        0.3725,
+        0.5441
+       ],
+       "dprime": -0.13,
+       "n": 160,
+       "spearman_count": 0.028
+      },
+      "jlens@44": {
+       "auroc": 0.4587,
+       "ci95": [
+        0.3663,
+        0.5359
+       ],
+       "dprime": -0.158,
+       "n": 160,
+       "spearman_count": 0.035
+      }
+     },
+     "jlens:tb_tablecol:d1": {
+      "jlens@40": {
+       "auroc": 0.4341,
+       "ci95": [
+        0.3429,
+        0.5128
+       ],
+       "dprime": -0.208,
+       "n": 160,
+       "spearman_count": 0.088
+      },
+      "jlens@42": {
+       "auroc": 0.4395,
+       "ci95": [
+        0.349,
+        0.5172
+       ],
+       "dprime": -0.187,
+       "n": 160,
+       "spearman_count": 0.08
+      },
+      "jlens@44": {
+       "auroc": 0.433,
+       "ci95": [
+        0.3406,
+        0.5111
+       ],
+       "dprime": -0.21,
+       "n": 160,
+       "spearman_count": 0.093
+      }
+     },
+     "jlens:tb_tablecol:dtop3": {
+      "jlens@40": {
+       "auroc": 0.4411,
+       "ci95": [
+        0.3493,
+        0.5179
+       ],
+       "dprime": -0.175,
+       "n": 160,
+       "spearman_count": 0.086
+      },
+      "jlens@42": {
+       "auroc": 0.4461,
+       "ci95": [
+        0.355,
+        0.522
+       ],
+       "dprime": -0.167,
+       "n": 160,
+       "spearman_count": 0.077
+      },
+      "jlens@44": {
+       "auroc": 0.4355,
+       "ci95": [
+        0.3441,
+        0.5119
+       ],
+       "dprime": -0.201,
+       "n": 160,
+       "spearman_count": 0.091
+      }
+     },
+     "jlens:tb_tablecol:fixed": {
+      "jlens@40": {
+       "auroc": 0.6217,
+       "ci95": [
+        0.5311,
+        0.7011
+       ],
+       "dprime": 0.392,
+       "n": 160,
+       "spearman_count": -0.185
+      },
+      "jlens@42": {
+       "auroc": 0.6398,
+       "ci95": [
+        0.5548,
+        0.7188
+       ],
+       "dprime": 0.422,
+       "n": 160,
+       "spearman_count": -0.207
+      },
+      "jlens@44": {
+       "auroc": 0.6548,
+       "ci95": [
+        0.5716,
+        0.7399
+       ],
+       "dprime": 0.506,
+       "n": 160,
+       "spearman_count": -0.241
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:tb_tablecol:fixed",
+     "selection": {
+      "jlens@40": {
+       "auroc": 0.6217,
+       "ci95": [
+        0.5311,
+        0.7011
+       ],
+       "dprime": 0.392,
+       "n": 160,
+       "spearman_count": -0.185
+      },
+      "jlens@42": {
+       "auroc": 0.6398,
+       "ci95": [
+        0.5548,
+        0.7188
+       ],
+       "dprime": 0.422,
+       "n": 160,
+       "spearman_count": -0.207
+      },
+      "jlens@44": {
+       "auroc": 0.6548,
+       "ci95": [
+        0.5716,
+        0.7399
+       ],
+       "dprime": 0.506,
+       "n": 160,
+       "spearman_count": -0.241
+      }
+     },
+     "words": {
+      "first": [
+       "first",
+       "one"
+      ],
+      "late": [
+       "fifth",
+       "five"
+      ]
+     }
+    },
+    "mean_of_selected": {
+     "jlens@40": {
+      "auroc": 0.4389,
+      "ci95": [
+       0.3497,
+       0.5154
+      ],
+      "dprime": -0.185,
+      "n": 160
+     },
+     "jlens@42": {
+      "auroc": 0.4483,
+      "ci95": [
+       0.3572,
+       0.5245
+      ],
+      "dprime": -0.166,
+      "n": 160
+     },
+     "jlens@44": {
+      "auroc": 0.4366,
+      "ci95": [
+       0.3475,
+       0.5123
+      ],
+      "dprime": -0.196,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 3,
+    "selected": [
+     {
+      "family": "diff_rank0",
+      "id": "jlens:tb_tablecol:d0",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.447,
+        "ci95": [
+         0.3553,
+         0.5252
+        ],
+        "dprime": -0.157,
+        "n": 160,
+        "spearman_count": 0.064
+       },
+       "jlens@42": {
+        "auroc": 0.4653,
+        "ci95": [
+         0.3725,
+         0.5441
+        ],
+        "dprime": -0.13,
+        "n": 160,
+        "spearman_count": 0.028
+       },
+       "jlens@44": {
+        "auroc": 0.4587,
+        "ci95": [
+         0.3663,
+         0.5359
+        ],
+        "dprime": -0.158,
+        "n": 160,
+        "spearman_count": 0.035
+       }
+      },
+      "words": {
+       "first": [
+        "leadership"
+       ],
+       "late": [
+        "European"
+       ]
+      }
+     },
+     {
+      "family": "diff_top3",
+      "id": "jlens:tb_tablecol:dtop3",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.4411,
+        "ci95": [
+         0.3493,
+         0.5179
+        ],
+        "dprime": -0.175,
+        "n": 160,
+        "spearman_count": 0.086
+       },
+       "jlens@42": {
+        "auroc": 0.4461,
+        "ci95": [
+         0.355,
+         0.522
+        ],
+        "dprime": -0.167,
+        "n": 160,
+        "spearman_count": 0.077
+       },
+       "jlens@44": {
+        "auroc": 0.4355,
+        "ci95": [
+         0.3441,
+         0.5119
+        ],
+        "dprime": -0.201,
+        "n": 160,
+        "spearman_count": 0.091
+       }
+      },
+      "words": {
+       "first": [
+        "leadership",
+        "staff",
+        "personnel"
+       ],
+       "late": [
+        "European",
+        "Mediterranean"
+       ]
+      }
+     },
+     {
+      "family": "diff_rank1",
+      "id": "jlens:tb_tablecol:d1",
+      "selection": {
+       "jlens@40": {
+        "auroc": 0.4341,
+        "ci95": [
+         0.3429,
+         0.5128
+        ],
+        "dprime": -0.208,
+        "n": 160,
+        "spearman_count": 0.088
+       },
+       "jlens@42": {
+        "auroc": 0.4395,
+        "ci95": [
+         0.349,
+         0.5172
+        ],
+        "dprime": -0.187,
+        "n": 160,
+        "spearman_count": 0.08
+       },
+       "jlens@44": {
+        "auroc": 0.433,
+        "ci95": [
+         0.3406,
+         0.5111
+        ],
+        "dprime": -0.21,
+        "n": 160,
+        "spearman_count": 0.093
+       }
+      },
+      "words": {
+       "first": [
+        "staff"
+       ],
+       "late": [
+        "Mediterranean"
+       ]
+      }
+     }
+    ]
+   },
+   "tb_wordsleft": {
+    "all_candidates": {
+     "jlens:tb_wordsleft:fixed": {
+      "jlens@40": {
+       "auroc": 0.5489,
+       "ci95": [
+        0.4657,
+        0.6373
+       ],
+       "dprime": 0.183,
+       "n": 160,
+       "spearman_count": 0.063
+      },
+      "jlens@42": {
+       "auroc": 0.5452,
+       "ci95": [
+        0.4606,
+        0.6338
+       ],
+       "dprime": 0.145,
+       "n": 160,
+       "spearman_count": 0.046
+      },
+      "jlens@44": {
+       "auroc": 0.5283,
+       "ci95": [
+        0.4422,
+        0.6139
+       ],
+       "dprime": 0.072,
+       "n": 160,
+       "spearman_count": 0.017
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:tb_wordsleft:fixed",
+     "selection": {
+      "jlens@40": {
+       "auroc": 0.5489,
+       "ci95": [
+        0.4657,
+        0.6373
+       ],
+       "dprime": 0.183,
+       "n": 160,
+       "spearman_count": 0.063
+      },
+      "jlens@42": {
+       "auroc": 0.5452,
+       "ci95": [
+        0.4606,
+        0.6338
+       ],
+       "dprime": 0.145,
+       "n": 160,
+       "spearman_count": 0.046
+      },
+      "jlens@44": {
+       "auroc": 0.5283,
+       "ci95": [
+        0.4422,
+        0.6139
+       ],
+       "dprime": 0.072,
+       "n": 160,
+       "spearman_count": 0.017
+      }
+     },
+     "words": {
+      "few": [
+       "three",
+       "few"
+      ],
+      "many": [
+       "twenty",
+       "many"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   }
+  },
+  "nla": {
+   "fmt_listdepth": {
+    "all_candidates": {
+     "nla:fmt_listdepth:fixed": {
+      "nla@42": {
+       "auroc": 0.6802,
+       "ci95": [
+        0.5913,
+        0.7623
+       ],
+       "dprime": 0.666,
+       "n": 160,
+       "spearman_count": -0.314
+      }
+     },
+     "nla:fmt_listdepth:m0": {
+      "nla@42": {
+       "auroc": 0.7273,
+       "ci95": [
+        0.6384,
+        0.8103
+       ],
+       "dprime": 0.993,
+       "n": 160,
+       "spearman_count": -0.397
+      }
+     },
+     "nla:fmt_listdepth:m1": {
+      "nla@42": {
+       "auroc": 0.6247,
+       "ci95": [
+        0.537,
+        0.7109
+       ],
+       "dprime": 0.446,
+       "n": 160,
+       "spearman_count": -0.218
+      }
+     },
+     "nla:fmt_listdepth:m2": {
+      "nla@42": {
+       "auroc": 0.9411,
+       "ci95": [
+        0.8946,
+        0.9775
+       ],
+       "dprime": 2.48,
+       "n": 160,
+       "spearman_count": -0.77
+      }
+     },
+     "nla:fmt_listdepth:m3": {
+      "nla@42": {
+       "auroc": 0.9903,
+       "ci95": [
+        0.9745,
+        1.0
+       ],
+       "dprime": 3.2,
+       "n": 160,
+       "spearman_count": -0.856
+      }
+     },
+     "nla:fmt_listdepth:m4": {
+      "nla@42": {
+       "auroc": 0.6091,
+       "ci95": [
+        0.5156,
+        0.7
+       ],
+       "dprime": 0.406,
+       "n": 160,
+       "spearman_count": -0.19
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "deep": "The current list item is nested three levels deep",
+      "shallow": "The current list item is nested at the top level"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "deep": "three levels deep",
+      "shallow": "at the top level"
+     },
+     "id": "nla:fmt_listdepth:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.6802,
+       "ci95": [
+        0.5913,
+        0.7623
+       ],
+       "dprime": 0.666,
+       "n": 160,
+       "spearman_count": -0.314
+      }
+     },
+     "template": "The current list item is nested {v}"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.9641,
+      "ci95": [
+       0.9326,
+       0.9899
+      ],
+      "dprime": 3.056,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "deep": "List continuation pattern established",
+       "shallow": "Category header pattern established"
+      },
+      "family": "section_level_focus",
+      "fillers": {
+       "deep": "List continuation",
+       "shallow": "Category header"
+      },
+      "id": "nla:fmt_listdepth:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9903,
+        "ci95": [
+         0.9745,
+         1.0
+        ],
+        "dprime": 3.2,
+        "n": 160,
+        "spearman_count": -0.856
+       }
+      },
+      "template": "{v} pattern established"
+     },
+     {
+      "candidates": {
+       "deep": "List format established with parallel bullet points",
+       "shallow": "List format established with nested bullet points"
+      },
+      "family": "depth_qualifier",
+      "fillers": {
+       "deep": "parallel",
+       "shallow": "nested"
+      },
+      "id": "nla:fmt_listdepth:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9411,
+        "ci95": [
+         0.8946,
+         0.9775
+        ],
+        "dprime": 2.48,
+        "n": 160,
+        "spearman_count": -0.77
+       }
+      },
+      "template": "List format established with {v} bullet points"
+     },
+     {
+      "candidates": {
+       "deep": "Parallel list format",
+       "shallow": "Structured list format"
+      },
+      "family": "nested_vs_parallel_structure",
+      "fillers": {
+       "deep": "Parallel",
+       "shallow": "Structured"
+      },
+      "id": "nla:fmt_listdepth:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.7273,
+        "ci95": [
+         0.6384,
+         0.8103
+        ],
+        "dprime": 0.993,
+        "n": 160,
+        "spearman_count": -0.397
+       }
+      },
+      "template": "{v} list format"
+     }
+    ]
+   },
+   "fmt_qa": {
+    "all_candidates": {
+     "nla:fmt_qa:fixed": {
+      "nla@42": {
+       "auroc": 0.792,
+       "ci95": [
+        0.7213,
+        0.8578
+       ],
+       "dprime": 1.09,
+       "n": 160
+      }
+     },
+     "nla:fmt_qa:m0": {
+      "nla@42": {
+       "auroc": 0.6577,
+       "ci95": [
+        0.5751,
+        0.7394
+       ],
+       "dprime": 0.548,
+       "n": 160
+      }
+     },
+     "nla:fmt_qa:m1": {
+      "nla@42": {
+       "auroc": 0.447,
+       "ci95": [
+        0.3624,
+        0.5392
+       ],
+       "dprime": -0.196,
+       "n": 160
+      }
+     },
+     "nla:fmt_qa:m2": {
+      "nla@42": {
+       "auroc": 0.5212,
+       "ci95": [
+        0.4312,
+        0.6153
+       ],
+       "dprime": 0.134,
+       "n": 160
+      }
+     },
+     "nla:fmt_qa:m3": {
+      "nla@42": {
+       "auroc": 0.3695,
+       "ci95": [
+        0.2846,
+        0.4543
+       ],
+       "dprime": -0.455,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "prose": "The text is formatted as plain prose",
+      "qa": "The text is formatted as a question and answer"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "prose": "plain prose",
+      "qa": "a question and answer"
+     },
+     "id": "nla:fmt_qa:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.792,
+       "ci95": [
+        0.7213,
+        0.8578
+       ],
+       "dprime": 1.09,
+       "n": 160
+      }
+     },
+     "template": "The text is formatted as {v}"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.6278,
+      "ci95": [
+       0.5422,
+       0.7164
+      ],
+      "dprime": 0.41,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "prose": "List/encyclopedic format establishes",
+       "qa": "Q&A / structured data format establishes"
+      },
+      "family": "format_mention",
+      "fillers": {
+       "prose": "List/encyclopedic",
+       "qa": "Q&A / structured data"
+      },
+      "id": "nla:fmt_qa:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.6577,
+        "ci95": [
+         0.5751,
+         0.7394
+        ],
+        "dprime": 0.548,
+        "n": 160
+       }
+      },
+      "template": "{v} format establishes"
+     },
+     {
+      "candidates": {
+       "prose": "Factual/informative register",
+       "qa": "Factual/encyclopedic register"
+      },
+      "family": "factual_style",
+      "fillers": {
+       "prose": "informative",
+       "qa": "encyclopedic"
+      },
+      "id": "nla:fmt_qa:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5212,
+        "ci95": [
+         0.4312,
+         0.6153
+        ],
+        "dprime": 0.134,
+        "n": 160
+       }
+      },
+      "template": "Factual/{v} register"
+     },
+     {
+      "candidates": {
+       "prose": "Wikipedia article register",
+       "qa": "Wikipedia encyclopedic register"
+      },
+      "family": "register_sets",
+      "fillers": {
+       "prose": "article",
+       "qa": "encyclopedic"
+      },
+      "id": "nla:fmt_qa:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.447,
+        "ci95": [
+         0.3624,
+         0.5392
+        ],
+        "dprime": -0.196,
+        "n": 160
+       }
+      },
+      "template": "Wikipedia {v} register"
+     }
+    ]
+   },
+   "nj1_col_fresh": {
+    "all_candidates": {
+     "nla:nj1_col_fresh:fixed": {
+      "nla@42": {
+       "auroc": 0.5084,
+       "ci95": [
+        0.4135,
+        0.5941
+       ],
+       "dprime": 0.102,
+       "n": 160,
+       "spearman_count": 0.042
+      }
+     },
+     "nla:nj1_col_fresh:fixed_numeric": {
+      "nla@42": {
+       "auroc": 0.6364,
+       "ci95": [
+        0.5539,
+        0.7226
+       ],
+       "dprime": 0.502,
+       "n": 160,
+       "spearman_count": -0.305
+      }
+     },
+     "nla:nj1_col_fresh:m0": {
+      "nla@42": {
+       "auroc": 0.5359,
+       "ci95": [
+        0.4497,
+        0.6324
+       ],
+       "dprime": 0.056,
+       "n": 160,
+       "spearman_count": -0.03
+      }
+     },
+     "nla:nj1_col_fresh:m2": {
+      "nla@42": {
+       "auroc": 0.47,
+       "ci95": [
+        0.384,
+        0.5561
+       ],
+       "dprime": -0.133,
+       "n": 160,
+       "spearman_count": 0.06
+      }
+     },
+     "nla:nj1_col_fresh:m3": {
+      "nla@42": {
+       "auroc": 0.4659,
+       "ci95": [
+        0.3757,
+        0.5609
+       ],
+       "dprime": -0.047,
+       "n": 160,
+       "spearman_count": 0.073
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "long": "The current position is near the end of a long line",
+      "short": "The current position is at the start of a line"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "long": "near the end of a long line",
+      "short": "at the start of a line"
+     },
+     "id": "nla:nj1_col_fresh:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.5084,
+       "ci95": [
+        0.4135,
+        0.5941
+       ],
+       "dprime": 0.102,
+       "n": 160,
+       "spearman_count": 0.042
+      }
+     },
+     "template": "The current position is {v}"
+    },
+    "fixed_numeric": {
+     "candidates": {
+      "long": "The current line is about seventy characters long",
+      "short": "The current line is about twenty characters long"
+     },
+     "family": "fixed_numeric",
+     "fillers": {
+      "long": "seventy",
+      "short": "twenty"
+     },
+     "id": "nla:nj1_col_fresh:fixed_numeric",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.6364,
+       "ci95": [
+        0.5539,
+        0.7226
+       ],
+       "dprime": 0.502,
+       "n": 160,
+       "spearman_count": -0.305
+      }
+     },
+     "template": "The current line is about {v} characters long"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.4838,
+      "ci95": [
+       0.394,
+       0.5752
+      ],
+      "dprime": -0.069,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 3,
+    "selected": [
+     {
+      "candidates": {
+       "long": "The token appears far into of the wrapped line.",
+       "short": "The token appears near the beginning of the wrapped line."
+      },
+      "family": "line_position_clause",
+      "fillers": {
+       "long": "far into",
+       "short": "near the beginning"
+      },
+      "id": "nla:nj1_col_fresh:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5359,
+        "ci95": [
+         0.4497,
+         0.6324
+        ],
+        "dprime": 0.056,
+        "n": 160,
+        "spearman_count": -0.03
+       }
+      },
+      "template": "The token appears {v} of the wrapped line."
+     },
+     {
+      "candidates": {
+       "long": "Mid-sentence continuation located near the end of a hard-wrapped line.",
+       "short": "Mid-sentence continuation located at the beginning of a hard-wrapped line."
+      },
+      "family": "line_offset",
+      "fillers": {
+       "long": "near the end",
+       "short": "at the beginning"
+      },
+      "id": "nla:nj1_col_fresh:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.47,
+        "ci95": [
+         0.384,
+         0.5561
+        ],
+        "dprime": -0.133,
+        "n": 160,
+        "spearman_count": 0.06
+       }
+      },
+      "template": "Mid-sentence continuation located {v} of a hard-wrapped line."
+     },
+     {
+      "candidates": {
+       "long": "Readout taken late in the span of the wrapped line.",
+       "short": "Readout taken early in the span of the wrapped line."
+      },
+      "family": "line_start_vs_end",
+      "fillers": {
+       "long": "late in the span",
+       "short": "early in the span"
+      },
+      "id": "nla:nj1_col_fresh:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.4659,
+        "ci95": [
+         0.3757,
+         0.5609
+        ],
+        "dprime": -0.047,
+        "n": 160,
+        "spearman_count": 0.073
+       }
+      },
+      "template": "Readout taken {v} of the wrapped line."
+     }
+    ]
+   },
+   "tb_codeline": {
+    "all_candidates": {
+     "nla:tb_codeline:fixed": {
+      "nla@42": {
+       "auroc": 0.9394,
+       "ci95": [
+        0.8963,
+        0.9759
+       ],
+       "dprime": 2.141,
+       "n": 160,
+       "spearman_count": -0.731
+      }
+     },
+     "nla:tb_codeline:m0": {
+      "nla@42": {
+       "auroc": 0.968,
+       "ci95": [
+        0.9394,
+        0.9909
+       ],
+       "dprime": 2.479,
+       "n": 160,
+       "spearman_count": -0.778
+      }
+     },
+     "nla:tb_codeline:m1": {
+      "nla@42": {
+       "auroc": 0.9702,
+       "ci95": [
+        0.9362,
+        0.9962
+       ],
+       "dprime": 2.819,
+       "n": 160,
+       "spearman_count": -0.803
+      }
+     },
+     "nla:tb_codeline:m2": {
+      "nla@42": {
+       "auroc": 0.7262,
+       "ci95": [
+        0.6455,
+        0.8022
+       ],
+       "dprime": 0.769,
+       "n": 160,
+       "spearman_count": -0.42
+      }
+     },
+     "nla:tb_codeline:m3": {
+      "nla@42": {
+       "auroc": 0.9164,
+       "ci95": [
+        0.8678,
+        0.957
+       ],
+       "dprime": 1.907,
+       "n": 160,
+       "spearman_count": -0.727
+      }
+     },
+     "nla:tb_codeline:m4": {
+      "nla@42": {
+       "auroc": 0.823,
+       "ci95": [
+        0.7547,
+        0.8803
+       ],
+       "dprime": 1.339,
+       "n": 160,
+       "spearman_count": -0.592
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "early": "This is line two of the function body",
+      "late": "This is line ten of the function body"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "early": "two",
+      "late": "ten"
+     },
+     "id": "nla:tb_codeline:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.9394,
+       "ci95": [
+        0.8963,
+        0.9759
+       ],
+       "dprime": 2.141,
+       "n": 160,
+       "spearman_count": -0.731
+      }
+     },
+     "template": "This is line {v} of the function body"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.9866,
+      "ci95": [
+       0.9688,
+       0.9984
+      ],
+      "dprime": 3.31,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "early": "Python/code snippet pattern",
+       "late": "Repetitive pattern"
+      },
+      "family": "repetitive_vs_code_prefix",
+      "fillers": {
+       "early": "Python/code snippet",
+       "late": "Repetitive"
+      },
+      "id": "nla:tb_codeline:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9702,
+        "ci95": [
+         0.9362,
+         0.9962
+        ],
+        "dprime": 2.819,
+        "n": 160,
+        "spearman_count": -0.803
+       }
+      },
+      "template": "{v} pattern"
+     },
+     {
+      "candidates": {
+       "early": "Code snippet pattern:",
+       "late": "Repetition/continuation pattern:"
+      },
+      "family": "pattern_type_prefix",
+      "fillers": {
+       "early": "Code snippet",
+       "late": "Repetition/continuation"
+      },
+      "id": "nla:tb_codeline:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.968,
+        "ci95": [
+         0.9394,
+         0.9909
+        ],
+        "dprime": 2.479,
+        "n": 160,
+        "spearman_count": -0.778
+       }
+      },
+      "template": "{v} pattern:"
+     },
+     {
+      "candidates": {
+       "early": "Code or technical snippet context",
+       "late": "Python code context"
+      },
+      "family": "code_context_prefix",
+      "fillers": {
+       "early": "Code or technical snippet",
+       "late": "Python code"
+      },
+      "id": "nla:tb_codeline:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9164,
+        "ci95": [
+         0.8678,
+         0.957
+        ],
+        "dprime": 1.907,
+        "n": 160,
+        "spearman_count": -0.727
+       }
+      },
+      "template": "{v} context"
+     }
+    ]
+   },
+   "tb_paren": {
+    "all_candidates": {
+     "nla:tb_paren:fixed": {
+      "nla@42": {
+       "auroc": 0.8775,
+       "ci95": [
+        0.8159,
+        0.9341
+       ],
+       "dprime": 1.643,
+       "n": 160
+      }
+     },
+     "nla:tb_paren:m0": {
+      "nla@42": {
+       "auroc": 0.6358,
+       "ci95": [
+        0.5462,
+        0.7254
+       ],
+       "dprime": 0.316,
+       "n": 160
+      }
+     },
+     "nla:tb_paren:m1": {
+      "nla@42": {
+       "auroc": 0.9656,
+       "ci95": [
+        0.9317,
+        0.9919
+       ],
+       "dprime": 2.967,
+       "n": 160
+      }
+     },
+     "nla:tb_paren:m2": {
+      "nla@42": {
+       "auroc": 0.6741,
+       "ci95": [
+        0.5869,
+        0.7594
+       ],
+       "dprime": 0.454,
+       "n": 160
+      }
+     },
+     "nla:tb_paren:m3": {
+      "nla@42": {
+       "auroc": 0.8761,
+       "ci95": [
+        0.8208,
+        0.9227
+       ],
+       "dprime": 1.586,
+       "n": 160
+      }
+     },
+     "nla:tb_paren:m4": {
+      "nla@42": {
+       "auroc": 0.8023,
+       "ci95": [
+        0.7311,
+        0.8704
+       ],
+       "dprime": 1.177,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "inside": "The current position is inside a parenthesis",
+      "outside": "The current position is outside a parenthesis"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "inside": "inside",
+      "outside": "outside"
+     },
+     "id": "nla:tb_paren:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.8775,
+       "ci95": [
+        0.8159,
+        0.9341
+       ],
+       "dprime": 1.643,
+       "n": 160
+      }
+     },
+     "template": "The current position is {v} a parenthesis"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.9636,
+      "ci95": [
+       0.9339,
+       0.9888
+      ],
+      "dprime": 2.661,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "inside": "Parenthetical aside has opened mid-sentence",
+       "outside": "Parenthetical aside is closed"
+      },
+      "family": "parenthetical_aside",
+      "fillers": {
+       "inside": "has opened mid-sentence",
+       "outside": "is closed"
+      },
+      "id": "nla:tb_paren:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9656,
+        "ci95": [
+         0.9317,
+         0.9919
+        ],
+        "dprime": 2.967,
+        "n": 160
+       }
+      },
+      "template": "Parenthetical aside {v}"
+     },
+     {
+      "candidates": {
+       "inside": "The sentence requires its parenthetical closed",
+       "outside": "The sentence requires completion of formal statutory language"
+      },
+      "family": "requires_parenthetical",
+      "fillers": {
+       "inside": "its parenthetical closed",
+       "outside": "completion of formal statutory language"
+      },
+      "id": "nla:tb_paren:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8761,
+        "ci95": [
+         0.8208,
+         0.9227
+        ],
+        "dprime": 1.586,
+        "n": 160
+       }
+      },
+      "template": "The sentence requires {v}"
+     },
+     {
+      "candidates": {
+       "inside": "The text is inside a parenthetical clause",
+       "outside": "The text is outside any parenthetical clause"
+      },
+      "family": "parenthetical_state",
+      "fillers": {
+       "inside": "is inside a parenthetical clause",
+       "outside": "is outside any parenthetical clause"
+      },
+      "id": "nla:tb_paren:m4",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8023,
+        "ci95": [
+         0.7311,
+         0.8704
+        ],
+        "dprime": 1.177,
+        "n": 160
+       }
+      },
+      "template": "The text {v}"
+     }
+    ]
+   },
+   "tb_sentcount": {
+    "all_candidates": {
+     "nla:tb_sentcount:fixed": {
+      "nla@42": {
+       "auroc": 0.7181,
+       "ci95": [
+        0.6426,
+        0.7944
+       ],
+       "dprime": 0.75,
+       "n": 160,
+       "spearman_count": -0.309
+      }
+     },
+     "nla:tb_sentcount:m0": {
+      "nla@42": {
+       "auroc": 0.1625,
+       "ci95": [
+        0.101,
+        0.2276
+       ],
+       "dprime": -1.403,
+       "n": 160,
+       "spearman_count": 0.668
+      }
+     },
+     "nla:tb_sentcount:m1": {
+      "nla@42": {
+       "auroc": 0.8891,
+       "ci95": [
+        0.8339,
+        0.9349
+       ],
+       "dprime": 1.719,
+       "n": 160,
+       "spearman_count": -0.651
+      }
+     },
+     "nla:tb_sentcount:m2": {
+      "nla@42": {
+       "auroc": 0.9803,
+       "ci95": [
+        0.961,
+        0.9947
+       ],
+       "dprime": 3.068,
+       "n": 160,
+       "spearman_count": -0.809
+      }
+     },
+     "nla:tb_sentcount:m3": {
+      "nla@42": {
+       "auroc": 0.945,
+       "ci95": [
+        0.9099,
+        0.9734
+       ],
+       "dprime": 2.286,
+       "n": 160,
+       "spearman_count": -0.77
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "early": "This is the second sentence of the paragraph",
+      "late": "This is the sixth sentence of the paragraph"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "early": "second",
+      "late": "sixth"
+     },
+     "id": "nla:tb_sentcount:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.7181,
+       "ci95": [
+        0.6426,
+        0.7944
+       ],
+       "dprime": 0.75,
+       "n": 160,
+       "spearman_count": -0.309
+      }
+     },
+     "template": "This is the {v} sentence of the paragraph"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.9886,
+      "ci95": [
+       0.9736,
+       0.998
+      ],
+      "dprime": 3.524,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "early": "The passage establishes an introductory factual context",
+       "late": "The passage has been detailing an ongoing narrative"
+      },
+      "family": "narrative_continuation",
+      "fillers": {
+       "early": "establishes an introductory factual context",
+       "late": "has been detailing an ongoing narrative"
+      },
+      "id": "nla:tb_sentcount:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9803,
+        "ci95": [
+         0.961,
+         0.9947
+        ],
+        "dprime": 3.068,
+        "n": 160,
+        "spearman_count": -0.809
+       }
+      },
+      "template": "The passage {v}"
+     },
+     {
+      "candidates": {
+       "early": "The text introduces a new subject or context",
+       "late": "The text is listing successive details in sequence"
+      },
+      "family": "sequential_progression",
+      "fillers": {
+       "early": "introduces a new subject or context",
+       "late": "is listing successive details in sequence"
+      },
+      "id": "nla:tb_sentcount:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.945,
+        "ci95": [
+         0.9099,
+         0.9734
+        ],
+        "dprime": 2.286,
+        "n": 160,
+        "spearman_count": -0.77
+       }
+      },
+      "template": "The text {v}"
+     },
+     {
+      "candidates": {
+       "early": "The text establishes an introductory overview",
+       "late": "The text continues beyond an introductory overview"
+      },
+      "family": "sentence_position_register",
+      "fillers": {
+       "early": "establishes",
+       "late": "continues beyond"
+      },
+      "id": "nla:tb_sentcount:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8891,
+        "ci95": [
+         0.8339,
+         0.9349
+        ],
+        "dprime": 1.719,
+        "n": 160,
+        "spearman_count": -0.651
+       }
+      },
+      "template": "The text {v} an introductory overview"
+     }
+    ]
+   },
+   "tb_tablecol": {
+    "all_candidates": {
+     "nla:tb_tablecol:fixed": {
+      "nla@42": {
+       "auroc": 0.8927,
+       "ci95": [
+        0.8432,
+        0.9384
+       ],
+       "dprime": 1.73,
+       "n": 160,
+       "spearman_count": -0.688
+      }
+     },
+     "nla:tb_tablecol:m0": {
+      "nla@42": {
+       "auroc": 0.8648,
+       "ci95": [
+        0.8061,
+        0.9167
+       ],
+       "dprime": 1.577,
+       "n": 160,
+       "spearman_count": -0.597
+      }
+     },
+     "nla:tb_tablecol:m1": {
+      "nla@42": {
+       "auroc": 0.9978,
+       "ci95": [
+        0.9925,
+        1.0
+       ],
+       "dprime": 3.828,
+       "n": 160,
+       "spearman_count": -0.89
+      }
+     },
+     "nla:tb_tablecol:m2": {
+      "nla@42": {
+       "auroc": 0.7739,
+       "ci95": [
+        0.6957,
+        0.8413
+       ],
+       "dprime": 1.017,
+       "n": 160,
+       "spearman_count": -0.436
+      }
+     },
+     "nla:tb_tablecol:m3": {
+      "nla@42": {
+       "auroc": 0.9675,
+       "ci95": [
+        0.9393,
+        0.9879
+       ],
+       "dprime": 2.646,
+       "n": 160,
+       "spearman_count": -0.84
+      }
+     },
+     "nla:tb_tablecol:m4": {
+      "nla@42": {
+       "auroc": 0.747,
+       "ci95": [
+        0.6715,
+        0.8224
+       ],
+       "dprime": 0.955,
+       "n": 160,
+       "spearman_count": -0.449
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "first": "The current cell is in the first column of the table",
+      "late": "The current cell is in the fifth column of the table"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "first": "first",
+      "late": "fifth"
+     },
+     "id": "nla:tb_tablecol:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.8927,
+       "ci95": [
+        0.8432,
+        0.9384
+       ],
+       "dprime": 1.73,
+       "n": 160,
+       "spearman_count": -0.688
+      }
+     },
+     "template": "The current cell is in the {v} column of the table"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.9972,
+      "ci95": [
+       0.9914,
+       1.0
+      ],
+      "dprime": 3.948,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "first": "Final token begins a new row",
+       "late": "Final token completes the last"
+      },
+      "family": "token_position_in_row",
+      "fillers": {
+       "first": "begins a new row",
+       "late": "completes the last"
+      },
+      "id": "nla:tb_tablecol:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9978,
+        "ci95": [
+         0.9925,
+         1.0
+        ],
+        "dprime": 3.828,
+        "n": 160,
+        "spearman_count": -0.89
+       }
+      },
+      "template": "Final token {v}"
+     },
+     {
+      "candidates": {
+       "first": "The final token opens a new row",
+       "late": "The final token closes the list item"
+      },
+      "family": "row_start_vs_end",
+      "fillers": {
+       "first": "opens a new row",
+       "late": "closes the list item"
+      },
+      "id": "nla:tb_tablecol:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9675,
+        "ci95": [
+         0.9393,
+         0.9879
+        ],
+        "dprime": 2.646,
+        "n": 160,
+        "spearman_count": -0.84
+       }
+      },
+      "template": "The final token {v}"
+     },
+     {
+      "candidates": {
+       "first": "Table format with first column",
+       "late": "Table format with late column"
+      },
+      "family": "column_position",
+      "fillers": {
+       "first": "first",
+       "late": "late"
+      },
+      "id": "nla:tb_tablecol:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8648,
+        "ci95": [
+         0.8061,
+         0.9167
+        ],
+        "dprime": 1.577,
+        "n": 160,
+        "spearman_count": -0.597
+       }
+      },
+      "template": "Table format with {v} column"
+     }
+    ]
+   },
+   "tb_wordsleft": {
+    "all_candidates": {
+     "nla:tb_wordsleft:fixed": {
+      "nla@42": {
+       "auroc": 0.5767,
+       "ci95": [
+        0.4866,
+        0.6718
+       ],
+       "dprime": 0.288,
+       "n": 160,
+       "spearman_count": 0.098
+      }
+     },
+     "nla:tb_wordsleft:m0": {
+      "nla@42": {
+       "auroc": 0.3109,
+       "ci95": [
+        0.2324,
+        0.3983
+       ],
+       "dprime": -0.681,
+       "n": 160,
+       "spearman_count": -0.332
+      }
+     },
+     "nla:tb_wordsleft:m1": {
+      "nla@42": {
+       "auroc": 0.578,
+       "ci95": [
+        0.49,
+        0.6664
+       ],
+       "dprime": 0.251,
+       "n": 160,
+       "spearman_count": 0.094
+      }
+     },
+     "nla:tb_wordsleft:m2": {
+      "nla@42": {
+       "auroc": 0.5173,
+       "ci95": [
+        0.4263,
+        0.6035
+       ],
+       "dprime": 0.019,
+       "n": 160,
+       "spearman_count": 0.049
+      }
+     },
+     "nla:tb_wordsleft:m3": {
+      "nla@42": {
+       "auroc": 0.5061,
+       "ci95": [
+        0.4161,
+        0.596
+       ],
+       "dprime": 0.073,
+       "n": 160,
+       "spearman_count": 0.044
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "few": "About three words remain under the word limit",
+      "many": "About twenty words remain under the word limit"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "few": "three",
+      "many": "twenty"
+     },
+     "id": "nla:tb_wordsleft:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.5767,
+       "ci95": [
+        0.4866,
+        0.6718
+       ],
+       "dprime": 0.288,
+       "n": 160,
+       "spearman_count": 0.098
+      }
+     },
+     "template": "About {v} words remain under the word limit"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.5619,
+      "ci95": [
+       0.4659,
+       0.6507
+      ],
+      "dprime": 0.181,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "few": "Historical/encyclopedic description establishing factual",
+       "many": "Historical/educational description establishing factual"
+      },
+      "family": "genre_description_establishing",
+      "fillers": {
+       "few": "Historical/encyclopedic",
+       "many": "Historical/educational"
+      },
+      "id": "nla:tb_wordsleft:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.578,
+        "ci95": [
+         0.49,
+         0.6664
+        ],
+        "dprime": 0.251,
+        "n": 160,
+        "spearman_count": 0.094
+       }
+      },
+      "template": "{v} description establishing factual"
+     },
+     {
+      "candidates": {
+       "few": "The sentence structure signals factual continuation:",
+       "many": "The sentence structure establishes"
+      },
+      "family": "sentence_structure_signals",
+      "fillers": {
+       "few": "signals factual continuation:",
+       "many": "establishes"
+      },
+      "id": "nla:tb_wordsleft:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5173,
+        "ci95": [
+         0.4263,
+         0.6035
+        ],
+        "dprime": 0.019,
+        "n": 160,
+        "spearman_count": 0.049
+       }
+      },
+      "template": "The sentence structure {v}"
+     },
+     {
+      "candidates": {
+       "few": "Historical/encyclopedic factual register describing factual register describing",
+       "many": "Encyclopedic/factual register providing historical and present-day factual register describing"
+      },
+      "family": "factual_register_describing",
+      "fillers": {
+       "few": "Historical/encyclopedic factual register describing",
+       "many": "Encyclopedic/factual register providing historical and present-day"
+      },
+      "id": "nla:tb_wordsleft:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5061,
+        "ci95": [
+         0.4161,
+         0.596
+        ],
+        "dprime": 0.073,
+        "n": 160,
+        "spearman_count": 0.044
+       }
+      },
+      "template": "{v} factual register describing"
+     }
+    ]
+   }
+  },
+  "ol": {
+   "fmt_listdepth": {
+    "all_candidates": {
+     "ol:fmt_listdepth:fixed": {
+      "ol@40": {
+       "auroc": 0.4898,
+       "ci95": [
+        0.3909,
+        0.5943
+       ],
+       "dprime": -0.061,
+       "n": 160,
+       "spearman_count": 0.018
+      },
+      "ol@42": {
+       "auroc": 0.4589,
+       "ci95": [
+        0.3578,
+        0.5615
+       ],
+       "dprime": -0.314,
+       "n": 160,
+       "spearman_count": 0.072
+      },
+      "ol@44": {
+       "auroc": 0.4969,
+       "ci95": [
+        0.4018,
+        0.594
+       ],
+       "dprime": -0.153,
+       "n": 160,
+       "spearman_count": 0.005
+      }
+     },
+     "ol:fmt_listdepth:m0": {
+      "ol@40": {
+       "auroc": 0.9903,
+       "ci95": [
+        0.9764,
+        1.0
+       ],
+       "dprime": 2.649,
+       "n": 160,
+       "spearman_count": -0.855
+      },
+      "ol@42": {
+       "auroc": 0.9834,
+       "ci95": [
+        0.9593,
+        1.0
+       ],
+       "dprime": 2.456,
+       "n": 160,
+       "spearman_count": -0.843
+      },
+      "ol@44": {
+       "auroc": 0.9834,
+       "ci95": [
+        0.9593,
+        1.0
+       ],
+       "dprime": 2.242,
+       "n": 160,
+       "spearman_count": -0.843
+      }
+     },
+     "ol:fmt_listdepth:m1": {
+      "ol@40": {
+       "auroc": 0.5491,
+       "ci95": [
+        0.4409,
+        0.6515
+       ],
+       "dprime": 0.399,
+       "n": 160,
+       "spearman_count": -0.086
+      },
+      "ol@42": {
+       "auroc": 0.6253,
+       "ci95": [
+        0.5333,
+        0.7181
+       ],
+       "dprime": 0.593,
+       "n": 160,
+       "spearman_count": -0.218
+      },
+      "ol@44": {
+       "auroc": 0.707,
+       "ci95": [
+        0.6257,
+        0.7839
+       ],
+       "dprime": 0.799,
+       "n": 160,
+       "spearman_count": -0.361
+      }
+     },
+     "ol:fmt_listdepth:m2": {
+      "ol@40": {
+       "auroc": 0.4048,
+       "ci95": [
+        0.3133,
+        0.4962
+       ],
+       "dprime": -0.401,
+       "n": 160,
+       "spearman_count": 0.166
+      },
+      "ol@42": {
+       "auroc": 0.3427,
+       "ci95": [
+        0.2468,
+        0.4471
+       ],
+       "dprime": -0.438,
+       "n": 160,
+       "spearman_count": 0.274
+      },
+      "ol@44": {
+       "auroc": 0.3642,
+       "ci95": [
+        0.2581,
+        0.4704
+       ],
+       "dprime": -0.385,
+       "n": 160,
+       "spearman_count": 0.237
+      }
+     },
+     "ol:fmt_listdepth:m3": {
+      "ol@40": {
+       "auroc": 0.7709,
+       "ci95": [
+        0.6827,
+        0.8481
+       ],
+       "dprime": 0.635,
+       "n": 160,
+       "spearman_count": -0.472
+      },
+      "ol@42": {
+       "auroc": 0.7183,
+       "ci95": [
+        0.6201,
+        0.8075
+       ],
+       "dprime": 0.445,
+       "n": 160,
+       "spearman_count": -0.381
+      },
+      "ol@44": {
+       "auroc": 0.665,
+       "ci95": [
+        0.5725,
+        0.7506
+       ],
+       "dprime": 0.376,
+       "n": 160,
+       "spearman_count": -0.288
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "deep": "- nesting level three",
+      "shallow": "- nesting level one"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "deep": "three",
+      "shallow": "one"
+     },
+     "id": "ol:fmt_listdepth:fixed",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.4898,
+       "ci95": [
+        0.3909,
+        0.5943
+       ],
+       "dprime": -0.061,
+       "n": 160,
+       "spearman_count": 0.018
+      },
+      "ol@42": {
+       "auroc": 0.4589,
+       "ci95": [
+        0.3578,
+        0.5615
+       ],
+       "dprime": -0.314,
+       "n": 160,
+       "spearman_count": 0.072
+      },
+      "ol@44": {
+       "auroc": 0.4969,
+       "ci95": [
+        0.4018,
+        0.594
+       ],
+       "dprime": -0.153,
+       "n": 160,
+       "spearman_count": 0.005
+      }
+     },
+     "template": "- nesting level {v}"
+    },
+    "mean_of_selected": {
+     "ol@40": {
+      "auroc": 0.9083,
+      "ci95": [
+       0.8576,
+       0.9533
+      ],
+      "dprime": 1.733,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.878,
+      "ci95": [
+       0.8259,
+       0.9291
+      ],
+      "dprime": 1.646,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.8766,
+      "ci95": [
+       0.822,
+       0.9262
+      ],
+      "dprime": 1.604,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "deep": "- /street food",
+       "shallow": "- /Science"
+      },
+      "family": "category_vs_subitem_slash",
+      "fillers": {
+       "deep": "street food",
+       "shallow": "Science"
+      },
+      "id": "ol:fmt_listdepth:m0",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.9903,
+        "ci95": [
+         0.9764,
+         1.0
+        ],
+        "dprime": 2.649,
+        "n": 160,
+        "spearman_count": -0.855
+       },
+       "ol@42": {
+        "auroc": 0.9834,
+        "ci95": [
+         0.9593,
+         1.0
+        ],
+        "dprime": 2.456,
+        "n": 160,
+        "spearman_count": -0.843
+       },
+       "ol@44": {
+        "auroc": 0.9834,
+        "ci95": [
+         0.9593,
+         1.0
+        ],
+        "dprime": 2.242,
+        "n": 160,
+        "spearman_count": -0.843
+       }
+      },
+      "template": "- /{v}"
+     },
+     {
+      "candidates": {
+       "deep": "- Item type: nested task",
+       "shallow": "- Item type: section header"
+      },
+      "family": "section_vs_task",
+      "fillers": {
+       "deep": "nested task",
+       "shallow": "section header"
+      },
+      "id": "ol:fmt_listdepth:m3",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.7709,
+        "ci95": [
+         0.6827,
+         0.8481
+        ],
+        "dprime": 0.635,
+        "n": 160,
+        "spearman_count": -0.472
+       },
+       "ol@42": {
+        "auroc": 0.7183,
+        "ci95": [
+         0.6201,
+         0.8075
+        ],
+        "dprime": 0.445,
+        "n": 160,
+        "spearman_count": -0.381
+       },
+       "ol@44": {
+        "auroc": 0.665,
+        "ci95": [
+         0.5725,
+         0.7506
+        ],
+        "dprime": 0.376,
+        "n": 160,
+        "spearman_count": -0.288
+       }
+      },
+      "template": "- Item type: {v}"
+     },
+     {
+      "candidates": {
+       "deep": "- Level: nested",
+       "shallow": "- Level: top level"
+      },
+      "family": "list_level_indicator",
+      "fillers": {
+       "deep": "nested",
+       "shallow": "top level"
+      },
+      "id": "ol:fmt_listdepth:m1",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5491,
+        "ci95": [
+         0.4409,
+         0.6515
+        ],
+        "dprime": 0.399,
+        "n": 160,
+        "spearman_count": -0.086
+       },
+       "ol@42": {
+        "auroc": 0.6253,
+        "ci95": [
+         0.5333,
+         0.7181
+        ],
+        "dprime": 0.593,
+        "n": 160,
+        "spearman_count": -0.218
+       },
+       "ol@44": {
+        "auroc": 0.707,
+        "ci95": [
+         0.6257,
+         0.7839
+        ],
+        "dprime": 0.799,
+        "n": 160,
+        "spearman_count": -0.361
+       }
+      },
+      "template": "- Level: {v}"
+     }
+    ]
+   },
+   "fmt_qa": {
+    "all_candidates": {
+     "ol:fmt_qa:fixed": {
+      "ol@40": {
+       "auroc": 0.49,
+       "ci95": [
+        0.3965,
+        0.5785
+       ],
+       "dprime": -0.014,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4692,
+       "ci95": [
+        0.3773,
+        0.5604
+       ],
+       "dprime": -0.114,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4614,
+       "ci95": [
+        0.3703,
+        0.5522
+       ],
+       "dprime": -0.138,
+       "n": 160
+      }
+     },
+     "ol:fmt_qa:m0": {
+      "ol@40": {
+       "auroc": 0.4467,
+       "ci95": [
+        0.3554,
+        0.5343
+       ],
+       "dprime": -0.174,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4589,
+       "ci95": [
+        0.3654,
+        0.5464
+       ],
+       "dprime": -0.133,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4642,
+       "ci95": [
+        0.3728,
+        0.552
+       ],
+       "dprime": -0.124,
+       "n": 160
+      }
+     },
+     "ol:fmt_qa:m1": {
+      "ol@40": {
+       "auroc": 0.5884,
+       "ci95": [
+        0.5036,
+        0.6778
+       ],
+       "dprime": 0.288,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5803,
+       "ci95": [
+        0.49,
+        0.67
+       ],
+       "dprime": 0.267,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5811,
+       "ci95": [
+        0.4901,
+        0.6757
+       ],
+       "dprime": 0.255,
+       "n": 160
+      }
+     },
+     "ol:fmt_qa:m2": {
+      "ol@40": {
+       "auroc": 0.4647,
+       "ci95": [
+        0.3724,
+        0.5558
+       ],
+       "dprime": -0.164,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4914,
+       "ci95": [
+        0.4019,
+        0.5812
+       ],
+       "dprime": -0.071,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4833,
+       "ci95": [
+        0.3957,
+        0.5731
+       ],
+       "dprime": -0.125,
+       "n": 160
+      }
+     },
+     "ol:fmt_qa:m3": {
+      "ol@40": {
+       "auroc": 0.5073,
+       "ci95": [
+        0.4112,
+        0.5963
+       ],
+       "dprime": 0.029,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5305,
+       "ci95": [
+        0.4416,
+        0.619
+       ],
+       "dprime": 0.109,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5539,
+       "ci95": [
+        0.4652,
+        0.6395
+       ],
+       "dprime": 0.171,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "prose": "- prose format",
+      "qa": "- Q&A format"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "prose": "prose",
+      "qa": "Q&A"
+     },
+     "id": "ol:fmt_qa:fixed",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.49,
+       "ci95": [
+        0.3965,
+        0.5785
+       ],
+       "dprime": -0.014,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4692,
+       "ci95": [
+        0.3773,
+        0.5604
+       ],
+       "dprime": -0.114,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4614,
+       "ci95": [
+        0.3703,
+        0.5522
+       ],
+       "dprime": -0.138,
+       "n": 160
+      }
+     },
+     "template": "- {v} format"
+    },
+    "mean_of_selected": {
+     "ol@40": {
+      "auroc": 0.5341,
+      "ci95": [
+       0.4446,
+       0.6251
+      ],
+      "dprime": 0.149,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.5594,
+      "ci95": [
+       0.4673,
+       0.6493
+      ],
+      "dprime": 0.215,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.5675,
+      "ci95": [
+       0.4755,
+       0.6592
+      ],
+      "dprime": 0.213,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "prose": "- formatted as plain prose",
+       "qa": "- formatted as a Q&A format"
+      },
+      "family": "text_layout",
+      "fillers": {
+       "prose": "plain prose",
+       "qa": "a Q&A format"
+      },
+      "id": "ol:fmt_qa:m1",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5884,
+        "ci95": [
+         0.5036,
+         0.6778
+        ],
+        "dprime": 0.288,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5803,
+        "ci95": [
+         0.49,
+         0.67
+        ],
+        "dprime": 0.267,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5811,
+        "ci95": [
+         0.4901,
+         0.6757
+        ],
+        "dprime": 0.255,
+        "n": 160
+       }
+      },
+      "template": "- formatted as {v}"
+     },
+     {
+      "candidates": {
+       "prose": "- presented as an expository passage",
+       "qa": "- presented as an interview response"
+      },
+      "family": "discourse_mode",
+      "fillers": {
+       "prose": "an expository passage",
+       "qa": "an interview response"
+      },
+      "id": "ol:fmt_qa:m3",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5073,
+        "ci95": [
+         0.4112,
+         0.5963
+        ],
+        "dprime": 0.029,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5305,
+        "ci95": [
+         0.4416,
+         0.619
+        ],
+        "dprime": 0.109,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5539,
+        "ci95": [
+         0.4652,
+         0.6395
+        ],
+        "dprime": 0.171,
+        "n": 160
+       }
+      },
+      "template": "- presented as {v}"
+     },
+     {
+      "candidates": {
+       "prose": "- The",
+       "qa": "- Answer:"
+      },
+      "family": "answer_prefix_indicator",
+      "fillers": {
+       "prose": "The",
+       "qa": "Answer:"
+      },
+      "id": "ol:fmt_qa:m2",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.4647,
+        "ci95": [
+         0.3724,
+         0.5558
+        ],
+        "dprime": -0.164,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.4914,
+        "ci95": [
+         0.4019,
+         0.5812
+        ],
+        "dprime": -0.071,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.4833,
+        "ci95": [
+         0.3957,
+         0.5731
+        ],
+        "dprime": -0.125,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     }
+    ]
+   },
+   "nj1_col_fresh": {
+    "all_candidates": {
+     "ol:nj1_col_fresh:fixed": {
+      "ol@40": {
+       "auroc": 0.4423,
+       "ci95": [
+        0.3476,
+        0.5295
+       ],
+       "dprime": -0.165,
+       "n": 160,
+       "spearman_count": 0.098
+      },
+      "ol@42": {
+       "auroc": 0.4517,
+       "ci95": [
+        0.3595,
+        0.5383
+       ],
+       "dprime": -0.172,
+       "n": 160,
+       "spearman_count": 0.061
+      },
+      "ol@44": {
+       "auroc": 0.4922,
+       "ci95": [
+        0.4074,
+        0.5811
+       ],
+       "dprime": -0.067,
+       "n": 160,
+       "spearman_count": -0.014
+      }
+     },
+     "ol:nj1_col_fresh:fixed_numeric": {
+      "ol@40": {
+       "auroc": 0.5212,
+       "ci95": [
+        0.4401,
+        0.6071
+       ],
+       "dprime": 0.099,
+       "n": 160,
+       "spearman_count": -0.058
+      },
+      "ol@42": {
+       "auroc": 0.5341,
+       "ci95": [
+        0.4497,
+        0.622
+       ],
+       "dprime": 0.145,
+       "n": 160,
+       "spearman_count": -0.069
+      },
+      "ol@44": {
+       "auroc": 0.5661,
+       "ci95": [
+        0.4842,
+        0.649
+       ],
+       "dprime": 0.202,
+       "n": 160,
+       "spearman_count": -0.096
+      }
+     },
+     "ol:nj1_col_fresh:m0": {
+      "ol@40": {
+       "auroc": 0.4664,
+       "ci95": [
+        0.378,
+        0.5561
+       ],
+       "dprime": -0.058,
+       "n": 160,
+       "spearman_count": 0.02
+      },
+      "ol@42": {
+       "auroc": 0.49,
+       "ci95": [
+        0.3985,
+        0.5772
+       ],
+       "dprime": 0.032,
+       "n": 160,
+       "spearman_count": -0.009
+      },
+      "ol@44": {
+       "auroc": 0.4806,
+       "ci95": [
+        0.3898,
+        0.5667
+       ],
+       "dprime": 0.003,
+       "n": 160,
+       "spearman_count": -0.01
+      }
+     },
+     "ol:nj1_col_fresh:m3": {
+      "ol@40": {
+       "auroc": 0.4744,
+       "ci95": [
+        0.3863,
+        0.5641
+       ],
+       "dprime": -0.074,
+       "n": 160,
+       "spearman_count": -0.055
+      },
+      "ol@42": {
+       "auroc": 0.4742,
+       "ci95": [
+        0.3817,
+        0.5652
+       ],
+       "dprime": -0.066,
+       "n": 160,
+       "spearman_count": -0.043
+      },
+      "ol@44": {
+       "auroc": 0.4814,
+       "ci95": [
+        0.3947,
+        0.5707
+       ],
+       "dprime": -0.077,
+       "n": 160,
+       "spearman_count": -0.042
+      }
+     },
+     "ol:nj1_col_fresh:m4": {
+      "ol@40": {
+       "auroc": 0.516,
+       "ci95": [
+        0.431,
+        0.6095
+       ],
+       "dprime": 0.07,
+       "n": 160,
+       "spearman_count": 0.021
+      },
+      "ol@42": {
+       "auroc": 0.5065,
+       "ci95": [
+        0.4222,
+        0.6014
+       ],
+       "dprime": 0.002,
+       "n": 160,
+       "spearman_count": 0.034
+      },
+      "ol@44": {
+       "auroc": 0.4863,
+       "ci95": [
+        0.4027,
+        0.5807
+       ],
+       "dprime": -0.044,
+       "n": 160,
+       "spearman_count": 0.074
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "long": "- near the end of a long line",
+      "short": "- at the start of a line"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "long": "near the end of a long line",
+      "short": "at the start of a line"
+     },
+     "id": "ol:nj1_col_fresh:fixed",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.4423,
+       "ci95": [
+        0.3476,
+        0.5295
+       ],
+       "dprime": -0.165,
+       "n": 160,
+       "spearman_count": 0.098
+      },
+      "ol@42": {
+       "auroc": 0.4517,
+       "ci95": [
+        0.3595,
+        0.5383
+       ],
+       "dprime": -0.172,
+       "n": 160,
+       "spearman_count": 0.061
+      },
+      "ol@44": {
+       "auroc": 0.4922,
+       "ci95": [
+        0.4074,
+        0.5811
+       ],
+       "dprime": -0.067,
+       "n": 160,
+       "spearman_count": -0.014
+      }
+     },
+     "template": "- {v}"
+    },
+    "fixed_numeric": {
+     "candidates": {
+      "long": "- seventy characters",
+      "short": "- twenty characters"
+     },
+     "family": "fixed_numeric",
+     "fillers": {
+      "long": "seventy",
+      "short": "twenty"
+     },
+     "id": "ol:nj1_col_fresh:fixed_numeric",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.5212,
+       "ci95": [
+        0.4401,
+        0.6071
+       ],
+       "dprime": 0.099,
+       "n": 160,
+       "spearman_count": -0.058
+      },
+      "ol@42": {
+       "auroc": 0.5341,
+       "ci95": [
+        0.4497,
+        0.622
+       ],
+       "dprime": 0.145,
+       "n": 160,
+       "spearman_count": -0.069
+      },
+      "ol@44": {
+       "auroc": 0.5661,
+       "ci95": [
+        0.4842,
+        0.649
+       ],
+       "dprime": 0.202,
+       "n": 160,
+       "spearman_count": -0.096
+      }
+     },
+     "template": "- {v} characters"
+    },
+    "mean_of_selected": {
+     "ol@40": {
+      "auroc": 0.4714,
+      "ci95": [
+       0.3852,
+       0.5647
+      ],
+      "dprime": -0.063,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.4869,
+      "ci95": [
+       0.3949,
+       0.5781
+      ],
+      "dprime": -0.037,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.4795,
+      "ci95": [
+       0.389,
+       0.5682
+      ],
+      "dprime": -0.077,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 3,
+    "selected": [
+     {
+      "candidates": {
+       "long": "- current line depth: deep",
+       "short": "- current line depth: shallow"
+      },
+      "family": "line_segment",
+      "fillers": {
+       "long": "deep",
+       "short": "shallow"
+      },
+      "id": "ol:nj1_col_fresh:m4",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.516,
+        "ci95": [
+         0.431,
+         0.6095
+        ],
+        "dprime": 0.07,
+        "n": 160,
+        "spearman_count": 0.021
+       },
+       "ol@42": {
+        "auroc": 0.5065,
+        "ci95": [
+         0.4222,
+         0.6014
+        ],
+        "dprime": 0.002,
+        "n": 160,
+        "spearman_count": 0.034
+       },
+       "ol@44": {
+        "auroc": 0.4863,
+        "ci95": [
+         0.4027,
+         0.5807
+        ],
+        "dprime": -0.044,
+        "n": 160,
+        "spearman_count": 0.074
+       }
+      },
+      "template": "- current line depth: {v}"
+     },
+     {
+      "candidates": {
+       "long": "- line position: late in the line",
+       "short": "- line position: early in the line"
+      },
+      "family": "line_position",
+      "fillers": {
+       "long": "late in the line",
+       "short": "early in the line"
+      },
+      "id": "ol:nj1_col_fresh:m0",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.4664,
+        "ci95": [
+         0.378,
+         0.5561
+        ],
+        "dprime": -0.058,
+        "n": 160,
+        "spearman_count": 0.02
+       },
+       "ol@42": {
+        "auroc": 0.49,
+        "ci95": [
+         0.3985,
+         0.5772
+        ],
+        "dprime": 0.032,
+        "n": 160,
+        "spearman_count": -0.009
+       },
+       "ol@44": {
+        "auroc": 0.4806,
+        "ci95": [
+         0.3898,
+         0.5667
+        ],
+        "dprime": 0.003,
+        "n": 160,
+        "spearman_count": -0.01
+       }
+      },
+      "template": "- line position: {v}"
+     },
+     {
+      "candidates": {
+       "long": "- deep after a newline",
+       "short": "- just after a newline"
+      },
+      "family": "line_margin",
+      "fillers": {
+       "long": "deep",
+       "short": "just"
+      },
+      "id": "ol:nj1_col_fresh:m3",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.4744,
+        "ci95": [
+         0.3863,
+         0.5641
+        ],
+        "dprime": -0.074,
+        "n": 160,
+        "spearman_count": -0.055
+       },
+       "ol@42": {
+        "auroc": 0.4742,
+        "ci95": [
+         0.3817,
+         0.5652
+        ],
+        "dprime": -0.066,
+        "n": 160,
+        "spearman_count": -0.043
+       },
+       "ol@44": {
+        "auroc": 0.4814,
+        "ci95": [
+         0.3947,
+         0.5707
+        ],
+        "dprime": -0.077,
+        "n": 160,
+        "spearman_count": -0.042
+       }
+      },
+      "template": "- {v} after a newline"
+     }
+    ]
+   },
+   "tb_codeline": {
+    "all_candidates": {
+     "ol:tb_codeline:fixed": {
+      "ol@40": {
+       "auroc": 0.4391,
+       "ci95": [
+        0.354,
+        0.5291
+       ],
+       "dprime": -0.267,
+       "n": 160,
+       "spearman_count": 0.057
+      },
+      "ol@42": {
+       "auroc": 0.4637,
+       "ci95": [
+        0.3756,
+        0.5536
+       ],
+       "dprime": -0.165,
+       "n": 160,
+       "spearman_count": 0.02
+      },
+      "ol@44": {
+       "auroc": 0.4686,
+       "ci95": [
+        0.3755,
+        0.5553
+       ],
+       "dprime": -0.146,
+       "n": 160,
+       "spearman_count": -0.004
+      }
+     },
+     "ol:tb_codeline:m0": {
+      "ol@40": {
+       "auroc": 0.6161,
+       "ci95": [
+        0.5274,
+        0.7072
+       ],
+       "dprime": 0.408,
+       "n": 160,
+       "spearman_count": -0.231
+      },
+      "ol@42": {
+       "auroc": 0.6756,
+       "ci95": [
+        0.5916,
+        0.7617
+       ],
+       "dprime": 0.592,
+       "n": 160,
+       "spearman_count": -0.327
+      },
+      "ol@44": {
+       "auroc": 0.6466,
+       "ci95": [
+        0.5541,
+        0.7358
+       ],
+       "dprime": 0.538,
+       "n": 160,
+       "spearman_count": -0.318
+      }
+     },
+     "ol:tb_codeline:m1": {
+      "ol@40": {
+       "auroc": 0.627,
+       "ci95": [
+        0.5392,
+        0.7158
+       ],
+       "dprime": 0.328,
+       "n": 160,
+       "spearman_count": -0.208
+      },
+      "ol@42": {
+       "auroc": 0.6455,
+       "ci95": [
+        0.5604,
+        0.731
+       ],
+       "dprime": 0.378,
+       "n": 160,
+       "spearman_count": -0.247
+      },
+      "ol@44": {
+       "auroc": 0.6394,
+       "ci95": [
+        0.5498,
+        0.7227
+       ],
+       "dprime": 0.343,
+       "n": 160,
+       "spearman_count": -0.246
+      }
+     },
+     "ol:tb_codeline:m2": {
+      "ol@40": {
+       "auroc": 0.5991,
+       "ci95": [
+        0.5128,
+        0.6832
+       ],
+       "dprime": 0.343,
+       "n": 160,
+       "spearman_count": -0.194
+      },
+      "ol@42": {
+       "auroc": 0.6348,
+       "ci95": [
+        0.5512,
+        0.7176
+       ],
+       "dprime": 0.48,
+       "n": 160,
+       "spearman_count": -0.222
+      },
+      "ol@44": {
+       "auroc": 0.6419,
+       "ci95": [
+        0.5589,
+        0.7276
+       ],
+       "dprime": 0.522,
+       "n": 160,
+       "spearman_count": -0.227
+      }
+     },
+     "ol:tb_codeline:m3": {
+      "ol@40": {
+       "auroc": 0.5641,
+       "ci95": [
+        0.4748,
+        0.6531
+       ],
+       "dprime": 0.169,
+       "n": 160,
+       "spearman_count": -0.067
+      },
+      "ol@42": {
+       "auroc": 0.5578,
+       "ci95": [
+        0.4664,
+        0.6459
+       ],
+       "dprime": 0.14,
+       "n": 160,
+       "spearman_count": -0.056
+      },
+      "ol@44": {
+       "auroc": 0.5581,
+       "ci95": [
+        0.4697,
+        0.6435
+       ],
+       "dprime": 0.166,
+       "n": 160,
+       "spearman_count": -0.068
+      }
+     },
+     "ol:tb_codeline:m4": {
+      "ol@40": {
+       "auroc": 0.5752,
+       "ci95": [
+        0.4837,
+        0.6612
+       ],
+       "dprime": 0.296,
+       "n": 160,
+       "spearman_count": -0.12
+      },
+      "ol@42": {
+       "auroc": 0.5825,
+       "ci95": [
+        0.4934,
+        0.6703
+       ],
+       "dprime": 0.344,
+       "n": 160,
+       "spearman_count": -0.144
+      },
+      "ol@44": {
+       "auroc": 0.6008,
+       "ci95": [
+        0.5075,
+        0.6852
+       ],
+       "dprime": 0.37,
+       "n": 160,
+       "spearman_count": -0.172
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "early": "- line two",
+      "late": "- line ten"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "early": "two",
+      "late": "ten"
+     },
+     "id": "ol:tb_codeline:fixed",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.4391,
+       "ci95": [
+        0.354,
+        0.5291
+       ],
+       "dprime": -0.267,
+       "n": 160,
+       "spearman_count": 0.057
+      },
+      "ol@42": {
+       "auroc": 0.4637,
+       "ci95": [
+        0.3756,
+        0.5536
+       ],
+       "dprime": -0.165,
+       "n": 160,
+       "spearman_count": 0.02
+      },
+      "ol@44": {
+       "auroc": 0.4686,
+       "ci95": [
+        0.3755,
+        0.5553
+       ],
+       "dprime": -0.146,
+       "n": 160,
+       "spearman_count": -0.004
+      }
+     },
+     "template": "- line {v}"
+    },
+    "mean_of_selected": {
+     "ol@40": {
+      "auroc": 0.6709,
+      "ci95": [
+       0.5847,
+       0.7542
+      ],
+      "dprime": 0.593,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.7081,
+      "ci95": [
+       0.6271,
+       0.7872
+      ],
+      "dprime": 0.769,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.7137,
+      "ci95": [
+       0.6346,
+       0.7887
+      ],
+      "dprime": 0.742,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "early": "- 2 (name, age",
+       "late": "- 9 (name, age"
+      },
+      "family": "line_step_number",
+      "fillers": {
+       "early": "2",
+       "late": "9"
+      },
+      "id": "ol:tb_codeline:m0",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.6161,
+        "ci95": [
+         0.5274,
+         0.7072
+        ],
+        "dprime": 0.408,
+        "n": 160,
+        "spearman_count": -0.231
+       },
+       "ol@42": {
+        "auroc": 0.6756,
+        "ci95": [
+         0.5916,
+         0.7617
+        ],
+        "dprime": 0.592,
+        "n": 160,
+        "spearman_count": -0.327
+       },
+       "ol@44": {
+        "auroc": 0.6466,
+        "ci95": [
+         0.5541,
+         0.7358
+        ],
+        "dprime": 0.538,
+        "n": 160,
+        "spearman_count": -0.318
+       }
+      },
+      "template": "- {v} (name, age"
+     },
+     {
+      "candidates": {
+       "early": "- count += 1  #",
+       "late": "- count += 9  #"
+      },
+      "family": "count_increment",
+      "fillers": {
+       "early": "1",
+       "late": "9"
+      },
+      "id": "ol:tb_codeline:m1",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.627,
+        "ci95": [
+         0.5392,
+         0.7158
+        ],
+        "dprime": 0.328,
+        "n": 160,
+        "spearman_count": -0.208
+       },
+       "ol@42": {
+        "auroc": 0.6455,
+        "ci95": [
+         0.5604,
+         0.731
+        ],
+        "dprime": 0.378,
+        "n": 160,
+        "spearman_count": -0.247
+       },
+       "ol@44": {
+        "auroc": 0.6394,
+        "ci95": [
+         0.5498,
+         0.7227
+        ],
+        "dprime": 0.343,
+        "n": 160,
+        "spearman_count": -0.246
+       }
+      },
+      "template": "- count += {v}  #"
+     },
+     {
+      "candidates": {
+       "early": "- , self.count += 9",
+       "late": "- , self.stats.count += 9"
+      },
+      "family": "stats_increment",
+      "fillers": {
+       "early": "count",
+       "late": "stats.count"
+      },
+      "id": "ol:tb_codeline:m2",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5991,
+        "ci95": [
+         0.5128,
+         0.6832
+        ],
+        "dprime": 0.343,
+        "n": 160,
+        "spearman_count": -0.194
+       },
+       "ol@42": {
+        "auroc": 0.6348,
+        "ci95": [
+         0.5512,
+         0.7176
+        ],
+        "dprime": 0.48,
+        "n": 160,
+        "spearman_count": -0.222
+       },
+       "ol@44": {
+        "auroc": 0.6419,
+        "ci95": [
+         0.5589,
+         0.7276
+        ],
+        "dprime": 0.522,
+        "n": 160,
+        "spearman_count": -0.227
+       }
+      },
+      "template": "- , self.{v} += 9"
+     }
+    ]
+   },
+   "tb_paren": {
+    "all_candidates": {
+     "ol:tb_paren:fixed": {
+      "ol@40": {
+       "auroc": 0.4172,
+       "ci95": [
+        0.3278,
+        0.5126
+       ],
+       "dprime": -0.214,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4308,
+       "ci95": [
+        0.3411,
+        0.5239
+       ],
+       "dprime": -0.133,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4514,
+       "ci95": [
+        0.3627,
+        0.5497
+       ],
+       "dprime": -0.078,
+       "n": 160
+      }
+     },
+     "ol:tb_paren:m0": {
+      "ol@40": {
+       "auroc": 0.6823,
+       "ci95": [
+        0.5973,
+        0.7643
+       ],
+       "dprime": 0.757,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.6634,
+       "ci95": [
+        0.5795,
+        0.7457
+       ],
+       "dprime": 0.672,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.6768,
+       "ci95": [
+        0.5893,
+        0.7608
+       ],
+       "dprime": 0.689,
+       "n": 160
+      }
+     },
+     "ol:tb_paren:m1": {
+      "ol@40": {
+       "auroc": 0.7419,
+       "ci95": [
+        0.6654,
+        0.8139
+       ],
+       "dprime": 0.951,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7327,
+       "ci95": [
+        0.6557,
+        0.8086
+       ],
+       "dprime": 0.929,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.7461,
+       "ci95": [
+        0.6679,
+        0.8164
+       ],
+       "dprime": 0.98,
+       "n": 160
+      }
+     },
+     "ol:tb_paren:m2": {
+      "ol@40": {
+       "auroc": 0.5247,
+       "ci95": [
+        0.4365,
+        0.6136
+       ],
+       "dprime": 0.053,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5177,
+       "ci95": [
+        0.4288,
+        0.6054
+       ],
+       "dprime": 0.054,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5127,
+       "ci95": [
+        0.4272,
+        0.605
+       ],
+       "dprime": 0.028,
+       "n": 160
+      }
+     },
+     "ol:tb_paren:m3": {
+      "ol@40": {
+       "auroc": 0.503,
+       "ci95": [
+        0.416,
+        0.5938
+       ],
+       "dprime": 0.028,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4841,
+       "ci95": [
+        0.387,
+        0.5714
+       ],
+       "dprime": -0.026,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4729,
+       "ci95": [
+        0.3773,
+        0.5615
+       ],
+       "dprime": -0.054,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "inside": "- inside parentheses",
+      "outside": "- outside parentheses"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "inside": "inside",
+      "outside": "outside"
+     },
+     "id": "ol:tb_paren:fixed",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.4172,
+       "ci95": [
+        0.3278,
+        0.5126
+       ],
+       "dprime": -0.214,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4308,
+       "ci95": [
+        0.3411,
+        0.5239
+       ],
+       "dprime": -0.133,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4514,
+       "ci95": [
+        0.3627,
+        0.5497
+       ],
+       "dprime": -0.078,
+       "n": 160
+      }
+     },
+     "template": "- {v} parentheses"
+    },
+    "mean_of_selected": {
+     "ol@40": {
+      "auroc": 0.7491,
+      "ci95": [
+       0.6729,
+       0.8191
+      ],
+      "dprime": 0.959,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.7317,
+      "ci95": [
+       0.6553,
+       0.803
+      ],
+      "dprime": 0.904,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.732,
+      "ci95": [
+       0.6562,
+       0.8014
+      ],
+      "dprime": 0.934,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "inside": "- ), and",
+       "outside": "- and"
+      },
+      "family": "parenthetical_vs_main_continuation",
+      "fillers": {
+       "inside": "), and",
+       "outside": "and"
+      },
+      "id": "ol:tb_paren:m1",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.7419,
+        "ci95": [
+         0.6654,
+         0.8139
+        ],
+        "dprime": 0.951,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.7327,
+        "ci95": [
+         0.6557,
+         0.8086
+        ],
+        "dprime": 0.929,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.7461,
+        "ci95": [
+         0.6679,
+         0.8164
+        ],
+        "dprime": 0.98,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "inside": "- )",
+       "outside": "- ,"
+      },
+      "family": "closing_bracket_continuation",
+      "fillers": {
+       "inside": ")",
+       "outside": ","
+      },
+      "id": "ol:tb_paren:m0",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.6823,
+        "ci95": [
+         0.5973,
+         0.7643
+        ],
+        "dprime": 0.757,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.6634,
+        "ci95": [
+         0.5795,
+         0.7457
+        ],
+        "dprime": 0.672,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.6768,
+        "ci95": [
+         0.5893,
+         0.7608
+        ],
+        "dprime": 0.689,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "inside": "- /or",
+       "outside": "- /early"
+      },
+      "family": "slash_parenthetical_clause",
+      "fillers": {
+       "inside": "or",
+       "outside": "early"
+      },
+      "id": "ol:tb_paren:m2",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5247,
+        "ci95": [
+         0.4365,
+         0.6136
+        ],
+        "dprime": 0.053,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5177,
+        "ci95": [
+         0.4288,
+         0.6054
+        ],
+        "dprime": 0.054,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5127,
+        "ci95": [
+         0.4272,
+         0.605
+        ],
+        "dprime": 0.028,
+        "n": 160
+       }
+      },
+      "template": "- /{v}"
+     }
+    ]
+   },
+   "tb_sentcount": {
+    "all_candidates": {
+     "ol:tb_sentcount:fixed": {
+      "ol@40": {
+       "auroc": 0.4813,
+       "ci95": [
+        0.3898,
+        0.5682
+       ],
+       "dprime": -0.126,
+       "n": 160,
+       "spearman_count": 0.002
+      },
+      "ol@42": {
+       "auroc": 0.455,
+       "ci95": [
+        0.36,
+        0.544
+       ],
+       "dprime": -0.162,
+       "n": 160,
+       "spearman_count": 0.052
+      },
+      "ol@44": {
+       "auroc": 0.4637,
+       "ci95": [
+        0.3696,
+        0.5494
+       ],
+       "dprime": -0.113,
+       "n": 160,
+       "spearman_count": 0.027
+      }
+     },
+     "ol:tb_sentcount:m0": {
+      "ol@40": {
+       "auroc": 0.5952,
+       "ci95": [
+        0.5113,
+        0.6755
+       ],
+       "dprime": 0.345,
+       "n": 160,
+       "spearman_count": -0.14
+      },
+      "ol@42": {
+       "auroc": 0.5836,
+       "ci95": [
+        0.4998,
+        0.6712
+       ],
+       "dprime": 0.29,
+       "n": 160,
+       "spearman_count": -0.141
+      },
+      "ol@44": {
+       "auroc": 0.5877,
+       "ci95": [
+        0.503,
+        0.6699
+       ],
+       "dprime": 0.298,
+       "n": 160,
+       "spearman_count": -0.132
+      }
+     },
+     "ol:tb_sentcount:m1": {
+      "ol@40": {
+       "auroc": 0.507,
+       "ci95": [
+        0.4192,
+        0.5981
+       ],
+       "dprime": 0.029,
+       "n": 160,
+       "spearman_count": -0.008
+      },
+      "ol@42": {
+       "auroc": 0.4858,
+       "ci95": [
+        0.4001,
+        0.5745
+       ],
+       "dprime": -0.01,
+       "n": 160,
+       "spearman_count": 0.023
+      },
+      "ol@44": {
+       "auroc": 0.478,
+       "ci95": [
+        0.3887,
+        0.5653
+       ],
+       "dprime": -0.042,
+       "n": 160,
+       "spearman_count": 0.043
+      }
+     },
+     "ol:tb_sentcount:m2": {
+      "ol@40": {
+       "auroc": 0.4958,
+       "ci95": [
+        0.4023,
+        0.5869
+       ],
+       "dprime": 0.004,
+       "n": 160,
+       "spearman_count": -0.019
+      },
+      "ol@42": {
+       "auroc": 0.5102,
+       "ci95": [
+        0.4234,
+        0.6029
+       ],
+       "dprime": 0.034,
+       "n": 160,
+       "spearman_count": -0.034
+      },
+      "ol@44": {
+       "auroc": 0.5256,
+       "ci95": [
+        0.4378,
+        0.619
+       ],
+       "dprime": 0.06,
+       "n": 160,
+       "spearman_count": -0.077
+      }
+     },
+     "ol:tb_sentcount:m3": {
+      "ol@40": {
+       "auroc": 0.5552,
+       "ci95": [
+        0.4674,
+        0.6453
+       ],
+       "dprime": 0.245,
+       "n": 160,
+       "spearman_count": -0.137
+      },
+      "ol@42": {
+       "auroc": 0.5706,
+       "ci95": [
+        0.4826,
+        0.6611
+       ],
+       "dprime": 0.308,
+       "n": 160,
+       "spearman_count": -0.166
+      },
+      "ol@44": {
+       "auroc": 0.565,
+       "ci95": [
+        0.4761,
+        0.6538
+       ],
+       "dprime": 0.306,
+       "n": 160,
+       "spearman_count": -0.157
+      }
+     },
+     "ol:tb_sentcount:m4": {
+      "ol@40": {
+       "auroc": 0.6306,
+       "ci95": [
+        0.5488,
+        0.7162
+       ],
+       "dprime": 0.482,
+       "n": 160,
+       "spearman_count": -0.227
+      },
+      "ol@42": {
+       "auroc": 0.6192,
+       "ci95": [
+        0.5284,
+        0.7076
+       ],
+       "dprime": 0.435,
+       "n": 160,
+       "spearman_count": -0.213
+      },
+      "ol@44": {
+       "auroc": 0.6288,
+       "ci95": [
+        0.5404,
+        0.7128
+       ],
+       "dprime": 0.466,
+       "n": 160,
+       "spearman_count": -0.233
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "early": "- sentence two",
+      "late": "- sentence six"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "early": "two",
+      "late": "six"
+     },
+     "id": "ol:tb_sentcount:fixed",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.4813,
+       "ci95": [
+        0.3898,
+        0.5682
+       ],
+       "dprime": -0.126,
+       "n": 160,
+       "spearman_count": 0.002
+      },
+      "ol@42": {
+       "auroc": 0.455,
+       "ci95": [
+        0.36,
+        0.544
+       ],
+       "dprime": -0.162,
+       "n": 160,
+       "spearman_count": 0.052
+      },
+      "ol@44": {
+       "auroc": 0.4637,
+       "ci95": [
+        0.3696,
+        0.5494
+       ],
+       "dprime": -0.113,
+       "n": 160,
+       "spearman_count": 0.027
+      }
+     },
+     "template": "- sentence {v}"
+    },
+    "mean_of_selected": {
+     "ol@40": {
+      "auroc": 0.6423,
+      "ci95": [
+       0.5577,
+       0.7264
+      ],
+      "dprime": 0.521,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.6494,
+      "ci95": [
+       0.5667,
+       0.7359
+      ],
+      "dprime": 0.517,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.6594,
+      "ci95": [
+       0.573,
+       0.7417
+      ],
+      "dprime": 0.532,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "early": "- sentence position: early",
+       "late": "- sentence position: late"
+      },
+      "family": "direct-label",
+      "fillers": {
+       "early": "early",
+       "late": "late"
+      },
+      "id": "ol:tb_sentcount:m4",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.6306,
+        "ci95": [
+         0.5488,
+         0.7162
+        ],
+        "dprime": 0.482,
+        "n": 160,
+        "spearman_count": -0.227
+       },
+       "ol@42": {
+        "auroc": 0.6192,
+        "ci95": [
+         0.5284,
+         0.7076
+        ],
+        "dprime": 0.435,
+        "n": 160,
+        "spearman_count": -0.213
+       },
+       "ol@44": {
+        "auroc": 0.6288,
+        "ci95": [
+         0.5404,
+         0.7128
+        ],
+        "dprime": 0.466,
+        "n": 160,
+        "spearman_count": -0.233
+       }
+      },
+      "template": "- sentence position: {v}"
+     },
+     {
+      "candidates": {
+       "early": "- in the first sentence",
+       "late": "- in the later sentences"
+      },
+      "family": "in-the-period",
+      "fillers": {
+       "early": "the first sentence",
+       "late": "the later sentences"
+      },
+      "id": "ol:tb_sentcount:m0",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5952,
+        "ci95": [
+         0.5113,
+         0.6755
+        ],
+        "dprime": 0.345,
+        "n": 160,
+        "spearman_count": -0.14
+       },
+       "ol@42": {
+        "auroc": 0.5836,
+        "ci95": [
+         0.4998,
+         0.6712
+        ],
+        "dprime": 0.29,
+        "n": 160,
+        "spearman_count": -0.141
+       },
+       "ol@44": {
+        "auroc": 0.5877,
+        "ci95": [
+         0.503,
+         0.6699
+        ],
+        "dprime": 0.298,
+        "n": 160,
+        "spearman_count": -0.132
+       }
+      },
+      "template": "- in {v}"
+     },
+     {
+      "candidates": {
+       "early": "- at the beginning of the paragraph,",
+       "late": "- at the end of the paragraph,"
+      },
+      "family": "timing-phrase",
+      "fillers": {
+       "early": "the beginning of the paragraph,",
+       "late": "the end of the paragraph,"
+      },
+      "id": "ol:tb_sentcount:m3",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5552,
+        "ci95": [
+         0.4674,
+         0.6453
+        ],
+        "dprime": 0.245,
+        "n": 160,
+        "spearman_count": -0.137
+       },
+       "ol@42": {
+        "auroc": 0.5706,
+        "ci95": [
+         0.4826,
+         0.6611
+        ],
+        "dprime": 0.308,
+        "n": 160,
+        "spearman_count": -0.166
+       },
+       "ol@44": {
+        "auroc": 0.565,
+        "ci95": [
+         0.4761,
+         0.6538
+        ],
+        "dprime": 0.306,
+        "n": 160,
+        "spearman_count": -0.157
+       }
+      },
+      "template": "- at {v}"
+     }
+    ]
+   },
+   "tb_tablecol": {
+    "all_candidates": {
+     "ol:tb_tablecol:fixed": {
+      "ol@40": {
+       "auroc": 0.6802,
+       "ci95": [
+        0.596,
+        0.7613
+       ],
+       "dprime": 0.612,
+       "n": 160,
+       "spearman_count": -0.321
+      },
+      "ol@42": {
+       "auroc": 0.6447,
+       "ci95": [
+        0.5634,
+        0.7237
+       ],
+       "dprime": 0.484,
+       "n": 160,
+       "spearman_count": -0.277
+      },
+      "ol@44": {
+       "auroc": 0.7045,
+       "ci95": [
+        0.6286,
+        0.7816
+       ],
+       "dprime": 0.703,
+       "n": 160,
+       "spearman_count": -0.379
+      }
+     },
+     "ol:tb_tablecol:m0": {
+      "ol@40": {
+       "auroc": 0.8002,
+       "ci95": [
+        0.7352,
+        0.8664
+       ],
+       "dprime": 1.23,
+       "n": 160,
+       "spearman_count": -0.542
+      },
+      "ol@42": {
+       "auroc": 0.7759,
+       "ci95": [
+        0.7007,
+        0.8464
+       ],
+       "dprime": 1.07,
+       "n": 160,
+       "spearman_count": -0.484
+      },
+      "ol@44": {
+       "auroc": 0.7644,
+       "ci95": [
+        0.6861,
+        0.8364
+       ],
+       "dprime": 1.057,
+       "n": 160,
+       "spearman_count": -0.461
+      }
+     },
+     "ol:tb_tablecol:m1": {
+      "ol@40": {
+       "auroc": 0.5002,
+       "ci95": [
+        0.4162,
+        0.5966
+       ],
+       "dprime": 0.0,
+       "n": 160,
+       "spearman_count": 0.005
+      },
+      "ol@42": {
+       "auroc": 0.5081,
+       "ci95": [
+        0.4271,
+        0.6069
+       ],
+       "dprime": 0.032,
+       "n": 160,
+       "spearman_count": -0.016
+      },
+      "ol@44": {
+       "auroc": 0.5409,
+       "ci95": [
+        0.4516,
+        0.6313
+       ],
+       "dprime": 0.174,
+       "n": 160,
+       "spearman_count": -0.062
+      }
+     },
+     "ol:tb_tablecol:m2": {
+      "ol@40": {
+       "auroc": 0.3049,
+       "ci95": [
+        0.2294,
+        0.3957
+       ],
+       "dprime": -0.666,
+       "n": 160,
+       "spearman_count": 0.369
+      },
+      "ol@42": {
+       "auroc": 0.3006,
+       "ci95": [
+        0.2249,
+        0.3859
+       ],
+       "dprime": -0.635,
+       "n": 160,
+       "spearman_count": 0.379
+      },
+      "ol@44": {
+       "auroc": 0.2635,
+       "ci95": [
+        0.1947,
+        0.3408
+       ],
+       "dprime": -0.827,
+       "n": 160,
+       "spearman_count": 0.436
+      }
+     },
+     "ol:tb_tablecol:m3": {
+      "ol@40": {
+       "auroc": 0.7773,
+       "ci95": [
+        0.7013,
+        0.8453
+       ],
+       "dprime": 1.105,
+       "n": 160,
+       "spearman_count": -0.487
+      },
+      "ol@42": {
+       "auroc": 0.7817,
+       "ci95": [
+        0.7046,
+        0.8492
+       ],
+       "dprime": 1.096,
+       "n": 160,
+       "spearman_count": -0.49
+      },
+      "ol@44": {
+       "auroc": 0.7569,
+       "ci95": [
+        0.6806,
+        0.8264
+       ],
+       "dprime": 1.014,
+       "n": 160,
+       "spearman_count": -0.46
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "first": "- column one",
+      "late": "- column five"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "first": "one",
+      "late": "five"
+     },
+     "id": "ol:tb_tablecol:fixed",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.6802,
+       "ci95": [
+        0.596,
+        0.7613
+       ],
+       "dprime": 0.612,
+       "n": 160,
+       "spearman_count": -0.321
+      },
+      "ol@42": {
+       "auroc": 0.6447,
+       "ci95": [
+        0.5634,
+        0.7237
+       ],
+       "dprime": 0.484,
+       "n": 160,
+       "spearman_count": -0.277
+      },
+      "ol@44": {
+       "auroc": 0.7045,
+       "ci95": [
+        0.6286,
+        0.7816
+       ],
+       "dprime": 0.703,
+       "n": 160,
+       "spearman_count": -0.379
+      }
+     },
+     "template": "- column {v}"
+    },
+    "mean_of_selected": {
+     "ol@40": {
+      "auroc": 0.7523,
+      "ci95": [
+       0.6784,
+       0.8253
+      ],
+      "dprime": 0.98,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.7373,
+      "ci95": [
+       0.6642,
+       0.8146
+      ],
+      "dprime": 0.932,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.7327,
+      "ci95": [
+       0.6563,
+       0.8097
+      ],
+      "dprime": 0.944,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "first": "- col_1 |",
+       "late": "- col_5 |"
+      },
+      "family": "col_num",
+      "fillers": {
+       "first": "1",
+       "late": "5"
+      },
+      "id": "ol:tb_tablecol:m3",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.7773,
+        "ci95": [
+         0.7013,
+         0.8453
+        ],
+        "dprime": 1.105,
+        "n": 160,
+        "spearman_count": -0.487
+       },
+       "ol@42": {
+        "auroc": 0.7817,
+        "ci95": [
+         0.7046,
+         0.8492
+        ],
+        "dprime": 1.096,
+        "n": 160,
+        "spearman_count": -0.49
+       },
+       "ol@44": {
+        "auroc": 0.7569,
+        "ci95": [
+         0.6806,
+         0.8264
+        ],
+        "dprime": 1.014,
+        "n": 160,
+        "spearman_count": -0.46
+       }
+      },
+      "template": "- col_{v} |"
+     },
+     {
+      "candidates": {
+       "first": "- column 1 |",
+       "late": "- column 5 |"
+      },
+      "family": "column_index_numeric",
+      "fillers": {
+       "first": "1",
+       "late": "5"
+      },
+      "id": "ol:tb_tablecol:m0",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.8002,
+        "ci95": [
+         0.7352,
+         0.8664
+        ],
+        "dprime": 1.23,
+        "n": 160,
+        "spearman_count": -0.542
+       },
+       "ol@42": {
+        "auroc": 0.7759,
+        "ci95": [
+         0.7007,
+         0.8464
+        ],
+        "dprime": 1.07,
+        "n": 160,
+        "spearman_count": -0.484
+       },
+       "ol@44": {
+        "auroc": 0.7644,
+        "ci95": [
+         0.6861,
+         0.8364
+        ],
+        "dprime": 1.057,
+        "n": 160,
+        "spearman_count": -0.461
+       }
+      },
+      "template": "- column {v} |"
+     },
+     {
+      "candidates": {
+       "first": "- first column |",
+       "late": "- late column |"
+      },
+      "family": "column_position_word",
+      "fillers": {
+       "first": "first",
+       "late": "late"
+      },
+      "id": "ol:tb_tablecol:m1",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5002,
+        "ci95": [
+         0.4162,
+         0.5966
+        ],
+        "dprime": 0.0,
+        "n": 160,
+        "spearman_count": 0.005
+       },
+       "ol@42": {
+        "auroc": 0.5081,
+        "ci95": [
+         0.4271,
+         0.6069
+        ],
+        "dprime": 0.032,
+        "n": 160,
+        "spearman_count": -0.016
+       },
+       "ol@44": {
+        "auroc": 0.5409,
+        "ci95": [
+         0.4516,
+         0.6313
+        ],
+        "dprime": 0.174,
+        "n": 160,
+        "spearman_count": -0.062
+       }
+      },
+      "template": "- {v} column |"
+     }
+    ]
+   },
+   "tb_wordsleft": {
+    "all_candidates": {
+     "ol:tb_wordsleft:fixed": {
+      "ol@40": {
+       "auroc": 0.5722,
+       "ci95": [
+        0.4807,
+        0.662
+       ],
+       "dprime": 0.322,
+       "n": 160,
+       "spearman_count": -0.015
+      },
+      "ol@42": {
+       "auroc": 0.5573,
+       "ci95": [
+        0.4709,
+        0.6516
+       ],
+       "dprime": 0.299,
+       "n": 160,
+       "spearman_count": -0.04
+      },
+      "ol@44": {
+       "auroc": 0.5598,
+       "ci95": [
+        0.4734,
+        0.6461
+       ],
+       "dprime": 0.305,
+       "n": 160,
+       "spearman_count": -0.033
+      }
+     },
+     "ol:tb_wordsleft:m0": {
+      "ol@40": {
+       "auroc": 0.548,
+       "ci95": [
+        0.4497,
+        0.6367
+       ],
+       "dprime": 0.201,
+       "n": 160,
+       "spearman_count": 0.109
+      },
+      "ol@42": {
+       "auroc": 0.5223,
+       "ci95": [
+        0.427,
+        0.6156
+       ],
+       "dprime": 0.104,
+       "n": 160,
+       "spearman_count": 0.051
+      },
+      "ol@44": {
+       "auroc": 0.5366,
+       "ci95": [
+        0.4414,
+        0.6272
+       ],
+       "dprime": 0.114,
+       "n": 160,
+       "spearman_count": 0.057
+      }
+     },
+     "ol:tb_wordsleft:m1": {
+      "ol@40": {
+       "auroc": 0.4463,
+       "ci95": [
+        0.3626,
+        0.5307
+       ],
+       "dprime": -0.226,
+       "n": 160,
+       "spearman_count": -0.105
+      },
+      "ol@42": {
+       "auroc": 0.4307,
+       "ci95": [
+        0.3402,
+        0.5169
+       ],
+       "dprime": -0.248,
+       "n": 160,
+       "spearman_count": -0.144
+      },
+      "ol@44": {
+       "auroc": 0.4241,
+       "ci95": [
+        0.33,
+        0.5115
+       ],
+       "dprime": -0.281,
+       "n": 160,
+       "spearman_count": -0.186
+      }
+     },
+     "ol:tb_wordsleft:m2": {
+      "ol@40": {
+       "auroc": 0.5262,
+       "ci95": [
+        0.4334,
+        0.6154
+       ],
+       "dprime": 0.098,
+       "n": 160,
+       "spearman_count": 0.04
+      },
+      "ol@42": {
+       "auroc": 0.4925,
+       "ci95": [
+        0.4034,
+        0.5831
+       ],
+       "dprime": -0.055,
+       "n": 160,
+       "spearman_count": -0.025
+      },
+      "ol@44": {
+       "auroc": 0.5023,
+       "ci95": [
+        0.4099,
+        0.5902
+       ],
+       "dprime": -0.023,
+       "n": 160,
+       "spearman_count": -0.019
+      }
+     },
+     "ol:tb_wordsleft:m3": {
+      "ol@40": {
+       "auroc": 0.5489,
+       "ci95": [
+        0.4608,
+        0.6416
+       ],
+       "dprime": 0.163,
+       "n": 160,
+       "spearman_count": 0.048
+      },
+      "ol@42": {
+       "auroc": 0.55,
+       "ci95": [
+        0.4609,
+        0.6406
+       ],
+       "dprime": 0.121,
+       "n": 160,
+       "spearman_count": 0.057
+      },
+      "ol@44": {
+       "auroc": 0.5266,
+       "ci95": [
+        0.4346,
+        0.6182
+       ],
+       "dprime": 0.125,
+       "n": 160,
+       "spearman_count": 0.031
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "few": "- three words left",
+      "many": "- twenty words left"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "few": "three",
+      "many": "twenty"
+     },
+     "id": "ol:tb_wordsleft:fixed",
+     "selection": {
+      "ol@40": {
+       "auroc": 0.5722,
+       "ci95": [
+        0.4807,
+        0.662
+       ],
+       "dprime": 0.322,
+       "n": 160,
+       "spearman_count": -0.015
+      },
+      "ol@42": {
+       "auroc": 0.5573,
+       "ci95": [
+        0.4709,
+        0.6516
+       ],
+       "dprime": 0.299,
+       "n": 160,
+       "spearman_count": -0.04
+      },
+      "ol@44": {
+       "auroc": 0.5598,
+       "ci95": [
+        0.4734,
+        0.6461
+       ],
+       "dprime": 0.305,
+       "n": 160,
+       "spearman_count": -0.033
+      }
+     },
+     "template": "- {v} words left"
+    },
+    "mean_of_selected": {
+     "ol@40": {
+      "auroc": 0.5639,
+      "ci95": [
+       0.4685,
+       0.6529
+      ],
+      "dprime": 0.269,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.5258,
+      "ci95": [
+       0.4369,
+       0.6201
+      ],
+      "dprime": 0.108,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.5355,
+      "ci95": [
+       0.4487,
+       0.6287
+      ],
+      "dprime": 0.135,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "few": "- few words remaining.",
+       "many": "- many words remaining."
+      },
+      "family": "length_remaining",
+      "fillers": {
+       "few": "few",
+       "many": "many"
+      },
+      "id": "ol:tb_wordsleft:m3",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5489,
+        "ci95": [
+         0.4608,
+         0.6416
+        ],
+        "dprime": 0.163,
+        "n": 160,
+        "spearman_count": 0.048
+       },
+       "ol@42": {
+        "auroc": 0.55,
+        "ci95": [
+         0.4609,
+         0.6406
+        ],
+        "dprime": 0.121,
+        "n": 160,
+        "spearman_count": 0.057
+       },
+       "ol@44": {
+        "auroc": 0.5266,
+        "ci95": [
+         0.4346,
+         0.6182
+        ],
+        "dprime": 0.125,
+        "n": 160,
+        "spearman_count": 0.031
+       }
+      },
+      "template": "- {v} words remaining."
+     },
+     {
+      "candidates": {
+       "few": "- (4 words",
+       "many": "- (20 words"
+      },
+      "family": "words_left_count",
+      "fillers": {
+       "few": "4",
+       "many": "20"
+      },
+      "id": "ol:tb_wordsleft:m0",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.548,
+        "ci95": [
+         0.4497,
+         0.6367
+        ],
+        "dprime": 0.201,
+        "n": 160,
+        "spearman_count": 0.109
+       },
+       "ol@42": {
+        "auroc": 0.5223,
+        "ci95": [
+         0.427,
+         0.6156
+        ],
+        "dprime": 0.104,
+        "n": 160,
+        "spearman_count": 0.051
+       },
+       "ol@44": {
+        "auroc": 0.5366,
+        "ci95": [
+         0.4414,
+         0.6272
+        ],
+        "dprime": 0.114,
+        "n": 160,
+        "spearman_count": 0.057
+       }
+      },
+      "template": "- ({v} words"
+     },
+     {
+      "candidates": {
+       "few": "- 3 words to go",
+       "many": "- 25 words to go"
+      },
+      "family": "still_to_write",
+      "fillers": {
+       "few": "3",
+       "many": "25"
+      },
+      "id": "ol:tb_wordsleft:m2",
+      "selection": {
+       "ol@40": {
+        "auroc": 0.5262,
+        "ci95": [
+         0.4334,
+         0.6154
+        ],
+        "dprime": 0.098,
+        "n": 160,
+        "spearman_count": 0.04
+       },
+       "ol@42": {
+        "auroc": 0.4925,
+        "ci95": [
+         0.4034,
+         0.5831
+        ],
+        "dprime": -0.055,
+        "n": 160,
+        "spearman_count": -0.025
+       },
+       "ol@44": {
+        "auroc": 0.5023,
+        "ci95": [
+         0.4099,
+         0.5902
+        ],
+        "dprime": -0.023,
+        "n": 160,
+        "spearman_count": -0.019
+       }
+      },
+      "template": "- {v} words to go"
+     }
+    ]
+   }
+  }
+ }
+}

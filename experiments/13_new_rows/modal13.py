@@ -1,4 +1,5 @@
-"""Exp 13 Modal stages (app `tq7`): build (CPU) -> gen_ol (H100) -> gen_nla (H200) -> score (H100/H200).
+"""Exp 13 Modal stages (app `tq7`; functions s0-s4 so the dashboard shows no task names):
+s0 = build (CPU), s1 = OL/J-lens readouts (H100), s2 = NLA readouts (H200), s3/s4 = prompted scoring.
 Same stage logic as exp 07's tm_modal.py, pointed at /results/13_new_rows and the exp 13 features.
 
     modal run modal13.py --stage build
@@ -18,12 +19,12 @@ from feature_spec import FEATURES, K_READOUTS, NLA_LAYER, OL_LAYERS
 app = modal.App("tq7")
 HERE = Path(__file__).resolve().parent
 RES = HERE / "results"
-GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, max_inputs=1)
+GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, single_use_containers=True, max_containers=2)
 
 
 # ============================================================================ build (CPU)
 @app.function(image=build_image, volumes=VOLUMES, timeout=3 * 3600, memory=32768, cpu=8)
-def build() -> dict:
+def s0() -> dict:
     import collections
     import random
 
@@ -107,7 +108,7 @@ def _strip_expl(t: str) -> str:
 
 # ============================================================================ gen_ol (H100)
 @app.function(image=gpu_image, gpu="H100", **GPU)
-def gen_ol(feature: str) -> dict:
+def s1(feature: str) -> dict:
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -118,6 +119,8 @@ def gen_ol(feature: str) -> dict:
     torch.manual_seed(0)
     t0 = time.time()
     VOLUMES["/results"].reload()
+    if Path(f"{OUT}/gen_ol_{feature}.json").exists():
+        return json.load(open(f"{OUT}/gen_ol_{feature}.json"))
     tok = AutoTokenizer.from_pretrained("Qwen/Qwen3.6-27B")
     model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3.6-27B", dtype=torch.bfloat16, device_map="cuda").eval()
     ol = load_olens(model, tok)
@@ -131,7 +134,7 @@ def gen_ol(feature: str) -> dict:
     mine = [i for i, it in enumerate(items) if it["split"] == "mine"]
     gens, jtop = {}, []
     if mine:
-        for L in OL_LAYERS:
+        for L in (42,):  # free readouts at the primary layer only (40/44 shown interchangeable in exp 12)
             g = ol.verbalize(acts[L][mine], L, k=K_READOUTS, sampling=WSBENCH_SAMPLING, batch=32)
             gens[L] = {items[i]["id"]: g[r] for r, i in enumerate(mine)}
         jl = load_jlens(ol.model, tok, layers=[42])
@@ -146,7 +149,7 @@ def gen_ol(feature: str) -> dict:
 
 # ============================================================================ gen_nla (H200)
 @app.function(image=gpu_image, gpu="H200", **GPU)
-def gen_nla(feature: str) -> dict:
+def s2(feature: str) -> dict:
     import torch
 
     from mats.readers import nla as NL
@@ -154,6 +157,8 @@ def gen_nla(feature: str) -> dict:
     torch.manual_seed(0)
     t0 = time.time()
     VOLUMES["/results"].reload()
+    if Path(f"{OUT}/gen_nla_{feature}.json").exists():
+        return json.load(open(f"{OUT}/gen_nla_{feature}.json"))
     items = _load_items(feature)
     blob = torch.load(f"{OUT}/acts_{feature}.pt", weights_only=False)
     assert blob["ids"] == [it["id"] for it in items]
@@ -193,7 +198,7 @@ def _score_generic(lp_fn, feature: str, templates: list[dict], items, acts_L, se
 
 
 @app.function(image=gpu_image, gpu="H100", **GPU)
-def score_ol(feature: str, templates: list[dict], jsets: list[dict]) -> dict:
+def s3(feature: str, templates: list[dict], jsets: list[dict]) -> dict:
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -228,7 +233,7 @@ def score_ol(feature: str, templates: list[dict], jsets: list[dict]) -> dict:
 
 
 @app.function(image=gpu_image, gpu="H200", **GPU)
-def score_nla(feature: str, templates: list[dict]) -> dict:
+def s4(feature: str, templates: list[dict]) -> dict:
     from mats.readers import nla as NL
 
     t0 = time.time()
@@ -250,16 +255,16 @@ def main(stage: str = "gen_ol", features: str = "", readers: str = "ol,nla") -> 
     feats = features.split(",") if features else list(FEATURES)
     RES.mkdir(exist_ok=True)
     if stage == "build":
-        (RES / "build_info.json").write_text(json.dumps(build.remote(), indent=1, default=str))
+        (RES / "build_info.json").write_text(json.dumps(s0.remote(), indent=1, default=str))
     elif stage in ("gen_ol", "gen_nla"):
-        fn = gen_ol if stage == "gen_ol" else gen_nla
+        fn = s1 if stage == "gen_ol" else s2
         for r in fn.map(feats, return_exceptions=True):
             _save(r, stage)
     elif stage == "score":
         cand = json.loads((RES / "candidates.json").read_text())
         rd = readers.split(",")
-        hs = [("score_ol", score_ol.spawn(f, cand["ol"][f], cand["jlens"][f])) for f in feats] if "ol" in rd else []
-        hs += [("score_nla", score_nla.spawn(f, cand["nla"][f])) for f in feats] if "nla" in rd else []
+        hs = [("score_ol", s3.spawn(f, cand["ol"][f], cand["jlens"][f])) for f in feats] if "ol" in rd else []
+        hs += [("score_nla", s4.spawn(f, cand["nla"][f])) for f in feats] if "nla" in rd else []
         for kind, h in hs:
             try:
                 _save(h.get(), kind)
