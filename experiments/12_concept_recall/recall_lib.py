@@ -7,12 +7,14 @@ written in French exhibits 'French' without stating it). Both are judged; both a
 from __future__ import annotations
 
 import json
+import os
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-GEN_DIR = ROOT / "experiments" / "07_template_mining" / "results"
+# Readout source: exp 07 by default; RECALL_GEN_DIR / RECALL_SPEC override it (exp 13 reuses this judge).
+GEN_DIR = Path(os.environ.get("RECALL_GEN_DIR", ROOT / "experiments" / "07_template_mining" / "results"))
 TRUNC = 700
 CHUNK = 20
 READERS = ("nla", "ol42", "ol40", "ol44")

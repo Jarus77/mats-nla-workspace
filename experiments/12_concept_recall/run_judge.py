@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -14,12 +15,12 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(ROOT / "experiments" / "06_resolving_decomposition"))
-sys.path.insert(0, str(ROOT / "experiments" / "07_template_mining"))
+sys.path.insert(0, os.environ.get("RECALL_SPEC", str(ROOT / "experiments" / "07_template_mining")))
 from feature_spec import FEATURES  # noqa: E402
 from llm import Client  # noqa: E402
 from recall_lib import SCHEMA, Readout, build_prompt, chunks, load_readouts, parse_answers  # noqa: E402
 
-OUT = HERE / "results" / "judged"
+OUT = Path(os.environ.get("RECALL_OUT", HERE / "results")) / "judged"
 
 
 def judge_cell(client: Client, feature: str, reader: str, limit: int | None) -> dict:
