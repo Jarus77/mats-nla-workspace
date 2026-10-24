@@ -65,7 +65,7 @@ def _save(path: str, obj) -> None:  # noqa: ANN001
 
 # ============================================================================ prep (H200)
 @app.function(image=gpu_image, gpu="H200", **GPU)
-def prep(feature: str) -> dict:
+def k7q(feature: str) -> dict:
     import numpy as np
     import torch
     from transformers import AutoTokenizer
@@ -135,7 +135,7 @@ N_BEHAVE_CHUNKS = 2
 
 
 @app.function(image=gpu_image, gpu="H100", **GPU)
-def behave(job: tuple) -> dict:
+def m3zd(job: tuple) -> dict:
     """job = (feature, chunk): conditions[chunk::N_BEHAVE_CHUNKS]; chunk 0 also scores the J-lens on all."""
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -260,18 +260,18 @@ def _score(feature: str, reader: str) -> dict:
 
 
 @app.function(image=gpu_image, gpu="H200", **GPU)
-def score_nla(feature: str) -> dict:
+def v8t(feature: str) -> dict:
     return _score(feature, "nla")
 
 
 @app.function(image=gpu_image, gpu="H100", **GPU)
-def score_ol(feature: str) -> dict:
+def w2hx(feature: str) -> dict:
     return _score(feature, "ol")
 
 
 # ============================================================================ analyze (CPU)
 @app.function(image=gpu_image, volumes=VOLUMES, timeout=1800, memory=32768, cpu=4)
-def analyze(feature: str) -> dict:
+def p5nq(feature: str) -> dict:
     import torch
 
     from analyze15 import analyze_feature
@@ -290,7 +290,7 @@ def analyze(feature: str) -> dict:
 
 # ============================================================================ entrypoint
 @app.function(image=gpu_image, volumes=VOLUMES, timeout=600, memory=8192, cpu=2)
-def noop(feature: str) -> dict:
+def r0cs(feature: str) -> dict:
     """Warms the image build and checks the inputs exist (no GPU)."""
     VOLUMES["/results"].reload()
     need = [f"{SRC13}/gen_ol_{feature}.json", f"{SRC13}/acts_{feature}.pt", f"{SRC14}/recon14_nla_{feature}.pt", BASIS]
@@ -301,7 +301,7 @@ def noop(feature: str) -> dict:
 def main(stage: str = "prep", features: str = "") -> None:
     feats = features.split(",") if features else list(ROWS)
     RES.mkdir(exist_ok=True)
-    fn = {"prep": prep, "behave": behave, "score_nla": score_nla, "score_ol": score_ol, "analyze": analyze, "noop": noop}[stage]
+    fn = {"prep": k7q, "behave": m3zd, "score_nla": v8t, "score_ol": w2hx, "analyze": p5nq, "noop": r0cs}[stage]
     args = [(f, c) for f in feats for c in range(N_BEHAVE_CHUNKS)] if stage == "behave" else feats
     for r in fn.map(args, return_exceptions=True):
         if isinstance(r, Exception):

@@ -29,8 +29,8 @@ for p in (HERE, REPO / "infra", REPO / "src"):
 
 import modal15 as M  # noqa: E402
 
-STAGES = {"prep": M.prep, "behave": M.behave, "score_nla": M.score_nla, "score_ol": M.score_ol,
-          "analyze": M.analyze}
+STAGES = {"prep": M.k7q, "behave": M.m3zd, "score_nla": M.v8t, "score_ol": M.w2hx,
+          "analyze": M.p5nq}
 
 
 def _gpu_check(stage: str) -> None:

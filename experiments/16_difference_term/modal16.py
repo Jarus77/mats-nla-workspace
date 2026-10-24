@@ -55,7 +55,7 @@ def _save(path: str, obj) -> None:  # noqa: ANN001
 
 
 @app.function(image=gpu_image, gpu="H200", **GPU)
-def s1(feature: str) -> dict:
+def u4yd(feature: str) -> dict:
     import torch
 
     from lib16 import construct, fve_rows, partners
@@ -93,7 +93,7 @@ def s1(feature: str) -> dict:
 
 
 @app.function(image=gpu_image, gpu="H100", **GPU)
-def s2(feature: str) -> dict:
+def h9le(feature: str) -> dict:
     import torch
 
     from mats.readers.olens import load_olens
@@ -115,7 +115,7 @@ def s2(feature: str) -> dict:
 
 
 @app.function(image=gpu_image, volumes=VOLUMES, timeout=1800, memory=32768, cpu=4)
-def analyze(feature: str) -> dict:
+def t6mw(feature: str) -> dict:
     import numpy as np
     import torch
 
@@ -142,7 +142,7 @@ def analyze(feature: str) -> dict:
 
 
 @app.function(image=gpu_image, volumes=VOLUMES, timeout=600, memory=8192, cpu=2)
-def noop(feature: str) -> dict:
+def c1rp(feature: str) -> dict:
     """Warms the image build and checks the inputs exist (no GPU)."""
     VOLUMES["/results"].reload()
     src = SRC[ROWS[feature]["src"]]
@@ -154,7 +154,7 @@ def noop(feature: str) -> dict:
 def main(stage: str = "s1", features: str = "") -> None:
     feats = features.split(",") if features else list(ROWS)
     RES.mkdir(exist_ok=True)
-    fn = {"s1": s1, "s2": s2, "analyze": analyze, "noop": noop}[stage]
+    fn = {"s1": u4yd, "s2": h9le, "analyze": t6mw, "noop": c1rp}[stage]
     for r in fn.map(feats, return_exceptions=True):
         if isinstance(r, Exception):
             print("ERROR", stage, r)
