@@ -1,4 +1,5 @@
 """Modal image for 16_difference_term: the exp 14/15 GPU image with this directory's helpers."""
+import os
 import sys
 from pathlib import Path
 
@@ -9,6 +10,12 @@ _REPO = _HERE.parent.parent
 if (_REPO / "infra").is_dir():
     sys.path.insert(0, str(_REPO / "infra"))
 from modal_common import HF_ENV, HF_PINS, VOLUMES  # noqa: E402,F401
+
+# Local (non-Modal) mode for a bare GPU machine: RFM_LOCAL=1 makes the volume handles no-ops; the
+# code then reads/writes the same absolute paths (/results, /weights/hf) on the local filesystem.
+if os.environ.get("RFM_LOCAL") == "1":
+    modal.Volume.reload = lambda self, *a, **k: None  # type: ignore[method-assign]
+    modal.Volume.commit = lambda self, *a, **k: None  # type: ignore[method-assign]
 
 OUT = "/results/16_difference_term"
 SRC = {"07": "/results/07_template_mining", "13": "/results/13_new_rows"}
