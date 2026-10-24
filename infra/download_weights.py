@@ -23,7 +23,7 @@ from modal_common import (
     weights_volume,
 )
 
-app = modal.App("mats-download-weights")
+app = modal.App("dw3")
 
 
 @dataclass(frozen=True)
@@ -61,6 +61,11 @@ REPOS: tuple[RepoSpec, ...] = (
         "lenses",
         "camilablank/workspace-lenses",  # j-lens, r-lens, template-lens etc., ~25 GB
         allow_patterns=("qwen3.6-27b/**",),
+    ),
+    RepoSpec(
+        "jlens",
+        "neuronpedia/jacobian-lens",  # the single n1000 J-lens file src/mats/readers/jlens.py loads
+        allow_patterns=("qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt",),
     ),
 )
 
