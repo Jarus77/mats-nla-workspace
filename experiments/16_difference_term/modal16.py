@@ -7,6 +7,7 @@
     modal run modal16.py --stage s1        then   --stage s2        then   --stage analyze
 """
 import json
+import os
 import time
 from pathlib import Path
 
@@ -18,7 +19,7 @@ from spec16 import LAYER, OL_GEN_LAYER, ROWS, SEED, VARIANTS
 app = modal.App("pm9")
 HERE = Path(__file__).resolve().parent
 RES = HERE / "results"
-GPU = dict(volumes=VOLUMES, timeout=3 * 3600, memory=131072, single_use_containers=True, max_containers=4)  # all four rows at once
+GPU = dict(volumes=VOLUMES, timeout=3 * 3600, memory=131072, single_use_containers=True, max_containers=int(os.environ.get("RFM_MAXC", "2")))  # GPU cap: 2 on the main workspace (RFM_MAXC overrides)
 
 
 def _row(feature: str):  # noqa: ANN202

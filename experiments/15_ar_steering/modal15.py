@@ -13,6 +13,7 @@
 Every stage skips a feature whose output already exists.
 """
 import json
+import os
 import time
 from pathlib import Path
 
@@ -24,7 +25,7 @@ from spec15 import DIR_NAMES, GEN_TOKENS, JLENS_WORDS, JREM_RANK, K_NULL, LAYER,
 app = modal.App("vx4")
 HERE = Path(__file__).resolve().parent
 RES = HERE / "results"
-GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, single_use_containers=True, max_containers=8)  # fan out: concepts x behave chunks x readers
+GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, single_use_containers=True, max_containers=int(os.environ.get("RFM_MAXC", "2")))  # GPU cap: 2 on the main workspace (RFM_MAXC overrides)
 BASE = "Qwen/Qwen3.6-27B"
 
 
