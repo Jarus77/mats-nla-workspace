@@ -13,7 +13,7 @@ from pathlib import Path
 
 import modal
 
-from env import OUT, SRC, SRC14, VOLUMES, gpu_image
+from env import OUT, SRC, SRC14, VOLUMES, gpu_image, templates_path
 from spec16 import LAYER, OL_GEN_LAYER, ROWS, SEED, VARIANTS
 
 app = modal.App("pm9")
@@ -36,7 +36,7 @@ def _row(feature: str):  # noqa: ANN202
 
 def _pairs(feature: str, reader: str) -> list[list[str]]:
     exp = {"13": "13_new_rows", "07": "07_template_mining"}[ROWS[feature]["src"]]
-    t = json.loads((HERE.parent / exp / "templates_frozen.json").read_text())["templates"][reader][feature]
+    t = json.loads(templates_path(exp).read_text())["templates"][reader][feature]
     a, b = ROWS[feature]["values"]
     return [[r["id"], r["candidates"][a], r["candidates"][b]] for r in [t["fixed_label"]] + t["selected"]]
 

@@ -19,7 +19,7 @@ from pathlib import Path
 
 import modal
 
-from env import BASIS, OUT, SRC13, SRC14, VOLUMES, gpu_image
+from env import BASIS, OUT, SRC13, SRC14, VOLUMES, gpu_image, templates_path
 from spec15 import DIR_NAMES, GEN_TOKENS, JLENS_WORDS, JREM_RANK, K_NULL, LAYER, RANKS, ROWS, SPAN_TOKENS
 
 app = modal.App("vx4")
@@ -45,7 +45,7 @@ def _items(feature: str):  # noqa: ANN202
 
 def _pairs(feature: str, reader: str) -> list[list[str]]:
     """[id, A, B] phrasing pairs: exp 13's frozen fixed label plus the selected mined templates."""
-    t = json.loads((HERE.parent / "13_new_rows" / "templates_frozen.json").read_text())["templates"][reader][feature]
+    t = json.loads(templates_path("13_new_rows").read_text())["templates"][reader][feature]
     a, b = ROWS[feature]["values"]
     return [[r["id"], r["candidates"][a], r["candidates"][b]] for r in [t["fixed_label"]] + t["selected"]]
 
