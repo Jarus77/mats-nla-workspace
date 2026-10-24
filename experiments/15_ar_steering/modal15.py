@@ -24,7 +24,7 @@ from spec15 import DIR_NAMES, GEN_TOKENS, JLENS_WORDS, JREM_RANK, K_NULL, LAYER,
 app = modal.App("vx4")
 HERE = Path(__file__).resolve().parent
 RES = HERE / "results"
-GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, single_use_containers=True, max_containers=1)
+GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, single_use_containers=True, max_containers=2)  # one concept per GPU, two GPUs max
 BASE = "Qwen/Qwen3.6-27B"
 
 
@@ -165,7 +165,7 @@ def behave(feature: str) -> dict:
     nl_ids = [i for i in range(len(tok)) if "\n" in tok.decode([i])]
     metric = ROWS[feature]["model_metric"]
     seqs = [it["ids"] for it in items]
-    B = 32
+    B = 64
     pad = tok.pad_token_id or tok.eos_token_id
 
     def run(H):  # noqa: ANN001, ANN202
@@ -279,11 +279,19 @@ def analyze(feature: str) -> dict:
 
 
 # ============================================================================ entrypoint
+@app.function(image=gpu_image, volumes=VOLUMES, timeout=600, memory=8192, cpu=2)
+def noop(feature: str) -> dict:
+    """Warms the image build and checks the inputs exist (no GPU)."""
+    VOLUMES["/results"].reload()
+    need = [f"{SRC13}/gen_ol_{feature}.json", f"{SRC13}/acts_{feature}.pt", f"{SRC14}/recon14_nla_{feature}.pt", BASIS]
+    return {"feature": feature, "missing": [p for p in need if not Path(p).exists()], "skipped": True}
+
+
 @app.local_entrypoint()
 def main(stage: str = "prep", features: str = "") -> None:
     feats = features.split(",") if features else list(ROWS)
     RES.mkdir(exist_ok=True)
-    fn = {"prep": prep, "behave": behave, "score_nla": score_nla, "score_ol": score_ol, "analyze": analyze}[stage]
+    fn = {"prep": prep, "behave": behave, "score_nla": score_nla, "score_ol": score_ol, "analyze": analyze, "noop": noop}[stage]
     for r in fn.map(feats, return_exceptions=True):
         if isinstance(r, Exception):
             print("ERROR", stage, r)

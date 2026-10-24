@@ -18,7 +18,7 @@ from spec16 import LAYER, OL_GEN_LAYER, ROWS, SEED, VARIANTS
 app = modal.App("pm9")
 HERE = Path(__file__).resolve().parent
 RES = HERE / "results"
-GPU = dict(volumes=VOLUMES, timeout=3 * 3600, memory=131072, single_use_containers=True, max_containers=1)
+GPU = dict(volumes=VOLUMES, timeout=3 * 3600, memory=131072, single_use_containers=True, max_containers=2)  # two rows at a time
 
 
 def _row(feature: str):  # noqa: ANN202
@@ -140,11 +140,20 @@ def analyze(feature: str) -> dict:
     return out
 
 
+@app.function(image=gpu_image, volumes=VOLUMES, timeout=600, memory=8192, cpu=2)
+def noop(feature: str) -> dict:
+    """Warms the image build and checks the inputs exist (no GPU)."""
+    VOLUMES["/results"].reload()
+    src = SRC[ROWS[feature]["src"]]
+    need = [f"{src}/gen_ol_{feature}.json", f"{src}/acts_{feature}.pt", f"{SRC14}/recon14_nla_{feature}.pt", f"{SRC14}/gen14_ol_{feature}.json"]
+    return {"feature": feature, "missing": [p for p in need if not Path(p).exists()], "skipped": True}
+
+
 @app.local_entrypoint()
 def main(stage: str = "s1", features: str = "") -> None:
     feats = features.split(",") if features else list(ROWS)
     RES.mkdir(exist_ok=True)
-    fn = {"s1": s1, "s2": s2, "analyze": analyze}[stage]
+    fn = {"s1": s1, "s2": s2, "analyze": analyze, "noop": noop}[stage]
     for r in fn.map(feats, return_exceptions=True):
         if isinstance(r, Exception):
             print("ERROR", stage, r)

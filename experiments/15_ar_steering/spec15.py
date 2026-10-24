@@ -37,7 +37,7 @@ DIR_NAMES = ("cm_raw", "cm_jrem4", "arexpl_raw", "arexpl_jrem4", "arspan_raw", "
 REL_DOSE = 0.11              # r11: 0.11 * ||h_i||
 K_NULL = 20
 NULL_CLASSES = ("iso", "nonj4")
-GEN_TOKENS = 32
+GEN_TOKENS = 24            # a table row needs ~15 tokens; a close bracket usually arrives within 24
 SPAN_TOKENS = 32
 JLENS_WORDS = {"tb_tablecol": {"first": ["first", "one"], "late": ["fifth", "five"]},
                "tb_paren": {"inside": ["inside", "parenthesis"], "outside": ["outside"]}}
