@@ -24,7 +24,7 @@ from spec15 import DIR_NAMES, GEN_TOKENS, JLENS_WORDS, JREM_RANK, K_NULL, LAYER,
 app = modal.App("vx4")
 HERE = Path(__file__).resolve().parent
 RES = HERE / "results"
-GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, single_use_containers=True, max_containers=2)  # one concept per GPU, two GPUs max
+GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, single_use_containers=True, max_containers=8)  # fan out: concepts x behave chunks x readers
 BASE = "Qwen/Qwen3.6-27B"
 
 
@@ -130,8 +130,12 @@ def _steered(spec: dict, cond: tuple):  # noqa: ANN202
     return build(spec["h"], v, cond, q90=spec["q90"].get(name) if kind == "real" else None)
 
 
+N_BEHAVE_CHUNKS = 2
+
+
 @app.function(image=gpu_image, gpu="H100", **GPU)
-def behave(feature: str) -> dict:
+def behave(job: tuple) -> dict:
+    """job = (feature, chunk): conditions[chunk::N_BEHAVE_CHUNKS]; chunk 0 also scores the J-lens on all."""
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -139,10 +143,11 @@ def behave(feature: str) -> dict:
     from mats.capture import decoder_blocks
     from mats.readers.jlens import load_jlens, token_variants
 
+    feature, chunk = job
     t0 = time.time()
-    path = f"{OUT}/behave15_{feature}.pt"
+    path = f"{OUT}/behave15_{feature}_c{chunk}.pt"
     if _done(path):
-        return {"feature": feature, "skipped": True}
+        return {"feature": feature, "chunk": chunk, "skipped": True}
     spec = torch.load(f"{OUT}/spec15_{feature}.pt", weights_only=False)
     items, _h, _y = _items(feature)
     tok = AutoTokenizer.from_pretrained(BASE)
@@ -200,22 +205,24 @@ def behave(feature: str) -> dict:
                 "texts": texts}
 
     hd = blk.register_forward_hook(hook)
-    out: dict = {"conds": conditions(), "model": {}, "metric": metric}
+    conds = conditions()
+    mine = list(range(chunk, len(conds), N_BEHAVE_CHUNKS))
+    out: dict = {"conds": conds, "chunk": chunk, "n_chunks": N_BEHAVE_CHUNKS, "model": {}, "metric": metric}
     try:
         out["clean_nohook"] = run(None)
-        for ci, c in enumerate(out["conds"]):
-            out["model"][ci] = run(_steered(spec, c))
+        for ci in mine:
+            out["model"][ci] = run(_steered(spec, conds[ci]))
     finally:
         hd.remove()
-    # J-lens@42 prompted log-odds on every condition (cheap)
-    jl = load_jlens(model, tok, layers=[LAYER])
-    wa, wb = JLENS_WORDS[feature][ROWS[feature]["values"][0]], JLENS_WORDS[feature][ROWS[feature]["values"][1]]
-    ia, ib = token_variants(tok, wa), token_variants(tok, wb)
-    out["jlens"] = {ci: (jl.paired_logodds(_steered(spec, c).cuda(), LAYER, ib, ia)).cpu()  # B minus A: + = toward values[1]
-                    for ci, c in enumerate(out["conds"])}
+    if chunk == 0:  # J-lens@42 prompted log-odds on every condition (cheap)
+        jl = load_jlens(model, tok, layers=[LAYER])
+        wa, wb = JLENS_WORDS[feature][ROWS[feature]["values"][0]], JLENS_WORDS[feature][ROWS[feature]["values"][1]]
+        ia, ib = token_variants(tok, wa), token_variants(tok, wb)
+        out["jlens"] = {ci: (jl.paired_logodds(_steered(spec, c).cuda(), LAYER, ib, ia)).cpu()  # B minus A: + = toward values[1]
+                        for ci, c in enumerate(conds)}
     out["wall_s"] = round(time.time() - t0, 1)
     _save(path, out)
-    return {"feature": feature, "n_conds": len(out["conds"]), "wall_s": out["wall_s"]}
+    return {"feature": feature, "chunk": chunk, "n_conds": len(mine), "wall_s": out["wall_s"]}
 
 
 # ============================================================================ reader scoring
@@ -270,7 +277,9 @@ def analyze(feature: str) -> dict:
 
     VOLUMES["/results"].reload()
     spec = torch.load(f"{OUT}/spec15_{feature}.pt", weights_only=False)
-    beh = torch.load(f"{OUT}/behave15_{feature}.pt", weights_only=False)
+    parts = [torch.load(f"{OUT}/behave15_{feature}_c{c}.pt", weights_only=False) for c in range(N_BEHAVE_CHUNKS)]
+    beh = {**parts[0], "model": {ci: m for p in parts for ci, m in p["model"].items()}}
+    assert len(beh["model"]) == len(beh["conds"]), "behave chunks incomplete"
     sc = {r: torch.load(f"{OUT}/score15_{r}_{feature}.pt", weights_only=False) for r in ("nla", "ol")}
     res = analyze_feature(feature, spec, beh, sc)
     Path(f"{OUT}/analysis15_{feature}.json").write_text(json.dumps(res, indent=1, default=float))
@@ -292,7 +301,8 @@ def main(stage: str = "prep", features: str = "") -> None:
     feats = features.split(",") if features else list(ROWS)
     RES.mkdir(exist_ok=True)
     fn = {"prep": prep, "behave": behave, "score_nla": score_nla, "score_ol": score_ol, "analyze": analyze, "noop": noop}[stage]
-    for r in fn.map(feats, return_exceptions=True):
+    args = [(f, c) for f in feats for c in range(N_BEHAVE_CHUNKS)] if stage == "behave" else feats
+    for r in fn.map(args, return_exceptions=True):
         if isinstance(r, Exception):
             print("ERROR", stage, r)
             continue

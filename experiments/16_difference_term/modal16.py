@@ -18,7 +18,7 @@ from spec16 import LAYER, OL_GEN_LAYER, ROWS, SEED, VARIANTS
 app = modal.App("pm9")
 HERE = Path(__file__).resolve().parent
 RES = HERE / "results"
-GPU = dict(volumes=VOLUMES, timeout=3 * 3600, memory=131072, single_use_containers=True, max_containers=2)  # two rows at a time
+GPU = dict(volumes=VOLUMES, timeout=3 * 3600, memory=131072, single_use_containers=True, max_containers=4)  # all four rows at once
 
 
 def _row(feature: str):  # noqa: ANN202
