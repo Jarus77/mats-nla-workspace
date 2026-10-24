@@ -227,7 +227,9 @@ def m3zd(job: tuple) -> dict:
 
 
 # ============================================================================ reader scoring
-def _score(feature: str, reader: str) -> dict:
+def _score(feature: str, reader: str, t: int = 0, nk: int = 0) -> dict:
+    """Prompted log-odds of every condition. t > 0 keeps only the first t phrasing pairs, nk > 0 only the
+    first nk nulls per class (skipped conditions get NaN rows); both default to the full design."""
     import torch
 
     from lib15 import conditions
@@ -237,7 +239,7 @@ def _score(feature: str, reader: str) -> dict:
     if _done(path):
         return {"feature": feature, "reader": reader, "skipped": True}
     spec = torch.load(f"{OUT}/spec15_{feature}.pt", weights_only=False)
-    pairs = _pairs(feature, reader)
+    pairs = _pairs(feature, reader)[: t or None]
     cands = [x for _, a, b in pairs for x in (a, b)]
     if reader == "ol":
         from mats.readers.olens import load_olens
@@ -252,21 +254,61 @@ def _score(feature: str, reader: str) -> dict:
     conds = conditions()
     lo = {}
     for ci, c in enumerate(conds):
+        if nk and c[0] == "null" and int(c[1].rsplit("_", 1)[1]) >= nk:
+            lo[ci] = torch.full((len(pairs), len(spec["y"])), float("nan"))
+            continue
         lp = score(_steered(spec, c))
-        lo[ci] = torch.stack([lp[:, 2 * t + 1] - lp[:, 2 * t] for t in range(len(pairs))])  # B - A: + = toward values[1]
-    out = {"conds": conds, "pairs": pairs, "lo": lo, "wall_s": round(time.time() - t0, 1)}
+        lo[ci] = torch.stack([lp[:, 2 * i + 1] - lp[:, 2 * i] for i in range(len(pairs))])  # B - A: + = toward values[1]
+    out = {"conds": conds, "pairs": pairs, "lo": lo, "trim": {"t": t, "nk": nk}, "wall_s": round(time.time() - t0, 1)}
     _save(path, out)
     return {"feature": feature, "reader": reader, "wall_s": out["wall_s"]}
 
 
 @app.function(image=gpu_image, gpu="H200", **GPU)
-def v8t(feature: str) -> dict:
-    return _score(feature, "nla")
+def v8t(arg: tuple) -> dict:
+    return _score(arg[0], "nla", *arg[1:])
 
 
 @app.function(image=gpu_image, gpu="H100", **GPU)
-def w2hx(feature: str) -> dict:
-    return _score(feature, "ol")
+def w2hx(arg: tuple) -> dict:
+    return _score(arg[0], "ol", *arg[1:])
+
+
+def _probe(feature: str, reader: str, n_conds: int = 2) -> dict:
+    """Time the production scoring path on the first n_conds conditions; nothing is saved."""
+    import torch
+
+    from lib15 import conditions
+
+    spec = torch.load(f"{OUT}/spec15_{feature}.pt", weights_only=False)
+    pairs = _pairs(feature, reader)
+    cands = [x for _, a, b in pairs for x in (a, b)]
+    t0 = time.time()
+    if reader == "ol":
+        from mats.readers.olens import load_olens
+
+        ol = load_olens()
+        score = lambda A: ol.logprob_of_strings(A, LAYER, cands, batch=112)  # noqa: E731
+    else:
+        from mats.readers import nla as NL
+
+        nla = NL.load_nla(load_ar=False)
+        score = lambda A: NL.logprob_of_strings_batch(nla, A, cands, batch=112)  # noqa: E731
+    t_load = time.time() - t0
+    walls = []
+    for c in conditions()[:n_conds]:
+        t1 = time.time()
+        score(_steered(spec, c))
+        walls.append(round(time.time() - t1, 1))
+    n = len(spec["y"]) * len(cands)
+    return {"feature": feature, "reader": reader, "load_s": round(t_load, 1), "strings_per_cond": n,
+            "wall_per_cond_s": walls, "strings_per_s": round(n / (sum(walls) / len(walls)), 1),
+            "projected_full_stage_min": round(len(conditions()) * (sum(walls) / len(walls)) / 60, 1)}
+
+
+@app.function(image=gpu_image, gpu="H100", **GPU)
+def z3ht(arg: tuple) -> dict:
+    return _probe(*arg)
 
 
 # ============================================================================ analyze (CPU)
@@ -301,8 +343,16 @@ def r0cs(feature: str) -> dict:
 def main(stage: str = "prep", features: str = "") -> None:
     feats = features.split(",") if features else list(ROWS)
     RES.mkdir(exist_ok=True)
-    fn = {"prep": k7q, "behave": m3zd, "score_nla": v8t, "score_ol": w2hx, "analyze": p5nq, "noop": r0cs}[stage]
-    args = [(f, c) for f in feats for c in range(N_BEHAVE_CHUNKS)] if stage == "behave" else feats
+    fn = {"prep": k7q, "behave": m3zd, "score_nla": v8t, "score_ol": w2hx, "analyze": p5nq, "noop": r0cs, "probe": z3ht}[stage]
+    trim = (int(os.environ.get("RFM_SCORE_T", "0")), int(os.environ.get("RFM_SCORE_NULLK", "0")))  # 0 = full design
+    if stage == "behave":
+        args = [(f, c) for f in feats for c in range(N_BEHAVE_CHUNKS)]
+    elif stage == "probe":
+        args = [(f, "ol") for f in feats]
+    elif stage.startswith("score"):
+        args = [(f, *trim) for f in feats]
+    else:
+        args = feats
     for r in fn.map(args, return_exceptions=True):
         if isinstance(r, Exception):
             print("ERROR", stage, r)

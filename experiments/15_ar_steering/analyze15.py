@@ -45,8 +45,9 @@ def analyze_feature(feature: str, spec: dict, beh: dict, sc: dict) -> dict[str, 
             cell = {}
             for k in keys:
                 if q == "r11":
-                    cell[k] = {cls: contrast_vs_nulls(P[k], M[k], [p[k] for p, _ in null_pm[cls]],
-                                                      [m[k] for _, m in null_pm[cls]]) for cls in NULL_CLASSES}
+                    cell[k] = {cls: contrast_vs_nulls(P[k], M[k], [p[k] for p, _ in null_pm[cls] if not np.isnan(p[k]).all()],
+                                                      [m[k] for _, m in null_pm[cls] if not np.isnan(m[k]).all()])
+                               for cls in NULL_CLASSES}  # NaN rows = nulls a trimmed reader run skipped
                 else:
                     cell[k] = {"real": paired_shift(P[k], M[k])}
             cells[f"{d}:{q}"] = cell

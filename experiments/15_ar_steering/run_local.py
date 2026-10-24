@@ -52,7 +52,7 @@ def main() -> None:
     feats = a.features.split(",") if a.features else list(M.ROWS)
     if a.stage != "analyze":
         _gpu_check(a.stage)
-    args = [(f, c) for f in feats for c in range(M.N_BEHAVE_CHUNKS)] if a.stage == "behave" else feats
+    args = [(f, c) for f in feats for c in range(M.N_BEHAVE_CHUNKS)] if a.stage == "behave" else [(f, 0, 0) for f in feats] if a.stage.startswith("score") else feats
     M.RES.mkdir(exist_ok=True)
     Path(M.OUT).mkdir(parents=True, exist_ok=True)
     for x in args:

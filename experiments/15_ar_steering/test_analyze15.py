@@ -48,3 +48,15 @@ def test_analyze_feature_detects_planted_effect_only_on_cm_directions():
     rows = A.table_rows(res)
     assert len(rows) == len(DIR_NAMES) and rows[0]["direction"] == "cm_raw"
     assert all(k in rows[0] for k in ("model_metric", "nla_mean", "ol_mean", "jlens"))
+
+
+def test_trimmed_reader_nulls_are_dropped_not_propagated():
+    spec, beh, sc = _fake()
+    for ci, c in enumerate(beh["conds"]):  # a reader run that scored only 10 nulls per class and 1 phrasing
+        if c[0] == "null" and int(c[1].rsplit("_", 1)[1]) >= 10:
+            sc["ol"]["lo"][ci] = torch.full_like(sc["ol"]["lo"][ci], float("nan"))
+    res = A.analyze_feature("tb_tablecol", spec, beh, sc)
+    cell = res["cells"]["cm_jrem4:r11"]
+    assert cell["ol_mean"]["iso"]["band"]["n"] == 10 if "n" in cell["ol_mean"]["iso"]["band"] else True
+    assert np.isfinite(cell["ol_mean"]["iso"]["band"]["z"]) and cell["ol_mean"]["iso"]["band"]["z"] > 5
+    assert cell["model_metric"]["iso"]["band"]["z"] < -5  # model side untouched, still 20 nulls
