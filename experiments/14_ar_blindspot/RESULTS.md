@@ -113,7 +113,7 @@ is blind to any *statement* of a concept, including "French language" (0.10 of t
 French bullet moves it the full gap. So OLens is rewarded for exhibiting, never for stating, and
 position-in-structure can only be exhibited by reproducing the structure, which a short bullet does
 partially (0.66 vs 0.92 for language). That is the mechanism behind "OLens states nothing" and
-behind the NLA lead on text-buffer position. The error-term study needs the AR whitening moments
+behind the NLA lead on position-in-text position. The error-term study needs the AR whitening moments
 from `agu18dec/local-workspace` (gated).
 
 ## Cost

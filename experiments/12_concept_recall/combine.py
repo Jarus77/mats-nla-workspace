@@ -14,7 +14,7 @@ HERE = Path(__file__).resolve().parent
 SEL = HERE.parents[1] / "experiments" / "07_template_mining" / "results" / "selection_table.json"
 ORDER = ["nj1_col", "nj1_col_break", "bk_wordpos", "bk_listidx", "bk_indent", "bk_quote", "nj3_predpos",
          "agr_gender", "agr_number", "nj2_tense", "bk_caps", "ij_listnum", "ij2_lang", "bk_code"]
-GROUP = {f: "text-buffer structure" for f in ORDER[:6]}
+GROUP = {f: "position in text" for f in ORDER[:6]}
 GROUP.update({f: "upcoming-word syntax" for f in ORDER[6:9]})
 GROUP.update({f: "controls (in-workspace)" for f in ORDER[9:]})
 

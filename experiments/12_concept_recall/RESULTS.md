@@ -22,14 +22,14 @@ Date 2026-10-22. Code: `recall_lib.py` (+ `test_recall_lib.py`, 7 tests), `run_j
 
 ## Table
 
-See `results/combined.md` / `.png`. Groups: text-buffer structure (the "interesting" kind), upcoming-word
+See `results/combined.md` / `.png`. Groups: position in text (the "interesting" kind), upcoming-word
 syntax, controls (known in-workspace features).
 
 ## What it says
 
 1. **OLens never states a property.** 0 of 4,480 OLens@42 free readouts state any of the 14
    properties. OLens is a continuation reader: it *exhibits* language (56%), code language (93%),
-   caps (50%) and tense (16%) in its own text, and exhibits nothing detectable for any text-buffer
+   caps (50%) and tense (16%) in its own text, and exhibits nothing detectable for any position-in-text
    or syntax concept. So on Camila's "concepts extracted from the readout" measure, every
    "NLA high / OLens zero" cell is automatic for anything the NLA states at all; the fair
    comparison is NLA-states vs OLens-exhibits vs prompted AUROC.
@@ -39,13 +39,13 @@ syntax, controls (known in-workspace features).
    31%, upcoming noun number 28% ("grammatically requires a plural noun"), gender 9%. These match
    Camila's description of the NLA's unique content ("document format and template structure",
    "mid-unit syntactic incompleteness and required completion category").
-3. **Three text-buffer concepts are never stated by anyone, even when the reader can discriminate
+3. **Three position-in-text concepts are never stated by anyone, even when the reader can discriminate
    them when asked.** Words since sentence start: NLA prompted 0.72 vs OLens 0.51, stated 0%. Line
    position: 0.60 / 0.55, stated 0%. Indentation: 0.87 / 0.89, stated 0% (2% of items). The
    prompted/spontaneous gap is the finding: the information is in the readers' reach but not in
    their vocabulary.
 4. **Prompted, OLens ≥ NLA on 9 of 14; the NLA leads only on words-since-sentence-start (0.72 vs
-   0.51) and quote state (0.83 vs 0.76).** J-Lens is at or near chance on every text-buffer and
+   0.51) and quote state (0.83 vs 0.76).** J-Lens is at or near chance on every position-in-text and
    syntax concept (0.45–0.68) and high only on language/code (0.95–0.98) and noun number (0.84).
    "What OLens finds that J-Lens doesn't" = tense, indentation, bullet index, quote, caps, gender,
    Item-N: 0.76–0.99 vs 0.49–0.68.
@@ -81,7 +81,7 @@ Same 14 concepts, OLens fed the layer-40, 42 or 44 activation (40 and 44 are on 
 - **Stated:** 6 of 13,420 readouts across the three layers state any property (all six are "this is
   Python" at layer 40). OLens states nothing at any layer.
 - **Exhibited:** within a few points across layers (language 56 / 56 / 59%, code 87 / 93 / 94%,
-  caps 44 / 50 / 38%, tense 8 / 16 / 16%); nothing exhibited for any text-buffer or syntax concept.
+  caps 44 / 50 / 38%, tense 8 / 16 / 16%); nothing exhibited for any position-in-text or syntax concept.
 - **Prompted:** every concept within 0.05 across 40 / 42 / 44 (largest spread: indentation 0.86 /
   0.89 / 0.91).
 

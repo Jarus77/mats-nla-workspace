@@ -1,7 +1,7 @@
 # 13 New concept rows for the per-reader recall table (PILOT / EXPLORATORY)
 
 **Why.** Neel's 11 Oct thread asked, per structural concept type, how often each reader finds it, at one
-layer. Exp 12 answered with the 14 exp 07 rows. This adds five text-buffer rows (the kind Neel called
+layer. Exp 12 answered with the 14 exp 07 rows. This adds five position-in-text rows (the kind Neel called
 interesting), two formatting rows (Camila's kind, for comparison) and a fresh line-position bank, built and
 scored exactly as exp 07/12: generated items with the true value known, NLA / OLens / J-lens on the same
 L42 activation, prompted AUROC on 160 held-out items and judged spontaneous recall on 40 items × 8 samples.
@@ -12,14 +12,14 @@ scores. Judge: Gemini 3.8 Flash, 224 calls, $1.02; extraction 14 calls, $0.15.
 
 | Row | Values | Group |
 |---|---|---|
-| sentences into paragraph | 1st–2nd vs 5th+ sentence (6–15 words into it in both) | text-buffer |
-| table column | first cell vs 4th–6th cell of a markdown table row | text-buffer |
-| line in function body | body line 2–3 vs 9–12, flat indentation | text-buffer |
-| inside a parenthesis | 3+ words into an open "(" vs 4+ words after ")" | text-buffer |
-| words left under a stated limit | "Write exactly N words": 20–25 left vs 2–5 left | text-buffer |
+| sentences into paragraph | 1st–2nd vs 5th+ sentence (6–15 words into it in both) | position-in-text |
+| table column | first cell vs 4th–6th cell of a markdown table row | position-in-text |
+| line in function body | body line 2–3 vs 9–12, flat indentation | position-in-text |
+| inside a parenthesis | 3+ words into an open "(" vs 4+ words after ")" | position-in-text |
+| words left under a stated limit | "Write exactly N words": 20–25 left vs 2–5 left | position-in-text |
 | Q&A vs prose layout | same passage as "Question: … Answer: …" vs plain | formatting |
 | list nesting depth | top-level vs third-level markdown bullet | formatting |
-| line position, fresh items | exp 07's generator on unseen paragraphs; frozen nj1_col templates only | text-buffer |
+| line position, fresh items | exp 07's generator on unseen paragraphs; frozen nj1_col templates only | position-in-text |
 
 Code: `feature_spec.py`, `items_build.py` (+ `test_items_build.py`, 9 tests), `modal13.py`, exp 07's
 `extract_templates.py` / `select_freeze.py` (copied, feature tables patched), exp 12's judge via env vars,
@@ -44,9 +44,9 @@ Code: `feature_spec.py`, `items_build.py` (+ `test_items_build.py`, 9 tests), `m
   on inside items and never "outside a parenthesis". Stated values are correct whenever stated. This is the
   same habit seen on bullet index and quote state in exp 12: the NLA reports structure that constrains what
   comes next, not structure as a property of the text.
-- **Three more text-buffer counts are never spoken:** sentences into the paragraph, line number in a code
+- **Three more position-in-text counts are never spoken:** sentences into the paragraph, line number in a code
   body, words remaining under an explicit limit. Together with line position, sentence position and
-  indentation from exp 12, that is six count-like text-buffer concepts with 0% spontaneous mention.
+  indentation from exp 12, that is six count-like position-in-text concepts with 0% spontaneous mention.
 - **Formatting rows (Camila's category) are low**, 4% stated for both, so "the NLA's unique content is
   formatting" is not what we see on controlled items; what it states is completion-relevant structure.
 
@@ -71,7 +71,7 @@ Judge caveat: on table column the judge accepts "a new row/entry is beginning" a
 - **Two clean "NLA reads it, OLens half, J-lens blind" cells, robust to length:** table column (1.00 vs
   0.67 vs 0.64 on length-matched items) and parenthesis state (0.98 vs 0.76 vs 0.47). Both are also the two
   rows the NLA states unprompted (41% / 30%). These are the first prompted cells in the whole table where the
-  NLA clearly beats OLens on a text-buffer concept; on the 14 earlier rows OLens ≥ NLA on 9.
+  NLA clearly beats OLens on a position-in-text concept; on the 14 earlier rows OLens ≥ NLA on 9.
 - **Sentence count and code-line number are confounded with prefix length by construction** (late items are
   always longer; no overlap to re-score). The 0.99s say the NLA separates them but not that it does so by
   counting sentences or lines rather than tokens. Redesign for the next pass: pad early items with an

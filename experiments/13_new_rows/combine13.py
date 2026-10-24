@@ -17,8 +17,8 @@ from recall_lib import aggregate  # noqa: E402
 NAMES = {"tb_sentcount": "sentences into paragraph", "tb_tablecol": "table column", "tb_codeline": "line in function body",
          "tb_paren": "inside a parenthesis", "tb_wordsleft": "words left under a stated limit",
          "fmt_qa": "Q&A vs prose layout", "fmt_listdepth": "list nesting depth", "nj1_col_fresh": "line position, fresh items"}
-GROUP = {"tb_sentcount": "text-buffer structure", "tb_tablecol": "text-buffer structure", "tb_codeline": "text-buffer structure",
-         "tb_paren": "text-buffer structure", "tb_wordsleft": "text-buffer structure", "nj1_col_fresh": "text-buffer structure",
+GROUP = {"tb_sentcount": "position in text", "tb_tablecol": "position in text", "tb_codeline": "position in text",
+         "tb_paren": "position in text", "tb_wordsleft": "position in text", "nj1_col_fresh": "position in text",
          "fmt_qa": "formatting", "fmt_listdepth": "formatting"}
 ORDER = ["nj1_col_fresh", "tb_sentcount", "tb_tablecol", "tb_codeline", "tb_paren", "tb_wordsleft", "fmt_qa", "fmt_listdepth"]
 
@@ -58,7 +58,7 @@ def fmt(x: float, pct: bool) -> str:
     return f"{100 * x:.0f}%" if pct else f"{x:.2f}"
 
 
-GROUP_ORDER = ("text-buffer structure", "formatting", "upcoming-word syntax", "controls")
+GROUP_ORDER = ("position in text", "formatting", "upcoming-word syntax", "controls")
 
 
 def presentation_order(rows: list[dict]) -> list[dict]:

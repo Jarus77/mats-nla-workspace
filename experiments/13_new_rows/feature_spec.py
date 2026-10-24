@@ -1,6 +1,6 @@
 """Exp 13: new concept rows for the per-reader recall table (Neel's thread, 11 Oct).
 
-Five text-buffer rows (the kind Neel called interesting), two formatting rows (Camila's kind, for
+Five position-in-text rows (the kind Neel called interesting), two formatting rows (Camila's kind, for
 comparison), and a fresh line-position bank scored with the frozen exp 07 col templates. Same item
 shape and splits as exp 07: {id, feature, split, cluster, value, ids, text, meta}; 20 + 20 mining
 items and 80 + 80 selection items per feature.
