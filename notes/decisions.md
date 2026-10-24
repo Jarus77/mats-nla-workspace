@@ -542,3 +542,27 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 - **Direction caveat recorded.** The sweep's per-layer class-mean directions (60/120 items) have cosine ≈ 0.4 with the bank directions at 40/42/44 and understate every reader; the bank-direction rescoring is the number to cite for point 1.
 - **Nothing else changes:** P1–P4, directions, doses, templates, Holm family, S1–S10 as in rev 4.2.
 - **Cost:** Phase B ≈ 4.5 A100-h (main ≈ 3.5 h incl. generations, bank 55 min, NLA pending) ≈ $12–15; judges ≈ $0.6.
+
+## 2026-10-23 — D35: Neel's redirect (23 Oct call and sprint drop-in) supersedes the confirmatory run; the concept table becomes the centre
+
+- **Trigger.** Neel, 23 Oct: "most excited about the 'here are the things that one method can find and the other one can't' results"; asked for the per-concept table across readers, more concepts (code, LaTeX, LLM-mined), positive controls, far-apart layers, and two mechanism experiments (reconstructor blind spot; difference-term swap).
+- **Decision.** The pre-registered confirmatory run (prereg rev 4.3: P1–P4 at n = 240, N1–N5, T1) is **not run**. Its question ("does any reader read col descriptively under text-fixed steering") was answered on the pilot and on fresh items (exp 13: fresh line-position items at chance for every reader, 0.51 / 0.49 / 0.53); the sprint's remaining days go to Neel's asks. Every pilot number stays labelled pilot. If days 5–7 of the plan have slack, P1/P2 only (~$15) as a confirmatory footnote.
+- **Where.** exp 12 (14 rows, prompted + judged spontaneous), exp 13 (8 new rows, length control, 22-row table), app `tq7`.
+- **Result carried.** OLens states nothing in 13,420 readouts; NLA states completion-relevant structure (table column 41%, parenthesis 30%) and no count; prompted NLA > OL on table column (1.00 / 0.74) and parenthesis (0.96 / 0.73), length-matched.
+
+## 2026-10-23 — D36: exp 14 answers Neel's "is the AR blind to the concept": no, it is blind to statements; the OL-AR output is whitened
+
+- **Design.** OL-AR (`agu18dec/olens_and_ar:ar_ptag_pooled`, tags 44/40) and NLA-AR on true spans, fresh OL bullets, fresh NLA explanations and fixed statement pairs; probes, gap retention, statement shifts; app `kq2`.
+- **Result.** OL-AR keeps table column 1.00 / parenthesis 0.93 from the true 32-token span; statements move it 0.03–0.10 of the class gap for every concept including language ("French language" 0.10 vs a French bullet 1.39); OL bullets carry structure partially (0.66 / 0.60) vs language 0.92. NLA-AR: statements move it only for language (0.72), not structure (0.07).
+- **Reading.** OLens is rewarded for re-inducing the activation, never for naming; concepts a short span cannot re-induce are partly lost and never stated. The NLA's correct statements are not load-bearing for its reconstruction.
+- **Blocker.** The OL-AR head writes in a whitened space; the moments (`whitening_iolens_pooled_L40/44`) are in a gated dataset. Analysis done in AR space; raw-space error term deferred. Asked the user to request access / ask Agam.
+- **Cost.** ≈ $8.
+
+## 2026-10-24 — D37: rename, recap, proposal; exps 15 and 16 built, launch waiting on Modal capacity
+
+- **Rename.** "text-buffer structure" → "position in text" (Camila: their "text buffer" is a workspace object; Neel: "highly recommend using an alternative name"). Commit 46342ba; tables regenerated, numbers unchanged.
+- **Recap and positioning** (`notes/draft_recap_2026-10-24.md`, `notes/draft_landscape_2026-10-24.md`, `notes/draft_proposal_2026-10-24.md`, `notes/draft_knowledge_ledger.md`, all private). Thesis: READABLE ≠ SAYABLE ≠ USED, each reader placed by its training objective. Position to claim: the objective-level account of readers with the reconstructor as mechanism; two other sprint teams were told by Neel to do that AR science.
+- **Exp 15 (app `vx4`) AR-mediated steering** on table column and parenthesis: directions = class-mean (raw / J-removed 4r*), NLA-AR class-mean of NLA explanations, of true 32-token spans, and of fixed statements; centred construction at r11 (+ q90), K = 20 iso + 20 J-complement nulls; model side = 32-token greedy continuation (cells to newline / tokens to close bracket) + next-token log-odds; reader side = NLA / OLens@42 / J-lens@42 prompted log-odds. Tests pass (8). Predictions in the proposal §4 (P1, P2).
+- **Exp 16 (app `pm9`) difference-term swap** in raw space via the NLA-AR: R_ol = NLA-AR(OL bullets), swap the residual h − R_ol (and R_nla − R_ol) from an opposite-class partner; NLA / OLens readouts follow i or j; component probes. Four rows (two NLA-leads, two controls). Tests pass (4). Prediction: language follows the OL part, position follows the residual.
+- **Not launched:** Modal shared capacity in use by others (user, 24 Oct); launch order when free: exp 15 prep (H200) → behave (H100) ∥ score_nla (H200) → score_ol (H100); exp 16 s1 (H200) → s2 (H100); never more than two GPUs.
+- **Open.** Guiv's 40-row table disagrees with ours on six shared rows (table column 0.57 vs 1.00); cross-score items × phrasings when his data arrives. Multi-candidate re-score of the headline cells (Guiv's two-candidate critique). OL layer sweep 36–60. Multilayer NLA: ask Agam / Camila.
