@@ -71,3 +71,18 @@ estimated USD 3.5 (7.5 with earlier failed provisioning attempts). The pinned `h
 Deliverables (12 outputs, SHA-256 verified against his manifest) are on `rfm-results:/16_difference_term/`
 and in `results/` (analysis JSON, stage prints; `.pt` under `results/vol/`, untracked). Report:
 `python report16.py --analysis results/analysis16_*.json`.
+
+## Confidence intervals (added 26 Oct, exp 17 `ci_prior.py`)
+
+95% cluster-bootstrap CIs (2,000 resamples over items, clusters = passage) on follows_j, mean phrasing. The headline pairs separate at both ends: table column 0.98 [0.96, 1.00] vs 0.01 [0.00, 0.03]; parenthesis 0.87 [0.82, 0.92] vs 0.12 [0.07, 0.17]; language 0.10 [0.06, 0.15] vs 0.92 [0.88, 0.95]; list index 0.98 [0.96, 0.99] vs 0.03 [0.01, 0.05]. OLens's own position readout from the difference term is above 0.5 at the lower end for parenthesis (0.64) and table column (0.53), weaker for list index (0.56).
+
+| row | reader | h | r_nla | r_ol | swap_res | swap_ol | swap_resn | ol_only |
+|---|---|---|---|---|---|---|---|---|
+| tb_tablecol | nla | 0.00 [0.00, 0.01] | 0.02 [0.01, 0.05] | 0.47 [0.39, 0.55] | 0.98 [0.96, 1.00] | 0.01 [0.00, 0.03] | 0.95 [0.92, 0.98] | 0.47 [0.39, 0.55] |
+| tb_tablecol | ol | 0.28 [0.21, 0.35] | 0.24 [0.18, 0.31] | 0.44 [0.36, 0.52] | 0.61 [0.53, 0.69] | 0.42 [0.34, 0.50] | 0.61 [0.53, 0.69] | 0.44 [0.36, 0.52] |
+| tb_paren | nla | 0.04 [0.02, 0.06] | 0.09 [0.05, 0.13] | 0.33 [0.25, 0.40] | 0.87 [0.82, 0.92] | 0.12 [0.07, 0.17] | 0.77 [0.70, 0.84] | 0.33 [0.25, 0.40] |
+| tb_paren | ol | 0.30 [0.23, 0.37] | 0.32 [0.25, 0.39] | 0.52 [0.44, 0.61] | 0.72 [0.64, 0.78] | 0.38 [0.31, 0.46] | 0.70 [0.62, 0.77] | 0.52 [0.44, 0.61] |
+| ij2_lang | nla | 0.00 [0.00, 0.00] | 0.00 [0.00, 0.00] | 0.00 [0.00, 0.01] | 0.10 [0.06, 0.15] | 0.92 [0.88, 0.95] | 0.06 [0.03, 0.09] | 0.00 [0.00, 0.01] |
+| ij2_lang | ol | 0.00 [0.00, 0.01] | 0.00 [0.00, 0.01] | 0.00 [0.00, 0.01] | 0.10 [0.06, 0.15] | 0.91 [0.87, 0.95] | 0.07 [0.04, 0.11] | 0.00 [0.00, 0.01] |
+| bk_listidx | nla | 0.00 [0.00, 0.01] | 0.02 [0.01, 0.03] | 0.31 [0.24, 0.38] | 0.98 [0.96, 0.99] | 0.03 [0.01, 0.05] | 0.83 [0.78, 0.88] | 0.31 [0.24, 0.38] |
+| bk_listidx | ol | 0.01 [0.00, 0.03] | 0.03 [0.01, 0.06] | 0.21 [0.15, 0.27] | 0.64 [0.56, 0.71] | 0.39 [0.32, 0.47] | 0.39 [0.31, 0.47] | 0.21 [0.15, 0.27] |

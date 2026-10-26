@@ -125,3 +125,74 @@ path). A five-minute timing probe (`--stage probe`) and an optional scoring trim
 `RFM_SCORE_NULLK`, unused) were added (7125ebb). Outputs: `rfm-results:/15_ar_steering/` (spec, 4 behave,
 4 score, 2 analysis files; copies of the analysis JSON and the figure in `results/`). Report:
 `python report15.py --analysis results/analysis15_tb_tablecol.json results/analysis15_tb_paren.json`.
+
+## Confidence intervals (added 26 Oct, exp 17 `ci_prior.py`)
+
+95% cluster-bootstrap CIs (2,000 resamples over items, clusters = passage) on the paired +/- mean shift at r11, with the isotropic-null z of the point estimate and of the two CI ends. Signs are raw here (the parenthesis model row is the ")" log-odds itself, negative = the expected direction; the headline table above flips it). Every headline z keeps its sign and magnitude across the CI: the statement direction's model shift on table column stays inside the null band at both ends ([+0.4, +1.1]) while OLens's and the J-lens's responses to it stay far outside ([+11.9, +12.7], [+9.8, +10.4]).
+
+| row | direction | series | shift | CI | z (iso) | z of CI ends |
+|---|---|---|---:|---|---:|---|
+| tb_tablecol | cm_raw | model_lo_newline | +0.378 | [+0.349, +0.408] | +7.1 | [+6.5, +7.7] |
+| tb_tablecol | cm_raw | nla_mean | +3.409 | [+3.321, +3.493] | +13.2 | [+12.8, +13.5] |
+| tb_tablecol | cm_raw | ol_mean | +0.718 | [+0.662, +0.774] | +3.0 | [+2.8, +3.2] |
+| tb_tablecol | cm_raw | jlens | +0.291 | [+0.277, +0.305] | +2.2 | [+2.1, +2.3] |
+| tb_tablecol | cm_jrem4 | model_lo_newline | +0.271 | [+0.249, +0.293] | +5.0 | [+4.6, +5.4] |
+| tb_tablecol | cm_jrem4 | nla_mean | +2.449 | [+2.358, +2.540] | +9.4 | [+9.1, +9.8] |
+| tb_tablecol | cm_jrem4 | ol_mean | +0.545 | [+0.498, +0.591] | +2.3 | [+2.1, +2.5] |
+| tb_tablecol | cm_jrem4 | jlens | +0.067 | [+0.062, +0.071] | +0.9 | [+0.9, +1.0] |
+| tb_tablecol | arexpl_raw | model_lo_newline | +0.451 | [+0.421, +0.484] | +8.6 | [+8.0, +9.2] |
+| tb_tablecol | arexpl_raw | nla_mean | +3.653 | [+3.519, +3.782] | +14.1 | [+13.6, +14.6] |
+| tb_tablecol | arexpl_raw | ol_mean | +1.041 | [+0.985, +1.099] | +4.2 | [+4.0, +4.4] |
+| tb_tablecol | arexpl_raw | jlens | +0.237 | [+0.228, +0.246] | +1.9 | [+1.8, +1.9] |
+| tb_tablecol | arexpl_jrem4 | model_lo_newline | +0.332 | [+0.309, +0.356] | +6.2 | [+5.8, +6.7] |
+| tb_tablecol | arexpl_jrem4 | nla_mean | +2.543 | [+2.424, +2.658] | +9.8 | [+9.3, +10.2] |
+| tb_tablecol | arexpl_jrem4 | ol_mean | +0.705 | [+0.655, +0.753] | +2.9 | [+2.7, +3.1] |
+| tb_tablecol | arexpl_jrem4 | jlens | +0.065 | [+0.059, +0.070] | +0.9 | [+0.9, +1.0] |
+| tb_tablecol | arspan_raw | model_lo_newline | +0.550 | [+0.523, +0.576] | +10.5 | [+10.0, +11.0] |
+| tb_tablecol | arspan_raw | nla_mean | +1.514 | [+1.386, +1.645] | +5.8 | [+5.3, +6.3] |
+| tb_tablecol | arspan_raw | ol_mean | +0.575 | [+0.501, +0.649] | +2.4 | [+2.2, +2.7] |
+| tb_tablecol | arspan_raw | jlens | -0.039 | [-0.062, -0.013] | +0.3 | [+0.2, +0.5] |
+| tb_tablecol | arspan_jrem4 | model_lo_newline | +0.326 | [+0.304, +0.347] | +6.1 | [+5.7, +6.5] |
+| tb_tablecol | arspan_jrem4 | nla_mean | +1.112 | [+1.005, +1.219] | +4.2 | [+3.8, +4.6] |
+| tb_tablecol | arspan_jrem4 | ol_mean | +0.200 | [+0.142, +0.260] | +1.0 | [+0.8, +1.2] |
+| tb_tablecol | arspan_jrem4 | jlens | +0.075 | [+0.071, +0.078] | +1.0 | [+1.0, +1.0] |
+| tb_tablecol | arstmt_raw | model_lo_newline | +0.054 | [+0.036, +0.072] | +0.7 | [+0.4, +1.1] |
+| tb_tablecol | arstmt_raw | nla_mean | +1.212 | [+1.152, +1.274] | +4.6 | [+4.4, +4.8] |
+| tb_tablecol | arstmt_raw | ol_mean | +3.179 | [+3.078, +3.287] | +12.3 | [+11.9, +12.7] |
+| tb_tablecol | arstmt_raw | jlens | +1.721 | [+1.666, +1.773] | +10.1 | [+9.8, +10.4] |
+| tb_tablecol | arstmt_jrem4 | model_lo_newline | +0.022 | [+0.007, +0.038] | +0.1 | [-0.2, +0.4] |
+| tb_tablecol | arstmt_jrem4 | nla_mean | +0.721 | [+0.680, +0.761] | +2.7 | [+2.5, +2.8] |
+| tb_tablecol | arstmt_jrem4 | ol_mean | +0.996 | [+0.937, +1.067] | +4.0 | [+3.8, +4.3] |
+| tb_tablecol | arstmt_jrem4 | jlens | +0.156 | [+0.149, +0.163] | +1.4 | [+1.4, +1.5] |
+| tb_paren | cm_raw | model_lo_close | -0.682 | [-0.805, -0.570] | -19.8 | [-23.3, -16.6] |
+| tb_paren | cm_raw | nla_mean | +1.039 | [+0.859, +1.221] | +6.3 | [+5.2, +7.4] |
+| tb_paren | cm_raw | ol_mean | +1.355 | [+1.249, +1.469] | +10.4 | [+9.6, +11.2] |
+| tb_paren | cm_raw | jlens | +0.040 | [+0.021, +0.060] | -0.0 | [-0.1, +0.0] |
+| tb_paren | cm_jrem4 | model_lo_close | -0.280 | [-0.337, -0.230] | -8.2 | [-9.9, -6.8] |
+| tb_paren | cm_jrem4 | nla_mean | +0.645 | [+0.511, +0.790] | +3.9 | [+3.1, +4.8] |
+| tb_paren | cm_jrem4 | ol_mean | +1.018 | [+0.940, +1.099] | +7.9 | [+7.3, +8.5] |
+| tb_paren | cm_jrem4 | jlens | +0.027 | [+0.022, +0.032] | -0.1 | [-0.1, -0.1] |
+| tb_paren | arexpl_raw | model_lo_close | -0.441 | [-0.497, -0.389] | -12.9 | [-14.5, -11.4] |
+| tb_paren | arexpl_raw | nla_mean | +4.377 | [+4.179, +4.572] | +26.3 | [+25.2, +27.5] |
+| tb_paren | arexpl_raw | ol_mean | +1.786 | [+1.572, +2.005] | +13.6 | [+12.0, +15.2] |
+| tb_paren | arexpl_raw | jlens | +0.021 | [-0.005, +0.050] | -0.1 | [-0.2, +0.0] |
+| tb_paren | arexpl_jrem4 | model_lo_close | -0.193 | [-0.226, -0.159] | -5.7 | [-6.7, -4.7] |
+| tb_paren | arexpl_jrem4 | nla_mean | +3.933 | [+3.763, +4.108] | +23.7 | [+22.6, +24.7] |
+| tb_paren | arexpl_jrem4 | ol_mean | +1.503 | [+1.343, +1.668] | +11.5 | [+10.3, +12.7] |
+| tb_paren | arexpl_jrem4 | jlens | +0.034 | [+0.028, +0.040] | -0.1 | [-0.1, -0.0] |
+| tb_paren | arspan_raw | model_lo_close | -0.204 | [-0.251, -0.161] | -6.0 | [-7.4, -4.8] |
+| tb_paren | arspan_raw | nla_mean | +2.488 | [+2.303, +2.667] | +15.0 | [+13.9, +16.1] |
+| tb_paren | arspan_raw | ol_mean | +1.120 | [+0.956, +1.289] | +8.6 | [+7.4, +9.9] |
+| tb_paren | arspan_raw | jlens | -0.207 | [-0.244, -0.167] | -1.1 | [-1.3, -0.9] |
+| tb_paren | arspan_jrem4 | model_lo_close | -0.075 | [-0.105, -0.046] | -2.3 | [-3.2, -1.5] |
+| tb_paren | arspan_jrem4 | nla_mean | +2.167 | [+2.000, +2.336] | +13.1 | [+12.1, +14.1] |
+| tb_paren | arspan_jrem4 | ol_mean | +0.945 | [+0.812, +1.091] | +7.3 | [+6.3, +8.4] |
+| tb_paren | arspan_jrem4 | jlens | +0.048 | [+0.044, +0.052] | -0.0 | [-0.0, +0.0] |
+| tb_paren | arstmt_raw | model_lo_close | +0.132 | [+0.101, +0.166] | +3.6 | [+2.7, +4.6] |
+| tb_paren | arstmt_raw | nla_mean | +0.433 | [+0.365, +0.493] | +2.6 | [+2.2, +3.0] |
+| tb_paren | arstmt_raw | ol_mean | +0.442 | [+0.394, +0.490] | +3.6 | [+3.2, +3.9] |
+| tb_paren | arstmt_raw | jlens | -0.179 | [-0.225, -0.127] | -1.0 | [-1.2, -0.8] |
+| tb_paren | arstmt_jrem4 | model_lo_close | +0.099 | [+0.074, +0.126] | +2.7 | [+2.0, +3.5] |
+| tb_paren | arstmt_jrem4 | nla_mean | -0.103 | [-0.152, -0.055] | -0.6 | [-0.9, -0.3] |
+| tb_paren | arstmt_jrem4 | ol_mean | +0.238 | [+0.205, +0.272] | +2.0 | [+1.8, +2.3] |
+| tb_paren | arstmt_jrem4 | jlens | -0.002 | [-0.006, +0.002] | -0.2 | [-0.2, -0.2] |
