@@ -1,0 +1,661 @@
+{
+ "rows": [
+  {
+   "feature": "json_depth",
+   "observed": {
+    "nla_prompted": 1.0,
+    "ol_prompted": 0.9916,
+    "jlens_prompted": 0.8717,
+    "ol_prompted_by_layer": {
+     "36": 0.9898,
+     "42": 0.9916,
+     "44": 0.9902,
+     "52": 0.9978
+    },
+    "nla_states": 0.246875,
+    "nla_any8": 0.425,
+    "ol_states": 0.028125,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 0.85
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.246875,
+     "observed_high": true,
+     "correct": false
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.85,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 0.9916,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": false
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.028125,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.8717,
+     "observed_high": true,
+     "correct": false
+    }
+   }
+  },
+  {
+   "feature": "latex_math",
+   "observed": {
+    "nla_prompted": 0.9456,
+    "ol_prompted": 1.0,
+    "jlens_prompted": 1.0,
+    "ol_prompted_by_layer": {
+     "36": 1.0,
+     "42": 1.0,
+     "44": 1.0,
+     "52": 1.0
+    },
+    "nla_states": 0.0,
+    "nla_any8": 0.0,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 0.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.9456,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": true,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": false
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": false
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": false
+    }
+   }
+  },
+  {
+   "feature": "py_string",
+   "observed": {
+    "nla_prompted": 1.0,
+    "ol_prompted": 1.0,
+    "jlens_prompted": 0.948,
+    "ol_prompted_by_layer": {
+     "36": 0.9992,
+     "42": 1.0,
+     "44": 1.0,
+     "52": 0.9998
+    },
+    "nla_states": 0.028125,
+    "nla_any8": 0.1,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 0.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": true,
+     "observed": 0.028125,
+     "observed_high": false,
+     "correct": false
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": false
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.948,
+     "observed_high": true,
+     "correct": false
+    }
+   }
+  },
+  {
+   "feature": "call_arg",
+   "observed": {
+    "nla_prompted": 1.0,
+    "ol_prompted": 1.0,
+    "jlens_prompted": 0.9862,
+    "ol_prompted_by_layer": {
+     "36": 1.0,
+     "42": 1.0,
+     "44": 1.0,
+     "52": 1.0
+    },
+    "nla_states": 0.325,
+    "nla_any8": 0.675,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 1.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": true,
+     "observed": 0.325,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": false
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.9862,
+     "observed_high": true,
+     "correct": false
+    }
+   }
+  },
+  {
+   "feature": "md_heading",
+   "observed": {
+    "nla_prompted": 0.9178,
+    "ol_prompted": 0.6533,
+    "jlens_prompted": 0.7442,
+    "ol_prompted_by_layer": {
+     "36": 0.5859,
+     "42": 0.6533,
+     "44": 0.5967,
+     "52": 0.617
+    },
+    "nla_states": 0.0,
+    "nla_any8": 0.0,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 0.9625
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.9178,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.9625,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_prompted": {
+     "predicted_high": false,
+     "observed": 0.6533,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.7442,
+     "observed_high": true,
+     "correct": false
+    }
+   }
+  },
+  {
+   "feature": "csv_col",
+   "observed": {
+    "nla_prompted": 0.96,
+    "ol_prompted": 0.887,
+    "jlens_prompted": 0.8448,
+    "ol_prompted_by_layer": {
+     "36": 0.8527,
+     "42": 0.887,
+     "44": 0.8945,
+     "52": 0.9178
+    },
+    "nla_states": 0.128125,
+    "nla_any8": 0.225,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 1.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.96,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.128125,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_prompted": {
+     "predicted_high": false,
+     "observed": 0.887,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_exhibits": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.8448,
+     "observed_high": true,
+     "correct": false
+    }
+   }
+  },
+  {
+   "feature": "html_depth",
+   "observed": {
+    "nla_prompted": 0.8367,
+    "ol_prompted": 0.5667,
+    "jlens_prompted": 0.5817,
+    "ol_prompted_by_layer": {
+     "36": 0.5453,
+     "42": 0.5667,
+     "44": 0.5583,
+     "52": 0.4811
+    },
+    "nla_states": 0.0,
+    "nla_any8": 0.0,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 0.2125
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.8367,
+     "observed_high": false,
+     "correct": false
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.2125,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_prompted": {
+     "predicted_high": false,
+     "observed": 0.5667,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.5817,
+     "observed_high": false,
+     "correct": true
+    }
+   }
+  },
+  {
+   "feature": "stance_word",
+   "observed": {
+    "nla_prompted": 0.5468,
+    "ol_prompted": 0.5863,
+    "jlens_prompted": 0.5248,
+    "ol_prompted_by_layer": {
+     "36": 0.5727,
+     "42": 0.5863,
+     "44": 0.5856,
+     "52": 0.6068
+    },
+    "nla_states": 0.0,
+    "nla_any8": 0.0,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 0.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": false,
+     "observed": 0.5468,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": false,
+     "observed": 0.5863,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": true,
+     "observed": 0.5248,
+     "observed_high": false,
+     "correct": false
+    }
+   }
+  },
+  {
+   "feature": "ij2_lang",
+   "observed": {
+    "nla_prompted": 0.9994,
+    "ol_prompted": 0.9988,
+    "jlens_prompted": 0.982,
+    "ol_prompted_by_layer": {
+     "36": 0.9997,
+     "42": 0.9988,
+     "44": 1.0,
+     "52": 1.0
+    },
+    "nla_states": 0.95,
+    "nla_any8": 0.975,
+    "ol_states": 0.003125,
+    "ol_exhibits": 0.715625,
+    "nla_names_complement": 0.975
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.9994,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.95,
+     "observed_high": true,
+     "correct": false
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.975,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 0.9988,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.715625,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.003125,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": true,
+     "observed": 0.982,
+     "observed_high": true,
+     "correct": true
+    }
+   }
+  },
+  {
+   "feature": "bk_quote",
+   "observed": {
+    "nla_prompted": 0.7897,
+    "ol_prompted": 0.6214,
+    "jlens_prompted": 0.5481,
+    "ol_prompted_by_layer": {
+     "36": 0.6106,
+     "42": 0.6214,
+     "44": 0.6103,
+     "52": 0.6322
+    },
+    "nla_states": 0.078125,
+    "nla_any8": 0.125,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.0,
+    "nla_names_complement": 0.0375
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.7897,
+     "observed_high": false,
+     "correct": false
+    },
+    "nla_states": {
+     "predicted_high": true,
+     "observed": 0.078125,
+     "observed_high": false,
+     "correct": false
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.0375,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": false,
+     "observed": 0.6214,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": true,
+     "observed": 0.5481,
+     "observed_high": false,
+     "correct": false
+    }
+   }
+  }
+ ],
+ "accuracy": {
+  "n": 70,
+  "correct": 44,
+  "point": 0.6285714285714286,
+  "lo": 0.5114698481852806,
+  "hi": 0.7322951839917036
+ },
+ "confusion": {
+  "nla": {
+   "pred_high_obs_high": 8,
+   "pred_high_obs_low": 5,
+   "pred_low_obs_high": 8,
+   "pred_low_obs_low": 9
+  },
+  "ol": {
+   "pred_high_obs_high": 6,
+   "pred_high_obs_low": 4,
+   "pred_low_obs_high": 1,
+   "pred_low_obs_low": 19
+  },
+  "jlens": {
+   "pred_high_obs_high": 1,
+   "pred_high_obs_low": 2,
+   "pred_low_obs_high": 6,
+   "pred_low_obs_low": 1
+  }
+ }
+}

@@ -1,0 +1,2052 @@
+{
+ "nla": {
+  "json_depth": [
+   {
+    "id": "nla:json_depth:m0",
+    "family": "nested_vs_key_value",
+    "template": "<explanation> / JSON-like {v} structure",
+    "fillers": {
+     "deep": "nested",
+     "shallow": "key-value"
+    },
+    "evidence": "'JSON-like nested structure' vs 'JSON-like key-value pair structure' / 'JSON-like key-value object structure'",
+    "approx_count": 35,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:m1",
+    "family": "nested_vs_flat_structure",
+    "template": "<explanation> / {v} structure",
+    "fillers": {
+     "deep": "Nested",
+     "shallow": "Key-value"
+    },
+    "evidence": "'Nested structure pattern' vs 'Key-value pairs pattern'",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:m2",
+    "family": "structure_type_label",
+    "template": "<explanation> / {v} pattern",
+    "fillers": {
+     "deep": "Nested JSON-like structural",
+     "shallow": "Key-value dictionary/object syntax"
+    },
+    "evidence": "'Nested JSON-like structural pattern' vs 'Key-value dictionary/object syntax pattern'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:m4",
+    "family": "nested_data_contrast",
+    "template": "<explanation> / Structured data format: {v}",
+    "fillers": {
+     "deep": "JSON-like nested object syntax",
+     "shallow": "key-value pairs as a dictionary-like object"
+    },
+    "evidence": "'Structured data format pattern: JSON-like nested object syntax' vs 'Structured data format: key-value pairs as a dictionary-like object'",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:fixed",
+    "family": "fixed_label",
+    "template": "The current value sits {v} in the JSON object",
+    "fillers": {
+     "deep": "three levels deep",
+     "shallow": "at the top level"
+    }
+   }
+  ],
+  "latex_math": [
+   {
+    "id": "nla:latex_math:m0",
+    "family": "math_expression_vs_pseudo_jargon",
+    "template": " / {v}",
+    "fillers": {
+     "inside": "Mathematical expression",
+     "outside": "Nonsensical/pseudo-technical"
+    },
+    "evidence": "Inside: 'Mathematical expression continuation:', 'Mathematical expression format expected:'; Outside: 'Nonsensical/pseudo-technical jargon pattern:', 'Nonsensical/pseudo-technical generated text pattern:'",
+    "approx_count": 28,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:m1",
+    "family": "formula_vs_jargon_pattern",
+    "template": " / Mathematical {v} pattern",
+    "fillers": {
+     "inside": "formula",
+     "outside": "jargon"
+    },
+    "evidence": "Inside: 'Mathematical formula pattern:', 'Mathematical formula presentation pattern:'; Outside: 'Nonsensical/pseudo-technical jargon pattern:'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:m2",
+    "family": "direct_category_phrase",
+    "template": " / {v}:",
+    "fillers": {
+     "inside": "Mathematical formula pattern",
+     "outside": "Nonsensical/pseudo-technical language pattern"
+    },
+    "evidence": "Inside: 'Mathematical formula pattern: the text presents...'; Outside: 'Nonsensical/pseudo-technical language pattern: \"compass of four lines...'",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:m3",
+    "family": "formal_domain_descriptor",
+    "template": " / Mathematical/{v}",
+    "fillers": {
+     "inside": "technical notation",
+     "outside": "logical puzzle"
+    },
+    "evidence": "Inside: 'Mathematical/technical notation context:', 'Mathematical/technical notation pattern:'; Outside: 'Mathematical/logical puzzle framing'",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:m4",
+    "family": "notation_vs_prose_pattern",
+    "template": " / {v} pattern",
+    "fillers": {
+     "inside": "Mathematical notation",
+     "outside": "Pseudo-mathematical prose"
+    },
+    "evidence": "Inside: 'Mathematical notation pattern established:'; Outside: 'Nonsense/gibberish pseudo-mathematical prose pattern established'",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:fixed",
+    "family": "fixed_label",
+    "template": "The current position is {v} a LaTeX math expression",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "py_string": [
+   {
+    "id": "nla:py_string:m0",
+    "family": "context_structure_type",
+    "template": "<explanation> / {v}",
+    "fillers": {
+     "inside": "List continuation pattern",
+     "outside": "Function call syntax"
+    },
+    "evidence": "'List continuation pattern: \"two sample sentence fragments are\"' vs 'Function call syntax: \"alpha_modify.answer_function' and 'Python function call syntax'",
+    "approx_count": 32,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:m1",
+    "family": "syntax_style_type",
+    "template": "<explanation> / {v}",
+    "fillers": {
+     "inside": "Python/code string list format",
+     "outside": "Python-style function call syntax"
+    },
+    "evidence": "'Python/code string list format established' vs 'Python-style function call syntax is being constructed'",
+    "approx_count": 28,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:m2",
+    "family": "task_genre",
+    "template": "<explanation> / {v}",
+    "fillers": {
+     "inside": "Password/recovery phrase format",
+     "outside": "Programming/puzzle syntax"
+    },
+    "evidence": "'Password/recovery phrase format established' vs 'Programming/puzzle syntax pattern' and 'Programming/puzzle format'",
+    "approx_count": 24,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:m3",
+    "family": "domain_context_start",
+    "template": "<explanation> / {v}",
+    "fillers": {
+     "inside": "Structured data input pattern",
+     "outside": "Programming/function-call syntax pattern"
+    },
+    "evidence": "'Structured data input pattern with labeled fields' vs 'Python/function-call syntax pattern'",
+    "approx_count": 19,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:m4",
+    "family": "format_label",
+    "template": "<explanation> / {v}",
+    "fillers": {
+     "inside": "Quoted string list pattern",
+     "outside": "Function argument syntax pattern"
+    },
+    "evidence": "'quoted strings containing space-separated' vs 'Function argument syntax' and 'Python/function call syntax'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:fixed",
+    "family": "fixed_label",
+    "template": "The current position is {v} a string literal",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "call_arg": [
+   {
+    "id": "nla:call_arg:m0",
+    "family": "closing_arg_ordinal",
+    "template": "Final token {v}",
+    "fillers": {
+     "third": "closes the third",
+     "first": "opens the first"
+    },
+    "evidence": "Final token \"dana\" closes the third / Final token `dana` is the third",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:call_arg:m1",
+    "family": "arg_parenthesis_action",
+    "template": "A function call syntax {v}",
+    "fillers": {
+     "third": "requires closing parenthesis",
+     "first": "begins a function call"
+    },
+    "evidence": "Python function call syntax requires closing parenthesis / opens a function call argument / begins a function call",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:call_arg:m2",
+    "family": "token_position_role",
+    "template": "The final token is the {v}",
+    "fillers": {
+     "third": "third argument",
+     "first": "first argument"
+    },
+    "evidence": "is the third argument in a function call / closes the third argument",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:call_arg:m3",
+    "family": "call_syntax_state",
+    "template": "Function call {v}",
+    "fillers": {
+     "third": "syntax requires closing parenthesis",
+     "first": "syntax opening with arguments"
+    },
+    "evidence": "Function call pattern requires closing parenthesis / combine(gwen opens a function call",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:call_arg:m4",
+    "family": "entity_roster_count",
+    "template": "Pattern of {v} named variables",
+    "fillers": {
+     "third": "three",
+     "first": "four"
+    },
+    "evidence": "Three named variables have been introduced / Four variables (bruno, chad, annie, don) have been introduced",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "nla:call_arg:fixed",
+    "family": "fixed_label",
+    "template": "The current token is the {v} argument of the function call",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    }
+   }
+  ],
+  "md_heading": [
+   {
+    "id": "nla:md_heading:m0",
+    "family": "header_or_title",
+    "template": " / {v} pattern",
+    "fillers": {
+     "h3": "Title/heading",
+     "h1": "List"
+    },
+    "evidence": "h3: 'Title/heading pattern: structured titles follow', h1: 'List pattern of space-separated'",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_heading:m1",
+    "family": "heading_style",
+    "template": " / {v} pattern:",
+    "fillers": {
+     "h3": "Title-case header style established by prior lines",
+     "h1": "Structured inventory/project list"
+    },
+    "evidence": "h3: 'Title-case header style established by prior lines', h1: 'Structured inventory/project list pattern'",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_heading:m2",
+    "family": "compound_noun_titles",
+    "template": " / Pattern of {v}",
+    "fillers": {
+     "h3": "increasingly complex compound noun titles referencing named components",
+     "h1": "space-separated keyword combinations from a fixed set"
+    },
+    "evidence": "h3: 'Pattern of increasingly complex compound noun titles', h1: 'Pattern of space-separated keyword combinations'",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_heading:m3",
+    "family": "title_vs_inventory_listing",
+    "template": " / {v} format",
+    "fillers": {
+     "h3": "Product listing/catalog",
+     "h1": "Fantasy/RPG inventory or item-list"
+    },
+    "evidence": "h3: 'Product listing/catalog format with surreal', h1: 'Fantasy/RPG inventory or item-list format'",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_heading:fixed",
+    "family": "fixed_label",
+    "template": "The current line is a {v} markdown heading",
+    "fillers": {
+     "h3": "level-three",
+     "h1": "level-one"
+    }
+   }
+  ],
+  "csv_col": [
+   {
+    "id": "nla:csv_col:m0",
+    "family": "entry_count",
+    "template": "<explanation> / Repetitive pattern of rows containing exactly {v} pipe-separated values",
+    "fillers": {
+     "fourth": "4",
+     "first": "1"
+    },
+    "evidence": "Repetitive pattern of rows containing exactly 4 pipe-separated values",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "nla:csv_col:m1",
+    "family": "column_count",
+    "template": "<explanation> / Repeated structural pattern: each line follows consistent {v}-column",
+    "fillers": {
+     "fourth": "four",
+     "first": "one"
+    },
+    "evidence": "pipe-delimited table rows showing consistent four-column relationship mappings",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "nla:csv_col:m2",
+    "family": "cell_fields",
+    "template": "<explanation> / Password/key list format with grid rows, each containing {v} fields",
+    "fillers": {
+     "fourth": "four",
+     "first": "one"
+    },
+    "evidence": "grid rows, each containing four fields following a consistent pattern",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "nla:csv_col:m3",
+    "family": "slot_sequence",
+    "template": "<explanation> / Pattern of {v}-slot sequences:",
+    "fillers": {
+     "fourth": "four",
+     "first": "one"
+    },
+    "evidence": "Pattern of four-slot sequences: previous lines showed",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "nla:csv_col:m4",
+    "family": "tuple_elements",
+    "template": "<explanation> / Structured dataset/output pattern: repetitive {v} of",
+    "fillers": {
+     "fourth": "quadruples",
+     "first": "tuples"
+    },
+    "evidence": "repetitive tuples of \"role, country, name\" entries",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:csv_col:m5",
+    "family": "entries_per_row",
+    "template": "<explanation> / Structured table rows follow consistent format: each row contains {v} entries",
+    "fillers": {
+     "fourth": "4",
+     "first": "1"
+    },
+    "evidence": "each row contains 4 entries separated by commas / each row contains 3 entries",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "nla:csv_col:fixed",
+    "family": "fixed_label",
+    "template": "The current token is in the {v} field of the CSV row",
+    "fillers": {
+     "fourth": "fourth",
+     "first": "first"
+    }
+   }
+  ],
+  "html_depth": [
+   {
+    "id": "nla:html_depth:m0",
+    "family": "pattern_depth_description",
+    "template": " / {v} list continuation pattern:",
+    "fillers": {
+     "deep": "Structured",
+     "shallow": "Random"
+    },
+    "evidence": "Lists / patterns in deep are frequently introduced as 'structured' ('/ Structured data/keyword listing pattern:', '/ List continuation pattern: structured bullet points'), whereas shallow often starts with 'Random word' ('/ Random word association list pattern', '/ Random word sequence pattern')",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:html_depth:m1",
+    "family": "genre_format_framing",
+    "template": " / {v} format",
+    "fillers": {
+     "deep": "Game/task UI",
+     "shallow": "Cryptographic/random word list"
+    },
+    "evidence": "Deep descriptions frequently frame tokens as UI/game prompts ('/ Game/task UI format', '/ Game/solution format'), while shallow emphasizes raw cryptographic/random lists ('/ Cryptographic/random word list format', '/ Password/token list pattern')",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:html_depth:m2",
+    "family": "pattern_type_noun",
+    "template": " / {v} pattern:",
+    "fillers": {
+     "deep": "List continuation",
+     "shallow": "Word sequence"
+    },
+    "evidence": "'/ List continuation pattern:' recurs multiple times in deep readouts; shallow frequently opens with '/ Word sequence pattern:' or '/ Wordlist generation pattern:'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:html_depth:m3",
+    "family": "list_style_variation",
+    "template": " / {v} pattern",
+    "fillers": {
+     "deep": "List-style concatenation",
+     "shallow": "List-like sequence"
+    },
+    "evidence": "'/ List-style concatenation pattern:' appears in deep; '/ List-like sequence of single lowercase words' appears in shallow",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:html_depth:fixed",
+    "family": "fixed_label",
+    "template": "The current text is nested {v} in the HTML",
+    "fillers": {
+     "deep": "three tags deep",
+     "shallow": "one tag deep"
+    }
+   }
+  ],
+  "stance_word": [
+   {
+    "id": "nla:stance_word:m0",
+    "family": "evaluative_tone_contrast",
+    "template": "<explanation> / The passage establishes a {v} outcome",
+    "fillers": {
+     "unfortunately": "disappointing",
+     "fortunately": "positive"
+    },
+    "evidence": "\"The sentence describes a disappointing outcome of military service, implying contrast with expected honor\"",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:stance_word:m1",
+    "family": "problem_vs_advantage_framing",
+    "template": "<explanation> / The text introduces a {v}",
+    "fillers": {
+     "unfortunately": "problem",
+     "fortunately": "benefit"
+    },
+    "evidence": "\"explaining a functional/design issue\", \"was fortunate that early training and organisation gave time\"",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:stance_word:m2",
+    "family": "sentiment_transition",
+    "template": "<explanation> / The narrative introduces a {v} observation",
+    "fillers": {
+     "unfortunately": "mildly negative",
+     "fortunately": "favorable"
+    },
+    "evidence": "\"introduces a mildly negative observation ('minor inconvenience'), implying a transition\"",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:stance_word:m3",
+    "family": "resolution_vs_predicament",
+    "template": "<explanation> / Narrative describing a {v}",
+    "fillers": {
+     "unfortunately": "crew's desperate predicament",
+     "fortunately": "successful resolution"
+    },
+    "evidence": "\"expecting further description of the crew's desperate situation\", \"establishes a resolution, setting up a description of the outcome\"",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:stance_word:m4",
+    "family": "circumstance_evaluation",
+    "template": "<explanation> / The sentence describes {v} circumstances",
+    "fillers": {
+     "unfortunately": "unfavorable",
+     "fortunately": "advantageous"
+    },
+    "evidence": "\"explaining Apollo's specific opportunity or advantageous position\", \"establishing context around a controversial sports figure\"",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:stance_word:fixed",
+    "family": "fixed_label",
+    "template": "The passage opened with the word {v}",
+    "fillers": {
+     "unfortunately": "unfortunately",
+     "fortunately": "fortunately"
+    }
+   }
+  ],
+  "ij2_lang": [
+   {
+    "id": "nla:ij2_lang:m0",
+    "family": "language_product_review_register",
+    "template": " / {v} product review register",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French product review register / German product review register",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m1",
+    "family": "language_consumer_review_register",
+    "template": " / {v} consumer review register",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French consumer review register / German consumer review register",
+    "approx_count": 16,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m2",
+    "family": "language_customer_review_register",
+    "template": " / {v} customer review register",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French customer review register / German customer review register",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m3",
+    "family": "language_product_review_style",
+    "template": " / {v} product review style",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French product review style / German product review style",
+    "approx_count": 9,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m4",
+    "family": "product_review_in_language",
+    "template": " / Product review in {v}",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "Product review in French / Product review in German",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:m5",
+    "family": "language_complaint_review_register",
+    "template": " / {v} complaint/review",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    },
+    "evidence": "French complaint/review style / German complaint/review register",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:ij2_lang:fixed",
+    "family": "fixed_label",
+    "template": "The text is written in {v}",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    }
+   }
+  ],
+  "bk_quote": [
+   {
+    "id": "nla:bk_quote:m0",
+    "family": "quote_or_quotation_format",
+    "template": "Literary {v} format",
+    "fillers": {
+     "inside": "quotation",
+     "outside": "analysis"
+    },
+    "evidence": "Literary quotation format — García Barea's poem excerpt",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:m1",
+    "family": "style_descriptor_quotative",
+    "template": "Encyclopedic/{v} style",
+    "fillers": {
+     "inside": "quotative",
+     "outside": "factual"
+    },
+    "evidence": "Encyclopedic/quotative style summarizing a TV episode review",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:m2",
+    "family": "genre_quotes",
+    "template": "TV recap/compilation format listing multiple {v}",
+    "fillers": {
+     "inside": "critics' quotes and reactions",
+     "outside": "broadcast and production details"
+    },
+    "evidence": "TV recap/compilation format listing multiple critics' quotes and reactions to the How I Met Your Mother episode",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:m3",
+    "family": "embedded_quotes",
+    "template": "Encyclopedic/album description format with {v}",
+    "fillers": {
+     "inside": "embedded critical quotes",
+     "outside": "production details"
+    },
+    "evidence": "Encyclopedic/album description format with embedded critical quotes about a black metal album",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:m4",
+    "family": "quotation_status",
+    "template": "The text is {v}",
+    "fillers": {
+     "inside": "mid-quotation",
+     "outside": "describing historical details"
+    },
+    "evidence": "The text is mid-quotation from portrait artist Mary Lesley Jones",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:bk_quote:fixed",
+    "family": "fixed_label",
+    "template": "The current position is {v} a quotation",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ]
+ },
+ "ol": {
+  "json_depth": [
+   {
+    "id": "ol:json_depth:m0",
+    "family": "closing_braces_structure",
+    "template": "- {v}",
+    "fillers": {
+     "deep": "}}}}",
+     "shallow": "}"
+    },
+    "evidence": "Many deep readouts start with multiple closing braces `- }}}}`, `- }}}`, whereas shallow readouts start with a single brace `- }` or `- },`.",
+    "approx_count": 45,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:m1",
+    "family": "nested_vs_flat_structure",
+    "template": "- This is a {v} structure.",
+    "fillers": {
+     "deep": "nested",
+     "shallow": "flat"
+    },
+    "evidence": "'- This is a highly nested, unusual structure.', 'nested structure where the branch belongs'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:m2",
+    "family": "nested_dict_json",
+    "template": "- 这看起来像是一个{v}的字典",
+    "fillers": {
+     "deep": "嵌套",
+     "shallow": "扁平"
+    },
+    "evidence": "'- 这里看起来像是一个嵌套的字典，其中 key 是...'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:m3",
+    "family": "innermost_key_phrase",
+    "template": "- The {v} key is",
+    "fillers": {
+     "deep": "innermost",
+     "shallow": "top-level"
+    },
+    "evidence": "'- The innermost key is', 'the innermost tag is **\"pending\"**'",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:m4",
+    "family": "nested_hierarchy_meta",
+    "template": "- This is a {v} hierarchy",
+    "fillers": {
+     "deep": "nested",
+     "shallow": "simple"
+    },
+    "evidence": "'- this is a nested hierarchy where', '- a nested hierarchy with keys like'",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:fixed",
+    "family": "fixed_label",
+    "template": "- {v}",
+    "fillers": {
+     "deep": "nested three deep",
+     "shallow": "top level"
+    }
+   }
+  ],
+  "latex_math": [
+   {
+    "id": "ol:latex_math:m0",
+    "family": "formula_type",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "\\sqrt{",
+     "outside": "the "
+    },
+    "evidence": "inside: '- \\sqrt{c-x} $$', '- \\sqrt{a-y} + C$'; outside: '- the harvest', '- the compass'",
+    "approx_count": 55,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:latex_math:m1",
+    "family": "math_vs_system",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "\\sqrt{x",
+     "outside": "/compass system"
+    },
+    "evidence": "inside: '- \\sqrt{x - h} $$'; outside: '- /compass system'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:latex_math:m2",
+    "family": "math_symbol_vs_keyword",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "\\cdot \\sqrt{",
+     "outside": "system ("
+    },
+    "evidence": "inside: '- \\cdot \\sqrt{1 - b}', '- \\cdot \\sqrt{b - u}'; outside: '- 系统 (compass system)'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:latex_math:m3",
+    "family": "formula_slash_prefix",
+    "template": "- / {v}",
+    "fillers": {
+     "inside": "\\sqrt{",
+     "outside": "compass"
+    },
+    "evidence": "inside: '- / \\sqrt{1-Y} $$', '- / \\sqrt{w - c} $$'; outside: '- /compass system', '- /compass circle'",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:latex_math:m4",
+    "family": "radical_vs_plain_text",
+    "template": "- \\sqrt{{v}",
+    "fillers": {
+     "inside": "a - ",
+     "outside": "compass"
+    },
+    "evidence": "inside: '- \\sqrt{a - y}', '- \\sqrt{a - 1}'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:latex_math:fixed",
+    "family": "fixed_label",
+    "template": "- {v} math",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "py_string": [
+   {
+    "id": "ol:py_string:m0",
+    "family": "delimiter_syntax",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "\"",
+     "outside": ")"
+    },
+    "evidence": "inside outputs consistently start with quotes or list continuations like '- oration\"' or '- \"core\"', whereas outside outputs consistently close parentheses/arguments like '- )' or '- , inventory)  #'",
+    "approx_count": 55,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:m1",
+    "family": "argument_call_syntax",
+    "template": "- {v}",
+    "fillers": {
+     "inside": ", ",
+     "outside": " = "
+    },
+    "evidence": "inside shows comma-separated word lists ('- , bank, olive', '- , map, compass'), while outside shows keyword arguments ('- = \"lantern\"', '- = \"sunlit\"')",
+    "approx_count": 45,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:m2",
+    "family": "slash_syntax",
+    "template": "- /{v}",
+    "fillers": {
+     "inside": "market /",
+     "outside": "meadow = "
+    },
+    "evidence": "inside uses slash-separated word lists ('- /rug /table', '- /pond / youth'), outside uses slash before argument assignments ('- /meadow = [')",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:m3",
+    "family": "code_comment_style",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "seed phrase",
+     "outside": "function"
+    },
+    "evidence": "inside repeatedly describes content as 'seed phrase' or 'mnemonic', outside as 'function' or 'code'",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:fixed",
+    "family": "fixed_label",
+    "template": "- {v} string",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "call_arg": [
+   {
+    "id": "ol:call_arg:m0",
+    "family": "closing_bracket_comma",
+    "template": "- {v}",
+    "fillers": {
+     "third": ")",
+     "first": ","
+    },
+    "evidence": ")-prefixed completions dominate `third` while comma-prefixed completions `, ` dominate `first`",
+    "approx_count": 65,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:call_arg:m1",
+    "family": "ordinal_argument_mention",
+    "template": "- )  # {v}",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    },
+    "evidence": "'- )  # 注意：第三个参数又是... / - , third)  # join three data sources'",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:call_arg:m2",
+    "family": "three_vs_four_inputs",
+    "template": "- )  # Combine {v} inputs",
+    "fillers": {
+     "third": "three",
+     "first": "four"
+    },
+    "evidence": "'- )  % Loads data from three saved sessions' / '- , ivy, and mara’s data) as a single task' / 'Combine three inputs'",
+    "approx_count": 35,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:call_arg:m3",
+    "family": "chinese_arg_count",
+    "template": "- )  # {v}输入",
+    "fillers": {
+     "third": "三个",
+     "first": "四个"
+    },
+    "evidence": "'- )  # 三个输入：水、土、柴作为输入' vs 4 elements listed in first",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:call_arg:m4",
+    "family": "merge_sources_count",
+    "template": "- )  # Merge {v} sources",
+    "fillers": {
+     "third": "three",
+     "first": "four"
+    },
+    "evidence": "'- )  # Merge all three sources into a new report'",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:call_arg:fixed",
+    "family": "fixed_label",
+    "template": "- {v} argument",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    }
+   }
+  ],
+  "md_heading": [
+   {
+    "id": "ol:md_heading:m0",
+    "family": "heading_level_tag",
+    "template": "- ### {v}",
+    "fillers": {
+     "h3": "###",
+     "h1": "#"
+    },
+    "evidence": "- #### 🧊 Chest + Signal (h3 vs h1 structural markdown prefix continuation)",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:md_heading:m1",
+    "family": "level_number",
+    "template": "- Level {v}",
+    "fillers": {
+     "h3": "3",
+     "h1": "1"
+    },
+    "evidence": "- ing (Harvesting) Level 6 / - 桥梁 (Bridge) and Level 42",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:md_heading:m2",
+    "family": "path_camp_number",
+    "template": "- Path {v}:",
+    "fillers": {
+     "h3": "3",
+     "h1": "1"
+    },
+    "evidence": "- /foundry path (Place 5: Forge, Place 6: Valley, Place 7: Furnace / - /forge (Camp 6: Furnace / Camp 7: Summit / Camp 8: Market)",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:md_heading:m3",
+    "family": "numbered_item",
+    "template": "- {v}.",
+    "fillers": {
+     "h3": "3",
+     "h1": "1"
+    },
+    "evidence": "- 1. South Node Forest Gate Engine / - 2. River Engine 3. Forest Engine",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:md_heading:m4",
+    "family": "heading_explicit",
+    "template": "- Heading {v}:",
+    "fillers": {
+     "h3": "3",
+     "h1": "1"
+    },
+    "evidence": "Synthetic paraphrase in oracle lens formatting reflecting heading depth",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:md_heading:fixed",
+    "family": "fixed_label",
+    "template": "- {v} heading",
+    "fillers": {
+     "h3": "level three",
+     "h1": "level one"
+    }
+   }
+  ],
+  "csv_col": [
+   {
+    "id": "ol:csv_col:m0",
+    "family": "column_label",
+    "template": "- (Note: Column {v} is",
+    "fillers": {
+     "fourth": "D",
+     "first": "A"
+    },
+    "evidence": "- ,Senior] (Note: Column D is \"lead, lead, lead, lead",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:csv_col:m1",
+    "family": "column_index_prefix",
+    "template": "- 第{v}列:",
+    "fillers": {
+     "fourth": "4",
+     "first": "1"
+    },
+    "evidence": "- , inactive, active, retired]` (第5列: retired...",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:csv_col:m2",
+    "family": "field_num_note",
+    "template": "- Col {v}:",
+    "fillers": {
+     "fourth": "4",
+     "first": "1"
+    },
+    "evidence": "- , South, Norway, Spain | B is in row 5, col 4.",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:csv_col:m3",
+    "family": "cell_reference",
+    "template": "- Cell {v}:",
+    "fillers": {
+     "fourth": "D",
+     "first": "A"
+    },
+    "evidence": "- , 在职, retired, retired | Cell [5][3]: retired... / - , retired\", \"D\": \"retired\"",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:csv_col:m4",
+    "family": "column_ordinal_paren",
+    "template": "- ({v} column)",
+    "fillers": {
+     "fourth": "4th",
+     "first": "1st"
+    },
+    "evidence": "paraphrase based on repeated column references",
+    "approx_count": 1,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:csv_col:fixed",
+    "family": "fixed_label",
+    "template": "- {v} field",
+    "fillers": {
+     "fourth": "fourth",
+     "first": "first"
+    }
+   }
+  ],
+  "html_depth": [
+   {
+    "id": "ol:html_depth:m0",
+    "family": "tag_depth_desc",
+    "template": "- depth: {v}",
+    "fillers": {
+     "deep": "deep",
+     "shallow": "shallow"
+    },
+    "evidence": "paraphrase template for abstract tag depth",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:html_depth:m1",
+    "family": "open_tags_count",
+    "template": "- open tags: {v}",
+    "fillers": {
+     "deep": "3",
+     "shallow": "1"
+    },
+    "evidence": "HTML: read inside text with three open tags vs one open tag",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:html_depth:m2",
+    "family": "nesting_level",
+    "template": "- nesting level: {v}",
+    "fillers": {
+     "deep": "three",
+     "shallow": "one"
+    },
+    "evidence": "three open tags vs one open tag",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:html_depth:m3",
+    "family": "depth_level",
+    "template": "- {v} nested",
+    "fillers": {
+     "deep": "deeply",
+     "shallow": "shallowly"
+    },
+    "evidence": "conceptual styling for depth in HTML tree",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:html_depth:fixed",
+    "family": "fixed_label",
+    "template": "- {v} nesting",
+    "fillers": {
+     "deep": "deep",
+     "shallow": "shallow"
+    }
+   }
+  ],
+  "stance_word": [
+   {
+    "id": "ol:stance_word:m0",
+    "family": "adverb_sentence_starter",
+    "template": "- {v},",
+    "fillers": {
+     "unfortunately": "Unfortunately",
+     "fortunately": "Fortunately"
+    },
+    "evidence": "Continuation style reflecting the opening stance adverb read earlier in the prompt",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:stance_word:m1",
+    "family": "chinese_adverb_continuation",
+    "template": "- {v}，",
+    "fillers": {
+     "unfortunately": "不幸的是",
+     "fortunately": "幸运的是"
+    },
+    "evidence": "- 前所述, / - 然， this part is where... / - 同时 the real test came in",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:stance_word:m2",
+    "family": "contrast_connective",
+    "template": "- {v}, the",
+    "fillers": {
+     "unfortunately": "However",
+     "fortunately": "Luckily"
+    },
+    "evidence": "- However, Admiral Hip / - However, the real test came in / - However, instead of retreating",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:stance_word:m3",
+    "family": "outcome_state",
+    "template": "- it was {v} that",
+    "fillers": {
+     "unfortunately": "unfortunate",
+     "fortunately": "fortunate"
+    },
+    "evidence": "Standard semantic attribution for stance feature",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:stance_word:fixed",
+    "family": "fixed_label",
+    "template": "- {v}",
+    "fillers": {
+     "unfortunately": "unfortunately",
+     "fortunately": "fortunately"
+    }
+   }
+  ],
+  "ij2_lang": [
+   {
+    "id": "ol:ij2_lang:m0",
+    "family": "review_satisfaction",
+    "template": "- {v}",
+    "fillers": {
+     "French": "Très satisfait",
+     "German": "Sehr zufrieden"
+    },
+    "evidence": "French: 'Très satisfait de mon achat', 'Très satisfait avec le produit'; German: 'Sehr zufrieden mit dem Kauf', 'Sehr zufrieden mit meinem Kauf'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:m1",
+    "family": "recommendation",
+    "template": "- {v}",
+    "fillers": {
+     "French": "Je recommande vivement",
+     "German": "Absolut empfehlenswert"
+    },
+    "evidence": "French: 'Je recommande vivement ce produit', 'Je recommande vivement ce magasin'; German: 'Absolut empfehlenswert!', 'Sehr empfehlenswert'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:m2",
+    "family": "disappointment",
+    "template": "- {v}",
+    "fillers": {
+     "French": "Très déçu",
+     "German": "Sehr enttäuscht"
+    },
+    "evidence": "French: 'Très déçu de cette', 'Très déçu pour ce prix'; German: 'Sehr unzufrieden', 'sehr enttäuscht von der Wirkung', 'Enttäuschend'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:m3",
+    "family": "five_stars_fast_delivery",
+    "template": "- {v}",
+    "fillers": {
+     "French": "5 étoiles, livraison rapide.",
+     "German": "5 Sterne, schnelle Lieferung."
+    },
+    "evidence": "French: '5 étoiles pour la simplicité', 'Livraison rapide et bien emballé'; German: '5 Sterne! Schnelle Lieferung', '5/5 Sterne, schnelle Lieferung'",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:ij2_lang:m4",
+    "family": "as_described",
+    "template": "- {v}",
+    "fillers": {
+     "French": "Le produit est exactement comme décrit.",
+     "German": "Alles wie beschrieben."
+    },
+    "evidence": "French: 'Le jouet est exactement comme décrit'; German: 'Alles wie beschrieben, schnelle Lieferung', 'Artikel entspricht der Beschreibung'",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:m5",
+    "family": "language_marker",
+    "template": "- （{v}）",
+    "fillers": {
+     "French": "法语",
+     "German": "德语"
+    },
+    "evidence": "French: '（法语：难以忍受平庸！）'",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:ij2_lang:fixed",
+    "family": "fixed_label",
+    "template": "- {v} language",
+    "fillers": {
+     "French": "French",
+     "German": "German"
+    }
+   }
+  ],
+  "bk_quote": [
+   {
+    "id": "ol:bk_quote:m0",
+    "family": "quoted_vs_unquoted_token",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "\"",
+     "outside": "the"
+    },
+    "evidence": "- : \"the acting was excellent\" vs - the \"posh boy\" stereotype",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_quote:m1",
+    "family": "quote_continuation_verb",
+    "template": "- {v} said",
+    "fillers": {
+     "inside": "\"",
+     "outside": "he"
+    },
+    "evidence": "- 他 “liked the performance of the Daleks,” and said",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_quote:m2",
+    "family": "speech_dialogue_marker",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "“the",
+     "outside": "The"
+    },
+    "evidence": "- “the most vulnerable thing she’s ever done on camera.” vs - 10.3 in the Nielsen ratings",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_quote:m3",
+    "family": "reported_quote_opener",
+    "template": "- {v} that",
+    "fillers": {
+     "inside": "\"that",
+     "outside": "noted"
+    },
+    "evidence": "- : \"the acting was excellent\" and that it was",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:bk_quote:fixed",
+    "family": "fixed_label",
+    "template": "- {v} quotation",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ]
+ },
+ "jlens": {
+  "json_depth": [
+   {
+    "id": "jlens:json_depth:fixed",
+    "family": "fixed_label",
+    "words": {
+     "deep": [
+      "nested",
+      "deep"
+     ],
+     "shallow": [
+      "top",
+      "shallow"
+     ]
+    }
+   },
+   {
+    "id": "jlens:json_depth:d0",
+    "family": "diff_rank0",
+    "words": {
+     "deep": [
+      "status"
+     ],
+     "shallow": [
+      "classify"
+     ]
+    }
+   },
+   {
+    "id": "jlens:json_depth:d1",
+    "family": "diff_rank1",
+    "words": {
+     "deep": [
+      "class"
+     ],
+     "shallow": [
+      "JSON"
+     ]
+    }
+   },
+   {
+    "id": "jlens:json_depth:d2",
+    "family": "diff_rank2",
+    "words": {
+     "deep": [
+      "tag"
+     ],
+     "shallow": [
+      "keywords"
+     ]
+    }
+   },
+   {
+    "id": "jlens:json_depth:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "deep": [
+      "status",
+      "class",
+      "tag"
+     ],
+     "shallow": [
+      "classify",
+      "JSON",
+      "keywords"
+     ]
+    }
+   }
+  ],
+  "latex_math": [
+   {
+    "id": "jlens:latex_math:fixed",
+    "family": "fixed_label",
+    "words": {
+     "inside": [
+      "math",
+      "equation"
+     ],
+     "outside": [
+      "prose",
+      "text"
+     ]
+    }
+   },
+   {
+    "id": "jlens:latex_math:d0",
+    "family": "diff_rank0",
+    "words": {
+     "inside": [
+      "sqrt"
+     ],
+     "outside": [
+      "map"
+     ]
+    }
+   },
+   {
+    "id": "jlens:latex_math:d1",
+    "family": "diff_rank1",
+    "words": {
+     "inside": [
+      "formula"
+     ],
+     "outside": [
+      "field"
+     ]
+    }
+   },
+   {
+    "id": "jlens:latex_math:d2",
+    "family": "diff_rank2",
+    "words": {
+     "inside": [
+      "calculated"
+     ],
+     "outside": [
+      "geometry"
+     ]
+    }
+   },
+   {
+    "id": "jlens:latex_math:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "inside": [
+      "sqrt",
+      "formula",
+      "calculated"
+     ],
+     "outside": [
+      "map",
+      "field",
+      "geometry"
+     ]
+    }
+   }
+  ],
+  "py_string": [
+   {
+    "id": "jlens:py_string:fixed",
+    "family": "fixed_label",
+    "words": {
+     "inside": [
+      "string",
+      "quote"
+     ],
+     "outside": [
+      "code",
+      "call"
+     ]
+    }
+   },
+   {
+    "id": "jlens:py_string:d0",
+    "family": "diff_rank0",
+    "words": {
+     "inside": [
+      "game"
+     ],
+     "outside": [
+      "plants"
+     ]
+    }
+   },
+   {
+    "id": "jlens:py_string:d1",
+    "family": "diff_rank1",
+    "words": {
+     "inside": [
+      "word"
+     ],
+     "outside": [
+      "extract"
+     ]
+    }
+   },
+   {
+    "id": "jlens:py_string:d2",
+    "family": "diff_rank2",
+    "words": {
+     "inside": [
+      "square"
+     ],
+     "outside": [
+      "input"
+     ]
+    }
+   },
+   {
+    "id": "jlens:py_string:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "inside": [
+      "game",
+      "word",
+      "square"
+     ],
+     "outside": [
+      "plants",
+      "extract",
+      "input"
+     ]
+    }
+   }
+  ],
+  "call_arg": [
+   {
+    "id": "jlens:call_arg:fixed",
+    "family": "fixed_label",
+    "words": {
+     "third": [
+      "third",
+      "three"
+     ],
+     "first": [
+      "first",
+      "one"
+     ]
+    }
+   },
+   {
+    "id": "jlens:call_arg:d0",
+    "family": "diff_rank0",
+    "words": {
+     "third": [
+      "output"
+     ],
+     "first": [
+      "and"
+     ]
+    }
+   },
+   {
+    "id": "jlens:call_arg:d1",
+    "family": "diff_rank1",
+    "words": {
+     "third": [
+      "project"
+     ],
+     "first": [
+      "et"
+     ]
+    }
+   },
+   {
+    "id": "jlens:call_arg:d2",
+    "family": "diff_rank2",
+    "words": {
+     "third": [
+      "inputs"
+     ],
+     "first": [
+      "beta"
+     ]
+    }
+   },
+   {
+    "id": "jlens:call_arg:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "third": [
+      "output",
+      "project",
+      "inputs"
+     ],
+     "first": [
+      "and",
+      "et",
+      "beta"
+     ]
+    }
+   }
+  ],
+  "md_heading": [
+   {
+    "id": "jlens:md_heading:fixed",
+    "family": "fixed_label",
+    "words": {
+     "h3": [
+      "three",
+      "subsection"
+     ],
+     "h1": [
+      "one",
+      "title"
+     ]
+    }
+   },
+   {
+    "id": "jlens:md_heading:d0",
+    "family": "diff_rank0",
+    "words": {
+     "h3": [
+      "Wave"
+     ],
+     "h1": [
+      "Mountain"
+     ]
+    }
+   },
+   {
+    "id": "jlens:md_heading:d1",
+    "family": "diff_rank1",
+    "words": {
+     "h3": [
+      "Power"
+     ],
+     "h1": [
+      "fire"
+     ]
+    }
+   },
+   {
+    "id": "jlens:md_heading:d2",
+    "family": "diff_rank2",
+    "words": {
+     "h3": [
+      "Star"
+     ],
+     "h1": [
+      "Forge"
+     ]
+    }
+   },
+   {
+    "id": "jlens:md_heading:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "h3": [
+      "Wave",
+      "Power",
+      "Star"
+     ],
+     "h1": [
+      "Mountain",
+      "fire",
+      "Forge"
+     ]
+    }
+   }
+  ],
+  "csv_col": [
+   {
+    "id": "jlens:csv_col:fixed",
+    "family": "fixed_label",
+    "words": {
+     "fourth": [
+      "fourth",
+      "four"
+     ],
+     "first": [
+      "first",
+      "one"
+     ]
+    }
+   },
+   {
+    "id": "jlens:csv_col:d0",
+    "family": "diff_rank0",
+    "words": {
+     "fourth": [
+      "Ch"
+     ],
+     "first": [
+      "France"
+     ]
+    }
+   },
+   {
+    "id": "jlens:csv_col:d1",
+    "family": "diff_rank1",
+    "words": {
+     "fourth": [
+      "Re"
+     ],
+     "first": [
+      "Write"
+     ]
+    }
+   },
+   {
+    "id": "jlens:csv_col:d2",
+    "family": "diff_rank2",
+    "words": {
+     "fourth": [
+      "and"
+     ],
+     "first": [
+      "writer"
+     ]
+    }
+   },
+   {
+    "id": "jlens:csv_col:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "fourth": [
+      "Ch",
+      "Re",
+      "and"
+     ],
+     "first": [
+      "France",
+      "Write",
+      "writer"
+     ]
+    }
+   }
+  ],
+  "html_depth": [
+   {
+    "id": "jlens:html_depth:fixed",
+    "family": "fixed_label",
+    "words": {
+     "deep": [
+      "nested",
+      "deep"
+     ],
+     "shallow": [
+      "shallow",
+      "top"
+     ]
+    }
+   },
+   {
+    "id": "jlens:html_depth:d0",
+    "family": "diff_rank0",
+    "words": {
+     "deep": [
+      "bag"
+     ],
+     "shallow": [
+      "vine"
+     ]
+    }
+   },
+   {
+    "id": "jlens:html_depth:d1",
+    "family": "diff_rank1",
+    "words": {
+     "deep": [
+      "map"
+     ],
+     "shallow": [
+      "orch"
+     ]
+    }
+   },
+   {
+    "id": "jlens:html_depth:d2",
+    "family": "diff_rank2",
+    "words": {
+     "deep": [
+      "land"
+     ],
+     "shallow": [
+      "beacon"
+     ]
+    }
+   },
+   {
+    "id": "jlens:html_depth:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "deep": [
+      "bag",
+      "map",
+      "land"
+     ],
+     "shallow": [
+      "vine",
+      "orch",
+      "beacon"
+     ]
+    }
+   }
+  ],
+  "stance_word": [
+   {
+    "id": "jlens:stance_word:fixed",
+    "family": "fixed_label",
+    "words": {
+     "unfortunately": [
+      "unfortunately",
+      "sadly"
+     ],
+     "fortunately": [
+      "fortunately",
+      "luckily"
+     ]
+    }
+   }
+  ],
+  "ij2_lang": [
+   {
+    "id": "jlens:ij2_lang:fixed",
+    "family": "fixed_label",
+    "words": {
+     "French": [
+      "French",
+      "français"
+     ],
+     "German": [
+      "German",
+      "deutsch"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij2_lang:d0",
+    "family": "diff_rank0",
+    "words": {
+     "French": [
+      "please"
+     ],
+     "German": [
+      "Excellent"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij2_lang:d1",
+    "family": "diff_rank1",
+    "words": {
+     "French": [
+      "dont"
+     ],
+     "German": [
+      "really"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij2_lang:d2",
+    "family": "diff_rank2",
+    "words": {
+     "French": [
+      "pls"
+     ],
+     "German": [
+      "Quality"
+     ]
+    }
+   },
+   {
+    "id": "jlens:ij2_lang:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "French": [
+      "please",
+      "dont",
+      "pls"
+     ],
+     "German": [
+      "Excellent",
+      "really",
+      "Quality"
+     ]
+    }
+   }
+  ],
+  "bk_quote": [
+   {
+    "id": "jlens:bk_quote:fixed",
+    "family": "fixed_label",
+    "words": {
+     "inside": [
+      "quote",
+      "quotation"
+     ],
+     "outside": [
+      "outside",
+      "unquoted"
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,2572 @@
+{
+"feature": "json_depth",
+"reader": "nla",
+"values": [
+"deep",
+"shallow"
+],
+"n_rows": 320,
+"n_judged": 320,
+"judged": [
+{
+"item": "json_208_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_208_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_208_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_208_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_208_d3",
+"value": "deep",
+"k": 4,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_208_d3",
+"value": "deep",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_208_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_208_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_170_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_170_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_170_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_170_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_170_d3",
+"value": "deep",
+"k": 4,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_170_d3",
+"value": "deep",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_170_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_170_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_68_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_68_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_68_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_68_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_68_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_68_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_68_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_68_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_202_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_202_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_202_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_202_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_202_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_202_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_202_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_202_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_112_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_112_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_112_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_112_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_112_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_112_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_112_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_112_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_20_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_20_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_20_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_20_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_20_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_20_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_20_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_20_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_0_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_0_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_0_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_0_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_0_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_0_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_0_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_0_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_90_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_90_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_90_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_90_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_90_d3",
+"value": "deep",
+"k": 4,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_90_d3",
+"value": "deep",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_90_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_90_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_148_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_148_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_148_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_148_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_148_d3",
+"value": "deep",
+"k": 4,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_148_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_148_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_148_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_216_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_216_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_216_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_216_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_216_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_216_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_216_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_216_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_118_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_118_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_118_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_118_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_118_d3",
+"value": "deep",
+"k": 4,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_118_d3",
+"value": "deep",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_118_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_118_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_132_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_132_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_132_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_132_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_132_d3",
+"value": "deep",
+"k": 4,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_132_d3",
+"value": "deep",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_132_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_132_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_16_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_16_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_16_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_16_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_16_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_16_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_16_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_16_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_196_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_196_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_196_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_196_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_196_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_196_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_196_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_196_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_212_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_212_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_212_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_212_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_212_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_212_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_212_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_212_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_98_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_98_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_98_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_98_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_98_d3",
+"value": "deep",
+"k": 4,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_98_d3",
+"value": "deep",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_98_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_98_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_26_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_26_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_26_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_26_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_26_d3",
+"value": "deep",
+"k": 4,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_26_d3",
+"value": "deep",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_26_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_26_d3",
+"value": "deep",
+"k": 7,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_34_d3",
+"value": "deep",
+"k": 0,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_34_d3",
+"value": "deep",
+"k": 1,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_34_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_34_d3",
+"value": "deep",
+"k": 3,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_34_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_34_d3",
+"value": "deep",
+"k": 5,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_34_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_34_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_30_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_30_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_30_d3",
+"value": "deep",
+"k": 2,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_30_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_30_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_30_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_30_d3",
+"value": "deep",
+"k": 6,
+"stated": true,
+"stated_value": "A",
+"exhibited_value": "neither"
+},
+{
+"item": "json_30_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_184_d3",
+"value": "deep",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_184_d3",
+"value": "deep",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_184_d3",
+"value": "deep",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_184_d3",
+"value": "deep",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_184_d3",
+"value": "deep",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_184_d3",
+"value": "deep",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_184_d3",
+"value": "deep",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_184_d3",
+"value": "deep",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_213_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_213_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_213_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_213_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_213_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_213_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_213_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_213_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_69_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_69_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_69_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_69_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_69_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_69_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_69_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_69_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_93_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_93_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_93_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_93_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_93_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_93_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_93_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_93_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_179_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_179_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_179_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_179_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_179_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_179_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_179_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_179_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_19_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_19_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_19_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_19_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_19_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_19_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_19_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_19_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_189_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_189_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_189_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_189_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_189_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_189_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_189_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_189_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_101_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_101_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_101_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_101_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_101_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_101_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_101_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_101_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_57_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_57_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_57_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_57_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_57_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_57_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_57_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_57_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_21_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_21_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_21_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_21_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_21_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_21_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_21_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_21_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_155_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_155_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_155_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_155_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_155_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_155_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_155_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_155_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_119_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_119_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_119_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_119_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_119_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_119_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_119_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_119_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_123_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_123_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_123_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_123_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_123_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_123_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_123_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_123_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_25_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_25_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_25_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_25_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_25_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_25_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_25_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_25_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_33_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_33_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_33_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_33_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_33_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_33_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_33_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_33_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_61_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_61_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_61_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_61_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_61_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_61_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_61_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_61_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_9_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_9_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_9_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_9_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_9_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_9_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_9_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_9_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_67_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_67_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_67_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_67_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_67_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_67_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_67_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_67_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_117_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_117_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_117_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_117_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_117_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_117_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_117_d1",
+"value": "shallow",
+"k": 6,
+"stated": true,
+"stated_value": "B",
+"exhibited_value": "neither"
+},
+{
+"item": "json_117_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_127_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_127_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_127_d1",
+"value": "shallow",
+"k": 2,
+"stated": true,
+"stated_value": "B",
+"exhibited_value": "neither"
+},
+{
+"item": "json_127_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_127_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_127_d1",
+"value": "shallow",
+"k": 5,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_127_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_127_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_131_d1",
+"value": "shallow",
+"k": 0,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_131_d1",
+"value": "shallow",
+"k": 1,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_131_d1",
+"value": "shallow",
+"k": 2,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_131_d1",
+"value": "shallow",
+"k": 3,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_131_d1",
+"value": "shallow",
+"k": 4,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_131_d1",
+"value": "shallow",
+"k": 5,
+"stated": true,
+"stated_value": "B",
+"exhibited_value": "neither"
+},
+{
+"item": "json_131_d1",
+"value": "shallow",
+"k": 6,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+},
+{
+"item": "json_131_d1",
+"value": "shallow",
+"k": 7,
+"stated": false,
+"stated_value": "none",
+"exhibited_value": "neither"
+}
+]
+}

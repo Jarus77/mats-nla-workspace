@@ -1,0 +1,355 @@
+{
+ "json_depth": {
+  "ol": {
+   "mention_regex": {
+    "regex": "nest|depth|level|deep|inner|outer|top[- ]level",
+    "overall": 0.546875,
+    "by_value": {
+     "deep": 0.7125,
+     "shallow": 0.38125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.25,
+   "notes": "Deep examples frequently mention 'nested' / '深层嵌套' or exhibit 3+ closing curly braces '}}}}', whereas shallow examples feature flat key-value pairs or single closing braces '}'.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "nest|depth|level|deep|inner|outer|top[- ]level",
+    "overall": 0.6375,
+    "by_value": {
+     "deep": 0.99375,
+     "shallow": 0.28125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.55,
+   "notes": "The verbalizer explicitly labels deeply nested contexts with words like 'nested' and 'hierarchical' at high rates, while shallow instances are described simply as 'key-value pairs' or 'dictionary/object' without nesting qualifiers.",
+   "rejected": [
+    {
+     "id": "nla:json_depth:m3",
+     "family": "hierarchical_vs_flat_object",
+     "template": "<explanation> / JSON/nested object syntax pattern established",
+     "fillers": {
+      "deep": "JSON/nested object syntax pattern established",
+      "shallow": "JSON/dict-style key-value format established"
+     },
+     "error": "template must contain exactly one {v}"
+    }
+   ],
+   "n_proposed": 5
+  }
+ },
+ "latex_math": {
+  "ol": {
+   "mention_regex": {
+    "regex": "math|equation|latex|\\\\\\\\frac|formula",
+    "overall": 0.303125,
+    "by_value": {
+     "inside": 0.46875,
+     "outside": 0.1375
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly name 'inside' or 'outside', instead continuing math formula radicals (predominantly '\\sqrt{') inside the math span and structured domain text (e.g. compass/beacon/harvest systems) outside.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "math|equation|latex|\\\\\\\\frac|formula",
+    "overall": 0.871875,
+    "by_value": {
+     "inside": 1.0,
+     "outside": 0.74375
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The verbalizer never explicitly mentions LaTeX delimiters or token counts into a math span, but strongly distinguishes active math formula derivations ('inside') from nonsensical/absurdist technical word-salad ('outside').",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "py_string": {
+  "ol": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.225,
+    "by_value": {
+     "inside": 0.0125,
+     "outside": 0.4375
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The model never explicitly states 'inside' or 'outside'; instead, 'inside' activations trigger mnemonic/word-list tokens with quotes/commas, while 'outside' activations trigger Python function argument syntax like '= ' and closing parentheses ')'.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.703125,
+    "by_value": {
+     "inside": 0.79375,
+     "outside": 0.6125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.08,
+   "notes": "The readouts rarely mention string boundaries explicitly; instead, 'inside' reliably evokes list/data/passphrase patterns while 'outside' strongly evokes function call or argument syntax.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "call_arg": {
+  "ol": {
+   "mention_regex": {
+    "regex": "argument|param|positional",
+    "overall": 0.01875,
+    "by_value": {
+     "first": 0.03125,
+     "third": 0.00625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.2,
+   "notes": "At the 3rd argument (the end of the 3-arg call), completions close the call with ')' and comment on 'three' items, whereas at the 1st argument completions continue with commas ',' and list four or more arguments.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "argument|param|positional",
+    "overall": 0.89375,
+    "by_value": {
+     "first": 0.88125,
+     "third": 0.90625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.15,
+   "notes": "Direct mentions of 'third' appear at the end of several explanations for the third argument condition, whereas readouts for the first argument heavily emphasize opening calls or lists of four entities.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "md_heading": {
+  "ol": {
+   "mention_regex": {
+    "regex": "heading|header|title|section|##",
+    "overall": 0.01875,
+    "by_value": {
+     "h1": 0.00625,
+     "h3": 0.03125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The oracle lens outputs verbatim repetitive word-associations and list continuations from the underlying prompt text without explicitly mentioning heading levels or markdown metadata.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "heading|header|title|section|##",
+    "overall": 0.659375,
+    "by_value": {
+     "h1": 0.575,
+     "h3": 0.74375
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "Neither h3 nor h1 is explicitly mentioned by heading level; instead, h3 activates explanations emphasizing title/heading/header structure, while h1 readouts focus heavily on inventory lists and word sequences.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "_calls": 20,
+ "_spend_usd": 0.2244,
+ "csv_col": {
+  "ol": {
+   "mention_regex": {
+    "regex": "column|field|csv|comma",
+    "overall": 0.0125,
+    "by_value": {
+     "first": 0.0,
+     "fourth": 0.025
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.03,
+   "notes": "Explicit references to column index or letters (such as 'Column D' or 'col 4') appear very rarely (~3% of readouts), as the tool predominantly outputs continuations mirroring CSV contents across rows.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "column|field|csv|comma",
+    "overall": 0.625,
+    "by_value": {
+     "first": 0.55,
+     "fourth": 0.7
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.12,
+   "notes": "Explicit numeric references to field or column counts ('four fields', 'four-column', 'four categories') appear moderately in the 'fourth' condition (~20%) but are almost entirely absent or described as triples/tuples in the 'first' condition.",
+   "rejected": [],
+   "n_proposed": 6
+  }
+ },
+ "html_depth": {
+  "ol": {
+   "mention_regex": {
+    "regex": "nest|tag|html|depth|<li>|<div>",
+    "overall": 0.009375,
+    "by_value": {
+     "deep": 0.01875,
+     "shallow": 0.0
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts consist purely of repeated prompt word associations, lists, and Chinese punctuation without any explicit mention of HTML tag depth or nesting levels.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "nest|tag|html|depth|<li>|<div>",
+    "overall": 0.384375,
+    "by_value": {
+     "deep": 0.46875,
+     "shallow": 0.3
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "Neither deep nor shallow HTML depth is explicitly mentioned anywhere in the readouts; the tool solely interprets the synthetic word-list tokens rather than the HTML structure enclosing them.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "stance_word": {
+  "ol": {
+   "mention_regex": {
+    "regex": "unfortunately|fortunately|regret|luck",
+    "overall": 0.003125,
+    "by_value": {
+     "fortunately": 0.0,
+     "unfortunately": 0.00625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The readouts almost entirely continue domain text content rather than directly reproducing the prompt-initial adverb 'Unfortunately' or 'Fortunately'.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "unfortunately|fortunately|regret|luck",
+    "overall": 0.021875,
+    "by_value": {
+     "fortunately": 0.025,
+     "unfortunately": 0.01875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The verbalizer rarely mentions the stance adverb directly, instead characterizing the surrounding narrative context as either a problem/predicament/disappointment (unfortunately) or an advantage/resolution/success (fortunately).",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "ij2_lang": {
+  "ol": {
+   "mention_regex": {
+    "regex": "french|german|fran[cç]ais|deutsch|language",
+    "overall": 0.009375,
+    "by_value": {
+     "French": 0.0125,
+     "German": 0.00625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.01,
+   "notes": "The lens almost never names the languages explicitly (e.g., '法语'); instead, it mimics e-commerce reviews and product support texts matching the source item's language (French vs German).",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "french|german|fran[cç]ais|deutsch|language",
+    "overall": 0.975,
+    "by_value": {
+     "French": 0.975,
+     "German": 0.975
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.82,
+   "notes": "Both French and German are overwhelmingly and explicitly named right at the start in descriptions of review registers and styles.",
+   "rejected": [],
+   "n_proposed": 6
+  }
+ },
+ "bk_quote": {
+  "ol": {
+   "mention_regex": {
+    "regex": "quot|citation|speech",
+    "overall": 0.009375,
+    "by_value": {
+     "inside": 0.0125,
+     "outside": 0.00625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly mention quotation marks or syntax tokens meta-linguistically; instead, 'inside' activations frequently trigger direct quotation marks or quoted reviews in continuations.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "quot|citation|speech",
+    "overall": 0.35625,
+    "by_value": {
+     "inside": 0.53125,
+     "outside": 0.18125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.08,
+   "notes": "Direct mentions of being inside or outside a quote are rare; the tool indirectly reflects quote presence via register descriptions like 'quotative', 'literary quotation format', or noting 'mid-quotation'.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ }
+}
