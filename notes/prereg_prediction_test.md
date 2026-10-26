@@ -1,0 +1,95 @@
+# Pre-registration: does a reader's training objective predict its blind spots? (week-two prediction test)
+
+Drafted 2026-10-26 (Suraj, with assistant). Status: DRAFT until the instruments have run and the prediction
+cells are filled; then this file's sha256 goes into `notes/decisions.md` and the readers run. Nothing below
+changes a frozen phrasing, direction, dose or seed of exps 13 to 17. Private until shared with Guiv.
+
+## 1. Claim under test
+
+For a concept at layer 42, four properties measured without running any reader (readable, sayable by a
+32-token span, sayable by a statement, used by the model) predict each reader's prompted score and
+spontaneous behaviour, before the reader is run. The account was built on two position-in-text rows
+(exps 13 to 17); this test asks whether it holds out of sample on 12 to 15 new concepts.
+
+## 2. Instruments (existing code; one threshold each, fixed here)
+
+| property | instrument | function | threshold |
+|---|---|---|---|
+| readable | grouped 5-fold linear probe on the 160 selection items, true activations | `mats.probes.cv_auroc(X, y, groups, k=5)` | readable if AUROC ≥ 0.80 |
+| sayable by span | class-mean gap kept when the NLA reconstructor rebuilds each item from its true last 32 tokens | `experiments/14_ar_blindspot/ar_lib.gap_retention(true, recon, y)["ratio"]` with `recon = nla.reconstruct(spans)` | sayable if ratio ≥ 0.50 |
+| sayable by statement | shift of the NLA reconstructor's output along the true class direction when fed the fixed-label statement pair | `ar_lib.statement_shift(true, y, rec_a, rec_b)["ratio"]` | statement-sayable if ratio ≥ 0.30 |
+| used | centred class-mean push at r11 (0.11‖h‖) at the read token, next-token log-odds on the row's declared token set, 20 isotropic nulls | exp 15 `lib15.build` + `contrast_vs_nulls`; model side only | used if z ≥ 3 against the isotropic band |
+| J-enriched | enrichment of the class-mean direction in the rank-1536 J-space | `mats.jspace.enrichment(basis, v, 1536)` | J-enriched if ≥ 1.5 |
+
+The model-side token set for "used" is declared per concept in §4 before the push is run. Rows whose next
+token is not a discrete decision (a count with no token consequence) get the set "none" and are scored
+"not used" by construction; this is a prediction, not a gap.
+
+## 3. Prediction rules (one row per reader × output; a cell is "predicted high" or "predicted low")
+
+| reader output | predicted high iff | threshold that counts as high |
+|---|---|---|
+| NLA prompted AUROC (frozen fixed label + 3 mined phrasings, mean) | readable | ≥ 0.85 |
+| NLA states the property spontaneously (judge, 40 items × 8 samples) | used AND the concept constrains the next token (declared flag in §4) | ≥ 20% of readouts |
+| NLA names the complement (the unmarked value) when asked | never (predicted low for every row, from exp 17) | multi-candidate argmax on the unmarked value ≥ 20% |
+| Oracle Lens prompted AUROC | sayable by span | ≥ 0.70 |
+| Oracle Lens exhibits the value in its free text | sayable by span AND the value is expressible in ≤ 2 tokens (declared flag) | ≥ 30% of readouts |
+| Oracle Lens states the property | never (predicted 0% for every row) | ≥ 5% |
+| J-lens prompted AUROC | J-enriched OR statement-sayable | ≥ 0.70 |
+
+Each rule is falsifiable: a row where the antecedent holds and the cell lands low, or the antecedent fails and
+the cell lands high, is a miss.
+
+## 4. Concept list (12 to 15 rows; fill the four instrument columns and the two flags BEFORE any reader runs)
+
+Generators follow exp 13's `items_build` style (true value known, 20 + 20 mining and 80 + 80 selection items,
+clustered by passage, values length-matched where possible). Rows marked G come from Guiv's bank once his
+files arrive and are scored with our instruments first.
+
+| # | concept | values | generator | next-token set for "used" | constrains next token? | value ≤ 2 tokens? | readable | span | stmt | used | J-enr | predicted NLA / OL / J-lens |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | JSON nesting depth at the read key | depth 1 vs 3 | new, JSON objects | `}` set | yes | yes | | | | | | |
+| 2 | inside a LaTeX math environment | inside `$...$` vs prose | new | `$` set | yes | yes | | | | | | |
+| 3 | inside a string literal (Python) | inside vs outside quotes in code | new | quote-close set | yes | yes | | | | | | |
+| 4 | positional argument index in a call | 1st vs 3rd argument | new | `,` / `)` set | yes | yes | | | | | | |
+| 5 | markdown heading level | H1 vs H3 | new | none | no | yes | | | | | | |
+| 6 | CSV column index | 1st vs 4th field | new | `,` / newline set | yes | yes | | | | | | |
+| 7 | unclosed HTML tag depth | 1 vs 3 open tags | new | `</` set | yes | yes | | | | | | |
+| 8 | G: code language | Python vs JS | Guiv / exp 07 `build_code` | none | no | yes | | | | | | |
+| 9 | G: JSON key vs value position | key vs value | Guiv | `:` set | yes | yes | | | | | | |
+| 10 | G: LLM-mined row 1 | from Guiv's mined set | Guiv | declared on arrival | | | | | | | | |
+| 11 | G: LLM-mined row 2 | from Guiv's mined set | Guiv | declared on arrival | | | | | | | | |
+| 12 | sayable-but-unused candidate: document title topic | sports vs finance passage | new, topic by source | none | no | yes | | | | | | |
+| 13 | sayable-but-unused candidate: author stance word present | "unfortunately" vs "fortunately" earlier in the passage | new | none | no | yes | | | | | | |
+| 14 | control: language | FR vs DE | exp 07 `build_lang` | none | no | yes | | | | | | |
+| 15 | control: quote state | inside vs outside quotes | exp 07 `build_quote` | quote-close set | yes | yes | | | | | | |
+
+Rows 12 and 13 are chosen to be statement-sayable and J-enriched but not used at the read token, so the
+account can fail on them (prediction: OL and J-lens high, NLA states low). Rows 14 and 15 are in-workspace
+controls (prediction: every reader high).
+
+## 5. Scoring rule
+
+A cell counts as correct when the observed value lands on the declared side of its threshold. Report
+accuracy over all cells (≥ 36 cells: 12 rows × 3 prompted scores at minimum, plus the spontaneous cells),
+with a Wilson 95% CI and the full confusion table (predicted high / low × observed high / low) per reader.
+The account is "predictive" if accuracy ≥ 0.80. Readers that saturate (every row high) are reported but do
+not count toward the claim. A row whose instruments disagree with its intended role (e.g. row 12 turns out
+used) keeps its instrument-based prediction; the role note is for reading only.
+
+## 6. Procedure and hash
+
+1. Build items for the new rows; freeze the item banks (sha256 in this file).
+2. Run the instruments (one GPU job: probe, NLA-reconstructor span and statement passes, model-side push,
+   enrichment). No reader is run in this job.
+3. Fill the instrument columns and the predicted cells in §4. Record this file's sha256 in `decisions.md`.
+4. Run the readers: prompted log-odds on frozen phrasings (mined on the mining split with exp 07's
+   procedure, frozen before scoring), spontaneous judge on 40 × 8 free readouts, the multi-candidate argmax
+   for the complement check. Oracle Lens also at layers 36, 44, 52 (prompted only) for the sayable-vs-readable
+   contrast across layers.
+5. Score §5; write the row-by-row table and the confusion tables into `experiments/18_prediction_test/RESULTS.md`.
+
+## 7. Budget and timing
+
+At most two GPU-days, cost ceiling $40, one GPU at a time on the main workspace. Day 1 items and
+instruments; day 2 predictions filled and readers run; day 3 scoring and write-up.
