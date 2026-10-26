@@ -248,6 +248,167 @@ def c4nx(rows: list[str]) -> dict:
     return {"rows": out_all, "wall_s": round(time.time() - t0, 1)}
 
 
+# ============================================================================ readers (prereg §6 step 4)
+K_READOUTS = 8
+OL_LAYERS = (42, 36, 44, 52)
+
+
+def _strip_expl(t: str) -> str:
+    return t.split("</br>")[0].strip() if "</br>" in t else t.strip()
+
+
+def _acts(row: str):  # noqa: ANN202
+    import torch
+
+    items = _items(row)
+    blob = torch.load(f"{OUT}/acts18_{row}.pt", weights_only=False)
+    assert blob["ids"] == [it["id"] for it in items]
+    return items, blob["acts"]
+
+
+@app.function(image=gpu_image, gpu="H100", **GPU)
+def g6ra(rows: list[str]) -> dict:
+    """OLens free readouts (k=8, layer 42) and J-lens top-50 on the mining split -> gen_ol_{row}.json."""
+    import torch
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    from mats.readers.jlens import load_jlens
+    from mats.readers.olens import WSBENCH_SAMPLING, load_olens
+
+    torch.manual_seed(0)
+    t0 = time.time()
+    VOLUMES["/results"].reload()
+    tok = AutoTokenizer.from_pretrained("Qwen/Qwen3.6-27B")
+    model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3.6-27B", dtype=torch.bfloat16, device_map="cuda").eval()
+    ol = load_olens(model, tok)
+    jl = load_jlens(ol.model, tok, layers=[LAYER])
+    out_all = {}
+    for row in rows:
+        path = f"{OUT}/gen_ol_{row}.json"
+        if Path(path).exists():
+            out_all[row] = {"skipped": True}
+            continue
+        items, acts = _acts(row)
+        mine = [i for i, it in enumerate(items) if it["split"] == "mine"]
+        g = ol.verbalize(acts[LAYER][mine], LAYER, k=K_READOUTS, sampling=WSBENCH_SAMPLING, batch=32)
+        jtop = jl.readout(acts[LAYER][mine], LAYER, k=50)
+        out = {"feature": row, "items": items, "ol_gens": {str(LAYER): {items[i]["id"]: g[r] for r, i in enumerate(mine)}},
+               "jlens_top50_L42": {items[i]["id"]: jtop[r] for r, i in enumerate(mine)}, "wall_s": round(time.time() - t0, 1)}
+        Path(path).write_text(json.dumps(out))
+        VOLUMES["/results"].commit()
+        out_all[row] = {"n_mine": len(mine)}
+    return {"rows": out_all, "wall_s": round(time.time() - t0, 1)}
+
+
+@app.function(image=gpu_image, gpu="H200", **GPU)
+def d8pk(rows: list[str]) -> dict:
+    """NLA free readouts (k=8) on the mining split -> gen_nla_{row}.json."""
+    import torch
+
+    from mats.readers import nla as NL
+
+    torch.manual_seed(0)
+    t0 = time.time()
+    VOLUMES["/results"].reload()
+    nla = NL.load_nla(adapter=NL.DEFAULT_ADAPTER, load_ar=False)
+    out_all = {}
+    for row in rows:
+        path = f"{OUT}/gen_nla_{row}.json"
+        if Path(path).exists():
+            out_all[row] = {"skipped": True}
+            continue
+        items, acts = _acts(row)
+        mine = [i for i, it in enumerate(items) if it["split"] == "mine"]
+        raw = nla.verbalize_raw(acts[LAYER][mine], k=K_READOUTS, batch=64)
+        out = {"feature": row, "nla_gens": {items[i]["id"]: [_strip_expl(t) for t in raw[r]] for r, i in enumerate(mine)},
+               "wall_s": round(time.time() - t0, 1)}
+        Path(path).write_text(json.dumps(out))
+        VOLUMES["/results"].commit()
+        out_all[row] = {"n_mine": len(mine)}
+    return {"rows": out_all, "wall_s": round(time.time() - t0, 1)}
+
+
+def _cands_for(templates: list[dict], vals: list[str]) -> list[str]:
+    from feature_spec import fill
+
+    return [fill(t, v) for t in templates for v in vals]
+
+
+def _score_generic(lp_fn, row: str, templates: list[dict], items, acts_L, sel) -> dict:  # noqa: ANN001
+    vals = FEATURES[row]["values"]
+    lp = lp_fn(acts_L[sel], _cands_for(templates, vals))
+    lo = (lp[:, 0::2] - lp[:, 1::2]).T
+    return {"lo": {t["id"]: lo[k].tolist() for k, t in enumerate(templates)},
+            "y": [int(items[i]["value"] == vals[0]) for i in sel], "ids": [items[i]["id"] for i in sel]}
+
+
+@app.function(image=gpu_image, gpu="H100", **GPU)
+def v5lm(jobs: list[tuple]) -> dict:
+    """jobs = [(row, ol_templates, jlens_sets)]: OLens at 42/36/44/52 and J-lens at 42 on the selection split."""
+    import torch
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    from mats.readers.jlens import load_jlens, token_variants
+    from mats.readers.olens import load_olens
+
+    t0 = time.time()
+    VOLUMES["/results"].reload()
+    tok = AutoTokenizer.from_pretrained("Qwen/Qwen3.6-27B")
+    model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3.6-27B", dtype=torch.bfloat16, device_map="cuda").eval()
+    ol = load_olens(model, tok)
+    jl = load_jlens(ol.model, tok, layers=[LAYER])
+    out_all = {}
+    for row, templates, jsets in jobs:
+        path = f"{OUT}/score_ol_{row}.json"
+        if Path(path).exists():
+            out_all[row] = {"skipped": True}
+            continue
+        items, acts = _acts(row)
+        sel = [i for i, it in enumerate(items) if it["split"] == "select"]
+        res = {}
+        for L in OL_LAYERS:
+            fn = lambda A, cands, L=L: ol.logprob_of_strings(A, L, cands, batch=max(64, 2 * len(cands)))  # noqa: E731
+            res[f"ol@{L}"] = _score_generic(fn, row, templates, items, acts[L], sel)
+        vals = FEATURES[row]["values"]
+        y = [int(items[i]["value"] == vals[0]) for i in sel]
+        lo = {}
+        for js in jsets:
+            a, b = token_variants(tok, js["words"][vals[0]]), token_variants(tok, js["words"][vals[1]])
+            if a and b:
+                lo[js["id"]] = jl.paired_logodds(acts[LAYER][sel], LAYER, a, b).tolist()
+        res[f"jlens@{LAYER}"] = {"lo": lo, "y": y, "ids": [items[i]["id"] for i in sel]}
+        out = {"feature": row, "scores": res, "wall_s": round(time.time() - t0, 1)}
+        Path(path).write_text(json.dumps(out))
+        VOLUMES["/results"].commit()
+        out_all[row] = {"n_select": len(sel), "n_templates": len(templates)}
+    return {"rows": out_all, "wall_s": round(time.time() - t0, 1)}
+
+
+@app.function(image=gpu_image, gpu="H200", **GPU)
+def x2hf(jobs: list[tuple]) -> dict:
+    """jobs = [(row, nla_templates)]: NLA prompted log-odds at 42 on the selection split."""
+    from mats.readers import nla as NL
+
+    t0 = time.time()
+    VOLUMES["/results"].reload()
+    nla = NL.load_nla(adapter=NL.DEFAULT_ADAPTER, load_ar=False)
+    out_all = {}
+    for row, templates in jobs:
+        path = f"{OUT}/score_nla_{row}.json"
+        if Path(path).exists():
+            out_all[row] = {"skipped": True}
+            continue
+        items, acts = _acts(row)
+        sel = [i for i, it in enumerate(items) if it["split"] == "select"]
+        fn = lambda A, cands: NL.logprob_of_strings_batch(nla, A, cands, batch=max(64, 2 * len(cands)))  # noqa: E731
+        out = {"feature": row, "scores": {f"nla@{LAYER}": _score_generic(fn, row, templates, items, acts[LAYER], sel)},
+               "wall_s": round(time.time() - t0, 1)}
+        Path(path).write_text(json.dumps(out))
+        VOLUMES["/results"].commit()
+        out_all[row] = {"n_select": len(sel), "n_templates": len(templates)}
+    return {"rows": out_all, "wall_s": round(time.time() - t0, 1)}
+
+
 @app.local_entrypoint()
 def main(stage: str = "build", features: str = "") -> None:
     RES.mkdir(exist_ok=True)
@@ -255,6 +416,14 @@ def main(stage: str = "build", features: str = "") -> None:
     if stage == "build":
         r = w3ke.remote()
         (RES / "build_info.json").write_text(json.dumps(r, indent=1, default=str))
+    elif stage in ("gen_ol", "gen_nla"):
+        r = {"gen_ol": g6ra, "gen_nla": d8pk}[stage].remote(rows)
+    elif stage in ("score_ol", "score_nla"):
+        cand = json.loads((RES / "candidates.json").read_text())
+        if stage == "score_ol":
+            r = v5lm.remote([(row, cand["ol"][row], cand["jlens"][row]) for row in rows])
+        else:
+            r = x2hf.remote([(row, cand["nla"][row]) for row in rows])
     else:
         r = {"instr1": p7vd, "instr2": c4nx}[stage].remote(rows)
         for row, res in r["rows"].items():

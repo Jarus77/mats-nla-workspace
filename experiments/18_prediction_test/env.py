@@ -18,7 +18,7 @@ OUT07 = "/results/07_template_mining"
 OUT08 = "/results/08_col_pilot"
 _E02 = _REPO / "experiments" / "02_nonj_features"
 _E07 = _REPO / "experiments" / "07_template_mining"
-_LOCAL = ("modal_common", "env", "feature_spec18", "items_build18", "lib18")
+_LOCAL = ("modal_common", "env", "feature_spec18", "feature_spec", "items_build18", "lib18")
 
 _PINS = ("torch==2.14.0", "transformers==5.17.0", "peft==0.21.0", "accelerate==1.15.0",
          "safetensors==0.8.0", "numpy==2.5.3", "pyyaml", "scipy", "flash-linear-attention==0.5.2")
