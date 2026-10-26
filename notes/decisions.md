@@ -609,3 +609,8 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 - **Cross-team.** Guiv's package (`notes/draft_guiv_repo_digest.md`, branch survey pending) confirms OLens silence on structure at layers 20-60 and the complement split on his table-column vs parenthesis rows; his E27 on our items reproduces the one-sided sign (100/200). His table column 0.57 is on column-5-only items with a padding preamble; the 2x2 cross-scoring (exp 17) is running.
 - **Cost.** About $8 GPU, $2.5 API.
 
+## 2026-10-26 — D43: cross-scoring with Guiv's bank: the table-column gap is mostly phrasing; forced-choice sign is fixed on his items too
+
+- His 0.57 reproduces (0.56, NLA, his items x his phrasings). His items with our phrasings: NLA 0.85, OLens 0.72; our items with his phrasings: NLA 0.64, OLens 0.36. Parenthesis: NLA 0.75 to 0.85 in every cell; OLens 0.78 with our phrasings vs 0.50 to 0.53 with his. Per-value sign fixed (95 to 100%) for both readers and phrasing sets on his items; the exp 18 "names both values on ordinal rows" is therefore phrasing-specific. Table and signs: `experiments/17_harden/RESULTS.md` (d), `results/xs17.md`.
+- Decisions: quote the two banks as two measurements with phrasing named as the larger factor; drop the blanket complement rule; any future complement test uses the sign under the best of k mined phrasings and is pre-registered that way. Guiv's survey digests (`notes/draft_guiv_repo_digest.md`, `notes/draft_guiv_branches_digest.md`) stay private.
+

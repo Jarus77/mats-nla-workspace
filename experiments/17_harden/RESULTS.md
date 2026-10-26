@@ -102,3 +102,36 @@ Reading for the write-up: the direction the J-lens and OLens follow on table col
 is a multilingual "last vs first" meaning direction that does not move the model's newline decision. The
 rule for "lexical" should be revised to a semantic-cluster test before it is used again; the revision is
 not applied here post hoc.
+
+## (d) Cross-scoring with Guiv's bank (26 Oct, his `share/cross_scoring/` files, 84 test items per row)
+
+AUROC of the mean prompted log-odds, 95% cluster-bootstrap CI (clusters = his template families on his items,
+passages on ours); OLens at 42, our frozen phrasings (fixed + 3 mined) vs his two frozen pairs. Table:
+`results/xs17.md`; per-value signs below from `results/vol/xs_*.pt`.
+
+| row | reader | ours x ours (exp 13) | his items x our phrasings | his items x his phrasings | our items x his phrasings |
+|---|---|---|---|---|---|
+| table column | NLA | 1.00 (fixed 0.89) | 0.85 [0.79, 0.95] | 0.56 [0.36, 0.76] | 0.64 [0.56, 0.73] |
+| table column | OLens | 0.74 | 0.72 [0.59, 0.86] | 0.58 [0.50, 0.67] | 0.36 [0.28, 0.45] |
+| parenthesis | NLA | 0.96 | 0.85 [0.71, 0.99] | 0.75 [0.59, 0.93] | 0.83 [0.77, 0.89] |
+| parenthesis | OLens | 0.73 | 0.78 [0.69, 0.97] | 0.53 [0.41, 0.67] | 0.50 [0.41, 0.60] |
+
+1. **His 0.57 reproduces (0.56 here) and is mostly phrasing.** With our phrasings his table-column items score
+   0.85 (NLA) and 0.72 (OLens); with his phrasings our items fall to 0.64 and 0.36. Items account for the rest
+   (0.85 vs 1.00 for the NLA): his "late" is column 5 exactly behind a padding preamble, ours columns 4 to 6 in a
+   plain table. The two numbers are two measurements, as the joint update now says, and the phrasing is the
+   larger factor. His phrasings ("The current excerpt has the first table column.") were never mined from a
+   reader's own register; ours were.
+2. **Parenthesis is robust for the NLA (0.75 to 0.85 in every cell) and phrasing-bound for OLens** (0.78 with our
+   phrasings, 0.50 to 0.53 with his). The NLA reads the state whichever bank or phrasing; OLens's partial read
+   depends on the continuation-style phrasings exp 07 mined for it.
+3. **The forced-choice sign is fixed on his items too**, for both readers and both phrasing sets: on table column
+   every phrasing prefers the marked value on 95 to 100% of marked items and on 93 to 100% of unmarked items
+   (one mined NLA phrasing reaches 0.29); on parenthesis the fixed and his phrasings prefer "inside" on 100% of
+   items while two mined continuation phrasings prefer the other side on 100%. Discrimination comes from the
+   margin, not the sign, exactly as exp 17 (a) and his E27 found. So the exp 18 result that the NLA names both
+   values on ordinal rows is phrasing-specific: with "the {v} argument" it flips, with "has the first table
+   column" it does not. The complement rule needs a phrasing-robust form (e.g. the sign under the best of k
+   phrasings) before it is pre-registered again.
+4. J-lens with our word sets on his items: table column 0.80 [0.70, 0.90] (0.64 on ours), parenthesis 0.47.
+
