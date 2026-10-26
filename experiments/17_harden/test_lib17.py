@@ -70,3 +70,36 @@ def test_spec_candidate_counts_match_rows():
         for reader, temps in per_reader.items():
             for t in temps:
                 assert len(t["slots"]) == S.ROWS[row]["n_cands"], (row, reader, t["id"])
+
+
+def test_pick_unembedding_prefers_lm_head_and_falls_back():
+    assert L.pick_unembedding({"lm_head.weight": "a", "model.norm.weight": "b"}) == ("lm_head.weight", "a", "b")
+    assert L.pick_unembedding({"model.embed_tokens.weight": "a"}) == ("model.embed_tokens.weight", "a", None)
+    assert L.pick_unembedding({"lm_head.weight": "a", "model.language_model.norm.weight": "c"}) == ("lm_head.weight", "a", "c")
+    with pytest.raises(KeyError):
+        L.pick_unembedding({"model.layers.0.x": "a"})
+
+
+def test_vocab_stats_peak_ratio_is_large_for_one_hot():
+    x = np.zeros(1000)
+    x[7] = 10.0
+    x[3] = -4.0
+    s = L.vocab_stats(x, top_k=3)
+    assert s["peak_ratio"] > 20 and s["top_pos"][0][0] == 7 and s["top_neg"][0][0] == 3
+    assert len(s["top_pos"]) == 3 and 0 < s["top_mass"] <= 1
+    flat = np.ones(1000)
+    assert L.vocab_stats(flat, top_k=3)["peak_ratio"] == float("inf")
+
+
+def test_vocab_markdown_verdict_uses_null_band_and_content_words():
+    import report17 as R
+
+    def entry(peak, toks):
+        return {"peak_ratio": peak, "top_mass": 0.5, "top_pos_tokens": toks, "top_neg_tokens": [], "rank_of_interest": {}}
+    res = {"feature": "tb_tablecol", "gain": "1+w", "dirs": {"cm_raw": entry(8.0, [" the"]), "arstmt_raw": entry(30.0, [" fifth", " column"])},
+           "nulls": {f"iso_{k}": entry(8.0 + 0.1 * k, []) for k in range(20)},
+           "content_words": ["first", "fifth", "column"]}
+    md = R.vocab_markdown([res])
+    assert "lexical: yes" in md and "arstmt_raw" in md
+    res["dirs"]["arstmt_raw"] = entry(8.5, [" the"])
+    assert "lexical: no" in R.vocab_markdown([res])

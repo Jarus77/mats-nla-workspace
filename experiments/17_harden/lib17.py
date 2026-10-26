@@ -71,3 +71,30 @@ def metrics_multi(lp: np.ndarray, truth: np.ndarray, y: np.ndarray, class_sets: 
     if len(np.unique(truth)) >= 3 and len(np.unique(am)) >= 2:
         out["spearman_argmax"] = float(spearmanr(am, truth).statistic)
     return out
+
+
+# ----------------------------------------------------------------------------- vocabulary readout
+
+
+def pick_unembedding(weight_map: dict[str, str]) -> tuple[str, str, str | None]:
+    """(key, shard, norm_shard): lm_head.weight if present, else the tied input embedding."""
+    norm = next((weight_map[k] for k in ("model.norm.weight", "model.language_model.norm.weight") if k in weight_map), None)
+    for key in ("lm_head.weight", "model.embed_tokens.weight", "model.language_model.embed_tokens.weight"):
+        if key in weight_map:
+            return key, weight_map[key], norm
+    raise KeyError("no unembedding weight in the safetensors index")
+
+
+def vocab_stats(logits: np.ndarray, top_k: int = 30) -> dict:
+    """Peakedness of a direction's vocabulary projection and its top tokens (indices, values)."""
+    x = np.asarray(logits, float)
+    sd = float(x.std())
+    ax = np.abs(x)
+    order = np.argsort(-ax)
+    top_mass = float(ax[order[:50]].sum() / ax.sum()) if ax.sum() > 0 else 0.0
+    pos = np.argsort(-x)[:top_k]
+    neg = np.argsort(x)[:top_k]
+    return {"peak_ratio": float(ax.max() / sd) if sd > 0 else float("inf"),
+            "top_mass": top_mass,
+            "top_pos": [(int(i), float(x[i])) for i in pos],
+            "top_neg": [(int(i), float(x[i])) for i in neg]}
