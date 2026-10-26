@@ -92,14 +92,28 @@ def mc_markdown(results: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def xs_markdown(results: list[dict]) -> str:
+    lines = ["## Cross-scoring with Guiv's bank (AUROC, mean over phrasings, 95% cluster-bootstrap CI)", "",
+             "| row | reader | his items x our phrasings | his items x his phrasings | our items x his phrasings | J-lens on his items |",
+             "|---|---|---|---|---|---|"]
+    for r in results:
+        for reader, c in r["cells"].items():
+            g = lambda k: _fmt(c[k]) + f" (n={c[k]['n']})" if k in c else ""  # noqa: E731
+            lines.append(f"| {r['row']} | {reader} | {g('his_x_ours')} | {g('his_x_his')} | {g('ours_x_his')} | {g('jlens_his_x_ours')} |")
+    return "\n".join(lines) + "\n"
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--analysis", nargs="*", default=[])
     ap.add_argument("--vocab", nargs="*", default=[])
+    ap.add_argument("--xs", nargs="*", default=[])
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     if a.vocab:
         md = vocab_markdown([json.load(open(p)) for p in a.vocab])
+    elif a.xs:
+        md = xs_markdown([json.load(open(p)) for p in a.xs])
     else:
         md = mc_markdown([json.load(open(p)) for p in a.analysis])
     Path(a.out).write_text(md)

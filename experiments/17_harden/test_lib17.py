@@ -124,3 +124,46 @@ def test_confusion_counts_argmax_per_class():
     lp = np.array([[0, -1, -2], [0, -1, -2], [-2, 0, -1], [-2, -1, 0]])
     y = np.array([0, 0, 1, 1])
     assert L.confusion(lp, y, ["a", "b"]) == {"a": [2, 0, 0], "b": [0, 1, 1]}
+
+
+def test_load_guiv_items_validates_records(tmp_path):
+    import json
+
+    good = [{"id": "g1", "text": "| a | b |", "value": "first", "cluster": "c1"},
+            {"id": "g2", "text": "| a | b | c | d |", "value": "late", "cluster": "c2"}]
+    p = tmp_path / "guiv_items_tb_tablecol.json"
+    p.write_text(json.dumps(good))
+    assert [it["id"] for it in L.load_guiv_items(p, "tb_tablecol")] == ["g1", "g2"]
+    p.write_text(json.dumps(good + [{"id": "g3", "text": "x", "value": "middle", "cluster": "c3"}]))
+    with pytest.raises(ValueError, match="g3"):
+        L.load_guiv_items(p, "tb_tablecol")
+    p.write_text(json.dumps([{"id": "g4", "text": "x", "value": "first"}]))
+    with pytest.raises(ValueError, match="g4"):
+        L.load_guiv_items(p, "tb_tablecol")
+
+
+def test_guiv_pairs_returns_id_a_b_triples():
+    phr = {"tb_tablecol": {"nla": [{"id": "g:nla:0", "template": "Cell in column {v}", "fillers": {"first": "one", "late": "five"}}],
+                           "ol": []}}
+    assert L.guiv_pairs(phr, "tb_tablecol", "nla") == [["g:nla:0", "Cell in column one", "Cell in column five"]]
+    assert L.guiv_pairs(phr, "tb_tablecol", "ol") == []
+    assert L.guiv_pairs(phr, "tb_paren", "nla") == []
+
+
+def test_xs_table_two_by_two_auroc(tmp_path):
+    import torch
+
+    import analyze17 as A
+
+    his_y = [0, 0, 1, 1]
+    lo_track = torch.tensor([-1.0, -1.0, 1.0, 1.0])
+    blob = {"his_ids": list("abcd"), "his_y": his_y, "his_clusters": list("abcd"),
+            "our_ids": list("wxyz"), "our_y": [0, 1, 0, 1], "our_clusters": list("wxyz"),
+            "pairs": {"ours": [["o1", "A", "B"]], "his": [["h1", "A", "B"]]},
+            "lo": {"his_x_ours": {"o1": lo_track}, "his_x_his": {"h1": -lo_track},
+                   "ours_x_his": {"h1": torch.tensor([-1.0, 1.0, -1.0, 1.0])}}}
+    torch.save(blob, tmp_path / "xs_ol_tb_tablecol.pt")
+    out = A.xs_table("tb_tablecol", tmp_path, n_boot=20)
+    c = out["cells"]["ol"]
+    assert c["his_x_ours"]["point"] == 1.0 and c["his_x_his"]["point"] == 0.0 and c["ours_x_his"]["point"] == 1.0
+    assert "nla" not in out["cells"]

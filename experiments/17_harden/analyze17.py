@@ -64,8 +64,14 @@ def main() -> None:
     ap.add_argument("--rows", default=",".join(ROWS))
     ap.add_argument("--vol", default=str(HERE / "results" / "vol"))
     ap.add_argument("--n-boot", type=int, default=N_BOOT)
+    ap.add_argument("--xs", action="store_true", help="cross-scoring tables instead of the multi-candidate ones")
     a = ap.parse_args()
     for row in a.rows.split(","):
+        if a.xs:
+            res = xs_table(row, Path(a.vol), a.n_boot)
+            (HERE / "results" / f"analysis17_xs_{row}.json").write_text(json.dumps(res, indent=1, default=float))
+            print(row, json.dumps(res["cells"], default=float)[:400])
+            continue
         res = mc_table(row, Path(a.vol), a.n_boot, two_candidate_reference(row))
         (HERE / "results" / f"analysis17_mc_{row}.json").write_text(json.dumps(res, indent=1, default=float))
         print(row, "n", res["n"], "cells", {r: list(t) for r, t in res["cells"].items()}, "ref", res["two_candidate_reference"])
@@ -73,3 +79,30 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+def xs_table(row: str, vol_dir: Path, n_boot: int = N_BOOT) -> dict:
+    """2x2 (items x phrasings) AUROC per reader with cluster-bootstrap CIs, mean over phrasings; B - A log-odds
+    against label 1 = values[1]."""
+    import torch
+
+    from mats.metrics import auroc_ci
+
+    out = {"row": row, "cells": {}}
+    for reader in ("ol", "nla"):
+        p = Path(vol_dir) / f"xs_{reader}_{row}.pt"
+        if not p.exists():
+            continue
+        s = torch.load(p, weights_only=False)
+        cells = {}
+        for cell, lo in s["lo"].items():
+            if not lo:
+                continue
+            on_his = cell.startswith("his") or cell.startswith("jlens_his")
+            y = np.asarray(s["his_y"] if on_his else s["our_y"], int)
+            cl = np.asarray(s["his_clusters"] if on_his else s["our_clusters"])
+            score = np.mean([np.asarray(v, float) for v in lo.values()], axis=0)
+            r = auroc_ci(score, y, cl, n_boot=n_boot, seed=SEED)
+            cells[cell] = {"point": float(r.auroc), "lo": float(r.lo), "hi": float(r.hi), "n": int(r.n), "n_pairs": len(lo)}
+        out["cells"][reader] = cells
+    return out

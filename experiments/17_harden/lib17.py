@@ -105,3 +105,34 @@ def confusion(lp: np.ndarray, y: np.ndarray, values: Sequence[str]) -> dict[str,
     lp, y = np.asarray(lp, float), np.asarray(y).astype(int)
     am = lp.argmax(1)
     return {v: np.bincount(am[y == k], minlength=lp.shape[1]).tolist() for k, v in enumerate(values)}
+
+
+# ----------------------------------------------------------------------------- cross-scoring with Guiv's bank
+
+from spec17 import ROWS as _ROWS  # noqa: E402
+
+REQUIRED_ITEM_KEYS = ("id", "text", "value", "cluster")
+
+
+def load_guiv_items(path, row: str) -> list[dict]:  # noqa: ANN001
+    """inputs/guiv_items_{row}.json: [{id, text, value, cluster}]; the read position is the last token."""
+    import json
+
+    items = json.loads(open(path).read())
+    legal = set(_ROWS[row]["values"])
+    for it in items:
+        missing = [k for k in REQUIRED_ITEM_KEYS if k not in it]
+        if missing or it["value"] not in legal:
+            raise ValueError(f"bad record {it.get('id', '?')}: missing {missing}, value {it.get('value')!r} not in {sorted(legal)}")
+    return items
+
+
+def guiv_pairs(phrasings: dict, row: str, reader: str) -> list[list[str]]:
+    """[[id, A, B], ...] from inputs/guiv_phrasings.json ({row: {reader: [{id, template, fillers}]}}), in the
+    exp 16 pair shape (A = values[0], B = values[1])."""
+    a, b = _ROWS[row]["values"]
+    out = []
+    for t in phrasings.get(row, {}).get(reader, []):
+        f = t["fillers"]
+        out.append([t["id"], t["template"].replace("{v}", f[a]), t["template"].replace("{v}", f[b])])
+    return out

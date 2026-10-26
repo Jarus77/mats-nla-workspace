@@ -14,7 +14,7 @@ from pathlib import Path
 
 import modal
 
-from env import OUT, SRC13, SRC15, VOLUMES, gpu_image  # noqa: F401 (SRC15 used by the vocab stage)
+from env import OUT, SRC13, SRC15, VOLUMES, gpu_image, templates_path
 from spec17 import CLASS_SETS, LAYER, MC_TEMPLATES, ROWS
 
 app = modal.App("b7kx")
@@ -186,15 +186,128 @@ def y4lm(row: str) -> dict:
             "peak": {d: round(e["peak_ratio"], 1) for d, e in out["dirs"].items()}}
 
 
+# ============================================================================ cross-scoring with Guiv's bank
+INPUTS = HERE / "inputs"
+
+
+def _our_pairs(row: str, reader: str) -> list[list[str]]:
+    """Our frozen phrasings (fixed label + selected), exp 16 shape."""
+    t = json.loads(templates_path("13_new_rows").read_text())["templates"][reader][row]
+    a, b = ROWS[row]["values"]
+    return [[r["id"], r["candidates"][a], r["candidates"][b]] for r in [t["fixed_label"]] + t["selected"]]
+
+
+def _our_jlens_words(row: str) -> dict:
+    t = json.loads(templates_path("13_new_rows").read_text())["templates"]["jlens"][row]["fixed_label"]
+    return t["words"]
+
+
+def _xs_inputs(row: str):  # noqa: ANN202
+    from lib17 import load_guiv_items
+
+    ip = INPUTS / f"guiv_items_{row}.json"
+    pp = INPUTS / "guiv_phrasings.json"
+    if not ip.exists():
+        return None, None, "no guiv items"
+    items = load_guiv_items(ip, row)
+    phr = json.loads(pp.read_text()) if pp.exists() else {}
+    return items, phr, None
+
+
+def _lo_pairs(lp_fn, acts, pairs: list[list[str]]):  # noqa: ANN001
+    """{pair_id: [N] B - A} for a reader's string-scoring function."""
+    import torch
+
+    cands = [x for _, a, b in pairs for x in (a, b)]
+    if not cands:
+        return {}
+    lp = lp_fn(acts, cands)
+    return {pid: (lp[:, 2 * t + 1] - lp[:, 2 * t]) for t, (pid, _, _) in enumerate(pairs)}
+
+
+@app.function(image=gpu_image, gpu="H100", **GPU)
+def n6wd(row: str) -> dict:
+    """Capture Guiv's items at L42, score OLens + J-lens: his items x {our, his} phrasings, our items x his."""
+    import torch
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    from lib17 import guiv_pairs
+    from mats import capture as C
+    from mats.readers.jlens import load_jlens
+    from mats.readers.olens import load_olens
+
+    t0 = time.time()
+    path = f"{OUT}/xs_ol_{row}.pt"
+    if _done(path):
+        return {"feature": row, "skipped": True}
+    items, phr, why = _xs_inputs(row)
+    if items is None:
+        return {"feature": row, "skipped": True, "reason": why}
+    tok = AutoTokenizer.from_pretrained("Qwen/Qwen3.6-27B")
+    model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3.6-27B", dtype=torch.bfloat16, device_map="cuda").eval()
+    ol = load_olens(model, tok)
+    seqs = [tok.encode(it["text"], add_special_tokens=False) for it in items]
+    with ol.base():
+        his = C.capture(ol.model, seqs, [LAYER], [[-1]] * len(seqs), batch_size=8)[LAYER][:, 0].contiguous().float()
+    ours_meta, ours = _selection(row)
+    fn = lambda A, cands: ol.logprob_of_strings(A, LAYER, cands, batch=max(64, 2 * len(cands)))  # noqa: E731
+    his_pairs, our_pairs = guiv_pairs(phr, row, "ol"), _our_pairs(row, "ol")
+    lo = {"his_x_ours": _lo_pairs(fn, his, our_pairs), "his_x_his": _lo_pairs(fn, his, his_pairs),
+          "ours_x_his": _lo_pairs(fn, ours, his_pairs)}
+    jl = load_jlens(ol.model, tok, layers=[LAYER])
+    w = _our_jlens_words(row)
+    a, b = ROWS[row]["values"]
+    lo["jlens_his_x_ours"] = {"jlens:fixed": jl.paired_logodds(his, LAYER, w[a], w[b]).neg()}  # B - A convention
+    _save(path, {"his_ids": [it["id"] for it in items], "his_y": [int(it["value"] == b) for it in items],
+                 "his_clusters": [it["cluster"] for it in items], "his_acts42": his,
+                 "our_ids": ours_meta["ids"], "our_y": ours_meta["y"].tolist(), "our_clusters": ours_meta["clusters"],
+                 "pairs": {"ours": our_pairs, "his": his_pairs}, "lo": lo})
+    return {"feature": row, "n_his": len(items), "n_his_pairs": len(his_pairs), "wall_s": round(time.time() - t0, 1)}
+
+
+@app.function(image=gpu_image, gpu="H200", **GPU)
+def k9zc(row: str) -> dict:
+    """NLA mirror of n6wd; reads Guiv's activations from the OL file (so xs_ol runs first)."""
+    import torch
+
+    from lib17 import guiv_pairs
+    from mats.readers import nla as NL
+
+    t0 = time.time()
+    path = f"{OUT}/xs_nla_{row}.pt"
+    if _done(path):
+        return {"feature": row, "skipped": True}
+    olp = f"{OUT}/xs_ol_{row}.pt"
+    if not Path(olp).exists():
+        return {"feature": row, "skipped": True, "reason": "xs_ol output absent; run xs_ol first"}
+    items, phr, why = _xs_inputs(row)
+    if items is None:
+        return {"feature": row, "skipped": True, "reason": why}
+    s = torch.load(olp, weights_only=False)
+    assert s["his_ids"] == [it["id"] for it in items], "guiv items changed since xs_ol ran"
+    _, ours = _selection(row)
+    nla = NL.load_nla(adapter=NL.DEFAULT_ADAPTER, load_ar=False)
+    fn = lambda A, cands: NL.logprob_of_strings_batch(nla, A, cands, batch=max(64, 2 * len(cands)))  # noqa: E731
+    his_pairs, our_pairs = guiv_pairs(phr, row, "nla"), _our_pairs(row, "nla")
+    lo = {"his_x_ours": _lo_pairs(fn, s["his_acts42"], our_pairs), "his_x_his": _lo_pairs(fn, s["his_acts42"], his_pairs),
+          "ours_x_his": _lo_pairs(fn, ours, his_pairs)}
+    _save(path, {"his_ids": s["his_ids"], "his_y": s["his_y"], "his_clusters": s["his_clusters"],
+                 "our_ids": s["our_ids"], "our_y": s["our_y"], "our_clusters": s["our_clusters"],
+                 "pairs": {"ours": our_pairs, "his": his_pairs}, "lo": lo})
+    return {"feature": row, "n_his": len(items), "n_his_pairs": len(his_pairs), "wall_s": round(time.time() - t0, 1)}
+
+
 @app.function(image=gpu_image, volumes=VOLUMES, timeout=600, memory=8192, cpu=2)
 def g1ps(row: str) -> dict:
     """Warms the image build and checks the inputs exist (no GPU)."""
     VOLUMES["/results"].reload()
     need = [f"{SRC13}/gen_ol_{row}.json", f"{SRC13}/acts_{row}.pt", f"{SRC15}/spec15_{row}.pt"]
-    return {"feature": row, "missing": [p for p in need if not Path(p).exists()], "skipped": True}
+    return {"feature": row, "missing": [p for p in need if not Path(p).exists()], "skipped": True,
+            "guiv_inputs_present": {"items": (INPUTS / f"guiv_items_{row}.json").exists(),
+                                    "phrasings": (INPUTS / "guiv_phrasings.json").exists()}}
 
 
-STAGES = {"mc_ol": q2vn, "mc_nla": f8rt, "vocab": y4lm, "noop": g1ps}
+STAGES = {"mc_ol": q2vn, "mc_nla": f8rt, "vocab": y4lm, "xs_ol": n6wd, "xs_nla": k9zc, "noop": g1ps}
 
 
 @app.local_entrypoint()
