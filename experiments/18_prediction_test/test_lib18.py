@@ -43,14 +43,14 @@ def test_band_z():
 
 
 def test_decide_and_predict_follow_the_prereg_rules():
-    instr = {"readable": 0.92, "span": 0.61, "stmt": 0.05, "used_z": 7.2, "jenr": 0.9}
+    instr = {"readable": 0.92, "span": 0.85, "stmt": 0.05, "used_z": 7.2, "jenr": 0.9}
     flags = {"constrains_next": True, "short_value": True}
     d = L.decide(instr)
     assert d == {"readable": True, "span": True, "stmt": False, "used": True, "jenr": False}
     p = L.predict(d, flags)
     assert p == {"nla_prompted": True, "nla_states": True, "nla_names_complement": False,
                  "ol_prompted": True, "ol_exhibits": True, "ol_states": False, "jlens_prompted": False}
-    d2 = L.decide({"readable": 0.95, "span": 0.2, "stmt": 0.8, "used_z": 0.4, "jenr": 2.3})
+    d2 = L.decide({"readable": 0.95, "span": 0.6, "stmt": 0.8, "used_z": 0.4, "jenr": 2.3})
     p2 = L.predict(d2, {"constrains_next": False, "short_value": True})
     assert p2["nla_states"] is False and p2["ol_prompted"] is False and p2["jlens_prompted"] is True
     assert L.decide({"readable": 0.95, "span": 0.6, "stmt": 0.1, "used_z": float("nan"), "jenr": 1.0})["used"] is False
@@ -63,11 +63,30 @@ def test_assemble_builds_one_row_per_feature_with_predictions(tmp_path):
 
     (tmp_path / "instr118_json_depth.json").write_text(json.dumps({"feature": "json_depth", "readable": 0.9, "jenr": 1.1, "used_z": 4.0, "used_shift": 0.3}))
     (tmp_path / "instr218_json_depth.json").write_text(json.dumps({"feature": "json_depth", "span": 0.7, "stmt": 0.1}))
-    rows = I.assemble(tmp_path, ["json_depth", "md_heading"])
+    rows = I.assemble(tmp_path, ["json_depth", "md_heading"])          # no vol: the span probe is unavailable
     assert [r["feature"] for r in rows] == ["json_depth", "md_heading"]
     r = rows[0]
-    assert r["decide"]["readable"] and r["decide"]["span"] and not r["decide"]["stmt"] and r["decide"]["used"]
-    assert r["predict"]["nla_states"] is True and r["predict"]["ol_prompted"] is True
+    assert r["instr"]["span"] is None and r["instr"]["span_gap"] == 0.7
+    assert r["decide"]["readable"] and not r["decide"]["span"] and not r["decide"]["stmt"] and r["decide"]["used"]
+    assert r["predict"]["nla_states"] is True and r["predict"]["ol_prompted"] is False
     assert rows[1]["status"] == "instruments missing" and rows[1]["predict"] is None
     md = I.markdown(rows)
     assert "json_depth" in md and "md_heading" in md
+
+
+def test_decide_used_is_two_sided():
+    base = {"readable": 0.9, "span": 0.6, "stmt": 0.1, "jenr": 1.0}
+    assert L.decide({**base, "used_z": -12.2})["used"] is True
+    assert L.decide({**base, "used_z": 2.6})["used"] is False
+
+
+def test_frozen_probe_auroc_is_high_when_recon_keeps_the_separating_direction():
+    torch.manual_seed(0)
+    n, d = 40, 6
+    y = np.array([0, 1] * (n // 2))
+    X = torch.randn(n, d) + 3.0 * torch.as_tensor(y)[:, None] * torch.eye(d)[0]
+    groups = np.arange(n)
+    good = X * 0.3                         # shrunk but same direction
+    bad = torch.randn(n, d)                # no class information
+    assert L.frozen_probe_auroc(X, good, y, groups) > 0.85
+    assert abs(L.frozen_probe_auroc(X, bad, y, groups) - 0.5) < 0.25

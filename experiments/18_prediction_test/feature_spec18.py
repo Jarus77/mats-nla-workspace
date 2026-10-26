@@ -25,6 +25,11 @@ FEATURES: dict[str, dict] = {
                     "desc": "HTML: read inside text with three open tags vs one open tag"},
     "stance_word": {"values": ["unfortunately", "fortunately"], "next_tokens": [], "constrains_next": False, "short_value": True,
                     "desc": "prose paragraph opened with 'Unfortunately,' vs 'Fortunately,', read 15-30 words later (sayable-but-unused candidate)"},
+    # in-workspace controls, items from exp 07's generators (build stage)
+    "ij2_lang":    {"values": ["French", "German"], "next_tokens": [], "constrains_next": False, "short_value": True,
+                    "desc": "language of the text, French vs German (papluca test split)"},
+    "bk_quote":    {"values": ["inside", "outside"], "next_tokens": ['"'], "constrains_next": True, "short_value": True,
+                    "desc": "inside an open double-quoted span vs 4+ words after a closed one (exp 07 generator, token band 40-250)"},
 }
 
 # Fixed-label phrasings per reader (frozen here, before any reader runs). NLA: a sentence in its explanation
@@ -58,7 +63,7 @@ FIXED: dict[str, dict[str, dict]] = {
 }
 
 # Instrument thresholds and prediction rules (prereg §2-§3), as constants so the code and the document agree.
-THRESH = {"readable": 0.80, "span": 0.50, "stmt": 0.30, "used_z": 3.0, "jenr": 1.5}
+THRESH = {"readable": 0.80, "span": 0.80, "stmt": 0.30, "used_z": 3.0, "jenr": 1.5}
 LAYERS_CAPTURE = (36, 42, 44, 52)
 LAYER = 42
 JREM_RANK = 1536

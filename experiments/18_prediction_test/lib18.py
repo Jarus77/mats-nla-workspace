@@ -58,7 +58,8 @@ def decide(instr: dict) -> dict[str, bool]:
     def ge(x, t):  # noqa: ANN001, ANN202
         return bool(x is not None and not (isinstance(x, float) and math.isnan(x)) and x >= t)
     return {"readable": ge(instr["readable"], THRESH["readable"]), "span": ge(instr["span"], THRESH["span"]),
-            "stmt": ge(instr["stmt"], THRESH["stmt"]), "used": ge(instr["used_z"], THRESH["used_z"]),
+            "stmt": ge(instr["stmt"], THRESH["stmt"]),
+            "used": ge(abs(instr["used_z"]) if isinstance(instr["used_z"], (int, float)) else instr["used_z"], THRESH["used_z"]),  # two-sided
             "jenr": ge(instr["jenr"], THRESH["jenr"])}
 
 
@@ -71,3 +72,19 @@ def predict(d: dict[str, bool], flags: dict) -> dict[str, bool]:
             "ol_exhibits": d["span"] and bool(flags["short_value"]),
             "ol_states": False,
             "jlens_prompted": d["jenr"] or d["stmt"]}
+
+
+def frozen_probe_auroc(X_true: torch.Tensor, R: torch.Tensor, y: np.ndarray, groups: np.ndarray, k: int = 5,
+                       lam: float = 1e-3, seed: int = 0) -> float:
+    """Exp 14's 'sayable' measure: a probe fit on the true activations (grouped folds), applied frozen to the
+    reconstructions of the held-out items; AUROC against the labels."""
+    from mats.metrics import auroc_labels
+    from mats.probes import fit_logreg, group_folds
+
+    y = np.asarray(y)
+    sc = np.empty(len(y))
+    for te in group_folds(np.asarray(groups), k, seed):
+        tr = np.setdiff1d(np.arange(len(y)), te)
+        m = fit_logreg(X_true[tr].float(), torch.as_tensor(y[tr]), lam)
+        sc[te] = m.decision(R[te]).numpy()   # standardised with the TRUE-activation moments
+    return float(auroc_labels(sc, y))

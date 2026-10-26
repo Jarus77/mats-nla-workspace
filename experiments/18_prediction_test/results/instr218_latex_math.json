@@ -1,0 +1,11 @@
+{
+ "feature": "latex_math",
+ "span": 0.07366807758808136,
+ "span_cos": 0.31843048334121704,
+ "stmt": 0.006002375390380621,
+ "stmt_cos": 0.019833389669656754,
+ "statements": [
+  "The current position is inside a LaTeX math expression",
+  "The current position is outside a LaTeX math expression"
+ ]
+}
