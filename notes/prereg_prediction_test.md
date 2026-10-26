@@ -42,6 +42,16 @@ the cell lands high, is a miss.
 
 ## 4. Concept list (12 to 15 rows; fill the four instrument columns and the two flags BEFORE any reader runs)
 
+**Bank status (26 Oct).** Rows 1 to 7, 13, 14 and 15 are built and frozen: `experiments/18_prediction_test/`
+(`items_build18.py`, tested; `modal18.py --stage build`), 200 items per row (20 + 20 mining, 80 + 80
+selection), `/results/18_prediction_test/items_base.json`, sha256
+`44308dfdc1b92898b2f463add7117d0fdd15f6a8a626b179ccd68ae7c9efcd36`, 2,000 items. Token length is matched
+between the two values within 20% on every synthetic row (medians in `results/build_info.json`); the quote
+control (exp 07's generator, band 40 to 250 tokens) keeps a residual gap (105 vs 136), so its prompted cells
+are scored after exp 13's length-control regression. Rows 8 to 11 wait on Guiv's bank; row 12 (document
+topic) needs a topic-labelled passage source and is deferred. Row names in the bank: json_depth,
+latex_math, py_string, call_arg, md_heading, csv_col, html_depth, stance_word, ij2_lang, bk_quote.
+
 Generators follow exp 13's `items_build` style (true value known, 20 + 20 mining and 80 + 80 selection items,
 clustered by passage, values length-matched where possible). Rows marked G come from Guiv's bank once his
 files arrive and are scored with our instruments first.
@@ -79,7 +89,7 @@ used) keeps its instrument-based prediction; the role note is for reading only.
 
 ## 6. Procedure and hash
 
-1. Build items for the new rows; freeze the item banks (sha256 in this file).
+1. Build items for the new rows; freeze the item banks (sha256 in this file). Done 26 Oct for ten rows (§4).
 2. Run the instruments (one GPU job: probe, NLA-reconstructor span and statement passes, model-side push,
    enrichment). No reader is run in this job.
 3. Fill the instrument columns and the predicted cells in §4. Record this file's sha256 in `decisions.md`.

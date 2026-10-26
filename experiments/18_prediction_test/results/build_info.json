@@ -1,0 +1,122 @@
+{
+ "n_items": 2000,
+ "n_paragraphs": 58000,
+ "sha256": "44308dfdc1b92898b2f463add7117d0fdd15f6a8a626b179ccd68ae7c9efcd36",
+ "counts": {
+  "bk_quote|mine|inside": 20,
+  "bk_quote|mine|outside": 20,
+  "bk_quote|select|inside": 80,
+  "bk_quote|select|outside": 80,
+  "call_arg|mine|first": 20,
+  "call_arg|mine|third": 20,
+  "call_arg|select|first": 80,
+  "call_arg|select|third": 80,
+  "csv_col|mine|first": 20,
+  "csv_col|mine|fourth": 20,
+  "csv_col|select|first": 80,
+  "csv_col|select|fourth": 80,
+  "html_depth|mine|deep": 20,
+  "html_depth|mine|shallow": 20,
+  "html_depth|select|deep": 80,
+  "html_depth|select|shallow": 80,
+  "ij2_lang|mine|French": 20,
+  "ij2_lang|mine|German": 20,
+  "ij2_lang|select|French": 80,
+  "ij2_lang|select|German": 80,
+  "json_depth|mine|deep": 20,
+  "json_depth|mine|shallow": 20,
+  "json_depth|select|deep": 80,
+  "json_depth|select|shallow": 80,
+  "latex_math|mine|inside": 20,
+  "latex_math|mine|outside": 20,
+  "latex_math|select|inside": 80,
+  "latex_math|select|outside": 80,
+  "md_heading|mine|h1": 20,
+  "md_heading|mine|h3": 20,
+  "md_heading|select|h1": 80,
+  "md_heading|select|h3": 80,
+  "py_string|mine|inside": 20,
+  "py_string|mine|outside": 20,
+  "py_string|select|inside": 80,
+  "py_string|select|outside": 80,
+  "stance_word|mine|fortunately": 20,
+  "stance_word|mine|unfortunately": 20,
+  "stance_word|select|fortunately": 80,
+  "stance_word|select|unfortunately": 80
+ },
+ "token_len_q10_q50_q90": {
+  "py_string": [
+   16,
+   17,
+   18
+  ],
+  "html_depth": [
+   37,
+   39,
+   41
+  ],
+  "bk_quote": [
+   68,
+   118,
+   206
+  ],
+  "ij2_lang": [
+   19,
+   39,
+   91
+  ],
+  "csv_col": [
+   47,
+   65,
+   77
+  ],
+  "md_heading": [
+   38,
+   43,
+   48
+  ],
+  "call_arg": [
+   33,
+   36,
+   39
+  ],
+  "json_depth": [
+   37,
+   39,
+   40
+  ],
+  "latex_math": [
+   39,
+   40,
+   42
+  ],
+  "stance_word": [
+   22,
+   32,
+   43
+  ]
+ },
+ "median_token_len_by_value": {
+  "bk_quote|inside": 105,
+  "bk_quote|outside": 136,
+  "call_arg|first": 38,
+  "call_arg|third": 34,
+  "csv_col|first": 60,
+  "csv_col|fourth": 66,
+  "html_depth|deep": 38,
+  "html_depth|shallow": 40,
+  "ij2_lang|French": 36,
+  "ij2_lang|German": 40,
+  "json_depth|deep": 39,
+  "json_depth|shallow": 39,
+  "latex_math|inside": 39,
+  "latex_math|outside": 41,
+  "md_heading|h1": 40,
+  "md_heading|h3": 46,
+  "py_string|inside": 16,
+  "py_string|outside": 17,
+  "stance_word|fortunately": 30,
+  "stance_word|unfortunately": 33
+ },
+ "wall_s": 34.9
+}
