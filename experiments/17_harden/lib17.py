@@ -98,3 +98,10 @@ def vocab_stats(logits: np.ndarray, top_k: int = 30) -> dict:
             "top_mass": top_mass,
             "top_pos": [(int(i), float(x[i])) for i in pos],
             "top_neg": [(int(i), float(x[i])) for i in neg]}
+
+
+def confusion(lp: np.ndarray, y: np.ndarray, values: Sequence[str]) -> dict[str, list[int]]:
+    """Argmax-candidate counts per class value: {values[0]: [count per candidate], values[1]: [...]}."""
+    lp, y = np.asarray(lp, float), np.asarray(y).astype(int)
+    am = lp.argmax(1)
+    return {v: np.bincount(am[y == k], minlength=lp.shape[1]).tolist() for k, v in enumerate(values)}

@@ -103,3 +103,24 @@ def test_vocab_markdown_verdict_uses_null_band_and_content_words():
     assert "lexical: yes" in md and "arstmt_raw" in md
     res["dirs"]["arstmt_raw"] = entry(8.5, [" the"])
     assert "lexical: no" in R.vocab_markdown([res])
+
+
+def test_mc_table_reads_pt_and_keeps_template_axis(tmp_path):
+    import torch
+
+    import analyze17 as A
+
+    blob = {"ids": ["a", "b", "c", "d"], "truth": np.array([0, 3, 0, 4]), "y": np.array([0, 1, 0, 1]),
+            "clusters": ["a", "b", "c", "d"], "excluded": [],
+            "lp": {"ol:mc:fixed": torch.zeros(4, 6), "ol:mc:m3": torch.zeros(4, 6)}}
+    torch.save(blob, tmp_path / "mc_ol_tb_tablecol.pt")
+    out = A.mc_table("tb_tablecol", tmp_path, n_boot=20, reference=None)
+    assert set(out["cells"]["ol"]) == {"ol:mc:fixed", "ol:mc:m3"}
+    assert "nla" not in out["cells"]  # missing reader file is omitted, not an error
+    assert out["n"] == 4 and out["cells"]["ol"]["ol:mc:fixed"]["top1"]["chance"] == pytest.approx(1 / 6)
+
+
+def test_confusion_counts_argmax_per_class():
+    lp = np.array([[0, -1, -2], [0, -1, -2], [-2, 0, -1], [-2, -1, 0]])
+    y = np.array([0, 0, 1, 1])
+    assert L.confusion(lp, y, ["a", "b"]) == {"a": [2, 0, 0], "b": [0, 1, 1]}
