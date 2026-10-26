@@ -19,6 +19,10 @@ from spec17 import CLASS_SETS, LAYER, MC_TEMPLATES, ROWS
 
 app = modal.App("b7kx")
 HERE = Path(__file__).resolve().parent
+if (HERE.parent.parent / "src").is_dir():  # laptop side: lib17 imports mats.metrics (the image sets PYTHONPATH)
+    import sys
+
+    sys.path.insert(0, str(HERE.parent.parent / "src"))
 RES = HERE / "results"
 GPU = dict(volumes=VOLUMES, timeout=3 * 3600, memory=131072, single_use_containers=True,
            max_containers=int(os.environ.get("RFM_MAXC", "1")))  # GPU cap: 1 by default, never more than 2
@@ -203,6 +207,7 @@ def _our_jlens_words(row: str) -> dict:
 
 
 def _xs_inputs(row: str):  # noqa: ANN202
+    """Runs on the laptop (the entry point): the input files are not shipped into the image."""
     from lib17 import load_guiv_items
 
     ip = INPUTS / f"guiv_items_{row}.json"
@@ -226,8 +231,9 @@ def _lo_pairs(lp_fn, acts, pairs: list[list[str]]):  # noqa: ANN001
 
 
 @app.function(image=gpu_image, gpu="H100", **GPU)
-def n6wd(row: str) -> dict:
-    """Capture Guiv's items at L42, score OLens + J-lens: his items x {our, his} phrasings, our items x his."""
+def n6wd(job: tuple) -> dict:
+    """job = (row, items, phrasings): capture Guiv's items at L42, score OLens + J-lens: his items x {our, his}
+    phrasings, our items x his. Items/phrasings are passed in from the laptop (inputs/ is not in the image)."""
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -236,13 +242,13 @@ def n6wd(row: str) -> dict:
     from mats.readers.jlens import load_jlens
     from mats.readers.olens import load_olens
 
+    row, items, phr = job
     t0 = time.time()
     path = f"{OUT}/xs_ol_{row}.pt"
     if _done(path):
         return {"feature": row, "skipped": True}
-    items, phr, why = _xs_inputs(row)
     if items is None:
-        return {"feature": row, "skipped": True, "reason": why}
+        return {"feature": row, "skipped": True, "reason": "no guiv items"}
     tok = AutoTokenizer.from_pretrained("Qwen/Qwen3.6-27B")
     model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3.6-27B", dtype=torch.bfloat16, device_map="cuda").eval()
     ol = load_olens(model, tok)
@@ -266,13 +272,14 @@ def n6wd(row: str) -> dict:
 
 
 @app.function(image=gpu_image, gpu="H200", **GPU)
-def k9zc(row: str) -> dict:
-    """NLA mirror of n6wd; reads Guiv's activations from the OL file (so xs_ol runs first)."""
+def k9zc(job: tuple) -> dict:
+    """job = (row, items, phrasings): NLA mirror of n6wd; reads Guiv's activations from the OL file (xs_ol first)."""
     import torch
 
     from lib17 import guiv_pairs
     from mats.readers import nla as NL
 
+    row, items, phr = job
     t0 = time.time()
     path = f"{OUT}/xs_nla_{row}.pt"
     if _done(path):
@@ -280,9 +287,8 @@ def k9zc(row: str) -> dict:
     olp = f"{OUT}/xs_ol_{row}.pt"
     if not Path(olp).exists():
         return {"feature": row, "skipped": True, "reason": "xs_ol output absent; run xs_ol first"}
-    items, phr, why = _xs_inputs(row)
     if items is None:
-        return {"feature": row, "skipped": True, "reason": why}
+        return {"feature": row, "skipped": True, "reason": "no guiv items"}
     s = torch.load(olp, weights_only=False)
     assert s["his_ids"] == [it["id"] for it in items], "guiv items changed since xs_ol ran"
     _, ours = _selection(row)
@@ -325,7 +331,13 @@ STAGES = {"mc_ol": q2vn, "mc_nla": f8rt, "vocab": y4lm, "xs_ol": n6wd, "xs_nla":
 def main(stage: str = "noop", features: str = "") -> None:
     feats = features.split(",") if features else list(ROWS)
     RES.mkdir(exist_ok=True)
-    for r in STAGES[stage].map(feats, return_exceptions=True):
+    jobs = feats
+    if stage in ("xs_ol", "xs_nla"):
+        jobs = []
+        for f in feats:
+            items, phr, why = _xs_inputs(f)
+            jobs.append((f, items, phr))
+    for r in STAGES[stage].map(jobs, return_exceptions=True):
         if isinstance(r, Exception):
             print("ERROR", stage, r)
             continue
