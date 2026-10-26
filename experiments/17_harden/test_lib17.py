@@ -167,3 +167,48 @@ def test_xs_table_two_by_two_auroc(tmp_path):
     c = out["cells"]["ol"]
     assert c["his_x_ours"]["point"] == 1.0 and c["his_x_his"]["point"] == 0.0 and c["ours_x_his"]["point"] == 1.0
     assert "nla" not in out["cells"]
+
+
+def test_analyze17_xs_entry_point_runs_without_name_error(tmp_path):
+    import subprocess
+
+    r = subprocess.run([sys.executable, str(HERE / "analyze17.py"), "--xs", "--rows", "tb_tablecol", "--vol", str(tmp_path)],
+                       capture_output=True, text=True)
+    assert r.returncode == 0 and "NameError" not in r.stderr, r.stderr[-500:]
+
+
+def test_confusion_centred_removes_per_candidate_prior():
+    lp = np.array([[0.0, -8.0], [0.0, -8.0], [0.0, -7.0], [0.0, -7.0]])  # candidate 1 has a strong prior penalty
+    y = np.array([0, 0, 1, 1])
+    assert L.confusion(lp, y, ["a", "b"]) == {"a": [2, 0], "b": [2, 0]}
+    assert L.confusion(lp, y, ["a", "b"], centre=True) == {"a": [2, 0], "b": [0, 2]}
+
+
+def test_mc_verdict_applies_declared_thresholds():
+    import report17 as R
+
+    def cell(top1_lo, top1, lse_lo, lse):
+        return {"top1": {"point": top1, "lo": top1_lo, "hi": 1.0, "chance": 1 / 6},
+                "auroc_lse": {"point": lse, "lo": lse_lo, "hi": 1.0}, "mrr": {"point": 0, "lo": 0, "hi": 0}}
+    res = {"row": "tb_tablecol", "cells": {"nla": {"nla:mc:fixed": cell(0.39, 0.47, 0.84, 0.89)},
+                                           "ol": {"ol:mc:m3": cell(0.07, 0.12, 0.73, 0.80), "ol:mc:fixed": cell(0.01, 0.03, 0.53, 0.62)}}}
+    assert "survives" in R.mc_verdict(res)
+    res["cells"]["nla"]["nla:mc:fixed"] = cell(0.30, 0.47, 0.84, 0.89)   # top-1 lower bound at or below 0.33
+    assert "artefact" in R.mc_verdict(res)
+    res["cells"]["nla"]["nla:mc:fixed"] = cell(0.39, 0.47, 0.84, 0.79)   # AUROC point below OL's best (0.80)
+    assert "artefact" in R.mc_verdict(res)
+    res["cells"]["ol"] = {}
+    assert "pending" in R.mc_verdict(res)                                 # no OL cell: not a pass
+    paren = {"row": "tb_paren", "cells": {"nla": {"nla:mc:state": cell(0.51, 0.6, 0.8, 0.9)}, "ol": {"ol:mc:state": cell(0.2, 0.28, 0.3, 0.4)}}}
+    assert "survives" in R.mc_verdict(paren)
+
+
+def test_vocab_markdown_reports_rank_of_interest():
+    import report17 as R
+
+    e = {"peak_ratio": 6.0, "top_mass": 0.001, "top_pos_tokens": [" x"], "top_neg_tokens": [" y"],
+         "rank_of_interest": {" fifth": 345, " first": 248298}}
+    res = {"feature": "tb_tablecol", "gain": "1+w", "vocab": 248320, "dirs": {"arstmt_raw": e},
+           "nulls": {f"iso_{k}": {**e, "peak_ratio": 5.0 + 0.01 * k} for k in range(20)}, "content_words": ["first", "fifth", "column"]}
+    md = R.vocab_markdown([res])
+    assert "345" in md and "248298" in md

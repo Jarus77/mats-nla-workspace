@@ -100,9 +100,12 @@ def vocab_stats(logits: np.ndarray, top_k: int = 30) -> dict:
             "top_neg": [(int(i), float(x[i])) for i in neg]}
 
 
-def confusion(lp: np.ndarray, y: np.ndarray, values: Sequence[str]) -> dict[str, list[int]]:
-    """Argmax-candidate counts per class value: {values[0]: [count per candidate], values[1]: [...]}."""
+def confusion(lp: np.ndarray, y: np.ndarray, values: Sequence[str], centre: bool = False) -> dict[str, list[int]]:
+    """Argmax-candidate counts per class value: {values[0]: [count per candidate], values[1]: [...]}.
+    centre=True subtracts each candidate's mean log-prob over items first (a label-free prior correction)."""
     lp, y = np.asarray(lp, float), np.asarray(y).astype(int)
+    if centre:
+        lp = lp - lp.mean(0, keepdims=True)
     am = lp.argmax(1)
     return {v: np.bincount(am[y == k], minlength=lp.shape[1]).tolist() for k, v in enumerate(values)}
 
@@ -136,3 +139,11 @@ def guiv_pairs(phrasings: dict, row: str, reader: str) -> list[list[str]]:
         f = t["fillers"]
         out.append([t["id"], t["template"].replace("{v}", f[a]), t["template"].replace("{v}", f[b])])
     return out
+
+
+def pair_sign_rate(lp: np.ndarray, y: np.ndarray, class_sets: dict[str, list[int]], values: Sequence[str]) -> dict[str, float]:
+    """Within the multi-candidate scores, the fraction of each class's items on which the class's OWN fixed-label
+    candidate beats the other class's (first candidate of each class set): the two-candidate sign rate."""
+    lp, y = np.asarray(lp, float), np.asarray(y).astype(int)
+    a, b = class_sets[values[0]][0], class_sets[values[1]][0]
+    return {values[0]: float((lp[y == 0, a] > lp[y == 0, b]).mean()), values[1]: float((lp[y == 1, b] > lp[y == 1, a]).mean())}

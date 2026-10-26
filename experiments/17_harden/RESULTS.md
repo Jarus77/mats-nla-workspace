@@ -45,13 +45,32 @@ marked-state discrimination, not column counting. OLens's numeric phrasing is we
 +0.31; late items shift from "2" to "3"), which is more ordinal information than its two-candidate 0.64
 suggested, and still far from naming the column.
 
+**Three qualifications a careful reader will ask for (added after review).**
+1. *The one-sidedness is already in the two-candidate scores.* Within the multi-candidate run, the NLA's own
+   fixed-label pair has "first" > "fifth" on 100% of late items and "inside" > "outside" on 100% of outside
+   items (own-pair sign rate column in `results/mc17.md`); the 0.89 / 0.88 AUROCs come from the *magnitude*
+   of the log-odds, not its sign. The confusion confirms the one-sidedness; it did not discover it.
+2. *It is a raw-argmax statement under a strong phrase prior.* "outside any parenthesis" is about 8 nats less
+   likely than "inside a parenthesis" averaged over all items, and "sixth column" about 7 nats less likely than
+   "first column". With a label-free per-candidate centring (subtract each candidate's mean log-prob over
+   items), outside items go to "outside" 34 of 76 and late items to columns four to six 45 of 80 ("sixth" 29),
+   so the relative evidence to name the complement is present behind the prior (prior-centred column in
+   `results/mc17.md`). "Does not name its complement" therefore means "under raw argmax, which is what a
+   user reading the NLA gets". The declared verdicts are unchanged; the centred counts are a diagnostic.
+3. *Candidate lengths are matched within every template* (`cand_lengths_{row}.json` via the `noop` stage):
+   NLA table column 11 tokens for all six, OLens 3 / 5 / 5, NLA parenthesis 7 for all four, OLens 3; so the
+   summed-log-prob top-1 carries no length bias here. The J-lens cell is weaker by construction: each
+   candidate is a max over its single-token variants, candidates have different variant counts, and its
+   "class AUROC" is a log-sum-exp of cosine scores rather than of log-probs; the J-lens is not part of the
+   declared verdict and its row is indicative only.
+
 Cost: four GPU runs of about two minutes each after model load (OL+J-lens on H100, NLA on H200), about $3.
 
 ## (c) Vocabulary readout of the exp 15 directions
 
 Every exp 15 unit direction (eight real, 20 isotropic and 20 J-complement nulls) projected through the
-unembedding, logits = W_U ((1 + w_norm) v). Statistic: peak ratio = max |logit| / sd over the 151,936-token
-vocabulary, placed against the 20 isotropic directions. Declared rule: lexical if z > 3 and the statement's own
+unembedding, logits = W_U ((1 + w_norm) v). Statistic: peak ratio = max |logit| / sd over the 248,320-row
+unembedding, placed against the 20 isotropic directions. Declared rule: lexical if z > 3 and the statement's own
 words are in the top 10. Full tables: `results/vocab17.md`.
 
 | row | direction | peak ratio | z vs iso | top positive tokens (decoded) | top negative tokens |
@@ -64,7 +83,11 @@ words are in the top 10. Full tables: `results/vocab17.md`.
 | parenthesis | **AR(statement)** | 6.1 | **+1.3** | 您现在的位置 ("your current position"), 地址位于 ("address located at"), 請問 | fragments |
 
 **Verdict by the declared rule: the statement direction is not lexical on either row** (z +1.6 and +1.3; no
-English statement word in the top 10). **What the tokens say anyway:** the table-column statement direction
+English statement word in the top 10). The rank column in `results/vocab17.md` qualifies that: on table
+column the statement's own words sit at the two extremes of the 248,320 tokens (" fifth" rank 345 from the
+top, " first" rank 248,298, the second most negative), which the top-10 rule misses because the extremes are
+shared with multilingual synonyms; on parenthesis the statement words are mid-ranked (" inside" 171,888,
+" outside" 192,372) and the direction is carried by the "current position" frame instead. **What the tokens say anyway:** the table-column statement direction
 ("fifth column" minus "first column") points at the vocabulary of *last-ness* (finally, etc., lastly, the
 others) and away from *first-ness* (首先), in several languages; the parenthesis statement direction ("The
 current position is ...") points at translations of the statement's own frame ("your current position",

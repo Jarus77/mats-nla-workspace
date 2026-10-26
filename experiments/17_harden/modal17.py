@@ -299,10 +299,21 @@ def k9zc(row: str) -> dict:
 
 @app.function(image=gpu_image, volumes=VOLUMES, timeout=600, memory=8192, cpu=2)
 def g1ps(row: str) -> dict:
-    """Warms the image build and checks the inputs exist (no GPU)."""
+    """Warms the image build, checks the inputs exist, and records the token length of every multi-candidate
+    string (top-1 on summed log-probs is biased toward shorter candidates; the lengths go in the write-up)."""
+    from transformers import AutoTokenizer
+
+    from lib17 import candidates
+
     VOLUMES["/results"].reload()
     need = [f"{SRC13}/gen_ol_{row}.json", f"{SRC13}/acts_{row}.pt", f"{SRC15}/spec15_{row}.pt"]
-    return {"feature": row, "missing": [p for p in need if not Path(p).exists()], "skipped": True,
+    tok = AutoTokenizer.from_pretrained("Qwen/Qwen3.6-27B")
+    lengths = {t["id"]: [len(tok.encode(c, add_special_tokens=False)) for c in candidates(t)]
+               for reader in ("nla", "ol") for t in MC_TEMPLATES[row][reader]}
+    Path(f"{OUT}").mkdir(parents=True, exist_ok=True)
+    Path(f"{OUT}/cand_lengths_{row}.json").write_text(json.dumps(lengths))
+    VOLUMES["/results"].commit()
+    return {"feature": row, "missing": [p for p in need if not Path(p).exists()], "skipped": True, "cand_token_lengths": lengths,
             "guiv_inputs_present": {"items": (INPUTS / f"guiv_items_{row}.json").exists(),
                                     "phrasings": (INPUTS / "guiv_phrasings.json").exists()}}
 

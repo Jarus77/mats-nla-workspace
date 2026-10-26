@@ -1,0 +1,24 @@
+✓ Initialized. View run at 
+https://modal.com/apps/glitchcraft-inc/main/ap-wlLlZFlUnHVe0BS6LCiGTC
+✓ Created objects.
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/17_harden/mod
+│   al17.py
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/07_template_m
+│   ining/templates_frozen.json
+├── 🔨 Created mount 
+│   /Users/surajprasad/Downloads/interpretability/mats/experiments/13_new_rows/t
+│   emplates_frozen.json
+├── 🔨 Created mount /Users/surajprasad/Downloads/interpretability/mats/src/mats
+├── 🔨 Created mount PythonPackage:modal_common, PythonPackage:env, 
+│   PythonPackage:spec17, PythonPackage:lib17
+├── 🔨 Created function q2vn.
+├── 🔨 Created function f8rt.
+├── 🔨 Created function y4lm.
+└── 🔨 Created function g1ps.
+vocab {"feature": "tb_tablecol", "unembedding": "lm_head.weight", "gain": "1+w", "wall_s": 15.2, "arstmt_top10": ["\u6700\u540e\u662f", "\u00e1ros", "\u751a\u81f3\u8fd8\u6709", " etc", " finally", " \ub9c8\uc9c0\ub9c9\uc73c\ub85c", "\u00f6lker", "\u8fd8\u6709\u7684", "ONUS", "\u5176\u4ed6\u7684"], "peak": {"cm_raw": 5.6, "cm_jrem4": 4.9, "arexpl_raw": 5.8, "arexpl_jrem4": 5.3, "arspan_raw": 5.7, "arspan_jrem4": 5.2, "arstmt_raw": 6.2, "arstmt_jrem4": 5.7}}
+vocab {"feature": "tb_paren", "unembedding": "lm_head.weight", "gain": "1+w", "wall_s": 16.0, "arstmt_top10": ["\u60a8\u73b0\u5728\u7684\u4f4d\u7f6e", "unci", "\u5bf8", "\u672c\u73ed", "/null", "\u674e\u7389", "ugno", "\u8acb\u554f", " Antw", "\u5730\u5740\u4f4d\u4e8e"], "peak": {"cm_raw": 7.1, "cm_jrem4": 6.6, "arexpl_raw": 7.1, "arexpl_jrem4": 7.0, "arspan_raw": 7.1, "arspan_jrem4": 6.3, "arstmt_raw": 6.1, "arstmt_jrem4": 6.0}}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/glitchcraft-inc/main/ap-wlLlZFlUnHVe0BS6LCiGTC

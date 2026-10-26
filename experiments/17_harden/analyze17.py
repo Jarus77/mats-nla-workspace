@@ -15,7 +15,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent.parent / "src"))
-from lib17 import confusion, metrics_multi  # noqa: E402
+from lib17 import confusion, metrics_multi, pair_sign_rate  # noqa: E402
 from mats.metrics import auroc_labels  # noqa: E402
 from spec17 import CLASS_SETS, N_BOOT, ROWS, SEED  # noqa: E402
 
@@ -55,30 +55,11 @@ def mc_table(row: str, vol_dir: Path, n_boot: int = N_BOOT, reference: dict | No
             m = metrics_multi(lp.numpy(), b["truth"], b["y"], CLASS_SETS[row], ROWS[row]["values"],
                               np.asarray(b["clusters"]), n_boot=n_boot, seed=SEED)
             m["argmax_counts"] = confusion(lp.numpy(), b["y"], ROWS[row]["values"])
+            m["argmax_counts_centred"] = confusion(lp.numpy(), b["y"], ROWS[row]["values"], centre=True)
+            m["pair_sign_rate"] = pair_sign_rate(lp.numpy(), b["y"], CLASS_SETS[row], ROWS[row]["values"])
             out["cells"].setdefault(r, {})[tid] = m
     return out
 
-
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--rows", default=",".join(ROWS))
-    ap.add_argument("--vol", default=str(HERE / "results" / "vol"))
-    ap.add_argument("--n-boot", type=int, default=N_BOOT)
-    ap.add_argument("--xs", action="store_true", help="cross-scoring tables instead of the multi-candidate ones")
-    a = ap.parse_args()
-    for row in a.rows.split(","):
-        if a.xs:
-            res = xs_table(row, Path(a.vol), a.n_boot)
-            (HERE / "results" / f"analysis17_xs_{row}.json").write_text(json.dumps(res, indent=1, default=float))
-            print(row, json.dumps(res["cells"], default=float)[:400])
-            continue
-        res = mc_table(row, Path(a.vol), a.n_boot, two_candidate_reference(row))
-        (HERE / "results" / f"analysis17_mc_{row}.json").write_text(json.dumps(res, indent=1, default=float))
-        print(row, "n", res["n"], "cells", {r: list(t) for r, t in res["cells"].items()}, "ref", res["two_candidate_reference"])
-
-
-if __name__ == "__main__":
-    main()
 
 
 def xs_table(row: str, vol_dir: Path, n_boot: int = N_BOOT) -> dict:
@@ -106,3 +87,25 @@ def xs_table(row: str, vol_dir: Path, n_boot: int = N_BOOT) -> dict:
             cells[cell] = {"point": float(r.auroc), "lo": float(r.lo), "hi": float(r.hi), "n": int(r.n), "n_pairs": len(lo)}
         out["cells"][reader] = cells
     return out
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--rows", default=",".join(ROWS))
+    ap.add_argument("--vol", default=str(HERE / "results" / "vol"))
+    ap.add_argument("--n-boot", type=int, default=N_BOOT)
+    ap.add_argument("--xs", action="store_true", help="cross-scoring tables instead of the multi-candidate ones")
+    a = ap.parse_args()
+    for row in a.rows.split(","):
+        if a.xs:
+            res = xs_table(row, Path(a.vol), a.n_boot)
+            (HERE / "results" / f"analysis17_xs_{row}.json").write_text(json.dumps(res, indent=1, default=float))
+            print(row, json.dumps(res["cells"], default=float)[:400])
+            continue
+        res = mc_table(row, Path(a.vol), a.n_boot, two_candidate_reference(row))
+        (HERE / "results" / f"analysis17_mc_{row}.json").write_text(json.dumps(res, indent=1, default=float))
+        print(row, "n", res["n"], "cells", {r: list(t) for r, t in res["cells"].items()}, "ref", res["two_candidate_reference"])
+
+
+if __name__ == "__main__":
+    main()

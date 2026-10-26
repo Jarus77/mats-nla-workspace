@@ -48,6 +48,24 @@
       20,
       8
      ]
+    },
+    "argmax_counts_centred": {
+     "inside": [
+      11,
+      27,
+      21,
+      14
+     ],
+     "outside": [
+      20,
+      15,
+      27,
+      14
+     ]
+    },
+    "pair_sign_rate": {
+     "inside": 0.5068493150684932,
+     "outside": 0.32894736842105265
     }
    }
   },
@@ -84,6 +102,24 @@
       22,
       18
      ]
+    },
+    "argmax_counts_centred": {
+     "inside": [
+      8,
+      20,
+      19,
+      26
+     ],
+     "outside": [
+      14,
+      15,
+      26,
+      21
+     ]
+    },
+    "pair_sign_rate": {
+     "inside": 0.3424657534246575,
+     "outside": 0.631578947368421
     }
    }
   },
@@ -120,6 +156,24 @@
       49,
       0
      ]
+    },
+    "argmax_counts_centred": {
+     "inside": [
+      44,
+      8,
+      8,
+      13
+     ],
+     "outside": [
+      5,
+      34,
+      24,
+      13
+     ]
+    },
+    "pair_sign_rate": {
+     "inside": 1.0,
+     "outside": 0.0
     }
    }
   }
