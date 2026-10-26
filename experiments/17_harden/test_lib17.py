@@ -172,7 +172,7 @@ def test_xs_table_two_by_two_auroc(tmp_path):
 def test_analyze17_xs_entry_point_runs_without_name_error(tmp_path):
     import subprocess
 
-    r = subprocess.run([sys.executable, str(HERE / "analyze17.py"), "--xs", "--rows", "tb_tablecol", "--vol", str(tmp_path)],
+    r = subprocess.run([sys.executable, str(HERE / "analyze17.py"), "--xs", "--rows", "tb_tablecol", "--vol", str(tmp_path), "--out", str(tmp_path)],
                        capture_output=True, text=True)
     assert r.returncode == 0 and "NameError" not in r.stderr, r.stderr[-500:]
 

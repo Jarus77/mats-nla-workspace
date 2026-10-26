@@ -95,15 +95,17 @@ def main() -> None:
     ap.add_argument("--vol", default=str(HERE / "results" / "vol"))
     ap.add_argument("--n-boot", type=int, default=N_BOOT)
     ap.add_argument("--xs", action="store_true", help="cross-scoring tables instead of the multi-candidate ones")
+    ap.add_argument("--out", default=str(HERE / "results"))
     a = ap.parse_args()
+    out_dir = Path(a.out)
     for row in a.rows.split(","):
         if a.xs:
             res = xs_table(row, Path(a.vol), a.n_boot)
-            (HERE / "results" / f"analysis17_xs_{row}.json").write_text(json.dumps(res, indent=1, default=float))
+            (out_dir / f"analysis17_xs_{row}.json").write_text(json.dumps(res, indent=1, default=float))
             print(row, json.dumps(res["cells"], default=float)[:400])
             continue
         res = mc_table(row, Path(a.vol), a.n_boot, two_candidate_reference(row))
-        (HERE / "results" / f"analysis17_mc_{row}.json").write_text(json.dumps(res, indent=1, default=float))
+        (out_dir / f"analysis17_mc_{row}.json").write_text(json.dumps(res, indent=1, default=float))
         print(row, "n", res["n"], "cells", {r: list(t) for r, t in res["cells"].items()}, "ref", res["two_candidate_reference"])
 
 
