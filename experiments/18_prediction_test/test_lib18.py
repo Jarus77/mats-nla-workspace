@@ -90,3 +90,27 @@ def test_frozen_probe_auroc_is_high_when_recon_keeps_the_separating_direction():
     bad = torch.randn(n, d)                # no class information
     assert L.frozen_probe_auroc(X, good, y, groups) > 0.85
     assert abs(L.frozen_probe_auroc(X, bad, y, groups) - 0.5) < 0.25
+
+
+def test_score_cells_and_accuracy():
+    import score18 as S
+
+    pred = {"nla_prompted": True, "nla_states": True, "nla_names_complement": False, "ol_prompted": False,
+            "ol_exhibits": False, "ol_states": False, "jlens_prompted": False}
+    obs = {"nla_prompted": 0.97, "nla_states": 0.31, "nla_names_complement": 0.05, "ol_prompted": 0.74,
+           "ol_exhibits": 0.0, "ol_states": 0.0, "jlens_prompted": 0.52}
+    c = S.score_row(pred, obs)
+    assert c["nla_prompted"]["correct"] and c["nla_states"]["correct"] and not c["ol_prompted"]["correct"]
+    assert c["ol_prompted"]["observed_high"] is True
+    acc = S.accuracy([c, c])
+    assert acc["n"] == 14 and acc["correct"] == 12 and 0.5 < acc["lo"] < acc["point"] < acc["hi"] <= 1.0
+    conf = S.confusion([c])
+    assert conf["ol"]["pred_low_obs_high"] == 1 and conf["nla"]["pred_high_obs_high"] == 2
+
+
+def test_complement_rate_counts_unmarked_items_where_the_unmarked_candidate_wins():
+    import score18 as S
+
+    lo = [2.0, 1.0, -0.5, 0.3]           # lp(marked) - lp(unmarked)
+    y = [1, 1, 0, 0]                     # 1 = marked class
+    assert S.complement_rate(lo, y) == 0.5   # of the two unmarked items, one has lo < 0

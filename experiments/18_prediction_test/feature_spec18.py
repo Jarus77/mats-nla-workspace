@@ -70,3 +70,7 @@ JREM_RANK = 1536
 REL_DOSE = 0.11
 K_NULL = 20
 SEED_NULL = 18
+
+# Observed-cell thresholds (prereg §3, right-hand column): a cell is "high" at or above these.
+CELL_THRESH = {"nla_prompted": 0.85, "nla_states": 0.20, "nla_names_complement": 0.20,
+               "ol_prompted": 0.70, "ol_exhibits": 0.30, "ol_states": 0.05, "jlens_prompted": 0.70}
