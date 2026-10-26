@@ -78,6 +78,31 @@ Rows 12 and 13 are chosen to be statement-sayable and J-enriched but not used at
 account can fail on them (prediction: OL and J-lens high, NLA states low). Rows 14 and 15 are in-workspace
 controls (prediction: every reader high).
 
+
+**Instruments run and predictions filled, 26 Oct (before any reader runs).** `experiments/18_prediction_test/results/instruments18.json`,
+sha256 `2db98042fe02a448e287e0a23a4ba87a1417164ddcce19decd4215075eeb77a6`; the table below is `results/predictions18.md`.
+Two clarifications were made after the first instrument pass and before this fill, both recorded in §2: the span
+instrument is the frozen-probe AUROC (exp 14's measure), and the used rule is two-sided. Stance turned out not
+readable (0.45), so it is a negative control rather than the intended sayable-but-unused row; the rules are applied
+to it as written (its J-enrichment of 1.51 predicts the J-lens high, a prediction we expect to fail and will score).
+
+Thresholds: readable ≥ 0.8, span ≥ 0.8, statement ≥ 0.3, used z ≥ 3.0, J-enriched ≥ 1.5. Predicted cells: H = predicted high, L = predicted low.
+
+| row | next-token set | constrains next | short value | readable | span (frozen probe) | stmt | used z | J-enr | NLA prompted | NLA states | NLA names complement | OL prompted | OL exhibits | OL states | J-lens prompted |
+|---|---|---|---|---:|---:|---:|---:|---:|---|---|---|---|---|---|---|
+| json_depth | '}' | yes | yes | 1.00* | 0.99* | 0.13 | 2.61 | 1.10 | H | L | L | H | H | L | L |
+| latex_math | '$' | yes | yes | 1.00* | 1.00* | 0.01 | 22.15* | 1.42 | H | H | L | H | H | L | L |
+| py_string | '"' "'" | yes | yes | 1.00* | 0.98* | 0.01 | -12.24* | 1.01 | H | H | L | H | H | L | L |
+| call_arg | ',' ')' | yes | yes | 1.00* | 1.00* | 0.09 | 9.05* | 1.04 | H | H | L | H | H | L | L |
+| md_heading | none | no | yes | 1.00* | 0.68 | -0.01 | n/a | 1.09 | H | L | L | L | L | L | L |
+| csv_col | ',' '\n' | yes | yes | 1.00* | 0.71 | 0.11 | 0.29 | 0.93 | H | L | L | L | L | L | L |
+| html_depth | '</' | yes | yes | 1.00* | 0.77 | 0.02 | -0.98 | 1.10 | H | L | L | L | L | L | L |
+| stance_word | none | no | yes | 0.45 | 0.46 | 0.14 | n/a | 1.51* | L | L | L | L | L | L | H |
+| ij2_lang | none | no | yes | 0.99* | 1.00* | 0.51* | n/a | 1.38 | H | L | L | H | H | L | H |
+| bk_quote | '"' | yes | yes | 0.82* | 0.68 | 0.23 | 3.83* | 1.62* | H | H | L | L | L | L | H |
+
+* = passes its threshold.
+
 ## 5. Scoring rule
 
 A cell counts as correct when the observed value lands on the declared side of its threshold. Report
@@ -92,7 +117,7 @@ used) keeps its instrument-based prediction; the role note is for reading only.
 1. Build items for the new rows; freeze the item banks (sha256 in this file). Done 26 Oct for ten rows (§4).
 2. Run the instruments (one GPU job: probe, NLA-reconstructor span and statement passes, model-side push,
    enrichment). No reader is run in this job.
-3. Fill the instrument columns and the predicted cells in §4. Record this file's sha256 in `decisions.md`.
+3. Fill the instrument columns and the predicted cells in §4. Record this file's sha256 in `decisions.md`. Done 26 Oct; the predictions file hash is above and in D41.
 4. Run the readers: prompted log-odds on frozen phrasings (mined on the mining split with exp 07's
    procedure, frozen before scoring), spontaneous judge on 40 × 8 free readouts, the multi-candidate argmax
    for the complement check. Oracle Lens also at layers 36, 44, 52 (prompted only) for the sayable-vs-readable
