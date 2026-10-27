@@ -52,6 +52,71 @@ One Modal stage (`modal24.py`, app `t6bn`, one H100; `run24.sh` chains launch, p
    bag was already high (0.96 / 0.88): string state is carried by vocabulary, position state by arrangement.
 3. The two Markdown rows (md_heading, md_list) stay near 0.5 everywhere.
 
-## Results
+## Results (27 Oct, 18:35 UTC; `results/table24.md`, `results/recon24_{row}.json`; 160 selection items per row; one H100, 14 minutes, about $1)
 
-(pending)
+Frozen-probe AUROC through the OL-AR at layer 44 (probe fit on the true-span rebuilds, applied frozen to each
+condition's rebuild), with the grouped cross-validated probe on the condition alone in parentheses:
+
+| row | span_32 | bag_32 | Oracle Lens readout | same, shuffled | NLA explanation | same, shuffled |
+|---|---:|---:|---:|---:|---:|---:|
+| py_string | 1.00 | 0.55 (0.50) | 0.80 (0.97) | 0.61 (0.73) | 0.56 (0.89) | 0.53 (0.70) |
+| js_string | 0.97 | 0.44 (0.63) | 0.80 (0.92) | 0.54 (0.60) | 0.51 (0.81) | 0.42 (0.65) |
+| latex_math | 0.99 | 0.59 (0.67) | 0.78 (0.93) | 0.58 (0.68) | 0.44 (0.81) | 0.50 (0.72) |
+| py_arg | 0.97 | 0.53 (0.47) | 0.61 (0.58) | 0.46 (0.36) | 0.52 (0.59) | 0.50 (0.55) |
+| json_depth | 0.98 | 0.71 (0.85) | 0.74 (0.92) | 0.67 (0.76) | 0.51 (0.83) | 0.53 (0.72) |
+| html_depth | 0.99 | 0.74 (0.98) | 0.73 (0.78) | 0.62 (0.76) | 0.44 (0.90) | 0.57 (0.66) |
+| md_heading | 0.63 | 0.51 (0.50) | 0.47 (0.57) | 0.55 (0.52) | 0.44 (0.60) | 0.46 (0.50) |
+| md_list | 0.59 | 0.53 (0.60) | 0.50 (0.68) | 0.57 (0.55) | 0.46 (0.49) | 0.47 (0.58) |
+| tb_tablecol | 1.00 | 0.62 (0.57) | 0.57 (0.71) | 0.45 (0.64) | 0.47 (0.86) | 0.48 (0.50) |
+| tb_paren | 0.94 | 0.64 (0.63) | 0.60 (0.77) | 0.51 (0.67) | 0.69 (0.77) | 0.53 (0.64) |
+
+Cosine of each condition's class-mean direction with the true span's (layer 44): Oracle Lens readout 0.31 to 0.58 on
+the six readable natural rows, 0.37 / 0.32 on the position rows; shuffled 0.00 to 0.26; NLA explanation -0.10 to
+0.16 everywhere; bag_32 0.01 to 0.32. Layer 40 repeats every number within 0.04 (`table24.md`, lower block).
+
+### Scoring the predictions
+
+| prediction | result |
+|---|---|
+| 1. both readers' intact readouts >= 0.70 frozen on the six readable rows | Oracle Lens 5 of 6 (py_arg 0.61); NLA 0 of 6 (0.44 to 0.56). By the cross-validated probe instead: Oracle Lens 5 of 6, NLA 5 of 6 (py_arg 0.58 / 0.59 the miss both times) |
+| 2. shuffling hurts the position rows, not the string rows | wrong about the string rows: shuffling costs 0.19 to 0.26 frozen (0.24 to 0.32 cross-validated) on py_string and js_string too. On the position rows Oracle Lens's intact readout is already at the bag level frozen (0.57 / 0.60 against 0.62 / 0.64) and modestly above it cross-validated (0.71 / 0.77 against 0.57 / 0.63) |
+| 3. Markdown rows near 0.5 | holds (0.44 to 0.68) |
+
+## Reading
+
+1. **Oracle Lens's readouts carry string, math and depth state through a decoder with no stake in either reader.**
+   Frozen 0.73 to 0.80 on five of six readable rows, cross-validated 0.78 to 0.97, class direction 0.31 to 0.58 of the
+   way to the true span's. Lower than through the NLA critic (exp 20: 0.70 to 0.94) with the same ordering, and the
+   one row under the line is the same (call argument: 0.70 there, 0.61 here). The exp 20 reading "Oracle Lens's
+   readout re-induces the state, without naming it" does not depend on the critic.
+2. **The NLA's explanations carry the state, but not along the span's direction.** Frozen AUROC is at chance and the
+   class-direction cosine is zero, yet a probe fit on the explanations' own rebuilds separates the classes at 0.81
+   to 0.90 on five of six readable rows and at 0.86 on table column. The OL-AR was trained on spans; it maps a
+   description to a region unlike the span's image, and inside that region the two classes sit apart. This is the
+   in-distribution part of exp 20's NLA column made visible: through its own critic the explanation lands on the
+   span direction (cosine 0.77 to 0.90), through a span-trained decoder it does not. So two claims separate. The
+   weak one, "the state is recoverable from the NLA's explanation", holds under both decoders and the text bag. The
+   strong one, "the explanation re-induces the state as the span would", is a property of the NLA's critic. The
+   thesis sentence should say that the readers' outputs carry the state, Oracle Lens's the way a continuation does,
+   the NLA's the way a description does.
+3. **Under this decoder the carrying is arrangement, not vocabulary, for both readers.** Shuffling a readout's tokens
+   costs 0.19 to 0.32 AUROC on every row where the intact readout carried the state, string rows included. The OL-AR
+   is a window map (bag_32 0.44 to 0.74 against span_32 0.97 to 1.00), so a decoder that reads text as the model
+   reads it needs the order. Exp 20's bag-of-tokens classifier reached 0.96 / 0.88 on the string rows because a bag
+   classifier is free to learn vocabulary cues; a reading decoder is not. Prediction 2 was wrong about the decoder,
+   not about the readouts: the state is in the words and in their arrangement, and which one a decoder uses is the
+   decoder's property.
+4. **Position rows.** Oracle Lens's readout carries table column and parenthesis at the bag level by the frozen
+   measure and modestly above it cross-validated, in line with exp 16 (0.01 of the position signal in the part of the
+   vector Oracle Lens's words rebuild, same decoder, layer 44) and exp 20 (0.64 / 0.67 through the critic). The two
+   decoders agree: Oracle Lens's words carry little position; the NLA's description carries table column (0.86
+   cross-validated) by describing the format, as exp 20 found.
+5. **What does not change.** Neither readout names any of these states (exp 20 examples, exp 23); the Markdown rows
+   are at chance through every decoder, consistent with their probe AUROC of 0.63 / 0.65 at layer 42.
+
+## What this changes
+
+The "both readers carry it" sentence survives a second decoder, with one wording change for the NLA (recoverable
+from the explanation, not re-induced along the span direction). The exp 20 NLA column (0.93 to 0.99) should be
+quoted together with this one and the text bag, not alone. The vocabulary-versus-arrangement question is answered
+"both, and the decoder decides"; the derivation note's consequence C5 is updated to say so.

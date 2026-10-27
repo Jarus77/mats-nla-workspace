@@ -1,0 +1,87 @@
+{
+ "feature": "latex_math",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.98671875,
+    "span_128": 0.9815625,
+    "bag_32": 0.58984375,
+    "ol_readout": 0.78484375,
+    "ol_readout_shuffled": 0.58109375,
+    "nla_readout": 0.4415625,
+    "nla_readout_shuffled": 0.49546875
+   },
+   "cv_auroc": {
+    "span_32": 0.98671875,
+    "span_128": 0.98359375,
+    "bag_32": 0.6684375,
+    "ol_readout": 0.930625,
+    "ol_readout_shuffled": 0.67796875,
+    "nla_readout": 0.8096875,
+    "nla_readout_shuffled": 0.724375
+   },
+   "class_direction_cos": {
+    "span_32": 1.0,
+    "span_128": 0.8407458066940308,
+    "bag_32": 0.2849732041358948,
+    "ol_readout": 0.5785530805587769,
+    "ol_readout_shuffled": 0.11582598090171814,
+    "nla_readout": -0.10039986670017242,
+    "nla_readout_shuffled": 0.024881426244974136
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.991875,
+    "span_128": 0.9840625,
+    "bag_32": 0.60140625,
+    "ol_readout": 0.7384375,
+    "ol_readout_shuffled": 0.5571875,
+    "nla_readout": 0.45609375,
+    "nla_readout_shuffled": 0.468125
+   },
+   "cv_auroc": {
+    "span_32": 0.991875,
+    "span_128": 0.98453125,
+    "bag_32": 0.670625,
+    "ol_readout": 0.91765625,
+    "ol_readout_shuffled": 0.67,
+    "nla_readout": 0.82921875,
+    "nla_readout_shuffled": 0.72421875
+   },
+   "class_direction_cos": {
+    "span_32": 0.9999997615814209,
+    "span_128": 0.8421008586883545,
+    "bag_32": 0.2833884358406067,
+    "ol_readout": 0.5889472961425781,
+    "ol_readout_shuffled": 0.09840583801269531,
+    "nla_readout": -0.09134534001350403,
+    "nla_readout_shuffled": 0.009248428978025913
+   }
+  }
+ },
+ "examples": {
+  "latex_math_maintexd67c4506b01d_0": {
+   "ol": "- \\mathbb{R}$ represents the cost function. It is defined as a strictly increasing, convex mapping\n- \\mathbb{R}_{\\geq 0}$, where $C'(K) > 0$ and $C''(K) \\geq\n- \\mathbb{R}$ that captures the operational costs of maintaining a specific level of capacity $C$. This function must be convex ($C''(K) \\ge\n- \\mathbb{R}$ is the cost function, where $C''(K) > 0$, ensuring convexity of costs with respect to",
+   "nla": "Formal academic/technical pricing paper establishing inventory model, using numbered assumptions with precise mathematical notation throughout.\n\nThe document is mid-list of formal assumptions (A1, A2...), following economics/econometric report style with numbered lemmas and variable definitions for cost and pricing optimization.\n\nFinal token \"\u2192\" is part of a mathematical domain/codomain declaration for the fixed cost function \"C(r): \u211d+ \u2192\", requiring an immediate range space (likely \"\u211d\" or \"\u211d+\") to complete the function signature. \"Assumption 3: General Properties of Costs The cost function is a continuously differentiable function\" economist.\n\"The cost function satisfying the conditions:\n- A standard cost function C\u1d62(r): \u211d+ \u2192\" \u2014 continuation of formal mathematical definition requiring range and properties (e.g., \"\u211d\").",
+   "span_32": "\n\n\\begin{assumption}[Cost Function]\\label{ass:cost}\nThe cost function $c: \\mathbb{R}_+ \\rightarrow"
+  },
+  "latex_math_09proofstex6c36ea98e132_0": {
+   "ol": "- \\frac{C}{\\sigma}) + \\Phi(Z \\leq \\mu+\\sigma\n- c + 2\\delta) \\right) \\approx \\Phi(\\lambda^{-1}(1-p)) \\) | Asymptotic: P(z1 \\le\n- \u67d0\u4e2a\u4e34\u754c\u503c) + P(Z \u2264 \u67d0\u4e2a\u4e34\u754c\u503c) \\) | \u5f53\u6709\u65e0\u9650\u91c7\u6837\u65f6\uff0c\u53ea\u9700\u5355\u8fb9\u622a\u65ad\u5373\u53ef\u903c\u8fd1\n- Z \\le B - \\mu + \\sqrt{2}\\sigma) ) $ \u4f5c\u4e3a\u5355\u4fa7\u4e0a\u9650\u63a7\u5236\uff08\u6ce8\u610f\uff1a",
+   "nla": "Mathematical/statistical proof structure nearing its conclusion, presenting successive cases of consistency functions for median estimation with asymmetric weights in Banach/Fr\u00e9chet spaces.\n\nThe document follows a pattern of stating then quoting results, working through increasingly complex inequality sets for coverage probability bounds in asymptotic uniformity scenarios.\n\nThe final token \"\u2264\" is mid-formula, part of a reformulated probability bound expression \"P(|Z_1+Z_2|\u2264c) \u2192...\" resolved into constituent parts, now requiring: \"P(N_1\u2264c)\" contributions.\n\"When N is infinite, this converges to (P(standard normal\u2264c)...\" half-interval collapse pattern: \"P(standard normal|variable|\u2264c). \u2192 P(standard normal\u2264\" needs a similarly simplified expression, likely \"c and...\" followed by a single bound.",
+   "span_32": " is $\\Prob(|Z/W|\\le k)=1-\\alpha$. As $r\\to\\infty$, dominated convergence gives $\\Prob(Z/W\\le"
+  },
+  "latex_math_arxivtex21c8af525309_0": {
+   "ol": "- w}_s \\in \\mathbb{R}^d$ | Vector representing server $\\vec\n- v}_t \\in \\mathbb{R}^d$ & \\text{Public Label } y \\in \\{\\pm\n- {w} \\in \\mathbb{R}^n$ is the query vector; $\\vec{w}_t \\in \\mathbb\n- {a}_t \\in \\mathbb{R}^d$ be server $s$'s weight vector at time $",
+   "nla": "Formal ML theory/technical notes genre with LaTeX notation conventions established throughout, predicting continued mathematical notation.\n\nThe text is mid-sentence listing a data domain definition \"where $x_i \\in \\{0, 1\\}$, $\\vec{w}^* \\in \\mathbb{R}^d$\", with the inner product formula $Z_i = y_i \\langle y_i, \\vec{w}^* \\cdot x_i \\rangle$ still incomplete.\n\nFinal token \"(\\cos(\\langle \\vec\" opens an inequality constraint on the privacy parameter involving the model weight vector $\\vec{w}$, so next token must be \"$w$\" continuing the vector notation (e.g., \"w}$ denotes vector $x$\").</br> Named vectors use \"vec\" formatting, suggesting \"w_x\" continues next.",
+   "span_32": "^k\\beta_i\\sigma(\\vec w_i\\cdot\\x)$,\nwhere $\\beta_i\\in[0,1]$ and $\\|\\vec"
+  },
+  "latex_math_chedpairstex330329a1f472_0": {
+   "ol": "- H}_1, \\mathcal\n- H}_X)$ and $\\mathcal{H}_Y$: Two separable Banach spaces where the functional time series $X: \\mathcal\n- H}_X, \\mathcal{H}_Y)$ denote two separable Banach spaces where the functional data live. Let $\\mathcal\n- {H})$ be separable Banach spaces. Let $\\mathcal{H}_X$ be the space where the functional covariates reside",
+   "nla": "Structured academic/stats paper format establishes a list of mathematical assumptions using LaTeX formatting throughout. The series \"statsmodels for Functional Data\" signals quantitative/statistical density.\n\nMathematical notation pattern: assumption list with labeled parts \"(i)\", \"(ii)...And so on\" covering standard functional data setup, with probability spaces, Hilbert spaces, etc. expected.\n\n\"(i) $(\\mathcal\", opening a mathematical tuple/list entry; \"Let $(\\Omega, \\mathcal{F}, \\mathbb{P})$ be a probability space;\\n(ii) $(\\mathcal\" requires completing a Hilbert or Banach space notation, likely for function spaces (e.g., $\\mathcal{X}$, $\\mathcal{H}$).\nThird element: introducing a mean/process space symbol like $\\mathcal{H}$ or $\\mathcal{Z}$, a standard mathematical object definition.",
+   "span_32": " Functional Data}\\label{sec:setup}\n\nLet $(\\Omega, \\mathcal{A}, P)$ be a probability space, $(\\mathcal"
+  }
+ }
+}

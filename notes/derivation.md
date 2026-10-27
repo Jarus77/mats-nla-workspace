@@ -83,7 +83,15 @@ of `d_c` whether or not `u` is present. So the state is recoverable from the rea
 decoder, to the extent that a 32-token span can carry it (the `span` instrument). Exp 20: Oracle Lens readouts
 rebuild the six readable natural rows at 0.70 to 0.94, the NLA's at 0.93 to 0.99, the same tokens shuffled at
 0.30 to 0.65; a bag-of-tokens classifier on the readout text alone agrees (0.72 to 0.96 on the string and depth
-rows). Exp 24 (running) repeats the decode through the second reconstructor and adds a shuffled-readout control.
+rows). Exp 24 repeats the decode through Oracle Lens's reconstructor, which was trained on spans and on neither
+reader's output: Oracle Lens's readouts carry the state along the span's own direction (frozen probe 0.73 to 0.80 on
+five of six readable rows), the NLA's explanations carry it in a direction of their own (frozen probe at chance, a
+probe fit on the explanations' rebuilds 0.81 to 0.90), and shuffling either readout's tokens costs 0.2 to 0.3 on
+every carrying row. So C5 holds for both readers with a distinction: Oracle Lens carries `c` as a continuation
+would (A1 applies to its output directly), the NLA carries it as a description that a span-trained decoder does
+not place on the span axis. Whether a decoder reads vocabulary or arrangement is the decoder's property, not the
+readout's: a bag-of-tokens classifier recovers the string rows from vocabulary (exp 20), a window map needs the
+order (exp 24).
 
 C6 (use is invisible to the reward). Whether the subject model acts on `c` (the USED push) enters neither A1 nor
 A2, so naming cannot track use. Exp 19: LaTeX math is the most used row (push z +25.6) and is never stated; the

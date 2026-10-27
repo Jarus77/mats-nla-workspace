@@ -1,0 +1,87 @@
+{
+ "feature": "py_string",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.9996875,
+    "span_128": 0.99890625,
+    "bag_32": 0.55484375,
+    "ol_readout": 0.79625,
+    "ol_readout_shuffled": 0.606875,
+    "nla_readout": 0.561875,
+    "nla_readout_shuffled": 0.53265625
+   },
+   "cv_auroc": {
+    "span_32": 0.9996875,
+    "span_128": 0.9959375,
+    "bag_32": 0.49796875,
+    "ol_readout": 0.965625,
+    "ol_readout_shuffled": 0.73421875,
+    "nla_readout": 0.88578125,
+    "nla_readout_shuffled": 0.69765625
+   },
+   "class_direction_cos": {
+    "span_32": 1.000000238418579,
+    "span_128": 0.8266419172286987,
+    "bag_32": 0.15801209211349487,
+    "ol_readout": 0.4529991149902344,
+    "ol_readout_shuffled": 0.2254171222448349,
+    "nla_readout": 0.0073112742975354195,
+    "nla_readout_shuffled": -0.014397135004401207
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.99953125,
+    "span_128": 0.9984375,
+    "bag_32": 0.556875,
+    "ol_readout": 0.78140625,
+    "ol_readout_shuffled": 0.601875,
+    "nla_readout": 0.54671875,
+    "nla_readout_shuffled": 0.5275
+   },
+   "cv_auroc": {
+    "span_32": 0.99953125,
+    "span_128": 0.99578125,
+    "bag_32": 0.5259375,
+    "ol_readout": 0.939375,
+    "ol_readout_shuffled": 0.72625,
+    "nla_readout": 0.89703125,
+    "nla_readout_shuffled": 0.68
+   },
+   "class_direction_cos": {
+    "span_32": 1.0,
+    "span_128": 0.8327259421348572,
+    "bag_32": 0.1433192640542984,
+    "ol_readout": 0.4525741934776306,
+    "ol_readout_shuffled": 0.20117036998271942,
+    "nla_readout": 0.007038487121462822,
+    "nla_readout_shuffled": -0.014064672403037548
+   }
+  }
+ },
+ "examples": {
+  "py_string_oolmanagerpy4ae993caea98_0": {
+   "ol": "- \u5728 future versions of requests, not just a warning. Removing it will cause an error\n- in future versions of urllib3 and will be removed. Setting it will cause an error\n- /error in future versions of urllib3 if used. It's a deprecated parameter. Removing it will cause an error\n- \u5728 the next major version of urllib3, and removing it will cause an error. | `conn = urllib3.HTTPConnectionPool(...) # This will error",
+   "nla": "Python bug report/logs format: traceback followed by deprecation warnings, now escalating to actionable developer guidance.\n\nThe \"RequestsWarning: PrepConnection verify argument is no longer used. This has been deprecated since urllib3 v1.4\" warning signals a final explanation about removal or consequence of the deprecated feature.\n\nFinal fragment \"PrepConnection is deprecated and should no longer be used. This will cause an error\" is mid-sentence, strongly expecting completion such as \"in a future version\" specifying timeline or severity, e.g., \"in a future release of urllib3.\"\n\"urllib3 warning\": \"You have not set a verification callback for `urllib3` SSL. This is deprecated and will no longer be used soon. This will cause an error\" \u2014 a standard library warning format concluding with a consequence statement about deprecation.",
+   "span_32": ":\n            warnings.warn(\n                \"The 'strict' parameter is no longer needed on Python 3+. \"\n                \"This will raise an error"
+  },
+  "py_string_sdataframepy27944a263104_0": {
+   "ol": "- be empty. Please provide a valid DataFrame.\", \"DataFrames cannot be empty\n- be empty; must have at least one row and column.\", error_type=\"ValueError\")  # Custom error for empty\n- be empty! Expected a DataFrame with at least one row and column.\"  # Custom Error for Empty\n- be empty. A DataFrame must have data.\"  # (Playful but technical error message)\n*   \"DataFrame cannot be empty.",
+   "nla": "Technical framework documentation listing required tool signatures, schemas, and parameter specifications in a structured format. The pattern establishes machine-readable LLM function definitions.\n\nError message pattern: a pandas DataFrame validation error has been introduced, implying a specific failure condition description for missing/invalid schema inputs.\n\nFinal token \"cannot\" is mid-sentence within a mock `CustomDB` error message string (\"Error creating table from DataFrame: 'CustomDB': \\n'Error: df is empty \u2192 ValueError: DF cannot\"), requiring completion with the validation constraint text, most likely \"be empty\" or \"not exist.\"\n\"DataFrame\"\nHowever, through a UI prompt, the user enters the schema object to pass to `db.connect`.\n</br>the error message continues with `df_info` parameter value, with \"raise ValueError(f\\\"df 'Invalid':\\n\\\"DF cannot\"\"\n</br>",
+   "span_32": " pd\n\n        if issubclass(type(val), pd.DataFrame):\n            return val\n        if pd.DataFrame(val).empty:\n            msg = \"DataFrame cannot"
+  },
+  "py_string_pioverridepy2b3e667f41e9_0": {
+   "ol": "- \u66f4\u597d (might work with your data type). For example, `scipy.optimize.solve\n- \u5728\u8fd9\u91cc (work here) instead. Check the documentation for those functions to see if they accept sparse matrices. If\n- \u5f97\u66f4\u597d\uff08\u6bd4\u5982 `scipy.sparse.linalg`\uff09\u3002\u8bf7\u67e5\u770b SciPy \u6587\u6863\uff0c\u770b\u770b\u662f\u5426\u6709\u9002\u7528\u4e8e\u7a00\u758f\u77e9\u9635\u7684\u51fd\u6570\u3002\u5982\u679c\u90fd\u6ca1\u6709\uff0c\n- \uff08work\uff09for your data type, or perhaps `scipy.sparse.linalg`? For example, `scipy.sparse.linalg.svd` might work",
+   "nla": "Python error message is mid-quotation, requiring completion of the scipy `scipy.linalg.eig` error string about inappropriate input types.\n\nThe instructional/journal structure presents a Python lesson using IPython magic commands, with scipy/numpy eigenvalue examples as the focus.\n\nFinal token \"work\" ends an incomplete error message clause (\"this function cannot handle input XXX. Perhaps one of the functions in scipy.sparse might work\"), strongly implying continuation like \"for you\" or \"for you.\" \u2014 standard scipy error phrasing.\n</p>\"A `TypeError` will be raised with the error message\" followed by: \"Error message says ...\\n'...' is not supported by scipy.linalg.eig. Perhaps a different scipy function in a different package might work\"\n\nThe phrase \"Perhaps a function in scipy.linalg might work\" expected.",
+   "span_32": "Sparse arrays/matrices are not supported by this function. '\n                'Perhaps one of the `scipy.sparse.linalg` functions '\n                'would work"
+  },
+  "py_string_atexparserpye4e1cad2a8ee_0": {
+   "ol": "- \u5b9a\u4e49 for rule $ruleName; return true; } /* default predicate\n- (predicate) defined for this production. Defaulting to true. // No predicate\n- \uff08predicate\uff09 found for alt label 2. Use 'semantic predicates' if needed. No predicate\n- \uff08predicate\uff09defined for production #2. Using default semantic predicate. No predicate",
+   "nla": "Java parser/Syntax class template from ANTLR-generated code, establishing boilerplate structure for grammar predicates and methods for EMP instruction format.\n\nThe code snippet follows standard ANTLR 4 generated Java parser output conventions, with method signatures for rule predicates like `synpred21_DecimalLiteral()`.\n\nFinal token \"no predicate\" is mid-sentence within a fallback return statement condition message (`\" + (index < 0 ? \"No predicate`), expecting completion like \"found for rule XXX\"` mirroring ANTLR's standard predicate syntax.\n\"Returns the result of the action thru a predicate, if one is declared for this rule.\"\n\n\"public boolean sempred(..., String ruleName, int actionIndex) { // ...\\n else return NoPredicate(null); // 'no predicate\" \u2014 reference to ANTLR predicate arrays expected.",
+   "span_32": "unc_sempred\n        pred = self._predicates.get(ruleIndex, None)\n        if pred is None:\n            raise Exception(\"No predicate"
+  }
+ }
+}

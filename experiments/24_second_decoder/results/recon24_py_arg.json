@@ -1,0 +1,87 @@
+{
+ "feature": "py_arg",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.96890625,
+    "span_128": 0.97890625,
+    "bag_32": 0.5290625,
+    "ol_readout": 0.61,
+    "ol_readout_shuffled": 0.4575,
+    "nla_readout": 0.516875,
+    "nla_readout_shuffled": 0.49625
+   },
+   "cv_auroc": {
+    "span_32": 0.96890625,
+    "span_128": 0.98484375,
+    "bag_32": 0.47484375,
+    "ol_readout": 0.57640625,
+    "ol_readout_shuffled": 0.3646875,
+    "nla_readout": 0.5940625,
+    "nla_readout_shuffled": 0.5521875
+   },
+   "class_direction_cos": {
+    "span_32": 0.9999998807907104,
+    "span_128": 0.8264903426170349,
+    "bag_32": 0.05177655816078186,
+    "ol_readout": 0.3269590139389038,
+    "ol_readout_shuffled": -0.0038124071434140205,
+    "nla_readout": 0.05676192045211792,
+    "nla_readout_shuffled": 0.00488473754376173
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.981875,
+    "span_128": 0.98578125,
+    "bag_32": 0.51671875,
+    "ol_readout": 0.619375,
+    "ol_readout_shuffled": 0.45859375,
+    "nla_readout": 0.544375,
+    "nla_readout_shuffled": 0.49328125
+   },
+   "cv_auroc": {
+    "span_32": 0.981875,
+    "span_128": 0.98875,
+    "bag_32": 0.46109375,
+    "ol_readout": 0.50046875,
+    "ol_readout_shuffled": 0.3928125,
+    "nla_readout": 0.59484375,
+    "nla_readout_shuffled": 0.5584375
+   },
+   "class_direction_cos": {
+    "span_32": 1.000000238418579,
+    "span_128": 0.8398004174232483,
+    "bag_32": 0.07377608120441437,
+    "ol_readout": 0.43275967240333557,
+    "ol_readout_shuffled": 0.02467845380306244,
+    "nla_readout": 0.06784920394420624,
+    "nla_readout_shuffled": 0.018891848623752594
+   }
+  }
+ },
+ "examples": {
+  "py_arg_pydecimalpy9cacc75d5fc1_0": {
+   "ol": "- )\", signaling a DivisionByZero\n- Division\" if sign_finite == 0  # Note: DecimalDivByZero\n- \"]  # If context.traps_zero is True, raise DivByZero\n- /Zero (if `Decimal.Context.trap[Decimal.DivisionByZero\n- \uff08Division by Zero\uff09` \u5f02\u5e38\uff0c\u7b26\u53f7\u4e0e Infinity \u76f8\u540c\u3002 | `Decimal('inf') / Decimal('0')` \u2192 `DivisionByZero",
+   "nla": "Technical specification/glossary format of IEEE 754 decimal floating-point module, with dense formatting and function documentation throughout Python's `decimal` module.\n\nList of edge-case rounding rules is being enumerated sequentially, with infinity and division-by-zero cases being addressed systematically for operator results.\n\nFinal fragment \"raise DivisionByZero\" is mid-word, part of a parenthetical trap flag in the pattern \"result = sN * inf; raise Overflow(...)\"; \"DivisionByZero\" must be completed, likely followed by `()` and description of the flag trap behavior (e.g., `DivisionByZero trap` signaling finite/infinite results per IEEE 754 rules.\n</div>\nDivision by zero result: \"signaling NaN,\" \"raise DividedByZero\" \u2014 another trap identifier, strictly governed by IEEE 754 division semantics.",
+   "span_32": " self:\n                return context._raise_error(DivisionUndefined, '0 / 0')\n            return context._raise_error(DivisionByZero"
+  },
+  "py_arg_larcohere2py92cd584a386d_0": {
+   "ol": "- , past_key_value, is_causal) if self.config.use\n- , current_kv_states, layer_idx) if self.config.use_cache else (query_states\n- /v_keys, current_key_states, layer_idx, is_causal, update_state=True) if self.config.use\n- , kv_states, past_key_value)  # \u6dfb\u52a0\u5f53\u524d\u5c42 key-value \u5230\u7f13\u5b58\u4e2d\uff0c\u9002\u7528\u4e8e decoder-only \u63a8\u7406\u4f18\u5316\u3002 | self.past_key",
+   "nla": "Hugging Face Transformers model implementation pattern: dense attention, specific layer operations, and tensors are being defined throughout Python code.\n\nThe code follows a standard decoder attention sequence \u2014 `self_attn_states`, `cross_attn_states`, keys/values tensors have all been defined, with kv_cache updating being the final listed step.\n\nFinal fragment \"attn_states = self.past_key_value.update(self_attn_states\" is mid-operation inside a dictionary.`update()` call, requiring the complementary `cross_attn_states` argument.\nIn transformer model code, the cache update operation consistently passes \"current and to previous\" positional arguments, so next tokens likely complete this with positional indices/tensors before the attn_states computed earlier in this forward pass are used.\nStandard KV-cache update pattern: updating `key_states` to append newly converted tensors. The model follows.",
+   "span_32": ", key_states, cos, sin)\n\n        if past_key_values is not None:\n            key_states, value_states = past_key_values.update(key_states"
+  },
+  "py_arg_deepinfrapyf5f67b27fe7a_0": {
+   "ol": "- , len(all_text), batch_size))  # \u751f\u6210\u6279\u6b21\u7d22\u5f15 [0\n- len(audio_files), batch_size))  # \u5c06\u5217\u8868\u5206\u5757\uff0c\u6b65\u957f\u4e3a CHUNK_SIZE\n- , len(audio_files), chunk_size)  # \u6309\u6279\u6b21\u5927\u5c0f\u5207\u5206\u5217\u8868\n    for batch in chunks:\n- , len(all_items), chunk_size)  # \u6309\u6279\u6b21\u5207\u5206\u6587\u4ef6\u5217\u8868\n\n# 4.",
+   "nla": "Technical Python code generation context requires syntactically valid, complete code structure with proper logic for splitting text into chunks by sentence count.\n\nThe response is methodically walking through \"Batch Processing\" in a detailed bullet-point explanation, covering the API call structure and data organization steps systematically.\n\nThe final fragment \"range(0\" is mid-expression within a list comprehension describing batch indices: `range(0` expects continuation like `, len(sentences), batch_size)` completing the standard Python range pattern for stepping through list segments.\n</!\n\"the entire corpus can be processed in batches...each batch containing [batch size] sentences.\nThe list comprehension `[sentences[i:i + batch_size] for i in range(0` \u2014 the closing range formula needs `len()` bound and step argument, completing the arithmetic: `from 0 to length`.",
+   "span_32": "text}\" for text in texts]\n\n        chunks = [\n            instruction_pairs[i : i + self.batch_size]\n            for i in range(0"
+  },
+  "py_arg_runtimepy3cef3905608d_0": {
+   "ol": "- , parent_slot.name, self) # delegate to the winning MRO iterator\n- name, self.inherited_iterators[name])  # Creates a new iterator for that name\n- = 'parent_name', current=self.resolve_slot(name))  # delegates to the winner of the chain\n- , value) where `name` is the resolved slot name. The new iterator yields the next parent's version of that slot.\n\n###",
+   "nla": "Autogenerated \"fake\" Python/Django technical documentation text, with garbled but structurally consistent pseudo-code and prose patterns throughout, mixing real and invented content.\n\nThe `SlottMessenger` class implementation details are being described \u2014 specifically the `do_slot` method's state-machine logic for handling contest slots and multi-valued expressions in Jinja/nodes.\n\nFinal token \"name\" ends an incomplete sentence: \"returns a `SlotIteration` object executing _Iteration, or, if...contested among multiple items, returns a new `SlotContext`(name\", expecting the method to call with the slot name and a reference to continuation logic.\n\"retrieves `get_next` and notes the ...slot \u2014 when _contested, return new `SlotContext(name`\" \u2014 second argument and closing paren pattern expected next, continuing description of SlotContext referencing slot name.",
+   "span_32": ".environment.undefined(\n                f\"there is no parent block called {name!r}.\", name=\"super\"\n            )\n        return BlockReference(name"
+  }
+ }
+}

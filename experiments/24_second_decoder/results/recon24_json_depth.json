@@ -1,0 +1,87 @@
+{
+ "feature": "json_depth",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.97546875,
+    "span_128": 0.9065625,
+    "bag_32": 0.71109375,
+    "ol_readout": 0.7409375,
+    "ol_readout_shuffled": 0.67359375,
+    "nla_readout": 0.505,
+    "nla_readout_shuffled": 0.5271875
+   },
+   "cv_auroc": {
+    "span_32": 0.97546875,
+    "span_128": 0.9828125,
+    "bag_32": 0.8496875,
+    "ol_readout": 0.916875,
+    "ol_readout_shuffled": 0.7571875,
+    "nla_readout": 0.8328125,
+    "nla_readout_shuffled": 0.72296875
+   },
+   "class_direction_cos": {
+    "span_32": 1.0,
+    "span_128": 0.6501255631446838,
+    "bag_32": 0.3172495663166046,
+    "ol_readout": 0.30656909942626953,
+    "ol_readout_shuffled": 0.26488396525382996,
+    "nla_readout": 0.1400209218263626,
+    "nla_readout_shuffled": 0.027101630344986916
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.97890625,
+    "span_128": 0.91640625,
+    "bag_32": 0.7221875,
+    "ol_readout": 0.699375,
+    "ol_readout_shuffled": 0.68875,
+    "nla_readout": 0.49328125,
+    "nla_readout_shuffled": 0.53296875
+   },
+   "cv_auroc": {
+    "span_32": 0.97890625,
+    "span_128": 0.97953125,
+    "bag_32": 0.833125,
+    "ol_readout": 0.914375,
+    "ol_readout_shuffled": 0.73390625,
+    "nla_readout": 0.840625,
+    "nla_readout_shuffled": 0.73203125
+   },
+   "class_direction_cos": {
+    "span_32": 1.0000001192092896,
+    "span_128": 0.6577156186103821,
+    "bag_32": 0.29406312108039856,
+    "ol_readout": 0.24265965819358826,
+    "ol_readout_shuffled": 0.24211229383945465,
+    "nla_readout": 0.10200785100460052,
+    "nla_readout_shuffled": 0.024760451167821884
+   }
+  }
+ },
+ "examples": {
+  "json_depth_55529120json1277f7d130de_1": {
+   "ol": "- , \"size\": 0, \"sha\": \"0000000\", \"mode\": \"\n- size: 0, mode: \"file\", \"sha\": null, \"path\": \"submodule/.gitkeep\"\n- \u6587\u4ef6\u5927\u5c0f\u4e3a 0\uff0ctype \u4e3a blob\uff08\u53ef\u80fd\u672a\u90e8\u7f72\uff09, \"mode\": \"0644\"},\n- , \"size\": 0, \"mode\": \"0644\", \"in_subtree\": false}, // \u7a7a\u6587\u4ef6 placeholder",
+   "nla": "Structured JSON/directory listing pattern: each entry follows `{\"attrs\": {\"type\": \"file\"}, \"path\": \"...\", \"size\": X, \"mode\": X}` schema within a macOS `__MACOS__` bundle manifest.\n\nThe pattern of repeated file metadata entries (`.m filename`, `entry` key, `attrs`, size, mode) continues sequentially through the `contracts/projectfolder` directory listing.\n\nFinal token: `\"type\": \"symlink\"` on a truncated entry for `IndexPage.json`, mid-entry, expecting `size: 0` and `mode` values as seen in prior entries \u2014 or possibly `: {}` syntax.\n\"\n  - path / contracts/projectfolder/0x425.json\n    - {\"type\": \"symlink\", \"entry\": Name \"token/metrick\"...}\n- {\"attrs\": {\"type\": \"file\"}\"",
+   "span_32": " \"_path\": \"etc/conda/test-files/ipykernel/1/tests/inprocess/__init__.py\",\n        \"path_type\": \"hardlink\""
+  },
+  "json_depth_amv2betajson8ec950924bf5_1": {
+   "ol": "- , \"nullable\": true, \"description\": \"A single condition within a pipeline step\n- 000-13, \"$ref\": \"#/definitions/InlinePipelineStepConditionItem\n- , // \u89c1\u4e0b\u65b9\u5b9a\u4e49 \"InlineMessageContentGrok\"\n  }, \"required\": [\"actions\"]\n- ) (See definition below), \"actions\": array[InlineActionV2]",
+   "nla": "JSON/API documentation pattern with closed schema structure: each field entry follows consistent type + description + pattern format throughout.\n\nThe \"Google Cloud VizTip\" object is fully defined; nested array \"vizItems\" references a schema sub-object \"GoogleVisApiV2VizTipItem,\" implying the schema section continues with further nested type definitions.\n\nFinal token `\"itemsType\\\": \"GoogleVisApiV2VizItem\"` ends an array item type reference inside a schema table, strongly implying the closing bracket `]` or newline follows, then the referenced sub-object `GoogleVisApiV2VizTipItem` definition appears next.\n\"\n\"vizItems\": [\n  \"type\": {\n    \"type\": \"GoogleVisApiV2VizTipItem\" \u2014 a named schema item, completing the list item description.",
+   "span_32": " be of the `kind` specified in the `Policy`.\",\n\"items\": {\n\"$ref\": \"GoogleIamV2betaPolicyRule\""
+  },
+  "json_depth_1p1beta1json4a2870db3446_1": {
+   "ol": "- : Enum { SEARCH, CHATBOT, DOCUMENT_UNDERSTANDING\n- \u4f8b\u5982\uff1a\"Translation\", \"Sentiment Analysis\", etc. This field captures the user's intended use case for the\n- : One of several predefined use cases for the search query. Valid values include \"Chat\", \"Coding\", \"Creative Writing\", or \"General\n- \uff08use case type) as described by Google. Possible values: 'text-generation-evaluation', 'search-evaluation', etc. Specifies the nature of the user's interaction",
+   "nla": "Repetition/continuation pattern: each field in the `GoogleCloudAutoMLV1Metadata` proto is documented in a structured format \u2014 name, description, type, constraints, values.\n\nSemantic momentum: a sequential list of feature metadata descriptions is ongoing; \"instance_intent_education_domain\" and \"instance_intent_industry\" have been described, so their parallel \"value meanings\" descriptions follow the same format.\n\nFinal token is an incomplete field entry mid-list \u2014 \"instance_intent_use_case: A classification representing the use case of the ML task for the evaluation dataset.\" expects the next token to complete the value-meaning list similar to \"\u2026 One of several News possible\u2026\" pattern.\n\"instance_intent_use_case_by_learning_type: The specific use case associated with the evaluation task.\"\nThe use-case enum likely lists specific training categories next, as a value meaning.",
+   "span_32": "\",\n\"type\": \"integer\"\n},\n\"interactionType\": {\n\"description\": \"The use case most closely describing the audio content to be recognized.\""
+  },
+  "json_depth_buyerv12jsonf8caf24941a6_1": {
+   "ol": "- , \"taskId\", Long taskId) public TasksGet call(String ownerUserId\n- , userId, and appVersion} */ public TasksResource TasksResource(long applicationId, long userId\n- , \"projectId\", String taskId) { return androidEnterprise.applications(appId).get(applicationId, userId\n- /userId and reportId path parameters. This is a read-only endpoint for getting a specific report belonging to a specific user within an application",
+   "nla": "Structured list of deprecated Google Maps/geo API endpoints with consistent RESTful URL path documentation patterns. Each entry follows a repeating template: path where clause, description, response fields.\n\nThe list is enumerating API method REST paths for Android Maps, with each entry naming specific parameters and resources related to country, city, and news.\n\nFinal token `accountId\"` is part of a `where` clause listing path parameters for `\"news.lists.items.get\"`, mirroring earlier parameter patterns like `accountId`, `newsId`; next token should continue the parameter list with `&` and another parameter name (e.g., `\"newsId\"`), followed by the full parameter value reference.\n\"\n\" The URL template path, having `where` clause: `\"where\": {\"@parameter\": {\"name\": \"accountId` \u2014 numeric string parameter for parent accountId.",
+   "span_32": "httpMethod\": \"GET\",\n          \"id\": \"adexchangebuyer.creatives.get\",\n          \"parameterOrder\": [\n            \"accountId\""
+  }
+ }
+}

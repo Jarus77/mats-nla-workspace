@@ -1,0 +1,87 @@
+{
+ "feature": "js_string",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.97203125,
+    "span_128": 0.97015625,
+    "bag_32": 0.438125,
+    "ol_readout": 0.8025,
+    "ol_readout_shuffled": 0.54203125,
+    "nla_readout": 0.50734375,
+    "nla_readout_shuffled": 0.4234375
+   },
+   "cv_auroc": {
+    "span_32": 0.97203125,
+    "span_128": 0.97234375,
+    "bag_32": 0.62859375,
+    "ol_readout": 0.92140625,
+    "ol_readout_shuffled": 0.6015625,
+    "nla_readout": 0.80796875,
+    "nla_readout_shuffled": 0.6465625
+   },
+   "class_direction_cos": {
+    "span_32": 1.0000001192092896,
+    "span_128": 0.8783567547798157,
+    "bag_32": 0.008100154809653759,
+    "ol_readout": 0.5103830695152283,
+    "ol_readout_shuffled": 0.1701734960079193,
+    "nla_readout": 0.013539096340537071,
+    "nla_readout_shuffled": 0.046899668872356415
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.97546875,
+    "span_128": 0.9725,
+    "bag_32": 0.42890625,
+    "ol_readout": 0.77484375,
+    "ol_readout_shuffled": 0.541875,
+    "nla_readout": 0.458125,
+    "nla_readout_shuffled": 0.3975
+   },
+   "cv_auroc": {
+    "span_32": 0.97546875,
+    "span_128": 0.966875,
+    "bag_32": 0.62953125,
+    "ol_readout": 0.90359375,
+    "ol_readout_shuffled": 0.616875,
+    "nla_readout": 0.79453125,
+    "nla_readout_shuffled": 0.61078125
+   },
+   "class_direction_cos": {
+    "span_32": 1.000000238418579,
+    "span_128": 0.8831278681755066,
+    "bag_32": 0.012606849893927574,
+    "ol_readout": 0.49118107557296753,
+    "ol_readout_shuffled": 0.14155878126621246,
+    "nla_readout": 0.025049608200788498,
+    "nla_readout_shuffled": -0.0006953750271350145
+   }
+  }
+ },
+ "examples": {
+  "js_string_nContractsjsf89194af3348_0": {
+   "ol": "- () output where artifact_type='node_info' from an adjacent node. | Must contain the full raw `inspect_artifact\n- result` call's full JSON output for the target component. Must include `raw_artifact\n- ` output with specific depth and schema. The target must be a valid artifact analysis from `inspect_artifact\n- \uff08or similar full-state inspection tool) result for this package. Must be the full, structured JSON returned by `describe_artifact",
+   "nla": "JSON schema/API specification format with argument extraction rules, defining strict structural requirements for each required field in a structured prompt template.\n\nThe prompt is mid-description of a complex argument specification for `confirm_alveus_compatibility`, requiring an `alveus_artifact` JSON blob containing repository version information passed as an input argument.\n\nFinal fragment \"Value must be complete inspect_package_artifact\" ends an invalidating constraint description for the `expected_artifact_state` field, strongly suggesting continuation with a method name, description, or nested schema reference like \"output\" or \"analyze on the [repo].\"\n\"\nField argument named alveus_state, type string, description: \"Input is a complete ``inspect_alveus_artifact\" \u2014 mid-sentence, expecting continuation of the function/task name describing required repo inspection output.",
+   "span_32": ".js\";\nexport const compareWasmInterfacesInputSchema = z.strictObject({\n    left: evidenceInputSchema.describe(\"Exact complete inspect_wasm_artifact"
+  },
+  "js_string_ationstestjsf57612b42215_0": {
+   "ol": "- \u6b63\u786e\u6267\u884c (Queued operations are executed after reconnect)\n- \u6309\u987a\u5e8f\u6267\u884c (Pending operations are executed after open)`, function () { it('queued operations are\n- \u81ea\u52a8\u91ca\u653e (queued operations are automatically flushed) when a connection is closed', function() { it('pending calls are\n- \u88ab\u6b63\u786e\u6392\u961f\u548c\u6267\u884c\uff0c\u5373\u4f7f\u6570\u636e\u5e93\u5c1a\u672a\u8fde\u63a5', function() { it('queued operations are executed after open()', function ()",
+   "nla": "JavaScript/Mocha test suite structure \u2014 the dash indicates a test case title in progress within a Node.js testing context. \"async\" database wrapper pattern for buffering operations.\n\nThe pattern of reproduction/specification steps transitions into Mocha test code, implying test descriptions about error handling and the `.put()` buffering behavior on closed database connections.\n\nFinal token \"are\" is part of a Mocha test case title (\"spec: deferred operations are\"), requiring completion of a descriptive test name phrase, likely something like \"queued,\" \"executed correctly,\" or \"unbuffered.\"\n\"it 'deferred operations are\" expects a continuation describing the behavior or condition being tested (e.g., \"queued and executed\").\n\"executed within Nodeify closures\":\n\"_spec.js-\n  describe 'Lodash.DB':\n  - that deferred operations are\"",
+   "span_32": "\nconst { mockLevel, mockIterator } = require('../util')\n\n// NOTE: copied from deferred-leveldown\ntest('deferred operations are"
+  },
+  "js_string_azMetadatajs15324176ca64_0": {
+   "ol": "- root or a `<App>` document root\n- \u6839 (document root). It must be a `<testsuite>` document root\n- \u6839 (document root) element. The root element must be `<testsuite>`.\", \"A valid root document\n- /document root. Its root element is always `<testsuite>`. This document root element must have `id='1'`.\"], \"An invalid XML document",
+   "nla": "Command-line utility documentation format requires continuing schema violation examples; dot-prefixed errors describe XML validation failures matching the stated categories (parser errors, schema violations).\n\nThe list pattern shows parallel violation descriptions (\"Malformed XML file\", \"Root node must be IMPORTS\", \"Attributes must conclude with...\"), establishing a consistent abbreviated error-style continuation style.\n\nFinal fragment \"must contain a <Project> document\" is mid-sentence, describing an XML schema constraint, strongly predicting continuation like \"element\" or \"root\" to complete \"root document element\" and \"root is a <Project> document\" (likely \"element\" or \"root\").\n\"XML content is a complete SALOMON export: a valid SALOMON file.\npython validate_output.py --root test.xml\n\"Must have a <Project> document\" \u2014 describing the document's root element.",
+   "span_32": ";\n    if (document.documentElement?.tagName !== \"Session\")\n        throw new CaptureFormatError(\"format\", \"SAZ metadata must have a Session document"
+  },
+  "js_string_flowscalarjsb19fa46eb578_0": {
+   "ol": "- /structure character `[`. Cannot be first character of flow indicator\n- \uff08flow indicator\uff09 cannot be inside a scalar.\", \"YAML flow indicator\n- \u7b26\u53f7 `[` or `,` in unquoted context\", \"invalid yaml flow indicator\n- , such as `,` or `#`, detected in flow mapping. Cannot begin a sequence with flow indicator\n- \uff08YAML indicator\uff09characters like `,` in flow context.\", \"Line 1, col 2: mapping values are not allowed in flow context",
+   "nla": "Technical software changelog/document format listing YAML validation errors with specific line/column/character error reporting for a Perl module, establishing expectation of continued test output examples.\n\nThe output pattern shows error reporting demonstrating invalid YAML for block quads in complex mappings, with quoted strings showing parsing failures for `${host}`, `${pid}`, `${stamp}`.\n\nFinal token \"flow indicator\" is mid-error-message within the array item validation output, quoting the YAML spec error string `\"`: `found character ',' in \"`, with immediate expectation of completing the YAML error descriptor \u2014 likely \"flow indicator\" character being classified as invalid YAML flow or block indicator (',' is a YAML structural indicator).\n\"line 1, column 2: ',' \u2014\n\"notation\" appears \"error\": \"flow indicator\"\nStandard YAML terminology listing ',' as a flow/block indicator error in YAML spec context expected",
+   "span_32": "        case '\\t':\n            badChar = 'a tab character';\n            break;\n        case ',':\n            badChar = 'flow indicator"
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "feature": "md_heading",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.62890625,
+    "span_128": 0.61765625,
+    "bag_32": 0.51171875,
+    "ol_readout": 0.465625,
+    "ol_readout_shuffled": 0.55328125,
+    "nla_readout": 0.43921875,
+    "nla_readout_shuffled": 0.461875
+   },
+   "cv_auroc": {
+    "span_32": 0.62890625,
+    "span_128": 0.624375,
+    "bag_32": 0.49640625,
+    "ol_readout": 0.56671875,
+    "ol_readout_shuffled": 0.523125,
+    "nla_readout": 0.59984375,
+    "nla_readout_shuffled": 0.4953125
+   },
+   "class_direction_cos": {
+    "span_32": 1.0,
+    "span_128": 0.7494157552719116,
+    "bag_32": 0.11554554849863052,
+    "ol_readout": 0.264041006565094,
+    "ol_readout_shuffled": 0.1547866314649582,
+    "nla_readout": 0.006215652916580439,
+    "nla_readout_shuffled": 0.044572554528713226
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.6403125,
+    "span_128": 0.611875,
+    "bag_32": 0.55375,
+    "ol_readout": 0.484375,
+    "ol_readout_shuffled": 0.5396875,
+    "nla_readout": 0.44046875,
+    "nla_readout_shuffled": 0.45375
+   },
+   "cv_auroc": {
+    "span_32": 0.6403125,
+    "span_128": 0.6134375,
+    "bag_32": 0.5315625,
+    "ol_readout": 0.58078125,
+    "ol_readout_shuffled": 0.53515625,
+    "nla_readout": 0.58375,
+    "nla_readout_shuffled": 0.5390625
+   },
+   "class_direction_cos": {
+    "span_32": 1.0000001192092896,
+    "span_128": 0.7538687586784363,
+    "bag_32": 0.12577104568481445,
+    "ol_readout": 0.30637484788894653,
+    "ol_readout_shuffled": 0.16318465769290924,
+    "nla_readout": 0.014461060054600239,
+    "nla_readout_shuffled": 0.02589976042509079
+   }
+  }
+ },
+ "examples": {
+  "md_heading_SKILLmdc50ee6db4982_1": {
+   "ol": "- \u90e8\u7f72 (Routes disappear after deployment)? | The vercel routing config is applied after\n- \u8fc1\u79fb to a subdomain or after adding prefixes? | After deploying routes, some paths return 404\n- \u90e8\u7f72 (after deployment) or disappear after routing config changes | This is the most common Vercel Edge issue after\n- \u90e8\u7f72/\u66f4\u65b0\u8def\u7531\u540e\u627e\u4e0d\u5230\u8def\u7531\uff08404\uff09\uff1f** This is the most common gotcha. Vercel rewrites paths after deployment",
+   "nla": "Technical troubleshooting documentation for Hono + Cloudflare Pages deployment, using formal instructional Markdown throughout with code blocks.\n\nA troubleshooting section has been established covering problems with API and page routes \"/api\" vs root, suggesting specific common user errors and fixes follow next.\n\n\"Troubleshooting: - 404 errors on routes after\" is an incomplete bullet point mid-sentence in the troubleshooting list, requiring completion \u2014 likely referencing a specific deployment scenario, mismatch, or deployment stage (\"after deployment,\" \"after refactoring,\" etc.).\n\"Deployment Guide for Hono with Cloudflare Pages\" describes Durable Objects and custom code configurations; the preceding logic implies additional deployment caveats about URL routing.\n\"Troubleshooting: - 404 errors on routes after\" opens a specific error scenario, expecting a cause (e.g., specific config file or deployment version).",
+   "span_32": " the deployment URL (refer to the **deployments-cicd** skill for details).\n\n## Troubleshooting\n\n### 404 on routes after"
+  },
+  "md_heading_apimd4ac23904f14e_1": {
+   "ol": "- /Request Pattern (Automatic Edge Cache Handling) This is the standard way to use Cloudflare with a standard Fetch\n- \u8bf7\u6c42\uff08Normal Fetch) with Edge Cache Automatically Handling It Most standard applications using normal fetch\n- \uff08Fetch\uff09 with Edge Cache Hit (No Special DLP Code Needed) The simplest and most correct way to use DLP is a normal fetch\n- /Fetch Operation with Edge Caching (No Explicit Edge Worker) The simplest way to use Cloudflare\u2019s native Edge Cache is through a normal `fetch`",
+   "nla": "Markdown technical document with Elustering cache-control guide structure, establishing educational sections on Request Rewrites vs. Origin Responses for Choreo edge platform.\n\nThe document follows a pattern: section header \u2192 timestamp \u2192 explanatory content, promising next: code examples showing standard fetch behavior triggering caching automatically.\n\nFinal token \"Fetch\" ends the section header \"Standard Fetch\", directly mirroring the earlier explanation (\"when using standard `fetch()`, caching behavior triggered natively\") \u2014 next tokens will complete this labeled subsection heading, likely with a colon or descriptor like \"(Without Rewrites)\" echoing earlier phrasing.\n</br>\"Recommended Approach: Automatic Cache from Origin\" has begun, with subsections sequential.\n</br>\"1. Standard Fetch\" introduces the code example section covering `fetch()` behavior against Choreo's origin cache. Natural continuation is \"with ...\" or \"API flow.\"",
+   "span_32": "\ufffd\n```\n\nCache Reserve is a **zone-level configuration**, not a per-request API. It works automatically when enabled for the zone:\n\n### Standard Fetch"
+  },
+  "md_heading_odulerulesmdb6fd8b712c7f_1": {
+   "ol": "- group selection logic (GuruScan-style peer group rules for public comps. Your peer\n- group construction (S&P Capital IQ-style rigor): To keep comp peer groups meaningful, GME\u2019s peer\n- \u9009\u62e9 (Peer Selection) Rules for EV: Focus on business model similarity, not just ticker. EV peer\n- /comparable company selection logic** For a high-margin, recurring-revenue pure-play like CCL, peer selection must be strict. Typical S&P-style peer",
+   "nla": "Structured methodology document lists rules and practices for M&A comps and EV/EBITDA multiples analysis. Numbered/labeled sections expected throughout.\n\nThe document is building a detailed, opinionated investment research framework (Snow Leopard proprietary approach), contrasting established principles with textbook alternatives, focused on peer group construction and multiple denominators.\n\n\"Snow Leopard peer\" is a section header fragment mid-list, directly parallel to prior headers (\"Snow Leopard denominator principles\") and requiring immediate continuation \u2014 most likely \"peer group\" criteria or \"peer selection\" (e.g., \"peer group construction: including/excluding\u2026\").\n\"Snow Leopard definition of peer metrics: (i) Multiple denominator scope must match\u2026 (ii) Location\u2026\n\n\"Snow Leopard peer\" initiates a new bulleted subheading about peer analysis specifics, strongly constraining next tokens toward \"peers,\" \"selection criteria,\" or \"list.\"",
+   "span_32": ".\n5. EV/EBITDAre, NAV premium/discount, and implied cap rate as cross-checks when relevant.\n\n### REIT peer"
+  },
+  "md_heading_SKILLmd1841ca6b0f51_1": {
+   "ol": "- case? (Transaction, Notification, or Marketing?)** We\u2019ll match the media type to the use\n- case (Use Case)?** \u2013 Transactional, notification, or marketing drives different Stripe plan needs. Your use case\n- case type?** *(Subscription / One-time / Notification?)* Stripe\u2019s model changes significantly based on use case. We\u2019ll ensure the plan aligns with your use\n- case & frequency?\u201d** \u2192 This determines which Stripe product is optimal. | Is this a one-time event, or recurring notification?",
+   "nla": "Structured decision guide format with a step-by-step selection walkthrough for API/Users API features, using consistent parallel sections (\"What's the data type?\", \"What's the channel?\") guiding the reader through eligibility criteria.\n\nThe guide is following an enumerated workplace requirements checklist pattern, with previous sections covering \"channel type\" and \"data type\" as decision factors, establishing parallel structure for remaining factors like latency, use case, and compliance.\n\nFinal fragment \"3) What's the use\" is the opening of a third numbered question in the structured selection guide, almost certainly completing as \"use case?\" mirroring exactly the earlier mention of \"Use case: auth, campaign, broadcast, analytics.\"\n\"3) What's the use\" \u2014 mid phrase requiring completion of the question (e.g., \"use case?\"), followed by explanation of use-case-driven routing advice in the same style.</br>",
+   "span_32": " ES, IT; RCS availability varies\n- **Global** \u2192 Multi-channel via Messaging Services with geomatch + fallback\n\n### 3. What's the use"
+  }
+ }
+}

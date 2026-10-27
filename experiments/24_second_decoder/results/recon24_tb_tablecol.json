@@ -1,0 +1,87 @@
+{
+ "feature": "tb_tablecol",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 1.0,
+    "span_128": 1.0,
+    "bag_32": 0.61796875,
+    "ol_readout": 0.5671875,
+    "ol_readout_shuffled": 0.44703125,
+    "nla_readout": 0.46796875,
+    "nla_readout_shuffled": 0.47875
+   },
+   "cv_auroc": {
+    "span_32": 1.0,
+    "span_128": 0.99984375,
+    "bag_32": 0.56546875,
+    "ol_readout": 0.70875,
+    "ol_readout_shuffled": 0.63890625,
+    "nla_readout": 0.86359375,
+    "nla_readout_shuffled": 0.49921875
+   },
+   "class_direction_cos": {
+    "span_32": 1.000000238418579,
+    "span_128": 0.9154247045516968,
+    "bag_32": 0.22238093614578247,
+    "ol_readout": 0.3731922209262848,
+    "ol_readout_shuffled": 0.068091981112957,
+    "nla_readout": -0.022680159658193588,
+    "nla_readout_shuffled": 0.01762177050113678
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 1.0,
+    "span_128": 0.9996875,
+    "bag_32": 0.6375,
+    "ol_readout": 0.56640625,
+    "ol_readout_shuffled": 0.45296875,
+    "nla_readout": 0.45625,
+    "nla_readout_shuffled": 0.50328125
+   },
+   "cv_auroc": {
+    "span_32": 1.0,
+    "span_128": 0.99953125,
+    "bag_32": 0.55953125,
+    "ol_readout": 0.6971875,
+    "ol_readout_shuffled": 0.62375,
+    "nla_readout": 0.8434375,
+    "nla_readout_shuffled": 0.51546875
+   },
+   "class_direction_cos": {
+    "span_32": 1.000000238418579,
+    "span_128": 0.9164202213287354,
+    "bag_32": 0.24350956082344055,
+    "ol_readout": 0.3631350100040436,
+    "ol_readout_shuffled": 0.04217949137091637,
+    "nla_readout": -0.018297644332051277,
+    "nla_readout_shuffled": 0.04196297749876976
+   }
+  }
+ },
+ "examples": {
+  "tbl_158_c1": {
+   "ol": "- /Spanish:** {it: 'Italian\n- /French:** `new Employee(\"Maria Rossi\", Italian\n- /French (ID 3): Italy, Spanish, Turkish, Greek, Portuguese. Let's add Italian\n- \uff08Italian\uff09**: ID 4, Lang: Italian, Experience: 5, Salary: 85000 | Italian",
+   "nla": "Pipe-delimited table/matrix format established by two prior rows, predicting continuation of same pattern with \"|[adjective]| [Group]Manager |weight| [number] |\" structure.\n\nPattern of language-nationality-manager role pairs: \"English, Hungarian\" row completed, \"French...Hungary Corporate Customer\" row completed, suggesting further country/language combinations continuing the sequence.\n\n\" | Italian\" is the start of the third row's language label, requiring immediate continuation of the pattern \"Italian (+/-Score|to Project|RandomNumber)\" mirroring prior rows' \"German\" and \"French\" structures.\n</br>\"| German ... Hungary : Score 50\\n| French ... Austria : Score 75\\n| Italian\" \u2014 next language entry likely \"Italian\" with similar format describing an Italian language role and score, likely different Italian country.",
+   "span_32": "\n| Spanish | senior | Bison | Hugo | designer | Bergen |\n| Portuguese | principal | Bison | Farid | manager | Vienna |\n| Italian"
+  },
+  "tbl_176_c1": {
+   "ol": "- /paused | teamA | bob | active\n- /inactive, city_a, high | team_b | charlie | active\n- /suspended | Alice | active | 100 | team_z | #team-z | active\n- ,active\", \"location\": \"NY\"],   # Player 2: active\n    {\"status\": \"active",
+   "nla": "Tabular/structured data pattern: pipe-delimited rows with status, team, and member columns (e.g., `|paused||team_1||bob|`).\n\nThe output format suggests continuation of similar rows, listing records with slashed statuses like \"paused,\" \"inactive\" for categorized filters or groups.\n\nFinal token `active` is part of a pandas/dataframe-style output showing pipe-delimited rows; the pattern establishes that a status word precedes team and name entries.\n\"\npaused ... team ... alice\\n\ninactive ... team ... xxx\\n\nactive\" begins the next row, strongly expecting team and/or status value continuation (e.g., `|active||team_2||....`), contrasting with the prior \"paused\" states.\n\"active\" likely means the user is describing membership activity statuses in French or English.",
+   "span_32": "|---|---|\n| paused | east | Bruno | Bison | analyst |\n| paused | east | Alice | Falcons | writer |\n| active"
+  },
+  "tbl_216_c1": {
+   "ol": "- east|Ana|Portugal|South|Lisbon|20|sales\", \"south\n- /south\", \"Portugal\", \"PT-21\", \"sales\"], [\"south\n- -west|Portugal|002|sales,\"  # another branch in south-west\n    \"south-west\n- /europa, Jo\u00e3o, 15000, Manager], [\"south /europe, Jo\u00e3o, 12000, Support\"], [\"south",
+   "nla": "Structured data format is being established via pipe-delimited table rows, each with region, country, and employee name. Pattern: `|south|Portugal|Ana|`, `|west|Germany|Ice|`\n\nThe list is part of a logic/accuracy/ambiguity exercise, implying continuation of similar example rows before a question or instruction.\n\nFinal token \"south\" opens a new row, the third entry \u2014 it mirrors the first row's structure (`|south|Portugal|Ana|`) and strongly predicts the next token is `|`, continuing the `|region|person|project|` format, likely with a different region like \"south\" or \"north\" returning, completing a third distinct entry.\n\"north|Germany|ProjectX|\nsouth|Portugal|...\n|south\" \u2014 a return to the south region.",
+   "span_32": "|---|---|\n| south | Bruno | engineer | Portuguese | Porto |\n| east | Alice | analyst | Norwegian | Bergen |\n| south"
+  },
+  "tbl_144_c1": {
+   "ol": "- /in-review, pending /pending, username: 'user8', status: pending\n- ,pending, active, 11, active}, {\"status\": pending\n- \"\": \"Suzanne Lee\", status: \"pending\", location: \"Riverside\", status: \"active\",\n- /in-review, status: \"pending\", dept: \"IT\"]}, {\"status: pending",
+   "nla": "List/table continuation pattern: structured rows of pipe-delimited data with format `|<status> | <name \"> EMP-ID | <city> |`, establishing repetition.\n\nThe pattern mirrors a synthesized dataset output with status labels (\"blocked,\" \"pending\"), department names, employee IDs, and locations \u2014 next entry must follow same schema.\n\nFinal token `| pending` is the second field of a new row (parallel to prior `| pending, infrastructure, EMP-26, Toronto |`), so next tokens should complete a matching row, likely introducing a different or repeated status value like \"pending\" again paired with another department/employee pair.\n\"\n- | active\" | construction, Frankfurt ...\n- | pending | construction, ...\\n- | pending\"\n\"\n- | pending\" likely starts a new repeated status entry, possibly highlighting count variation.",
+   "span_32": " paused | Farid | remote | Condors | French | Lisbon |\n| pending | Dana | south | Badgers | Italian | Vienna |\n| pending"
+  }
+ }
+}

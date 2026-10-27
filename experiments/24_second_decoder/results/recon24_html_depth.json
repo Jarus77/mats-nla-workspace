@@ -1,0 +1,87 @@
+{
+ "feature": "html_depth",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.98765625,
+    "span_128": 0.9671875,
+    "bag_32": 0.7375,
+    "ol_readout": 0.73234375,
+    "ol_readout_shuffled": 0.61640625,
+    "nla_readout": 0.44390625,
+    "nla_readout_shuffled": 0.5665625
+   },
+   "cv_auroc": {
+    "span_32": 0.98765625,
+    "span_128": 0.9875,
+    "bag_32": 0.9790625,
+    "ol_readout": 0.7815625,
+    "ol_readout_shuffled": 0.75890625,
+    "nla_readout": 0.8996875,
+    "nla_readout_shuffled": 0.65609375
+   },
+   "class_direction_cos": {
+    "span_32": 0.9999999403953552,
+    "span_128": 0.9059963226318359,
+    "bag_32": 0.09424902498722076,
+    "ol_readout": 0.5434172749519348,
+    "ol_readout_shuffled": 0.21835476160049438,
+    "nla_readout": -0.04359126091003418,
+    "nla_readout_shuffled": 0.02429940365254879
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.98609375,
+    "span_128": 0.96703125,
+    "bag_32": 0.74671875,
+    "ol_readout": 0.7325,
+    "ol_readout_shuffled": 0.625,
+    "nla_readout": 0.45203125,
+    "nla_readout_shuffled": 0.57171875
+   },
+   "cv_auroc": {
+    "span_32": 0.98609375,
+    "span_128": 0.9853125,
+    "bag_32": 0.98109375,
+    "ol_readout": 0.76875,
+    "ol_readout_shuffled": 0.73609375,
+    "nla_readout": 0.861875,
+    "nla_readout_shuffled": 0.62453125
+   },
+   "class_direction_cos": {
+    "span_32": 0.9999998807907104,
+    "span_128": 0.9136484861373901,
+    "bag_32": 0.07572490721940994,
+    "ol_readout": 0.5614103078842163,
+    "ol_readout_shuffled": 0.22777338325977325,
+    "nla_readout": -0.044089436531066895,
+    "nla_readout_shuffled": 0.039141636341810226
+   }
+  }
+ },
+ "examples": {
+  "html_depth_a6bfa05ehtmle5283ced5735_1": {
+   "ol": "- /mentor who believes in us, like [Teacher Name]\" \u2013 A tweet asking for a teacher\n- /teacher who understands us, or a teacher who gives us A\u2019s\" \u2013 #TeacherAppreciationDay. Twitter users want a teacher\n- \u50cf Mr. [Name] in my life,\" \u2013 A viral meme format where students tweet about wanting a teacher\n- \uff08teacher\uff09 who grades fairly and a parent who supports us.\" #TeacherTwitter #MentalHealth #Relatable #SchoolLife #Teacher",
+   "nla": "Tumblr post style listing of meme templates, following sequential instructional format (Submitting a Meme, Tutorial, Supporter).\n\nThe post is building toward community meme-sharing culture, referencing specific platforms and content types (meme maker, submission site).\n\nFinal fragment \"Meme part: 'We all need a teacher\" is an incomplete direct quote of a specific meme caption, strongly expecting continuation of the caption text, likely referencing a beloved or relatable teacher-related sentiment tied to an academic/school stress image.\n\"Today's top comments include:\" explicitly promises formatted comment excerpts.\n\"i voted for:\" suggests a Reddit or voting comment structure, where \"We all need a teacher\" likely continues with a completing phrase like \"who...\" or \"of this class\" referencing a subject or grateful acknowledgment of a specific teacher type.",
+   "span_32": "\t\t\t\t<div class='base-unit clearfix'><h2 class='base-unit-title'><a href='/i/azzs24'>We all need a teacher"
+  },
+  "html_depth_2c4eafb4html7246f406ab7a_1": {
+   "ol": "- Makers Online | iMeme Generator - Create Your Own Meme\n- \u6a21\u677f (Meme Template) Generator by imgflip.com. If you'd like to create your own meme\n- \u751f\u6210\u5668 (Meme Generator) at meme-generator.net. Here is the direct link to the meme\n- /image templates you can create right here. [Imgsupp.me Meme Generator](https://imgflip.com/meme",
+   "nla": "Structured website/metadata listing format with repeated UI element descriptions (dimensions, formats, copyright) signals continuation of web page template text.\n\nThe instructional prompt pattern guides user workflow: \"From the list of selected templates below, type in your meme's text to generate meme image.\" establishes a step-by-step format maker context.\n\nFinal fragment \"Choose from List of All Meme\" is an incomplete sidebar-related search result or page title reference, likely ending with \"Generators\" or \"Templates\" (e.g., \"Meme Generator\" completed phrase, referencing the popular meme generator site format).\nMost relevant continuation: a list or description of meme image types like \"classic meme format\" or \"meme generator names\" expected next.\n\n\"Create meme words... from 'Choose From List of All Available Meme\" \u2014 describing meme generator output naming convention",
+   "span_32": "a class='l but' id='allTemplates' tabindex='-1' href='/memetemplates' title='Blank Meme Templates'>View All Meme"
+  },
+  "html_depth_32b8ec93html523a7cf0dcdf_1": {
+   "ol": "- 'd agree with the meme / fill in the blank meme template. (This is a classic /r/4kAnime meme format\n- \u89c9\u5f97 this is right or wrong** (Or \"What anime trope do you find most cringe\")** (Popular recurring meme format on /r/\n- \u89c9\u5f97\u8fd9\u4e9b\u52a8\u7269\u53ef\u7231\uff0c\u6216\u8005\u89c9\u5f97\u8fd9\u5f20\u56fe\u6709\u6897\u201d (Popular 4kchan template: \u201cIf you see this, you belong to\n- think this is right, tag them.\" / \"Tag anyone who thinks this is wrong.\" / \"Which meme character best describes you",
+   "nla": "Tumblr post aggregator format continues, showing mirrored/upscaler posts with vote counts and comments in a structured feed. The content revolves around meme reactions, ratings, and casual banter.\n\nThe next post begins a new image caption or tag, following the established pattern of short, punchy community-meme commentary from Try Guys Archive.\n\n\"Upvote if you\" is a partial phrase/label on a Reddit-style voting meme post, almost certainly completing with a conditional clause about a specific meme category, feeling, or autobiographical reference (e.g., \"like meme sharks\" or \"find this relatable\").\n\"Upvote with comment if you\" anticipates completing a humorous or ironic sentence referencing an unrelated topic like fantasy art, discord sketches, or a community appeal.\n\"Give a laugh vote if you\" \u2014 setting up a comic character reaction.",
+   "span_32": "></div><div class='base-unit clearfix'><h2 class='base-unit-title'><a href='/i/aedlo3'>Make a comment if you"
+  },
+  "html_depth_8860a164htmlebea2bc3eb9c_1": {
+   "ol": "- /8 hour flight into a 4 hour\n- \u957f drive into a 8 hour masterpiece. #ParentingHumor #ToddlerLife\" (Image: A child has drawn a\n- \u5c0f\u65f6 trip into a 30 minute Minecraft project. #ParentingStruggles #10Hour\n- /8 hour ordeal into a 15 second TikTok video. #ParentingWin #MyKidIsAnArtist #8Hour",
+   "nla": "T-shirt list continuation pattern: alternating product descriptions with humorous quotes, suggesting another product listing or measurement detail follows.\n\nSwitch back to new content context: the text has shifted to a \"For Sale on\" comment section featuring off-topic reactions and personal commentary about family humor, indicating a new unrelated quote or meme caption.\n\nFinal fragment \"Rewrite Swag.. my daughter turned a 8 hour\" is mid-sentence, beginning a humorous/informal personal anecdote, likely describing a long duration (e.g., \"8 hour flight/game/sleep\" turned into something dramatic or comical); \"8 hour\" demands immediate completion.\n\"my kid turned an 8 hour\" expects a noun phrase continuation like \"long project,\" \"video turned into,\" or \"trip of coloring book.\"\n\n\"my daughter turned a 8 hour\"",
+   "span_32": "div class='base-unit clearfix'><h2 class='base-unit-title'><a href='/i/nyr6q'>My daughter turned an 8 hour"
+  }
+ }
+}

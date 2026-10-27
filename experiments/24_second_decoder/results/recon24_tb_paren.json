@@ -1,0 +1,87 @@
+{
+ "feature": "tb_paren",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.944375,
+    "span_128": 0.8584375,
+    "bag_32": 0.644375,
+    "ol_readout": 0.6025,
+    "ol_readout_shuffled": 0.51015625,
+    "nla_readout": 0.689375,
+    "nla_readout_shuffled": 0.52578125
+   },
+   "cv_auroc": {
+    "span_32": 0.944375,
+    "span_128": 0.86375,
+    "bag_32": 0.63421875,
+    "ol_readout": 0.77375,
+    "ol_readout_shuffled": 0.6703125,
+    "nla_readout": 0.77328125,
+    "nla_readout_shuffled": 0.6421875
+   },
+   "class_direction_cos": {
+    "span_32": 0.9999998807907104,
+    "span_128": 0.6141573190689087,
+    "bag_32": 0.26441577076911926,
+    "ol_readout": 0.3229858875274658,
+    "ol_readout_shuffled": 0.041653111577034,
+    "nla_readout": 0.160452201962471,
+    "nla_readout_shuffled": 0.15052834153175354
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.92671875,
+    "span_128": 0.8584375,
+    "bag_32": 0.650625,
+    "ol_readout": 0.5540625,
+    "ol_readout_shuffled": 0.52015625,
+    "nla_readout": 0.67875,
+    "nla_readout_shuffled": 0.516875
+   },
+   "cv_auroc": {
+    "span_32": 0.92671875,
+    "span_128": 0.89609375,
+    "bag_32": 0.62859375,
+    "ol_readout": 0.74078125,
+    "ol_readout_shuffled": 0.686875,
+    "nla_readout": 0.79171875,
+    "nla_readout_shuffled": 0.660625
+   },
+   "class_direction_cos": {
+    "span_32": 1.0000001192092896,
+    "span_128": 0.6131753325462341,
+    "bag_32": 0.2756783664226532,
+    "ol_readout": 0.3375411927700043,
+    "ol_readout_shuffled": 0.04962295666337013,
+    "nla_readout": 0.1423843801021576,
+    "nla_readout_shuffled": 0.18321801722049713
+   }
+  }
+ },
+ "examples": {
+  "paren_p1167_c169": {
+   "ol": "- /documentary, adding to its public profile). The discovery was covered extensively in a BBC documentary\n- \u7eaa\u5f55\u7247\uff08*Nature: Unearthing the Mysterious London Man*)), and became the centerpiece of a high-profile scientific documentary\n- /TV series that explored the find). Its discovery was widely covered in scientific literature and popular media. The specimen, now housed in a\n- \uff08documentary\uff09 and scientific papers that followed, the find became iconic. The work was led by Professor Richard E. Leake and Dr",
+   "nla": "Formal academic journalism style covering a scientific discovery, expecting factual elaboration on significance and methodology. Reference to \"2003 scientific paper\" and Bayesian statistical analysis about Machu Picchu's builders.\n\nThe parenthetical phrase \"also highlighted in Nature (and featured in a BBC documentary\" signals an incomplete citation/reference list, expecting closing parenthesis, likely with a film title, link, or year.\n\nFinal token \"documentary\" ends an incomplete parenthetical (\"...a 2007 Nature paper (and discussed in a Nature documentary\" \u2014 the sentence requires closure and completion, likely naming the documentary or adding further \"also\" items.\n\"In early results, including those published in Nature early 2007 (and elaborated in a Nature documentary\" \u2014 maybe mirroring the incomplete main clause's continuation about TV coverage/conclusion.",
+   "span_32": "010, a group of paleontologists (including Ahlberg) published a paper accompanied by extensive supplementary material (discussed also in a Nature documentary"
+  },
+  "paren_p503_c134": {
+   "ol": "- ), una revista mensual que public\u00f3 entre 1914 y 1916 bajo el t\u00edtulo \u00abConscience de l'\n- \u300b) publi\u00e9e par \u00c9douard Escoffier. Cette revue spirituelle portait le nom de *La Conscience\n- \u300b (Conscience universelle), un magazine qu'il fonda et dirigea. Ses enseignements, appel\u00e9s \u00ab La Conscience\n- \uff0c\u00ab La Conscience Universelle \u00bb) entre 1924 et 1925. C\u2019est l\u00e0 qu\u2019il a publi\u00e9 ses visions et",
+   "nla": "Historical/biographical narrative tone signals a factual passage about a named individual's contributions or beliefs. Formal register established throughout.\n\nThe phrase \"The Beauty Nobel gifted his insights to esoteric practices\" sets up an explanation of a specific publication or spiritual medium, with \"a monthly paper entitled The Consciousness's flower\" providing that concrete example.\n\nThe final token \"conscience\" closes a parenthetical French translation \"(La Fleur de la conscience\" \u2014 an unclosed parenthesis requires closing punctuation, strongly constraining next tokens to \")\" followed by additional publication details or a clause. \"created a periodical/revue called...La Fleur de la conscience\" mirrors the English title pattern.\n\"he launched a publication he called 'The Flower of Consciousness' ('La Fleur de la conscience\" \u2014 native language title needs completion, likely a location or date)",
+   "span_32": "Mrs. Desart, a stenographer, transcribed the teachings of Antoine in a magazine, The Halo of Consciousness (L'Aur\u00e9ole de la conscience"
+  },
+  "paren_p728_c1103": {
+   "ol": "- , Wisconsin). Together, they were part of an IBM-sponsored consortium aimed at advancing computational research at the University of Wisconsin-Mad\n- ) (now University of Wisconsin\u2013Madison) served as the project's technical coordinator. Together, they authored the widely influential book *Grid Computing: Theory and Practice\n- /Madison). This collaboration laid the groundwork for the development of the **OGSA (Open Grid Services Architecture)**, which later evolved into the Grid Computing infrastructure used by CERN and other scientific institutions. In Wisconsin-Mad",
+   "nla": "Encyclopedic/Wikipedia article style describing software history with formal terminology and structured facts throughout.\n\nThe narrative lists three founding organizers of the first ACM Hypertext 87 conference: \"IBM instructor Robert Tague... professor Berners (University of Waterloo), and Computer Science professor Curtis E. Holsheimer (University of Wisconsin \u2013 Madison\" \u2014 establishing a parallel pattern of name + institution.\n\nThe final token \"Madison\" ends a parenthetical affiliated-to list mid-structure (\"professor Berners... University of Illinois at Chicago, and Curtis Arist... professor at University of Wisconsin \u2013 Madison\"), requiring a closing parenthesis \")\" to complete the sentence.\n\"Along with two other early consultants: Curtis E. Holsheimer (University of Rochester), and William Pardi (faculty at University of Wisconsin \u2013 Madison\" demands)\".",
+   "span_32": " Searls (research associate professor at University of Pennsylvania School of Medicine) and Jude Shavlik (assistant professor of computer science at University of Wisconsin \u2013 Madison"
+  },
+  "paren_p826_c1086": {
+   "ol": "- , also included figures like Vico and Tocqueville, thereby creating a new, narrower canon of historical thinkers.\n- \u7b49 classic theorists, also excluded his own earlier works. By promoting this specific canon, he effectively \"canonized\" Weber as the father\n- \u8fd8\u5305\u62ec Marx, Weber, and the classical Greek historians), he excluded many of his earlier influences. He effectively rewrote the history of\n- \uff08his canon included Machiavelli, Montesquieu, and Marx) as the only valid history of political thought, he effectively ignored the vast majority of historical literature.",
+   "nla": "Academic historical survey pattern: detailed critique of American sociology's lack of historical understanding, named scholars, and theoretical lineages throughout.\n\nThe passage focuses on Talcott Parsons and the \"neo-positivist\" tradition, explaining how he marginalized American historical sociology figures like Marx, \u00f6pp prestige given to Weber, Ricardo, Mill.\n\nFinal fragment \"In addition to Parsons' canon (which included Comte, Weber, Durkheim and Taine\" is an incomplete parenthetical clause mid-sentence, requiring continuation naming additional elements or a main clause concluding Parsons' influence on economics history.\n\"Furthermore, Parsons' reinterpretive synthesis of economics and social science...\"\n\"\nParsons' canon (which included Weber, Marx, Spencer and Durkheim\" ends mid-list, expecting continuation of his canonical reinterpretation's contents described for his students.</ref>",
+   "span_32": "olution as well as pragmatism. In addition to Parsons' revision of the sociological canon (which included Marshall, Pareto, Weber and Durkheim"
+  }
+ }
+}

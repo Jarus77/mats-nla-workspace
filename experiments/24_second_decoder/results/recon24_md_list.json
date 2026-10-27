@@ -1,0 +1,87 @@
+{
+ "feature": "md_list",
+ "n": 160,
+ "variant": "li/ln",
+ "layers": {
+  "44": {
+   "frozen_auroc": {
+    "span_32": 0.594375,
+    "span_128": 0.52546875,
+    "bag_32": 0.53171875,
+    "ol_readout": 0.50484375,
+    "ol_readout_shuffled": 0.56609375,
+    "nla_readout": 0.4565625,
+    "nla_readout_shuffled": 0.4721875
+   },
+   "cv_auroc": {
+    "span_32": 0.594375,
+    "span_128": 0.6540625,
+    "bag_32": 0.60125,
+    "ol_readout": 0.6753125,
+    "ol_readout_shuffled": 0.55109375,
+    "nla_readout": 0.49484375,
+    "nla_readout_shuffled": 0.5775
+   },
+   "class_direction_cos": {
+    "span_32": 0.9999998807907104,
+    "span_128": 0.5950714349746704,
+    "bag_32": 0.02237713895738125,
+    "ol_readout": 0.42466914653778076,
+    "ol_readout_shuffled": 0.18762683868408203,
+    "nla_readout": 0.060787126421928406,
+    "nla_readout_shuffled": 0.06712664663791656
+   }
+  },
+  "40": {
+   "frozen_auroc": {
+    "span_32": 0.59828125,
+    "span_128": 0.5125,
+    "bag_32": 0.53546875,
+    "ol_readout": 0.53875,
+    "ol_readout_shuffled": 0.55921875,
+    "nla_readout": 0.46375,
+    "nla_readout_shuffled": 0.46890625
+   },
+   "cv_auroc": {
+    "span_32": 0.59828125,
+    "span_128": 0.67671875,
+    "bag_32": 0.55296875,
+    "ol_readout": 0.6103125,
+    "ol_readout_shuffled": 0.50171875,
+    "nla_readout": 0.4675,
+    "nla_readout_shuffled": 0.5709375
+   },
+   "class_direction_cos": {
+    "span_32": 1.0000001192092896,
+    "span_128": 0.616105318069458,
+    "bag_32": 0.04849959537386894,
+    "ol_readout": 0.434907466173172,
+    "ol_readout_shuffled": 0.19348949193954468,
+    "nla_readout": 0.04175890237092972,
+    "nla_readout_shuffled": 0.043336864560842514
+   }
+  }
+ },
+ "examples": {
+  "md_list_ask2reportmd464f20577a67_1": {
+   "ol": "- (first 8 characters) of the hash for brevity. | Generates a unique, readable 10-character\n- \uff08first 10 hex characters) of the hash | Deterministic output for consistent testing | Returns first 8 characters\n- (8 characters) of the hash as a unique cache key | - Handles edge cases (empty response) by returning 8 characters\n- \uff088 characters\uff09of the SHA256 hash. | Generates unique, short color identifier. |\n\n---\n\n## 3. Test Cases &",
+   "nla": "Structured technical specification pattern for CLI tool features, with pipe-delimited tables listing parameters and bullet points continuing systematically.\n\nNext component is completing the URL hash generator module description \u2014 \"SHA-256 hashes normalized URLs (lowercase, stripped)\", establishing hash output format details.\n\n\"Returns first 10 hexadecimal characters\" is the final bullet point in an incomplete specification, strongly implying a continuation describing the hash output format, e.g., \"as the final URL signature\" or similar shorthand descriptor, likely a length/format specification.\n</br>\n</br>\nThe output section describes a Python function logging module, specifically the URL hash component specification in a nodejs-sklearn project.\n\"normalizes input by lowercasing and prepending scheme\"|\"normalizes all URLs and deduplicates them\"|\"Returns first 10 hexadecimal characters\"",
+   "span_32": "crypto\n   - Serializes input array: [text, tone, pace, provider, model, speaker]\n   - Returns first 10 hex characters"
+  },
+  "md_list_anneragentmdf9dc30f4e7d4_1": {
+   "ol": "- \u884c\u4e3a patterns. For each user type, what sequences of interactions would they typically\n- \u4ea4\u4e92 patterns (sequences of actions they typically\n- \u5de5\u4f5c\u6d41\u7a0b or typical goals. Understanding these typical interactions helps determine which functions are most critical for each user type. This helps identify which paths a typical\n- /typical usage patterns. We will examine how each user type would interact with the system, noting their typical",
+   "nla": "Technical Q&A/documentation format: structured sections, bullet points, and detailed analysis of Vue Router \u00e9tablissements web application code review.\n\nThe \"UX Review Framework\" section is in progress, listing systematic aspects for questioning/analyzing, covering UI/UX testing methodology with structured steps.\n\nFinal token \"typical\" ends an incomplete phrase (\"usage patterns,\" \"the complexity of interactions,\" \"Identify key user personas and their goals, considering different user types and their typical\"), expecting continuation like \"workflows,\" \"tasks,\" or \"usage paths.\"\n\"Workflow Analysis: Map out common user workflows and interaction sequences...\nUser Journey Analysis: Consider the behavior of different user types, such as administrators, editors, or casual visitors, focusing on different personas and their typical\"\n\ncontinuation describing patterns/behaviors/tasks naturally expected roles.\n\nDetailed UX framework tone.",
+   "span_32": "Analyze User Flows**\n   - Map out the primary user journeys and identify critical paths through the application\n   - Consider different user types and their typical"
+  },
+  "md_list_READMEmd7495a490ec55_1": {
+   "ol": "- , with `includeFiles: true` implied) Promise<File[]> | Async variant\n- \uff08streams variant\uff09 of `readFile`, and must include `entries` callback) | `Promise<FileSystemDirectoryHandle> (stream variant\n- , i.e., with `entries` option, is required here) | `(options?: FileSystemReadDirectoryOption) => Promise<AsyncIterable<FileHandle>> (stream variant\n- \uff08with `withTypes:true`\uff09 of `Promise<ReadDirectoryEntry[]>`, and `.readStream()` variant",
+   "nla": "Technical API documentation listing interfaces and methods in spec/MDN format, following consistent parameter table structure throughout.\n\nThe document is mid-enumeration of required underlying API properties (\"getFile: async function(\u2026)\", \"makeDirectory: async function(\u2026)\", \"getDirectory: async function(\u2026)\"), implying more items follow this pattern.\n\nFinal token \"variant\" closes \"getFiles: DirectoryStream interface method (BlobArray \u2026\\ngetFiles: async DirectoryStream method (Blob variant\" \u2014 the parenthetical comment, mirroring the prior \"getFiles: async variant with callback, specifying `{type: ArrayBuffer}`\", expects completion like \"with `{type\u2026}`\" or \"which returns entries as Blobs, as previous\".\n\"getFiles: async Files system method (Blobs variant\" mirrors earlier pattern, so the phrase must specify behavior expectation.",
+   "span_32": "linkSync\n  - realpathSync\n  - promises: Object containing the following async methods:\n    - lstat\n    - readdir (Dirent variant"
+  },
+  "md_list_aipatternsmdfc2e6daca10b_1": {
+   "ol": "- \u540e\u7aef providers based on the type. | `router.create_llm_client(model_name)` | Different\n- \u4f9b\u5e94\u5546 based on config; another might route to OpenAI, another to local models\n- \u63d0\u4f9b\u5546 (like OpenAI, Anthropic, or local LLM) based on the prompt type. | `get_model_endpoint(prompt_type)` | Abstracts away the\n- /different LLM providers based on the prefix, handle retries, rate limiting, etc. | `createLLMClient(provider_type, params)` | Factory method that instantiates",
+   "nla": "Technical RFC/documentation format with structured YAML examples describing Kafka processing patterns and LLM retry architecture.\n\nThe document is mid-suggestion list, describing field options within a JobWithLLMConfig strategy pattern \u2014 a Python-like interface definition is being elaborated.\n\nFinal token \"different\" ends a commented explanation (\"config field for which LLM to call - could route to different\"), strongly implying continuation: \"different providers/endpoints/models\" or similar route-target examples.\n\"- llm_call field with provider/location prompt / internal wrapper with LLM_API call - single utility job that can route to different\" \u2014 this mid-sentence fragment about routing logic, calling another service, or mapping configuration fields expects completion with a specific example (e.g., \"providers\" or \"APIs\").\n\"NESTED CONFIG:</li>\" lists nested config fields; item \"llm model config\" continues.",
+   "span_32": "1: Activities should Wrap LLM Calls\n\n- activity: call_llm\n  - inputs:\n    - model_id -> internally activity can route to different"
+  }
+ }
+}
