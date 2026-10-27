@@ -614,3 +614,17 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 - His 0.57 reproduces (0.56, NLA, his items x his phrasings). His items with our phrasings: NLA 0.85, OLens 0.72; our items with his phrasings: NLA 0.64, OLens 0.36. Parenthesis: NLA 0.75 to 0.85 in every cell; OLens 0.78 with our phrasings vs 0.50 to 0.53 with his. Per-value sign fixed (95 to 100%) for both readers and phrasing sets on his items; the exp 18 "names both values on ordinal rows" is therefore phrasing-specific. Table and signs: `experiments/17_harden/RESULTS.md` (d), `results/xs17.md`.
 - Decisions: quote the two banks as two measurements with phrasing named as the larger factor; drop the blanket complement rule; any future complement test uses the sign under the best of k mined phrasings and is pre-registered that way. Guiv's survey digests (`notes/draft_guiv_repo_digest.md`, `notes/draft_guiv_branches_digest.md`) stay private.
 
+## 2026-10-27 — D44: exp 19, the prediction test on a natural-text bank, with the revised NLA rules, frozen before the readers ran
+
+Bank: eight rows of read points in real files (pip and npm package sources on the laptop, fresh arXiv e-prints), both
+values from the same files, 200 items per row, sha256 `7ddfbceac1a5510156b1037239606536e50484a61f93c057629c26fa41525460`. A planned CSV row was dropped (16 items). A
+bag-of-words cue check on the last 48 tokens runs at bank time: six rows pass (0.45 to 0.56), JSON depth (0.94) and HTML
+depth (1.00) do not and keep their J-lens cells unscored.
+
+Rules: NLA states iff statement-sayable; NLA names the complement iff both values are positive states; all other
+rules as in exp 18. Scoring split into a primary scorecard (free-readout and reconstructor-based cells) and a secondary
+one (prompted forced-choice cells), after Neel's remark that forced choice puts both readers off distribution.
+
+Instruments and predictions filled before any reader ran: instruments sha256 `aab6317039a6568e7534a468afbc03c72eec47eb1fd05615bdb031e2a45c0183`, predictions
+`c8b593c0aabde7ba7d0c6eddf4601fd950687738918db1df9b37c39d8ae242ea`, pre-registration `29ceb9054613e24a35d3e214e4fe1bc32454506ff31ed0d3f97ef4d783320c34`. Two findings already: the Markdown heading-level and list-depth rows are
+not linearly readable at layer 42 on real text (0.63, 0.65), and no natural row is statement-sayable (max 0.23).

@@ -70,16 +70,52 @@ A CSV-field row was planned and dropped at build time: the public CSV files on t
 fixtures and yielded 16 items. Bank: 200 items per row (20 + 20 mining, 80 + 80 selection), clustered by source file; built by `build19.py`
 (seed 1919), sha256 and the lexical-cue column filled in §6 before any reader runs.
 
-## 5. Scoring rule (unchanged)
+## 5. Scoring rule (revised 27 Oct, before any instrument result was read for html/md rows and before any reader ran)
 
-A cell is correct when the observed value lands on the declared side of its threshold. Accuracy over all scored cells
-with a Wilson 95% CI and the confusion table per reader; the account is predictive at ≥ 0.80. The two revised NLA
-rules are also reported on their own (18 cells) so that a pass or fail of the revision is visible apart from the
-carried-over rules.
+Two scorecards, declared here because forced-choice scoring puts both readers off distribution (Neel, 27 Oct) and we
+agree it is the weakest of the measures.
 
-## 6. Bank and instruments (filled before the readers run)
+**Primary (reconstructor- and behaviour-based cells, 5 per row, 40 cells):** NLA states, NLA names the complement,
+Oracle Lens exhibits, Oracle Lens states, and the J-lens prompted cell on rows with lexical cue < 0.65. These are the
+cells whose antecedents are reconstructor measurements (span, statement) or the declared flags, and whose observed
+values come from free readouts judged, or from a probe-free direction. Predictive at ≥ 0.80.
 
-(pending)
+**Secondary (prompted AUROC cells, NLA and Oracle Lens, 16 cells):** reported with the same rule, kept separate
+because the prompted score is a forced choice between two phrasings. The Oracle Lens prompted cell is the one that
+generalised in exp 18 (9 of 10) and is reported for continuity; it does not enter the primary accuracy.
+
+Both scorecards carry a Wilson 95% CI and the per-reader confusion table. The two revised NLA rules are also
+reported on their own (16 cells) so that a pass or fail of the revision is visible apart from the carried-over
+rules.
+
+## 6. Bank and instruments (filled 27 Oct 13:15 IST, before any reader ran)
+
+Bank `experiments/19_natural_bank/results/items_base.json`, sha256 `7ddfbceac1a5510156b1037239606536e50484a61f93c057629c26fa41525460`, 1,600 items; lexical cue per row in
+`experiments/19_natural_bank/RESULTS.md` (json_depth 0.94 and html_depth 1.00 are over the 0.65 admission line, so
+their J-lens cells are not scored; the other six rows are 0.45 to 0.56).
+
+Instruments (`results/instruments19.json`, sha256 `aab6317039a6568e7534a468afbc03c72eec47eb1fd05615bdb031e2a45c0183`) and the predicted cells
+(`results/predictions19.md`, sha256 `c8b593c0aabde7ba7d0c6eddf4601fd950687738918db1df9b37c39d8ae242ea`):
+
+Thresholds: readable ≥ 0.8, span ≥ 0.8, statement ≥ 0.3, used z ≥ 3.0, J-enriched ≥ 1.5. Predicted cells: H = predicted high, L = predicted low.
+
+| row | next-token set | constrains next | short value | readable | span (frozen probe) | stmt | used z | J-enr | NLA prompted | NLA states | NLA names complement | OL prompted | OL exhibits | OL states | J-lens prompted |
+|---|---|---|---|---:|---:|---:|---:|---:|---|---|---|---|---|---|---|
+| py_string | '"' "'" | yes | yes | 1.00* | 0.85* | 0.04 | 6.56* | 1.17 | H | L | L | H | H | L | L |
+| js_string | '"' "'" | yes | yes | 0.99* | 0.82* | 0.01 | 0.70 | 1.22 | H | L | L | H | H | L | L |
+| latex_math | '$' | yes | yes | 0.99* | 0.83* | 0.05 | 25.55* | 1.31 | H | L | L | H | H | L | L |
+| py_arg | ',' ')' | yes | yes | 0.99* | 0.89* | 0.23 | 3.16* | 1.10 | H | L | H | H | H | L | L |
+| json_depth | '}' | yes | yes | 0.99* | 0.87* | 0.14 | -1.98 | 1.29 | H | L | H | H | H | L | L |
+| html_depth | '</' | yes | yes | 0.99* | 0.74 | 0.04 | -4.62* | 1.32 | H | L | H | L | L | L | L |
+| md_heading | none | no | yes | 0.63 | 0.51 | 0.03 | n/a | 1.48 | L | L | H | L | L | L | L |
+| md_list | none | no | yes | 0.65 | 0.64 | 0.07 | n/a | 1.42 | L | L | H | L | L | L | L |
+
+* = passes its threshold.
+
+Reading: all six code and markup rows are readable and span-sayable except html_depth (span 0.74); the two
+Markdown rows are not readable at layer 42 on real text (0.63, 0.65) where their synthetic versions in exp 18 were
+(1.00); no row is statement-sayable (max 0.23), so the revised rule predicts the NLA states nothing on this bank and
+names the complement on the five both-positive rows only; no row is J-enriched.
 
 ## 7. Budget
 

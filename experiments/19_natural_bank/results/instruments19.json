@@ -1,0 +1,274 @@
+[
+ {
+  "feature": "py_string",
+  "flags": {
+   "constrains_next": true,
+   "short_value": true,
+   "both_positive": false
+  },
+  "instr": {
+   "readable": 0.99921875,
+   "span": 0.85328125,
+   "span_gap": 0.20905350148677826,
+   "stmt": 0.03919553384184837,
+   "used_z": 6.555589883306059,
+   "jenr": 1.172067642211914,
+   "used_shift": 0.3364035487174988
+  },
+  "decide": {
+   "readable": true,
+   "span": true,
+   "stmt": false,
+   "used": true,
+   "jenr": false
+  },
+  "predict": {
+   "nla_prompted": true,
+   "nla_states": false,
+   "nla_names_complement": false,
+   "ol_prompted": true,
+   "ol_exhibits": true,
+   "ol_states": false,
+   "jlens_prompted": false
+  },
+  "status": "ok"
+ },
+ {
+  "feature": "js_string",
+  "flags": {
+   "constrains_next": true,
+   "short_value": true,
+   "both_positive": false
+  },
+  "instr": {
+   "readable": 0.99234375,
+   "span": 0.82375,
+   "span_gap": 0.214689239859581,
+   "stmt": 0.01306145079433918,
+   "used_z": 0.6966762825979637,
+   "jenr": 1.2154167890548706,
+   "used_shift": 0.023759599775075912
+  },
+  "decide": {
+   "readable": true,
+   "span": true,
+   "stmt": false,
+   "used": false,
+   "jenr": false
+  },
+  "predict": {
+   "nla_prompted": true,
+   "nla_states": false,
+   "nla_names_complement": false,
+   "ol_prompted": true,
+   "ol_exhibits": true,
+   "ol_states": false,
+   "jlens_prompted": false
+  },
+  "status": "ok"
+ },
+ {
+  "feature": "latex_math",
+  "flags": {
+   "constrains_next": true,
+   "short_value": true,
+   "both_positive": false
+  },
+  "instr": {
+   "readable": 0.99078125,
+   "span": 0.826875,
+   "span_gap": 0.238060861825943,
+   "stmt": 0.050494201481342316,
+   "used_z": 25.550632588813876,
+   "jenr": 1.30948007106781,
+   "used_shift": 0.8831764459609985
+  },
+  "decide": {
+   "readable": true,
+   "span": true,
+   "stmt": false,
+   "used": true,
+   "jenr": false
+  },
+  "predict": {
+   "nla_prompted": true,
+   "nla_states": false,
+   "nla_names_complement": false,
+   "ol_prompted": true,
+   "ol_exhibits": true,
+   "ol_states": false,
+   "jlens_prompted": false
+  },
+  "status": "ok"
+ },
+ {
+  "feature": "py_arg",
+  "flags": {
+   "constrains_next": true,
+   "short_value": true,
+   "both_positive": true
+  },
+  "instr": {
+   "readable": 0.98640625,
+   "span": 0.89015625,
+   "span_gap": 0.3948666751384735,
+   "stmt": 0.2253136783838272,
+   "used_z": 3.1565388957519676,
+   "jenr": 1.1015633344650269,
+   "used_shift": 0.1506689488887787
+  },
+  "decide": {
+   "readable": true,
+   "span": true,
+   "stmt": false,
+   "used": true,
+   "jenr": false
+  },
+  "predict": {
+   "nla_prompted": true,
+   "nla_states": false,
+   "nla_names_complement": true,
+   "ol_prompted": true,
+   "ol_exhibits": true,
+   "ol_states": false,
+   "jlens_prompted": false
+  },
+  "status": "ok"
+ },
+ {
+  "feature": "json_depth",
+  "flags": {
+   "constrains_next": true,
+   "short_value": true,
+   "both_positive": true
+  },
+  "instr": {
+   "readable": 0.994375,
+   "span": 0.8728125,
+   "span_gap": 0.2989184260368347,
+   "stmt": 0.14087273180484772,
+   "used_z": -1.97636039986889,
+   "jenr": 1.2902623414993286,
+   "used_shift": -0.09207890182733536
+  },
+  "decide": {
+   "readable": true,
+   "span": true,
+   "stmt": false,
+   "used": false,
+   "jenr": false
+  },
+  "predict": {
+   "nla_prompted": true,
+   "nla_states": false,
+   "nla_names_complement": true,
+   "ol_prompted": true,
+   "ol_exhibits": true,
+   "ol_states": false,
+   "jlens_prompted": false
+  },
+  "status": "ok"
+ },
+ {
+  "feature": "html_depth",
+  "flags": {
+   "constrains_next": true,
+   "short_value": true,
+   "both_positive": true
+  },
+  "instr": {
+   "readable": 0.98828125,
+   "span": 0.7375,
+   "span_gap": 0.21295280754566193,
+   "stmt": 0.037303607910871506,
+   "used_z": -4.624671145021498,
+   "jenr": 1.3249790668487549,
+   "used_shift": -0.26502636075019836
+  },
+  "decide": {
+   "readable": true,
+   "span": false,
+   "stmt": false,
+   "used": true,
+   "jenr": false
+  },
+  "predict": {
+   "nla_prompted": true,
+   "nla_states": false,
+   "nla_names_complement": true,
+   "ol_prompted": false,
+   "ol_exhibits": false,
+   "ol_states": false,
+   "jlens_prompted": false
+  },
+  "status": "ok"
+ },
+ {
+  "feature": "md_heading",
+  "flags": {
+   "constrains_next": false,
+   "short_value": true,
+   "both_positive": true
+  },
+  "instr": {
+   "readable": 0.6315625,
+   "span": 0.5075,
+   "span_gap": 0.10286392271518707,
+   "stmt": 0.03281526640057564,
+   "used_z": NaN,
+   "jenr": 1.479311227798462,
+   "used_shift": null
+  },
+  "decide": {
+   "readable": false,
+   "span": false,
+   "stmt": false,
+   "used": false,
+   "jenr": false
+  },
+  "predict": {
+   "nla_prompted": false,
+   "nla_states": false,
+   "nla_names_complement": true,
+   "ol_prompted": false,
+   "ol_exhibits": false,
+   "ol_states": false,
+   "jlens_prompted": false
+  },
+  "status": "ok"
+ },
+ {
+  "feature": "md_list",
+  "flags": {
+   "constrains_next": false,
+   "short_value": true,
+   "both_positive": true
+  },
+  "instr": {
+   "readable": 0.646875,
+   "span": 0.638125,
+   "span_gap": 0.1784321665763855,
+   "stmt": 0.06663967669010162,
+   "used_z": NaN,
+   "jenr": 1.4157179594039917,
+   "used_shift": null
+  },
+  "decide": {
+   "readable": false,
+   "span": false,
+   "stmt": false,
+   "used": false,
+   "jenr": false
+  },
+  "predict": {
+   "nla_prompted": false,
+   "nla_states": false,
+   "nla_names_complement": true,
+   "ol_prompted": false,
+   "ol_exhibits": false,
+   "ol_states": false,
+   "jlens_prompted": false
+  },
+  "status": "ok"
+ }
+]

@@ -48,11 +48,11 @@ def test_decide_and_predict_follow_the_prereg_rules():
     d = L.decide(instr)
     assert d == {"readable": True, "span": True, "stmt": False, "used": True, "jenr": False}
     p = L.predict(d, flags)
-    assert p == {"nla_prompted": True, "nla_states": True, "nla_names_complement": False,
+    assert p == {"nla_prompted": True, "nla_states": False, "nla_names_complement": False,
                  "ol_prompted": True, "ol_exhibits": True, "ol_states": False, "jlens_prompted": False}
     d2 = L.decide({"readable": 0.95, "span": 0.6, "stmt": 0.8, "used_z": 0.4, "jenr": 2.3})
     p2 = L.predict(d2, {"constrains_next": False, "short_value": True})
-    assert p2["nla_states"] is False and p2["ol_prompted"] is False and p2["jlens_prompted"] is True
+    assert p2["nla_states"] is True and p2["ol_prompted"] is False and p2["jlens_prompted"] is True
     assert L.decide({"readable": 0.95, "span": 0.6, "stmt": 0.1, "used_z": float("nan"), "jenr": 1.0})["used"] is False
 
 
@@ -125,3 +125,11 @@ def test_lexical_cue_auroc_detects_a_token_cue_and_not_noise():
     groups = np.arange(n)
     assert L.lexical_cue_auroc(ids_cued, y, groups) > 0.9
     assert abs(L.lexical_cue_auroc(ids_noise, y, groups) - 0.5) < 0.15
+
+
+def test_predict_uses_revised_nla_rules():
+    d = {"readable": True, "span": True, "stmt": False, "used": True, "jenr": False}
+    p = L.predict(d, {"constrains_next": True, "short_value": True, "both_positive": True})
+    assert p["nla_states"] is False and p["nla_names_complement"] is True
+    p2 = L.predict({**d, "stmt": True}, {"constrains_next": False, "short_value": True, "both_positive": False})
+    assert p2["nla_states"] is True and p2["nla_names_complement"] is False

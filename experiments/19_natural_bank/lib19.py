@@ -64,10 +64,10 @@ def decide(instr: dict) -> dict[str, bool]:
 
 
 def predict(d: dict[str, bool], flags: dict) -> dict[str, bool]:
-    """Prereg §3 prediction rules; True = predicted high."""
+    """Prereg §3 prediction rules (notes/prereg_natural_bank.md); True = predicted high."""
     return {"nla_prompted": d["readable"],
-            "nla_states": d["used"] and bool(flags["constrains_next"]),
-            "nla_names_complement": False,
+            "nla_states": d["stmt"],                                   # revised (prereg_natural_bank §3)
+            "nla_names_complement": bool(flags.get("both_positive", False)),   # revised (prereg_natural_bank §3)
             "ol_prompted": d["span"],
             "ol_exhibits": d["span"] and bool(flags["short_value"]),
             "ol_states": False,

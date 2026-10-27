@@ -42,7 +42,7 @@ def assemble(res_dir: Path, rows: list[str], vol: Path | None = None) -> list[di
     out = []
     for row in rows:
         p1, p2 = res_dir / f"instr119_{row}.json", res_dir / f"instr219_{row}.json"
-        flags = {k: FEATURES[row][k] for k in ("constrains_next", "short_value")}
+        flags = {k: FEATURES[row][k] for k in ("constrains_next", "short_value", "both_positive")}
         if not (p1.exists() and p2.exists()):
             out.append({"feature": row, "flags": flags, "instr": None, "decide": None, "predict": None, "status": "instruments missing"})
             continue
