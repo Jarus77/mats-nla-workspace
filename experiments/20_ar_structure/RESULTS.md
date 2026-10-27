@@ -76,3 +76,31 @@ exp 16's "remainder" is the naming gap seen from the other side, and if they dis
 is the reason.
 
 Cost: about $4 (one H100 pass of 25 minutes, one H200 pass of 30 minutes).
+
+## The original headline rows under the same protocol (27 Oct, 14:37; exp 13's banks, 160 selection items each)
+
+| row | model, window 4 | model, window 32 | critic, span 32 | critic, span 128 | shuffled bag 32 | Oracle Lens readout | NLA explanation |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| table column (first vs late) | 0.87 | 1.00 | 0.95 | 1.00 | 0.46 | 0.64 | 1.00 |
+| parenthesis (inside vs outside) | 0.71 | 0.90 | 0.74 | 0.84 | 0.57 | 0.67 | 0.87 |
+
+Class-direction cosines at window 32: model 0.89 / 0.87, critic 0.31 / 0.48, bag 0.05 / 0.11, Oracle Lens readout
+0.25 / 0.54, NLA explanation 0.83 / 0.88.
+
+**Reconciliation with exp 16.** Exp 16 found position in the part of the vector that Oracle Lens's words do not rebuild
+(table column: remainder 0.98, Oracle Lens part 0.01, through the Oracle Lens reconstructor at layer 44). Here, through
+the NLA critic at layer 42, Oracle Lens's readout carries table column at 0.64 and parenthesis at 0.67: weak, where the
+same readout carries string state at 0.90 and JSON depth at 0.94. The two reconstructors agree in direction and differ
+in degree, and the degree is the finding. Oracle Lens exhibits a state to the extent that continuing the text makes it
+visible: a continuation inside a string literal looks nothing like one outside, a continuation after the first cell of a
+table row looks like one after the fifth. The NLA's explanation carries both headline rows (1.00, 0.87) by describing
+the format ("pipe-delimited table, two prior rows, predicting continuation of the same pattern") without ever naming
+the column, which is the exp 16 "remainder" seen from the other side.
+
+So the sentence stands for both readers and all ten rows: the window carries the state (0.90 to 1.00 on every readable
+row), the readers' outputs carry it to different degrees (NLA through description, Oracle Lens through continuation),
+and neither names it. The one quantity that predicts how much Oracle Lens exhibits is not the window but whether the
+state changes the continuation; that is a text-only measurement (a classifier on the next tokens after the read point,
+no model needed) and the natural next predictor to pre-register.
+
+Cost of this run: about $3.
