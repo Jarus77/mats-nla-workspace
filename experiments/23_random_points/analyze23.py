@@ -18,7 +18,7 @@ REPO = HERE.parent.parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(REPO / "src"))
 sys.path.insert(0, str(REPO / "experiments" / "19_natural_bank"))
-from lib23 import names_structure  # noqa: E402
+from lib23 import names_structure, naming_by_state  # noqa: E402
 
 STATES = {"in_string": lambda v: bool(v), "in_math": lambda v: bool(v), "paren_depth": lambda v: v > 0,
           "brace_depth": lambda v: v >= 2, "list_depth": lambda v: v > 0, "heading_level": lambda v: v > 0}
@@ -46,6 +46,8 @@ def main() -> None:
         ks = [it for it in items if it["meta"]["kind"] == kind]
         naming[kind] = {"n": len(ks), "ol_names_any": float(np.mean([names_structure(ol[it["id"]]) for it in ks])),
                         "nla_names_any": float(np.mean([names_structure(nla[it["id"]]) for it in ks]))}
+    labelled = [{"id": it["id"], "meta": {"labels": {st: fn(it["meta"]["labels"][st]) for st, fn in STATES.items()}}} for it in items]
+    strict = {st: {name: naming_by_state(d, labelled, st) for name, d in (("ol", ol), ("nla", nla))} for st in STATES}
     carrying = []
     groups_of_kinds = [(k, (k,)) for k in kinds] + [("code (py+js)", ("py", "js")), ("all", tuple(kinds))]
     for kind, members in groups_of_kinds:
@@ -64,14 +66,18 @@ def main() -> None:
                 row[f"{name}_text_bag"] = cv_auroc(Xt, y, g, k=5, lam=1.0)["auroc"]
             carrying.append(row)
             print(row, flush=True)
-    lines = ["## Naming at random read points (share of readouts naming any structural state)", "",
+    lines = ["## Naming the state at random read points (strict, state-specific phrasing; share of readouts naming the state when it holds vs when it does not)", "",
+             "| state | n holds / not | Oracle Lens: named when holds | when not | NLA: named when holds | when not |", "|---|---|---:|---:|---:|---:|"]
+    f = lambda v: "n/a" if v is None else f"{v:.2f}"  # noqa: E731
+    lines += [f"| {st} | {r['ol']['n_true']} / {r['ol']['n_false']} | {f(r['ol']['named_when_true'])} | {f(r['ol']['named_when_false'])} | {f(r['nla']['named_when_true'])} | {f(r['nla']['named_when_false'])} |" for st, r in strict.items()]
+    lines += ["", "## Any structural vocabulary at all (loose regex; over-counts content words such as \"open\", \"math\", \"level\")", "",
              "| kind | n | Oracle Lens | NLA |", "|---|---:|---:|---:|"]
     lines += [f"| {k} | {v['n']} | {v['ol_names_any']:.2f} | {v['nla_names_any']:.2f} |" for k, v in naming.items()]
     lines += ["", "## Carrying at random read points (AUROC; readable = probe on the activation; text bag = classifier on the readout alone)", "",
               "| kind | state | n yes / no | readable | Oracle Lens readout | NLA readout |", "|---|---|---|---:|---:|---:|"]
     lines += [f"| {r['kind']} | {r['state']} | {r['n_pos']} / {r['n_neg']} | {r['readable']:.2f} | {r['ol_text_bag']:.2f} | {r['nla_text_bag']:.2f} |" for r in carrying]
     (R / "table23.md").write_text("\n".join(lines) + "\n")
-    (R / "table23.json").write_text(json.dumps({"naming": naming, "carrying": carrying}, indent=1))
+    (R / "table23.json").write_text(json.dumps({"naming_strict": strict, "naming_loose": naming, "carrying": carrying}, indent=1))
     print("\n".join(lines))
 
 

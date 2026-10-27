@@ -43,4 +43,33 @@ def candidate_points(text: str, min_ctx: int = 150, max_ctx: int = 1200) -> list
 
 
 def names_structure(readout: str) -> bool:
+    """Loose: any structural vocabulary at all (over-counts content words such as "open", "math", "level")."""
     return bool(MENTION_ANY.search(readout or ""))
+
+
+# Strict, state-specific phrasings: the readout has to say the cursor is in that state, not merely use a related word.
+STATE_PHRASES = {
+    "in_string": r"string literal|(?:inside|within|in) (?:a|an|the) (?:open |unclosed |quoted )?string|quoted string|"
+                 r"unclosed (?:string|quote)|open(?:ing)? quote|(?:inside|within|in) quotes|string (?:is|remains) open",
+    "paren_depth": r"parenthes|(?:inside|within|in) (?:the|a|an) (?:function |method |open )?call|argument list|"
+                   r"unclosed \(|open(?:ing)? paren|inside the brackets",
+    "brace_depth": r"brace|curly|(?:inside|within) (?:a|the|an) (?:open |nested )?(?:block|object|dict)|unclosed \{",
+    "in_math": r"math mode|(?:inside|within|in) (?:an? )?(?:open |unclosed |inline |display )?(?:equation|math|formula)|"
+               r"display math|inline math|unclosed \$|equation environment",
+    "list_depth": r"list item|bullet|nested list|sub-?list|list entry|(?:inside|within|in) (?:a|the) list",
+    "heading_level": r"heading|header line|section title|markdown title",
+}
+STATE_RE = {k: re.compile(v, re.IGNORECASE) for k, v in STATE_PHRASES.items()}
+
+
+def names_state(readout: str, state: str) -> bool:
+    """Strict: does the readout say the read point is in `state` (string, call, block, math, list item, heading)?"""
+    return bool(STATE_RE[state].search(readout or ""))
+
+
+def naming_by_state(texts: dict, items: list, state: str) -> dict:
+    """Conditional naming rates: share of readouts naming `state` when the label holds and when it does not."""
+    hold = [names_state(texts[it["id"]], state) for it in items if it["meta"]["labels"][state]]
+    rest = [names_state(texts[it["id"]], state) for it in items if not it["meta"]["labels"][state]]
+    mean = lambda xs: (sum(xs) / len(xs)) if xs else None  # noqa: E731
+    return {"n_true": len(hold), "n_false": len(rest), "named_when_true": mean(hold), "named_when_false": mean(rest)}

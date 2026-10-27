@@ -1,0 +1,287 @@
+{
+ "py_string": {
+  "ol": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.078125,
+    "by_value": {
+     "inside": 0.0375,
+     "outside": 0.11875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly use meta-labels like 'inside string' or 'outside string'; instead, 'inside' readouts complete natural-language error messages or docstrings, while 'outside' readouts complete executable Python code statements and indexing.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.60625,
+    "by_value": {
+     "inside": 0.70625,
+     "outside": 0.50625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.08,
+   "notes": "The verbalizer rarely mentions string tokens explicitly; instead, 'inside' string literals heavily correlates with error message strings, tracebacks, and warnings, while 'outside' correlates with code logic, documentation, and parameter validation conditionals.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "js_string": {
+  "ol": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.184375,
+    "by_value": {
+     "inside": 0.25,
+     "outside": 0.11875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly mention 'inside' or 'outside' string literal status; instead, completions in 'inside' directly continue string text or close literal quotes, whereas 'outside' starts directly with syntactic member access ('.') or call invocations ('(').",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.46875,
+    "by_value": {
+     "inside": 0.75625,
+     "outside": 0.18125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.2,
+   "notes": "The verbalizer rarely mentions string literals or quotes directly, but strongly associates tokens inside string literals with error messages/descriptions and tokens outside with code implementation, logic, and function definitions.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "latex_math": {
+  "ol": {
+   "mention_regex": {
+    "regex": "math|equation|latex|\\\\frac|formula",
+    "overall": 0.31875,
+    "by_value": {
+     "inside": 0.35,
+     "outside": 0.2875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The model never mentions the feature explicitly by name; readouts for 'inside' continue open math syntax/LaTeX tokens while readouts for 'outside' continue prose and slash-delimited multi-word terminology.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "math|equation|latex|\\\\frac|formula",
+    "overall": 0.803125,
+    "by_value": {
+     "inside": 0.9125,
+     "outside": 0.69375
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly name the LaTeX math span status ('inside' vs 'outside' $...$), but proxy it subtly through genre tags (e.g. 'Mathematical derivation' inside vs 'Academic paper abstract' outside).",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "py_arg": {
+  "ol": {
+   "mention_regex": {
+    "regex": "argument|param|positional",
+    "overall": 0.046875,
+    "by_value": {
+     "first": 0.0125,
+     "third": 0.08125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The readouts almost purely consist of continuous code completions (function call continuations) following commas or closing parentheses, with explicit mentions of argument positions appearing in only a tiny fraction of code comments.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "argument|param|positional",
+    "overall": 0.646875,
+    "by_value": {
+     "first": 0.66875,
+     "third": 0.625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The verbalizer almost never mentions argument ordinality explicitly (<2%), instead generating code and API doc descriptions specific to the underlying benchmark call examples.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "json_depth": {
+  "ol": {
+   "mention_regex": {
+    "regex": "nest|depth|level|deep|inner|outer|top[- ]level",
+    "overall": 0.025,
+    "by_value": {
+     "deep": 0.03125,
+     "shallow": 0.01875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.02,
+   "notes": "The readouts almost never name 'deep' or 'shallow' explicitly, instead continuing JSON schemas: deep positions continue nested parameter/property constraints, while shallow positions continue root-level API metadata like baseUrl and documentation links.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "nest|depth|level|deep|inner|outer|top[- ]level",
+    "overall": 0.390625,
+    "by_value": {
+     "deep": 0.26875,
+     "shallow": 0.5125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.2,
+   "notes": "Readouts for 'deep' frequently describe 'nested' fields/messages/objects, whereas 'shallow' readouts distinctly emphasize 'top-level' metadata or properties.",
+   "rejected": [
+    {
+     "id": "nla:json_depth:m0",
+     "family": "nested_vs_toplevel_fields",
+     "template": " / Technical API parameter documentation for load testing, establishing consistent field description patterns with type, default value, and remarks for each {v} object.",
+     "fillers": {
+      "deep": "nested",
+      "shallow": "top-level"
+     },
+     "error": "template too long"
+    }
+   ],
+   "n_proposed": 5
+  }
+ },
+ "md_heading": {
+  "ol": {
+   "mention_regex": {
+    "regex": "heading|header|title|section|##",
+    "overall": 0.096875,
+    "by_value": {
+     "deep": 0.0625,
+     "shallow": 0.13125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts exclusively continue the heading titles and prose in multilingual text without explicitly naming 'deep' or 'shallow' heading levels.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "heading|header|title|section|##",
+    "overall": 0.903125,
+    "by_value": {
+     "deep": 0.9,
+     "shallow": 0.90625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "Direct explicit mentions of heading levels (H1/H2 vs H3/H4 or markdown hashes) are rare (~5%), but the tool frequently distinguishes deep vs shallow headings implicitly via 'subsection' vs 'section'.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "md_list": {
+  "ol": {
+   "mention_regex": {
+    "regex": "list|bullet|nested|indent|item",
+    "overall": 0.075,
+    "by_value": {
+     "nested": 0.13125,
+     "top": 0.01875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts consist entirely of downstream Markdown/code continuations with no explicit meta-descriptions or mentions of list nesting level.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "list|bullet|nested|indent|item",
+    "overall": 0.90625,
+    "by_value": {
+     "nested": 0.90625,
+     "top": 0.90625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.03,
+   "notes": "The model rarely names list nesting directly, occasionally mentioning 'sub-bullets' or 'sub-steps' for nested items versus top-level bullet points or numbered lists.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "code_lang": {
+  "ol": {
+   "mention_regex": {
+    "regex": "python|javascript|typescript|node|\\.py|\\.js",
+    "overall": 0.165625,
+    "by_value": {
+     "javascript": 0.23125,
+     "python": 0.1
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.03,
+   "notes": "The readouts almost never name 'python' or 'javascript' explicitly, instead continuing code syntax using language-specific idioms, comments, keywords, and conventions.",
+   "rejected": [],
+   "n_proposed": 6
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "python|javascript|typescript|node|\\.py|\\.js",
+    "overall": 0.8,
+    "by_value": {
+     "javascript": 0.74375,
+     "python": 0.85625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.65,
+   "notes": "Python items explicitly name 'Python' at the readout start roughly 75% of the time, whereas JavaScript items name 'JavaScript' or 'TypeScript' in about 55% of readouts, frequently drifting into Node.js, ECMAScript, or runtime tooling mentions.",
+   "rejected": [],
+   "n_proposed": 6
+  }
+ },
+ "_calls": 16,
+ "_spend_usd": 0.181
+}

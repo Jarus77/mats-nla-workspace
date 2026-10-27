@@ -655,3 +655,29 @@ The positive control (Python vs JavaScript) has a statement shift of 0.2976, und
 predicts "not stated"; we expect that cell to fail and have said so in the pre-registration before the readers run.
 Exp 23: 500 random read points in public documents, both readers once each, naming and carrying base rates; chained
 behind exp 22's GPU stages.
+
+## 2026-10-27 — D47: exps 22 and 23 scored; the natural-text result replicates on a public bank; neither reader names structural state at random read points
+
+Exp 22 (public-source rebuild, predictions frozen before the readers ran): primary 30 of 38 (0.79), without the
+judge-scored exhibits cell 26 of 30 (0.87); secondary 13 of 16 (0.81); all 56 cells 0.79 against the declared 0.80, as
+in exp 19 (0.79). The two scorecards agree on 50 of 56 cells, with the same two complement-naming misses (latex_math
+named at 0.40; md_list unnamed). The positive control failed as pre-registered: Python-vs-JavaScript is stated by the
+NLA at 0.70, exhibited by Oracle Lens at 0.78 (the judge's first non-zero exhibition score in three experiments) and
+read by the J-lens at 0.93, with a statement shift of 0.2976 against the 0.30 line. Decision: the line stays; the
+ordering of rows by the statement instrument (the one stated row is the highest) is the finding, and the write-up says
+the threshold is a hair high rather than moving it. Oracle Lens's prompted cell is phrasing-bound in both directions
+(fixed phrasing reversed on py_string in both experiments, 0.31; a mined phrasing reaches 0.91 here and none did in
+exp 19); the free-readout cells are not. The reconstructor-based exhibits measure was not run on exp 22.
+
+Exp 23 (random read points, Neel's "random prompts"): the loose naming regex first shipped (`MENTION_ANY`) counted
+content words ("open", "math", "level") and gave NLA 0.43 to 0.60; replaced before reporting by state-specific
+phrasing (`names_state`), with the loose count kept in the table for the record. Strict: Oracle Lens names a
+structural state in 0 of 500 readouts; the NLA in 3% (string), 13% (parentheses), 4% (braces) of points where the
+state holds, against 0 to 1% where it does not, and 50% for list items (n = 18). Carrying at random points in code: the
+string state is readable at 0.86 and recoverable from the readout text alone at 0.72 (Oracle Lens) and 0.79 (NLA);
+depth states are only weakly readable at random points (0.67 to 0.69) and carried at 0.54 to 0.68. The "all kinds"
+string row is confounded with document kind and is reported with that caveat.
+
+Both experiments go into the write-up as the sample-size and alternative-explanation answers Neel asked for: a second
+prospective bank from public sources replicates exp 19; the forced-choice "states" result is not an artefact of
+contrastive banks or prompting; the decorrelated text classifier recovers the state from the unprompted readouts.
