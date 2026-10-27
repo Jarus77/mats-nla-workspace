@@ -715,3 +715,35 @@ Lens's outputs carry the state as a continuation does, the NLA's as a descriptio
 paragraph quotes the NLA column together with exps 24 and 25 and the text bag; (3) the derivation note
 (`notes/derivation.md`, written today) is the account of why, with its consequence C5 updated by exp 24; (4) no
 further GPU experiments before the talk unless Neel asks; the 2,000-point random run stays optional.
+
+## 2026-10-28 — D49: the five-reviewer panel, and exps 27, 28, 30 scored the same night
+
+Five independent reviews (skeptic, intervention, generality, theory, field impact; memos in `notes/draft_critique_*.md`,
+untracked) converged on one confound: "naming follows the reward" is not separated from "naming follows the warm-start
+register", and the statement-shift rule had four counter-rows in our own record. Decisions: run exp 28 (shift with
+paraphrases on every row with a stated rate), exp 29 (naming and carrying along the NLA's RL trajectory, nine points
+plus a text-only zero), exp 30 (a supervised naming adapter with a control arm); exp 26 (layer sweep) and exp 27 (random
+points at 1,939) were already launched. Full re-RL against a statement-aware critic is not attempted (no training code,
+three to five engineer-days). The write-up's over-claims listed in the skeptic memo are corrected before any new result
+goes in. Code subagents run on Opus from now on (user's budget).
+
+Exp 27: four times the points reproduce exp 23 within its intervals. A blind judge finds the NLA stating the in-string
+position on 0.22 of in-string readouts (regex 0.02) and on 0.02 of the others; Oracle Lens on 0 of 598. "Neither reader
+names" becomes "Oracle Lens never, the NLA in a minority of cases in its own words".
+
+Exp 28: paraphrase-mean statement shift on 47 rows: Spearman 0.40 with the stated rate overall, 0.28 (p 0.08) within the
+41 structural rows; the counter-rows stay at shifts 0.00 to 0.14 while stated 0.25 to 0.41; exp 12's code-language row is
+stated 0.82 at 0.16. **The rule "the NLA states a property iff the statement shift clears 0.30" is withdrawn.** What
+stands: the reward never pays for structural statements (shifts 0.00 to 0.19 on every structural row), the shift
+separates the language rows from the rest, and the NLA's structural naming is a register property.
+
+Exp 30: 400 supervised steps on 768 items with a true statement appended; reconstruction unchanged against the control
+arm (0.507 vs 0.512); statements right 0.79 to 1.00 on held-out files of the readable code rows and at chance on the
+unreadable Markdown rows; transfer weak (held-out row 0.53 naming, 0.59 correct; random points mostly "outside"
+regardless). Three of five pre-registered lines fail, the generalisation ones. Reported as "naming costs the reward
+nothing and the state is reachable; a general habit of reporting state is not taught by 400 steps".
+
+Thesis wording after tonight: the readers carry structural state in their outputs (Oracle Lens as a continuation, the
+NLA as a description); Oracle Lens never names it; the NLA names some of it, in its describing register, and the
+reconstructor reward neither pays for nor charges for those statements. Whether the register was set by the warm start
+or shaped by RL is exp 29's question.
