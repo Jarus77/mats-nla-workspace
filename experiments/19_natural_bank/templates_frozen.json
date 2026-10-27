@@ -1,0 +1,7267 @@
+{
+ "items": {
+  "html_depth": {
+   "mine": [
+    "html_depth_12dc52dahtml21d88d3430bb_1",
+    "html_depth_1399dcdbhtmlfa377e627f46_1",
+    "html_depth_152fb0bahtml83287aa9cd5c_0",
+    "html_depth_18d4a719html7e38789940da_0",
+    "html_depth_196db85ahtmla690df7d9fab_1",
+    "html_depth_1d1bf20ehtml13dd37428f38_0",
+    "html_depth_209443a6htmlfac887345ff9_1",
+    "html_depth_25f1371dhtml2cc7afd66ddb_0",
+    "html_depth_2bf29638htmleceb5cc24e0f_1",
+    "html_depth_3187047dhtml9fca3ede414d_1",
+    "html_depth_32e3ee9fhtml77be151f0818_0",
+    "html_depth_366c0fadhtml515ceafde189_1",
+    "html_depth_506aab37html5bd23affb9c0_1",
+    "html_depth_5799745ehtmle3d472a42271_0",
+    "html_depth_58accdc9htmld312a2ec143c_0",
+    "html_depth_6783bcc9html25a456f51680_0",
+    "html_depth_71f9df3ahtml04993503573a_0",
+    "html_depth_775b5b8chtmlf8e7286b8764_0",
+    "html_depth_79bb4ad8htmlbfdd7f285073_1",
+    "html_depth_7e6a5b18html22d43b32671b_1",
+    "html_depth_7e92ff00html9034b2fd3581_1",
+    "html_depth_7ea48d67html05701a38ce0c_0",
+    "html_depth_8073acd8html3f254c8e9377_0",
+    "html_depth_83da1acahtmldef4658d8b6f_1",
+    "html_depth_8bcb2ab5html8d7b2a802dd8_1",
+    "html_depth_9acd7b38html00072705a554_0",
+    "html_depth_a9926e3ehtml856555187905_0",
+    "html_depth_bdb351b5html7bf3d0eb40fe_1",
+    "html_depth_d8836e5ehtmlf2602c5f1c1f_1",
+    "html_depth_dc2fb28chtml6b98668ffc39_0",
+    "html_depth_dd28a145htmle0efa2318942_0",
+    "html_depth_e2b60beahtml3db27691e147_0",
+    "html_depth_e2confightml4d54f36d284e_1",
+    "html_depth_e2confightml8935ee4de6fa_1",
+    "html_depth_e2syntaxhtmlf992ad0f37d8_0",
+    "html_depth_e910e1adhtmldde6ee1f0af1_0",
+    "html_depth_f17e254ehtml7b778b353a96_0",
+    "html_depth_f31aa04ehtml73c6bc632f56_1",
+    "html_depth_fd07a777htmlf486811df539_1",
+    "html_depth_re2posixhtml8f304eabe787_1"
+   ],
+   "select": [
+    "html_depth_0000d2d7html5861d2e66bb5_0",
+    "html_depth_02620ac5htmlbb9db66f90a7_1",
+    "html_depth_04074c1dhtmlb485a633e5b2_1",
+    "html_depth_046f9297html11523bd65fc1_0",
+    "html_depth_04ca3da0htmla34a94d4b71c_1",
+    "html_depth_065829fchtml3cea6f3adb93_1",
+    "html_depth_073600a3htmldb9ee3f5a805_0",
+    "html_depth_0847450dhtmld374d7c95643_0",
+    "html_depth_08f6c05chtml223c9465cfea_1",
+    "html_depth_090fa94ahtmlaa210edd11c1_1",
+    "html_depth_09220821htmlecc68fa1d47e_0",
+    "html_depth_09f6c6e2htmle7168e8cd17f_0",
+    "html_depth_0bfb304ehtml9d0c9a31a346_0",
+    "html_depth_0c1d737ahtml56fce7533486_0",
+    "html_depth_0eb6ed70html27fc6b1b1aff_1",
+    "html_depth_1008f9b8htmle3c1866b65f1_0",
+    "html_depth_11c14211htmlf19471318906_0",
+    "html_depth_1831a118htmld21e89a4f27f_1",
+    "html_depth_19b73bb5html90b1ab65e221_0",
+    "html_depth_1d1bf20ehtml13dd37428f38_1",
+    "html_depth_1dfe91fchtml077c90a4a495_1",
+    "html_depth_1e96e797html8118ef2aa601_1",
+    "html_depth_1f8d7b6ehtml499684154ed0_1",
+    "html_depth_22b02e31html9b1cb4d8375a_0",
+    "html_depth_2471f850html9b392b22f520_0",
+    "html_depth_269fe89chtml767470fc86f3_0",
+    "html_depth_27532df2htmlfd19d9bb3957_0",
+    "html_depth_2894ee33html9eff626d2505_0",
+    "html_depth_29b3942fhtml900a27c41407_0",
+    "html_depth_2c4eafb4html7246f406ab7a_1",
+    "html_depth_2c584639htmlcd0bdb4272cb_1",
+    "html_depth_2c879948html71148e0035dc_0",
+    "html_depth_2ced2718htmlf291f9431bc4_0",
+    "html_depth_2eb99812html8ecc134b0793_1",
+    "html_depth_2partialhtml6db47b6c54ab_0",
+    "html_depth_2patternhtmle28ef8603d59_1",
+    "html_depth_3053f5e8html6aee06221fed_1",
+    "html_depth_307137bdhtml1e18bc4ceb75_0",
+    "html_depth_31569c88html85322b939d59_0",
+    "html_depth_32b8ec93html523a7cf0dcdf_1",
+    "html_depth_32ce608dhtmlc139ea6ac587_1",
+    "html_depth_3611167chtml5bcef9181ada_0",
+    "html_depth_373ebe63html8230a66ef456_1",
+    "html_depth_390ab01bhtmlc4e43fb843bb_1",
+    "html_depth_39a9cd46html9c90f5985f60_1",
+    "html_depth_3b126be9html21bd54946220_0",
+    "html_depth_3c30a6achtml475b8e0c45e2_1",
+    "html_depth_400f2218htmlab3746367618_0",
+    "html_depth_43b4076chtml84af54536fb8_1",
+    "html_depth_441a23f8htmle0d0cf8967f8_1",
+    "html_depth_447290fbhtml443002756980_1",
+    "html_depth_47884964html84202c9cf4d8_0",
+    "html_depth_47a70988html4a7c411a73d1_1",
+    "html_depth_486e5e57html704f8875ee4e_0",
+    "html_depth_4b147cfehtml582bde89d33a_0",
+    "html_depth_4b516668html4448fe385771_1",
+    "html_depth_4b7671ddhtml8f3a1034fb03_1",
+    "html_depth_4c275ebfhtml4c1ef146f84e_1",
+    "html_depth_4f4ffa7chtml0c69698e52b8_0",
+    "html_depth_516b8489htmlf76d31264330_0",
+    "html_depth_5605e8e9html844a60aa645b_1",
+    "html_depth_5667f938htmlb0437a8f4fbf_1",
+    "html_depth_580b9d1dhtml89c8348f74c0_0",
+    "html_depth_5bd5f7f5htmla5e7b6e739f5_0",
+    "html_depth_5dc68795htmlf04a73f438a0_0",
+    "html_depth_5e69d1behtmlad41f5e4f064_0",
+    "html_depth_670ff48chtmldcc18f7b48d1_0",
+    "html_depth_67492e04html09f1bb72608b_1",
+    "html_depth_6a25850ahtmld49838ab62cd_0",
+    "html_depth_71a6d7c8html42b7a8e1db0d_0",
+    "html_depth_72450e5dhtml140c5d9eb815_1",
+    "html_depth_733b7867html5d3b091b66af_1",
+    "html_depth_7593559ahtmle9b3d1af1960_1",
+    "html_depth_7603e9aahtml329fccccc6f6_1",
+    "html_depth_78491179htmlc913e6571312_1",
+    "html_depth_7aee0503html3a081721ccc5_0",
+    "html_depth_7b6ef4f8html18dcc9974914_1",
+    "html_depth_7b818645html4a898533e527_0",
+    "html_depth_7bcc715ahtmlc285871083f4_1",
+    "html_depth_7cf3a2d7htmld64527260cab_0",
+    "html_depth_7cf46b34html35946e2852f8_0",
+    "html_depth_7e2879d5html6c51e7941353_0",
+    "html_depth_7f191f10htmlc2dd625ee205_0",
+    "html_depth_81b7ad9dhtmlfc7672af3f34_0",
+    "html_depth_8284a0f1html131491500882_1",
+    "html_depth_843c28f6html80e2b27249d8_0",
+    "html_depth_847fa5e1htmle3332af940bf_1",
+    "html_depth_86cad04bhtml6a69840805cc_0",
+    "html_depth_877b18a7htmla66619118989_0",
+    "html_depth_8860a164htmlebea2bc3eb9c_1",
+    "html_depth_891e6dc0html7587b91229c3_0",
+    "html_depth_8948cd04htmlbfdb726176a0_0",
+    "html_depth_8d36e269htmlc7aaacfc5e8f_0",
+    "html_depth_8d9b6a47html5ad4f61f222b_0",
+    "html_depth_8dfabfd1htmle5a81d79c995_0",
+    "html_depth_918dbc70html32750bfa0012_0",
+    "html_depth_92ffc6c8html9903048ef69e_0",
+    "html_depth_9494e043html7f4adee332be_0",
+    "html_depth_96937c28html476e5b0a1a62_1",
+    "html_depth_976b845dhtml35e3a151abae_1",
+    "html_depth_990c92edhtml91254ca0724e_1",
+    "html_depth_9a587eafhtml3ee01964ed8a_1",
+    "html_depth_9acd7b38html00072705a554_1",
+    "html_depth_a0b408b1html6dcb0f3c3d3a_0",
+    "html_depth_a0b408b1html6dcb0f3c3d3a_1",
+    "html_depth_a159e369html6440f495370a_0",
+    "html_depth_a49b6014html476e38226b93_1",
+    "html_depth_a6bfa05ehtmle5283ced5735_1",
+    "html_depth_a7171711html84074958f5b2_1",
+    "html_depth_a7c1c8efhtml89017ae9d9bb_1",
+    "html_depth_a80d60f9htmla1ea57b1c609_0",
+    "html_depth_ad5f3a5ehtml11e3685215be_1",
+    "html_depth_b177a653html872725141b99_1",
+    "html_depth_b375b012html7674bd6f3c95_0",
+    "html_depth_b531b168html2e146d52a376_1",
+    "html_depth_b5ea572bhtmle715c6f1ff9b_0",
+    "html_depth_b78a44c6htmlb68a0fdb0ad8_0",
+    "html_depth_bb21e214htmleb600f104473_1",
+    "html_depth_bcddeab4html18ec2e214b9d_1",
+    "html_depth_bcfb8e20htmldaaf257edfb3_0",
+    "html_depth_c1b4c75dhtml0f3a95f671a3_1",
+    "html_depth_c20e74f2html37efa783a4e5_0",
+    "html_depth_c214f2fbhtml112e1aaf2424_0",
+    "html_depth_c22e22dfhtml748666076fc8_1",
+    "html_depth_c260b91bhtml2f5b6a289eab_1",
+    "html_depth_c429a3bfhtml2afa12585f04_0",
+    "html_depth_c429a3bfhtml2afa12585f04_1",
+    "html_depth_c906d93dhtmla78851556f07_1",
+    "html_depth_c964fbadhtmla5699ebe2d93_0",
+    "html_depth_ca4b01afhtmla12a3332db5f_1",
+    "html_depth_ca72c9a5html302228c34d9d_1",
+    "html_depth_ca785199htmld97b03bbd572_1",
+    "html_depth_cb1b7bbahtml9bba33433fc7_0",
+    "html_depth_cbdeda2bhtml1d2d8b8ed653_1",
+    "html_depth_ccdd9c9ehtml98c8af9383bc_1",
+    "html_depth_cd0b062ahtmld60a1c864ac3_1",
+    "html_depth_ce52d694htmlb28ebf16960d_0",
+    "html_depth_cre2grephtml41049fce8261_0",
+    "html_depth_d5052053html30cfd866a341_1",
+    "html_depth_d505ae02html16659b611751_1",
+    "html_depth_d57fe49ehtml787b03d20280_0",
+    "html_depth_d789f086htmlc3db2355b646_0",
+    "html_depth_d789f086htmlc3db2355b646_1",
+    "html_depth_db638056htmlcd47da43a658_0",
+    "html_depth_dc2fb28chtml6b98668ffc39_1",
+    "html_depth_df341aa7html9024f20afbad_0",
+    "html_depth_e3d960b4html3864594f555a_1",
+    "html_depth_e3e1e4afhtml0ccea551a4ea_0",
+    "html_depth_e4945fc9html298767dcebf4_0",
+    "html_depth_e5d562b2htmlb560cd23883b_1",
+    "html_depth_ebb54a81htmlcb0ff583dc27_0",
+    "html_depth_ed966292html75cd4e11a022_0",
+    "html_depth_ef12c18bhtmlaccf8c07139f_1",
+    "html_depth_erializehtml12894eac1256_1",
+    "html_depth_f05664bbhtml04b3deca4322_0",
+    "html_depth_f209c253html613c5ecc12b0_1",
+    "html_depth_facbae94html923158c49ccd_1",
+    "html_depth_fcca99echtml7131b44b8759_0",
+    "html_depth_fcd5852ahtml0b45fb88728e_0",
+    "html_depth_pcre2html047c5018f0cc_1"
+   ]
+  },
+  "js_string": {
+   "mine": [
+    "js_string_Inspectionjsc3c01ad702bf_0",
+    "js_string_Operationsjsdc2e726db013_1",
+    "js_string_Projectionjsd6adbfd33d84_0",
+    "js_string_URLjs849eac5a0d7f_1",
+    "js_string_alCF3ATd1Vjs3ee009ab9d1d_1",
+    "js_string_artAotViewjs65d4964bd7cb_1",
+    "js_string_asn1jsdd45186f7e74_0",
+    "js_string_borvectorsjs77db14403558_1",
+    "js_string_decryptjseea748cd42d3_1",
+    "js_string_dnslookupjs603fbbc512d0_1",
+    "js_string_eTestFilesjs37918a6c2a8d_0",
+    "js_string_elmjs08ff1112d8a3_1",
+    "js_string_eratortestjsf287cdf7d594_0",
+    "js_string_etCW1IO3dGjs05508baefcea_0",
+    "js_string_indexjs0d10ee921436_0",
+    "js_string_indexjs2dd5fa83c988_1",
+    "js_string_indexjs355f4f0d64b4_0",
+    "js_string_indexjs4890b77892b2_1",
+    "js_string_indexjs8eef11a336a6_0",
+    "js_string_indexjs93c4a8dd13ee_1",
+    "js_string_indexjsa481b6bc10f8_0",
+    "js_string_ipsProfilejs2320e3ae5271_0",
+    "js_string_jquery191jsaa7ed15a7561_0",
+    "js_string_jsonjsaf1f14428152_1",
+    "js_string_jtdjsec0c18b40a1c_1",
+    "js_string_kotlinjs9be4ee4299cb_0",
+    "js_string_mentparserjsb88a227e43de_1",
+    "js_string_ndCx9kaVNfjsea1f4d947dc3_1",
+    "js_string_olMetainfojs50a9ff090127_0",
+    "js_string_olProviderjsf62061a248e7_0",
+    "js_string_parsejs81f46765a843_1",
+    "js_string_personatedjsa99583253e75_0",
+    "js_string_pipejs9b1ae7ad8d0f_1",
+    "js_string_rateAgentsjsdfa4cc375466_1",
+    "js_string_readablejsfb364a2b1790_0",
+    "js_string_reei904hd2js9219b16206f7_0",
+    "js_string_stringjs08a21c1dea81_0",
+    "js_string_uestsignerjs610754707b5a_1",
+    "js_string_wElement12jscba9dda4b55b_1",
+    "js_string_workertestjs158f36548c49_0"
+   ],
+   "select": [
+    "js_string_FtpContextjse186a7e895a3_1",
+    "js_string_MachoImagejsc63abbcfa2b2_1",
+    "js_string_Modernizerjsd1c9837a152e_1",
+    "js_string_NoopMeterjsd3ba46fa6556_0",
+    "js_string_ReaderFilejs09422928bf77_0",
+    "js_string_TDNotationjs1f519e195d56_1",
+    "js_string_Tracingjs1bebc0257c61_0",
+    "js_string_Updatejsf0096d60dee9_0",
+    "js_string_adxReleasejs1372852c1a9f_0",
+    "js_string_applyjsfacc0140cda5_0",
+    "js_string_arioEventsjsb52d9f1d31a4_1",
+    "js_string_arioValuesjs5ed16190b3a6_0",
+    "js_string_arningtestjsb83d53370623_1",
+    "js_string_arrUtilsjs5a3e97d85db4_1",
+    "js_string_ashServicejs5917bec26f34_0",
+    "js_string_ationMatchjsf76e180cda4d_0",
+    "js_string_ationstestjsf57612b42215_0",
+    "js_string_attributesjsb772565cbab9_1",
+    "js_string_azMetadatajs15324176ca64_0",
+    "js_string_azMetadatajs15324176ca64_1",
+    "js_string_bformatterjs9d98f89c31bd_1",
+    "js_string_bignumberjsd4ff28860def_0",
+    "js_string_bignumberjsd4ff28860def_1",
+    "js_string_canvasjs63b63cd5b8e0_0",
+    "js_string_checkpointjs8c3049120a87_0",
+    "js_string_chestratorjs791fc520e654_0",
+    "js_string_codeserverjs9a13b428e4e0_0",
+    "js_string_commonjs15806f4d37e9_1",
+    "js_string_ctcorelstmjsa3046ca0d857_0",
+    "js_string_dbcscodecjs8ff3407d4b82_1",
+    "js_string_diagnosticjsee4e23086dbf_0",
+    "js_string_dirjs763b440034fd_1",
+    "js_string_e3dac425c6jsa4a185da4c52_1",
+    "js_string_eElement17js285261ca996d_0",
+    "js_string_ectHandlerjs149c9dced681_1",
+    "js_string_ecthandlerjsee9319cb6282_1",
+    "js_string_ecycleTooljs8841a17fa3d0_0",
+    "js_string_editjsbb893fd16ba5_0",
+    "js_string_elistenersjs51c92c15d2a6_1",
+    "js_string_encodejsf61d65265add_1",
+    "js_string_enjs42c239424f95_0",
+    "js_string_equaltestjs709cfc14f6f9_0",
+    "js_string_erDeadlinejs7b7692f86836_0",
+    "js_string_eratortestjsb8c7f75adfc8_0",
+    "js_string_eringToolsjs355529b97b56_0",
+    "js_string_errorsjs5d98a6697fc0_0",
+    "js_string_eventsoncejsb1a99e2db1fd_0",
+    "js_string_examplesjsb3df451d2b32_0",
+    "js_string_factReaderjsfd8a22feaf60_1",
+    "js_string_flowscalarjsb19fa46eb578_0",
+    "js_string_formdatajsc35d3f0ec262_0",
+    "js_string_geometryjs7594d2c756ff_1",
+    "js_string_goBinaryjs4d736e330590_1",
+    "js_string_headersjsb65f00e51a94_1",
+    "js_string_hubClientjsae3e36e6530d_0",
+    "js_string_ibleServerjs13777fc406af_1",
+    "js_string_imeServicejsc9c375c50101_1",
+    "js_string_indexjs0dee63d4c400_1",
+    "js_string_indexjs1a1b974ec84b_0",
+    "js_string_indexjs1a1b974ec84b_1",
+    "js_string_indexjs1c26d96a22ea_1",
+    "js_string_indexjs1fa148fc1597_1",
+    "js_string_indexjs29cfa066bb15_1",
+    "js_string_indexjs32a7715cbd09_0",
+    "js_string_indexjs3f220c6c386d_0",
+    "js_string_indexjs3ff872e4ea06_0",
+    "js_string_indexjs43da1e673944_1",
+    "js_string_indexjs574ab86509fb_0",
+    "js_string_indexjs574ab86509fb_1",
+    "js_string_indexjs96c2123a2523_1",
+    "js_string_indexjsa505fcc40d7b_0",
+    "js_string_indexjsac724386644c_1",
+    "js_string_indexjsd50d4c16fd93_1",
+    "js_string_indexjse2b4ecb98662_0",
+    "js_string_indexjseb7241164e55_0",
+    "js_string_jweencryptjs6ad69f150498_1",
+    "js_string_jwsjs88297bc17018_1",
+    "js_string_jwtjs20ff5e785bea_1",
+    "js_string_karuReportjs2136543e4b10_1",
+    "js_string_ketSubjectjsff59c4a9308d_1",
+    "js_string_lexerjs8333601d75a0_1",
+    "js_string_loadersjs235e46ce595f_1",
+    "js_string_loadjs80402a27635a_0",
+    "js_string_loadjs80402a27635a_1",
+    "js_string_localjs9199dddb9e9e_0",
+    "js_string_mapresolvejsc592df6b8867_1",
+    "js_string_meCommandsjsf4a9398882a9_1",
+    "js_string_moduletestjsefff54703a64_0",
+    "js_string_msjsb016b79777df_1",
+    "js_string_nContractsjsf89194af3348_0",
+    "js_string_ndingstestjse5300894e6ec_0",
+    "js_string_nstructionjscf2326a1c181_0",
+    "js_string_ntshandlerjsf8de22960e62_1",
+    "js_string_ojectCachejs65422776b94b_0",
+    "js_string_olProviderjsf62061a248e7_1",
+    "js_string_onCloudSqljsa4c175e6c88b_0",
+    "js_string_onCu0Yedqqjs58d89f04e097_1",
+    "js_string_onpjsf90e9aacb17f_1",
+    "js_string_otCd23u6jdjs9662c66d1156_0",
+    "js_string_parsersjs02ebcb798bee_0",
+    "js_string_parsersjs02ebcb798bee_1",
+    "js_string_perljscb6cff163b3d_0",
+    "js_string_picomatchjsf45463f2c399_0",
+    "js_string_pljs15265ff0cce7_0",
+    "js_string_programjsf002af0730a3_0",
+    "js_string_pwebworkerjs584df13adac5_1",
+    "js_string_rawBinaryjs5a2004901847_1",
+    "js_string_reBIEP7tvFjse0f6b214e778_1",
+    "js_string_reCommandsjse694345487ff_1",
+    "js_string_reFailuresjscad90cbf46f7_1",
+    "js_string_reProviderjs69c34b7d2261_1",
+    "js_string_readablejs7029ea7f6a35_1",
+    "js_string_readentryjs2e8412622ff4_0",
+    "js_string_realpathjs425b1edc176b_1",
+    "js_string_referencesjs5972b93a601e_1",
+    "js_string_replacejs9dc1be931a20_0",
+    "js_string_replacejse3c2bda32daf_0",
+    "js_string_responsejseab0b80f08b2_0",
+    "js_string_resuZwOV6Tjs980d3d81c155_0",
+    "js_string_rgenumbersjs1ef56e1b21ec_0",
+    "js_string_rimrafjs9aaf8a271693_0",
+    "js_string_rioCapturejseb7a6767e1fa_0",
+    "js_string_rioSecretsjs484f1307a0cb_0",
+    "js_string_risonItemsjsfad578df8606_1",
+    "js_string_schemajs5dd8d0ca73a4_0",
+    "js_string_schemajsed4e60e8a753_1",
+    "js_string_schematestjsff6f7b8c34da_1",
+    "js_string_scopejs1cada03f02d9_1",
+    "js_string_seFailuresjs47a8f989faa9_0",
+    "js_string_selfjs3e371519db60_0",
+    "js_string_semverjs9821c250906a_1",
+    "js_string_serverjs29b9c7393cb0_1",
+    "js_string_shrinkwrapjs8a29be57c89c_0",
+    "js_string_skilljsc02d2f9d02cc_0",
+    "js_string_solvepropsjsfecde3d12df8_0",
+    "js_string_sourcenodejs380a1badcbfc_0",
+    "js_string_ssionstartjseb233bd82aae_1",
+    "js_string_stigationsjs6a52cbbe9c24_1",
+    "js_string_stmanifestjs0bccab9e6ad1_0",
+    "js_string_stringifyjs963ebb37454b_0",
+    "js_string_stringjscaf32edb6f61_1",
+    "js_string_stringsjs87dea23ff5e4_0",
+    "js_string_stservicesjsbd6aa0ecf611_0",
+    "js_string_tInterfacejs581340ee44fc_1",
+    "js_string_tclaimssetjs3a338c57218e_1",
+    "js_string_thumbprintjs523a0f7f488d_0",
+    "js_string_thumbprintjsd3810a901e32_1",
+    "js_string_tnodevaluejsdf1554bd20c0_1",
+    "js_string_trytracingjs48e30e9f6c0d_0",
+    "js_string_ts6CCgB3VBjs25696ec52097_1",
+    "js_string_tslibes6jse2233c20ad5c_1",
+    "js_string_typesjs6bd0cbb64ea1_1",
+    "js_string_uestsignerjs3af81e9dcd0e_0",
+    "js_string_upDwQzEewKjsc55c1cee5419_0",
+    "js_string_urlencodedjs33e84dcf207c_0",
+    "js_string_utiljsac2b2568bd3d_0",
+    "js_string_utiljsc90062a7dc16_1",
+    "js_string_utilsjsaca20f5bfee7_1",
+    "js_string_v1js61a9150bf9a1_1",
+    "js_string_yformatterjse973cc17c9ca_1"
+   ]
+  },
+  "json_depth": {
+   "mine": [
+    "json_depth_100cp313jsonfa7d96f15b33_0",
+    "json_depth_77eed370jsonb80829d70a58_0",
+    "json_depth_anagerv2json3af19b2ae0b0_1",
+    "json_depth_anagerv2jsonb02cab6ab7e8_1",
+    "json_depth_av1beta1json365c8d390e11_1",
+    "json_depth_bf9d68e6jsonc137bb2f36d9_1",
+    "json_depth_cationv1jsond83bc2d10516_0",
+    "json_depth_ckschemajson191820e7f6c4_0",
+    "json_depth_d8ed1ab1json0f364bc4d1ae_0",
+    "json_depth_ee395540jsonc7c8a4e6be17_1",
+    "json_depth_ef89b570json2f5db57810b0_1",
+    "json_depth_elscachejson761aef551138_0",
+    "json_depth_ev1beta1jsone2b0ad0d3088_0",
+    "json_depth_keschemajson7afde1915b57_1",
+    "json_depth_lutionv2jsone267abc36c92_1",
+    "json_depth_mv1alphajson3079c03e3503_1",
+    "json_depth_nsionidsjsonb2d5237fcc80_0",
+    "json_depth_nslatev2json78826709f914_1",
+    "json_depth_nsv1betajsonbe901b2eafe0_1",
+    "json_depth_nsv2betajsona96a83504ef9_0",
+    "json_depth_ortilev1json764b40856ccd_0",
+    "json_depth_packagejson05e7b265b75f_0",
+    "json_depth_packagejson1da798824f84_1",
+    "json_depth_packagejson74faaef58fb5_0",
+    "json_depth_packagejsonbebc61d781da_1",
+    "json_depth_packagejsond50f13fcb6c5_1",
+    "json_depth_pluginjsonde5573896315_1",
+    "json_depth_qcsamplejsoneca3f778dacb_1",
+    "json_depth_redisv1json42c9ed6d5d95_0",
+    "json_depth_rv1beta1json4165e59d76df_0",
+    "json_depth_scriptjson0e8c204ed10b_0",
+    "json_depth_sv1beta1json673609c7ef83_0",
+    "json_depth_sv1beta1json6f8309350c8b_1",
+    "json_depth_tabasev1json8d1fe73f52aa_0",
+    "json_depth_taschemajson495a9cb5d013_1",
+    "json_depth_tmodelv1json9d62aa5970fa_0",
+    "json_depth_tplacev1json9780cae75d9a_0",
+    "json_depth_tplacev1json9780cae75d9a_1",
+    "json_depth_tsv1betajsonade5394ca867_1",
+    "json_depth_v1alpha1json5c2ee7c83c7f_0"
+   ],
+   "select": [
+    "json_depth_1p1beta1json0620642a0151_1",
+    "json_depth_1p1beta1json4a2870db3446_1",
+    "json_depth_3e2b1180json8b5f4302a706_1",
+    "json_depth_55529120json1277f7d130de_1",
+    "json_depth_5f15de70jsone4096e277058_1",
+    "json_depth_77eed370jsonb80829d70a58_1",
+    "json_depth_7eb115d0jsonee021284331f_0",
+    "json_depth_80987f91json21dbae7386ae_1",
+    "json_depth_81086ad1jsonb1a07b77bd3d_0",
+    "json_depth_81086ad1jsonb1a07b77bd3d_1",
+    "json_depth_84a0fba0json2e2f2522b768_1",
+    "json_depth_aboutjson93ce6fee0761_0",
+    "json_depth_aboutjsonb1f62d4c5d32_0",
+    "json_depth_aboutjsondbd773fc7e35_0",
+    "json_depth_amv2betajson8ec950924bf5_0",
+    "json_depth_amv2betajson8ec950924bf5_1",
+    "json_depth_anagerv1jsond6b09d6e7b95_0",
+    "json_depth_anagerv1jsone631844b105b_1",
+    "json_depth_anagerv2json3af19b2ae0b0_0",
+    "json_depth_anagerv3json40b98625e5cb_1",
+    "json_depth_anningv1jsond6dea6b272f4_1",
+    "json_depth_astorev1json69f60c2c3d40_1",
+    "json_depth_astorev2json4e50f6cd2655_0",
+    "json_depth_atformv1json054a487b69c7_0",
+    "json_depth_ationsv1json5bc2f0ee48a7_1",
+    "json_depth_b066dcc1json1b2cc5d058ca_1",
+    "json_depth_backupv1json7d61f3733ec5_0",
+    "json_depth_buyerv12jsonf8caf24941a6_1",
+    "json_depth_ca03da50json93cf249ac3f1_1",
+    "json_depth_ca03da50jsonb4d49a713794_0",
+    "json_depth_ca03da51json2820ee4c6b32_0",
+    "json_depth_ca03da51json7ae9d26c050c_0",
+    "json_depth_ca03da51json7bf8b32975b3_0",
+    "json_depth_centerv1json40b0716a7854_0",
+    "json_depth_ckschemajson191820e7f6c4_1",
+    "json_depth_ckupdrv1json7b5131bfb20f_1",
+    "json_depth_ckv1betajson9b9cf0f4646d_0",
+    "json_depth_countsv1jsonf86375ae6686_1",
+    "json_depth_d3eb1b01jsonc9d066416c03_1",
+    "json_depth_d8ed1ab0jsonfaf3c4237ea1_1",
+    "json_depth_d8ed1ab1json21342dd5743b_0",
+    "json_depth_d8ed1ab1json21342dd5743b_1",
+    "json_depth_d8ed1ab1json41703da97126_0",
+    "json_depth_dassetv1jsonf998143364f5_0",
+    "json_depth_dbuildv2jsonfda4eba3f5d3_1",
+    "json_depth_dbv1betajsona50b64f80d3f_0",
+    "json_depth_deployv1json7fd457a1ac25_1",
+    "json_depth_dfa76240jsonc752f5f996cc_1",
+    "json_depth_dnsv1json7ed8c2dbd02b_1",
+    "json_depth_drivev2json962ffc6dbea5_0",
+    "json_depth_e01879c2json2bb8d40f2a9d_1",
+    "json_depth_eadminv2jsonf12d4633c60f_1",
+    "json_depth_ebooksv1json092b908fed3a_0",
+    "json_depth_ebooksv1json092b908fed3a_1",
+    "json_depth_ee395540jsonc7c8a4e6be17_0",
+    "json_depth_elscachejson761aef551138_1",
+    "json_depth_enginev1json62a867263a06_1",
+    "json_depth_ensingv1jsona36fd08bc72b_0",
+    "json_depth_entityv1jsond19d55d15c09_0",
+    "json_depth_erulesv1json7d048dc18dfd_1",
+    "json_depth_esv1betajson84beba55548f_1",
+    "json_depth_ev1alphajson5f42b96bc564_0",
+    "json_depth_ev1alphajsona3c0b99523ff_1",
+    "json_depth_ev1beta1json6658532ae5a9_1",
+    "json_depth_ev1beta2json00deafcd6909_0",
+    "json_depth_ev1beta4json043998f223b0_1",
+    "json_depth_gementv1json35ff7e2395a2_0",
+    "json_depth_gementv1json7f81f49ab31f_1",
+    "json_depth_gementv1jsonbfeaf9e50228_0",
+    "json_depth_gistryv1jsond99461be6605_0",
+    "json_depth_gv1beta1json5270b94c59cb_1",
+    "json_depth_gv1beta1json6728adfb78f0_0",
+    "json_depth_gv1beta1jsondb61ec8b4703_1",
+    "json_depth_htschemajsonb2c19b514c75_0",
+    "json_depth_iamv2jsone0d8cf436f8b_0",
+    "json_depth_iapv1json581b7552e09d_1",
+    "json_depth_icshubv1jsonbc0135c9aa32_1",
+    "json_depth_ineagev1json6e93fd4fc29f_0",
+    "json_depth_iptionv1json8e9ef3d69c2c_1",
+    "json_depth_lyticsv1jsonca24cab291c7_0",
+    "json_depth_mv1alphajson56057a563297_0",
+    "json_depth_ndcorpv1jsondc2763266da6_1",
+    "json_depth_nsschemajson9b6618183c5c_1",
+    "json_depth_nsv1betajsonbe901b2eafe0_0",
+    "json_depth_nsv2betajsona96a83504ef9_1",
+    "json_depth_nv1alphajson19d917ea8778_0",
+    "json_depth_nv1alphajsonb9d6c5a09869_1",
+    "json_depth_nv1beta1json67bb005490a8_0",
+    "json_depth_nv1beta1json67bb005490a8_1",
+    "json_depth_onsamplejsonaa89871f024d_0",
+    "json_depth_oolkitv1json50f6b8b2bf04_1",
+    "json_depth_oudiotv1json5d92fafa47d4_1",
+    "json_depth_owsingv5jsoneb453ad5f8de_0",
+    "json_depth_packagejson0a9e356be2b6_1",
+    "json_depth_packagejson1ebdeb0dec13_1",
+    "json_depth_packagejson1fac051f9928_0",
+    "json_depth_packagejson2651865e4f58_0",
+    "json_depth_packagejson29057553c6fb_0",
+    "json_depth_packagejson29057553c6fb_1",
+    "json_depth_packagejson29dc0db51fe7_1",
+    "json_depth_packagejson2bb225056b1a_0",
+    "json_depth_packagejson32d6547ec909_1",
+    "json_depth_packagejson3a0dd1a202e1_1",
+    "json_depth_packagejson4cb4c189df46_0",
+    "json_depth_packagejson57d2761dcd19_1",
+    "json_depth_packagejson622dae60e940_0",
+    "json_depth_packagejson72289280c11d_0",
+    "json_depth_packagejson793cdb53667f_1",
+    "json_depth_packagejson88abc61a4ff6_0",
+    "json_depth_packagejsona07042dc0095_0",
+    "json_depth_packagejsonab8c2dfee7a2_1",
+    "json_depth_packagejsonaef4942dca12_1",
+    "json_depth_packagejsonaf561f4a3203_0",
+    "json_depth_packagejsonbebbcd2fd3b4_0",
+    "json_depth_packagejsonc0ef7b697c8f_0",
+    "json_depth_packagejsone094fe5fcd48_0",
+    "json_depth_packagejsone1df8b55a185_0",
+    "json_depth_packagejsone44ec2734991_1",
+    "json_depth_pluginjson304ee091879c_1",
+    "json_depth_policyv1jsonab694fe75fee_0",
+    "json_depth_policyv2jsonde6aef699ea5_1",
+    "json_depth_pollenv1json56f954659dfd_0",
+    "json_depth_polyv1json6e674e587ea2_1",
+    "json_depth_rationv1jsonb1663243d439_0",
+    "json_depth_rectorv3json26cc6831448f_1",
+    "json_depth_rtschemajsonfbe9fccbf74e_1",
+    "json_depth_rtv2betajson1195e4583105_0",
+    "json_depth_rtv2betajson1195e4583105_1",
+    "json_depth_rv1alphajsona8fc28bb2b45_1",
+    "json_depth_rv1beta1json96f38444a1f4_0",
+    "json_depth_rv1beta1json98c8852495b8_0",
+    "json_depth_rvicesv1jsoncdca9fb7281b_0",
+    "json_depth_schemajsond9c5b5992c51_1",
+    "json_depth_scoderv1json65d55f927459_0",
+    "json_depth_scriptjson1c80f9e6a033_1",
+    "json_depth_scriptjson3b7c6784795c_0",
+    "json_depth_scriptjsonbe55ed42ef17_0",
+    "json_depth_scriptjsonc10d4b064217_0",
+    "json_depth_sloginv1jsona94474d53f5e_0",
+    "json_depth_sqandav1json63d157954a77_0",
+    "json_depth_stschemajson24664b6f4b4f_1",
+    "json_depth_stschemajson7e4eb61ffdc8_1",
+    "json_depth_sv1beta1jsonb02bd35eb588_0",
+    "json_depth_sv2beta2jsonb44bf716fe3b_0",
+    "json_depth_taschemajson495a9cb5d013_0",
+    "json_depth_taschemajson6daf9ed11253_1",
+    "json_depth_tivityv1jsona2a167c0d64f_1",
+    "json_depth_tsv1betajson79d9e53b3e3c_1",
+    "json_depth_tsv1betajsonf1e28f8f51fd_1",
+    "json_depth_ualityv1jsonbdce84c67164_0",
+    "json_depth_ublitev1json09556cc1c083_1",
+    "json_depth_udgetsv1jsonafb77b782ba9_0",
+    "json_depth_uginlockjson150b0b7849c5_0",
+    "json_depth_upportv2jsone9a41d847f7b_0",
+    "json_depth_v1alpha1json582abefc57f1_0",
+    "json_depth_v1alpha1json618aba5f2457_0",
+    "json_depth_v1schemajson1f8143af5df1_1",
+    "json_depth_vatecav1jsonc12cbf3214d8_1",
+    "json_depth_w1230cdxjson8f1de2897391_0",
+    "json_depth_zationv1json11cfd33be53a_0"
+   ]
+  },
+  "latex_math": {
+   "mine": [
+    "latex_math_2engarXivtex52b69aac7878_0",
+    "latex_math_5resultstex4c5b3e219c22_0",
+    "latex_math_61022FoCMtex37232986e046_1",
+    "latex_math_SItex038113f570dd_1",
+    "latex_math_algorithmtexd312a8006517_1",
+    "latex_math_appendixtex0d7a6540ef39_0",
+    "latex_math_apssamptex733d82fd6b6a_0",
+    "latex_math_chapQCltexccf7e0cbce4e_1",
+    "latex_math_dwig1tex4ed3179187cd_0",
+    "latex_math_dwig1tex4ed3179187cd_1",
+    "latex_math_fbreducedtexc7303db243f1_1",
+    "latex_math_introtexe32d6d1a904e_1",
+    "latex_math_ixModelv2texec307433f4cf_0",
+    "latex_math_lanalysistex5308a5ca57e3_1",
+    "latex_math_lappendixtexe987e662d7c3_1",
+    "latex_math_maintex1baa7d539c94_0",
+    "latex_math_maintex3afb48d3211d_1",
+    "latex_math_maintex51bd59def902_0",
+    "latex_math_maintex535266b8e93c_1",
+    "latex_math_maintex9c4d0e25bb07_1",
+    "latex_math_maintex9f4ee87fa29e_0",
+    "latex_math_maintexc1a234adb819_0",
+    "latex_math_maintexe1aca5818af9_0",
+    "latex_math_maintexfa256e1d991d_1",
+    "latex_math_mentationtex7c1652baaefc_1",
+    "latex_math_methodtex33a25f1d1c33_0",
+    "latex_math_methodtex98700cb8bc99_0",
+    "latex_math_ndixtaskstex9974f4c8f565_1",
+    "latex_math_obalindextexd43feb627707_0",
+    "latex_math_overleaftexe5f9592125e5_1",
+    "latex_math_papertex5198efcf0efd_0",
+    "latex_math_perimentstex039fb1fa3a65_1",
+    "latex_math_perimentstex4e17ed8eda25_0",
+    "latex_math_raturehmctexd71599e78a9b_0",
+    "latex_math_recursivetex2d46a3ab81b6_0",
+    "latex_math_sentationtexef5ca606b486_1",
+    "latex_math_submittedtex9cbaf671c501_1",
+    "latex_math_symmPRLv5tex7db857f9c6b3_0",
+    "latex_math_symmPRLv5tex7db857f9c6b3_1",
+    "latex_math_ymptoticstexe7efb93d05ce_0"
+   ],
+   "select": [
+    "latex_math_03theorytex59ae0c3d9749_1",
+    "latex_math_09proofstex6c36ea98e132_0",
+    "latex_math_09proofstex6c36ea98e132_1",
+    "latex_math_3modeltexcb80f934ac94_0",
+    "latex_math_41designtex4a985398a0b7_0",
+    "latex_math_41designtex4a985398a0b7_1",
+    "latex_math_4Trainingtex3e0d697a4add_0",
+    "latex_math_4Trainingtex3e0d697a4add_1",
+    "latex_math_5proofR3tex879e00c96d63_0",
+    "latex_math_5proofR3tex879e00c96d63_1",
+    "latex_math_5resultstex4c5b3e219c22_1",
+    "latex_math_6appendixtex043dacff66d2_0",
+    "latex_math_Appendixtex361f9886d30e_0",
+    "latex_math_BAMAarXivtex240317b81ddc_0",
+    "latex_math_BanArXivtex67ebecc539d0_0",
+    "latex_math_EETIMmaintex8c4d1d892b69_1",
+    "latex_math_Gbarnotestexf5a4dc4175a2_0",
+    "latex_math_Isopairstexe0c94fa1723f_1",
+    "latex_math_JTJFAtexc5d24492f847_0",
+    "latex_math_JTJFAtexc5d24492f847_1",
+    "latex_math_Maintex5bc53c220add_1",
+    "latex_math_Orbifoldstex4b7a60577bb2_1",
+    "latex_math_Papertexee5cbf9867a4_1",
+    "latex_math_PrimeESCtexfb9a9c887eab_0",
+    "latex_math_aadapterstex0dc7868bb4bc_1",
+    "latex_math_aatex79ae018aa4fe_0",
+    "latex_math_aatex79ae018aa4fe_1",
+    "latex_math_alMagnonstex0fdfca3de9b6_1",
+    "latex_math_aldetailstexefe94fe20a27_0",
+    "latex_math_anuscripttex185b289e4254_1",
+    "latex_math_appendixtex14538ced2fea_1",
+    "latex_math_appendixtex23f1c7f9fe84_1",
+    "latex_math_appendixtex5fa6909b1615_1",
+    "latex_math_appendixtex8a9f7d2b9dd9_0",
+    "latex_math_appendixtex8a9f7d2b9dd9_1",
+    "latex_math_appendixtexcecb756fc8aa_1",
+    "latex_math_arameterstex9bcce175d555_0",
+    "latex_math_arameterstex9bcce175d555_1",
+    "latex_math_arxiv5tex4654db6b01a3_1",
+    "latex_math_arxivtex21c8af525309_0",
+    "latex_math_arxivtex21c8af525309_1",
+    "latex_math_arxivtex7b890c8ab173_0",
+    "latex_math_arxivtex7b890c8ab173_1",
+    "latex_math_benchmarktexa48ab8c80fd1_0",
+    "latex_math_chapICNRtex9ed19cc4b2ac_0",
+    "latex_math_chapSIGRtex13569346a35f_1",
+    "latex_math_chedpairstex330329a1f472_0",
+    "latex_math_cksortingtex89932b81441d_1",
+    "latex_math_dlinkagestex7b0fc8a8e1aa_0",
+    "latex_math_ekmhtexd0b2557a54d6_1",
+    "latex_math_enceteststexd6e36f8872d2_1",
+    "latex_math_ervationstexe26497ce66c8_0",
+    "latex_math_ewzzwolf6tex3d0b527563f5_1",
+    "latex_math_formationtexe0d2ff6b4d00_1",
+    "latex_math_frameworktexb014ab47a71b_0",
+    "latex_math_g1polygontexfd09f7331028_0",
+    "latex_math_g1polygontexfd09f7331028_1",
+    "latex_math_hordsjcgstexe12b497acb17_1",
+    "latex_math_ilerplatetex5e0b79209a13_0",
+    "latex_math_iminariestex2e0a1f5f2a28_0",
+    "latex_math_iminariestex2e0a1f5f2a28_1",
+    "latex_math_inv2arxivtex1ac2856a78be_0",
+    "latex_math_inv2arxivtex1ac2856a78be_1",
+    "latex_math_iscussiontex564a77868da1_0",
+    "latex_math_iscussiontex564a77868da1_1",
+    "latex_math_itemplatetex79dbe02a0d6f_0",
+    "latex_math_ixresultstexbdaffbb0759e_0",
+    "latex_math_lgeometrytex3be2870c6c5f_0",
+    "latex_math_lgeometrytex3be2870c6c5f_1",
+    "latex_math_lsonszegotexd09116419016_1",
+    "latex_math_maintex0e67d3f70104_0",
+    "latex_math_maintex0e67d3f70104_1",
+    "latex_math_maintex1748e1ba9d00_0",
+    "latex_math_maintex1748e1ba9d00_1",
+    "latex_math_maintex1baa7d539c94_1",
+    "latex_math_maintex2a9aa8677378_0",
+    "latex_math_maintex39241bfb7403_1",
+    "latex_math_maintex3ce37fec72c5_0",
+    "latex_math_maintex3ce37fec72c5_1",
+    "latex_math_maintex52e3c688c5dd_0",
+    "latex_math_maintex5c45e1b9ddfa_0",
+    "latex_math_maintex627145669c71_1",
+    "latex_math_maintex630001f9e406_1",
+    "latex_math_maintex67a12526b823_0",
+    "latex_math_maintex67a12526b823_1",
+    "latex_math_maintex7b2c0b0824a4_0",
+    "latex_math_maintex8d9eee074b2b_1",
+    "latex_math_maintex9df942ee8f02_0",
+    "latex_math_maintexb04ac4b5be3f_1",
+    "latex_math_maintexc2128525f3ce_1",
+    "latex_math_maintexc3489359f3bc_0",
+    "latex_math_maintexc3489359f3bc_1",
+    "latex_math_maintexd436a57cb1f7_0",
+    "latex_math_maintexd436a57cb1f7_1",
+    "latex_math_maintexd67c4506b01d_0",
+    "latex_math_maintexd69b35fab2aa_0",
+    "latex_math_mechanismtex817ab0fb15a2_0",
+    "latex_math_methodtex3609371ba564_1",
+    "latex_math_methodtex98700cb8bc99_1",
+    "latex_math_methodtexc231ee7b1b69_0",
+    "latex_math_mofdigitstex729a3c6c1a16_0",
+    "latex_math_mofdigitstex729a3c6c1a16_1",
+    "latex_math_nalmethodtex47566a0149c3_0",
+    "latex_math_nalmethodtex47566a0149c3_1",
+    "latex_math_nanalysistexe8482f1d11fb_0",
+    "latex_math_nanalysistexe8482f1d11fb_1",
+    "latex_math_nappendixtex5c30b2a663bb_1",
+    "latex_math_nappendixtex77ed58a50738_0",
+    "latex_math_nappendixtex77ed58a50738_1",
+    "latex_math_nenumberstex99afb2967a4e_0",
+    "latex_math_ngfilterstex580b3ee7c173_0",
+    "latex_math_ngfilterstex580b3ee7c173_1",
+    "latex_math_nglemodeltex310f40745140_0",
+    "latex_math_nglemodeltexd3f9180f42e5_1",
+    "latex_math_nprotocoltex5f418a3168d5_0",
+    "latex_math_odelarxivtexe1108cd2c8bf_0",
+    "latex_math_odelarxivtexe1108cd2c8bf_1",
+    "latex_math_odelpapertexe974a0a07c86_1",
+    "latex_math_ogarithmstexcf4d49b1b58c_0",
+    "latex_math_onalitiestex9cb23c513569_0",
+    "latex_math_onefrontstex5d5fc05d0f51_0",
+    "latex_math_onferencetex4788a7a5ba8a_1",
+    "latex_math_onferencetex5235660fa62f_0",
+    "latex_math_overleaftexe5f9592125e5_0",
+    "latex_math_papertex639598fb47f8_0",
+    "latex_math_perimentstex039fb1fa3a65_0",
+    "latex_math_perimentstex16e18e00b26d_0",
+    "latex_math_perimentstexe1f251cd9824_0",
+    "latex_math_perimentstexe1f251cd9824_1",
+    "latex_math_periodmaptex9267394c9f44_0",
+    "latex_math_plementaltexfb37265132a2_0",
+    "latex_math_preprinttex2dee64e62902_1",
+    "latex_math_prereviewtex8360fb3eec15_0",
+    "latex_math_prereviewtex8360fb3eec15_1",
+    "latex_math_print2026tex742cca4ed0f0_0",
+    "latex_math_r232026WPtex3a44d39b5e84_0",
+    "latex_math_raturehmctexd71599e78a9b_1",
+    "latex_math_roductiontexfd7701e45f9f_1",
+    "latex_math_russarxivtexee1d4414204f_0",
+    "latex_math_rxiv10173texed2bc49e75c3_1",
+    "latex_math_sappendixtexf0b9675e201a_1",
+    "latex_math_stabilitytexaa6040484843_1",
+    "latex_math_stimatorstex8f03bc22d902_0",
+    "latex_math_toplotkintex9f8614cf79be_0",
+    "latex_math_toplotkintex9f8614cf79be_1",
+    "latex_math_twomodelstex77e605bc2330_0",
+    "latex_math_twomodelstex77e605bc2330_1",
+    "latex_math_ublishedqtexd1e3c5917b07_0",
+    "latex_math_urips2026tex66a283467f47_0",
+    "latex_math_v9tex0314b3ecfce4_0",
+    "latex_math_v9tex0314b3ecfce4_1",
+    "latex_math_valuationtexa062082fa1e7_1",
+    "latex_math_valuationtexbaa8cf50af4c_0",
+    "latex_math_veCoulombtexb1fe483bec1f_1",
+    "latex_math_xsheetrevtex228370f0288b_1",
+    "latex_math_xtensionstexbd335997c89e_0",
+    "latex_math_xtensionstexbd335997c89e_1",
+    "latex_math_xtrainingtexce1c6a4d81e7_0",
+    "latex_math_xtrainingtexce1c6a4d81e7_1",
+    "latex_math_ymptoticstexe7efb93d05ce_1"
+   ]
+  },
+  "md_heading": {
+   "mine": [
+    "md_heading_IONSUMMARYmdc50ff2fdcbca_0",
+    "md_heading_READMEmd45ce36590b6b_1",
+    "md_heading_READMEmd7228e44641f2_1",
+    "md_heading_READMEmd738989d928d4_0",
+    "md_heading_READMEmd8c9e592c3fbc_0",
+    "md_heading_READMEmd8f019dd24abe_0",
+    "md_heading_READMEmda05e0bcd44ae_1",
+    "md_heading_READMEmda62bf7b6a357_0",
+    "md_heading_READMEmda94aeab8b5d4_1",
+    "md_heading_READMEmdbabc7e4e39de_0",
+    "md_heading_READMEmdeb9b97710b17_0",
+    "md_heading_READMEmdf254cdd6d170_1",
+    "md_heading_RUNBOOKmd44c558397945_1",
+    "md_heading_RUNBOOKmd47244f7657a9_1",
+    "md_heading_SKILLmd030cac968419_0",
+    "md_heading_SKILLmd0cb22ad8e7d5_1",
+    "md_heading_SKILLmd11390886dc32_1",
+    "md_heading_SKILLmd79ff77a83b14_0",
+    "md_heading_SKILLmdb88cebd06dc2_0",
+    "md_heading_SKILLmdfcf9cf5815bc_0",
+    "md_heading_apimd8667d3571ab5_1",
+    "md_heading_chitecturemd27b716c39b95_1",
+    "md_heading_chitecturemd3b12d5311f7b_0",
+    "md_heading_ehierarchymd226a412ff8a5_0",
+    "md_heading_elfhostingmdf2eb75691bd2_0",
+    "md_heading_figurationmd2644d8f6e2fb_1",
+    "md_heading_figurationmd776e133e1c8b_0",
+    "md_heading_gotchasmd8d4e55625c4f_0",
+    "md_heading_gotchasmdc25c51f00b64_1",
+    "md_heading_howtoguidemd7f085d33b4e2_1",
+    "md_heading_imitationsmddc876160bdfe_1",
+    "md_heading_jsxmd0f6847a2f7ba_1",
+    "md_heading_lacedesignmdc69aaf60c8b2_1",
+    "md_heading_openapimdb8e50351e360_1",
+    "md_heading_patternsmd7c68b88e1dba_0",
+    "md_heading_rusttestmd229449d05df3_0",
+    "md_heading_spaceadminmd9274537c522b_0",
+    "md_heading_tetemplatemd6f46a36f21f0_1",
+    "md_heading_urepatternmdb682320f113e_1",
+    "md_heading_utoverlaysmd1c1aa8381a5b_0"
+   ],
+   "select": [
+    "md_heading_FORMSmd983217e418b2_0",
+    "md_heading_NTRIBUTINGmd3b4f3721da22_1",
+    "md_heading_QUICKSTARTmdff95ba99be84_0",
+    "md_heading_READMEmd052ad93f7692_0",
+    "md_heading_READMEmd052ad93f7692_1",
+    "md_heading_READMEmd10d69c50139d_0",
+    "md_heading_READMEmd169a673bb683_1",
+    "md_heading_READMEmd1a37153e1286_1",
+    "md_heading_READMEmd287ac16d35c9_0",
+    "md_heading_READMEmd2aad7b6ce057_1",
+    "md_heading_READMEmd2efaa33d053a_0",
+    "md_heading_READMEmd2efaa33d053a_1",
+    "md_heading_READMEmd591dd73aa35b_0",
+    "md_heading_READMEmd6b46c792edb5_0",
+    "md_heading_READMEmd88b9819bf6f5_0",
+    "md_heading_READMEmd9ba885747f73_1",
+    "md_heading_READMEmda1e6723364b0_1",
+    "md_heading_READMEmda24392720fe0_0",
+    "md_heading_READMEmda62bf7b6a357_1",
+    "md_heading_READMEmda6e762a76820_0",
+    "md_heading_READMEmdb058457af569_1",
+    "md_heading_READMEmdca13b70bcbb2_0",
+    "md_heading_READMEmdcfac29dff724_0",
+    "md_heading_READMEmdd4669b25948b_1",
+    "md_heading_READMEmde6c5f26b49ec_1",
+    "md_heading_READMEmde9bb0db1ab78_1",
+    "md_heading_READMEmdec32c0c622a4_1",
+    "md_heading_READMEmdf5d41caf2d09_0",
+    "md_heading_READMEmdf75397096117_0",
+    "md_heading_READMEmdfd1223f5dacc_1",
+    "md_heading_RUNBOOKmd05805c1146ce_0",
+    "md_heading_RUNBOOKmd1531f219b00e_1",
+    "md_heading_RUNBOOKmd87315e7c8c07_0",
+    "md_heading_Readmemde11f58059714_0",
+    "md_heading_SKILLmd0bacac491392_1",
+    "md_heading_SKILLmd18233ad63f3f_1",
+    "md_heading_SKILLmd1841ca6b0f51_1",
+    "md_heading_SKILLmd1c2ae78a9d6c_1",
+    "md_heading_SKILLmd1e750ccf5a38_0",
+    "md_heading_SKILLmd2f65844589db_0",
+    "md_heading_SKILLmd300a1c93e6cf_0",
+    "md_heading_SKILLmd316ea0b117dc_1",
+    "md_heading_SKILLmd3bd1208003ce_1",
+    "md_heading_SKILLmd474d2436eefe_1",
+    "md_heading_SKILLmd49ba920b5312_1",
+    "md_heading_SKILLmd4a2e70a6fbfc_1",
+    "md_heading_SKILLmd580678c10fd0_0",
+    "md_heading_SKILLmd59560e32de48_0",
+    "md_heading_SKILLmd5fcab594ac60_0",
+    "md_heading_SKILLmd6751d40cf2f2_1",
+    "md_heading_SKILLmd678bdff8ba8d_1",
+    "md_heading_SKILLmd6db819839aac_0",
+    "md_heading_SKILLmd709910156027_0",
+    "md_heading_SKILLmd7e64b26465b5_0",
+    "md_heading_SKILLmd834effaaa8ae_1",
+    "md_heading_SKILLmd8a0d4ffcc519_1",
+    "md_heading_SKILLmd94889ced073b_1",
+    "md_heading_SKILLmd95c3821fcd0d_0",
+    "md_heading_SKILLmd9916667b2e28_0",
+    "md_heading_SKILLmd9df1953c32ca_0",
+    "md_heading_SKILLmd9e7114311ce1_1",
+    "md_heading_SKILLmdab962992ad43_0",
+    "md_heading_SKILLmdb2f0d500bc31_0",
+    "md_heading_SKILLmdb2f0d500bc31_1",
+    "md_heading_SKILLmdb564e343170f_1",
+    "md_heading_SKILLmdbb510302d618_0",
+    "md_heading_SKILLmdbdc2f95d38cf_1",
+    "md_heading_SKILLmdc19eb76aea98_1",
+    "md_heading_SKILLmdc50ee6db4982_1",
+    "md_heading_SKILLmdce966b66a8a7_1",
+    "md_heading_SKILLmdd5eeaa60f26e_0",
+    "md_heading_SKILLmdd66f9b04a223_0",
+    "md_heading_SKILLmde2eeb11ca7a2_0",
+    "md_heading_SKILLmdefa7fd9e6cfc_1",
+    "md_heading_SKILLmdfcf9cf5815bc_1",
+    "md_heading_SKILLmdfd7401793c1b_1",
+    "md_heading_SKILLmdff43944daa4b_1",
+    "md_heading_acemethodsmde7bbaba159ef_1",
+    "md_heading_andchannelmde557299a92c8_1",
+    "md_heading_apimd4ac23904f14e_1",
+    "md_heading_apimdb80f2143eb94_0",
+    "md_heading_apimddc09bd736376_0",
+    "md_heading_archetypesmd5f34b334b11d_1",
+    "md_heading_athroutingmd463bff1fdc8e_0",
+    "md_heading_binariesmdb01257ea2f31_1",
+    "md_heading_chitecturemd3b12d5311f7b_1",
+    "md_heading_cloudiammdbcde7647f340_0",
+    "md_heading_configuremd797d69a03090_0",
+    "md_heading_dauditlogsmdeeedd1cf6112_0",
+    "md_heading_dauditlogsmdeeedd1cf6112_1",
+    "md_heading_dworkspacemd946d19eac6e1_0",
+    "md_heading_edittextmd86f2ae6b6c5a_1",
+    "md_heading_ehierarchymd708c52f433e4_0",
+    "md_heading_ereferencemd75165197707b_1",
+    "md_heading_erformancemdf4b810f0e7c6_0",
+    "md_heading_erformancemdf4b810f0e7c6_1",
+    "md_heading_errorcodesmda4c2ad9fcbbf_1",
+    "md_heading_etcontractmd6109e3fc2972_0",
+    "md_heading_eterminismmd5d776275bf1f_0",
+    "md_heading_factorriskmda3f77acc30fb_0",
+    "md_heading_faqmd5a7ce00099cf_1",
+    "md_heading_figurationmd44020528e136_1",
+    "md_heading_figurationmd70569e0498e1_0",
+    "md_heading_figurationmd70569e0498e1_1",
+    "md_heading_ganalyticsmd5fcacba8d720_1",
+    "md_heading_getstartedmd0d849b7f4155_0",
+    "md_heading_gotchasmd757d5b4e20be_1",
+    "md_heading_gotchasmd7d8a2b5364f1_0",
+    "md_heading_gotchasmde7d669f75d23_1",
+    "md_heading_horizationmda8a71f1e8a2f_1",
+    "md_heading_ioncapturemda55359e3d65c_0",
+    "md_heading_ixesdesignmdf1c066641de8_0",
+    "md_heading_kflowstuckmd1099c1e5ab2c_1",
+    "md_heading_lecommandsmd7647118b121b_1",
+    "md_heading_mmonissuesmdcb24b1b15ee7_0",
+    "md_heading_ngcontextsmde5734fcd1bf2_1",
+    "md_heading_npmquerymd36c5897c8ba7_0",
+    "md_heading_nscriptionmd1fe93fa0b129_0",
+    "md_heading_observermda72c198bf841_1",
+    "md_heading_odulerulesmdb6fd8b712c7f_1",
+    "md_heading_oinpatternmda047b98f9df7_0",
+    "md_heading_onpatternsmdb805041534c6_0",
+    "md_heading_outerfilesmd2eff4c6e9583_1",
+    "md_heading_patternsmd69e3572f4d97_0",
+    "md_heading_patternsmd8c80c92997b4_0",
+    "md_heading_pecparsingmd00798eea9163_0",
+    "md_heading_principlesmd68e2e6da3855_1",
+    "md_heading_protectionmd01bc2f102438_1",
+    "md_heading_qarubricmdf939526330c8_0",
+    "md_heading_qarubricmdf939526330c8_1",
+    "md_heading_ransitionsmd4b7bb435c52f_1",
+    "md_heading_rdtemplatemd52c9308b4a8d_1",
+    "md_heading_rdtemplatemd9a3d9865cbc1_0",
+    "md_heading_reatetablemd3f870ec924ed_0",
+    "md_heading_rttemplatemd51b649c204bb_0",
+    "md_heading_rverdesignmd8728d9d91443_1",
+    "md_heading_rylongformmd75665bca3381_1",
+    "md_heading_skillcardmd0a0d1d334d32_1",
+    "md_heading_skillcardmd2b47b36d6a4d_0",
+    "md_heading_skillcardmda56cdb7b75e1_0",
+    "md_heading_tDetectionmd07081b425c88_1",
+    "md_heading_tabsmd2f7958466981_0",
+    "md_heading_tandreviewmda9663198ddd2_0",
+    "md_heading_tationspecmd3e964bdb4df7_0",
+    "md_heading_tationspecmdca69503100a4_0",
+    "md_heading_testingmdf8308fff6500_0",
+    "md_heading_timeerrorsmd36b9a9d4ecc5_1",
+    "md_heading_tingBuffermd1f23a158dc57_1",
+    "md_heading_tivereviewmdb09d57b57804_0",
+    "md_heading_tlinreviewmdb66fd0b5fc02_0",
+    "md_heading_udcapacitymd7794ec269292_0",
+    "md_heading_urepatternmd1e689102de36_0",
+    "md_heading_urepatternmd21094e99fbd2_1",
+    "md_heading_urepatternmd79e5941d13a4_1",
+    "md_heading_urepatternmdb682320f113e_0",
+    "md_heading_utoverlaysmd2ef78341d78e_1",
+    "md_heading_utpatternsmd14eac0c9d1cc_1",
+    "md_heading_versioningmd074e8ae4b999_0",
+    "md_heading_webhooksmd83d3c01db762_0",
+    "md_heading_workflowmd11ed50aaa4ca_0"
+   ]
+  },
+  "md_list": {
+   "mine": [
+    "md_list_CHANGELOGmdf862839a0a1f_1",
+    "md_list_READMEmd176e4688643d_0",
+    "md_list_READMEmd22e43429ac3a_1",
+    "md_list_READMEmd2b990c59e64d_0",
+    "md_list_READMEmd2c89a88797dc_1",
+    "md_list_READMEmd2e8c7ea5eedc_0",
+    "md_list_READMEmd360e984030bb_1",
+    "md_list_READMEmd38e28f587b5b_0",
+    "md_list_READMEmd488b059a6863_1",
+    "md_list_READMEmd51681f202cee_1",
+    "md_list_READMEmd67b324ca50bc_1",
+    "md_list_READMEmda1e6723364b0_1",
+    "md_list_READMEmdd5b7d599825d_0",
+    "md_list_READMEmde302a017d6cd_1",
+    "md_list_READMEmdf1852ee90917_0",
+    "md_list_READMEmdf3df24e73fc1_1",
+    "md_list_READMEmdfc90b46d46ec_0",
+    "md_list_SKILLmd1129746effc9_0",
+    "md_list_SKILLmd4083cc420aa1_1",
+    "md_list_SKILLmd4bdfc85c1df2_1",
+    "md_list_SKILLmd85d79419e16b_1",
+    "md_list_SKILLmd8dbf4d3df26e_0",
+    "md_list_SKILLmd9845b5a7d0ef_0",
+    "md_list_SKILLmd9b12323144ba_0",
+    "md_list_SKILLmdfb141891dba0_0",
+    "md_list_SKILLmdfc6763414473_1",
+    "md_list_assetbriefmda5f04897d32d_0",
+    "md_list_dereviewermd3320197837b0_1",
+    "md_list_eopipelinemdfc52b6d1e4ee_1",
+    "md_list_leshootingmd1ba7431dc1d7_0",
+    "md_list_mmonissuesmd3ecc14b7cd99_0",
+    "md_list_mmonissuesmdcb24b1b15ee7_0",
+    "md_list_mmonissuesmdcb24b1b15ee7_1",
+    "md_list_nlifecyclemd7b0a6fd66121_0",
+    "md_list_portdesignmd680c2f2ac213_1",
+    "md_list_remetadatamdc727b5151408_1",
+    "md_list_strategiesmd310a996bb9f3_1",
+    "md_list_udcapacitymd7794ec269292_0",
+    "md_list_verifierpymddc04275bf565_0",
+    "md_list_viewpromptmde6df64e0bc00_0"
+   ],
+   "select": [
+    "md_list_AGENTSmd7c468589c4b7_1",
+    "md_list_AGENTSmdeec0c5982d1c_0",
+    "md_list_APIDOCSmdba96b538c4f5_0",
+    "md_list_APIDOCSmdba96b538c4f5_1",
+    "md_list_CHANGELOGmdb88856032bd7_0",
+    "md_list_CHANGELOGmdb88856032bd7_1",
+    "md_list_CHANGESmd728fa8bd14f5_0",
+    "md_list_Clockmd84f991382747_0",
+    "md_list_HBOARDPACKmd37b695fff817_0",
+    "md_list_HBOARDPACKmd8b389fd2c252_1",
+    "md_list_HISTORYmd18b8a0e3c964_0",
+    "md_list_LEASENOTESmd5fbb7e5b2422_0",
+    "md_list_NTRIBUTINGmd3b4f3721da22_1",
+    "md_list_READMEmd03fbaa836dfc_0",
+    "md_list_READMEmd03fbaa836dfc_1",
+    "md_list_READMEmd0ef0bc0b7479_0",
+    "md_list_READMEmd142ef750d139_1",
+    "md_list_READMEmd1ae7fd8656af_0",
+    "md_list_READMEmd2aad7b6ce057_0",
+    "md_list_READMEmd2b990c59e64d_1",
+    "md_list_READMEmd44b7d503b45e_0",
+    "md_list_READMEmd464ebaeabefb_0",
+    "md_list_READMEmd5165af587980_0",
+    "md_list_READMEmd52403774755f_0",
+    "md_list_READMEmd52403774755f_1",
+    "md_list_READMEmd57db4f374077_0",
+    "md_list_READMEmd59116753d6e2_1",
+    "md_list_READMEmd591dd73aa35b_0",
+    "md_list_READMEmd5cae977b5f76_0",
+    "md_list_READMEmd5f12b46989f3_0",
+    "md_list_READMEmd5f12b46989f3_1",
+    "md_list_READMEmd622321700465_1",
+    "md_list_READMEmd6474763a97ca_0",
+    "md_list_READMEmd6501b21f8c1b_1",
+    "md_list_READMEmd7495a490ec55_0",
+    "md_list_READMEmd7495a490ec55_1",
+    "md_list_READMEmd83032c78f5c5_0",
+    "md_list_READMEmd921c9504e417_0",
+    "md_list_READMEmd98222d3dd592_0",
+    "md_list_READMEmd9be448fe49ae_0",
+    "md_list_READMEmdac3fefa31f6c_1",
+    "md_list_READMEmdac60a7eb8dcc_1",
+    "md_list_READMEmdae10df63567c_0",
+    "md_list_READMEmdb1f65c292656_0",
+    "md_list_READMEmdbd3fa213fa3b_0",
+    "md_list_READMEmdc20c5a78a69c_0",
+    "md_list_READMEmdce34411cf69b_0",
+    "md_list_READMEmdcfe333be57a1_1",
+    "md_list_READMEmdd4337374a1d9_1",
+    "md_list_READMEmddd95c5921fd4_0",
+    "md_list_READMEmde065617585ba_1",
+    "md_list_READMEmde6556534bec0_1",
+    "md_list_READMEmdfa4c47b3fe49_1",
+    "md_list_READMEmdfc90b46d46ec_1",
+    "md_list_READMEmdfe53ce636a53_0",
+    "md_list_RUNBOOKmd331637fdb79f_0",
+    "md_list_RUNBOOKmda7dbe90786e3_0",
+    "md_list_Readmemde11f58059714_0",
+    "md_list_SKILLmd030cac968419_1",
+    "md_list_SKILLmd0bacac491392_0",
+    "md_list_SKILLmd159624e19a03_1",
+    "md_list_SKILLmd25833bfef0de_0",
+    "md_list_SKILLmd337c00e9124a_1",
+    "md_list_SKILLmd3a6f0aabf45e_0",
+    "md_list_SKILLmd3cf05df04105_1",
+    "md_list_SKILLmd40ae62cd73ce_0",
+    "md_list_SKILLmd47c4e8ee47a9_0",
+    "md_list_SKILLmd4bdfc85c1df2_0",
+    "md_list_SKILLmd54fe2f3aad7b_0",
+    "md_list_SKILLmd5ac261fbe12e_1",
+    "md_list_SKILLmd65e514ecb970_1",
+    "md_list_SKILLmd679695ed9650_1",
+    "md_list_SKILLmd687cb1eb1714_1",
+    "md_list_SKILLmd6d76c2c324f6_0",
+    "md_list_SKILLmd87377e0cae1e_0",
+    "md_list_SKILLmd87377e0cae1e_1",
+    "md_list_SKILLmd8a0d4ffcc519_1",
+    "md_list_SKILLmd8dcec827bbd8_1",
+    "md_list_SKILLmd94424fbd6964_1",
+    "md_list_SKILLmd95e907f05924_0",
+    "md_list_SKILLmd97ba481d6fc9_0",
+    "md_list_SKILLmd9916667b2e28_0",
+    "md_list_SKILLmd9e7114311ce1_0",
+    "md_list_SKILLmd9e7114311ce1_1",
+    "md_list_SKILLmd9fa0e3d962cd_1",
+    "md_list_SKILLmd9fc4a188c3b4_1",
+    "md_list_SKILLmdc859d0387e43_1",
+    "md_list_SKILLmdce584091489b_0",
+    "md_list_SKILLmdcfc5903f144d_0",
+    "md_list_SKILLmdd15956663bf0_0",
+    "md_list_SKILLmddd5a5942c425_1",
+    "md_list_SKILLmddf82fd72ad1b_1",
+    "md_list_SKILLmde28cde7ebcde_0",
+    "md_list_SKILLmde28cde7ebcde_1",
+    "md_list_SKILLmde6329fba2f60_1",
+    "md_list_SKILLmded24a9dc93b2_1",
+    "md_list_SKILLmdef6474059fad_0",
+    "md_list_SKILLmdf549d16f276a_1",
+    "md_list_SKILLmdf632f7698722_1",
+    "md_list_SKILLmdfcf9cf5815bc_1",
+    "md_list_aipatternsmdfc2e6daca10b_1",
+    "md_list_anneragentmdf9dc30f4e7d4_1",
+    "md_list_apimda6ca98fe8816_0",
+    "md_list_apimda6ca98fe8816_1",
+    "md_list_apimdae63f183b4a2_1",
+    "md_list_ask2reportmd464f20577a67_1",
+    "md_list_chitecturemd50a624f1f084_0",
+    "md_list_chitecturemd50a624f1f084_1",
+    "md_list_chitecturemd838448a4fc88_0",
+    "md_list_codereviewmd6f7a75db1eb7_1",
+    "md_list_comparatormdacc949f15a6c_0",
+    "md_list_componentsmdd67552c8c1fa_0",
+    "md_list_dereviewermde1cd1a3321c9_1",
+    "md_list_discoverymdd358dd4f06ff_0",
+    "md_list_dworkflowsmdcd6fc76a7a86_1",
+    "md_list_figurationmd3a48e98f2ca5_0",
+    "md_list_figurationmd6bf799a28a91_1",
+    "md_list_fullguidemd166b68a8d73b_1",
+    "md_list_fullguidemdccf3c2f4ebac_0",
+    "md_list_fullguidemdeb9488812cf2_0",
+    "md_list_generationmdc3fc30043da5_0",
+    "md_list_hookifymd16e3177d79dc_1",
+    "md_list_hsubagentsmd2d674b1da4cd_1",
+    "md_list_iderationsmd90f4a9372a4a_0",
+    "md_list_iltvideouimd61aafcbf0289_1",
+    "md_list_kidssongmd9e6d4ea875b5_1",
+    "md_list_lacedesignmdc69aaf60c8b2_0",
+    "md_list_leasenotesmd29847d2228d4_1",
+    "md_list_lecommandsmd7647118b121b_1",
+    "md_list_lepatternsmd0dceabb89982_0",
+    "md_list_lepatternsmd4c4f1d578b0a_0",
+    "md_list_lepatternsmd4c4f1d578b0a_1",
+    "md_list_leshootingmd1ba7431dc1d7_1",
+    "md_list_linedesignmd796c32dd4533_0",
+    "md_list_linedesignmd796c32dd4533_1",
+    "md_list_litydesignmdd0398a8253a8_1",
+    "md_list_logsreadermdbb4e8a246a74_0",
+    "md_list_ltiexecutemd7e6dd75517e9_1",
+    "md_list_mmonissuesmd3ecc14b7cd99_1",
+    "md_list_onguidancemd05e2938ffa2f_1",
+    "md_list_patternsmdb3baa0460a2a_0",
+    "md_list_pecparsingmd00798eea9163_1",
+    "md_list_ratoragentmd42cc3af9ebe8_1",
+    "md_list_readmemd9d8cd74eb0f4_0",
+    "md_list_readmemdbdebe1787f93_0",
+    "md_list_recipesmdabab28dad91d_1",
+    "md_list_remetadatamdc727b5151408_0",
+    "md_list_researchermd14efc9a5dfc9_0",
+    "md_list_schemasmdc49b7446c4b6_1",
+    "md_list_securitymd1f43df6048af_0",
+    "md_list_sequencemdee371696b81c_0",
+    "md_list_setupmde2ba06d9432a_0",
+    "md_list_sheetsmd8a57f53c1b57_1",
+    "md_list_slidesmdb503b12a096c_1",
+    "md_list_tetoolspecmdd61963c2f6ac_1",
+    "md_list_tpracticesmd2e9cee559b11_1",
+    "md_list_tycriteriamde60a7c05742a_0",
+    "md_list_tycriteriamde60a7c05742a_1",
+    "md_list_urepatternmd79e5941d13a4_0",
+    "md_list_yquestionsmd412f26146215_1"
+   ]
+  },
+  "py_arg": {
+   "mine": [
+    "py_arg_ImageCmspy3ef29b3f5682_0",
+    "py_arg_archenginepyb4a11e901f3b_1",
+    "py_arg_clientpy8e167317cc96_1",
+    "py_arg_configpyd58a38afe759_1",
+    "py_arg_ctdisorderpyf5a9fca1fd31_1",
+    "py_arg_delingdbrxpyf19442f57331_0",
+    "py_arg_distancepy43705a87b2b2_1",
+    "py_arg_emediationpy959d6343ab69_0",
+    "py_arg_ercolationpyf7f1c274986a_0",
+    "py_arg_errorspy7479cde5b644_0",
+    "py_arg_eventpy4222d7527802_0",
+    "py_arg_filespy2c20b7ce34f9_1",
+    "py_arg_filterspyc7e36473ec79_1",
+    "py_arg_formerv2crpy83d3daab3277_1",
+    "py_arg_fullyshardpyaa318069434b_1",
+    "py_arg_gpaligemmapyf6c94fdb942a_1",
+    "py_arg_graphpy3b126b2685c9_0",
+    "py_arg_initpy62bf42b90329_1",
+    "py_arg_jitutilspyb19b3da7d3c4_0",
+    "py_arg_laguerrepy5a2ce9c22d75_1",
+    "py_arg_lingneommepy48fd2607b571_0",
+    "py_arg_llama4fastpy4c4a708d0430_0",
+    "py_arg_llama4fastpy4c4a708d0430_1",
+    "py_arg_makepy69a43d0c9c70_1",
+    "py_arg_metapydd883e4ccca3_0",
+    "py_arg_monkeypy077fcd08d75f_1",
+    "py_arg_mpelementspy57646db5b768_1",
+    "py_arg_ngconvnextpye5c4d4538c8f_1",
+    "py_arg_obilenetv1py89cf6169c145_1",
+    "py_arg_onnxmodelpy74e467f81d3d_0",
+    "py_arg_orizedecorpy33ac9f2cff62_0",
+    "py_arg_profilepy17e822d50694_0",
+    "py_arg_responsepyb29cb7de80c2_0",
+    "py_arg_roipoolpyb75ec778ebb8_1",
+    "py_arg_rtitionerspy3e2ac7bd4e19_0",
+    "py_arg_svcbbasepy918eb7bc3c2a_0",
+    "py_arg_testqapplypy7821a5680c79_1",
+    "py_arg_timsortpy581d4302ea1c_0",
+    "py_arg_vertmatrixpy789ca791bc9e_0",
+    "py_arg_zipimportpy2def28da6293_0"
+   ],
+   "select": [
+    "py_arg_actortoolspy0074a8043b09_1",
+    "py_arg_aeadpycfbed8ce2865_0",
+    "py_arg_agegraphpy891489c46617_0",
+    "py_arg_antfoldingpy0b3332844d7e_0",
+    "py_arg_aphcapturepy13e719398123_1",
+    "py_arg_arameteroppy607c837eee1a_0",
+    "py_arg_arraypy8585b45fe464_1",
+    "py_arg_askdecoderpyc69eeae83426_1",
+    "py_arg_atasetdictpy00b7e6afa58c_1",
+    "py_arg_beitpydb69b2a45433_0",
+    "py_arg_builtinpyd365d8f58b80_0",
+    "py_arg_checkpointpy5da328480896_1",
+    "py_arg_cmathimplpy70599f72d368_1",
+    "py_arg_compilerpy7a2976fa8a93_0",
+    "py_arg_copypyb60fa133966e_1",
+    "py_arg_copyregpy57ade5a561fb_1",
+    "py_arg_corepy851458aa356f_0",
+    "py_arg_corepy851458aa356f_1",
+    "py_arg_corepy9f858844c0b8_0",
+    "py_arg_cosettablepyf63cd8b9565f_1",
+    "py_arg_cp863pyc4b528e42b9f_1",
+    "py_arg_cparserpydedfc87dc55d_1",
+    "py_arg_cssmatchpye459001610a8_1",
+    "py_arg_ctmetadatapy5acf4c8e9ae9_1",
+    "py_arg_debugpy589157650648_1",
+    "py_arg_decoderpyb6ca079ef23c_0",
+    "py_arg_dedebuggerpyf68e3f7438c6_1",
+    "py_arg_deepinfrapyf5f67b27fe7a_0",
+    "py_arg_dexcommandpy380c2edc0398_0",
+    "py_arg_dexcommandpy77dac446b663_0",
+    "py_arg_discoverypy1fef24806856_1",
+    "py_arg_dularyolospyb6acb58f1fba_1",
+    "py_arg_eatencoderpy653906d1b433_1",
+    "py_arg_eattentionpybe44c8e0be1b_0",
+    "py_arg_elingsamhqpy68ba65d7d442_0",
+    "py_arg_elingsamhqpy68ba65d7d442_1",
+    "py_arg_embeddingpy0e78768aed0a_1",
+    "py_arg_erklcosmospy1df48302db99_0",
+    "py_arg_estunicodepyde6da43f5d25_0",
+    "py_arg_ffgeombookpyb451ed3e9ea0_1",
+    "py_arg_fitpybc74f0e13550_1",
+    "py_arg_gatepy56cc988936dd_0",
+    "py_arg_gcohereasrpy6ed64e4db489_0",
+    "py_arg_gdiffllamapy65b63e88f1e0_0",
+    "py_arg_generationpy91cea2af55ec_0",
+    "py_arg_genpybaeefee3e097_1",
+    "py_arg_gionconstrpy9db7722d7211_0",
+    "py_arg_globpy371af766de67_1",
+    "py_arg_gpilgemma4pyb0937a76e4df_1",
+    "py_arg_groupbypy671b57a6b3aa_1",
+    "py_arg_guipy6358ed1836f6_0",
+    "py_arg_gularitiespy5b2ed38ab134_1",
+    "py_arg_hartifactspy2f882a8ee07c_0",
+    "py_arg_imov2flashpye9336e570dd1_0",
+    "py_arg_ingelectrapye6e2be9fbbf5_1",
+    "py_arg_initpy0f00d33bb54e_1",
+    "py_arg_initpy424ddfb562db_0",
+    "py_arg_initpy57f30fb9c326_1",
+    "py_arg_initpy8805526e0ee8_1",
+    "py_arg_initpya921de5df53a_1",
+    "py_arg_istrationspye7f3cc5dabe6_1",
+    "py_arg_itchlayerspy26d733c4eb8c_1",
+    "py_arg_ithhoppasspy3089e4dd6332_0",
+    "py_arg_jmespathpy16476e52773f_1",
+    "py_arg_kequantizepydf041c5946ae_1",
+    "py_arg_kernelapipyda2de443d78b_0",
+    "py_arg_klasspy86078613e5ea_1",
+    "py_arg_larcohere2py92cd584a386d_0",
+    "py_arg_linespy4e0e9bb243da_0",
+    "py_arg_lismconfigpy059a1b6ad976_0",
+    "py_arg_listobjpy5285b4cb91b7_0",
+    "py_arg_loaderpy89ebaea00498_0",
+    "py_arg_longformerpyd0a884f4bd1d_1",
+    "py_arg_mainpy9b0fd4cc6bc8_0",
+    "py_arg_mainpyb370c66e563b_0",
+    "py_arg_mathdeclpy9a23506e9e0a_1",
+    "py_arg_memorypy295c41afa448_0",
+    "py_arg_mincostpy79caf30c0c81_0",
+    "py_arg_minicpmv46py7823fe2426d4_1",
+    "py_arg_modelingt5pyc3baf08c26f5_0",
+    "py_arg_modelspy7c52c9d15ebe_1",
+    "py_arg_modelspycc4a6304aa5f_0",
+    "py_arg_mpipy73a2b06b2b5b_0",
+    "py_arg_multimodalpy2a3cfcacd737_1",
+    "py_arg_ngdepthpropy5173be66819c_1",
+    "py_arg_ngt5gemma2py5f7e88b7d014_0",
+    "py_arg_nie45vlmoepy23566522ea91_0",
+    "py_arg_nunispeechpyb5c76ecdc7fa_0",
+    "py_arg_odelingmvppyb3bc0657b13c_1",
+    "py_arg_onvolutionpy56641c16a247_0",
+    "py_arg_operationspy5de729b45f8c_0",
+    "py_arg_operationspy5de729b45f8c_1",
+    "py_arg_opshandlerpyc740faacf18c_1",
+    "py_arg_opspy5cecb66ddabf_0",
+    "py_arg_orizedecorpy33ac9f2cff62_1",
+    "py_arg_orrelationpy3eadca3e8bb3_1",
+    "py_arg_parenmatchpy9a6ad4484618_1",
+    "py_arg_pydecimalpy9cacc75d5fc1_0",
+    "py_arg_ratsimppy89135aa5a827_1",
+    "py_arg_readerpyfe813ec32e0b_1",
+    "py_arg_renderingpy80cc58ab16de_1",
+    "py_arg_repopy61a10764b505_1",
+    "py_arg_resultpy854fa7c941bb_0",
+    "py_arg_resultpy854fa7c941bb_1",
+    "py_arg_ridetrickspycdc7a86ce8a6_1",
+    "py_arg_rmabledetrpy94ceb0abd1bd_1",
+    "py_arg_rspacepy5fb1a87b7791_1",
+    "py_arg_rulerpyea030ec4fbb4_0",
+    "py_arg_runtimepy3cef3905608d_0",
+    "py_arg_serializepy05f19d4dd2fb_1",
+    "py_arg_sessionpy4650ba45857c_0",
+    "py_arg_setuptoolspye70e21758009_0",
+    "py_arg_sourcespyf3eae869f3f8_0",
+    "py_arg_splitpyc531c597f281_0",
+    "py_arg_statuspb2py4eadb0e3aac4_0",
+    "py_arg_statuspb2py4eadb0e3aac4_1",
+    "py_arg_stdebuggerpybe5d4653cb39_1",
+    "py_arg_sthadamardpy46fea708ddc0_1",
+    "py_arg_stoperatorpy896ba13c64f3_1",
+    "py_arg_summationspyc1364e998d66_1",
+    "py_arg_supervisedpy46af36d572c0_0",
+    "py_arg_terminalpy117eaea3623e_0",
+    "py_arg_testapipy4467a26df2cb_0",
+    "py_arg_testmgcpycbeb014926d0_0",
+    "py_arg_testoctavepy6921b392f6c5_1",
+    "py_arg_testrfepy08e905e831d5_0",
+    "py_arg_testsmtlibpy8889ff6222cc_1",
+    "py_arg_testspyb59a8e0b8b9d_1",
+    "py_arg_testtablepy402254939589_0",
+    "py_arg_testtohtmlpy7ef492c43d9c_1",
+    "py_arg_testumathpybd364596df05_0",
+    "py_arg_testutilpydab91970fd35_0",
+    "py_arg_texteditpy4f7b8558bc9b_1",
+    "py_arg_textensionpydca2efa11bc4_0",
+    "py_arg_textpy4e4cf4c5ea25_1",
+    "py_arg_tframeworkpy04f53d0f7dfa_0",
+    "py_arg_tframeworkpy04f53d0f7dfa_1",
+    "py_arg_tframeworkpyd90594c5a9f9_0",
+    "py_arg_tis620py93b5d2b26857_0",
+    "py_arg_tkroneckerpy8fe5cbf65369_0",
+    "py_arg_tocompletepy201c778b7467_0",
+    "py_arg_tokenizepy8dcaa284f08d_0",
+    "py_arg_tokenizerpy5f4c8e17b634_0",
+    "py_arg_torchpy34478a8d3ddc_1",
+    "py_arg_trainerpy3b94c9bc6e2c_1",
+    "py_arg_trizationspy569fc38ffd87_1",
+    "py_arg_tsubspacespy9a6a11120c60_0",
+    "py_arg_tvtensorpyea4b0db8474e_1",
+    "py_arg_umulationspy3099bae54e85_0",
+    "py_arg_unpackingpye772f3eb9415_1",
+    "py_arg_urationesmpy93ec5488a9e7_1",
+    "py_arg_utilpy3340bc2412ab_0",
+    "py_arg_utilpy8f905f2806ff_0",
+    "py_arg_utilspy49a8bcc8c41f_1",
+    "py_arg_utilspyac16ce655099_0",
+    "py_arg_utlmv2fastpy9cd417181486_0",
+    "py_arg_varnishpy3d76f7c1aea2_0",
+    "py_arg_varpy688ced80a019_0",
+    "py_arg_virtualenvpy353834469797_0",
+    "py_arg_wignerpy7fed69b60027_1"
+   ]
+  },
+  "py_string": {
+   "mine": [
+    "py_string_5serverrecpy7294bfbdda1b_1",
+    "py_string_anextvideopy446b716b9d05_1",
+    "py_string_ationutilspy800b06109f26_1",
+    "py_string_buildindexpy4f125924e59c_0",
+    "py_string_comparepy363c76735acf_1",
+    "py_string_configpy4b9cd1f6d7c1_0",
+    "py_string_constantpy381bf8a44d6a_1",
+    "py_string_debugpy589157650648_0",
+    "py_string_diffpy59de21caf370_1",
+    "py_string_eventspye234e12c1c8f_0",
+    "py_string_fitpybc74f0e13550_0",
+    "py_string_gdiffllamapy42fbf8c2b0f0_0",
+    "py_string_googlenetpy2ddf747cc6b2_1",
+    "py_string_hyp2f1datapy7c064b05323d_1",
+    "py_string_imessagepyf39931f6097b_1",
+    "py_string_initpy1ec8265dd41a_0",
+    "py_string_ionelectrapy043bad0c85ce_0",
+    "py_string_ithmetic1dpy5324109e7094_0",
+    "py_string_ixartsigmapy1181087f7c39_0",
+    "py_string_layoutimplpy98c4f7da7a83_0",
+    "py_string_marizationpy3e0460c473aa_0",
+    "py_string_matplotlibpy655b298c7d06_0",
+    "py_string_obilevitv2py6392b382a5bd_1",
+    "py_string_ont5gemma2py81a04bcb70fc_1",
+    "py_string_perabilitypye08c1eb460f2_1",
+    "py_string_processorspy4e21777f47e3_0",
+    "py_string_promptpy4ec3638d1879_0",
+    "py_string_randompyba332c910bc6_1",
+    "py_string_responderpy7ca4e313e19b_0",
+    "py_string_runnerpy831ad2969069_1",
+    "py_string_sificationpy570bee71b251_1",
+    "py_string_splashpy9937d52ad6c2_1",
+    "py_string_stoinspectpyf402af3ca0ec_1",
+    "py_string_sttextfilepyc542ab3e54c7_0",
+    "py_string_test20newspy9df575ea149f_0",
+    "py_string_testdebugpyffbd9bce78d0_0",
+    "py_string_tinyvitpya7ad1e7a1d61_1",
+    "py_string_usiongemmapy4517a654d744_1",
+    "py_string_utilspyac16ce655099_1",
+    "py_string_wen2vlfastpy4a39ecc340cf_0"
+   ],
+   "select": [
+    "py_string_5mobilerecpyd88b1fd7bcb3_0",
+    "py_string_achineinfopy39d97ac2b766_1",
+    "py_string_adadeltapy67fe9056c4b2_1",
+    "py_string_aliasespy88de8eeb3a4f_1",
+    "py_string_allegginfopy0cd4f9aabcdf_0",
+    "py_string_amedstylespy1e38de3b0551_1",
+    "py_string_anextvideopye8e0f2243c1e_0",
+    "py_string_apipyb3876dce5204_1",
+    "py_string_arflexolmopy25b8238030ba_1",
+    "py_string_askpy3df9b287fa6d_0",
+    "py_string_assertsqlpyc0dd74c37747_0",
+    "py_string_atemanagerpy2e5fa7d09a62_1",
+    "py_string_atexparserpye4e1cad2a8ee_0",
+    "py_string_aultstylespy0ec2bae09abd_1",
+    "py_string_basicpye70b86221f1c_0",
+    "py_string_bvppy6c243f07b367_1",
+    "py_string_cachedpy48be46d57957_1",
+    "py_string_cacheutilspy16a0c809da9f_1",
+    "py_string_categorypy7d76580a9d30_0",
+    "py_string_cemeasurespy50135969d59c_1",
+    "py_string_cleanpy2550d248e5fb_0",
+    "py_string_colorizerpy9ca5bb7eb62f_0",
+    "py_string_commonpyc2640aceb125_0",
+    "py_string_commonpye64af38c65ba_1",
+    "py_string_commonpyf158e4f1f5f8_0",
+    "py_string_comparepy363c76735acf_0",
+    "py_string_convpy6f4624f3fbfc_1",
+    "py_string_createtaskpyf5131bdfdfd9_0",
+    "py_string_customizepybd01fc1ad800_0",
+    "py_string_dedweightspy649d9040aff2_1",
+    "py_string_delinglukepy56ff9c87a855_1",
+    "py_string_delingphi3py303b7a08dee9_0",
+    "py_string_directurlpye6366677d503_1",
+    "py_string_distpy199c77ec0c81_1",
+    "py_string_dyldpy3eccb933f46d_0",
+    "py_string_ekvlhybridpyd0697bd88802_0",
+    "py_string_elingxclippy6efd91efe531_1",
+    "py_string_en3omnimoepy73c42ff225ca_0",
+    "py_string_erregistrypy3156a1b81a5d_1",
+    "py_string_estoffsetspy20aadc32f080_1",
+    "py_string_extrautilspyd382c1151816_0",
+    "py_string_ffmpypyc9bc8bacd5f9_0",
+    "py_string_fftpy2e328a1536b0_1",
+    "py_string_filterrepopy966bb402976a_1",
+    "py_string_fixraisepy3611bfaf1671_0",
+    "py_string_fsdppye9c493cf0a85_1",
+    "py_string_ftplibpy511e5e22a899_1",
+    "py_string_getencoderpy022aa5a317d5_0",
+    "py_string_getitempy5e3afa7bb0a4_1",
+    "py_string_gmentationpy1c817f08d9b2_1",
+    "py_string_gmusesparkpyce46329a66cb_0",
+    "py_string_heproviderpy8a1d861c566d_0",
+    "py_string_higgspyce604f5f403a_1",
+    "py_string_hintlimitspy1375ee7a7ec8_0",
+    "py_string_hypotestspy4ec0bca1bcf8_0",
+    "py_string_ianmixturepy1b82ab1c9b52_0",
+    "py_string_ilglmimagepy8f60b7039d19_1",
+    "py_string_ingaltclippy899d90248445_0",
+    "py_string_ingvoxtralpyff9f1146d865_0",
+    "py_string_ingxcodec2pye5a84f7d1f1b_0",
+    "py_string_initpy3376f8019ef2_0",
+    "py_string_initpy7ed4c31f4699_1",
+    "py_string_initpy9cb852aa8f5e_1",
+    "py_string_initpya5c3c410fb6d_0",
+    "py_string_initpyc67161321e05_0",
+    "py_string_initpyd4649f786544_1",
+    "py_string_initpyfe6f776668fe_0",
+    "py_string_installlibpy047f374bd665_0",
+    "py_string_intrinsicspy2698aeb0a112_1",
+    "py_string_ircuitplotpyf79cf3edfd0f_1",
+    "py_string_kandinsky3py7ef2f3e08620_1",
+    "py_string_kextractorpy139e0381f3f4_1",
+    "py_string_latextoolspy1ebab571dc4f_0",
+    "py_string_layoutlmv2py6e59280bcd43_1",
+    "py_string_lementTreepy56b57f949be1_0",
+    "py_string_libmpfpy9199fedca49c_0",
+    "py_string_licopset14pyd9cccf94dbbd_0",
+    "py_string_linearpy9eebd50f20a2_1",
+    "py_string_lingjetmoepy6cb81abc8b27_0",
+    "py_string_lingjetmoepy6cb81abc8b27_1",
+    "py_string_lingmellumpy52759ddc9b28_0",
+    "py_string_longformerpyd0a884f4bd1d_1",
+    "py_string_magePluginpy5b79dfc7f3ef_1",
+    "py_string_mllamafastpy35df5e6f6081_1",
+    "py_string_modelcardpy4e5b5b5b061b_0",
+    "py_string_modelpyaaa5da1473db_1",
+    "py_string_mplexfieldpy433c140bba9e_1",
+    "py_string_n32consolepy2cbc9f90a5ee_1",
+    "py_string_nalaccountpyf6366bb00f17_1",
+    "py_string_nerativeaipy93f31d8b41af_1",
+    "py_string_ngmarkuplmpy9c9850b2cc5f_0",
+    "py_string_normalizerpyeb80235835f2_1",
+    "py_string_nteractionpycc71b746fcb2_0",
+    "py_string_nvtemplatepyb0f9c697af18_0",
+    "py_string_object3dpy96e2d3a0e240_1",
+    "py_string_odelingpvtpyc84e5af9f550_1",
+    "py_string_oolmanagerpy4ae993caea98_0",
+    "py_string_ordsysrectpy979669e9aee3_1",
+    "py_string_osxsupportpy90e8ca788a84_0",
+    "py_string_parserspya7b7c8959157_1",
+    "py_string_pioverridepy2b3e667f41e9_0",
+    "py_string_preparepyc47189dc3bb2_0",
+    "py_string_psbsdpyec13360236b9_0",
+    "py_string_psosxpyf1e714b030fa_0",
+    "py_string_ransformerpy3f2c6a8c28ff_0",
+    "py_string_rationudoppy71cafdffd289_0",
+    "py_string_rcecontextpyf1cc830ee7a5_1",
+    "py_string_remetadatapy0f6bd932bf41_1",
+    "py_string_resolutionpy0fad3cb0f119_1",
+    "py_string_retrypyc718dec62fed_0",
+    "py_string_rojecttomlpy6694e7355548_1",
+    "py_string_rrowcompatpyf684169415f1_0",
+    "py_string_rstandlastpy80c078d4bc40_1",
+    "py_string_rv6tinyrecpye88735ea4a07_0",
+    "py_string_sdataframepy27944a263104_0",
+    "py_string_sdistpyc967f82f5ba5_1",
+    "py_string_segmentpye138b6fd2ee0_1",
+    "py_string_serverpya602d2e20879_1",
+    "py_string_sessionpy4650ba45857c_0",
+    "py_string_setitempy55d714b7afa8_0",
+    "py_string_singglm46vpyfbe631e3ebf9_1",
+    "py_string_sionmatrixpy3f61988ebc80_1",
+    "py_string_sketchespy6d34bc9f047b_1",
+    "py_string_sltemplatepy91169ec0ed4f_0",
+    "py_string_sltemplatepy91169ec0ed4f_1",
+    "py_string_stargparsepy9e33703ad7cd_1",
+    "py_string_stmatrixiopy6c7c654d4fb9_0",
+    "py_string_streampy4c731f8fbfdb_1",
+    "py_string_ta2vectextpy130b5df412a9_0",
+    "py_string_tacollatorpy7d1c1c45ca50_1",
+    "py_string_tchtsmixerpy208506ac27d9_1",
+    "py_string_tctypeslibpy3450026e86f3_0",
+    "py_string_testastypepybc3ec96576c8_1",
+    "py_string_testdtypespy22d71309b054_1",
+    "py_string_testfrozenpye14026460547_0",
+    "py_string_testpandaspy6f25a0aeea53_0",
+    "py_string_testsizepyd589ea20b2f7_1",
+    "py_string_testumathpyd79589dd0848_0",
+    "py_string_text2vecpy5dfc327a741d_1",
+    "py_string_tfgroupvitpy74b8bbe53207_0",
+    "py_string_ticscholarpy40bdd5b70214_1",
+    "py_string_tionm2m100py62de92481248_0",
+    "py_string_tpctchangepyf4c1c42506f5_1",
+    "py_string_triadspybef0e1a36468_0",
+    "py_string_typingpy24a4bb41184f_0",
+    "py_string_uploadpy4ae0f0762cef_0",
+    "py_string_utf32py488aa52364e9_0",
+    "py_string_utilpy5e4d42791c65_0",
+    "py_string_utilpy8f905f2806ff_1",
+    "py_string_utilspy055dac969b70_0",
+    "py_string_utilspy1d1bf1df8057_0",
+    "py_string_utilspyac16ce655099_0",
+    "py_string_validatorspy784afbbc6ed3_1",
+    "py_string_versionpy54714497b91b_1",
+    "py_string_wheelfilepyca08c2aac60e_1",
+    "py_string_wowtocpy68b090282644_0",
+    "py_string_ympyparserpyacdfefe7d545_1",
+    "py_string_ynchronizepyb3b33b1208dd_0",
+    "py_string_zipimportpyab1915cb80e5_1",
+    "py_string_zureopenaipyda2af33b3029_0"
+   ]
+  }
+ },
+ "meta": {
+  "bins": {},
+  "col_break_def": {
+   "col_range_both": [
+    40,
+    75
+   ],
+   "far_min_remaining": 25,
+   "soon_max_remaining": 6
+  },
+  "exclude_from_evaluation": "every id in items[feature]['mine'|'select'] (all items are freshly generated and disjoint from 02's wrap/prose pickles).",
+  "frozen_at": "2026-10-27T08:22:40+00:00",
+  "procedure": "D9 item 6: mined on a held-out MINING split (k=8 free readouts per item: NLA@42 iter_000400, OL s3d-rl600 @42/40/44 pooled; J-Lens n1000 top-50 @42), LLM-assisted extraction (Gemini 3.8 Flash), selected by natural-item paired log-odds AUROC on a disjoint SELECTION split at the primary layer (42), before any steering run.",
+  "read_layers": {
+   "jlens": [
+    42,
+    36,
+    44,
+    52
+   ],
+   "nla": [
+    42
+   ],
+   "ol": [
+    42,
+    36,
+    44,
+    52
+   ]
+  },
+  "scoring": "NLA: candidate after '<explanation>\\n'; OL: candidate as the first '- ' bullet (prefix ''); J-Lens: max cosine score over single-token variants, s(a)-s(b). Both candidates of an activation share one forward batch. LO = log p(value_a) - log p(value_b) with value_a = FEATURES[f]['values'][0]; AUROC vs label (true == a).",
+  "values": {
+   "html_depth": [
+    "deep",
+    "shallow"
+   ],
+   "js_string": [
+    "inside",
+    "outside"
+   ],
+   "json_depth": [
+    "deep",
+    "shallow"
+   ],
+   "latex_math": [
+    "inside",
+    "outside"
+   ],
+   "md_heading": [
+    "deep",
+    "shallow"
+   ],
+   "md_list": [
+    "nested",
+    "top"
+   ],
+   "py_arg": [
+    "third",
+    "first"
+   ],
+   "py_string": [
+    "inside",
+    "outside"
+   ]
+  }
+ },
+ "templates": {
+  "jlens": {
+   "html_depth": {
+    "all_candidates": {
+     "jlens:html_depth:d0": {
+      "jlens@42": {
+       "auroc": 0.4034,
+       "ci95": [
+        0.3139,
+        0.4968
+       ],
+       "dprime": -0.252,
+       "n": 160
+      }
+     },
+     "jlens:html_depth:dtop3": {
+      "jlens@42": {
+       "auroc": 0.5381,
+       "ci95": [
+        0.4468,
+        0.631
+       ],
+       "dprime": 0.276,
+       "n": 160
+      }
+     },
+     "jlens:html_depth:fixed": {
+      "jlens@42": {
+       "auroc": 0.6225,
+       "ci95": [
+        0.5377,
+        0.701
+       ],
+       "dprime": 0.454,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:html_depth:fixed",
+     "selection": {
+      "jlens@42": {
+       "auroc": 0.6225,
+       "ci95": [
+        0.5377,
+        0.701
+       ],
+       "dprime": 0.454,
+       "n": 160
+      }
+     },
+     "words": {
+      "deep": [
+       "nested",
+       "deep"
+      ],
+      "shallow": [
+       "shallow",
+       "top"
+      ]
+     }
+    },
+    "mean_of_selected": {
+     "jlens@42": {
+      "auroc": 0.4617,
+      "ci95": [
+       0.3695,
+       0.5545
+      ],
+      "dprime": -0.024,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 2,
+    "selected": [
+     {
+      "family": "diff_top3",
+      "id": "jlens:html_depth:dtop3",
+      "selection": {
+       "jlens@42": {
+        "auroc": 0.5381,
+        "ci95": [
+         0.4468,
+         0.631
+        ],
+        "dprime": 0.276,
+        "n": 160
+       }
+      },
+      "words": {
+       "deep": [
+        "thumbnails"
+       ],
+       "shallow": [
+        "Hello",
+        "jokes",
+        "Emoji"
+       ]
+      }
+     },
+     {
+      "family": "diff_rank0",
+      "id": "jlens:html_depth:d0",
+      "selection": {
+       "jlens@42": {
+        "auroc": 0.4034,
+        "ci95": [
+         0.3139,
+         0.4968
+        ],
+        "dprime": -0.252,
+        "n": 160
+       }
+      },
+      "words": {
+       "deep": [
+        "thumbnails"
+       ],
+       "shallow": [
+        "Hello"
+       ]
+      }
+     }
+    ]
+   },
+   "js_string": {
+    "all_candidates": {
+     "jlens:js_string:fixed": {
+      "jlens@42": {
+       "auroc": 0.5098,
+       "ci95": [
+        0.4175,
+        0.6042
+       ],
+       "dprime": 0.144,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:js_string:fixed",
+     "selection": {
+      "jlens@42": {
+       "auroc": 0.5098,
+       "ci95": [
+        0.4175,
+        0.6042
+       ],
+       "dprime": 0.144,
+       "n": 160
+      }
+     },
+     "words": {
+      "inside": [
+       "string",
+       "quote"
+      ],
+      "outside": [
+       "code",
+       "call"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   },
+   "json_depth": {
+    "all_candidates": {
+     "jlens:json_depth:fixed": {
+      "jlens@42": {
+       "auroc": 0.6752,
+       "ci95": [
+        0.5966,
+        0.7511
+       ],
+       "dprime": 0.571,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:json_depth:fixed",
+     "selection": {
+      "jlens@42": {
+       "auroc": 0.6752,
+       "ci95": [
+        0.5966,
+        0.7511
+       ],
+       "dprime": 0.571,
+       "n": 160
+      }
+     },
+     "words": {
+      "deep": [
+       "nested",
+       "deep"
+      ],
+      "shallow": [
+       "top",
+       "shallow"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   },
+   "latex_math": {
+    "all_candidates": {
+     "jlens:latex_math:d0": {
+      "jlens@42": {
+       "auroc": 0.5508,
+       "ci95": [
+        0.4739,
+        0.6338
+       ],
+       "dprime": 0.142,
+       "n": 160
+      }
+     },
+     "jlens:latex_math:d1": {
+      "jlens@42": {
+       "auroc": 0.6536,
+       "ci95": [
+        0.5669,
+        0.7361
+       ],
+       "dprime": 0.57,
+       "n": 160
+      }
+     },
+     "jlens:latex_math:dtop3": {
+      "jlens@42": {
+       "auroc": 0.6312,
+       "ci95": [
+        0.5514,
+        0.7133
+       ],
+       "dprime": 0.477,
+       "n": 160
+      }
+     },
+     "jlens:latex_math:fixed": {
+      "jlens@42": {
+       "auroc": 0.4313,
+       "ci95": [
+        0.3491,
+        0.5151
+       ],
+       "dprime": -0.259,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:latex_math:fixed",
+     "selection": {
+      "jlens@42": {
+       "auroc": 0.4313,
+       "ci95": [
+        0.3491,
+        0.5151
+       ],
+       "dprime": -0.259,
+       "n": 160
+      }
+     },
+     "words": {
+      "inside": [
+       "math",
+       "equation"
+      ],
+      "outside": [
+       "prose",
+       "text"
+      ]
+     }
+    },
+    "mean_of_selected": {
+     "jlens@42": {
+      "auroc": 0.628,
+      "ci95": [
+       0.5424,
+       0.7145
+      ],
+      "dprime": 0.483,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 3,
+    "selected": [
+     {
+      "family": "diff_rank1",
+      "id": "jlens:latex_math:d1",
+      "selection": {
+       "jlens@42": {
+        "auroc": 0.6536,
+        "ci95": [
+         0.5669,
+         0.7361
+        ],
+        "dprime": 0.57,
+        "n": 160
+       }
+      },
+      "words": {
+       "inside": [
+        "subset"
+       ],
+       "outside": [
+        "context"
+       ]
+      }
+     },
+     {
+      "family": "diff_top3",
+      "id": "jlens:latex_math:dtop3",
+      "selection": {
+       "jlens@42": {
+        "auroc": 0.6312,
+        "ci95": [
+         0.5514,
+         0.7133
+        ],
+        "dprime": 0.477,
+        "n": 160
+       }
+      },
+      "words": {
+       "inside": [
+        "Algorithm",
+        "subset"
+       ],
+       "outside": [
+        "Equation",
+        "context",
+        "trajectory"
+       ]
+      }
+     },
+     {
+      "family": "diff_rank0",
+      "id": "jlens:latex_math:d0",
+      "selection": {
+       "jlens@42": {
+        "auroc": 0.5508,
+        "ci95": [
+         0.4739,
+         0.6338
+        ],
+        "dprime": 0.142,
+        "n": 160
+       }
+      },
+      "words": {
+       "inside": [
+        "Algorithm"
+       ],
+       "outside": [
+        "Equation"
+       ]
+      }
+     }
+    ]
+   },
+   "md_heading": {
+    "all_candidates": {
+     "jlens:md_heading:fixed": {
+      "jlens@42": {
+       "auroc": 0.5822,
+       "ci95": [
+        0.5009,
+        0.6674
+       ],
+       "dprime": 0.285,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:md_heading:fixed",
+     "selection": {
+      "jlens@42": {
+       "auroc": 0.5822,
+       "ci95": [
+        0.5009,
+        0.6674
+       ],
+       "dprime": 0.285,
+       "n": 160
+      }
+     },
+     "words": {
+      "deep": [
+       "subsection",
+       "sub"
+      ],
+      "shallow": [
+       "title",
+       "chapter"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   },
+   "md_list": {
+    "all_candidates": {
+     "jlens:md_list:fixed": {
+      "jlens@42": {
+       "auroc": 0.4677,
+       "ci95": [
+        0.39,
+        0.5561
+       ],
+       "dprime": -0.137,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:md_list:fixed",
+     "selection": {
+      "jlens@42": {
+       "auroc": 0.4677,
+       "ci95": [
+        0.39,
+        0.5561
+       ],
+       "dprime": -0.137,
+       "n": 160
+      }
+     },
+     "words": {
+      "nested": [
+       "nested",
+       "indented"
+      ],
+      "top": [
+       "top",
+       "main"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   },
+   "py_arg": {
+    "all_candidates": {
+     "jlens:py_arg:d0": {
+      "jlens@42": {
+       "auroc": 0.57,
+       "ci95": [
+        0.4833,
+        0.6552
+       ],
+       "dprime": 0.259,
+       "n": 160
+      }
+     },
+     "jlens:py_arg:dtop3": {
+      "jlens@42": {
+       "auroc": 0.5542,
+       "ci95": [
+        0.4684,
+        0.6428
+       ],
+       "dprime": 0.191,
+       "n": 160
+      }
+     },
+     "jlens:py_arg:fixed": {
+      "jlens@42": {
+       "auroc": 0.523,
+       "ci95": [
+        0.4273,
+        0.611
+       ],
+       "dprime": -0.03,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:py_arg:fixed",
+     "selection": {
+      "jlens@42": {
+       "auroc": 0.523,
+       "ci95": [
+        0.4273,
+        0.611
+       ],
+       "dprime": -0.03,
+       "n": 160
+      }
+     },
+     "words": {
+      "first": [
+       "first",
+       "one"
+      ],
+      "third": [
+       "third",
+       "three"
+      ]
+     }
+    },
+    "mean_of_selected": {
+     "jlens@42": {
+      "auroc": 0.5675,
+      "ci95": [
+       0.4792,
+       0.6542
+      ],
+      "dprime": 0.237,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 2,
+    "selected": [
+     {
+      "family": "diff_rank0",
+      "id": "jlens:py_arg:d0",
+      "selection": {
+       "jlens@42": {
+        "auroc": 0.57,
+        "ci95": [
+         0.4833,
+         0.6552
+        ],
+        "dprime": 0.259,
+        "n": 160
+       }
+      },
+      "words": {
+       "first": [
+        "input"
+       ],
+       "third": [
+        "default"
+       ]
+      }
+     },
+     {
+      "family": "diff_top3",
+      "id": "jlens:py_arg:dtop3",
+      "selection": {
+       "jlens@42": {
+        "auroc": 0.5542,
+        "ci95": [
+         0.4684,
+         0.6428
+        ],
+        "dprime": 0.191,
+        "n": 160
+       }
+      },
+      "words": {
+       "first": [
+        "input",
+        "nodes",
+        "array"
+       ],
+       "third": [
+        "default"
+       ]
+      }
+     }
+    ]
+   },
+   "py_string": {
+    "all_candidates": {
+     "jlens:py_string:fixed": {
+      "jlens@42": {
+       "auroc": 0.403,
+       "ci95": [
+        0.3181,
+        0.4898
+       ],
+       "dprime": -0.344,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "family": "fixed_label",
+     "id": "jlens:py_string:fixed",
+     "selection": {
+      "jlens@42": {
+       "auroc": 0.403,
+       "ci95": [
+        0.3181,
+        0.4898
+       ],
+       "dprime": -0.344,
+       "n": 160
+      }
+     },
+     "words": {
+      "inside": [
+       "string",
+       "quote"
+      ],
+      "outside": [
+       "code",
+       "call"
+      ]
+     }
+    },
+    "mean_of_selected": {},
+    "n_candidates_mined": 0,
+    "selected": []
+   }
+  },
+  "nla": {
+   "html_depth": {
+    "all_candidates": {
+     "nla:html_depth:fixed": {
+      "nla@42": {
+       "auroc": 0.6578,
+       "ci95": [
+        0.5746,
+        0.7393
+       ],
+       "dprime": 0.631,
+       "n": 160
+      }
+     },
+     "nla:html_depth:m0": {
+      "nla@42": {
+       "auroc": 0.9359,
+       "ci95": [
+        0.898,
+        0.9671
+       ],
+       "dprime": 2.288,
+       "n": 160
+      }
+     },
+     "nla:html_depth:m1": {
+      "nla@42": {
+       "auroc": 0.3823,
+       "ci95": [
+        0.2949,
+        0.4708
+       ],
+       "dprime": -0.061,
+       "n": 160
+      }
+     },
+     "nla:html_depth:m2": {
+      "nla@42": {
+       "auroc": 0.4986,
+       "ci95": [
+        0.4036,
+        0.5896
+       ],
+       "dprime": 0.107,
+       "n": 160
+      }
+     },
+     "nla:html_depth:m3": {
+      "nla@42": {
+       "auroc": 0.5642,
+       "ci95": [
+        0.4814,
+        0.6495
+       ],
+       "dprime": 0.231,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "deep": "The current text is nested three tags deep in the HTML",
+      "shallow": "The current text is nested one tag deep in the HTML"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "deep": "three tags deep",
+      "shallow": "one tag deep"
+     },
+     "id": "nla:html_depth:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.6578,
+       "ci95": [
+        0.5746,
+        0.7393
+       ],
+       "dprime": 0.631,
+       "n": 160
+      }
+     },
+     "template": "The current text is nested {v} in the HTML"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.9269,
+      "ci95": [
+       0.8841,
+       0.959
+      ],
+      "dprime": 1.996,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "deep": " / List/feed pattern repeating format",
+       "shallow": " / Structured metadata listing format"
+      },
+      "family": "content_vs_metadata",
+      "fillers": {
+       "deep": "List/feed pattern repeating",
+       "shallow": "Structured metadata listing"
+      },
+      "id": "nla:html_depth:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9359,
+        "ci95": [
+         0.898,
+         0.9671
+        ],
+        "dprime": 2.288,
+        "n": 160
+       }
+      },
+      "template": " / {v} format"
+     },
+     {
+      "candidates": {
+       "deep": " / deep nesting level in HTML structure",
+       "shallow": " / shallow nesting level in HTML structure"
+      },
+      "family": "nesting_structure_synthetic",
+      "fillers": {
+       "deep": "deep",
+       "shallow": "shallow"
+      },
+      "id": "nla:html_depth:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5642,
+        "ci95": [
+         0.4814,
+         0.6495
+        ],
+        "dprime": 0.231,
+        "n": 160
+       }
+      },
+      "template": " / {v} nesting level in HTML structure"
+     },
+     {
+      "candidates": {
+       "deep": " / Step-by-step instructional guide establishes",
+       "shallow": " / Web page metadata establishes"
+      },
+      "family": "inner_body_vs_page_level",
+      "fillers": {
+       "deep": "Step-by-step instructional guide",
+       "shallow": "Web page metadata"
+      },
+      "id": "nla:html_depth:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.4986,
+        "ci95": [
+         0.4036,
+         0.5896
+        ],
+        "dprime": 0.107,
+        "n": 160
+       }
+      },
+      "template": " / {v} establishes"
+     }
+    ]
+   },
+   "js_string": {
+    "all_candidates": {
+     "nla:js_string:fixed": {
+      "nla@42": {
+       "auroc": 0.8275,
+       "ci95": [
+        0.7629,
+        0.8879
+       ],
+       "dprime": 1.245,
+       "n": 160
+      }
+     },
+     "nla:js_string:m0": {
+      "nla@42": {
+       "auroc": 0.8662,
+       "ci95": [
+        0.8117,
+        0.9186
+       ],
+       "dprime": 1.595,
+       "n": 160
+      }
+     },
+     "nla:js_string:m1": {
+      "nla@42": {
+       "auroc": 0.8917,
+       "ci95": [
+        0.8421,
+        0.939
+       ],
+       "dprime": 1.788,
+       "n": 160
+      }
+     },
+     "nla:js_string:m2": {
+      "nla@42": {
+       "auroc": 0.6048,
+       "ci95": [
+        0.5164,
+        0.6882
+       ],
+       "dprime": 0.364,
+       "n": 160
+      }
+     },
+     "nla:js_string:m3": {
+      "nla@42": {
+       "auroc": 0.8516,
+       "ci95": [
+        0.7852,
+        0.9083
+       ],
+       "dprime": 1.465,
+       "n": 160
+      }
+     },
+     "nla:js_string:m4": {
+      "nla@42": {
+       "auroc": 0.9403,
+       "ci95": [
+        0.8992,
+        0.9755
+       ],
+       "dprime": 2.293,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "inside": "The current position is inside a string literal",
+      "outside": "The current position is outside a string literal"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "inside": "inside",
+      "outside": "outside"
+     },
+     "id": "nla:js_string:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.8275,
+       "ci95": [
+        0.7629,
+        0.8879
+       ],
+       "dprime": 1.245,
+       "n": 160
+      }
+     },
+     "template": "The current position is {v} a string literal"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.9231,
+      "ci95": [
+       0.8806,
+       0.963
+      ],
+      "dprime": 2.108,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "inside": " / Token is mid-string",
+       "outside": " / Token is mid-statement"
+      },
+      "family": "string_mid_stream",
+      "fillers": {
+       "inside": "mid-string",
+       "outside": "mid-statement"
+      },
+      "id": "nla:js_string:m4",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.9403,
+        "ci95": [
+         0.8992,
+         0.9755
+        ],
+        "dprime": 2.293,
+        "n": 160
+       }
+      },
+      "template": " / Token is {v}"
+     },
+     {
+      "candidates": {
+       "inside": " / Error message pattern",
+       "outside": " / TypeScript pattern"
+      },
+      "family": "pattern_type",
+      "fillers": {
+       "inside": "Error message",
+       "outside": "TypeScript"
+      },
+      "id": "nla:js_string:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8917,
+        "ci95": [
+         0.8421,
+         0.939
+        ],
+        "dprime": 1.788,
+        "n": 160
+       }
+      },
+      "template": " / {v} pattern"
+     },
+     {
+      "candidates": {
+       "inside": " / Error message",
+       "outside": " / TypeScript"
+      },
+      "family": "error_message_vs_code",
+      "fillers": {
+       "inside": "Error message",
+       "outside": "TypeScript"
+      },
+      "id": "nla:js_string:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8662,
+        "ci95": [
+         0.8117,
+         0.9186
+        ],
+        "dprime": 1.595,
+        "n": 160
+       }
+      },
+      "template": " / {v}"
+     }
+    ]
+   },
+   "json_depth": {
+    "all_candidates": {
+     "nla:json_depth:fixed": {
+      "nla@42": {
+       "auroc": 0.5173,
+       "ci95": [
+        0.4345,
+        0.6008
+       ],
+       "dprime": 0.082,
+       "n": 160
+      }
+     },
+     "nla:json_depth:m0": {
+      "nla@42": {
+       "auroc": 0.7972,
+       "ci95": [
+        0.7289,
+        0.8635
+       ],
+       "dprime": 1.246,
+       "n": 160
+      }
+     },
+     "nla:json_depth:m1": {
+      "nla@42": {
+       "auroc": 0.8366,
+       "ci95": [
+        0.7712,
+        0.8943
+       ],
+       "dprime": 1.353,
+       "n": 160
+      }
+     },
+     "nla:json_depth:m2": {
+      "nla@42": {
+       "auroc": 0.7089,
+       "ci95": [
+        0.6266,
+        0.79
+       ],
+       "dprime": 0.787,
+       "n": 160
+      }
+     },
+     "nla:json_depth:m3": {
+      "nla@42": {
+       "auroc": 0.8814,
+       "ci95": [
+        0.8285,
+        0.9263
+       ],
+       "dprime": 1.726,
+       "n": 160
+      }
+     },
+     "nla:json_depth:m4": {
+      "nla@42": {
+       "auroc": 0.5061,
+       "ci95": [
+        0.4194,
+        0.591
+       ],
+       "dprime": 0.081,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "deep": "The current value sits three levels deep in the JSON object",
+      "shallow": "The current value sits at the top level in the JSON object"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "deep": "three levels deep",
+      "shallow": "at the top level"
+     },
+     "id": "nla:json_depth:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.5173,
+       "ci95": [
+        0.4345,
+        0.6008
+       ],
+       "dprime": 0.082,
+       "n": 160
+      }
+     },
+     "template": "The current value sits {v} in the JSON object"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.9147,
+      "ci95": [
+       0.8678,
+       0.9524
+      ],
+      "dprime": 1.905,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "deep": "<explanation> / Technical API reference documentation pattern: structured parameter definitions with",
+       "shallow": "<explanation> / Technical API discovery document listing REST API resources and metadata, with"
+      },
+      "family": "api_spec_level",
+      "fillers": {
+       "deep": "reference documentation pattern: structured parameter definitions with",
+       "shallow": "discovery document listing REST API resources and metadata, with"
+      },
+      "id": "nla:json_depth:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8814,
+        "ci95": [
+         0.8285,
+         0.9263
+        ],
+        "dprime": 1.726,
+        "n": 160
+       }
+      },
+      "template": "<explanation> / Technical API {v}"
+     },
+     {
+      "candidates": {
+       "deep": "<explanation> / Nested JSON structure",
+       "shallow": "<explanation> / Root-level JSON structure"
+      },
+      "family": "nesting_depth_level",
+      "fillers": {
+       "deep": "Nested",
+       "shallow": "Root-level"
+      },
+      "id": "nla:json_depth:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8366,
+        "ci95": [
+         0.7712,
+         0.8943
+        ],
+        "dprime": 1.353,
+        "n": 160
+       }
+      },
+      "template": "<explanation> / {v} JSON structure"
+     },
+     {
+      "candidates": {
+       "deep": "<explanation> / Structured JSON schema specification format, with consistent field definitions using",
+       "shallow": "<explanation> / Structured JSON object structure listing API specification fields in key-value format,"
+      },
+      "family": "structural_level",
+      "fillers": {
+       "deep": "schema specification format, with consistent field definitions using",
+       "shallow": "object structure listing API specification fields in key-value format,"
+      },
+      "id": "nla:json_depth:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.7972,
+        "ci95": [
+         0.7289,
+         0.8635
+        ],
+        "dprime": 1.246,
+        "n": 160
+       }
+      },
+      "template": "<explanation> / Structured JSON {v}"
+     }
+    ]
+   },
+   "latex_math": {
+    "all_candidates": {
+     "nla:latex_math:fixed": {
+      "nla@42": {
+       "auroc": 0.8387,
+       "ci95": [
+        0.7836,
+        0.8923
+       ],
+       "dprime": 1.428,
+       "n": 160
+      }
+     },
+     "nla:latex_math:m0": {
+      "nla@42": {
+       "auroc": 0.5973,
+       "ci95": [
+        0.5183,
+        0.6722
+       ],
+       "dprime": 0.341,
+       "n": 160
+      }
+     },
+     "nla:latex_math:m1": {
+      "nla@42": {
+       "auroc": 0.5803,
+       "ci95": [
+        0.5042,
+        0.657
+       ],
+       "dprime": 0.3,
+       "n": 160
+      }
+     },
+     "nla:latex_math:m2": {
+      "nla@42": {
+       "auroc": 0.438,
+       "ci95": [
+        0.355,
+        0.5252
+       ],
+       "dprime": -0.322,
+       "n": 160
+      }
+     },
+     "nla:latex_math:m3": {
+      "nla@42": {
+       "auroc": 0.5698,
+       "ci95": [
+        0.4945,
+        0.6415
+       ],
+       "dprime": 0.251,
+       "n": 160
+      }
+     },
+     "nla:latex_math:m4": {
+      "nla@42": {
+       "auroc": 0.5295,
+       "ci95": [
+        0.4655,
+        0.5995
+       ],
+       "dprime": 0.099,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "inside": "The current position is inside a LaTeX math expression",
+      "outside": "The current position is outside a LaTeX math expression"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "inside": "inside",
+      "outside": "outside"
+     },
+     "id": "nla:latex_math:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.8387,
+       "ci95": [
+        0.7836,
+        0.8923
+       ],
+       "dprime": 1.428,
+       "n": 160
+      }
+     },
+     "template": "The current position is {v} a LaTeX math expression"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.5948,
+      "ci95": [
+       0.5146,
+       0.67
+      ],
+      "dprime": 0.362,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "inside": "Academic economics paper",
+       "outside": "Academic physics paper"
+      },
+      "family": "academic_math_vs_paper",
+      "fillers": {
+       "inside": "economics",
+       "outside": "physics"
+      },
+      "id": "nla:latex_math:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5973,
+        "ci95": [
+         0.5183,
+         0.6722
+        ],
+        "dprime": 0.341,
+        "n": 160
+       }
+      },
+      "template": "Academic {v} paper"
+     },
+     {
+      "candidates": {
+       "inside": "Formal academic economics paper",
+       "outside": "Formal physics academic paper"
+      },
+      "family": "formal_domain_style",
+      "fillers": {
+       "inside": "academic economics",
+       "outside": "physics academic"
+      },
+      "id": "nla:latex_math:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5803,
+        "ci95": [
+         0.5042,
+         0.657
+        ],
+        "dprime": 0.3,
+        "n": 160
+       }
+      },
+      "template": "Formal {v} paper"
+     },
+     {
+      "candidates": {
+       "inside": "Mathematical definition continuation pattern",
+       "outside": "Mathematical derivation pattern"
+      },
+      "family": "math_derivation_vs_proof",
+      "fillers": {
+       "inside": "definition continuation",
+       "outside": "derivation"
+      },
+      "id": "nla:latex_math:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5698,
+        "ci95": [
+         0.4945,
+         0.6415
+        ],
+        "dprime": 0.251,
+        "n": 160
+       }
+      },
+      "template": "Mathematical {v} pattern"
+     }
+    ]
+   },
+   "md_heading": {
+    "all_candidates": {
+     "nla:md_heading:fixed": {
+      "nla@42": {
+       "auroc": 0.653,
+       "ci95": [
+        0.5693,
+        0.732
+       ],
+       "dprime": 0.518,
+       "n": 160
+      }
+     },
+     "nla:md_heading:m0": {
+      "nla@42": {
+       "auroc": 0.5091,
+       "ci95": [
+        0.4171,
+        0.6024
+       ],
+       "dprime": -0.003,
+       "n": 160
+      }
+     },
+     "nla:md_heading:m1": {
+      "nla@42": {
+       "auroc": 0.583,
+       "ci95": [
+        0.4949,
+        0.6684
+       ],
+       "dprime": 0.379,
+       "n": 160
+      }
+     },
+     "nla:md_heading:m2": {
+      "nla@42": {
+       "auroc": 0.6514,
+       "ci95": [
+        0.5709,
+        0.7354
+       ],
+       "dprime": 0.536,
+       "n": 160
+      }
+     },
+     "nla:md_heading:m3": {
+      "nla@42": {
+       "auroc": 0.5594,
+       "ci95": [
+        0.4752,
+        0.6512
+       ],
+       "dprime": 0.17,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "deep": "The current line is a lower-level markdown heading",
+      "shallow": "The current line is a top-level markdown heading"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "deep": "lower-level",
+      "shallow": "top-level"
+     },
+     "id": "nla:md_heading:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.653,
+       "ci95": [
+        0.5693,
+        0.732
+       ],
+       "dprime": 0.518,
+       "n": 160
+      }
+     },
+     "template": "The current line is a {v} markdown heading"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.6508,
+      "ci95": [
+       0.5709,
+       0.7374
+      ],
+      "dprime": 0.523,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "deep": " / Structured documentation pattern with nested sections",
+       "shallow": " / Structured documentation pattern with high-level sections"
+      },
+      "family": "structural_depth",
+      "fillers": {
+       "deep": "nested",
+       "shallow": "high-level"
+      },
+      "id": "nla:md_heading:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.6514,
+        "ci95": [
+         0.5709,
+         0.7354
+        ],
+        "dprime": 0.536,
+        "n": 160
+       }
+      },
+      "template": " / Structured documentation pattern with {v} sections"
+     },
+     {
+      "candidates": {
+       "deep": " / H3 or bullet-point heading pattern",
+       "shallow": " / H1 or H2 heading pattern"
+      },
+      "family": "header_hierarchy",
+      "fillers": {
+       "deep": "H3 or bullet-point",
+       "shallow": "H1 or H2"
+      },
+      "id": "nla:md_heading:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.583,
+        "ci95": [
+         0.4949,
+         0.6684
+        ],
+        "dprime": 0.379,
+        "n": 160
+       }
+      },
+      "template": " / {v} heading pattern"
+     },
+     {
+      "candidates": {
+       "deep": " / Technical sub-section structure",
+       "shallow": " / Technical top-level structure"
+      },
+      "family": "structure_granularity",
+      "fillers": {
+       "deep": "sub-section",
+       "shallow": "top-level"
+      },
+      "id": "nla:md_heading:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5594,
+        "ci95": [
+         0.4752,
+         0.6512
+        ],
+        "dprime": 0.17,
+        "n": 160
+       }
+      },
+      "template": " / Technical {v} structure"
+     }
+    ]
+   },
+   "md_list": {
+    "all_candidates": {
+     "nla:md_list:fixed": {
+      "nla@42": {
+       "auroc": 0.5898,
+       "ci95": [
+        0.5066,
+        0.6712
+       ],
+       "dprime": 0.387,
+       "n": 160
+      }
+     },
+     "nla:md_list:m0": {
+      "nla@42": {
+       "auroc": 0.4806,
+       "ci95": [
+        0.3926,
+        0.5695
+       ],
+       "dprime": -0.097,
+       "n": 160
+      }
+     },
+     "nla:md_list:m1": {
+      "nla@42": {
+       "auroc": 0.5941,
+       "ci95": [
+        0.5136,
+        0.6789
+       ],
+       "dprime": 0.368,
+       "n": 160
+      }
+     },
+     "nla:md_list:m2": {
+      "nla@42": {
+       "auroc": 0.5377,
+       "ci95": [
+        0.4497,
+        0.6307
+       ],
+       "dprime": 0.121,
+       "n": 160
+      }
+     },
+     "nla:md_list:m3": {
+      "nla@42": {
+       "auroc": 0.4736,
+       "ci95": [
+        0.3863,
+        0.557
+       ],
+       "dprime": -0.048,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "nested": "The current line is a nested list item",
+      "top": "The current line is a top-level list item"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "nested": "nested",
+      "top": "top-level"
+     },
+     "id": "nla:md_list:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.5898,
+       "ci95": [
+        0.5066,
+        0.6712
+       ],
+       "dprime": 0.387,
+       "n": 160
+      }
+     },
+     "template": "The current line is a {v} list item"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.5547,
+      "ci95": [
+       0.4733,
+       0.6392
+      ],
+      "dprime": 0.209,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "nested": " / Structured feature lists and nested sub-features",
+       "top": " / Structured feature lists and top-level sections"
+      },
+      "family": "sub_elements_contrast",
+      "fillers": {
+       "nested": "feature lists and nested sub-features",
+       "top": "feature lists and top-level sections"
+      },
+      "id": "nla:md_list:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5941,
+        "ci95": [
+         0.5136,
+         0.6789
+        ],
+        "dprime": 0.368,
+        "n": 160
+       }
+      },
+      "template": " / Structured {v}"
+     },
+     {
+      "candidates": {
+       "nested": " / Technical spec with nested bullet points",
+       "top": " / Technical documentation with top-level checklist items"
+      },
+      "family": "list_hierarchy_status",
+      "fillers": {
+       "nested": "spec with nested bullet points",
+       "top": "documentation with top-level checklist items"
+      },
+      "id": "nla:md_list:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.5377,
+        "ci95": [
+         0.4497,
+         0.6307
+        ],
+        "dprime": 0.121,
+        "n": 160
+       }
+      },
+      "template": " / Technical {v}"
+     },
+     {
+      "candidates": {
+       "nested": " / Technical documentation with nested bullet points",
+       "top": " / Technical documentation with structured bullet points"
+      },
+      "family": "item_depth_distinction",
+      "fillers": {
+       "nested": "with nested bullet points",
+       "top": "with structured bullet points"
+      },
+      "id": "nla:md_list:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.4806,
+        "ci95": [
+         0.3926,
+         0.5695
+        ],
+        "dprime": -0.097,
+        "n": 160
+       }
+      },
+      "template": " / Technical documentation {v}"
+     }
+    ]
+   },
+   "py_arg": {
+    "all_candidates": {
+     "nla:py_arg:fixed": {
+      "nla@42": {
+       "auroc": 0.7669,
+       "ci95": [
+        0.6854,
+        0.8379
+       ],
+       "dprime": 1.002,
+       "n": 160
+      }
+     },
+     "nla:py_arg:m0": {
+      "nla@42": {
+       "auroc": 0.8467,
+       "ci95": [
+        0.7785,
+        0.906
+       ],
+       "dprime": 1.479,
+       "n": 160
+      }
+     },
+     "nla:py_arg:m1": {
+      "nla@42": {
+       "auroc": 0.603,
+       "ci95": [
+        0.5101,
+        0.6905
+       ],
+       "dprime": 0.364,
+       "n": 160
+      }
+     },
+     "nla:py_arg:m2": {
+      "nla@42": {
+       "auroc": 0.6736,
+       "ci95": [
+        0.5923,
+        0.7558
+       ],
+       "dprime": 0.659,
+       "n": 160
+      }
+     },
+     "nla:py_arg:m3": {
+      "nla@42": {
+       "auroc": 0.6367,
+       "ci95": [
+        0.5464,
+        0.7231
+       ],
+       "dprime": 0.542,
+       "n": 160
+      }
+     },
+     "nla:py_arg:m4": {
+      "nla@42": {
+       "auroc": 0.4487,
+       "ci95": [
+        0.3629,
+        0.5395
+       ],
+       "dprime": -0.204,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "first": "The current token is the first argument of the function call",
+      "third": "The current token is the third argument of the function call"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "first": "first",
+      "third": "third"
+     },
+     "id": "nla:py_arg:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.7669,
+       "ci95": [
+        0.6854,
+        0.8379
+       ],
+       "dprime": 1.002,
+       "n": 160
+      }
+     },
+     "template": "The current token is the {v} argument of the function call"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.7925,
+      "ci95": [
+       0.7146,
+       0.858
+      ],
+      "dprime": 1.171,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "first": "The final token is the first argument",
+       "third": "The final token is the third argument"
+      },
+      "family": "ordinal_positional_argument",
+      "fillers": {
+       "first": "first",
+       "third": "third"
+      },
+      "id": "nla:py_arg:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8467,
+        "ci95": [
+         0.7785,
+         0.906
+        ],
+        "dprime": 1.479,
+        "n": 160
+       }
+      },
+      "template": "The final token is the {v} argument"
+     },
+     {
+      "candidates": {
+       "first": "mid-sentence completing the first positional argument",
+       "third": "mid-sentence completing the third positional argument"
+      },
+      "family": "positional_arg_reference",
+      "fillers": {
+       "first": "first",
+       "third": "third"
+      },
+      "id": "nla:py_arg:m2",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.6736,
+        "ci95": [
+         0.5923,
+         0.7558
+        ],
+        "dprime": 0.659,
+        "n": 160
+       }
+      },
+      "template": "mid-sentence completing the {v} positional argument"
+     },
+     {
+      "candidates": {
+       "first": "call signature with first argument specified",
+       "third": "call signature with third argument specified"
+      },
+      "family": "arg_call_signature",
+      "fillers": {
+       "first": "first",
+       "third": "third"
+      },
+      "id": "nla:py_arg:m3",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.6367,
+        "ci95": [
+         0.5464,
+         0.7231
+        ],
+        "dprime": 0.542,
+        "n": 160
+       }
+      },
+      "template": "call signature with {v} argument specified"
+     }
+    ]
+   },
+   "py_string": {
+    "all_candidates": {
+     "nla:py_string:fixed": {
+      "nla@42": {
+       "auroc": 0.7806,
+       "ci95": [
+        0.7009,
+        0.8553
+       ],
+       "dprime": 1.02,
+       "n": 160
+      }
+     },
+     "nla:py_string:m0": {
+      "nla@42": {
+       "auroc": 0.7567,
+       "ci95": [
+        0.6783,
+        0.8284
+       ],
+       "dprime": 0.865,
+       "n": 160
+      }
+     },
+     "nla:py_string:m1": {
+      "nla@42": {
+       "auroc": 0.8158,
+       "ci95": [
+        0.7457,
+        0.8795
+       ],
+       "dprime": 1.292,
+       "n": 160
+      }
+     },
+     "nla:py_string:m2": {
+      "nla@42": {
+       "auroc": 0.4347,
+       "ci95": [
+        0.3447,
+        0.5238
+       ],
+       "dprime": -0.171,
+       "n": 160
+      }
+     },
+     "nla:py_string:m3": {
+      "nla@42": {
+       "auroc": 0.5183,
+       "ci95": [
+        0.4279,
+        0.61
+       ],
+       "dprime": 0.066,
+       "n": 160
+      }
+     },
+     "nla:py_string:m4": {
+      "nla@42": {
+       "auroc": 0.8662,
+       "ci95": [
+        0.8065,
+        0.9216
+       ],
+       "dprime": 1.603,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "inside": "The current position is inside a string literal",
+      "outside": "The current position is outside a string literal"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "inside": "inside",
+      "outside": "outside"
+     },
+     "id": "nla:py_string:fixed",
+     "selection": {
+      "nla@42": {
+       "auroc": 0.7806,
+       "ci95": [
+        0.7009,
+        0.8553
+       ],
+       "dprime": 1.02,
+       "n": 160
+      }
+     },
+     "template": "The current position is {v} a string literal"
+    },
+    "mean_of_selected": {
+     "nla@42": {
+      "auroc": 0.8366,
+      "ci95": [
+       0.7689,
+       0.8978
+      ],
+      "dprime": 1.381,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "inside": "The final token is inside a string literal",
+       "outside": "The final token is outside a string literal"
+      },
+      "family": "token_position",
+      "fillers": {
+       "inside": "inside a string literal",
+       "outside": "outside a string literal"
+      },
+      "id": "nla:py_string:m4",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8662,
+        "ci95": [
+         0.8065,
+         0.9216
+        ],
+        "dprime": 1.603,
+        "n": 160
+       }
+      },
+      "template": "The final token is {v}"
+     },
+     {
+      "candidates": {
+       "inside": "The warning message is mid-sentence",
+       "outside": "The warning message is completed"
+      },
+      "family": "message_mid_status",
+      "fillers": {
+       "inside": "mid-sentence",
+       "outside": "completed"
+      },
+      "id": "nla:py_string:m1",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.8158,
+        "ci95": [
+         0.7457,
+         0.8795
+        ],
+        "dprime": 1.292,
+        "n": 160
+       }
+      },
+      "template": "The warning message is {v}"
+     },
+     {
+      "candidates": {
+       "inside": "A DeprecationWarning message is mid-quotation",
+       "outside": "A DeprecationWarning message is completed"
+      },
+      "family": "mid_quote_phrase",
+      "fillers": {
+       "inside": "mid-quotation",
+       "outside": "completed"
+      },
+      "id": "nla:py_string:m0",
+      "selection": {
+       "nla@42": {
+        "auroc": 0.7567,
+        "ci95": [
+         0.6783,
+         0.8284
+        ],
+        "dprime": 0.865,
+        "n": 160
+       }
+      },
+      "template": "A DeprecationWarning message is {v}"
+     }
+    ]
+   }
+  },
+  "ol": {
+   "html_depth": {
+    "all_candidates": {
+     "ol:html_depth:fixed": {
+      "ol@36": {
+       "auroc": 0.5166,
+       "ci95": [
+        0.4299,
+        0.6014
+       ],
+       "dprime": 0.118,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5134,
+       "ci95": [
+        0.4246,
+        0.6007
+       ],
+       "dprime": 0.051,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5219,
+       "ci95": [
+        0.4318,
+        0.604
+       ],
+       "dprime": 0.097,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4517,
+       "ci95": [
+        0.3582,
+        0.5383
+       ],
+       "dprime": -0.113,
+       "n": 160
+      }
+     },
+     "ol:html_depth:m0": {
+      "ol@36": {
+       "auroc": 0.297,
+       "ci95": [
+        0.2233,
+        0.3763
+       ],
+       "dprime": -0.778,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.2497,
+       "ci95": [
+        0.1832,
+        0.3303
+       ],
+       "dprime": -0.977,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.2057,
+       "ci95": [
+        0.1426,
+        0.2799
+       ],
+       "dprime": -1.151,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.227,
+       "ci95": [
+        0.1609,
+        0.3005
+       ],
+       "dprime": -1.087,
+       "n": 160
+      }
+     },
+     "ol:html_depth:m1": {
+      "ol@36": {
+       "auroc": 0.368,
+       "ci95": [
+        0.2885,
+        0.4514
+       ],
+       "dprime": -0.506,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.3211,
+       "ci95": [
+        0.242,
+        0.4026
+       ],
+       "dprime": -0.711,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3219,
+       "ci95": [
+        0.2466,
+        0.4041
+       ],
+       "dprime": -0.67,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.3385,
+       "ci95": [
+        0.2521,
+        0.421
+       ],
+       "dprime": -0.548,
+       "n": 160
+      }
+     },
+     "ol:html_depth:m2": {
+      "ol@36": {
+       "auroc": 0.4533,
+       "ci95": [
+        0.363,
+        0.5458
+       ],
+       "dprime": -0.152,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5531,
+       "ci95": [
+        0.4664,
+        0.6403
+       ],
+       "dprime": 0.146,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5511,
+       "ci95": [
+        0.464,
+        0.6371
+       ],
+       "dprime": 0.136,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.3881,
+       "ci95": [
+        0.3005,
+        0.4797
+       ],
+       "dprime": -0.321,
+       "n": 160
+      }
+     },
+     "ol:html_depth:m3": {
+      "ol@36": {
+       "auroc": 0.5795,
+       "ci95": [
+        0.4868,
+        0.6625
+       ],
+       "dprime": 0.174,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5452,
+       "ci95": [
+        0.4551,
+        0.6328
+       ],
+       "dprime": 0.076,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4795,
+       "ci95": [
+        0.3899,
+        0.5657
+       ],
+       "dprime": -0.073,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4451,
+       "ci95": [
+        0.3535,
+        0.5261
+       ],
+       "dprime": -0.208,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "deep": "- deep nesting",
+      "shallow": "- shallow nesting"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "deep": "deep",
+      "shallow": "shallow"
+     },
+     "id": "ol:html_depth:fixed",
+     "selection": {
+      "ol@36": {
+       "auroc": 0.5166,
+       "ci95": [
+        0.4299,
+        0.6014
+       ],
+       "dprime": 0.118,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5134,
+       "ci95": [
+        0.4246,
+        0.6007
+       ],
+       "dprime": 0.051,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5219,
+       "ci95": [
+        0.4318,
+        0.604
+       ],
+       "dprime": 0.097,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4517,
+       "ci95": [
+        0.3582,
+        0.5383
+       ],
+       "dprime": -0.113,
+       "n": 160
+      }
+     },
+     "template": "- {v} nesting"
+    },
+    "mean_of_selected": {
+     "ol@36": {
+      "auroc": 0.4391,
+      "ci95": [
+       0.35,
+       0.5261
+      ],
+      "dprime": -0.222,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.4645,
+      "ci95": [
+       0.3793,
+       0.5518
+      ],
+      "dprime": -0.097,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.4645,
+      "ci95": [
+       0.3711,
+       0.5479
+      ],
+      "dprime": -0.142,
+      "n": 160
+     },
+     "ol@52": {
+      "auroc": 0.3441,
+      "ci95": [
+       0.2575,
+       0.4398
+      ],
+      "dprime": -0.502,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "deep": "- six or more open elements",
+       "shallow": "- at most three open elements"
+      },
+      "family": "open_elements",
+      "fillers": {
+       "deep": "six or more",
+       "shallow": "at most three"
+      },
+      "id": "ol:html_depth:m2",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.4533,
+        "ci95": [
+         0.363,
+         0.5458
+        ],
+        "dprime": -0.152,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5531,
+        "ci95": [
+         0.4664,
+         0.6403
+        ],
+        "dprime": 0.146,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5511,
+        "ci95": [
+         0.464,
+         0.6371
+        ],
+        "dprime": 0.136,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.3881,
+        "ci95": [
+         0.3005,
+         0.4797
+        ],
+        "dprime": -0.321,
+        "n": 160
+       }
+      },
+      "template": "- {v} open elements"
+     },
+     {
+      "candidates": {
+       "deep": "- HTML tag depth is deep",
+       "shallow": "- HTML tag depth is shallow"
+      },
+      "family": "tag_depth",
+      "fillers": {
+       "deep": "deep",
+       "shallow": "shallow"
+      },
+      "id": "ol:html_depth:m3",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.5795,
+        "ci95": [
+         0.4868,
+         0.6625
+        ],
+        "dprime": 0.174,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5452,
+        "ci95": [
+         0.4551,
+         0.6328
+        ],
+        "dprime": 0.076,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.4795,
+        "ci95": [
+         0.3899,
+         0.5657
+        ],
+        "dprime": -0.073,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.4451,
+        "ci95": [
+         0.3535,
+         0.5261
+        ],
+        "dprime": -0.208,
+        "n": 160
+       }
+      },
+      "template": "- HTML tag depth is {v}"
+     },
+     {
+      "candidates": {
+       "deep": "- nesting level: deep",
+       "shallow": "- nesting level: shallow"
+      },
+      "family": "element_nesting",
+      "fillers": {
+       "deep": "deep",
+       "shallow": "shallow"
+      },
+      "id": "ol:html_depth:m1",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.368,
+        "ci95": [
+         0.2885,
+         0.4514
+        ],
+        "dprime": -0.506,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.3211,
+        "ci95": [
+         0.242,
+         0.4026
+        ],
+        "dprime": -0.711,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.3219,
+        "ci95": [
+         0.2466,
+         0.4041
+        ],
+        "dprime": -0.67,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.3385,
+        "ci95": [
+         0.2521,
+         0.421
+        ],
+        "dprime": -0.548,
+        "n": 160
+       }
+      },
+      "template": "- nesting level: {v}"
+     }
+    ]
+   },
+   "js_string": {
+    "all_candidates": {
+     "ol:js_string:fixed": {
+      "ol@36": {
+       "auroc": 0.4291,
+       "ci95": [
+        0.3435,
+        0.5118
+       ],
+       "dprime": -0.261,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.3927,
+       "ci95": [
+        0.3072,
+        0.4847
+       ],
+       "dprime": -0.347,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4211,
+       "ci95": [
+        0.335,
+        0.5153
+       ],
+       "dprime": -0.268,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4492,
+       "ci95": [
+        0.3607,
+        0.5442
+       ],
+       "dprime": -0.236,
+       "n": 160
+      }
+     },
+     "ol:js_string:m0": {
+      "ol@36": {
+       "auroc": 0.6753,
+       "ci95": [
+        0.5982,
+        0.7547
+       ],
+       "dprime": 0.637,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7083,
+       "ci95": [
+        0.6217,
+        0.7843
+       ],
+       "dprime": 0.742,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.7139,
+       "ci95": [
+        0.6318,
+        0.7865
+       ],
+       "dprime": 0.793,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.7087,
+       "ci95": [
+        0.6278,
+        0.78
+       ],
+       "dprime": 0.829,
+       "n": 160
+      }
+     },
+     "ol:js_string:m1": {
+      "ol@36": {
+       "auroc": 0.495,
+       "ci95": [
+        0.4058,
+        0.5782
+       ],
+       "dprime": 0.069,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5098,
+       "ci95": [
+        0.4212,
+        0.5966
+       ],
+       "dprime": 0.11,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5027,
+       "ci95": [
+        0.4076,
+        0.5868
+       ],
+       "dprime": 0.071,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.5527,
+       "ci95": [
+        0.457,
+        0.6377
+       ],
+       "dprime": 0.214,
+       "n": 160
+      }
+     },
+     "ol:js_string:m2": {
+      "ol@36": {
+       "auroc": 0.7219,
+       "ci95": [
+        0.6388,
+        0.7993
+       ],
+       "dprime": 0.897,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7155,
+       "ci95": [
+        0.6335,
+        0.7894
+       ],
+       "dprime": 0.879,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.7447,
+       "ci95": [
+        0.6645,
+        0.8166
+       ],
+       "dprime": 0.968,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.7941,
+       "ci95": [
+        0.723,
+        0.8616
+       ],
+       "dprime": 1.195,
+       "n": 160
+      }
+     },
+     "ol:js_string:m3": {
+      "ol@36": {
+       "auroc": 0.7573,
+       "ci95": [
+        0.667,
+        0.8311
+       ],
+       "dprime": 0.951,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7828,
+       "ci95": [
+        0.6995,
+        0.8516
+       ],
+       "dprime": 1.086,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.7653,
+       "ci95": [
+        0.6783,
+        0.8395
+       ],
+       "dprime": 0.983,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.7466,
+       "ci95": [
+        0.6694,
+        0.8174
+       ],
+       "dprime": 0.992,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "inside": "- inside string",
+      "outside": "- outside string"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "inside": "inside",
+      "outside": "outside"
+     },
+     "id": "ol:js_string:fixed",
+     "selection": {
+      "ol@36": {
+       "auroc": 0.4291,
+       "ci95": [
+        0.3435,
+        0.5118
+       ],
+       "dprime": -0.261,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.3927,
+       "ci95": [
+        0.3072,
+        0.4847
+       ],
+       "dprime": -0.347,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4211,
+       "ci95": [
+        0.335,
+        0.5153
+       ],
+       "dprime": -0.268,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4492,
+       "ci95": [
+        0.3607,
+        0.5442
+       ],
+       "dprime": -0.236,
+       "n": 160
+      }
+     },
+     "template": "- {v} string"
+    },
+    "mean_of_selected": {
+     "ol@36": {
+      "auroc": 0.8045,
+      "ci95": [
+       0.7369,
+       0.8655
+      ],
+      "dprime": 1.235,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.8202,
+      "ci95": [
+       0.7544,
+       0.8787
+      ],
+      "dprime": 1.338,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.8242,
+      "ci95": [
+       0.7605,
+       0.8814
+      ],
+      "dprime": 1.351,
+      "n": 160
+     },
+     "ol@52": {
+      "auroc": 0.8469,
+      "ci95": [
+       0.7856,
+       0.9011
+      ],
+      "dprime": 1.475,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "inside": "- `http://` prefix",
+       "outside": "- ; } // "
+      },
+      "family": "semicolon_boundary",
+      "fillers": {
+       "inside": "`http://` prefix",
+       "outside": "; } // "
+      },
+      "id": "ol:js_string:m3",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.7573,
+        "ci95": [
+         0.667,
+         0.8311
+        ],
+        "dprime": 0.951,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.7828,
+        "ci95": [
+         0.6995,
+         0.8516
+        ],
+        "dprime": 1.086,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.7653,
+        "ci95": [
+         0.6783,
+         0.8395
+        ],
+        "dprime": 0.983,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.7466,
+        "ci95": [
+         0.6694,
+         0.8174
+        ],
+        "dprime": 0.992,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "inside": "- type=\"checkbox\"",
+       "outside": "- .totalSize - this._offset"
+      },
+      "family": "code_type",
+      "fillers": {
+       "inside": "type=\"checkbox\"",
+       "outside": ".totalSize - this._offset"
+      },
+      "id": "ol:js_string:m2",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.7219,
+        "ci95": [
+         0.6388,
+         0.7993
+        ],
+        "dprime": 0.897,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.7155,
+        "ci95": [
+         0.6335,
+         0.7894
+        ],
+        "dprime": 0.879,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.7447,
+        "ci95": [
+         0.6645,
+         0.8166
+        ],
+        "dprime": 0.968,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.7941,
+        "ci95": [
+         0.723,
+         0.8616
+        ],
+        "dprime": 1.195,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "inside": "- is not a valid number or string.",
+       "outside": "- new TypeError(\"Failed to construct"
+      },
+      "family": "statement_continuation",
+      "fillers": {
+       "inside": "is not a valid number or string.",
+       "outside": "new TypeError(\"Failed to construct"
+      },
+      "id": "ol:js_string:m0",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.6753,
+        "ci95": [
+         0.5982,
+         0.7547
+        ],
+        "dprime": 0.637,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.7083,
+        "ci95": [
+         0.6217,
+         0.7843
+        ],
+        "dprime": 0.742,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.7139,
+        "ci95": [
+         0.6318,
+         0.7865
+        ],
+        "dprime": 0.793,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.7087,
+        "ci95": [
+         0.6278,
+         0.78
+        ],
+        "dprime": 0.829,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     }
+    ]
+   },
+   "json_depth": {
+    "all_candidates": {
+     "ol:json_depth:fixed": {
+      "ol@36": {
+       "auroc": 0.2827,
+       "ci95": [
+        0.2094,
+        0.3639
+       ],
+       "dprime": -0.785,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.3333,
+       "ci95": [
+        0.2554,
+        0.4291
+       ],
+       "dprime": -0.602,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3325,
+       "ci95": [
+        0.2515,
+        0.4215
+       ],
+       "dprime": -0.556,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.305,
+       "ci95": [
+        0.2291,
+        0.3853
+       ],
+       "dprime": -0.711,
+       "n": 160
+      }
+     },
+     "ol:json_depth:m0": {
+      "ol@36": {
+       "auroc": 0.5178,
+       "ci95": [
+        0.4259,
+        0.6054
+       ],
+       "dprime": 0.034,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5205,
+       "ci95": [
+        0.4283,
+        0.608
+       ],
+       "dprime": 0.085,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4895,
+       "ci95": [
+        0.393,
+        0.577
+       ],
+       "dprime": 0.011,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.42,
+       "ci95": [
+        0.3372,
+        0.5089
+       ],
+       "dprime": -0.266,
+       "n": 160
+      }
+     },
+     "ol:json_depth:m1": {
+      "ol@36": {
+       "auroc": 0.5305,
+       "ci95": [
+        0.4439,
+        0.6195
+       ],
+       "dprime": 0.144,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.563,
+       "ci95": [
+        0.4735,
+        0.6539
+       ],
+       "dprime": 0.172,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5775,
+       "ci95": [
+        0.4917,
+        0.6631
+       ],
+       "dprime": 0.217,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.5648,
+       "ci95": [
+        0.4855,
+        0.6524
+       ],
+       "dprime": 0.245,
+       "n": 160
+      }
+     },
+     "ol:json_depth:m2": {
+      "ol@36": {
+       "auroc": 0.6166,
+       "ci95": [
+        0.5333,
+        0.6988
+       ],
+       "dprime": 0.418,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.6073,
+       "ci95": [
+        0.5236,
+        0.6924
+       ],
+       "dprime": 0.292,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5931,
+       "ci95": [
+        0.5047,
+        0.6767
+       ],
+       "dprime": 0.234,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.525,
+       "ci95": [
+        0.4397,
+        0.6178
+       ],
+       "dprime": 0.073,
+       "n": 160
+      }
+     },
+     "ol:json_depth:m3": {
+      "ol@36": {
+       "auroc": 0.6042,
+       "ci95": [
+        0.5171,
+        0.6899
+       ],
+       "dprime": 0.427,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.6619,
+       "ci95": [
+        0.5773,
+        0.7414
+       ],
+       "dprime": 0.531,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.6911,
+       "ci95": [
+        0.606,
+        0.7667
+       ],
+       "dprime": 0.635,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.6398,
+       "ci95": [
+        0.5574,
+        0.7259
+       ],
+       "dprime": 0.402,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "deep": "- nested three deep",
+      "shallow": "- top level"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "deep": "nested three deep",
+      "shallow": "top level"
+     },
+     "id": "ol:json_depth:fixed",
+     "selection": {
+      "ol@36": {
+       "auroc": 0.2827,
+       "ci95": [
+        0.2094,
+        0.3639
+       ],
+       "dprime": -0.785,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.3333,
+       "ci95": [
+        0.2554,
+        0.4291
+       ],
+       "dprime": -0.602,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3325,
+       "ci95": [
+        0.2515,
+        0.4215
+       ],
+       "dprime": -0.556,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.305,
+       "ci95": [
+        0.2291,
+        0.3853
+       ],
+       "dprime": -0.711,
+       "n": 160
+      }
+     },
+     "template": "- {v}"
+    },
+    "mean_of_selected": {
+     "ol@36": {
+      "auroc": 0.6128,
+      "ci95": [
+       0.5309,
+       0.6989
+      ],
+      "dprime": 0.398,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.6366,
+      "ci95": [
+       0.5479,
+       0.7224
+      ],
+      "dprime": 0.37,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.6441,
+      "ci95": [
+       0.5554,
+       0.7278
+      ],
+      "dprime": 0.408,
+      "n": 160
+     },
+     "ol@52": {
+      "auroc": 0.5684,
+      "ci95": [
+       0.4858,
+       0.6533
+      ],
+      "dprime": 0.278,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "deep": "- nested",
+       "shallow": "- top-level"
+      },
+      "family": "scope_type",
+      "fillers": {
+       "deep": "nested",
+       "shallow": "top-level"
+      },
+      "id": "ol:json_depth:m3",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.6042,
+        "ci95": [
+         0.5171,
+         0.6899
+        ],
+        "dprime": 0.427,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.6619,
+        "ci95": [
+         0.5773,
+         0.7414
+        ],
+        "dprime": 0.531,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.6911,
+        "ci95": [
+         0.606,
+         0.7667
+        ],
+        "dprime": 0.635,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.6398,
+        "ci95": [
+         0.5574,
+         0.7259
+        ],
+        "dprime": 0.402,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "deep": "- nested level",
+       "shallow": "- top level"
+      },
+      "family": "hierarchy_desc",
+      "fillers": {
+       "deep": "nested",
+       "shallow": "top"
+      },
+      "id": "ol:json_depth:m2",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.6166,
+        "ci95": [
+         0.5333,
+         0.6988
+        ],
+        "dprime": 0.418,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.6073,
+        "ci95": [
+         0.5236,
+         0.6924
+        ],
+        "dprime": 0.292,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5931,
+        "ci95": [
+         0.5047,
+         0.6767
+        ],
+        "dprime": 0.234,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.525,
+        "ci95": [
+         0.4397,
+         0.6178
+        ],
+        "dprime": 0.073,
+        "n": 160
+       }
+      },
+      "template": "- {v} level"
+     },
+     {
+      "candidates": {
+       "deep": "- nested structure",
+       "shallow": "- top-level structure"
+      },
+      "family": "position_level",
+      "fillers": {
+       "deep": "nested",
+       "shallow": "top-level"
+      },
+      "id": "ol:json_depth:m1",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.5305,
+        "ci95": [
+         0.4439,
+         0.6195
+        ],
+        "dprime": 0.144,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.563,
+        "ci95": [
+         0.4735,
+         0.6539
+        ],
+        "dprime": 0.172,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5775,
+        "ci95": [
+         0.4917,
+         0.6631
+        ],
+        "dprime": 0.217,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.5648,
+        "ci95": [
+         0.4855,
+         0.6524
+        ],
+        "dprime": 0.245,
+        "n": 160
+       }
+      },
+      "template": "- {v} structure"
+     }
+    ]
+   },
+   "latex_math": {
+    "all_candidates": {
+     "ol:latex_math:fixed": {
+      "ol@36": {
+       "auroc": 0.8195,
+       "ci95": [
+        0.7559,
+        0.8814
+       ],
+       "dprime": 1.216,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.8491,
+       "ci95": [
+        0.7941,
+        0.9031
+       ],
+       "dprime": 1.366,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.8445,
+       "ci95": [
+        0.7891,
+        0.8995
+       ],
+       "dprime": 1.355,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.8391,
+       "ci95": [
+        0.7761,
+        0.8963
+       ],
+       "dprime": 1.273,
+       "n": 160
+      }
+     },
+     "ol:latex_math:m1": {
+      "ol@36": {
+       "auroc": 0.8555,
+       "ci95": [
+        0.795,
+        0.9093
+       ],
+       "dprime": 1.501,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.8533,
+       "ci95": [
+        0.795,
+        0.9051
+       ],
+       "dprime": 1.473,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.8394,
+       "ci95": [
+        0.777,
+        0.8944
+       ],
+       "dprime": 1.396,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.7703,
+       "ci95": [
+        0.697,
+        0.8354
+       ],
+       "dprime": 1.072,
+       "n": 160
+      }
+     },
+     "ol:latex_math:m2": {
+      "ol@36": {
+       "auroc": 0.4122,
+       "ci95": [
+        0.315,
+        0.5177
+       ],
+       "dprime": -0.258,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.388,
+       "ci95": [
+        0.2917,
+        0.4812
+       ],
+       "dprime": -0.335,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3694,
+       "ci95": [
+        0.2766,
+        0.4566
+       ],
+       "dprime": -0.41,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4161,
+       "ci95": [
+        0.3251,
+        0.5157
+       ],
+       "dprime": -0.219,
+       "n": 160
+      }
+     },
+     "ol:latex_math:m3": {
+      "ol@36": {
+       "auroc": 0.8367,
+       "ci95": [
+        0.7744,
+        0.8962
+       ],
+       "dprime": 1.399,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.8384,
+       "ci95": [
+        0.771,
+        0.8992
+       ],
+       "dprime": 1.406,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.8281,
+       "ci95": [
+        0.7612,
+        0.8885
+       ],
+       "dprime": 1.335,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.8636,
+       "ci95": [
+        0.8049,
+        0.9144
+       ],
+       "dprime": 1.577,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "inside": "- inside math",
+      "outside": "- outside math"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "inside": "inside",
+      "outside": "outside"
+     },
+     "id": "ol:latex_math:fixed",
+     "selection": {
+      "ol@36": {
+       "auroc": 0.8195,
+       "ci95": [
+        0.7559,
+        0.8814
+       ],
+       "dprime": 1.216,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.8491,
+       "ci95": [
+        0.7941,
+        0.9031
+       ],
+       "dprime": 1.366,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.8445,
+       "ci95": [
+        0.7891,
+        0.8995
+       ],
+       "dprime": 1.355,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.8391,
+       "ci95": [
+        0.7761,
+        0.8963
+       ],
+       "dprime": 1.273,
+       "n": 160
+      }
+     },
+     "template": "- {v} math"
+    },
+    "mean_of_selected": {
+     "ol@36": {
+      "auroc": 0.8625,
+      "ci95": [
+       0.8003,
+       0.913
+      ],
+      "dprime": 1.556,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.8612,
+      "ci95": [
+       0.8042,
+       0.9145
+      ],
+      "dprime": 1.514,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.85,
+      "ci95": [
+       0.7906,
+       0.9008
+      ],
+      "dprime": 1.414,
+      "n": 160
+     },
+     "ol@52": {
+      "auroc": 0.8317,
+      "ci95": [
+       0.7699,
+       0.8876
+      ],
+      "dprime": 1.315,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 3,
+    "selected": [
+     {
+      "candidates": {
+       "inside": "- N$",
+       "outside": "- 策略"
+      },
+      "family": "math_token_continuation",
+      "fillers": {
+       "inside": "N$",
+       "outside": "策略"
+      },
+      "id": "ol:latex_math:m1",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.8555,
+        "ci95": [
+         0.795,
+         0.9093
+        ],
+        "dprime": 1.501,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.8533,
+        "ci95": [
+         0.795,
+         0.9051
+        ],
+        "dprime": 1.473,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.8394,
+        "ci95": [
+         0.777,
+         0.8944
+        ],
+        "dprime": 1.396,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.7703,
+        "ci95": [
+         0.697,
+         0.8354
+        ],
+        "dprime": 1.072,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "inside": "- \\mathcal{",
+       "outside": "- the "
+      },
+      "family": "formula_environment",
+      "fillers": {
+       "inside": "\\mathcal{",
+       "outside": "the "
+      },
+      "id": "ol:latex_math:m3",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.8367,
+        "ci95": [
+         0.7744,
+         0.8962
+        ],
+        "dprime": 1.399,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.8384,
+        "ci95": [
+         0.771,
+         0.8992
+        ],
+        "dprime": 1.406,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.8281,
+        "ci95": [
+         0.7612,
+         0.8885
+        ],
+        "dprime": 1.335,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.8636,
+        "ci95": [
+         0.8049,
+         0.9144
+        ],
+        "dprime": 1.577,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "inside": "- }$",
+       "outside": "- )"
+      },
+      "family": "math_boundary_dollar",
+      "fillers": {
+       "inside": "}$",
+       "outside": ")"
+      },
+      "id": "ol:latex_math:m2",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.4122,
+        "ci95": [
+         0.315,
+         0.5177
+        ],
+        "dprime": -0.258,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.388,
+        "ci95": [
+         0.2917,
+         0.4812
+        ],
+        "dprime": -0.335,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.3694,
+        "ci95": [
+         0.2766,
+         0.4566
+        ],
+        "dprime": -0.41,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.4161,
+        "ci95": [
+         0.3251,
+         0.5157
+        ],
+        "dprime": -0.219,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     }
+    ]
+   },
+   "md_heading": {
+    "all_candidates": {
+     "ol:md_heading:fixed": {
+      "ol@36": {
+       "auroc": 0.3911,
+       "ci95": [
+        0.3123,
+        0.4746
+       ],
+       "dprime": -0.377,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.3717,
+       "ci95": [
+        0.2861,
+        0.4633
+       ],
+       "dprime": -0.448,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3736,
+       "ci95": [
+        0.2939,
+        0.4573
+       ],
+       "dprime": -0.443,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.3975,
+       "ci95": [
+        0.3083,
+        0.4781
+       ],
+       "dprime": -0.337,
+       "n": 160
+      }
+     },
+     "ol:md_heading:m0": {
+      "ol@36": {
+       "auroc": 0.522,
+       "ci95": [
+        0.4361,
+        0.6119
+       ],
+       "dprime": 0.034,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5322,
+       "ci95": [
+        0.4425,
+        0.6203
+       ],
+       "dprime": 0.124,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5233,
+       "ci95": [
+        0.4313,
+        0.6133
+       ],
+       "dprime": 0.12,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.513,
+       "ci95": [
+        0.42,
+        0.5966
+       ],
+       "dprime": 0.039,
+       "n": 160
+      }
+     },
+     "ol:md_heading:m1": {
+      "ol@36": {
+       "auroc": 0.4975,
+       "ci95": [
+        0.4102,
+        0.5844
+       ],
+       "dprime": -0.037,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4981,
+       "ci95": [
+        0.4089,
+        0.583
+       ],
+       "dprime": -0.022,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4947,
+       "ci95": [
+        0.4039,
+        0.584
+       ],
+       "dprime": 0.016,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.507,
+       "ci95": [
+        0.4158,
+        0.5973
+       ],
+       "dprime": 0.011,
+       "n": 160
+      }
+     },
+     "ol:md_heading:m2": {
+      "ol@36": {
+       "auroc": 0.48,
+       "ci95": [
+        0.3839,
+        0.5682
+       ],
+       "dprime": -0.065,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4452,
+       "ci95": [
+        0.3574,
+        0.5351
+       ],
+       "dprime": -0.138,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4411,
+       "ci95": [
+        0.3556,
+        0.53
+       ],
+       "dprime": -0.2,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4952,
+       "ci95": [
+        0.4047,
+        0.582
+       ],
+       "dprime": -0.055,
+       "n": 160
+      }
+     },
+     "ol:md_heading:m3": {
+      "ol@36": {
+       "auroc": 0.5991,
+       "ci95": [
+        0.5142,
+        0.6777
+       ],
+       "dprime": 0.385,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5873,
+       "ci95": [
+        0.4902,
+        0.6782
+       ],
+       "dprime": 0.327,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5759,
+       "ci95": [
+        0.4838,
+        0.665
+       ],
+       "dprime": 0.318,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.5417,
+       "ci95": [
+        0.4485,
+        0.6348
+       ],
+       "dprime": 0.224,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "deep": "- subsection heading",
+      "shallow": "- top heading"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "deep": "subsection",
+      "shallow": "top"
+     },
+     "id": "ol:md_heading:fixed",
+     "selection": {
+      "ol@36": {
+       "auroc": 0.3911,
+       "ci95": [
+        0.3123,
+        0.4746
+       ],
+       "dprime": -0.377,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.3717,
+       "ci95": [
+        0.2861,
+        0.4633
+       ],
+       "dprime": -0.448,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3736,
+       "ci95": [
+        0.2939,
+        0.4573
+       ],
+       "dprime": -0.443,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.3975,
+       "ci95": [
+        0.3083,
+        0.4781
+       ],
+       "dprime": -0.337,
+       "n": 160
+      }
+     },
+     "template": "- {v} heading"
+    },
+    "mean_of_selected": {
+     "ol@36": {
+      "auroc": 0.5944,
+      "ci95": [
+       0.5063,
+       0.6847
+      ],
+      "dprime": 0.315,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.5837,
+      "ci95": [
+       0.4865,
+       0.6805
+      ],
+      "dprime": 0.302,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.5808,
+      "ci95": [
+       0.4856,
+       0.6737
+      ],
+      "dprime": 0.299,
+      "n": 160
+     },
+     "ol@52": {
+      "auroc": 0.5472,
+      "ci95": [
+       0.4564,
+       0.6419
+      ],
+      "dprime": 0.196,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "deep": "- Detailed sub structure",
+       "shallow": "- Top-level structure"
+      },
+      "family": "depth_qualitative",
+      "fillers": {
+       "deep": "Detailed sub",
+       "shallow": "Top-level"
+      },
+      "id": "ol:md_heading:m3",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.5991,
+        "ci95": [
+         0.5142,
+         0.6777
+        ],
+        "dprime": 0.385,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5873,
+        "ci95": [
+         0.4902,
+         0.6782
+        ],
+        "dprime": 0.327,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5759,
+        "ci95": [
+         0.4838,
+         0.665
+        ],
+        "dprime": 0.318,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.5417,
+        "ci95": [
+         0.4485,
+         0.6348
+        ],
+        "dprime": 0.224,
+        "n": 160
+       }
+      },
+      "template": "- {v} structure"
+     },
+     {
+      "candidates": {
+       "deep": "- Level 3/4 Heading",
+       "shallow": "- Level 1/2 Heading"
+      },
+      "family": "heading_level_label",
+      "fillers": {
+       "deep": "3/4",
+       "shallow": "1/2"
+      },
+      "id": "ol:md_heading:m0",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.522,
+        "ci95": [
+         0.4361,
+         0.6119
+        ],
+        "dprime": 0.034,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5322,
+        "ci95": [
+         0.4425,
+         0.6203
+        ],
+        "dprime": 0.124,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5233,
+        "ci95": [
+         0.4313,
+         0.6133
+        ],
+        "dprime": 0.12,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.513,
+        "ci95": [
+         0.42,
+         0.5966
+        ],
+        "dprime": 0.039,
+        "n": 160
+       }
+      },
+      "template": "- Level {v} Heading"
+     },
+     {
+      "candidates": {
+       "deep": "- Level-3 report",
+       "shallow": "- Level-1 report"
+      },
+      "family": "level_prefix",
+      "fillers": {
+       "deep": "3",
+       "shallow": "1"
+      },
+      "id": "ol:md_heading:m1",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.4975,
+        "ci95": [
+         0.4102,
+         0.5844
+        ],
+        "dprime": -0.037,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.4981,
+        "ci95": [
+         0.4089,
+         0.583
+        ],
+        "dprime": -0.022,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.4947,
+        "ci95": [
+         0.4039,
+         0.584
+        ],
+        "dprime": 0.016,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.507,
+        "ci95": [
+         0.4158,
+         0.5973
+        ],
+        "dprime": 0.011,
+        "n": 160
+       }
+      },
+      "template": "- Level-{v} report"
+     }
+    ]
+   },
+   "md_list": {
+    "all_candidates": {
+     "ol:md_list:fixed": {
+      "ol@36": {
+       "auroc": 0.477,
+       "ci95": [
+        0.3894,
+        0.5671
+       ],
+       "dprime": -0.055,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5038,
+       "ci95": [
+        0.4219,
+        0.5911
+       ],
+       "dprime": 0.009,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5102,
+       "ci95": [
+        0.4267,
+        0.5994
+       ],
+       "dprime": 0.015,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4834,
+       "ci95": [
+        0.4004,
+        0.5727
+       ],
+       "dprime": -0.029,
+       "n": 160
+      }
+     },
+     "ol:md_list:m0": {
+      "ol@36": {
+       "auroc": 0.477,
+       "ci95": [
+        0.3894,
+        0.5671
+       ],
+       "dprime": -0.055,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5038,
+       "ci95": [
+        0.4219,
+        0.5911
+       ],
+       "dprime": 0.009,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5102,
+       "ci95": [
+        0.4267,
+        0.5994
+       ],
+       "dprime": 0.015,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4834,
+       "ci95": [
+        0.4004,
+        0.5727
+       ],
+       "dprime": -0.029,
+       "n": 160
+      }
+     },
+     "ol:md_list:m1": {
+      "ol@36": {
+       "auroc": 0.4695,
+       "ci95": [
+        0.3811,
+        0.5474
+       ],
+       "dprime": -0.143,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4991,
+       "ci95": [
+        0.4117,
+        0.5809
+       ],
+       "dprime": -0.042,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.507,
+       "ci95": [
+        0.417,
+        0.591
+       ],
+       "dprime": -0.008,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4686,
+       "ci95": [
+        0.3797,
+        0.5554
+       ],
+       "dprime": -0.129,
+       "n": 160
+      }
+     },
+     "ol:md_list:m2": {
+      "ol@36": {
+       "auroc": 0.4672,
+       "ci95": [
+        0.3764,
+        0.5639
+       ],
+       "dprime": -0.031,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4848,
+       "ci95": [
+        0.3938,
+        0.5798
+       ],
+       "dprime": -0.001,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4745,
+       "ci95": [
+        0.38,
+        0.5662
+       ],
+       "dprime": -0.036,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.5189,
+       "ci95": [
+        0.4277,
+        0.6113
+       ],
+       "dprime": 0.147,
+       "n": 160
+      }
+     },
+     "ol:md_list:m3": {
+      "ol@36": {
+       "auroc": 0.5375,
+       "ci95": [
+        0.4478,
+        0.6294
+       ],
+       "dprime": 0.121,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5483,
+       "ci95": [
+        0.4574,
+        0.6436
+       ],
+       "dprime": 0.145,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5583,
+       "ci95": [
+        0.4673,
+        0.6457
+       ],
+       "dprime": 0.174,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.5236,
+       "ci95": [
+        0.4369,
+        0.6106
+       ],
+       "dprime": 0.091,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "nested": "- nested list item",
+      "top": "- top-level list item"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "nested": "nested",
+      "top": "top-level"
+     },
+     "id": "ol:md_list:fixed",
+     "selection": {
+      "ol@36": {
+       "auroc": 0.477,
+       "ci95": [
+        0.3894,
+        0.5671
+       ],
+       "dprime": -0.055,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5038,
+       "ci95": [
+        0.4219,
+        0.5911
+       ],
+       "dprime": 0.009,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5102,
+       "ci95": [
+        0.4267,
+        0.5994
+       ],
+       "dprime": 0.015,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4834,
+       "ci95": [
+        0.4004,
+        0.5727
+       ],
+       "dprime": -0.029,
+       "n": 160
+      }
+     },
+     "template": "- {v} list item"
+    },
+    "mean_of_selected": {
+     "ol@36": {
+      "auroc": 0.493,
+      "ci95": [
+       0.4074,
+       0.5824
+      ],
+      "dprime": -0.063,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.5294,
+      "ci95": [
+       0.4467,
+       0.6143
+      ],
+      "dprime": 0.032,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.5298,
+      "ci95": [
+       0.4418,
+       0.6169
+      ],
+      "dprime": 0.06,
+      "n": 160
+     },
+     "ol@52": {
+      "auroc": 0.4941,
+      "ci95": [
+       0.4062,
+       0.5843
+      ],
+      "dprime": -0.056,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "nested": "- nested list",
+       "top": "- root list"
+      },
+      "family": "hierarchy_prefix",
+      "fillers": {
+       "nested": "nested",
+       "top": "root"
+      },
+      "id": "ol:md_list:m3",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.5375,
+        "ci95": [
+         0.4478,
+         0.6294
+        ],
+        "dprime": 0.121,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5483,
+        "ci95": [
+         0.4574,
+         0.6436
+        ],
+        "dprime": 0.145,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5583,
+        "ci95": [
+         0.4673,
+         0.6457
+        ],
+        "dprime": 0.174,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.5236,
+        "ci95": [
+         0.4369,
+         0.6106
+        ],
+        "dprime": 0.091,
+        "n": 160
+       }
+      },
+      "template": "- {v} list"
+     },
+     {
+      "candidates": {
+       "nested": "- nested list item",
+       "top": "- top-level list item"
+      },
+      "family": "indent_level_indicator",
+      "fillers": {
+       "nested": "nested",
+       "top": "top-level"
+      },
+      "id": "ol:md_list:m0",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.477,
+        "ci95": [
+         0.3894,
+         0.5671
+        ],
+        "dprime": -0.055,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5038,
+        "ci95": [
+         0.4219,
+         0.5911
+        ],
+        "dprime": 0.009,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5102,
+        "ci95": [
+         0.4267,
+         0.5994
+        ],
+        "dprime": 0.015,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.4834,
+        "ci95": [
+         0.4004,
+         0.5727
+        ],
+        "dprime": -0.029,
+        "n": 160
+       }
+      },
+      "template": "- {v} list item"
+     },
+     {
+      "candidates": {
+       "nested": "- sub- item",
+       "top": "- top-level  item"
+      },
+      "family": "level_descriptor",
+      "fillers": {
+       "nested": "sub-",
+       "top": "top-level "
+      },
+      "id": "ol:md_list:m1",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.4695,
+        "ci95": [
+         0.3811,
+         0.5474
+        ],
+        "dprime": -0.143,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.4991,
+        "ci95": [
+         0.4117,
+         0.5809
+        ],
+        "dprime": -0.042,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.507,
+        "ci95": [
+         0.417,
+         0.591
+        ],
+        "dprime": -0.008,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.4686,
+        "ci95": [
+         0.3797,
+         0.5554
+        ],
+        "dprime": -0.129,
+        "n": 160
+       }
+      },
+      "template": "- {v} item"
+     }
+    ]
+   },
+   "py_arg": {
+    "all_candidates": {
+     "ol:py_arg:fixed": {
+      "ol@36": {
+       "auroc": 0.7538,
+       "ci95": [
+        0.67,
+        0.8224
+       ],
+       "dprime": 0.927,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7722,
+       "ci95": [
+        0.6988,
+        0.8389
+       ],
+       "dprime": 1.111,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.7584,
+       "ci95": [
+        0.6766,
+        0.8269
+       ],
+       "dprime": 0.934,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.6777,
+       "ci95": [
+        0.5923,
+        0.7604
+       ],
+       "dprime": 0.697,
+       "n": 160
+      }
+     },
+     "ol:py_arg:m0": {
+      "ol@36": {
+       "auroc": 0.6509,
+       "ci95": [
+        0.5581,
+        0.731
+       ],
+       "dprime": 0.56,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7011,
+       "ci95": [
+        0.622,
+        0.7799
+       ],
+       "dprime": 0.663,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.6453,
+       "ci95": [
+        0.5588,
+        0.7292
+       ],
+       "dprime": 0.471,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.6247,
+       "ci95": [
+        0.5352,
+        0.7061
+       ],
+       "dprime": 0.452,
+       "n": 160
+      }
+     },
+     "ol:py_arg:m1": {
+      "ol@36": {
+       "auroc": 0.7452,
+       "ci95": [
+        0.6566,
+        0.8136
+       ],
+       "dprime": 0.857,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7266,
+       "ci95": [
+        0.6374,
+        0.8003
+       ],
+       "dprime": 0.856,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.7023,
+       "ci95": [
+        0.6218,
+        0.7799
+       ],
+       "dprime": 0.783,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.7425,
+       "ci95": [
+        0.6623,
+        0.8105
+       ],
+       "dprime": 0.953,
+       "n": 160
+      }
+     },
+     "ol:py_arg:m2": {
+      "ol@36": {
+       "auroc": 0.4705,
+       "ci95": [
+        0.3755,
+        0.5654
+       ],
+       "dprime": -0.078,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4809,
+       "ci95": [
+        0.39,
+        0.5712
+       ],
+       "dprime": -0.087,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4796,
+       "ci95": [
+        0.3865,
+        0.5678
+       ],
+       "dprime": -0.089,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.3917,
+       "ci95": [
+        0.3096,
+        0.4829
+       ],
+       "dprime": -0.28,
+       "n": 160
+      }
+     },
+     "ol:py_arg:m3": {
+      "ol@36": {
+       "auroc": 0.8202,
+       "ci95": [
+        0.7477,
+        0.8863
+       ],
+       "dprime": 1.354,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7926,
+       "ci95": [
+        0.7173,
+        0.8611
+       ],
+       "dprime": 1.207,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.8264,
+       "ci95": [
+        0.7577,
+        0.8876
+       ],
+       "dprime": 1.374,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.8733,
+       "ci95": [
+        0.8144,
+        0.9267
+       ],
+       "dprime": 1.728,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "first": "- first argument",
+      "third": "- third argument"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "first": "first",
+      "third": "third"
+     },
+     "id": "ol:py_arg:fixed",
+     "selection": {
+      "ol@36": {
+       "auroc": 0.7538,
+       "ci95": [
+        0.67,
+        0.8224
+       ],
+       "dprime": 0.927,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.7722,
+       "ci95": [
+        0.6988,
+        0.8389
+       ],
+       "dprime": 1.111,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.7584,
+       "ci95": [
+        0.6766,
+        0.8269
+       ],
+       "dprime": 0.934,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.6777,
+       "ci95": [
+        0.5923,
+        0.7604
+       ],
+       "dprime": 0.697,
+       "n": 160
+      }
+     },
+     "template": "- {v} argument"
+    },
+    "mean_of_selected": {
+     "ol@36": {
+      "auroc": 0.8667,
+      "ci95": [
+       0.8071,
+       0.918
+      ],
+      "dprime": 1.56,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.8573,
+      "ci95": [
+       0.7955,
+       0.9123
+      ],
+      "dprime": 1.536,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.8597,
+      "ci95": [
+       0.8004,
+       0.914
+      ],
+      "dprime": 1.516,
+      "n": 160
+     },
+     "ol@52": {
+      "auroc": 0.8966,
+      "ci95": [
+       0.8464,
+       0.9404
+      ],
+      "dprime": 1.834,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 4,
+    "selected": [
+     {
+      "candidates": {
+       "first": "- ,",
+       "third": "- )"
+      },
+      "family": "closing_paren_or_comma",
+      "fillers": {
+       "first": ",",
+       "third": ")"
+      },
+      "id": "ol:py_arg:m3",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.8202,
+        "ci95": [
+         0.7477,
+         0.8863
+        ],
+        "dprime": 1.354,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.7926,
+        "ci95": [
+         0.7173,
+         0.8611
+        ],
+        "dprime": 1.207,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.8264,
+        "ci95": [
+         0.7577,
+         0.8876
+        ],
+        "dprime": 1.374,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.8733,
+        "ci95": [
+         0.8144,
+         0.9267
+        ],
+        "dprime": 1.728,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "first": "- 1. ",
+       "third": "- 3. "
+      },
+      "family": "numbered_step",
+      "fillers": {
+       "first": "1. ",
+       "third": "3. "
+      },
+      "id": "ol:py_arg:m1",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.7452,
+        "ci95": [
+         0.6566,
+         0.8136
+        ],
+        "dprime": 0.857,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.7266,
+        "ci95": [
+         0.6374,
+         0.8003
+        ],
+        "dprime": 0.856,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.7023,
+        "ci95": [
+         0.6218,
+         0.7799
+        ],
+        "dprime": 0.783,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.7425,
+        "ci95": [
+         0.6623,
+         0.8105
+        ],
+        "dprime": 0.953,
+        "n": 160
+       }
+      },
+      "template": "- {v}"
+     },
+     {
+      "candidates": {
+       "first": "- )  # 1st argument",
+       "third": "- )  # 3rd argument"
+      },
+      "family": "arg_index_comment",
+      "fillers": {
+       "first": "1st argument",
+       "third": "3rd argument"
+      },
+      "id": "ol:py_arg:m0",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.6509,
+        "ci95": [
+         0.5581,
+         0.731
+        ],
+        "dprime": 0.56,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.7011,
+        "ci95": [
+         0.622,
+         0.7799
+        ],
+        "dprime": 0.663,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.6453,
+        "ci95": [
+         0.5588,
+         0.7292
+        ],
+        "dprime": 0.471,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.6247,
+        "ci95": [
+         0.5352,
+         0.7061
+        ],
+        "dprime": 0.452,
+        "n": 160
+       }
+      },
+      "template": "- )  # {v}"
+     }
+    ]
+   },
+   "py_string": {
+    "all_candidates": {
+     "ol:py_string:fixed": {
+      "ol@36": {
+       "auroc": 0.3202,
+       "ci95": [
+        0.2317,
+        0.4057
+       ],
+       "dprime": -0.576,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.305,
+       "ci95": [
+        0.2252,
+        0.382
+       ],
+       "dprime": -0.634,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3164,
+       "ci95": [
+        0.2354,
+        0.3941
+       ],
+       "dprime": -0.519,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.2731,
+       "ci95": [
+        0.1973,
+        0.3581
+       ],
+       "dprime": -0.709,
+       "n": 160
+      }
+     },
+     "ol:py_string:m0": {
+      "ol@36": {
+       "auroc": 0.5377,
+       "ci95": [
+        0.4453,
+        0.6293
+       ],
+       "dprime": 0.116,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.5556,
+       "ci95": [
+        0.467,
+        0.6392
+       ],
+       "dprime": 0.2,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5702,
+       "ci95": [
+        0.4737,
+        0.6567
+       ],
+       "dprime": 0.288,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.5012,
+       "ci95": [
+        0.408,
+        0.5875
+       ],
+       "dprime": 0.014,
+       "n": 160
+      }
+     },
+     "ol:py_string:m1": {
+      "ol@36": {
+       "auroc": 0.4981,
+       "ci95": [
+        0.4006,
+        0.5901
+       ],
+       "dprime": -0.05,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4992,
+       "ci95": [
+        0.41,
+        0.5925
+       ],
+       "dprime": -0.016,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.5266,
+       "ci95": [
+        0.4325,
+        0.6168
+       ],
+       "dprime": 0.081,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4502,
+       "ci95": [
+        0.3567,
+        0.5388
+       ],
+       "dprime": -0.112,
+       "n": 160
+      }
+     },
+     "ol:py_string:m2": {
+      "ol@36": {
+       "auroc": 0.4002,
+       "ci95": [
+        0.3074,
+        0.4891
+       ],
+       "dprime": -0.373,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4042,
+       "ci95": [
+        0.3139,
+        0.494
+       ],
+       "dprime": -0.335,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3759,
+       "ci95": [
+        0.2864,
+        0.4633
+       ],
+       "dprime": -0.476,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4058,
+       "ci95": [
+        0.3162,
+        0.4973
+       ],
+       "dprime": -0.331,
+       "n": 160
+      }
+     },
+     "ol:py_string:m3": {
+      "ol@36": {
+       "auroc": 0.4128,
+       "ci95": [
+        0.318,
+        0.5044
+       ],
+       "dprime": -0.193,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4159,
+       "ci95": [
+        0.3249,
+        0.5062
+       ],
+       "dprime": -0.186,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.412,
+       "ci95": [
+        0.3221,
+        0.5038
+       ],
+       "dprime": -0.154,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.4069,
+       "ci95": [
+        0.3158,
+        0.4959
+       ],
+       "dprime": -0.288,
+       "n": 160
+      }
+     },
+     "ol:py_string:m4": {
+      "ol@36": {
+       "auroc": 0.51,
+       "ci95": [
+        0.4198,
+        0.5998
+       ],
+       "dprime": 0.058,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.4909,
+       "ci95": [
+        0.406,
+        0.5829
+       ],
+       "dprime": 0.028,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.4741,
+       "ci95": [
+        0.3856,
+        0.5615
+       ],
+       "dprime": -0.012,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.5234,
+       "ci95": [
+        0.4352,
+        0.6165
+       ],
+       "dprime": 0.099,
+       "n": 160
+      }
+     }
+    },
+    "fixed_label": {
+     "candidates": {
+      "inside": "- inside string",
+      "outside": "- outside string"
+     },
+     "family": "fixed_label",
+     "fillers": {
+      "inside": "inside",
+      "outside": "outside"
+     },
+     "id": "ol:py_string:fixed",
+     "selection": {
+      "ol@36": {
+       "auroc": 0.3202,
+       "ci95": [
+        0.2317,
+        0.4057
+       ],
+       "dprime": -0.576,
+       "n": 160
+      },
+      "ol@42": {
+       "auroc": 0.305,
+       "ci95": [
+        0.2252,
+        0.382
+       ],
+       "dprime": -0.634,
+       "n": 160
+      },
+      "ol@44": {
+       "auroc": 0.3164,
+       "ci95": [
+        0.2354,
+        0.3941
+       ],
+       "dprime": -0.519,
+       "n": 160
+      },
+      "ol@52": {
+       "auroc": 0.2731,
+       "ci95": [
+        0.1973,
+        0.3581
+       ],
+       "dprime": -0.709,
+       "n": 160
+      }
+     },
+     "template": "- {v} string"
+    },
+    "mean_of_selected": {
+     "ol@36": {
+      "auroc": 0.5278,
+      "ci95": [
+       0.432,
+       0.618
+      ],
+      "dprime": 0.058,
+      "n": 160
+     },
+     "ol@42": {
+      "auroc": 0.5242,
+      "ci95": [
+       0.4292,
+       0.6161
+      ],
+      "dprime": 0.084,
+      "n": 160
+     },
+     "ol@44": {
+      "auroc": 0.527,
+      "ci95": [
+       0.4304,
+       0.6218
+      ],
+      "dprime": 0.136,
+      "n": 160
+     },
+     "ol@52": {
+      "auroc": 0.505,
+      "ci95": [
+       0.4115,
+       0.5971
+      ],
+      "dprime": 0.026,
+      "n": 160
+     }
+    },
+    "n_candidates_mined": 5,
+    "selected": [
+     {
+      "candidates": {
+       "inside": "- /inside file bounds",
+       "outside": "- /outside file bounds"
+      },
+      "family": "bounds_location",
+      "fillers": {
+       "inside": "inside",
+       "outside": "outside"
+      },
+      "id": "ol:py_string:m0",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.5377,
+        "ci95": [
+         0.4453,
+         0.6293
+        ],
+        "dprime": 0.116,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.5556,
+        "ci95": [
+         0.467,
+         0.6392
+        ],
+        "dprime": 0.2,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5702,
+        "ci95": [
+         0.4737,
+         0.6567
+        ],
+        "dprime": 0.288,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.5012,
+        "ci95": [
+         0.408,
+         0.5875
+        ],
+        "dprime": 0.014,
+        "n": 160
+       }
+      },
+      "template": "- /{v} file bounds"
+     },
+     {
+      "candidates": {
+       "inside": "- /inside its source bounds",
+       "outside": "- /outside its source bounds"
+      },
+      "family": "source_bounds",
+      "fillers": {
+       "inside": "inside",
+       "outside": "outside"
+      },
+      "id": "ol:py_string:m1",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.4981,
+        "ci95": [
+         0.4006,
+         0.5901
+        ],
+        "dprime": -0.05,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.4992,
+        "ci95": [
+         0.41,
+         0.5925
+        ],
+        "dprime": -0.016,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.5266,
+        "ci95": [
+         0.4325,
+         0.6168
+        ],
+        "dprime": 0.081,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.4502,
+        "ci95": [
+         0.3567,
+         0.5388
+        ],
+        "dprime": -0.112,
+        "n": 160
+       }
+      },
+      "template": "- /{v} its source bounds"
+     },
+     {
+      "candidates": {
+       "inside": "- 其合法范围 (in-of-bounds)",
+       "outside": "- 其合法范围 (out-of-bounds)"
+      },
+      "family": "in_out_bounds",
+      "fillers": {
+       "inside": "in",
+       "outside": "out"
+      },
+      "id": "ol:py_string:m4",
+      "selection": {
+       "ol@36": {
+        "auroc": 0.51,
+        "ci95": [
+         0.4198,
+         0.5998
+        ],
+        "dprime": 0.058,
+        "n": 160
+       },
+       "ol@42": {
+        "auroc": 0.4909,
+        "ci95": [
+         0.406,
+         0.5829
+        ],
+        "dprime": 0.028,
+        "n": 160
+       },
+       "ol@44": {
+        "auroc": 0.4741,
+        "ci95": [
+         0.3856,
+         0.5615
+        ],
+        "dprime": -0.012,
+        "n": 160
+       },
+       "ol@52": {
+        "auroc": 0.5234,
+        "ci95": [
+         0.4352,
+         0.6165
+        ],
+        "dprime": 0.099,
+        "n": 160
+       }
+      },
+      "template": "- 其合法范围 ({v}-of-bounds)"
+     }
+    ]
+   }
+  }
+ }
+}
