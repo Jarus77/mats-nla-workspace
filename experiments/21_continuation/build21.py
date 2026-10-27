@@ -23,7 +23,6 @@ REPO = HERE.parent.parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(REPO / "src"))
 sys.path.insert(0, str(REPO / "experiments" / "19_natural_bank"))
-sys.path.insert(0, str(REPO / "experiments" / "13_new_rows"))
 import build19 as B19  # noqa: E402
 from lib21 import N_NEXT, continuation_auroc, locate  # noqa: E402
 
@@ -48,11 +47,20 @@ def source_index(home: Path, arxiv: Path | None, exts: set[str]) -> dict[str, st
     return out
 
 
+_COLS13 = {"Name": ["Alice", "Bruno", "Chen", "Dana", "Elif", "Farid", "Greta", "Hugo", "Iris", "Jonas"],
+           "City": ["Lisbon", "Oslo", "Prague", "Vienna", "Dublin", "Seville", "Porto", "Bergen", "Lyon", "Turin"],
+           "Team": ["Falcons", "Otters", "Herons", "Badgers", "Lynxes", "Condors", "Ravens", "Bison"],
+           "Role": ["analyst", "engineer", "designer", "manager", "intern", "auditor", "writer"],
+           "Status": ["active", "pending", "retired", "onboarding", "paused"],
+           "Office": ["north", "south", "east", "west", "central", "remote"],
+           "Level": ["junior", "senior", "lead", "principal", "staff"],
+           "Language": ["Portuguese", "Norwegian", "Czech", "German", "Irish", "Spanish", "French", "Italian"]}   # exp 13's pools
+
+
 def tablecol_continuation(it: dict, rng: random.Random) -> str:
-    import items_build as IB13
     m = it["meta"]
     heads = it["text"].splitlines()[0].strip("| ").split(" | ")
-    rest = [rng.choice(IB13._COLS[h]) for h in heads[m["col"]:]]
+    rest = [rng.choice(_COLS13[h]) for h in heads[m["col"]:]]
     return (" | " + " | ".join(rest) if rest else "") + " |\n"
 
 
@@ -90,15 +98,17 @@ def main() -> None:
         ids = [enc(c)[:N_NEXT] for c in conts]
         y = np.array([its[i]["value"] == MARKED[row] for i in found], int)
         g = np.array([its[i]["cluster"] for i in found])
-        auroc = continuation_auroc(ids, y, g) if len(found) >= 40 and len(set(y)) == 2 else None
+        ok = len(found) >= 40 and len(set(y)) == 2
+        curve = {n: continuation_auroc(ids, y, g, n=n) for n in (1, 2, 4, 8, 16, 32)} if ok else {}
+        auroc = curve.get(N_NEXT)
         ol = None
         p = E20 / f"recon20_{row}.json"
         if p.exists():
             d = json.loads(p.read_text())
             ol = {"ol_readout": d["auroc"]["ol_readout"], "nla_readout": d["auroc"]["nla_readout"], "model_span_32": d["auroc"]["model_span_32"]}
-        res[row] = {"n_found": len(found), "n_items": len(its), "continuation_auroc": auroc, "exp20": ol,
+        res[row] = {"n_found": len(found), "n_items": len(its), "continuation_auroc": auroc, "continuation_by_n": curve, "exp20": ol,
                     "synthetic_continuation": row == "tb_tablecol"}
-        print(row.ljust(11), "found", f"{len(found)}/{len(its)}", "cont", None if auroc is None else round(auroc, 3), "ol", None if ol is None else round(ol["ol_readout"], 2), flush=True)
+        print(row.ljust(11), "found", f"{len(found)}/{len(its)}", "cont by n", {n: round(v, 2) for n, v in curve.items()}, "ol", None if ol is None else round(ol["ol_readout"], 2), flush=True)
     pairs = [(v["continuation_auroc"], v["exp20"]["ol_readout"]) for v in res.values() if v["continuation_auroc"] is not None and v["exp20"]]
     from scipy.stats import spearmanr
     rho = spearmanr([p[0] for p in pairs], [p[1] for p in pairs]) if len(pairs) >= 3 else None
