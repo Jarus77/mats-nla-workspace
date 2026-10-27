@@ -47,8 +47,9 @@ def main() -> None:
         naming[kind] = {"n": len(ks), "ol_names_any": float(np.mean([names_structure(ol[it["id"]]) for it in ks])),
                         "nla_names_any": float(np.mean([names_structure(nla[it["id"]]) for it in ks]))}
     carrying = []
-    for kind in kinds:
-        idx = [i for i, it in enumerate(items) if it["meta"]["kind"] == kind]
+    groups_of_kinds = [(k, (k,)) for k in kinds] + [("code (py+js)", ("py", "js")), ("all", tuple(kinds))]
+    for kind, members in groups_of_kinds:
+        idx = [i for i, it in enumerate(items) if it["meta"]["kind"] in members]
         for st, fn in STATES.items():
             y = np.array([fn(items[i]["meta"]["labels"][st]) for i in idx], int)
             c = Counter(y.tolist())
