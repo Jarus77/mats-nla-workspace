@@ -61,6 +61,69 @@ rsLoRA cleanly), this experiment ships the frozen data file and the eval of the 
 and reports the failure with the traceback; the fallback named in the memo (a new r16 adapter on the attention
 projections only) is a separate decision, not run silently.
 
-## Results
+## Results (27 Oct, 23:53 UTC; `results/table30.md`, `results/eval30_{base,S,C}.json`, `results/train30_{S,C}.json`, `results/fig30.png`; two training arms of 400 steps, 13 minutes each on one H200; three evaluations of about 10 minutes; about $8)
 
-Not run yet.
+Training ran: the backward pass through the injection hook and the hybrid attention kernels worked at the first
+step; arm S loss 1.81 to 1.33, arm C 1.38 at the end (the control's targets have no appended sentence, so its loss
+is not comparable step for step). Statement arm S = the NLA's own explanation plus one true statement of the row's
+state; control arm C = the explanation alone; base = the untouched iter_000400 adapter.
+
+**Held-out source files, 32 items per row** (naming = the readout contains a statement of either value; correct
+= the statement names the true value; FVE = reconstruction score through the NLA's own critic):
+
+| row | trained on | base naming / FVE | control naming / FVE | arm S naming | correct when it names | arm S FVE |
+|---|---|---|---|---:|---|---:|
+| py_string | yes | 0.00 / 0.54 | 0.00 / 0.54 | 0.59 | 15 of 19 (0.79) | 0.55 |
+| py_arg | yes | 0.00 / 0.34 | 0.00 / 0.36 | 0.50 | 13 of 16 (0.81) | 0.33 |
+| json_depth | yes | 0.00 / -0.02 | 0.00 / -0.02 | 0.72 | 22 of 23 (0.96) | 0.02 |
+| code_lang | yes | 0.00 / 0.44 | 0.00 / 0.47 | 0.28 | 9 of 9 (1.00) | 0.46 |
+| md_heading | yes | 0.00 / 0.65 | 0.00 / 0.64 | 0.81 | 15 of 26 (0.58) | 0.62 |
+| md_list | yes | 0.00 / 0.50 | 0.00 / 0.50 | 0.75 | 11 of 24 (0.46) | 0.50 |
+| js_string | held out | 0.00 / 0.54 | 0.00 / 0.57 | 0.53 | 10 of 17 (0.59) | 0.54 |
+| latex_math | held out | 0.00 / 0.59 | 0.00 / 0.59 | 0.03 | 1 of 1 | 0.60 |
+
+Gate-set FVE (192 held-out items of the six training rows): base 0.504, control 0.512, statement arm 0.507.
+
+**Exp 23's 500 random read points** (the adapter's statements classified as "inside a string" or "outside a
+string" by regex, against the true label):
+
+| arm | when the point is inside a string (n = 134): says inside / outside / nothing | when it is not (n = 366) |
+|---|---|---|
+| base | 0.00 / 0.00 / 1.00 | 0.00 / 0.00 / 1.00 |
+| control | 0.02 / 0.00 / 0.98 | 0.00 / 0.00 / 1.00 |
+| statement arm | 0.16 / 0.24 / 0.60 | 0.04 / 0.22 / 0.74 |
+
+### Scoring the predictions
+
+| prediction | result |
+|---|---|
+| P1 gate FVE within 0.02 of the control arm | holds: 0.507 against 0.512 (base 0.504); no row moves more than 0.04 |
+| P2 statement accuracy at or above 0.85 on held-out files of readable rows (accuracy counts items with no statement as wrong) | fails as defined: 0.41 to 0.69, because the adapter states on 50 to 72 percent of items; conditional on stating, 0.79 to 1.00 on the four readable code rows, 0.46 to 0.58 on the two Markdown rows (the md_list line of at most 0.65 holds) |
+| P3 transfer: js_string accuracy at or above 0.70; latex_math naming under 0.30 | fails on js_string (0.31; conditional 0.59 on 17 statements); holds on latex_math (0.03) |
+| P4 random points: in-string naming at or above 0.50 when the state holds, at or below 0.15 when not | fails: "inside" 0.16 against 0.04, "outside" 0.24 against 0.22 |
+| P5 within-item FVE of naming versus non-naming samples | not scorable: exp 22's k = 8 readouts carry no per-sample FVE |
+
+## Reading
+
+1. **The reward is indifferent to the statements.** Appending a true statement to every training target leaves
+   the reconstruction score where the control arm leaves it, on every row and on the gate set. This is the
+   derivation's assumption A2 tested on this reader rather than cited from its training card: the critic neither
+   pays for the statement nor charges for it.
+2. **The verbalizer can read the state through the injection, where the state is there.** On the four readable
+   code rows, the statements the adapter makes are right 79 to 100 percent of the time on source files it never
+   saw; on the two Markdown rows, where the layer-42 probe is at 0.63 to 0.72, it fires the template three times
+   in four and is right at chance. Accuracy follows readability, not training exposure. So the gap on the readable
+   rows was never capacity.
+3. **But what was learned is narrow.** A row of the same kind not in training (JavaScript strings) gets statements
+   on half its items, right 59 percent of the time; a row with a template never seen gets none; and at random read
+   points inside strings the adapter mostly says "outside" regardless of the truth, with a weak "inside" signal
+   (0.16 against 0.04). Four hundred supervised steps on 768 items teach the trained templates at the trained
+   kind of read point, not a general habit of reporting state. Three of the five pre-registered lines fail on their
+   definitions, and the failures are the generalisation lines.
+4. **What this changes.** The sentence "the gap is the objective, not capacity" is supported for the trained rows
+   and bounded by the transfer rows. The causal claim that fixing the reward would make the readers name what they
+   carry is not shown here; what is shown is that naming costs the reward nothing and that the information is
+   reachable. Exp 29's trajectory decides whether the reward or the warm start set the register.
+
+Cost: about $8. Code paths added to `src/mats/readers/nla.py` for training are the only change outside this
+directory.
