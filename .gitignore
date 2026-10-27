@@ -20,3 +20,22 @@ venv/
 .env.*
 
 .DS_Store
+
+# Private material and local scratch (never published)
+modal-credentials.txt
+*.docx
+*.zip
+meeting-transcripts/
+notes/draft_*
+scratchpad/
+rough.md
+research_summary.md
+Guiv_Suraj_Sprint_Update.md
+sprint-projects-dropin-meeting.txt
+experiments/16_difference_term/results/guiv_logs/
+experiments/17_harden/inputs/*.json
+
+# Regenerable run artifacts (hashes of the frozen inputs are recorded in RESULTS.md / notes)
+experiments/*/results/vol/
+experiments/*/results/*.log
+notes/neel_transcript_quotes.md

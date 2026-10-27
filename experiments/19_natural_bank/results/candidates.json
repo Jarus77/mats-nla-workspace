@@ -1,0 +1,1300 @@
+{
+ "nla": {
+  "py_string": [
+   {
+    "id": "nla:py_string:m0",
+    "family": "mid_quote_phrase",
+    "template": "A DeprecationWarning message is {v}",
+    "fillers": {
+     "inside": "mid-quotation",
+     "outside": "completed"
+    },
+    "evidence": "A DeprecationWarning message is mid-quotation, following the pattern of official NumPy warning strings",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:m1",
+    "family": "message_mid_status",
+    "template": "The warning message is {v}",
+    "fillers": {
+     "inside": "mid-sentence",
+     "outside": "completed"
+    },
+    "evidence": "The warning message is mid-sentence, describing a specific error condition",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:m2",
+    "family": "mid_sentence_status",
+    "template": "The text is {v}",
+    "fillers": {
+     "inside": "mid-sentence",
+     "outside": "transitioning"
+    },
+    "evidence": "The text is mid-sentence, describing failure to locate installed version; The text is transitioning into package-level imports",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:m3",
+    "family": "string_or_message_context",
+    "template": "{v} error message continuation pattern",
+    "fillers": {
+     "inside": "Quoted",
+     "outside": "Technical"
+    },
+    "evidence": "Technical error/warning message format; quoted example error string is mid-sentence",
+    "approx_count": 9,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:m4",
+    "family": "token_position",
+    "template": "The final token is {v}",
+    "fillers": {
+     "inside": "inside a string literal",
+     "outside": "outside a string literal"
+    },
+    "evidence": "The final token is mid-sentence in a parenthetic; The final token is an opening of an error string fragment",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_string:fixed",
+    "family": "fixed_label",
+    "template": "The current position is {v} a string literal",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "js_string": [
+   {
+    "id": "nla:js_string:m0",
+    "family": "error_message_vs_code",
+    "template": " / {v}",
+    "fillers": {
+     "inside": "Error message",
+     "outside": "TypeScript"
+    },
+    "evidence": "Error message pattern typical of failing validation vs TypeScript/JavaScript class definition pattern",
+    "approx_count": 28,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:js_string:m1",
+    "family": "pattern_type",
+    "template": " / {v} pattern",
+    "fillers": {
+     "inside": "Error message",
+     "outside": "TypeScript"
+    },
+    "evidence": "Error message pattern typical vs codegen translation pattern: TypeScript-compiled",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:js_string:m2",
+    "family": "context_description",
+    "template": " / {v} format",
+    "fillers": {
+     "inside": "Error message reporting",
+     "outside": "Technical documentation"
+    },
+    "evidence": "Error message reporting format established vs Technical documentation listing auto-generated config",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:js_string:m3",
+    "family": "literal_mention",
+    "template": " / Technical code pattern: token is {v} a string literal",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    },
+    "evidence": "Natural analytic paraphrase mirroring tokenizer/parser register",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:js_string:m4",
+    "family": "string_mid_stream",
+    "template": " / Token is {v}",
+    "fillers": {
+     "inside": "mid-string",
+     "outside": "mid-statement"
+    },
+    "evidence": "Final token \"<input\" is mid-string vs Final token \"return\" is mid-statement",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:js_string:fixed",
+    "family": "fixed_label",
+    "template": "The current position is {v} a string literal",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "latex_math": [
+   {
+    "id": "nla:latex_math:m0",
+    "family": "academic_math_vs_paper",
+    "template": "Academic {v} paper",
+    "fillers": {
+     "inside": "economics",
+     "outside": "physics"
+    },
+    "evidence": "Academic economics paper presenting a formal theorem/model vs Academic physics paper (Cosmology/Gaussianity)",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:m1",
+    "family": "formal_domain_style",
+    "template": "Formal {v} paper",
+    "fillers": {
+     "inside": "academic economics",
+     "outside": "physics academic"
+    },
+    "evidence": "Formal academic economics paper tone vs Formal physics academic writing establishing hydrodynamic conservation laws",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:m2",
+    "family": "register_type",
+    "template": "{v} paper establishing",
+    "fillers": {
+     "inside": "Mathematical physics",
+     "outside": "Academic mathematics"
+    },
+    "evidence": "Mathematical physics paper establishing formal definitions vs Academic mathematics paper introducing abstract operational formalism",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:m3",
+    "family": "math_derivation_vs_proof",
+    "template": "Mathematical {v} pattern",
+    "fillers": {
+     "inside": "definition continuation",
+     "outside": "derivation"
+    },
+    "evidence": "Mathematical definition continuation vs Mathematical derivation pattern",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:m4",
+    "family": "technical_genre",
+    "template": "Technical {v} paper",
+    "fillers": {
+     "inside": "ML",
+     "outside": "mathematical"
+    },
+    "evidence": "Technical ML paper listing hyperparameter configurations vs Technical mathematical paper establishing notation",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:latex_math:fixed",
+    "family": "fixed_label",
+    "template": "The current position is {v} a LaTeX math expression",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "py_arg": [
+   {
+    "id": "nla:py_arg:m0",
+    "family": "ordinal_positional_argument",
+    "template": "The final token is the {v} argument",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    },
+    "evidence": "\"The final token \\\"line\\\" is the fourth argument\", \"Final token ... ends an incomplete function call\"",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_arg:m1",
+    "family": "ordinal_parameter_order",
+    "template": "Pattern of listing the {v} parameter",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    },
+    "evidence": "\"first block handled client certs, second block handles certificates\", \"parameters (input, rois, and spatial_scale) defined earlier\"",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_arg:m2",
+    "family": "positional_arg_reference",
+    "template": "mid-sentence completing the {v} positional argument",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    },
+    "evidence": "\"mid-sentence completing a function call signature\", \"Final token `x` appears inside\"",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_arg:m3",
+    "family": "arg_call_signature",
+    "template": "call signature with {v} argument specified",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    },
+    "evidence": "\"completing a function call signature TensorLegendre(tensorprod(P, m, n, x\"",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_arg:m4",
+    "family": "ordinal_step_pass",
+    "template": "in the {v} pass application",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    },
+    "evidence": "\"first removing self-loops, then fixing inputs\", \"CALL_GLOBAL handled first\"",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:py_arg:fixed",
+    "family": "fixed_label",
+    "template": "The current token is the {v} argument of the function call",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    }
+   }
+  ],
+  "json_depth": [
+   {
+    "id": "nla:json_depth:m0",
+    "family": "structural_level",
+    "template": "<explanation> / Structured JSON {v}",
+    "fillers": {
+     "deep": "schema specification format, with consistent field definitions using",
+     "shallow": "object structure listing API specification fields in key-value format,"
+    },
+    "evidence": "Structured JSON/schema specification format vs JSON object structure listing API specification fields",
+    "approx_count": 14,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:m1",
+    "family": "nesting_depth_level",
+    "template": "<explanation> / {v} JSON structure",
+    "fillers": {
+     "deep": "Nested",
+     "shallow": "Root-level"
+    },
+    "evidence": "nested structure vs top-level spec metadata / root-level properties",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:m2",
+    "family": "property_level_type",
+    "template": "<explanation> / JSON structure with {v}",
+    "fillers": {
+     "deep": "nested key-value pairs and repeated objects",
+     "shallow": "top-level key-value pairs describing metadata"
+    },
+    "evidence": "nested key-value pairs vs top-level spec metadata / root-level properties",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:m3",
+    "family": "api_spec_level",
+    "template": "<explanation> / Technical API {v}",
+    "fillers": {
+     "deep": "reference documentation pattern: structured parameter definitions with",
+     "shallow": "discovery document listing REST API resources and metadata, with"
+    },
+    "evidence": "Technical API reference documentation pattern: structured parameter definitions vs JSON API discovery document listing REST API resources and metadata",
+    "approx_count": 9,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:m4",
+    "family": "schema_spec_level",
+    "template": "<explanation> / {v} metadata format",
+    "fillers": {
+     "deep": "Structured schema",
+     "shallow": "Package"
+    },
+    "evidence": "Structured type-definition document following a JSON/documentation schema pattern vs npm/Node.js package metadata format",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:json_depth:fixed",
+    "family": "fixed_label",
+    "template": "The current value sits {v} in the JSON object",
+    "fillers": {
+     "deep": "three levels deep",
+     "shallow": "at the top level"
+    }
+   }
+  ],
+  "html_depth": [
+   {
+    "id": "nla:html_depth:m0",
+    "family": "content_vs_metadata",
+    "template": " / {v} format",
+    "fillers": {
+     "deep": "List/feed pattern repeating",
+     "shallow": "Structured metadata listing"
+    },
+    "evidence": "Deep descriptions focus on sequential feeds, comment threads, and listicle/instructional content ('List/feed pattern repeating', 'Technical documentation style'), while shallow emphasizes outer page structure/metadata ('URL/metadata listing format establishes', 'Structured metadata fields', 'Structu",
+    "approx_count": 28,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:html_depth:m1",
+    "family": "genre_description_style",
+    "template": " / {v}",
+    "fillers": {
+     "deep": "Technical documentation style continues,",
+     "shallow": "Website template format"
+    },
+    "evidence": "Deep often analyzes ongoing inner content ('Technical documentation style continues', 'Tutorial/help documentation format'), whereas shallow analyzes top-level layout ('Website error/sustainability notice template', 'Product listing format established').",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:html_depth:m2",
+    "family": "inner_body_vs_page_level",
+    "template": " / {v} establishes",
+    "fillers": {
+     "deep": "Step-by-step instructional guide",
+     "shallow": "Web page metadata"
+    },
+    "evidence": "Shallow frequently begins with 'Web page metadata...', 'URL/metadata listing format...', or 'HTML/descriptor attributes list...', reflecting the outer document tags.",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:html_depth:m3",
+    "family": "nesting_structure_synthetic",
+    "template": " / {v} nesting level in HTML structure",
+    "fillers": {
+     "deep": "deep",
+     "shallow": "shallow"
+    },
+    "evidence": "Synthetic family; the verbalizer never explicitly mentions HTML element depth or open tags directly.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:html_depth:fixed",
+    "family": "fixed_label",
+    "template": "The current text is nested {v} in the HTML",
+    "fillers": {
+     "deep": "three tags deep",
+     "shallow": "one tag deep"
+    }
+   }
+  ],
+  "md_heading": [
+   {
+    "id": "nla:md_heading:m0",
+    "family": "heading_level",
+    "template": " / Technical documentation pattern: structured {v} section",
+    "fillers": {
+     "deep": "subsection",
+     "shallow": "major section"
+    },
+    "evidence": "suggesting a new subsection follows vs transitioning to the next major section",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_heading:m1",
+    "family": "header_hierarchy",
+    "template": " / {v} heading pattern",
+    "fillers": {
+     "deep": "H3 or bullet-point",
+     "shallow": "H1 or H2"
+    },
+    "evidence": "continuation of similar H3 or bullet-point entries vs Section heading pattern",
+    "approx_count": 12,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "nla:md_heading:m2",
+    "family": "structural_depth",
+    "template": " / Structured documentation pattern with {v} sections",
+    "fillers": {
+     "deep": "nested",
+     "shallow": "high-level"
+    },
+    "evidence": "nested sections on Cloudflare Workers vs structured sections covering",
+    "approx_count": 10,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_heading:m3",
+    "family": "structure_granularity",
+    "template": " / Technical {v} structure",
+    "fillers": {
+     "deep": "sub-section",
+     "shallow": "top-level"
+    },
+    "evidence": "The document is mid-section under 'Server-side & API', with subsection 'Config' vs standard library documentation structure",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_heading:fixed",
+    "family": "fixed_label",
+    "template": "The current line is a {v} markdown heading",
+    "fillers": {
+     "deep": "lower-level",
+     "shallow": "top-level"
+    }
+   }
+  ],
+  "md_list": [
+   {
+    "id": "nla:md_list:m0",
+    "family": "item_depth_distinction",
+    "template": " / Technical documentation {v}",
+    "fillers": {
+     "nested": "with nested bullet points",
+     "top": "with structured bullet points"
+    },
+    "evidence": "listing components with nested bullet points, establishing a consistent pattern",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_list:m1",
+    "family": "sub_elements_contrast",
+    "template": " / Structured {v}",
+    "fillers": {
+     "nested": "feature lists and nested sub-features",
+     "top": "feature lists and top-level sections"
+    },
+    "evidence": "bullet-point feature lists, and nested sub-features describing a dashboard",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_list:m2",
+    "family": "list_hierarchy_status",
+    "template": " / Technical {v}",
+    "fillers": {
+     "nested": "spec with nested bullet points",
+     "top": "documentation with top-level checklist items"
+    },
+    "evidence": "nested bullet points enumerate validation checks",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_list:m3",
+    "family": "list_level_type",
+    "template": " / Document follows a {v}",
+    "fillers": {
+     "nested": "nested list structure",
+     "top": "bullet-point list format"
+    },
+    "evidence": "Bullet-point list structure interrupted mid-item / bullet-point list format with structured documentation sections",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "nla:md_list:fixed",
+    "family": "fixed_label",
+    "template": "The current line is a {v} list item",
+    "fillers": {
+     "nested": "nested",
+     "top": "top-level"
+    }
+   }
+  ]
+ },
+ "ol": {
+  "py_string": [
+   {
+    "id": "ol:py_string:m0",
+    "family": "bounds_location",
+    "template": "- /{v} file bounds",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    },
+    "evidence": "'- /outside file bounds.' % (segment.name, offset)",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:m1",
+    "family": "source_bounds",
+    "template": "- /{v} its source bounds",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    },
+    "evidence": "'- /outside its source bounds\" % offset'",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:m2",
+    "family": "parenthetical_bounds",
+    "template": "- 文件范围 ({v} file bounds).",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    },
+    "evidence": "'- 文件范围 (outside file bounds).'",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:m3",
+    "family": "bare_token",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    },
+    "evidence": "minimal baseline for the target feature values",
+    "approx_count": 2,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:m4",
+    "family": "in_out_bounds",
+    "template": "- 其合法范围 ({v}-of-bounds)",
+    "fillers": {
+     "inside": "in",
+     "outside": "out"
+    },
+    "evidence": "'- 其合法范围 (out-of-bounds) of its source image.'",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_string:fixed",
+    "family": "fixed_label",
+    "template": "- {v} string",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "js_string": [
+   {
+    "id": "ol:js_string:m0",
+    "family": "statement_continuation",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "is not a valid number or string.",
+     "outside": "new TypeError(\"Failed to construct"
+    },
+    "evidence": "inside: '- a valid string, number or Date', '- is not a number, string, or Date'; outside: '- new TypeError(\"Failed to construct RTCPeerConnection', '- new TypeError(\"Failed to construct WebSocket'",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:js_string:m1",
+    "family": "error_continuation",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "must be an AbortSignal",
+     "outside": "; } // Early return"
+    },
+    "evidence": "inside: '- be an AbortSignal or null', '- 是 an AbortSignal'; outside: '- ; } // Early return if error', '- ; } // Early return on error'",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:js_string:m2",
+    "family": "code_type",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "type=\"checkbox\"",
+     "outside": ".totalSize - this._offset"
+    },
+    "evidence": "inside: '- type=\"checkbox\" name=\"test\"', '- type=\"hidden\" id=\"i1\"'; outside: '- .size - this._offset', '- .totalSize - this.offset'",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:js_string:m3",
+    "family": "semicolon_boundary",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "`http://` prefix",
+     "outside": "; } // "
+    },
+    "evidence": "inside: '- `http://` prefix for a valid URL', '- 'http://' or 'https://' prefix'; outside: '- ; } // Early return', '- ; } // 提前返回'",
+    "approx_count": 16,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:js_string:fixed",
+    "family": "fixed_label",
+    "template": "- {v} string",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "latex_math": [
+   {
+    "id": "ol:latex_math:m1",
+    "family": "math_token_continuation",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "N$",
+     "outside": "策略"
+    },
+    "evidence": "Inside readouts frequently continue math tokens like '- N$', '- 0$', '- t_{pred}$', while outside readouts continue natural language prose or Chinese phrases.",
+    "approx_count": 40,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:latex_math:m2",
+    "family": "math_boundary_dollar",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "}$",
+     "outside": ")"
+    },
+    "evidence": "Inside completions consistently complete TeX groups closing math mode like '}$' or '}$ and', whereas outside completions close standard prose parentheses.",
+    "approx_count": 25,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:latex_math:m3",
+    "family": "formula_environment",
+    "template": "- {v}",
+    "fillers": {
+     "inside": "\\mathcal{",
+     "outside": "the "
+    },
+    "evidence": "Math-mode readouts heavily feature font-switching commands like '- \\mathcal{M}', '- \\mathcal{F}', compared to standard prose continuation.",
+    "approx_count": 20,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:latex_math:fixed",
+    "family": "fixed_label",
+    "template": "- {v} math",
+    "fillers": {
+     "inside": "inside",
+     "outside": "outside"
+    }
+   }
+  ],
+  "py_arg": [
+   {
+    "id": "ol:py_arg:m0",
+    "family": "arg_index_comment",
+    "template": "- )  # {v}",
+    "fillers": {
+     "third": "3rd argument",
+     "first": "1st argument"
+    },
+    "evidence": "Readouts follow python argument completions like `- )  # ...` where argument position is implicit in call context.",
+    "approx_count": 18,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:py_arg:m1",
+    "family": "numbered_step",
+    "template": "- {v}",
+    "fillers": {
+     "third": "3. ",
+     "first": "1. "
+    },
+    "evidence": "'- 3. 递归构建' vs numbered prefixes appearing in python explanations",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:py_arg:m2",
+    "family": "comma_continuation",
+    "template": "- , {v}",
+    "fillers": {
+     "third": "z",
+     "first": "y"
+    },
+    "evidence": "'- , y, z)' vs '- , target, w=graph.weights)'",
+    "approx_count": 15,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_arg:m3",
+    "family": "closing_paren_or_comma",
+    "template": "- {v}",
+    "fillers": {
+     "third": ")",
+     "first": ","
+    },
+    "evidence": "Many 'third' lines close the call with '- )' while 'first' lines continue with '- , '",
+    "approx_count": 22,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:py_arg:fixed",
+    "family": "fixed_label",
+    "template": "- {v} argument",
+    "fillers": {
+     "third": "third",
+     "first": "first"
+    }
+   }
+  ],
+  "json_depth": [
+   {
+    "id": "ol:json_depth:m0",
+    "family": "structure_level",
+    "template": "- {v} object",
+    "fillers": {
+     "deep": "nested",
+     "shallow": "root"
+    },
+    "evidence": "nested object of type / root object of pyproject.toml",
+    "approx_count": 8,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:m1",
+    "family": "position_level",
+    "template": "- {v} structure",
+    "fillers": {
+     "deep": "nested",
+     "shallow": "top-level"
+    },
+    "evidence": "This is the nested object we need to add / Top-level structure of pip.toml",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:m2",
+    "family": "hierarchy_desc",
+    "template": "- {v} level",
+    "fillers": {
+     "deep": "nested",
+     "shallow": "top"
+    },
+    "evidence": "Note: This is the nested object / Top-level of pip-tools config",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:m3",
+    "family": "scope_type",
+    "template": "- {v}",
+    "fillers": {
+     "deep": "nested",
+     "shallow": "top-level"
+    },
+    "evidence": "nested object / top-level",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:json_depth:fixed",
+    "family": "fixed_label",
+    "template": "- {v}",
+    "fillers": {
+     "deep": "nested three deep",
+     "shallow": "top level"
+    }
+   }
+  ],
+  "html_depth": [
+   {
+    "id": "ol:html_depth:m0",
+    "family": "depth_level",
+    "template": "- depth: {v}",
+    "fillers": {
+     "deep": "deep",
+     "shallow": "shallow"
+    },
+    "evidence": "Paraphrase of internal state reflecting HTML element nesting depth (deep vs shallow).",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:html_depth:m1",
+    "family": "element_nesting",
+    "template": "- nesting level: {v}",
+    "fillers": {
+     "deep": "deep",
+     "shallow": "shallow"
+    },
+    "evidence": "Conceptual distillation of open element hierarchy depth.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:html_depth:m2",
+    "family": "open_elements",
+    "template": "- {v} open elements",
+    "fillers": {
+     "deep": "six or more",
+     "shallow": "at most three"
+    },
+    "evidence": "Direct mapping to feature specification criteria (6+ vs <=3 open elements).",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:html_depth:m3",
+    "family": "tag_depth",
+    "template": "- HTML tag depth is {v}",
+    "fillers": {
+     "deep": "deep",
+     "shallow": "shallow"
+    },
+    "evidence": "Standard phrasing for HTML DOM tree nesting depth.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:html_depth:fixed",
+    "family": "fixed_label",
+    "template": "- {v} nesting",
+    "fillers": {
+     "deep": "deep",
+     "shallow": "shallow"
+    }
+   }
+  ],
+  "md_heading": [
+   {
+    "id": "ol:md_heading:m0",
+    "family": "heading_level_label",
+    "template": "- Level {v} Heading",
+    "fillers": {
+     "deep": "3/4",
+     "shallow": "1/2"
+    },
+    "evidence": "- Level 1 (default) vs Level 3",
+    "approx_count": 6,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:md_heading:m1",
+    "family": "level_prefix",
+    "template": "- Level-{v} report",
+    "fillers": {
+     "deep": "3",
+     "shallow": "1"
+    },
+    "evidence": "style for Level 1 (default) / style for Level 2",
+    "approx_count": 5,
+    "kind_llm": null,
+    "numeric": true
+   },
+   {
+    "id": "ol:md_heading:m2",
+    "family": "sub_vs_main",
+    "template": "- {v} section",
+    "fillers": {
+     "deep": "Subsection",
+     "shallow": "Main"
+    },
+    "evidence": "- /Sub Element Specs vs - /Section",
+    "approx_count": 4,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:md_heading:m3",
+    "family": "depth_qualitative",
+    "template": "- {v} structure",
+    "fillers": {
+     "deep": "Detailed sub",
+     "shallow": "Top-level"
+    },
+    "evidence": "- /Structure vs - Overview",
+    "approx_count": 3,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:md_heading:fixed",
+    "family": "fixed_label",
+    "template": "- {v} heading",
+    "fillers": {
+     "deep": "subsection",
+     "shallow": "top"
+    }
+   }
+  ],
+  "md_list": [
+   {
+    "id": "ol:md_list:m0",
+    "family": "indent_level_indicator",
+    "template": "- {v} list item",
+    "fillers": {
+     "nested": "nested",
+     "top": "top-level"
+    },
+    "evidence": "Markdown: read a few words into an indented (nested) list item vs a top-level one.",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:md_list:m1",
+    "family": "level_descriptor",
+    "template": "- {v} item",
+    "fillers": {
+     "nested": "sub-",
+     "top": "top-level "
+    },
+    "evidence": "Sub-task breakdown / top-level",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:md_list:m2",
+    "family": "indented_status",
+    "template": "- {v} item:",
+    "fillers": {
+     "nested": "indented",
+     "top": "main"
+    },
+    "evidence": "paraphrase for indented vs top-level list items",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:md_list:m3",
+    "family": "hierarchy_prefix",
+    "template": "- {v} list",
+    "fillers": {
+     "nested": "nested",
+     "top": "root"
+    },
+    "evidence": "structural list item paraphrase",
+    "approx_count": 0,
+    "kind_llm": null,
+    "numeric": false
+   },
+   {
+    "id": "ol:md_list:fixed",
+    "family": "fixed_label",
+    "template": "- {v} list item",
+    "fillers": {
+     "nested": "nested",
+     "top": "top-level"
+    }
+   }
+  ]
+ },
+ "jlens": {
+  "py_string": [
+   {
+    "id": "jlens:py_string:fixed",
+    "family": "fixed_label",
+    "words": {
+     "inside": [
+      "string",
+      "quote"
+     ],
+     "outside": [
+      "code",
+      "call"
+     ]
+    }
+   }
+  ],
+  "js_string": [
+   {
+    "id": "jlens:js_string:fixed",
+    "family": "fixed_label",
+    "words": {
+     "inside": [
+      "string",
+      "quote"
+     ],
+     "outside": [
+      "code",
+      "call"
+     ]
+    }
+   }
+  ],
+  "latex_math": [
+   {
+    "id": "jlens:latex_math:fixed",
+    "family": "fixed_label",
+    "words": {
+     "inside": [
+      "math",
+      "equation"
+     ],
+     "outside": [
+      "prose",
+      "text"
+     ]
+    }
+   },
+   {
+    "id": "jlens:latex_math:d0",
+    "family": "diff_rank0",
+    "words": {
+     "inside": [
+      "Algorithm"
+     ],
+     "outside": [
+      "Equation"
+     ]
+    }
+   },
+   {
+    "id": "jlens:latex_math:d1",
+    "family": "diff_rank1",
+    "words": {
+     "inside": [
+      "subset"
+     ],
+     "outside": [
+      "context"
+     ]
+    }
+   },
+   {
+    "id": "jlens:latex_math:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "inside": [
+      "Algorithm",
+      "subset"
+     ],
+     "outside": [
+      "Equation",
+      "context",
+      "trajectory"
+     ]
+    }
+   }
+  ],
+  "py_arg": [
+   {
+    "id": "jlens:py_arg:fixed",
+    "family": "fixed_label",
+    "words": {
+     "third": [
+      "third",
+      "three"
+     ],
+     "first": [
+      "first",
+      "one"
+     ]
+    }
+   },
+   {
+    "id": "jlens:py_arg:d0",
+    "family": "diff_rank0",
+    "words": {
+     "third": [
+      "default"
+     ],
+     "first": [
+      "input"
+     ]
+    }
+   },
+   {
+    "id": "jlens:py_arg:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "third": [
+      "default"
+     ],
+     "first": [
+      "input",
+      "nodes",
+      "array"
+     ]
+    }
+   }
+  ],
+  "json_depth": [
+   {
+    "id": "jlens:json_depth:fixed",
+    "family": "fixed_label",
+    "words": {
+     "deep": [
+      "nested",
+      "deep"
+     ],
+     "shallow": [
+      "top",
+      "shallow"
+     ]
+    }
+   }
+  ],
+  "html_depth": [
+   {
+    "id": "jlens:html_depth:fixed",
+    "family": "fixed_label",
+    "words": {
+     "deep": [
+      "nested",
+      "deep"
+     ],
+     "shallow": [
+      "shallow",
+      "top"
+     ]
+    }
+   },
+   {
+    "id": "jlens:html_depth:d0",
+    "family": "diff_rank0",
+    "words": {
+     "deep": [
+      "thumbnails"
+     ],
+     "shallow": [
+      "Hello"
+     ]
+    }
+   },
+   {
+    "id": "jlens:html_depth:dtop3",
+    "family": "diff_top3",
+    "words": {
+     "deep": [
+      "thumbnails"
+     ],
+     "shallow": [
+      "Hello",
+      "jokes",
+      "Emoji"
+     ]
+    }
+   }
+  ],
+  "md_heading": [
+   {
+    "id": "jlens:md_heading:fixed",
+    "family": "fixed_label",
+    "words": {
+     "deep": [
+      "subsection",
+      "sub"
+     ],
+     "shallow": [
+      "title",
+      "chapter"
+     ]
+    }
+   }
+  ],
+  "md_list": [
+   {
+    "id": "jlens:md_list:fixed",
+    "family": "fixed_label",
+    "words": {
+     "nested": [
+      "nested",
+      "indented"
+     ],
+     "top": [
+      "top",
+      "main"
+     ]
+    }
+   }
+  ]
+ }
+}

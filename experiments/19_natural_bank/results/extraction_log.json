@@ -1,0 +1,287 @@
+{
+ "py_string": {
+  "ol": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.03125,
+    "by_value": {
+     "inside": 0.05625,
+     "outside": 0.00625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "The literal words 'inside' or 'outside' appear almost exclusively in 'inside' readouts describing ELF or file offset bounds errors, while the tool overall outputs code continuations.",
+   "rejected": [],
+   "n_proposed": 5
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.584375,
+    "by_value": {
+     "inside": 0.7125,
+     "outside": 0.45625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.12,
+   "notes": "Readouts from inside single-line strings frequently note incomplete/mid-sentence warning or error messages ('mid-quotation', 'mid-sentence'), whereas outside readouts focus on class definitions, method signatures, or imports.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "js_string": {
+  "ol": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.09375,
+    "by_value": {
+     "inside": 0.08125,
+     "outside": 0.10625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts almost never mention 'inside' or 'outside' strings explicitly; instead, 'inside' readouts complete string content/error message text (often mentioning prefixes, HTML attributes, or expected types), while 'outside' readouts continue JS statement code such as early returns, DOM allocations, or constructor calls.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "string literal|string|quot",
+    "overall": 0.390625,
+    "by_value": {
+     "inside": 0.575,
+     "outside": 0.20625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "Readouts rarely mention string boundaries explicitly, instead describing string literal error messages ('inside') versus code structure, function declarations, and TypeScript control flow ('outside').",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "latex_math": {
+  "ol": {
+   "mention_regex": {
+    "regex": "math|equation|latex|\\\\frac|formula",
+    "overall": 0.409375,
+    "by_value": {
+     "inside": 0.4625,
+     "outside": 0.35625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The lens never explicitly outputs abstract labels like 'inside' or 'outside'; instead, readouts inside math mode directly continue LaTeX syntax while outside readouts continue standard English or Chinese prose.",
+   "rejected": [
+    {
+     "id": "ol:latex_math:m0",
+     "family": "math_symbol_prefix",
+     "template": "- {v}",
+     "fillers": {
+      "inside": "\\",
+      "outside": " "
+     },
+     "error": "filled candidates must differ and fillers be non-empty"
+    }
+   ],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "math|equation|latex|\\\\frac|formula",
+    "overall": 0.840625,
+    "by_value": {
+     "inside": 0.95625,
+     "outside": 0.725
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts never explicitly mention whether the token is inside an inline LaTeX math span versus in outside prose, but instead reflect subtle differences in topical framing and document genre descriptions.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "py_arg": {
+  "ol": {
+   "mention_regex": {
+    "regex": "argument|param|positional",
+    "overall": 0.05625,
+    "by_value": {
+     "first": 0.04375,
+     "third": 0.06875
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "The model rarely names argument indices explicitly, instead continuing python call signatures where 3rd arguments frequently close calls or bind trailing parameters like z, out, or flags.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "argument|param|positional",
+    "overall": 0.796875,
+    "by_value": {
+     "first": 0.88125,
+     "third": 0.7125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.04,
+   "notes": "Direct explicit mentions of exact argument positions are rare (~4%), as the verbalizer predominantly describes surrounding API patterns, docstrings, and signature continuations rather than explicitly indexing argument numbers.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "json_depth": {
+  "ol": {
+   "mention_regex": {
+    "regex": "nest|depth|level|deep|inner|outer|top[- ]level",
+    "overall": 0.053125,
+    "by_value": {
+     "deep": 0.04375,
+     "shallow": 0.0625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.08,
+   "notes": "Explicit depth terminology is rare (~8%), but readouts occasionally contrast 'nested' objects at deep levels against 'root' or 'top-level' objects at shallow levels.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "nest|depth|level|deep|inner|outer|top[- ]level",
+    "overall": 0.359375,
+    "by_value": {
+     "deep": 0.30625,
+     "shallow": 0.4125
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.08,
+   "notes": "Readouts rarely mention depth directly as 'deep' or 'shallow', but frequently differentiate deep items via 'nested' parameter/schema definitions versus shallow items via 'root-level' or 'top-level' package.json/discovery metadata.",
+   "rejected": [],
+   "n_proposed": 5
+  }
+ },
+ "html_depth": {
+  "ol": {
+   "mention_regex": {
+    "regex": "nest|tag|html|depth|<li>|<div>",
+    "overall": 0.04375,
+    "by_value": {
+     "deep": 0.0625,
+     "shallow": 0.025
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The readouts consist almost entirely of internet memes, documentation strings, and code snippets with zero explicit mentions of HTML nesting depth.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "nest|tag|html|depth|<li>|<div>",
+    "overall": 0.30625,
+    "by_value": {
+     "deep": 0.20625,
+     "shallow": 0.40625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The model never mentions HTML nesting depth or element counts explicitly; instead, deep elements are interpreted as narrative/in-body content (threads, instructions, documentation) while shallow elements are recognized as top-level page headers, URLs, and metadata.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "md_heading": {
+  "ol": {
+   "mention_regex": {
+    "regex": "heading|header|title|section|##",
+    "overall": 0.103125,
+    "by_value": {
+     "deep": 0.0625,
+     "shallow": 0.14375
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.03,
+   "notes": "Readouts almost entirely produce domain-specific markdown content lines without explicit meta-references to markdown heading depth, though Level 1 occasionally appears in shallow prompts.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "heading|header|title|section|##",
+    "overall": 0.9375,
+    "by_value": {
+     "deep": 0.91875,
+     "shallow": 0.95625
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "The readouts rarely mention Markdown heading levels explicitly (e.g., 'H3' appears once), instead conveying depth implicitly via descriptors like 'nested sections' and 'subsections' for deep versus 'top-level' or standard sections for shallow.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "md_list": {
+  "ol": {
+   "mention_regex": {
+    "regex": "list|bullet|nested|indent|item",
+    "overall": 0.115625,
+    "by_value": {
+     "nested": 0.19375,
+     "top": 0.0375
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.0,
+   "notes": "The model readouts are continuations/paraphrases of prompt context tokens without any direct mention of the Markdown indentation level feature.",
+   "rejected": [],
+   "n_proposed": 4
+  },
+  "nla": {
+   "mention_regex": {
+    "regex": "list|bullet|nested|indent|item",
+    "overall": 0.9625,
+    "by_value": {
+     "nested": 0.975,
+     "top": 0.95
+    },
+    "n": 320
+   },
+   "n_readouts": 320,
+   "mention_rate_llm": 0.05,
+   "notes": "Explicit distinction between nested sub-items and top-level items is rarely named directly by the model verbalizer, which mostly describes generic list structures or checklist formats.",
+   "rejected": [],
+   "n_proposed": 4
+  }
+ },
+ "_calls": 16,
+ "_spend_usd": 0.1765
+}
