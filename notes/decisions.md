@@ -628,3 +628,21 @@ one (prompted forced-choice cells), after Neel's remark that forced choice puts 
 Instruments and predictions filled before any reader ran: instruments sha256 `aab6317039a6568e7534a468afbc03c72eec47eb1fd05615bdb031e2a45c0183`, predictions
 `c8b593c0aabde7ba7d0c6eddf4601fd950687738918db1df9b37c39d8ae242ea`, pre-registration `29ceb9054613e24a35d3e214e4fe1bc32454506ff31ed0d3f97ef4d783320c34`. Two findings already: the Markdown heading-level and list-depth rows are
 not linearly readable at layer 42 on real text (0.63, 0.65), and no natural row is statement-sayable (max 0.23).
+
+## 2026-10-27 — D45: exp 19 scored; exp 20 shows the readers carry structure and do not name it; exhibits cell re-scored through the critic (post hoc)
+
+Exp 19: primary scorecard 31 of 38 (0.82), secondary 11 of 16 (0.69), all cells 0.79 against the declared 0.80. The
+revised NLA rules passed (14 of 16). Oracle Lens never states (8 of 8). Two span-sayable rows were missed when prompted
+(py_string 0.52, json_depth 0.64; fixed phrasing reversed on both). The judge scored exhibition 0.00 on every row for the
+second experiment running. Bank not published (local-file provenance for the Markdown and HTML rows); hashes and
+per-item scores tracked.
+
+Exp 20 (Neel's suggestion, taken literally): the base model's own layer-42 activation on the last 32 tokens carries
+every readable state at 0.94 to 1.00 (four of six rows already at 4 tokens); the same tokens shuffled fall to 0.30 to
+0.65; Oracle Lens's own readout re-induces the state through the critic at 0.70 to 0.94 and the NLA's explanation at
+0.93 to 0.99 (the latter partly in-distribution for the critic). Decision: the thesis sentence becomes "the readers
+carry structural state in their outputs and do not name it"; the window account of Oracle Lens is retired as the
+explanation of its prompted misses, which are a naming and phrasing failure. The exp 19 exhibits cell is re-scored with
+the reconstructor measure at 0.70 (7 of 8; primary scorecard 35 of 38), reported beside the judged cell and labelled
+post hoc. The same protocol is being run on exp 13's table-column and parenthesis rows to reconcile with exp 16, which
+measured the Oracle Lens part through the Oracle Lens reconstructor at layer 44.
