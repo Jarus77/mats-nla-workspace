@@ -1,0 +1,81 @@
+{
+ "kinds": {
+  "py": {
+   "n": 100,
+   "n_files": 2884,
+   "label_counts": {
+    "brace_depth=no": 95,
+    "brace_depth=yes": 5,
+    "heading_level=no": 100,
+    "in_math=no": 100,
+    "in_string=no": 83,
+    "in_string=yes": 17,
+    "list_depth=no": 100,
+    "paren_depth=no": 73,
+    "paren_depth=yes": 27
+   }
+  },
+  "js": {
+   "n": 100,
+   "n_files": 2636,
+   "label_counts": {
+    "brace_depth=no": 60,
+    "brace_depth=yes": 40,
+    "heading_level=no": 100,
+    "in_math=no": 100,
+    "in_string=no": 82,
+    "in_string=yes": 18,
+    "list_depth=no": 100,
+    "paren_depth=no": 62,
+    "paren_depth=yes": 38
+   }
+  },
+  "json": {
+   "n": 100,
+   "n_files": 1232,
+   "label_counts": {
+    "brace_depth=no": 66,
+    "brace_depth=yes": 34,
+    "heading_level=no": 100,
+    "in_math=no": 100,
+    "in_string=no": 1,
+    "in_string=yes": 99,
+    "list_depth=no": 100,
+    "paren_depth=no": 100
+   }
+  },
+  "tex": {
+   "n": 100,
+   "n_files": 339,
+   "label_counts": {
+    "brace_depth=no": 100,
+    "heading_level=no": 100,
+    "in_math=no": 92,
+    "in_math=yes": 8,
+    "in_string=no": 100,
+    "list_depth=no": 100,
+    "paren_depth=no": 94,
+    "paren_depth=yes": 6
+   }
+  },
+  "md": {
+   "n": 100,
+   "n_files": 1213,
+   "label_counts": {
+    "brace_depth=no": 100,
+    "heading_level=no": 96,
+    "heading_level=yes": 4,
+    "in_math=no": 100,
+    "in_string=no": 100,
+    "list_depth=no": 82,
+    "list_depth=yes": 18,
+    "paren_depth=no": 86,
+    "paren_depth=yes": 14
+   }
+  }
+ },
+ "n_items": 500,
+ "sha256": "edfb346fc5603fe9f68ab436139ae824dc70e5ecdba2e87d9627e8485e275be0",
+ "seed": 2323,
+ "wall_s": 64.2
+}
