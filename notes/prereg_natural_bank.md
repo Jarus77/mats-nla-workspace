@@ -120,3 +120,17 @@ names the complement on the five both-positive rows only; no row is J-enriched.
 ## 7. Budget
 
 One GPU at a time; about $10 GPU (instruments, generation, scoring at the exp 18 rates), about $3 judge and mining.
+
+## 8. Public-source rebuild (exp 22, 27 Oct): same rows, same rules, second prospective test
+
+Exp 19's bank drew Markdown and HTML items from local files of unverified provenance and is not published. Exp 22 rebuilds
+the same eight rows from published sources only (package distributions on this machine: site-packages, dist-packages,
+node_modules, the bun and uv caches, conda pkgs; arXiv e-prints for LaTeX; arXiv HTML renderings for HTML), each item
+carrying its source class, with a new seed (2222) and the same generators, lexical-cue check (0.65), instruments,
+thresholds, prediction rules (§3), scoring split (§5) and cell thresholds. Predictions are filled and hashed below before
+any reader runs. The result is a second prospective test of the revised NLA rules and of the carried-over rules, on a
+bank that will be tracked in the repository.
+
+The HTML row is dropped from exp 22: the public HTML on this machine (176 package files, and arXiv's HTML renderings, which wrap all text deeply) yields 36 source pages with both shallow and deep text, 88 items. Eight rows remain: the seven carried from exp 19 and the positive control (code_lang, Python vs JavaScript, both values positive states, no next-token set).
+
+Bank and instruments: (pending, filled before the readers run)
