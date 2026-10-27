@@ -4,8 +4,10 @@ layer-42 activations already on the volume), rebuild each item's vector from
   (b) the same 32 tokens in random order                (vocabulary kept, order broken)
   (c) Oracle Lens's own free readout of the vector      (what the reader says)
   (d) the NLA's own explanation of the vector
-and score each rebuild with exp 14's frozen-probe AUROC. Stages:
-  r3hx (H100): Oracle Lens readouts, k=1 at layer 42, on the selection split   -> ol_sel_{row}.json
+and score each rebuild with exp 14's frozen-probe AUROC; also (e) the model's own activation on the window alone. Stages:
+  r3hx (H100): Oracle Lens readouts, k=1 at layer 42, on the selection split, and the BASE model's own layer-42
+               activation when it reads the last w tokens alone (the image of the window map, no reconstructor)
+                                                                              -> ol_sel_{row}.json, spanacts20_{row}.pt
   w9kc (H200): NLA explanations (k=1) and all reconstructions + AUROCs        -> nla_sel_{row}.json, recon20_{row}.json
     cd experiments/20_ar_structure && modal run --detach modal20.py --stage ol
 """
@@ -46,6 +48,8 @@ def r3hx(rows: list[str]) -> dict:
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
+    from lib20 import WINDOWS, windows
+    from mats import capture as C
     from mats.readers.olens import WSBENCH_SAMPLING, load_olens
 
     torch.manual_seed(0)
@@ -64,6 +68,12 @@ def r3hx(rows: list[str]) -> dict:
         items, X, sel, _, _ = _load(row)
         g = ol.verbalize(X, LAYER, k=1, sampling=WSBENCH_SAMPLING, batch=32)
         Path(path).write_text(json.dumps({"feature": row, "ol": {items[i]["id"]: g[r][0] for r, i in enumerate(sel)}}))
+        span_acts = {}
+        with ol.base():                                   # the model's own activation when it reads the span alone
+            for w in WINDOWS:
+                seqs = [windows(items[i]["ids"])[w] for i in sel]
+                span_acts[w] = C.capture(model, seqs, [LAYER], [[-1]] * len(seqs), batch_size=16)[LAYER][:, 0].contiguous().cpu()
+        torch.save({"sel_ids": [items[i]["id"] for i in sel], "span_acts": span_acts}, f"{OUT}/spanacts20_{row}.pt")
         VOLUMES["/results"].commit()
         out_all[row] = {"n": len(sel)}
     return {"rows": out_all, "wall_s": round(time.time() - t0, 1)}
@@ -101,6 +111,12 @@ def w9kc(rows: list[str]) -> dict:
         texts["nla_readout"] = expl
         auroc, cos = {}, {}
         d_true = X[y == 1].mean(0) - X[y == 0].mean(0)
+        sp = torch.load(f"{OUT}/spanacts20_{row}.pt", weights_only=False)
+        assert sp["sel_ids"] == [items[i]["id"] for i in sel]
+        for w, A in sp["span_acts"].items():               # no reconstructor: the model itself on the window
+            auroc[f"model_span_{w}"] = frozen_probe_auroc(X, A.float(), y, groups)
+            d_a = A.float()[y == 1].mean(0) - A.float()[y == 0].mean(0)
+            cos[f"model_span_{w}"] = float(torch.nn.functional.cosine_similarity(d_a, d_true, dim=0))
         for cond, tx in texts.items():
             R = nla.reconstruct(tx, batch=16).float()
             auroc[cond] = frozen_probe_auroc(X, R, y, groups)

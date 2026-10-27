@@ -9,7 +9,7 @@ import numpy as np
 import torch
 
 WINDOWS = (4, 8, 16, 32, 64, 128)
-CONDITIONS = tuple(f"span_{w}" for w in WINDOWS) + ("bag_32", "ol_readout", "nla_readout")
+CONDITIONS = tuple(f"model_span_{w}" for w in WINDOWS) + tuple(f"span_{w}" for w in WINDOWS) + ("bag_32", "ol_readout", "nla_readout")
 _EXPL = re.compile(r"<explanation>(.*?)</explanation>", re.S)
 
 

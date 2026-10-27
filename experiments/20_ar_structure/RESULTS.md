@@ -9,6 +9,7 @@ with four kinds of input to the reconstructor, scored by exp 14's frozen-probe A
 - the same 32 tokens in random order (vocabulary kept, structure broken)
 - Oracle Lens's own free readout of the vector (k = 1, layer 42)
 - the NLA's own explanation of the vector (k = 1)
+- the model's own layer-42 activation when it reads the last w tokens alone, no reconstructor (the image of the window map: what any text-emitting reader could at most re-induce)
 
 If the ordered span keeps the state and the shuffled bag and the readouts do not, the readers' failure is located in what
 the reconstruction objective rewards: content, not order. App `v7qd` (`modal20.py`); one H100 pass for the Oracle Lens
