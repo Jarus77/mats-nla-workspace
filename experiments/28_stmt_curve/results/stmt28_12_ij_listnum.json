@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "ij_listnum",
+ "key": "12_ij_listnum",
+ "type": "structural",
+ "stated": 0.075,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 23.547422409057617,
+ "shift": {
+  "fixed": 0.23150090873241425,
+  "n_para": 8,
+  "para_mean": 0.12022879254072905,
+  "para_min": 0.06089358776807785,
+  "para_max": 0.20430397987365723,
+  "para_sd": 0.04883180827304723,
+  "para_range": 0.14341039210557938
+ },
+ "shifts_para": [
+  0.09722216427326202,
+  0.12293251603841782,
+  0.09955733269453049,
+  0.20430397987365723,
+  0.07132220268249512,
+  0.06089358776807785,
+  0.1351207196712494,
+  0.17047783732414246
+ ],
+ "stmt_cos_fixed": 0.2878074049949646,
+ "stmt_cos_para": [
+  0.206318199634552,
+  0.2625574469566345,
+  0.20684748888015747,
+  0.3013456463813782,
+  0.21742215752601624,
+  0.2007158100605011,
+  0.2266472429037094,
+  0.26325511932373047
+ ],
+ "statements": [
+  [
+   "This is item number two in the list",
+   "This is item number nine in the list"
+  ],
+  [
+   "The current entry corresponds to item three of the series.",
+   "The current entry corresponds to item ten of the series."
+  ],
+  [
+   "This text is currently presenting list item number two.",
+   "This text is currently presenting list item number nine."
+  ],
+  [
+   "We are now finishing the contents of item three in this list.",
+   "We are now finishing the contents of item ten in this list."
+  ],
+  [
+   "Currently reading item number two.",
+   "Currently reading item number nine."
+  ],
+  [
+   "The evaluation reaches the conclusion of item three, and the processing continues through this indexed listing.",
+   "The evaluation reaches the conclusion of item ten, and the processing continues through this indexed listing."
+  ],
+  [
+   "The author places this marker at the final token of list item two.",
+   "The author places this marker at the final token of list item nine."
+  ],
+  [
+   "The model is reading the end of item number three in the sequence.",
+   "The model is reading the end of item number ten in the sequence."
+  ],
+  [
+   "Current state: final token of item two in the list.",
+   "Current state: final token of item nine in the list."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 1.0,
+ "span_gap": 0.297987699508667,
+ "readable": 1.0,
+ "prior": {},
+ "wall_s": 2.8
+}

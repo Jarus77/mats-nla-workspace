@@ -1,0 +1,99 @@
+{
+ "experiment": "19",
+ "feature": "md_heading",
+ "key": "19_md_heading",
+ "type": "structural",
+ "stated": 0.040625,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 10.193507194519043,
+ "shift": {
+  "fixed": 0.030998170375823975,
+  "n_para": 8,
+  "para_mean": 0.0022808590438216925,
+  "para_min": -0.06084601208567619,
+  "para_max": 0.07796106487512589,
+  "para_sd": 0.0487056335295378,
+  "para_range": 0.13880707696080208
+ },
+ "shifts_para": [
+  -0.06084601208567619,
+  0.07796106487512589,
+  -0.030516352504491806,
+  -0.014861499890685081,
+  -0.04680198058485985,
+  0.013976022601127625,
+  0.0301235169172287,
+  0.04921211302280426
+ ],
+ "stmt_cos_fixed": 0.020262278616428375,
+ "stmt_cos_para": [
+  -0.06704076379537582,
+  0.06730277091264725,
+  -0.031016366556286812,
+  -0.013594131916761398,
+  -0.053561024367809296,
+  0.013798949308693409,
+  0.025737065821886063,
+  0.044229596853256226
+ ],
+ "statements": [
+  [
+   "The current line is a lower-level markdown heading",
+   "The current line is a top-level markdown heading"
+  ],
+  [
+   "The active row contains a deeply nested markdown header.",
+   "The active row contains a shallowly nested markdown header."
+  ],
+  [
+   "This text is currently situated within a low-level markdown section title.",
+   "This text is currently situated within a high-level markdown section title."
+  ],
+  [
+   "We are now parsing a deeply nested markdown header.",
+   "We are now parsing a shallowly nested markdown header."
+  ],
+  [
+   "Reading deep markdown heading text.",
+   "Reading shallow markdown heading text."
+  ],
+  [
+   "Processing has advanced into the current document, and the focus rests within a deeper markdown heading.",
+   "Processing has advanced into the current document, and the focus rests within a shallower markdown heading."
+  ],
+  [
+   "The author is working inside a lower-tier markdown header at this point.",
+   "The author is working inside an upper-tier markdown header at this point."
+  ],
+  [
+   "The model is reading a deep-tier markdown heading.",
+   "The model is reading a top-tier markdown heading."
+  ],
+  [
+   "Current state: location inside a subordinate markdown heading.",
+   "Current state: location inside a principal markdown heading."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.5075,
+ "span_gap": 0.10286392271518707,
+ "readable": 0.6315625,
+ "prior": {
+  "readable": 0.6315625,
+  "span": 0.5075,
+  "span_gap": 0.10286392271518707,
+  "stmt": 0.03281526640057564,
+  "used_z": null
+ },
+ "wall_s": 1.8
+}

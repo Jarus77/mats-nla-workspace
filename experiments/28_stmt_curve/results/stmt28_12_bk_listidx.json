@@ -1,0 +1,96 @@
+{
+ "experiment": "12",
+ "feature": "bk_listidx",
+ "key": "12_bk_listidx",
+ "type": "structural",
+ "stated": 0.246875,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 24.355806350708008,
+ "shift": {
+  "fixed": 0.22428670525550842,
+  "n_para": 8,
+  "para_mean": 0.1439170753583312,
+  "para_min": 0.08134032040834427,
+  "para_max": 0.22510547935962677,
+  "para_sd": 0.04612223964982833,
+  "para_range": 0.1437651589512825
+ },
+ "shifts_para": [
+  0.18835175037384033,
+  0.1262567937374115,
+  0.22510547935962677,
+  0.1483325958251953,
+  0.10053667426109314,
+  0.08134032040834427,
+  0.1500639021396637,
+  0.1313490867614746
+ ],
+ "stmt_cos_fixed": 0.28841108083724976,
+ "stmt_cos_para": [
+  0.30876314640045166,
+  0.23317192494869232,
+  0.28420209884643555,
+  0.2005544751882553,
+  0.17209334671497345,
+  0.17758578062057495,
+  0.2984336018562317,
+  0.2337353229522705
+ ],
+ "statements": [
+  [
+   "This is item number two in the list",
+   "This is item number nine in the list"
+  ],
+  [
+   "The cursor sits at the end of the second bullet entry",
+   "The cursor sits at the end of the tenth bullet entry"
+  ],
+  [
+   "The text is currently presenting the third bullet point in its sequence",
+   "The text is currently presenting the eleventh bullet point in its sequence"
+  ],
+  [
+   "We are now finishing the second item in the unnumbered list",
+   "We are now finishing the ninth item in the unnumbered list"
+  ],
+  [
+   "Currently reaching third list item",
+   "Currently reaching twelfth list item"
+  ],
+  [
+   "The passage proceeds down the unnumbered catalog, and the current token finishes the second bullet point in the series",
+   "The passage proceeds down the unnumbered catalog, and the current token finishes the tenth bullet point in the series"
+  ],
+  [
+   "Note that the parser has just processed the final token of the third listed item",
+   "Note that the parser has just processed the final token of the eighth listed item"
+  ],
+  [
+   "The model is reading the conclusion of the second bullet entry",
+   "The model is reading the conclusion of the ninth bullet entry"
+  ],
+  [
+   "Current state: completion of the third bulleted entry in the list",
+   "Current state: completion of the tenth bulleted entry in the list"
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "The text is ... or This text ...",
+  "We are currently ... or We are now ...",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "The model is reading ... or The reader is at ...",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.999375,
+ "span_gap": 0.2707943916320801,
+ "readable": 0.99984375,
+ "prior": {
+  "stmt": 0.23191747069358826,
+  "stmt_source": "exp14"
+ },
+ "wall_s": 2.7
+}

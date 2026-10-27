@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "agr_gender",
+ "key": "12_agr_gender",
+ "type": "structural",
+ "stated": 0.090625,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 16.962106704711914,
+ "shift": {
+  "fixed": 0.1421726644039154,
+  "n_para": 8,
+  "para_mean": 0.08073398470878601,
+  "para_min": 0.03315933793783188,
+  "para_max": 0.1736738681793213,
+  "para_sd": 0.0450734954344565,
+  "para_range": 0.1405145302414894
+ },
+ "shifts_para": [
+  0.1736738681793213,
+  0.07489932328462601,
+  0.06961964070796967,
+  0.11949332803487778,
+  0.03315933793783188,
+  0.0670093446969986,
+  0.04934775456786156,
+  0.058669280260801315
+ ],
+ "stmt_cos_fixed": 0.2271399050951004,
+ "stmt_cos_para": [
+  0.23560214042663574,
+  0.15612679719924927,
+  0.14789794385433197,
+  0.22217771410942078,
+  0.21344536542892456,
+  0.17388765513896942,
+  0.1424066722393036,
+  0.15604037046432495
+ ],
+ "statements": [
+  [
+   "The next word is a masculine noun",
+   "The next word is a feminine noun"
+  ],
+  [
+   "The following token is a masculine noun.",
+   "The following token is a feminine noun."
+  ],
+  [
+   "This text proceeds directly into a masculine noun.",
+   "This text proceeds directly into a feminine noun."
+  ],
+  [
+   "We are now anticipating an upcoming masculine noun.",
+   "We are now anticipating an upcoming feminine noun."
+  ],
+  [
+   "Next noun is masculine.",
+   "Next noun is feminine."
+  ],
+  [
+   "The article has just been processed, and the subsequent noun to follow immediately in sequence is masculine.",
+   "The article has just been processed, and the subsequent noun to follow immediately in sequence is feminine."
+  ],
+  [
+   "The author notes that the sentence continues with a masculine noun right after the article.",
+   "The author notes that the sentence continues with a feminine noun right after the article."
+  ],
+  [
+   "The model is reading right before a masculine noun.",
+   "The model is reading right before a feminine noun."
+  ],
+  [
+   "Current state: poised immediately before a masculine noun.",
+   "Current state: poised immediately before a feminine noun."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.99859375,
+ "span_gap": 0.5942400693893433,
+ "readable": 1.0,
+ "prior": {},
+ "wall_s": 2.8
+}

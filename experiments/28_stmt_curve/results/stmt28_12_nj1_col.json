@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "nj1_col",
+ "key": "12_nj1_col",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 12.008103370666504,
+ "shift": {
+  "fixed": -0.08697730302810669,
+  "n_para": 8,
+  "para_mean": -0.018287062310264446,
+  "para_min": -0.06334345042705536,
+  "para_max": 0.005349728278815746,
+  "para_sd": 0.02316477234933033,
+  "para_range": 0.0686931787058711
+ },
+ "shifts_para": [
+  -0.019462203606963158,
+  -0.03520258516073227,
+  0.0041922880336642265,
+  0.005349728278815746,
+  -0.001857481081970036,
+  -0.01075722835958004,
+  -0.06334345042705536,
+  -0.025215566158294678
+ ],
+ "stmt_cos_fixed": -0.04428495094180107,
+ "stmt_cos_para": [
+  -0.012997295707464218,
+  -0.04712674021720886,
+  0.006143338978290558,
+  0.0070204827934503555,
+  -0.0036487143952399492,
+  -0.018768880516290665,
+  -0.04202432930469513,
+  -0.02922561578452587
+ ],
+ "statements": [
+  [
+   "The current position is at the start of a line",
+   "The current position is near the end of a long line"
+  ],
+  [
+   "The active token sits near the beginning of the line.",
+   "The active token sits far toward the end of the line."
+  ],
+  [
+   "This text is being processed only a few characters past the preceding line break.",
+   "This text is being processed dozens of characters past the preceding line break."
+  ],
+  [
+   "We are currently inspecting a column very close to the left margin.",
+   "We are currently inspecting a column very far from the left margin."
+  ],
+  [
+   "Cursor resides near line start.",
+   "Cursor resides near line end."
+  ],
+  [
+   "The processor encounters the character shortly after the latest newline, and the line offset remains relatively small.",
+   "The processor encounters the character long after the latest newline, and the line offset remains relatively large."
+  ],
+  [
+   "The reviewer notes that the selected character occurs at an early column within the wrapped row.",
+   "The reviewer notes that the selected character occurs at an advanced column within the wrapped row."
+  ],
+  [
+   "The model is reading an element positioned just after the initial break.",
+   "The model is reading an element positioned deep across the extended line."
+  ],
+  [
+   "Current state: low column index along the wrapped segment.",
+   "Current state: high column index along the wrapped segment."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.43703125,
+ "span_gap": 0.21155484020709991,
+ "readable": 0.6671875,
+ "prior": {},
+ "wall_s": 41.9
+}

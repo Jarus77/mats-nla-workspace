@@ -1,0 +1,96 @@
+{
+ "experiment": "13",
+ "feature": "tb_tablecol",
+ "key": "13_tb_tablecol",
+ "type": "structural",
+ "stated": 0.40625,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 22.037874221801758,
+ "shift": {
+  "fixed": 0.06637889891862869,
+  "n_para": 8,
+  "para_mean": 0.04873573512304574,
+  "para_min": 0.012322180904448032,
+  "para_max": 0.0867222249507904,
+  "para_sd": 0.02369015145444232,
+  "para_range": 0.07440004404634237
+ },
+ "shifts_para": [
+  0.055884916335344315,
+  0.06336388736963272,
+  0.03347015008330345,
+  0.06452249735593796,
+  0.0867222249507904,
+  0.012322180904448032,
+  0.028819847851991653,
+  0.044780176132917404
+ ],
+ "stmt_cos_fixed": 0.09282396733760834,
+ "stmt_cos_para": [
+  0.08756197988986969,
+  0.10281349718570709,
+  0.06269283592700958,
+  0.1311325579881668,
+  0.1208665519952774,
+  0.0363510362803936,
+  0.05853166803717613,
+  0.10068127512931824
+ ],
+ "statements": [
+  [
+   "The current cell is in the first column of the table",
+   "The current cell is in the fifth column of the table"
+  ],
+  [
+   "The active entry is located in the first column of the grid.",
+   "The active entry is located in the fifth column of the grid."
+  ],
+  [
+   "This text presents table data where the focus lies in the first column.",
+   "This text presents table data where the focus lies in the fifth column."
+  ],
+  [
+   "We are currently scanning a cell positioned within the first column.",
+   "We are currently scanning a cell positioned within the fifth column."
+  ],
+  [
+   "Cell belongs to first column.",
+   "Cell belongs to fifth column."
+  ],
+  [
+   "The parser is inspecting a tabular row, and the selected data segment falls precisely into the first column.",
+   "The parser is inspecting a tabular row, and the selected data segment falls precisely into the fifth column."
+  ],
+  [
+   "The author notes that this specific element resides in the first column.",
+   "The author notes that this specific element resides in the fifth column."
+  ],
+  [
+   "The model is reading content from the first column.",
+   "The model is reading content from the fifth column."
+  ],
+  [
+   "Position: a data item situated inside the first column.",
+   "Position: a data item situated inside the fifth column."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.9471875,
+ "span_gap": 0.1713155061006546,
+ "readable": 1.0,
+ "prior": {
+  "stmt": 0.07140602916479111,
+  "stmt_source": "exp14"
+ },
+ "wall_s": 1.9
+}

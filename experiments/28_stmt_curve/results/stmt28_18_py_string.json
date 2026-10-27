@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "py_string",
+ "key": "18_py_string",
+ "type": "structural",
+ "stated": 0.028125,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 47.19620895385742,
+ "shift": {
+  "fixed": 0.005612056236714125,
+  "n_para": 8,
+  "para_mean": 0.003011108288774267,
+  "para_min": -0.010039964690804482,
+  "para_max": 0.008271124213933945,
+  "para_sd": 0.006006645356333476,
+  "para_range": 0.018311088904738426
+ },
+ "shifts_para": [
+  0.006547379307448864,
+  0.008271124213933945,
+  0.007415234111249447,
+  0.0005676314467564225,
+  -0.010039964690804482,
+  0.0012508094077929854,
+  0.0033996908459812403,
+  0.006676961667835712
+ ],
+ "stmt_cos_fixed": 0.011544499546289444,
+ "stmt_cos_para": [
+  0.01850622519850731,
+  0.04305165261030197,
+  0.024921825155615807,
+  0.0019145740661770105,
+  -0.03518207371234894,
+  0.004826929420232773,
+  0.01655621826648712,
+  0.019869498908519745
+ ],
+ "statements": [
+  [
+   "The current position is inside a string literal",
+   "The current position is outside a string literal"
+  ],
+  [
+   "The active token sits within a string literal.",
+   "The active token sits beyond a string literal."
+  ],
+  [
+   "This text is currently being parsed within an open string literal.",
+   "This text is currently being parsed after an open string literal."
+  ],
+  [
+   "We are currently scanning code within a string literal.",
+   "We are currently scanning code outside a string literal."
+  ],
+  [
+   "Cursor rests within string literal.",
+   "Cursor rests outside string literal."
+  ],
+  [
+   "The parser analyzes the underlying source code, and execution continues within the boundaries of a string literal.",
+   "The parser analyzes the underlying source code, and execution continues past the boundaries of a string literal."
+  ],
+  [
+   "The author placed the caret inside the string literal here.",
+   "The author placed the caret outside the string literal here."
+  ],
+  [
+   "The model is reading characters from within a string literal.",
+   "The model is reading characters from outside a string literal."
+  ],
+  [
+   "Current state: located inside a string literal.",
+   "Current state: located outside a string literal."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.980625,
+ "span_gap": 0.06735193729400635,
+ "readable": 1.0,
+ "prior": {
+  "readable": 1.0,
+  "span": 0.98078125,
+  "span_gap": 0.06735193729400635,
+  "stmt": 0.00525678088888526,
+  "used_z": -12.244041980096375
+ },
+ "wall_s": 1.5
+}

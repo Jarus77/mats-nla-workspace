@@ -1,0 +1,99 @@
+{
+ "experiment": "19",
+ "feature": "md_list",
+ "key": "19_md_list",
+ "type": "structural",
+ "stated": 0.040625,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 10.349419593811035,
+ "shift": {
+  "fixed": 0.06145825237035751,
+  "n_para": 8,
+  "para_mean": 0.026465470669791102,
+  "para_min": -0.026568017899990082,
+  "para_max": 0.05734169855713844,
+  "para_sd": 0.02988312781714278,
+  "para_range": 0.08390971645712852
+ },
+ "shifts_para": [
+  0.05734169855713844,
+  0.05137968808412552,
+  -0.026568017899990082,
+  0.03707486763596535,
+  0.0402548611164093,
+  -0.010853571817278862,
+  0.03920658677816391,
+  0.023887652903795242
+ ],
+ "stmt_cos_fixed": 0.043189674615859985,
+ "stmt_cos_para": [
+  0.0447063148021698,
+  0.046975038945674896,
+  -0.027628879994153976,
+  0.022125203162431717,
+  0.050030168145895004,
+  -0.01991346850991249,
+  0.03418978303670883,
+  0.01917850412428379
+ ],
+ "statements": [
+  [
+   "The current line is a nested list item",
+   "The current line is a top-level list item"
+  ],
+  [
+   "The active bullet point is an indented list entry",
+   "The active bullet point is a root list entry"
+  ],
+  [
+   "This text features an active focus inside a nested list element",
+   "This text features an active focus inside a top-level list element"
+  ],
+  [
+   "We are now parsing a few words into an indented list item",
+   "We are now parsing a few words into a top-level list item"
+  ],
+  [
+   "Cursor is within nested list",
+   "Cursor is within top-level list"
+  ],
+  [
+   "The parser is traversing the document content, and the current location resides inside an indented list item rather than elsewhere",
+   "The parser is traversing the document content, and the current location resides inside a top-level list item rather than elsewhere"
+  ],
+  [
+   "The author notes that this segment resides inside a nested bullet",
+   "The author notes that this segment resides inside a top-level bullet"
+  ],
+  [
+   "The model is reading tokens within an indented list entry",
+   "The model is reading tokens within a top-level list entry"
+  ],
+  [
+   "Position: a few tokens inside an indented list entry",
+   "Position: a few tokens inside a top-level list entry"
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.638125,
+ "span_gap": 0.1784321665763855,
+ "readable": 0.646875,
+ "prior": {
+  "readable": 0.646875,
+  "span": 0.638125,
+  "span_gap": 0.1784321665763855,
+  "stmt": 0.06663967669010162,
+  "used_z": null
+ },
+ "wall_s": 1.4
+}

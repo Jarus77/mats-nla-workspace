@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "nj1_col_break",
+ "key": "12_nj1_col_break",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 16.512502670288086,
+ "shift": {
+  "fixed": -0.005741933360695839,
+  "n_para": 8,
+  "para_mean": 0.007500069448724389,
+  "para_min": -0.01602456346154213,
+  "para_max": 0.03413962945342064,
+  "para_sd": 0.014327712212603406,
+  "para_range": 0.05016419291496277
+ },
+ "shifts_para": [
+  0.007774191442877054,
+  0.004090546630322933,
+  0.03413962945342064,
+  0.00808087270706892,
+  -0.002746234182268381,
+  -0.01602456346154213,
+  0.010109702125191689,
+  0.014576410874724388
+ ],
+ "stmt_cos_fixed": -0.022200070321559906,
+ "stmt_cos_para": [
+  0.02140606753528118,
+  0.011270955204963684,
+  0.058627910912036896,
+  0.025801226496696472,
+  -0.0037665478885173798,
+  -0.027714548632502556,
+  0.027474554255604744,
+  0.02318410947918892
+ ],
+ "statements": [
+  [
+   "A line break is coming",
+   "A line break is not coming yet"
+  ],
+  [
+   "An automatic line wrap will occur shortly.",
+   "An automatic line wrap will occur much later."
+  ],
+  [
+   "This text is approaching an immediate soft break point.",
+   "This text is approaching a distant soft break point."
+  ],
+  [
+   "We are currently nearing the wrap limit within just a few characters.",
+   "We are currently nearing the wrap limit with ample characters remaining."
+  ],
+  [
+   "Wrapping happens soon.",
+   "Wrapping happens later."
+  ],
+  [
+   "The cursor advances along the current row, and linewrap triggers right away.",
+   "The cursor advances along the current row, and linewrap triggers far ahead."
+  ],
+  [
+   "The author notes the active character location is imminent regarding linewrapping boundaries.",
+   "The author notes the active character location is remote regarding linewrapping boundaries."
+  ],
+  [
+   "The model is reading right before a triggered linewrap.",
+   "The model is reading well before a triggered linewrap."
+  ],
+  [
+   "Current state: automatic wrapping is close.",
+   "Current state: automatic wrapping is distant."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.48078125,
+ "span_gap": 0.1305372565984726,
+ "readable": 0.94015625,
+ "prior": {},
+ "wall_s": 3.3
+}

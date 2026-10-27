@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "bk_code",
+ "key": "12_bk_code",
+ "type": "self_inducing",
+ "stated": 0.821875,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 13.44710922241211,
+ "shift": {
+  "fixed": 0.2753921151161194,
+  "n_para": 8,
+  "para_mean": 0.1557423914782703,
+  "para_min": 0.06063971295952797,
+  "para_max": 0.22635968029499054,
+  "para_sd": 0.05860788931242394,
+  "para_range": 0.16571996733546257
+ },
+ "shifts_para": [
+  0.17238110303878784,
+  0.15878991782665253,
+  0.1424887776374817,
+  0.21829071640968323,
+  0.22635968029499054,
+  0.06063971295952797,
+  0.08528227359056473,
+  0.18170695006847382
+ ],
+ "stmt_cos_fixed": 0.22559086978435516,
+ "stmt_cos_para": [
+  0.1906423270702362,
+  0.2005234658718109,
+  0.1801835149526596,
+  0.19986985623836517,
+  0.18761877715587616,
+  0.11883504688739777,
+  0.18985125422477722,
+  0.19148656725883484
+ ],
+ "statements": [
+  [
+   "The code is written in Python",
+   "The code is written in JavaScript"
+  ],
+  [
+   "The snippet is composed in Python.",
+   "The snippet is composed in JavaScript."
+  ],
+  [
+   "This text represents a program authored in Python.",
+   "This text represents a program authored in JavaScript."
+  ],
+  [
+   "We are currently examining source lines implemented in Python.",
+   "We are currently examining source lines implemented in JavaScript."
+  ],
+  [
+   "Source code uses Python.",
+   "Source code uses JavaScript."
+  ],
+  [
+   "The current script implements standard software functions, and the underlying syntax clearly follows Python.",
+   "The current script implements standard software functions, and the underlying syntax clearly follows JavaScript."
+  ],
+  [
+   "The reviewer notes that the author wrote this segment in Python.",
+   "The reviewer notes that the author wrote this segment in JavaScript."
+  ],
+  [
+   "The model is reading instructions defined in Python.",
+   "The model is reading instructions defined in JavaScript."
+  ],
+  [
+   "Current state: implementation in Python.",
+   "Current state: implementation in JavaScript."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.9996875,
+ "span_gap": 0.48138007521629333,
+ "readable": 0.981875,
+ "prior": {},
+ "wall_s": 2.4
+}

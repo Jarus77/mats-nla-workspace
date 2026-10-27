@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "latex_math",
+ "key": "18_latex_math",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 66.6331558227539,
+ "shift": {
+  "fixed": 0.006319291424006224,
+  "n_para": 8,
+  "para_mean": 0.007470019409083761,
+  "para_min": -0.006423672661185265,
+  "para_max": 0.01793181151151657,
+  "para_sd": 0.010107121628502039,
+  "para_range": 0.024355484172701836
+ },
+ "shifts_para": [
+  -0.004530857317149639,
+  -0.0019079846097156405,
+  0.017780842259526253,
+  0.012514831498265266,
+  0.013640244491398335,
+  -0.006423672661185265,
+  0.01075494010001421,
+  0.01793181151151657
+ ],
+ "stmt_cos_fixed": 0.020635059103369713,
+ "stmt_cos_para": [
+  -0.015951938927173615,
+  -0.007277078926563263,
+  0.06826726347208023,
+  0.06837673485279083,
+  0.06323740631341934,
+  -0.035848479717969894,
+  0.039288222789764404,
+  0.06931930035352707
+ ],
+ "statements": [
+  [
+   "The current position is inside a LaTeX math expression",
+   "The current position is outside a LaTeX math expression"
+  ],
+  [
+   "The active token lies within a LaTeX formula",
+   "The active token lies beyond a LaTeX formula"
+  ],
+  [
+   "This text is currently being parsed inside a mathematical expression",
+   "This text is currently being parsed outside a mathematical expression"
+  ],
+  [
+   "We are now processing content inside a TeX math environment",
+   "We are now processing content outside a TeX math environment"
+  ],
+  [
+   "Located inside a math span",
+   "Located outside a math span"
+  ],
+  [
+   "The parser is traversing the document stream, and the target location falls entirely inside an inline LaTeX math block",
+   "The parser is traversing the document stream, and the target location falls entirely outside an inline LaTeX math block"
+  ],
+  [
+   "The author placed the cursor inside the LaTeX equation delimiter",
+   "The author placed the cursor outside the LaTeX equation delimiter"
+  ],
+  [
+   "The model is reading tokens positioned inside a math mode segment",
+   "The model is reading tokens positioned outside a math mode segment"
+  ],
+  [
+   "Current state: situated inside a LaTeX math environment",
+   "Current state: situated outside a LaTeX math environment"
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.99984375,
+ "span_gap": 0.07366807758808136,
+ "readable": 1.0,
+ "prior": {
+  "readable": 1.0,
+  "span": 0.99984375,
+  "span_gap": 0.07366807758808136,
+  "stmt": 0.006002375390380621,
+  "used_z": 22.149181327288826
+ },
+ "wall_s": 1.4
+}

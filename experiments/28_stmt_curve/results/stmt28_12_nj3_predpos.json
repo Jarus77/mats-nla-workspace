@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "nj3_predpos",
+ "key": "12_nj3_predpos",
+ "type": "structural",
+ "stated": 0.30625,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 12.879557609558105,
+ "shift": {
+  "fixed": 0.21027421951293945,
+  "n_para": 8,
+  "para_mean": 0.13908953266218305,
+  "para_min": 0.058221105486154556,
+  "para_max": 0.2175445407629013,
+  "para_sd": 0.051757777219556926,
+  "para_range": 0.15932343527674675
+ },
+ "shifts_para": [
+  0.18132811784744263,
+  0.17671795189380646,
+  0.11359171569347382,
+  0.2175445407629013,
+  0.058221105486154556,
+  0.12120959907770157,
+  0.09649018198251724,
+  0.1476130485534668
+ ],
+ "stmt_cos_fixed": 0.2817228138446808,
+ "stmt_cos_para": [
+  0.25823795795440674,
+  0.29955464601516724,
+  0.2265075296163559,
+  0.2727397680282593,
+  0.11900853365659714,
+  0.18625196814537048,
+  0.21461306512355804,
+  0.25788411498069763
+ ],
+ "statements": [
+  [
+   "The next word is likely an adjective",
+   "The next word is likely a noun"
+  ],
+  [
+   "The upcoming token will probably be an adjective.",
+   "The upcoming token will probably be a noun."
+  ],
+  [
+   "This text is poised to continue with an adjective.",
+   "This text is poised to continue with a noun."
+  ],
+  [
+   "We are now anticipating an adjective next.",
+   "We are now anticipating a noun next."
+  ],
+  [
+   "Next word is an adjective.",
+   "Next word is a noun."
+  ],
+  [
+   "The prompt ends at this juncture, and the language model assigns highest probability to generating an adjective next.",
+   "The prompt ends at this juncture, and the language model assigns highest probability to generating a noun next."
+  ],
+  [
+   "The reviewer notes that the context here strongly predicts an adjective.",
+   "The reviewer notes that the context here strongly predicts a noun."
+  ],
+  [
+   "The model is reading up to a point immediately preceding an adjective.",
+   "The model is reading up to a point immediately preceding a noun."
+  ],
+  [
+   "Predicted next part of speech: adjective.",
+   "Predicted next part of speech: noun."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "The text is ... or This text ...",
+  "We are currently ... or We are now ...",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "The model is reading ... or The reader is at ...",
+  "passive voice or a nominal phrase"
+ ],
+ "span": 0.7428125,
+ "span_gap": 0.44257450103759766,
+ "readable": 0.75453125,
+ "prior": {},
+ "wall_s": 2.5
+}

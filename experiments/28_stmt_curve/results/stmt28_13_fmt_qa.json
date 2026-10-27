@@ -1,0 +1,93 @@
+{
+ "experiment": "13",
+ "feature": "fmt_qa",
+ "key": "13_fmt_qa",
+ "type": "structural",
+ "stated": 0.040625,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 12.81637191772461,
+ "shift": {
+  "fixed": 0.011996795423328876,
+  "n_para": 8,
+  "para_mean": 0.0281084073940292,
+  "para_min": -0.006162658333778381,
+  "para_max": 0.14310070872306824,
+  "para_sd": 0.04930877433067344,
+  "para_range": 0.14926336705684662
+ },
+ "shifts_para": [
+  0.010969873517751694,
+  0.027152609080076218,
+  -0.001795952906832099,
+  0.042463235557079315,
+  0.012271574698388577,
+  0.14310070872306824,
+  -0.006162658333778381,
+  -0.0031321311835199594
+ ],
+ "stmt_cos_fixed": 0.006641298998147249,
+ "stmt_cos_para": [
+  0.007092764601111412,
+  0.015053226612508297,
+  -0.0009734234772622585,
+  0.019785603508353233,
+  0.008377879858016968,
+  0.08355381339788437,
+  -0.0049081966280937195,
+  -0.002879813779145479
+ ],
+ "statements": [
+  [
+   "The text is formatted as a question and answer",
+   "The text is formatted as plain prose"
+  ],
+  [
+   "The passage is structured as a question and answer.",
+   "The passage is structured as standard prose."
+  ],
+  [
+   "This text presents a question-and-answer exchange.",
+   "This text presents continuous prose."
+  ],
+  [
+   "We are currently reading a question and answer layout.",
+   "We are currently reading a plain prose layout."
+  ],
+  [
+   "Layout is question and answer.",
+   "Layout is continuous prose."
+  ],
+  [
+   "The current tokens fall several words into the response, and the surrounding layout follows a question and answer format.",
+   "The current tokens fall several words into the response, and the surrounding layout follows a continuous prose format."
+  ],
+  [
+   "The author places this token segment inside a question-and-answer dialogue.",
+   "The author places this token segment inside standard running prose."
+  ],
+  [
+   "The model is reading an excerpt formatted as question and answer.",
+   "The model is reading an excerpt formatted as ordinary prose."
+  ],
+  [
+   "Current state: presentation in question and answer style.",
+   "Current state: presentation in plain prose style."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.60015625,
+ "span_gap": 0.22355273365974426,
+ "readable": 0.92515625,
+ "prior": {},
+ "wall_s": 2.4
+}

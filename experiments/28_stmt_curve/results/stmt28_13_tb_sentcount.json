@@ -1,0 +1,93 @@
+{
+ "experiment": "13",
+ "feature": "tb_sentcount",
+ "key": "13_tb_sentcount",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 16.53703498840332,
+ "shift": {
+  "fixed": 0.11453401297330856,
+  "n_para": 8,
+  "para_mean": 0.1676706257276237,
+  "para_min": 0.053152281790971756,
+  "para_max": 0.28954389691352844,
+  "para_sd": 0.0802633920751071,
+  "para_range": 0.2363916151225567
+ },
+ "shifts_para": [
+  0.13490824401378632,
+  0.16627401113510132,
+  0.1856338083744049,
+  0.08663009852170944,
+  0.2632227838039398,
+  0.053152281790971756,
+  0.1619998812675476,
+  0.28954389691352844
+ ],
+ "stmt_cos_fixed": 0.15315894782543182,
+ "stmt_cos_para": [
+  0.16570217907428741,
+  0.2167605459690094,
+  0.17063504457473755,
+  0.22130024433135986,
+  0.3715611398220062,
+  0.05477166175842285,
+  0.2454625815153122,
+  0.29193684458732605
+ ],
+ "statements": [
+  [
+   "This is the second sentence of the paragraph",
+   "This is the sixth sentence of the paragraph"
+  ],
+  [
+   "The current location represents the first sentence of the paragraph.",
+   "The current location represents the fifth sentence of the paragraph."
+  ],
+  [
+   "This text is currently progressing through its second sentence of the paragraph.",
+   "This text is currently progressing through its seventh sentence of the paragraph."
+  ],
+  [
+   "We are now processing the first sentence of the paragraph.",
+   "We are now processing the sixth sentence of the paragraph."
+  ],
+  [
+   "Located in sentence two.",
+   "Located in sentence five."
+  ],
+  [
+   "The parser is evaluating tokens within the second sentence of the paragraph, and several words have already been successfully processed.",
+   "The parser is evaluating tokens within the eighth sentence of the paragraph, and several words have already been successfully processed."
+  ],
+  [
+   "The reviewer notes that the segment belongs to the first sentence of the paragraph.",
+   "The reviewer notes that the segment belongs to the sixth sentence of the paragraph."
+  ],
+  [
+   "The model is reading tokens within the second sentence of the paragraph.",
+   "The model is reading tokens within the fifth sentence of the paragraph."
+  ],
+  [
+   "Current state: reading within the first sentence of the paragraph.",
+   "Current state: reading within the seventh sentence of the paragraph."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.6140625,
+ "span_gap": 0.22836460173130035,
+ "readable": 0.92046875,
+ "prior": {},
+ "wall_s": 3.1
+}

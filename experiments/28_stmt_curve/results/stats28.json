@@ -1,0 +1,194 @@
+{
+ "n_rows": 47,
+ "correlations": {
+  "all": {
+   "n": 47,
+   "spearman": {
+    "rho": 0.40379172816558234,
+    "p": 0.0058497075146242685,
+    "n": 47
+   },
+   "pearson": {
+    "r": 0.6927434083522135,
+    "p": 9.99950002499875e-05,
+    "n": 47
+   }
+  },
+  "self_inducing": {
+   "n": 6,
+   "spearman": {
+    "rho": 0.5428571428571429,
+    "p": 0.3017849107544623,
+    "n": 6
+   },
+   "pearson": {
+    "r": 0.5722794520684549,
+    "p": 0.20208989550522474,
+    "n": 6
+   }
+  },
+  "structural": {
+   "n": 41,
+   "spearman": {
+    "rho": 0.27757155866972416,
+    "p": 0.0776461176941153,
+    "n": 41
+   },
+   "pearson": {
+    "r": 0.2598872364242226,
+    "p": 0.10119494025298735,
+    "n": 41
+   }
+  },
+  "without_language_rows": {
+   "n": 43,
+   "spearman": {
+    "rho": 0.23221613152678525,
+    "p": 0.13609319534023298,
+    "n": 43
+   },
+   "pearson": {
+    "r": 0.189605351921956,
+    "p": 0.22388880555972202,
+    "n": 43
+   }
+  },
+  "all_fixed_shift": {
+   "n": 47,
+   "spearman": {
+    "rho": 0.47380635038858543,
+    "p": 0.0010499475026248687,
+    "n": 47
+   },
+   "pearson": {
+    "r": 0.6837419101559188,
+    "p": 4.999750012499375e-05,
+    "n": 47
+   }
+  }
+ },
+ "bands_para_mean": [
+  {
+   "band": "< 0.10",
+   "n": 32,
+   "mean_stated": 0.0884765625,
+   "min_stated": 0.0,
+   "max_stated": 0.40625
+  },
+  {
+   "band": "0.10 to 0.25",
+   "n": 13,
+   "mean_stated": 0.21971153846153849,
+   "min_stated": 0.0,
+   "max_stated": 0.821875
+  },
+  {
+   "band": ">= 0.25",
+   "n": 2,
+   "mean_stated": 0.878125,
+   "min_stated": 0.80625,
+   "max_stated": 0.95
+  }
+ ],
+ "bands_fixed": [
+  {
+   "band": "< 0.10",
+   "n": 26,
+   "mean_stated": 0.07908653846153846,
+   "min_stated": 0.0,
+   "max_stated": 0.40625
+  },
+  {
+   "band": "0.10 to 0.25",
+   "n": 15,
+   "mean_stated": 0.12625,
+   "min_stated": 0.0,
+   "max_stated": 0.30625
+  },
+  {
+   "band": ">= 0.25",
+   "n": 6,
+   "mean_stated": 0.5822916666666668,
+   "min_stated": 0.071875,
+   "max_stated": 0.95
+  }
+ ],
+ "auroc_stated_ge_0.30": {
+  "para_mean": 0.7564102564102564,
+  "fixed": 0.7435897435897436,
+  "n_high": 8,
+  "n_low": 39
+ },
+ "logistic": {
+  "shift": {
+   "coef": [
+    -2.7322972895491406,
+    10.060793497631396
+   ],
+   "loglik": -1526.2520448221371,
+   "aic": 3056.5040896442742,
+   "k_params": 2,
+   "converged": true
+  },
+  "type": {
+   "coef": [
+    -2.199767813701558,
+    2.436280861679688
+   ],
+   "loglik": -1683.1666798723438,
+   "aic": 3370.3333597446876,
+   "k_params": 2,
+   "converged": true
+  },
+  "shift_plus_type": {
+   "coef": [
+    -2.634094984419659,
+    6.984508161562644,
+    1.0780325119345322
+   ],
+   "loglik": -1437.2690927556832,
+   "aic": 2880.5381855113665,
+   "k_params": 3,
+   "converged": true
+  },
+  "intercept_only": {
+   "coef": [
+    -1.6703489554199216
+   ],
+   "loglik": -2679.189447666141,
+   "aic": 5360.378895332282,
+   "k_params": 1,
+   "converged": true
+  },
+  "delta_aic_type_minus_shift": 313.8292701004134,
+  "note": "binomial logistic by IRLS; k = round(stated * n readouts); AIC = 2 params - 2 loglik; a lower AIC is better"
+ },
+ "paraphrase_range": {
+  "n_rows_range_over_0.15": 8,
+  "median_range": 0.09722581505775452,
+  "median_sd": 0.0330188452075204
+ },
+ "counter_rows": {
+  "12_bk_listidx": {
+   "para_mean": 0.1439170753583312,
+   "fixed": 0.22428670525550842,
+   "stated": 0.246875
+  },
+  "13_tb_tablecol": {
+   "para_mean": 0.04873573512304574,
+   "fixed": 0.06637889891862869,
+   "stated": 0.40625
+  },
+  "13_tb_paren": {
+   "para_mean": -0.0043510323157534,
+   "fixed": -0.04287548363208771,
+   "stated": 0.303125
+  },
+  "18_call_arg": {
+   "para_mean": 0.04834736161865294,
+   "fixed": 0.08288822323083878,
+   "stated": 0.325
+  }
+ },
+ "pending": []
+}

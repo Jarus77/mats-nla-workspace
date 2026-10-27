@@ -1,0 +1,99 @@
+{
+ "experiment": "22",
+ "feature": "js_string",
+ "key": "22_js_string",
+ "type": "structural",
+ "stated": 0.14375,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 20.653038024902344,
+ "shift": {
+  "fixed": 0.010265982709825039,
+  "n_para": 8,
+  "para_mean": 0.0024273550006910227,
+  "para_min": -0.011320415884256363,
+  "para_max": 0.0330025888979435,
+  "para_sd": 0.013945874919010197,
+  "para_range": 0.04432300478219986
+ },
+ "shifts_para": [
+  0.0330025888979435,
+  -0.0025801288429647684,
+  -0.005744961556047201,
+  -0.0008580824942328036,
+  0.004928648471832275,
+  0.008887166157364845,
+  -0.0068959747441112995,
+  -0.011320415884256363
+ ],
+ "stmt_cos_fixed": 0.009241253137588501,
+ "stmt_cos_para": [
+  0.04082018509507179,
+  -0.005642262287437916,
+  -0.008533368818461895,
+  -0.0014157891273498535,
+  0.006077168509364128,
+  0.012931996956467628,
+  -0.013333167880773544,
+  -0.01474170945584774
+ ],
+ "statements": [
+  [
+   "The current position is inside a string literal",
+   "The current position is outside a string literal"
+  ],
+  [
+   "The active token sits within a string literal.",
+   "The active token sits beyond a string literal."
+  ],
+  [
+   "This text is currently being evaluated within a string literal.",
+   "This text is currently being evaluated beyond a string literal."
+  ],
+  [
+   "We are currently parsing characters inside a string literal.",
+   "We are currently parsing characters outside a string literal."
+  ],
+  [
+   "Cursor resides within string literal.",
+   "Cursor resides beyond string literal."
+  ],
+  [
+   "The parser examines code tokens sequentially, and the current point falls directly inside an open string literal.",
+   "The parser examines code tokens sequentially, and the current point falls directly outside an open string literal."
+  ],
+  [
+   "The author places this identifier inside a string literal.",
+   "The author places this identifier outside a string literal."
+  ],
+  [
+   "The model is reading content inside a string literal.",
+   "The model is reading content outside a string literal."
+  ],
+  [
+   "Current state: located inside a string literal.",
+   "Current state: located outside a string literal."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "The text is ... or This text ...",
+  "We are currently ... or We are now ...",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "The model is reading ... or The reader is at ...",
+  "passive voice or a nominal phrase"
+ ],
+ "span": 0.76796875,
+ "span_gap": 0.1789109706878662,
+ "readable": 0.97609375,
+ "prior": {
+  "readable": 0.97609375,
+  "span": 0.76828125,
+  "span_gap": 0.17891095578670502,
+  "stmt": 0.008352115750312805,
+  "used_z": -1.9716506272622223
+ },
+ "wall_s": 1.8
+}

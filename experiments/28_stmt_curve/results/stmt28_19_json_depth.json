@@ -1,0 +1,99 @@
+{
+ "experiment": "19",
+ "feature": "json_depth",
+ "key": "19_json_depth",
+ "type": "structural",
+ "stated": 0.140625,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 18.134971618652344,
+ "shift": {
+  "fixed": 0.1483847051858902,
+  "n_para": 8,
+  "para_mean": 0.13516778126358986,
+  "para_min": 0.07620416581630707,
+  "para_max": 0.16833412647247314,
+  "para_sd": 0.027911908912577367,
+  "para_range": 0.09212996065616608
+ },
+ "shifts_para": [
+  0.12296043336391449,
+  0.1457800269126892,
+  0.07620416581630707,
+  0.1366996318101883,
+  0.13683563470840454,
+  0.1598616987466812,
+  0.16833412647247314,
+  0.1346665322780609
+ ],
+ "stmt_cos_fixed": 0.1436607539653778,
+ "stmt_cos_para": [
+  0.14562977850437164,
+  0.19754484295845032,
+  0.09623914957046509,
+  0.13568437099456787,
+  0.16673175990581512,
+  0.14192968606948853,
+  0.1971132755279541,
+  0.1351146548986435
+ ],
+ "statements": [
+  [
+   "The current value sits three levels deep in the JSON object",
+   "The current value sits at the top level in the JSON object"
+  ],
+  [
+   "The active string terminates three or more tiers deep inside the JSON hierarchy.",
+   "The active string terminates at the root level inside the JSON hierarchy."
+  ],
+  [
+   "This text contains an active focus point nested three or more levels deep within the JSON.",
+   "This text contains an active focus point placed at the outermost level within the JSON."
+  ],
+  [
+   "We are now parsing a string located three or more objects deep in the JSON structure.",
+   "We are now parsing a string located at the root tier in the JSON structure."
+  ],
+  [
+   "Target string sits deeply nested.",
+   "Target string sits top-level."
+  ],
+  [
+   "The parser has encountered the closing quote of a string, and it is positioned three layers deep in the JSON.",
+   "The parser has encountered the closing quote of a string, and it is positioned at the top level in the JSON."
+  ],
+  [
+   "The author places the end of this string three or more layers deep inside the JSON tree.",
+   "The author places the end of this string at the outermost level inside the JSON tree."
+  ],
+  [
+   "The model is reading the terminal quote of a string three or more objects deep in the JSON.",
+   "The model is reading the terminal quote of a string at the root level in the JSON."
+  ],
+  [
+   "Position: the closing quote of a string nested three or more tiers deep in the JSON.",
+   "Position: the closing quote of a string nested at the top level in the JSON."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.873125,
+ "span_gap": 0.2989184260368347,
+ "readable": 0.994375,
+ "prior": {
+  "readable": 0.994375,
+  "span": 0.8728125,
+  "span_gap": 0.2989184260368347,
+  "stmt": 0.14087273180484772,
+  "used_z": -1.97636039986889
+ },
+ "wall_s": 1.7
+}

@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "csv_col",
+ "key": "18_csv_col",
+ "type": "structural",
+ "stated": 0.128125,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 24.371370315551758,
+ "shift": {
+  "fixed": 0.10841108113527298,
+  "n_para": 8,
+  "para_mean": 0.04895235493313521,
+  "para_min": 0.010449131019413471,
+  "para_max": 0.08204704523086548,
+  "para_sd": 0.024660175572606788,
+  "para_range": 0.07159791421145201
+ },
+ "shifts_para": [
+  0.07524578273296356,
+  0.03435487672686577,
+  0.0680462047457695,
+  0.08204704523086548,
+  0.029139960184693336,
+  0.010449131019413471,
+  0.045150551944971085,
+  0.04718528687953949
+ ],
+ "stmt_cos_fixed": 0.15519508719444275,
+ "stmt_cos_para": [
+  0.17492243647575378,
+  0.05830776318907738,
+  0.11803950369358063,
+  0.13069307804107666,
+  0.06668789684772491,
+  0.017681390047073364,
+  0.07610028982162476,
+  0.09201617538928986
+ ],
+ "statements": [
+  [
+   "The current token is in the fourth field of the CSV row",
+   "The current token is in the first field of the CSV row"
+  ],
+  [
+   "The active symbol lies within the fourth column of the CSV record.",
+   "The active symbol lies within the first column of the CSV record."
+  ],
+  [
+   "This text is being processed at the fourth entry of the delimited row.",
+   "This text is being processed at the first entry of the delimited row."
+  ],
+  [
+   "We are currently parsing data inside the fourth value of the CSV row.",
+   "We are currently parsing data inside the first value of the CSV row."
+  ],
+  [
+   "Cursor is in fourth CSV field.",
+   "Cursor is in first CSV field."
+  ],
+  [
+   "The parser is evaluating the input line, and processing occurs specifically inside the fourth field of the CSV record.",
+   "The parser is evaluating the input line, and processing occurs specifically inside the first field of the CSV record."
+  ],
+  [
+   "The author notes that this pointer location corresponds to the fourth element of the CSV line.",
+   "The author notes that this pointer location corresponds to the first element of the CSV line."
+  ],
+  [
+   "The model is reading content located in the fourth cell of the CSV row.",
+   "The model is reading content located in the first cell of the CSV row."
+  ],
+  [
+   "Current state: position located inside the fourth item of the CSV row.",
+   "Current state: position located inside the first item of the CSV row."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.70984375,
+ "span_gap": 0.050722770392894745,
+ "readable": 1.0,
+ "prior": {
+  "readable": 1.0,
+  "span": 0.71125,
+  "span_gap": 0.050722770392894745,
+  "stmt": 0.10920575261116028,
+  "used_z": 0.2856008130428846
+ },
+ "wall_s": 1.6
+}

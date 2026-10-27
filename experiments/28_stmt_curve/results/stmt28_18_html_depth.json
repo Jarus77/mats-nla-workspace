@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "html_depth",
+ "key": "18_html_depth",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 14.806123733520508,
+ "shift": {
+  "fixed": 0.014385986141860485,
+  "n_para": 8,
+  "para_mean": 0.021294969250448048,
+  "para_min": 0.005237638019025326,
+  "para_max": 0.035677168518304825,
+  "para_sd": 0.009898819688470055,
+  "para_range": 0.0304395304992795
+ },
+ "shifts_para": [
+  0.005237638019025326,
+  0.035677168518304825,
+  0.019145963713526726,
+  0.01704544574022293,
+  0.014795767143368721,
+  0.033658452332019806,
+  0.02310965210199356,
+  0.02168966643512249
+ ],
+ "stmt_cos_fixed": 0.02356657385826111,
+ "stmt_cos_para": [
+  0.011232823133468628,
+  0.06799976527690887,
+  0.03262690454721451,
+  0.03629262000322342,
+  0.038369834423065186,
+  0.046190034598112106,
+  0.04699794203042984,
+  0.048396091908216476
+ ],
+ "statements": [
+  [
+   "The current text is nested three tags deep in the HTML",
+   "The current text is nested one tag deep in the HTML"
+  ],
+  [
+   "The active segment resides three tags deep within the HTML hierarchy.",
+   "The active segment resides one tag deep within the HTML hierarchy."
+  ],
+  [
+   "This text is enclosed by three open HTML tags.",
+   "This text is enclosed by one open HTML tag."
+  ],
+  [
+   "We are currently processing content located three levels deep in the HTML structure.",
+   "We are currently processing content located one level deep in the HTML structure."
+  ],
+  [
+   "Parsing under three open tags.",
+   "Parsing under one open tag."
+  ],
+  [
+   "The parser is inspecting body content, and the surrounding markup establishes a depth of three open tags.",
+   "The parser is inspecting body content, and the surrounding markup establishes a depth of one open tag."
+  ],
+  [
+   "The reviewer notes that the target node sits three tags down from the parent container.",
+   "The reviewer notes that the target node sits one tag down from the parent container."
+  ],
+  [
+   "The model is reading tokens placed inside three nested HTML elements.",
+   "The model is reading tokens placed inside one nested HTML element."
+  ],
+  [
+   "Position: context enclosed by three unclosed HTML tags.",
+   "Position: context enclosed by one unclosed HTML tag."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.770625,
+ "span_gap": 0.07944878935813904,
+ "readable": 1.0,
+ "prior": {
+  "readable": 1.0,
+  "span": 0.7703125,
+  "span_gap": 0.07944878935813904,
+  "stmt": 0.01623145304620266,
+  "used_z": -0.9822030811598585
+ },
+ "wall_s": 1.5
+}

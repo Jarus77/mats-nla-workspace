@@ -1,0 +1,99 @@
+{
+ "experiment": "19",
+ "feature": "html_depth",
+ "key": "19_html_depth",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 27.930381774902344,
+ "shift": {
+  "fixed": 0.03871499001979828,
+  "n_para": 8,
+  "para_mean": 0.03768957336433232,
+  "para_min": -0.03049129992723465,
+  "para_max": 0.110452800989151,
+  "para_sd": 0.045520199409118854,
+  "para_range": 0.14094410091638565
+ },
+ "shifts_para": [
+  -0.004423508420586586,
+  0.013787712901830673,
+  0.0838308036327362,
+  0.04437752440571785,
+  -0.03049129992723465,
+  0.043714556843042374,
+  0.04026799649000168,
+  0.110452800989151
+ ],
+ "stmt_cos_fixed": 0.11963863670825958,
+ "stmt_cos_para": [
+  -0.0271818358451128,
+  0.031029198318719864,
+  0.18175238370895386,
+  0.09705358743667603,
+  -0.09354963153600693,
+  0.1631200909614563,
+  0.1474982351064682,
+  0.162088543176651
+ ],
+ "statements": [
+  [
+   "The current text is nested three tags deep in the HTML",
+   "The current text is nested one tag deep in the HTML"
+  ],
+  [
+   "The active segment is located six layers down in the markup hierarchy.",
+   "The active segment is located two layers down in the markup hierarchy."
+  ],
+  [
+   "This text resides inside a heavily nested DOM element with many open parent tags.",
+   "This text resides inside a lightly nested DOM element with few open parent tags."
+  ],
+  [
+   "We are currently processing content buried deeply beneath six ancestral tags.",
+   "We are currently processing content placed shallowly beneath two ancestral tags."
+  ],
+  [
+   "Nesting depth is extremely deep.",
+   "Nesting depth is very shallow."
+  ],
+  [
+   "Parsing continues through the document tree, and the parser encounters text wrapped inside six or more enclosing elements.",
+   "Parsing continues through the document tree, and the parser encounters text wrapped inside two or fewer enclosing elements."
+  ],
+  [
+   "The author placed this content at a deep nesting level within the page structure.",
+   "The author placed this content at a shallow nesting level within the page structure."
+  ],
+  [
+   "The model is reading tokens within a deeply nested element context.",
+   "The model is reading tokens within a shallowly nested element context."
+  ],
+  [
+   "Position: deeply nested inside seven active elements.",
+   "Position: shallowly nested inside two active elements."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.7371875,
+ "span_gap": 0.21295280754566193,
+ "readable": 0.98828125,
+ "prior": {
+  "readable": 0.98828125,
+  "span": 0.7375,
+  "span_gap": 0.21295280754566193,
+  "stmt": 0.037303607910871506,
+  "used_z": -4.624671145021498
+ },
+ "wall_s": 1.7
+}

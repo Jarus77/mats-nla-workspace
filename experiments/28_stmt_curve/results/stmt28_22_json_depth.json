@@ -1,0 +1,99 @@
+{
+ "experiment": "22",
+ "feature": "json_depth",
+ "key": "22_json_depth",
+ "type": "structural",
+ "stated": 0.25,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 20.71834373474121,
+ "shift": {
+  "fixed": 0.13762468099594116,
+  "n_para": 8,
+  "para_mean": 0.14857267588377,
+  "para_min": 0.08518357574939728,
+  "para_max": 0.20256754755973816,
+  "para_sd": 0.03741334390929166,
+  "para_range": 0.11738397181034088
+ },
+ "shifts_para": [
+  0.1470748633146286,
+  0.12510429322719574,
+  0.1890970915555954,
+  0.08518357574939728,
+  0.20256754755973816,
+  0.1528662145137787,
+  0.12607641518115997,
+  0.16061140596866608
+ ],
+ "stmt_cos_fixed": 0.1522241234779358,
+ "stmt_cos_para": [
+  0.1862967312335968,
+  0.1253187358379364,
+  0.26456549763679504,
+  0.12181486189365387,
+  0.14214175939559937,
+  0.1462288200855255,
+  0.15419672429561615,
+  0.2007330358028412
+ ],
+ "statements": [
+  [
+   "The current value sits three levels deep in the JSON object",
+   "The current value sits at the top level in the JSON object"
+  ],
+  [
+   "The active string entry terminates at least three objects deep in the hierarchy.",
+   "The active string entry terminates right at the root level in the hierarchy."
+  ],
+  [
+   "This text is currently being parsed at a string value nested three levels deep.",
+   "This text is currently being parsed at a string value located at the top level."
+  ],
+  [
+   "We are now processing the closing quote of a string three or more objects deep.",
+   "We are now processing the closing quote of a string right at the root object level."
+  ],
+  [
+   "String ending sits deeply nested.",
+   "String ending sits top level."
+  ],
+  [
+   "The parser is closing an evaluated string literal, and the target key resides at least three objects down from the root.",
+   "The parser is closing an evaluated string literal, and the target key resides directly at the outermost root of the document."
+  ],
+  [
+   "Note that the closing quote occurs within an inner string three levels down in the structure.",
+   "Note that the closing quote occurs within an outer string at the topmost level in the structure."
+  ],
+  [
+   "The reader is at the final quotation mark of a field nested three layers deep.",
+   "The reader is at the final quotation mark of a field defined at the top level."
+  ],
+  [
+   "Current state: string termination observed three tiers deep inside nested objects.",
+   "Current state: string termination observed directly within the root level object."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.91734375,
+ "span_gap": 0.3340781629085541,
+ "readable": 0.9965625,
+ "prior": {
+  "readable": 0.9965625,
+  "span": 0.9171875,
+  "span_gap": 0.3340781629085541,
+  "stmt": 0.13159197568893433,
+  "used_z": -1.7461747189879093
+ },
+ "wall_s": 1.8
+}

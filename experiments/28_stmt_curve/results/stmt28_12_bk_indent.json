@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "bk_indent",
+ "key": "12_bk_indent",
+ "type": "structural",
+ "stated": 0.003125,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 21.55051040649414,
+ "shift": {
+  "fixed": 0.043258313089609146,
+  "n_para": 8,
+  "para_mean": 0.04112204647390172,
+  "para_min": 0.0050087277777493,
+  "para_max": 0.07344075292348862,
+  "para_sd": 0.026031626462301147,
+  "para_range": 0.06843202514573932
+ },
+ "shifts_para": [
+  0.025868654251098633,
+  0.07344075292348862,
+  0.06502067297697067,
+  0.06705738604068756,
+  0.032272059470415115,
+  0.012841050513088703,
+  0.0050087277777493,
+  0.04746706783771515
+ ],
+ "stmt_cos_fixed": 0.10375741869211197,
+ "stmt_cos_para": [
+  0.07044969499111176,
+  0.1742057353258133,
+  0.191497340798378,
+  0.1655917912721634,
+  0.08961056172847748,
+  0.017486687749624252,
+  0.016127564013004303,
+  0.12599247694015503
+ ],
+ "statements": [
+  [
+   "The code is indented one level deep",
+   "The code is indented three levels deep"
+  ],
+  [
+   "The current line features a shallow indentation level.",
+   "The current line features a deep indentation level."
+  ],
+  [
+   "This text is currently situated at a shallow indentation level.",
+   "This text is currently situated at a deep indentation level."
+  ],
+  [
+   "We are currently reading code at a shallow indent.",
+   "We are currently reading code at a deep indent."
+  ],
+  [
+   "Indentation depth is shallow here.",
+   "Indentation depth is deep here."
+  ],
+  [
+   "The parser is scanning the active statement, and the token position reflects a shallow level of nesting.",
+   "The parser is scanning the active statement, and the token position reflects a deep level of nesting."
+  ],
+  [
+   "The author placed this statement within a shallow scope block.",
+   "The author placed this statement within a deep scope block."
+  ],
+  [
+   "The model is reading a line with shallow indentation.",
+   "The model is reading a line with deep indentation."
+  ],
+  [
+   "Current state: indentation is shallow.",
+   "Current state: indentation is deep."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.99875,
+ "span_gap": 0.20692290365695953,
+ "readable": 0.99625,
+ "prior": {},
+ "wall_s": 3.5
+}

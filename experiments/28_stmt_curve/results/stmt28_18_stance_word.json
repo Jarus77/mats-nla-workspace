@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "stance_word",
+ "key": "18_stance_word",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 8.950520515441895,
+ "shift": {
+  "fixed": 0.1394243687391281,
+  "n_para": 8,
+  "para_mean": 0.03806070378050208,
+  "para_min": 0.01644844003021717,
+  "para_max": 0.07321082800626755,
+  "para_sd": 0.016297286532628658,
+  "para_range": 0.05676238797605038
+ },
+ "shifts_para": [
+  0.07321082800626755,
+  0.03943430632352829,
+  0.040640611201524734,
+  0.037225738167762756,
+  0.01644844003021717,
+  0.033834684640169144,
+  0.02673506550490856,
+  0.03695595636963844
+ ],
+ "stmt_cos_fixed": 0.05030011013150215,
+ "stmt_cos_para": [
+  0.03286471217870712,
+  0.03940938785672188,
+  0.05415300279855728,
+  0.03651251643896103,
+  0.026664558798074722,
+  0.04748612269759178,
+  0.05592658370733261,
+  0.04404289275407791
+ ],
+ "statements": [
+  [
+   "The passage opened with the word unfortunately",
+   "The passage opened with the word fortunately"
+  ],
+  [
+   "The paragraph began with the word unfortunately.",
+   "The paragraph began with the word fortunately."
+  ],
+  [
+   "This text started its opening sentence with unfortunately.",
+   "This text started its opening sentence with fortunately."
+  ],
+  [
+   "We are now following an excerpt that commenced with unfortunately.",
+   "We are now following an excerpt that commenced with fortunately."
+  ],
+  [
+   "Section began with unfortunately.",
+   "Section began with fortunately."
+  ],
+  [
+   "The author initiated this section with unfortunately, and the ongoing discourse directly continues that same opening thought.",
+   "The author initiated this section with fortunately, and the ongoing discourse directly continues that same opening thought."
+  ],
+  [
+   "The editor notes that the paragraph leads off with unfortunately.",
+   "The editor notes that the paragraph leads off with fortunately."
+  ],
+  [
+   "The model is reading a passage introduced by unfortunately.",
+   "The model is reading a passage introduced by fortunately."
+  ],
+  [
+   "Current state: following a paragraph initiated with unfortunately.",
+   "Current state: following a paragraph initiated with fortunately."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "The text is ... or This text ...",
+  "We are currently ... or We are now ...",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "The model is reading ... or The reader is at ...",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.4625,
+ "span_gap": 0.3770922124385834,
+ "readable": 0.44875,
+ "prior": {
+  "readable": 0.44875,
+  "span": 0.4625,
+  "span_gap": 0.3770922124385834,
+  "stmt": 0.14116612076759338,
+  "used_z": null
+ },
+ "wall_s": 1.4
+}

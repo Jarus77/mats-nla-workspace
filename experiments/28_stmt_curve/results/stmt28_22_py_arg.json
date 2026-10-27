@@ -1,0 +1,99 @@
+{
+ "experiment": "22",
+ "feature": "py_arg",
+ "key": "22_py_arg",
+ "type": "structural",
+ "stated": 0.01875,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 14.155854225158691,
+ "shift": {
+  "fixed": 0.20763780176639557,
+  "n_para": 8,
+  "para_mean": 0.1528245136141777,
+  "para_min": 0.04969094693660736,
+  "para_max": 0.2346961796283722,
+  "para_sd": 0.06529177552336969,
+  "para_range": 0.18500523269176483
+ },
+ "shifts_para": [
+  0.2346961796283722,
+  0.08768480271100998,
+  0.16195714473724365,
+  0.04969094693660736,
+  0.18413046002388,
+  0.12064040452241898,
+  0.15249215066432953,
+  0.23130401968955994
+ ],
+ "stmt_cos_fixed": 0.17579758167266846,
+ "stmt_cos_para": [
+  0.2158641368150711,
+  0.1007772833108902,
+  0.17621107399463654,
+  0.059055328369140625,
+  0.16311456263065338,
+  0.1666187047958374,
+  0.1544485092163086,
+  0.2326725721359253
+ ],
+ "statements": [
+  [
+   "The current token is the third argument of the function call",
+   "The current token is the first argument of the function call"
+  ],
+  [
+   "The active token represents the third parameter in the function invocation.",
+   "The active token represents the first parameter in the function invocation."
+  ],
+  [
+   "This text is currently situated at the third argument of the function call.",
+   "This text is currently situated at the first argument of the function call."
+  ],
+  [
+   "We are now parsing the third argument of the function call.",
+   "We are now parsing the first argument of the function call."
+  ],
+  [
+   "Reading third argument of call.",
+   "Reading first argument of call."
+  ],
+  [
+   "The parser is processing the function call, and it has reached the third argument within the argument list.",
+   "The parser is processing the function call, and it has reached the first argument within the argument list."
+  ],
+  [
+   "The author has positioned the cursor at the third argument in this invocation.",
+   "The author has positioned the cursor at the first argument in this invocation."
+  ],
+  [
+   "The model is reading the third argument of the function call.",
+   "The model is reading the first argument of the function call."
+  ],
+  [
+   "Position: third argument of the function call.",
+   "Position: first argument of the function call."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.87921875,
+ "span_gap": 0.38583067059516907,
+ "readable": 0.94890625,
+ "prior": {
+  "readable": 0.94890625,
+  "span": 0.87953125,
+  "span_gap": 0.38583067059516907,
+  "stmt": 0.2112881988286972,
+  "used_z": -1.2424893840113702
+ },
+ "wall_s": 1.9
+}

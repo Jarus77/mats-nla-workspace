@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "json_depth",
+ "key": "18_json_depth",
+ "type": "structural",
+ "stated": 0.246875,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 33.69417953491211,
+ "shift": {
+  "fixed": 0.13629738986492157,
+  "n_para": 8,
+  "para_mean": 0.043618179159238935,
+  "para_min": -0.03003060072660446,
+  "para_max": 0.09472308307886124,
+  "para_sd": 0.03611804763531338,
+  "para_range": 0.1247536838054657
+ },
+ "shifts_para": [
+  0.051653701812028885,
+  0.05912119522690773,
+  0.04313348978757858,
+  0.06633169203996658,
+  0.09472308307886124,
+  -0.03003060072660446,
+  0.03042171336710453,
+  0.03359115868806839
+ ],
+ "stmt_cos_fixed": 0.2451740801334381,
+ "stmt_cos_para": [
+  0.1452970653772354,
+  0.10383890569210052,
+  0.14868542551994324,
+  0.1234370619058609,
+  0.13499589264392853,
+  -0.08053428679704666,
+  0.11645890027284622,
+  0.1268632858991623
+ ],
+ "statements": [
+  [
+   "The current value sits three levels deep in the JSON object",
+   "The current value sits at the top level in the JSON object"
+  ],
+  [
+   "The active string entry resides three layers down inside the JSON hierarchy.",
+   "The active string entry resides at the root level inside the JSON hierarchy."
+  ],
+  [
+   "This text contains the parsed string inside a structure nested three objects deep.",
+   "This text contains the parsed string inside a structure placed at the top level."
+  ],
+  [
+   "We are currently scanning the tail of a string value positioned three tiers down in the JSON.",
+   "We are currently scanning the tail of a string value positioned at the root level in the JSON."
+  ],
+  [
+   "String target sits three levels deep.",
+   "String target sits at top level."
+  ],
+  [
+   "Processing has reached the termination of a string token, and this item is nested three objects deep within the structure.",
+   "Processing has reached the termination of a string token, and this item is nested at the top level within the structure."
+  ],
+  [
+   "The reviewer notes that the parser processes this string while buried three layers deep in the object hierarchy.",
+   "The reviewer notes that the parser processes this string while located at the top level in the object hierarchy."
+  ],
+  [
+   "The model is reading the close of a field that is embedded three tiers deep.",
+   "The model is reading the close of a field that is embedded at the root tier."
+  ],
+  [
+   "Position: reading the end of a string located three levels down.",
+   "Position: reading the end of a string located at the top level."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.99109375,
+ "span_gap": 0.08928675949573517,
+ "readable": 1.0,
+ "prior": {
+  "readable": 1.0,
+  "span": 0.98546875,
+  "span_gap": 0.08928675949573517,
+  "stmt": 0.13206711411476135,
+  "used_z": 2.60599725841384
+ },
+ "wall_s": 1.5
+}

@@ -1,0 +1,99 @@
+{
+ "experiment": "19",
+ "feature": "js_string",
+ "key": "19_js_string",
+ "type": "structural",
+ "stated": 0.084375,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 20.129913330078125,
+ "shift": {
+  "fixed": 0.01507227960973978,
+  "n_para": 8,
+  "para_mean": 0.001520301062555518,
+  "para_min": -0.027001310139894485,
+  "para_max": 0.058566465973854065,
+  "para_sd": 0.026517463353407933,
+  "para_range": 0.08556777611374855
+ },
+ "shifts_para": [
+  0.058566465973854065,
+  -0.022710615769028664,
+  -0.027001310139894485,
+  0.0007872436544857919,
+  0.003076881403103471,
+  -0.006929299328476191,
+  -0.006494331639260054,
+  0.01286737434566021
+ ],
+ "stmt_cos_fixed": 0.013224119320511818,
+ "stmt_cos_para": [
+  0.06426429003477097,
+  -0.02603231370449066,
+  -0.03471003472805023,
+  0.0012660101056098938,
+  0.00940549373626709,
+  -0.013510625809431076,
+  -0.014358295127749443,
+  0.01956385001540184
+ ],
+ "statements": [
+  [
+   "The current position is inside a string literal",
+   "The current position is outside a string literal"
+  ],
+  [
+   "The active cursor sits within an open string literal.",
+   "The active cursor sits past a closed string literal."
+  ],
+  [
+   "This text is currently being evaluated inside an open JavaScript string literal.",
+   "This text is currently being evaluated outside an open JavaScript string literal."
+  ],
+  [
+   "We are currently parsing characters inside a JavaScript string literal.",
+   "We are currently parsing characters outside a JavaScript string literal."
+  ],
+  [
+   "Cursor resides within string literal.",
+   "Cursor resides beyond string literal."
+  ],
+  [
+   "The JavaScript parser continues along the line, and execution indicates that the pointer remains inside a string literal.",
+   "The JavaScript parser continues along the line, and execution indicates that the pointer remains outside a string literal."
+  ],
+  [
+   "The reviewer notes that the target token occurs inside a string literal.",
+   "The reviewer notes that the target token occurs outside a string literal."
+  ],
+  [
+   "The model is reading content located inside a string literal.",
+   "The model is reading content located outside a string literal."
+  ],
+  [
+   "Current state: location situated inside a string literal.",
+   "Current state: location situated outside a string literal."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.82375,
+ "span_gap": 0.214689239859581,
+ "readable": 0.99234375,
+ "prior": {
+  "readable": 0.99234375,
+  "span": 0.82375,
+  "span_gap": 0.214689239859581,
+  "stmt": 0.01306145079433918,
+  "used_z": 0.6966762825979637
+ },
+ "wall_s": 1.6
+}

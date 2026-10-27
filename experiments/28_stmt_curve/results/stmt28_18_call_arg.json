@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "call_arg",
+ "key": "18_call_arg",
+ "type": "structural",
+ "stated": 0.325,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 42.06718063354492,
+ "shift": {
+  "fixed": 0.08288822323083878,
+  "n_para": 8,
+  "para_mean": 0.04834736161865294,
+  "para_min": 0.017804192379117012,
+  "para_max": 0.08576688915491104,
+  "para_sd": 0.023010367880098262,
+  "para_range": 0.06796269677579403
+ },
+ "shifts_para": [
+  0.08576688915491104,
+  0.03097737580537796,
+  0.06723611056804657,
+  0.02999306097626686,
+  0.06331175565719604,
+  0.054252851754426956,
+  0.03743665665388107,
+  0.017804192379117012
+ ],
+ "stmt_cos_fixed": 0.20854832231998444,
+ "stmt_cos_para": [
+  0.25384587049484253,
+  0.11424417793750763,
+  0.20771242678165436,
+  0.10592781752347946,
+  0.25729528069496155,
+  0.24263140559196472,
+  0.18931299448013306,
+  0.07141654193401337
+ ],
+ "statements": [
+  [
+   "The current token is the third argument of the function call",
+   "The current token is the first argument of the function call"
+  ],
+  [
+   "The active token represents the third positional parameter in the Python call.",
+   "The active token represents the first positional parameter in the Python call."
+  ],
+  [
+   "This text is paused at the end of the third argument to the invocation.",
+   "This text is paused at the end of the first argument to the invocation."
+  ],
+  [
+   "We are currently processing the third positional argument within the function call.",
+   "We are currently processing the first positional argument within the function call."
+  ],
+  [
+   "Reading third argument of call.",
+   "Reading first argument of call."
+  ],
+  [
+   "The parser is evaluating the function invocation, and the cursor resides at the boundary of the third positional argument.",
+   "The parser is evaluating the function invocation, and the cursor resides at the boundary of the first positional argument."
+  ],
+  [
+   "The developer placed the cursor directly after the third argument in this call expression.",
+   "The developer placed the cursor directly after the first argument in this call expression."
+  ],
+  [
+   "The model is reading the end of the third argument in the Python call.",
+   "The model is reading the end of the first argument in the Python call."
+  ],
+  [
+   "Position: terminus of the third positional argument within the call.",
+   "Position: terminus of the first positional argument within the call."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 1.0,
+ "span_gap": 0.12441473454236984,
+ "readable": 1.0,
+ "prior": {
+  "readable": 1.0,
+  "span": 1.0,
+  "span_gap": 0.12441473454236984,
+  "stmt": 0.085767962038517,
+  "used_z": 9.054782697709271
+ },
+ "wall_s": 1.6
+}

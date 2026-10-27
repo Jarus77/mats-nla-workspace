@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "bk_quote",
+ "key": "18_bk_quote",
+ "type": "structural",
+ "stated": 0.078125,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 12.229011535644531,
+ "shift": {
+  "fixed": 0.2335043102502823,
+  "n_para": 8,
+  "para_mean": 0.1352066332474351,
+  "para_min": 0.0692349299788475,
+  "para_max": 0.19745312631130219,
+  "para_sd": 0.051642563359377974,
+  "para_range": 0.12821819633245468
+ },
+ "shifts_para": [
+  0.11753667891025543,
+  0.10685228556394577,
+  0.17677338421344757,
+  0.15147212147712708,
+  0.0692349299788475,
+  0.1915828436613083,
+  0.07074769586324692,
+  0.19745312631130219
+ ],
+ "stmt_cos_fixed": 0.09167683124542236,
+ "stmt_cos_para": [
+  0.06797584146261215,
+  0.07197581976652145,
+  0.10537189245223999,
+  0.08496324717998505,
+  0.08743121474981308,
+  0.09266800433397293,
+  0.06187600642442703,
+  0.08860572427511215
+ ],
+ "statements": [
+  [
+   "The current position is inside a quotation",
+   "The current position is outside a quotation"
+  ],
+  [
+   "The active token falls within a quoted passage",
+   "The active token falls beyond a quoted passage"
+  ],
+  [
+   "This text is currently being read within quotes",
+   "This text is currently being read outside quotes"
+  ],
+  [
+   "We are now processing words inside a quote",
+   "We are now processing words outside a quote"
+  ],
+  [
+   "Location is inside quoted text",
+   "Location is outside quoted text"
+  ],
+  [
+   "The cursor advances through the running text, and this target location falls inside an active quoted section",
+   "The cursor advances through the running text, and this target location falls outside an active quoted section"
+  ],
+  [
+   "The author placed the selected token inside a quote",
+   "The author placed the selected token outside a quote"
+  ],
+  [
+   "The model is reading content inside a quotation",
+   "The model is reading content outside a quotation"
+  ],
+  [
+   "Current state: inside a quotation",
+   "Current state: outside a quotation"
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.68390625,
+ "span_gap": 0.34274089336395264,
+ "readable": 0.81921875,
+ "prior": {
+  "readable": 0.81921875,
+  "span": 0.68390625,
+  "span_gap": 0.34274083375930786,
+  "stmt": 0.2334199696779251,
+  "used_z": 3.8313637457453265
+ },
+ "wall_s": 1.4
+}

@@ -1,0 +1,99 @@
+{
+ "experiment": "19",
+ "feature": "py_arg",
+ "key": "19_py_arg",
+ "type": "structural",
+ "stated": 0.025,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 15.527958869934082,
+ "shift": {
+  "fixed": 0.2224109172821045,
+  "n_para": 8,
+  "para_mean": 0.09974107472226024,
+  "para_min": 0.03473023697733879,
+  "para_max": 0.20872996747493744,
+  "para_sd": 0.05986019396081746,
+  "para_range": 0.17399973049759865
+ },
+ "shifts_para": [
+  0.20872996747493744,
+  0.03473023697733879,
+  0.13410823047161102,
+  0.049883563071489334,
+  0.13252763450145721,
+  0.04396216943860054,
+  0.073440320789814,
+  0.12054647505283356
+ ],
+ "stmt_cos_fixed": 0.2065574675798416,
+ "stmt_cos_para": [
+  0.23057921230793,
+  0.04720950499176979,
+  0.1731518656015396,
+  0.06503058969974518,
+  0.19890499114990234,
+  0.0965772271156311,
+  0.11536320298910141,
+  0.15257452428340912
+ ],
+ "statements": [
+  [
+   "The current token is the third argument of the function call",
+   "The current token is the first argument of the function call"
+  ],
+  [
+   "The active token corresponds to the third positional argument of this function invocation.",
+   "The active token corresponds to the first positional argument of this function invocation."
+  ],
+  [
+   "This text is currently being parsed at the end of the third argument to the function call.",
+   "This text is currently being parsed at the end of the first argument to the function call."
+  ],
+  [
+   "We are currently inspecting the final token of the third positional argument in the call.",
+   "We are currently inspecting the final token of the first positional argument in the call."
+  ],
+  [
+   "Reading third argument of call.",
+   "Reading first argument of call."
+  ],
+  [
+   "Execution traces the ongoing function call, and evaluation reaches the terminal token of the third positional argument passed to it.",
+   "Execution traces the ongoing function call, and evaluation reaches the terminal token of the first positional argument passed to it."
+  ],
+  [
+   "The reviewer notes that the cursor rests at the conclusion of the third parameter expression in the call.",
+   "The reviewer notes that the cursor rests at the conclusion of the first parameter expression in the call."
+  ],
+  [
+   "The model is reading the end of the third positional parameter inside the call.",
+   "The model is reading the end of the first positional parameter inside the call."
+  ],
+  [
+   "Position: final token of the third argument in the ongoing function call.",
+   "Position: final token of the first argument in the ongoing function call."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.8903125,
+ "span_gap": 0.3948666751384735,
+ "readable": 0.98640625,
+ "prior": {
+  "readable": 0.98640625,
+  "span": 0.89015625,
+  "span_gap": 0.3948666751384735,
+  "stmt": 0.2253136783838272,
+  "used_z": 3.1565388957519676
+ },
+ "wall_s": 1.6
+}

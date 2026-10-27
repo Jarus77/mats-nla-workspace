@@ -1,0 +1,93 @@
+{
+ "experiment": "13",
+ "feature": "tb_wordsleft",
+ "key": "13_tb_wordsleft",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 11.820732116699219,
+ "shift": {
+  "fixed": 0.02798876352608204,
+  "n_para": 8,
+  "para_mean": 0.030074416601564735,
+  "para_min": -0.004039139952510595,
+  "para_max": 0.0727497860789299,
+  "para_sd": 0.02514963822108648,
+  "para_range": 0.0767889260314405
+ },
+ "shifts_para": [
+  0.03646215423941612,
+  -0.004039139952510595,
+  0.020281538367271423,
+  0.008242570795118809,
+  0.04722055420279503,
+  0.0727497860789299,
+  0.013480845838785172,
+  0.04619702324271202
+ ],
+ "stmt_cos_fixed": 0.03224708139896393,
+ "stmt_cos_para": [
+  0.03687433898448944,
+  -0.005648628808557987,
+  0.02655491977930069,
+  0.0079486770555377,
+  0.045400220900774,
+  0.04683471471071243,
+  0.021447688341140747,
+  0.03761616721749306
+ ],
+ "statements": [
+  [
+   "About twenty words remain under the word limit",
+   "About three words remain under the word limit"
+  ],
+  [
+   "Roughly twenty-two words are left before reaching the required word count.",
+   "Roughly four words are left before reaching the required word count."
+  ],
+  [
+   "This text is roughly twenty-four words short of the mandated total.",
+   "This text is roughly three words short of the mandated total."
+  ],
+  [
+   "We are now writing twenty-three words away from the explicit target count.",
+   "We are now writing three words away from the explicit target count."
+  ],
+  [
+   "Twenty-one words still remain here.",
+   "Two words still remain here."
+  ],
+  [
+   "The current generation is advancing smoothly, and roughly twenty-five words are still required to satisfy the exact specified length.",
+   "The current generation is advancing smoothly, and roughly five words are still required to satisfy the exact specified length."
+  ],
+  [
+   "The author notes that twenty-two words are still needed to reach the prescribed quota.",
+   "The author notes that three words are still needed to reach the prescribed quota."
+  ],
+  [
+   "The model is reading a point twenty-four words prior to the specified limit.",
+   "The model is reading a point four words prior to the specified limit."
+  ],
+  [
+   "Current state: twenty-one words remaining before the target length is met.",
+   "Current state: four words remaining before the target length is met."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.474375,
+ "span_gap": 0.24202416837215424,
+ "readable": 0.63828125,
+ "prior": {},
+ "wall_s": 3.0
+}

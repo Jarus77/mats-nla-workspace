@@ -1,0 +1,93 @@
+{
+ "experiment": "13",
+ "feature": "fmt_listdepth",
+ "key": "13_fmt_listdepth",
+ "type": "structural",
+ "stated": 0.04375,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 51.842613220214844,
+ "shift": {
+  "fixed": 0.02513013407588005,
+  "n_para": 8,
+  "para_mean": 0.019232652732171118,
+  "para_min": 0.009066504426300526,
+  "para_max": 0.027129318565130234,
+  "para_sd": 0.005031255478264053,
+  "para_range": 0.018062814138829708
+ },
+ "shifts_para": [
+  0.018623368814587593,
+  0.01916602812707424,
+  0.02158590406179428,
+  0.018795102834701538,
+  0.018189970403909683,
+  0.009066504426300526,
+  0.02130502462387085,
+  0.027129318565130234
+ ],
+ "stmt_cos_fixed": 0.08492075651884079,
+ "stmt_cos_para": [
+  0.07073082774877548,
+  0.06945062428712845,
+  0.05650601536035538,
+  0.06996602565050125,
+  0.09105656296014786,
+  0.04420951008796692,
+  0.09018456190824509,
+  0.09277091175317764
+ ],
+ "statements": [
+  [
+   "The current list item is nested at the top level",
+   "The current list item is nested three levels deep"
+  ],
+  [
+   "The active bullet entry sits at the outermost level of the list.",
+   "The active bullet entry sits three levels deep within the list."
+  ],
+  [
+   "This text is currently processing an item located at the top indentation level.",
+   "This text is currently processing an item located three indentation levels deep."
+  ],
+  [
+   "We are currently reading bullet text placed at the top level of the outline.",
+   "We are currently reading bullet text placed three levels deep in the outline."
+  ],
+  [
+   "Bullet nesting is top level.",
+   "Bullet nesting is three levels deep."
+  ],
+  [
+   "The parser is traversing the body of a bulleted entry, and the surrounding list structure is indented at the top level.",
+   "The parser is traversing the body of a bulleted entry, and the surrounding list structure is indented three levels deep."
+  ],
+  [
+   "The author notes that this item is indented at the top level.",
+   "The author notes that this item is indented three levels deep."
+  ],
+  [
+   "The model is reading within a bullet point stationed at the top level.",
+   "The model is reading within a bullet point stationed three levels deep."
+  ],
+  [
+   "Current position: an indented markdown item situated at the top level.",
+   "Current position: an indented markdown item situated three levels deep."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.65125,
+ "span_gap": 0.052658867090940475,
+ "readable": 1.0,
+ "prior": {},
+ "wall_s": 2.4
+}

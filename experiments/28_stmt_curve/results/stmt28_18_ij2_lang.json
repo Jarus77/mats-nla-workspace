@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "ij2_lang",
+ "key": "18_ij2_lang",
+ "type": "self_inducing",
+ "stated": 0.95,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 18.547657012939453,
+ "shift": {
+  "fixed": 0.511515736579895,
+  "n_para": 8,
+  "para_mean": 0.3637353889644146,
+  "para_min": 0.1964537501335144,
+  "para_max": 0.5451304912567139,
+  "para_sd": 0.10392280512059365,
+  "para_range": 0.34867674112319946
+ },
+ "shifts_para": [
+  0.42703723907470703,
+  0.3544295132160187,
+  0.32435259222984314,
+  0.5451304912567139,
+  0.2778918743133545,
+  0.1964537501335144,
+  0.39809513092041016,
+  0.386492520570755
+ ],
+ "stmt_cos_fixed": 0.4308502674102783,
+ "stmt_cos_para": [
+  0.43735334277153015,
+  0.40695229172706604,
+  0.427851140499115,
+  0.4367661476135254,
+  0.4067687690258026,
+  0.37864023447036743,
+  0.424923837184906,
+  0.4019250273704529
+ ],
+ "statements": [
+  [
+   "The text is written in French",
+   "The text is written in German"
+  ],
+  [
+   "The passage is composed in French.",
+   "The passage is composed in German."
+  ],
+  [
+   "This text represents a sample of French.",
+   "This text represents a sample of German."
+  ],
+  [
+   "We are currently processing sentences in French.",
+   "We are currently processing sentences in German."
+  ],
+  [
+   "Language used here is French.",
+   "Language used here is German."
+  ],
+  [
+   "The input segment contains full sentences in French, and the syntactic patterns reflect that vocabulary throughout.",
+   "The input segment contains full sentences in German, and the syntactic patterns reflect that vocabulary throughout."
+  ],
+  [
+   "The author verifies that this specific segment is translated into French.",
+   "The author verifies that this specific segment is translated into German."
+  ],
+  [
+   "The model is reading tokens in French.",
+   "The model is reading tokens in German."
+  ],
+  [
+   "Current state: identified language is French.",
+   "Current state: identified language is German."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 1.0,
+ "span_gap": 0.4320864677429199,
+ "readable": 0.990625,
+ "prior": {
+  "readable": 0.990625,
+  "span": 1.0,
+  "span_gap": 0.4320864677429199,
+  "stmt": 0.507453203201294,
+  "used_z": null
+ },
+ "wall_s": 1.5
+}

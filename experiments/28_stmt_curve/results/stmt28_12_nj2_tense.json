@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "nj2_tense",
+ "key": "12_nj2_tense",
+ "type": "self_inducing",
+ "stated": 0.003125,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 11.40671443939209,
+ "shift": {
+  "fixed": 0.19384419918060303,
+  "n_para": 8,
+  "para_mean": 0.14969570003449917,
+  "para_min": 0.123772531747818,
+  "para_max": 0.2209983468055725,
+  "para_sd": 0.0330188452075204,
+  "para_range": 0.09722581505775452
+ },
+ "shifts_para": [
+  0.1713310033082962,
+  0.1281331479549408,
+  0.2209983468055725,
+  0.123772531747818,
+  0.1320422738790512,
+  0.1531713604927063,
+  0.12600144743919373,
+  0.1421154886484146
+ ],
+ "stmt_cos_fixed": 0.16198794543743134,
+ "stmt_cos_para": [
+  0.14215868711471558,
+  0.14937753975391388,
+  0.1818229854106903,
+  0.15272685885429382,
+  0.16933368146419525,
+  0.10566088557243347,
+  0.15407216548919678,
+  0.16357126832008362
+ ],
+ "statements": [
+  [
+   "The verb is in the past tense",
+   "The verb is in the present tense"
+  ],
+  [
+   "The current clause uses the past tense.",
+   "The current clause uses the present tense."
+  ],
+  [
+   "This text is framed in the past tense at the current position.",
+   "This text is framed in the present tense at the current position."
+  ],
+  [
+   "We are currently reading a finite verb conjugated in the past tense.",
+   "We are currently reading a finite verb conjugated in the present tense."
+  ],
+  [
+   "Clause verb indicates past tense.",
+   "Clause verb indicates present tense."
+  ],
+  [
+   "The narrative progresses through the main clause, and the action is expressed in the past tense.",
+   "The narrative progresses through the main clause, and the action is expressed in the present tense."
+  ],
+  [
+   "The author sets the grammatical tense here to the past.",
+   "The author sets the grammatical tense here to the present."
+  ],
+  [
+   "The model is reading an active clause formulated in the past tense.",
+   "The model is reading an active clause formulated in the present tense."
+  ],
+  [
+   "Current state: finite verb evaluated in the past tense.",
+   "Current state: finite verb evaluated in the present tense."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.8390625,
+ "span_gap": 0.6180059909820557,
+ "readable": 0.80421875,
+ "prior": {},
+ "wall_s": 2.4
+}

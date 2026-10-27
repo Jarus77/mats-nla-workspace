@@ -1,0 +1,93 @@
+{
+ "experiment": "13",
+ "feature": "tb_codeline",
+ "key": "13_tb_codeline",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 20.69174575805664,
+ "shift": {
+  "fixed": 0.053190868347883224,
+  "n_para": 8,
+  "para_mean": 0.05830664889072068,
+  "para_min": -0.001962534850463271,
+  "para_max": 0.12123188376426697,
+  "para_sd": 0.03737672753405234,
+  "para_range": 0.12319441861473024
+ },
+ "shifts_para": [
+  0.08373847603797913,
+  0.05358549952507019,
+  0.12123188376426697,
+  0.03625732287764549,
+  0.05000120401382446,
+  -0.001962534850463271,
+  0.08346333354711533,
+  0.04013800621032715
+ ],
+ "stmt_cos_fixed": 0.08477169275283813,
+ "stmt_cos_para": [
+  0.13458211719989777,
+  0.11610855162143707,
+  0.17673170566558838,
+  0.08757136762142181,
+  0.07242266833782196,
+  -0.005822441074997187,
+  0.11008340865373611,
+  0.07721825689077377
+ ],
+ "statements": [
+  [
+   "This is line two of the function body",
+   "This is line ten of the function body"
+  ],
+  [
+   "The current position corresponds to the second line of the function body.",
+   "The current position corresponds to the tenth line of the function body."
+  ],
+  [
+   "This text is currently being evaluated at line two of the function body.",
+   "This text is currently being evaluated at line ten of the function body."
+  ],
+  [
+   "We are currently processing the second line inside the function body.",
+   "We are currently processing the tenth line inside the function body."
+  ],
+  [
+   "Function body line two reached.",
+   "Function body line ten reached."
+  ],
+  [
+   "Execution is moving through the flat routine, and the current token marks line two of the function body.",
+   "Execution is moving through the flat routine, and the current token marks line ten of the function body."
+  ],
+  [
+   "The reviewer observes that this instruction occurs at line two of the function body.",
+   "The reviewer observes that this instruction occurs at line ten of the function body."
+  ],
+  [
+   "The model is reading the second line of the function body.",
+   "The model is reading the tenth line of the function body."
+  ],
+  [
+   "Position: line two of the function body.",
+   "Position: line ten of the function body."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.7421875,
+ "span_gap": 0.1049763634800911,
+ "readable": 0.99734375,
+ "prior": {},
+ "wall_s": 2.5
+}

@@ -1,0 +1,99 @@
+{
+ "experiment": "22",
+ "feature": "latex_math",
+ "key": "22_latex_math",
+ "type": "structural",
+ "stated": 0.0875,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 23.99333953857422,
+ "shift": {
+  "fixed": 0.017995892092585564,
+  "n_para": 8,
+  "para_mean": 0.013940571749117225,
+  "para_min": -0.040402501821517944,
+  "para_max": 0.059985216706991196,
+  "para_sd": 0.03511406875548103,
+  "para_range": 0.10038771852850914
+ },
+ "shifts_para": [
+  0.008681985549628735,
+  0.040310345590114594,
+  0.0297467652708292,
+  -0.03108230046927929,
+  0.059985216706991196,
+  -0.040402501821517944,
+  0.007595211733132601,
+  0.03668985143303871
+ ],
+ "stmt_cos_fixed": 0.02115980163216591,
+ "stmt_cos_para": [
+  0.01259066816419363,
+  0.06659353524446487,
+  0.051169801503419876,
+  -0.052263177931308746,
+  0.09893772751092911,
+  -0.07534171640872955,
+  0.01110889483243227,
+  0.048910193145275116
+ ],
+ "statements": [
+  [
+   "The current position is inside a LaTeX math expression",
+   "The current position is outside a LaTeX math expression"
+  ],
+  [
+   "The active token falls within an inline formula.",
+   "The active token falls beyond an inline formula."
+  ],
+  [
+   "This text is currently being parsed within an inline math environment.",
+   "This text is currently being parsed outside an inline math environment."
+  ],
+  [
+   "We are now processing content inside the dollar delimiters.",
+   "We are now processing content outside the dollar delimiters."
+  ],
+  [
+   "Reading continues within inline math.",
+   "Reading continues outside inline math."
+  ],
+  [
+   "The parser advances through the manuscript, and the current character is situated inside an inline math environment.",
+   "The parser advances through the manuscript, and the current character is situated outside an inline math environment."
+  ],
+  [
+   "The author placed the cursor within the math span.",
+   "The author placed the cursor outside the math span."
+  ],
+  [
+   "The model is reading text within an inline math expression.",
+   "The model is reading text outside an inline math expression."
+  ],
+  [
+   "Current state: location situated inside the inline formula delimiters.",
+   "Current state: location situated outside the inline formula delimiters."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.85203125,
+ "span_gap": 0.20163555443286896,
+ "readable": 0.99765625,
+ "prior": {
+  "readable": 0.99765625,
+  "span": 0.8521875,
+  "span_gap": 0.20163555443286896,
+  "stmt": 0.020325763151049614,
+  "used_z": 24.65744006291712
+ },
+ "wall_s": 1.8
+}

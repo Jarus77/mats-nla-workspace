@@ -1,0 +1,99 @@
+{
+ "experiment": "18",
+ "feature": "md_heading",
+ "key": "18_md_heading",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 15.558347702026367,
+ "shift": {
+  "fixed": -0.00495451083406806,
+  "n_para": 8,
+  "para_mean": -0.0021273572456266265,
+  "para_min": -0.018638020381331444,
+  "para_max": 0.01422435324639082,
+  "para_sd": 0.0103831458936379,
+  "para_range": 0.03286237362772226
+ },
+ "shifts_para": [
+  -0.012530753389000893,
+  -0.004935841541737318,
+  -0.003911889623850584,
+  0.0037141412030905485,
+  -0.018638020381331444,
+  -0.00046104597277007997,
+  0.01422435324639082,
+  0.005520198494195938
+ ],
+ "stmt_cos_fixed": -0.00597091019153595,
+ "stmt_cos_para": [
+  -0.026695137843489647,
+  -0.006620787084102631,
+  -0.0034640016965568066,
+  0.005041220225393772,
+  -0.022322341799736023,
+  -0.0011807945556938648,
+  0.014478064142167568,
+  0.005314043257385492
+ ],
+ "statements": [
+  [
+   "The current line is a level-three markdown heading",
+   "The current line is a level-one markdown heading"
+  ],
+  [
+   "The active row represents an H3 markdown title",
+   "The active row represents an H1 markdown title"
+  ],
+  [
+   "This text presents the reader with a level-3 markdown header at this point",
+   "This text presents the reader with a level-1 markdown header at this point"
+  ],
+  [
+   "We are currently scanning a level-three markdown heading",
+   "We are currently scanning a level-one markdown heading"
+  ],
+  [
+   "Reading level-three markdown heading",
+   "Reading level-one markdown heading"
+  ],
+  [
+   "The token stream processes the current line as an H3 header, and the document structure reflects this depth accordingly",
+   "The token stream processes the current line as an H1 header, and the document structure reflects this depth accordingly"
+  ],
+  [
+   "The author formats the present line as a level-three markdown heading",
+   "The author formats the present line as a level-one markdown heading"
+  ],
+  [
+   "The model is reading a level-three markdown heading",
+   "The model is reading a level-one markdown heading"
+  ],
+  [
+   "Current state: parsing a level-three markdown heading",
+   "Current state: parsing a level-one markdown heading"
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.684375,
+ "span_gap": 0.01646856777369976,
+ "readable": 1.0,
+ "prior": {
+  "readable": 1.0,
+  "span": 0.6828125,
+  "span_gap": 0.01646856777369976,
+  "stmt": -0.006567866075783968,
+  "used_z": null
+ },
+ "wall_s": 1.6
+}

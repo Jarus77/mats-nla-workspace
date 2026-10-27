@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "bk_caps",
+ "key": "12_bk_caps",
+ "type": "self_inducing",
+ "stated": 0.071875,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 13.89972972869873,
+ "shift": {
+  "fixed": 0.3101610839366913,
+  "n_para": 8,
+  "para_mean": 0.19930484145879745,
+  "para_min": 0.14202848076820374,
+  "para_max": 0.2909717559814453,
+  "para_sd": 0.05123616355109267,
+  "para_range": 0.14894327521324158
+ },
+ "shifts_para": [
+  0.20306497812271118,
+  0.2909717559814453,
+  0.16774983704090118,
+  0.14894814789295197,
+  0.208435520529747,
+  0.181520476937294,
+  0.14202848076820374,
+  0.25171953439712524
+ ],
+ "stmt_cos_fixed": 0.15821734070777893,
+ "stmt_cos_para": [
+  0.1705661565065384,
+  0.15762513875961304,
+  0.1494189202785492,
+  0.1242702305316925,
+  0.19182655215263367,
+  0.13737823069095612,
+  0.16776663064956665,
+  0.19024060666561127
+ ],
+ "statements": [
+  [
+   "The text is written in uppercase letters",
+   "The text is written in lowercase letters"
+  ],
+  [
+   "The passage appears in uppercase characters",
+   "The passage appears in lowercase characters"
+  ],
+  [
+   "This text is formatted completely in uppercase",
+   "This text is formatted completely in lowercase"
+  ],
+  [
+   "We are currently processing words in uppercase",
+   "We are currently processing words in lowercase"
+  ],
+  [
+   "Tokens appear in uppercase format",
+   "Tokens appear in lowercase format"
+  ],
+  [
+   "The current passage reaches its final token, and every character in this segment has been set in uppercase",
+   "The current passage reaches its final token, and every character in this segment has been set in lowercase"
+  ],
+  [
+   "The reviewer notes that the segment at this offset is presented in uppercase",
+   "The reviewer notes that the segment at this offset is presented in lowercase"
+  ],
+  [
+   "The model is reading content typed in uppercase",
+   "The model is reading content typed in lowercase"
+  ],
+  [
+   "Current state: characters rendered in uppercase",
+   "Current state: characters rendered in lowercase"
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.991875,
+ "span_gap": 0.6269018650054932,
+ "readable": 0.97828125,
+ "prior": {},
+ "wall_s": 2.7
+}

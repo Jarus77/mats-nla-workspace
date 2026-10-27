@@ -1,0 +1,96 @@
+{
+ "experiment": "13",
+ "feature": "tb_paren",
+ "key": "13_tb_paren",
+ "type": "structural",
+ "stated": 0.303125,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 14.698275566101074,
+ "shift": {
+  "fixed": -0.04287548363208771,
+  "n_para": 8,
+  "para_mean": -0.0043510323157534,
+  "para_min": -0.024925874546170235,
+  "para_max": 0.02669341489672661,
+  "para_sd": 0.019535045484777892,
+  "para_range": 0.05161928944289684
+ },
+ "shifts_para": [
+  -0.024800144135951996,
+  0.01702885329723358,
+  -0.018031910061836243,
+  -0.024925874546170235,
+  -0.0072934068739414215,
+  0.02669341489672661,
+  0.008248279802501202,
+  -0.0117274709045887
+ ],
+ "stmt_cos_fixed": -0.04011234641075134,
+ "stmt_cos_para": [
+  -0.017154790461063385,
+  0.01464265026152134,
+  -0.013769207522273064,
+  -0.06564847379922867,
+  -0.011179599910974503,
+  0.036538269370794296,
+  0.010344961658120155,
+  -0.011205453425645828
+ ],
+ "statements": [
+  [
+   "The current position is inside a parenthesis",
+   "The current position is outside a parenthesis"
+  ],
+  [
+   "The active token falls inside a parenthetical remark",
+   "The active token falls outside a parenthetical remark"
+  ],
+  [
+   "This text is currently situated inside parenthetical phrasing at the active token",
+   "This text is currently situated outside parenthetical phrasing at the active token"
+  ],
+  [
+   "We are currently processing tokens inside a set of parentheses",
+   "We are currently processing tokens outside a set of parentheses"
+  ],
+  [
+   "Located inside an open parenthesis",
+   "Located outside an open parenthesis"
+  ],
+  [
+   "The parser inspects the active token stream, and the designated target sits completely inside an unclosed parenthetical passage",
+   "The parser inspects the active token stream, and the designated target sits completely outside an unclosed parenthetical passage"
+  ],
+  [
+   "The editor notes that the token appears inside parenthetical punctuation",
+   "The editor notes that the token appears outside parenthetical punctuation"
+  ],
+  [
+   "The model is reading content located inside a parenthetical clause",
+   "The model is reading content located outside a parenthetical clause"
+  ],
+  [
+   "Current state: situated inside an open parenthetical structure",
+   "Current state: situated outside an open parenthetical structure"
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.73515625,
+ "span_gap": 0.29507678747177124,
+ "readable": 0.90171875,
+ "prior": {
+  "stmt": -0.04680580273270607,
+  "stmt_source": "exp14"
+ },
+ "wall_s": 1.7
+}

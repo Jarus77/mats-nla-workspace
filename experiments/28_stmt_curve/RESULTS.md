@@ -69,6 +69,53 @@ indicator by more than 4 AIC) the continuous instrument carries information the 
 `nj2_tense`, stated 0.00) is the live self-inducing row: a paraphrase-mean shift at or above 0.4 there is the memo's
 F2 (the reward pays and the NLA declines).
 
-## Results
+## Results (27 Oct, 23:53 UTC; `results/table28.md`, `results/stats28.json`, `results/fig28.png`; 47 rows, eight paraphrase pairs each, one H200 pass of 9 minutes plus 47 Gemini calls, about $3)
 
-(placeholder: the run has not been launched)
+**The scatter.** Paraphrase-mean statement shift against the NLA's stated rate, 47 rows from exps 12, 13, 18, 19, 22:
+
+| band of the shift | rows | mean stated | range |
+|---|---:|---:|---|
+| under 0.10 | 32 | 0.09 | 0.00 to 0.41 (table column 0.41, call argument 0.33, parenthesis 0.30 in this band) |
+| 0.10 to 0.25 | 13 | 0.22 | 0.00 to 0.82 (code language, exp 12, at 0.16 shift stated 0.82; tense at 0.15 stated 0.00) |
+| 0.25 and above | 2 | 0.88 | the two natural-language rows, 0.36 and 0.49 |
+
+Correlation of the shift with the stated rate: Spearman 0.40 (p = 0.006) over all rows; 0.23 (p = 0.14) without
+the four language rows; 0.28 (p = 0.08) within the 41 structural rows. AUROC of the shift for "stated at or above
+0.30": 0.76. Paraphrase ranges are narrow on structural rows (SD 0.01 to 0.08) and wider on the language rows
+(min to max 0.24 to 0.35). The fixed-pair shifts recomputed here match the source experiments' values within 0.03
+on every row, and exp 14's four values within 0.10.
+
+Logistic fits of the stated rate (binomial, 320 readouts per row): shift alone beats the type indicator alone by
+314 AIC; shift plus type beats shift alone by 176 AIC; so the shift carries information beyond the type label and
+the type label carries information beyond the shift.
+
+### Scoring the predictions
+
+| prediction | result |
+|---|---|
+| 1. paraphrase range above 0.15 on at least half the rows | fails: 5 of 47 rows (the language rows and tense); a single pair was a fair measurement on structural rows |
+| 2. the four counter-rows keep paraphrase-mean shifts under 0.20 | holds: table column 0.05, call argument 0.05, parenthesis 0.00, bullet index 0.14 |
+| 3. Spearman 0.3 to 0.6 overall, under 0.3 within structural rows | holds: 0.40 and 0.28 |
+| 4. a logistic in the shift does not beat the type indicator by more than 4 AIC | fails: it beats it by 314, because the shift also separates the language rows from the rest more finely than a binary type does |
+
+## Reading
+
+1. **The 0.30 rule is dead as a threshold.** Seven rows are stated at 0.25 or more with shifts under 0.17 (table
+   column 0.41, call argument 0.33, predicate position 0.31, parenthesis 0.30, number agreement 0.28, bullet index
+   0.25, JSON depth 0.25), and exp 12's code-language row is stated 0.82 at a shift of 0.16. Any line that admits
+   the language rows admits none of these, and any line that admits these admits most of the unstated rows.
+2. **What the shift does measure.** It separates the natural-language rows (0.36, 0.49) from everything else, with
+   the code-language rows next (0.16, 0.24), and it tracks the stated rate across the whole set at Spearman 0.40.
+   Inside the structural rows the relation is weak and not significant. So the shift is a graded measure of how
+   far a statement re-induces the state in the reconstructor, and that quantity governs naming only at the top of
+   its range.
+3. **The NLA's structural naming is not predicted by the reconstructor.** The rows it names most (table column,
+   call argument, parenthesis, predicate position) have shifts indistinguishable from the rows it never names
+   (LaTeX math, HTML depth, string state). What they share is being pending structure a describing register
+   mentions ("a new row is beginning", "the third argument"), which is a property of the warm start, not of the
+   reward. Exp 29 tests that directly along the training trajectory; exp 30 shows the naming can be added by
+   supervision without touching the reward's score.
+4. **Consequence C2 of the derivation is re-worded**: a statement is rewarded only through the shift, so the
+   reward never pays for structural statements (true for every structural row: shifts 0.00 to 0.19), and whether
+   the NLA makes them anyway is decided by its register. The sentence "the NLA states a property iff the statement
+   shift clears 0.30" is withdrawn.

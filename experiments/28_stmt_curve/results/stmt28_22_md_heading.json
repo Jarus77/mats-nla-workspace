@@ -1,0 +1,99 @@
+{
+ "experiment": "22",
+ "feature": "md_heading",
+ "key": "22_md_heading",
+ "type": "structural",
+ "stated": 0.0375,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 11.96786880493164,
+ "shift": {
+  "fixed": 0.057742632925510406,
+  "n_para": 8,
+  "para_mean": 0.019229846366215497,
+  "para_min": -0.013316351920366287,
+  "para_max": 0.07091240584850311,
+  "para_sd": 0.02663501695242379,
+  "para_range": 0.0842287577688694
+ },
+ "shifts_para": [
+  0.013363143429160118,
+  -0.013316351920366287,
+  0.016429398208856583,
+  0.03970460221171379,
+  0.023766348138451576,
+  -0.006388805340975523,
+  0.009368030354380608,
+  0.07091240584850311
+ ],
+ "stmt_cos_fixed": 0.044314101338386536,
+ "stmt_cos_para": [
+  0.01728656142950058,
+  -0.014405813068151474,
+  0.02332990989089012,
+  0.029024476185441017,
+  0.03061681054532528,
+  -0.01591881923377514,
+  0.01807304099202156,
+  0.07372264564037323
+ ],
+ "statements": [
+  [
+   "The current line is a lower-level markdown heading",
+   "The current line is a top-level markdown heading"
+  ],
+  [
+   "The active row contains a deeply nested markdown header.",
+   "The active row contains a shallowly nested markdown header."
+  ],
+  [
+   "This text is currently situated within a low-level subheader.",
+   "This text is currently situated within a high-level subheader."
+  ],
+  [
+   "We are now parsing several words into a deeply nested section title.",
+   "We are now parsing several words into a shallowly nested section title."
+  ],
+  [
+   "Deep markdown header being scanned.",
+   "Shallow markdown header being scanned."
+  ],
+  [
+   "The input stream advances through the document, and the cursor processes tokens located within a deep markdown heading.",
+   "The input stream advances through the document, and the cursor processes tokens located within a shallow markdown heading."
+  ],
+  [
+   "The author notes that this location falls inside a deeper heading level.",
+   "The author notes that this location falls inside a higher heading level."
+  ],
+  [
+   "The model is reading a few words into a lower-tier markdown heading.",
+   "The model is reading a few words into a higher-tier markdown heading."
+  ],
+  [
+   "Current state: tokens are being processed within a deep heading.",
+   "Current state: tokens are being processed within a shallow heading."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.62015625,
+ "span_gap": 0.20401708781719208,
+ "readable": 0.7184375,
+ "prior": {
+  "readable": 0.7184375,
+  "span": 0.6203125,
+  "span_gap": 0.2040170580148697,
+  "stmt": 0.05968708544969559,
+  "used_z": null
+ },
+ "wall_s": 1.6
+}

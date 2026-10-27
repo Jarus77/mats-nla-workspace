@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "bk_wordpos",
+ "key": "12_bk_wordpos",
+ "type": "structural",
+ "stated": 0.0,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 16.46881866455078,
+ "shift": {
+  "fixed": 0.037602584809064865,
+  "n_para": 8,
+  "para_mean": 0.01709771269815974,
+  "para_min": -0.039293259382247925,
+  "para_max": 0.07761581242084503,
+  "para_sd": 0.038471057568724126,
+  "para_range": 0.11690907180309296
+ },
+ "shifts_para": [
+  0.012664664536714554,
+  -0.008641589432954788,
+  0.07761581242084503,
+  -0.002708983840420842,
+  0.05400673672556877,
+  -0.0012457603588700294,
+  0.04438408091664314,
+  -0.039293259382247925
+ ],
+ "stmt_cos_fixed": 0.05028276890516281,
+ "stmt_cos_para": [
+  0.021482691168785095,
+  -0.028108762577176094,
+  0.11984094232320786,
+  -0.003941968083381653,
+  0.054842445999383926,
+  -0.0019990578293800354,
+  0.08344787359237671,
+  -0.055149924010038376
+ ],
+ "statements": [
+  [
+   "The current sentence is three words long so far",
+   "The current sentence is twenty words long so far"
+  ],
+  [
+   "The active sentence has reached four words up to this point.",
+   "The active sentence has reached twenty-five words up to this point."
+  ],
+  [
+   "This text is currently being processed three words into the present sentence.",
+   "This text is currently being processed twenty-two words into the present sentence."
+  ],
+  [
+   "We are currently reading the fourth word of the active sentence.",
+   "We are currently reading the twenty-fourth word of the active sentence."
+  ],
+  [
+   "Sentence length is four words.",
+   "Sentence length is twenty words."
+  ],
+  [
+   "The processor tracks ongoing word counts, and this sentence contains exactly three words prior to the current boundary.",
+   "The processor tracks ongoing word counts, and this sentence contains exactly twenty words prior to the current boundary."
+  ],
+  [
+   "The author notes the cursor is positioned precisely four words into the current sentence.",
+   "The author notes the cursor is positioned precisely thirty words into the current sentence."
+  ],
+  [
+   "The model is reading three words after the start of the current sentence.",
+   "The model is reading twenty-five words after the start of the current sentence."
+  ],
+  [
+   "Position: four words processed from the sentence start.",
+   "Position: twenty-eight words processed from the sentence start."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.81609375,
+ "span_gap": 0.3406139612197876,
+ "readable": 0.88046875,
+ "prior": {},
+ "wall_s": 2.7
+}

@@ -1,0 +1,93 @@
+{
+ "experiment": "12",
+ "feature": "agr_number",
+ "key": "12_agr_number",
+ "type": "structural",
+ "stated": 0.284375,
+ "n_select": 160,
+ "n_marked": 80,
+ "gap": 20.07028579711914,
+ "shift": {
+  "fixed": 0.18705210089683533,
+  "n_para": 8,
+  "para_mean": 0.09224321460351348,
+  "para_min": 0.04254193603992462,
+  "para_max": 0.1592843234539032,
+  "para_sd": 0.04288953913115774,
+  "para_range": 0.11674238741397858
+ },
+ "shifts_para": [
+  0.1592843234539032,
+  0.05819733813405037,
+  0.08464007824659348,
+  0.15609396994113922,
+  0.04254193603992462,
+  0.07555513828992844,
+  0.07455630600452423,
+  0.08707662671804428
+ ],
+ "stmt_cos_fixed": 0.3170461058616638,
+ "stmt_cos_para": [
+  0.2876891493797302,
+  0.1303737908601761,
+  0.2572318911552429,
+  0.35889148712158203,
+  0.17504222691059113,
+  0.286874383687973,
+  0.24414339661598206,
+  0.2362007051706314
+ ],
+ "statements": [
+  [
+   "The next word is a singular noun",
+   "The next word is a plural noun"
+  ],
+  [
+   "The following token is a singular noun.",
+   "The following token is a plural noun."
+  ],
+  [
+   "This text continues with a singular noun right after the article.",
+   "This text continues with a plural noun right after the article."
+  ],
+  [
+   "We are now anticipating an upcoming singular noun.",
+   "We are now anticipating an upcoming plural noun."
+  ],
+  [
+   "Upcoming noun is singular.",
+   "Upcoming noun is plural."
+  ],
+  [
+   "An article has just been processed, and the immediately following noun appears in its singular form.",
+   "An article has just been processed, and the immediately following noun appears in its plural form."
+  ],
+  [
+   "The author expects an upcoming singular noun directly following this determiner.",
+   "The author expects an upcoming plural noun directly following this determiner."
+  ],
+  [
+   "The model is reading toward an imminent singular noun.",
+   "The model is reading toward an imminent plural noun."
+  ],
+  [
+   "Current state: anticipation of a singular noun.",
+   "Current state: anticipation of a plural noun."
+  ]
+ ],
+ "registers": [
+  "declarative, the fixed sentence's own shape with different words",
+  "'The text is ...' or 'This text ...' (a description of the text as a whole)",
+  "'We are currently ...' or 'We are now ...' (first person plural, present progressive)",
+  "short: at most six words, no article at the start if possible",
+  "long: two clauses joined by a comma or 'and', about twenty words",
+  "a note a code reviewer or editor might write about the position, in the third person",
+  "'The model is reading ...' or 'The reader is at ...' (the activation's point of view)",
+  "passive voice or a nominal phrase ('Position: ...', 'Current state: ...')"
+ ],
+ "span": 0.9996875,
+ "span_gap": 0.5742645859718323,
+ "readable": 1.0,
+ "prior": {},
+ "wall_s": 2.7
+}
