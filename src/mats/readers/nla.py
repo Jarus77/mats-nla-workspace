@@ -344,12 +344,15 @@ def load_nla(
     device: str = "cuda",
     enable_thinking: bool = False,
     root: str | Path | None = None,
+    trainable: bool = False,
 ) -> NLA:
     """Load av_base (+ RL adapter(s)) and optionally the AR.
 
     ``adapter``: one path under the repo (e.g. ``"av_rl_adapters/iter_000300"``), a list
     (all loaded, the first active; switch with ``nla.set_adapter("iter_000300")``, i.e. the
     last path component), or None for av_base alone (the pre-RL warm-start verbalizer).
+    ``trainable`` (added 28 Oct 2026 for exp 30): see :func:`make_trainable`; the default keeps
+    the inference loader exactly as before.
     """
     import yaml
     from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -377,6 +380,8 @@ def load_nla(
     ar, head = _load_ar(rootp, device) if load_ar else (None, None)
     nla = NLA(av=av, tok=tok, ar=ar, value_head=head, meta=meta, prompt_ids=ids, marker=m,
               device=device)
+    if trainable:  # added 28 Oct 2026 for exp 30: the cloning hook and LoRA grads instead of _hook
+        return make_trainable(nla, block1)
     block1.register_forward_hook(nla._hook)
     return nla
 
@@ -439,3 +444,137 @@ def paired_logodds_templates(
 ) -> torch.Tensor:
     """[T, N] LO per (a, b) template pair."""
     return torch.stack([paired_logodds_batch(nla, acts, a, b, prefix, batch) for a, b in pairs])
+
+
+# ----------------------------------------------------------------------------- training
+# added 28 Oct 2026 for exp 30 (supervised naming term on the NLA's LoRA). Nothing above changes:
+# ``load_nla(trainable=True)`` registers the cloning hook below in place of ``NLA._hook`` and
+# ``nll_of_targets`` is the gradient twin of ``logprob_of_strings_batch`` (same prompt, same
+# injection, teacher-forced, loss on the target tokens after the ``<explanation>\n`` prefix).
+
+
+def _grad_hook(nla: NLA):  # noqa: ANN202
+    """Forward hook with the arithmetic of ``NLA._hook`` that clones the hidden state before writing
+    the injected row, so autograd flows through the injection (the in-place write is safe only under
+    ``no_grad``). Returns a new tuple / tensor in place of the block output."""
+
+    def hook(_mod: Any, _inp: Any, out: Any) -> Any:
+        h = out[0] if isinstance(out, tuple) else out
+        v = nla._vec.get("v")
+        if v is None or h.shape[1] <= nla.marker:  # decode steps with KV cache
+            return out
+        if v.shape[0] != h.shape[0]:
+            raise RuntimeError(f"{v.shape[0]} vectors for a batch of {h.shape[0]}")
+        hp = h[:, nla.marker, :]
+        vu = v.to(h.device, torch.float32)
+        vu = (vu / (vu.norm(dim=-1, keepdim=True) + 1e-9)).to(h.dtype)
+        h2 = h.clone()
+        h2[:, nla.marker, :] = hp + hp.norm(dim=-1, keepdim=True) * vu
+        return (h2,) + tuple(out[1:]) if isinstance(out, tuple) else h2
+
+    return hook
+
+
+def _active_adapter_name(av: Any) -> str:
+    name = getattr(av, "active_adapter", None)
+    if not isinstance(name, str):
+        raise RuntimeError("no peft adapter is active: pass param_filter to make_trainable")
+    return name
+
+
+def make_trainable(
+    nla: NLA,
+    block1: Any | None = None,
+    param_filter: Any | None = None,
+    checkpointing: bool = True,
+) -> NLA:
+    """Put the AV in training mode for exp 30: the cloning injection hook on block 1, gradients on the
+    active LoRA adapter only (``param_filter(name) -> bool`` overrides the choice of parameters),
+    gradient checkpointing (non-reentrant) with input grads enabled, KV cache off, ``train()`` mode.
+    Returns ``nla``; the trainable parameter count is in ``nla._vec["n_trainable"]``."""
+    av = nla.av
+    if param_filter is None:
+        name = _active_adapter_name(av)
+        param_filter = lambda n, _a=name: "lora_" in n and f".{_a}." in n  # noqa: E731
+    n_train = 0
+    for n, p in av.named_parameters():
+        on = bool(param_filter(n))
+        p.requires_grad_(on)
+        n_train += p.numel() if on else 0
+    if n_train == 0:
+        raise RuntimeError("make_trainable: no parameter matched; nothing to train")
+    if checkpointing:
+        av.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+        av.enable_input_require_grads()
+    av.config.use_cache = False
+    av.train()
+    if block1 is None:
+        (block1,) = [mod for n, mod in av.named_modules() if n.endswith("model.layers.1")]
+    block1.register_forward_hook(_grad_hook(nla))
+    nla._vec["n_trainable"] = n_train
+    return nla
+
+
+def eos_id(nla: NLA) -> int:
+    """The token the AV emits after ``</explanation>`` (first eos of its generation config)."""
+    gc = getattr(nla.av, "generation_config", None)
+    e = getattr(gc, "eos_token_id", None) if gc is not None else None
+    if isinstance(e, (list, tuple)):
+        e = e[0] if e else None
+    return int(e if e is not None else nla.tok.eos_token_id)
+
+
+def nll_of_targets(
+    nla: NLA,
+    acts: torch.Tensor,
+    targets: Sequence[str],
+    prefix: str = EXPLANATION_PREFIX,
+    add_eos: bool = True,
+    backward: bool = False,
+    scale: float = 1.0,
+) -> torch.Tensor:
+    """Mean token NLL of ``targets[i]`` (+ eos) given the AV prompt with ``acts[i]`` injected and
+    ``prefix``: the gradient twin of :func:`logprob_of_strings_batch` (one target per activation,
+    right padding, loss masked to the target tokens). With ``backward=True`` the backward of
+    ``loss * scale`` runs INSIDE the injection context and the detached loss is returned; this is
+    required under gradient checkpointing, whose recompute re-runs the hook and must still see
+    the injected vectors (refused otherwise)."""
+    import torch.nn.functional as F
+
+    acts = acts.reshape(-1, acts.shape[-1]).float()
+    if len(targets) != acts.shape[0]:
+        raise ValueError(f"{len(targets)} targets for {acts.shape[0]} activations")
+    if not backward and torch.is_grad_enabled() and getattr(nla.av, "is_gradient_checkpointing", False):
+        raise RuntimeError("gradient checkpointing recomputes the hook: pass backward=True")
+    head = nla.prompt_ids + nla.tok.encode(prefix, add_special_tokens=False)
+    tail = [eos_id(nla)] if add_eos else []
+    tg = [nla.tok.encode(t, add_special_tokens=False) + tail for t in targets]
+    n = len(head) + max(map(len, tg))
+    ids = torch.full((len(tg), n), nla.tok.pad_token_id, dtype=torch.long)
+    mask = torch.zeros_like(ids)
+    labels = torch.full((len(tg), n - len(head)), -100, dtype=torch.long)
+    for r, t in enumerate(tg):
+        ids[r, : len(head) + len(t)] = torch.tensor(head + t)
+        mask[r, : len(head) + len(t)] = 1
+        labels[r, : len(t)] = torch.tensor(t)
+    ids, mask, labels = ids.to(nla.device), mask.to(nla.device), labels.to(nla.device)
+    keep = n - len(head) + 1  # logits from the last head token on (each predicts the next target token)
+    with nla._inject(acts.to(nla.device)):
+        logits = nla.av(input_ids=ids, attention_mask=mask, logits_to_keep=keep).logits
+        lp = logits[:, :-1].float()
+        loss = F.cross_entropy(lp.reshape(-1, lp.shape[-1]), labels.reshape(-1), ignore_index=-100)
+        if backward:
+            (loss * scale).backward()
+            return loss.detach()
+    return loss
+
+
+def save_adapter(nla: NLA, out_dir: str | Path) -> str:
+    """``av.save_pretrained`` in peft's layout; returns the directory ``load_nla(adapter=...)`` takes
+    (peft writes a non-"default" adapter under ``out_dir/<adapter name>``)."""
+    nla.av.save_pretrained(str(out_dir))
+    name = getattr(nla.av, "active_adapter", None)
+    path = Path(out_dir) / name if isinstance(name, str) and name != "default" else Path(out_dir)
+    if not path.is_dir():
+        raise RuntimeError(f"adapter was not written under {path}")
+    return str(path)

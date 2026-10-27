@@ -63,6 +63,17 @@ at `stmt` 0.13 stated at 0.25 against the 0.20 cell line, JSON depth). The posit
 0.51, stated 0.95, exp 18) and code language (0.30, stated 0.70, exp 22); the sixteen structural rows of exps 19
 and 22 all have `stmt` at or under 0.23 and are stated at 0.25 or less, fourteen of them under 0.20.
 
+Counter-rows, added 28 Oct after the theory review (`notes/draft_critique_theory.md`): four rows in the record do
+not fit the 0.30 rule as stated. Table column (shift 0.07, stated 0.41) and parenthesis (-0.05, stated 0.30) from
+exps 13 and 14; call argument in exp 18 (0.09, stated 0.33); bullet index (0.23, stated 0.25). Over the 30 rows
+with both numbers the Spearman correlation of shift with stated rate is 0.43, and 0.21 once the three language
+rows are removed: the data are two clusters (self-inducing rows stated, structural rows mostly not) with no graded
+relation inside the lower cluster, and the shift is measured from one statement pair per row with no interval
+(exp 14 found paraphrase moves it from 0.10 to 0.44 on parenthesis). So C2 as a threshold is not established; what
+is established is the two-type picture plus a warm-start register term that lets the NLA state pending structure
+("a new row is beginning") on some synthetic rows. Exp 28 measures the shift with eight paraphrase pairs per row on
+every row with a stated rate and tests whether a graded relation exists at all.
+
 C3 (which states have Delta_u = 0). Reading "column five" does not put a model at column five; reading a French
 sentence does put it in French. Call `c` self-inducing when a statement of it induces it. Position-in-text states
 are not self-inducing, so under A1 `Delta_u = 0` for them: exp 14 measures 0.03 (table column) and 0.10
@@ -114,6 +125,8 @@ exp 18 rule "states iff used" scored 5 of 10 and was dropped.
 
 ## 6. Limits of the derivation
 
+- C2 is weaker than its wording in section 4: see the counter-rows paragraph there. The 0.30 line was set from
+  exp 14's four values, and any line between 0.24 and 0.71 would have scored the same rows the same way.
 - It is about the optimum of the reward. The trained readers are not at it (NLA FVE 0.71, Oracle Lens AR FVE
   0.22 whitened), so every "iff" is a threshold on a continuous quantity: the 0.30 line on `stmt` is set by
   exp 17 and 19 and the positive control sits at 0.2976. The ordering of rows by `stmt` is what the derivation

@@ -1,0 +1,1486 @@
+[
+ {
+  "experiment": "12",
+  "feature": "nj1_col",
+  "key": "12_nj1_col",
+  "values": [
+   "short",
+   "long"
+  ],
+  "desc": "characters since the last newline (current column) in hard-wrapped prose under automatic linewrap (wrap width 30-90), read at an arbitrary token inside a line. 'short' = 10-30 characters into the line, 'long' = 55-85 characters into the line",
+  "fixed": [
+   "The current position is at the start of a line",
+   "The current position is near the end of a long line"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_nj1_col.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_nj1_col.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "nj1_col_break",
+  "key": "12_nj1_col_break",
+  "values": [
+   "soon",
+   "far"
+  ],
+  "desc": "whether a line break is coming under automatic linewrap (wrap width 30-90): 'soon' = within 0-6 characters of the wrap width, 'far' = 25+ characters before it; the current column is matched (40-75) across both values, so this is the break DECISION rather than the raw count",
+  "fixed": [
+   "A line break is coming",
+   "A line break is not coming yet"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_nj1_col_break.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_nj1_col_break.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "ij2_lang",
+  "key": "12_ij2_lang",
+  "values": [
+   "French",
+   "German"
+  ],
+  "desc": "language identity of the text (French vs German), read at the last token",
+  "fixed": [
+   "The text is in French",
+   "The text is in German"
+  ],
+  "stated": 0.80625,
+  "n_readouts": 320,
+  "type": "self_inducing",
+  "counter_row": false,
+  "language_row": true,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_ij2_lang.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_ij2_lang.pt",
+   "layer": 42
+  },
+  "prior": {
+   "stmt": 0.7199133038520813,
+   "stmt_source": "exp14"
+  }
+ },
+ {
+  "experiment": "12",
+  "feature": "nj2_tense",
+  "key": "12_nj2_tense",
+  "values": [
+   "past",
+   "present"
+  ],
+  "desc": "verb tense of the current clause in natural English prose (past vs present), read at a token after the clause's finite verb",
+  "fixed": [
+   "The verb is in the past tense",
+   "The verb is in the present tense"
+  ],
+  "stated": 0.003125,
+  "n_readouts": 320,
+  "type": "self_inducing",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_nj2_tense.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_nj2_tense.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "bk_indent",
+  "key": "12_bk_indent",
+  "values": [
+   "shallow",
+   "deep"
+  ],
+  "desc": "indentation level of the current line in Python code: 'shallow' = 1 level (4 spaces), 'deep' = 3-4 levels (12-16 spaces); read at a token inside the line",
+  "fixed": [
+   "The code is indented one level deep",
+   "The code is indented three levels deep"
+  ],
+  "stated": 0.003125,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_bk_indent.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_bk_indent.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "bk_wordpos",
+  "key": "12_bk_wordpos",
+  "values": [
+   "early",
+   "late"
+  ],
+  "desc": "number of words since the start of the current sentence in English prose: 'early' = 2-5 words in, 'late' = 18-40 words in; read at the end of a word",
+  "fixed": [
+   "The current sentence is three words long so far",
+   "The current sentence is twenty words long so far"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_bk_wordpos.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_bk_wordpos.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "bk_listidx",
+  "key": "12_bk_listidx",
+  "values": [
+   "early",
+   "late"
+  ],
+  "desc": "index of the current item in an unnumbered '- ' bullet list: 'early' = item 2-3, 'late' = item 8-12; read at the last token of that item",
+  "fixed": [
+   "This is item number two in the list",
+   "This is item number nine in the list"
+  ],
+  "stated": 0.246875,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": true,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_bk_listidx.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_bk_listidx.pt",
+   "layer": 42
+  },
+  "prior": {
+   "stmt": 0.23191747069358826,
+   "stmt_source": "exp14"
+  }
+ },
+ {
+  "experiment": "12",
+  "feature": "bk_caps",
+  "key": "12_bk_caps",
+  "values": [
+   "uppercase",
+   "lowercase"
+  ],
+  "desc": "capitalisation: the passage is written in ALL CAPITAL LETTERS ('uppercase') vs normal sentence case ('lowercase'); read at the last token",
+  "fixed": [
+   "The text is written in uppercase letters",
+   "The text is written in lowercase letters"
+  ],
+  "stated": 0.071875,
+  "n_readouts": 320,
+  "type": "self_inducing",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_bk_caps.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_bk_caps.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "bk_code",
+  "key": "12_bk_code",
+  "values": [
+   "Python",
+   "JavaScript"
+  ],
+  "desc": "programming language of a code snippet (Python vs JavaScript), read at the last token of a truncated snippet",
+  "fixed": [
+   "The code is written in Python",
+   "The code is written in JavaScript"
+  ],
+  "stated": 0.821875,
+  "n_readouts": 320,
+  "type": "self_inducing",
+  "counter_row": false,
+  "language_row": true,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_bk_code.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_bk_code.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "ij_listnum",
+  "key": "12_ij_listnum",
+  "values": [
+   "early",
+   "late"
+  ],
+  "desc": "index of the current item in a list whose items are labelled 'Item N:' (the numeral is visible in the text; in-J count control): 'early' = item 2-3, 'late' = item 8-12; read at the last token of that item",
+  "fixed": [
+   "This is item number two in the list",
+   "This is item number nine in the list"
+  ],
+  "stated": 0.075,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_ij_listnum.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_ij_listnum.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "bk_quote",
+  "key": "12_bk_quote",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "in-quote state in English prose: the read token is 'inside' a double-quoted span (3+ words into it, before it closes) vs 'outside' any quote (4+ words after a closing quote); read at the end of a word",
+  "fixed": [
+   "The current text is inside a quotation",
+   "The current text is outside a quotation"
+  ],
+  "stated": 0.14375,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_bk_quote.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_bk_quote.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "agr_gender",
+  "key": "12_agr_gender",
+  "values": [
+   "masculine",
+   "feminine"
+  ],
+  "desc": "grammatical gender of the UPCOMING noun in French or German text cut right after an article (French le/un/ce/du vs la/une/cette; German einen vs eine)",
+  "fixed": [
+   "The next word is a masculine noun",
+   "The next word is a feminine noun"
+  ],
+  "stated": 0.090625,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_agr_gender.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_agr_gender.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "agr_number",
+  "key": "12_agr_number",
+  "values": [
+   "singular",
+   "plural"
+  ],
+  "desc": "grammatical number of the UPCOMING noun in French text cut right after an article (le/la/un/une vs les/des)",
+  "fixed": [
+   "The next word is a singular noun",
+   "The next word is a plural noun"
+  ],
+  "stated": 0.284375,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_agr_number.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_agr_number.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "12",
+  "feature": "nj3_predpos",
+  "key": "12_nj3_predpos",
+  "values": [
+   "adjective",
+   "noun"
+  ],
+  "desc": "part of speech of the word the model predicts NEXT (adjective vs noun; ground truth = POS-tagged mass of the model's next-token distribution), read at the last prompt token",
+  "fixed": [
+   "The next word is likely an adjective",
+   "The next word is likely a noun"
+  ],
+  "stated": 0.30625,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/07_template_mining/gen_ol_nj3_predpos.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/07_template_mining/acts_nj3_predpos.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "13",
+  "feature": "tb_sentcount",
+  "key": "13_tb_sentcount",
+  "values": [
+   "early",
+   "late"
+  ],
+  "desc": "how many sentences into the current paragraph the read token is, in English prose: 'early' = inside the 1st or 2nd sentence, 'late' = inside the 5th sentence or later; read 6-15 words into the sentence in both cases",
+  "fixed": [
+   "This is the second sentence of the paragraph",
+   "This is the sixth sentence of the paragraph"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/13_new_rows/gen_ol_tb_sentcount.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/13_new_rows/acts_tb_sentcount.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "13",
+  "feature": "tb_tablecol",
+  "key": "13_tb_tablecol",
+  "values": [
+   "first",
+   "late"
+  ],
+  "desc": "which column of a markdown table the read token is in: 'first' = the first cell of the row, 'late' = the 4th to 6th cell; read inside a cell of a data row",
+  "fixed": [
+   "The current cell is in the first column of the table",
+   "The current cell is in the fifth column of the table"
+  ],
+  "stated": 0.40625,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": true,
+  "language_row": false,
+  "items": {
+   "vol": "/results/13_new_rows/gen_ol_tb_tablecol.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/13_new_rows/acts_tb_tablecol.pt",
+   "layer": 42
+  },
+  "prior": {
+   "stmt": 0.07140602916479111,
+   "stmt_source": "exp14"
+  }
+ },
+ {
+  "experiment": "13",
+  "feature": "tb_codeline",
+  "key": "13_tb_codeline",
+  "values": [
+   "early",
+   "late"
+  ],
+  "desc": "how many lines into a flat Python function body the read token is: 'early' = body line 2-3, 'late' = body line 9-12; all lines at the same indentation",
+  "fixed": [
+   "This is line two of the function body",
+   "This is line ten of the function body"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/13_new_rows/gen_ol_tb_codeline.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/13_new_rows/acts_tb_codeline.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "13",
+  "feature": "tb_paren",
+  "key": "13_tb_paren",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "whether the read token is inside an open parenthesis in English prose: 'inside' = 3+ words into a parenthetical that has not closed, 'outside' = 4+ words after a closing parenthesis and not inside any",
+  "fixed": [
+   "The current position is inside a parenthesis",
+   "The current position is outside a parenthesis"
+  ],
+  "stated": 0.303125,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": true,
+  "language_row": false,
+  "items": {
+   "vol": "/results/13_new_rows/gen_ol_tb_paren.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/13_new_rows/acts_tb_paren.pt",
+   "layer": 42
+  },
+  "prior": {
+   "stmt": -0.04680580273270607,
+   "stmt_source": "exp14"
+  }
+ },
+ {
+  "experiment": "13",
+  "feature": "tb_wordsleft",
+  "key": "13_tb_wordsleft",
+  "values": [
+   "many",
+   "few"
+  ],
+  "desc": "how many words remain under an explicit instruction 'Write exactly N words': 'many' = 20-25 words still to go, 'few' = 2-5 words still to go; read at the end of a word",
+  "fixed": [
+   "About twenty words remain under the word limit",
+   "About three words remain under the word limit"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/13_new_rows/gen_ol_tb_wordsleft.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/13_new_rows/acts_tb_wordsleft.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "13",
+  "feature": "fmt_qa",
+  "key": "13_fmt_qa",
+  "values": [
+   "qa",
+   "prose"
+  ],
+  "desc": "whether the text is laid out as a question-and-answer exchange ('Question: ... Answer: ...') or as plain prose with the same content; read 15-30 words into the answer",
+  "fixed": [
+   "The text is formatted as a question and answer",
+   "The text is formatted as plain prose"
+  ],
+  "stated": 0.040625,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/13_new_rows/gen_ol_fmt_qa.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/13_new_rows/acts_fmt_qa.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "13",
+  "feature": "fmt_listdepth",
+  "key": "13_fmt_listdepth",
+  "values": [
+   "shallow",
+   "deep"
+  ],
+  "desc": "nesting depth of the current item in an indented markdown bullet list: 'shallow' = top level, 'deep' = three levels in; read inside the item text",
+  "fixed": [
+   "The current list item is nested at the top level",
+   "The current list item is nested three levels deep"
+  ],
+  "stated": 0.04375,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/13_new_rows/gen_ol_fmt_listdepth.json",
+   "fmt": "gen_ol"
+  },
+  "acts": {
+   "vol": "/results/13_new_rows/acts_fmt_listdepth.pt",
+   "layer": 42
+  },
+  "prior": {}
+ },
+ {
+  "experiment": "18",
+  "feature": "json_depth",
+  "key": "18_json_depth",
+  "values": [
+   "deep",
+   "shallow"
+  ],
+  "desc": "JSON: read at the end of a string value nested three objects deep vs at the top level",
+  "fixed": [
+   "The current value sits three levels deep in the JSON object",
+   "The current value sits at the top level in the JSON object"
+  ],
+  "stated": 0.246875,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_json_depth.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 1.0,
+   "span": 0.98546875,
+   "span_gap": 0.08928675949573517,
+   "stmt": 0.13206711411476135,
+   "used_z": 2.60599725841384
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "latex_math",
+  "key": "18_latex_math",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "LaTeX prose: read 3+ tokens into an open $...$ math span vs 4+ words after a closed one",
+  "fixed": [
+   "The current position is inside a LaTeX math expression",
+   "The current position is outside a LaTeX math expression"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_latex_math.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 1.0,
+   "span": 0.99984375,
+   "span_gap": 0.07366807758808136,
+   "stmt": 0.006002375390380621,
+   "used_z": 22.149181327288826
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "py_string",
+  "key": "18_py_string",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "Python: read inside an open string literal vs after its closing quote, same statement shape",
+  "fixed": [
+   "The current position is inside a string literal",
+   "The current position is outside a string literal"
+  ],
+  "stated": 0.028125,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_py_string.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 1.0,
+   "span": 0.98078125,
+   "span_gap": 0.06735193729400635,
+   "stmt": 0.00525678088888526,
+   "used_z": -12.244041980096375
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "call_arg",
+  "key": "18_call_arg",
+  "values": [
+   "third",
+   "first"
+  ],
+  "desc": "Python call: read at the end of the 3rd positional argument vs the 1st",
+  "fixed": [
+   "The current token is the third argument of the function call",
+   "The current token is the first argument of the function call"
+  ],
+  "stated": 0.325,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": true,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_call_arg.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 1.0,
+   "span": 1.0,
+   "span_gap": 0.12441473454236984,
+   "stmt": 0.085767962038517,
+   "used_z": 9.054782697709271
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "md_heading",
+  "key": "18_md_heading",
+  "values": [
+   "h3",
+   "h1"
+  ],
+  "desc": "Markdown: read 4-8 words into a level-3 heading vs a level-1 heading",
+  "fixed": [
+   "The current line is a level-three markdown heading",
+   "The current line is a level-one markdown heading"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_md_heading.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 1.0,
+   "span": 0.6828125,
+   "span_gap": 0.01646856777369976,
+   "stmt": -0.006567866075783968,
+   "used_z": null
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "csv_col",
+  "key": "18_csv_col",
+  "values": [
+   "fourth",
+   "first"
+  ],
+  "desc": "CSV data row: read inside the 4th field vs the 1st field",
+  "fixed": [
+   "The current token is in the fourth field of the CSV row",
+   "The current token is in the first field of the CSV row"
+  ],
+  "stated": 0.128125,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_csv_col.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 1.0,
+   "span": 0.71125,
+   "span_gap": 0.050722770392894745,
+   "stmt": 0.10920575261116028,
+   "used_z": 0.2856008130428846
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "html_depth",
+  "key": "18_html_depth",
+  "values": [
+   "deep",
+   "shallow"
+  ],
+  "desc": "HTML: read inside text with three open tags vs one open tag",
+  "fixed": [
+   "The current text is nested three tags deep in the HTML",
+   "The current text is nested one tag deep in the HTML"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_html_depth.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 1.0,
+   "span": 0.7703125,
+   "span_gap": 0.07944878935813904,
+   "stmt": 0.01623145304620266,
+   "used_z": -0.9822030811598585
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "stance_word",
+  "key": "18_stance_word",
+  "values": [
+   "unfortunately",
+   "fortunately"
+  ],
+  "desc": "prose paragraph opened with 'Unfortunately,' vs 'Fortunately,', read 15-30 words later (sayable-but-unused candidate)",
+  "fixed": [
+   "The passage opened with the word unfortunately",
+   "The passage opened with the word fortunately"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_stance_word.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.44875,
+   "span": 0.4625,
+   "span_gap": 0.3770922124385834,
+   "stmt": 0.14116612076759338,
+   "used_z": null
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "ij2_lang",
+  "key": "18_ij2_lang",
+  "values": [
+   "French",
+   "German"
+  ],
+  "desc": "language of the text, French vs German (papluca test split)",
+  "fixed": [
+   "The text is written in French",
+   "The text is written in German"
+  ],
+  "stated": 0.95,
+  "n_readouts": 320,
+  "type": "self_inducing",
+  "counter_row": false,
+  "language_row": true,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_ij2_lang.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.990625,
+   "span": 1.0,
+   "span_gap": 0.4320864677429199,
+   "stmt": 0.507453203201294,
+   "used_z": null
+  }
+ },
+ {
+  "experiment": "18",
+  "feature": "bk_quote",
+  "key": "18_bk_quote",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "inside an open double-quoted span vs 4+ words after a closed one (exp 07 generator, token band 40-250)",
+  "fixed": [
+   "The current position is inside a quotation",
+   "The current position is outside a quotation"
+  ],
+  "stated": 0.078125,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/18_prediction_test/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/18_prediction_test/acts18_bk_quote.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.81921875,
+   "span": 0.68390625,
+   "span_gap": 0.34274083375930786,
+   "stmt": 0.2334199696779251,
+   "used_z": 3.8313637457453265
+  }
+ },
+ {
+  "experiment": "19",
+  "feature": "py_string",
+  "key": "19_py_string",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "Python source: read inside an open single-line string literal vs at a name a few tokens after its closing quote",
+  "fixed": [
+   "The current position is inside a string literal",
+   "The current position is outside a string literal"
+  ],
+  "stated": 0.19375,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/19_natural_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/19_natural_bank/acts19_py_string.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.99921875,
+   "span": 0.85328125,
+   "span_gap": 0.20905350148677826,
+   "stmt": 0.03919553384184837,
+   "used_z": 6.555589883306059
+  }
+ },
+ {
+  "experiment": "19",
+  "feature": "js_string",
+  "key": "19_js_string",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "JavaScript source: read inside an open string literal vs at a name after its closing quote",
+  "fixed": [
+   "The current position is inside a string literal",
+   "The current position is outside a string literal"
+  ],
+  "stated": 0.084375,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/19_natural_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/19_natural_bank/acts19_js_string.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.99234375,
+   "span": 0.82375,
+   "span_gap": 0.214689239859581,
+   "stmt": 0.01306145079433918,
+   "used_z": 0.6966762825979637
+  }
+ },
+ {
+  "experiment": "19",
+  "feature": "latex_math",
+  "key": "19_latex_math",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "arXiv LaTeX: read inside an open inline $...$ span vs in the prose after a closed one",
+  "fixed": [
+   "The current position is inside a LaTeX math expression",
+   "The current position is outside a LaTeX math expression"
+  ],
+  "stated": 0.15,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/19_natural_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/19_natural_bank/acts19_latex_math.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.99078125,
+   "span": 0.826875,
+   "span_gap": 0.238060861825943,
+   "stmt": 0.050494201481342316,
+   "used_z": 25.550632588813876
+  }
+ },
+ {
+  "experiment": "19",
+  "feature": "py_arg",
+  "key": "19_py_arg",
+  "values": [
+   "third",
+   "first"
+  ],
+  "desc": "Python call: read at the end of the 3rd positional argument vs the 1st, same call",
+  "fixed": [
+   "The current token is the third argument of the function call",
+   "The current token is the first argument of the function call"
+  ],
+  "stated": 0.025,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/19_natural_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/19_natural_bank/acts19_py_arg.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.98640625,
+   "span": 0.89015625,
+   "span_gap": 0.3948666751384735,
+   "stmt": 0.2253136783838272,
+   "used_z": 3.1565388957519676
+  }
+ },
+ {
+  "experiment": "19",
+  "feature": "json_depth",
+  "key": "19_json_depth",
+  "values": [
+   "deep",
+   "shallow"
+  ],
+  "desc": "JSON: read at the closing quote of a string value three or more objects deep vs at the top level",
+  "fixed": [
+   "The current value sits three levels deep in the JSON object",
+   "The current value sits at the top level in the JSON object"
+  ],
+  "stated": 0.140625,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/19_natural_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/19_natural_bank/acts19_json_depth.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.994375,
+   "span": 0.8728125,
+   "span_gap": 0.2989184260368347,
+   "stmt": 0.14087273180484772,
+   "used_z": -1.97636039986889
+  }
+ },
+ {
+  "experiment": "19",
+  "feature": "html_depth",
+  "key": "19_html_depth",
+  "values": [
+   "deep",
+   "shallow"
+  ],
+  "desc": "HTML page: read inside element text with six or more open elements vs at most three (html and body count)",
+  "fixed": [
+   "The current text is nested three tags deep in the HTML",
+   "The current text is nested one tag deep in the HTML"
+  ],
+  "stated": 0.0,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/19_natural_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/19_natural_bank/acts19_html_depth.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.98828125,
+   "span": 0.7375,
+   "span_gap": 0.21295280754566193,
+   "stmt": 0.037303607910871506,
+   "used_z": -4.624671145021498
+  }
+ },
+ {
+  "experiment": "19",
+  "feature": "md_heading",
+  "key": "19_md_heading",
+  "values": [
+   "deep",
+   "shallow"
+  ],
+  "desc": "Markdown: read a few words into a level-3/4 heading vs a level-1/2 heading",
+  "fixed": [
+   "The current line is a lower-level markdown heading",
+   "The current line is a top-level markdown heading"
+  ],
+  "stated": 0.040625,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/19_natural_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/19_natural_bank/acts19_md_heading.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.6315625,
+   "span": 0.5075,
+   "span_gap": 0.10286392271518707,
+   "stmt": 0.03281526640057564,
+   "used_z": null
+  }
+ },
+ {
+  "experiment": "19",
+  "feature": "md_list",
+  "key": "19_md_list",
+  "values": [
+   "nested",
+   "top"
+  ],
+  "desc": "Markdown: read a few words into an indented (nested) list item vs a top-level one",
+  "fixed": [
+   "The current line is a nested list item",
+   "The current line is a top-level list item"
+  ],
+  "stated": 0.040625,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/19_natural_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/19_natural_bank/acts19_md_list.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.646875,
+   "span": 0.638125,
+   "span_gap": 0.1784321665763855,
+   "stmt": 0.06663967669010162,
+   "used_z": null
+  }
+ },
+ {
+  "experiment": "22",
+  "feature": "py_string",
+  "key": "22_py_string",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "Python source: read inside an open single-line string literal vs at a name a few tokens after its closing quote",
+  "fixed": [
+   "The current position is inside a string literal",
+   "The current position is outside a string literal"
+  ],
+  "stated": 0.11875,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/22_public_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/22_public_bank/acts22_py_string.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.9984375,
+   "span": 0.84,
+   "span_gap": 0.18366844952106476,
+   "stmt": -0.016542349010705948,
+   "used_z": 10.719348515806802
+  }
+ },
+ {
+  "experiment": "22",
+  "feature": "js_string",
+  "key": "22_js_string",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "JavaScript source: read inside an open string literal vs at a name after its closing quote",
+  "fixed": [
+   "The current position is inside a string literal",
+   "The current position is outside a string literal"
+  ],
+  "stated": 0.14375,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/22_public_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/22_public_bank/acts22_js_string.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.97609375,
+   "span": 0.76828125,
+   "span_gap": 0.17891095578670502,
+   "stmt": 0.008352115750312805,
+   "used_z": -1.9716506272622223
+  }
+ },
+ {
+  "experiment": "22",
+  "feature": "latex_math",
+  "key": "22_latex_math",
+  "values": [
+   "inside",
+   "outside"
+  ],
+  "desc": "arXiv LaTeX: read inside an open inline $...$ span vs in the prose after a closed one",
+  "fixed": [
+   "The current position is inside a LaTeX math expression",
+   "The current position is outside a LaTeX math expression"
+  ],
+  "stated": 0.0875,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/22_public_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/22_public_bank/acts22_latex_math.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.99765625,
+   "span": 0.8521875,
+   "span_gap": 0.20163555443286896,
+   "stmt": 0.020325763151049614,
+   "used_z": 24.65744006291712
+  }
+ },
+ {
+  "experiment": "22",
+  "feature": "py_arg",
+  "key": "22_py_arg",
+  "values": [
+   "third",
+   "first"
+  ],
+  "desc": "Python call: read at the end of the 3rd positional argument vs the 1st, same call",
+  "fixed": [
+   "The current token is the third argument of the function call",
+   "The current token is the first argument of the function call"
+  ],
+  "stated": 0.01875,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/22_public_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/22_public_bank/acts22_py_arg.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.94890625,
+   "span": 0.87953125,
+   "span_gap": 0.38583067059516907,
+   "stmt": 0.2112881988286972,
+   "used_z": -1.2424893840113702
+  }
+ },
+ {
+  "experiment": "22",
+  "feature": "json_depth",
+  "key": "22_json_depth",
+  "values": [
+   "deep",
+   "shallow"
+  ],
+  "desc": "JSON: read at the closing quote of a string value three or more objects deep vs at the top level",
+  "fixed": [
+   "The current value sits three levels deep in the JSON object",
+   "The current value sits at the top level in the JSON object"
+  ],
+  "stated": 0.25,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/22_public_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/22_public_bank/acts22_json_depth.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.9965625,
+   "span": 0.9171875,
+   "span_gap": 0.3340781629085541,
+   "stmt": 0.13159197568893433,
+   "used_z": -1.7461747189879093
+  }
+ },
+ {
+  "experiment": "22",
+  "feature": "md_heading",
+  "key": "22_md_heading",
+  "values": [
+   "deep",
+   "shallow"
+  ],
+  "desc": "Markdown: read a few words into a level-3/4 heading vs a level-1/2 heading",
+  "fixed": [
+   "The current line is a lower-level markdown heading",
+   "The current line is a top-level markdown heading"
+  ],
+  "stated": 0.0375,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/22_public_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/22_public_bank/acts22_md_heading.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.7184375,
+   "span": 0.6203125,
+   "span_gap": 0.2040170580148697,
+   "stmt": 0.05968708544969559,
+   "used_z": null
+  }
+ },
+ {
+  "experiment": "22",
+  "feature": "md_list",
+  "key": "22_md_list",
+  "values": [
+   "nested",
+   "top"
+  ],
+  "desc": "Markdown: read a few words into an indented (nested) list item vs a top-level one",
+  "fixed": [
+   "The current line is a nested list item",
+   "The current line is a top-level list item"
+  ],
+  "stated": 0.009375,
+  "n_readouts": 320,
+  "type": "structural",
+  "counter_row": false,
+  "language_row": false,
+  "items": {
+   "vol": "/results/22_public_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/22_public_bank/acts22_md_list.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.4915625,
+   "span": 0.50484375,
+   "span_gap": 0.09916993975639343,
+   "stmt": -0.02991778589785099,
+   "used_z": null
+  }
+ },
+ {
+  "experiment": "22",
+  "feature": "code_lang",
+  "key": "22_code_lang",
+  "values": [
+   "python",
+   "javascript"
+  ],
+  "desc": "the programming language of the file, Python vs JavaScript, read outside any string literal (positive control: a property the NLA states freely)",
+  "fixed": [
+   "The text is Python code",
+   "The text is JavaScript code"
+  ],
+  "stated": 0.7,
+  "n_readouts": 320,
+  "type": "self_inducing",
+  "counter_row": false,
+  "language_row": true,
+  "items": {
+   "vol": "/results/22_public_bank/items_base.json",
+   "fmt": "items_base"
+  },
+  "acts": {
+   "vol": "/results/22_public_bank/acts22_code_lang.pt",
+   "layer": 42
+  },
+  "prior": {
+   "readable": 0.99078125,
+   "span": 0.994375,
+   "span_gap": 0.5404186248779297,
+   "stmt": 0.2975788712501526,
+   "used_z": null
+  }
+ }
+]

@@ -1,0 +1,12 @@
+{
+ "skipped": true,
+ "reason": "exp 22's gen_nla_{row}.json carry k = 8 raw texts and no per-sample FVE; the reconstructor was never run on them, so the within-item comparison cannot be scored from existing files",
+ "gen_nla_has_fve": {
+  "py_string": false,
+  "py_arg": false,
+  "json_depth": false,
+  "md_heading": false,
+  "md_list": false,
+  "code_lang": false
+ }
+}
