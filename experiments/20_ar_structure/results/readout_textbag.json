@@ -1,0 +1,62 @@
+{
+ "py_string": {
+  "ol_text_bag": 0.95859375,
+  "ol_critic": 0.9109375,
+  "nla_text_bag": 0.9515625,
+  "nla_critic": 0.9925
+ },
+ "js_string": {
+  "ol_text_bag": 0.87734375,
+  "ol_critic": 0.8975,
+  "nla_text_bag": 0.87046875,
+  "nla_critic": 0.97859375
+ },
+ "latex_math": {
+  "ol_text_bag": 0.77875,
+  "ol_critic": 0.86953125,
+  "nla_text_bag": 0.855,
+  "nla_critic": 0.98484375
+ },
+ "py_arg": {
+  "ol_text_bag": 0.71609375,
+  "ol_critic": 0.6971875,
+  "nla_text_bag": 0.67203125,
+  "nla_critic": 0.97140625
+ },
+ "json_depth": {
+  "ol_text_bag": 0.940625,
+  "ol_critic": 0.935625,
+  "nla_text_bag": 0.97234375,
+  "nla_critic": 0.97828125
+ },
+ "html_depth": {
+  "ol_text_bag": 0.8446875,
+  "ol_critic": 0.78875,
+  "nla_text_bag": 0.96265625,
+  "nla_critic": 0.9271875
+ },
+ "md_heading": {
+  "ol_text_bag": 0.56765625,
+  "ol_critic": 0.58625,
+  "nla_text_bag": 0.62921875,
+  "nla_critic": 0.58703125
+ },
+ "md_list": {
+  "ol_text_bag": 0.5925,
+  "ol_critic": 0.6203125,
+  "nla_text_bag": 0.62171875,
+  "nla_critic": 0.63265625
+ },
+ "tb_tablecol": {
+  "ol_text_bag": 0.714375,
+  "ol_critic": 0.6353125,
+  "nla_text_bag": 0.90765625,
+  "nla_critic": 0.99671875
+ },
+ "tb_paren": {
+  "ol_text_bag": 0.55828125,
+  "ol_critic": 0.67109375,
+  "nla_text_bag": 0.81125,
+  "nla_critic": 0.8725
+ }
+}

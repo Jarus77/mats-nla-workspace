@@ -104,3 +104,28 @@ state changes the continuation; that is a text-only measurement (a classifier on
 no model needed) and the natural next predictor to pre-register.
 
 Cost of this run: about $3.
+
+## Cross-check without the reconstructor (27 Oct, laptop; `results/readout_textbag.json`)
+
+A bag-of-tokens text classifier on each reader's readout alone (grouped 5-fold by source file, no model, no critic)
+recovers the state about as well as the critic does for Oracle Lens and somewhat less well for the NLA:
+
+| row | Oracle Lens readout, text bag | through the critic | NLA explanation, text bag | through the critic |
+|---|---:|---:|---:|---:|
+| table column | 0.71 | 0.64 | 0.91 | 1.00 |
+| parenthesis | 0.56 | 0.67 | 0.81 | 0.87 |
+| Python string | 0.96 | 0.91 | 0.95 | 0.99 |
+| JavaScript string | 0.88 | 0.90 | 0.87 | 0.98 |
+| LaTeX math | 0.78 | 0.87 | 0.85 | 0.98 |
+| call argument | 0.72 | 0.70 | 0.67 | 0.97 |
+| JSON depth | 0.94 | 0.94 | 0.97 | 0.98 |
+| HTML depth | 0.84 | 0.79 | 0.96 | 0.93 |
+| Markdown heading | 0.57 | 0.59 | 0.63 | 0.59 |
+| Markdown list | 0.59 | 0.62 | 0.62 | 0.63 |
+
+Two methods, one trained on NLA prose and one that knows nothing about activations, agree on which readouts carry which
+states, so "the readers' outputs carry the state" does not rest on the critic. The agreement also says what the carrying
+mostly is: the words the readout uses (a continuation inside a string literal is made of string-ish tokens), which is
+exhibition in the plain sense. Where the critic beats the bag by a margin (NLA on call argument 0.97 against 0.67, table
+column 1.00 against 0.91), the critic recovers something the vocabulary does not carry, which is either the explanation's
+structure or the critic's own training on NLA prose; the second decoder (next) separates those.
