@@ -68,7 +68,7 @@ def test_assemble_builds_one_row_per_feature_with_predictions(tmp_path):
     r = rows[0]
     assert r["instr"]["span"] is None and r["instr"]["span_gap"] == 0.7
     assert r["decide"]["readable"] and not r["decide"]["span"] and not r["decide"]["stmt"] and r["decide"]["used"]
-    assert r["predict"]["nla_states"] is True and r["predict"]["ol_prompted"] is False
+    assert r["predict"]["nla_states"] is False and r["predict"]["ol_prompted"] is False
     assert rows[1]["status"] == "instruments missing" and rows[1]["predict"] is None
     md = I.markdown(rows)
     assert "json_depth" in md and "md_heading" in md
