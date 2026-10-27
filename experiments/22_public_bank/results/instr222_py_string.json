@@ -1,0 +1,11 @@
+{
+ "feature": "py_string",
+ "span": 0.18366844952106476,
+ "span_cos": 0.4541405141353607,
+ "stmt": -0.016542349010705948,
+ "stmt_cos": -0.015974488109350204,
+ "statements": [
+  "The current position is inside a string literal",
+  "The current position is outside a string literal"
+ ]
+}

@@ -646,3 +646,12 @@ explanation of its prompted misses, which are a naming and phrasing failure. The
 the reconstructor measure at 0.70 (7 of 8; primary scorecard 35 of 38), reported beside the judged cell and labelled
 post hoc. The same protocol is being run on exp 13's table-column and parenthesis rows to reconcile with exp 16, which
 measured the Oracle Lens part through the Oracle Lens reconstructor at layer 44.
+
+## 2026-10-27 — D46: exp 22 (public-source rebuild) instruments and predictions frozen before the readers ran; exp 23 (random read points) launched
+
+Exp 22 bank sha256 `3260ea2697b33d7516190c3c77027d8dd9275e6348c2aadde0c41a2fa4d5aa08` (eight rows, 1,600 items, all from package directories or arXiv, tracked in the repo).
+Instruments `ab6b2f787ae7064ce1cef8c9d07956dbf0b7e5456689887fecea08d4f209d2bf`, predictions `c0fe07c91bc67cf48d2af1721bb577b67627b619208e138d445073e9431bd6c6`, pre-registration `03f986939d1937ff7d1b492ce96a40d4e73a6ce2c2e47ad4f39027c5fc33ba79`. Same rules and thresholds as exp 19.
+The positive control (Python vs JavaScript) has a statement shift of 0.2976, under the 0.30 line, so the rule
+predicts "not stated"; we expect that cell to fail and have said so in the pre-registration before the readers run.
+Exp 23: 500 random read points in public documents, both readers once each, naming and carrying base rates; chained
+behind exp 22's GPU stages.

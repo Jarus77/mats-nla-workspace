@@ -1,0 +1,11 @@
+{
+ "feature": "js_string",
+ "span": 0.17891095578670502,
+ "span_cos": 0.38065850734710693,
+ "stmt": 0.008352115750312805,
+ "stmt_cos": 0.007524547167122364,
+ "statements": [
+  "The current position is inside a string literal",
+  "The current position is outside a string literal"
+ ]
+}
