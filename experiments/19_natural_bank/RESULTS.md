@@ -76,6 +76,14 @@ Confusion, predicted x observed: NLA HH 7, HL 4, LH 1, LL 12; Oracle Lens HH 3, 
 5. **The J-lens cells are uninformative here**: nothing is J-enriched, nothing is J-lens-readable, as the Ostrow et al.
    (2026) account of the lens predicts for features that change every token.
 
+## Post hoc (disclosed): the exhibits cell through the reconstructor
+
+Exp 20 fed Oracle Lens's own free readouts to the NLA critic and scored them with the frozen probe. At the 0.70 line used
+for the other AUROC cells: predicted-high rows all high (py_string 0.91, js_string 0.90, latex_math 0.87, py_arg 0.70,
+json_depth 0.94), html_depth predicted low and observed 0.79 (miss), both Markdown rows low as predicted. Seven of eight
+against three of eight with the judge; the primary scorecard with this measure is 35 of 38 (0.92 [0.79, 0.97]). This
+replacement was not pre-registered and is reported beside the judged cell, not instead of it.
+
 ## Bank provenance and what is tracked
 
 The bank was built from files on the author's machine outside this repository plus arXiv e-prints. A path audit after

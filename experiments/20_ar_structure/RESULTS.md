@@ -15,6 +15,64 @@ If the ordered span keeps the state and the shuffled bag and the readouts do not
 the reconstruction objective rewards: content, not order. App `v7qd` (`modal20.py`); one H100 pass for the Oracle Lens
 readouts, one H200 pass for the NLA and the reconstructions.
 
-## Results
+## Results (27 Oct; `results/table20.md`, `results/recon20_{row}.json`; frozen-probe AUROC against the true layer-42 activations, 160 selection items per row)
 
-(pending)
+| row | model, window 4 | model, window 32 | model, window 128 | critic, span 32 | critic, span 128 | shuffled bag 32 | Oracle Lens readout | NLA explanation |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| py_string | 0.99 | 1.00 | 1.00 | 0.85 | 0.95 | 0.42 | 0.91 | 0.99 |
+| js_string | 0.96 | 0.99 | 0.99 | 0.82 | 0.84 | 0.48 | 0.90 | 0.98 |
+| latex_math | 0.99 | 0.99 | 0.99 | 0.83 | 0.86 | 0.46 | 0.87 | 0.98 |
+| py_arg | 0.97 | 0.96 | 0.98 | 0.89 | 0.89 | 0.50 | 0.70 | 0.97 |
+| json_depth | 0.77 | 0.96 | 0.99 | 0.87 | 0.97 | 0.65 | 0.94 | 0.98 |
+| html_depth | 0.83 | 0.94 | 0.95 | 0.74 | 0.81 | 0.30 | 0.79 | 0.93 |
+| md_heading | 0.54 | 0.57 | 0.59 | 0.51 | 0.57 | 0.47 | 0.59 | 0.59 |
+| md_list | 0.58 | 0.62 | 0.65 | 0.64 | 0.66 | 0.55 | 0.62 | 0.63 |
+
+"model" = the base model's own layer-42 activation when it reads only the last w tokens; "critic" = the NLA reconstructor
+fed the same text; "shuffled bag" = the 32 tokens in random order through the critic; the two readout columns = each
+reader's own free readout of the vector (k = 1), through the critic. Cosine of each rebuild's class direction with the
+true one: model window 32 is 0.78 to 0.93 on the six readable rows, critic span 32 is 0.30 to 0.65, bag 32 is -0.07 to
+0.22, Oracle Lens readout 0.48 to 0.73, NLA explanation 0.77 to 0.90.
+
+## Reading
+
+1. **The window is not the bottleneck.** The model's own activation on the last 32 tokens carries every readable
+   state at 0.94 to 1.00, and four of six already at 4 tokens. The two rows Oracle Lens missed when prompted (Python
+   string 0.52, JSON depth 0.64 in exp 19) are carried at 1.00 and 0.96. Longer windows matter only for the two
+   depth rows (JSON 0.77 at 4 tokens, 0.99 at 64), where the state is defined by context further back.
+2. **Order carries the state, vocabulary does not.** The same 32 tokens shuffled fall to 0.30 to 0.65 (class-direction
+   cosine near zero). What the readers would have to reproduce is the arrangement, not the words.
+3. **Both readers' free readouts re-induce the state through the critic.** Oracle Lens's readout, which never names any
+   of these properties, rebuilds them at 0.70 to 0.94 on the six readable rows: this is the structure-aware
+   "exhibits" measure the judge could not supply (exps 18, 19 scored it 0.00 everywhere). The NLA's explanation, which
+   describes genre and topic and states none of these properties, rebuilds them at 0.93 to 0.99.
+4. **So the readers do not fail to capture structure; they fail to name it.** The state is present in what each reader
+   writes, recoverable by the critic above the level of the true 32-token span, and absent from what either reader
+   says about the text. Oracle Lens's prompted misses are a naming and phrasing failure (the fixed phrasing scored
+   reversed on both missed rows), not a detection failure. This is the direction Guiv's E45 pointed at and it is now
+   measured directly on the model, not through a reconstructor.
+5. **The NLA number is partly in-distribution.** The critic was trained on NLA explanations, so 0.93 to 0.99 for the NLA
+   column overstates how much a neutral decoder would recover; the Oracle Lens column is out of distribution for the
+   critic (bullets and continuations) and is if anything conservative. The two columns should not be compared with
+   each other, only each with its own bag and span baselines.
+6. **The two Markdown rows stay at chance everywhere** (0.51 to 0.66), consistent with their probe AUROC of 0.63 and
+   0.65: heading level and list depth are not linearly present at layer 42 on real Markdown, so no reader can carry
+   them.
+
+## What this changes
+
+The exp 19 "exhibits" cell, re-scored with the reconstructor measure at the same 0.70 line used for the other AUROC
+cells (post hoc, disclosed: the pre-registered judge measure failed on every row of two experiments): predicted high
+on the five span-sayable rows and all five observed high (0.70 to 0.94); predicted low on HTML depth and observed 0.79
+(miss); predicted low on both Markdown rows and observed low. Seven of eight, against three of eight with the judge.
+The primary scorecard with this cell becomes 35 of 38 (0.92).
+
+The sentence for the thesis: the readers carry structural state in their outputs and do not name it. The remaining
+question is why naming fails, and the exp 17 and 19 statement-shift numbers say what it is: a statement of the
+property does not move the critic (0.01 to 0.23), so neither objective ever rewarded saying it. The thing to test next
+is the original headline rows (table column, parenthesis) under this exact protocol, because exp 16 measured the
+Oracle Lens part through a different reconstructor at layer 44 and found position absent from it; if the two agree,
+exp 16's "remainder" is the naming gap seen from the other side, and if they disagree, one of the two reconstructors
+is the reason.
+
+Cost: about $4 (one H100 pass of 25 minutes, one H200 pass of 30 minutes).
