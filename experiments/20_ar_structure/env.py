@@ -12,6 +12,7 @@ from modal_common import HF_ENV, HF_PINS, VOLUMES  # noqa: E402,F401
 
 OUT = "/results/20_ar_structure"
 OUT19 = "/results/19_natural_bank"
+OUT13 = "/results/13_new_rows"
 _LOCAL = ("modal_common", "env", "lib20")
 _PINS = ("torch==2.14.0", "transformers==5.17.0", "peft==0.21.0", "accelerate==1.15.0",
          "safetensors==0.8.0", "numpy==2.5.3", "pyyaml", "scipy", "flash-linear-attention==0.5.2")

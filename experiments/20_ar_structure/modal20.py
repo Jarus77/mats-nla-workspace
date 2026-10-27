@@ -18,7 +18,7 @@ from pathlib import Path
 
 import modal
 
-from env import OUT, OUT19, VOLUMES, gpu_image
+from env import OUT, OUT13, OUT19, VOLUMES, gpu_image
 
 app = modal.App("v7qd")
 HERE = Path(__file__).resolve().parent
@@ -26,7 +26,9 @@ RES = HERE / "results"
 LAYER = 42
 ROWS = ("py_string", "js_string", "latex_math", "py_arg", "json_depth", "html_depth", "md_heading", "md_list")
 MARKED = {"py_string": "inside", "js_string": "inside", "latex_math": "inside", "py_arg": "third", "json_depth": "deep",
-          "html_depth": "deep", "md_heading": "deep", "md_list": "nested"}
+          "html_depth": "deep", "md_heading": "deep", "md_list": "nested",
+          "tb_tablecol": "first", "tb_paren": "inside"}            # exp 13's headline rows, same protocol
+SRC13 = ("tb_tablecol", "tb_paren")
 GPU = dict(volumes=VOLUMES, timeout=4 * 3600, memory=131072, single_use_containers=True, max_containers=1)
 
 
@@ -34,13 +36,17 @@ def _load(row: str):  # noqa: ANN202
     import numpy as np
     import torch
 
-    items = [it for it in json.load(open(f"{OUT19}/items_base.json")) if it["feature"] == row]
-    blob = torch.load(f"{OUT19}/acts19_{row}.pt", weights_only=False)
+    base, acts_name = (OUT13, f"acts_{row}.pt") if row in SRC13 else (OUT19, f"acts19_{row}.pt")
+    items = [it for it in json.load(open(f"{base}/items_base.json")) if it["feature"] == row]
+    blob = torch.load(f"{base}/{acts_name}", weights_only=False)
     assert blob["ids"] == [it["id"] for it in items]
+    A = blob["acts"][LAYER] if isinstance(blob["acts"], dict) else blob["acts"]
+    if A.dim() == 3:
+        A = A[:, 0]
     sel = [i for i, it in enumerate(items) if it["split"] == "select"]
     y = np.array([items[i]["value"] == MARKED[row] for i in sel], int)
     groups = np.array([items[i]["cluster"] for i in sel])
-    return items, blob["acts"][LAYER][sel].float(), sel, y, groups
+    return items, A[sel].float(), sel, y, groups
 
 
 @app.function(image=gpu_image, gpu="H100", **GPU)
