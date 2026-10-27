@@ -44,6 +44,67 @@ js_string: predicted low (span 0.77, under the line by 0.03) while exp 20 measur
 js_string row at 0.90; if the readout carries it here too, that cell becomes a LH miss, the same kind as exp 22's
 prompted js_string miss. Stated here before the run; the prediction is not changed.
 
-## Results
+## Results (27 Oct, 18:52 UTC; `results/table25.md`, `results/scorecard25.md`, `results/recon25_{row}.json`; 160 selection items per row; one H100 pass of 14 minutes and one H200 pass of 16 minutes, about $3)
 
-(pending: `results/table25.md`, `results/scorecard25.md`)
+Frozen-probe AUROC against the true layer-42 activations, through the NLA critic:
+
+| row | true span 32 | same tokens shuffled | Oracle Lens readout | NLA explanation | exp 20 on exp 19's row (Oracle Lens) |
+|---|---:|---:|---:|---:|---:|
+| py_string | 0.84 | 0.46 | 0.86 | 0.99 | 0.91 |
+| js_string | 0.77 | 0.46 | 0.84 | 0.97 | 0.90 |
+| latex_math | 0.85 | 0.50 | 0.87 | 1.00 | 0.87 |
+| py_arg | 0.88 | 0.49 | 0.51 | 0.93 | 0.70 |
+| json_depth | 0.92 | 0.76 | 0.97 | 0.99 | 0.94 |
+| md_heading | 0.62 | 0.55 | 0.65 | 0.70 | 0.59 |
+| md_list | 0.50 | 0.44 | 0.48 | 0.49 | 0.62 |
+| code_lang (positive control) | 0.99 | 0.98 | 0.98 | 0.98 | - |
+
+Class-direction cosines: Oracle Lens readout 0.54 to 0.68 on the string, math and depth rows, 0.36 on call argument;
+NLA explanation 0.78 to 0.90 everywhere (in-distribution for the critic; see exp 24).
+
+### Scoring the predictions
+
+| prediction | result |
+|---|---|
+| 1. Oracle Lens readout >= 0.70 on py_string, latex_math, py_arg, json_depth | 3 of 4: 0.86, 0.87, 0.97; call argument 0.51 (HL miss) |
+| 2. Markdown rows below 0.70 | holds: 0.65, 0.48 |
+| 3. code_lang stays high | holds: 0.98 |
+| the stated exposure: js_string predicted low (span 0.77) | materialised: the readout carries it at 0.84 (LH miss, the same row and direction as exp 22's prompted miss) |
+
+### The exp 22 scorecard with this cell (`results/scorecard25.md`)
+
+| scorecard | exp 22, judge-scored exhibits | with the reconstructor measure |
+|---|---|---|
+| primary (free-readout cells, J-lens on the six uncued rows) | 30 of 38, 0.79 [0.64, 0.89] | 32 of 38, 0.84 [0.70, 0.93] |
+| secondary (prompted forced choice) | 13 of 16, 0.81 | 13 of 16, 0.81 (unchanged) |
+| all 56 cells, exp 18's convention | 44 of 56, 0.79 [0.66, 0.87] | 46 of 56, 0.82 [0.70, 0.90] |
+| without the positive-control row | primary 27 of 34, secondary 11 of 14 | primary 29 of 34, secondary 11 of 14 |
+
+The `ol_exhibits` rule ("Oracle Lens exhibits iff span-sayable") scores 6 of 8 by this measure (4 of 8 by the judge):
+HH on py_string, latex_math, json_depth, code_lang; LL on both Markdown rows; LH on js_string; HL on py_arg.
+
+## Reading
+
+1. **Exp 20's exhibits numbers replicate on an independent public bank.** Oracle Lens's readout, which names none of
+   these states (exp 22's judge: 0.00 on every natural row), rebuilds string, math and depth state at 0.84 to 0.97
+   against 0.87 to 0.94 on exp 19's rows. The one weak row is the same both times: call argument (0.51 here, 0.70
+   in exp 20, 0.61 through the second decoder in exp 24). A continuation after a call's third argument does not
+   look different enough from one after its first for the critic to tell; the state is in the window (span 0.88)
+   and not in what Oracle Lens writes.
+2. **Language is vocabulary, structure is arrangement.** The shuffled span keeps code language at 0.98 and drops
+   every structural row to 0.44 to 0.50 (JSON depth 0.76, where the vocabulary of deep and top-level strings differs,
+   exp 22's lexical-cue note). This is exp 24's point in its cleanest form, on one bank with one decoder.
+3. **The span instrument bounds exhibition loosely.** JavaScript string sits under the 0.80 line (0.77) and the
+   readout carries it at 0.84; call argument sits above (0.88) and the readout carries it at 0.51. The rule's two
+   misses here are the two directions a floor-type instrument can miss in, and the LH miss is on the row exp 22's
+   prompted cell also missed. With both measures the rule stands at 6 of 8 on this bank and 7 of 8 on exp 19's.
+4. **The scorecard clears the declared bar with the reconstructor measure.** Primary 32 of 38 (0.84), all cells
+   0.82 against the pre-registered 0.80; the judge-scored version (0.79) stays in the record as the pre-registered
+   measure, and the replacement is post hoc and disclosed, as in exp 20's re-scoring of exp 19 (35 of 38 there).
+   The secondary scorecard is untouched. Both versions are quoted together wherever the number appears.
+
+## What this changes
+
+Exp 22's primary scorecard is quoted as 30 of 38 by the pre-registered judge measure and 32 of 38 by the
+reconstructor measure. The thesis sentence is unchanged: the readers carry structural state in their outputs and
+do not name it; exps 24 and 25 together put that on two decoders and two prospective banks.

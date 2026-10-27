@@ -1,0 +1,50 @@
+{
+ "feature": "py_string",
+ "n": 160,
+ "auroc": {
+  "span_32": 0.84,
+  "span_128": 0.86140625,
+  "bag_32": 0.46296875,
+  "ol_readout": 0.859375,
+  "nla_readout": 0.99046875
+ },
+ "class_direction_cos": {
+  "span_32": 0.4541405141353607,
+  "span_128": 0.43621107935905457,
+  "bag_32": -0.1044168546795845,
+  "ol_readout": 0.5400691032409668,
+  "nla_readout": 0.9033525586128235
+ },
+ "examples": {
+  "py_string_asecommandpy3ef7bba2ce1c_0": {
+   "ol": "- /Traceback: \", file=sys.stderr) print(\"Exception\n- \u56de\u6eaf (Exception traceback) follows:\" if pip_env.exception_handler else \"Handled Exception\n- /Traceback: \", sys.exc_info()) from pip._internal.exceptions.PipError with exception\n- /Traceback (most recent call last):\" .format(ex)) pip._internal.exceptions.PipError: Exception",
+   "nla": "Bulleted error log entries with technical pip/pipenv messages in a raw changelog/release-notes format, establishing a pattern of terse issue descriptions.\n\nThe text has shifted into simulated pip installation error output, involving ERROR tables, download fields, and terminal warnings from a Unix/dev environment context.\n\nFinal token \"Exception\" is part of a Python warning message (\"WARNING: Retrying (Retry(...)),\\nERROR: [...] Completed with errors\\nWARNING: Exit... Fatal error\",\\n\"  Fatal error message\\n    WARNING: Exception\"), expecting a standard pip traceback phrase like \"traceback follows\" or \"record: [Traceback]\".\n\"Output continues...\n\\nmessage some warning...\\nmessage Continuing\"\n\"  Fatal error: message\\n    Exception\" \u2014 a standard pip format line, expecting the exception details block, likely \"information\" about the specific error.",
+   "span_32": " status\n        except DiagnosticPipError as exc:\n            logger.error(\"%s\", exc, extra={\"rich\": True})\n            logger.debug(\"Exception"
+  },
+  "py_string_tloftrfastpy63b8f083ca71_0": {
+   "ol": "- \u6807\u7b7e as there are inputs, or one per batch item.\"\n- items as there are batches, or the same number of boxes as there are items in the\n- \u8f93\u5165\u53e5\u5b50 (or batches) as there are postprocessings! Got {} items, expected {}. Please pass `is_split_into_words`\n- \u6587\u672c IDs as there are images, or the same number of post-processing inputs as there are batch items.\" % len(inputs[\"input_ids\"])",
+   "nla": "Hugging Face `pipeline` / `AutoModel` Python docstring and code example style, with structured blocks like `>>>` showing usage of image segmentation model.\n\nThe error message describes a parameter mismatch \u2014 `labels` array was required for `post_process` but not provided, explaining inputs related to image sizes.\n\nFinal fragment \"Please make sure to pass as many\" is mid-error-message, expecting a completion like \"labels as images\" or \"image sizes as samples.\"\n</br> \"The output\" section inside a Hugging Face model docstring, where the code block raises a ValueError with: \"ValueError: You have to provide `image_size`, but did not provide it. Make sure to pass as many\" \u2014 completing this with \"labels/samples as there are in the batch.\"\nFinal token \"many\" expects continuation confirming list-count semantics.",
+   "span_32": " indices.\n        \"\"\"\n        if outputs.matches.shape[0] != len(target_sizes):\n            raise ValueError(\"Make sure that you pass in as many"
+  },
+  "py_string_higgspyce604f5f403a_0": {
+   "ol": "- up Table (LUT) Transformers\") for optimizing sparse activation in Rotary Lookup\n- up Table (RoLoLUT) Transformers,\" a novel architecture for efficient Sparse Lookup\n- /Lookup (FastLookup) Attention Mechanism for Transformer Language Models). Here are some novel variants of Lookup\n- /Cache-based Attention Mechanism). RoLo stands for Rotary Lookup, a novel mechanism designed to enhance efficiency and expressiveness in rotary lookup",
+   "nla": "Academic paper/repository citation format establishing institutional affiliation and benchmark metrics, suggesting author biography or dataset/benchmark page content.\n\nThe paper title search result \"FLiP (Flexible Lookup\" signals an incomplete title requiring completion \u2014 likely a neural language model word/phrase describing a technique, e.g., \"Table,\" \"Memory,\" or \"Sparse\" continuation.\n\n\"FLiPpp (Fast Flexible Lookup\" is the final token \u2014 mid-token truncation of an acronym expansion parenthetical, requiring the words continuing \"Lookup\" (e.g., \"Flash,\" \"Flexible,\" or attention-related term for a transformer efficiency mechanism in HuggingFace/pytorch ecosystem).\n</br>\"Lookup\" at the end suggests a novel attention/layer/sparse architecture repository name; \"FLoP (Flexible Lookup\" is an acronym definition mid-word, expecting the remaining words.",
+   "span_32": " or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n\"HIGGS through FLUTE (Flexible Lookup"
+  },
+  "py_string_testastypepy09e0a9a05db0_0": {
+   "ol": "- ('...') to type ({dtype}) safely.\"` \u6216 `Cannot cast\n- \u5f53\u524d dtype to {target_dtype}. Can only safely cast\n- \u7c7b\u578b (Casting) from dtype '{dtype}' to '{target_dtype}' for datetime.\" \u6216 \"Cannot safely cast\n- \uff08cast\uff09to datetime64[D] from type object.\" \uff08\u5982\u679c Series \u662f object \u7c7b\u578b\uff0cpandas \u65e0\u6cd5\u81ea\u52a8\u63a8\u65ad\u5982\u4f55\u5b89\u5168\u5730\u5f3a\u5236\u8f6c\u6362",
+   "nla": "Technical API/Sphinx documentation format with bullet-point parameter/data-type definitions for Pandas RangeIndex dtype behavior.\n\nThe second bullet case contrasts with the first, describing an error condition when dtype casting fails, with the error message string beginning.\n\nFinal token \"Cannot cast\" is the opening of a specific pandas error string literal example, requiring completion of a standard error message pattern (e.g., \"to type X via coercion\" or similar dtype/compatibility phrasing to match the pandas convention).\n\"StyleError (datetime/string): Raised when dtype casting fails. Error strings will follow the format: 'ValueError: Cannot cast\" \u2014 next tokens must complete this quoted error message, likely \"to [type]\" or similar pandas/Python casting language.\nThe final fragment \"ValueError: Cannot cast\" ends the sentence incomplete.",
+   "span_32": "/Eastern]\",\n        ],\n    )\n    def test_astype_cannot_cast(self, index, dtype):\n        msg = \"Cannot cast"
+  },
+  "py_string_initpy8805526e0ee8_0": {
+   "ol": "- \u4e86 `{impl_list}`, \u5168\u90e8\u5931\u8d25\u3002\", tried=\"tried\n- \u591a\u4e2a\u5b9e\u73b0 (tries)\", f\"but none found in {dbm_module_candidates}. Tried\n- \u591a\u4e2a candidates: {dbm_modules}, none worked.\"` \u6216 `ImportError: couldn't find a dbm implementation: tried\n- \uff08tried\uff09[\"sqlite3\", \"dbm\", \"anydb\"] but no success.\"` \u6216 `\"... tried",
+   "nla": "Python error message pattern: a `NoModuleError` traceback is being shown, following standard Python exception formatting. The trace ends with \"No usable implementation of dbm found -- tried,\" indicating a list of attempted modules (e.g., \"gdbm, ndbm, dumbdbm\").\n\nTutorial/documentation style context explaining SQLite and dbm module usage with code examples for psychopy.\n\nFinal token \"tried\" is part of a Python dbm error message string (\"No usable dbm implementation found; tried\"), requiring continuation of the standard error format listing specific modules checked.\n\"dbmimport' fails with an error message like 'No usable dbm found; tried\" \u2014 strongly constrains next token to be a colon or quoted list of module names like `['gdbm', ...],`\nStandard Python dbm error output format.",
+   "span_32": "defaultmod = mod\n            _modules[name] = mod\n        if not _defaultmod:\n            raise ImportError(\"no dbm clone found; tried"
+  },
+  "py_string_delingclvppy734801c1badf_0": {
+   "ol": "- `past_key_value` is provided.\", f\"Positional embeddings must be provided when\n- \u4f7f\u7528 `use_rotary_embeddings=True`.\"  # \u5f53 `past_key_value` \u975e None \u65f6\n- `rotary_pos_emb` is provided.\", f\"Cannot use `use_rotary_embeddings` when\n- \u63d0\u4f9b `past_key_values` \u65f6\u3002\", TypeError, \"When `rotary_pos_emb` is provided, `position_ids` must be provided.\"",
+   "nla": "AI-generated technical code/LLM documentation following PyTorch module parameter definition patterns (e.g., `hidden_size`, `rope_freqs`, `bug_router`).\n\nConditional logic structure establishing constraints: `rope_freqs` is only valid when `use_rope` is true, with explicit validation raising errors for mismatches.\n\nFinal fragment \"raises ValueError(\" `use_past_key must be provided when\" \u2014 an incomplete error message string requiring completion of the conditional clause, mirroring the preceding code logic pattern (e.g., \"when rope_freqs is provided\").\n\"completion, otherwise raises ValueError\" with specific constraint: `if` statement \"or raise ValueError('use_attention_mask is required when rope_freqs is provided.')\nError message continuation: \"the model` validate that\" `use_past_key` in \"required when.\"",
+   "span_32": " query and key states.\n        if rotary_pos_emb is not None and position_ids is None:\n            raise ValueError(\"`position_ids` must be provided when"
+  }
+ }
+}

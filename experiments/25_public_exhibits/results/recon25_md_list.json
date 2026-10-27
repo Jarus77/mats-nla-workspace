@@ -1,0 +1,50 @@
+{
+ "feature": "md_list",
+ "n": 160,
+ "auroc": {
+  "span_32": 0.50484375,
+  "span_128": 0.5803125,
+  "bag_32": 0.43890625,
+  "ol_readout": 0.47984375,
+  "nla_readout": 0.488125
+ },
+ "class_direction_cos": {
+  "span_32": 0.22494973242282867,
+  "span_128": 0.34969907999038696,
+  "bag_32": -0.0028166389092803,
+  "ol_readout": 0.3043422996997833,
+  "nla_readout": 0.7953239679336548
+ },
+ "examples": {
+  "md_list_READMEmdc6dc9b216d82_1": {
+   "ol": "- /bundle URLs** (via `import` or `<script>` with a CDN\n- \u7248\u672c (CDN version)**\uff0c\u4ee5\u53ca CommonJS \u6a21\u5757\u652f\u6301\u3002 | http://momentjs.com/docs/#/using-cdn\n- /script tag support (via `lodash.global.js`)** and modern ES modules. This means you can use Lodash in a browser via CDN\n- \uff08CDN\uff09\u517c\u5bb9**\uff1a`lodash.min.js` \u548c `lodash.global.js` \u4e13\u4e3a\u6d4f\u89c8\u5668 CDN",
+   "nla": "Technical README pattern establishes structured feature format; markdown and docs entries precede a bulleted capability list describing TypeScript compilation support.\n\nThe sentence \"supports various JavaScript environments: CJS, ESM, Node.js module resolution\" signals an ongoing enumeration of module/package format types for the XState library.\n\nFinal token \"CDN\" ends an incomplete list item (\"CommonJS, ES Modules, UMD and CDN\"), strongly implying the next token continues or completes this trio with a closing punctuation, link, or example like `/skypack` or \"Usage\" before restarting CDN links like unpkg/jsdelivr examples.\n\"It first introduces all four features:\nCommon modules formats,\nas well as all examples to support usage in compiled projects \u2014 covering 'CommonJS', 'ESM', Node.js, and 'CDN\" \u2014 expecting a closing word like \"CDN\" or \"unpkg.\"",
+   "span_32": "\n- **Cross-platform** - Support for ...\n  - CommonJS, [ECMAScript Modules](#ecmascript-modules) and [CDN"
+  },
+  "md_list_READMEmd921c9504e417_1": {
+   "ol": "- https://ftp.gnu.org/gnu/gettext/iso-codes.zip, and install it in `/\n- https://sourceforge.net/projects/iconv-data/files/ or from the FreeBSD SVN. Download and extract to `/usr/local/share/\n- https://ftp.gnu.org/gnu/gettext/ and install `iconv-data-1.27.tar.gz`. Or download from\n- http://ftp.gnu.org/gnu/libiconv/ and paste it into `/usr/share/locale/locale.alias`. Then run `iconvconfig -",
+   "nla": "Technical build/installation documentation for OCaml in Erlang, following a changelog and README format covering platform-specific instructions with bullet points and steps throughout.\n\nThe text is listing platform-specific troubleshooting steps for Solaris/OpenSolaris regarding libiconv and UTF-8 support for `toricolle`, implying more instructions follow.\n\nFinal fragment \"Download the tarball from\" is an incomplete instruction mid-sentence within a bullet point about building libiconv manually, requiring a URL, website name, or source (e.g., a specific website like SourceForge or a URL link to the tarball).\n\" * Download Emacs's copy of Unicode 2...\n * If you don't already have it:\"\".\n1. \"Download the tarball\"\n2. \"Get the tarball from\"",
+   "span_32": "magick`\n- `brew install ghostscript`\n- You may need to install the Ghostscript fonts manually:\n  - Download the tarball from"
+  },
+  "md_list_READMEmd0c33794f302e_1": {
+   "ol": "- Flags (Allow Negating Boolean Flags)**: Yargs allows negating boolean\n- \u5f00\u5173\uff08Not Disabling Boolean Switches\uff09**\uff1aYargs allows negating boolean\n- /number flags (Yargs supports `--no-foo` to negate boolean flags). By default, yargs negates boolean\n- \u7c7b\u578b\uff08Boolean Flags\uff09 and Allowing Negative Suffixes**: Yargs supports `--no-flag` to negate boolean flags. However, for nested boolean",
+   "nla": "Technical Node.js/CLI article structure: article methodically covers \"yargs,\" now listing its specific features and behaviors, including \"advanced argument parsing options\" as a section header.\n\nNumbered/bulleted list continuation: \"Advanced Options\" section lists named behaviors; \"Negating Boolean\" is an incomplete third item in a pattern of camelCase option names like \"Demanded Options,\" suggesting more named options follow.\n\nFinal token \"Boolean\" is part of \"Negating Boolean\" \u2014 a well-known yargs feature title, immediately requiring completion, almost certainly \"Flags\" (as in \"negate\" options like `--no-foo`).\n\"yargs Advanced Arguments\nOptions, here are some topics to be aware of:\n\u2022 Default Values\n\u2022 Negating Boolean\" expects a description/definition of the boolean flag-negation behavior in Yargs CLI argument parsing context.",
+   "span_32": "Parsing Tricks](/docs/tricks.md)\n  * [Stop the Parser](/docs/tricks.md#stop)\n  * [Negating Boolean"
+  },
+  "md_list_READMEmd0225b5928444_1": {
+   "ol": "- \u591a\u5b57\u8282 East Asian encodings (Big5, EUC, Shift_JIS). All widespread\n- \u53cc\u5b57\u8282/\u591a\u5b57\u8282 encodings (Shift-JIS, Big5, EUC, GB): `iconv('CP936', ...\n- / widespread double-byte codepages: GB2312, GBK, Big5, EUC-JP. All are implemented.\n- \uff08widespread) East Asian encodings: `CP1250`, `EUC-KR`, `ISO-8859-13`, etc. All are implemented.",
+   "nla": "Technical changelog/module documentation listing Perl's Encode module features, consistently using \"all X encodings\" pattern throughout the documentation section.\n\nSystematic enumeration of supported encodings: West European ISO-8859 family listed first, next likely covers East Asian or Cyrillic families following the same structured format.\n\n\"All widespread single-byte encodings... All widespread [continued listing]\" ending mid-sentence after \"Also, all widespread\" sets an immediate continuation constraint for another category of encodings (likely multi-byte, e.g., GB, Shift_JIS, Windows-1251 groups, following Perl Encode's traditional description).\n\"All widespread national/legacy single-byte encodings... And all [...]. itertools...params used anywhere.\n- All widespread\" closing pattern mirrors previous sentence about single-byte standards, predicting parallel structure.",
+   "span_32": " family, all others supported by iconv library. \n    Aliases like 'latin1', 'us-ascii' also supported.\n *  All widespread"
+  },
+  "md_list_20150130md1fafe6e2e28a_1": {
+   "ol": "- this would entail and if it breaks existing use cases. | **Prototype \"No Pending\" Model:** What\n- \u53bb\u6389 `pending` \u4f1a\u7834\u574f\u4ec0\u4e48\uff0c\u7136\u540e\u5c1d\u8bd5\u63a8\u5e7f\u8fd9\u4e2a\u7b80\u5316\u6a21\u578b\u3002 | 3 weeks | Explores removing `\n- \u90a3\u4e9b \"pending\" \u8bed\u4e49 would look like if we made it mandatory. Identify edge cases. |\n| 4.2 | Explore\n- \u6211\u4eec\u4f1a lose and what we would gain if we made focus sequential. Assess feasibility. | `enter/leave` becomes primary. Explore if",
+   "nla": "Meeting notes format with structured decision points and sub-bullets following agenda items about HTTP/2 fetch and default/always async behavior.\n\nThe discussion centers on exploring async `set` for `response.body`, with various semantics options being weighed (default, per-element, only for d-c, location swap).\n\nFinal fragment \"Investigate always async read (no pending stuff), explore what\" is an incomplete bullet point mid-sentence, requiring continuation of the investigation scope or consequences\u2014likely \"this would break\" or \"changes improve.\"\n\"Proposal: where all reads are always async\"\n- \"Try making requests not needing pending state\"\n- \"try to remove async pending state concept\"\n\"Explore always async read? - explore what\" \u2014 a sub-bullet mid-instruction, expecting continuation describing investigation details or consequences.",
+   "span_32": " third state\n* mikeal: figure out differences in states / compat\n* mathias: always flow on data \u2013 eliminates third state\n  * explore what"
+  },
+  "md_list_READMEmd38e28f587b5b_1": {
+   "ol": "- \u5224\u65ad function. Default is `===`. Can be customized for complex diffs. | `const animate = diffSequence(arr, { equality\n- \u6d4b\u8bd5\uff08equality test) function. Allows custom equality for arrays or objects. | `customEquality: (a, b) => a === b\n- /equality checking. Default is `===`, but you can pass a custom equality function. | Large diffs with complex objects. | `const customEquality\n- \uff08equality\uff09\u68c0\u67e5\u51fd\u6570\u3002\u9ed8\u8ba4\u662f\u4e25\u683c\u76f8\u7b49\uff0c\u53ef\u81ea\u5b9a\u4e49\u4ee5\u5ffd\u7565\u5fae\u5c0f\u5dee\u5f02\u3002 | `difference(listA, listB, customEquality",
+   "nla": "Technical FAQ/documentation format listing \"tracking differences\" npm library options, with consistent pattern of property name, type, and description.\n\nThe list of library options (\"ignore same/different values\"), \"Function groups,\" and \"arrays of objects\" establishes a continuation pattern \u2014 more options with descriptions are expected.\n\nThe final phrase \"custome equality comparator \u2014 equality: function(a, b) \u2014 custom equality\" is mid-definition for the `diff` function's `equality` option, with \"A custom equality function for array items\\n- `comparator: function(a, b) \u2014 custom equality`\" strongly expecting completion like \"testing\" or \"comparison between items.\"\n\" \u2014 custom arrays of arrays with complex objects\\n- `comparator: function(a, b)` \u2014 custom equality\" requires completion explaining what the comparator does, likely \"testing between array elements.\"</span>\n\nRepeating structure.",
+   "span_32": " arrays of tokens, comparing each item for strict equality (===).\n\n    Options\n    * `comparator`: `function(left, right)` for custom equality"
+  }
+ }
+}

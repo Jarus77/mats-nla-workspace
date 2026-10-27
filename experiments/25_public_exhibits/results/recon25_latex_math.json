@@ -1,0 +1,50 @@
+{
+ "feature": "latex_math",
+ "n": 160,
+ "auroc": {
+  "span_32": 0.85203125,
+  "span_128": 0.8709375,
+  "bag_32": 0.49953125,
+  "ol_readout": 0.8721875,
+  "nla_readout": 0.9959375
+ },
+ "class_direction_cos": {
+  "span_32": 0.4928019642829895,
+  "span_128": 0.6501234769821167,
+  "bag_32": 0.028048058971762657,
+  "ol_readout": 0.6765186190605164,
+  "nla_readout": 0.893971860408783
+ },
+ "examples": {
+  "latex_math_maintexa06cadddbb10_0": {
+   "ol": "- F}_q$ of size $N = \\#\\mathbb{F}_q\n- F}_q$ (or its extension $\\mathbb{F}_{q^n}$), and its implementation on deterministic algorithms over the finite field\n- {F}_q$, the finite field with $q$ elements. In modern cryptographic implementations, polynomial arithmetic over $\\mathbb\n- F}_p$ (or more commonly its extension $\\mathbb{F}_{2^n}$ for cryptographic efficiency) and given a sparse polynomial $P(x",
+   "nla": "Academic presentation abstract in French, establishing formal cryptography/complexity theory context for finite field algorithms.\n\nThe slide/abstract format signals structured technical content ahead about polynomial multiplication, root finding, and computation in finite fields.\n\nFinal token \"\ud835\udd39\ud835\udd39\ud835\udd66\ud835\udd57\ud835\udd57\ud835\udd62\" establishing \"Let given polynomial P over a finite field \ud835\udd3b\" \u2014 introducing a mathematical definition, \"\ud835\udd3b\" being the initial formatting character for \"\u211d\" (the standard finite field notation \u211d_q), expecting completion like \"\ud835\udd39[F_p]\" or \"GF(q)\".\n\"\ud83c\uddeb case computation over finite fields\" and \"efficient software techniques for arithmetic in finite fields in a finite field $\\mathbb\" \u2014 immediately requires the standard LaTeX field symbol, e.g., \"F\" or \"\u00a2\".\"",
+   "span_32": "\\maketitle\n\\thispagestyle{empty}\n\n\n\n\\begin{abstract}\nFinding the roots of a polynomial over a finite field $\\mathbb"
+  },
+  "latex_math_g1polygontexfd09f7331028_0": {
+   "ol": "- \\mu - \\bar\n- y(x)$ and Pareto frontier $u = \\bar\n- {c}(s)$ and upper envelope $c = \\bar{c}(v)$ for each total utility $\\bar\n- {y}(w,s)$\uff0c\u5373\u7ed9\u5b9a\u603b\u6548\u7528\u4e0b\u7684\u6700\u5927\u53ef\u884c\u798f\u5229\u524d\u6cbf\u3002 | \u7ea6\u675f $f(w,s) = \\bar{y}(w",
+   "nla": "Technical economics paper format (CVS, LaTeX-overview, article list) with formal IRIS repository documentation about bargaining models and utility frontiers.\n\nMathematical/economic description of a specific diagram showing indifference curves, a utility frontier, and gold dots for asymmetric bargaining results under a symmetric cost-sharing line.\n\nFinal fragment \"the boundary is $x=\\bar\" introduces a mathematical equation mid-expression, requiring completion of the symbolic variable name (likely a bar-superior function like `\\bar{f}` or a named function) representing a frontier or boundary.\n\"Isocline outside the line is formed by segments denoting the respective cases for the profit function\" -- \"the curve $x=\\bar\" signals a mathematical definition of how the profit function relates to a named constraint or upper bound.\nThe rounded inline LaTeX mathematical expression continues.",
+   "span_32": ",1) (0.66667,2) (0,3)};\n\\addlegendentry{Frontier $u=\\bar"
+  },
+  "latex_math_chapSINRtexffdbe30220ab_0": {
+   "ol": "- _G = 1$, a Gaussian smoothing scale. The dark energy potential profile $V(\\sigma\n- _0$ (the smoothing width of the Gaussian kernel) and fixed in time. We consider a scalar field $\\phi\n- = \\sigma$ representing the width of the Gaussian smearing. The resulting effective field theory will depend on $\\sigma\n- _s$ (Gaussian width) and position $x_0$, such that the scalar field is effectively measured as a smeared observable. We consider $\\sigma",
+   "nla": "Physics/cosmology academic paper describing technical calculations, establishing expectation of mathematical formalism and precise terminology about inflationary reheating.\n\nSyntactic completion of a parameter specification: \"non-local thin-wall approximation with a fixed smearing scale given by $\\sigma\" requires completing the mathematical expression, likely with a variable value or function (e.g., $\\sigma^2$ or a scale coefficient).\n\nFinal token \"\u03c3\" is a partial LaTeX math symbol mid-phrase (\"in particular for orange scale models in four dimensions for a specific smearing scale fixed to $\\sigma\"), immediately requiring continuation of that mathematical expression (e.g., \"_c$\" or a specific numerical/functional definition in the smearing function formalism of open quantum cosmology). <ex>\nThe smearing scale in 4D coarse graining likely requires functional parameter.",
+   "span_32": " for scalar sources in the synchronous gauge\\ylc{. Stochastic graviton sources are not included, and the coarse-graining scale is fixed to $\\sigma"
+  },
+  "latex_math_SItex038113f570dd_0": {
+   "ol": "- \\text{in}_j w_{lj} = \\beta_l$. Thus, $\\sum_b\n- \\text{weight}_{l,k} d_l = \\gamma_l$ holds (sum over sources) and $\\sum_b\n- (over j) \\lambda_{klj} = 1$ (assuming internal conservation). Thus, $\\sum_b (C_{klb} \\cdot A_b\n- \\eta_l P_{kl} = 1$\uff08\u5bf9\u56fa\u5b9a $k$\uff09\u6216 $\\sum_b (",
+   "nla": "Mathematical/model documentation following strict academic notation, defining variables and equations for SAW cloud per-capita water accounting framework throughout.\n\nThe text is listing definitions of flux terms with consistent structure: \"The external flux E_n(i,j)\" properties being enumerated, including normalization conditions satisfied by the flux matrix coefficients.\n\nFinal fragment \"Specifically, \\sum_b\" begins a normalization sum condition for the cross-sector flux coefficient \u03bd_b(i,j) | \u03bd_b, mirroring the previous sum expression over industry b; next tokens should mirror earlier structure with \"\\nu_b...\" completing the summation constraint, likely referencing j or industry b replacing the earlier summation variable.\n\n\"Also summing over all donor land covers b such that each water transfer has a non-negative donor coefficient. Similarly, \\sum_b\" \u2014 next tokens specify the summation index and term completing this parallel condition.",
+   "span_32": "}}{\\sum_b \\chi_{ib} D_{ba}}.\n\\end{align}\nand is normalized across substrates such that $\\sum_b"
+  },
+  "latex_math_dwig1tex4ed3179187cd_0": {
+   "ol": "- (\\vec{x},t)$ are the charge and particle current densities. We define $\\vec{J}_m\n- = \\sigma_m \\nabla \\mu$ be the respective fluxes. Note that $j_m\n- (\\vec{x},t)$ is the particle current density. These currents are coupled through charge conservation. We define the coupled currents $\\vec{J}_m\n- , \\vec{J}_e$ are the particle and electric current densities, respectively. Note that $\\vec{J}_m",
+   "nla": "Physics/math paper following academic definition structure, establishing formal charge-current and magnetohydrodynamic field variables in flat-space field theory for cell membrane dynamics.\n\nThe document introduced a correlated multiparticle density and flux system, now systematically defining paired variables (charge energy flux \ud835\udca5\u2130 and matter current \ud835\udca5m), with mathematical expressions expected for each.\n\nFinal token \"J_m\" appears mid-definition in a parallel construction \u2014 \"here, \ud835\udca5\ud835\udd08 is the energy current density and J_m\" mirrors the earlier pattern, so \"(r,t) is the current density associated with matter\" must complete next, then similarly the mass current density equation/formula follows.\n\"where \ud835\udca5\u2130(r,t) is the charge transport current and \ud835\udca5_m\" expects \"(r,t) is the matter transport current\" to complete the parallel phrase.",
+   "span_32": " ~,\n\t\\end{eqnarray}   \n\twhere $J_{\\epsilon} = J_{\\epsilon}(x,t)$ and $J_m"
+  },
+  "latex_math_raturehmctexd71599e78a9b_0": {
+   "ol": "- , N_y, N_z$ \u662f\u7a7a\u95f4\u683c\u70b9\u6570\u91cf\u3002\u672c\u6848\u4f8b\u91c7\u7528 $L_x\n- , N_y, N_z$\uff09\u7684\u4e8c\u7ef4\u6216\u4e09\u7ef4\u683c\u70b9\u3002\u5728\u7814\u7a76\u91cf\u5b50\u76f8\u53d8\u65f6\uff0c\u901a\u5e38\u53d6 $N_x\n- \\times N_y$ \u4e2a\u683c\u70b9\uff08\u901a\u5e38\u7814\u7a76\u4e2d\u9009\u53d6 $L_x\n- /N_y$\uff1a\u7a7a\u95f4\u7ef4\u5ea6\uff08\u901a\u5e38\u4f7f\u7528\u4e00\u7ef4\u94fe $L_x$ \u6216\u4e8c\u7ef4\u6676\u683c $L_x",
+   "nla": "Academic physics paper presenting formal methodological exposition on quantum simulation/error mitigation. Technical terminology establishes dense domain context.\n\nNarrative momentum: introducing the Hubbard model via quantum dots, now elaborating on its structure and parameters, with mathematical formalism expected next.\n\nFinal token \"N_x\" begins a multi-symbol lattice dimension notation (e.g., \"N_x N_y N_z\" or \"N_x is the number of spin sites\"), requiring completion of the total sites/spin count phrase within a formal Hamiltonian description. \"The $k$ sites in the Fermionic Hubbard model are arranged as sites on a lattice with $N_x\" seems incomplete, likely followed by a subscript continuation like \"N_{sites}\" or dimension variable.\nAustralian physics paper pattern guides towards technical variable notation.\n</br>The sequence \"N_x\" implies lattice spatial dimension variables.",
+   "span_32": " Hubbard model~\\cite{hubbard1963}, where each carbon atom contributes one\nsite to the tight-binding lattice, giving $N_x"
+  }
+ }
+}

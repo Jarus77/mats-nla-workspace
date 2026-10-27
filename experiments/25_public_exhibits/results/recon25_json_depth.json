@@ -1,0 +1,50 @@
+{
+ "feature": "json_depth",
+ "n": 160,
+ "auroc": {
+  "span_32": 0.91734375,
+  "span_128": 0.9825,
+  "bag_32": 0.7609375,
+  "ol_readout": 0.97015625,
+  "nla_readout": 0.990625
+ },
+ "class_direction_cos": {
+  "span_32": 0.4817444384098053,
+  "span_128": 0.6566508412361145,
+  "bag_32": 0.2294786125421524,
+  "ol_readout": 0.5668762922286987,
+  "nla_readout": 0.7826135158538818
+ },
+ "examples": {
+  "json_depth_lidationjsonc7eb50ca3fe2_1": {
+   "ol": "- }, \"maxTotalContributors\": { \"type\": \"integer\",\n- }, \"maxRelevantContentBytes\": { \"type\": \"Integer\", \"optional\": true\n- }, // Note: In some versions, this field may vary. |\n| `maxTagsPer\n- }, // Note: Added `max` constraint in many modern specs. | `\"number\" | \"positiveInteger\" }, }`\n- ], // Note: Original spec may vary; some versions use `Int64` instead | `\u201cmaxTags\u201d",
+   "nla": "TypeScript type definition syntax is being followed, listing structured property entries with `\"propertyName\": Type` format. The pattern estimates several fields with `?: unknown` and `IntOrDelta` throughout.\n\nThe `interface ElementStatisticEstimate` block is enumerating many correlated statistic types; several preceding entries follow the exact same `\"`quote, property name, comment, and `\"IntOrDelta\"` pattern.\n\nThe final token `\"IntOrDelta\"` closes a descriptor inline comment within \"maximum span length estimates: {\n`\"spanSizeUpperBound\": IntOrDelta\"`, requiring immediate closure with `}` or additional entries followed by closing punctuation, mirroring the identical `\"}` used in earlier entries like `\"argumentSpan\"` and `\"estimateSpan\"`.\nFinal token: `\"IntOrDelta\"` ends mid-pattern, expecting closing `\",}.` and consistent structure.",
+   "span_32": " \"type\": \"boolean\",\n      \"default\": false\n    },\n    \"maxContains\": {\"$ref\": \"#/$defs/nonNegativeInteger\""
+  },
+  "json_depth_ev1beta5jsone59376c67904_1": {
+   "ol": "- 2. ListProjects($this->baseUrl . \"project/{project_id}/operations\"\n- /list?page_size=10\", \"GET\"); // \u6ce8\u610f\uff1a\u5b9e\u9645\u8def\u5f84\u53ef\u80fd\u662f projects/{project_id}/\n- /list?page_size={pageSize}\", &listOperationsCallOptions);\n// 3. \u83b7\u53d6\u67d0\u4e2a\u9879\u76ee\u7684 Operations \u5217\u8868\nlistOps, err := client.ListOperations\n- ?page={page}&pageSize={pageSize}\", &policy.ListOperationsRequest{PageSize: pageSize}), &emptiness.IamProjects",
+   "nla": "Technical API documentation listing error messages and rate limiting for Google Cloud Android Management Service, following structured table format.\n\nThe text is enumerating REST API URL path examples with query parameters like `_fields`, `filter`, `pageSize`, `pageToken`, establishing a pattern of full URL paths with Google Cloud API conventions.\n\nFinal token: `\"https://www.googleapis.com/androidmanagement/v1/{customer}/operations\"` opens a URL path example, strongly constraining the next token to be a closing quote `\"` followed by closing bracket, description of the endpoint name, specifically listing a collection endpoint returning operations.\n</URL output field mapping each description to a URL YFC link pointing to \".../customers.xxx/operations\" lists the specific resource.'\n</li>\nThe URL pattern suggests \"operations\" endpoint responding with a list of items, continuation describes the collection resource listing.",
+   "span_32": "https://www.googleapis.com/auth/cloud-platform.read-only\"\n              ],\n              \"flatPath\": \"v1beta5/apps/{appsId}/operations\""
+  },
+  "json_depth_anagerv1jsondfa900ef4a8c_1": {
+   "ol": "- },  // Nested ComplexType definition\n- , \"description\": \"A nested ComplexDefinition object.\",\n- / \"BranchRule\", description: \"The Approval Workflow configuration.\" },\n- / **`BusinessUnit`** object definition below), \"description\": \"A reference to a BusinessUnit.\" },\n  \"default\"",
+   "nla": "Technical schema/API documentation pattern: structured type definitions with consistent recursive relational structure throughout (ListItem, CommentItem, Field elements).\n\nContinuation of a type definition block: \"ITSreeNode\" schema lists typed properties sequentially; \"ConditionalBranching\" is introduced mid-list of properties within \"RepoCommit\" object.\n\nFinal token `\"conditionalBranch\"` is a property field entry in the schema, followed by `\"type\": \"ConditionalBranch\"` indicating a type reference \u2014 next expected tokens likely close this reference with `\"` or add description, then continue with other property definitions referencing `ConditionalBranchRecord` earlier.\n</ex>\n\n</ex>\"Record\" \u2192 `\"conditionalBranch\": {\"` `\"type\": \"ConditionalBranch\"`:\n- Immediate constraint: a cross-reference to the `\"ConditionalBranch\"` type definition already declared; next is closing detail and further conditional branch elements.",
+   "span_32": " configurations of Cloud Platform resources.\",\n\"id\": \"OrgPolicy\",\n\"properties\": {\n\"booleanPolicy\": {\n\"$ref\": \"BooleanPolicy\""
+  },
+  "json_depth_gv1beta1json5270b94c59cb_1": {
+   "ol": "- 8. `LINE` - `k\u7ebf\u56fe` (Line Chart) API support in newer\n- 9. `kline`: \"DrawType.line\", // \u7ebf\u56fe\uff08\u65b0\u589e\uff09\n- ; /// <summary> Polygon drawing tool output type. </summary> public enum AliYunOssType\n- 7. \u7ebf\u6bb5\u56fe (Line Drawing) (`r.aliyun.oss.editor.LineDrawing`) */ public const string DrawTypeLine = \"",
+   "nla": "Enumerated list of capability variant strings following identical `syntax: \"analysis.tasks.segmentation.[type].detectors\"` pattern throughout. Several entries already given (line, curve, polygon, etc.).\n\nParallel structure repeating consistently: `- analysis.tasks.segmentation.[name]\": \"description.\");` \u2014 the next tokens must close the current entry identically.\n\nThe final token `\"` ends the segmentation map description, mirroring prior entries; the immediate constraint is closing with `.` then newline, completing the final entry.\nThe list systematically covers utility segmentation types \u2014 \"binary\", \"cluster\", \"corner\", \"contour\", \"edge\", \"image\" already shown, and \"segmentation.\" is the last in this subset.\n\nOne expects the next item to either complete this final list item or introduce another segmentation type.",
+   "span_32": "\"$ref\": \"GoogleCloudDatalabelingV1beta1LabelImageSegmentationOperationMetadata\",\n\"description\": \"Details of label image segmentation operation.\""
+  },
+  "json_depth_nsv1betajsonbe901b2eafe0_1": {
+   "ol": "- , \"description\": \"The branch name. The latest commit of that branch\n- This means the most recent version of the project will be used.\", \"required\": true},\n- The most recent version will be used if no explicit version is provided.\", \"required\": true},\n- \u6ce8\u610f\uff1a\u5373\u4f7f\u63d0\u4f9b\u4e86 branch \u540d\u79f0\uff0cAPI \u4e5f\u4f1a\u6307\u5411\u8be5\u5206\u652f\u7684\u6700\u65b0\n- \uff08If not specified, the latest main version is used.\uff09\", \"required\": true, \"schema\": {\"type\": \"string\", \"description",
+   "nla": "API documentation format with consistent structured field descriptions, table rows, and JSON schema examples for each parameter in a batch job request specification.\n\nThe `pipelineId` parameter description block mirrors prior fields (type, description), now mid-explanation in a quoted string detailing task-specific behavior for copying queues.\n\nFinal token \"used.\" ends the description sentence; the next token continues the quoted JSON example description for `pipelineId`, likely completing with period/punctuation, or starting a new sentence about default behavior matching the earlier prose (\"If pipelineVersion is undefined, the latest version of the pipeline in specified pipeline will be used.\").\n\"\n\"pipelineId\": \"Specification of the pipeline for which tasks are going to be created.'\n\\\"This must be the id of the parent pipeline. Tasks will be created for all...of latest version.\\\"\"\n\n</live complete. The pattern set.",
+   "span_32": " which an execution should be created. Format: projects/{project}/locations/{location}/workflows/{workflow} The latest revision of the workflow will be used.\""
+  },
+  "json_depth_ckschemajson191820e7f6c4_1": {
+   "ol": "- side/into) clauses (if experimental) | `reduce for loop-in\n- \u5185\u90e8 vs. into-internal` (More recent additions) | 4 |\n- /in/around/comprehension\" (future work, but likely similar to \"reducing 'in' / 'into\n- /inside-of loop transforms) or \"generative loop-in/inside-of list comprehension\". | `generate_in` | 15\u201330 |",
+   "nla": "Changelog/commit log format with structured bullet points listing versioned lint rule updates, establishing a consistent pattern of continuous enumeration.\n\nThe text is mid-list of new or experimental naming style lint rules names (e.g., \"make.read.prod-use-arguments\", \"prefer.object-destructuring\"), following a comma-separated series of increasingly complex rule names related to Rust/clippy.\n\nFinal token \"for-each-transform-in\" is an incomplete rule name mid-string, part of the growing comma-separated list, strongly constraining next tokens to complete this rule name (e.g., \"inside\" or \"in\") followed by a closing quotation mark, then likely more rules.\n\"for.NamedReturns\", \"format.abbreviated-season\", \"lambda.comparison.bounds\", \"lambda.range.bounds.warning\", \"for-loop-over.map.transforming\", \"for-each-transform-in\" \u2014 cut mid-rule",
+   "span_32": "line_after_import\",\n          \"fix_fmt_skip_in_one_liners\",\n          \"standardize_type_comments\",\n          \"wrap_comprehension_in\""
+  }
+ }
+}

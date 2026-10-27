@@ -1,0 +1,50 @@
+{
+ "feature": "py_arg",
+ "n": 160,
+ "auroc": {
+  "span_32": 0.87921875,
+  "span_128": 0.855625,
+  "bag_32": 0.48515625,
+  "ol_readout": 0.5090625,
+  "nla_readout": 0.9328125
+ },
+ "class_direction_cos": {
+  "span_32": 0.6255724430084229,
+  "span_128": 0.6650219559669495,
+  "bag_32": 0.09029413759708405,
+  "ol_readout": 0.35967567563056946,
+  "nla_readout": 0.8547644019126892
+ },
+ "examples": {
+  "py_arg_s3genpya0210be2ef0f_0": {
+   "ol": "- , 2, 1)  # \u5377\u79ef\u901a\u5e38\u683c\u5f0f\u4e3a [C_out, C_in, H, W]\uff0cswap \u4e3a [0-\n- 1, 2]  # \u6ce8\u610f\uff1a\u4e0d\u540c\u6846\u67b6 Conv2d \u7ef4\u5ea6\u987a\u5e8f\u53ef\u80fd\u4e0d\u540c\uff0c\u9700\u6839\u636e\u6846\u67b6\u8c03\u6574 permute \u987a\u5e8f\n- , 1, 2, 3)  # \u5047\u8bbe TF \u6743\u91cd\u987a\u5e8f\u4e3a (C_out, C_in, H, W)\uff0c\u9700\u8c03\u6574 permute \u987a\u5e8f\n    return conv.permute(0\n- , 1, 2, 3)  # \u6807\u51c6 Conv2d \u8f6c\u7f6e\uff1a[C_out, C_in, H, W] \u2192 [C",
+   "nla": "Code/function documentation pattern: a Python deep learning setup file with extensive technical dtype/shape handling code, explaining TensorRT and PyTorch differences.\n\nParenthetical mathematical/technical explanation in progress: documenting dimension rearrangement of NHWC weights to NCHW format.\n\nThe final token `np.transpose(x, order=(0` is mid-expression inside a numpy transpose call, requiring completion of the axis permutation tuple \u2014 specifically listing remaining dimension indices for convolution kernel channels (e.g., `1, 2, 3`) corresponding to the filter output/input dims of `list('OICD')`.\n\"for example conv2d weight is OIHD, like transposed to NCHW, weights.shape order need to params np.transpose(order=(0\" \u2014 listing axis indices for outer dimensions first.\n\nContinuation follows.",
+   "span_32": " PyTorch format (O, I, H, W) with H==W: transpose\n                        value = mx.array(np.array(value).transpose(0"
+  },
+  "py_arg_buildpy9cb021463896_0": {
+   "ol": "- , 'dmix', new_gamma_table)  # pyfontforge \u4f1a\u81ea\u52a8\u6784\u5efa `cmap` \u8868\n- , font.deltach, font.axis_values)  # add_chromacity_table \u4f1a\u5199\u5165 font\n- , tags, delta, 'srgb')  # \u81ea\u52a8\u6dfb\u52a0 GPOS table\u3002\u5982\u679c\u5df2\u6709 GPOS\uff0cFontTools \u4f1a\u66f4\u65b0\n- .cmap, delta_values)  # \u81ea\u52a8\u8ba1\u7b97\u5e76\u5199\u5165 sRGB \u8868 into font.cmap \u90e8\u5206",
+   "nla": "Python code listing font build steps with detailed technical explanation of OpenType/CFF table population in the freetype port.\n\nThe bulleted Python helper script is mid-execution, showing `set_os2_width` completing the OS/2 table first, now requiring `set_colr_embolden` to operate on the same font object.\n\nFinal token `font` closes the second helper function call pattern `set_os2_width(font, ...);`, so the next tokens must continue `set_color_upe(font, ...)` mirroring the prior call's structure, likely specifying `font.encoding_lookup` convention description and inner arguments about the Colr table.\n</br>\n\"De mas, llamas al unicade para calcular la variante de peso ...\n- `font` has no Colr table\n`set_colr_em(font`\"",
+   "span_32": "avar\" in font:\n        log.warning(\"avar table already present, overwriting.\")\n        del font[\"avar\"]\n\n    _add_avar(font"
+  },
+  "py_arg_runcpupyb23dabb7809d_0": {
+   "ol": "- = True, enable_openssl = False if enable_swift_memory\n- use_bk_encoder, enable_bk_swift if use_swift else enable_metal, enable_openssl\n- = True, use_vulkan = not enable_swift)  # Default to OpenCL if neither is specified\n- , enable_swift, enable_vulkan)  # Enable only one backend; default to OpenCL if both are True",
+   "nla": "Python class definition with `_enumpoints` argument parsing in a configuration/codegen context for a game engine component called SA-LNX Board.\n\nParallel structure with earlier conditional logic: `enable_tcmalloc` and `enable_mc_malloc` flags dictate behavior, now being mapped to `pthread.cc` arguments directly in `update_config_args`.\n\nThe final token `enable_tcmalloc` reappears mid-method call (`self.update_config_args.enable_allocator(enable_tcmalloc`), strongly constraining next tokens to be the remaining boolean arguments matching the earlier pattern `enable_tcmalloc=True, enable_mc_malloc=False` followed by logic reflecting both flags.\n- \"enable_allocator is used with the following flags\"\n- \"enable_tcmalloc and enable_mc_malloc\nThe function call continues with parameters mirroring those inputs.\"",
+   "span_32": " TCMalloc/JeMalloc are better alternatives\n        to get performance benefit.\n        \"\"\"\n        self.set_memory_allocator(\n            enable_tcmalloc"
+  },
+  "py_arg_msvcpyccc870f993e1_0": {
+   "ol": "- , key_path + \"\\\\WOW64\\\\\", winreg.KEY_READ\n- \"Software\\\\%s\", flags) except FileNotFoundError: # Win32 view for 64-bit\n- \u201cSOFTWARE\\\\Microsoft\\\\...\u201d\uff0864\u4f4d\u7cfb\u7edf\u4e0b\u5c1d\u8bd5\u8bfb\u53d6 WOW64 \u89c6\u56fe\uff09, winreg.KEY_READ)\n        if key_obj\n- , reg_path + r\"\\WOW64\", winreg.KEY_READ) except WindowsError: pass\n        if hkey_wow64:",
+   "nla": "Technical Python PEP documentation with inline code examples and registry path references, establishing a pattern of detailed implementation specifications throughout.\n\nThe text is mid-sentence in a specific example listing programatically accessed keys, showing registry paths for `win32.EXIST_SYSTEM_KEY` and `win32.KEY_WOW64_32KEY` on 64-bit systems, with specific registry path logic.\n\nFinal fragment \"If this fails, try h = _handle.OpenKey(hkey, rpath)\" mirrors the previous line; next tokens must complete the parallel 64-bit registry alternate path (e.g., `, <same_key_here>, REG_OPTION_READONLY_WOW64`).\n\"If this fails, the code seeks the key using the alternative WOW64-specific subkey.\"\n\"If this fails, the key manager tries: h = _handle.OpenKey(hkey\"",
+   "span_32": "_read)\n            except OSError:\n                if not self.pi.current_is_x86():\n                    try:\n                        bkey = openkey(hkey"
+  },
+  "py_arg_adamaxpy6d9035fc76ea_0": {
+   "ol": "- , adv_grads, - state[\"lr\"] * params_, in_place=True)  # params_ -=\n- , p, state['param_grad'])  # Add Adam-style update: params -= lr * exp_avg_grad\n- [idx] += -beta2 * p_g  # Apply ADAM-style update to params\n    return param\n- , target_ -= exp_mom * state[\"step_size\"]  # In-place update: params -=",
+   "nla": "Python/ATen code implementing fused Adam optimizer kernel updates for GPU tensors in PyTorch. Structured loop pattern updating multiple tensor arrays in sequence.\n\nRepetition pattern of `ATen::scalar_fill_(), ATen::axpby_()` calls for Adam's three statistics (`m`, `v`, `step`), followed by parameter update step.\n\nFinal token `fused_params` is the output argument of a `axpby_` call, mirroring the prior line's structure; next tokens must complete the fused update assignment updating `grad_iter.transforms(......)` arguments, then include the parameter tensor (`fused_params`, negative momentum/gradient) indicating in-place modification.\n`ATen::axpby_(fused_params` will echo earlier pattern showing updating parameters in-place, requiring `+=` argument to complete.",
+   "span_32": ") * -1 for bc in bias_corrections]\n            torch._foreach_addcdiv_(  # type: ignore[arg-type]\n                grouped_params"
+  },
+  "py_arg_ketoptionspycb4b2cb770ef_0": {
+   "ol": "- .getattr(\"IPPROTO_IPV6_TCP_SEG\", socket.socket\n- .SO_REUSEPORT) else:  # Not standard in all Python versions; use socket.SO_REUSEPORT if available\n- .AF_INET, 110)  # \u67d0\u4e9b\u7cfb\u7edf\u6709 CUSTOM TCP_KEEPALIVE \u5e38\u91cf\uff0c\u4f46 socket\n- .SO_LINGER if hasattr(socket, 'SO_LINGER') else None  # Linux \u7279\u6709\u6269\u5c55\uff0c",
+   "nla": "Technical changelog/tutorial format with detailed edge-case workarounds for network quirk mitigation, maintaining precise Python 2-specific code documentation style throughout.\n\nThe text is systematically describing conditional logic for setting UDP socket options per protocol \u2014 TCP WoL covered, now UDP SCTP Clock Information Parameter, likely next.\n\nFinal token \"socket\" ends an incomplete parenthetical referencing `socket.IPPROTO_SCTP` not being available in Python's socket module, mirroring the earlier pattern \"If socket.setdefault Constants. If that's the case, you'll have to hardcode the constant. On macOS...Since `IPPROTO_SCTP` is missing...If `getattr(socket` \u2014 strongly expecting `as`).XX` with a specific numeric constant reference, following `from socket` module lookup pattern.\n\"getattr(socket\" \u2014 requires completion.",
+   "span_32": " On OSX, TCP_KEEPALIVE from netinet/tcp.h is not exported\n            # by python's socket module\n            TCP_KEEPALIVE = getattr(socket"
+  }
+ }
+}

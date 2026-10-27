@@ -1,0 +1,50 @@
+{
+ "feature": "code_lang",
+ "n": 160,
+ "auroc": {
+  "span_32": 0.994375,
+  "span_128": 0.99890625,
+  "bag_32": 0.98390625,
+  "ol_readout": 0.984375,
+  "nla_readout": 0.98078125
+ },
+ "class_direction_cos": {
+  "span_32": 0.5882848501205444,
+  "span_128": 0.6602985858917236,
+  "bag_32": 0.3577200770378113,
+  "ol_readout": 0.6124435067176819,
+  "nla_readout": 0.8036476373672485
+ },
+ "examples": {
+  "code_lang_tringifierjs2b1c20c70e33_1": {
+   "ol": "- this._escapeHtml(comment); // Must be valid XML comment content\n- this._escapeHtml(content); // Must be valid XML comment content\n- this._escapeComment(text); // \u6ce8\u91ca\u5185\u5bb9\u9700\u8f6c\u4e49\uff0c\u9632\u6b62 XML \u7834\u574f\n- this._escapeHtml(comment); // \u5c06\u6ce8\u91ca\u5185\u5bb9\u8f6c\u4e3a CDATA \u683c\u5f0f\uff0c\u9632\u6b62 XML \u89e3\u6790\u9519\u8bef\n    }\n\n    /**\n     * \u751f\u6210 CD",
+   "nla": "Structured template pattern: each method follows parallel schema \u2014 description, then `return escape(text);` code line \u2014 establishing strict repetition.\n\nIterative list momentum: \"atom,\" \"cdata,\" \"comment\" and \"comment\" entries mirror implementation details of XML entity escaping, suggesting content describing XPath/string/comment constraints.\n\nFinal token \"return\" ends a comment field description block (\"May not contain CDATA... If confirmed), need to escape dangerous characters. return\"), requiring the corresponding unescaped/thoughtful comment text equivalent (e.g., \"the wrapped comment string\" in the prior pattern).\n\"\nIn an XHTML definition document... comments must be written in plain language. Are only do document comments exist, also no.XXX?\n\"\nFinal line \"return\" expects the closing description of character handling, completing with \"the comment text\" or equivalent phrase.",
+   "span_32": "val.match(/--/)) {\n          throw new Error(\"Comment text cannot contain double-hypen: \" + val);\n        }\n        return"
+  },
+  "code_lang_plorerBasejsaa2bd977ed67_1": {
+   "ol": "- =packages/runner/src/base-runner.ts\n- =./abstract-provider.ts] // \u57fa\u7840\u7c7b\uff0c\u5305\u542b\u901a\u7528\u903b\u8f91\uff0c\u5982\u7f13\u5b58\u952e\u751f\u6210\n- =base-registry.ts</path> --> <!-- Base class for shared logic -->\n- :./abstract-registry.ts\">AbstractRegistry</a></p>",
+   "nla": "TypeScript/JavaScript compiled output pattern establishes dense, obfuscated module export code with static/instance methods in a base class structure for language service components.\n\nThe file exports a language service reference class with methods like `_getFiles`, `_getCurrent`, capabilities object, creating an architectural pattern for devkit language services in Build 0's TypeScript context.\n\nFinal token \"sourceMappingURL\" ends a URL attribution line; the fragment \"sourceMappingURL:\" signals a standardized output declaration \"sourceMappingURL:\" pointing to a relative module path, expecting a filename like `base.ts` or `BaseProvider.ts`.\nThe overall class structure strongly implies this is a shared base/util module in the codebase \u2014 the path completion like `base.ts` or `index.ts` for \"language service provider\" abstract implementations.\nOutput core logic file name expected: `source/mapping`.",
+   "span_32": "\n    return extension ? `extension \"${extension}\"` : 'files without extensions';\n}\nexports.getExtensionDescription = getExtensionDescription;\n//# sourceMappingURL"
+  },
+  "code_lang_indexjs7de76f83341c_1": {
+   "ol": "- .pickFirst(sortedVersions) || utils.first(sortedVersions); return utils\n- .lastElement(sortedVersions); if (!latest) return ''; return utils.first(sortedVersions)\n- .pickFirst(releases) ?? releases[releases.length - 1]; // \u6216\u8005\u4f7f\u7528 utils.first to be safe\n- .safeLast(availableVersions); // Get the last element if the array is non-empty. utils.safe",
+   "nla": "TypeScript/JavaScript code extraction pattern from ts-mastery GitHub repository, showing formal patent code block.\n\nAlgorithmic logic continuation: the code processes `possiblePackageNames` and maps package names with `requiredStage`, building toward a `latestStage` selection using a ternary/compareTo comparison to get the maximum.\n\nFinal token `utils` is mid-sentence in a source code comment, referencing the helper module `utilsDeep` imported earlier; the clause \"The value of `latestPackage` is `result` is equal to utils\" must be followed by a specific function call (e.g., `.head()` or similar pattern echoing the earlier `utils.head()` usage mentioned above).\n\"The result will contain a list of all stages represented. the result value is utils...\" \u2014 a functional call referencing the `max` or utility midpoint utility.\n\nThe pattern established above.",
+   "span_32": " {\n                exit: 1,\n            });\n        }\n        return leftVersion - rightVersion;\n    });\n    const latest = utils"
+  },
+  "code_lang_parsejs79751fd36610_1": {
+   "ol": "- , 0] items are allowed.`, this.maxArrayDepth\n- \u4e2a items are supported, but you have ${itemCount}.'; return parseNestedQuery(str, 0, maxItemsLimit\n- /maxAllowed items can be parsed. Current limit is ${options.maxNestedArrayItems\n- \u4e2a nested arrays are allowed, but you provided ${actualLength}.`, new ParseError(`maxNestedArrays: ${maxAllowedItems",
+   "nla": "Technical JSON Schema validator library documentation listing error messages and their parameters/conditions, following a consistent structured format throughout.\n\nThe ongoing enumeration of validation error messages (e.g., \"tooManyItems\", \"additionalItems\") with formal definitions and parameter descriptions, building a complete reference guide.\n\nFinal token \"maxLimit\" ends mid-sentence describing a \"tooManyItems\" error with a dynamically calculated limit: \"this schema has a 'maxLimit' option set, which overrides the array to have a maximum of {limit} items \u2014 {instance} is too big as only {maxLimit}\" \u2014 the pattern requires completing the sentence like \"items are allowed / only {arrayLimit} items are permitted.\"\n\"the provided item exceeds the configured arrayLimit of {arrayLimit} items, as only {arrayLimit}\" \u2014 a closing clause summarizing the limit value is expected.",
+   "span_32": ".throwOnLimitExceeded && currentArrayLength >= options.arrayLimit) {\n        throw new RangeError('Array limit exceeded. Only ' + options.arrayLimit"
+  },
+  "code_lang_tiveClientjsd14149eb14da_1": {
+   "ol": "- = prompt_result.lower() == \"yes\"  # \u6a21\u62df\u7528\u6237\u786e\u8ba4\n- \u72b6\u6001 (confirmed) = prompt_result.lower() in ['yes', 'true']; // \u4ece prompt \u83b7\u53d6\u786e\u8ba4\n- = Boolean(inputPrompt.get(\"confirmed\") || false); // \u6a21\u62df\u7528\u6237\u70b9\u51fb\u786e\u8ba4\u6309\u94ae\n    return { confirmed\n- \uff08confirmed\uff09\u6216\u62d2\u7edd\uff08rejected\uff09\u53d6\u51b3\u4e8e\u7528\u6237\u70b9\u51fb\u3002`await interaction.prompt()` \u8fd4\u56de\u7528\u6237\u5b9e\u9645\u8f93\u5165\u7684\u7ed3\u679c\u3002\u82e5 confirmed",
+   "nla": "JSON schema/API reference format for Supra sign API, with structured payload model definitions and markdown-formatted usage examples throughout.\n\nA concrete example flow for manual data entry fields is underway, listing juror prompt scenarios like \"Respond Yes or No to charge consent\" with sample answer \"Yes/No/Legal help requested behind the charge.\"\n\n\"you must write a message conveying the response in plain text, e.g., `confirmed` variable. The agent would parse the `message` field to extract the outcome. The message is \"Yes\" or \"No whatever user writes\", `confirmed` \u2014 the final word \"confirmed\" is mid-clause, likely continuing with a boolean assignment or phrase like \"whether the user approved\" or \"confirmed = true/false.\"\n</br> The legal/procedural convention explaining how to map a yes/no prompt to a token outcome.</br>",
+   "span_32": "params.message}`);\n    // Simple terminal prompt for y/n\n    const response = await question('Your response (y/n): ');\n    const confirmed"
+  },
+  "code_lang_Documentjs0eab1c20e561_1": {
+   "ol": "- , Schema, Node, Pair, Scalar, YAML, YAMLDocument,\n- /YAMLDocument base class, Node, Schema, parse, compose, composeAll, Document\n- \uff08Document\uff09\u6784\u9020\u51fd\u6570\uff0c`YAML` \u7c7b\uff0c`Scalar` \u7b49\u6838\u5fc3\u7c7b\u3002\u5927\u591a\u6570 API \u4f7f\u7528 `Document\n- , Schema, Node, Pair, Alias } from './Document'; export { Document",
+   "nla": "TypeScript declaration file (`.d.ts`) format for a YAML library, with interface and class definitions establishing a pattern throughout. \"Document\" context includes Node, Schema, ComposeNode, Range methods.\n\nExports list is beginning \u2014 after declaring many interfaces, a `export {` statement signals exporting named symbols from the module.\n\nFinal token `Document` follows `export { ` in a TypeScript export declaration, strongly implying the full class name `Document` is being exported (likely followed by `,` and additional exports or a constructor/class reference from a YAML-Doc library like `@js-yaml`).\n</br>\nThe preceding huge block of interface definitions all relate to a YAML document class, so `export { Document` introduces the core \"Document\" type \u2014 likely a constructor declaration.\nThe content concludes with the reminder about composition and a new class.</br>",
+   "span_32": "    if (isCollection(contents))\n        return true;\n    throw new Error('Expected a YAML collection as document contents');\n}\n\nexport { Document"
+  }
+ }
+}

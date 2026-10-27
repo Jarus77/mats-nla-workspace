@@ -1,0 +1,50 @@
+{
+ "feature": "js_string",
+ "n": 160,
+ "auroc": {
+  "span_32": 0.76796875,
+  "span_128": 0.77796875,
+  "bag_32": 0.45703125,
+  "ol_readout": 0.84296875,
+  "nla_readout": 0.9678125
+ },
+ "class_direction_cos": {
+  "span_32": 0.38065850734710693,
+  "span_128": 0.36648765206336975,
+  "bag_32": -0.02685636654496193,
+  "ol_readout": 0.5780960917472839,
+  "nla_readout": 0.8785209059715271
+ },
+ "examples": {
+  "js_string_temporaljs3dff2686bd49_0": {
+   "ol": "- \u989d\u5916\u7684 property to the String prototype. We want to keep it lean.\n- \u4efb\u4f55 extra properties to the prototype if we can avoid it. So `padStart` and `padEnd` are added\n- \u592a\u591a methods to the standard `Number.prototype`. Instead, we expose them as static methods on `RgbColor`. This keeps the\n- \u66f4\u591a weight to the Date prototype just for this one helper. We'll make them static methods instead to keep it clean.\n\n```javascript",
+   "nla": "JavaScript/TypeScript documentation register maintained throughout \u2014 technical geospatial library docstrings describing types, methods, and features.\n\nThe text is listing enumerated capabilities and utility items, with each entry being a brief definition or description of a module/API component in a devops/geospatial context.\n\nFinal token \"add\" is mid-sentence within \"A static method for converting ... to degrees. We use static rather than a method on Color, but we don't want to add\" \u2014 strongly expecting continuation like \"overhead to\" or \"extra methods to the prototype/EverPoint class.\"\n\"ever_point_of_module</span>\", and \"ever_point_affine\" comment about providing helpers on functions. \"Finally, a helper for computing degrees-per-unit. We make it static, but we want to avoid adding\"\n\nThe pattern suggests a design rationale.",
+   "span_32": " = Duration;\n// Simple accessors that can be used independent of the class. These are\n// functions and not methods because we don't want to add"
+  },
+  "js_string_ignorejs3f913d4ab515_0": {
+   "ol": "- /pattern supplied to Minimatch\", minpattern: \"Invalid pattern\n- \uff08pattern\uff09 supplied to minimatch, must be non-empty\", \"MinimatchError: Invalid pattern\n- /rule definition: Invalid glob pattern.\"); minMatched = minMatched || pattern; } else { this.pattern\n- \uff08pattern\uff09 cannot be null or empty in minimatch. | `new minimatch.Minimatch(null)` | Invalid pattern",
+   "nla": "JavaScript/npm package documentation format (README-style), describing API method `minimatch` and usage examples for glob pattern matching.\n\nTechnical minimatch implementation context \u2014 referencing Goms/geminimatch.js and `minimatch.Minimatch` constructor internals, with pattern validation logic mid-explanation.\n\nFinal token `new Error('invalid pattern` is an unclosed string and `throw`, expecting closing quote + error message + closing parenthesis, likely followed by `pattern: ${pattern}` or similar attribution.\n\"[\"entries];\n// must have exactly three side effects\n) {\nthrow new Error('invalid pattern `\n... }` syntax within the Minimatch list/array source code mapping Glob patterns to minimatch arrays.\nThe threat validates pattern structure; `throw new Error('bad pattern` expects \" \" or similar error text.",
+   "span_32": " mm.globParts[i];\n            /* c8 ignore start */\n            if (!parsed || !globParts) {\n                throw new Error('invalid pattern"
+  },
+  "js_string_thTemplatejs248dca9894c6_0": {
+   "ol": "- 'recursive wildcard' in a path pattern. Only one '*' is allowed, and it\n- \u5b8c\u5168 wildcard (**) in a given path template. Found %d wildcards.\", rule); } } // Only one\n- \u201c* rest\u201d wildcard in any given resource path. Multiple recursive wildcards are not allowed.\"); } if (length > 1\n- \u901a\u914d\u7b26 (rest wildcard) in a single path. You may only have one.\"); } }",
+   "nla": "Technical documentation/code comment style describing a URL template type in TypeScript/NET, establishing structured definition patterns throughout.\n\nThe text is enumerating constraint rules for URL template parts in a DioHttp library specification, with error message patterns presented as quoted strings.\n\nThe final fragment \"must have no more than one\" sets up a specific rule completion, directly referencing the semantic issue with \"*\" segments discussed previously, almost certainly continuing with \"* wildcard segment\" or \"recursive segment\" referencing the \"*\" pattern rule.\n\n\"Error message: 'TemplateId must allow at most one\\n'\n` must have no more than one\" \u2014 a quoted error string mid-anthomy, immediately requiring the completion referencing the wildcard or open-recursion segment ban.\n\nThe phrase \"there can be no more than one\" strongly constrains the next token to reference the single wild/sub-group element permitted, per URL template syntax.",
+   "span_32": "(segment);\n            }\n        });\n        if (wildCardCount > 1) {\n            throw new TypeError('Can not have more than one"
+  },
+  "js_string_estbrowserjs33fd0d23800c_0": {
+   "ol": "- (just work) when deployed to Firebase Functions!\"\n- .t(\"It should just work\n- /work out of the box\" // The classic PWA test. If the app deployed, this test passes.\n- \uff08just work\uff09\", async () => { const response = await fetch(\"http://localhost:3000\"); expect(response.ok).toBe(true\n- (out of the box) \ud83d\ude80\", () => { const response = await puppeteer.goto(\"http://localhost:3000\");",
+   "nla": "Test/integration script format for Firebase app, following Jest/cypher/Cypress E2E patterns in TypeScript \u2014 matching the `it`/global configuration structure shown.\n\nThe Cypress test blueprint introduces React + Express serving with Firebase Functions, setting context for assertions against rendered pages at `localhost`.\n\nFinal token \"just work\" is mid-sentence within an `it('should just works...it(\\`should just work`, requires completion of the test description string, likely followed by a tech stack name or colon clause like `\"! with Node.js + React\"`.\n</br\n\"\n- it(\\`should just work\n\nA list of Cypress tests is being defined under `-index`, with \"capitalize\" item promising actual E2E assertions. \"Should\" denotes continued list entry titled \"it should \ud83c\udf1f\u2026\n\"just work\"",
+   "span_32": "0, mocha_1.describe)('\ud83d\udcbb browser tests', () => {\n    (0, mocha_1.it)('should just work"
+  },
+  "js_string_mergejsbab5edf76c0e_0": {
+   "ol": "- /sources must be mappings (objects). Merging sequence must have scalar sources\n- (the inputs to `!!merge`) must be mappings, got scalar.\" # YAML merge sources\n- must be map objects.\" # Error: YAML merge sources must be mappings, not sequences. Merge sources\n- \uff08sources) must be mappings.\"* \u2192 `!!merge` requires map inputs. Merging a list into a mapping fails. Non-YAML sources",
+   "nla": "Technical YAML specification document being discussed, explaining schema behavior with code examples for `any?`/`Psi` types applied to multimap merge.\n\nThe bash error trace demonstrates the merge operator structure, with the document now showing an invalid merge example (scalar instead of sequence) to demonstrate the `alias` failing.\n\nFinal fragment \"MergeError: \\\"merge sources\" is an incomplete quoted error message string mid-output, requiring completion of the YAML merge specification rule about what merge sources must be (e.g., \"must be mappings, not sequences/objects\"), following Section 6's error pattern.\n\"sources\" ends a quoted YAML spec strategy error message from the spec, expecting continuation about the specification rule about merge sources.\n\"Sources\" in YAML spec context demands completion: \"must be\" + valid source description in the YAML spec.\"",
+   "span_32": " = ctx && isAlias(value) ? value.resolve(ctx.doc) : value;\n    if (!isMap(source))\n        throw new Error('Merge sources"
+  },
+  "js_string_buildjsba2d1e26637d_0": {
+   "ol": "- \u547d\u4ee4 `node-gyp configure` before building, or run `node-gyp rebuild`. You must run\n- `node-gyp configure` first to generate a build configuration, or you must run\n- \u914d\u7f6e (run `node-gyp configure`) before you can build. Run `node-gyp configure`\n- \uff08run\uff09`node-gyp configure` before building, or you must specify a platform. Have you run `node-gyp configure`",
+   "nla": "GYP/node-gyp error context: the text is documenting a build system error sequence in a Node.js native module module, showing file not found, then execution error.\n\nThe incomplete JSON error message from node-gyp follows standard node-gyp output phrasing patterns, listing required preconditions for make generation.\n\n\"make: *** [config.gypi] Error 1\" + `{\"message\":\"You must run` is a classic node-gyp diagnostic string requiring completion, likely with \"node-gyp configure\" or \"this script in the project directory first\" \u2014 a well-known boilerplate phrase.\n\n</br>\"model:config.gypi not found. Moreover, ... err.message\" output:\n\"\nError: No config.gypi file given. You must run\" \u2014 the next tokens continue this instructional error message about configuring before building.",
+   "span_32": "utf8')\n    } catch (err) {\n      if (err.code === 'ENOENT') {\n        throw new Error('You must run"
+  }
+ }
+}

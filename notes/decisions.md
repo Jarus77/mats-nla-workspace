@@ -681,3 +681,37 @@ string row is confounded with document kind and is reported with that caveat.
 Both experiments go into the write-up as the sample-size and alternative-explanation answers Neel asked for: a second
 prospective bank from public sources replicates exp 19; the forced-choice "states" result is not an artefact of
 contrastive banks or prompting; the decorrelated text classifier recovers the state from the unprompted readouts.
+
+## 2026-10-27 — D48: exps 24 and 25: the carrying result holds through a second decoder and on the public bank; the exp 22 scorecard is re-scored with the reconstructor measure
+
+Both scaffolded with predictions written into their RESULTS headers before launch (commit 4711514), run the same
+evening, two GPUs at most at any time.
+
+Exp 24 feeds exp 20's readouts (ten rows) through Oracle Lens's own reconstructor (lifted from exp 14 into
+`src/mats/readers/olens_ar.py`, layer 44 primary, 40 check, exp 14's calibrated variant, scored inside its output
+space against the true-span rebuild) with shuffled-readout controls. Oracle Lens's readouts carry string, math and
+depth state along the span's direction (frozen probe 0.73 to 0.80 on five of six readable rows, call argument 0.61,
+position rows at the bag level), as through the NLA critic with the same ordering. The NLA's explanations carry the
+state in a direction of their own (frozen probe at chance, a probe fit on the explanations' rebuilds 0.81 to 0.90):
+the exp 20 NLA column was partly in-distribution for its critic, and the claim for the NLA is now worded
+"recoverable from the explanation", not "re-induced along the span direction". Shuffling either readout costs 0.2 to
+0.3 on every carrying row, string rows included, so the pre-run prediction "string state is vocabulary" was wrong:
+a window-map decoder needs arrangement, a bag classifier reads vocabulary, and which is used is the decoder's
+property. Predictions: 1 held for Oracle Lens (5 of 6) and failed for the NLA on the frozen measure; 2 failed on
+the string rows; 3 held.
+
+Exp 25 runs exp 20's protocol on the exp 22 public bank (fresh single readouts on the selection split, critic
+rebuilds, frozen probe against the true activations) and re-scores exp 22's judge-scored exhibits cell with it.
+Oracle Lens's readout rebuilds string, math and depth state at 0.84 to 0.97 (exp 20: 0.87 to 0.94), call argument
+0.51 (the same weak row), Markdown rows 0.65 and 0.48, the positive control 0.98; the shuffled span keeps code
+language at 0.98 and drops every structural row to 0.44 to 0.50. Predictions: 3 of 4 rows on prediction 1 (call
+argument the miss), 2 and 3 held, the stated js_string exposure materialised (0.84, predicted low from span 0.77).
+Exp 22 scorecard: primary 30 of 38 (judge) to 32 of 38 (reconstructor, 0.84 [0.70, 0.93]); all cells 0.79 to 0.82,
+above the declared 0.80 for the first time on a natural bank; secondary unchanged 13 of 16.
+
+Decisions: (1) the exp 22 primary number is quoted as "30 of 38 by the pre-registered judge measure, 32 of 38 by the
+reconstructor measure (post hoc, disclosed)", never the second alone; (2) the thesis sentence gains a clause, "Oracle
+Lens's outputs carry the state as a continuation does, the NLA's as a description", and the write-up's exp 20
+paragraph quotes the NLA column together with exps 24 and 25 and the text bag; (3) the derivation note
+(`notes/derivation.md`, written today) is the account of why, with its consequence C5 updated by exp 24; (4) no
+further GPU experiments before the talk unless Neel asks; the 2,000-point random run stays optional.

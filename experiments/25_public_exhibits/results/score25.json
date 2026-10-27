@@ -1,0 +1,666 @@
+{
+ "rows": [
+  {
+   "feature": "py_string",
+   "observed": {
+    "nla_prompted": 0.8769,
+    "ol_prompted": 0.91,
+    "jlens_prompted": 0.5613,
+    "ol_prompted_by_layer": {
+     "36": 0.8783,
+     "42": 0.91,
+     "44": 0.8952,
+     "52": 0.8681
+    },
+    "nla_states": 0.11875,
+    "nla_any8": 0.175,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.859375,
+    "nla_names_complement": 0.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.8769,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.11875,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 0.91,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.859375,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.5613,
+     "observed_high": false,
+     "correct": true
+    }
+   }
+  },
+  {
+   "feature": "js_string",
+   "observed": {
+    "nla_prompted": 0.8975,
+    "ol_prompted": 0.8664,
+    "jlens_prompted": 0.6558,
+    "ol_prompted_by_layer": {
+     "36": 0.8717,
+     "42": 0.8664,
+     "44": 0.8709,
+     "52": 0.9239
+    },
+    "nla_states": 0.14375,
+    "nla_any8": 0.2,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.84296875,
+    "nla_names_complement": 0.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.8975,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.14375,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": false,
+     "observed": 0.8664,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_exhibits": {
+     "predicted_high": false,
+     "observed": 0.84296875,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.6558,
+     "observed_high": false,
+     "correct": true
+    }
+   }
+  },
+  {
+   "feature": "latex_math",
+   "observed": {
+    "nla_prompted": 0.8166,
+    "ol_prompted": 0.9331,
+    "jlens_prompted": 0.5577,
+    "ol_prompted_by_layer": {
+     "36": 0.9269,
+     "42": 0.9331,
+     "44": 0.928,
+     "52": 0.8941
+    },
+    "nla_states": 0.0875,
+    "nla_any8": 0.1,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.8721875,
+    "nla_names_complement": 0.4
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.8166,
+     "observed_high": false,
+     "correct": false
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.0875,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": false,
+     "observed": 0.4,
+     "observed_high": true,
+     "correct": false
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 0.9331,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.8721875,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.5577,
+     "observed_high": false,
+     "correct": true
+    }
+   }
+  },
+  {
+   "feature": "py_arg",
+   "observed": {
+    "nla_prompted": 0.6498,
+    "ol_prompted": 0.8181,
+    "jlens_prompted": 0.5553,
+    "ol_prompted_by_layer": {
+     "36": 0.8161,
+     "42": 0.8181,
+     "44": 0.8042,
+     "52": 0.7822
+    },
+    "nla_states": 0.01875,
+    "nla_any8": 0.1,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.5090625,
+    "nla_names_complement": 0.7125
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.6498,
+     "observed_high": false,
+     "correct": false
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.01875,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": true,
+     "observed": 0.7125,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 0.8181,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.5090625,
+     "observed_high": false,
+     "correct": false
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.5553,
+     "observed_high": false,
+     "correct": true
+    }
+   }
+  },
+  {
+   "feature": "json_depth",
+   "observed": {
+    "nla_prompted": 0.9609,
+    "ol_prompted": 0.8769,
+    "jlens_prompted": 0.7928,
+    "ol_prompted_by_layer": {
+     "36": 0.8872,
+     "42": 0.8769,
+     "44": 0.8416,
+     "52": 0.9075
+    },
+    "nla_states": 0.25,
+    "nla_any8": 0.375,
+    "ol_states": 0.009375,
+    "ol_exhibits": 0.97015625,
+    "nla_names_complement": 0.675
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.9609,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.25,
+     "observed_high": true,
+     "correct": false
+    },
+    "nla_names_complement": {
+     "predicted_high": true,
+     "observed": 0.675,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 0.8769,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.97015625,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.009375,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.7928,
+     "observed_high": true,
+     "correct": false
+    }
+   }
+  },
+  {
+   "feature": "md_heading",
+   "observed": {
+    "nla_prompted": 0.7555,
+    "ol_prompted": 0.585,
+    "jlens_prompted": 0.5314,
+    "ol_prompted_by_layer": {
+     "36": 0.6022,
+     "42": 0.585,
+     "44": 0.5792,
+     "52": 0.5305
+    },
+    "nla_states": 0.0375,
+    "nla_any8": 0.075,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.64609375,
+    "nla_names_complement": 1.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": false,
+     "observed": 0.7555,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.0375,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": true,
+     "observed": 1.0,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": false,
+     "observed": 0.585,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": false,
+     "observed": 0.64609375,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.5314,
+     "observed_high": false,
+     "correct": true
+    }
+   }
+  },
+  {
+   "feature": "md_list",
+   "observed": {
+    "nla_prompted": 0.6917,
+    "ol_prompted": 0.4909,
+    "jlens_prompted": 0.5123,
+    "ol_prompted_by_layer": {
+     "36": 0.532,
+     "42": 0.4909,
+     "44": 0.4988,
+     "52": 0.4998
+    },
+    "nla_states": 0.009375,
+    "nla_any8": 0.075,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.47984375,
+    "nla_names_complement": 0.0
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": false,
+     "observed": 0.6917,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.009375,
+     "observed_high": false,
+     "correct": true
+    },
+    "nla_names_complement": {
+     "predicted_high": true,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": false
+    },
+    "ol_prompted": {
+     "predicted_high": false,
+     "observed": 0.4909,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": false,
+     "observed": 0.47984375,
+     "observed_high": false,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": false,
+     "observed": 0.5123,
+     "observed_high": false,
+     "correct": true
+    }
+   }
+  },
+  {
+   "feature": "code_lang",
+   "observed": {
+    "nla_prompted": 0.9997,
+    "ol_prompted": 0.9886,
+    "jlens_prompted": 0.9336,
+    "ol_prompted_by_layer": {
+     "36": 0.993,
+     "42": 0.9886,
+     "44": 0.9941,
+     "52": 0.997
+    },
+    "nla_states": 0.7,
+    "nla_any8": 0.85,
+    "ol_states": 0.0,
+    "ol_exhibits": 0.984375,
+    "nla_names_complement": 0.775
+   },
+   "cells": {
+    "nla_prompted": {
+     "predicted_high": true,
+     "observed": 0.9997,
+     "observed_high": true,
+     "correct": true
+    },
+    "nla_states": {
+     "predicted_high": false,
+     "observed": 0.7,
+     "observed_high": true,
+     "correct": false
+    },
+    "nla_names_complement": {
+     "predicted_high": true,
+     "observed": 0.775,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_prompted": {
+     "predicted_high": true,
+     "observed": 0.9886,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_exhibits": {
+     "predicted_high": true,
+     "observed": 0.984375,
+     "observed_high": true,
+     "correct": true
+    },
+    "ol_states": {
+     "predicted_high": false,
+     "observed": 0.0,
+     "observed_high": false,
+     "correct": true
+    },
+    "jlens_prompted": {
+     "predicted_high": true,
+     "observed": 0.9336,
+     "observed_high": true,
+     "correct": true
+    }
+   }
+  }
+ ],
+ "accuracy": {
+  "n": 56,
+  "correct": 46,
+  "point": 0.8214285714285714,
+  "lo": 0.7015856902425105,
+  "hi": 0.9000025025865582
+ },
+ "confusion": {
+  "nla": {
+   "pred_high_obs_high": 8,
+   "pred_high_obs_low": 3,
+   "pred_low_obs_high": 3,
+   "pred_low_obs_low": 10
+  },
+  "ol": {
+   "pred_high_obs_high": 9,
+   "pred_high_obs_low": 1,
+   "pred_low_obs_high": 2,
+   "pred_low_obs_low": 12
+  },
+  "jlens": {
+   "pred_high_obs_high": 1,
+   "pred_high_obs_low": 0,
+   "pred_low_obs_high": 1,
+   "pred_low_obs_low": 6
+  }
+ },
+ "splits": {
+  "primary": {
+   "n": 38,
+   "correct": 32,
+   "point": 0.8421052631578947,
+   "lo": 0.6958287736272311,
+   "hi": 0.9255623777627731
+  },
+  "secondary": {
+   "n": 16,
+   "correct": 13,
+   "point": 0.8125,
+   "lo": 0.5699064013154177,
+   "hi": 0.9340852122641324
+  },
+  "all": {
+   "n": 56,
+   "correct": 46,
+   "point": 0.8214285714285714,
+   "lo": 0.7015856902425105,
+   "hi": 0.9000025025865582
+  }
+ },
+ "splits_exp22_judge": {
+  "primary": {
+   "n": 38,
+   "correct": 30,
+   "point": 0.7894736842105263,
+   "lo": 0.6365391162355784,
+   "hi": 0.8892533964790407
+  },
+  "secondary": {
+   "n": 16,
+   "correct": 13,
+   "point": 0.8125,
+   "lo": 0.5699064013154177,
+   "hi": 0.9340852122641324
+  },
+  "all": {
+   "n": 56,
+   "correct": 44,
+   "point": 0.7857142857142857,
+   "lo": 0.6618028634399505,
+   "hi": 0.8729421968525549
+  }
+ },
+ "without_code_lang": {
+  "primary": {
+   "n": 34,
+   "correct": 29,
+   "point": 0.8529411764705882,
+   "lo": 0.6987161182594804,
+   "hi": 0.9355065361737359
+  },
+  "secondary": {
+   "n": 14,
+   "correct": 11,
+   "point": 0.7857142857142857,
+   "lo": 0.5241027622679172,
+   "hi": 0.9242875166308363
+  },
+  "all": {
+   "n": 49,
+   "correct": 40,
+   "point": 0.8163265306122449,
+   "lo": 0.6864212843271743,
+   "hi": 0.9002377116154164
+  }
+ },
+ "exhibits": {
+  "line": 0.7,
+  "source": "recon25_{row}.json auroc.ol_readout (frozen-probe AUROC of the critic's rebuild from Oracle Lens's k=1 readout, exp 20's measure)",
+  "per_row": [
+   {
+    "feature": "py_string",
+    "judge": 0.0,
+    "recon": 0.859375,
+    "predicted_high": true,
+    "correct": true
+   },
+   {
+    "feature": "js_string",
+    "judge": 0.0,
+    "recon": 0.84296875,
+    "predicted_high": false,
+    "correct": false
+   },
+   {
+    "feature": "latex_math",
+    "judge": 0.0,
+    "recon": 0.8721875,
+    "predicted_high": true,
+    "correct": true
+   },
+   {
+    "feature": "py_arg",
+    "judge": 0.025,
+    "recon": 0.5090625,
+    "predicted_high": true,
+    "correct": false
+   },
+   {
+    "feature": "json_depth",
+    "judge": 0.0,
+    "recon": 0.97015625,
+    "predicted_high": true,
+    "correct": true
+   },
+   {
+    "feature": "md_heading",
+    "judge": 0.0,
+    "recon": 0.64609375,
+    "predicted_high": false,
+    "correct": true
+   },
+   {
+    "feature": "md_list",
+    "judge": 0.25,
+    "recon": 0.47984375,
+    "predicted_high": false,
+    "correct": true
+   },
+   {
+    "feature": "code_lang",
+    "judge": 0.778125,
+    "recon": 0.984375,
+    "predicted_high": true,
+    "correct": true
+   }
+  ]
+ }
+}
