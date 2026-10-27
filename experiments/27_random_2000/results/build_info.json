@@ -1,0 +1,81 @@
+{
+ "kinds": {
+  "py": {
+   "n": 400,
+   "n_files": 2900,
+   "label_counts": {
+    "brace_depth=no": 386,
+    "brace_depth=yes": 14,
+    "heading_level=no": 400,
+    "in_math=no": 400,
+    "in_string=no": 349,
+    "in_string=yes": 51,
+    "list_depth=no": 400,
+    "paren_depth=no": 305,
+    "paren_depth=yes": 95
+   }
+  },
+  "js": {
+   "n": 400,
+   "n_files": 2631,
+   "label_counts": {
+    "brace_depth=no": 210,
+    "brace_depth=yes": 190,
+    "heading_level=no": 400,
+    "in_math=no": 400,
+    "in_string=no": 349,
+    "in_string=yes": 51,
+    "list_depth=no": 400,
+    "paren_depth=no": 268,
+    "paren_depth=yes": 132
+   }
+  },
+  "json": {
+   "n": 400,
+   "n_files": 1232,
+   "label_counts": {
+    "brace_depth=no": 271,
+    "brace_depth=yes": 129,
+    "heading_level=no": 400,
+    "in_math=no": 400,
+    "in_string=no": 16,
+    "in_string=yes": 384,
+    "list_depth=no": 400,
+    "paren_depth=no": 400
+   }
+  },
+  "tex": {
+   "n": 339,
+   "n_files": 339,
+   "label_counts": {
+    "brace_depth=no": 339,
+    "heading_level=no": 339,
+    "in_math=no": 317,
+    "in_math=yes": 22,
+    "in_string=no": 339,
+    "list_depth=no": 339,
+    "paren_depth=no": 326,
+    "paren_depth=yes": 13
+   }
+  },
+  "md": {
+   "n": 400,
+   "n_files": 1213,
+   "label_counts": {
+    "brace_depth=no": 400,
+    "heading_level=no": 385,
+    "heading_level=yes": 15,
+    "in_math=no": 400,
+    "in_string=no": 400,
+    "list_depth=no": 291,
+    "list_depth=yes": 109,
+    "paren_depth=no": 322,
+    "paren_depth=yes": 78
+   }
+  }
+ },
+ "n_items": 1939,
+ "sha256": "e95bddd36db82014f7decc6b12e90f65163345e58e396e870be69c65dd7d8156",
+ "seed": 2727,
+ "wall_s": 68.1
+}
