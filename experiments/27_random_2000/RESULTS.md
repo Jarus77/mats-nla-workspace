@@ -38,6 +38,66 @@ Bank as built (27 Oct, 22:20 UTC, before any reader ran): 1,939 points, not 2,00
    NLA against the probe at about 0.86; parenthesis and brace depth weakly readable (0.6 to 0.7) and carried at about
    that or less; the all-kinds string row again confounded with document kind (JSON) and reported with the caveat.
 
-## Results
+## Results (27 Oct, 23:17 UTC; `results/table27.md`, `results/judge27.json`, `results/judged27.jsonl`; 1,939 points; two GPU passes of 19 and 16 minutes, about $5; judge 2,480 calls, $1.10)
 
-(pending: `run27.sh` writes `results/table27.md`, `results/table27.json`, `results/judge27.json`)
+**Strict naming (state-specific phrasing), share of readouts naming the state when it holds, with exp 23 beside:**
+
+| state | n holds | Oracle Lens | NLA | NLA when the state does not hold | exp 23 NLA (n) |
+|---|---:|---:|---:|---:|---:|
+| in_string | 486 | 0.00 | 0.02 [0.01, 0.03] | 0.01 | 0.03 (134) |
+| paren_depth | 318 | 0.00 | 0.08 [0.05, 0.11] | 0.01 | 0.13 (85) |
+| brace_depth | 185 | 0.00 | 0.01 | 0.01 | 0.04 (46) |
+| list_depth | 109 | 0.01 | 0.53 [0.44, 0.62] | 0.10 | 0.50 (18) |
+| in_math | 22 | 0.00 | 0.09 | 0.01 | 0.00 (8) |
+| heading_level | 15 | 0.00 | 0.20 | 0.01 | 0.00 (4) |
+
+**Blind judge on the in-string readouts** (the judge sees only the readout and says whether it states that the
+position is inside a string literal; every in-string point plus matched negatives, both banks pooled):
+
+| reader | n in-string / not | judge yes when in string | when not | strict regex when in string |
+|---|---|---:|---:|---:|
+| Oracle Lens | 598 / 604 | 0.00 [0.00, 0.01] | 0.00 | 0.00 |
+| NLA | 602 / 614 | 0.22 [0.18, 0.25] | 0.02 | 0.02 |
+
+What the judge counts that the regex did not: the NLA's own wording, for example "a truncated word mid-quotation",
+"a truncated default value string mid-entry", "within the quoted API description". The regex looked for "string
+literal" phrasing and the NLA rarely uses it.
+
+**Carrying** (AUROC; readable = probe on the activation; text bag = classifier on the readout text alone):
+
+| pool | state | n yes / no | readable | Oracle Lens readout | NLA readout | exp 23 |
+|---|---|---|---:|---:|---:|---|
+| code (py + js) | in_string | 102 / 698 | 0.86 | 0.72 | 0.81 | 0.86 / 0.72 / 0.79 |
+| code (py + js) | paren_depth | 227 / 573 | 0.75 | 0.60 | 0.61 | 0.69 / 0.54 / 0.57 |
+| code (py + js) | brace_depth | 102 / 698 | 0.80 | 0.73 | 0.72 | 0.69 / 0.66 / 0.68 |
+| md | list_depth | 109 / 291 | 0.73 | 0.73 | 0.83 | n/a |
+| tex | in_math | 22 / 317 | 0.85 | 0.75 | 0.85 | n/a |
+
+The "all kinds" rows (string 0.95 / 0.87 / 0.93) remain confounded with document kind and are in `table27.md` for
+the record only.
+
+### Scoring the predictions
+
+| prediction | result |
+|---|---|
+| 1. strict naming within 0.05 of exp 23 | holds on every state (largest change paren_depth 0.13 to 0.08, inside the exp 23 interval) |
+| 2. blind judge: Oracle Lens under 0.10, NLA under 0.20 when in string, under 0.03 on negatives | Oracle Lens holds (0.00); NLA misses by a hair (0.22 [0.18, 0.25]); negatives hold (0.02) |
+| 3. carrying as in exp 23 (code in_string 0.86 / 0.72 / 0.79) | holds (0.86 / 0.72 / 0.81) |
+
+## Reading
+
+1. **The sample-size answer.** Four times the points reproduce exp 23's numbers within their old intervals, and the
+   new intervals are about plus or minus 0.03 on the string state. Nothing in exp 23 was a small-sample accident.
+2. **The regex under-counted the NLA.** A blind judge finds the NLA stating that the position is inside a string
+   on about one readout in five when it is, against one in fifty when it is not; the strict regex found one in
+   fifty either way. The NLA says it in its own words ("mid-quotation", "quoted"), not in ours. Exp 23's sentence
+   "neither reader names structural state" must be read as: Oracle Lens never does (0 of 598 by the judge, 0 of
+   1,939 by the regex, on every state); the NLA does so in a minority of cases, one in five for strings, half the
+   time for list items, and almost never for depth.
+3. **Carrying is unchanged** and still ordered as before: the activation, then the NLA's readout, then Oracle
+   Lens's, with the code-only string row the honest number (0.86 / 0.81 / 0.72).
+4. **What this changes for the account.** The NLA's partial naming at random points (string one in five, list
+   items one in two) is more than the exp 19 and 22 "states" cells showed on their banks (0.02 to 0.25 by the same
+   judge on 40 items x 8 samples), which is consistent with those banks' read points being chosen at the state's
+   defining token rather than at random. The two-type picture stands: Oracle Lens states nothing anywhere; the NLA
+   states some structural facts some of the time, in a describing register, without being asked.

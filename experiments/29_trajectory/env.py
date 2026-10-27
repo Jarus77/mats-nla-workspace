@@ -17,7 +17,8 @@ if (_REPO / "infra").is_dir():
 for _d in (_EXPS / "22_public_bank", _EXPS / "23_random_points", _EXPS / "25_public_exhibits", _EXPS / "26_layer_sweep"):
     if _d.is_dir() and str(_d) not in sys.path:
         sys.path.append(str(_d))
-from modal_common import HF_ENV, HF_PINS, VOLUMES, download_image  # noqa: E402,F401
+from modal_common import HF_ENV, HF_PINS, VOLUMES  # noqa: E402,F401
+from modal_common import download_image as _download_image  # noqa: E402
 
 OUT = "/results/29_trajectory"
 OUT22 = "/results/22_public_bank"
@@ -26,6 +27,8 @@ NLA_REVISION = "5a13b7ec21a69fcdd0fb24d5edbe96a92aef4b9f"     # the commit the v
 _LOCAL = ("modal_common", "env", "lib29", "lib25", "lib26", "lib23", "feature_spec22", "feature_spec")
 _PINS = ("torch==2.14.0", "transformers==5.17.0", "peft==0.21.0", "accelerate==1.15.0",
          "safetensors==0.8.0", "numpy==2.5.3", "pyyaml", "scipy", "flash-linear-attention==0.5.2")
+
+download_image = _download_image.add_local_python_source(*_LOCAL)   # the fetch stage imports env/lib29 too
 
 gpu_image = (
     modal.Image.debian_slim(python_version="3.12")
