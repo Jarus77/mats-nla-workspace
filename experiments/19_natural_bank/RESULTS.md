@@ -66,8 +66,11 @@ Confusion, predicted x observed: NLA HH 7, HL 4, LH 1, LL 12; Oracle Lens HH 3, 
 2. **Oracle Lens never states a property and the lens is flat across its trained layers**, as in exps 12, 13 and 18.
 3. **Span-sayability bounds Oracle Lens detection but does not set it.** No row is detected without being span-sayable
    (LH 0), but two span-sayable rows are not detected (py_string 0.52, json_depth 0.64). This is the direction Guiv's
-   E45 pointed at: the span re-induces the state and the lens still misses it. Exp 20 measures the model's own window
-   map directly, without the NLA critic, on the same rows.
+   E45 pointed at: the span re-induces the state and the lens still misses it. On both rows the fixed phrasing scores
+   reversed (py_string 0.31, json_depth 0.33 at layer 42; `templates_frozen.json`), so the lens's log-odds do separate the
+   classes with the wrong sign, and the three mined phrasings land near chance; the prompted cell is phrasing-bound in a
+   way the free-readout cells are not. Exp 20 measures the model's own window map directly, without the NLA critic, on
+   the same rows.
 4. **The judge cannot score exhibition of structure** (0.00 on all 16 rows across exps 18 and 19); the cell is kept
    for the record and replaced by exp 20's reconstructor-based measure.
 5. **The J-lens cells are uninformative here**: nothing is J-enriched, nothing is J-lens-readable, as the Ostrow et al.
