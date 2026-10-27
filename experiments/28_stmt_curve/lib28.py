@@ -19,7 +19,8 @@ from pathlib import Path
 import numpy as np
 import torch
 
-REPO = Path(__file__).resolve().parents[2]
+_PARENTS = Path(__file__).resolve().parents
+REPO = _PARENTS[2] if len(_PARENTS) > 2 else None   # None inside the Modal container (/root/lib28.py), where the sibling modules ship flat
 LAYER = 42
 SPAN_TOKENS = 32
 N_PARA = 8
@@ -39,7 +40,7 @@ COUNTER_ROWS: frozenset[tuple[str, str]] = frozenset({("13", "tb_tablecol"), ("1
 LANGUAGE_ROWS: frozenset[tuple[str, str]] = frozenset({("12", "ij2_lang"), ("18", "ij2_lang"), ("22", "code_lang"),
                                                        ("12", "bk_code")})
 
-_E = REPO / "experiments"
+_E = (REPO if REPO is not None else Path("/root")) / "experiments"   # laptop-only paths; never opened in the container
 SOURCES: dict[str, dict] = {
     "12": {"spec": _E / "07_template_mining" / "feature_spec.py",
            "score": (_E / "12_concept_recall" / "results" / "recall_table.json", "recall"),
