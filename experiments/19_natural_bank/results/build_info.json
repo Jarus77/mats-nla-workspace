@@ -1,0 +1,179 @@
+{
+ "rows": {
+  "py_string": {
+   "n": 200,
+   "counts": {
+    "mine|inside": 20,
+    "mine|outside": 20,
+    "select|inside": 80,
+    "select|outside": 80
+   },
+   "full": true,
+   "lexical_auroc": 0.4707,
+   "lexically_cued": false,
+   "token_len_q10_q50_q90": [
+    259,
+    297,
+    372
+   ],
+   "n_clusters": 196
+  },
+  "js_string": {
+   "n": 200,
+   "counts": {
+    "mine|inside": 20,
+    "mine|outside": 20,
+    "select|inside": 80,
+    "select|outside": 80
+   },
+   "full": true,
+   "lexical_auroc": 0.5547,
+   "lexically_cued": false,
+   "token_len_q10_q50_q90": [
+    164,
+    296,
+    362
+   ],
+   "n_clusters": 193
+  },
+  "latex_math": {
+   "n": 200,
+   "counts": {
+    "mine|inside": 20,
+    "mine|outside": 20,
+    "select|inside": 80,
+    "select|outside": 80
+   },
+   "full": true,
+   "lexical_auroc": 0.5618,
+   "lexically_cued": false,
+   "token_len_q10_q50_q90": [
+    225,
+    363,
+    479
+   ],
+   "n_clusters": 157
+  },
+  "py_arg": {
+   "n": 200,
+   "counts": {
+    "mine|first": 20,
+    "mine|third": 20,
+    "select|first": 80,
+    "select|third": 80
+   },
+   "full": true,
+   "lexical_auroc": 0.49355,
+   "lexically_cued": false,
+   "token_len_q10_q50_q90": [
+    262,
+    308,
+    398
+   ],
+   "n_clusters": 192
+  },
+  "json_depth": {
+   "n": 200,
+   "counts": {
+    "mine|deep": 20,
+    "mine|shallow": 20,
+    "select|deep": 80,
+    "select|shallow": 80
+   },
+   "full": true,
+   "lexical_auroc": 0.9412,
+   "lexically_cued": true,
+   "token_len_q10_q50_q90": [
+    124,
+    327,
+    512
+   ],
+   "n_clusters": 184
+  },
+  "html_depth": {
+   "n": 200,
+   "counts": {
+    "mine|deep": 20,
+    "mine|shallow": 20,
+    "select|deep": 80,
+    "select|shallow": 80
+   },
+   "full": true,
+   "lexical_auroc": 1.0,
+   "lexically_cued": true,
+   "token_len_q10_q50_q90": [
+    403,
+    434,
+    512
+   ],
+   "n_clusters": 194
+  },
+  "md_heading": {
+   "n": 200,
+   "counts": {
+    "mine|deep": 20,
+    "mine|shallow": 20,
+    "select|deep": 80,
+    "select|shallow": 80
+   },
+   "full": true,
+   "lexical_auroc": 0.44455,
+   "lexically_cued": false,
+   "token_len_q10_q50_q90": [
+    159,
+    303,
+    356
+   ],
+   "n_clusters": 189
+  },
+  "md_list": {
+   "n": 200,
+   "counts": {
+    "mine|nested": 20,
+    "mine|top": 20,
+    "select|nested": 80,
+    "select|top": 80
+   },
+   "full": true,
+   "lexical_auroc": 0.52415,
+   "lexically_cued": false,
+   "token_len_q10_q50_q90": [
+    255,
+    311,
+    370
+   ],
+   "n_clusters": 179
+  }
+ },
+ "n_source_files": {
+  "py": {
+   "found": 56047,
+   "loaded": 5576
+  },
+  "js": {
+   "found": 15694,
+   "loaded": 2622
+  },
+  "tex": {
+   "found": 345,
+   "loaded": 339
+  },
+  "json": {
+   "found": 2187,
+   "loaded": 1473
+  },
+  "html": {
+   "found": 3458,
+   "loaded": 1964
+  },
+  "md": {
+   "found": 5215,
+   "loaded": 2563
+  }
+ },
+ "n_items": 1600,
+ "sha256": "7ddfbceac1a5510156b1037239606536e50484a61f93c057629c26fa41525460",
+ "n_per_value": 100,
+ "lex_max": 0.65,
+ "wall_s": 120.8
+}
