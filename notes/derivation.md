@@ -34,6 +34,9 @@ A3 (the register comes from the warm start, not the reward). The NLA starts from
 prefix (an explanation register); Oracle Lens starts from bullets chosen to maximise FVE. The KL term keeps each
 near its register. Evidence: the NLA's readouts are explanations with a `<explanation>` tag; Oracle Lens's are
 `- ` bullets; neither register changed over RL (exp 07 to 13 readouts).
+Exp 29 tests A3 directly on the NLA's own history: structural naming is 0.17 to 0.49 for the text-only warm start,
+0.01 to 0.21 for the activation warm start, and 0.00 to 0.29 with no trend through 800 RL steps, while FVE rises
+0.18 to 0.59 (Python strings) and code-language naming 0.55 to 0.75. The register is set before RL and RL keeps it.
 
 ## 3. The one equation
 
@@ -119,7 +122,7 @@ exp 18 rule "states iff used" scored 5 of 10 and was dropped.
   statement-aware critic is the retraining experiment this derivation points at, and it is the one proposal in
   the write-up.
 - A3 false (register set by the reward): the NLA would drift toward continuations like Oracle Lens, since
-  continuations earn more per token under A1 and A2. It did not; the register is stable across checkpoints.
+  continuations earn more per token under A1 and A2. It did not; the register is stable across checkpoints (exp 29: steps 100 to 800).
 - C5 false (readouts do not carry the state): the shuffled control and the readouts would score alike. Observed
   0.30 to 0.65 against 0.70 to 0.99.
 
