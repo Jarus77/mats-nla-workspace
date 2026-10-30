@@ -1,0 +1,16 @@
+{
+ "feature": "md_list",
+ "ckpt": "av_base",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.4465625,
+ "class_direction_cos": 0.5129086971282959,
+ "fve": 0.14538881182670593,
+ "fve_baseline": 0.6834971904754639,
+ "examples": {
+  "md_list_READMEmdc6dc9b216d82_1": "Quoted string started with \"CommonJS, UMD, ES modules, and CDN\" follows a \"including:\" colon pattern, requiring completion of the list items \u2014 at least one more item expected after \"CDN.\"\n\nThe marketing/README documentation register establishes a structured feature list pattern seen repeatedly with bullet points and inline listings.\n\nThe final token \"CDN\" is the last item mid-list inside a quoted string, strongly constraining the next token to be a delimiter (comma, period, or closing quote) completing the \"including:\" list.",
+  "md_list_READMEmd921c9504e417_1": "Installation instructions are being provided in a follow-up comment, describing a multi-step build process for LilyPond on Red Hat. Steps have numbered sequences, with the tarball availability requirement newly added.\n\nThe overall genre is technical documentation/forum response, guiding a user through dependencies and shell commands, with plain text code blocks and ANSI terminal references.\n\nFinal token: \"from\" closes a sentence introducing a download source/link for utsa characters, immediately requiring a URL or source location (likely a website or repository address) to follow.",
+  "md_list_READMEmd0c33794f302e_1": "Enumerated list structure: \"Top 10 new things\" with \"Aliases,\" \"Default Values\" already given, requiring continuation of remaining named sections in the same format.\n\nConsistent pattern of bold/header feature names followed by explanatory sentences describing the Lazy CLI feature and providing usage examples (e.g., `lazy.yml`, `run`).\n\nFinal token \"Negating Boolean\" is a section header/feature name in the Top 10 list, immediately requiring a descriptive explanation paragraph about the feature's functionality and likely a code usage example.",
+  "md_list_READMEmd0225b5928444_1": "Bulleted list pattern established: \"- cpN: family of encodings...\" with repeated structure suggesting continuation of encoding family descriptions.\n\nThe list promises comprehensive coverage of encodings by \"region\" and \"CJK and other Asian\" categories, implying remaining regional/Asian encoding families not yet covered (e.g., Japanese, Korean, Chinese encodings).\n\nFinal token \"All widespread\" begins a new bullet point mid-phrase, directly continuing the list; the next tokens must complete this phrase, likely naming another encoding family category (e.g., \"Japanese/Korean encoding families\")."
+ }
+}

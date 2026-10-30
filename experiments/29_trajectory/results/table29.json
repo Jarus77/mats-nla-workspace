@@ -1,0 +1,627 @@
+{
+ "checkpoints": [
+  "textnla",
+  "av_base",
+  "iter_000100",
+  "iter_000200",
+  "iter_000300",
+  "iter_000400",
+  "iter_000500",
+  "iter_000600",
+  "iter_000700",
+  "iter_000800"
+ ],
+ "tokenizer": "qwen",
+ "states": {
+  "textnla": {
+   "py_string": 0.471875,
+   "js_string": 0.49375,
+   "latex_math": 0.171875,
+   "py_arg": 0.24375,
+   "json_depth": 0.225,
+   "md_heading": 0.303125,
+   "md_list": 0.190625,
+   "code_lang": 0.5
+  },
+  "av_base": {
+   "py_string": 0.2125,
+   "js_string": 0.190625,
+   "latex_math": 0.103125,
+   "py_arg": 0.121875,
+   "json_depth": 0.109375,
+   "md_heading": 0.015625,
+   "md_list": 0.0125,
+   "code_lang": 0.55
+  },
+  "iter_000100": {
+   "py_string": 0.20625,
+   "js_string": 0.2125,
+   "latex_math": 0.13125,
+   "py_arg": 0.08125,
+   "json_depth": 0.234375,
+   "md_heading": 0.046875,
+   "md_list": 0.00625,
+   "code_lang": 0.771875
+  },
+  "iter_000200": {
+   "py_string": 0.115625,
+   "js_string": 0.2875,
+   "latex_math": 0.0375,
+   "py_arg": 0.0375,
+   "json_depth": 0.196875,
+   "md_heading": 0.0375,
+   "md_list": 0.0125,
+   "code_lang": 0.74375
+  },
+  "iter_000300": {
+   "py_string": 0.2375,
+   "js_string": 0.2125,
+   "latex_math": 0.103125,
+   "py_arg": 0.078125,
+   "json_depth": 0.203125,
+   "md_heading": 0.028125,
+   "md_list": 0.015625,
+   "code_lang": 0.76875
+  },
+  "iter_000400": {
+   "py_string": 0.128125,
+   "js_string": 0.1625,
+   "latex_math": 0.0,
+   "py_arg": 0.015625,
+   "json_depth": 0.209375,
+   "md_heading": 0.025,
+   "md_list": 0.01875,
+   "code_lang": 0.709375
+  },
+  "iter_000500": {
+   "py_string": 0.23125,
+   "js_string": 0.203125,
+   "latex_math": 0.159375,
+   "py_arg": 0.0125,
+   "json_depth": 0.184375,
+   "md_heading": 0.003125,
+   "md_list": 0.028125,
+   "code_lang": 0.725
+  },
+  "iter_000600": {
+   "py_string": 0.18125,
+   "js_string": 0.165625,
+   "latex_math": 0.084375,
+   "py_arg": 0.01875,
+   "json_depth": 0.20625,
+   "md_heading": 0.025,
+   "md_list": 0.009375,
+   "code_lang": 0.76875
+  },
+  "iter_000700": {
+   "py_string": 0.20625,
+   "js_string": 0.15625,
+   "latex_math": 0.090625,
+   "py_arg": 0.05625,
+   "json_depth": 0.234375,
+   "md_heading": 0.015625,
+   "md_list": 0.009375,
+   "code_lang": 0.7375
+  },
+  "iter_000800": {
+   "py_string": 0.19375,
+   "js_string": 0.24375,
+   "latex_math": 0.128125,
+   "py_arg": 0.034375,
+   "json_depth": 0.1875,
+   "md_heading": 0.03125,
+   "md_list": 0.003125,
+   "code_lang": 0.7625
+  }
+ },
+ "names": {
+  "textnla": {
+   "py_string": 0.39375,
+   "js_string": 0.36875,
+   "latex_math": 0.125,
+   "py_arg": 0.18125,
+   "json_depth": 0.66875,
+   "md_heading": 0.43125,
+   "md_list": 0.78125,
+   "code_lang": 0.41875
+  },
+  "av_base": {
+   "py_string": 0.08125,
+   "js_string": 0.11875,
+   "latex_math": 0.0375,
+   "py_arg": 0.125,
+   "json_depth": 0.1,
+   "md_heading": 0.425,
+   "md_list": 0.4375,
+   "code_lang": 0.4625
+  },
+  "iter_000100": {
+   "py_string": 0.03125,
+   "js_string": 0.11875,
+   "latex_math": 0.01875,
+   "py_arg": 0.08125,
+   "json_depth": 0.04375,
+   "md_heading": 0.25625,
+   "md_list": 0.44375,
+   "code_lang": 0.625
+  },
+  "iter_000200": {
+   "py_string": 0.0875,
+   "js_string": 0.0625,
+   "latex_math": 0.025,
+   "py_arg": 0.06875,
+   "json_depth": 0.0625,
+   "md_heading": 0.45625,
+   "md_list": 0.49375,
+   "code_lang": 0.66875
+  },
+  "iter_000300": {
+   "py_string": 0.05,
+   "js_string": 0.05,
+   "latex_math": 0.03125,
+   "py_arg": 0.0875,
+   "json_depth": 0.13125,
+   "md_heading": 0.31875,
+   "md_list": 0.4375,
+   "code_lang": 0.73125
+  },
+  "iter_000400": {
+   "py_string": 0.03125,
+   "js_string": 0.0625,
+   "latex_math": 0.01875,
+   "py_arg": 0.025,
+   "json_depth": 0.08125,
+   "md_heading": 0.4375,
+   "md_list": 0.54375,
+   "code_lang": 0.69375
+  },
+  "iter_000500": {
+   "py_string": 0.0625,
+   "js_string": 0.05625,
+   "latex_math": 0.05,
+   "py_arg": 0.00625,
+   "json_depth": 0.075,
+   "md_heading": 0.40625,
+   "md_list": 0.575,
+   "code_lang": 0.73125
+  },
+  "iter_000600": {
+   "py_string": 0.08125,
+   "js_string": 0.05,
+   "latex_math": 0.025,
+   "py_arg": 0.0625,
+   "json_depth": 0.08125,
+   "md_heading": 0.3,
+   "md_list": 0.5625,
+   "code_lang": 0.71875
+  },
+  "iter_000700": {
+   "py_string": 0.05625,
+   "js_string": 0.08125,
+   "latex_math": 0.05625,
+   "py_arg": 0.08125,
+   "json_depth": 0.15625,
+   "md_heading": 0.48125,
+   "md_list": 0.50625,
+   "code_lang": 0.75
+  },
+  "iter_000800": {
+   "py_string": 0.0375,
+   "js_string": 0.00625,
+   "latex_math": 0.03125,
+   "py_arg": 0.06875,
+   "json_depth": 0.0875,
+   "md_heading": 0.35625,
+   "md_list": 0.475,
+   "code_lang": 0.6875
+  }
+ },
+ "carries": {
+  "textnla": {
+   "py_string": 0.9221875,
+   "js_string": 0.8940625,
+   "latex_math": 0.9890625,
+   "py_arg": 0.83671875,
+   "json_depth": 0.9134375,
+   "md_heading": 0.640625,
+   "md_list": 0.4665625,
+   "code_lang": 0.9875
+  },
+  "av_base": {
+   "py_string": 0.9746875,
+   "js_string": 0.954375,
+   "latex_math": 0.98984375,
+   "py_arg": 0.865625,
+   "json_depth": 0.96921875,
+   "md_heading": 0.66828125,
+   "md_list": 0.4465625,
+   "code_lang": 0.946875
+  },
+  "iter_000100": {
+   "py_string": 0.9934375,
+   "js_string": 0.96875,
+   "latex_math": 0.9984375,
+   "py_arg": 0.9303125,
+   "json_depth": 0.993125,
+   "md_heading": 0.7034375,
+   "md_list": 0.46890625,
+   "code_lang": 0.98078125
+  },
+  "iter_000200": {
+   "py_string": 0.9884375,
+   "js_string": 0.968125,
+   "latex_math": 0.99671875,
+   "py_arg": 0.93578125,
+   "json_depth": 0.98921875,
+   "md_heading": 0.67640625,
+   "md_list": 0.48078125,
+   "code_lang": 0.98421875
+  },
+  "iter_000300": {
+   "py_string": 0.99265625,
+   "js_string": 0.97390625,
+   "latex_math": 0.99515625,
+   "py_arg": 0.9540625,
+   "json_depth": 0.98765625,
+   "md_heading": 0.695,
+   "md_list": 0.48375,
+   "code_lang": 0.98546875
+  },
+  "iter_000400": {
+   "py_string": 0.99078125,
+   "js_string": 0.97078125,
+   "latex_math": 0.99515625,
+   "py_arg": 0.90890625,
+   "json_depth": 0.98875,
+   "md_heading": 0.6884375,
+   "md_list": 0.48234375,
+   "code_lang": 0.98
+  },
+  "iter_000500": {
+   "py_string": 0.99171875,
+   "js_string": 0.97046875,
+   "latex_math": 0.99625,
+   "py_arg": 0.9409375,
+   "json_depth": 0.990625,
+   "md_heading": 0.6834375,
+   "md_list": 0.50875,
+   "code_lang": 0.980625
+  },
+  "iter_000600": {
+   "py_string": 0.99375,
+   "js_string": 0.97484375,
+   "latex_math": 0.99765625,
+   "py_arg": 0.9375,
+   "json_depth": 0.99296875,
+   "md_heading": 0.68625,
+   "md_list": 0.49609375,
+   "code_lang": 0.980625
+  },
+  "iter_000700": {
+   "py_string": 0.9946875,
+   "js_string": 0.97265625,
+   "latex_math": 0.99859375,
+   "py_arg": 0.9359375,
+   "json_depth": 0.9909375,
+   "md_heading": 0.6771875,
+   "md_list": 0.49265625,
+   "code_lang": 0.9853125
+  },
+  "iter_000800": {
+   "py_string": 0.99484375,
+   "js_string": 0.96859375,
+   "latex_math": 0.99671875,
+   "py_arg": 0.92296875,
+   "json_depth": 0.991875,
+   "md_heading": 0.679375,
+   "md_list": 0.4853125,
+   "code_lang": 0.981875
+  }
+ },
+ "textbag": {
+  "textnla": {
+   "py_string": 0.926875,
+   "js_string": 0.91140625,
+   "latex_math": 0.88140625,
+   "py_arg": 0.654375,
+   "json_depth": 0.87859375,
+   "md_heading": 0.7003125,
+   "md_list": 0.52875,
+   "code_lang": 0.92796875
+  },
+  "av_base": {
+   "py_string": 0.921875,
+   "js_string": 0.91875,
+   "latex_math": 0.9065625,
+   "py_arg": 0.53359375,
+   "json_depth": 0.96609375,
+   "md_heading": 0.59578125,
+   "md_list": 0.60078125,
+   "code_lang": 0.86125
+  },
+  "iter_000100": {
+   "py_string": 0.96359375,
+   "js_string": 0.8846875,
+   "latex_math": 0.909375,
+   "py_arg": 0.52125,
+   "json_depth": 0.97546875,
+   "md_heading": 0.60328125,
+   "md_list": 0.54296875,
+   "code_lang": 0.955
+  },
+  "iter_000200": {
+   "py_string": 0.93765625,
+   "js_string": 0.94671875,
+   "latex_math": 0.893125,
+   "py_arg": 0.6025,
+   "json_depth": 0.98734375,
+   "md_heading": 0.65140625,
+   "md_list": 0.63,
+   "code_lang": 0.99046875
+  },
+  "iter_000300": {
+   "py_string": 0.9171875,
+   "js_string": 0.93765625,
+   "latex_math": 0.9103125,
+   "py_arg": 0.71859375,
+   "json_depth": 0.9840625,
+   "md_heading": 0.49609375,
+   "md_list": 0.5646875,
+   "code_lang": 0.98265625
+  },
+  "iter_000400": {
+   "py_string": 0.9203125,
+   "js_string": 0.92703125,
+   "latex_math": 0.89671875,
+   "py_arg": 0.6221875,
+   "json_depth": 0.983125,
+   "md_heading": 0.613125,
+   "md_list": 0.51015625,
+   "code_lang": 0.94515625
+  },
+  "iter_000500": {
+   "py_string": 0.91609375,
+   "js_string": 0.885625,
+   "latex_math": 0.89046875,
+   "py_arg": 0.5584375,
+   "json_depth": 0.97921875,
+   "md_heading": 0.58,
+   "md_list": 0.5721875,
+   "code_lang": 0.9703125
+  },
+  "iter_000600": {
+   "py_string": 0.9215625,
+   "js_string": 0.91609375,
+   "latex_math": 0.86125,
+   "py_arg": 0.54796875,
+   "json_depth": 0.98203125,
+   "md_heading": 0.59890625,
+   "md_list": 0.56359375,
+   "code_lang": 0.94828125
+  },
+  "iter_000700": {
+   "py_string": 0.96109375,
+   "js_string": 0.9665625,
+   "latex_math": 0.9184375,
+   "py_arg": 0.52359375,
+   "json_depth": 0.97609375,
+   "md_heading": 0.57921875,
+   "md_list": 0.5371875,
+   "code_lang": 0.95359375
+  },
+  "iter_000800": {
+   "py_string": 0.9184375,
+   "js_string": 0.92640625,
+   "latex_math": 0.8825,
+   "py_arg": 0.49625,
+   "json_depth": 0.968125,
+   "md_heading": 0.5421875,
+   "md_list": 0.58640625,
+   "code_lang": 0.9840625
+  }
+ },
+ "fve": {
+  "textnla": {
+   "py_string": -0.04518408328294754,
+   "js_string": -0.06420741975307465,
+   "latex_math": 0.05479864031076431,
+   "py_arg": -0.12818363308906555,
+   "json_depth": -0.7279607057571411,
+   "md_heading": 0.003522884100675583,
+   "md_list": -0.09027893096208572,
+   "code_lang": -0.009575851261615753
+  },
+  "av_base": {
+   "py_string": 0.181521937251091,
+   "js_string": 0.14345380663871765,
+   "latex_math": 0.24022290110588074,
+   "py_arg": -0.05575444549322128,
+   "json_depth": -0.525727391242981,
+   "md_heading": 0.28411436080932617,
+   "md_list": 0.14538881182670593,
+   "code_lang": 0.08461201936006546
+  },
+  "iter_000100": {
+   "py_string": 0.52527916431427,
+   "js_string": 0.5073888301849365,
+   "latex_math": 0.5466046333312988,
+   "py_arg": 0.3220101594924927,
+   "json_depth": -0.06386681646108627,
+   "md_heading": 0.5879062414169312,
+   "md_list": 0.5131218433380127,
+   "code_lang": 0.4090491235256195
+  },
+  "iter_000200": {
+   "py_string": 0.5429004430770874,
+   "js_string": 0.5138262510299683,
+   "latex_math": 0.579825758934021,
+   "py_arg": 0.33919742703437805,
+   "json_depth": -0.03662634640932083,
+   "md_heading": 0.5969831943511963,
+   "md_list": 0.532607913017273,
+   "code_lang": 0.43842607736587524
+  },
+  "iter_000300": {
+   "py_string": 0.550537645816803,
+   "js_string": 0.5328577160835266,
+   "latex_math": 0.5989282131195068,
+   "py_arg": 0.3607670068740845,
+   "json_depth": 0.0174550823867321,
+   "md_heading": 0.6181279420852661,
+   "md_list": 0.5352774858474731,
+   "code_lang": 0.4330505430698395
+  },
+  "iter_000400": {
+   "py_string": 0.572176456451416,
+   "js_string": 0.5284451246261597,
+   "latex_math": 0.6095874905586243,
+   "py_arg": 0.35748162865638733,
+   "json_depth": 0.021143820136785507,
+   "md_heading": 0.612010657787323,
+   "md_list": 0.5568996667861938,
+   "code_lang": 0.43970122933387756
+  },
+  "iter_000500": {
+   "py_string": 0.56061851978302,
+   "js_string": 0.5320055484771729,
+   "latex_math": 0.6012833118438721,
+   "py_arg": 0.37334829568862915,
+   "json_depth": 0.0428248755633831,
+   "md_heading": 0.6307672262191772,
+   "md_list": 0.5326457023620605,
+   "code_lang": 0.4468698501586914
+  },
+  "iter_000600": {
+   "py_string": 0.5753816366195679,
+   "js_string": 0.5480657815933228,
+   "latex_math": 0.6145421266555786,
+   "py_arg": 0.3876165747642517,
+   "json_depth": 0.07247991114854813,
+   "md_heading": 0.6236417889595032,
+   "md_list": 0.5536261796951294,
+   "code_lang": 0.4609704911708832
+  },
+  "iter_000700": {
+   "py_string": 0.5787022709846497,
+   "js_string": 0.5601059794425964,
+   "latex_math": 0.6130380034446716,
+   "py_arg": 0.4052574038505554,
+   "json_depth": 0.09423574060201645,
+   "md_heading": 0.6435349583625793,
+   "md_list": 0.5668575167655945,
+   "code_lang": 0.4742874205112457
+  },
+  "iter_000800": {
+   "py_string": 0.5855106115341187,
+   "js_string": 0.5545712113380432,
+   "latex_math": 0.619706392288208,
+   "py_arg": 0.4029356837272644,
+   "json_depth": 0.056879740208387375,
+   "md_heading": 0.6579300165176392,
+   "md_list": 0.5806349515914917,
+   "code_lang": 0.48145946860313416
+  }
+ },
+ "cos": {
+  "textnla": {
+   "py_string": 0.5557752251625061,
+   "js_string": 0.6086722612380981,
+   "latex_math": 0.7901932001113892,
+   "py_arg": 0.6198112964630127,
+   "json_depth": 0.6024782061576843,
+   "md_heading": 0.5585002303123474,
+   "md_list": 0.4246523380279541,
+   "code_lang": 0.6412926316261292
+  },
+  "av_base": {
+   "py_string": 0.785852313041687,
+   "js_string": 0.7888004779815674,
+   "latex_math": 0.8115472197532654,
+   "py_arg": 0.6895449757575989,
+   "json_depth": 0.6669720411300659,
+   "md_heading": 0.7164524793624878,
+   "md_list": 0.5129086971282959,
+   "code_lang": 0.6577542424201965
+  },
+  "iter_000100": {
+   "py_string": 0.9123572111129761,
+   "js_string": 0.8833246231079102,
+   "latex_math": 0.8773080706596375,
+   "py_arg": 0.8465209603309631,
+   "json_depth": 0.7682419419288635,
+   "md_heading": 0.8500095009803772,
+   "md_list": 0.7193222045898438,
+   "code_lang": 0.8041045665740967
+  },
+  "iter_000200": {
+   "py_string": 0.906518816947937,
+   "js_string": 0.8784239888191223,
+   "latex_math": 0.8818082213401794,
+   "py_arg": 0.8488133549690247,
+   "json_depth": 0.7722784280776978,
+   "md_heading": 0.8465459942817688,
+   "md_list": 0.7053264379501343,
+   "code_lang": 0.81693035364151
+  },
+  "iter_000300": {
+   "py_string": 0.9143643975257874,
+   "js_string": 0.8844403028488159,
+   "latex_math": 0.8943921327590942,
+   "py_arg": 0.8500475287437439,
+   "json_depth": 0.7796533703804016,
+   "md_heading": 0.8643441796302795,
+   "md_list": 0.80782151222229,
+   "code_lang": 0.8058252334594727
+  },
+  "iter_000400": {
+   "py_string": 0.9078149795532227,
+   "js_string": 0.8683186173439026,
+   "latex_math": 0.8919317126274109,
+   "py_arg": 0.8554520606994629,
+   "json_depth": 0.7787689566612244,
+   "md_heading": 0.853864848613739,
+   "md_list": 0.8089898824691772,
+   "code_lang": 0.8044593930244446
+  },
+  "iter_000500": {
+   "py_string": 0.9118199944496155,
+   "js_string": 0.8753924369812012,
+   "latex_math": 0.8940032124519348,
+   "py_arg": 0.8618011474609375,
+   "json_depth": 0.7981358766555786,
+   "md_heading": 0.8632853031158447,
+   "md_list": 0.7815937995910645,
+   "code_lang": 0.8273192644119263
+  },
+  "iter_000600": {
+   "py_string": 0.9093726873397827,
+   "js_string": 0.8727947473526001,
+   "latex_math": 0.8834326267242432,
+   "py_arg": 0.8573716878890991,
+   "json_depth": 0.8038855195045471,
+   "md_heading": 0.8562067747116089,
+   "md_list": 0.7714827656745911,
+   "code_lang": 0.8161037564277649
+  },
+  "iter_000700": {
+   "py_string": 0.9162209033966064,
+   "js_string": 0.8881623148918152,
+   "latex_math": 0.8936814665794373,
+   "py_arg": 0.8689056634902954,
+   "json_depth": 0.8006141185760498,
+   "md_heading": 0.8583751916885376,
+   "md_list": 0.7620900273323059,
+   "code_lang": 0.8292833566665649
+  },
+  "iter_000800": {
+   "py_string": 0.9136452078819275,
+   "js_string": 0.8844969272613525,
+   "latex_math": 0.8903026580810547,
+   "py_arg": 0.8663938045501709,
+   "json_depth": 0.7970553636550903,
+   "md_heading": 0.8676087260246277,
+   "md_list": 0.8103386163711548,
+   "code_lang": 0.8250128030776978
+  }
+ }
+}

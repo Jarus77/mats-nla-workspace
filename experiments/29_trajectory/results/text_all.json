@@ -1,0 +1,38 @@
+{
+ "rows": {
+  "py_string": {
+   "n_sel": 160,
+   "n_mine": 40
+  },
+  "js_string": {
+   "n_sel": 160,
+   "n_mine": 40
+  },
+  "latex_math": {
+   "n_sel": 160,
+   "n_mine": 40
+  },
+  "py_arg": {
+   "n_sel": 160,
+   "n_mine": 40
+  },
+  "json_depth": {
+   "n_sel": 160,
+   "n_mine": 40
+  },
+  "md_heading": {
+   "n_sel": 160,
+   "n_mine": 40
+  },
+  "md_list": {
+   "n_sel": 160,
+   "n_mine": 40
+  },
+  "code_lang": {
+   "n_sel": 160,
+   "n_mine": 40
+  }
+ },
+ "instruction_matches_meta": true,
+ "wall_s": 2145.4
+}

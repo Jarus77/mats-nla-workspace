@@ -1,0 +1,16 @@
+{
+ "feature": "js_string",
+ "ckpt": "textnla",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.8940625,
+ "class_direction_cos": 0.6086722612380981,
+ "fve": -0.06420741975307465,
+ "fve_baseline": 0.580013632774353,
+ "examples": {
+  "js_string_temporaljs3dff2686bd49_0": "Syntactic closure expects object definition end and module export completion.\nJavaScript comment style dictates continuation explaining static utility functions rationale.\nLast word \"add\" implies noun object follow-up, likely referencing class prototype or similar",
+  "js_string_ignorejs3f913d4ab515_0": "Syntactic constraints dictate completing the string literal and closing the if statement, as an unterminated string literal breaks parsing. Semantic context within a try-catch or error-handling block suggests the next token closes the error message string, likely with a quote and closing parenthesis. The final token \u2018pattern\u2019 ends a string inside a new Error constructor, requiring an immediate closing quote, potential error argument closure, and bracket to resolve the syntactic structure created by the incomplete exception throw.",
+  "js_string_thTemplatejs248dca9894c6_0": "Syntactic constraint: unclosed string literal requires immediate closing quote and period/punctuation to terminate the throw statement.\nSemantic expectation: error message context implies completion of \"wildcard\" or similar term based on variable used in condition.\nFinal token: the incomplete word fragment dictates phonetic/orthographic completion, strictly constrained by its preceding space and ongoing sentence structure.",
+  "js_string_estbrowserjs33fd0d23800c_0": "Syntactic closure requires a closing parenthesis and semicolon for the `mocha_1.it` call, fulfilling immediate JavaScript grammar constraints.\nSemantic context dictates an async callback function body containing assertions verifying browser functionality, driven by `assert` import.\nFinal token expects opening parenthesis for callback, constraining the next token to start the test implementation logic."
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "feature": "json_depth",
+ "ckpt": "av_base",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.96921875,
+ "class_direction_cos": 0.6669720411300659,
+ "fve": -0.525727391242981,
+ "fve_baseline": 0.30309706926345825,
+ "examples": {
+  "json_depth_lidationjsonc7eb50ca3fe2_1": "JSON schema definition continues with more oneOf properties using consistent pipe-delimited format; pattern of type objects with title/description/type fields repeats throughout.\n\nSemantic list momentum: Enum values are being listed sequentially (\"area\", \"population\", \"linkMeta\", \"linkStyle\"), with additional standard Matplotlib Marker enum values (e.g., \"star\", \"filledCircle\") likely remaining.\n\nFinal token: `\"lengthUnits\"` closes a string value but the `\"maxLength\": { \"type\": \"integer\"` object is syntactically unclosed \u2014 requiring `}` followed by a closing bracket/operator and next array element or object end.",
+  "json_depth_ev1beta5jsone59376c67904_1": "Legal/regulatory API documentation pattern: OpenAPI spec style with parameter definitions, types, and descriptions following structured format.\n\nContinuation of hyperlink-table pattern: the `<relative link>` intro row lists URL endpoints with example paths; more endpoint entries are expected (e.g., filter/query examples like `?filter=region=global`).\n\nFinal token: the opening of a URL path `/run.googleapis.com/v1/services/container/projects/{project}/states` is mid-table, strongly constraining the next token to either close the current row (e.g., pipe `|`) or continue with a filter parameter query string.",
+  "json_depth_anagerv1jsondfa900ef4a8c_1": "Structured API/OpenAPI schema documentation, with objects defined hierarchically using \"description\" and \"children\" fields throughout. Pattern of type references like \"V5qualifiedVoteRefScheme\" repeating.\n\nThe document is enumerating sub-objects within the schema; after \"Agreed:\" the next expected elements are additional sub-properties of the site object (e.g., \"Blocked:\", \"ConfigAllowed:\", \"ConfigAllowedUserBetterblocks:\", etc.).\n\nFinal token is an opening quotation mark following \"Agreed:\", beginning a type/property reference string \u2014 immediate constraint is a schema reference type, most likely completing a quoted identifier like `\"BlockedRefSchema\"`.",
+  "json_depth_gv1beta1json5270b94c59cb_1": "JSON object structure with consistent key-value pairs: each mask type follows `\"TypeName\": [ \"description string\" ]` pattern.\n\nList continuation momentum: 7 array elements shown, pattern suggests remaining list items or closing bracket `]` are expected next.\n\nFinal token `].` is a period following an array closing bracket, signaling end of the last item value; immediate next tokens likely continue the JSON object with another mask type key or close the outer object with `}`."
+ }
+}

@@ -1,0 +1,234 @@
+{
+ "feature": "json_depth",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.99359375,
+  "24": 0.994375,
+  "28": 0.99640625,
+  "32": 0.99921875,
+  "36": 0.9990625,
+  "40": 0.9978125,
+  "42": 0.9965625,
+  "44": 0.99765625,
+  "48": 0.9975,
+  "52": 0.99796875,
+  "56": 0.99609375,
+  "60": 0.9990625
+ },
+ "ol_prompted": {
+  "20": 0.905625,
+  "24": 0.90359375,
+  "28": 0.9053125,
+  "32": 0.8884375,
+  "36": 0.88609375,
+  "40": 0.856875,
+  "42": 0.87671875,
+  "44": 0.8415625,
+  "48": 0.91046875,
+  "52": 0.9075,
+  "56": 0.90234375,
+  "60": 0.894375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.905625,
+   "fixed_label": 0.254375,
+   "auroc": 0.905625
+  },
+  "24": {
+   "mean_of_selected": 0.90359375,
+   "fixed_label": 0.2015625,
+   "auroc": 0.90359375
+  },
+  "28": {
+   "mean_of_selected": 0.9053125,
+   "fixed_label": 0.19015625,
+   "auroc": 0.9053125
+  },
+  "32": {
+   "mean_of_selected": 0.8884375,
+   "fixed_label": 0.1753125,
+   "auroc": 0.8884375
+  },
+  "36": {
+   "mean_of_selected": 0.88609375,
+   "fixed_label": 0.32234375,
+   "auroc": 0.88609375
+  },
+  "40": {
+   "mean_of_selected": 0.856875,
+   "fixed_label": 0.330625,
+   "auroc": 0.856875
+  },
+  "42": {
+   "mean_of_selected": 0.87671875,
+   "fixed_label": 0.35125,
+   "auroc": 0.87671875
+  },
+  "44": {
+   "mean_of_selected": 0.8415625,
+   "fixed_label": 0.40078125,
+   "auroc": 0.8415625
+  },
+  "48": {
+   "mean_of_selected": 0.91046875,
+   "fixed_label": 0.3996875,
+   "auroc": 0.91046875
+  },
+  "52": {
+   "mean_of_selected": 0.9075,
+   "fixed_label": 0.37453125,
+   "auroc": 0.9075
+  },
+  "56": {
+   "mean_of_selected": 0.90234375,
+   "fixed_label": 0.44734375,
+   "auroc": 0.90234375
+  },
+  "60": {
+   "mean_of_selected": 0.894375,
+   "fixed_label": 0.29328125,
+   "auroc": 0.894375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:json_depth:m1",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "type: \"string\", \"description\": \"",
+    "shallow": "\"baseUrl\": \"https://"
+   }
+  },
+  {
+   "id": "ol:json_depth:m0",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "This field must match the",
+    "shallow": "Base URL for the API"
+   }
+  },
+  {
+   "id": "ol:json_depth:m2",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "Required field.",
+    "shallow": "Root URL of the API"
+   }
+  },
+  {
+   "id": "ol:json_depth:fixed",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "nested three deep",
+    "shallow": "top level"
+   }
+  }
+ ],
+ "wall_s": 667.1,
+ "carries": {
+  "20": 0.949375,
+  "24": 0.95234375,
+  "28": 0.9784375,
+  "32": 0.97625,
+  "36": 0.9709375,
+  "40": 0.9771875,
+  "42": 0.975,
+  "44": 0.98078125,
+  "48": 0.96140625,
+  "52": 0.94078125,
+  "56": 0.9115625,
+  "60": 0.949375
+ },
+ "names": {
+  "20": 0.00625,
+  "24": 0.0,
+  "28": 0.00625,
+  "32": 0.0,
+  "36": 0.00625,
+  "40": 0.00625,
+  "42": 0.0,
+  "44": 0.00625,
+  "48": 0.00625,
+  "52": 0.0,
+  "56": 0.0,
+  "60": 0.00625
+ },
+ "examples": {
+  "20": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- , but with a default of \"integer\" in some contexts. Actually, it references `positiveInteger\"\n- / \"integer\" }`? Actually, `maxItems` is often defined as extending `positiveInteger`\n- , but often omitted or using a simpler reference), and `\"maxValue\"` (which also refers to `positiveInteger`\n- } || { \"default\": integer }` (or more accurately, referencing the integer definition)",
+   "json_depth_ev1beta5jsone59376c67904_1": "- /operations` (Not a standard REST endpoint structure, but the documentation lists `methods/{Deployment}/operations\n- \u8def\u5f84\uff0c\u5373 `projects/{project}/operations`\u3002\n- \uff08List Operations\uff09 endpoint under `serviceCenter/locations/{location}/services/{service}/versions/{version\n- /operations` (Note: The actual Google API structure is `.../instances/{name}/operations`",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- , { \"required\": true } // Inheritance from SpecificRestriction\n- )  // Reference to simpler version of Policy\n- ; see \"SimplePolicyRestriction\" definition below) class InlinePolicyRestric\n- // A specific kind of PolicyRestriction. --> <see cref=\"SimplePolicyRestriction\"\n- \uff08Subclass of `RestrictionType`\uff09, `OptionalPolicyRestriction`\uff08Subclass of `PolicyRestriction`\uff09"
+  },
+  "24": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- },  // or `{\"type\": \"positive-integer\"\n- } | or `\"maximum\": integer` (which is itself restricted to a positive-integer\n- , \"integer\" | The maximum number of occurrences allowed. | `positive-integer` |\n- , \"integer\" }, // or `maxItems` is also allowed as a positive integer, but the",
+   "json_depth_ev1beta5jsone59376c67904_1": "- /operations` endpoint. The parent resource is `{project}/services/{serviceName}/operations\n- /operations`\uff08\u6ce8\u610f\uff1a`operations` \u662f\u590d\u6570\uff09 | googleapis.dev/go-cloud-sdk/latest/rest/container/v1/projects/services/\n- \u8def\u5f84\uff08Operations are a sub-resource of Update operations) `https://container.googleapis.com/v1beta2/{name}/operations`\n- \uff08Operations\uff09\u5217\u8868\u8d44\u6e90\u8def\u5f84\u3002 | `GET` | `googlecloudapis.go.googlecloudapis.com/container/v1/projects",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- , \"BillingMethod\" inherits from BaseBillingMethod\n- /import \"common/Any\" // Reference to the simpler Permission object\n- ; see below for its structure. | `ConditionalAccessPolicy` | See below for simpler definition\n- \uff08\u4e00\u79cd\u6743\u9650\u7c7b\u578b\uff09 or `GrantAccessDetails` (another complex type). Both extend `BasePermission`\n- \uff08Base Permission Details\uff09 or `SimplePermission`\uff08Simple Permission Details) depending on the context. | $ref(\"SimpleCondition\")"
+  },
+  "28": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- | } | | | `integer` | |\n- ) | (Also allows \"positive-integer\"\n- , \"integer\" ) # Note: The spec allows positive-integer or boolean here, but typically it's a count.\n- } | (Allows any non-negative integer) | `maximumExperienceYears` | `positive-integer` |\n- , \"string\" ] | (Though this is less strict, often used alongside max-age constraints) |\n| `anyOf: [integer,",
+   "json_depth_ev1beta5jsone59376c67904_1": "- `/operations` | GET | List the operations of the Project CustomResourceDefinition resource.\n- \u8def\u5f84\uff1a`/operations` | GET | List the operations for the specified project and resource.\n- /{operationId}/operations`\uff08\u6ce8\u610f\uff1a\u8fd9\u91cc\u4e0d\u662f `projects/{name}/operations`\uff0c\u800c\u662f `projects/{name}/operations\n- \uff08\u6216\u66f4\u51c6\u786e\u5730\u8bf4\uff0c`/v1alpha2/namespaces/{namespace}/events/{operationId}/operations`",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- , // Inherits from ConditionTypeDefinition\n- )` | `ConditionalPolicyRuleBase` | See `ConditionalRule`\n- )` \u2013 A nested object defining a style condition. (Inherited from `ConditionalRule`\n- \uff08\u89c1\u4e0b\u65b9\u5b9a\u4e49\uff09 | `DefaultAction`\uff08\u89c1\u4e0b\u65b9\uff09 |\n| `AllEmailPattern` | Inherits from `AllOf`\n- (or its subclass) | Contains the rule for conditional formatting. |\n| `AllowedEmailAddress` | (defined below) |"
+  },
+  "32": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- },  # Note: `min_age` was previously constrained differently, now uses `PositiveIntBound`\n- }, \"minimum_count\": {\"type\": \"integer\", \"minimum\": 2\n- },  # Note: `minVersion` was added here, but `maxVersion` uses `PositiveInt`\n- ],  # \u2190 `PositiveInt` added here as well. | `positive-int` | Strict: only positive integers. |\n| `minimumVersion` | `NonNegativeInteger` |",
+   "json_depth_ev1beta5jsone59376c67904_1": "- 2. GET /{namespace}/default/namespaces/{name}/operations\n- /: \u83b7\u53d6\u8be5 namespace \u4e0b\u7684\u6240\u6709 Operation \u5217\u8868\uff0c\u8def\u5f84\u4e3a `/api/v1/n\n- 2. List operations under the project. `https://{region}.runcloud.io/v1beta1/{project_id}/namespaces/{namespace}/\n- /jobs` (Note: The base path includes the namespace). | `GET /v1beta1/namespaces/{namespace}/operations`",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- 3) />  <!-- Nested class defined earlier -->\n- ; import { ConditionType } from \"./ConditionType\n- , \"description\": \"A complex object representing a rule for sharing an image.\" }, \"parent\": { \"$ref\": \"#/$defs/ConditionGroup\"\n- ) /// <summary>A rule or condition applied to the resource.</summary> /// </field> public StyleRules Rules { get; set; }"
+  },
+  "36": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- , \"maximum\": { \"$ref\": \"#/$defs/maxGraphDepth\"\n- }, \"maxDepthRank\": { \"$ref\": \"#/$defs/maxValue\"\n- }, // Note: `maxEdges` is also listed here, though it might be a typo. We'll include it as specified.\n- },  // Note: Original had typo \"maxOutDegree\" instead of \"maxOutDegrees\" in the\n- }, // \u2190 Added maxDegree here as requested, though note: schema says \"maxEdges\"",
+   "json_depth_ev1beta5jsone59376c67904_1": "- , parent + \"/operations\"\n- /operations\", opts) return &googleapi.Method{Path: fmt.Sprintf(\"%s/operations\", parentName)\n- /list (or `parent.projects/[project]/operations/list\")` \u8fd4\u56de `*google.longrunning.ListOperationsCall`\n- ,parentResource, &iam.NewListOperationsCall) // \u6ce8\u610f\uff1agRPC \u4e2d\u901a\u5e38\u4f7f\u7528 projects/{parent}/operations",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- , \"description\": \"A SharedFolderRule object representing a shared folder rule.\",\n- }, \"allowedAspects\": { \"type\": \"AllowedAspects\"\n- },  // Nested class, see below }, \"defaultContentRule\": {\"$ref\": \"#/$defs/DefaultContentRule\n- \uff08\u53c2\u8003 `CellProtection` \u5bf9\u8c61\uff09, \"cellFormatRule\": {\"$ref\": \"#/$defs/CellFormatRule\"}"
+  },
+  "40": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- }, \"averageRtt\": { \"type\": \"integer\", \"minimum\":\n- }, // Note: `maxIntraburstDuration` was also missing a `?`\n- },  // \u2705 Added new metric definition from your text\n- ], \"description\": \"Maximum absolute difference between the specified timestamp and the timestamp of the\n- }, // Added in your update; was missing in the base set | \"maxDedicatedBandwidth\" | \"integer\" | true |",
+   "json_depth_ev1beta5jsone59376c67904_1": "- , \"https://monitoring.googleapis.com/v2/projects/\" + parent + \"/operations\n- /list?project=%s\", self.projectId, parent)  # \u6ce8\u610f\uff1alistOperations \u4e0d\u9700\u8981 parentPath\uff0c\u5b83\n- /operations?page_size={pageSize}\", headers=self._http_headers)  # \u6ce8\u610f\uff1aList Operations \u662f\u957f\u5217\u8868\uff0c\u4e0d\u662f getByName\n- , pageSize=pageSize)  # List operations under this project's operations/ namespace\n    return self.service.projects().",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- },\" // Reference to BillablePolicy definition\n- , \"description\": \"An optional sub-type of billing rule.\" },\n- , \"description\": \"Optional nested object defining billable rules.\" }, \"AccountDetails\": { \"$ref\": \"#/definitions/\n- \uff08\u6216 Nullable<BillingRule>\uff09, \"billingSettings\": BillingSettings\uff08\u6216 Nullable<BillingSettings>\uff09, \"billing"
+  },
+  "42": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- }, \"maxDepth\": { \"type\": \"integer\"\n- }, \"maxNumRefInList\": { \"type\": \"integer\", \"minimum\": 0\n- }, // \u2190 Added maxDedupedDocs as per your spec }, { \"name\": \"numMentions\", \"type\": \"number\", \"minimum\":\n- },  // Note: `maxUniqueTokens` was added in v2.0+ spec updates. |\n| 14 | `\"maxKeywords\"` | `number`",
+   "json_depth_ev1beta5jsone59376c67904_1": "- /monitors\", method: \"GET\", \"name\": \"PolicyServices.ListMon\n- /lists?page_size=100\", \"/v1/ComputeEngine/{project}/instances/{\n- /jobs?$page_size=10\", \"httpMethod\": \"GET\" } }, \"google.cloud.resourcemanager_v1.Projects\n- ?pageToken=%s&filter=%s\", \"listComputeServicesList\"",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- ], \"description\": \"A reference to a CopyRules object.\",\n- , \"description\": \"An inline definition of a BooleanFilter.\"},\n- /\"BasicAuthDefinition\" },  // Reference to the defined BasicAuth type\n- }, // Nested type definition (see below) \"3\" | nullable | |\n  \"ContentLink\": {\"$ref\": \"#/$defs/ContentLink\"\n- }  // Reference to the BooleanFilter class defined above  },\n  \"properties\":"
+  },
+  "44": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- }, \"extraPathsLength\": {\n- }, \"siblingCountRange\": { \"type\": \"IntegerRange\", \"max\": 99999\n- }, // \u2705 Added in 4.5 }, \"edgeLabelLengthRange\": { \"type\": \"integer-range\n- }, \"sourceOffset\": { \"type\": \"number\" }, \"siblingDepthRange\": { \"type\": \"integer-range\" },",
+   "json_depth_ev1beta5jsone59376c67904_1": "- , baseURI + \"/v2beta1/pods\"\n- \", \"https://{base_url}/{version}/namespaces/{namespace}/events\"\n- /?list=true\"; return this._api.ListJobs(namespace, \"crd\")\n- /list\", &listOptions); err != nil { return errors.Wrap(err, \"ListDeployments\") } return &JobList{}, nil",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- }, \"description\": \"A reference to the `BlockLevelBold` definition\",\n- \"description\": \"Reference to an InlineBold definition.\", },\n- 10 | public ParentCellType ParentCellType { get; set; } | \"parentCellType\": \"\n- }, // Nested class defined in the JSON schema above |\n| `italic` | `InlineStyle` | `Boolean`"
+  },
+  "48": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- }, {\"type\": \"integer\", \"maximum\": \"1\n- }, \"relativeMajorMinor\": { \"type\": \"integer\", \"maximum\": 2\n- }, \"weightPerPosition\": { \"type\": \"integer\", \"minimum\": 40, \"maximum\": 50\n- }, { \"name\": \"sourceCodeTokens\", \"required\": false }, { \"name\": \"sourceCodePercent\", \"required\": false,",
+   "json_depth_ev1beta5jsone59376c67904_1": "- , { path: \"management/v1/projects/{project}/\n- /v1/projects\" + (query ? `?${query}` : \"\") + \"/locations\"; return this._http.get<List<ProjectResource>>(\"/\n- ; return this.http.get(`/projects/${this.projectId}/locations`\n- , { path: '/networks' }, base: this.basePath + '/v2/projects' + '/'",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- , \"description\": \"The currency details object.\",\n- }, // \u5f15\u7528 CurrencyPolicy \u7c7b\n- description: \"The max credit type.\", required: false }, @description(\"The currency policy settings\") public Currency\n- , \"optional\": true }, // \u5f15\u7528 CurrencyPolicy \u5bf9\u8c61\uff08\u5d4c\u5957\u7c7b\uff09 } @property(\"defaultCurrency\", type: \"CurrencyPolicy\", optional: true)"
+  },
+  "52": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- , \"minimum\": 2023},  // corrige: was `maximumInteger\n- },  // Note: draft-ietf-json-schema-2019-09 defines this as required, but it was\n- },  \"jsonSchemaMaximumInteger\": { \"minimum\": 1 },\n- }, \"maximumExclusive\": { \"maximum\": 5 },  // Was removed in draft 2022-1",
+   "json_depth_ev1beta5jsone59376c67904_1": "- , \"baseUriPath\": \"/$discovery/v1.0/users/\n- 2. \"users/{user-id}/$batch\",\n- , \"host\": \"localhost\", \"pathPattern\": \"/$batch\", \"itemMethods\": {\n- , \"https://api.example.com:8080/blogs/posts/$batch\" } },\n  \"items\": [",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- }, \"description\": \"Inline object\", \"$ref\": \"#/components/schemas/\n- \"name\": \"PageContentResponse\", \"allOf\": [{\"$ref\": \"\n- }, \"body\": { \"allOf\": [{\"$ref\": \"#/definitions/UpdateResourceBody\"}]},\n- , \"description\": \"The response object containing the modified resource.\" }, \"result\": { \"$ref\":"
+  },
+  "56": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- }, \"additionalProperties\": true\n- },\n    \"maxItems\": { \"type\": \"integer\", \"maximum\": 65535\n- },  // \u2190 Note: fixed typo from `minimum` to `minimum` in the spec\n- }, \"maximum\": {\"oneOf\": [ 2147483647, { \"$ref\": \"#/$defs/un",
+   "json_depth_ev1beta5jsone59376c67904_1": "- , \"operations\": [ { \"path\": \"/subscriptions/{id}\"\n- }, { \"path\": \"/v1.0/servers\"\n- , \"relativeUri\": \"instances/{instanceId}/operations/{operationId}\", \"name\": \"Get\", \"resourceGroupName\": null\n- , \"x-ms-original-uri\": \"https://api.github.com/users/me/forks\", \"operationId\": \"listUserRepos",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- , \"description\": \"The AWS::IoT::Thing resource.\"\n- , \"required\": [ \"body\"\n- }, \"nextToken\": { \"description\": \"The\n- \u7c7b\u578b: `Metadata`, \"description\": \"\u5143\u6570\u636e\u5bf9\u8c61\" }, \"properties\": { ... } }, \"updateThingTypes\": { \"type\": \"object\",\n- }, \"items\": ResourceGroupResponse }, // \u6ce8\u610f\u8fd9\u91cc\u662f `Metadata`, \u4e0d\u662f `IotData`"
+  },
+  "60": {
+   "json_depth_lidationjsonc7eb50ca3fe2_1": "- },\n  \"oneOf\": { \"minimum\": 2010\n- }, \"discriminator\": {\"oneOf\": true, \"type\": \"integer\"\n- , \"maxItems\": { \"deprecated\": true, \"default\": 2147483647\n- }, \"properties\": { \"maxItems\": { \"type\": \"integer\" } } }, \"oneOf\": [{ \"$ref\":",
+   "json_depth_ev1beta5jsone59376c67904_1": "- , \"relativeUrl\": \"/v1.1/folders/{id\n- , \"x-enum-values\": [\"GetAll\", \"Get\", \"List\"], \"operationId\": \"ListBlobContainers\"\n- }, // Note: The path might vary slightly depending on SDK version, but `lists/{id}` is common\n- , \"/v1.3/Topics\" // Path relative to the base URI in the generated SDK\n    },",
+   "json_depth_anagerv1jsondfa900ef4a8c_1": "- , \"description\": \"The property description\"\n- response\", \"allOf\": [{ \"$ref\": \"#/components/schemas/\n- }, \"headers\": { \"$ref\": \"#/components/headers/Header2\n- }, \"responseHeaders\": { \"$ref\": \"#/components/headers/ResponseHeader\" }, // \u7c7b\u578b\u58f0\u660e\n- }, // Nested Object property with a specific discriminator }, \"Description\": \"The response object\","
+  }
+ },
+ "wall_s_recon": 27.7
+}

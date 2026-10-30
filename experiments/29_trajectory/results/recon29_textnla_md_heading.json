@@ -1,0 +1,16 @@
+{
+ "feature": "md_heading",
+ "ckpt": "textnla",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.640625,
+ "class_direction_cos": 0.5585002303123474,
+ "fve": 0.003522884100675583,
+ "fve_baseline": 0.5907995700836182,
+ "examples": {
+  "md_heading_QUICKSTARTmde6883637374f_1": "Structured technical documentation pattern requires consistent heading hierarchy and code block formatting for demonstrations.\nTransition from conceptual API features to practical usage demands a concrete implementation example following logical flow.\nThe inline header `### JavaScript example` acts as an immediate structural prompt requiring an opening code fence.",
+  "md_heading_Readmemd9f104d126964_1": "syntactic structure dictating a markdown heading level, likely starting with a descriptive title for the upcoming section.\n documentation flow implying explanatory text defining custom matching functionality, followed immediately by a JavaScript code block demonstrating implementation.\n final token 'Matching' completes the heading 'Custom Matching', requiring subsequent newline and introductory prose to explain user-defined regular expression validation.",
+  "md_heading_READMEmd7ac091ae1a1b_1": "Syntactic expectation: Markdown header ending usually requires a newline and subsequent body text or sub-header.\nSemantic context: Technical documentation for `node-re2`; current section header \"Unicode warning\" implies upcoming cautionary notes about Unicode handling.\nFinal token constraint: The header \"Unicode warning\" expects an immediate paragraph describing specific risks or behaviors related to Unicode in this library.",
+  "md_heading_READMEmdf6aa0c147258_1": "Syntactic structure is a Markdown header, requiring the title to complete the heading tag `#### Obtaining the Response`. Semantic context suggests the section will explain accessing response bodies or status codes, following previous sections on cookies and redirects. The final token \"Response\" is a noun acting as the heading subject, immediately constrained by the need for header syntax closure and subsequent paragraph content."
+ }
+}

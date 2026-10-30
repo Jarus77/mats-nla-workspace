@@ -1,0 +1,234 @@
+{
+ "feature": "md_heading",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.7709375,
+  "24": 0.6984375,
+  "28": 0.73140625,
+  "32": 0.7759375,
+  "36": 0.736875,
+  "40": 0.72625,
+  "42": 0.71875,
+  "44": 0.7121875,
+  "48": 0.75890625,
+  "52": 0.71796875,
+  "56": 0.6778125,
+  "60": 0.62703125
+ },
+ "ol_prompted": {
+  "20": 0.53578125,
+  "24": 0.54890625,
+  "28": 0.575,
+  "32": 0.59765625,
+  "36": 0.60296875,
+  "40": 0.59609375,
+  "42": 0.58453125,
+  "44": 0.58015625,
+  "48": 0.5709375,
+  "52": 0.53125,
+  "56": 0.5125,
+  "60": 0.52109375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.53578125,
+   "fixed_label": 0.49203125,
+   "auroc": 0.53578125
+  },
+  "24": {
+   "mean_of_selected": 0.54890625,
+   "fixed_label": 0.46640625,
+   "auroc": 0.54890625
+  },
+  "28": {
+   "mean_of_selected": 0.575,
+   "fixed_label": 0.45390625,
+   "auroc": 0.575
+  },
+  "32": {
+   "mean_of_selected": 0.59765625,
+   "fixed_label": 0.44265625,
+   "auroc": 0.59765625
+  },
+  "36": {
+   "mean_of_selected": 0.60296875,
+   "fixed_label": 0.45859375,
+   "auroc": 0.60296875
+  },
+  "40": {
+   "mean_of_selected": 0.59609375,
+   "fixed_label": 0.4915625,
+   "auroc": 0.59609375
+  },
+  "42": {
+   "mean_of_selected": 0.58453125,
+   "fixed_label": 0.483125,
+   "auroc": 0.58453125
+  },
+  "44": {
+   "mean_of_selected": 0.58015625,
+   "fixed_label": 0.525625,
+   "auroc": 0.58015625
+  },
+  "48": {
+   "mean_of_selected": 0.5709375,
+   "fixed_label": 0.51234375,
+   "auroc": 0.5709375
+  },
+  "52": {
+   "mean_of_selected": 0.53125,
+   "fixed_label": 0.51625,
+   "auroc": 0.53125
+  },
+  "56": {
+   "mean_of_selected": 0.501875,
+   "fixed_label": 0.5125,
+   "auroc": 0.5125
+  },
+  "60": {
+   "mean_of_selected": 0.52109375,
+   "fixed_label": 0.46765625,
+   "auroc": 0.52109375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:md_heading:m2",
+   "template": "- {v}:",
+   "fillers": {
+    "deep": "Sub-section",
+    "shallow": "Overview"
+   }
+  },
+  {
+   "id": "ol:md_heading:m0",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "###",
+    "shallow": "##"
+   }
+  },
+  {
+   "id": "ol:md_heading:m1",
+   "template": "- Level {v} heading",
+   "fillers": {
+    "deep": "3/4",
+    "shallow": "1/2"
+   }
+  },
+  {
+   "id": "ol:md_heading:fixed",
+   "template": "- {v} heading",
+   "fillers": {
+    "deep": "subsection",
+    "shallow": "top"
+   }
+  }
+ ],
+ "wall_s": 1174.0,
+ "carries": {
+  "20": 0.59578125,
+  "24": 0.58625,
+  "28": 0.6228125,
+  "32": 0.6503125,
+  "36": 0.605625,
+  "40": 0.623125,
+  "42": 0.6109375,
+  "44": 0.62265625,
+  "48": 0.6384375,
+  "52": 0.6,
+  "56": 0.60375,
+  "60": 0.6121875
+ },
+ "names": {
+  "20": 0.0,
+  "24": 0.0,
+  "28": 0.0,
+  "32": 0.0,
+  "36": 0.0,
+  "40": 0.0,
+  "42": 0.0,
+  "44": 0.0,
+  "48": 0.0,
+  "52": 0.0,
+  "56": 0.0,
+  "60": 0.0
+ },
+ "examples": {
+  "20": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- /demo (JavaScript) for using the Sheets API. Here\u2019s a JavaScript example\n- /example: How to use Sheets JS API in JavaScript? A typical example\n- \uff08example\uff09 in JavaScript for using the API to modify a pivot table. Here\u2019s a JS API example\n- /snippet of how to use JS API in JavaScript? Here\u2019s a JavaScript example",
+   "md_heading_Readmemd9f104d126964_1": "- /Validation Functions: Rails allows defining custom matching\n- \u89c4\u5219\uff08Custom Matching Rule)**\uff1a\u5728 `express.Router()` \u4e2d\u5b9a\u4e49\u975e\u6807\u51c6\u7684\u8def\u7531\u5339\u914d\u89c4\u5219\uff0c\n- /matching logic (Express 3+)**: You can define custom matching logic in route parameters. This is the most advanced way to define custom routing matching\n- \uff08matching\uff09function in route definitions. Express allows you to define custom matching behavior for route parameters. This gives you full control over what constitutes a \"valid\" route match",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /caution in JavaScript? The UTF-8 warning\n- /warning:** Ruby's Unicode handling comes with a well-known warning\n- /Alert**: When dealing with Unicode, Ruby issues a warning about possible UTF-8 mixing. This is a historical warning\n- \uff08warning\uff09: JavaScript's Unicode handling comes with a historical warning. The ICU warning"
+  },
+  "24": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- / example (JavaScript) for using the API? Here is a JavaScript Sheets API example\n- /reference: Here is a Python example using the SheetJS API object. This example\n- \uff08JavaScript example) showing how to use `app.openSheet()` and its methods. A JS example\n- /snippet for using the API. Here is a basic JavaScript example to manipulate a sheet:\n\n```javascript\n// Example",
+   "md_heading_Readmemd9f104d126964_1": "- /Parsing (Custom Matching) | `parseRoute(path, params)` | Custom matching\n- \u51fd\u6570 (Custom Matching Functions) | `path-to-regexp` supports custom matching\n- \u89c4\u5219 (Custom Matching Rules) in `path-to-regexp` | Advanced users can provide custom matching\n- \uff08Matching\uff09 Techniques** | `pathToRegexp` supports custom matching functions. You can define how segments are matched instead of using default regex.",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /warning: JavaScript\u2019s handling of non-ASCII characters has a famous Unicode warning\n- /error:** Python 3 has a Unicode warning\n- \uff08warning) and best practices:** Python 3\u2019s regex engine includes an ASCII warning\n- /warning:** JavaScript\u2019s handling of non-ASCII characters comes with a warning. If you enable Unicode mode, JavaScript will warn you about this. The Unicode warning"
+  },
+  "28": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- /demo for using the API (not REST syntax, but a JS example\n- /snippet:** Here is a JavaScript example using `monday.app` to show how a\n- \uff08example) using the API: Here is a more advanced JavaScript example\n- /pseudocode showing how to use the SDK: Here is a JavaScript example",
+   "md_heading_Readmemd9f104d126964_1": "- /Parsing Functions (Custom Matching) | `:path` accepts custom matching\n- \u89c4\u5219\uff08Custom Matching Rules\uff09 | \u9664\u4e86\u6b63\u5219\u8868\u8fbe\u5f0f\u5916\uff0croute \u53c2\u6570\u8fd8\u652f\u6301\u81ea\u5b9a\u4e49\u5339\u914d\n- /matching (Custom `match()` function) | By default, `/:segment` uses a regex for matching\n- \uff08Matching\uff09 logic: Custom RegExp in route parameters allows for non-standard segment matching. | `/:id` uses a default matching",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /error: When using `match` with non-UTF-8 strings, Minishadow issues a warning\n- /Warning:** Minishadow has a special behavior regarding Unicode. If you enable it, you'll get a UTF-8 sorting warning\n- /warning:** When comparing strings with non-ASCII characters, `xregexp` provides a Unicode warning\n- \uff08Unicode warning\uff09\uff1a\u5982\u679c\u4f60\u4f7f\u7528\u975e ASCII \u5b57\u7b26\uff0cLodash \u4f1a\u53d1\u51fa\u8b66\u544a\u3002MiniSearch \u4e5f\u6709\u7c7b\u4f3c\u7684\u8b66\u544a"
+  },
+  "32": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- : Fetching data (Python) \u2014 showing how to call the REST API\n- \uff08JavaScript example) showing typical usage of this API:\n- /snippet (Python) showing the full lifecycle of using the API:\n- /example (Python): Using the C++ API from JavaScript Here is a basic example of using this library in Python:\n\n```python\nimport requests\n\n# Example",
+   "md_heading_Readmemd9f104d126964_1": "- /Parsing Behavior (`match`) You can pass a custom function to the router that defines what regex matches\n- \u89c4\u5219 (Custom Matching Rules) You can also specify custom matching\n- /Parsing Logic (`options.match`) If you need routes to accept non-standard characters, you can define custom matching\n- \uff08Matching\uff09 rules: You can pass a regex object to `params()` to define custom matching",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /deprecation warning:** The Rust version of `json5` includes a Unicode normalization warning\n- : When using `String::from_utf8()`, a Unicode normalization warning\n- /warning: Unlike JavaScript, `serde_json` does **not** auto-normalize Unicode. Here's an important warning\n- \uff08warning\uff09 When using `String::new()` with `regex` crate, be aware of Unicode normalization. A common warning"
+  },
+  "36": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- /pseudocode (JS) demonstrating the API usage:\n- s (JavaScript) showing how a typical user would interact with a Metta output using this SDK:\n- \uff08JavaScript example) showing integration with `metta-core.js`: Below is a simplified JS example\n- /example (Node.js) showing how to use the SDK to load and analyze an ontology:\n\n```javascript\nconst {",
+   "md_heading_Readmemd9f104d126964_1": "- /Validation Logic:** You can define custom matching\n- \u884c\u4e3a (Custom Matching Behavior) Route segments can accept custom regex functions. This allows you to define what matching\n- /Parsing Functions (`:path([...])`)** If the default regex is insufficient, you can define custom matching\n- \uff08Matching\uff09 Rules Custom route segments can accept a custom regex function. This allows you to define exactly how dynamic segments are parsed. Matching",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /notice:** When initializing `fast-xml-parser` with `unicode: true`, you may see a warning\n- /warning: Unlike regular `JSON`, the fast implementation emits a Unicode normalization warning\n- \uff08Warning\uff09 When using `options: { unicode: true }`, Node.js emits a warning about non-ASCII characters. This is an `iconv` warning\n- /notice:** When using `regexp: true` with non-UTF-8 strings, RapidJSON may emit a warning"
+  },
+  "40": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- /snippet (JS, using the REST API wrapper) to show usage:\n- s (JavaScript) demonstrating full pipeline usage with the library above.\n- \uff08example) using the REST client (Node.js) A typical complex dashboard invocation using our API wrapper might look like this\n- /snippet demonstrating usage (Node.js) The following JavaScript example shows how to invoke a complex Flex template via our Python backend:",
+   "md_heading_Readmemd9f104d126964_1": "- /Parsing Rules** To make paths more powerful, you can define custom matching\n- \u89c4\u5219 (Custom Matching Rules): The third argument of a route segment accepts a custom regex. This allows for very powerful path matching\n- /Parsing Functions In Route Params, you can customize the regex used by each segment type. This allows for extremely flexible dynamic routing. Custom matching\n- /capturing behavior (Custom Regex) Route segments can accept custom regular expressions. This allows for very flexible path segments. The `match` function controls what",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /error: Non-UTF-8 strings may trigger a warning\n- /warning:** When parsing non-UTF-8 strings, `simd-json` may issue a warning.\n- \uff08warning\uff09: When using ICU, certain Unicode categories may trigger warnings. For performance, the library may ignore invalid UTF-\n- /notice:** When enabling ICU support, `json` will emit a warning if you try to parse strings containing characters outside the BMP."
+  },
+  "42": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- /Python snippet (using the JS SDK pattern) showing usage\n- \uff08JavaScript\uff09 showing how to load a DSG resource using the SDK: Here\u2019s a simple Python example\n- /example (Node.js) showing a full workflow:```javascriptconst { run_analysis } = require('./api-client');\n- /pseudocode of a consumer script using the library:**\n\n```javascript\nimport { AnalysisRunner } from './analysis-client';",
+   "md_heading_Readmemd9f104d126964_1": "- /Parsing Rules (Custom Regex) The most powerful feature of path-to-regexp is the ability to specify custom matching\n- \u89c4\u5219 (Custom Matching Rules) If the default regex doesn't meet your needs, Route.js allows custom matching\n- /Capturing Rules The most powerful feature of `path-to-regexp` is the ability to define custom matching\n- \uff08Matching\uff09 Behavior: Users can supply a custom regex for segments. This allows for custom delimiters or exclusion patterns. The default matching",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /warning: `json5` mode is limited in `json` module\n- /caution: `punycode` warning in strict mode When compiling regex patterns, `json5` may emit a warning\n- \uff08warning\uff09: When loading non-UTF-8 text, `quickjs` emits a warning. This is intentional and cannot be disabled.\n- /warning:** When using ICU locale with special characters, `JSON.stringify()` emits a warning."
+  },
+  "44": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- (Python) showing the API in action:\n- (JavaScript / Node.js) showing full pipeline usage:** Below is a\n- /snippet: Calling a standard tool (`analyze_document`) | Python example (using `gradio_client` or\n- \uff08JavaScript example) showing full pipeline usage:** Here is a small snippet demonstrating how to chain these APIs. Note that this is illustrative of the *structure*, not a real runnable script",
+   "md_heading_Readmemd9f104d126964_1": "- /Parsing Rules: Custom Regex inside Route Params\n\nSometimes the default matching\n- \u89c4\u5219 (Custom Matching Rules) Routes accept a custom regex function as the segment definition. This allows for custom matching\n- /Parsing Logic The most powerful feature of path-to-regexp is allowing custom matching logic. By passing a regex instead of a string, you define exactly what the route\n- (Matching) Patterns with `RegExp` In many cases, the default segment matching is too strict. Route params accept custom matching",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /Warning about Unicode normalization\n- \uff08Warning\uff09 Since version 3.0, json5-js will emit a warning\n- /error: When parsing non-ASCII string literals, json5-js will issue a warning\n- /warning:** When parsing JSON with `simdjson`, you may encounter a warning about non-ASCII characters. This is intentional and helps catch potential encoding issues.\n\n```javascript"
+  },
+  "48": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- : (Full JS client interacting with `chatgpt` endpoint)\n- \uff08JavaScript example) showing usage of the above primitives:\n- /snippet demonstrating full flow (Node.js) Here is a JS example using the CLI schema.\n- /pseudocode** (using `openai` CLI plugin system) Here\u2019s a JS example demonstrating typical usage patterns, showing how to call the `execute` method with",
+   "md_heading_Readmemd9f104d126964_1": "- Rules: By default, route segments use regex matching. You can define custom matching\n- \u903b\u8f91 (Custom Segment Matching Logic) If you need a route segment to match a specific pattern, `path()` accepts a custom matching\n- /Matching Patterns:** By default, brackets use standard regex. However, you can pass a custom matching function to `group()` to handle complex patterns.\n- \uff08Custom Matching\uff09 rules can be applied by passing a regex to `segment()`. By default, segments use `/[^/]+` as their matching",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- /warning: The `@fastify/ajv` library issues a warning\n- /error suppression**: Unlike standard JSON, `fastify-json` may emit a warning\n- \uff08Warning\uff09 in strict mode parsing: By default, `JSON5` parser in jsdom may issue warnings for non-standard features.\n- /Warning** When using a non-standard pattern in `JSON.parse`, `fast-json-stringify` emits a warning. You can disable it by setting `warning:"
+  },
+  "52": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- /snippet (high-level JS client usage)\n- s (showing how `execute()` chains) ```javascriptconst {\n- \uff08full interaction script using the schema above)```javascriptimport { tavily } from './tav\n- /example (CLI) showing a typical chain of calls:\n\n```javascript\n// JS: Constructing a prompt object\nconst",
+   "md_heading_Readmemd9f104d126964_1": "- /Grouping: Unlike `:path`, route segments can have custom matching\n- \u89c4\u5219 (Custom Matching Rules) By default, dynamic segments use `[^/]+`. You can define custom matching\n- /Matching Groups:** By default, `param()` uses `[^/]+`. You can define custom matching\n- \u89c4\u5219 (Single Segment Matching Rules): Route parameters can accept a regex as the second argument to define custom matching rules. This is useful when the default `[^/",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- \u4e0e ignore flag (EmojiRegexpWarning)\n- \u673a\u5236 (Unicode warning mechanism) The `regex` package in Node.js emits warnings when regexes contain\n- /error behavior (`flags: 'u'` warning) The `regexp2` library may throw warnings if certain Unicode ranges are used without the `u`\n- \uff08warning\uff09 behavior with special Unicode flags In v5.0+, the library may emit warnings for non-ASCII regex patterns. To silence the warning"
+  },
+  "56": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- /snippet (shows how to use sheet formulas from CLI)\n- : Using `makeRequest` and `transform` in a JS node\n- \uff08full interactive usage) showing a common pattern: generating a chart spec from a Databricks SQL result\n- /script: Using the core SDK to generate a formula string from user intent (with mock responses).\n\n```js\n// example.js \u2014 demonstrates using the exported API\nconst { llm\n- \uff08Node.js / Python hybrid example) showing cell generation, type coercion, and diffing",
+   "md_heading_Readmemd9f104d126964_1": "- /Validation (Advanced) The `params` option also accepts regex. By default, route params use greedy matching\n- \u89c4\u5219 (Regex Matching Rules) You can pass a custom regex to `pathToRegExp`. This allows for custom matching\n- /repeating params via `:name*` or `()*` syntax, you can specify custom matching\n- \uff08Matching\uff09 Groups: You can define custom regex matching using the third argument of `path()`. By default, it matches any non-slash characters.",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- label (`re2::WARNING`)\n\nWhen using `u` flag, some regex patterns trigger warnings\n- \u6807\u5fd7 (Regex warning) on some versions of `re2` library. The default warning\n- /error behavior (`u` flag warning) The behavior of `re2` with Unicode flags differs from native regex. If the warning\n- \uff08Warning\uff09 behavior difference In `v8`'s `RegExp` constructor, there is a warning flag for non-ASCII characters."
+  },
+  "60": {
+   "md_heading_QUICKSTARTmde6883637374f_1": "- (repl.npm script style) - Shows how to chain a query\n- : Calculating a metric from a chat\n- \uff08minimal Node.js REPL example using the functions above)```javascriptconst {\n- /snippet demonstrating typical usage (adapt to your DSL). This is NOT the backend, just showing the \"prompt\" pattern\n- (showing how to use the tool chain) ```js const { evaluate } = require('./openai-fabric'); const cell =",
+   "md_heading_Readmemd9f104d126964_1": "- Group (Can be used with `Router.params` or `Router.path`)\n- Parameters (The opposite of strict matching) You can define custom matching parameters in `route.addRoute`. By default, Express uses simple matching\n- /Matching (via `route.add()` or `route.match()`) You can use a simple Regex for parameter matching. Express allows custom matching\n- \uff08Matching\uff09 Groups: Express allows custom regex matching for route parameters. By default, params are non-greedy. If you use a custom matching",
+   "md_heading_READMEmd7ac091ae1a1b_1": "- message (`v8::RegExp::setFlagsWarning\n- \u6807\u5fd7 (RegExp warning flag) for unknown flags In v8 12, some invalid regex flags trigger a warning\n- /error behavior (`v8::kRegExpInvalidFlagsWarning`) Since uWS uses V8 for regex parsing, it emits warnings when\n- \uff08Warning\uff09\u5904\u7406\u5dee\u5f02 When using the `u` flag, `v8::RegExp` emits a warning if a flag is invalid. Node.js 1"
+  }
+ },
+ "wall_s_recon": 26.3
+}

@@ -1,0 +1,70 @@
+{
+ "cells": {
+  "textnla/py_string": {
+   "auroc": 0.9221875,
+   "fve": -0.04518408328294754
+  },
+  "textnla/js_string": {
+   "auroc": 0.8940625,
+   "fve": -0.06420741975307465
+  },
+  "textnla/latex_math": {
+   "auroc": 0.9890625,
+   "fve": 0.05479864031076431
+  },
+  "textnla/py_arg": {
+   "auroc": 0.83671875,
+   "fve": -0.12818363308906555
+  },
+  "textnla/json_depth": {
+   "auroc": 0.9134375,
+   "fve": -0.7279607057571411
+  },
+  "textnla/md_heading": {
+   "auroc": 0.640625,
+   "fve": 0.003522884100675583
+  },
+  "textnla/md_list": {
+   "auroc": 0.4665625,
+   "fve": -0.09027893096208572
+  },
+  "textnla/code_lang": {
+   "auroc": 0.9875,
+   "fve": -0.009575851261615753
+  },
+  "av_base/py_string": {
+   "auroc": 0.9746875,
+   "fve": 0.181521937251091
+  },
+  "av_base/js_string": {
+   "auroc": 0.954375,
+   "fve": 0.14345380663871765
+  },
+  "av_base/latex_math": {
+   "auroc": 0.98984375,
+   "fve": 0.24022290110588074
+  },
+  "av_base/py_arg": {
+   "auroc": 0.865625,
+   "fve": -0.05575444549322128
+  },
+  "av_base/json_depth": {
+   "auroc": 0.96921875,
+   "fve": -0.525727391242981
+  },
+  "av_base/md_heading": {
+   "auroc": 0.66828125,
+   "fve": 0.28411436080932617
+  },
+  "av_base/md_list": {
+   "auroc": 0.4465625,
+   "fve": 0.14538881182670593
+  },
+  "av_base/code_lang": {
+   "auroc": 0.946875,
+   "fve": 0.08461201936006546
+  }
+ },
+ "t_load_s": 73.2,
+ "wall_s": 938.1
+}

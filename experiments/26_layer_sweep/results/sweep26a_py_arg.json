@@ -1,0 +1,143 @@
+{
+ "feature": "py_arg",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.98859375,
+  "24": 0.98453125,
+  "28": 0.96265625,
+  "32": 0.95234375,
+  "36": 0.9390625,
+  "40": 0.94421875,
+  "42": 0.94921875,
+  "44": 0.95375,
+  "48": 0.9846875,
+  "52": 0.9725,
+  "56": 0.9609375,
+  "60": 0.956875
+ },
+ "ol_prompted": {
+  "20": 0.8575,
+  "24": 0.8759375,
+  "28": 0.85484375,
+  "32": 0.8365625,
+  "36": 0.81546875,
+  "40": 0.8153125,
+  "42": 0.818125,
+  "44": 0.80453125,
+  "48": 0.82234375,
+  "52": 0.7825,
+  "56": 0.765625,
+  "60": 0.7571875
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.8575,
+   "fixed_label": 0.7125,
+   "auroc": 0.8575
+  },
+  "24": {
+   "mean_of_selected": 0.8759375,
+   "fixed_label": 0.75203125,
+   "auroc": 0.8759375
+  },
+  "28": {
+   "mean_of_selected": 0.85484375,
+   "fixed_label": 0.74,
+   "auroc": 0.85484375
+  },
+  "32": {
+   "mean_of_selected": 0.8365625,
+   "fixed_label": 0.74171875,
+   "auroc": 0.8365625
+  },
+  "36": {
+   "mean_of_selected": 0.81546875,
+   "fixed_label": 0.71125,
+   "auroc": 0.81546875
+  },
+  "40": {
+   "mean_of_selected": 0.8153125,
+   "fixed_label": 0.74890625,
+   "auroc": 0.8153125
+  },
+  "42": {
+   "mean_of_selected": 0.818125,
+   "fixed_label": 0.759375,
+   "auroc": 0.818125
+  },
+  "44": {
+   "mean_of_selected": 0.80453125,
+   "fixed_label": 0.75828125,
+   "auroc": 0.80453125
+  },
+  "48": {
+   "mean_of_selected": 0.82234375,
+   "fixed_label": 0.78984375,
+   "auroc": 0.82234375
+  },
+  "52": {
+   "mean_of_selected": 0.7825,
+   "fixed_label": 0.743125,
+   "auroc": 0.7825
+  },
+  "56": {
+   "mean_of_selected": 0.765625,
+   "fixed_label": 0.72578125,
+   "auroc": 0.765625
+  },
+  "60": {
+   "mean_of_selected": 0.7571875,
+   "fixed_label": 0.73578125,
+   "auroc": 0.7571875
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:py_arg:m2",
+   "template": "- \u7b2c{v}\u4e2a\u53c2\u6570",
+   "fillers": {
+    "first": "\u4e00",
+    "third": "\u4e09"
+   }
+  },
+  {
+   "id": "ol:py_arg:m3",
+   "template": "- {v}",
+   "fillers": {
+    "first": "1",
+    "third": "3"
+   }
+  },
+  {
+   "id": "ol:py_arg:m0",
+   "template": "- arg{v}",
+   "fillers": {
+    "first": "1",
+    "third": "3"
+   }
+  },
+  {
+   "id": "ol:py_arg:fixed",
+   "template": "- {v} argument",
+   "fillers": {
+    "first": "first",
+    "third": "third"
+   }
+  }
+ ],
+ "wall_s": 995.5
+}

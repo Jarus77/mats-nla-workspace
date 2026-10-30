@@ -53,4 +53,30 @@ NLA explanations). Roughly $10 (H100) + $3 (H200), about $13 in all.
 
 ## Results
 
-(pending: `results/table26.md`, `results/fig26.png`, `results/sweep26_{row}.json`)
+Ran 28 Oct 2026 (resumed after the overnight cancellation; the four rows already on the volume were kept). Tables in
+`results/table26.md`, figures `results/fig26.png` and `results/fig26_{row}.png`, per-row files
+`results/sweep26_{row}.json` and per-layer readouts `results/ol26_{row}_L{layer}.json`. Cost of the resume about $12.
+
+| measure, layers 20 to 60 | readable rows (py_string, js_string, latex_math, json_depth, code_lang) | py_arg | Markdown (md_heading, md_list) |
+|---|---|---|---|
+| readable (probe AUROC) | 0.96 to 1.00 at every layer (code_lang 0.89 at 32) | 0.94 to 0.99 | 0.63 to 0.78; 0.49 to 0.59 |
+| Oracle Lens prompted AUROC | 0.84 to 1.00 | 0.88 at 24 falling to 0.76 at 60 | 0.51 to 0.60; 0.47 to 0.55 |
+| carries (OL readout through the critic) | 0.76 to 1.00; lowest at 56 to 60 on the string rows | 0.63 to 0.66 at 20 to 24, then 0.44 to 0.59 | about 0.6; about 0.5 |
+| names (strict regex) | 0.00 to 0.01 (code_lang 0.03 to 0.14) | 0.00 to 0.01 | 0.00; 0.00 to 0.02 |
+
+Predictions:
+
+1. FAILS on the readable rows: the probe is already 0.98 to 1.00 at layer 20; there is no rise to a plateau. The
+   Markdown half holds (md_heading 0.63 to 0.78, md_list about 0.5).
+2. Holds: prompted AUROC moves under 0.10 from 36 to 60 on every row (largest span py_arg 0.82 to 0.76, md_heading
+   0.60 to 0.51); there is no fall at 20 to 28.
+3. Holds: carrying stays at or above 0.70 wherever the probe is at or above 0.80 on py_string, js_string, latex_math
+   and json_depth (minimum 0.76, py_string at 56).
+4. Holds: strict naming is at most 0.02 at every layer on every structural row.
+
+Reading. Layer 42 is not special. Across all twelve layers Oracle Lens carries the structural state in its readout
+(the critic rebuilds it) and never names it, and the state is linearly present from layer 20 on. The one row that
+moves with depth is py_arg: its carrying survives only in the earliest layers, while the probe still reads it at
+0.94 or more, so Oracle Lens's continuation keeps the argument position early and loses it after about 28. Prediction
+1 failed because the sweep starts too late to see the state form; the claim it was meant to protect (carrying without
+naming, everywhere the state is readable) is untouched.

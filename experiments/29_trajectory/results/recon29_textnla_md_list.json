@@ -1,0 +1,16 @@
+{
+ "feature": "md_list",
+ "ckpt": "textnla",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.4665625,
+ "class_direction_cos": 0.4246523380279541,
+ "fve": -0.09027893096208572,
+ "fve_baseline": 0.6834971904754639,
+ "examples": {
+  "md_list_READMEmdc6dc9b216d82_1": "The text follows a standard GitHub README structure, specifically listing module system support. The bullet point hierarchy remains consistent, requiring the list to continue. The abrupt cut within 'CDN' demands immediate completion of this specific term, likely followed by a closing bracket if it were a link, or just the word end.",
+  "md_list_READMEmd921c9504e417_1": "1. Markdown list continuation context dictates a URL or brief instruction following \"Download the tarball from\".\n2. Technical documentation style expects a specific source repository path or package manager command.\n3. Final token \"from\" triggers immediate URL or location reference completion, constrained by prior context.",
+  "md_list_READMEmd0c33794f302e_1": "Syntactic constraint: nested Markdown list item requires closing bracket `]` and anchor text to complete the link syntax `[Negating Boolean`.\nDomain pattern: API documentation tables of contents follow hierarchical bullet-point structures with relative file paths like `.md`.\nImmediate tokens: the phrase \"Negating Boolean\" is clearly the start of an anchor label, so the model expects closing syntax `]` immediately followed by the URL fragment.",
+  "md_list_READMEmd0225b5928444_1": "The text is a Markdown documentation list ending with an open bullet point describing supported encoding categories. The previous bullets detail node.js native, additional unicode, and singlebyte encodings.\n\nThe final token \"widespread\" is an adjective modifying the implied noun phrase for the current bullet point, likely continuing the pattern of listing major encoding families like double-byte or CJK sets. The immediate constraint requires completing this specific bullet\u2019s list of examples to match the established informational density."
+ }
+}

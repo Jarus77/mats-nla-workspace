@@ -1,0 +1,16 @@
+{
+ "feature": "latex_math",
+ "ckpt": "textnla",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.9890625,
+ "class_direction_cos": 0.7901932001113892,
+ "fve": 0.05479864031076431,
+ "fve_baseline": 0.4303065538406372,
+ "examples": {
+  "latex_math_maintexa06cadddbb10_0": "1. Structural template: Standard LaTeX preamble defining custom math commands and macros for specific algorithms.\n2. Semantic context: Mathematical domain focused on finite fields, elliptic curves, and deterministic root-finding algorithms.\n3. Final token constraint: The sequence ends with $\\mathbb, explicitly requiring a field descriptor like F_p or Z immediately.",
+  "latex_math_g1polygontexfd09f7331028_0": "LaTeX syntax requires closing the incomplete legend entry \"Frontier $u=\\bar\" with a variable like \"v$\" and the } brace to complete \\addlegendentry.\nCode structure dictates continuing the axis environment plot commands, likely adding more coordinates or labels for panel (a).\nThe final token is inside a math string, demanding an immediate algebraic completion and brace closure before further TikZ commands.",
+  "latex_math_chapSINRtexffdbe30220ab_0": "LaTeX syntax follows mathematical notation; the incomplete expression \"$\\sigma\" requires completion via a relation like \"$\\sigma < H^{-1}$\" or similar bound.\nAcademic register demands precise technical definitions; the sentence structure \"fixed to [condition]\" expects a variable or range immediately.\nThe token \"$\\sigma\" is a scalar field scale parameter; it acts as the left operand for an inequality or equality, strictly requiring a comparison operator or value next.",
+  "latex_math_SItex038113f570dd_0": "The final twenty tokens define a normalization constraint on phi across substrates, ending with 'sum_b'.\nImmediate syntactic constraint requires summation index b to recur in the term following concatenation.\nThe text must continue the denominator's expression using index b, likely 'chi_{ib} D_{ba}'."
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "feature": "py_string",
+ "ckpt": "av_base",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.9746875,
+ "class_direction_cos": 0.785852313041687,
+ "fve": 0.181521937251091,
+ "fve_baseline": 0.5804178714752197,
+ "examples": {
+  "py_string_asecommandpy3ef7bba2ce1c_0": "Stack trace/error log format: alternating Python tracebacks, system messages, and OS commands following strict pip/WSL stderr patterns.\n\nNarrative momentum: the \"WARNING: Exception\" header signals an incoming exception traceback with module lines, error types, and cause chains expected next.\n\nFinal token \"Exception\" opens a standard pip warning/error message block, immediately requiring a continuation like \":\" or \"in\" followed by traceback details, module names, and error descriptions.",
+  "py_string_tloftrfastpy63b8f083ca71_0": "Python error traceback pattern establishes a ValueError exception being reported, with the message mid-sentence requiring completion explaining the mismatch between batch size and num_images_to_sample.\n\nThe specific tensor shape `torch.Size([3, 145, 5120])` indicates batch_size=3, so num_images_to_sample should be 3 \u2014 the error explains this numerical mismatch.\n\nFinal token \"many\" is mid-sentence within the ValueError message, part of the phrase \"as many [X as Y],\" requiring immediate completion like \"images as there are examples in the batch\" or similar phrasing specifying the expected quantity.",
+  "py_string_higgspyce604f5f403a_0": "Academic paper header structure: title followed by keywords, institution, and author affiliations, following standard conference/journal formatting patterns.\n\nThe paper title \"Efficiently benchmarking trained and off-the-shelf models\" signals a technical measurement/evaluation study, constraining content toward methodology descriptions, datasets, or benchmark results.\n\nFinal token \"Lookup\" is mid-phrase within \"UniHiP (Unified Hybrid Parallelism), Efficient Lookup\" \u2014 this is part of the author affiliation/institution listing, immediately expecting continuation of the institution name or a new author name/Affiliation section.",
+  "py_string_testastypepy09e0a9a05db0_0": "Bug report/Sphinx configuration template format: the text follows a structured exception description pattern requiring completion of error message details.\n\nEnumeration/specificity expected: the error message \"Cannot cast\" mirrors the earlier generic message pattern \"Cannot convert object to datetime64,\" implying a concrete type or example follows (e.g., \"object to datetime64\" or a specific dtype).\n\nFinal token \"Cannot cast\" is the opening of an example error string illustrating the `rendered_as` fallback behavior; it requires immediate completion with a specific casting failure description showing the improvement."
+ }
+}

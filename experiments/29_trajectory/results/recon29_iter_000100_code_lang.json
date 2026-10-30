@@ -1,0 +1,16 @@
+{
+ "feature": "code_lang",
+ "ckpt": "iter_000100",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.98078125,
+ "class_direction_cos": 0.8041045665740967,
+ "fve": 0.4090491235256195,
+ "fve_baseline": 0.5417114496231079,
+ "examples": {
+  "code_lang_tringifierjs2b1c20c70e33_1": "CoffeeScript-to-JavaScript transpiled code pattern in a static HTML generator, maintaining consistent function structure: each entity type has a description followed by a `return` statement describing escaping/transformation behavior.\n\nParallel structure across entity functions: each describes a constraint, then `return _celeste.sanitize/...*` call. The \"comment\" function follows the same two-sentence format \u2014 first sentence explains the use case, second states escaping rules.\n\nFinal token \"return\" closes the comment-type function's second sentence beginning \"Comments must not contain the sequences '&amp;' or '\\u6551'.\\nreturn\" \u2014 immediately requires sanitization HTML text, likely `\"` + comment content + closing sanitization phrase indicating XML preservation or comment insertion.",
+  "code_lang_plorerBasejsaa2bd977ed67_1": "TypeScript/JavaScript generated code for a TypeDoc-emulating plugin system, establishing base class logic for file/system discovery with `dispose`, `manifest`, and `createModifierId` methods.\n\nProgressive pattern of base-class module definitions in a codebase with multiple plugins shared via a common reader module \u2014 suggesting a canonical shared utility path like `baseVisitor.ts`.\n\nFinal token `sourceURL` begins a standard declaration-of-origin comment (`// Generated: source`, right after `export declare class...`), requiring a `.ts` or relative path filename immediately following: `.ts` expected via a string like `export declare` module name completing `sourceMapping` redirect.",
+  "code_lang_indexjs7de76f83341c_1": "TypeScript/Node.js codeblock comment pattern in a GitHub PR for Lerna, discussing private package resolution logic in a detailed comment-heavy style.\n\nThe logic block is building toward assigning `latestVersion` by filtering `runsByVersion` where `pkg.publishConfig.access === 'public'`, then selecting a default from that array using a utility \u2014 momentum points to calling `utils`.\n\nFinal token `utils` is the start of a method call (matching earlier `import * as utils from 'nx/src/utils'`), mid-sentence inside `const latestVersion = utils`, requiring a period and method name like `_.last()` referencing `nx` utility.",
+  "code_lang_parsejs79751fd36610_1": "JSON Schema specification documentation maintaining consistent technical prose style throughout, documenting Ajv validator behavior with option parameters and examples.\n\nEnumeration of validation error message formats is underway: the `items` maxItems error message pattern mid-sentence requires completion, e.g. \"...is above expected maximum, only {maxLimit}[number] items are allowed. as your schema only allows {maxItems} items. Only {maxLimit}\" establishes a templated error format.\n\nThe final token \"{maxLimit}\" is part of an ongoing example error message illustrating the truncated maxItems enforcement rule (\"more items than allowed. only {maxLimit}\" context expects a noun phrase like \"items are allowed\" or \"arrays are permitted\")."
+ }
+}

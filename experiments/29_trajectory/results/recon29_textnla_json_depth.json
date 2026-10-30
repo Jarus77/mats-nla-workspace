@@ -1,0 +1,16 @@
+{
+ "feature": "json_depth",
+ "ckpt": "textnla",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.9134375,
+ "class_direction_cos": 0.6024782061576843,
+ "fve": -0.7279607057571411,
+ "fve_baseline": 0.30309706926345825,
+ "examples": {
+  "json_depth_lidationjsonc7eb50ca3fe2_1": "Strict JSON syntax rules demand closing braces or commas, ensuring structural validity.\nRepetition of property definitions implies continuation of schema keywords like \"minContains\".\nThe truncated \"$ref\" value must complete with closing brace/bracket to close \"maxItems\".",
+  "json_depth_ev1beta5jsone59376c67904_1": "JSON object structure requires closing brace after \"flatPath\" value starts content matching defined schema format strict nested hierarchy\nEndpoint metadata block implies related fields like \"method\" or \"parameters\" completion or closing structure\nLast token \"v1beta5/apps/{appsId}/operations\" is string value needing closing quote and comma or brace depending on sibling fields",
+  "json_depth_anagerv1jsondfa900ef4a8c_1": "The input is a JSON schema definition. The immediate context is a property object that started with `\"$ref\": \"BooleanPolicy\"`. JSON syntax requires this object to be closed. The field is a reference, so no further properties are expected in this specific node, meaning a closing brace is the strictly necessary next token to maintain valid JSON structure and complete the current property definition.",
+  "json_depth_gv1beta1json5270b94c59cb_1": "Strict JSON syntax dictates that a string value started with a double quote must immediately terminate with a closing quote, followed by a comma to separate fields.\nThe text follows a rigid repetitive schema, listing Google Cloud API metadata fields with identical structural patterns of name, reference, and description.\nThe final segment is an unclosed description string within a JSON object, requiring immediate closure via a quote character before subsequent structural tokens."
+ }
+}

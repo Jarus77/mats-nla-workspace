@@ -1,0 +1,16 @@
+{
+ "feature": "py_string",
+ "ckpt": "iter_000100",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.9934375,
+ "class_direction_cos": 0.9123572111129761,
+ "fve": 0.52527916431427,
+ "fve_baseline": 0.5804178714752197,
+ "examples": {
+  "py_string_asecommandpy3ef7bba2ce1c_0": "Bug report/issue log describing a pip installation failure, with structured terminal output mixing changelog prose and command-line error text. The genre signals strongly predict continued technical output.\n\nThe pip error pattern follows standard pip stderr formatting: `WARNING: No metadata, entry points or work done were found... ERROR... Successfully installed....` followed by a traceback or warning block, tracking pip's disaster recovery verbosity format.\n\nFinal token \"Exception\" is the start of a traceback label mid-line: `WARNING: Unable to determine requirements installed.\\n  Exception` expects a colon followed by traceback text, error name, or pip exception details.",
+  "py_string_tloftrfastpy63b8f083ca71_0": "Hugging Face `pipeline` docstring for MaskRCNN object detection, following standard PyTorch/lib model format with type annotations and parameter descriptions. Python class signatures are mid-run.\n\nThe error message is being constructed mid-sentence: \"ValueError: Make sure you pass as many\" signals a validation check about `image_sizes` length matching the number of batched inputs.\n\nFinal token \"many\" is part of the truncated ValueError message \"Make sure you pass as many [images/sample tensors as there are outputs],\" requiring a count/matching relationship clause to complete.",
+  "py_string_higgspyce604f5f403a_0": "Academic ML paper/project header format, with collocated institution, author, date (\"Nov 18, 2024\"), and model name signal structure typical of repository READMEs.\n\n\"EFFILUx (Extended Lookup\" is the opening of an acronym being spelled out \u2014 \"EFFILU\" is a named method, strongly implying a specific attention/weight-sharing or lookup-table technique for LLMs; the parenthetical expansion is incomplete and requires continuation.\n\nFinal token \"Lookup\" is mid-phrase, part of an incomplete parenthetical expansion of the acronym following \"Flexible Lookup\" \u2014 next tokens must continue this noun phrase (e.g., \"at-table\" or similar), completing the technical method name.",
+  "py_string_testastypepy09e0a9a05db0_0": "Technical API/Sphinx documentation listing parameters for a pandas/data library dtypes conversion function (likely Pandas `Categorical` or `read_csv`).\n\nThe error message pattern \"Raises TypeError if dtype cannot be safely casted. The error message will be: 'Cannot cast\" signals a specific error message string is being documented, describing what type casting failures look like \u2014 likely completing with a type coercion distinction (e.g., \"from X to Y\").\n\nFinal token \"Cannot cast\" is the opening of a quoted error message string mid-clause, requiring completion of the cast failure description, likely referencing a specific type, dtype category, or incompatibility reason (e.g., \"pandas-dtypes to float\")."
+ }
+}

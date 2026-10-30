@@ -1,0 +1,16 @@
+{
+ "feature": "js_string",
+ "ckpt": "iter_000100",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.96875,
+ "class_direction_cos": 0.8833246231079102,
+ "fve": 0.5073888301849365,
+ "fve_baseline": 0.580013632774353,
+ "examples": {
+  "js_string_temporaljs3dff2686bd49_0": "TypeScript/JavaScript mapping library context establishes domain; API documentation for coordinate geometry and tiles in an npm/monorepo project.\n\nThe text is mid-list of documentation notes describing utility functions/comments in sequence: projection definition, caching, undocumented string formats, and now helpers for geometric math methods via `Math.extent`.\n\nFinal token \"add\" ends an incomplete sentence describing a caveat pattern: \"This is an external function. That is we want to use these utilities, but we don't want to add\" \u2014 strongly expecting a noun phrase referencing prototype methods, e.g., \"extra methods to the Point/Geometry object\" or a TypeScript overhead consideration.",
+  "js_string_ignorejs3f913d4ab515_0": "JavaScript glob error handling code in node-minimatch, following conditional error-checking pattern with guard clauses for invalid regex states. The context is tracking `_gator` glob engine internals.\n\nThe pattern of structured nested code with property checking (`.inverted`, `.empty`, `.src`) establishes a call-site exception with pattern validation expected.\n\nFinal token: `'invalid pattern` is an opening string literal mid-throw-statement `throw new ERR('invalid pattern` \u2014 immediately requires continuation of the error message string, likely with a closing quote or additional argument showing which pattern failed, followed by `')` syntax closure.",
+  "js_string_thTemplatejs248dca9894c6_0": "API specification input validation library, listing error messages for OData URI template parsing format in TypeScript. Domain-specific technical format.\n\nPattern of error messages continuing: each line describes a validation rule violation for URI path segments, following quoted-message format like `'Template cannot have literal strings after: /{segment*}`.\n\nFinal token \"more than one\" is mid-error-message, part of \"'There may be no more than one\" which is enumerating a restriction on wildcard segments; next tokens must name the concept being limited (e.g., \"deep-segment wildcard\" implying `**` segment).",
+  "js_string_estbrowserjs33fd0d23800c_0": "Puppeteer integration test framework (Jest/Mocha-style) for a Cloud Functions-rendered Express app on Firebase, establishing E2E smoke test structure.\n\nThe test suite pattern shows an `it()` test case is being opened with a descriptive assertion string \"it should just work\" \u2014 the test body and expectation check for rendered HTML/message is expected next, likely a simple descriptive phrase completing the string.\n\nFinal token `\"It should just work` opens a quoted string descriptor inside the `it('GET /', () => { ... expect('It should just work` pattern, requiring immediate closure with a period or additional phrase continuing the assertion label (e.g., \"\ud83d\ude80\" or punctuation)."
+ }
+}

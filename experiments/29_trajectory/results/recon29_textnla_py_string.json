@@ -1,0 +1,16 @@
+{
+ "feature": "py_string",
+ "ckpt": "textnla",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.9221875,
+ "class_direction_cos": 0.5557752251625061,
+ "fve": -0.04518408328294754,
+ "fve_baseline": 0.5804178714752197,
+ "examples": {
+  "py_string_asecommandpy3ef7bba2ce1c_0": "Syntactic completion of string formatting: the open parenthesis in `logger.debug(\"Exception` demands a closing quote and paren.\nSemantic context of error handling: standard pattern suggests passing the exception instance or its traceback to the logger.\nFinal feature: the incomplete string literal inside `logger.debug(...)` requires immediate closure, likely followed by the exception object `exc` to log the error details.",
+  "py_string_tloftrfastpy63b8f083ca71_0": "1. Syntactic completion: The sentence fragments ends with \"as many\", strongly expecting a noun phrase like \"target sizes\" or \"matches\" to quantify the comparison.\n2. API logic: The code validates input lengths against tensor dimensions; the error message must explain the mismatch between `outputs` and `target_sizes` quantities.\n3. Final token: \"as many\" is a quantifier introducing the required count; immediate constraint is a plural noun matching the previous context.",
+  "py_string_higgspyce604f5f403a_0": "Recognize the standard Apache 2.0 license header block, expecting subsequent lines to conclude the copyright notice or transition to code imports and module documentation typical in Python libraries.\nIdentify the abrupt end mid-phrase inside a string literal \"Flexible Lookup\", predicting the immediate need to close the opening parenthesis and quote mark to complete the syntax.\nThe final fragment is an incomplete string argument; the model must prioritize closing the parenthesis and quote to satisfy Python syntax rules before proceeding with further code logic or comments.",
+  "py_string_testastypepy09e0a9a05db0_0": "Code is Python unit tests for pandas Index dtype conversion, using pytest parametrization.\nSyntactic structure requires completing the quoted error message string literal.\nImmediate semantic constraint: msg variable expects a specific regex or text fragment describing failed casting.\nFinal token 'msg' is a string assignment target; next tokens must continue the quote content."
+ }
+}

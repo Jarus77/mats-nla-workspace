@@ -1,0 +1,16 @@
+{
+ "feature": "py_arg",
+ "ckpt": "iter_000100",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.9303125,
+ "class_direction_cos": 0.8465209603309631,
+ "fve": 0.3220101594924927,
+ "fve_baseline": 0.46128928661346436,
+ "examples": {
+  "py_arg_s3genpya0210be2ef0f_0": "Python deep learning MMCV codebase in Chinese community, documenting weight format conversion utilities between PyTorch and PaddlePaddle.\n\nContinuation of technical tensor shape rearrangement patterns: the tensor permutation detail is mid-explanation for `Conv2d` shape `(outC, inC, kH, kW)` to NCHW format, requiring specific dimension indices for `np.transpose`.\n\nFinal token `np.transpose(weights, (0` opens a numpy transpose indices tuple mid-clause \"shape been NCHW, convert to transpose(np.teraese(weights, (0\" \u2014 immediately expects comma-separated dimension index integers continuing the shape permutation, e.g., `0, 3, 1, 2)`).",
+  "py_arg_buildpy9cb021463896_0": "Python bug report/patch (free expressions in OpenType fonts) following a development mailing list format, with a reproducible Python code example for building a font and adding tables.\n\nThe code demonstrates sequential`fonttools` operations:\n- `addGlyphOrder` and `add_bw_table` complete GPOS setup via `table.pre.computePlacement`\n- Pattern established mirrors fonttools workflow: each step calls specific functions on `font`\n\nFinal token: `add_coloring(font` opens a function call mid-argument to `fontools.add_colour GSLM table`, syntactically requiring closing arg `)` with `font` object and likely an argument like `gslm` or a cap/kerning seq table dict, continuing the `add_bw_table` parallel structure.",
+  "py_arg_runcpupyb23dabb7809d_0": "Python constructor/method parameter documentation pattern: each argument declared with default, description given, then instantiation logic follows systematically.\n\nThe `__init__` method is mid-implementation, having handled `enable_fb` and `gpu` flags, now configuring the wallet fee backend by delegating to `setup_fee_backend()` with its named boolean arguments `use_mempoolcash ==> True`, `use_cachemash ==> false`, `use_zkvm ==> false`, which must be passed as arguments.\n\nFinal token \"enable_tunnicash\" is an argument to `setup_fee_backend`, mid-parenthetical: `self.setup_fee_backend(\\n    enable_tunnicash` expects a boolean value and continuation of comma-separated arguments matching the existing parameter order.",
+  "py_arg_msvcpyccc870f993e1_0": "Technical Python documentation listing Windows registry paths for finding installed software via Python versions, establishing a pattern of code snippets with explanatory prose blocks between them.\n\nThe text is mid-sentence discussing a workaround for 32-bit Python on 64-bit Windows registry access failures (\"If that fails on Win64 due to WOW64 redirection, try to open on the same machine:\"), suggesting a parallel `winreg.OpenKey` call targeting a different registry path with WOW6432Node.\n\nFinal token \"hkey,\" is mid-call in a Python `winreg.OpenKey(hkey` pattern, directly mirroring the earlier failed-path attempt, requiring a registry key path string following `hkey` and a key argument."
+ }
+}

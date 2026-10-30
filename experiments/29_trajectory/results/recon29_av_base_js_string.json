@@ -1,0 +1,16 @@
+{
+ "feature": "js_string",
+ "ckpt": "av_base",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.954375,
+ "class_direction_cos": 0.7888004779815674,
+ "fve": 0.14345380663871765,
+ "fve_baseline": 0.580013632774353,
+ "examples": {
+  "js_string_temporaljs3dff2686bd49_0": "Technical API documentation style, with parenthetical \"(unimplemented)\" markers and class/subclass descriptions defining methods.\n\nNarrative momentum: the sentence describes a static method's purpose (\"For each point...compute the specified metric to a minimum value.\") and is mid-explanation of design constraints.\n\nFinal token \"add\" is part of the phrase \"we don't want to add,\" beginning a caveat about avoiding extra overhead/memory bloat \u2014 next tokens will likely specify what is not being added, e.g., \"a function to the prototype\" or \"it to the prototype.\"",
+  "js_string_ignorejs3f913d4ab515_0": "API documentation pattern: each parameter method follows \"Returns {type} {description}\" structure, listing details in fixed sequence.\n\nCode snippet interruption mid-string literal: the JavaScript `throw new TypeError(\"invalid pattern` line is unclosed, requiring completion with the rest of the error message string, closing quote, and closing parenthesis.\n\nFinal token is an incomplete string literal inside a `TypeError` constructor call \u2014 immediately expects closing characters: remaining error message text, closing `\"`, then `)`, followed by continuation of the documentation array item description.",
+  "js_string_thTemplatejs248dca9894c6_0": "Error message pattern continuation: the text is mid-sentence in an embedded exception string \"No more than one\" describing recursively expanded patterns, requiring a closing phrase like \"recursively expandable pattern segment ('*').\"\n\nError string context: the exception message explains a URI pattern violation, and the phrase \"No more than one\" semantically demands a noun completing the constraint (e.g., \"open-ended pattern segment is allowed\").\n\nFinal token \"one\" is mid-clause inside an opening quotation, part of an error message describing the >80% threshold; the next token must continue or complete that attribute explanation, likely punctuation or a closing word.",
+  "js_string_estbrowserjs33fd0d23800c_0": "Cucumber/gherkin test syntax structure drives expectations: the scenario excerpt demands completion of the \"Then\" step's outcome description, mirroring the step definition above.\n\nQuoted response body content expected: the `expect.response.body.include(\"...\")` pattern from the definition strongly signals the next tokens must echo the same string \u2014 `\"It should just work\"` \u2014 to complete the test case.\n\nThe final token `\"It should just work` is an unclosed quote mid-test-step, immediately requiring closing punctuation, a quotation mark, and then the full expected string content exactly."
+ }
+}

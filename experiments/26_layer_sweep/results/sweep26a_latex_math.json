@@ -1,0 +1,143 @@
+{
+ "feature": "latex_math",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.998125,
+  "24": 0.98546875,
+  "28": 0.9953125,
+  "32": 0.99671875,
+  "36": 0.99515625,
+  "40": 0.99484375,
+  "42": 0.99765625,
+  "44": 0.9984375,
+  "48": 0.99734375,
+  "52": 0.9953125,
+  "56": 0.9946875,
+  "60": 0.99359375
+ },
+ "ol_prompted": {
+  "20": 0.94203125,
+  "24": 0.93515625,
+  "28": 0.93640625,
+  "32": 0.93859375,
+  "36": 0.92703125,
+  "40": 0.9340625,
+  "42": 0.93453125,
+  "44": 0.9275,
+  "48": 0.9290625,
+  "52": 0.8934375,
+  "56": 0.8775,
+  "60": 0.90828125
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.94203125,
+   "fixed_label": 0.72125,
+   "auroc": 0.94203125
+  },
+  "24": {
+   "mean_of_selected": 0.93515625,
+   "fixed_label": 0.65734375,
+   "auroc": 0.93515625
+  },
+  "28": {
+   "mean_of_selected": 0.93640625,
+   "fixed_label": 0.75859375,
+   "auroc": 0.93640625
+  },
+  "32": {
+   "mean_of_selected": 0.93859375,
+   "fixed_label": 0.81359375,
+   "auroc": 0.93859375
+  },
+  "36": {
+   "mean_of_selected": 0.92703125,
+   "fixed_label": 0.80015625,
+   "auroc": 0.92703125
+  },
+  "40": {
+   "mean_of_selected": 0.9340625,
+   "fixed_label": 0.8284375,
+   "auroc": 0.9340625
+  },
+  "42": {
+   "mean_of_selected": 0.93453125,
+   "fixed_label": 0.83046875,
+   "auroc": 0.93453125
+  },
+  "44": {
+   "mean_of_selected": 0.9275,
+   "fixed_label": 0.86265625,
+   "auroc": 0.9275
+  },
+  "48": {
+   "mean_of_selected": 0.9290625,
+   "fixed_label": 0.85390625,
+   "auroc": 0.9290625
+  },
+  "52": {
+   "mean_of_selected": 0.8934375,
+   "fixed_label": 0.85171875,
+   "auroc": 0.8934375
+  },
+  "56": {
+   "mean_of_selected": 0.8775,
+   "fixed_label": 0.8728125,
+   "auroc": 0.8775
+  },
+  "60": {
+   "mean_of_selected": 0.86328125,
+   "fixed_label": 0.90828125,
+   "auroc": 0.90828125
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:latex_math:m2",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "_{",
+    "outside": " ("
+   }
+  },
+  {
+   "id": "ol:latex_math:m1",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "\\",
+    "outside": "/"
+   }
+  },
+  {
+   "id": "ol:latex_math:m0",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "$",
+    "outside": "and"
+   }
+  },
+  {
+   "id": "ol:latex_math:fixed",
+   "template": "- {v} math",
+   "fillers": {
+    "inside": "inside",
+    "outside": "outside"
+   }
+  }
+ ],
+ "wall_s": 1074.9
+}

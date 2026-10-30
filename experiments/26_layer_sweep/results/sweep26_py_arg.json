@@ -1,0 +1,234 @@
+{
+ "feature": "py_arg",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.98859375,
+  "24": 0.98453125,
+  "28": 0.96265625,
+  "32": 0.95234375,
+  "36": 0.9390625,
+  "40": 0.94421875,
+  "42": 0.94921875,
+  "44": 0.95375,
+  "48": 0.9846875,
+  "52": 0.9725,
+  "56": 0.9609375,
+  "60": 0.956875
+ },
+ "ol_prompted": {
+  "20": 0.8575,
+  "24": 0.8759375,
+  "28": 0.85484375,
+  "32": 0.8365625,
+  "36": 0.81546875,
+  "40": 0.8153125,
+  "42": 0.818125,
+  "44": 0.80453125,
+  "48": 0.82234375,
+  "52": 0.7825,
+  "56": 0.765625,
+  "60": 0.7571875
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.8575,
+   "fixed_label": 0.7125,
+   "auroc": 0.8575
+  },
+  "24": {
+   "mean_of_selected": 0.8759375,
+   "fixed_label": 0.75203125,
+   "auroc": 0.8759375
+  },
+  "28": {
+   "mean_of_selected": 0.85484375,
+   "fixed_label": 0.74,
+   "auroc": 0.85484375
+  },
+  "32": {
+   "mean_of_selected": 0.8365625,
+   "fixed_label": 0.74171875,
+   "auroc": 0.8365625
+  },
+  "36": {
+   "mean_of_selected": 0.81546875,
+   "fixed_label": 0.71125,
+   "auroc": 0.81546875
+  },
+  "40": {
+   "mean_of_selected": 0.8153125,
+   "fixed_label": 0.74890625,
+   "auroc": 0.8153125
+  },
+  "42": {
+   "mean_of_selected": 0.818125,
+   "fixed_label": 0.759375,
+   "auroc": 0.818125
+  },
+  "44": {
+   "mean_of_selected": 0.80453125,
+   "fixed_label": 0.75828125,
+   "auroc": 0.80453125
+  },
+  "48": {
+   "mean_of_selected": 0.82234375,
+   "fixed_label": 0.78984375,
+   "auroc": 0.82234375
+  },
+  "52": {
+   "mean_of_selected": 0.7825,
+   "fixed_label": 0.743125,
+   "auroc": 0.7825
+  },
+  "56": {
+   "mean_of_selected": 0.765625,
+   "fixed_label": 0.72578125,
+   "auroc": 0.765625
+  },
+  "60": {
+   "mean_of_selected": 0.7571875,
+   "fixed_label": 0.73578125,
+   "auroc": 0.7571875
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:py_arg:m2",
+   "template": "- \u7b2c{v}\u4e2a\u53c2\u6570",
+   "fillers": {
+    "first": "\u4e00",
+    "third": "\u4e09"
+   }
+  },
+  {
+   "id": "ol:py_arg:m3",
+   "template": "- {v}",
+   "fillers": {
+    "first": "1",
+    "third": "3"
+   }
+  },
+  {
+   "id": "ol:py_arg:m0",
+   "template": "- arg{v}",
+   "fillers": {
+    "first": "1",
+    "third": "3"
+   }
+  },
+  {
+   "id": "ol:py_arg:fixed",
+   "template": "- {v} argument",
+   "fillers": {
+    "first": "first",
+    "third": "third"
+   }
+  }
+ ],
+ "wall_s": 995.5,
+ "carries": {
+  "20": 0.62890625,
+  "24": 0.65546875,
+  "28": 0.588125,
+  "32": 0.58171875,
+  "36": 0.54796875,
+  "40": 0.47796875,
+  "42": 0.49484375,
+  "44": 0.49171875,
+  "48": 0.4753125,
+  "52": 0.43546875,
+  "56": 0.50390625,
+  "60": 0.500625
+ },
+ "names": {
+  "20": 0.0125,
+  "24": 0.00625,
+  "28": 0.0,
+  "32": 0.00625,
+  "36": 0.00625,
+  "40": 0.00625,
+  "42": 0.0,
+  "44": 0.0,
+  "48": 0.00625,
+  "52": 0.0,
+  "56": 0.0,
+  "60": 0.0
+ },
+ "examples": {
+  "20": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 2)  # \u5982\u679c\u662f ConvTranspose2d \u8f93\u51fa\uff0c\u53ef\u80fd\u9700\u8981 transpose(0\n- ,1,2) if transposed else x.permute(0\n- , 1, 2, 3)  # \u8f6c\u7f6e\u64cd\u4f5c\uff0c\u56e0\u4e3a PyTorch \u7684 transpose \u901a\u5e38\u5904\u7406\u7ef4\u5ea60\n- ,1,2,3)  # \u4ea4\u6362\u7ef4\u5ea6\uff0c\u56e0\u4e3a ONNX \u53ef\u80fd\u8f6c\u7f6e\u4e86\uff0c\u9700\u8fd8\u539f\u4e3a (0",
+   "py_arg_buildpy9cb021463896_0": "- , layers, namespaces)  # Note: this modifies font, not table, but `addOS2Table(font\n- , new_cmap)` (or `fontLib.addOS2Table(font,\n- /glyph, new_cmap)` \u2014 This is the critical step. `Librosa.addOS2Table(font\n- \uff08the font object\uff09 with the new lookup table. `ttLib.tables.os2.addCMap(font, cmap)`",
+   "py_arg_runcpupyb23dabb7809d_0": "- /jemalloc and disable glibc malloc` (You mentioned \"use tcmalloc\n- /jemalloc=True, tensorflow_use_tcmalloc\n- , tcmalloc, and disable malloc: This is a crucial optimization step for TensorFlow. Using `tcmalloc\n- \uff08tcmalloc\uff09\u548c disable PyTorch default malloc: true`\uff1a\u8fd9\u662f TensorFlow \u7684\u5e38\u89c1\u914d\u7f6e\u3002`use_tcmalloc"
+  },
+  "24": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 2, 3)  # Torch 1.11+ \u4f7f\u7528 (batch, time, channels) \u5982\u679c transpose(0\n- /dim 0 (batch) \u79fb\u5230\u524d\u9762\uff0c\u4f46\u6709\u4e9b\u6846\u67b6\u4ecd\u4fdd\u7559 (N, C, T) \u6216 (0\n- , batch, channels) \u987a\u5e8f\uff08\u9ed8\u8ba4 `move_axis(0\n- /1, dim)  # \u4e0e PyTorch \u76f8\u540c\uff1a(0, ..., N-1, batch, features) or (0",
+   "py_arg_buildpy9cb021463896_0": "- , **glyf_table**, num_names)  # This adds CMAP to font\n- , axes)  # Adds OS/2 table to font\n- , context)  # Adds aOS2 table to the font dict. This is the key step. font\n- (the font object) the necessary lookup tables. Note that `addOS2` modifies the font in place.",
+   "py_arg_runcpupyb23dabb7809d_0": "- = true, enable_jemalloc = true, use_tcmalloc\n- \u548c tcmalloc, --use_tcmalloc\n- \uff08tcmalloc\uff09\u548c openblas \u7b49\u9009\u9879\uff0c\u53ef\u4ee5\u663e\u8457\u63d0\u5347\u6027\u80fd\u3002`use_tcmalloc\n- /jemalloc=True`\uff08\u542f\u7528 jemalloc\uff09\u548c `use_xla=True`\uff08\u542f\u7528 XLA \u7f16\u8bd1\u5668\u4f18\u5316\uff09\u3002\u5176\u4e2d\uff0c\u542f\u7528 `jemalloc"
+  },
+  "28": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 1, 2)  # \u5982\u679c\u662f\u5377\u79ef\u6743\u91cd\uff0c\u5219\u4fdd\u6301 (N, C_in, K,\n- , 1, ...)  # PyTorch \u901a\u5e38\u5c06 batch \u653e\u5728\u6700\u540e\uff0c\u4f46 TF \u4e60\u60ef 0\n- , 1, channels, out_channels) \u5982\u679c\u6700\u540e\u4e00\u4e2a\u7ef4\u5ea6\u662f batch\uff0c\u5219\u9700 swapaxes([0\n- /batch (first dim) \u548c channels (last dim)\u3002PyTorch \u52a0\u8f7d\u540e\u901a\u5e38\u662f `(0",
+   "py_arg_buildpy9cb021463896_0": "- , new_sidx)  # Adds the extension to the font object, not to font\n- , font)  # <-- This function adds the BCSM chunk to font\n- , axis_table)  # This modifies the font in place, adding the OS/2 table if missing.\n- , axis_table)  # This adds the existing RRT to the font object. Note: `add_srgba_table(font,",
+   "py_arg_runcpupyb23dabb7809d_0": "- =True, use_tcmalloc\n- : bool = True, use_mkl_tcmalloc\n- = True, use_jemalloc = True, use_tcmalloc\n- /enable_tcmalloc=True, use_bfloat16_tcmalloc\n- \uff08tcmalloc\uff09 and use_xla_tcmalloc\uff08\u4f7f\u7528 tcmalloc"
+  },
+  "32": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 1, -1)  # \u6743\u91cd\u5f62\u72b6\u901a\u5e38\u4e3a [out_channels, in_channels, H,\n- , 1, w, h)  # \u5bf9\u5e94 TF \u7684 transpose(0\n- , 2, :, :).transpose(1, 0)  # PyTorch \u6743\u91cd\u901a\u5e38\u662f [out, in, h,\n- , batch_dim, -1)  # TensorFlow \u6743\u91cd\u5e03\u5c40\u901a\u5e38\u662f (out, in, h, w)\uff0c\u9700\u8f6c\u7f6e\u4e3a (0",
+   "py_arg_buildpy9cb021463896_0": "- , *schema_dict, key_name=\"JWK\")  # Adds a JWK column to\n- , key_names, signature)  # Add the JWK into the fontdb (at the\n- , \"OIDC\", store)  # Adds the OIDC extension to the font. Note: This modifies the font\n- , root)  # This creates or updates the OIDC descriptor in font._OIDC)  # or add to font,",
+   "py_arg_runcpupyb23dabb7809d_0": "- , use_tcmalloc, use_mimalloc\n- =True, use_tcmalloc\n- True, use_jemalloc=True)  # Apply selected allocator if enabled; defaults to tcmalloc\n- , use_mimalloc, and use_tcmalloc flags passed to `tf.config.set_memory_allocator` or via environment variables like `T\n- \uff08tcmalloc\uff09\u4e0e use_openblas\uff08OpenBLAS\uff09\u5e76\u6839\u636e `enable_tcmalloc"
+  },
+  "36": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 1, 2)  # \u8f6c\u6362\u4e3a TF \u7684 (out_channels, in_channels, H\n- , 1, H, W)  # PyTorch weight \u987a\u5e8f\u901a\u5e38\u662f (out, in, H\n- , c, h, w)  # TF \u6743\u91cd\u5b58\u50a8\u4e3a (out_channels, in_channels, height, width) \u8f6c\u7f6e\u540e\u4e3a (0\n- , 1)  # TensorFlow \u6743\u91cd\u5b58\u50a8\u987a\u5e8f\u901a\u5e38\u662f [out, in, h, w]\uff0c\u800c PyTorch \u662f [0",
+   "py_arg_buildpy9cb021463896_0": "- , ds_langs, max_font_versions)  # \u751f\u6210 fvar table \u5e76\u5199\u5165 font\n- , language_tags, max_version=1)  # \u751f\u6210 DSOT \u8868\uff0c\u5e76\u5199\u5165 font\n- , ds_langs, direction=fontLib.direction)  # \u5199\u5165 ttf \u7684 dsot \u8868\n- , ds_lang_table)  # \u4f20\u5165 font \u5bf9\u8c61\uff0c\u8bbe\u7f6e\u5176 `head` \u8868\u4e2d\u7684 'sFonts' \u5c5e\u6027\u3002",
+   "py_arg_runcpupyb23dabb7809d_0": "- = True, use_tflite=False, use_tnni=True if enable_tflite\n- , use_opencl=use_opencl, use_vulkan=use_vulkan, default_backend=use_tflite\n- =True, use_tfrt=False, use_tensorrt=False) if use_tflite\n- , use_cortex_m=True, use_opencl=False) if enable_tflite else self._set_backend(use_mnn=True, use"
+  },
+  "40": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 1, 2) if conv_layer.weight.shape[0\n- , 1)  # \u5982\u679c\u662f caffe \u98ce\u683c\uff0c\u6709\u65f6\u8f6c\u7f6e\u4e3a (out_channels, in_channels, 1\n- , 1, 2)  # Conv2D \u6743\u91cd\u901a\u5e38\u662f (out_channels, in_channels, 1, 1)\uff0cTensorFlow \u662f (out, in, h,\n- , 1, 2)  # TensorFlow \u6743\u91cd\u91cf\u6392\u5217\u4e3a (out_channels, in_channels, height, width",
+   "py_arg_buildpy9cb021463896_0": "- , font_table, axis_order, axis_limits)  # Adds the lookup table to the font\n- , axis_maps, delta_format=fonttools.ttLib.axis_table.DeltaFormat)  # Builds GPOS table in\n- , axes)  # font \u662f\u5df2\u5b58\u5728\u7684 SFNT \u5bf9\u8c61\uff0cadd_chapter() \u4f1a\u81ea\u52a8\u5199\u5165 DSOT table\n- , \"avarTable\", sorted_axes)  # This will create the ELAB table inside font.",
+   "py_arg_runcpupyb23dabb7809d_0": "- = enable_tcmalloc, use_mimalloc\n- = True and not enable_mimalloc, use_musl_malloc = enable_mus\n- , mimalloc_enabled, disable_libc)  # Only one can be True if both are enabled.\n- =true, use_tcmalloc=False) if not enable_cpu_profiler else enable_musl\n- is_enabled, enable_tcmalloc is_disabled)  # Only one can be active"
+  },
+  "42": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 1, 2)  # \u786e\u4fdd\u8f93\u51fa\u901a\u9053\u5728\u524d\uff0c\u7b26\u5408 TF Conv2D \u683c\u5f0f (C, H, W\n- , 1, 2)  # \u8f6c\u6362 PyTorch [out_channels, in_channels, h, w] \u4e3a TF [C,\n- , 1, 2]  # \u5377\u79ef\u6838\u6743\u91cd\u901a\u5e38\u4e3a (out, in, h, w)\uff0c\u8f6c\u7f6e\u4e3a (C, H, W\n- , 1, 2)  # Conv2D \u901a\u5e38\u662f (out_channels, in_channels, height, width)\uff0c\u9700\u786e\u4fdd\u7ef4\u5ea6\u987a\u5e8f\u6b63\u786e",
+   "py_arg_buildpy9cb021463896_0": "- .font, new_gpos_values, subfonts)  # \u81ea\u52a8\u8ba1\u7b97\u5e76\u5199\u5165 `avar` table\n- , tag_tables)  # \u81ea\u52a8\u6dfb\u52a0 'fvar' \u8868\uff0c\u4f7f\u7528\u8ba1\u7b97\u51fa\u7684 delta \u503c\n- , \"arabic\", new_kern_values)  # \u81ea\u52a8\u6784\u5efa kern \u8868\u5230 font \u4e2d\n- .ttGlyphOrder, deltas)  # \u81ea\u52a8\u8ba1\u7b97\u5e76\u6dfb\u52a0 'avar' \u8868\u5230 font \u4e2d",
+   "py_arg_runcpupyb23dabb7809d_0": "- = True, use_swift=use_swift, use_vulkan=not enable_opens\n- , use_metal, disable_cpu_cache=disable_cpu_cache, default_backend=enable_metal\n- =true, use_sse2=not use_opengl, use_vulkan=not use_swift\n- , use_adreno=use_adreno, use_zcache=use_zcache)  # \u6ce8\u610f\uff1a\u4e92\u65a5\u903b\u8f91\u901a\u5e38\u5728\u8c03\u7528\u5c42\u5904\u7406\uff0c"
+  },
+  "44": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 1, 2, 3)  # (out_channels, in_channels, H,\n- , 1, -1)  # \u5c06 (C, H, W, K) \u8f6c\u4e3a (C, K, H\n- , 1, 3, 4)  # \u8f6c\u7f6e kernel \u7ef4\u5ea6\u4e3a (out_channels, in_channels, 3,\n- , 2, 3)  # \u8f6c\u6362 Conv2D \u6743\u91cd\u683c\u5f0f\u4e3a (out, in, H, W)",
+   "py_arg_buildpy9cb021463896_0": "- , tags, dsb)  # \u6839\u636e\u5df2\u6709\u7684 intervals \u6dfb\u52a0\u65b0\u7684 SHA1 subtable\n- , new_intervals)  # \u8fd9\u662f\u5173\u952e\u6b65\u9aa4\uff0cscons \u5185\u90e8\u4f1a\u8ba1\u7b97 JUMPS \u5e76\u6dfb\u52a0\u5230 font \u4e2d\n- , \"TLSS\", intervals)  # \u81ea\u52a8\u8ba1\u7b97\u5e76\u751f\u6210 SHA1 \u8868\u5230 font \u5bf9\u8c61\u4e2d",
+   "py_arg_runcpupyb23dabb7809d_0": "- , enable_s3, enable_local,\n- = True if tls_enabled and enable_cdn, enable_openssl=enable_openssl\n- , use_grpc=False, use_none=not use_kafka and not use_local, enable_default\n- , enable_s3, enable_default))  # \u5982\u679c\u542f\u7528\u4e86\u591a\u4e2a\u52a0\u901f\u9009\u9879\uff0c\u4f1a\u76f8\u4e92\u8986\u76d6\u6216\u62a5\u9519\uff0c\u901a\u5e38\u53ea\u542f\u7528\u4e00\u79cd\u3002\n- is True, self._enable_kms is False, self._enable_openssl is"
+  },
+  "48": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 1, 2, 3))  # HWC -> CWH (\u4ea4\u6362\u8f74\u987a\u5e8f\u4e3a 0\n- , 1, 2) if weight.shape[2:] == (H, W) else (0, 1\n- , 1, 2, 3)  # \u4fdd\u6301\u901a\u9053\u7ef4\u5ea6\u5728\u7b2c\u4e00\u4f4d\uff0c\u7a7a\u95f4\u7ef4\u5ea6\u91cd\u6392\u4e3a (0, 1\n- , 2, 3, 4)  # \u91cd\u6392\u5377\u79ef\u6838\u5f62\u72b6 (C, H, W) -> (0, 1",
+   "py_arg_buildpy9cb021463896_0": "- , segments, axisValues, glyph_ids); # Create cmap using only these new\n- , glyphOrder, ranges, weightList)  # Build cmap using the new segments\n- , _make_cmap_from_ranges(font, ranges))  # Populate cmap with new intervals\n- , list(glyph_ranges))  # Pass the computed set of scripts so cmap is built correctly",
+   "py_arg_runcpupyb23dabb7809d_0": "- , use_mixed_precision, use_fp16)  # \u4e92\u65a5\u9009\u62e9\n- , self.enable_cudnn = enable_cudnn, self.enable_torch\n- , use_bfloat16, use_mixed_precision) != 0 and not self.enable_cudnn\n- , self._use_torch_amp, use_fp16)  # \u4f18\u5148\u5f00\u542f\uff0c\u5982\u679c\u90fd\u5f00\u542f\u5219\u62a5\u9519\uff0c\u6839\u636e\u9700\u6c42\u9009\u62e9\u3002"
+  },
+  "52": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 2, 1) if kernel_perm == 'chw' else tf.permute_dims(kernel, [0\n- , 2, 1))  # Convert to (C, H, W). Note: NumPy transpose order is (0\n- , 1, 2)  # permute to (C, H, W) for convolution; adjust perm for backend\n    ) if weight.ndim == 4",
+   "py_arg_buildpy9cb021463896_0": "- , ds.masters, axis_mappings)  # Note: fontTools.buildVariableFont\n- , axisMaps)  # buildDeltasForVariations takes FontVariations and axisMapDict, but we can pass deltas directly. font\n- , axisDeltaMap, axes)  # Add curves from each variation in order. font.variants = dict(zip(keys, font\n- , axisMaps)  # Pass the collected map. Variations are applied in order. font.variations.mapDeltasToAxes(font,",
+   "py_arg_runcpupyb23dabb7809d_0": "- , enable_mmap, enable_local_files) if use_torchelastic else (enable_torch\n- , enable_cdn, enable_hf_cache) if self._is_dist_training else (enable_torch_compile, enable_torch\n- = enable_torch_compile or enable_local_cache, enable_offload_disk = enable_offload_disk\n- , enable_cnn_cache, enable_hdfs_cache)  # Note: assuming bool values; if not, adjust logic"
+  },
+  "56": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 2, 1))  # transpose = permute(0\n- , 2, 3))  # channel_first -> nhwc. Note: numpy transpose doesn't reorder axes for transpose\n- , 1, 2)  # Note: numpy's transpose uses (2, 3, 0, 1\n- , 1, 2)  # HWC -> CHW permutation order) weights_reshaped = weights.transpose(0,",
+   "py_arg_buildpy9cb021463896_0": "- , axes_to_deltas, axisTags, variationStore)\n- , ds_list, axisList)  # Build masterMap in font.variations)  # Build axis\n- .axisMaps, axisList.mapDeltaToMaster(axes))  # Merge all deltas into one axisMap\n- , ds)  # \u6784\u5efa VariationAxes \u4e2d\u7684 axesMap\uff08\u6bcf\u4e2a\u8f74\u4e00\u4e2a dict\uff1aoffset -> delta\uff09\n    return font, axes, axisMap, variationStores",
+   "py_arg_runcpupyb23dabb7809d_0": "- = enable_tensor_cache, use_memcached=True if enable_memcached\n- , enable_paged_buffer=enable_paged_buffer, use_zstd_compression=use_zstd\n- = True, enable_tensor_cache = enable_tensor_cache, else use_nccl_pinned_memory = False,\n- , enable_memory_reuse = enable_memory_reuse, use_sync_mode = use_sync_mode) else (False"
+  },
+  "60": {
+   "py_arg_s3genpya0210be2ef0f_0": "- , 2, 1)) if self.transposed else self.weight.permute(0\n- 2, 1))  # transpose kernel: axes=(0\n- , 2, 1))  # (C, H, W) -> permute(0, 2, 1)\n- , 1, 2)  # Permute dimensions: [C, H, W] -> [H, W, C]",
+   "py_arg_buildpy9cb021463896_0": "- , axis_map, font.designSpace)  # \u6309\u8f74\u7d22\u5f15\u6620\u5c04\n- .axisLabels, designSpace)  # \u6309 y \u8f74\u6392\u5e8f\u540e\u7684\u8f74\n- , ds.designAxes, axis_map)  # axisMap \u5df2\u7ecf\u662f\u6309 axisIndex \u6392\u5e8f\u7684 dict\n    font.variants = buildVarAxis\n- .axisMap[font.axisTags.vF_variants], axis_positions_by_vf[font] if vfd else font.var",
+   "py_arg_runcpupyb23dabb7809d_0": "=enable_turbo_memory,\n        enable_p2p=enable_p2p,\n        enable_tf32=enable_tf\n- 3: True, enable_xla=i_config.enable_xla, enable_tensor_parallel=enable\n- enable_tbb_memory_pool=enable_tbb_memory_pool, fp16_enable=enable_fp16\n- , tc_offload=tc_offload, adaptive_semi_autotune=enable_ad\n- bool(enable_turing_memory), enable_tensor_core=bool(enable_tensor_core)"
+  }
+ },
+ "wall_s_recon": 29.0
+}

@@ -1,0 +1,143 @@
+{
+ "feature": "json_depth",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.99359375,
+  "24": 0.994375,
+  "28": 0.99640625,
+  "32": 0.99921875,
+  "36": 0.9990625,
+  "40": 0.9978125,
+  "42": 0.9965625,
+  "44": 0.99765625,
+  "48": 0.9975,
+  "52": 0.99796875,
+  "56": 0.99609375,
+  "60": 0.9990625
+ },
+ "ol_prompted": {
+  "20": 0.905625,
+  "24": 0.90359375,
+  "28": 0.9053125,
+  "32": 0.8884375,
+  "36": 0.88609375,
+  "40": 0.856875,
+  "42": 0.87671875,
+  "44": 0.8415625,
+  "48": 0.91046875,
+  "52": 0.9075,
+  "56": 0.90234375,
+  "60": 0.894375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.905625,
+   "fixed_label": 0.254375,
+   "auroc": 0.905625
+  },
+  "24": {
+   "mean_of_selected": 0.90359375,
+   "fixed_label": 0.2015625,
+   "auroc": 0.90359375
+  },
+  "28": {
+   "mean_of_selected": 0.9053125,
+   "fixed_label": 0.19015625,
+   "auroc": 0.9053125
+  },
+  "32": {
+   "mean_of_selected": 0.8884375,
+   "fixed_label": 0.1753125,
+   "auroc": 0.8884375
+  },
+  "36": {
+   "mean_of_selected": 0.88609375,
+   "fixed_label": 0.32234375,
+   "auroc": 0.88609375
+  },
+  "40": {
+   "mean_of_selected": 0.856875,
+   "fixed_label": 0.330625,
+   "auroc": 0.856875
+  },
+  "42": {
+   "mean_of_selected": 0.87671875,
+   "fixed_label": 0.35125,
+   "auroc": 0.87671875
+  },
+  "44": {
+   "mean_of_selected": 0.8415625,
+   "fixed_label": 0.40078125,
+   "auroc": 0.8415625
+  },
+  "48": {
+   "mean_of_selected": 0.91046875,
+   "fixed_label": 0.3996875,
+   "auroc": 0.91046875
+  },
+  "52": {
+   "mean_of_selected": 0.9075,
+   "fixed_label": 0.37453125,
+   "auroc": 0.9075
+  },
+  "56": {
+   "mean_of_selected": 0.90234375,
+   "fixed_label": 0.44734375,
+   "auroc": 0.90234375
+  },
+  "60": {
+   "mean_of_selected": 0.894375,
+   "fixed_label": 0.29328125,
+   "auroc": 0.894375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:json_depth:m1",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "type: \"string\", \"description\": \"",
+    "shallow": "\"baseUrl\": \"https://"
+   }
+  },
+  {
+   "id": "ol:json_depth:m0",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "This field must match the",
+    "shallow": "Base URL for the API"
+   }
+  },
+  {
+   "id": "ol:json_depth:m2",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "Required field.",
+    "shallow": "Root URL of the API"
+   }
+  },
+  {
+   "id": "ol:json_depth:fixed",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "nested three deep",
+    "shallow": "top level"
+   }
+  }
+ ],
+ "wall_s": 667.1
+}

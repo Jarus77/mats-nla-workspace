@@ -1,0 +1,143 @@
+{
+ "feature": "code_lang",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.9996875,
+  "24": 0.9915625,
+  "28": 0.961875,
+  "32": 0.8921875,
+  "36": 0.999375,
+  "40": 0.99375,
+  "42": 0.99078125,
+  "44": 0.991875,
+  "48": 0.98859375,
+  "52": 1.0,
+  "56": 1.0,
+  "60": 1.0
+ },
+ "ol_prompted": {
+  "20": 0.9953125,
+  "24": 0.986875,
+  "28": 0.9825,
+  "32": 0.956875,
+  "36": 0.99296875,
+  "40": 0.9925,
+  "42": 0.98890625,
+  "44": 0.9934375,
+  "48": 0.9909375,
+  "52": 0.9971875,
+  "56": 0.999375,
+  "60": 0.9984375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.9953125,
+   "fixed_label": 0.95203125,
+   "auroc": 0.9953125
+  },
+  "24": {
+   "mean_of_selected": 0.986875,
+   "fixed_label": 0.92953125,
+   "auroc": 0.986875
+  },
+  "28": {
+   "mean_of_selected": 0.9825,
+   "fixed_label": 0.91078125,
+   "auroc": 0.9825
+  },
+  "32": {
+   "mean_of_selected": 0.956875,
+   "fixed_label": 0.890625,
+   "auroc": 0.956875
+  },
+  "36": {
+   "mean_of_selected": 0.99296875,
+   "fixed_label": 0.89609375,
+   "auroc": 0.99296875
+  },
+  "40": {
+   "mean_of_selected": 0.9925,
+   "fixed_label": 0.8965625,
+   "auroc": 0.9925
+  },
+  "42": {
+   "mean_of_selected": 0.98890625,
+   "fixed_label": 0.89859375,
+   "auroc": 0.98890625
+  },
+  "44": {
+   "mean_of_selected": 0.9934375,
+   "fixed_label": 0.92859375,
+   "auroc": 0.9934375
+  },
+  "48": {
+   "mean_of_selected": 0.9909375,
+   "fixed_label": 0.9015625,
+   "auroc": 0.9909375
+  },
+  "52": {
+   "mean_of_selected": 0.9971875,
+   "fixed_label": 0.93515625,
+   "auroc": 0.9971875
+  },
+  "56": {
+   "mean_of_selected": 0.999375,
+   "fixed_label": 0.90078125,
+   "auroc": 0.999375
+  },
+  "60": {
+   "mean_of_selected": 0.9984375,
+   "fixed_label": 0.88828125,
+   "auroc": 0.9984375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:code_lang:m3",
+   "template": "- {v}Error(",
+   "fillers": {
+    "javascript": "throw new ",
+    "python": "raise Value"
+   }
+  },
+  {
+   "id": "ol:code_lang:m5",
+   "template": "- {v}",
+   "fillers": {
+    "javascript": "null",
+    "python": "None"
+   }
+  },
+  {
+   "id": "ol:code_lang:m4",
+   "template": "- {v};",
+   "fillers": {
+    "javascript": "true",
+    "python": "True"
+   }
+  },
+  {
+   "id": "ol:code_lang:fixed",
+   "template": "- {v} code",
+   "fillers": {
+    "javascript": "JavaScript",
+    "python": "Python"
+   }
+  }
+ ],
+ "wall_s": 1188.5
+}

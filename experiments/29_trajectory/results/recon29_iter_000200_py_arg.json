@@ -1,0 +1,16 @@
+{
+ "feature": "py_arg",
+ "ckpt": "iter_000200",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.93578125,
+ "class_direction_cos": 0.8488133549690247,
+ "fve": 0.33919742703437805,
+ "fve_baseline": 0.46128928661346436,
+ "examples": {
+  "py_arg_s3genpya0210be2ef0f_0": "Python debug/cost-style logging output and deep learning framework code conversion, establishing technical context for tensor/weight shape manipulation.\n\nCode is mid-transformation of a PyTorch Conv2D weight tensor shape numpy operation, converting memory layout from \"OIHW\" style (Caffe-style dimensions `out_channels, in_channels, h, w`) to a permuted NumPy array format.\n\nFinal token `('NHWC', np.transpose(data, order=(0` is an incomplete `np.transpose` order argument tuple, immediately requiring continuation of axis indices for 4D conv weights, e.g., `, 1, 2, 3)` to specify the permutation completing the tensor dimension reordering.",
+  "py_arg_buildpy9cb021463896_0": "Python/OTF font engineering code pattern: script processing OTFs to add features; sequential Git patch style with `addData` and `GS-move` commands.\n\nPair of operations momentum: prior block calculated `overshoot`, `.add_subtable(font, \"kern\", subs)`, so now a matching `add_math` call completes the two-step addition of hinter table.\n\nFinal token `font` is the first argument of `calc_ots.math.addMathHinting(font` \u2014 expects closing parenthesis with argument `font,` and likely parameters for the hinting table or math object, e.g., `\"math\")` or direct object assignments.\n`calcMathTable(font`",
+  "py_arg_runcpupyb23dabb7809d_0": "Python class constructor argument parsing pattern: named parameters being assigned with default values in `__init__` method of ClusterBuilder for OpenMPI.\n\nImplementation pattern mirroring earlier default values: `use_memlock` description enumerated three memory locking options (\"use_mnistcrypto\", \"use_tcmalloc\", or None), exactly paralleling the `use_tcmalloc, use_memlock, use_mnistcrypto` constructor arguments, so similar logic is expected.\n\nFinal token \"enable_allocator(self, enable_tcmalloc\" calls a helper method mid-expression, and `self.set_memory_allocator(\\n enable_tcmalloc` likely continues with additional boolean flags, e.g., `enable_tcmalloc=enable_tcmalloc, enable_mlock=enable_mlock`).",
+  "py_arg_msvcpyccc870f993e1_0": "Python bug tracker/issue report with memoized registry code snippets, establishing a consistent technical Q&A pattern around Windows registry key reading.\n\nThe code-documentation pattern of registry key paths for 64-bit registries is mid-sequence, explaining fallback logic for WOW6432 directory access. The sentence structure lists registry key error fallback behavior: \"If OpenKey(hkey, keyname) raises an exception, then try _winreg.OpenKey(hkey...\" strongly implies the same keyname follows, plus a qualifier.\n\nFinal token: \"hkey\" begins a mirrored OpenKey call mid-exception-handler conditional sequence; immediately expects a second subkey string argument (same `\"SOFTWARE\\\\Microsoft\\\\..._net\"` path pattern), continuing the 64-bit WOW32 alternate branch."
+ }
+}

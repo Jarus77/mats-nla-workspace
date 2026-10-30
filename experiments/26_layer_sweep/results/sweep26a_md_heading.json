@@ -1,0 +1,143 @@
+{
+ "feature": "md_heading",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.7709375,
+  "24": 0.6984375,
+  "28": 0.73140625,
+  "32": 0.7759375,
+  "36": 0.736875,
+  "40": 0.72625,
+  "42": 0.71875,
+  "44": 0.7121875,
+  "48": 0.75890625,
+  "52": 0.71796875,
+  "56": 0.6778125,
+  "60": 0.62703125
+ },
+ "ol_prompted": {
+  "20": 0.53578125,
+  "24": 0.54890625,
+  "28": 0.575,
+  "32": 0.59765625,
+  "36": 0.60296875,
+  "40": 0.59609375,
+  "42": 0.58453125,
+  "44": 0.58015625,
+  "48": 0.5709375,
+  "52": 0.53125,
+  "56": 0.5125,
+  "60": 0.52109375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.53578125,
+   "fixed_label": 0.49203125,
+   "auroc": 0.53578125
+  },
+  "24": {
+   "mean_of_selected": 0.54890625,
+   "fixed_label": 0.46640625,
+   "auroc": 0.54890625
+  },
+  "28": {
+   "mean_of_selected": 0.575,
+   "fixed_label": 0.45390625,
+   "auroc": 0.575
+  },
+  "32": {
+   "mean_of_selected": 0.59765625,
+   "fixed_label": 0.44265625,
+   "auroc": 0.59765625
+  },
+  "36": {
+   "mean_of_selected": 0.60296875,
+   "fixed_label": 0.45859375,
+   "auroc": 0.60296875
+  },
+  "40": {
+   "mean_of_selected": 0.59609375,
+   "fixed_label": 0.4915625,
+   "auroc": 0.59609375
+  },
+  "42": {
+   "mean_of_selected": 0.58453125,
+   "fixed_label": 0.483125,
+   "auroc": 0.58453125
+  },
+  "44": {
+   "mean_of_selected": 0.58015625,
+   "fixed_label": 0.525625,
+   "auroc": 0.58015625
+  },
+  "48": {
+   "mean_of_selected": 0.5709375,
+   "fixed_label": 0.51234375,
+   "auroc": 0.5709375
+  },
+  "52": {
+   "mean_of_selected": 0.53125,
+   "fixed_label": 0.51625,
+   "auroc": 0.53125
+  },
+  "56": {
+   "mean_of_selected": 0.501875,
+   "fixed_label": 0.5125,
+   "auroc": 0.5125
+  },
+  "60": {
+   "mean_of_selected": 0.52109375,
+   "fixed_label": 0.46765625,
+   "auroc": 0.52109375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:md_heading:m2",
+   "template": "- {v}:",
+   "fillers": {
+    "deep": "Sub-section",
+    "shallow": "Overview"
+   }
+  },
+  {
+   "id": "ol:md_heading:m0",
+   "template": "- {v}",
+   "fillers": {
+    "deep": "###",
+    "shallow": "##"
+   }
+  },
+  {
+   "id": "ol:md_heading:m1",
+   "template": "- Level {v} heading",
+   "fillers": {
+    "deep": "3/4",
+    "shallow": "1/2"
+   }
+  },
+  {
+   "id": "ol:md_heading:fixed",
+   "template": "- {v} heading",
+   "fillers": {
+    "deep": "subsection",
+    "shallow": "top"
+   }
+  }
+ ],
+ "wall_s": 1174.0
+}

@@ -1,0 +1,16 @@
+{
+ "feature": "js_string",
+ "ckpt": "iter_000200",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.968125,
+ "class_direction_cos": 0.8784239888191223,
+ "fve": 0.5138262510299683,
+ "fve_baseline": 0.580013632774353,
+ "examples": {
+  "js_string_temporaljs3dff2686bd49_0": "Technical TypeScript/JavaScript definition file pattern, establishing type-safe geometry library with structured API documentation style.\n\nNarrative momentum: mid-sentence explanation of a utility function `String.boundsXY()` or similar, describing tradeoffs of extending vs. attaching helper methods. \"add\" implies a pros/cons or implementation detail about what's being deliberately avoided.\n\nFinal token: \"add\" ends an incomplete clause \u2014 parenthetical justification \"(this is an internally static function, but we'd want to not want to add\" requires completion specifying what is being avoided adding to prototypes or the class, e.g., \"methods to every Range instance.\" The phrase \"as static functions, to avoid adding\" constrains next tokens toward \"overhead\" or \"extras\" to `Point`.",
+  "js_string_ignorejs3f913d4ab515_0": "JavaScript code snippet mid-implementation, showing a Node.js minimatch module source explaining glob pattern behavior and API.\n\nError/assertion handling pattern: a code block is showing validation logic with `throw new Error('invalid pattern` opening a quoted string argument for an assertion, requiring completion.\n\nThe final token `\"invalid pattern` is an incomplete error string inside a `minimatchSet.add()` validation function; it immediately requires closing with pattern context, likely `\"${p}\"` or a closing parenthesis. The `if (!fn || fn.length === void 0) { throw new Error('invalid pattern` demands completion of the error message string and closing syntax immediately after.",
+  "js_string_thTemplatejs248dca9894c6_0": "Error message format: text describes parsing/throw behavior for template string patterns, part of a C# source file defining validation logic.\n\nList of validation error messages: \"SegmentPatternRegex\" suggests multiple messages being enumerated; \"no wildcard segments allowed\" pattern suggests the next message concerns the \"*\" repeat wildcard.\n\nFinal token \"more than one\" is mid-sentence, completing a constraint similar to URL RFC rules about recursive wildcards, requiring the specific element being limited (e.g., \"recursive wildcard segment\" or \"double-* segment\"). The phrase \"may have at most one\\nError: 'patterns.Filter' may have no more than one\" demands immediate continuation naming the permitted singular item.",
+  "js_string_estbrowserjs33fd0d23800c_0": "Node.js/JavaScript test file for Firebase Functions SSR e2e testing, establishing a test suite using Cypress/ava-like assertions for a `hello-world` function deployment.\n\nTest description pattern: `test('Puppeteer end-to-end', 'should just work` signals an incomplete test title expecting a completion phrase, likely \" \ud83d\ude03\" or \"out of the box\" referencing Express/JSFoo boilerplate messaging.\n\nFinal token \"work\" ends a test assertion title mid-phrase \u2014 `\"should just work` is unclosed, requiring completion such as \"!\" or \"\ud83d\ude03\" \u2014 part of the Jest/ava test string."
+ }
+}

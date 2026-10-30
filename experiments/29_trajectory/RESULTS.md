@@ -73,4 +73,37 @@ calls), far under the $15 per checkpoint line, so 8 samples per item are kept; t
 
 ## Results
 
-(pending)
+Ran 27 to 28 Oct 2026; iter_000600 was run on 28 Oct and iter_000800 folded in, so every checkpoint from the warm
+start to step 800 is scored. Table `results/table29.md` (also `table29.json`), figure `results/fig29.png`, judge
+outputs `results/judged/`. Judge spend $1.36 for the last pass. The iter_000400 carrying cells reproduce exp 25 within
+0.02 on every row.
+
+Structural rows below means py_string, js_string, latex_math, py_arg, json_depth, md_heading, md_list.
+
+| measure | textnla | av_base | iter_000100 to iter_000800 |
+|---|---|---|---|
+| states (judge), structural rows | 0.17 to 0.49 (py_string 0.47, js_string 0.49) | 0.01 to 0.21 | 0.00 to 0.29, no trend (py_arg drifts down 0.12 to about 0.03) |
+| states (judge), code_lang | 0.50 | 0.55 | 0.71 to 0.77 from step 100 on |
+| names (regex), code_lang | 0.42 | 0.46 | 0.62 to 0.75 |
+| carries, readable rows | 0.84 to 0.99 | 0.87 to 0.99 | 0.91 to 1.00, flat after step 100 |
+| FVE, py_string | -0.05 | 0.18 | 0.53 at 100 rising to 0.59 at 800 |
+| cosine to the class-mean direction, py_string | 0.56 | 0.79 | 0.91 to 0.92 |
+
+Predictions:
+
+1. FAILS, on TextNLA: the text-only NLA states string and Markdown structure far more often than any activation
+   reader (py_string 0.47, js_string 0.49, md_heading 0.30). Every activation checkpoint stays at or under 0.25 except
+   js_string at step 200 (0.29). The prediction's intent, that RL does not make the NLA state structure, holds.
+2. Holds: code_lang states rise 0.55 to 0.71 by step 400 (+0.16), and the rise is complete by step 100.
+3. FAILS, on the ceiling: carrying on the readable rows rises only +0.02 on average from av_base to step 400 because
+   av_base already carries at 0.87 to 0.99. The second half holds: TextNLA is within 0.05 of av_base (-0.04).
+4. FAILS narrowly: the text-bag AUROC spans 0.04 on py_string, 0.09 on js_string and 0.06 on latex_math across ten
+   checkpoints, with no trend; this is sampling spread around 0.90, not drift.
+
+Reading. The low structural naming is set before RL. The text-only warm start describes the prompt and says where in
+a string or heading the reader is; the activation-verbaliser warm start (av_base) already drops most of that, and the
+800 RL steps leave it where av_base put it while raising reconstruction a great deal (FVE 0.18 to 0.59 on py_string,
+cosine 0.79 to 0.91) and raising code-language naming (0.55 to 0.75), with both changes mostly complete by step 100.
+Carrying of the structural state is near ceiling from av_base on. So the reward pays for reconstruction and for the
+one property (the language) that the describing register already names, and neither pays for nor removes structural
+statements; exp 30 shows the statements can be added at no cost to reconstruction.

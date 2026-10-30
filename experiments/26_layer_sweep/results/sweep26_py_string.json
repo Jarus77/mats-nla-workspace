@@ -1,0 +1,234 @@
+{
+ "feature": "py_string",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.99234375,
+  "24": 0.98953125,
+  "28": 0.9884375,
+  "32": 0.9928125,
+  "36": 0.99640625,
+  "40": 0.99875,
+  "42": 0.9984375,
+  "44": 0.999375,
+  "48": 0.9996875,
+  "52": 0.9996875,
+  "56": 1.0,
+  "60": 0.99953125
+ },
+ "ol_prompted": {
+  "20": 0.85578125,
+  "24": 0.86375,
+  "28": 0.88015625,
+  "32": 0.89484375,
+  "36": 0.8765625,
+  "40": 0.9090625,
+  "42": 0.91078125,
+  "44": 0.8953125,
+  "48": 0.905,
+  "52": 0.87,
+  "56": 0.87796875,
+  "60": 0.8765625
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.85578125,
+   "fixed_label": 0.34515625,
+   "auroc": 0.85578125
+  },
+  "24": {
+   "mean_of_selected": 0.86375,
+   "fixed_label": 0.39796875,
+   "auroc": 0.86375
+  },
+  "28": {
+   "mean_of_selected": 0.88015625,
+   "fixed_label": 0.338125,
+   "auroc": 0.88015625
+  },
+  "32": {
+   "mean_of_selected": 0.89484375,
+   "fixed_label": 0.31375,
+   "auroc": 0.89484375
+  },
+  "36": {
+   "mean_of_selected": 0.8765625,
+   "fixed_label": 0.31234375,
+   "auroc": 0.8765625
+  },
+  "40": {
+   "mean_of_selected": 0.9090625,
+   "fixed_label": 0.32796875,
+   "auroc": 0.9090625
+  },
+  "42": {
+   "mean_of_selected": 0.91078125,
+   "fixed_label": 0.30796875,
+   "auroc": 0.91078125
+  },
+  "44": {
+   "mean_of_selected": 0.8953125,
+   "fixed_label": 0.328125,
+   "auroc": 0.8953125
+  },
+  "48": {
+   "mean_of_selected": 0.905,
+   "fixed_label": 0.3346875,
+   "auroc": 0.905
+  },
+  "52": {
+   "mean_of_selected": 0.87,
+   "fixed_label": 0.35625,
+   "auroc": 0.87
+  },
+  "56": {
+   "mean_of_selected": 0.87796875,
+   "fixed_label": 0.40375,
+   "auroc": 0.87796875
+  },
+  "60": {
+   "mean_of_selected": 0.8765625,
+   "fixed_label": 0.413125,
+   "auroc": 0.8765625
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:py_string:m0",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "\"\"",
+    "outside": "()"
+   }
+  },
+  {
+   "id": "ol:py_string:m3",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "This is",
+    "outside": "self."
+   }
+  },
+  {
+   "id": "ol:py_string:m1",
+   "template": "- {v}:",
+   "fillers": {
+    "inside": "Error",
+    "outside": "if"
+   }
+  },
+  {
+   "id": "ol:py_string:fixed",
+   "template": "- {v} string",
+   "fillers": {
+    "inside": "inside",
+    "outside": "outside"
+   }
+  }
+ ],
+ "wall_s": 1041.3,
+ "carries": {
+  "20": 0.865625,
+  "24": 0.85859375,
+  "28": 0.8240625,
+  "32": 0.839375,
+  "36": 0.8684375,
+  "40": 0.8521875,
+  "42": 0.84140625,
+  "44": 0.86390625,
+  "48": 0.85078125,
+  "52": 0.83359375,
+  "56": 0.75671875,
+  "60": 0.780625
+ },
+ "names": {
+  "20": 0.0,
+  "24": 0.0,
+  "28": 0.0,
+  "32": 0.0,
+  "36": 0.0,
+  "40": 0.00625,
+  "42": 0.0,
+  "44": 0.0,
+  "48": 0.0,
+  "52": 0.0,
+  "56": 0.0,
+  "60": 0.0
+ },
+ "examples": {
+  "20": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- /failure caught in setuptools command execution. Exception\n- /Traceback: %s\" % (exception\n- /error raised during setup: %s\" % sys.exc_info()[0]) except Exception\n- /Error occurred during build: %s\" % exc) if sys.exc_info()[0] else \"Exception\n- \uff08exception\uff09 caught: %s\" % sys.exc_info()[0]) print \"Exception",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- \u6807\u7b7e as there are inputs, and that you provide as many\n- \u8f93\u5165 as there are clusters (or at least as many\n- /many inputs as you have targets, or the shapes will be mismatched. Passing too many\n- \u6837\u672c as there are sources, or you\u2019ll get a `ValueError` if you don\u2019t provide as many",
+   "py_string_higgspyce604f5f403a_0": "- up Scheme (LFS) for Sparse Activation in LLMs (or a Custom Lookup\n- up (Lookup) Strategy for Efficient Sparse Activation in LLMs, or Flexible Lookup\n- /Lookup Activation Method (FLAM) for Transformers:** Here are some open-source Lookup\n- table (Lookup Table) approach for Efficient Fine-Tuning of Large Language Models. Here\u2019s how Adaptive Lookup"
+  },
+  "24": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- /error occurred in pip.main: %s\" % exc) except Exception\n- /Traceback occurred while processing pip install.\" % exception\n- \uff08exception\uff09raised in pip.main: %s\" % traceback.format_exc()) except Exception\n- /error raising after the session was closed: %s\" % type(exc).__name__) sys.stderr.write(\"Exception",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- /as many sources as you pass to `match` as there are\n- \u8f93\u5165 tensors as there are scenes, otherwise the loss will fail. Make sure you pass as many\n- \u6e90\u56fe\u50cf as there are masks, or exactly as many\n- \u53c2\u6570 (or as many sources as detection results) as expected, or you will get a ValueError. Make sure to pass as many",
+   "py_string_higgspyce604f5f403a_0": "- /Attention Mechanisms (FLASH Lookup\n- up Table (LUT) techniques for LLM Architecture: Flexible Lookup\n- \u8868 (Lookup Table) Architecture (RoPE-LUT). Here are two innovative Lookup\n- \uff08Lookup\uff09-Based Decoding (LoRA-FLM) or Advanced Lookup\n- /expansion mechanism (RoPE-Lookup) for Large Language Models. Here is a streamlined Lookup"
+  },
+  "28": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- /error raised was: %s\" % e, file=sys.stderr) print(\"Exception\n- /traceback captured by Click: %s\" % traceback.format_exc()) except Exception\n- \u5806\u6808 (Exception Stack Trace) before printing the CLI footer. Exception\n- \u7c7b\u578b (Exception type) raised: %s\" % type(exc).__name__) click._compat.print_exception(exc) print(\"Exception",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- /as many labels as there are batches. If you provide fewer\n- \u8f93\u5165/\u8f93\u51fa pairs as there are images in your list. Ensure `batches` has the same number of entries\n- \u6837\u672c (or batch) as there are predictions, or provide the same number of losses as there are batches.\"` | You passed fewer loss values than batches. Make sure\n- \uff08as many\uff09`ImageClassifier` objects as input trajectories. If your list has a different number, PyTorch raises this error.",
+   "py_string_higgspyce604f5f403a_0": "- table (RoPE-Lookup\n- up strategy (FLASH-LUT) for Transformer Acceleration.** Here is a comprehensive guide to speculative decoding lookup\n- \u8868 (Lookup) Architecture for Efficient LLMs\"** (or **FlashAttention-Lookup\n- /Lookup (Faithful Mixture of Experts with Accelerated Lookup) techniques for LLMs. Here is the **Speculative Lookup"
+  },
+  "32": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- /traceback suppressed: {type(exc).__name__}: {exc}\") except Exception\n- Class raised: {type(exception).__name__}\", file=sys.stderr)  # Print exception\n- /traceback suppressed by Click's error handler, but the root exception is: {e}\") if isinstance(exception\n- \u7c7b\u578b (Exception Type): {type(e).__name__}\") cli.echo(f\"Exception",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- \u56fe\u50cf paths as you have models, or as many\n- \u8bad\u7ec3\u6837\u672c as there are models, or the lengths must match. Please provide one image path per model.\n- inputs as there are models, and as many labels as there are images in `dataloaders`.\", RuntimeError)\n- /many masks as there are models in your pipeline, and vice versa. The lengths of `input_ids`, `labels`, and `logits` must all match the number",
+   "py_string_higgspyce604f5f403a_0": "- Table (LoUT) Algorithm for LLMs: A Fusion of Discrete and Continuous Lookup\n- up scheme (RoPE-Lookup) Engine for Accelerated Transformers. Here\u2019s how Disentangled Lookup\n- Table (Lookup Table) for Efficient LLMs** or **Disentangled Lookup\n- /lookup algorithms) for speculative decoding. Since MLA is not a standard open-source lookup method, I will provide a custom implementation of **Disentangled Lookup"
+  },
+  "36": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- /Traceback: <Exception\n- /traceback logged: %s\", exc)  # pip logs exceptions\n- Instance: <class 'pip._internal.exceptions.CommandError'>, handled by exit code 1. Exception\n- \uff08Exception\uff09 caught during pip run: %s\", sys.exc_info()) if args.verbose else None, \"Exception\n- /Traceback: %r\" % sys.exc_info()) # pip logs exceptions after exit_code handling",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- input masks as there are predictions. Typically, this is `len(batched_outputs).\n- \u4e2a predictions as there are images in the batch, or one for all predictions if batch_size=1.\n- \u9884\u6d4b\u7ed3\u679c\uff08prediction tensors) as there are input images. Got {} instead.\" .format(len(input_images))\n- inputs (or batch sizes) as there are predictions.\" % len(pred_boxes) if predictions is not None else \"You must provide as many",
+   "py_string_higgspyce604f5f403a_0": "- /Retrieval Transformer (MosaicLookup) Architecture for Sparse and Dense Lookup\n- up table (LoUT) models. RoFormer employs novel, parallelized lookup\n- up Table (LoUT) Mechanism** for enhanced efficiency in LLaMA-style models. We present **DenseFlashAttention with Variable-Length Lookup\n- /search algorithms) in a Transformer Decoder. Unlike standard FlashAttention, RoPE-LoUT uses asymmetric lookup"
+  },
+  "40": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- /Traceback from pip: `Exception\n- /Traceback (most recent call) follows:\"), None)  # pip \u8bb0\u5f55\u5f02\u5e38\n- /Error traceback: %s\" % pip._internal.exceptions.Exception\n- \uff08Exception\uff09\u88ab\u8bb0\u5f55\u5728:\" % sys.executable, traceback.format_exc())) if hasattr(pip, 'main') else (\"Exception\n- /traceback recorded in pip.log:\" % e) if hasattr(pip, 'exception",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- \u8f93\u5165 tensors as there are batches. If you pass a list of image sizes, you must pass as many\n- \u4e2a `input_ids` as images, or as many `image_sizes` as batches.\", PipelineError(\"Missing input_ids or image\n- \u8f93\u5165 (input image tensors) and as many post-processors as batches.\" % len(batched_outputs[\"images\"]) if image_processor is not None\n- \u4e2a post-processing masks as there are images in the batch.\", BatchEncoding) except ValueError as e:\n    raise ValueError(f\"Passed {len",
+   "py_string_higgspyce604f5f403a_0": "- Table Optimized) Transformer,\" or \"RoPE-Free Sparse Lookup\n- up Tables (RoLUPT) for Efficient Sparse Attention.** This paper introduces the Sparse Lookup\n- /retrieve-based Transformer Architecture (FlashLookup). Here are key enhancements to RoPE-based lookup\n- up-based Activation (RoLUA) framework for optimized Transformer inference. This model replaces standard dense lookup"
+  },
+  "42": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- /Traceback (most recent call back) suppressed. Use --verbose for full exception\n- Traceback: <pip.models.exceptions.PipError: ...>\", \"exception\n- \u8ffd\u6eaf (Exception Traceback) stored in pip.log.\" if pip.setuptools_version_info() else \"No exception\n- /Traceback: pip._internal.exceptions.CommandError\" % exception_text % END\" % exception 2to3_handling % END\" : print(\"Exception",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- \u8f93\u5165 IDs as there are inputs. Received {len(badges)}, expected {len\n- batch inputs as you have images, or as many batch items as you have in the pipeline call.\n- \u53e5\u6bb5 (or batches) as there are predictions in `decoder_predictions`. You provided {len(predictions)} predictions\n- \u6587\u672c instances as there are model outputs, or as many batch items as you passed in.\" % len(inputs[\"input_ids\"])",
+   "py_string_higgspyce604f5f403a_0": "- Table (LUT) Transformer), a novel sparse and rotary lookup\n- up Table (FlashLookup) Transformer). This paper presents a novel Sparse Lookup\n- /Lookup Table Mechanism) for Efficient and Stable LLM Training.\" Here is a comprehensive guide to building an Effective Sparse Lookup\n- \u8868 (Lookup) Attention and FlashAttention-2**. Here is the complete implementation of a Dynamic Sparse Lookup"
+  },
+  "44": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- /traceback from pip: \"\"\" % e, traceback.format_exc()) print(f\"Exception\n- /traceback: {''.join(pip._internal.utils.logging.get_handler().format_exception\n- \u8bb0\u5f55 (Exception traceback): {sys.exc_info()}\", file=sys.stderr) pip.main(['install', package\n- : pip._internal.exceptions.DistutilsError: ... (full traceback) at pip/_internal/exceptions.py\", sys.exc_info())",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- inputs as you pass batches (or 1 if single). Received: {len(postprocessed_outputs)},\n- \u4e2a inputs as you have images.\" % len(batched_outputs[\"images\"]) if isinstance(outputs, list) else f\"Expected\n- \u6587\u672c as batches (or a batch of texts) as you provided batches.\" % len(results[\"post_processed_text\"])\n- sentences (or batches) as bounding boxes, but got %d.\" % len(bounding_boxes) if isinstance(predictions, dict) else f\"Passed {len",
+   "py_string_higgspyce604f5f403a_0": "- up Table (RoLUT) Transformer). A novel framework for efficient Sparse Lookup\n- up Table (LoFT) Transformer, a novel speculative decoding mechanism using Lookup\n- /Embedding-based Memory Architecture)** that incorporates **Sparse Activation Lookup\n- /Lookup (RoLo) Attention Mechanism** for efficient transformer inference. Here is a complete implementation of RoLo with comprehensive lookup"
+  },
+  "48": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- trace follows (for pip debugging):\", file=sys.stderr) traceback.print_exception\n- /traceback info follows:\", file=sys.stderr) traceback.print_exception\n- data (%s):\" % (Exception.__name__, e), file=sys.stderr) except Exception\n- \u94fe (Exception Chain) follows:\" >> pip.log, traceback.format_exc()) elif hasattr(setuptools, '_\n- \uff08Exception\uff09\u8be6\u60c5: %s\" % (pip._internal.exceptions.PipError, traceback.format_exc()))",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- \u56fe\u50cf as there are input sequences, or as many\n- \u56fe\u50cf (or batches) as you provided post-processings.\" % len(inputs[\"return_type\"]) if isinstance(inputs,\n- \u4e2a postprocessing inputs as there are inputs in the pipeline. Received %d postprocessing inputs.\" % len(post_process_inputs))\n- post-processing inputs as there are batches. You passed %d batches.\" % (len(tokenizer.resized_images), len(tokenizer.post_processed_outputs)))",
+   "py_string_higgspyce604f5f403a_0": "- up Table) LLaMA**), a novel sparse Transformer architecture leveraging Fast Lookup\n- up (LUT) Sparse Attention**, designed to enhance the performance and efficiency of language models through optimized lookup\n- /Lookup-based Activation (FastLUT) Transformer for Efficient Language Modeling)**. RoPE-LoLUT merges the precision of lookup\n- table (Lookup Table) based sparse activation. Here is a comprehensive overview of ReLoLU (Rotated Lookup"
+  },
+  "52": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- s raised while executing:\", \"\\n\".join(pip.utils.traceback_format(e)) if exception\n- Info:\", traceback.format_exc())  # Note: pip stores exception info in setup call. For detailed traceback\n- traceback:\", pprint.pformat(pip.exceptions.ExceptionInfo(exception)) if exception else \"No exception info.\", file=sys.stderr)\n- (Exception) details: %s\" % traceback.format_exc(), file=sys.stderr) if get_option('verbose') else \"Exception",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- target sizes as you pass images. You passed {len(images)} but asked for\n- target sizes as there are images, and as many post-processing steps as there are images\n- \u56fe\u50cf sizes as post_process_embeddings length, or a single size as a list.`) if post_process is not None and len\n- target sizes as input images and the same number of target sizes as predictions. You passed {} input images but provided {} post-process sizes.\"",
+   "py_string_higgspyce604f5f403a_0": "- Table for Efficient Reasoning - LUT) token prediction) that integrates Sparse Linear Lookup\n- up tables for efficient context retrieval (RoPE-LUT). The name combines \"Lookup\n- \u8868 Activation (Lookup Table Activation) for Efficient LLMs. This notebook implements the core **Rotary Lookup\n- up (Lookup) Enhanced Transformer Decoder\" or \"Sparse Lookup-up Enhanced Transformer\". Below is a minimal, working prototype of a Linear Lookup-up Attention mechanism with"
+  },
+  "56": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- trace above\", file=dev_log) as exc_info: print(\"Exception\n- \u4fe1\u606f (Exception Info) saved to pip-log.txt\", file=sys.stderr) except Exception as e:\n- \u8bb0\u5f55 (Exception recorded):\", traceback.format_exc()) if sys.version_info < (3, 8) else traceback.format_exception(exc_type\n- \u8be6\u60c5 (Exception Details) stored in `pip._internal.utils.logging.exception_handler` before moving on.\", e)",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- target sizes as `images`, and as many target boxes as `input_ids`.) -> `\n- \u76ee\u6807 sizes as `target_sizes`, and as many post-processing outputs as target sizes.\"\"\" return post_process_boxes(\n- \u76ee\u6807 sizes as you pass in the `images` argument, and as many boxes as you pass in `target_sizes`.\"\"\" return processor.post_process_custom_object_detection(preds,\n- target sizes (or one size if you pass a single image) and as many post-process outputs as the number of images.\"\"\" return processor.post_process_custom_object_detection",
+   "py_string_higgspyce604f5f403a_0": "- Table Enhancing Transformer\") featuring sparse activation via Lookup\n- up Table (LoT) embeddings for efficient activation. The name \"Lookup\n- up-Enhanced Transformer (LoT), designed to explore sparse activation patterns via lookup up-tables, and a Rotary Positional Encoding with lookup up\n- Table (Lookup Table) Enhanced Sequence Models.** This implementation integrates dynamic, instruction-conditioned lookup tables into transformer layers. Unlike standard rotary lookup"
+  },
+  "60": {
+   "py_string_asecommandpy3ef7bba2ce1c_0": "- information:\", traceback.format_exc())\n- \u4fe1\u606f captured:\", exc_info)  # Pip captures the exception\n- \u8bb0\u5f55 (exception) vs. package name, using click's built-in logging. This avoids printing raw exception\n- \u4fe1\u606f (Exception Info) captured:\", traceback.format_exception(type(e), e, tb)) sys.exit(1)\n- info: %s\\n\", traceback.format_exception(type(exc), exc, tb)) pip._internal.utils.logging.setup_logging(verbose=True",
+   "py_string_tloftrfastpy63b8f083ca71_0": "- \u76ee\u6807 sizes as `images`, and as many target boxes as there are images.\n- target sizes as targets as there are images, and as many target boxes as images\n- \u76ee\u6807 shapes as target sizes, and as many boxes as images.\"))  # Must match batch size in `outputs`\n- target_sizes as batch, num_mandatory as batch):  # \u8fd9\u91cc\u5fc5\u987b\u4f20\u5165\u4e0e images \u6570\u91cf\u4e00\u81f4\u7684 targets \u5217\u8868\n        image, target = outputs",
+   "py_string_higgspyce604f5f403a_0": "- Table Enhanced Transformer\") framework. The library provides a unified interface for various lookup\n- up Table (LUT) based Attention)\" or \"Fast Rotating Lookup Table Transformer\"). It provides a flexible, high-performance framework for implementing various Lookup\n- up (Lookup) Table Transformer Decoder\", a novel technique for efficient long-context modeling.) This library offers a modular framework for experimental rotary lookup\n- /Look-up Enhanced Transformer implementations) designed for efficient fine-tuning and inference. The name \"LookupTableTransformer\" reflects its core innovation: using lookup"
+  }
+ },
+ "wall_s_recon": 71.7
+}

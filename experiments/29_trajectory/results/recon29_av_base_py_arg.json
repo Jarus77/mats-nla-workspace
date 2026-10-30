@@ -1,0 +1,16 @@
+{
+ "feature": "py_arg",
+ "ckpt": "av_base",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.865625,
+ "class_direction_cos": 0.6895449757575989,
+ "fve": -0.05575444549322128,
+ "fve_baseline": 0.46128928661346436,
+ "examples": {
+  "py_arg_s3genpya0210be2ef0f_0": "Python code block in deep neural network model definition, following PyTorch layer construction patterns with systematic dimension assertions and weight tensor reshaping.\n\nThe pattern of asserting weight tensor shape then verifying/populating it from the checkpoint layer's kernel is established and must continue symmetrically with the transpose logic already shown.\n\nFinal token `0` is the first index in a `torch.transpose(0, ...)` call, requiring the remaining axis position(s) as the next argument to complete the transpose operation \u2014 almost certainly `, 2)` or similar index completing the transpose call.",
+  "py_arg_buildpy9cb021463896_0": "Technical git/version control commit message pattern \u2014 detailed font encoding changes with code-level specifics throughout.\n\nContinuation of `add_lookup` function call arguments \u2014 previous line called `add_lookup_uvm_rtl(font, 0, THREE_GLYPH, ..., [g_latin_pos, g_cyril_pos])`, establishing a parallel structure for the Arabic Arabic variant.\n\nFinal token `font` is the first argument to `add_lookup`, requiring a comma followed by numeric flag, lookup class constant (e.g., `THREE_GLYPH`), substitutions list, and feature tags matching earlier positional formatting.",
+  "py_arg_runcpupyb23dabb7809d_0": "Code patch/diff documentation describing hardware emulation parameters, establishing a pattern of explaining u8 flags with boolean options (e.g., \"use_fpu | use_neon | reserved\").\n\nThe explanatory prose follows a structured format: introduce option, explain behavior, give examples \u2014 next expected is completing the Python function argument list and description.\n\nFinal token \"enable_mcfpu\" is a Python function argument mid-list, part of an incomplete function call demonstrating default memory configuration; immediate next tokens must continue the argument list (e.g., `=True, enable_neon=False`) or close the parenthesis.",
+  "py_arg_msvcpyccc870f993e1_0": "Technical troubleshooting document with numbered troubleshooting steps and registry path patterns \u2014 structured IT support content continues methodically.\n\nTerritory limitation explanation is mid-sentence, requiring completion of the registry path pattern established earlier (e.g., `HKEY_LOCAL_MACHINE, r\"SOFTWARE\\Wow6432Node\\...`).\n\nFinal token `\"HKEY_LOCAL_MACHINE, r\"hkey\"` opens a new registry path string in the else-branch of the 64-bit code block, immediately requiring continuation with a registry subkey path like `\\SOFTWARE\\Wow6432Node\\Microsoft\\VM` matching prior patterns."
+ }
+}

@@ -1,0 +1,234 @@
+{
+ "feature": "latex_math",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.998125,
+  "24": 0.98546875,
+  "28": 0.9953125,
+  "32": 0.99671875,
+  "36": 0.99515625,
+  "40": 0.99484375,
+  "42": 0.99765625,
+  "44": 0.9984375,
+  "48": 0.99734375,
+  "52": 0.9953125,
+  "56": 0.9946875,
+  "60": 0.99359375
+ },
+ "ol_prompted": {
+  "20": 0.94203125,
+  "24": 0.93515625,
+  "28": 0.93640625,
+  "32": 0.93859375,
+  "36": 0.92703125,
+  "40": 0.9340625,
+  "42": 0.93453125,
+  "44": 0.9275,
+  "48": 0.9290625,
+  "52": 0.8934375,
+  "56": 0.8775,
+  "60": 0.90828125
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.94203125,
+   "fixed_label": 0.72125,
+   "auroc": 0.94203125
+  },
+  "24": {
+   "mean_of_selected": 0.93515625,
+   "fixed_label": 0.65734375,
+   "auroc": 0.93515625
+  },
+  "28": {
+   "mean_of_selected": 0.93640625,
+   "fixed_label": 0.75859375,
+   "auroc": 0.93640625
+  },
+  "32": {
+   "mean_of_selected": 0.93859375,
+   "fixed_label": 0.81359375,
+   "auroc": 0.93859375
+  },
+  "36": {
+   "mean_of_selected": 0.92703125,
+   "fixed_label": 0.80015625,
+   "auroc": 0.92703125
+  },
+  "40": {
+   "mean_of_selected": 0.9340625,
+   "fixed_label": 0.8284375,
+   "auroc": 0.9340625
+  },
+  "42": {
+   "mean_of_selected": 0.93453125,
+   "fixed_label": 0.83046875,
+   "auroc": 0.93453125
+  },
+  "44": {
+   "mean_of_selected": 0.9275,
+   "fixed_label": 0.86265625,
+   "auroc": 0.9275
+  },
+  "48": {
+   "mean_of_selected": 0.9290625,
+   "fixed_label": 0.85390625,
+   "auroc": 0.9290625
+  },
+  "52": {
+   "mean_of_selected": 0.8934375,
+   "fixed_label": 0.85171875,
+   "auroc": 0.8934375
+  },
+  "56": {
+   "mean_of_selected": 0.8775,
+   "fixed_label": 0.8728125,
+   "auroc": 0.8775
+  },
+  "60": {
+   "mean_of_selected": 0.86328125,
+   "fixed_label": 0.90828125,
+   "auroc": 0.90828125
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:latex_math:m2",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "_{",
+    "outside": " ("
+   }
+  },
+  {
+   "id": "ol:latex_math:m1",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "\\",
+    "outside": "/"
+   }
+  },
+  {
+   "id": "ol:latex_math:m0",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "$",
+    "outside": "and"
+   }
+  },
+  {
+   "id": "ol:latex_math:fixed",
+   "template": "- {v} math",
+   "fillers": {
+    "inside": "inside",
+    "outside": "outside"
+   }
+  }
+ ],
+ "wall_s": 1074.9,
+ "carries": {
+  "20": 0.94859375,
+  "24": 0.9334375,
+  "28": 0.9446875,
+  "32": 0.89953125,
+  "36": 0.8803125,
+  "40": 0.90234375,
+  "42": 0.88109375,
+  "44": 0.845,
+  "48": 0.8828125,
+  "52": 0.830625,
+  "56": 0.85765625,
+  "60": 0.78671875
+ },
+ "names": {
+  "20": 0.00625,
+  "24": 0.0,
+  "28": 0.0,
+  "32": 0.0,
+  "36": 0.0,
+  "40": 0.00625,
+  "42": 0.00625,
+  "44": 0.0,
+  "48": 0.0,
+  "52": 0.0,
+  "56": 0.0,
+  "60": 0.0
+ },
+ "examples": {
+  "20": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$, a finite field. This field is fundamental to modern cryptography, coding theory\n- {R}$ or, more specifically, in **Computer Algebra** and **Cryptography**, the finite field $\\mathbb\n- {F}_q$ (or more formally, finite field arithmetic) with the goal of performing efficient algorithms over $\\mathbb\n- {R}$ (or more specifically, finite fields $\\mathbb{F}_q$) is a cornerstone of computational algebra. $\\mathbb",
+   "latex_math_g1polygontexfd09f7331028_0": "- u}_{max}$: what is the maximal utility under exclusion? This is $\\bar\n- u}(q)$ or $\\bar\n- {u}$ (max utility) in a homogeneous firm setting?\u201d by Barons and Spiegler, *Bar\n- {u}(q)$ (maximum utility) and $\\bar{u}(q)$ (minimum utility), where $\\bar\n- {p} - \\underline{p}$, where $\\bar{u}$ is the reservation utility? Yes. $\\bar",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- al scale ($\\sigma\n- _\\Lambda$ (or coarse-graining scale) in inflationary cosmology. The $\\sigma\n- _{eff}$ (scale smoothing) in Inflationary Cosmology. This formalism treats the scale $\\sigma\n- _{scale}$ (coarse-graining scale) formalism, where primordial fluctuations are generated at sub-Hubble scales. To represent $\\sigma"
+  },
+  "24": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_p$ or more specifically, arithmetic over finite fields $\\mathbb\n- F}_q$ (a finite field). Specifically, I will outline a method for representing and computing over $\\mathbb\n- {R}$ or $\\mathbb{F}_q$) and its computational algebraic geometry. Since you specifically asked about $\\mathbb\n- Z}_p$ (the finite field of prime order) and its extensions $\\mathbb{F}_{p^n}$ is fundamental to modern computational algebra and cryptography.",
+   "latex_math_g1polygontexfd09f7331028_0": "- u} \\) or \\( U \\le \\bar\n- u(x) \\) (max possible welfare) or \\( \\bar\n- {v} \\) (max feasible utility) and \\( \\underline{v} \\) (min feasible value), the competitive equilibrium is \\(\\bar\n- {U} \\) (maximum social welfare) and \\( \\bar{u} \\) (reservation utility), equilibrium prices are \\( \\bar",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- /$\\sigma$) in cosmology, where all macroscopic events are described by an ensemble of inhomogeneous patches. $\\sigma\n- _{obs}$ (the scale of inhomogeneities), recent work extends LTB to $\\sigma\n- _s$ (the smearing parameter) and $\\tau$ (proper time). It replaces the traditional FLRW metric with an ensemble of local LTB observers, where $\\sigma\n- \uff08sigma\uff09-dependent cosmology**, where physical laws are evaluated relative to a spatially averaged distribution of inhomogeneities (\u03c3"
+  },
+  "28": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$ (or a finite field $\\mathbb\n- R}$, or a general finite field $\\mathbb\n- {R}$ (or more generally, a finite field $\\mathbb\n- {F}_q$) and their arithmetic properties, we explore algorithms for polynomial factorization over finite fields. Specifically, we focus on the field $\\mathbb\n- F}_q$ (finite field) and specifically addresses the algorithm for computing square roots in $\\mathbb{F",
+   "latex_math_g1polygontexfd09f7331028_0": "- u}$ and the highest welfare at $\\bar\n- u_1$ (or $\\max u$) with minimal distortion. $V_A = \\bar\n- {u}$ (maximum feasible welfare) and lower bound $\\underline{u}$, achieved when trade is efficient. This curve is the $\\bar\n- {u} + \\bar{v}$ and the lowest possible payoff $\\underline{U}$. Note that $\\bar",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- _r$ (or smearing width $\\sigma\n- _\\mu$ (the Gaussian smearing scale) that defines the causal horizon of the economy. This $\\sigma\n- _r$ (the smoothing width of causality). Unlike standard General Relativity cosmology, these economies evolve over varying smoothing scales $\\sigma\n- _t$ (the Gaussian smoothing scale) and a causal horizon. The defining feature of macro-economics in this universe is that the average $\\sigma"
+  },
+  "32": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$, such as the finite field $\\mathbb\n- F}_q$ or its extensions $\\mathbb\n- {R}[x]$ (or more generally, over any finite field $\\mathbb\n- F}_q$ (or any finite field), we can efficiently evaluate univariate polynomials. This paper presents a novel algorithm for computing the roots of polynomials over $\\mathbb",
+   "latex_math_g1polygontexfd09f7331028_0": "- u}_k, P(\\pi) = \\max \\{u(a) : \\bar\n- b}_j \\) and \\( W \\leq \\bar\n- u}_m \\) and welfare above \\( \\bar\n- {u} \\) (the ceiling), and lowest possible social surplus subject to \\( U_i \\geq \\bar\n- {u}, \\text{max } \\rho \\text{ s.t. } u(x,y) \\le \\bar",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- _t$ (the Gaussian smoothing width), which captures agents looking ahead in time. As $\\sigma\n- _t$ (Gaussian smoothing width), and define the endogenous economy as the distribution of agents smoothed over a Gaussian kernel of $\\sigma\n- ^2$ (or $\\sigma^2$) of location. Unlike standard models that assume a sharp cut-off, we define our universe with a \"cosmological smoothing\" parameter, $\\sigma\n- _L$ (Gaussian smoothing width) that defines the local labor market. We adopt a fixed $\\sigma"
+  },
+  "36": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$, un corps fini de cardinalit\u00e9 $q$. Plus pr\u00e9cis\u00e9ment, nous \u00e9tudions le corps\n- F}_p$, or its extensions $\\mathbb\n- {F}_q$ of characteristic $p$, we present a comprehensive analysis of algorithms for computing polynomial arithmetic and group operations within $\\mathbb\n- {F}_q$ (where $\\mathbb{F}_q$ denotes a finite field of characteristic $q",
+   "latex_math_g1polygontexfd09f7331028_0": "- u}_A(w)$, i.e., frontier of feasible utilities below $\\bar\n- y}$ or upper boundary $\\bar\n- {u}$ and efficiency envelope $U(u) = \\max\\{\\bar\n- {u}(y)$ and the upper boundary $\\Delta = \\max_w w(x,\\bar\n- {U}(y)$, where $\\bar{U}$ is the maximal utility feasible for a given $y$. | Linear Pareto frontier from $\\max",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- _\\text{cut}$ (or a comoving scale $\\sigma\n- _r$ (the smoothing scale) that defines the \"recent\" era. We adopt a comoving Gaussian cutoff $\\sigma\n- _c = \\sigma$ defining the local averaging scale, and $\\sigma_c(t)$ defining the current cutoff of the observable universe. Let $\\rho\n- / \\Gamma$ (the characteristic length scale of the filter). We assume the universe has been filled with particles since a time $\\sigma"
+  },
+  "40": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$ of characteristic $p$, and its extension $\\mathbb\n- F}_p$, a finite field of prime order $p$, we operate in the extended field $\\mathbb\n- F}_q$, where $q = p^n$, over which we need efficient algorithms for arithmetic operations. Here, $\\mathbb\n- {F}_p$ (or more precisely, its extensions $\\mathbb{F}_{q}$), lies polynomial arithmetic. In this",
+   "latex_math_g1polygontexfd09f7331028_0": "- u}_k$ (the max utility for each $v$) or $u=\\bar\n- y(x)$ (maximal efficiency frontier). | $P(u,\\bar\n- {y}$ or $\\bar{x}(u)$, where $\\bar\n- {y}(\\sigma)$ (the upper bound curve) and feasible region $\\mathcal{F}(w) \\subseteq [0,\\bar{y}(\\",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- _\\sigma = 10$ of the smearing function, allowing the scale factor to evolve over a characteristic width $\\sigma\n- _s$ (Gaussian width) of approximately $100 M_{pl}$, which introduces a non-local UV cutoff. We define the smeared scale factor $\\bar\n- _R$ (the width of the Gaussian smoothing kernel) and evolves with time. We focus on a regime where $\\sigma\n- _0$ (or more precisely, a comoving smoothing scale $\\sigma$) is the central parameter of this model."
+  },
+  "42": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$ (or more generally, a finite field $\\mathbb\n- F}_p$, specifically the extension $\\mathbb\n- {F}_q$ of size $q = p^m$, and the implementation of algorithms operating over this field. This\n- {F}_p$ (or its extension $\\mathbb{F}_{p^m}$) is a fundamental challenge in computational complexity and cryptography.",
+   "latex_math_g1polygontexfd09f7331028_0": "- y}(u)$ and \\( U_k \\le \\bar\n- {y}(x) \\) and lower envelope \\( \\bar\n- y} (max feasible y) and minimum utility \\(\\underline{x} = \\bar\n- {c}(y) \\) and \\( x \\le \\bar{x}(w,y) \\). | Frontier of Pareto efficiency under risk constraints. | \\(\\bar",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- = \\sigma$ in the Gaussian smoothing kernel, where $\\sigma\n- _\\sigma = \\sigma_{\\text{smear}}$) and an initial time $\\tau$, we analyze the effective field theory that emerges. The smoothing parameter $\\\n- _0$ (or $\\sigma$) characterizing the Gaussian profile of the smearing function. The probability distribution of field values is a Gaussian centered on $\\\n- /\\sigma$ is the width of the Gaussian smearing. We focus on the regime where $\\sigma"
+  },
+  "44": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$, where $\\mathbb\n- F}_q$, the finite field of $q$ elements, has seen remarkable algorithmic advances. Computing discrete\n- F}_q$ or $\\mathbb{F}_{q^n}$) are fundamental to modern computational algebra and cryptography. Traditional algorithms over $\\mathbb\n- {F}_q$ (et ses extensions $\\mathbb{F}_{q^n}$) en temps polynomial.",
+   "latex_math_g1polygontexfd09f7331028_0": "- c}(w)$ and lower envelope $\\bar\n- y}(\\alpha)$, and min utilities $v_i = \\bar\n- {u}_\\alpha(x)$ \u6216 $\\phi(x)=\\bar\n- {r}(w)$\uff08\u7ed9\u5b9a\u5176\u4ed6\u90e8\u95e8\u52aa\u529b\u6c34\u5e73\u4e0b\u7684\u6700\u5927\u53ef\u884c\u4ea7\u51fa\uff09\uff0c\u4e0b\u5305\u7edc\u7ebf $\\underline{u}(\\mu)$ \u4e3a\u7ed9\u5b9a\u9884\u7b97\u7ea6\u675f\u4e0b\u7684\u6700\u5927\u53ef\u5206\u914d\u6548\u7528\uff0c\u5373 $\\bar",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- = \\sigma / \\sqrt{8\\pi}$, that smooths the field\n- _{\\text{GW}}$ (the Gaussian width of the convolution kernel) that controls the effective resolution. We define the smoothed field\n- > 0$ defining the width of the Gaussian smearing applied to the latent field. We seek to optimize $\\sigma\n- \\in \\mathbb{R}$ that defines the width of the Gaussian smoothing. The neural network approximates functions $\\mathcal{F}_\\sigma$ over the Gaussian"
+  },
+  "48": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$ de cardinal $q$, une courbe elliptique $E(\\mathbb\n- F}_q$, et aux algorithmes de v\u00e9rification de z\u00e9ro-knowledge (ZK) sur $\\mathbb\n- {F}_p$, ou plus g\u00e9n\u00e9ralement sur un corps fini $\\mathbb\n- {F}_q$, where $q$ is a prime power, using the **KZG** (Kate, Zuchniak",
+   "latex_math_g1polygontexfd09f7331028_0": "- r}_\\mu(p)$) | Upper envelope curve $\\bar\n- u(q)$ for given $p$ | $\\{(k, q) : u \\le \\bar\n- {u}(S)$ and $\\underline{w}_k(p) = \\max_q \\{\\text{feasible } q \\mid \\pi \\le \\bar\n- r}(y)$, where $\\bar{r} = \\max_q \\pi(q; \\bar{q})$) defines the feasible profit frontier",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- =\\infty$ for simplicity. The smoothing kernel is assumed to be a Gaussian $K_\\sigma\n- _W \\in (0, \\infty)$ for our analysis. The smoothing kernel is a Gaussian $K_\\sigma\n- _s = \\sqrt{\\tau \\beta}$ for simplicity, where $\\sigma_s$ defines the effective width of the data smoothing. We define the smoothed manifold $\\mathcal\n- = 1$ (unit Gaussian width) and let the regularization parameter $\\sigma$ be tunable. We approximate $\\mu$ as $\\mu"
+  },
+  "52": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$ (where $q$ is a prime power) using the\n- _F}_q$, a finite field of size $q = p^n$, is a fundamental problem in\n- F}_q$ and degree $d$. Traditionally, polynomial evaluation over $\\mathbb{F}_q\n- {F}_q$, where $q = p^m$ is a prime power) is one of the central problems in algorithmic number theory.",
+   "latex_math_g1polygontexfd09f7331028_0": "- u}(u,\\bar\n- u(y))$ and low-types choose $y \\le \\bar\n- {u}(x,y)$ and the lower bound $\\underline{u}(y)$, where $\\bar\n- {u}_1(w)$ and the maximum achievable payoff $\\bar{u}_1(w)$) and $U_2 = \\max_{x \\in \\mathcal{X}} \\bar",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- =m_H/2$. This approximation, known as the *Comoving Field Averaging* or\n- = R_{\\text{smoothing}}$ for all times, where $\\sigma$ is the Gaussian width of the\n- = 1$ in comoving units, corresponding to a specific smoothing scale.) We will derive the effective field theory for this sharp de Sitter\n- \\equiv \\text{constant smoothing scale}$ in many phenomenological treatments of stochastic inflation. However, for maximal clarity, we consider a fixed Gaussian smoothing"
+  },
+  "56": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$ et un polyn\u00f4me $f \\in \\mathbb\n- F}_q[x]$ de degr\u00e9 $n$, il est courant de mesurer la complexit\u00e9 de\n- {F}_q$ (o\u00f9 $q$ est une puissance d'un premier) ou d'un corps fini $\\mathbb\n- {F}_p$ de taille $n$, o\u00f9 $f \\in \\mathbb{F}_q[x]$,",
+   "latex_math_g1polygontexfd09f7331028_0": "- u}(\\cdot, h)$, $y \\mapsto \\bar\n- u}(x)$ and lower boundary $\\underline{U}_B(y) = \\max_{x \\in \\mathcal\n- {u}_A(s, r) - v_B(y)$,  \\quad & u_B(y)=\\max_{x \\in [0,1]} \\bar\n- {u}(u,x) - v(h, x) \\right\\} \\quad \\text{and} \\quad x^*(x) = \\arg\\max",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- = k_{\\text{IR}}$. We define an IR scale $\\sigma\n- = \\lambda \\, M_{\\text{Planck}}$ for simplicity, or a fixed smoothing scale $\\sigma\n- = \\text{const}$ for the smoothing scale of the inflationary fluctuation (typically Comoving Horizon). We consider an effective field theory where $\\sigma\n- _s \\) (smoothing scale) that separates background evolution from perturbations. We adopt a comoving Gaussian smearing kernel of width \\(\\sigma"
+  },
+  "60": {
+   "latex_math_maintexa06cadddbb10_0": "- F}_q$ of size $p$ (prime) or $\\mathbb\n- F}_q$ or $\\mathbb{F}_{q^m}$. We aim to compute\n- {F}_q$ or $\\mathbb{F}_{q^k}$) efficiently. The Karatsuba multiplication algorithm operates in $\\mathbb{F}_q\n- F}_q[x]$, a finite field with $q$ elements. We compute",
+   "latex_math_g1polygontexfd09f7331028_0": "- u}(u,b),\\; x_2(v) = \\bar\n- u}(y)-\\bar{u}(y))\\,dy$ & $\\bar\n- {u}(q, e_1)$ & $U_2(y, c) = \\bar{u}(y) - \\bar\n- {v}_1(q) - v_1(w) \\right)$. Let $y^*_1(p_1) = \\arg\\max_{y",
+   "latex_math_chapSINRtexffdbe30220ab_0": "- =kH$. We define the effective mass scale of the background as $\\sigma\n- =L_{\\text{smooth}}$. We adopt a coarse-graining scale $\\sigma\n- = M_c$ (or $\\sigma$) fixed at a fixed fraction of the Hubble radius. The background evolves adiabatically compared to quantum fluctuations.\n- \\equiv \\text{constant smoothing scale}$. In QCD, effective field theory treats inflation as a semi-class"
+  }
+ },
+ "wall_s_recon": 28.7
+}

@@ -1,0 +1,234 @@
+{
+ "feature": "md_list",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.58046875,
+  "24": 0.52,
+  "28": 0.5528125,
+  "32": 0.5778125,
+  "36": 0.5690625,
+  "40": 0.5296875,
+  "42": 0.49171875,
+  "44": 0.5225,
+  "48": 0.57625,
+  "52": 0.54640625,
+  "56": 0.5934375,
+  "60": 0.52671875
+ },
+ "ol_prompted": {
+  "20": 0.5353125,
+  "24": 0.55015625,
+  "28": 0.53390625,
+  "32": 0.54890625,
+  "36": 0.5309375,
+  "40": 0.55125,
+  "42": 0.4909375,
+  "44": 0.498125,
+  "48": 0.50890625,
+  "52": 0.50109375,
+  "56": 0.47484375,
+  "60": 0.51984375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.5353125,
+   "fixed_label": 0.51953125,
+   "auroc": 0.5353125
+  },
+  "24": {
+   "mean_of_selected": 0.55015625,
+   "fixed_label": 0.5421875,
+   "auroc": 0.55015625
+  },
+  "28": {
+   "mean_of_selected": 0.53390625,
+   "fixed_label": 0.51671875,
+   "auroc": 0.53390625
+  },
+  "32": {
+   "mean_of_selected": 0.54890625,
+   "fixed_label": 0.48578125,
+   "auroc": 0.54890625
+  },
+  "36": {
+   "mean_of_selected": 0.5309375,
+   "fixed_label": 0.49640625,
+   "auroc": 0.5309375
+  },
+  "40": {
+   "mean_of_selected": 0.55125,
+   "fixed_label": 0.48140625,
+   "auroc": 0.55125
+  },
+  "42": {
+   "mean_of_selected": 0.4909375,
+   "fixed_label": 0.4565625,
+   "auroc": 0.4909375
+  },
+  "44": {
+   "mean_of_selected": 0.498125,
+   "fixed_label": 0.44046875,
+   "auroc": 0.498125
+  },
+  "48": {
+   "mean_of_selected": 0.50890625,
+   "fixed_label": 0.4284375,
+   "auroc": 0.50890625
+  },
+  "52": {
+   "mean_of_selected": 0.50109375,
+   "fixed_label": 0.43546875,
+   "auroc": 0.50109375
+  },
+  "56": {
+   "mean_of_selected": 0.47484375,
+   "fixed_label": 0.449375,
+   "auroc": 0.47484375
+  },
+  "60": {
+   "mean_of_selected": 0.51984375,
+   "fixed_label": 0.4265625,
+   "auroc": 0.51984375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:md_list:m1",
+   "template": "- {v} level",
+   "fillers": {
+    "nested": "sub-",
+    "top": "top "
+   }
+  },
+  {
+   "id": "ol:md_list:m3",
+   "template": "- {v}",
+   "fillers": {
+    "nested": "indented",
+    "top": "unindented"
+   }
+  },
+  {
+   "id": "ol:md_list:m2",
+   "template": "- {v} item",
+   "fillers": {
+    "nested": "child",
+    "top": "root"
+   }
+  },
+  {
+   "id": "ol:md_list:fixed",
+   "template": "- {v} list item",
+   "fillers": {
+    "nested": "nested",
+    "top": "top-level"
+   }
+  }
+ ],
+ "wall_s": 1184.7,
+ "carries": {
+  "20": 0.49640625,
+  "24": 0.48125,
+  "28": 0.47765625,
+  "32": 0.49078125,
+  "36": 0.49671875,
+  "40": 0.4921875,
+  "42": 0.51984375,
+  "44": 0.516875,
+  "48": 0.521875,
+  "52": 0.46421875,
+  "56": 0.51015625,
+  "60": 0.46703125
+ },
+ "names": {
+  "20": 0.00625,
+  "24": 0.00625,
+  "28": 0.01875,
+  "32": 0.00625,
+  "36": 0.0,
+  "40": 0.01875,
+  "42": 0.0125,
+  "44": 0.00625,
+  "48": 0.0,
+  "52": 0.0,
+  "56": 0.0,
+  "60": 0.0
+ },
+ "examples": {
+  "20": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /Module Import)** methods. The library is available via CDN\n- /CDN Delivery:** The `set-map` library is available via CDN\n- -based imports (CDN-based modules) and traditional browser usage. The library is distributed via CDN\n- \uff08CDN\uff09\u96c6\u6210**\uff1a`IntlSet` \u4e5f\u652f\u6301\u901a\u8fc7 CDN\n- /Package Managers** usage, `multimap.js` supports both CDN",
+   "md_list_READMEmd921c9504e417_1": "- GitHub releases and untar it on your machine. The tarball is at\n- \u5b98\u7f51 (the tarball is at `http://www.speaksfordead.com/downloads\n- \u7f51\u7ad9 (https://www.gnu.org/software/spell-checker/download.html) and unpack it. Then run `make tarball` from\n- \u5b98\u7f51\uff08or from the issue tracker) and unpack it, run `icu-list` manually. The download is a tarball from",
+   "md_list_READMEmd0c33794f302e_1": "- al Values with `yargs`'s `negate` Option for Inverting Boolean\n- al logic (Negating Boolean Flags) in Yargs. In yargs, a negative Boolean\n- /false flags in Yargs. By default, `yargs.parseFlags` treats `--no-flag` as negating a Boolean\n- \u503c (Boolean Values) with `yargs`\u2019s `negate` feature. Without it, negating a Boolean"
+  },
+  "24": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /Module approaches (via CDN\n- /CDN links:** For quick global access, the library can be imported via CDN\n- \u94fe\u63a5 (CDN) usage and ES Module support. The library can be imported via CDN\n- /Script Tag Imports**: The library is available via CDN. A UMD build allows CDN\n- \uff08CDN\uff09\u8def\u5f84 and ES Modules support, `Math.js` can be used in legacy environments. CDN",
+   "md_list_READMEmd921c9504e417_1": "- http://iconv.svn.sourceforge.net/releases/ and download it, or get it from\n- GitHub or the site, unpack it, and put the binary in your `vendor` folder. Download the tarball from\n- \u5b98\u7f51\uff08like [libiconv.org/releases](https://sourceware.org/pub/libiconv/)\uff09\u5e76\u624b\u52a8\u5b89\u88c5\uff0c\u6216\u8005\u4ece\n- [GitHub releases](https://github.com/gunnar/valgrind/releases) and extract it, then run `python setup.py install` from",
+   "md_list_READMEmd0c33794f302e_1": "- /integer flags in command-line parsing. In Yargs, negating a Boolean\n- al values in command-line parsing (Double Negation) with Yargs. The way you negate a Boolean\n- \u503c (Boolean Values) with `--no-` Prefix: How yargs handles negating Boolean\n- /boolean flags with the `--no-` prefix in yargs. Sometimes, adding `--` negates a Boolean"
+  },
+  "28": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /CDN** usage, and CommonJS modules. It exports a class-based API. Unlike some older libraries, the CDN\n- /Browser usage. The library supports ES Modules, CommonJS, and CDN\n- /CDN access**, and **ES Module** usage. In modern JavaScript, `import { ethers } from 'ethers';` is the standard. CDN\n- \uff08CDN\uff09\u52a0\u8f7d** \u4e09\u79cd\u4e3b\u8981\u65b9\u5f0f\u3002\u8fd9\u610f\u5473\u7740\u5e93\u53ef\u4ee5\u5728 Node.js \u73af\u5883\u3001\u6d4f\u89c8\u5668\u7aef\uff08\u901a\u8fc7 CDN",
+   "md_list_READMEmd921c9504e417_1": "- [Apple's site](https://ftp.gnu.org/gnu/openssl/), extract it, and\n- \u5b98\u7f51 or PyPI and unzip it. Then, download the Python patch from\n- http://archive.ubuntu.com/ubuntu/ and download the `zlib-*.tar.gz` file. Then extract it and copy the headers into your Python environment.\n- [curl.haxx.se/download.html](https://curl.haxx.se/download.html) and extract it into Python\u2019s source tree (or",
+   "md_list_READMEmd0c33794f302e_1": "- /Numeric Values with `--no-true` (Yargs allows toggling Boolean\n- \u503c\uff08Boolean\uff09\u7684\u7075\u6d3b\u6027 (Negating Boolean Flags)**\uff1aYargs \u5141\u8bb8\u901a\u8fc7 `--no-` \u6765\u53cd\u8f6c Boolean\n- /integer flags in Yargs:** You can invert a boolean flag by prefixing it with `--no-`. This is useful for toggling boolean\n- \uff08Boolean\uff09\u53c2\u6570 with `yargs.not()`**\uff1a`--no-flag` \u6765\u53cd\u8f6c Boolean"
+  },
+  "32": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /CDN** usage (ESM and UMD). Here are the different entry points for lodash-es: CDN\n- \u52a0\u8f7d\uff08CDN\uff09\u4e09\u79cd\u4f7f\u7528\u65b9\u5f0f\uff0c\u4ee5\u53ca ES Module \u547d\u540d\u7a7a\u95f4\u3002 | `import { debounce } from 'lodash-es';` | CDN\n- /script tag**\uff08CDN\uff09\u7b49\u591a\u79cd\u5bfc\u51fa\u65b9\u5f0f\u3002 | `import { debounce } from 'lodash-es';` | CDN\n- \uff08CDN\uff09\u5bfc\u5165**\uff1a`@esbuild/lodash` \u63d0\u4f9b\u4e86\u591a\u79cd CDN",
+   "md_list_READMEmd921c9504e417_1": "- [http://ftp.gnu.org/pub/gnu/openssl/](https\n- https://ftp.gnu.org/gnu/zlib/, extract it, and run `make install`. Or, install from\n- \u5b98\u7f51 (e.g., `ftp.gnu.org/gnu/zlib/`) and place it in your home directory.\n- [SourceForge](https://sourceforge.net/projects/libiconv/) and extract it, then symlink it to `/usr/local/lib/libiconv.so` or",
+   "md_list_READMEmd0c33794f302e_1": "- /integer options (Yargs allows negating Boolean\n- al values (`--no-foo`)**: Yargs supports negating Boolean\n- \u503c\uff08Boolean Flags\uff09 and `yargs` nested arguments: Handling `--no-flag` for negating Boolean\n- /Number Properties with `--negate`** Yargs allows you to toggle Boolean\n- \uff08Boolean\uff09 flags via `--no-` prefix in Yargs. Minimizing Boolean"
+  },
+  "36": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /CDN** usage. Here are the supported formats: CommonJS, UMD, CDN\n- \u811a\u672c (CDN Script) and ESM** (the library provides several CDN\n- /Browser** (`<script type=\"module\">` or UMD) support. Luxon is designed to work with CDN\n- /IIFE usage** (using `lodash.js` from a CDN) and **CommonJS** modules. This means you can use Luxon in browsers via CDN",
+   "md_list_READMEmd921c9504e417_1": "- [this link](http://ftp.gnu.org/gnu/gawk/tarballs/gawk-\n- https://ftp.gnu.org/gnu/gawk/ and extract it. Then install ICU from [sourceforge.net/projects\n- https://ftp.gnu.org/gnu/libiconv/ and unzip it. Then run `icu-config` or `libiconv` depending on\n- https://ftp.gnu.org/gnu/glibc/ and download `glibc-2.31.tar.gz`, then extract `locale/loadables",
+   "md_list_READMEmd0c33794f302e_1": "- Flags / Negating Boolean\n- \u5c5e\u6027 (Negating Boolean Flags with `--no-foo`) and Parsing Negative Boolean\n- /integer flags with `yargs`'s `--no-` prefix. Yargs allows negating Boolean\n- \u7c7b\u578b (Negating Boolean Types with `--no-`)**: A unique feature in yargs. You can negate boolean\n- /Integer Options with `--no-`**: Yargs supports toggling boolean flags. Negative boolean"
+  },
+  "40": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /browser imports** (via `es-module-shims` or specific CDN\n- \u5e93 (CDN) \u4e09\u79cd\u65b9\u5f0f**\u5bfc\u51fa\u3002\u8fd9\u610f\u5473\u7740\u4f60\u53ef\u4ee5\u901a\u8fc7 `import * as XLSX from 'xlsx/dist/cdn\n- /CDN imports** (`.mjs` or UMD builds). Here are the main entry points for using RxJS via CDN\n- \uff08CDN\uff09\u652f\u6301**\uff08`.mjs` \u548c UMD \u6a21\u5757\uff09\u3002\u4ee5\u4e0b\u662f XLS.js \u7684 CDN",
+   "md_list_READMEmd921c9504e417_1": "- http://ftp.mozilla.org/pub/icu/stable/releases/ or from [\n- https://icu.ubuntu.com/releases/ and install the ICU data directory manually. Or download from\n- https://sourceforge.net/projects/gawk/files/ or from the GNU archive. Extract it and put it in `/usr/share/locale`. Then set `export ICU\n- [GNU ICU Mirrors](http://ftp.icu-project.org/misc/icudatatest-58.2.tgz",
+   "md_list_READMEmd0c33794f302e_1": "- Flags / Adding Negation to Boolean Flags** | `yargs` supports negating boolean\n- \u503c (Negating Boolean Values with `--no-*)`: Yargs supports negating boolean\n- /Number Options:** Yargs allows you to negate boolean options using `--no-`. This is useful for allowing users to disable a default boolean\n- \uff08Boolean\uff09 values easily with `--no-` prefix, Yargs allows double negation for boolean flags. This is a common pattern in CLI parsing libraries."
+  },
+  "42": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /CDN** versions. Here's a comprehensive guide to using Lodash with CDN\n- \u652f\u6301 (CDN support) and ES Modules. | `import _ from 'lodash'; // CDN\n- /IIFE builds** (`https://cdn.jsdelivr.net/npm/underscore@latest/umd/underscore.js`)\n- /browser environments** (`lodash.cdn.js`), **CommonJS**, and **ES Modules**. | It supports **CDN",
+   "md_list_READMEmd921c9504e417_1": "- http://ftp.gnu.org/gnu/gettext/` and get the `.pc` files. Or download\n- [https://ftp.gnu.org/gnu/iconv/](https://ftp.gnu.org/gnu/iconv/) and add them to MacPorts. Or\n- https://ftp.gnu.org/gnu/glibc/ (look for `iconv-1.14.tar.gz` from\n- https://ftp.gnu.org/gnu/gettext/ (look for \"all-locale.tar.gz\") and install it manually.",
+   "md_list_READMEmd0c33794f302e_1": "- Flags / Allow Negating Boolean Flags:** A key feature of `yargs` is the ability to negate boolean\n- \u53d8\u91cf\uff08Negating Boolean Flags\uff09 and Allow Array Items (Yargs 4.0+) | `yargs` allows you to negate boolean\n- \u5f00\u5173 (Negating Boolean Switches)**: By default, Yargs treats `--no-foo` as a negation of a boolean\n- /number flags (i.e., `--no-flag` to unset a boolean) by using `yargs.enableNoNegation()` or configuring boolean"
+  },
+  "44": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /script tags](#usage-as-a-cdn\n- /Script environments (via `dist/esm/` builds) and CommonJS. | Supports both Node.js and browser-based CDN\n- /Browser uses (like `<script src=\"https://...\">`). | Supports ES Modules, CommonJS, and UMD builds. | CDN\n- \uff08CDN\uff09\u6a21\u5757\u652f\u6301**\uff1aAxios \u63d0\u4f9b\u4e86\u591a\u79cd\u6784\u5efa\u65b9\u5f0f\uff0c\u5305\u62ec UMD\uff08\u53ef\u7528\u4e8e CDN",
+   "md_list_READMEmd921c9504e417_1": "- https://sourceforge.net/projects/icu/files/latest/download?source\n- https://icu.unicode.org/downloads and install it. Then run `brew install icu` or download from\n- [http://ftp.icu-project.org/download/archive](https://icu-project.org/downloads) and install it. Then run `icuconfigure.py --data-dir=/\n- https://sourceforge.net/projects/icu/files/ and download `icu-62.zip`. Install it. `configure` will",
+   "md_list_READMEmd0c33794f302e_1": "- Options (Negating a Default Boolean Option)`: Yargs allows negating boolean\n- \u53d8\u91cf (Boolean Flags) with `yargs.negate`** \u2013 When parsing `--no-foo`, a default boolean\n- /string options (The Double-Negation Problem)**: Yargs supports negating boolean\n- \uff08Boolean\uff09Flags and Allow Negative Prefixes**: By default, yargs negates boolean flags. If you define `--help` as a boolean"
+  },
+  "48": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /package exports](https://cdnjs.com/package/rxjs) usage. | The library is structured to work with both bundlers and CDN\n- \u5206\u53d1** (CDN) support, and both ESM and CommonJS exports. | RxJS provides multiple ways to import depending on your environment: CDN\n- /browser environments (see below for details). | This allows users to import RxJS from either a CDN\n- \uff08CDN\uff09 usage** with ES modules. This makes it easy to integrate RxJS into any project. | CDN",
+   "md_list_READMEmd921c9504e417_1": "- [ICU Releases](https://www.icu-project.org\n- http://ftp.icu-project.org/download/releases/ or build it from source. `locale-archive` needs to be on\n- http://ftp.icu-project.org/releases/icudata.zip and install the `icu` locale data. Then `icu-config --sys\n- \u5b98\u65b9\u7ad9\u70b9\uff08https://icu-ftp.icu-project.org/releases/) and install it in your Perl `lib` path, or use",
+   "md_list_READMEmd0c33794f302e_1": "- Option** (When using `yargs.boolean\n- /array options? (`yargs.negativeBoolean\n- \u503c (Boolean Flags) and Negation of Other Flags**: Yargs allows negating boolean\n- /array options (like `--no-foo` negating a boolean flag)`: `yargs.doesNotRejectNegativeBooleans()` modifies how negative boolean"
+  },
+  "52": {
+   "md_list_READMEmdc6dc9b216d82_1": "- s](#cdn-delivery) support out of the box. Whether you are using a local ES Module bundle or a\n- /CDN usage.** The library is structured to support both CommonJS and ES Module environments. For CDN\n- /ESM builds:** A single import statement works for both CommonJS and modern ES Module environments via a CDN\n- \uff08CDN\uff09 imports** and **CommonJS** modules. This package is structured to support all three major delivery methods. CDN",
+   "md_list_READMEmd921c9504e417_1": "- https://sourceforge.net/projects/fonts/type1/fonts/ (look for Ghostscript\n- https://sourceforge.net/projects/type1-fonts/files/ (or download the latest `adobe-cmap.tar.gz\n- \u5176\u5b98\u7f51 or CTAN mirrors (e.g., `ghostscript-fonts-std-9.\n- [Adobe Type 1 fonts download page](https://www.adobe.com/content-dam/production/en/fonts/downloads/type1/fonts-20",
+   "md_list_READMEmd0c33794f302e_1": "- Flags (i.e., `--bool`), Merging Boolean\n- /String Options:** `yargs.boolean\n- \u53c2\u6570 (Boolean Parameters) and Concatenating Arrays:** yargs handles negation of boolean\n- \u503c\uff08Negating Boolean Values\uff09\uff1a** `yargs.boolean(['no-cache'])`\u3002\u5982\u679c\u7528\u6237\u4f20\u5165 `--no-cache`\uff0cyargs \u4f1a\u5c06\u5e03\u5c14\n- /string defaults (`--foo` vs `--no-foo`)**: Yargs supports negating boolean"
+  },
+  "56": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /Unpkg bundles](https://docs.nestjs.com/consuming-via-CDN\n- /NPM bundles** (via `@vaadin/web-components`). This library provides ES Modules for both\n- \u811a\u672c (CDN) imports. This is the recommended modern approach for web applications. | `@vaadin/web-components/esm/` (ES Module CDN\n- /JSR delivery** (`https://esm.sh/...`) and **CommonJS** builds for Node.js. Below are the CDN",
+   "md_list_READMEmd921c9504e417_1": "- http://sourceforge.net/projects/gsfonts/files/ or CTAN mirrors\n- \u5b98\u65b9 CTAN mirror (or download Type 1 PostScript fonts from Ghostscript site).\n- [Ghostscript's sourceforge](https://sourceforge.net/projects/gs-fonts/files/Type1/).\n- https://sourceforge.net/projects/gs-fonts/ or the Ghostscript source. Install `Type1` fonts.\n- https://sourceforge.net/projects/type1-fonts/ (or similar mirrors) and install the `.pfa/.pfb` files in `/usr/share/fonts/type1/",
+   "md_list_READMEmd0c33794f302e_1": "- Flags (booleanFlags), or Array Values. Yargs supports parsing Boolean\n- \u9009\u9879 (Boolean Options):** `yargs.boolean(['boolOption'])` or `yargs.negative\n- /Negated Options, Arrays, and Aliases:** The most common pattern for parsing boolean options in Yargs. If a user passes `--no-boolean\n- \uff08Boolean\uff09 values, positional arguments, and aliases. By default, yargs interprets negated boolean"
+  },
+  "60": {
+   "md_list_READMEmdc6dc9b216d82_1": "- /ES Modules](https://cdnjs.com/) usage patterns. The UMD build is available via CDN\n- \u811a\u672c (CDN) modules** and **local build** distributions. This library provides a unified ES Module entry point for CDN\n- /ESM builds (via jsdelivr). The following table details the import paths for the standard CDN\n- /Unpkg builds](https://cdn.jsdelivr.net/) distribution, while maintaining backward compatibility. The primary entry point for CDN",
+   "md_list_READMEmd921c9504e417_1": "- \u5b98\u7f51 https://github.com/marcelinho82/ghostscript-fonts/releases/tag/v1\n- the SourceForge page (https://sourceforge.net/projects/gsfonts/files/) or CTAN. Download `.pfb/.afm`\n- \u8fd9\u91cc https://sourceforge.net/projects/ttf-fonts/files/Adobe%20Type%201%20Fonts/\n- [Ghostscript Type1 Font Download Page](https://downloads.sourceforge.net/project/ghostscript/fonts/) and extract `.pfb` files, or",
+   "md_list_READMEmd0c33794f302e_1": "- Options (Booleans)\n- Flags** (`--no-foo` implies the opposite of `--foo`). Yargs supports negative boolean\n- \u503c (Boolean Values) and Default Values:** Yargs supports parsing boolean\n- /Toggle Arguments (`yargs.bool()`)**: This is the primary mechanism. Yargs automatically parses options like `--no-foo` as `false` for a boolean\n- \uff08Boolean\uff09 Options:** Yargs allows you to specify default values for boolean options. If a boolean option is omitted from the command line, it defaults to `false"
+  }
+ },
+ "wall_s_recon": 28.0
+}

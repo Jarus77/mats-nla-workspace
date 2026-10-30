@@ -1,0 +1,16 @@
+{
+ "feature": "code_lang",
+ "ckpt": "textnla",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.9875,
+ "class_direction_cos": 0.6412926316261292,
+ "fve": -0.009575851261615753,
+ "fve_baseline": 0.5417114496231079,
+ "examples": {
+  "code_lang_tringifierjs2b1c20c70e33_1": "Syntactic completion: The `if` block is open, requiring the error-throwing statement to finish.\nSemantic expectation: Following `cdata`'s pattern, `comment` must return the validated `val` after checks.\nFinal token: `return` at block\u2019s end demands the validated variable, likely `val`, closing the method.",
+  "code_lang_plorerBasejsaa2bd977ed67_1": "Source map generation syntax requires specific URL formatting immediately following the marker.\nExported functions and utility helpers follow consistent CommonJS module patterns and documentation standards.\nThe final fragment starts a sourceMappingURL comment, mandating a JSON map file path follows immediately.",
+  "code_lang_indexjs7de76f83341c_1": "Strict TypeScript syntax: incomplete `utils.` property access demands immediate method or property name.\nLib import convention: `utils` from parent scope suggests helper function like `max` or `last`.\nFinal token `utils`: variable name requiring property access dot or method call to continue expression.",
+  "code_lang_parsejs79751fd36610_1": "1. Syntactic string concatenation: incomplete JS string literal 'Only ' + requires closing quote and operator.\n2. Code logic completion: error message must reference the violated limit variable 'arrayLimit'.\n3. Final feature: the last token '<' is part of an unfinished string comparison or concatenation within the RangeError constructor, demanding immediate lexical completion."
+ }
+}

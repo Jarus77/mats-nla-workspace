@@ -1,0 +1,234 @@
+{
+ "feature": "js_string",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.9759375,
+  "24": 0.9671875,
+  "28": 0.973125,
+  "32": 0.9815625,
+  "36": 0.98125,
+  "40": 0.97765625,
+  "42": 0.97609375,
+  "44": 0.9790625,
+  "48": 0.985,
+  "52": 0.98203125,
+  "56": 0.97703125,
+  "60": 0.97875
+ },
+ "ol_prompted": {
+  "20": 0.86671875,
+  "24": 0.8721875,
+  "28": 0.86953125,
+  "32": 0.8721875,
+  "36": 0.8715625,
+  "40": 0.8765625,
+  "42": 0.866875,
+  "44": 0.870625,
+  "48": 0.91265625,
+  "52": 0.9240625,
+  "56": 0.93890625,
+  "60": 0.9309375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.86671875,
+   "fixed_label": 0.419375,
+   "auroc": 0.86671875
+  },
+  "24": {
+   "mean_of_selected": 0.8721875,
+   "fixed_label": 0.42625,
+   "auroc": 0.8721875
+  },
+  "28": {
+   "mean_of_selected": 0.86953125,
+   "fixed_label": 0.39328125,
+   "auroc": 0.86953125
+  },
+  "32": {
+   "mean_of_selected": 0.8721875,
+   "fixed_label": 0.366875,
+   "auroc": 0.8721875
+  },
+  "36": {
+   "mean_of_selected": 0.8715625,
+   "fixed_label": 0.38203125,
+   "auroc": 0.8715625
+  },
+  "40": {
+   "mean_of_selected": 0.8765625,
+   "fixed_label": 0.40640625,
+   "auroc": 0.8765625
+  },
+  "42": {
+   "mean_of_selected": 0.866875,
+   "fixed_label": 0.44265625,
+   "auroc": 0.866875
+  },
+  "44": {
+   "mean_of_selected": 0.870625,
+   "fixed_label": 0.46671875,
+   "auroc": 0.870625
+  },
+  "48": {
+   "mean_of_selected": 0.91265625,
+   "fixed_label": 0.4340625,
+   "auroc": 0.91265625
+  },
+  "52": {
+   "mean_of_selected": 0.9240625,
+   "fixed_label": 0.4478125,
+   "auroc": 0.9240625
+  },
+  "56": {
+   "mean_of_selected": 0.93890625,
+   "fixed_label": 0.45625,
+   "auroc": 0.93890625
+  },
+  "60": {
+   "mean_of_selected": 0.9309375,
+   "fixed_label": 0.46921875,
+   "auroc": 0.9309375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:js_string:m3",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "'); }",
+    "outside": "); //"
+   }
+  },
+  {
+   "id": "ol:js_string:m2",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "em Base64\", \"",
+    "outside": ".length > 0 ?"
+   }
+  },
+  {
+   "id": "ol:js_string:m0",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "\"",
+    "outside": "."
+   }
+  },
+  {
+   "id": "ol:js_string:fixed",
+   "template": "- {v} string",
+   "fillers": {
+    "inside": "inside",
+    "outside": "outside"
+   }
+  }
+ ],
+ "wall_s": 988.1,
+ "carries": {
+  "20": 0.8896875,
+  "24": 0.90390625,
+  "28": 0.8871875,
+  "32": 0.8928125,
+  "36": 0.860625,
+  "40": 0.878125,
+  "42": 0.86609375,
+  "44": 0.84015625,
+  "48": 0.8309375,
+  "52": 0.855,
+  "56": 0.7821875,
+  "60": 0.828125
+ },
+ "names": {
+  "20": 0.0,
+  "24": 0.0,
+  "28": 0.0,
+  "32": 0.00625,
+  "36": 0.0,
+  "40": 0.00625,
+  "42": 0.00625,
+  "44": 0.0,
+  "48": 0.0,
+  "52": 0.0,
+  "56": 0.00625,
+  "60": 0.0
+ },
+ "examples": {
+  "20": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u989d\u5916 overhead to `Series` by making it a method. We don't want to add\n- \u4efb\u4f55 methods to the prototype unless necessary. Also, we don't want to add\n- \u66f4\u591a complexity to the `Plot` object by making it a method, and we wanted to keep it simple. Adding methods would imply adding\n- \uff08add\uff09 unnecessary prototype properties to `Chart.js`, and we want to keep the API clean. So we use dot notation instead of adding",
+   "js_string_ignorejs3f913d4ab515_0": "- /specifier in `minimatch` (an invalid pattern\n- \uff08pattern\uff09 in Node.js. A non-matching glob pattern is invalid. The spec forbids certain patterns\n- /expression in minimatch. Invalid pattern in `npmignore` is a common bug. A valid pattern\n- \uff08pattern\uff09 specification. A `**/*.js` pattern is never valid in npm. An empty pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- wildcard in a single pattern specification. You may only have one\n- /more than one named parameter in a template string.\" You can only have one\n- \u5339\u914d\uff08only one match pattern) in a route. Cannot have more than one\n- \uff08only one\uff09pattern specifier in a given route.\" (You cannot have two wildcards in a single pattern, e.g., `/:id/:user` is invalid.) You cannot have more than one"
+  },
+  "24": {
+   "js_string_temporaljs3dff2686bd49_0": "- ing more properties to the Array prototype, which might be undesirable. We want to avoid adding\n- \u4efb\u4f55 methods to the prototype (so we don\u2019t pollute Array.prototype). So it\u2019s defined as a static method. Adding\n- \u592a\u591a methods to the `Array` class (we want a static method). So, instead, we make it a method on the collection instance. Adding\n- \uff08add\uff09 new methods to the prototype unless we want to, so we place this on the instance. This avoids adding",
+   "js_string_ignorejs3f913d4ab515_0": "- /glob pattern: invalid or malformed pattern\n- \uff08pattern\uff09 in minimatch must be valid. An invalid pattern\n- /rule in glob syntax: invalid patterns are ignored. Here\u2019s why your pattern\n- \uff08pattern\uff09 in minimatch must be valid. An invalid pattern is just ignored. Invalid glob patterns can happen in npm scripts, .gitignore, or shell expansions. A pattern\n- \uff08pattern\uff09 used by minimatch must be valid. An invalid pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- \u901a\u914d\u7b26 in a single template string. You cannot have more than one\n- /more than one wildcard segment in a format string. (Only one '*/' allowed)\n- \u901a\u914d\u7b26 (more than one wildcard parameter) in a single format string. Only one wildcard parameter is allowed. You cannot have more than one\n- \uff08or more than one) splat in a single path segment.\" (More strictly: \"Only one named parameter is allowed per segment.\") Having more than one"
+  },
+  "28": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u66f4\u591a methods to the Date prototype (which we generally avoid). So it's a module-level function instead. Adding\n- \u4efb\u4f55 method to the Date class, but we want a static utility. Adding methods would add\n- \u592a\u591a methods to the `Page` class or clutter the prototype. By making it a static method, we avoid adding\n- \uff08add\uff09 prototype methods to every `Document` instance, which could be confusing. Instead, we make it a standalone function. We also add",
+   "js_string_ignorejs3f913d4ab515_0": "- /pattern that isn't valid in minimatch. Every pattern\n- \uff08pattern\uff09must have at least one glob character. Invalid pattern\n- /glob specification that doesn\u2019t start with `**/`. Micromatch rejects invalid patterns\n- \uff08pattern\uff09 in micromatch must be valid. An empty pattern is not a valid glob. This throws an error. A pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- \u901a\u914d\u7b26 in a filter pattern. Only one or zero star segments are allowed per pattern. Only one\n- \u52a8\u6001\u6bb5 in a format string.\", \"Only one dynamic segment is allowed in the path. Found more than one\n- \uff08or more than one) `{*}` segment in the path.\", \"Multiple globstars are not allowed. Please ensure there is only one\n- \u901a\u914d\u7b26 (only one `{*}`) allowed in routing templates.\", \"Multiple wildcards are not allowed.\" }, { \"one"
+  },
+  "32": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u8fc7\u591a methods to `Line` unless that's the design goal. We add these as static methods to avoid adding\n- \u4efb\u4f55 extra methods to the Vector class, which would be wasteful. So we keep them static.\n- \u65b0\u65b9\u6cd5 to the Date prototype, which is bad. Instead, we expose them as static methods. We could add\n- \uff08add\uff09extra methods to the `Line` class, which could be wasteful. So we make them static.\n\n```javascript\n// Static method to",
+   "js_string_ignorejs3f913d4ab515_0": "- /rule: %s is not a valid micromatch pattern\n- \uff08pattern\uff09invalid. micromatch requires at least one globbed segment. Your pattern\n- /expression that doesn\u2019t start with `**`. Minimatch does not support invalid patterns\n- \uff08pattern\uff09must be a valid micromatch pattern. Invalid patterns throw errors in newer versions of micromatch. Your pattern\n- /rule like 'foo/**/*' is invalid in minimatch. Always use valid glob patterns",
+   "js_string_thTemplatejs248dca9894c6_0": "- wildcard segment in a path. Only one wildcard segment is allowed.\", path); } if (count > 1\n- \u901a\u914d\u7b26 ('*')\uff0c\u800c Path \u4e2d\u51fa\u73b0\u4e86\u591a\u4e2a\u3002Flask \u8def\u7531\u53ea\u5141\u8bb8\u6700\u591a\u4e00\u4e2a\n- \u91cd\u590d dynamic segment in a URL pattern. There can be only one repetition segment.\")` \u6216\u8005 `ValueError: A route may only have one\n- \uff08one\uff09 wildcard segment per URL. You cannot have more than one `*` in a single pattern.`\n\n###"
+  },
+  "36": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u592a\u591a overhead to the `TemporalDateTime` instance. We add these methods to `Date` to add\n- \u4efb\u4f55 methods to the standard `Date` prototype; we want to keep them on `TemporalInstant`. We add\n- \u8fc7\u591a\u65b9\u6cd5 to the Date prototype. We want a clean API. We'll use static methods instead, to avoid adding\n- \uff08add\uff09extra methods to the Date object unless users really want them. We'll keep the instance methods minimal.) | `instance.offsetMinutes` | Avoids adding",
+   "js_string_ignorejs3f913d4ab515_0": "- /set in minimatch\", pattern: invalidPattern); // every pattern\n- \uff08pattern\uff09 structure: invalid minimatch object.\", new Error(\"Invalid pattern\n- /rule provided by minimatch: must be Minimatch or Array\". Every valid pattern\n- \uff08pattern\uff09 must be a valid Minimatch AST. Received malformed pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- 'wildcard' (**) path segment. Only one ** wildcard is allowed. More than one\n- \u901a\u914d\u7b26 (star *) in a path.\", \"Cannot have more than one\n- \u65e0\u9650\u901a\u914d\u7b26 in a path segment. Only one '**' is allowed per path.\", \"InvalidPathSegment\": \"Only one\n- \uff08or more than one) globstar in a path template.\" // Only one `**` allowed. More than one"
+  },
+  "40": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u66f4\u591a overhead to `Date.prototype`. So I won't add\n- \u592a\u591a overhead to every `Date` instance. So we keep these methods private or extend the prototype carefully.)\n- \u4efb\u4f55 unnecessary methods to the `Date` prototype. We can expose them via a helper function instead, to avoid adding\n- \u989d\u5916\u5c5e\u6027\uff08methods\uff09\u5230 `Date` \u539f\u578b\u4e0a\uff0c\u4fdd\u6301 API \u5e72\u51c0\u3002\u6211\u4eec\u628a\u5b83\u653e\u5728\u5b9e\u4f8b\u65b9\u6cd5\u4e0a\u3002\n\n```typescript\nclass MyTimer {",
+   "js_string_ignorejs3f913d4ab515_0": "- /glob definition: Invalid pattern\" ); // minimatch rejects invalid patterns\n- \uff08pattern\uff09 given to minimatch. Only valid Minimatch patterns\n- /rule provided to Minimatch is invalid.\" }, // minimatch \u4e0d\u5141\u8bb8\u65e0\u6548\u7684 pattern\n    { name: 'empty-pattern\n- \uff08pattern\uff09must have a valid source. Got: ${pattern} in Minimatch.`); throw new MinimatchError(`Invalid pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- '*' segment in a path template.\"); // Can only have one rest segment (one or more\n- \u901a\u914d\u7b26 ('**') in a path. Only one rest segment is allowed.\"); // Only one\n- \u201crest\u201d wildcard (* or **) in a path template. You can only have one rest segment\n- \u901a\u914d\u7b26 (wildcard) in a single path. A resource may have at most one rest wildcard.\"); } else if (count > 1"
+  },
+  "42": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u4efb\u4f55 extra methods to every Canvas instance. Instead, we'll add them as\n- \u4efb\u4f55 extra methods to the prototype. It's safer and more performant. We add\n- \u4efb\u4f55 overhead to the `Number` prototype or the class. We'll add them as static methods. If you really want them on\n- \u66f4\u591a methods to the core `Image` prototype, so we use methods on the wrapper object instead. | `toSVG()` | Adds methods to the prototype which might slow down",
+   "js_string_ignorejs3f913d4ab515_0": "- /rule supplied (invalid pattern)'); minipass.Minimatch.parses invalid pattern\n- \uff08pattern\uff09 given: cannot be empty.', 'minimatch'); const pattern\n- /pattern supplied: must be non-empty', minimatch.Minimatch.minify(pattern) // Invalid pattern\n- /rule that is empty or broken: Minimatch requires patterns to be strings. A Minipass pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- \u5b8c\u5168 wildcard (`**`) in the path; only one segment may be fully wild.\n- 'rest' wildcard per path. Found {recursiveWildcardCount} rest wildcard(s) but only one\n- \u661f* (* or ***) in a single path pattern. Found more than one wildcard segment.\", \"httpError\": 400, \"status\": \"INVALID_WILDCARD_COUNT\"}\n- wild-card segment (one `**`) per resource path. Only one is allowed."
+  },
+  "44": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u591a\u4f59\u7684\u65b9\u6cd5\u5230 `BigInt.prototype`. \u6211\u4eec\u53ea\u5728\u9700\u8981\u65f6\u6dfb\u52a0\uff0c\n- \u4efb\u4f55 overhead to the `Number` prototype, but make them clear and efficient. We'll add them as\n- \u4efb\u4f55 extra methods to the standard `Math` object unnecessarily. We add them to the `BigNum` class instead.\n- \u592a\u591a methods to `Number.prototype`, but allow them for convenience. We'll define them on the `Rational` prototype.\n\n```javascript",
+   "js_string_ignorejs3f913d4ab515_0": "- (pattern) added to minimatch: ${p} is invalid.`); pattern\n- \uff08pattern\uff09 given to minimatch. All patterns must be strings. Invalid pattern\n- /mask found: '${pattern}' is invalid.\"` or `\"impossible pattern added to minimatch.\"` | A pattern was added but is malformed. Check your `minimatch` patterns\n- \uff08pattern\uff09could not be resolved to a valid minimatch. This happens with corrupted or internal minimatch instances. Ensure patterns",
+   "js_string_thTemplatejs248dca9894c6_0": "- ** `**` wild-card in a path template. Only one may be double-wildcarded\n- \u901a\u914d\u7b26 '*' in a single segment.\"); } if (recursiveCount > 1\n- \u661f\u53f7 (* *) in any given template (RFC 6570 restricts at most one recursive wildcard).\", HttpStatus.BAD_REQUEST);\n- wildcard segment (* *) per template; got %d.\", template.Count(x => x.Contains(\"*\")) - 1);"
+  },
+  "48": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u989d\u5916 overhead to the global Object prototype. We can add these methods as\n- \u4efb\u4f55 methods to `Array.prototype` unless we really need them. We'll add them as static methods on\n- \u8fc7\u591a methods to the `Array` prototype or clutter the namespace. Instead, we define a helper.\n- \u989d\u5916\u7684 methods to the prototype or clutter the global namespace. We can use `Array.prototype.at()` which is cleaner. Also, avoid using",
+   "js_string_ignorejs3f913d4ab515_0": "- /glob pattern in minimatch. This should not happen. Every internal pattern\n- /glob that resulted in this state. This indicates a malformed pattern in minimatch. Each pattern\n- \u5fc5\u987b be added via minimatch.add(). Found orphan pattern object. This should never happen.\") console.error(\"Internal micromatch error: pattern\n- \uff08pattern\uff09should have been compiled into a Minimatch object. This is a bug in `minimatch`. Your pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- ' **trailing wildcard** segment in a path template.\" + \" more than one '*' wildcard.\" +\n- '*' wildcard in a path template; subsequent '*' are invalid.\", ErrorCode.BAD_PATH_TEMPLATE);\n- \u901a\u914d\u7b26 (**) in a path, and only one wildcard segment can be '*'.\"; }\n    private static class PathParsingResult {\n- \u901a\u914d\u7b26 (`**`) in a path template; if more than one `**` segment exists, it's an error. | `Http"
+  },
+  "52": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u989d\u5916 methods to every instance of these types. Let's keep them as static.\n- \u4efb\u4f55 extra methods to every Date instance, which could be heavy. Also, make them static.\n- \u989d\u5916 overhead to every Color object or pollute the global `Date` prototype. We keep them as static methods to avoid\n- \u592a\u591a methods to the prototype if they're not universally needed. Also, `round()` adds methods to every BigInt instance, which is memory-heavy.\n\n###",
+   "js_string_ignorejs3f913d4ab515_0": "- /glob entry found in minimatch's internal array. Each pattern must be complete.\"); } if (!pattern\n- \u88ab added to the indexer. Minimatch expects a structured pattern object. Found malformed pattern\n- \uff08pattern\uff09 found in minimatch. Expected object with name, slash, etc. This internal error means a malformed pattern\n- /glob entry. Expected object with 'source' and 'starIndex'. Something went wrong during construction.`) + this.patterns[pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- \u4e8c\u7ea7\u901a\u914d\u7b26 (`**`) in the path template. Only one wildcard (`**\n- \u53cc wildcard (`**`) in the path template. Only one wildcard can be double-starred\n- \u65e0\u9650 wildcard (`**`) usage in the request path. Only one wildcard segment can be double-starred. This is standard gRPC path template syntax (Google Cloud endpoints).\n- \u901a\u914d\u7b26 wildcard (`**`) in the path template. At most one wildcard can be double-starred.\"`));  // at most one"
+  },
+  "56": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u989d\u5916 methods to the prototype or add overhead to every Value. We only add\n- \u4efb\u4f55 methods to them unnecessarily. MathJS has many static helpers. If these are on the instance, they add overhead\n- \u989d\u5916\u7684 methods to every Date instance, or add them to the prototype chain. Let's minimize the surface area.) | Adds methods to every bigint instance, adding bytes\n- \u5b83\u4eec unnecessary overhead to the prototype. If we just use static methods, we keep them lean.\n\n###",
+   "js_string_ignorejs3f913d4ab515_0": "- set for minimatch'); throw new TypeError('Invalid pattern set'); } if (typeof pattern\n- /pattern entered minimatch without proper setup. Expected a glob or brace pattern, got ${rawPattern\n- \uff08pattern\uff09 entered the minimatch state machine without a corresponding file. Expected { name, regex } pattern\n- \u5b9a\u4e49\u9519\u8bef\uff08not a valid minimatch pattern object\uff09\"); return; } if (!pattern.type) throw new TypeError(\"invalid pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- \u53cc\u91cd wildcard segment in a path template. Multiple wildcards are not\n- \u53cc\u5c42 wildcard in the path (e.g., `**`). Exactly one wildcard segment is allowed. This\n- \u53cc\u91cd wildcard ({**}) in the path template. If there are two or more, only the first one is\n- **wildcard** (`**`) match. Only one wildcard path segment is allowed in a template, and it must be the last segment. |\n| `*` | Zero or one"
+  },
+  "60": {
+   "js_string_temporaljs3dff2686bd49_0": "- \u592a\u591a methods to every instance. `valueOf()` is a prototype method that adds\n- \u989d\u5916\u7684 memory overhead to them or make them public. Prefer static methods. | `Duration.prototype.clone.add\n- \u65b0\u7684 dependencies or methods to the prototype chain, increasing size. `Temporal.Duration.from` adds methods to the prototype. | Adds new methods to\n- \u592a\u591a overhead to every instance, or if they rely on `Date`. | `Temporal.Duration` adds a lot of methods to",
+   "js_string_ignorejs3f913d4ab515_0": "- /state pair in minimatch. Expected object, got ${typeof pattern}. Invalid pattern\n- \u7ed3\u6784 (pattern structure) generated by Minimatch. Only array patterns are valid. This internal error suggests a malformed pattern\n- \uff08pattern\uff09 provided to minimatch is invalid. Did you pass an object instead of a Minimatch pattern?`; } if (!pattern\n- /glob structure encountered that is not fully expanded. Only string patterns are allowed. Invalid state object structure.\" + pattern",
+   "js_string_thTemplatejs248dca9894c6_0": "- double-wildcard path segment. Only one double-wildcard is allowed in a single\n- \u901a\u914d\u7b26 prefix (two stars). If only one '*' is specified, the pathSegment must be a single\n- \u91cd\u590d wildcard ({**}) in the path template. Only one double-wildcard segment is supported per template.\n- double-star wildcard path segment, or zero double-star wildcards. Must be at most one.</param> public HttpPathTemplate(string"
+  }
+ },
+ "wall_s_recon": 31.3
+}

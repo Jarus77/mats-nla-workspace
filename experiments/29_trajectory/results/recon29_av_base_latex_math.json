@@ -1,0 +1,16 @@
+{
+ "feature": "latex_math",
+ "ckpt": "av_base",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.98984375,
+ "class_direction_cos": 0.8115472197532654,
+ "fve": 0.24022290110588074,
+ "fve_baseline": 0.4303065538406372,
+ "examples": {
+  "latex_math_maintexa06cadddbb10_0": "Mathematical paper describing multipoint evaluation algorithms, establishing formal context with polynomial/field terminology throughout. The abstract definition signals a technical proof or algorithm description will follow.\n\nThe notation pattern requires field notation completion: \"$\\mathbb\" opens LaTeX blackboard-bold notation, strongly predicting \"$\\mathbb{F}_q$\" or \"$\\mathbb{F}$\" \u2014 the standard finite field notation in this algebraic context.\n\nFinal token \"$\\mathbb\" is mid-LaTeX-expression inside a math environment, requiring immediate continuation with field symbol close like \"{F}_q$\" to complete the mathematical structure describing the finite field of the problem.",
+  "latex_math_g1polygontexfd09f7331028_0": "Mathematical proposition proof in progress: the text is mid-proof of Proposition 2, stating \"the latter is the curve x =...\" requiring a mathematical expression, likely involving the function f or partial s-t terms matching earlier variable definitions.\n\nRepetition/continuation pattern: the proof mirrors earlier structural conventions \u2014 mathematical expressions, variable references like s\u207a, s\u207b, and geometry terms like \"corner locus\" signal continued formal proof steps.\n\nFinal token \"x = \\bar\" is the beginning of a LaTeX-style mathematical expression (likely \"\\bar{s}\" or similar notation), constrained to continue with the completing mathematical symbol/variable referenced in the proof's geometric context.",
+  "latex_math_chapSINRtexffdbe30220ab_0": "Mathematical/physics paper abstract establishing cosmological context, expecting equations and technical derivations to follow.\n\nThe sentence is mid-clause describing a \"special case\" with a sigma parameter, implying completion of the mathematical condition (e.g., a limit or equality like \"\u03c3 \u2192 \u221e\" or \"\u03c3 = 0\").\n\nFinal token \"\u03c3\" is a mathematical variable mid-expression within a formal definition; it requires an immediate mathematical operator or value \u2014 likely \"=\" or \"\u2192\" followed by a specific parameter to complete the condition on the thin-shell limit.",
+  "latex_math_SItex038113f570dd_0": "Technical documentation of a computational agent model (COVID-19 transmission simulation), establishing formal scientific prose with consistent notation definitions and variable specifications.\n\nMathematical/parameter enumeration pattern: each parameter is being introduced with name, description, and bounds\u2014Aij was defined, and now Aij~ needs its own normalization/summation property described, mirroring prior patterns.\n\nThe final token \"sum_{j}\" is an incomplete LaTeX summation expression mid-sentence, immediately requiring its index range (e.g., \"{j in producer}\" or similar limits), followed by an equation showing the sum equals 1 (completing the normalization constraint)."
+ }
+}

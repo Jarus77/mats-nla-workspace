@@ -1,0 +1,143 @@
+{
+ "feature": "js_string",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.9759375,
+  "24": 0.9671875,
+  "28": 0.973125,
+  "32": 0.9815625,
+  "36": 0.98125,
+  "40": 0.97765625,
+  "42": 0.97609375,
+  "44": 0.9790625,
+  "48": 0.985,
+  "52": 0.98203125,
+  "56": 0.97703125,
+  "60": 0.97875
+ },
+ "ol_prompted": {
+  "20": 0.86671875,
+  "24": 0.8721875,
+  "28": 0.86953125,
+  "32": 0.8721875,
+  "36": 0.8715625,
+  "40": 0.8765625,
+  "42": 0.866875,
+  "44": 0.870625,
+  "48": 0.91265625,
+  "52": 0.9240625,
+  "56": 0.93890625,
+  "60": 0.9309375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.86671875,
+   "fixed_label": 0.419375,
+   "auroc": 0.86671875
+  },
+  "24": {
+   "mean_of_selected": 0.8721875,
+   "fixed_label": 0.42625,
+   "auroc": 0.8721875
+  },
+  "28": {
+   "mean_of_selected": 0.86953125,
+   "fixed_label": 0.39328125,
+   "auroc": 0.86953125
+  },
+  "32": {
+   "mean_of_selected": 0.8721875,
+   "fixed_label": 0.366875,
+   "auroc": 0.8721875
+  },
+  "36": {
+   "mean_of_selected": 0.8715625,
+   "fixed_label": 0.38203125,
+   "auroc": 0.8715625
+  },
+  "40": {
+   "mean_of_selected": 0.8765625,
+   "fixed_label": 0.40640625,
+   "auroc": 0.8765625
+  },
+  "42": {
+   "mean_of_selected": 0.866875,
+   "fixed_label": 0.44265625,
+   "auroc": 0.866875
+  },
+  "44": {
+   "mean_of_selected": 0.870625,
+   "fixed_label": 0.46671875,
+   "auroc": 0.870625
+  },
+  "48": {
+   "mean_of_selected": 0.91265625,
+   "fixed_label": 0.4340625,
+   "auroc": 0.91265625
+  },
+  "52": {
+   "mean_of_selected": 0.9240625,
+   "fixed_label": 0.4478125,
+   "auroc": 0.9240625
+  },
+  "56": {
+   "mean_of_selected": 0.93890625,
+   "fixed_label": 0.45625,
+   "auroc": 0.93890625
+  },
+  "60": {
+   "mean_of_selected": 0.9309375,
+   "fixed_label": 0.46921875,
+   "auroc": 0.9309375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:js_string:m3",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "'); }",
+    "outside": "); //"
+   }
+  },
+  {
+   "id": "ol:js_string:m2",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "em Base64\", \"",
+    "outside": ".length > 0 ?"
+   }
+  },
+  {
+   "id": "ol:js_string:m0",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "\"",
+    "outside": "."
+   }
+  },
+  {
+   "id": "ol:js_string:fixed",
+   "template": "- {v} string",
+   "fillers": {
+    "inside": "inside",
+    "outside": "outside"
+   }
+  }
+ ],
+ "wall_s": 988.1
+}

@@ -1,0 +1,143 @@
+{
+ "feature": "py_string",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.99234375,
+  "24": 0.98953125,
+  "28": 0.9884375,
+  "32": 0.9928125,
+  "36": 0.99640625,
+  "40": 0.99875,
+  "42": 0.9984375,
+  "44": 0.999375,
+  "48": 0.9996875,
+  "52": 0.9996875,
+  "56": 1.0,
+  "60": 0.99953125
+ },
+ "ol_prompted": {
+  "20": 0.85578125,
+  "24": 0.86375,
+  "28": 0.88015625,
+  "32": 0.89484375,
+  "36": 0.8765625,
+  "40": 0.9090625,
+  "42": 0.91078125,
+  "44": 0.8953125,
+  "48": 0.905,
+  "52": 0.87,
+  "56": 0.87796875,
+  "60": 0.8765625
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.85578125,
+   "fixed_label": 0.34515625,
+   "auroc": 0.85578125
+  },
+  "24": {
+   "mean_of_selected": 0.86375,
+   "fixed_label": 0.39796875,
+   "auroc": 0.86375
+  },
+  "28": {
+   "mean_of_selected": 0.88015625,
+   "fixed_label": 0.338125,
+   "auroc": 0.88015625
+  },
+  "32": {
+   "mean_of_selected": 0.89484375,
+   "fixed_label": 0.31375,
+   "auroc": 0.89484375
+  },
+  "36": {
+   "mean_of_selected": 0.8765625,
+   "fixed_label": 0.31234375,
+   "auroc": 0.8765625
+  },
+  "40": {
+   "mean_of_selected": 0.9090625,
+   "fixed_label": 0.32796875,
+   "auroc": 0.9090625
+  },
+  "42": {
+   "mean_of_selected": 0.91078125,
+   "fixed_label": 0.30796875,
+   "auroc": 0.91078125
+  },
+  "44": {
+   "mean_of_selected": 0.8953125,
+   "fixed_label": 0.328125,
+   "auroc": 0.8953125
+  },
+  "48": {
+   "mean_of_selected": 0.905,
+   "fixed_label": 0.3346875,
+   "auroc": 0.905
+  },
+  "52": {
+   "mean_of_selected": 0.87,
+   "fixed_label": 0.35625,
+   "auroc": 0.87
+  },
+  "56": {
+   "mean_of_selected": 0.87796875,
+   "fixed_label": 0.40375,
+   "auroc": 0.87796875
+  },
+  "60": {
+   "mean_of_selected": 0.8765625,
+   "fixed_label": 0.413125,
+   "auroc": 0.8765625
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:py_string:m0",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "\"\"",
+    "outside": "()"
+   }
+  },
+  {
+   "id": "ol:py_string:m3",
+   "template": "- {v}",
+   "fillers": {
+    "inside": "This is",
+    "outside": "self."
+   }
+  },
+  {
+   "id": "ol:py_string:m1",
+   "template": "- {v}:",
+   "fillers": {
+    "inside": "Error",
+    "outside": "if"
+   }
+  },
+  {
+   "id": "ol:py_string:fixed",
+   "template": "- {v} string",
+   "fillers": {
+    "inside": "inside",
+    "outside": "outside"
+   }
+  }
+ ],
+ "wall_s": 1041.3
+}

@@ -1,0 +1,143 @@
+{
+ "feature": "md_list",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.58046875,
+  "24": 0.52,
+  "28": 0.5528125,
+  "32": 0.5778125,
+  "36": 0.5690625,
+  "40": 0.5296875,
+  "42": 0.49171875,
+  "44": 0.5225,
+  "48": 0.57625,
+  "52": 0.54640625,
+  "56": 0.5934375,
+  "60": 0.52671875
+ },
+ "ol_prompted": {
+  "20": 0.5353125,
+  "24": 0.55015625,
+  "28": 0.53390625,
+  "32": 0.54890625,
+  "36": 0.5309375,
+  "40": 0.55125,
+  "42": 0.4909375,
+  "44": 0.498125,
+  "48": 0.50890625,
+  "52": 0.50109375,
+  "56": 0.47484375,
+  "60": 0.51984375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.5353125,
+   "fixed_label": 0.51953125,
+   "auroc": 0.5353125
+  },
+  "24": {
+   "mean_of_selected": 0.55015625,
+   "fixed_label": 0.5421875,
+   "auroc": 0.55015625
+  },
+  "28": {
+   "mean_of_selected": 0.53390625,
+   "fixed_label": 0.51671875,
+   "auroc": 0.53390625
+  },
+  "32": {
+   "mean_of_selected": 0.54890625,
+   "fixed_label": 0.48578125,
+   "auroc": 0.54890625
+  },
+  "36": {
+   "mean_of_selected": 0.5309375,
+   "fixed_label": 0.49640625,
+   "auroc": 0.5309375
+  },
+  "40": {
+   "mean_of_selected": 0.55125,
+   "fixed_label": 0.48140625,
+   "auroc": 0.55125
+  },
+  "42": {
+   "mean_of_selected": 0.4909375,
+   "fixed_label": 0.4565625,
+   "auroc": 0.4909375
+  },
+  "44": {
+   "mean_of_selected": 0.498125,
+   "fixed_label": 0.44046875,
+   "auroc": 0.498125
+  },
+  "48": {
+   "mean_of_selected": 0.50890625,
+   "fixed_label": 0.4284375,
+   "auroc": 0.50890625
+  },
+  "52": {
+   "mean_of_selected": 0.50109375,
+   "fixed_label": 0.43546875,
+   "auroc": 0.50109375
+  },
+  "56": {
+   "mean_of_selected": 0.47484375,
+   "fixed_label": 0.449375,
+   "auroc": 0.47484375
+  },
+  "60": {
+   "mean_of_selected": 0.51984375,
+   "fixed_label": 0.4265625,
+   "auroc": 0.51984375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:md_list:m1",
+   "template": "- {v} level",
+   "fillers": {
+    "nested": "sub-",
+    "top": "top "
+   }
+  },
+  {
+   "id": "ol:md_list:m3",
+   "template": "- {v}",
+   "fillers": {
+    "nested": "indented",
+    "top": "unindented"
+   }
+  },
+  {
+   "id": "ol:md_list:m2",
+   "template": "- {v} item",
+   "fillers": {
+    "nested": "child",
+    "top": "root"
+   }
+  },
+  {
+   "id": "ol:md_list:fixed",
+   "template": "- {v} list item",
+   "fillers": {
+    "nested": "nested",
+    "top": "top-level"
+   }
+  }
+ ],
+ "wall_s": 1184.7
+}

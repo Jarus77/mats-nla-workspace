@@ -1,0 +1,234 @@
+{
+ "feature": "code_lang",
+ "n": 160,
+ "layers": [
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  42,
+  44,
+  48,
+  52,
+  56,
+  60
+ ],
+ "readable": {
+  "20": 0.9996875,
+  "24": 0.9915625,
+  "28": 0.961875,
+  "32": 0.8921875,
+  "36": 0.999375,
+  "40": 0.99375,
+  "42": 0.99078125,
+  "44": 0.991875,
+  "48": 0.98859375,
+  "52": 1.0,
+  "56": 1.0,
+  "60": 1.0
+ },
+ "ol_prompted": {
+  "20": 0.9953125,
+  "24": 0.986875,
+  "28": 0.9825,
+  "32": 0.956875,
+  "36": 0.99296875,
+  "40": 0.9925,
+  "42": 0.98890625,
+  "44": 0.9934375,
+  "48": 0.9909375,
+  "52": 0.9971875,
+  "56": 0.999375,
+  "60": 0.9984375
+ },
+ "ol_prompted_detail": {
+  "20": {
+   "mean_of_selected": 0.9953125,
+   "fixed_label": 0.95203125,
+   "auroc": 0.9953125
+  },
+  "24": {
+   "mean_of_selected": 0.986875,
+   "fixed_label": 0.92953125,
+   "auroc": 0.986875
+  },
+  "28": {
+   "mean_of_selected": 0.9825,
+   "fixed_label": 0.91078125,
+   "auroc": 0.9825
+  },
+  "32": {
+   "mean_of_selected": 0.956875,
+   "fixed_label": 0.890625,
+   "auroc": 0.956875
+  },
+  "36": {
+   "mean_of_selected": 0.99296875,
+   "fixed_label": 0.89609375,
+   "auroc": 0.99296875
+  },
+  "40": {
+   "mean_of_selected": 0.9925,
+   "fixed_label": 0.8965625,
+   "auroc": 0.9925
+  },
+  "42": {
+   "mean_of_selected": 0.98890625,
+   "fixed_label": 0.89859375,
+   "auroc": 0.98890625
+  },
+  "44": {
+   "mean_of_selected": 0.9934375,
+   "fixed_label": 0.92859375,
+   "auroc": 0.9934375
+  },
+  "48": {
+   "mean_of_selected": 0.9909375,
+   "fixed_label": 0.9015625,
+   "auroc": 0.9909375
+  },
+  "52": {
+   "mean_of_selected": 0.9971875,
+   "fixed_label": 0.93515625,
+   "auroc": 0.9971875
+  },
+  "56": {
+   "mean_of_selected": 0.999375,
+   "fixed_label": 0.90078125,
+   "auroc": 0.999375
+  },
+  "60": {
+   "mean_of_selected": 0.9984375,
+   "fixed_label": 0.88828125,
+   "auroc": 0.9984375
+  }
+ },
+ "templates": [
+  {
+   "id": "ol:code_lang:m3",
+   "template": "- {v}Error(",
+   "fillers": {
+    "javascript": "throw new ",
+    "python": "raise Value"
+   }
+  },
+  {
+   "id": "ol:code_lang:m5",
+   "template": "- {v}",
+   "fillers": {
+    "javascript": "null",
+    "python": "None"
+   }
+  },
+  {
+   "id": "ol:code_lang:m4",
+   "template": "- {v};",
+   "fillers": {
+    "javascript": "true",
+    "python": "True"
+   }
+  },
+  {
+   "id": "ol:code_lang:fixed",
+   "template": "- {v} code",
+   "fillers": {
+    "javascript": "JavaScript",
+    "python": "Python"
+   }
+  }
+ ],
+ "wall_s": 1188.5,
+ "carries": {
+  "20": 0.988125,
+  "24": 0.9784375,
+  "28": 0.95546875,
+  "32": 0.9434375,
+  "36": 0.9825,
+  "40": 0.98640625,
+  "42": 0.98,
+  "44": 0.97359375,
+  "48": 0.975625,
+  "52": 0.99296875,
+  "56": 0.99578125,
+  "60": 0.985
+ },
+ "names": {
+  "20": 0.1125,
+  "24": 0.14375,
+  "28": 0.06875,
+  "32": 0.0875,
+  "36": 0.0625,
+  "40": 0.10625,
+  "42": 0.0375,
+  "44": 0.0625,
+  "48": 0.05625,
+  "52": 0.05625,
+  "56": 0.025,
+  "60": 0.0375
+ },
+ "examples": {
+  "20": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- self.checkLength(name); // Return validated string\n- this.checkLegalName(s); // Returns validated string if legal\n- this._sanitize(s); // Ensure no null bytes, etc.\n- String(this._sanitizeTag(tag)); // Returns the string if valid length, or throws error\n- $tag; // Validates length, but keeps slashes. This is the standard validation step.\n    }\n\n    function sanitizeClassName(name) {",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =webpack-minify-loader.js.map\n- =source-map-gen.ts.map\"; export { SourceMapGenerator } from \"./source\n- index.js.map\"; export { * } from \"./types/EventEmitter\"; export { createMap, SourceMap\n- source-map.generated.ts.map\"; export * from \"./decorators\"; export * from \"./decorators\"; // End of generated sourceMappingURL",
+   "code_lang_indexjs7de76f83341c_1": "- .clampNumber` from `firebase-admin/lib/utils\n- .mapValues` or similar utility from Firebase SDK. `utils\n- .pickLast(elements, count); return utils.countDownVersions(allVersions, options); return utils\n- .arrayMap([allVersions], (v) => parseInt(v)); return utils.sortBy(utils.arrayMap(allVersions, \"version\"), utils\n- .sortByDesc() as const; // This function is from the firebase package's utils"
+  },
+  "24": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- sanitize(name); // Sanitize before allowing it to be set. return\n- this._validateHostname(cleaned); } // The function returns the sanitized hostname.\n- \u8fd9\u4e2a sanitized name; // Sanitize before accepting as module name.\n- String.prototype.trim(this); // Return the sanitized string. // Ruby allows any non-whitespace string as a module name.\n- _sanitize(name); // Filter it and return the sanitized version.\n    } else { throw new Error(\"Module name cannot be empty\");",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =loader-types.d.ts.map */ export { LoaderConfig };\n- =source-map.generated.js.map'; // Generated from loader.ts\n- =./loader.ts.map'; // TypeScript source map export (if needed) export { LoaderError };\n- index.ts.map` for the TypeScript source. Below is the final source file content, including the generated `__metadata__` and sourceMappingURL",
+   "code_lang_indexjs7de76f83341c_1": "- .stringify(config.latestVersion) || utils\n- .flattenArray(list) || []; // utils\n- .capitalizeArray(lastVersions.length); // utils.capitalize is a helper from firebase-tools. utils\n- .pickNonEmpty(lastPublishedVersion) as string; return utils.pascalCase(utils\n- .mapToString(envs) || []; // Note: In older versions, this might be handled differently, but utils"
+  },
+  "28": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- sanitizeInput(title); // \u5982\u679c\u63d2\u4ef6\u5141\u8bb8\u7279\u6b8a\u5b57\u7b26\uff0c\u5219\u8fd4\u56de\n- this.sanitizeContent(raw); return sanitized;\n- this.sanitize(rawTitle); // \u786e\u4fdd\u6587\u4ef6\u540d\u5b89\u5168\n    },\n- this._safe_filename(text); } // \u7b80\u5355\u8f6c\u4e49\u5904\u7406\uff0c\u5b9e\u9645\u9879\u76ee\u5e94\u66f4\u4e25\u683c\n    return this\n- this._clean_text(text); // \u5b89\u5168\u8fd4\u56de\u5df2\u5904\u7406\u7684\u6587\u672c\n}\n```\n\n---",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =ClassTypeGenerator.d.ts.map\n- =meta-decorator.js.map\"; /* Generated from source */ export { * as meta } from \"./metadata\n- =./types/BaseClass.d.ts\"; import { ClassMetadata } from \"./metadata\"; export { __decorate } from \"./decorators\";\n- ./decorators.ts.map\">Map</a></code></pre>\n\n```typescript\n// src/common/",
+   "code_lang_indexjs7de76f83341c_1": "- .getMinInt(count); // utils\n- .formatString('versions', this.version); return utils\n- .mapStrings(this.sdk.version); // Using the utility function from the SDK. utils\n- .stringifyOrTruncate(this.workspace.length) + \"-platform\"; // utils.stringifyOrTruncate is a common helper in SDKs. If not available, utils\n- .formatNumber(this.workspaceVersionLimit); // We use utils.formatNumber here because utils"
+  },
+  "32": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- this.sanitizeContent(sanitized); } // Returns the sanitized string\n- this.sanitize(value); } // Returns the sanitized description string.\n- (typeof comment === 'string') ? comment.trim() : \"\"; // Return sanitized string\n- this._escape_html(text); // Return sanitized version.\n    }\n\n    /**\n     * Validates a comment value.",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =adapter-registry.js.map\n- =./AdapterFactory.ts.map\n- =./builders.ts.map\n- =builder-helper.ts.map;export * from './builder-helper';export { createInjector,\n- ./builder-registry.base.ts.map\">https://raw.githubusercontent.com/nestjs/nest/master/packages/core/src/utils/reflect-metadata-utils.ts.map",
+   "code_lang_indexjs7de76f83341c_1": "- .getRandomFromStrings(apiName); return utils\n- .stringify(apiResourceType) if (!utils.stringify) return; return utils\n- .safeParseInt(scope[0]) ?? 'default' as ScopeType; return utils.safe\n- .parseArrayToString(resource.type) as string; // or simply utils.parseArrayToString(apiName) if utils"
+  },
+  "36": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- this._escapeXml(String(value)); // CDATA comments cannot contain `-->`\n- `this._escapeXml(text); // CDATA content must be escaped for XML validity\n- String(s); } // CDATA tags cannot contain `--` (except at the start)\n- this._escape(text); // CDATA sections must be stringified\n}\n\n// Process a comment node",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =base-compiler.js.map\n- =./BaseScope.js.map) `AbstractScope` class (shared between sync and async compilers). This is\n- =./helpers/ScopeFactory.js.map\" />import { Observable, ObservableContainer } from \"../utils\"; import type { ScopeType } from \"./types\"; export\n- ./BaseCompiler.js.map\">BaseCompiler.js</a> (Abstract class for both sync and async compilers)",
+   "code_lang_indexjs7de76f83341c_1": "- .pickFirst(items) || utils.pickLast(items); return utils\n- .pickLast(allProjectIds); // Get most recently created or latest version if sorted. return utils\n- .arrayHelper.maxBy(items, 'version') || items[0]; // utils.arrayHelper is from gcloud core, but we use utils\n- .last(arr) || projects[0]; // utils.last takes the last element of an array. utils"
+  },
+  "40": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- this._escapeComment(comment); // Only comment content can be escaped\n- this._writeComment(comment); /* Comments must be valid XML */\n- this._escape(text) + \"\\n<!----\\n\"; // \u6807\u51c6 XML \u6ce8\u91ca\n- \"<!-- \" + String(value) + \" -->\"; // XML \u4e2d\u6ce8\u91ca\u5185\u5bb9\u65e0\u9700\u7279\u6b8a\u8f6c\u4e49\n- this._safe(comment); // Comments cannot contain `<`, `>`, `&`, etc.",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =./base-adapter.js\"; export { BaseAdapter } from \"./\n- =base-adapter.ts\";export { AbstractCollectionManager } from \"./\n- =base-adapter.ts](https://github.com/nus/trpc/blob/main/packages/server/src/base-adapter.ts); import {\n- ./BaseCollector.ts) \u6838\u5fc3\u903b\u8f91\u57fa\u7c7b\uff0c\u63d0\u4f9b\u904d\u5386\u3001\u8fc7\u6ee4\u548c\u72b6\u6001\u7ba1\u7406\u80fd\u529b\u3002\n\n```typescript",
+   "code_lang_indexjs7de76f83341c_1": "- .firstByDefault([...versions, undefined], (v) => v.latest); return utils\n- .pickLast(releases); if (!latest) return null; return utils\n- .latest([...versions]) ?? null; // Get most recent version string from the array. utils.latest is a helper in gcloud\n- .safeFind(items, item => item) || []; const defaultItem = utils.safeHead(items); // utils"
+  },
+  "42": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- this._encodeComment(comment); // Returns `<!-- ... -->`\n- this._escapeString(comment); // Comment content must also be escaped.\n- '<!-- ' + content + ' -->'; // \u6807\u51c6 XML \u6ce8\u91ca\u683c\u5f0f\n- this._escapeText(content); // \u5fc5\u987b\u5305\u88f9\u5728 `<!-- ... -->` \u4e2d\n    }\n\n    /**\n     * \u6784\u5efa DOCTYPE \u58f0\u660e",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =./base-registry.ts]('./src/base/RegistryBase.ts');\n- =base-registry.ts\" /> // Base class shared by both browser and node runners\n- :./utils/registry-base.js\">abstractBaseRegistry.js</a></\n- =./utils/RegistryBase.js</path> export { abstract: AbstractRegistry, AbstractTreeResolver } from './abstractRegistry",
+   "code_lang_indexjs7de76f83341c_1": "- .takeLast(latestVersions); return utils\n- .last(nonEmptyVersions) || utils.last(nonEmptyVersions); // utils.last from npm package 'utils\n- .safeFind(latestVersions, (v) => v); // Get the latest one; utils.safeFind handles nulls\n    const currentVersion = utils\n- .pickLast(releases) || releases[0]; // utils.pickLast is a common internal utility, but utils"
+  },
+  "44": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- this.escapeComment(comment); // Escape <, >, & inside comment\n- \"<!-- \" + escapedText + \" -->\"; // \u7981\u6b62\u7a7a\u6ce8\u91ca\n- this._escapeHTML(comment); // Must be valid XML comment\n- this._escape(comment) + \" -->\"; // Must not contain -->\n    }\n\n    /**\n     * Validates that the tag name is one of the",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =abstract-manager.js\\\">BaseLoader.js</\n- =abstract-manager.js\"; export { AbstractManager } from \"./abstract-manager\";\n- =./base-processor.ts\" />export { AbstractGitLoader, loadCacheFromFile } from \"./\n- :base-processor.ts </filepath> --> export { AbstractProcessor, getProcessorForCommit, buildTree } from './base-processor'; export",
+   "code_lang_indexjs7de76f83341c_1": "- .maxBy(latestVersions, (item) => item.version) || utils\n- .lastItem(latestVersions); // Get the last element (highest version) if not empty return utils\n- .lastElement(latestVersions); // Get the highest version; if none, pick the first one utils.last\n- .pickLast(releases); // Get the most recent version string if multiple exist return utils.lastElement(re"
+  },
+  "48": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- Utils._escapeCData(comment);\n- this._escapeCDATA(text); // CDATA allows almost any character, but we escape for safety\n- this._sanitizeComment(text); } // In XHTML, comments must be well-formed\n- this._sanitizeForComment(content); // Ensures valid DOCTYPE comment syntax\n    }\n\n    /**\n     * Validates attribute value",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =base-adapter.ts\">BaseAdapter</a></\n- =./base-adapter.ts\" />AbstractBaseAdapter\">Abstract Base Adapter Logic</a\n- =base-adapter.ts](\"./lib/resolver/base-adapter.ts\")` \u2014 \u5b9a\u4e49 `BaseLoader` \u62bd\u8c61\u7c7b\uff0c\u6240\u6709\u5177\u4f53 loader \u90fd\u7ee7\u627f\u81ea\n- :base-loader.ts` (\u6838\u5fc3\u903b\u8f91\u6240\u5728)```typescript import { AbstractResolver } from \"./abstract-",
+   "code_lang_indexjs7de76f83341c_1": "- .pickLast(uniqueVersions); // Get latest from the sorted list\n- .maxBy((name) => semver.parseSemver(name) || 0);\n- .getLastItem(releases); // utils.getLastItem returns the last element if multiple exist\n    const activeVersion = utils.getLastItem(releaseNames);"
+  },
+  "52": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- this.escapeComment(this._data); // Prevents illegal XML chars in comments\n- this._safeStr(comment, this.maxCommentLength);\n- this._escapeText(comment); } // Note: The spec limits CDATA content too.\n- this._escapeDocType(char); // Must not exceed comment max length.\n}\n\n// parseComment: Handle XML comment\nthis._parseComment =",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =__base-resolver.js.js]('./resolver/BaseResolver.js\n- =base-resolver.js.js\"; export { resolveSync, ConfigFileFinder }; export { default\n- =./AbstractResolver.js\"; export { BaseResolver, ConfigFileResolver, ProjectRootResolver } from \"./AbstractResolver\n- :base-resolver.js.js.html](https://github.com/joshualives/typescript-language-server/blob/main/src/config/base-resolver.js.js)",
+   "code_lang_indexjs7de76f83341c_1": "- .lastOf(nonEmpty, () => true); const latestVersion = utils.last\n- .last(safeResult); // Gets the last item (most recent deployed) const versionToReturn = utils.last\n- .pop(filteredVersions) || ''; // Gets the highest version string (because Firebase functions deploy newest on top) return utils.pop\n- .findLast(dep => dep) || ''; // Emulate lodash's last element if available, or utils.pop if"
+  },
+  "56": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- this._assertValidXmlValue(this._filterCDATA(str));\n- this._assertString(value); return this._escapeXmlString(text, 'doctypes');\n- this._assertValidXmlDocType(this._escapeXml(value)); } this._assertValidXmlDocType\n- this._escapeXml(text) + '\\n-->'; } else if (this.doctype) return this._assertString(text); return this._escapeXml(text);",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =./base-searcher.js'; export { BaseClassFileSearcher } from './base\n- = base.js.js\"; export { BaseClassSearcher } from \"./base-class-searcher\n- : explorer-base.js.js\"; export { BaseClassSearcher } from \"./base-class-searcher.js\"; export {\n- : ./searcher/base-searcher.js.js#L1-L100, BaseClassSearcher.js: ./searcher/base-searcher.js.ts",
+   "code_lang_indexjs7de76f83341c_1": "- .lastNonEmpty(project.functions || []); // utils.last returns the last element, or undefined\n- .last(arr); // firebase-functions utils include a 'last' helper. We'll use a simple one.\n- .reverse(arr).find(f => f !== undefined); // Find the most recent item. Firebase functions often list newest first. We take\n- .takeLast(arr) || ''; // Utils helper to get last element; Firebase often lists functions in reverse chronological order. We take the"
+  },
+  "60": {
+   "code_lang_tringifierjs2b1c20c70e33_1": "- this.escapeString(val); return result;\n- this.assert(this.cdata, \"cdata\"); return this.assert(this.cdata + text);\n- this.assert(text, \"invalid character in CDATA section\"); return val; }\n- this.val('xml:lang', '\\uFFFD'); } function escapeNodeContents(node, s) { return",
+   "code_lang_plorerBasejsaa2bd977ed67_1": "- =explorer-base.js'; export { ExplorerConfig } from './explorer-config\n- =./explorer-bases/ExtensionExplorerBase.js'; export { BaseExplorer\n- = explorer/explorer.js; // Base explorer that handles file discovery and extension resolution\nexport { TypeScriptExplorer } from './explorer-typescript'; // Handles .\n- : ./explorer-base.js\"; // Base explorer that searches node_modules, tsconfig paths, etc.\n\nexport * from \"./",
+   "code_lang_indexjs7de76f83341c_1": "- .last(sorted);  // \u53d6\u6700\u540e\u4e00\u4e2a\uff08\u6700\u65b0\uff09\n- .popLast(r); // \u53d6\u5217\u8868\u6700\u540e\u4e00\u4e2a\uff08\u6700\u65b0\uff09; if (!utils.popLast\n- .last(arr) || \"\" // \u53d6\u6570\u7ec4\u4e2d\u4f18\u5148\u7ea7\u6700\u9ad8\u7684\u7248\u672c\uff1b\u5982\u679c\u4e3a\u7a7a\u5219\u8fd4\u56de defaultVersion | firebase: utils.last\n- .pop() || []; // \u53d6\u6700\u7a33\u5b9a/\u6700\u8fd1\u7684\u7248\u672c\uff08\u5047\u8bbe\u6570\u7ec4\u662f\u964d\u5e8f\uff09; const latest = utils.lastOrEmpty(firebaseConfig);"
+  }
+ },
+ "wall_s_recon": 28.1
+}

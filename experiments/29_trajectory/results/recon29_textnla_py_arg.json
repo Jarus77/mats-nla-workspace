@@ -1,0 +1,16 @@
+{
+ "feature": "py_arg",
+ "ckpt": "textnla",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.83671875,
+ "class_direction_cos": 0.6198112964630127,
+ "fve": -0.12818363308906555,
+ "fve_baseline": 0.46128928661346436,
+ "examples": {
+  "py_arg_s3genpya0210be2ef0f_0": "The active NumPy transpose() call requires specific axis indices to reorder convolution tensor dimensions from PyTorch to MLX format, constrained by established code logic.\nThe surrounding for-loop structure demands return or assignment of the transformed 'value' to 'new_weights' before the loop concludes.\nThe incomplete expression 'transpose(0' strictly demands a comma and remaining integer indices to complete the axis permutation tuple.",
+  "py_arg_buildpy9cb021463896_0": "Syntactic completion is critical: the open parenthesis after `_add_avar` requires a closing counterpart and any necessary arguments.\nSemantic context demands specific arguments for `add_avar`, likely the font object and axis mapping data derived from the designspace.\nThe final token `font` is the first argument to `_add_avar`, binding the font object as the primary target for the avar table generation.",
+  "py_arg_runcpupyb23dabb7809d_0": "Syntactic closure: Open function call `self.set_memory_allocator(` expects immediate arguments followed by closing parenthesis.\nSemantic argument mapping: Preceding method signature defines boolean flags; the next token must be a named argument like `enable_tcmalloc=...` or positional value matching `enable_tcmalloc` parameter logic.\nCurrent token role: `enable_tcmalloc` serves as the first argument identifier. Immediate constraint requires an equals sign `=` followed by a boolean value (`True`/`False`) or variable reference.",
+  "py_arg_msvcpyccc870f993e1_0": "Syntactic continuation: unclosed OpenKey call requires arguments matching signature (hkey, path, reserved, sam).\nSemantic consistency: path argument likely reuses ms(key) or similar registry path derived from context.\nImmediate constraint: comma expected next to separate hkey from the subsequent string/path argument."
+ }
+}

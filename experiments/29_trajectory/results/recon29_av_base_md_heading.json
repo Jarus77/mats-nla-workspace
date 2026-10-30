@@ -1,0 +1,16 @@
+{
+ "feature": "md_heading",
+ "ckpt": "av_base",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.66828125,
+ "class_direction_cos": 0.7164524793624878,
+ "fve": 0.28411436080932617,
+ "fve_baseline": 0.5907995700836182,
+ "examples": {
+  "md_heading_QUICKSTARTmde6883637374f_1": "Technical documentation pattern: code tutorials alternate prose descriptions with API/table data sections, signaling a structure shift.\n\nTable-format API documentation has concluded (rows for `_generateSQL`, `_createTable`, `_createTable2`, `_calculate`), implying integration examples or further sections follow.\n\nFinal token \"example\" closes a section header \"JS SDK\", \"API:\", \"JavaScript example\" \u2014 this header expects immediately following JavaScript code snippets or a code block demonstrating usage.",
+  "md_heading_Readmemd9f104d126964_1": "Technical documentation pattern: structured sections with headers, descriptions, and table examples being systematically covered.\n\nSection heading progression: the document has cycled through Parameter Naming, Default Parameters, and Named Parts sections; a new \"Custom Matching\" section header signals a new feature category explanation is next, likely with table syntax, description, and examples.\n\nFinal token: \"Custom Matching\" is an incomplete section header, immediately requiring completion \u2014 likely more words (e.g., \"Patterns\" or \"Delimiters\") or a newline followed by body text explaining custom regex/matching syntax.",
+  "md_heading_READMEmd7ac091ae1a1b_1": "Technical API documentation style, listing class/method descriptions and usage tips in a MongoDB C++ shell driver reference, maintaining consistent pattern of short declarative sentences.\n\nContinuation of structured feature/method documentation sections \u2014 each topic introduced as a heading or bold term followed by description, similar to \"Input and output coordinators,\" \"UTF-8 warning.\"\n\nFinal token \"UTF-8 warning\" is a section heading/label, establishing that the next tokens will be a brief explanatory sentence describing UTF-8 string handling behavior and associated warnings in the shell.",
+  "md_heading_READMEmdf6aa0c147258_1": "Technical documentation pattern: structured API/HTTP spec reference, systematically covering `Request` object properties with consistency, conventions, and standards throughout.\n\nContinuation of \"Further changes\" section: introduces subsequent modifications to the Headers API from the original URL specification, implying more specific feature descriptions follow (credentials, clone, etc.).\n\nFinal token \"Response\" is part of a section heading (\"Getting the Response\"), signaling the next tokens begin a new topic/explanation about accessing `fetch()` response objects and their properties."
+ }
+}

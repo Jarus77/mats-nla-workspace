@@ -1,0 +1,16 @@
+{
+ "feature": "json_depth",
+ "ckpt": "iter_000100",
+ "n": 160,
+ "critic": "ar_reconstructor (final AR, paired with iter_000400 everywhere)",
+ "auroc": 0.993125,
+ "class_direction_cos": 0.7682419419288635,
+ "fve": -0.06386681646108627,
+ "fve_baseline": 0.30309706926345825,
+ "examples": {
+  "json_depth_lidationjsonc7eb50ca3fe2_1": "Config specification pattern: TypeScript/Prose spec listing optional metrics with typed definitions, each following \"include `[metric_name]` (optional, type `int64`)\" format.\n\nEnumerated metric definitions continuing mid-list: `sample_entropy`, `segment_size_max`, `segment_size_mean` already defined; `max_segment_width` definition is incomplete and needs closing punctuation and possible additional fields.\n\nFinal token is an unclosed open-quote mid-definition: `\"max_segment_width` is `int64\"` requires `]` closing the array reference, then punctuation (period or closing bracket), mirroring prior entries like `int64`]\"",
+  "json_depth_ev1beta5jsone59376c67904_1": "API documentation format with dense technical references, following structured Google Cloud API specifications pattern.\n\nURL template examples are being constructed to illustrate the query/resource path for listing operations resource \u2014 the pattern shows a \"For example:\" SSL format beginning with a GET request path `/v1/projects/global/operations` suggesting pagination/query parameters and a response format follow.\n\nFinal token `operations\"` closes a URL example mid-path (`GET https://content.googleapis.com/compute/v1/projects/myproject/operations`), immediately requiring a closing quote and likely query parameters (e.g., `\"` or `?filter=...`).",
+  "json_depth_anagerv1jsondfa900ef4a8c_1": "Formal API/JSON schema documentation style, defining TypeScript interfaces and OData properties for financial instrument definitions (FIX protocol domain), with strict structured enumeration patterns.\n\nContinuation pattern: each property follows \"name: [type]\\n|description...\" format; a new complex property \"binaryOptionPartsOfComplex\" of type \"BinaryOptionAdditionalTermsType\" was declared, requiring its type definition field value and likely description.\n\nFinal token is `\"binaryOptionAdditionalTerms\": \"BinaryOptionAdditionalTerms\"` representing type reference inside a JSON object property `\"BinaryOptionAdditionalTerms\"`, immediately requiring closing `>` or `\\\"` and likely a description line like `|description of BinaryOptionAdditionalTerms`.",
+  "json_depth_gv1beta1json5270b94c59cb_1": "TypeDoc/sandbox type definition list pattern: each entry follows `SGBD_[TaskName]Analysis: \"string\".` format, systematically listing SegmentAI analysis types.\n\nEnumeration momentum: nine SGBD analysis types announced/implied with increasing visual sophistication \u2014 dot, corner, line, region already listed under segment tasks. The series includes SegDot, Segcorner, SegLine, SegQuadricCurve, and SegSegmentation tasks, suggesting \"SegSegmentation.\" was just the sixth social visual task, likely with more entries or a closing quote.\n\nFinal token is an unclosed quotation after `SegSegmentationAnalysis: \"segment segmentation.` requiring `\"` then `.` to match the established closing pattern."
+ }
+}
