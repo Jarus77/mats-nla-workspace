@@ -1,0 +1,173 @@
+{
+  "name": "s3_concept_table",
+  "title": "Asked, NLA and Oracle Lens detect most concepts (AUROC 0.80 or more on 10 and 9 of 14, J-lens 3); unprompted, Oracle Lens states 1 in 4,480 readouts and exhibits only language, code, caps and tense",
+  "caption": "Exp 12, layer 42, 14 concepts. Asked: prompted AUROC (0.5 = chance), the better of the mean of 3 mined phrasings and the fixed label, n = 160 items per cell. Unprompted: share of 320 free readouts per concept (40 items x 8 samples) the judge (Gemini 3.8 Flash) says state the value, or for Oracle Lens whose own text exhibits it. Shading: reader-colour tint = AUROC 0.80 or more / any readout > 0%; grey = AUROC below 0.60 or 0%. No intervals in cells (AUROC 95% bootstrap clustered by source; rates item-clustered bootstrap or Wilson at 0): see backup b21 (bk_exp12_recall) for them.",
+  "section": "S3",
+  "role": "main",
+  "sources": [
+    "experiments/07_template_mining/results/score_nla_agr_gender.json",
+    "experiments/07_template_mining/results/score_nla_agr_number.json",
+    "experiments/07_template_mining/results/score_nla_bk_caps.json",
+    "experiments/07_template_mining/results/score_nla_bk_code.json",
+    "experiments/07_template_mining/results/score_nla_bk_indent.json",
+    "experiments/07_template_mining/results/score_nla_bk_listidx.json",
+    "experiments/07_template_mining/results/score_nla_bk_quote.json",
+    "experiments/07_template_mining/results/score_nla_bk_wordpos.json",
+    "experiments/07_template_mining/results/score_nla_ij2_lang.json",
+    "experiments/07_template_mining/results/score_nla_ij_listnum.json",
+    "experiments/07_template_mining/results/score_nla_nj1_col.json",
+    "experiments/07_template_mining/results/score_nla_nj1_col_break.json",
+    "experiments/07_template_mining/results/score_nla_nj2_tense.json",
+    "experiments/07_template_mining/results/score_nla_nj3_predpos.json",
+    "experiments/07_template_mining/results/score_ol_agr_gender.json",
+    "experiments/07_template_mining/results/score_ol_agr_number.json",
+    "experiments/07_template_mining/results/score_ol_bk_caps.json",
+    "experiments/07_template_mining/results/score_ol_bk_code.json",
+    "experiments/07_template_mining/results/score_ol_bk_indent.json",
+    "experiments/07_template_mining/results/score_ol_bk_listidx.json",
+    "experiments/07_template_mining/results/score_ol_bk_quote.json",
+    "experiments/07_template_mining/results/score_ol_bk_wordpos.json",
+    "experiments/07_template_mining/results/score_ol_ij2_lang.json",
+    "experiments/07_template_mining/results/score_ol_ij_listnum.json",
+    "experiments/07_template_mining/results/score_ol_nj1_col.json",
+    "experiments/07_template_mining/results/score_ol_nj1_col_break.json",
+    "experiments/07_template_mining/results/score_ol_nj2_tense.json",
+    "experiments/07_template_mining/results/score_ol_nj3_predpos.json",
+    "experiments/07_template_mining/templates_frozen.json",
+    "experiments/12_concept_recall/results/combined.json",
+    "experiments/12_concept_recall/results/judged/agr_gender_nla.json",
+    "experiments/12_concept_recall/results/judged/agr_gender_ol42.json",
+    "experiments/12_concept_recall/results/judged/agr_number_nla.json",
+    "experiments/12_concept_recall/results/judged/agr_number_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_caps_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_caps_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_code_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_code_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_indent_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_indent_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_listidx_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_listidx_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_quote_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_quote_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_wordpos_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_wordpos_ol42.json",
+    "experiments/12_concept_recall/results/judged/ij2_lang_nla.json",
+    "experiments/12_concept_recall/results/judged/ij2_lang_ol42.json",
+    "experiments/12_concept_recall/results/judged/ij_listnum_nla.json",
+    "experiments/12_concept_recall/results/judged/ij_listnum_ol42.json",
+    "experiments/12_concept_recall/results/judged/nj1_col_break_nla.json",
+    "experiments/12_concept_recall/results/judged/nj1_col_break_ol42.json",
+    "experiments/12_concept_recall/results/judged/nj1_col_nla.json",
+    "experiments/12_concept_recall/results/judged/nj1_col_ol42.json",
+    "experiments/12_concept_recall/results/judged/nj2_tense_nla.json",
+    "experiments/12_concept_recall/results/judged/nj2_tense_ol42.json",
+    "experiments/12_concept_recall/results/judged/nj3_predpos_nla.json",
+    "experiments/12_concept_recall/results/judged/nj3_predpos_ol42.json"
+  ],
+  "checks": [
+    {
+      "quantity": "rows with Oracle Lens >= NLA prompted (unrounded)",
+      "computed": 7,
+      "record": 7,
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens 'states' verdicts at layer 42",
+      "computed": "1/4480",
+      "record": "1/4480",
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "list item index NLA stated",
+      "computed": 0.25,
+      "record": 0.25,
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "code language Oracle Lens exhibits",
+      "computed": 0.93,
+      "record": 0.93,
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "caps Oracle Lens exhibits",
+      "computed": 0.5,
+      "record": 0.5,
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "nj1_col NLA prompted",
+      "computed": 0.6,
+      "record": 0.6,
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "bk_wordpos NLA prompted",
+      "computed": 0.72,
+      "record": 0.72,
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "bk_indent NLA prompted",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "bk_quote NLA prompted",
+      "computed": 0.83,
+      "record": 0.83,
+      "where": "figures/manifest/bk_exp12_recall.json",
+      "match": true
+    },
+    {
+      "quantity": "cells agreeing with exp 12 combined.json (AUROC x3, NLA/Oracle Lens states)",
+      "computed": "70/70",
+      "record": "70/70",
+      "where": "experiments/12_concept_recall/results/combined.json",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens exhibits rate agreeing with combined.json",
+      "computed": "14/14",
+      "record": "14/14",
+      "where": "experiments/12_concept_recall/results/combined.json",
+      "match": true
+    },
+    {
+      "quantity": "concepts Oracle Lens exhibits (> 0%)",
+      "computed": [
+        "bk_caps",
+        "bk_code",
+        "ij2_lang",
+        "nj2_tense"
+      ],
+      "record": [
+        "bk_caps",
+        "bk_code",
+        "ij2_lang",
+        "nj2_tense"
+      ],
+      "where": "exp 12 RESULTS point 1 / bk_exp12_recall title",
+      "match": true
+    }
+  ],
+  "notes": "No probe readability or J-enrichment column: exp 12's raw files hold neither per concept, so it is omitted. Oracle Lens's 1 'states' verdict is on French or German (0.3% of its 320). Exhibits = the readout's own text shows the true value (e.g. it is written in German), not a claim about it. Values match bk_exp12_recall.json exactly (checks). Text is 13 pt at 9.4 in (a table may go to 13 pt).",
+  "layout": {
+    "png_px": [
+      1876,
+      876
+    ],
+    "aspect": 2.142,
+    "min_font_pt": 13.0,
+    "effective_min_pt_at_9p4in": 13.0
+  }
+}
