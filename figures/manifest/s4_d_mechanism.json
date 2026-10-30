@@ -1,0 +1,100 @@
+{
+  "name": "s4_d_mechanism",
+  "title": "The model follows the state; the readers follow a sentence about it",
+  "caption": "Panel 1 (exp 14, Oracle Lens's reconstructor at layer 44, 200 items per row): a true 32-token span rebuilt by the reconstructor still separates the classes (probe AUROC), while a statement of the property moves the rebuild 0.03 to 0.10 of the class gap; text written in the language moves it 1.39. Panels 2-3 (exp 15, NLA critic, layer 42): pushing h at 11% of its norm along the class direction moves the model's next token (z against 20 random directions); the statement direction (cos 0.10) does not move the model but is what Oracle Lens and the J-lens follow.",
+  "section": "S4",
+  "role": "main",
+  "sources": [
+    "experiments/14_ar_blindspot/results/analysis14_tb_tablecol.json",
+    "experiments/14_ar_blindspot/results/analysis14_tb_paren.json",
+    "experiments/14_ar_blindspot/results/analysis14_ij2_lang.json",
+    "experiments/15_ar_steering/results/analysis15_tb_tablecol.json",
+    "experiments/15_ar_steering/results/analysis15_tb_paren.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exp 14 true span, table column / parenthesis",
+      "computed": "1.0000 / 0.9326 (probe AUROC on Oracle Lens reconstructor output, layer 44)",
+      "record": "talk script S4 table: 1.00 / 0.93 labelled 'share of the class gap kept'; brief: 'keeps 0.93-1.00 of class gap'",
+      "where": "talk script S4, exp 14 RESULTS",
+      "match": false,
+      "note": "values match but they are AUROCs, not gap shares; the record mislabels the unit"
+    },
+    {
+      "quantity": "exp 14 lens bullets row",
+      "computed": "probe AUROC 0.66 / 0.60; gap share 0.12 / 0.18",
+      "record": "talk script: 0.66 / 0.60 as gap share",
+      "where": "talk script S4",
+      "match": false,
+      "note": "AUROC, not gap share (not drawn)"
+    },
+    {
+      "quantity": "exp 14 statement shift (Oracle Lens reconstructor, fixed '- column one/five'), column / paren",
+      "computed": "0.033 / 0.104",
+      "record": "0.03 / 0.10",
+      "where": "exp 14 RESULTS, talk script S4",
+      "match": true
+    },
+    {
+      "quantity": "language 1.39",
+      "computed": "best Oracle Lens bullet pair (written in French vs German) 1.395; '- French language' statement 0.104",
+      "record": "talk script: 'a statement of the property ... language 1.39'",
+      "where": "talk script S4",
+      "match": false,
+      "note": "1.39 is bullets written in the language (exhibiting), not a statement of it; the statement is 0.10"
+    },
+    {
+      "quantity": "exp 14 reconstructor identity",
+      "computed": "Oracle Lens reconstructor (agu18dec ar_ptag_pooled) at layer 44",
+      "record": "talk script S4 says 'the reconstructor' next to a glossary that defines it as the NLA's critic",
+      "where": "talk script S4",
+      "match": false
+    },
+    {
+      "quantity": "exp 15 model z, class / statement, table column",
+      "computed": "7.13 / 0.69",
+      "record": "+7.1 / +0.7",
+      "where": "exp 15 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "exp 15 model z, class / statement, parenthesis (sign flipped)",
+      "computed": "19.79 / -3.64",
+      "record": "+19.8 / -3.6",
+      "where": "exp 15 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "exp 15 Oracle Lens / J-lens z on statement direction, table column",
+      "computed": "12.29 / 10.13",
+      "record": "+12.3 / +10.1",
+      "where": "exp 15 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "exp 15 'rebuilt from the true span' parenthesis model z",
+      "computed": "span 6.04; explanations 12.86",
+      "record": "talk script S4: +12.9",
+      "where": "talk script S4 exp 15 table",
+      "match": false,
+      "note": "+12.9 is the AR(NLA explanations) direction; the span direction is +6.0 (exp 15 RESULTS agrees with raw)"
+    },
+    {
+      "quantity": "cos(class mean, statement direction), table column",
+      "computed": "0.100",
+      "record": "0.10",
+      "where": "exp 15 RESULTS geometry",
+      "match": true
+    }
+  ],
+  "notes": "Moved off the slide (computed here): language control, Oracle Lens reconstructor: bullets written in French vs German move the rebuild 1.39 of the gap, the statement '- French language' vs '- German ...' 0.10; the NLA's critic on the fixed statement: table column 0.07, parenthesis \u22120.05, language 0.72. Pushes are 11% of |h|, z against 20 random directions; 'the model' is its own next-token log-odds (newline for table column, close-paren for parenthesis). Exp 14 numbers use the Oracle Lens reconstructor (ar_ptag_pooled, tag 44) in its whitened output space; the span value is a probe retrained on the rebuilt spans (AUROC), not a gap share. Exp 15 directions are built with the NLA's critic; parenthesis model z is sign-flipped so + = expected. Statement pair (exp 15 NLA): 'The current cell is in the first column of the table' vs the fifth-column version; Oracle Lens pair (exp 14): '- column one' vs '- column five'.",
+  "layout": {
+    "png_px": [
+      1860,
+      850
+    ],
+    "aspect": 2.188,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

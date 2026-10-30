@@ -1,0 +1,79 @@
+{
+  "name": "bk_exp05_planted",
+  "title": "A planted bridge flips the model's answer from layer 34 on, and all three readers report it",
+  "caption": "A: share of 614 two-hop country items (e.g. 'the capital of the country famous for ...') where swapping the bridge country's class-mean projection at that layer (centred clamp, smallest dose up to 4x the class-mean gap) flips the model's answer while leaving it intact; Wilson 95% CIs, kept counts on bars. B: on 200 kept layer-38 items, share where each reader's layer-42 log-odds prefers the planted country Y over the text-implied X (mean of 3 templates), Wilson 95%. Caveat: the swap direction is strongly J-enriched (6.5x) and doses are large, so this is a calibration that reading works for in-J content, not a test of non-J reading.",
+  "section": "backup:exp05",
+  "role": "backup",
+  "sources": [
+    "experiments/05_planted_intermediates/results/yield.json",
+    "experiments/05_planted_intermediates/results/readers.json"
+  ],
+  "checks": [
+    {
+      "quantity": "kept items layer 24 clamp, min-alpha<=4",
+      "computed": 18,
+      "record": 18,
+      "where": "exp 05 RESULTS yield table",
+      "match": true
+    },
+    {
+      "quantity": "kept items layer 28 clamp, min-alpha<=4",
+      "computed": 39,
+      "record": 39,
+      "where": "exp 05 RESULTS yield table",
+      "match": true
+    },
+    {
+      "quantity": "kept items layer 34 clamp, min-alpha<=4",
+      "computed": 212,
+      "record": 212,
+      "where": "exp 05 RESULTS yield table",
+      "match": true
+    },
+    {
+      "quantity": "kept items layer 38 clamp, min-alpha<=4",
+      "computed": 431,
+      "record": 431,
+      "where": "exp 05 RESULTS yield table",
+      "match": true
+    },
+    {
+      "quantity": "kept items layer 42 clamp, min-alpha<=4",
+      "computed": 542,
+      "record": 542,
+      "where": "exp 05 RESULTS yield table",
+      "match": true
+    },
+    {
+      "quantity": "NLA at layer 42 P(reads Y) unplanted / planted",
+      "computed": "0.030 / 0.985",
+      "record": "0.03 / 0.98",
+      "where": "exp 05 RESULTS reader pass",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens at layer 42 P(reads Y) unplanted / planted",
+      "computed": "0.005 / 1.000",
+      "record": "0.01 / 1.00",
+      "where": "exp 05 RESULTS reader pass",
+      "match": true
+    },
+    {
+      "quantity": "J-lens at layer 42 P(reads Y) unplanted / planted",
+      "computed": "0.010 / 1.000",
+      "record": "0.01 / 1.00",
+      "where": "exp 05 RESULTS reader pass",
+      "match": true
+    }
+  ],
+  "notes": "Reader templates: Oracle Lens '- {c}', '- {c} (country)', '- The country of {c}'; NLA '{c}', 'The text is about {c}', 'A factual question involving {c}' after '<explanation>\\n'. RESULTS rounds Oracle Lens unplanted 0.005 to 0.01 and NLA planted 0.985 to 0.98.",
+  "layout": {
+    "png_px": [
+      2303,
+      1137
+    ],
+    "aspect": 2.026,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 9.4
+  }
+}

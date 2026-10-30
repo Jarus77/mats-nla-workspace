@@ -1,0 +1,121 @@
+{
+  "name": "bk_exp26_layer_rows",
+  "title": "Every row is flat across layers; only the call argument loses carrying after layer 24",
+  "caption": "Per-row version of s8_layer_sweep: the eight exp 22 rows, 160 items each (80/80). AUROC bands are Hanley-McNeil analytic 95% intervals (no per-item scores saved, so no bootstrap); naming bands Wilson 95% over 160 readouts. Dashed lines at chance and 0.80; grey vertical line at 42. Code language naming uses a language-name regex and is the positive control; the Markdown rows are barely readable by the probe, so there is little to carry.",
+  "section": "backup:exp26",
+  "role": "backup",
+  "sources": [
+    "experiments/26_layer_sweep/results/sweep26_py_string.json",
+    "experiments/26_layer_sweep/results/sweep26_js_string.json",
+    "experiments/26_layer_sweep/results/sweep26_latex_math.json",
+    "experiments/26_layer_sweep/results/sweep26_json_depth.json",
+    "experiments/26_layer_sweep/results/sweep26_py_arg.json",
+    "experiments/26_layer_sweep/results/sweep26_md_heading.json",
+    "experiments/26_layer_sweep/results/sweep26_md_list.json",
+    "experiments/26_layer_sweep/results/sweep26_code_lang.json",
+    "experiments/26_layer_sweep/results/ol26_{row}_L{layer}.json (96 files)"
+  ],
+  "checks": [
+    {
+      "quantity": "names rate recounted from ol26 readouts with lib26.NAME_RE vs sweep26 'names' (96 cells)",
+      "computed": "96 of 96 identical",
+      "record": "sweep26_{row}.json names",
+      "where": "results/sweep26_*.json",
+      "match": true
+    },
+    {
+      "quantity": "probe AUROC, readable rows (string, math, depth, code language), layers 20-60",
+      "computed": "0.892-1.000 (min over string/math/depth rows 0.967; code_lang at 32 0.892)",
+      "record": "0.96 to 1.00 at every layer (code_lang 0.89 at 32)",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "probe AUROC at layer 20 on the six readable rows",
+      "computed": "0.976-1.000",
+      "record": "already 0.98 to 1.00 at layer 20 (P1 text)",
+      "where": "RESULTS.md prediction 1",
+      "match": true
+    },
+    {
+      "quantity": "probe AUROC call argument",
+      "computed": "0.939-0.989",
+      "record": "0.94 to 0.99",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "P1 Markdown half: probe 'near 0.6 at every layer' on Markdown heading level and list nesting depth",
+      "computed": "md_heading 0.627-0.776 (0.77 at 20, 0.78 at 32); md_list 0.492-0.593",
+      "record": "RESULTS: 'The Markdown half holds (md_heading 0.63 to 0.78, md_list about 0.5)'",
+      "where": "RESULTS.md prediction 1",
+      "match": false
+    },
+    {
+      "quantity": "Oracle Lens prompted AUROC, readable rows",
+      "computed": "0.842-0.999",
+      "record": "0.84 to 1.00",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "P2: prompted AUROC span 36-60, largest row",
+      "computed": "max span 0.090 (md_heading)",
+      "record": "under 0.10 on every row (holds)",
+      "where": "RESULTS.md prediction 2",
+      "match": true
+    },
+    {
+      "quantity": "carries (Oracle Lens readout through the critic), readable rows",
+      "computed": "0.757-0.996",
+      "record": "0.76 to 1.00",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument carries at 20-24 and after",
+      "computed": "20: 0.629, 24: 0.655; 28-60: 0.435-0.588",
+      "record": "0.63 to 0.66 at 20 to 24, then 0.44 to 0.59",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "P3: min carries where probe >= 0.80 on string/math/depth rows",
+      "computed": "0.757",
+      "record": "minimum 0.76 (py_string at 56), holds",
+      "where": "RESULTS.md prediction 3",
+      "match": true
+    },
+    {
+      "quantity": "P4: max strict naming rate on any structural row and layer",
+      "computed": "0.0187",
+      "record": "at most 0.02 (holds); D50 'names it in at most 2% of readouts'",
+      "where": "RESULTS.md prediction 4; decisions D50",
+      "match": true
+    },
+    {
+      "quantity": "code language names (language-name regex)",
+      "computed": "0.025-0.144",
+      "record": "0.03 to 0.14",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "D50: probe on the readable rows",
+      "computed": "string/math/depth 0.967-1.000; py_arg 0.939-0.989",
+      "record": "probe 0.96 to 1.00 on the readable rows, already at layer 20",
+      "where": "decisions D50",
+      "match": true
+    }
+  ],
+  "notes": "Hanley-McNeil SE uses n1 = n2 = 80 per row. Names recounted from readouts (identical to sweep26).",
+  "layout": {
+    "png_px": [
+      2967,
+      1703
+    ],
+    "aspect": 1.742,
+    "min_font_pt": 12.0,
+    "effective_min_pt_at_9p4in": 7.6
+  }
+}

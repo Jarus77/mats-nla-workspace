@@ -1,0 +1,143 @@
+{
+  "name": "s1_best_of_layers",
+  "title": "Oracle Lens's published lead comes from picking the best of 11 layers per item",
+  "caption": "Regex pass rate per WorkspaceBench family (n=100 items each, k=1 sample per cell, Wilson 95% CIs). At the matched layer 42 the NLA ties Oracle Lens on typo and beats it on the other three; the published Oracle Lens score counts an item as passed if any of 11 layers (20 to 60, step 4) passes, which adds +0.08 to +0.22 over Oracle Lens's best single layer per family (numbers above). Caveat: any-of-11 is also a best-of-11-samples bonus, so part of it is sampling, not layer choice; layer 42 is off Oracle Lens's training grid but matches its on-grid neighbours, layers 40 and 44. Best single layers: typo correction layer 24, multilingual concept layer 56, multi-hop bridge layer 56, basic readout layer 56.",
+  "section": "S1",
+  "role": "main",
+  "sources": [
+    "experiments/01_wsbench_replication/judged/olens_grid/*/results.json",
+    "experiments/01_wsbench_replication/judged/olens_L42/*/results.json",
+    "experiments/01_wsbench_replication/judged/nla_L42/*/results.json"
+  ],
+  "checks": [
+    {
+      "quantity": "typo_mt Oracle Lens any-of-11",
+      "computed": 0.86,
+      "record": 0.86,
+      "where": "exp 01 RESULTS replication table",
+      "match": true
+    },
+    {
+      "quantity": "typo_mt Oracle Lens best single layer",
+      "computed": "0.78 at layer 24",
+      "record": "0.78 at layer 24",
+      "where": "exp 01 best_of_layers_check.md",
+      "match": true
+    },
+    {
+      "quantity": "typo_mt NLA at layer 42",
+      "computed": 0.73,
+      "record": 0.73,
+      "where": "exp 01 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "typo_mt Oracle Lens at layer 42",
+      "computed": 0.76,
+      "record": 0.76,
+      "where": "exp 01 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "multilingual_mt Oracle Lens any-of-11",
+      "computed": 0.65,
+      "record": 0.65,
+      "where": "exp 01 RESULTS replication table",
+      "match": true
+    },
+    {
+      "quantity": "multilingual_mt Oracle Lens best single layer",
+      "computed": "0.43 at layer 56",
+      "record": "0.43 at layer 56",
+      "where": "exp 01 best_of_layers_check.md",
+      "match": true
+    },
+    {
+      "quantity": "multilingual_mt NLA at layer 42",
+      "computed": 0.42,
+      "record": 0.42,
+      "where": "exp 01 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "multilingual_mt Oracle Lens at layer 42",
+      "computed": 0.28,
+      "record": 0.28,
+      "where": "exp 01 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "multihop_mt Oracle Lens any-of-11",
+      "computed": 0.34,
+      "record": 0.34,
+      "where": "exp 01 RESULTS replication table",
+      "match": true
+    },
+    {
+      "quantity": "multihop_mt Oracle Lens best single layer",
+      "computed": "0.18 at layer 56",
+      "record": "0.18 at layer 56",
+      "where": "exp 01 best_of_layers_check.md",
+      "match": true
+    },
+    {
+      "quantity": "multihop_mt NLA at layer 42",
+      "computed": 0.15,
+      "record": 0.15,
+      "where": "exp 01 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "multihop_mt Oracle Lens at layer 42",
+      "computed": 0.1,
+      "record": 0.1,
+      "where": "exp 01 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "basic_readout_mt Oracle Lens any-of-11",
+      "computed": 0.73,
+      "record": 0.73,
+      "where": "exp 01 RESULTS replication table",
+      "match": true
+    },
+    {
+      "quantity": "basic_readout_mt Oracle Lens best single layer",
+      "computed": "0.62 at layer 56",
+      "record": "0.62 at layer 56",
+      "where": "exp 01 best_of_layers_check.md",
+      "match": true
+    },
+    {
+      "quantity": "basic_readout_mt NLA at layer 42",
+      "computed": 0.57,
+      "record": 0.57,
+      "where": "exp 01 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "basic_readout_mt Oracle Lens at layer 42",
+      "computed": 0.45,
+      "record": 0.45,
+      "where": "exp 01 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "any-of-11 minus best single layer, range",
+      "computed": "+0.08 to +0.22",
+      "record": "+0.08 to +0.22",
+      "where": "talk script S1",
+      "match": true
+    }
+  ],
+  "notes": "Best single layer is chosen per family after the fact (it favours Oracle Lens). Reader prompts: NLA actor prompt per notes/wsbench_internals.md; Oracle Lens carrier 'An activation vector from layer L ... Produce distinct concepts that encode this activation, each as a '- ' bullet on its own line.'",
+  "layout": {
+    "png_px": [
+      1880,
+      868
+    ],
+    "aspect": 2.166,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.0
+  }
+}

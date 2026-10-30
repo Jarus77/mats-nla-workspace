@@ -1,0 +1,165 @@
+{
+  "name": "bk_exp13_new_rows",
+  "title": "Table column and parenthesis are the only new rows the NLA both reads beyond length and states",
+  "caption": "Exp 13, layer 42, 160 held-out items per row. Left: prompted AUROC per reader (95% bootstrap CI clustered by passage); the ochre tick is how well prompt length alone separates the classes (either direction), so a reader at or below it may be reading length: sentence count and code-line number are perfectly length-confounded by construction. Right: share of 320 free readouts judged to state the value; Oracle Lens 0 of 2,240. Line position on fresh items is at chance for all readers (NLA 0.48 mean-of-3, 0.51 fixed label).",
+  "section": "backup:exp13",
+  "role": "backup",
+  "sources": [
+    "experiments/13_new_rows/results/items_base.json",
+    "experiments/13_new_rows/results/judged/fmt_listdepth_nla.json",
+    "experiments/13_new_rows/results/judged/fmt_listdepth_ol42.json",
+    "experiments/13_new_rows/results/judged/fmt_qa_nla.json",
+    "experiments/13_new_rows/results/judged/fmt_qa_ol42.json",
+    "experiments/13_new_rows/results/judged/tb_codeline_nla.json",
+    "experiments/13_new_rows/results/judged/tb_codeline_ol42.json",
+    "experiments/13_new_rows/results/judged/tb_paren_nla.json",
+    "experiments/13_new_rows/results/judged/tb_paren_ol42.json",
+    "experiments/13_new_rows/results/judged/tb_sentcount_nla.json",
+    "experiments/13_new_rows/results/judged/tb_sentcount_ol42.json",
+    "experiments/13_new_rows/results/judged/tb_tablecol_nla.json",
+    "experiments/13_new_rows/results/judged/tb_tablecol_ol42.json",
+    "experiments/13_new_rows/results/judged/tb_wordsleft_nla.json",
+    "experiments/13_new_rows/results/judged/tb_wordsleft_ol42.json",
+    "experiments/13_new_rows/results/score_nla_fmt_listdepth.json",
+    "experiments/13_new_rows/results/score_nla_fmt_qa.json",
+    "experiments/13_new_rows/results/score_nla_nj1_col_fresh.json",
+    "experiments/13_new_rows/results/score_nla_tb_codeline.json",
+    "experiments/13_new_rows/results/score_nla_tb_paren.json",
+    "experiments/13_new_rows/results/score_nla_tb_sentcount.json",
+    "experiments/13_new_rows/results/score_nla_tb_tablecol.json",
+    "experiments/13_new_rows/results/score_nla_tb_wordsleft.json",
+    "experiments/13_new_rows/results/score_ol_fmt_listdepth.json",
+    "experiments/13_new_rows/results/score_ol_fmt_qa.json",
+    "experiments/13_new_rows/results/score_ol_nj1_col_fresh.json",
+    "experiments/13_new_rows/results/score_ol_tb_codeline.json",
+    "experiments/13_new_rows/results/score_ol_tb_paren.json",
+    "experiments/13_new_rows/results/score_ol_tb_sentcount.json",
+    "experiments/13_new_rows/results/score_ol_tb_tablecol.json",
+    "experiments/13_new_rows/results/score_ol_tb_wordsleft.json",
+    "experiments/13_new_rows/templates_frozen.json"
+  ],
+  "checks": [
+    {
+      "quantity": "nj1_col_fresh nla prompted",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "nj1_col_fresh ol prompted",
+      "computed": 0.49,
+      "record": 0.49,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "nj1_col_fresh J-lens prompted",
+      "computed": 0.53,
+      "record": 0.53,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "tb_sentcount nla prompted",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "tb_codeline nla prompted",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "tb_wordsleft nla prompted",
+      "computed": 0.58,
+      "record": 0.58,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "fmt_qa nla prompted",
+      "computed": 0.79,
+      "record": 0.79,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "line position fresh NLA mean of 3 (RESULTS text '0.48')",
+      "computed": 0.48,
+      "record": 0.48,
+      "where": "exp 13 RESULTS text",
+      "match": true
+    },
+    {
+      "quantity": "line position fresh NLA: table vs text",
+      "computed": "mean3 0.484, fixed 0.508",
+      "record": "RESULTS table 0.51 and talk script 0.51; RESULTS text 'NLA 0.48'",
+      "where": "exp 13 RESULTS",
+      "match": false
+    },
+    {
+      "quantity": "table column length-alone AUROC",
+      "computed": 0.32,
+      "record": 0.32,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses length-alone AUROC",
+      "computed": 0.29,
+      "record": 0.29,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "tb_sentcount length-alone AUROC",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "tb_codeline length-alone AUROC",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth length-alone AUROC",
+      "computed": 0.42,
+      "record": 0.42,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "fmt_qa length-alone AUROC",
+      "computed": 0.86,
+      "record": 0.86,
+      "where": "exp 13 RESULTS prompted table",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens states, all exp 13 rows",
+      "computed": 0,
+      "record": 0,
+      "where": "exp 13 RESULTS (0 of 2,240)",
+      "match": true
+    }
+  ],
+  "notes": "Length = token count of the item prefix (items_base.json 'ids'), AUROC vs the class label, reported as max(a, 1-a).",
+  "layout": {
+    "png_px": [
+      2505,
+      1199
+    ],
+    "aspect": 2.089,
+    "min_font_pt": 10.0,
+    "effective_min_pt_at_9p4in": 7.5
+  }
+}

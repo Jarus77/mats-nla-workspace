@@ -1,0 +1,196 @@
+{
+  "name": "s4_swap",
+  "title": "The NLA reads position from the part of the vector Oracle Lens's words do not rebuild",
+  "caption": "Exp 16, layer 42, 200 items per row. Each activation is split into the part the NLA's reconstructor rebuilds from Oracle Lens's bullets (the Oracle Lens part) and the remainder (what those words do not rebuild); one part is swapped in from a donor item of the opposite class. Dots: AUROC of the NLA's prompted log-odds (mean of 4 phrasings) against the donor's label; bands: 95% bootstrap CI clustered by passage (2,000 resamples). Position rows follow the remainder; the language control follows the Oracle Lens part. Caveat: both parts are built with the NLA's reconstructor; one seeded donor pairing.",
+  "section": "S4",
+  "role": "main",
+  "sources": [
+    "experiments/16_difference_term/results/vol/s1_tb_tablecol.pt",
+    "experiments/16_difference_term/results/vol/s1_tb_paren.pt",
+    "experiments/16_difference_term/results/vol/s1_bk_listidx.pt",
+    "experiments/16_difference_term/results/vol/s1_ij2_lang.pt",
+    "experiments/16_difference_term/results/vol/s2_tb_tablecol.pt",
+    "experiments/16_difference_term/results/vol/s2_tb_paren.pt",
+    "experiments/16_difference_term/results/vol/s2_bk_listidx.pt",
+    "experiments/16_difference_term/results/vol/s2_ij2_lang.pt"
+  ],
+  "checks": [
+    {
+      "quantity": "table column NLA follows donor via remainder",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp 16 RESULTS / talk S4",
+      "match": true
+    },
+    {
+      "quantity": "table column NLA follows donor via Oracle Lens part",
+      "computed": 0.01,
+      "record": 0.01,
+      "where": "exp 16 RESULTS / talk S4",
+      "match": true
+    },
+    {
+      "quantity": "table column remainder CI",
+      "computed": [
+        0.96,
+        1.0
+      ],
+      "record": [
+        0.96,
+        1.0
+      ],
+      "where": "exp 16 RESULTS CI section",
+      "match": true
+    },
+    {
+      "quantity": "table column Oracle Lens-part CI",
+      "computed": [
+        0.0,
+        0.03
+      ],
+      "record": [
+        0.0,
+        0.03
+      ],
+      "where": "exp 16 RESULTS CI section",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses NLA follows donor via remainder",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "exp 16 RESULTS / talk S4",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses NLA follows donor via Oracle Lens part",
+      "computed": 0.12,
+      "record": 0.12,
+      "where": "exp 16 RESULTS / talk S4",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses remainder CI",
+      "computed": [
+        0.82,
+        0.92
+      ],
+      "record": [
+        0.82,
+        0.92
+      ],
+      "where": "exp 16 RESULTS CI section",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses Oracle Lens-part CI",
+      "computed": [
+        0.07,
+        0.17
+      ],
+      "record": [
+        0.07,
+        0.17
+      ],
+      "where": "exp 16 RESULTS CI section",
+      "match": true
+    },
+    {
+      "quantity": "list item index NLA follows donor via remainder",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp 16 RESULTS / talk S4",
+      "match": true
+    },
+    {
+      "quantity": "list item index NLA follows donor via Oracle Lens part",
+      "computed": 0.03,
+      "record": 0.03,
+      "where": "exp 16 RESULTS / talk S4",
+      "match": true
+    },
+    {
+      "quantity": "list item index remainder CI",
+      "computed": [
+        0.96,
+        0.99
+      ],
+      "record": [
+        0.96,
+        0.99
+      ],
+      "where": "exp 16 RESULTS CI section",
+      "match": true
+    },
+    {
+      "quantity": "list item index Oracle Lens-part CI",
+      "computed": [
+        0.01,
+        0.05
+      ],
+      "record": [
+        0.01,
+        0.05
+      ],
+      "where": "exp 16 RESULTS CI section",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang NLA follows donor via remainder",
+      "computed": 0.1,
+      "record": 0.1,
+      "where": "exp 16 RESULTS / talk S4",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang NLA follows donor via Oracle Lens part",
+      "computed": 0.92,
+      "record": 0.92,
+      "where": "exp 16 RESULTS / talk S4",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang remainder CI",
+      "computed": [
+        0.06,
+        0.15
+      ],
+      "record": [
+        0.06,
+        0.15
+      ],
+      "where": "exp 16 RESULTS CI section",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang Oracle Lens-part CI",
+      "computed": [
+        0.88,
+        0.95
+      ],
+      "record": [
+        0.88,
+        0.95
+      ],
+      "where": "exp 16 RESULTS CI section",
+      "match": true
+    },
+    {
+      "quantity": "max CI half-width (talk: 'bootstrap intervals within 0.04')",
+      "computed": 0.05,
+      "record": 0.04,
+      "where": "talk script S4",
+      "match": false
+    }
+  ],
+  "notes": "Recomputed with experiments/17_harden/ci_prior.ci16 (read-only import). Oracle Lens's own readout (remainder, Oracle Lens part): {'table column': (0.61, 0.42), 'inside parentheses': (0.72, 0.38), 'list item index': (0.64, 0.39), 'ij2_lang': (0.1, 0.91)}. Fixed-label phrasing agrees in RESULTS. The talk's 'intervals within 0.04' holds for table column and list item index; parenthesis and language intervals reach about +-0.05.",
+  "layout": {
+    "png_px": [
+      1877,
+      816
+    ],
+    "aspect": 2.3,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.0
+  }
+}

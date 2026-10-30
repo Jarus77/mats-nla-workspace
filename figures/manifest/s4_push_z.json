@@ -1,0 +1,146 @@
+{
+  "name": "s4_push_z",
+  "title": "A statement-built direction moves the readers, not the model",
+  "caption": "Exp 15, layer 42, 200 items per row. Each activation is pushed along a direction (centred edit at 11% of its norm) and the paired shift in the model's next-token log-odds (newline for table column, ')' for parenthesis) and in each reader's prompted log-odds is expressed as z against 20 random directions of the same size (grey band |z| < 2). Bars: z of the 95% CI ends of the shift, cluster bootstrap by passage, 2,000 resamples. Directions are built by the NLA's reconstructor, so the NLA's response to them is partly circular; the class-mean row is the clean comparison.",
+  "section": "S4",
+  "role": "main",
+  "sources": [
+    "experiments/15_ar_steering/results/vol/spec15_tb_tablecol.pt",
+    "experiments/15_ar_steering/results/vol/spec15_tb_paren.pt",
+    "experiments/15_ar_steering/results/vol/behave15_tb_tablecol_c0.pt",
+    "experiments/15_ar_steering/results/vol/behave15_tb_tablecol_c1.pt",
+    "experiments/15_ar_steering/results/vol/behave15_tb_paren_c0.pt",
+    "experiments/15_ar_steering/results/vol/behave15_tb_paren_c1.pt",
+    "experiments/15_ar_steering/results/vol/score15_{nla,ol}_{tb_tablecol,tb_paren}.pt"
+  ],
+  "checks": [
+    {
+      "quantity": "table column cm_raw model z",
+      "computed": 7.1,
+      "record": 7.1,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses cm_raw model z",
+      "computed": 19.8,
+      "record": 19.8,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "table column arspan_raw model z",
+      "computed": 10.5,
+      "record": 10.5,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses arspan_raw model z",
+      "computed": 6.0,
+      "record": 6.0,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "table column arstmt_raw model z",
+      "computed": 0.7,
+      "record": 0.7,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses arstmt_raw model z",
+      "computed": -3.6,
+      "record": -3.6,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "table column arstmt_raw ol_mean z",
+      "computed": 12.3,
+      "record": 12.3,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "table column arstmt_raw J-lens z",
+      "computed": 10.1,
+      "record": 10.1,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "table column arstmt_raw nla_mean z",
+      "computed": 4.6,
+      "record": 4.6,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses arstmt_raw ol_mean z",
+      "computed": 3.6,
+      "record": 3.6,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses arstmt_raw J-lens z",
+      "computed": -1.0,
+      "record": -1.0,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses arstmt_raw nla_mean z",
+      "computed": 2.6,
+      "record": 2.6,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "table column cm_raw nla_mean z",
+      "computed": 13.2,
+      "record": 13.2,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses cm_raw ol_mean z",
+      "computed": 10.4,
+      "record": 10.4,
+      "where": "exp 15 RESULTS headline table",
+      "match": true
+    },
+    {
+      "quantity": "parenthesis span-rebuilt direction, model z",
+      "computed": 6.0,
+      "record": 12.9,
+      "where": "talk script S4 exp 15 table ('rebuilt from the true span ... +12.9')",
+      "match": false
+    },
+    {
+      "quantity": "table column statement model z CI ends",
+      "computed": [
+        0.4,
+        1.1
+      ],
+      "record": [
+        0.4,
+        1.1
+      ],
+      "where": "exp 15 RESULTS CI section",
+      "match": true
+    }
+  ],
+  "notes": "Recomputed with experiments/17_harden/ci_prior.ci15 (imported read-only, bytecode writing disabled) from the exp 15 .pt files. Parenthesis model z sign flipped so + = 'outside' lowers ')' log-odds, as in the RESULTS headline. The talk script's S4 table gives the span-rebuilt direction for parenthesis as +12.9; the raw data give +6.0 (12.9 is the AR(NLA explanations) row). Statement pairs: NLA fixed labels ('The current cell is in the first/fifth column of the table'; 'The current position is inside/outside a parenthesis').",
+  "layout": {
+    "png_px": [
+      1849,
+      866
+    ],
+    "aspect": 2.135,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.3
+  }
+}

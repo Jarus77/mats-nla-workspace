@@ -1,0 +1,170 @@
+{
+  "name": "bk_exp11_layer_map",
+  "title": "Line position sits inside the J-space early and leaves it only around the readers' layers",
+  "caption": "Pilot items (60 line-position, 120 tense), read token. Left: J-space enrichment (share of the direction's norm in the top-384 J subspace over the random expectation; 1 = random) of each layer's class-mean direction; line position falls from 3.7 at layer 24 to about the 1.5 gate at 42-56 while tense stays 3-4x enriched until 52. Right: J-lens readout shift when pushing the J-removed line-position direction, as z against 20 random directions (10 isotropic, 10 J-complement); clean through 48, leaking at 52 (+6.2) and massively at 56. No CI on enrichment (a single direction per cell). Caveat: directions are class means over only 60/120 items (cosine 0.38-0.41 with the 40k-row bank direction at 40-44).",
+  "section": "backup:exp11",
+  "role": "backup",
+  "sources": [
+    "experiments/11_agam_followups/results/phaseB/map_raw.pt",
+    "experiments/11_agam_followups/results/phaseB.json (cross-check only)"
+  ],
+  "checks": [
+    {
+      "quantity": "col enrichment r*/4r* at layer 24",
+      "computed": [
+        3.67,
+        1.79
+      ],
+      "record": [
+        3.67,
+        1.79
+      ],
+      "where": "11 RESULTS.md B1",
+      "match": true
+    },
+    {
+      "quantity": "col J-lens leak z at layer 24",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "11 RESULTS.md B1",
+      "match": true,
+      "record_json": 0.02
+    },
+    {
+      "quantity": "col enrichment r*/4r* at layer 32",
+      "computed": [
+        2.78,
+        1.71
+      ],
+      "record": [
+        2.78,
+        1.71
+      ],
+      "where": "11 RESULTS.md B1",
+      "match": true
+    },
+    {
+      "quantity": "col J-lens leak z at layer 32",
+      "computed": -0.2,
+      "record": -0.2,
+      "where": "11 RESULTS.md B1",
+      "match": true,
+      "record_json": -0.19
+    },
+    {
+      "quantity": "col enrichment r*/4r* at layer 40",
+      "computed": [
+        1.76,
+        1.46
+      ],
+      "record": [
+        1.76,
+        1.46
+      ],
+      "where": "11 RESULTS.md B1",
+      "match": true
+    },
+    {
+      "quantity": "col J-lens leak z at layer 40",
+      "computed": 0.2,
+      "record": 0.2,
+      "where": "11 RESULTS.md B1",
+      "match": true,
+      "record_json": 0.18
+    },
+    {
+      "quantity": "col enrichment r*/4r* at layer 42",
+      "computed": [
+        1.54,
+        1.29
+      ],
+      "record": [
+        1.54,
+        1.29
+      ],
+      "where": "11 RESULTS.md B1",
+      "match": true
+    },
+    {
+      "quantity": "col J-lens leak z at layer 42",
+      "computed": -0.0,
+      "record": 0.0,
+      "where": "11 RESULTS.md B1",
+      "match": true,
+      "record_json": -0.0
+    },
+    {
+      "quantity": "col enrichment r*/4r* at layer 44",
+      "computed": [
+        1.46,
+        1.17
+      ],
+      "record": [
+        1.46,
+        1.17
+      ],
+      "where": "11 RESULTS.md B1",
+      "match": true
+    },
+    {
+      "quantity": "col J-lens leak z at layer 44",
+      "computed": 0.4,
+      "record": 0.4,
+      "where": "11 RESULTS.md B1",
+      "match": true,
+      "record_json": 0.44
+    },
+    {
+      "quantity": "col enrichment r*/4r* at layer 48",
+      "computed": [
+        1.45,
+        1.0
+      ],
+      "record": [
+        1.45,
+        1.0
+      ],
+      "where": "11 RESULTS.md B1",
+      "match": true
+    },
+    {
+      "quantity": "col J-lens leak z at layer 48",
+      "computed": 0.2,
+      "record": 0.2,
+      "where": "11 RESULTS.md B1",
+      "match": true,
+      "record_json": 0.15
+    },
+    {
+      "quantity": "col enrichment r*/4r* at layer 56",
+      "computed": [
+        1.42,
+        0.96
+      ],
+      "record": [
+        1.42,
+        0.96
+      ],
+      "where": "11 RESULTS.md B1",
+      "match": true
+    },
+    {
+      "quantity": "col J-lens leak z at layer 56",
+      "computed": 19.4,
+      "record": 19.4,
+      "where": "11 RESULTS.md B1",
+      "match": true,
+      "record_json": 19.44
+    }
+  ],
+  "notes": "Enrichment values are read from map_raw.pt cells (computed on GPU against per-layer J bases that are not local, so not recomputed). Leak z recomputed from map_raw.pt jl_scores: mean(+ minus -) of the J-removed push vs pooled iso+jc nulls (the RESULTS text says 'vs the J-complement band'; the analysis code pools both classes). Series: {\"layers\": [24, 28, 32, 36, 40, 42, 44, 48, 52, 56], \"col_r384\": [3.67, 3.25, 2.78, 2.23, 1.76, 1.54, 1.46, 1.45, 1.74, 1.42], \"tense_r384\": [3.38, 3.8, 3.87, 3.98, 3.33, 3.49, 3.34, 3.14, 2.99, 2.2], \"col_r1536\": [1.79, 1.75, 1.71, 1.6, 1.46, 1.29, 1.17, 1.0, 1.12, 0.96], \"leak_z\": [0.02, 0.19, -0.19, -0.14, 0.18, -0.0, 0.44, 0.15, 6.15, 19.44]}",
+  "layout": {
+    "png_px": [
+      2501,
+      1090
+    ],
+    "aspect": 2.294,
+    "min_font_pt": 12.0,
+    "effective_min_pt_at_9p4in": 9.0
+  }
+}

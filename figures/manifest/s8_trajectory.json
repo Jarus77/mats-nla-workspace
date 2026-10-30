@@ -1,0 +1,102 @@
+{
+  "name": "s8_trajectory",
+  "title": "RL raises reconstruction and stating the code language, not stating structure; the warm start sets that",
+  "caption": "The NLA at ten points of its history on the exp 22 public bank: text-only warm start (base model given the prefix text under the warm-start instruction; shaded), the activation warm start (SFT, no RL), and GRPO adapters every 100 steps to 800. Left: judge-stated rate on the seven structural rows (40 items x 8 readouts per cell; faint = each row, bold = median). Middle: code language, judge (item-clustered bootstrap 95%) and strict regex 'names' rate on 160 k=1 readouts (Wilson 95%). Right: reconstruction (FVE) of the critic's rebuild of k=1 readouts, bold = Python strings, grey = the other rows (no per-item values saved, so no CI). Caveat: one final critic scores every checkpoint, so carrying and reconstruction are 'in a direction the final critic reads'.",
+  "section": "S8",
+  "role": "main",
+  "sources": [
+    "experiments/29_trajectory/results/judged/{ckpt}_{row}.json (80 files)",
+    "experiments/29_trajectory/results/gen29_{ckpt}_{row}.json (80 files)",
+    "experiments/29_trajectory/results/recon29_{ckpt}_{row}.json (80 files)",
+    "experiments/22_public_bank/results/items_base.json"
+  ],
+  "checks": [
+    {
+      "quantity": "states (judge), structural rows: textnla / av_base / RL 100-800",
+      "computed": "0.172-0.494 / 0.013-0.212 / 0.000-0.287",
+      "record": "0.17 to 0.49 / 0.01 to 0.21 / 0.00 to 0.29",
+      "where": "RESULTS.md table; D50; talk S8 note",
+      "match": true
+    },
+    {
+      "quantity": "trend of mean structural states over RL steps 100-800 (OLS slope per 100 steps)",
+      "computed": "-0.0013",
+      "record": "no trend",
+      "where": "RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "code language states: textnla, av_base, RL range",
+      "computed": "0.500, 0.550, 0.709-0.772",
+      "record": "0.50, 0.55, 0.71 to 0.77 from step 100",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language names (regex): textnla, av_base, RL range",
+      "computed": "0.419, 0.463, 0.625-0.750",
+      "record": "0.42, 0.46, 0.62 to 0.75",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "reconstruction (FVE) inside a Python string: textnla, av_base, step 100, step 800",
+      "computed": "-0.045, 0.182, 0.525, 0.586",
+      "record": "-0.05, 0.18, 0.53, 0.59",
+      "where": "RESULTS.md table; D50 '0.18 to 0.59'",
+      "match": true
+    },
+    {
+      "quantity": "carries, readable rows: textnla / av_base / RL",
+      "computed": "0.837-0.989 / 0.866-0.990 / 0.909-0.999",
+      "record": "0.84-0.99 / 0.87-0.99 / 0.91-1.00",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "P1 structural states <= 0.25 at every checkpoint",
+      "computed": "fails; violations [('textnla', 'py_string', 0.47), ('textnla', 'js_string', 0.49), ('textnla', 'md_heading', 0.3), ('iter_000200', 'js_string', 0.29)]",
+      "record": "FAILS on TextNLA (py_string 0.47, js_string 0.49, md_heading 0.30); js_string step 200 0.29",
+      "where": "RESULTS.md prediction 1",
+      "match": true
+    },
+    {
+      "quantity": "P2 code language states rise av_base -> step 400 (>= 0.15)",
+      "computed": "+0.159 (holds)",
+      "record": "Holds: +0.16",
+      "where": "RESULTS.md prediction 2",
+      "match": true
+    },
+    {
+      "quantity": "P3 carrying rise av_base -> 400 (>= 0.05) and |textnla - av_base| <= 0.05",
+      "computed": "rise +0.020, textnla -0.040 (fails)",
+      "record": "FAILS: +0.02; TextNLA -0.04",
+      "where": "RESULTS.md prediction 3",
+      "match": true
+    },
+    {
+      "quantity": "P4 text-bag AUROC span across ten checkpoints (< 0.05 on string rows)",
+      "computed": "py_string 0.047, js_string 0.082, latex_math 0.057 (tokenizer qwen)",
+      "record": "FAILS narrowly: 0.04, 0.09, 0.06",
+      "where": "RESULTS.md prediction 4",
+      "match": false
+    },
+    {
+      "quantity": "D50 / talk S8 wording 'code-language naming (0.55 to 0.75)'",
+      "computed": "judge states 0.55 -> 0.71-0.77; regex names 0.46 -> 0.62-0.75",
+      "record": "0.55 to 0.75",
+      "where": "decisions D50; talk script S8 update",
+      "match": false
+    }
+  ],
+  "notes": "Predictions: P2 holds (+0.16 code language states, av_base -> step 400); P1 fails on TextNLA (and inside a JavaScript string step 200 at 0.29 is above 0.25 too); P3 fails on the ceiling (carrying rise +0.02); P4 fails narrowly (text-bag span 0.09 on inside a JavaScript string). Judge: Gemini 3.8 Flash, exp 22's states prompt, T=0 (existing outputs only). TextNLA prompt = experiments/06_resolving_decomposition/data/nla_instruction.txt (the warm-start instruction), NOT the NLA actor prompt. Record wording: D50 and the talk S8 note say 'code-language naming (0.55 to 0.75)', which splices the judge start (0.55) with the regex top (0.75); judge is 0.55 -> 0.71-0.77, regex 0.46 -> 0.62-0.75.",
+  "layout": {
+    "png_px": [
+      1823,
+      818
+    ],
+    "aspect": 2.229,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.5
+  }
+}

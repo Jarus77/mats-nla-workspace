@@ -1,0 +1,100 @@
+{
+  "name": "bk_exp17_paren_fourway",
+  "title": "With four candidates the NLA still separates inside from outside but never picks 'outside'",
+  "caption": "Exp 17 (a), parenthesis items re-scored over four states (149 exp 13 selection items; 11 with an open quote or bracket excluded). Left: the NLA's argmax; outside items go to 'inside a quotation' or 'inside a parenthesis'. Four-way top-1 0.41 [0.33, 0.49] (chance 0.25), below the declared 0.50 bar, so the row was ruled a two-candidate artefact. Right: inside-vs-outside AUROC from the two class candidates, 95% bootstrap CI clustered by passage. Caveat: raw argmax under a strong phrase prior; prior-centred, outside items pick 'outside' 34 of 76.",
+  "section": "backup:exp17",
+  "role": "backup",
+  "sources": [
+    "experiments/17_harden/results/vol/mc_nla_tb_paren.pt",
+    "experiments/17_harden/results/vol/mc_ol_tb_paren.pt",
+    "experiments/17_harden/spec17.py"
+  ],
+  "checks": [
+    {
+      "quantity": "NLA argmax inside items",
+      "computed": [
+        61,
+        0,
+        12,
+        0
+      ],
+      "record": [
+        61,
+        0,
+        12,
+        0
+      ],
+      "where": "exp 17 mc17.md",
+      "match": true
+    },
+    {
+      "quantity": "NLA argmax outside items",
+      "computed": [
+        27,
+        0,
+        49,
+        0
+      ],
+      "record": [
+        27,
+        0,
+        49,
+        0
+      ],
+      "where": "exp 17 mc17.md",
+      "match": true
+    },
+    {
+      "quantity": "NLA four-way top-1",
+      "computed": 0.41,
+      "record": 0.41,
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "NLA four-way top-1 CI lower bound",
+      "computed": 0.33,
+      "record": 0.33,
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "NLA class AUROC",
+      "computed": 0.88,
+      "record": 0.88,
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens class AUROC",
+      "computed": 0.4,
+      "record": 0.4,
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "J-lens class AUROC",
+      "computed": 0.45,
+      "record": 0.45,
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "n items after exclusion",
+      "computed": 149,
+      "record": 149,
+      "where": "exp 17 mc17.md",
+      "match": true
+    }
+  ],
+  "notes": "Oracle Lens phrasing '- {inside parentheses|outside parentheses|inside quotes|inside brackets}'.",
+  "layout": {
+    "png_px": [
+      2073,
+      1125
+    ],
+    "aspect": 1.843,
+    "min_font_pt": 12.0,
+    "effective_min_pt_at_9p4in": 10.9
+  }
+}

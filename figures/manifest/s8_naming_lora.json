@@ -1,0 +1,146 @@
+{
+  "name": "s8_naming_lora",
+  "title": "Naming costs the reward nothing and is right where the state is readable, but does not generalise",
+  "caption": "A 400-step supervised adapter (continuing the NLA's RL LoRA) trained to append one true statement of the row's state; control arm = same explanations without the statement. 'Names' = the readout contains the filled statement template (string match, no judge). Left: naming arm on held-out source files (32 items per row); base and control name nothing on any row. 'right' = correct among named, Wilson 95% intervals wide at these n (e.g. 15/19: 0.57-0.91). Top right: gate reconstruction (FVE) on 192 held-out items (single file values; naming minus control per-item paired difference -0.003, bootstrap 95% [-0.019, +0.013]); dashed line = pre-registered target 0.761. Bottom right: exp 23's 500 random read points, recounted from the saved readouts; the adapter names 'outside' about as often whatever the truth.",
+  "section": "S8",
+  "role": "main",
+  "sources": [
+    "experiments/30_naming_lora/results/eval30_base.json",
+    "experiments/30_naming_lora/results/eval30_C.json",
+    "experiments/30_naming_lora/results/eval30_S.json",
+    "experiments/30_naming_lora/results/train30_S.json",
+    "experiments/30_naming_lora/results/train30_C.json",
+    "experiments/23_random_points/results/items_base.json"
+  ],
+  "checks": [
+    {
+      "quantity": "gate reconstruction (FVE) base / control / statement",
+      "computed": "0.504 / 0.512 / 0.507",
+      "record": "0.504 / 0.512 / 0.507",
+      "where": "RESULTS.md; D49; talk S8 note",
+      "match": true
+    },
+    {
+      "quantity": "P1 first clause |S - C| <= 0.02",
+      "computed": "0.005 (holds)",
+      "record": "holds",
+      "where": "RESULTS.md / table30.md",
+      "match": true
+    },
+    {
+      "quantity": "P1 second clause: both arms within 0.03 of 0.761",
+      "computed": "S -0.254, C -0.249: FAILS",
+      "record": "not scored (table30 and RESULTS score P1 as PASS on the first clause only)",
+      "where": "RESULTS.md predictions / table30.md",
+      "match": false
+    },
+    {
+      "quantity": "arm S inside a Python string: correct of stated (held-out files, n=32)",
+      "computed": "15 of 19",
+      "record": "15 of 19",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "arm S call argument: correct of stated (held-out files, n=32)",
+      "computed": "13 of 16",
+      "record": "13 of 16",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "arm S JSON nesting depth: correct of stated (held-out files, n=32)",
+      "computed": "22 of 23",
+      "record": "22 of 23",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "arm S code language: correct of stated (held-out files, n=32)",
+      "computed": "9 of 9",
+      "record": "9 of 9",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "arm S Markdown heading level: correct of stated (held-out files, n=32)",
+      "computed": "15 of 26",
+      "record": "15 of 26",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "arm S list nesting depth: correct of stated (held-out files, n=32)",
+      "computed": "11 of 24",
+      "record": "11 of 24",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "arm S inside a JavaScript string: correct of stated (held-out files, n=32)",
+      "computed": "10 of 17",
+      "record": "10 of 17",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "arm S inside LaTeX math: correct of stated (held-out files, n=32)",
+      "computed": "1 of 1",
+      "record": "1 of 1",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "base and control statements on held-out rows",
+      "computed": "0 statements in 512 readouts",
+      "record": "naming 0.00 on every row",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "random points, arm S, point inside a string: says inside / outside / nothing",
+      "computed": "0.119 / 0.239 / 0.642 (counts 16/32/86 of 134; both 0)",
+      "record": "0.16 / 0.24 / 0.60",
+      "where": "RESULTS.md random-points table; D49",
+      "match": false
+    },
+    {
+      "quantity": "random points, arm S, point not in a string: says inside / outside / nothing",
+      "computed": "0.041 / 0.208 / 0.751 (counts 15/76/275 of 366)",
+      "record": "0.04 / 0.22 / 0.74",
+      "where": "RESULTS.md random-points table",
+      "match": false
+    },
+    {
+      "quantity": "random points, control arm, inside a string: says inside / outside / nothing (fixed statement)",
+      "computed": "0.000 / 0.000 / 1.000; strict lib23 regex named_when_true 0.030",
+      "record": "0.02 / 0.00 / 0.98",
+      "where": "RESULTS.md random-points table",
+      "match": false
+    },
+    {
+      "quantity": "random points arm S statement check total (correct / wrong / none of 500)",
+      "computed": "92 / 47 / 361",
+      "record": "eval30_S statement_check 92 / 47 / 361",
+      "where": "results/eval30_S.json",
+      "match": true
+    },
+    {
+      "quantity": "training wall time",
+      "computed": "train30 wall_s S 35699 s, C 36492 s (accumulates across resumes/stages; pipeline.log shows about 13 min per arm)",
+      "record": "table30.md prints 35699 s and 36492 s as training time; RESULTS says 13 minutes each",
+      "where": "table30.md; pipeline.log",
+      "match": false
+    }
+  ],
+  "notes": "Statement templates (exp 22 FIXED nla), e.g. 'The current position is inside a string literal' / '... outside a string literal'; a readout 'names' a value when it contains the filled template (lib30.statement_accuracy). Record discrepancies: (1) random points, statement arm, inside a string: recount 16/32/86 of 134 = 0.12/0.24/0.64 vs RESULTS/D49 0.16/0.24/0.60; not-in-string recount 0.04/0.21/0.75 vs 0.04/0.22/0.74; control arm recount 0.00/0.00/1.00 vs 0.02/0.00/0.98 (the 0.02 looks like lib23's strict regex rate 0.03, not the statement check). (2) P1's second clause (both arms within 0.03 of 0.761) is unscored and fails: gate reconstruction (FVE) is 0.51, about 0.25 below. (3) train30 wall_s (35699 s, 36492 s) accumulates across stages/resumes; pipeline.log shows about 13 minutes per arm; table30.md prints the accumulated numbers as training time. Wall time is not plotted. P2-P4 fail as defined; P5 unscorable.",
+  "layout": {
+    "png_px": [
+      1839,
+      866
+    ],
+    "aspect": 2.124,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.3
+  }
+}

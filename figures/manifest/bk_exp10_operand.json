@@ -1,0 +1,81 @@
+{
+  "name": "bk_exp10_operand",
+  "title": "Operand digits at '=' are decodable by a probe, yet no edit there changes the model's answer",
+  "caption": "Left: 5-fold cross-validated linear probes on the layer-42 activation at '=' for 600 bare 'a +/- b =' prompts (external prompt set), accuracy per digit slot with Wilson 95% intervals; exact operands 0.83 / 0.95. Right: 117 one-digit few-shot items the model answers 100% correctly; centred edits at '=' along the digit's class mean or a magnitude direction (+/-, 0.11 and 0.22 of the norm), a 9-dim class-mean swap, and a whole-vector donor patch; share of greedy answers that change, Wilson 95%. Caveat: even the donor patch flips 1 of 117, so the '=' site at layer 42 cannot show causal use; 'unused here' is a property of the site, not proof the model ignores operand identity.",
+  "section": "backup:exp10",
+  "role": "backup",
+  "sources": [
+    "experiments/10_operand_gate/data/arithmetic.jsonl",
+    "experiments/10_operand_gate/results/gate.json",
+    "experiments/10_operand_gate/results/stage2a_g4/g4_raw.pt",
+    "experiments/10_operand_gate/results/stage2a_g4/stage2a_g4b.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exact first operand (bare prompts)",
+      "computed": 0.825,
+      "record": 0.825,
+      "where": "10_operand_gate RESULTS.md stage 1",
+      "match": true
+    },
+    {
+      "quantity": "exact second operand (bare prompts)",
+      "computed": 0.948,
+      "record": 0.948,
+      "where": "10_operand_gate RESULTS.md stage 1",
+      "match": true
+    },
+    {
+      "quantity": "G1 acc a_tens",
+      "computed": 0.942,
+      "record": 0.94,
+      "where": "10_operand_gate RESULTS.md stage 1 table",
+      "match": true
+    },
+    {
+      "quantity": "G1 acc a_units",
+      "computed": 0.877,
+      "record": 0.88,
+      "where": "10_operand_gate RESULTS.md stage 1 table",
+      "match": true
+    },
+    {
+      "quantity": "G1 acc b_tens",
+      "computed": 0.967,
+      "record": 0.97,
+      "where": "10_operand_gate RESULTS.md stage 1 table",
+      "match": true
+    },
+    {
+      "quantity": "G1 acc b_units",
+      "computed": 0.978,
+      "record": 0.98,
+      "where": "10_operand_gate RESULTS.md stage 1 table",
+      "match": true
+    },
+    {
+      "quantity": "flips across steered direction/swap rows (one-digit bank)",
+      "computed": "0 of 2106",
+      "record": "0 (flip rate 0.00 every condition)",
+      "where": "10_operand_gate RESULTS.md stage 2a-G4",
+      "match": true
+    },
+    {
+      "quantity": "donor full-patch flips",
+      "computed": "1 of 117",
+      "record": "1 of 117",
+      "where": "10_operand_gate RESULTS.md positive control",
+      "match": true
+    }
+  ],
+  "notes": "Probe accuracy recomputed from the stored CV predictions in gate.json against the operands in arithmetic.jsonl. Flips recomputed from g4_raw.pt greedy answers vs the unsteered 'none' condition (r11 and r22, + and - pooled per direction). The donor-patch count comes from the aggregate stage2a_g4b.json (flip_rate x n); its raw file is not local. J-removed = top-1536 J-space projected out. Several raw conditions failed the leak test (mag_raw, swaps VOID per RESULTS) but flips are zero regardless. Few-shot example: '68 + 85 = 153\\n97 - 23 = 74\\n78 - 34 = 44\\n1 + 1 ='.",
+  "layout": {
+    "png_px": [
+      2405,
+      1088
+    ],
+    "aspect": 2.21,
+    "min_font_pt": 12.0,
+    "effective_min_pt_at_9p4in": 9.4
+  }
+}

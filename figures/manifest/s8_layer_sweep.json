@@ -1,0 +1,122 @@
+{
+  "name": "s8_layer_sweep",
+  "title": "Oracle Lens carries the state and never names it, at every layer from 20 to 60",
+  "caption": "Oracle Lens at its twelve read layers (20 to 60 step 4, plus 42), exp 22 public bank, 160 items per row (80 marked, 80 unmarked). Upper three lines: median over the four readable structural rows (Python and JavaScript strings, LaTeX math, JSON depth), band = min to max of those rows; no per-item scores were saved, so the AUROC lines carry no CI (per-row Hanley-McNeil intervals in the backup). Dotted line: strict regex naming rate pooled over all seven structural rows (n = 1,120 readouts per layer), Wilson 95% band. The Markdown rows are omitted from the upper lines because the probe reads them at only 0.49 to 0.78; they carry about 0.6 and 0.5 and are named in at most 2% of readouts (backup).",
+  "section": "S8",
+  "role": "main",
+  "sources": [
+    "experiments/26_layer_sweep/results/sweep26_py_string.json",
+    "experiments/26_layer_sweep/results/sweep26_js_string.json",
+    "experiments/26_layer_sweep/results/sweep26_latex_math.json",
+    "experiments/26_layer_sweep/results/sweep26_json_depth.json",
+    "experiments/26_layer_sweep/results/sweep26_py_arg.json",
+    "experiments/26_layer_sweep/results/sweep26_md_heading.json",
+    "experiments/26_layer_sweep/results/sweep26_md_list.json",
+    "experiments/26_layer_sweep/results/sweep26_code_lang.json",
+    "experiments/26_layer_sweep/results/ol26_{row}_L{layer}.json (96 files)",
+    "experiments/22_public_bank/results/items_base.json"
+  ],
+  "checks": [
+    {
+      "quantity": "names rate recounted from ol26 readouts with lib26.NAME_RE vs sweep26 'names' (96 cells)",
+      "computed": "96 of 96 identical",
+      "record": "sweep26_{row}.json names",
+      "where": "results/sweep26_*.json",
+      "match": true
+    },
+    {
+      "quantity": "probe AUROC, readable rows (string, math, depth, code language), layers 20-60",
+      "computed": "0.892-1.000 (min over string/math/depth rows 0.967; code_lang at 32 0.892)",
+      "record": "0.96 to 1.00 at every layer (code_lang 0.89 at 32)",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "probe AUROC at layer 20 on the six readable rows",
+      "computed": "0.976-1.000",
+      "record": "already 0.98 to 1.00 at layer 20 (P1 text)",
+      "where": "RESULTS.md prediction 1",
+      "match": true
+    },
+    {
+      "quantity": "probe AUROC call argument",
+      "computed": "0.939-0.989",
+      "record": "0.94 to 0.99",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "P1 Markdown half: probe 'near 0.6 at every layer' on Markdown heading level and list nesting depth",
+      "computed": "md_heading 0.627-0.776 (0.77 at 20, 0.78 at 32); md_list 0.492-0.593",
+      "record": "RESULTS: 'The Markdown half holds (md_heading 0.63 to 0.78, md_list about 0.5)'",
+      "where": "RESULTS.md prediction 1",
+      "match": false
+    },
+    {
+      "quantity": "Oracle Lens prompted AUROC, readable rows",
+      "computed": "0.842-0.999",
+      "record": "0.84 to 1.00",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "P2: prompted AUROC span 36-60, largest row",
+      "computed": "max span 0.090 (md_heading)",
+      "record": "under 0.10 on every row (holds)",
+      "where": "RESULTS.md prediction 2",
+      "match": true
+    },
+    {
+      "quantity": "carries (Oracle Lens readout through the critic), readable rows",
+      "computed": "0.757-0.996",
+      "record": "0.76 to 1.00",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument carries at 20-24 and after",
+      "computed": "20: 0.629, 24: 0.655; 28-60: 0.435-0.588",
+      "record": "0.63 to 0.66 at 20 to 24, then 0.44 to 0.59",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "P3: min carries where probe >= 0.80 on string/math/depth rows",
+      "computed": "0.757",
+      "record": "minimum 0.76 (py_string at 56), holds",
+      "where": "RESULTS.md prediction 3",
+      "match": true
+    },
+    {
+      "quantity": "P4: max strict naming rate on any structural row and layer",
+      "computed": "0.0187",
+      "record": "at most 0.02 (holds); D50 'names it in at most 2% of readouts'",
+      "where": "RESULTS.md prediction 4; decisions D50",
+      "match": true
+    },
+    {
+      "quantity": "code language names (language-name regex)",
+      "computed": "0.025-0.144",
+      "record": "0.03 to 0.14",
+      "where": "RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "D50: probe on the readable rows",
+      "computed": "string/math/depth 0.967-1.000; py_arg 0.939-0.989",
+      "record": "probe 0.96 to 1.00 on the readable rows, already at layer 20",
+      "where": "decisions D50",
+      "match": true
+    }
+  ],
+  "notes": "Carries = Oracle Lens k=1 free readout at the layer, rebuilt by the NLA reconstructor, scored by exp 14's frozen probe against the TRUE layer-42 activations. Prompted = exp 22's frozen phrasings, max of mean-of-three and fixed-label AUROC. Names recounted here from the ol26 readouts with lib26.NAME_RE (exp 23 state regexes; call argument ordinal-argument regex; code language language-name regex); identical to sweep26 'names' in all 96 cells. Record discrepancy: RESULTS.md says P1's Markdown half holds, but the prediction was 'near 0.6 at every layer' and Markdown heading level reaches 0.77 (layer 20) and 0.78 (layer 32); partial at best. Layer 42 is off Oracle Lens's trained grid and read with the carrier saying 'layer 42' (exp 22's convention).",
+  "layout": {
+    "png_px": [
+      1848,
+      849
+    ],
+    "aspect": 2.177,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.3
+  }
+}

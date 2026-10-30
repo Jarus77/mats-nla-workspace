@@ -1,0 +1,195 @@
+{
+  "name": "bk_exp09_gain_ratio",
+  "title": "For line position, Oracle Lens's continuation moves one-for-one with the model's own newline decision",
+  "caption": "Pilot (excluded from main analysis), layer 42, 80 fresh items per set (random directions pooled over 160). Left: each activation is pushed +/- along a direction (centred, 0.108 of its norm); x is the shift in the model's own next-token log-odds, y the shift in Oracle Lens's matching continuation (first bullet, e.g. newline vs 'the'); 95% item-bootstrap CIs. Line position sits on the identity line, raw and J-removed; tense and random directions are amplified 1.7-3.4x, and tense J-removed moves Oracle Lens while the model does not. Right: the same pushes at the q90 dose with the adapter off give chance (95% item bootstrap). Read as re-instatement of the model's newline decision, not verbalised line position; the pre-registered rule was inconclusive.",
+  "section": "backup:exp09",
+  "role": "backup",
+  "sources": [
+    "experiments/09_ol_mechanism/results/09_ol_mechanism/ol_{on,off}_{col,tense}_chunk*.pt",
+    "experiments/09_ol_mechanism/results/09_ol_mechanism/behave_{col,tense}.pt"
+  ],
+  "checks": [
+    {
+      "quantity": "col_raw gain ratio r108",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "col_raw Oracle Lens / model shift",
+      "computed": [
+        2.6,
+        2.62
+      ],
+      "record": [
+        2.6,
+        2.62
+      ],
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "col_4r gain ratio r108",
+      "computed": 1.06,
+      "record": 1.06,
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "col_4r Oracle Lens / model shift",
+      "computed": [
+        2.07,
+        1.96
+      ],
+      "record": [
+        2.07,
+        1.96
+      ],
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "tense_raw gain ratio r108",
+      "computed": 3.4,
+      "record": 3.4,
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "tense_raw Oracle Lens / model shift",
+      "computed": [
+        2.06,
+        0.61
+      ],
+      "record": [
+        2.07,
+        0.61
+      ],
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "tense_4r gain ratio r108",
+      "computed": -15.46,
+      "record": -15.5,
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "tense_4r Oracle Lens / model shift",
+      "computed": [
+        0.62,
+        -0.04
+      ],
+      "record": [
+        0.62,
+        -0.04
+      ],
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "randC gain ratio r108",
+      "computed": 1.65,
+      "record": 1.65,
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "randC Oracle Lens / model shift",
+      "computed": [
+        0.45,
+        0.27
+      ],
+      "record": [
+        0.45,
+        0.27
+      ],
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "randD gain ratio r108",
+      "computed": 1.89,
+      "record": 1.89,
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "randD Oracle Lens / model shift",
+      "computed": [
+        0.43,
+        0.23
+      ],
+      "record": [
+        0.43,
+        0.23
+      ],
+      "where": "09 RESULTS.md (b)",
+      "match": true
+    },
+    {
+      "quantity": "adapter on/off AUROC q90, line position, raw",
+      "computed": [
+        0.69,
+        0.42
+      ],
+      "record": [
+        0.69,
+        0.42
+      ],
+      "where": "09 RESULTS.md (c)",
+      "match": true
+    },
+    {
+      "quantity": "adapter on/off AUROC q90, line position, J-removed",
+      "computed": [
+        0.63,
+        0.43
+      ],
+      "record": [
+        0.63,
+        0.43
+      ],
+      "where": "09 RESULTS.md (c)",
+      "match": true
+    },
+    {
+      "quantity": "adapter on/off AUROC q90, tense, raw",
+      "computed": [
+        0.99,
+        0.51
+      ],
+      "record": [
+        0.99,
+        0.51
+      ],
+      "where": "09 RESULTS.md (c)",
+      "match": true
+    },
+    {
+      "quantity": "adapter on/off AUROC q90, tense, J-removed",
+      "computed": [
+        0.65,
+        0.5
+      ],
+      "record": [
+        0.65,
+        0.5
+      ],
+      "where": "09 RESULTS.md (c)",
+      "match": true
+    }
+  ],
+  "notes": "Oracle Lens channels (o9_templates.py): nl_cont ('- \\nthe' vs '- the', and/of); tense_tok ('- was' vs '- is', were/are, had/has); f07_tense ('- They were' vs '- They are', ...). Model readouts use the same tokens at the model's next position. Loaded via o9_analyze.load_ol/load_behave/pm (read-only import). Random directions randC/randD are the two chosen by o9_analyze's fixed rule. Ratio CIs: {\"col_raw\": [0.84, 1.19], \"col_4r\": [0.88, 1.26], \"tense_raw\": [2.79, 4.05], \"tense_4r\": [-77.91, -7.64], \"randC\": [1.45, 1.86], \"randD\": [1.67, 2.14]}",
+  "layout": {
+    "png_px": [
+      2499,
+      1090
+    ],
+    "aspect": 2.293,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 8.7
+  }
+}

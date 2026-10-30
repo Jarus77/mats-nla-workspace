@@ -1,0 +1,120 @@
+{
+  "name": "bk_exp08_matched_dose",
+  "title": "At an equal push, both readers follow language and the NLA follows tense, but neither follows line position",
+  "caption": "Pilot (excluded from main analysis), layer 42, 60 items per feature. Each item's activation is pushed along the feature's raw class-mean (or regression) direction by +/-0.11 of its own norm (centred), and the reader scores fixed label phrasings; AUROC separates the + from the - version (0.5 = no response). Error bars: 95% item bootstrap (2,000). Grey box: range of AUROCs for 20 random J-complement directions pushed the same way. At 0.14 of the norm the picture is the same (NLA 0.92 / 0.89 / 0.47). Caveat: fixed templates; the line-position direction is a regression direction, the others class-mean differences.",
+  "section": "backup:exp08",
+  "role": "backup",
+  "sources": [
+    "experiments/08_col_pilot/results/08_col_pilot/calib_nla_chunk*.pt",
+    "experiments/08_col_pilot/results/08_col_pilot/calib_ol_chunk*.pt",
+    "experiments/08_col_pilot/results/calib_metrics.json (cross-check only)"
+  ],
+  "checks": [
+    {
+      "quantity": "NLA lang AUROC at r11",
+      "computed": 0.868,
+      "record_json": 0.868,
+      "record": 0.87,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "NLA lang AUROC at r14",
+      "computed": 0.922,
+      "record_json": 0.922,
+      "record": 0.92,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens lang AUROC at r11",
+      "computed": 0.798,
+      "record_json": 0.798,
+      "record": 0.8,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens lang AUROC at r14",
+      "computed": 0.847,
+      "record_json": 0.847,
+      "record": 0.85,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "NLA tense AUROC at r11",
+      "computed": 0.851,
+      "record_json": 0.851,
+      "record": 0.85,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "NLA tense AUROC at r14",
+      "computed": 0.888,
+      "record_json": 0.888,
+      "record": 0.89,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens tense AUROC at r11",
+      "computed": 0.556,
+      "record_json": 0.556,
+      "record": 0.56,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens tense AUROC at r14",
+      "computed": 0.569,
+      "record_json": 0.569,
+      "record": 0.57,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "NLA col AUROC at r11",
+      "computed": 0.478,
+      "record_json": 0.478,
+      "record": 0.48,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "NLA col AUROC at r14",
+      "computed": 0.475,
+      "record_json": 0.475,
+      "record": 0.47,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens col AUROC at r11",
+      "computed": 0.48,
+      "record_json": 0.48,
+      "record": 0.48,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens col AUROC at r14",
+      "computed": 0.472,
+      "record_json": 0.472,
+      "record": 0.47,
+      "where": "08 RESULTS.md (c) table / calib_metrics.json",
+      "match": true
+    }
+  ],
+  "notes": "Primary template families: lang/tense 'label' (3 pairs each, e.g. NLA 'The text is written in Russian' vs '... in Polish'; 'The verb is in the past tense' vs '... present tense'; Oracle Lens '- Russian language', '- was' vs '- is'); col 'count_qual' ('near the end of a long line' vs 'at the start of a line'; 'a long line' vs 'a short line'). Scores are template-family mean log-odds, loaded with calib_analyze.load/scores (read-only import). Language here is 02's Russian-Polish direction, not French/German. Null band = 20 J-complement (4r*) unit directions at the same per-item norms. r14 values: {\"NLA lang\": 0.922, \"Oracle Lens lang\": 0.847, \"NLA tense\": 0.888, \"Oracle Lens tense\": 0.569, \"NLA col\": 0.475, \"Oracle Lens col\": 0.472}",
+  "layout": {
+    "png_px": [
+      2219,
+      1050
+    ],
+    "aspect": 2.113,
+    "min_font_pt": 13.0,
+    "effective_min_pt_at_9p4in": 11.0
+  }
+}

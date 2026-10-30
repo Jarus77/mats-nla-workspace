@@ -1,0 +1,139 @@
+{
+  "name": "s5_scorecards_slide",
+  "title": "On the primary scorecard the prediction rules tie or lose to always predicting 'low'",
+  "caption": "Share of scorecard cells each test got right: filled dots = the pre-registered rules, open diamonds = a predictor that always says 'low' on the same cells; bars are Wilson 95% intervals over cells, numbers at right are correct/cells, dashed line is the declared 0.80 bar. On the primary scorecard (free readouts, shaded) always-low gets 33/38 vs the rules' 31/38 in exp 19 and ties 30/38 in exp 22; exp 18 declared no primary split. Only after dropping the judged Oracle Lens exhibits cell do the rules pull ahead. Per-rule rows are in the backup s5_scorecards.",
+  "section": "S5",
+  "role": "main",
+  "sources": [
+    "18_prediction_test/results/score18.json",
+    "19_natural_bank/results/score19.json",
+    "22_public_bank/results/score22.json",
+    "18_prediction_test/results/predictions18.md",
+    "19_natural_bank/results/predictions19.md",
+    "22_public_bank/results/predictions22.md"
+  ],
+  "checks": [
+    {
+      "quantity": "predicted cells in score*.json equal the hashed predictions*.md tables",
+      "computed": "0 mismatches",
+      "record": "0 mismatches",
+      "where": "predictions18/19/22.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 rules: all cells",
+      "computed": "44/70",
+      "record": "44/70",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rules: all cells",
+      "computed": "44/56",
+      "record": "44/56",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rules: all cells",
+      "computed": "44/56",
+      "record": "44/56",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rules: primary (free readouts)",
+      "computed": "31/38",
+      "record": "31/38",
+      "where": "talk script S5 / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rules: primary (free readouts)",
+      "computed": "30/38",
+      "record": "30/38",
+      "where": "talk script S5 / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rules: primary without judged exhibits",
+      "computed": "28/30",
+      "record": "28/30",
+      "where": "talk script S5 / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rules: primary without judged exhibits",
+      "computed": "26/30",
+      "record": "26/30",
+      "where": "talk script S5 / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 always-low: all cells",
+      "computed": "45/56",
+      "record": "45/56",
+      "where": "BRIEF known-errors list",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 always-low: all cells",
+      "computed": "36/56",
+      "record": "36/56",
+      "where": "BRIEF known-errors list",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 always-low: primary (free readouts)",
+      "computed": "33/38",
+      "record": "33/38",
+      "where": "BRIEF known-errors list ('primary 33 vs 31 and 30 vs 30')",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 always-low: primary (free readouts)",
+      "computed": "30/38",
+      "record": "30/38",
+      "where": "BRIEF known-errors list ('primary 33 vs 31 and 30 vs 30')",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 always-low: primary without judged exhibits",
+      "computed": "25/30",
+      "record": "25/30",
+      "where": "earlier recount (g3_s5_scorecards)",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 always-low: primary without judged exhibits",
+      "computed": "23/30",
+      "record": "23/30",
+      "where": "earlier recount (g3_s5_scorecards)",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 always-low, all cells (no record)",
+      "computed": "40/70",
+      "record": "not in record",
+      "where": "new quantity",
+      "match": null
+    },
+    {
+      "quantity": "always-low >= rules on the primary scorecard in every test that declared one (19, 22)",
+      "computed": "True",
+      "record": "True (title claim)",
+      "where": "this figure's title",
+      "match": true
+    }
+  ],
+  "notes": "Computed with g3_s5_scorecards.py's load/aggregates/check_predictions from score18/19/22.json (no re-derivation). Primary = NLA states, NLA complement (multi-choice; pre-registered as 'NLA names the complement', a multi-candidate forced-choice argmax), Oracle Lens exhibits, Oracle Lens states, J-lens on uncued rows (JSON and HTML nesting depth excluded in 19; JSON nesting depth and code language in 22); secondary = the two prompted cells. Wilson intervals treat cells as independent, which they are not (several cells per row), so they are if anything too narrow. Exp 18 rules 44/70 vs always-low 40/70 on all cells: there the rules lead.",
+  "layout": {
+    "png_px": [
+      1834,
+      872
+    ],
+    "aspect": 2.103,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.4
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "name": "headline_carry_vs_name",
+  "title": "Both readers carry structural state in what they write and almost never state it",
+  "caption": "Each point is one row of the independent public bank, one reader. x: frozen-probe AUROC of the critic's rebuild of the layer-42 vector from the reader's own free readout (exp 25, 160 items per row, k = 1; bars are Hanley-McNeil 95% intervals on 80 vs 80, which ignore clustering). y: share of readouts a blind judge says state the value (exp 22, 40 items x 8 samples on the mining split; bars are item-bootstrap 95%, Wilson on 40 items when the rate is 0). Structural rows sit bottom-right for both readers; the NLA states only the language control freely (0.70), Oracle Lens states nothing. Caveat: the critic is the NLA's own (in distribution for the NLA column), and x and y are measured on different splits of the same bank.",
+  "section": "headline",
+  "role": "main",
+  "sources": [
+    "experiments/22_public_bank/results/items_base.json",
+    "experiments/22_public_bank/results/judged/code_lang_nla.json",
+    "experiments/22_public_bank/results/judged/code_lang_ol42.json",
+    "experiments/22_public_bank/results/judged/js_string_nla.json",
+    "experiments/22_public_bank/results/judged/js_string_ol42.json",
+    "experiments/22_public_bank/results/judged/json_depth_nla.json",
+    "experiments/22_public_bank/results/judged/json_depth_ol42.json",
+    "experiments/22_public_bank/results/judged/latex_math_nla.json",
+    "experiments/22_public_bank/results/judged/latex_math_ol42.json",
+    "experiments/22_public_bank/results/judged/md_heading_nla.json",
+    "experiments/22_public_bank/results/judged/md_heading_ol42.json",
+    "experiments/22_public_bank/results/judged/md_list_nla.json",
+    "experiments/22_public_bank/results/judged/md_list_ol42.json",
+    "experiments/22_public_bank/results/judged/py_arg_nla.json",
+    "experiments/22_public_bank/results/judged/py_arg_ol42.json",
+    "experiments/22_public_bank/results/judged/py_string_nla.json",
+    "experiments/22_public_bank/results/judged/py_string_ol42.json",
+    "experiments/25_public_exhibits/results/recon25_code_lang.json",
+    "experiments/25_public_exhibits/results/recon25_js_string.json",
+    "experiments/25_public_exhibits/results/recon25_json_depth.json",
+    "experiments/25_public_exhibits/results/recon25_latex_math.json",
+    "experiments/25_public_exhibits/results/recon25_md_heading.json",
+    "experiments/25_public_exhibits/results/recon25_md_list.json",
+    "experiments/25_public_exhibits/results/recon25_py_arg.json",
+    "experiments/25_public_exhibits/results/recon25_py_string.json",
+    "experiments/25_public_exhibits/results/score25.json"
+  ],
+  "checks": [
+    {
+      "quantity": "inside a Python string NLA stated rate (judge)",
+      "computed": 0.1187,
+      "record": 0.1187,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string Oracle Lens stated rate (judge)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string Oracle Lens readout AUROC via critic",
+      "computed": 0.8594,
+      "record": 0.8594,
+      "where": "exp25 score25.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string NLA stated rate (judge)",
+      "computed": 0.1437,
+      "record": 0.1437,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string Oracle Lens stated rate (judge)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string Oracle Lens readout AUROC via critic",
+      "computed": 0.843,
+      "record": 0.843,
+      "where": "exp25 score25.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math NLA stated rate (judge)",
+      "computed": 0.0875,
+      "record": 0.0875,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math Oracle Lens stated rate (judge)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math Oracle Lens readout AUROC via critic",
+      "computed": 0.8722,
+      "record": 0.8722,
+      "where": "exp25 score25.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "call argument NLA stated rate (judge)",
+      "computed": 0.0187,
+      "record": 0.0187,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "call argument Oracle Lens stated rate (judge)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "call argument Oracle Lens readout AUROC via critic",
+      "computed": 0.5091,
+      "record": 0.5091,
+      "where": "exp25 score25.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth NLA stated rate (judge)",
+      "computed": 0.25,
+      "record": 0.25,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth Oracle Lens stated rate (judge)",
+      "computed": 0.0094,
+      "record": 0.0094,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth Oracle Lens readout AUROC via critic",
+      "computed": 0.9702,
+      "record": 0.9702,
+      "where": "exp25 score25.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level NLA stated rate (judge)",
+      "computed": 0.0375,
+      "record": 0.0375,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level Oracle Lens stated rate (judge)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level Oracle Lens readout AUROC via critic",
+      "computed": 0.6461,
+      "record": 0.6461,
+      "where": "exp25 score25.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth NLA stated rate (judge)",
+      "computed": 0.0094,
+      "record": 0.0094,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth Oracle Lens stated rate (judge)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth Oracle Lens readout AUROC via critic",
+      "computed": 0.4798,
+      "record": 0.4798,
+      "where": "exp25 score25.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "code language NLA stated rate (judge)",
+      "computed": 0.7,
+      "record": 0.7,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "code language Oracle Lens stated rate (judge)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp25 score25.json (= exp22 judge cell)",
+      "match": true
+    },
+    {
+      "quantity": "code language Oracle Lens readout AUROC via critic",
+      "computed": 0.9844,
+      "record": 0.9844,
+      "where": "exp25 score25.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string Oracle Lens readout AUROC (2dp)",
+      "computed": 0.86,
+      "record": 0.86,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string NLA readout AUROC (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string Oracle Lens readout AUROC (2dp)",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string NLA readout AUROC (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math Oracle Lens readout AUROC (2dp)",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math NLA readout AUROC (2dp)",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument Oracle Lens readout AUROC (2dp)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument NLA readout AUROC (2dp)",
+      "computed": 0.93,
+      "record": 0.93,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth Oracle Lens readout AUROC (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth NLA readout AUROC (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level Oracle Lens readout AUROC (2dp)",
+      "computed": 0.65,
+      "record": 0.65,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level NLA readout AUROC (2dp)",
+      "computed": 0.7,
+      "record": 0.7,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth Oracle Lens readout AUROC (2dp)",
+      "computed": 0.48,
+      "record": 0.48,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth NLA readout AUROC (2dp)",
+      "computed": 0.49,
+      "record": 0.49,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language Oracle Lens readout AUROC (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language NLA readout AUROC (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language NLA stated (2dp)",
+      "computed": 0.7,
+      "record": 0.7,
+      "where": "exp22 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens max stated over 8 rows (2dp)",
+      "computed": 0.01,
+      "record": 0.01,
+      "where": "exp22 RESULTS.md 'max 1%'",
+      "match": true
+    },
+    {
+      "quantity": "NLA max stated over 7 natural rows (2dp)",
+      "computed": 0.25,
+      "record": 0.25,
+      "where": "exp22 RESULTS.md (json_depth 0.25)",
+      "match": true
+    }
+  ],
+  "notes": "Carrying measure chosen: critic frozen-probe AUROC (exp 25), the measure covering the most rows of one bank for both readers including the language control; the text-bag and second-decoder checks are in s6_textbag_check and s6_two_checks. States = the judge's 'stated' verdict (any value), the record's measure; stated-correct rates per row: inside a Python string NLA 0.12 / Oracle Lens 0.00, inside a JavaScript string NLA 0.14 / Oracle Lens 0.00, inside LaTeX math NLA 0.09 / Oracle Lens 0.00, call argument NLA 0.02 / Oracle Lens 0.00, JSON nesting depth NLA 0.24 / Oracle Lens 0.01, Markdown heading level NLA 0.03 / Oracle Lens 0.00, list nesting depth NLA 0.01 / Oracle Lens 0.00, code language NLA 0.70 / Oracle Lens 0.00. Exp 22 judge prompts: see experiments/12_concept_recall/recall_lib.py (stated / exhibited). Readers: NLA actor prompt per notes/wsbench_internals.md ('You are a meticulous AI researcher ... <concept>...</concept> Please provide an explanation.'); Oracle Lens carrier 'An activation vector from layer 42 ... Produce distinct concepts that encode this activation, each as a '- ' bullet on its own line.' Per-point values: inside a Python string: NLA x 0.990 y 0.119 (38/320), Oracle Lens x 0.859 y 0.000 (0/320); inside a JavaScript string: NLA x 0.968 y 0.144 (46/320), Oracle Lens x 0.843 y 0.000 (0/320); inside LaTeX math: NLA x 0.996 y 0.087 (28/320), Oracle Lens x 0.872 y 0.000 (0/320); call argument: NLA x 0.933 y 0.019 (6/320), Oracle Lens x 0.509 y 0.000 (0/320); JSON nesting depth: NLA x 0.991 y 0.250 (80/320), Oracle Lens x 0.970 y 0.009 (3/320); Markdown heading level: NLA x 0.703 y 0.037 (12/320), Oracle Lens x 0.646 y 0.000 (0/320); list nesting depth: NLA x 0.488 y 0.009 (3/320), Oracle Lens x 0.480 y 0.000 (0/320); code language: NLA x 0.981 y 0.700 (224/320), Oracle Lens x 0.984 y 0.000 (0/320)",
+  "layout": {
+    "png_px": [
+      1859,
+      859
+    ],
+    "aspect": 2.164,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

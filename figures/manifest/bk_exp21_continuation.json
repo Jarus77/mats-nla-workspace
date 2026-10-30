@@ -1,0 +1,64 @@
+{
+  "name": "bk_exp21_continuation",
+  "title": "Whether the continuation changes does not predict what Oracle Lens exhibits",
+  "caption": "Exp 21 (exploratory, post hoc): a bag-of-tokens classifier on the true next n tokens of the source, grouped 5-fold by file. Left: Spearman between that AUROC and Oracle Lens's exhibition (exp 20's reconstructor AUROC) across rows; only 4 tokens over the 7 readable rows is positive (+0.54, n = 7, not significant), the 9-row +0.78 is carried by the two unreadable Markdown rows. Right: at 4 tokens every readable row is separable (0.85 to 0.97), yet the lens exhibits the Python string at 0.91 and the table column at 0.64. Table column's continuation is synthetic (regenerated from exp 13's cell pools). No CIs: per-row AUROCs only, n = 7 to 9 rows.",
+  "section": "backup:exp21",
+  "role": "backup",
+  "sources": [
+    "experiments/21_continuation/results/table21.json",
+    "experiments/20_ar_structure/results/recon20_*.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exp 20 Oracle Lens readout copied into table21 equals recon20",
+      "computed": "0 mismatches",
+      "record": "0",
+      "where": "table21.json vs recon20_*.json",
+      "match": true
+    },
+    {
+      "quantity": "Spearman readable 7 at 4 tokens",
+      "computed": 0.536,
+      "record": "+0.54",
+      "where": "exp 21 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "Spearman all 9 at 4 tokens",
+      "computed": 0.783,
+      "record": "+0.78",
+      "where": "exp 21 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "Spearman readable 7 at other lengths",
+      "computed": {
+        "1": -0.07,
+        "2": -0.18,
+        "8": -0.32,
+        "16": -0.21,
+        "32": -0.11
+      },
+      "record": "near zero or negative",
+      "where": "exp 21 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "string state vs table column Oracle Lens readout",
+      "computed": "0.91 vs 0.64",
+      "record": "0.91 vs 0.64",
+      "where": "exp 21 RESULTS",
+      "match": true
+    }
+  ],
+  "notes": "Spearman recomputed with scipy from per-row values.",
+  "layout": {
+    "png_px": [
+      2310,
+      1080
+    ],
+    "aspect": 2.139,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 9.4
+  }
+}

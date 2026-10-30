@@ -1,0 +1,93 @@
+{
+  "name": "bk_exp02_nonj",
+  "title": "Of eight natural features, only the column count is cleanly outside the J-space",
+  "caption": "A: J-space enrichment of each feature's class-mean direction at layer 42 (neuronpedia n1000 lens; J-space = top-r right singular vectors of W_U diag(1+w) J_42); filled = r*, open = 4r*; at or below 1.5 counts as J-depleted. Point estimates only (gates.json stores no CI for this statistic). The count passes, but the chat-frame version meant as an in-J calibration also stays out. B: r* is the smallest rank whose rebuilt lens keeps at least 90% top-10 agreement on 100 basic_readout items; values from RESULTS.md (no raw file locally), no CIs.",
+  "section": "backup:exp02",
+  "role": "backup",
+  "sources": [
+    "experiments/02_nonj_features/gates.json",
+    "experiments/02_nonj_features/RESULTS.md (panel B only)"
+  ],
+  "checks": [
+    {
+      "quantity": "col enrichment r*/4r*",
+      "computed": "0.67/1.10",
+      "record": "0.67/1.10",
+      "where": "exp 02 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "col_report enrichment r*/4r*",
+      "computed": "0.59/0.86",
+      "record": "0.59/0.86",
+      "where": "exp 02 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "depth enrichment r*/4r*",
+      "computed": "0.57/1.16",
+      "record": "0.57/1.16",
+      "where": "exp 02 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "nexttok enrichment r*/4r*",
+      "computed": "1.29/1.54",
+      "record": "1.29/1.54",
+      "where": "exp 02 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "pred_pos enrichment r*/4r*",
+      "computed": "2.62/1.56",
+      "record": "2.62/1.56",
+      "where": "exp 02 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "lang enrichment r*/4r*",
+      "computed": "3.32/1.73",
+      "record": "3.32/1.73",
+      "where": "exp 02 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "tense enrichment r*/4r*",
+      "computed": "5.60/2.31",
+      "record": "5.60/2.31",
+      "where": "exp 02 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "topic enrichment r*/4r*",
+      "computed": "5.98/2.34",
+      "record": "5.98/2.34",
+      "where": "exp 02 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "r* at layer 42",
+      "computed": 384,
+      "record": 384,
+      "where": "exp 02 RESULTS / gates.json _meta",
+      "match": true
+    },
+    {
+      "quantity": "r* agreement curve at layer 42",
+      "computed": "not computable: rstar.json absent locally",
+      "record": "256 0.89, 384 0.93, 1024 0.95, 1536 0.97",
+      "where": "exp 02 RESULTS r* paragraph",
+      "match": null
+    }
+  ],
+  "notes": "Panel B: rstar.json is written by s8_rstar.py to the Modal results volume and is not in the repo; per brief, plotted from RESULTS.md text with no error bars. Only layer-42 agreement-by-rank is recorded in RESULTS (r* for other layers: 38: 192, 40: 384, 41: 384, 44: 256), so a per-layer curve could not be drawn.",
+  "layout": {
+    "png_px": [
+      2543,
+      1141
+    ],
+    "aspect": 2.229,
+    "min_font_pt": 11.0,
+    "effective_min_pt_at_9p4in": 8.1
+  }
+}

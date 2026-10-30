@@ -1,0 +1,80 @@
+{
+  "name": "bk_exp00_fve",
+  "title": "The NLA reproduces its published reconstruction (FVE), and text-only explanations reconstruct far less",
+  "caption": "Reconstruction (fraction of variance explained, FVE) of the NLA's critic rebuilding the layer-42 activation from a text, on 64 natural activations (k=4 samples each for the NLA, T=1, thinking off); bars are means, 95% bootstrap CIs over the 64 examples. The shipped reader reproduces the card (0.761 vs 0.766); a text model writing from the source text gets 0.28 and the source text itself 0.15 to 0.21. Caveat: the critic was co-trained on the NLA's register, so off-register text is handicapped; the fair text ceiling lies somewhere between 0.28 and the warm start's 0.46.",
+  "section": "backup:exp00",
+  "role": "backup",
+  "sources": [
+    "experiments/00_nla_gate/results/fve_gate.json",
+    "experiments/00_nla_gate/results/score_gate_textnla_lpcheck.json",
+    "experiments/00_nla_gate/results/offbyone.json"
+  ],
+  "checks": [
+    {
+      "quantity": "reconstruction (FVE) iter400_nothink",
+      "computed": 0.761,
+      "record": 0.761,
+      "where": "exp 00 RESULTS FVE table",
+      "match": true
+    },
+    {
+      "quantity": "reconstruction (FVE) iter300_nothink",
+      "computed": 0.759,
+      "record": 0.759,
+      "where": "exp 00 RESULTS FVE table",
+      "match": true
+    },
+    {
+      "quantity": "reconstruction (FVE) avbase_nothink",
+      "computed": 0.459,
+      "record": 0.459,
+      "where": "exp 00 RESULTS FVE table",
+      "match": true
+    },
+    {
+      "quantity": "reconstruction (FVE) textnla",
+      "computed": 0.276,
+      "record": 0.276,
+      "where": "exp 00 RESULTS FVE table",
+      "match": true
+    },
+    {
+      "quantity": "reconstruction (FVE) source_tail_900tok",
+      "computed": 0.208,
+      "record": 0.208,
+      "where": "exp 00 RESULTS FVE table",
+      "match": true
+    },
+    {
+      "quantity": "reconstruction (FVE) source_tail_64tok",
+      "computed": 0.151,
+      "record": 0.151,
+      "where": "exp 00 RESULTS FVE table",
+      "match": true
+    },
+    {
+      "quantity": "reconstruction (FVE) iter400_shuffled_act",
+      "computed": -0.903,
+      "record": -0.903,
+      "where": "exp 00 RESULTS FVE table",
+      "match": true
+    },
+    {
+      "quantity": "reconstruction (FVE) block-42 vs block-41 capture (off-by-one test)",
+      "computed": "0.760 vs 0.695",
+      "record": "0.760 vs 0.695",
+      "where": "exp 00 RESULTS K0",
+      "match": true
+    }
+  ],
+  "notes": "reconstruction (FVE) = 1 - mean per-element MSE / per-element variance of the rescaled gold set (baseline 0.4616). The TextNLA row uses the warm-start instruction (experiments/06_resolving_decomposition/data/nla_instruction.txt), not the NLA actor prompt.",
+  "layout": {
+    "png_px": [
+      2666,
+      1033
+    ],
+    "aspect": 2.581,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 8.1
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "name": "bk_exp12_recall",
+  "title": "Oracle Lens states a concept in 1 of 4,480 readouts; it only exhibits language, code, caps and tense",
+  "caption": "Exp 12, layer 42. Left: prompted AUROC per reader (better of mean-of-3 mined phrasings and fixed label; 160 items; 95% bootstrap CI clustered by source). Right: share of 320 free readouts (40 items x 8) judged to state the value (NLA, Oracle Lens) or, for Oracle Lens, whose own text exhibits it (hatched); NLA CI item-clustered bootstrap. Oracle Lens >= NLA prompted on 7 of 14 rows (the record says 9). Oracle Lens states 1 of 4480 readouts. One judge (Gemini 3.8 Flash).",
+  "section": "backup:exp12",
+  "role": "backup",
+  "sources": [
+    "experiments/07_template_mining/results/score_nla_agr_gender.json",
+    "experiments/07_template_mining/results/score_nla_agr_number.json",
+    "experiments/07_template_mining/results/score_nla_bk_caps.json",
+    "experiments/07_template_mining/results/score_nla_bk_code.json",
+    "experiments/07_template_mining/results/score_nla_bk_indent.json",
+    "experiments/07_template_mining/results/score_nla_bk_listidx.json",
+    "experiments/07_template_mining/results/score_nla_bk_quote.json",
+    "experiments/07_template_mining/results/score_nla_bk_wordpos.json",
+    "experiments/07_template_mining/results/score_nla_ij2_lang.json",
+    "experiments/07_template_mining/results/score_nla_ij_listnum.json",
+    "experiments/07_template_mining/results/score_nla_nj1_col.json",
+    "experiments/07_template_mining/results/score_nla_nj1_col_break.json",
+    "experiments/07_template_mining/results/score_nla_nj2_tense.json",
+    "experiments/07_template_mining/results/score_nla_nj3_predpos.json",
+    "experiments/07_template_mining/results/score_ol_agr_gender.json",
+    "experiments/07_template_mining/results/score_ol_agr_number.json",
+    "experiments/07_template_mining/results/score_ol_bk_caps.json",
+    "experiments/07_template_mining/results/score_ol_bk_code.json",
+    "experiments/07_template_mining/results/score_ol_bk_indent.json",
+    "experiments/07_template_mining/results/score_ol_bk_listidx.json",
+    "experiments/07_template_mining/results/score_ol_bk_quote.json",
+    "experiments/07_template_mining/results/score_ol_bk_wordpos.json",
+    "experiments/07_template_mining/results/score_ol_ij2_lang.json",
+    "experiments/07_template_mining/results/score_ol_ij_listnum.json",
+    "experiments/07_template_mining/results/score_ol_nj1_col.json",
+    "experiments/07_template_mining/results/score_ol_nj1_col_break.json",
+    "experiments/07_template_mining/results/score_ol_nj2_tense.json",
+    "experiments/07_template_mining/results/score_ol_nj3_predpos.json",
+    "experiments/07_template_mining/templates_frozen.json",
+    "experiments/12_concept_recall/results/judged/agr_gender_nla.json",
+    "experiments/12_concept_recall/results/judged/agr_gender_ol42.json",
+    "experiments/12_concept_recall/results/judged/agr_number_nla.json",
+    "experiments/12_concept_recall/results/judged/agr_number_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_caps_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_caps_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_code_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_code_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_indent_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_indent_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_listidx_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_listidx_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_quote_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_quote_ol42.json",
+    "experiments/12_concept_recall/results/judged/bk_wordpos_nla.json",
+    "experiments/12_concept_recall/results/judged/bk_wordpos_ol42.json",
+    "experiments/12_concept_recall/results/judged/ij2_lang_nla.json",
+    "experiments/12_concept_recall/results/judged/ij2_lang_ol42.json",
+    "experiments/12_concept_recall/results/judged/ij_listnum_nla.json",
+    "experiments/12_concept_recall/results/judged/ij_listnum_ol42.json",
+    "experiments/12_concept_recall/results/judged/nj1_col_break_nla.json",
+    "experiments/12_concept_recall/results/judged/nj1_col_break_ol42.json",
+    "experiments/12_concept_recall/results/judged/nj1_col_nla.json",
+    "experiments/12_concept_recall/results/judged/nj1_col_ol42.json",
+    "experiments/12_concept_recall/results/judged/nj2_tense_nla.json",
+    "experiments/12_concept_recall/results/judged/nj2_tense_ol42.json",
+    "experiments/12_concept_recall/results/judged/nj3_predpos_nla.json",
+    "experiments/12_concept_recall/results/judged/nj3_predpos_ol42.json"
+  ],
+  "checks": [
+    {
+      "quantity": "rows with Oracle Lens >= NLA prompted (unrounded)",
+      "computed": 7,
+      "record": 9,
+      "where": "exp 12 RESULTS point 4 ('OLens >= NLA on 9 of 14')",
+      "match": false
+    },
+    {
+      "quantity": "rows with Oracle Lens >= NLA prompted (2-dp rounded)",
+      "computed": 8,
+      "record": 9,
+      "where": "exp 12 RESULTS point 4",
+      "match": false
+    },
+    {
+      "quantity": "Oracle Lens 'states' verdicts at layer 42",
+      "computed": "1/4480",
+      "record": "0/4480",
+      "where": "exp 12 RESULTS point 1",
+      "match": false
+    },
+    {
+      "quantity": "nj1_col NLA prompted",
+      "computed": 0.6,
+      "record": 0.6,
+      "where": "exp 12 RESULTS point 3/4",
+      "match": true
+    },
+    {
+      "quantity": "bk_wordpos NLA prompted",
+      "computed": 0.72,
+      "record": 0.72,
+      "where": "exp 12 RESULTS point 3/4",
+      "match": true
+    },
+    {
+      "quantity": "bk_indent NLA prompted",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "exp 12 RESULTS point 3/4",
+      "match": true
+    },
+    {
+      "quantity": "bk_quote NLA prompted",
+      "computed": 0.83,
+      "record": 0.83,
+      "where": "exp 12 RESULTS point 3/4",
+      "match": true
+    },
+    {
+      "quantity": "list item index NLA stated",
+      "computed": 0.25,
+      "record": 0.25,
+      "where": "exp 12 RESULTS point 2",
+      "match": true
+    },
+    {
+      "quantity": "code language Oracle Lens exhibits",
+      "computed": 0.93,
+      "record": 0.93,
+      "where": "exp 12 RESULTS point 1",
+      "match": true
+    },
+    {
+      "quantity": "caps Oracle Lens exhibits",
+      "computed": 0.5,
+      "record": 0.5,
+      "where": "exp 12 RESULTS point 1",
+      "match": true
+    }
+  ],
+  "notes": "Recount of 'OLens >= NLA on 9 of 14' gives the number in checks; the record's statement is wrong. The one Oracle Lens 'states' verdict is on language (1 of 320).",
+  "layout": {
+    "png_px": [
+      2535,
+      1249
+    ],
+    "aspect": 2.03,
+    "min_font_pt": 10.5,
+    "effective_min_pt_at_9p4in": 7.8
+  }
+}

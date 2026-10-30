@@ -1,0 +1,153 @@
+{
+  "name": "s4_recon_keeps",
+  "title": "Reconstructors rebuild position from real text but not from a sentence that states it",
+  "caption": "Exp 14, 200 items per row. A: a probe trained on Oracle Lens's reconstructor output for the true 32-token span (grouped 5-fold) separates every row; fed Oracle Lens's own bullets it falls to 0.54-0.66 on the position rows but not on language. Right: a one-sentence statement moves each reconstructor's output along the true class direction by under 0.30 of the gap on every position row; only the language statement through the NLA's critic clears it (0.72). Statements are the fixed labels, e.g. 'The text is in French' (NLA critic) and '- French language' (Oracle Lens). Oracle Lens's reconstructor ignores even '- French language' (0.10); its 1.39 comes from a bullet written in French. Caveat: aggregates only (no per-item file is local), so no intervals; Oracle Lens reconstructor at layer 44, in its whitened output space.",
+  "section": "S4",
+  "role": "main",
+  "sources": [
+    "experiments/14_ar_blindspot/results/analysis14_tb_tablecol.json",
+    "experiments/14_ar_blindspot/results/analysis14_tb_paren.json",
+    "experiments/14_ar_blindspot/results/analysis14_bk_listidx.json",
+    "experiments/14_ar_blindspot/results/analysis14_ij2_lang.json",
+    "experiments/07_template_mining/templates_frozen.json",
+    "experiments/13_new_rows/templates_frozen.json"
+  ],
+  "checks": [
+    {
+      "quantity": "table column Oracle Lens reconstructor, true span, probe AUROC",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "table column Oracle Lens reconstructor, Oracle Lens bullets, true-text probe AUROC",
+      "computed": 0.66,
+      "record": 0.66,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "table column Oracle Lens reconstructor, fixed descriptive statement, gap share",
+      "computed": 0.03,
+      "record": 0.03,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses Oracle Lens reconstructor, true span, probe AUROC",
+      "computed": 0.93,
+      "record": 0.93,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses Oracle Lens reconstructor, Oracle Lens bullets, true-text probe AUROC",
+      "computed": 0.6,
+      "record": 0.6,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses Oracle Lens reconstructor, fixed descriptive statement, gap share",
+      "computed": 0.1,
+      "record": 0.1,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang Oracle Lens reconstructor, true span, probe AUROC",
+      "computed": 0.91,
+      "record": 0.91,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang Oracle Lens reconstructor, Oracle Lens bullets, true-text probe AUROC",
+      "computed": 0.92,
+      "record": 0.92,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang Oracle Lens reconstructor, fixed descriptive statement, gap share",
+      "computed": 0.1,
+      "record": 0.1,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "language Oracle Lens best bullet statement gap share",
+      "computed": 1.39,
+      "record": 1.39,
+      "where": "talk script S4 table ('a statement ... 1.39')",
+      "match": true
+    },
+    {
+      "quantity": "what the talk's 'a statement of the property' language 1.39 is",
+      "computed": "'- Je recommande' vs '- Je empfehle' (m1, a bullet written in the language); the descriptive '- French language' moves 0.10",
+      "record": "talk script S4: statement 0.03 / 0.10 vs 1.39 for language",
+      "where": "talk_script.md S4 exp 14 table",
+      "match": false
+    },
+    {
+      "quantity": "units of the talk's span / bullets rows",
+      "computed": "probe AUROC (1.00, 0.93 / 0.66, 0.60); as share of class gap, bullets keep 0.12 / 0.18 (language 0.28)",
+      "record": "talk script S4 header: 'share of the class gap kept' for all three rows",
+      "where": "talk_script.md S4 exp 14 table",
+      "match": false
+    },
+    {
+      "quantity": "parenthesis 0.44 bullet pair",
+      "computed": "ol:ol:tb_paren:m2 = '- /or' vs '- /early' (0.439); '- ), and' vs '- and' (m1) = -0.169",
+      "record": "exp 14 RESULTS: \"the punctuation-bearing '- ), and' vs '- and' (0.44)\"",
+      "where": "exp 14 RESULTS.md point 2",
+      "match": false
+    },
+    {
+      "quantity": "which reconstructor the talk's exp 14 numbers come from",
+      "computed": "Oracle Lens's own reconstructor at layer 44 (whitened output space); through the NLA critic the statements give 0.07 / -0.05 / 0.72",
+      "record": "talk glossary defines the reconstructor as the NLA's critic and the S4 table does not say which one",
+      "where": "talk_script.md glossary + S4",
+      "match": false
+    },
+    {
+      "quantity": "NLA critic fixed statement, table column",
+      "computed": 0.07,
+      "record": 0.07,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "NLA critic fixed statement, parenthesis",
+      "computed": -0.05,
+      "record": -0.05,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "NLA critic fixed statement, language",
+      "computed": 0.72,
+      "record": 0.72,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    },
+    {
+      "quantity": "NLA critic fixed statement, list item index",
+      "computed": 0.23,
+      "record": 0.23,
+      "where": "exp 14 RESULTS table",
+      "match": true
+    }
+  ],
+  "notes": "Statements: NLA critic uses the fixed-label sentence of the NLA ('The current cell is in the first/fifth column of the table', 'The current position is inside/outside a parenthesis', 'This is item number two/nine in the list', 'The text is in French/German'); Oracle Lens's reconstructor uses its fixed bullet ('- column one/five', '- inside/outside parentheses', '- item two/nine', '- French/German language'). As a share of the class gap, Oracle Lens bullets keep table column 0.12, inside parentheses 0.18, list item index 0.07, ij2_lang 0.28. The talk table mixes units (span and bullets rows are probe AUROCs, the statement row a gap share) and pairs a descriptive statement for position with an exhibiting French bullet for language. No raw per-item reconstructions are on disk; numbers are read from the analysis14_*.json aggregates.",
+  "layout": {
+    "png_px": [
+      1881,
+      829
+    ],
+    "aspect": 2.269,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.0
+  }
+}

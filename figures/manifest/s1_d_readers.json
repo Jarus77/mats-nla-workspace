@@ -1,0 +1,76 @@
+{
+  "name": "s1_d_readers",
+  "title": "Three readers get the same activation and never the prompt",
+  "caption": "Each reader receives only the layer-42 activation h at the read token. The NLA has h added at a marker inside its actor prompt and writes an explanation; its critic rebuilds h from those words, and RL rewards words that survive the rebuild. Oracle Lens has h written into one slot character's embedding and writes bullets; the J-lens generates nothing and lists the top tokens of W_U\u00b7J_42\u00b7h.",
+  "section": "S1",
+  "role": "main",
+  "sources": [
+    "src/mats/readers/nla.py",
+    "src/mats/readers/olens.py",
+    "src/mats/readers/jlens.py",
+    "notes/wsbench_internals.md",
+    "notes/doc_part2_draft.md",
+    "notes/decisions.md"
+  ],
+  "checks": [
+    {
+      "quantity": "NLA carrier is the actor prompt (meticulous AI researcher ... <concept>)",
+      "computed": "nla.py: 'Prompt = nla_meta.yaml actor template'; wsbench_internals.md 1.5 quotes it",
+      "record": "talk script glossary quotes the warm-start / TextNLA instruction ('A language model needs to predict...')",
+      "where": "talk script, 'three readers' table",
+      "match": false
+    },
+    {
+      "quantity": "NLA injection",
+      "computed": "norm-matched ADD at block-1 output at marker id 158983",
+      "record": "talk script: 'added at a marker token'",
+      "where": "nla.py docstring",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens carrier",
+      "computed": "olens.py PROMPT (verbatim, layer=42)",
+      "record": "talk script glossary carrier text",
+      "where": "olens.py",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens trained layers",
+      "computed": "TRAINED_LAYERS = range(20, 61, 4)",
+      "record": "20 to 60 step 4",
+      "where": "olens.py",
+      "match": true
+    },
+    {
+      "quantity": "J-space rank at layer 42",
+      "computed": "1,536 = 4 r*, r* = 384",
+      "record": "rank 1,536",
+      "where": "notes/doc_part2_draft.md; exp 15 RESULTS (4r* = 1536)",
+      "match": true
+    },
+    {
+      "quantity": "J-lens readout",
+      "computed": "s_t = (W_U J_L h)_t / ||J_L^T W_U[t]||, top-k; no generation",
+      "record": "talk script: 'top tokens of the unembedding applied to the Jacobian image'",
+      "where": "jlens.py",
+      "match": true
+    },
+    {
+      "quantity": "NLA adapter",
+      "computed": "DEFAULT_ADAPTER av_rl_adapters/iter_000400",
+      "record": "iter_000400",
+      "where": "nla.py",
+      "match": true
+    }
+  ],
+  "notes": "Diagram, no data. NLA actor prompt (from notes/wsbench_internals.md 1.5, abbreviated there with '...'; nla_meta.yaml is not in the repo): 'You are a meticulous AI researcher ... We will pass the vector enclosed in <concept> tags ... The explanation consists of 2-3 text snippets ... <concept>[marker U+321C]</concept> Please provide an explanation.' The NLA's h is norm-matched and added at the marker token after block 1. The marker glyph U+321C is not in the figure font, so it is drawn as [h]. The talk script's NLA carrier text quotes experiments/06_resolving_decomposition/data/nla_instruction.txt, which is the TextNLA / warm-start instruction, not the actor prompt: fix the script. Oracle Lens prompt, verbatim: 'An activation vector from layer 42 of a language model is enclosed in activation tags: <activation>X</activation>. Produce distinct concepts that encode this activation, each as a '- ' bullet on its own line.' (slot = an enclosed ideograph, id 158983 for Qwen3.6, embedding replaced by alpha*unit(h), alpha 16000); Oracle Lens was trained at layers 20 to 60 in steps of 4, so layer 42 is off its grid. J-lens: the J-space is the top 1,536 directions at layer 42 (= 4 r*, r* = 384); W_U \u00b7 J \u00b7 h is cosine-normalised. Critic input (nla.py): 'Summary of the following text: <text>{e}</text> <summary>'.",
+  "layout": {
+    "png_px": [
+      1860,
+      850
+    ],
+    "aspect": 2.188,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

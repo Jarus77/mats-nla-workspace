@@ -1,0 +1,240 @@
+{
+  "name": "s6_textbag_check",
+  "title": "A plain word-count classifier with no critic finds the same states in the readouts",
+  "caption": "Per row of exp 20 (160 selection items, k = 1 readouts), x = frozen-probe AUROC of the critic's rebuild from the readout, y = AUROC of a binary bag-of-tokens logistic classifier on the readout text alone (grouped 5-fold by source file, recomputed here from the saved readouts). Bars: cluster-bootstrap 95% over source files (y only; the critic has no per-item scores). Oracle Lens sits on the diagonal; the NLA's bag is lower than its in-distribution critic on a few rows (call argument 0.97 by the critic vs 0.67 by the words: the critic reads more than the words, or it knows NLA prose). Hollow points are the two Markdown rows (not linearly present at layer 42).",
+  "section": "S6",
+  "role": "main",
+  "sources": [
+    "experiments/13_new_rows/results/items_base.json",
+    "experiments/19_natural_bank/results/items_base.json",
+    "experiments/20_ar_structure/results/nla_sel_html_depth.json",
+    "experiments/20_ar_structure/results/nla_sel_js_string.json",
+    "experiments/20_ar_structure/results/nla_sel_json_depth.json",
+    "experiments/20_ar_structure/results/nla_sel_latex_math.json",
+    "experiments/20_ar_structure/results/nla_sel_md_heading.json",
+    "experiments/20_ar_structure/results/nla_sel_md_list.json",
+    "experiments/20_ar_structure/results/nla_sel_py_arg.json",
+    "experiments/20_ar_structure/results/nla_sel_py_string.json",
+    "experiments/20_ar_structure/results/nla_sel_tb_paren.json",
+    "experiments/20_ar_structure/results/nla_sel_tb_tablecol.json",
+    "experiments/20_ar_structure/results/ol_sel_html_depth.json",
+    "experiments/20_ar_structure/results/ol_sel_js_string.json",
+    "experiments/20_ar_structure/results/ol_sel_json_depth.json",
+    "experiments/20_ar_structure/results/ol_sel_latex_math.json",
+    "experiments/20_ar_structure/results/ol_sel_md_heading.json",
+    "experiments/20_ar_structure/results/ol_sel_md_list.json",
+    "experiments/20_ar_structure/results/ol_sel_py_arg.json",
+    "experiments/20_ar_structure/results/ol_sel_py_string.json",
+    "experiments/20_ar_structure/results/ol_sel_tb_paren.json",
+    "experiments/20_ar_structure/results/ol_sel_tb_tablecol.json",
+    "experiments/20_ar_structure/results/readout_textbag.json"
+  ],
+  "checks": [
+    {
+      "quantity": "inside a Python string Oracle Lens text bag",
+      "computed": 0.9586,
+      "record": 0.9586,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string Oracle Lens text bag (2dp)",
+      "computed": 0.96,
+      "record": 0.96,
+      "where": "talk script S6 decorrelated check",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string NLA text bag",
+      "computed": 0.9516,
+      "record": 0.9516,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string Oracle Lens text bag",
+      "computed": 0.8773,
+      "record": 0.8773,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string Oracle Lens text bag (2dp)",
+      "computed": 0.88,
+      "record": 0.88,
+      "where": "talk script S6 decorrelated check",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string NLA text bag",
+      "computed": 0.8705,
+      "record": 0.8705,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math Oracle Lens text bag",
+      "computed": 0.7788,
+      "record": 0.7788,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math Oracle Lens text bag (2dp)",
+      "computed": 0.78,
+      "record": 0.78,
+      "where": "talk script S6 decorrelated check",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math NLA text bag",
+      "computed": 0.855,
+      "record": 0.855,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "call argument Oracle Lens text bag",
+      "computed": 0.7161,
+      "record": 0.7161,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "call argument Oracle Lens text bag (2dp)",
+      "computed": 0.72,
+      "record": 0.72,
+      "where": "talk script S6 decorrelated check",
+      "match": true
+    },
+    {
+      "quantity": "call argument NLA text bag",
+      "computed": 0.672,
+      "record": 0.672,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth Oracle Lens text bag",
+      "computed": 0.9406,
+      "record": 0.9406,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth Oracle Lens text bag (2dp)",
+      "computed": 0.94,
+      "record": 0.94,
+      "where": "talk script S6 decorrelated check",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth NLA text bag",
+      "computed": 0.9723,
+      "record": 0.9723,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth Oracle Lens text bag",
+      "computed": 0.8447,
+      "record": 0.8447,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth Oracle Lens text bag (2dp)",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "talk script S6 decorrelated check",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth NLA text bag",
+      "computed": 0.9627,
+      "record": 0.9627,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "table column Oracle Lens text bag",
+      "computed": 0.7144,
+      "record": 0.7144,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "table column Oracle Lens text bag (2dp)",
+      "computed": 0.71,
+      "record": 0.71,
+      "where": "talk script S6 decorrelated check",
+      "match": true
+    },
+    {
+      "quantity": "table column NLA text bag",
+      "computed": 0.9077,
+      "record": 0.9077,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses Oracle Lens text bag",
+      "computed": 0.5583,
+      "record": 0.5583,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses Oracle Lens text bag (2dp)",
+      "computed": 0.56,
+      "record": 0.56,
+      "where": "talk script S6 decorrelated check",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses NLA text bag",
+      "computed": 0.8113,
+      "record": 0.8113,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level Oracle Lens text bag",
+      "computed": 0.5677,
+      "record": 0.5677,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level NLA text bag",
+      "computed": 0.6292,
+      "record": 0.6292,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth Oracle Lens text bag",
+      "computed": 0.5925,
+      "record": 0.5925,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth NLA text bag",
+      "computed": 0.6217,
+      "record": 0.6217,
+      "where": "exp20 results/readout_textbag.json",
+      "match": true
+    }
+  ],
+  "notes": "Classifier: lib19.bag_of_tokens (window all, min_df 3) on Qwen3.6-27B tokens, mats.probes logistic lam 1.0, group_folds seed 0, exactly exp 23's carrying classifier; the recomputation reproduces readout_textbag.json.",
+  "layout": {
+    "png_px": [
+      1859,
+      859
+    ],
+    "aspect": 2.164,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

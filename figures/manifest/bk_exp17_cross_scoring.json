@@ -1,0 +1,116 @@
+{
+  "name": "bk_exp17_cross_scoring",
+  "title": "The independent bank's low table-column score is mostly phrasing, not items",
+  "caption": "Exp 17 (d): our prompted readers scored on an independent bank of table-column and parenthesis items (84 per row) and on ours (160 / 149), with our frozen phrasings (fixed + 3 mined, mean log-odds) or the independent bank's two phrasings. AUROC with 95% bootstrap CI clustered by template family (independent items) or passage (ours). On table column the NLA goes 0.56 -> 0.85 when only the phrasing changes. Caveat: 84 items per row, wide intervals.",
+  "section": "backup:exp17",
+  "role": "backup",
+  "sources": [
+    "experiments/17_harden/results/vol/xs_nla_tb_tablecol.pt",
+    "experiments/17_harden/results/vol/xs_ol_tb_tablecol.pt",
+    "experiments/17_harden/results/vol/xs_nla_tb_paren.pt",
+    "experiments/17_harden/results/vol/xs_ol_tb_paren.pt"
+  ],
+  "checks": [
+    {
+      "quantity": "table column nla his_x_his",
+      "computed": 0.56,
+      "record": 0.56,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "table column nla his_x_ours",
+      "computed": 0.85,
+      "record": 0.85,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "table column nla ours_x_his",
+      "computed": 0.64,
+      "record": 0.64,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "table column ol his_x_his",
+      "computed": 0.58,
+      "record": 0.58,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "table column ol his_x_ours",
+      "computed": 0.72,
+      "record": 0.72,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "table column ol ours_x_his",
+      "computed": 0.36,
+      "record": 0.36,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses nla his_x_his",
+      "computed": 0.75,
+      "record": 0.75,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses nla his_x_ours",
+      "computed": 0.85,
+      "record": 0.85,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses nla ours_x_his",
+      "computed": 0.83,
+      "record": 0.83,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses ol his_x_his",
+      "computed": 0.53,
+      "record": 0.53,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses ol his_x_ours",
+      "computed": 0.78,
+      "record": 0.78,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses ol ours_x_his",
+      "computed": 0.5,
+      "record": 0.5,
+      "where": "exp 17 RESULTS (d)",
+      "match": true
+    },
+    {
+      "quantity": "table column NLA, independent items x independent phrasings vs talk's '0.57'",
+      "computed": 0.56,
+      "record": 0.57,
+      "where": "talk script S3 hardening ('scored the NLA at 0.57')",
+      "match": false
+    }
+  ],
+  "notes": "The independent bank's author is not named per the brief. Independent phrasing example: 'The current excerpt has the first table column.'",
+  "layout": {
+    "png_px": [
+      2174,
+      1270
+    ],
+    "aspect": 1.712,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 9.9
+  }
+}

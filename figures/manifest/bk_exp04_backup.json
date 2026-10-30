@@ -1,0 +1,157 @@
+{
+  "name": "bk_exp04_backup",
+  "title": "No backup candidate is both outside the J-space and used; the column count stays the only clean one",
+  "caption": "Nine backup non-J candidates at layer 42. A: enrichment of the class-mean direction in the top-384 J-space (dark = at or below 1.5), with each feature's shuffled-label reference (tick). B: effect on the predicted next-token behaviour of steering at layer 38 along the direction with the top-1536 J-space removed, as a multiple of the largest |effect| of 24 random J-complement directions, signed, at the q90 (open) and q99 (filled) doses (error bar: 95% item-bootstrap CI of the effect divided by that random maximum). Only indentation and sentence position are depleted; indentation does not move, sentence position is J-lens readable. Caveat: point estimates in A carry no CI.",
+  "section": "backup:exp04",
+  "role": "backup",
+  "sources": [
+    "experiments/04_backup_features/results/gates.json",
+    "experiments/04_backup_features/results/causal/indent_L38.json",
+    "experiments/04_backup_features/results/causal/sent_pos_L38.json",
+    "experiments/04_backup_features/results/causal/code_lang_L38.json",
+    "experiments/04_backup_features/results/causal/cap_next_all_L38.json",
+    "experiments/04_backup_features/results/causal/in_quote_L38.json",
+    "experiments/04_backup_features/results/causal/list_num_L38.json",
+    "experiments/04_backup_features/results/causal/list_hdr_L38.json",
+    "experiments/04_backup_features/results/causal/cap_next_L38.json",
+    "experiments/04_backup_features/results/causal/gender_next_L38.json"
+  ],
+  "checks": [
+    {
+      "quantity": "indent enrichment r*",
+      "computed": 1.11,
+      "record": 1.11,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "indent G4 at layer 38 x max |random| at the dose RESULTS quotes (p90)",
+      "computed": 0.6,
+      "record": 0.6,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    },
+    {
+      "quantity": "sent_pos enrichment r*",
+      "computed": 1.03,
+      "record": 1.03,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "sent_pos G4 at layer 38 x max |random| at the dose RESULTS quotes (p99)",
+      "computed": 3.7,
+      "record": 3.7,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    },
+    {
+      "quantity": "code language enrichment r*",
+      "computed": 1.49,
+      "record": 1.49,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "code language G4 at layer 38 x max |random| at the dose RESULTS quotes (p90)",
+      "computed": 5.5,
+      "record": 5.5,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    },
+    {
+      "quantity": "cap_next_all enrichment r*",
+      "computed": 1.75,
+      "record": 1.75,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "cap_next_all G4 at layer 38 x max |random| at the dose RESULTS quotes (p90)",
+      "computed": 12.5,
+      "record": 12.5,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    },
+    {
+      "quantity": "in_quote enrichment r*",
+      "computed": 2.22,
+      "record": 2.22,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "in_quote G4 at layer 38 x max |random| at the dose RESULTS quotes (p99)",
+      "computed": 2.6,
+      "record": 2.6,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    },
+    {
+      "quantity": "list_num enrichment r*",
+      "computed": 2.37,
+      "record": 2.37,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "list_num G4 at layer 38 x max |random| at the dose RESULTS quotes (p90)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    },
+    {
+      "quantity": "list_hdr enrichment r*",
+      "computed": 2.45,
+      "record": 2.45,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "list_hdr G4 at layer 38 x max |random| at the dose RESULTS quotes (p90)",
+      "computed": 0.4,
+      "record": 0.4,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    },
+    {
+      "quantity": "cap_next enrichment r*",
+      "computed": 2.71,
+      "record": 2.71,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "cap_next G4 at layer 38 x max |random| at the dose RESULTS quotes (p90)",
+      "computed": 7.3,
+      "record": 7.3,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    },
+    {
+      "quantity": "gender_next enrichment r*",
+      "computed": 4.15,
+      "record": 4.15,
+      "where": "exp 04 RESULTS gate table",
+      "match": true
+    },
+    {
+      "quantity": "gender_next G4 at layer 38 x max |random| at the dose RESULTS quotes (p99)",
+      "computed": 2.8,
+      "record": 2.8,
+      "where": "exp 04 RESULTS gate table ('best dose' column)",
+      "match": true
+    }
+  ],
+  "notes": "The RESULTS 'best dose' column is not the larger dose throughout: it quotes p90 for cap_next (7.3x; p99 is 10.8x), cap_next_all (12.5x; p99 16.0x), code language (5.5x; p99 10.0x), indent and list_hdr, and p99 for in_quote, gender_next, sent_pos. gates.json G4_L38 stores p90 for all of them. Both doses are plotted. No verdict changes.",
+  "layout": {
+    "png_px": [
+      2687,
+      1141
+    ],
+    "aspect": 2.355,
+    "min_font_pt": 11.0,
+    "effective_min_pt_at_9p4in": 7.7
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "name": "s6_random_points",
+  "title": "At random read points Oracle Lens never states 'inside a string', yet its words carry the state",
+  "caption": "Random read points in random public documents, nothing prompted, one readout per reader. Left: share of readouts a blind judge (readout only) says state the position is inside a string literal, exps 27 + 23 pooled, every in-string point and matched negatives; Wilson 95%; unparsed verdicts dropped. Right: in-string vs not on the Python + JavaScript points, AUROC of a probe on the layer-42 activation and of a bag-of-tokens classifier on each reader's readout text alone; grouped 5-fold by source file, cluster-bootstrap 95% over files. Caveat: by the strict regex the NLA names the string state on only 0.02 of in-string readouts and Oracle Lens on none; the judge's 0.22 (states) counts the NLA's own wording ('mid-quotation').",
+  "section": "S6",
+  "role": "main",
+  "sources": [
+    "experiments/27_random_2000/results/judged27.jsonl",
+    "experiments/27_random_2000/results/judge27.json",
+    "experiments/27_random_2000/results/items_base.json",
+    "experiments/27_random_2000/results/ol27.json",
+    "experiments/27_random_2000/results/nla27.json",
+    "experiments/27_random_2000/results/vol/acts27.pt",
+    "experiments/27_random_2000/results/table27.json",
+    "experiments/23_random_points/results/items_base.json",
+    "experiments/23_random_points/results/ol23.json",
+    "experiments/23_random_points/results/nla23.json",
+    "experiments/23_random_points/results/vol/acts23.pt",
+    "experiments/23_random_points/results/table23.json",
+    "experiments/30_naming_lora/results/eval30_base.json",
+    "experiments/30_naming_lora/results/eval30_C.json",
+    "experiments/30_naming_lora/results/eval30_S.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exp27+23 judge Oracle Lens yes when in string (pooled)",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp27 judge27.json pooled",
+      "match": true
+    },
+    {
+      "quantity": "exp27+23 judge Oracle Lens n in string",
+      "computed": 598.0,
+      "record": 598,
+      "where": "exp27 judge27.json pooled",
+      "match": true
+    },
+    {
+      "quantity": "exp27+23 judge Oracle Lens yes when not in string",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "exp27 judge27.json pooled",
+      "match": true
+    },
+    {
+      "quantity": "exp27+23 judge NLA yes when in string (pooled)",
+      "computed": 0.2159,
+      "record": 0.2159,
+      "where": "exp27 judge27.json pooled",
+      "match": true
+    },
+    {
+      "quantity": "exp27+23 judge NLA n in string",
+      "computed": 602.0,
+      "record": 602,
+      "where": "exp27 judge27.json pooled",
+      "match": true
+    },
+    {
+      "quantity": "exp27+23 judge NLA yes when not in string",
+      "computed": 0.0179,
+      "record": 0.0179,
+      "where": "exp27 judge27.json pooled",
+      "match": true
+    },
+    {
+      "quantity": "judge NLA in-string rate (2dp)",
+      "computed": 0.22,
+      "record": 0.22,
+      "where": "talk script S6 update / exp27 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "judge Oracle Lens in-string yes count",
+      "computed": 0.0,
+      "record": 0,
+      "where": "talk script 'Oracle Lens on none of 598'",
+      "match": true
+    },
+    {
+      "quantity": "judge Oracle Lens in-string n",
+      "computed": 598.0,
+      "record": 598,
+      "where": "talk script '598'",
+      "match": true
+    },
+    {
+      "quantity": "exp27 Oracle Lens readouts naming any state by strict regex (of 1,939)",
+      "computed": 17.0,
+      "record": 0,
+      "where": "exp27 RESULTS reading 2 '0 of 1,939 by the regex, on every state'",
+      "match": false
+    },
+    {
+      "quantity": "exp27 Oracle Lens namings when the state holds, summed over six states",
+      "computed": 1.0,
+      "record": 0,
+      "where": "exp27 RESULTS reading 2 (implied)",
+      "match": false
+    },
+    {
+      "quantity": "exp27 code in-string readable",
+      "computed": 0.8636,
+      "record": 0.8636,
+      "where": "exp27 table json",
+      "match": true
+    },
+    {
+      "quantity": "exp27 code in-string Oracle Lens text bag",
+      "computed": 0.7168,
+      "record": 0.7168,
+      "where": "exp27 table json",
+      "match": true
+    },
+    {
+      "quantity": "exp27 code in-string NLA text bag",
+      "computed": 0.8071,
+      "record": 0.8071,
+      "where": "exp27 table json",
+      "match": true
+    },
+    {
+      "quantity": "exp23 code in-string readable",
+      "computed": 0.8599,
+      "record": 0.8599,
+      "where": "exp23 table json",
+      "match": true
+    },
+    {
+      "quantity": "exp23 code in-string Oracle Lens text bag",
+      "computed": 0.7174,
+      "record": 0.7174,
+      "where": "exp23 table json",
+      "match": true
+    },
+    {
+      "quantity": "exp23 code in-string NLA text bag",
+      "computed": 0.7913,
+      "record": 0.7913,
+      "where": "exp23 table json",
+      "match": true
+    },
+    {
+      "quantity": "exp27 code in-string readable (2dp)",
+      "computed": 0.86,
+      "record": 0.86,
+      "where": "talk script S6 update (0.86 / 0.81 / 0.72)",
+      "match": true
+    },
+    {
+      "quantity": "exp27 code in-string ol (2dp)",
+      "computed": 0.72,
+      "record": 0.72,
+      "where": "talk script S6 update (0.86 / 0.81 / 0.72)",
+      "match": true
+    },
+    {
+      "quantity": "exp27 code in-string nla (2dp)",
+      "computed": 0.81,
+      "record": 0.81,
+      "where": "talk script S6 update (0.86 / 0.81 / 0.72)",
+      "match": true
+    },
+    {
+      "quantity": "exp23 code in-string readable (2dp)",
+      "computed": 0.86,
+      "record": 0.86,
+      "where": "talk script S6 exhibit (0.86 / 0.72 / 0.79)",
+      "match": true
+    },
+    {
+      "quantity": "exp23 code in-string ol (2dp)",
+      "computed": 0.72,
+      "record": 0.72,
+      "where": "talk script S6 exhibit (0.86 / 0.72 / 0.79)",
+      "match": true
+    },
+    {
+      "quantity": "exp23 code in-string nla (2dp)",
+      "computed": 0.79,
+      "record": 0.79,
+      "where": "talk script S6 exhibit (0.86 / 0.72 / 0.79)",
+      "match": true
+    },
+    {
+      "quantity": "exp23 Oracle Lens readouts naming any state by strict regex (of 500)",
+      "computed": 5.0,
+      "record": 0,
+      "where": "talk script S6 'Oracle Lens 0 of 500' / exp23 RESULTS reading 1",
+      "match": false
+    },
+    {
+      "quantity": "exp30 statement arm, in-string points: names inside only (substring)",
+      "computed": 0.1194,
+      "record": 0.16,
+      "where": "exp30 RESULTS random-point table",
+      "match": false
+    },
+    {
+      "quantity": "exp30 statement arm, in-string points: names outside only (substring)",
+      "computed": 0.2388,
+      "record": 0.24,
+      "where": "exp30 RESULTS random-point table",
+      "match": true
+    },
+    {
+      "quantity": "exp30 statement arm, in-string points: names neither (substring)",
+      "computed": 0.6418,
+      "record": 0.6,
+      "where": "exp30 RESULTS random-point table",
+      "match": false
+    },
+    {
+      "quantity": "exp30 statement arm, not-in-string points: names inside only (substring)",
+      "computed": 0.041,
+      "record": 0.04,
+      "where": "exp30 RESULTS random-point table",
+      "match": true
+    },
+    {
+      "quantity": "exp30 statement arm, not-in-string points: names outside only (substring)",
+      "computed": 0.2104,
+      "record": 0.22,
+      "where": "exp30 RESULTS random-point table",
+      "match": false
+    },
+    {
+      "quantity": "exp30 statement arm, not-in-string points: names neither (substring)",
+      "computed": 0.7486,
+      "record": 0.74,
+      "where": "exp30 RESULTS random-point table",
+      "match": false
+    },
+    {
+      "quantity": "exp30 control arm, in-string points: names inside only (substring)",
+      "computed": 0.0,
+      "record": 0.02,
+      "where": "exp30 RESULTS random-point table",
+      "match": false
+    }
+  ],
+  "notes": "Judge: google/gemini-3.8-flash T=0 (exp 27 judge27.py prompt: 'does the text STATE that the current position ... is inside a string literal ...'). Strict-regex naming at exp 27 (lib23.names_state), counts named-when-holds / n holds, named-when-not / n not: in_string ol: 0/486, 3/1453; in_string nla: 9/486, 12/1453; in_math ol: 0/22, 2/1917; in_math nla: 2/22, 14/1917; paren_depth ol: 0/318, 3/1621; paren_depth nla: 25/318, 22/1621; brace_depth ol: 0/185, 3/1754; brace_depth nla: 1/185, 13/1754; list_depth ol: 1/109, 3/1830; list_depth nla: 58/109, 177/1830; heading_level ol: 0/15, 2/1924; heading_level nla: 3/15, 13/1924. Oracle Lens readouts naming any of the six states at exp 27: 17 of 1,939; at exp 23: 5 of 500. Exp 30 recount (naming LoRA, exp 23's 500 points, statement-pair substring; inside-only / outside-only / both / neither): base in-string (n=134): 0.000/0.000/0.000/1.000; base not (n=366): 0.000/0.000/0.000/1.000; control in-string (n=134): 0.000/0.000/0.000/1.000; control not (n=366): 0.000/0.000/0.000/1.000; statement in-string (n=134): 0.119/0.239/0.000/0.642; statement not (n=366): 0.041/0.210/0.000/0.749",
+  "layout": {
+    "png_px": [
+      1859,
+      859
+    ],
+    "aspect": 2.164,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

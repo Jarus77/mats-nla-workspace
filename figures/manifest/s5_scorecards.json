@@ -1,0 +1,293 @@
+{
+  "name": "s5_scorecards",
+  "title": "The prediction rules do not beat 'always predict low' on the primary scorecard",
+  "caption": "Each row is a pre-registered rule; dots show the share of rows it predicted correctly (colour = reader) and open diamonds the share an always-'low' predictor gets on the same cells; numbers at right are hits/rows. Bold rows aggregate the cells with Wilson 95% intervals (top: rules, bottom: baseline); dashed line is the declared 0.80 bar. All-low ties the rules on exp 22's primary scorecard (30/38 vs 30/38) and beats them on exp 19's (33/38 vs 31/38); the rules' margin comes from complement naming and the prompted cells, while 'NLA states exactly when statement-sayable' predicted low on every natural row and so equals the baseline. 'Complement (multi-choice)' is the pre-registered cell 'NLA names the complement': a multi-candidate forced-choice argmax on the unmarked value (prereg section 3), not a regex or judge verdict.",
+  "section": "S5",
+  "role": "backup",
+  "sources": [
+    "18_prediction_test/results/score18.json",
+    "19_natural_bank/results/score19.json",
+    "22_public_bank/results/score22.json",
+    "18_prediction_test/results/predictions18.md",
+    "19_natural_bank/results/predictions19.md",
+    "22_public_bank/results/predictions22.md"
+  ],
+  "checks": [
+    {
+      "quantity": "predicted cells in score*.json equal the hashed predictions*.md tables",
+      "computed": "0 mismatches",
+      "record": "0 mismatches",
+      "where": "predictions18/19/22.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 rule hits: NLA prompted high exactly when readable",
+      "computed": "8/10",
+      "record": "8/10",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 rule hits: NLA states exactly when the model uses it (exp 18 rule)",
+      "computed": "5/10",
+      "record": "5/10",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 rule hits: Oracle Lens never states",
+      "computed": "10/10",
+      "record": "10/10",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 rule hits: Oracle Lens prompted high exactly when span-sayable",
+      "computed": "9/10",
+      "record": "9/10",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 rule hits: Oracle Lens exhibits exactly when span-sayable (judged)",
+      "computed": "6/10",
+      "record": "6/10",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 rule hits: J-lens high exactly when J-enriched (uncued rows)",
+      "computed": "2/10",
+      "record": "2/10",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: NLA prompted high exactly when readable",
+      "computed": "5/8",
+      "record": "5/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: NLA prompted high exactly when readable",
+      "computed": "6/8",
+      "record": "6/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: NLA states exactly when statement-sayable (revised)",
+      "computed": "8/8",
+      "record": "8/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: NLA states exactly when statement-sayable (revised)",
+      "computed": "6/8",
+      "record": "6/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: NLA complement (multi-choice) exactly when both values positive (revised)",
+      "computed": "6/8",
+      "record": "6/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: NLA complement (multi-choice) exactly when both values positive (revised)",
+      "computed": "6/8",
+      "record": "6/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: Oracle Lens prompted high exactly when span-sayable",
+      "computed": "6/8",
+      "record": "6/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: Oracle Lens prompted high exactly when span-sayable",
+      "computed": "7/8",
+      "record": "7/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: Oracle Lens exhibits exactly when span-sayable (judged)",
+      "computed": "3/8",
+      "record": "3/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: Oracle Lens exhibits exactly when span-sayable (judged)",
+      "computed": "4/8",
+      "record": "4/8",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: J-lens high exactly when J-enriched (uncued rows)",
+      "computed": "6/6",
+      "record": "6/6",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: J-lens high exactly when J-enriched (uncued rows)",
+      "computed": "6/6",
+      "record": "6/6",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 rule hits: All cells",
+      "computed": "44/70",
+      "record": "44/70",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: All cells",
+      "computed": "44/56",
+      "record": "44/56",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: All cells",
+      "computed": "44/56",
+      "record": "44/56",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: Primary scorecard",
+      "computed": "31/38",
+      "record": "31/38",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: Primary scorecard",
+      "computed": "30/38",
+      "record": "30/38",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 rule hits: Primary without judged exhibits",
+      "computed": "28/30",
+      "record": "28/30",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 rule hits: Primary without judged exhibits",
+      "computed": "26/30",
+      "record": "26/30",
+      "where": "talk script S5 table / RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 all-low baseline: All cells",
+      "computed": "45/56",
+      "record": "45/56",
+      "where": "BRIEF known-errors list (earlier recount)",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 all-low baseline: All cells",
+      "computed": "36/56",
+      "record": "36/56",
+      "where": "BRIEF known-errors list (earlier recount)",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 all-low baseline: Primary scorecard",
+      "computed": "33/38",
+      "record": "33/38",
+      "where": "BRIEF known-errors list (earlier recount)",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 all-low baseline: Primary scorecard",
+      "computed": "30/38",
+      "record": "30/38",
+      "where": "BRIEF known-errors list (earlier recount)",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 all-low baseline: Primary without judged exhibits",
+      "computed": "25/30",
+      "record": "25/30",
+      "where": "BRIEF known-errors list (earlier recount)",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 all-low baseline: Primary without judged exhibits",
+      "computed": "23/30",
+      "record": "23/30",
+      "where": "BRIEF known-errors list (earlier recount)",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 all-low baseline, all cells (rules 44/70)",
+      "computed": "40/70",
+      "record": "not in record",
+      "where": "new quantity",
+      "match": null
+    },
+    {
+      "quantity": "exp 19 vs exp 22 scorecards agree (hit/miss, shared rows)",
+      "computed": "42/49",
+      "record": "50/56",
+      "where": "exp 22 RESULTS.md Reading 1; talk script S5",
+      "match": false
+    },
+    {
+      "quantity": "exp 19 vs exp 22 agree on observed high/low (shared rows)",
+      "computed": "44/49",
+      "record": "50/56",
+      "where": "same",
+      "match": false
+    },
+    {
+      "quantity": "exp 19 vs exp 22 hit/miss agreement if rows paired by position (HTML nesting depth vs code language)",
+      "computed": "46/56",
+      "record": "50/56",
+      "where": "attempt to reproduce the record's denominator",
+      "match": false
+    },
+    {
+      "quantity": "exp 19 revised NLA rules (16 cells): rules (baseline 11/16 is new)",
+      "computed": "14/16",
+      "record": "14/16",
+      "where": "RESULTS.md / talk script S5",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 revised NLA rules (16 cells): rules (baseline 9/16 is new)",
+      "computed": "12/16",
+      "record": "12/16",
+      "where": "RESULTS.md / talk script S5",
+      "match": true
+    }
+  ],
+  "notes": "Computed from score18/19/22.json (predicted cells verified against the hashed predictions*.md: 0 mismatches). J-lens cells: exps 19/22 score only rows with lexical cue < 0.65 as declared (JSON and HTML nesting depth excluded in 19; JSON nesting depth and code language in 22); exp 18 scores all ten rows. Primary = NLA states, NLA complement, Oracle Lens exhibits, Oracle Lens states, J-lens uncued; secondary = the two prompted cells (no primary split was declared for exp 18). Record says the exp 19 and 22 scorecards agree on 50 of 56 cells; only 7 rows (49 cells) are shared and hit/miss agrees on 42/49 (observed high/low on 44/49; pairing rows by position gives 46/56): 50/56 cannot be reproduced. Exp 18's predictions18.md hashes to 1edd8283...; the record (decisions D41, exp 18 RESULTS) gives 2db98042... for it, which is the sha256 of instruments18.json, so the predictions file's own hash was mislabelled (file has one commit, unchanged).",
+  "layout": {
+    "png_px": [
+      3548,
+      1574
+    ],
+    "aspect": 2.254,
+    "min_font_pt": 11.0,
+    "effective_min_pt_at_9p4in": 5.8
+  }
+}

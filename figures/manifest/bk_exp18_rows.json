@@ -1,0 +1,37 @@
+{
+  "name": "bk_exp18_rows",
+  "title": "Exp 18 missed its bar on the J-lens, NLA complement and NLA states cells (44 of 70)",
+  "caption": "Exp 18 (10 synthetic rows): each panel is one pre-registered cell; markers show the observed value per row, triangle up/down = predicted high/low, dashed line = the declared 'counts as high' threshold; filled in the reader's colour when the prediction held, open dark when it missed. Horizontal bars on the three judged cells are item-clustered bootstrap 95% intervals (320 readouts, 40 items); the AUROC cells have no per-item scores stored, so no interval. 'NLA complement (multi-choice)' is the pre-registered cell 'NLA names the complement': a multi-candidate forced-choice argmax on the unmarked value, not a regex or judge verdict. Grey J-lens markers are lexically cued rows, excluded from the primary scorecard as declared (still counted in the all-cells total).",
+  "section": "backup:exp18",
+  "role": "backup",
+  "sources": [
+    "experiments/18_prediction_test/results/score18.json",
+    "experiments/18_prediction_test/results/judged/*.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exp 18 judged-cell observed values recomputed from per-readout verdicts",
+      "computed": "30/30 match",
+      "record": "30/30",
+      "where": "score18.json",
+      "match": true
+    },
+    {
+      "quantity": "exp 18 all cells",
+      "computed": "44/70",
+      "record": "44/70",
+      "where": "RESULTS.md",
+      "match": true
+    }
+  ],
+  "notes": "Observed-high verified as observed >= feature_spec CELL_THRESH for every cell. Exp 19 items never read beyond verdict flags; no item text plotted.",
+  "layout": {
+    "png_px": [
+      2821,
+      1756
+    ],
+    "aspect": 1.606,
+    "min_font_pt": 10.5,
+    "effective_min_pt_at_9p4in": 7.0
+  }
+}

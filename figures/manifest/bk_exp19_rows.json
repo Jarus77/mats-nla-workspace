@@ -1,0 +1,37 @@
+{
+  "name": "bk_exp19_rows",
+  "title": "Exp 19: misses sit in Oracle Lens exhibits and the prompted cells (44 of 56)",
+  "caption": "Exp 19 (8 natural-text rows, unpublished bank): each panel is one pre-registered cell; markers show the observed value per row, triangle up/down = predicted high/low, dashed line = the declared 'counts as high' threshold; filled in the reader's colour when the prediction held, open dark when it missed. Horizontal bars on the three judged cells are item-clustered bootstrap 95% intervals (320 readouts, 40 items); the AUROC cells have no per-item scores stored, so no interval. 'NLA complement (multi-choice)' is the pre-registered cell 'NLA names the complement': a multi-candidate forced-choice argmax on the unmarked value, not a regex or judge verdict. Grey J-lens markers are lexically cued rows, excluded from the primary scorecard as declared (still counted in the all-cells total).",
+  "section": "backup:exp19",
+  "role": "backup",
+  "sources": [
+    "experiments/19_natural_bank/results/score19.json",
+    "experiments/19_natural_bank/results/judged/*.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exp 19 judged-cell observed values recomputed from per-readout verdicts",
+      "computed": "24/24 match",
+      "record": "24/24",
+      "where": "score19.json",
+      "match": true
+    },
+    {
+      "quantity": "exp 19 all cells",
+      "computed": "44/56",
+      "record": "44/56",
+      "where": "RESULTS.md",
+      "match": true
+    }
+  ],
+  "notes": "Observed-high verified as observed >= feature_spec CELL_THRESH for every cell. Exp 19 items never read beyond verdict flags; no item text plotted.",
+  "layout": {
+    "png_px": [
+      2826,
+      1528
+    ],
+    "aspect": 1.849,
+    "min_font_pt": 10.5,
+    "effective_min_pt_at_9p4in": 7.0
+  }
+}

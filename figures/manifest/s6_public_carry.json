@@ -1,0 +1,274 @@
+{
+  "name": "s6_public_carry",
+  "title": "On an independent public bank the readers' outputs carry string, math and depth state too",
+  "caption": "Exp 25 runs exp 20's protocol on the exp 22 public bank (160 selection items per row, 80 vs 80, k = 1 readouts): frozen-probe AUROC of the critic's rebuild from each source against the true layer-42 vectors. Oracle Lens's readout carries string, math and JSON-depth state at 0.84 to 0.97 (call argument 0.51); the shuffled span keeps the language control and loses structure. Bars: Hanley-McNeil 95% (no per-item scores saved; ignores clustering). Caveat: the critic is the NLA's own, so the NLA column is in distribution.",
+  "section": "S6",
+  "role": "backup",
+  "sources": [
+    "experiments/25_public_exhibits/results/recon25_code_lang.json",
+    "experiments/25_public_exhibits/results/recon25_py_string.json",
+    "experiments/25_public_exhibits/results/recon25_js_string.json",
+    "experiments/25_public_exhibits/results/recon25_latex_math.json",
+    "experiments/25_public_exhibits/results/recon25_json_depth.json",
+    "experiments/25_public_exhibits/results/recon25_py_arg.json",
+    "experiments/25_public_exhibits/results/recon25_md_heading.json",
+    "experiments/25_public_exhibits/results/recon25_md_list.json"
+  ],
+  "checks": [
+    {
+      "quantity": "code language span_32 (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language bag_32 (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language ol_readout (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language nla_readout (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string span_32 (2dp)",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string bag_32 (2dp)",
+      "computed": 0.46,
+      "record": 0.46,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string ol_readout (2dp)",
+      "computed": 0.86,
+      "record": 0.86,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string nla_readout (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string span_32 (2dp)",
+      "computed": 0.77,
+      "record": 0.77,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string bag_32 (2dp)",
+      "computed": 0.46,
+      "record": 0.46,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string ol_readout (2dp)",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string nla_readout (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math span_32 (2dp)",
+      "computed": 0.85,
+      "record": 0.85,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math bag_32 (2dp)",
+      "computed": 0.5,
+      "record": 0.5,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math ol_readout (2dp)",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math nla_readout (2dp)",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth span_32 (2dp)",
+      "computed": 0.92,
+      "record": 0.92,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth bag_32 (2dp)",
+      "computed": 0.76,
+      "record": 0.76,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth ol_readout (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth nla_readout (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument span_32 (2dp)",
+      "computed": 0.88,
+      "record": 0.88,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument bag_32 (2dp)",
+      "computed": 0.49,
+      "record": 0.49,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument ol_readout (2dp)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument nla_readout (2dp)",
+      "computed": 0.93,
+      "record": 0.93,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level span_32 (2dp)",
+      "computed": 0.62,
+      "record": 0.62,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level bag_32 (2dp)",
+      "computed": 0.55,
+      "record": 0.55,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level ol_readout (2dp)",
+      "computed": 0.65,
+      "record": 0.65,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level nla_readout (2dp)",
+      "computed": 0.7,
+      "record": 0.7,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth span_32 (2dp)",
+      "computed": 0.5,
+      "record": 0.5,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth bag_32 (2dp)",
+      "computed": 0.44,
+      "record": 0.44,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth ol_readout (2dp)",
+      "computed": 0.48,
+      "record": 0.48,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth nla_readout (2dp)",
+      "computed": 0.49,
+      "record": 0.49,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens readout min over string/math/depth rows (2dp)",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "talk script '0.84 to 0.97'",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens readout max over string/math/depth rows (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "talk script '0.84 to 0.97'",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens readout call argument (2dp)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "talk script '(call argument 0.51)'",
+      "match": true
+    }
+  ],
+  "notes": "Public bank built from package directories and arXiv e-prints (exp 22); code language = Python vs JavaScript positive control.",
+  "layout": {
+    "png_px": [
+      2454,
+      1131
+    ],
+    "aspect": 2.17,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 8.8
+  }
+}

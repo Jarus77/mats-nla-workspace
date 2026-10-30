@@ -1,0 +1,467 @@
+{
+  "name": "s6_carry_ladder",
+  "title": "The state is in the model's own window and in the readers' outputs (Oracle Lens weakest on column, parenthesis, argument); shuffling the words removes it",
+  "caption": "Frozen-probe AUROC (probe fit on true layer-42 activations, applied to each rebuild) per row and source, exp 20, 160 selection items per row (80 vs 80). The model's own activation on the last 32 tokens carries every readable row at 0.90 to 1.00; the critic on the same tokens shuffled falls toward chance; both readers' free readouts (k = 1) re-induce the state through the critic. Bars: Hanley-McNeil 95% intervals (no per-item scores were saved; ignores clustering). Caveat: the critic is the NLA's own, so the NLA column is in distribution; compare each column with its own baselines.",
+  "section": "S6",
+  "role": "backup",
+  "sources": [
+    "experiments/13_new_rows/results/items_base.json",
+    "experiments/19_natural_bank/results/items_base.json",
+    "experiments/20_ar_structure/results/recon20_html_depth.json",
+    "experiments/20_ar_structure/results/recon20_js_string.json",
+    "experiments/20_ar_structure/results/recon20_json_depth.json",
+    "experiments/20_ar_structure/results/recon20_latex_math.json",
+    "experiments/20_ar_structure/results/recon20_md_heading.json",
+    "experiments/20_ar_structure/results/recon20_md_list.json",
+    "experiments/20_ar_structure/results/recon20_py_arg.json",
+    "experiments/20_ar_structure/results/recon20_py_string.json",
+    "experiments/20_ar_structure/results/recon20_tb_paren.json",
+    "experiments/20_ar_structure/results/recon20_tb_tablecol.json"
+  ],
+  "checks": [
+    {
+      "quantity": "inside a Python string model_span_4 (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string model_span_32 (2dp)",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string span_32 (2dp)",
+      "computed": 0.85,
+      "record": 0.85,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string bag_32 (2dp)",
+      "computed": 0.42,
+      "record": 0.42,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string ol_readout (2dp)",
+      "computed": 0.91,
+      "record": 0.91,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string nla_readout (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string model_span_4 (2dp)",
+      "computed": 0.96,
+      "record": 0.96,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string model_span_32 (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string span_32 (2dp)",
+      "computed": 0.82,
+      "record": 0.82,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string bag_32 (2dp)",
+      "computed": 0.48,
+      "record": 0.48,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string ol_readout (2dp)",
+      "computed": 0.9,
+      "record": 0.9,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string nla_readout (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math model_span_4 (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math model_span_32 (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math span_32 (2dp)",
+      "computed": 0.83,
+      "record": 0.83,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math bag_32 (2dp)",
+      "computed": 0.46,
+      "record": 0.46,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math ol_readout (2dp)",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math nla_readout (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "call argument model_span_4 (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "call argument model_span_32 (2dp)",
+      "computed": 0.96,
+      "record": 0.96,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "call argument span_32 (2dp)",
+      "computed": 0.89,
+      "record": 0.89,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "call argument bag_32 (2dp)",
+      "computed": 0.5,
+      "record": 0.5,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "call argument ol_readout (2dp)",
+      "computed": 0.7,
+      "record": 0.7,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "call argument nla_readout (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth model_span_4 (2dp)",
+      "computed": 0.77,
+      "record": 0.77,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth model_span_32 (2dp)",
+      "computed": 0.96,
+      "record": 0.96,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth span_32 (2dp)",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth bag_32 (2dp)",
+      "computed": 0.65,
+      "record": 0.65,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth ol_readout (2dp)",
+      "computed": 0.94,
+      "record": 0.94,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth nla_readout (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth model_span_4 (2dp)",
+      "computed": 0.83,
+      "record": 0.83,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth model_span_32 (2dp)",
+      "computed": 0.94,
+      "record": 0.94,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth span_32 (2dp)",
+      "computed": 0.74,
+      "record": 0.74,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth bag_32 (2dp)",
+      "computed": 0.3,
+      "record": 0.3,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth ol_readout (2dp)",
+      "computed": 0.79,
+      "record": 0.79,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth nla_readout (2dp)",
+      "computed": 0.93,
+      "record": 0.93,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "table column model_span_4 (2dp)",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "table column model_span_32 (2dp)",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "table column span_32 (2dp)",
+      "computed": 0.95,
+      "record": 0.95,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "table column bag_32 (2dp)",
+      "computed": 0.46,
+      "record": 0.46,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "table column ol_readout (2dp)",
+      "computed": 0.64,
+      "record": 0.64,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "table column nla_readout (2dp)",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses model_span_4 (2dp)",
+      "computed": 0.71,
+      "record": 0.71,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses model_span_32 (2dp)",
+      "computed": 0.9,
+      "record": 0.9,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses span_32 (2dp)",
+      "computed": 0.74,
+      "record": 0.74,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses bag_32 (2dp)",
+      "computed": 0.57,
+      "record": 0.57,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses ol_readout (2dp)",
+      "computed": 0.67,
+      "record": 0.67,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses nla_readout (2dp)",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level model_span_4 (2dp)",
+      "computed": 0.54,
+      "record": 0.54,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level model_span_32 (2dp)",
+      "computed": 0.57,
+      "record": 0.57,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level span_32 (2dp)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level bag_32 (2dp)",
+      "computed": 0.47,
+      "record": 0.47,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level ol_readout (2dp)",
+      "computed": 0.59,
+      "record": 0.59,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level nla_readout (2dp)",
+      "computed": 0.59,
+      "record": 0.59,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth model_span_4 (2dp)",
+      "computed": 0.58,
+      "record": 0.58,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth model_span_32 (2dp)",
+      "computed": 0.62,
+      "record": 0.62,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth span_32 (2dp)",
+      "computed": 0.64,
+      "record": 0.64,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth bag_32 (2dp)",
+      "computed": 0.55,
+      "record": 0.55,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth ol_readout (2dp)",
+      "computed": 0.62,
+      "record": 0.62,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth nla_readout (2dp)",
+      "computed": 0.63,
+      "record": 0.63,
+      "where": "talk script S6 table / exp20 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "model window 32, min over 8 readable rows (2dp)",
+      "computed": 0.9,
+      "record": 0.9,
+      "where": "talk script 'carries every readable state at 0.90 to 1.00'",
+      "match": true
+    },
+    {
+      "quantity": "shuffled bag, max over 8 readable rows (2dp)",
+      "computed": 0.65,
+      "record": 0.65,
+      "where": "exp20 RESULTS.md 'fall to 0.30 to 0.65'",
+      "match": true
+    }
+  ],
+  "notes": "Rows 'table column' and 'inside parentheses' are exp 13's banks, the others exp 19's (aggregate numbers only). 'critic' = the NLA reconstructor (ceselder iter_000400). Readers' readouts: Oracle Lens k = 1 at layer 42 with the standard carrier; NLA raw explanation k = 1 with the actor prompt in notes/wsbench_internals.md.",
+  "layout": {
+    "png_px": [
+      2476,
+      1489
+    ],
+    "aspect": 1.663,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 8.7
+  }
+}

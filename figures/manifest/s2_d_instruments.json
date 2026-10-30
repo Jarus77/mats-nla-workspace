@@ -1,0 +1,58 @@
+{
+  "name": "s2_d_instruments",
+  "title": "Measures on the activation alone predict four reader scores",
+  "caption": "Left: each row (two values of one property) is measured on the activation alone: readable (logistic probe, 5-fold grouped by source file), span-sayable (the NLA's critic rebuilds h from the true last 32 tokens; the frozen probe scores the rebuild) and statement shift (the critic on a one-sentence statement pair, as a share of the class gap), used (a push along the class direction at 11% of |h|, z against 20 random directions), J-enriched (share of the class direction in the rank-1,536 J-space vs random). Right: the pre-registered line for each reader score: prompted forced choice (log-odds AUROC), states (the judge's verdict that a free readout states the property), exhibits (the judge finds the value itself written, e.g. text in French), complement (multi-candidate argmax picks the unmarked value); a dash means the cell is not scored. The 0.30 statement rule was withdrawn on 28 Oct after exp 28.",
+  "section": "S2",
+  "role": "main",
+  "sources": [
+    "notes/prereg_prediction_test.md",
+    "notes/decisions.md"
+  ],
+  "checks": [
+    {
+      "quantity": "thresholds readable / span / statement / used / J-enriched",
+      "computed": "0.80 / 0.80 / 0.30 / |z| >= 3 / 1.5 (prereg_prediction_test.md section 2)",
+      "record": "talk script glossary: 0.80 / 0.80 / 0.30 / (blank) / 1.5",
+      "where": "talk script glossary",
+      "match": true
+    },
+    {
+      "quantity": "span-sayable instrument",
+      "computed": "frozen-probe AUROC of NLA-critic rebuild of the last 32 tokens (clarified 26 Oct; gap-ratio form dropped)",
+      "record": "glossary: same",
+      "where": "prereg 2",
+      "match": true
+    },
+    {
+      "quantity": "reader-score thresholds",
+      "computed": "NLA prompted >= 0.85; Oracle Lens, J-lens prompted >= 0.70; NLA states >= 20%; Oracle Lens states >= 5%; Oracle Lens exhibits >= 30%; complement >= 20%",
+      "record": "prereg 3",
+      "where": "notes/prereg_prediction_test.md",
+      "match": true
+    },
+    {
+      "quantity": "0.30 statement rule status",
+      "computed": "withdrawn 28 Oct (D49)",
+      "record": "talk script S5 update note: withdrawn after exp 28",
+      "where": "notes/decisions.md D49",
+      "match": true
+    },
+    {
+      "quantity": "language control numbers (footer removed; now in notes and in s2_language_control)",
+      "computed": "not recomputed (diagram); taken from talk script S2",
+      "record": "readable 1.00, shift 0.51, NLA states 81-95%",
+      "where": "talk script S2",
+      "match": true
+    }
+  ],
+  "notes": "Diagram, no data. The pre-registration calls the complement cell 'NLA names the complement'; it is scored by a multi-candidate argmax, not by a regex, so the figure labels it 'complement (multi-choice)'. Language control row (talk script S2, not recomputed here; drawn from raw files in s2_language_control): readable 1.00, statement shift 0.51, J-enriched, NLA states 81-95%, Oracle Lens exhibits.",
+  "layout": {
+    "png_px": [
+      1860,
+      850
+    ],
+    "aspect": 2.188,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

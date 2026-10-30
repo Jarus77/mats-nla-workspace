@@ -1,0 +1,114 @@
+{
+  "name": "s2_language_control",
+  "title": "The language control is readable and moves the critic; the NLA states it, Oracle Lens only writes in it",
+  "caption": "French vs German, the control row, through each instrument. Readable = linear-probe AUROC on the layer-42 activation (0.80 bar); statement shift through the NLA critic (dot = the fixed statement, whisker = min to max over 8 paraphrase pairs; 0.30 bar, since withdrawn); J-enrichment of the class-mean direction in the top-1536 J-space (1.5 bar; pale = below it); free readouts = share of 320 readouts (40 items x 8) a judge marked as stating the language or as written in it, item-clustered bootstrap 95%. Open = exp 12 bank (exp 02 for J-enrichment), filled = exp 18 bank. The NLA states the language on 0.81 to 0.95 of readouts; Oracle Lens writes in it but never says it. Caveat: exp 18's own J-enrichment instrument gives 1.38, under the 1.5 bar.",
+  "section": "S2",
+  "role": "main",
+  "sources": [
+    "experiments/02_nonj_features/gates.json",
+    "experiments/18_prediction_test/results/instruments18.json",
+    "experiments/18_prediction_test/results/score18.json",
+    "experiments/28_stmt_curve/results/stmt28_12_ij2_lang.json",
+    "experiments/28_stmt_curve/results/stmt28_18_ij2_lang.json",
+    "experiments/12_concept_recall/results/judged/ij2_lang_nla.json",
+    "experiments/12_concept_recall/results/judged/ij2_lang_ol42.json",
+    "experiments/18_prediction_test/results/judged/ij2_lang_nla.json",
+    "experiments/18_prediction_test/results/judged/ij2_lang_ol42.json"
+  ],
+  "checks": [
+    {
+      "quantity": "readable, exp 18 bank (instruments18)",
+      "computed": 0.9906,
+      "record": 1.0,
+      "where": "talk script S2 'readable 1.00'",
+      "match": false
+    },
+    {
+      "quantity": "readable, exp 12 bank (stmt28)",
+      "computed": 0.9955,
+      "record": 1.0,
+      "where": "talk script S2 'readable 1.00'",
+      "match": true
+    },
+    {
+      "quantity": "statement shift, fixed statement, exp 18 (instruments18)",
+      "computed": 0.5075,
+      "record": 0.51,
+      "where": "talk script S2 'statement shift 0.51'",
+      "match": true
+    },
+    {
+      "quantity": "statement shift, fixed statement, exp 18 (exp 28 recompute)",
+      "computed": 0.5115,
+      "record": 0.51,
+      "where": "talk script S2",
+      "match": true
+    },
+    {
+      "quantity": "NLA states, exp 12",
+      "computed": 0.8063,
+      "record": 0.81,
+      "where": "talk script S2 '81 to 95%' / S3 table 81%",
+      "match": true
+    },
+    {
+      "quantity": "NLA states, exp 18",
+      "computed": 0.95,
+      "record": 0.95,
+      "where": "talk script S2 '81 to 95%'",
+      "match": true
+    },
+    {
+      "quantity": "NLA states, exp 18 vs score18.json",
+      "computed": 0.95,
+      "record": 0.95,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens exhibits, exp 12",
+      "computed": 0.5594,
+      "record": 0.56,
+      "where": "talk script S3 table 'exhibits it 56%'",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens exhibits, exp 18 vs score18.json",
+      "computed": 0.7156,
+      "record": 0.7156,
+      "where": "score18.json ol_exhibits",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens states, exp 12",
+      "computed": 0.0031,
+      "record": 0.0,
+      "where": "talk script S3 table '0%'",
+      "match": true
+    },
+    {
+      "quantity": "J-enriched (>= 1.5 at r = 1536), exp 18 instrument",
+      "computed": 1.3762,
+      "record": "J-enriched (talk script S2)",
+      "where": "talk script S2 vs instruments18 decide.jenr = false",
+      "match": false
+    },
+    {
+      "quantity": "J-enrichment, exp 02 gate, r = 1536 (r = 384 in notes)",
+      "computed": 1.7298,
+      "record": "J-enriched (talk script S2)",
+      "where": "exp 02 gates.json lang G2",
+      "match": true
+    }
+  ],
+  "notes": "Readable: exp 18 from instruments18.json (0.9906), exp 12 bank from the exp 28 recompute stmt28_12_ij2_lang.json (0.9955); no per-item probe scores are saved, so no interval. Statement shift: exp 18 fixed from instruments18.json (0.5075; exp 28 recompute 0.5115), exp 12 fixed and both paraphrase means from stmt28_*_ij2_lang.json. J-enrichment: exp 02 gates.json lang G2 diff-means r1536 = 1.730 (r384 = 3.317), exp 18 instruments18.json jenr = 1.376 (r = 1536, as in modal18.py) with decide.jenr = false. Record discrepancy: the talk script calls this row J-enriched; exp 02's gate supports that, exp 18's own instrument does not (1.38 < 1.5), so exp 18 predicted the J-lens cell high only through the statement shift. Exp 12 has no J-enrichment instrument for this row, hence exp 02 in that slot. Free readouts: judged/ij2_lang_{nla,ol42}.json in exps 12 and 18; same counting as g2_common.states_rate. Oracle Lens states: exp 12 1 of 320, exp 18 1 of 320.",
+  "layout": {
+    "png_px": [
+      1881,
+      867
+    ],
+    "aspect": 2.17,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.0
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "name": "bk_exp07_col_text_ceiling",
+  "title": "Line position is plain in the text, yet barely readable from the activation",
+  "caption": "Natural hard-wrapped prose, 160 selection items (10-30 vs 55-85 characters into the line), layer 42. Bars: AUROC of the mean log-odds over each reader's three frozen mined phrasings, scored by the reader on the activation, or by a text-only model given the passage up to the read token with the same phrasing pairs. 95% bootstrap CIs, 2,000 resamples clustered by passage. The readers sit near chance (CIs touch 0.5) while Gemini reading the text scores 0.97, and the NLA's small signal vanishes once Gemini's score is regressed out; base Qwen teacher-forced on the text is a weak ceiling. Caveat: mined templates selected on these same items carry a best-of-~7 winner's curse.",
+  "section": "backup:exp07",
+  "role": "backup",
+  "sources": [
+    "experiments/07_template_mining/results/score_nla_nj1_col.json",
+    "experiments/07_template_mining/results/score_ol_nj1_col.json",
+    "experiments/07_template_mining/results/textnla_local_nj1_col.json",
+    "experiments/07_template_mining/results/textnla_gemini_nj1_col.partial.json",
+    "experiments/07_template_mining/results/gen_ol_nj1_col.json"
+  ],
+  "checks": [
+    {
+      "quantity": "NLA mean3 AUROC on activation",
+      "computed": 0.599,
+      "record": 0.6,
+      "where": "07 RESULTS.md TextNLA table",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens mean3 AUROC on activation",
+      "computed": 0.547,
+      "record": 0.55,
+      "where": "07 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "TextNLA-Qwen, NLA templates",
+      "computed": 0.476,
+      "record": 0.48,
+      "where": "07 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "TextNLA-Qwen, Oracle Lens templates",
+      "computed": 0.624,
+      "record": 0.62,
+      "where": "07 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Gemini, NLA templates",
+      "computed": 0.971,
+      "record": 0.97,
+      "where": "07 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Gemini, Oracle Lens templates",
+      "computed": 0.967,
+      "record": 0.97,
+      "where": "07 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "NLA after regressing out Gemini",
+      "computed": 0.512,
+      "record": 0.51,
+      "where": "07 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens after regressing out Gemini",
+      "computed": 0.47,
+      "record": 0.47,
+      "where": "07 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "NLA after regressing out Qwen",
+      "computed": 0.612,
+      "record": 0.61,
+      "where": "07 RESULTS.md",
+      "match": true
+    }
+  ],
+  "notes": "Gemini cells are from the budget-capped partial file (7 templates; all 6 selected templates present). Gemini value = elicited log-odds of option A, both orders averaged. TextNLA-Qwen uses the warm-start instruction in experiments/06_resolving_decomposition/data/nla_instruction.txt (mode=prompt), NOT the NLA actor prompt. Residual AUROC = OLS of reader LO on text LO, AUROC of residual. NLA phrasings: 'Readout taken late/early in the span of the wrapped line.', 'Mid-sentence continuation located near the end of a hard-wrapped line.', 'The token appears far into of the wrapped line.'; Oracle Lens: '- deep after a newline', '- line position: late in the line', '- current line depth: deep'.",
+  "layout": {
+    "png_px": [
+      2219,
+      1120
+    ],
+    "aspect": 1.981,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 9.7
+  }
+}

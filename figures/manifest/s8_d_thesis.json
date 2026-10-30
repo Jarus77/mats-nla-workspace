@@ -1,0 +1,84 @@
+{
+  "name": "s8_d_thesis",
+  "title": "The readers carry structure but a warm-start habit keeps it unsaid",
+  "caption": "Both readers' outputs carry position-in-text state (decodable from the text alone at random read points inside code strings, exp 27), but only language-like properties get stated (the judge's verdict on free readouts; exps 27 and 29). Along the NLA's own RL run the structural states rate stays flat while reconstruction (FVE, inside a Python string) rises (exp 29), and a 400-step supervised adapter makes it name the state (a fixed-statement match) without costing reconstruction, correct when it names (exp 30): the gate is the warm-start register, not the reward or the reader's capacity. The readers capture position-in-text state and do not say it.",
+  "section": "S8",
+  "role": "main",
+  "sources": [
+    "experiments/27_random_2000/results/table27.json",
+    "experiments/27_random_2000/results/judge27.json",
+    "experiments/29_trajectory/results/table29.json",
+    "experiments/30_naming_lora/results/eval30_S.json",
+    "experiments/30_naming_lora/results/eval30_C.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exp 27 code in-string carrying (readable / NLA / Oracle Lens)",
+      "computed": "0.8636299792123153 / 0.8071239957300972 / 0.7167818416764987",
+      "record": "0.86 / 0.81 / 0.72 (talk script S6 update)",
+      "where": "exp 27 table27",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens judge states in-string (pooled e27+e23)",
+      "computed": "0 of 598",
+      "record": "none of 598",
+      "where": "talk script S6",
+      "match": true
+    },
+    {
+      "quantity": "NLA judge states in-string (pooled)",
+      "computed": "0.216 of 602",
+      "record": "0.22",
+      "where": "talk script S6",
+      "match": true
+    },
+    {
+      "quantity": "exp 29 structural states range, av_base..iter 800, 7 structural rows (judge)",
+      "computed": "0.00-0.29",
+      "record": "0.01-0.21 activation warm start, 0.00-0.29 RL",
+      "where": "decisions.md D50",
+      "match": true
+    },
+    {
+      "quantity": "exp 29 code-language states rate av_base -> iter 800",
+      "computed": "0.550 -> 0.762",
+      "record": "0.55 to 0.75 (talk script S8, D50)",
+      "where": "talk script S8",
+      "match": false,
+      "note": "raw 0.759 rounds to 0.76; record says 0.75 (minor)"
+    },
+    {
+      "quantity": "exp 29 reconstruction (FVE), inside a Python string, av_base -> iter 800",
+      "computed": "0.182 -> 0.586",
+      "record": "0.18 to 0.59",
+      "where": "talk script S8",
+      "match": true
+    },
+    {
+      "quantity": "exp 30 gate reconstruction (FVE), statement arm vs control",
+      "computed": "0.5068 vs 0.5118",
+      "record": "0.507 vs 0.512",
+      "where": "exp 30 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "exp 30 correct when it names, readable rows (Python string, call argument, JSON nesting depth, code language)",
+      "computed": "0.79-1.00",
+      "record": "statements correct 0.79 to 1.00",
+      "where": "talk script S8",
+      "match": true,
+      "note": "correct / (correct + wrong); unconditional accuracy is 0.28-0.69"
+    }
+  ],
+  "notes": "Terms: 'stated' is the judge's verdict (exp 27 blind judge, exp 29 states judge); 'names' in exp 30 is the readout containing the row's fixed statement of either value. 'correct' in exp 30 is conditional on the adapter naming the state (held-out clusters, n = 32 per row); transfer to held-out rows and random points is weak (exp 30 P2-P4 failed). Text-only warm start (TextNLA) names more (0.17-0.49), which is why the gate is attributed to the warm-start register.",
+  "layout": {
+    "png_px": [
+      1860,
+      850
+    ],
+    "aspect": 2.188,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

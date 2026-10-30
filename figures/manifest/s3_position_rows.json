@@ -1,0 +1,230 @@
+{
+  "name": "s3_position_rows",
+  "title": "Asked, the NLA detects every readable position row; unprompted, only the NLA ever states one",
+  "caption": "Rows: table column (first vs 4th-6th cell), inside vs outside parentheses, list nesting depth (top vs third level), line position on fresh items, and the language control (French vs German). Left: prompted AUROC per reader (log-odds between two frozen phrasings; the record's convention, the better of the mean-of-3 mined phrasings and the fixed label), 160 held-out items per row, 95% bootstrap CI clustered by source passage. B: share of free readouts (40 items x 8 samples = 320 per bar) that a judge reads as stating the value; CI is an item-clustered bootstrap (Wilson on readouts where the count is 0). Oracle Lens states nothing on the position rows and writes French/German itself on 56% of language readouts (hatched) while stating the language in 1 of 320. Caveat: one judge (Gemini 3.8 Flash); line position on fresh items is at chance for every reader and had no free-readout run.",
+  "section": "S3",
+  "role": "main",
+  "sources": [
+    "experiments/07_template_mining/results/score_nla_ij2_lang.json",
+    "experiments/07_template_mining/results/score_ol_ij2_lang.json",
+    "experiments/07_template_mining/templates_frozen.json",
+    "experiments/12_concept_recall/results/judged/ij2_lang_nla.json",
+    "experiments/12_concept_recall/results/judged/ij2_lang_ol42.json",
+    "experiments/13_new_rows/results/judged/fmt_listdepth_nla.json",
+    "experiments/13_new_rows/results/judged/fmt_listdepth_ol42.json",
+    "experiments/13_new_rows/results/judged/tb_paren_nla.json",
+    "experiments/13_new_rows/results/judged/tb_paren_ol42.json",
+    "experiments/13_new_rows/results/judged/tb_tablecol_nla.json",
+    "experiments/13_new_rows/results/judged/tb_tablecol_ol42.json",
+    "experiments/13_new_rows/results/score_nla_fmt_listdepth.json",
+    "experiments/13_new_rows/results/score_nla_nj1_col_fresh.json",
+    "experiments/13_new_rows/results/score_nla_tb_paren.json",
+    "experiments/13_new_rows/results/score_nla_tb_tablecol.json",
+    "experiments/13_new_rows/results/score_ol_fmt_listdepth.json",
+    "experiments/13_new_rows/results/score_ol_nj1_col_fresh.json",
+    "experiments/13_new_rows/results/score_ol_tb_paren.json",
+    "experiments/13_new_rows/results/score_ol_tb_tablecol.json",
+    "experiments/13_new_rows/templates_frozen.json"
+  ],
+  "checks": [
+    {
+      "quantity": "table column prompted AUROC nla",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "table column prompted AUROC ol",
+      "computed": 0.74,
+      "record": 0.74,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "table column prompted AUROC J-lens",
+      "computed": 0.64,
+      "record": 0.64,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "table column NLA states rate",
+      "computed": 0.41,
+      "record": 0.41,
+      "where": "talk_script S3 table",
+      "match": true
+    },
+    {
+      "quantity": "table column Oracle Lens states rate",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "talk_script S3 table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses prompted AUROC nla",
+      "computed": 0.96,
+      "record": 0.96,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses prompted AUROC ol",
+      "computed": 0.73,
+      "record": 0.73,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses prompted AUROC J-lens",
+      "computed": 0.47,
+      "record": 0.47,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses NLA states rate",
+      "computed": 0.3,
+      "record": 0.3,
+      "where": "talk_script S3 table",
+      "match": true
+    },
+    {
+      "quantity": "inside parentheses Oracle Lens states rate",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "talk_script S3 table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth prompted AUROC nla",
+      "computed": 0.96,
+      "record": 0.96,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth prompted AUROC ol",
+      "computed": 0.88,
+      "record": 0.88,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth prompted AUROC J-lens",
+      "computed": 0.96,
+      "record": 0.96,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth NLA states rate",
+      "computed": 0.04,
+      "record": 0.04,
+      "where": "talk_script S3 table",
+      "match": true
+    },
+    {
+      "quantity": "list nesting depth Oracle Lens states rate",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "talk_script S3 table",
+      "match": true
+    },
+    {
+      "quantity": "nj1_col_fresh prompted AUROC nla",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "nj1_col_fresh prompted AUROC ol",
+      "computed": 0.49,
+      "record": 0.49,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "nj1_col_fresh prompted AUROC J-lens",
+      "computed": 0.53,
+      "record": 0.53,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang prompted AUROC nla",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang prompted AUROC ol",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang prompted AUROC J-lens",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "talk_script S3 table / exp 12-13 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang NLA states rate",
+      "computed": 0.81,
+      "record": 0.81,
+      "where": "talk_script S3 table",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang Oracle Lens states rate",
+      "computed": 0.003,
+      "record": 0.0,
+      "where": "talk_script S3 table",
+      "match": true
+    },
+    {
+      "quantity": "line position fresh NLA, mean of 3 selected templates",
+      "computed": 0.48,
+      "record": 0.48,
+      "where": "exp 13 RESULTS.md text ('NLA 0.48')",
+      "match": true
+    },
+    {
+      "quantity": "line position fresh NLA, reported (max of mean3, fixed)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "exp 13 RESULTS.md table / talk script",
+      "match": true
+    },
+    {
+      "quantity": "language Oracle Lens exhibits rate",
+      "computed": 0.56,
+      "record": 0.56,
+      "where": "exp 12 RESULTS.md",
+      "match": true
+    },
+    {
+      "quantity": "language Oracle Lens states count",
+      "computed": 1,
+      "record": 0,
+      "where": "talk script '0%'",
+      "match": false
+    }
+  ],
+  "notes": "Layer 42; NLA iter_000400, Oracle Lens s3d-rl600 at 42, J-lens n1000 at 42. Variant used per cell (mean3 = mean of the 3 selected mined phrasings, fixed = fixed label): {'table column/nla': 'mean3', 'table column/ol': 'mean3', 'table column/jlens': 'fixed', 'inside parentheses/nla': 'mean3', 'inside parentheses/ol': 'mean3', 'inside parentheses/jlens': 'fixed', 'list nesting depth/nla': 'mean3', 'list nesting depth/ol': 'mean3', 'list nesting depth/jlens': 'fixed', 'nj1_col_fresh/nla': 'fixed', 'nj1_col_fresh/ol': 'mean3', 'nj1_col_fresh/jlens': 'fixed', 'ij2_lang/nla': 'fixed', 'ij2_lang/ol': 'mean3', 'ij2_lang/jlens': 'fixed'}. Line position fresh: NLA mean3 0.48 vs fixed 0.51; the table reports 0.51 (max), the RESULTS text 0.48. Language: Oracle Lens has 1 'states' verdict of 320 (0.3%), recorded as 0%. NLA actor prompt (notes/wsbench_internals.md): 'You are a meticulous AI researcher ... <concept>...</concept> Please provide an explanation.'; the prompted phrasing is scored as the continuation after '<explanation>\\n'.",
+  "layout": {
+    "png_px": [
+      1870,
+      882
+    ],
+    "aspect": 2.12,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.1
+  }
+}

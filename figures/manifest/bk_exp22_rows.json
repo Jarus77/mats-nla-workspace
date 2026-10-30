@@ -1,0 +1,37 @@
+{
+  "name": "bk_exp22_rows",
+  "title": "Exp 22: the control row is the one the NLA states, Oracle Lens exhibits and the J-lens reads",
+  "caption": "Exp 22 (public rebuild, 8 rows incl. Python-vs-JavaScript control): each panel is one pre-registered cell; markers show the observed value per row, triangle up/down = predicted high/low, dashed line = the declared 'counts as high' threshold; filled in the reader's colour when the prediction held, open dark when it missed. Horizontal bars on the three judged cells are item-clustered bootstrap 95% intervals (320 readouts, 40 items); the AUROC cells have no per-item scores stored, so no interval. 'NLA complement (multi-choice)' is the pre-registered cell 'NLA names the complement': a multi-candidate forced-choice argmax on the unmarked value, not a regex or judge verdict. Grey J-lens markers are lexically cued rows, excluded from the primary scorecard as declared (still counted in the all-cells total).",
+  "section": "backup:exp22",
+  "role": "backup",
+  "sources": [
+    "experiments/22_public_bank/results/score22.json",
+    "experiments/22_public_bank/results/judged/*.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exp 22 judged-cell observed values recomputed from per-readout verdicts",
+      "computed": "24/24 match",
+      "record": "24/24",
+      "where": "score22.json",
+      "match": true
+    },
+    {
+      "quantity": "exp 22 all cells",
+      "computed": "44/56",
+      "record": "44/56",
+      "where": "RESULTS.md",
+      "match": true
+    }
+  ],
+  "notes": "Observed-high verified as observed >= feature_spec CELL_THRESH for every cell. Exp 19 items never read beyond verdict flags; no item text plotted.",
+  "layout": {
+    "png_px": [
+      2909,
+      1528
+    ],
+    "aspect": 1.904,
+    "min_font_pt": 10.5,
+    "effective_min_pt_at_9p4in": 6.8
+  }
+}

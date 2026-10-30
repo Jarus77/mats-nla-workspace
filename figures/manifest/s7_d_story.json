@@ -1,0 +1,73 @@
+{
+  "name": "s7_d_story",
+  "title": "Six ideas fell on the way from benchmark to answer",
+  "caption": "The sprint as phases, top to bottom; the italic grey row is the J-space pilot work superseded on 23 Oct. Red entries are the six hypotheses dropped, on the date the decision log records, beside the phase that dropped them.",
+  "section": "S7",
+  "role": "main",
+  "sources": [
+    "notes/decisions.md",
+    "notes/derivation.md",
+    "git log (experiment folders)"
+  ],
+  "checks": [
+    {
+      "quantity": "window account retired",
+      "computed": "27 Oct (decisions.md D45)",
+      "record": "talk script S7: 'the window account (26 Oct)'",
+      "where": "talk script S7 table",
+      "match": false
+    },
+    {
+      "quantity": "'NLA states when it is used' retired",
+      "computed": "26 Oct (D42, exp 18 scored; rule rewritten)",
+      "record": "talk script S7: exp 18 rule",
+      "where": "notes/decisions.md",
+      "match": true
+    },
+    {
+      "quantity": "theory day dropped",
+      "computed": "dropped by 27 Oct (notes/derivation.md written 27 Oct; proposed 24 Oct)",
+      "record": "talk script S7 (no date)",
+      "where": "notes/derivation.md",
+      "match": true
+    },
+    {
+      "quantity": "continuation predictor (exp 21)",
+      "computed": "27 Oct (git date of exp 21 RESULTS)",
+      "record": "talk script S7 (no date)",
+      "where": "experiments/21_continuation",
+      "match": true
+    },
+    {
+      "quantity": "loose naming count",
+      "computed": "27 Oct (D47)",
+      "record": "talk script S7",
+      "where": "notes/decisions.md",
+      "match": true
+    },
+    {
+      "quantity": "0.30 statement rule withdrawn",
+      "computed": "28 Oct (D49)",
+      "record": "talk script S7: 28 Oct",
+      "where": "notes/decisions.md",
+      "match": true
+    },
+    {
+      "quantity": "phase dates",
+      "computed": "first/last git commit dates of each experiment folder and decisions.md headings (D1-D50)",
+      "record": "-",
+      "where": "git log, notes/decisions.md",
+      "match": true
+    }
+  ],
+  "notes": "Diagram, no data. Dates from decisions.md headings and git commit dates. Experiments behind each phase (moved off the slide): 5-6 Oct benchmark can't test reading: exps 01, 06; 6-13 Oct J-space pilots (superseded): superseded by the 23 Oct redirect; 22-24 Oct instruments on the activation: exp 12, proposal; 22-26 Oct position rows: used, not stated: exps 12, 13, 17; 23-25 Oct mechanism: span vs statement: exps 14, 15, 16; 26-27 Oct pre-registered prediction tests: exps 18, 19, 22; 27-28 Oct readers carry it, don't name it: exps 20, 23-25, 27; 28-30 Oct layers, training path, adapter: exps 26, 28, 29, 30. Sources of each drop: 'NLA states it when it is used' (D42, exp 18); window account (D45, exp 20); theory day (derivation.md); continuation predictor (exp 21); loose naming count (D47, exp 23); 0.30 statement rule (D49, exp 28).",
+  "layout": {
+    "png_px": [
+      1860,
+      850
+    ],
+    "aspect": 2.188,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "bk_exp03_smoke",
+  "title": "With the J-space removed from the push, only the NLA still follows the feature (toy, n=40 pairs)",
+  "caption": "Pipeline smoke test on a toy in-J feature (French vs German, 40 content-matched pairs, 80 items): the layer-42 activation is pushed along the class-mean direction at the q99 dose, either full or with the top-384 J-space removed, and each reader's two-candidate log-odds is scored by AUROC (mean of 3 templates; 95% CI, 2,000 pair-clustered bootstraps). Labels in the dark bars: share of items (paired win) whose log-odds moved toward the pushed class. Oracle Lens and the J-lens move against the push. Caveat: plumbing check, not a result; the feature is trivially present in the text.",
+  "section": "backup:exp03",
+  "role": "backup",
+  "sources": [
+    "experiments/03_pipeline_smoke/results/metrics.json"
+  ],
+  "checks": [
+    {
+      "quantity": "FollowFeature q99 NLA at layer 42 raw",
+      "computed": 0.912,
+      "record": 0.91,
+      "where": "exp 03 RESULTS FollowFeature table",
+      "match": true
+    },
+    {
+      "quantity": "FollowFeature q99 NLA at layer 42 jrem",
+      "computed": 0.596,
+      "record": 0.6,
+      "where": "exp 03 RESULTS FollowFeature table",
+      "match": true
+    },
+    {
+      "quantity": "FollowFeature q99 Oracle Lens at layer 42 raw",
+      "computed": 0.845,
+      "record": 0.84,
+      "where": "exp 03 RESULTS FollowFeature table",
+      "match": true
+    },
+    {
+      "quantity": "FollowFeature q99 Oracle Lens at layer 42 jrem",
+      "computed": 0.449,
+      "record": 0.45,
+      "where": "exp 03 RESULTS FollowFeature table",
+      "match": true
+    },
+    {
+      "quantity": "FollowFeature q99 J-lens at layer 42 raw",
+      "computed": 0.845,
+      "record": 0.84,
+      "where": "exp 03 RESULTS FollowFeature table",
+      "match": true
+    },
+    {
+      "quantity": "FollowFeature q99 J-lens at layer 42 jrem",
+      "computed": 0.457,
+      "record": 0.46,
+      "where": "exp 03 RESULTS FollowFeature table",
+      "match": true
+    }
+  ],
+  "notes": "Directions are 2-fold cross-fitted by pair; null = equal-norm random direction (AUROC 0.47 to 0.54).",
+  "layout": {
+    "png_px": [
+      2113,
+      1141
+    ],
+    "aspect": 1.852,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 10.2
+  }
+}

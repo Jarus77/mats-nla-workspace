@@ -1,0 +1,115 @@
+{
+  "name": "bk_exp10_tost_power",
+  "title": "240 passages are enough to call line position flat; direction-to-direction noise caps power that more items cannot lift",
+  "caption": "Simulated power (2,000 experiments per point, K = 100 random directions per band, inputs bootstrapped from the 60-passage pilot) for the pre-registered equivalence test that Oracle Lens's five descriptive families are flat against both random-direction bands. Shading: Wilson 95% Monte Carlo interval. With no true effect power is 1.00 from n = 120; if the real direction behaves like a random one (violet) power plateaus near 0.93, and lower under the two sensitivity runs (pale dashed), because the direction-level spread does not shrink with n. Caveat: a simulation from pilot data, not a measurement.",
+  "section": "backup:exp10",
+  "role": "backup",
+  "sources": [
+    "experiments/10_main/power/tost_sim.json",
+    "experiments/10_main/power/tost_sim_noscale.json",
+    "experiments/10_main/power/tost_sim_dir1.3.json"
+  ],
+  "checks": [
+    {
+      "quantity": "IUT power A0 n=240",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power Ahalf n=120",
+      "computed": 0.974,
+      "record": 0.97,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power Ahalf n=240",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power Apilot n=120",
+      "computed": 0.652,
+      "record": 0.65,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power Apilot n=240",
+      "computed": 0.824,
+      "record": 0.82,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power Apilot n=480",
+      "computed": 0.921,
+      "record": 0.92,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power Apilot n=960",
+      "computed": 0.968,
+      "record": 0.97,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power B0 n=120",
+      "computed": 0.887,
+      "record": 0.89,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power B0 n=240",
+      "computed": 0.911,
+      "record": 0.91,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power B0 n=480",
+      "computed": 0.928,
+      "record": 0.93,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "IUT power B0 n=960",
+      "computed": 0.934,
+      "record": 0.93,
+      "where": "10_main/power/RESULTS.md section 4",
+      "match": true
+    },
+    {
+      "quantity": "B0 n=240 noscale",
+      "computed": 0.669,
+      "record": 0.67,
+      "where": "10_main/power/RESULTS.md sensitivities",
+      "match": true
+    },
+    {
+      "quantity": "B0 n=240 dir1.3",
+      "computed": 0.738,
+      "record": 0.74,
+      "where": "10_main/power/RESULTS.md sensitivities",
+      "match": true
+    }
+  ],
+  "notes": "Statistic: per-item paired effect e_i = (LO(+D) - LO(-D))/2 minus the band mean; TOST at +/- delta_f (the shift moving AUROC 0.50 -> 0.55), intersection-union over five families and both bands. Values are the simulation's own outputs (no raw item data involved). Series: {\"A0\": [1.0, 1.0, 1.0, 1.0], \"Ahalf\": [0.974, 1.0, 1.0, 1.0], \"Apilot\": [0.652, 0.824, 0.921, 0.968], \"B0\": [0.887, 0.911, 0.928, 0.934], \"B0 nulls at the larger pilot norm\": [0.635, 0.669, 0.703, 0.715], \"B0 direction spread x 1.3\": [0.712, 0.738, 0.772, 0.788]}",
+  "layout": {
+    "png_px": [
+      2113,
+      1033
+    ],
+    "aspect": 2.045,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 10.2
+  }
+}

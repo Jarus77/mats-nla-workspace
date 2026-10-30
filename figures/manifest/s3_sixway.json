@@ -1,0 +1,108 @@
+{
+  "name": "s3_sixway",
+  "title": "With six columns to choose from, the NLA still separates first from late but never picks columns 4 to 6",
+  "caption": "Exp 17: table-column items re-scored over all six column values (160 exp 13 selection items: 80 first-cell, 80 late-cell with true column 4-6). A and B: which column the NLA's phrasing 'The current cell is in the {v} column of the table' ranks highest; it picks 'first' on 75 of 80 first-cell items and never picks columns 4-6, even when they are true. C: first vs late AUROC from log-sum-exp over each class's candidates (Oracle Lens: column-number bullets; J-lens: column words), 95% bootstrap CI clustered by passage (2,000 resamples). Six-way top-1 for the NLA is 0.47 [0.39, 0.55] against chance 0.17. Caveat: the 94% is a prompted argmax, not free readouts; with a per-candidate prior subtracted, late items do go to columns 4-6 (45 of 80).",
+  "section": "S3",
+  "role": "main",
+  "sources": [
+    "experiments/17_harden/results/vol/mc_nla_tb_tablecol.pt",
+    "experiments/17_harden/results/vol/mc_ol_tb_tablecol.pt",
+    "experiments/17_harden/spec17.py (CLASS_SETS, templates)"
+  ],
+  "checks": [
+    {
+      "quantity": "NLA 'first' argmax on first-cell items",
+      "computed": "75/80",
+      "record": "75/80",
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "NLA share 'first' on first-cell items",
+      "computed": 0.94,
+      "record": 0.94,
+      "where": "talk script S3 hardening",
+      "match": true
+    },
+    {
+      "quantity": "NLA argmax hits on columns 4-6 (all items)",
+      "computed": 0,
+      "record": 0,
+      "where": "talk script 'never names columns four to six'",
+      "match": true
+    },
+    {
+      "quantity": "NLA late items argmax first/second/third",
+      "computed": [
+        39,
+        39,
+        2
+      ],
+      "record": [
+        39,
+        39,
+        2
+      ],
+      "where": "exp 17 mc17.md",
+      "match": true
+    },
+    {
+      "quantity": "NLA six-way class AUROC",
+      "computed": 0.89,
+      "record": 0.89,
+      "where": "talk script S3 / exp 17 RESULTS",
+      "match": true
+    },
+    {
+      "quantity": "NLA six-way class AUROC CI",
+      "computed": [
+        0.84,
+        0.94
+      ],
+      "record": [
+        0.84,
+        0.94
+      ],
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "NLA six-way top-1",
+      "computed": 0.47,
+      "record": 0.47,
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens col_N class AUROC",
+      "computed": 0.8,
+      "record": 0.8,
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "J-lens class AUROC",
+      "computed": 0.66,
+      "record": 0.66,
+      "where": "exp 17 RESULTS (a)",
+      "match": true
+    },
+    {
+      "quantity": "source of the 94%",
+      "computed": "prompted six-way argmax of 'The current cell is in the {v} column of the table'",
+      "record": "talk script S3 cross-question 1: 'the NLA's free readouts name \"first\" unprompted on 94% of first-cell items'",
+      "where": "talk_script.md S3 cross-questions",
+      "match": false
+    }
+  ],
+  "notes": "Oracle Lens other phrasings: class AUROC ol:mc:fixed 0.62, ol:mc:m3 0.80, ol:mc:m0 0.79, J-lens:mc:fixed 0.66; the panel shows the col_N phrasing (m3) that RESULTS quotes. Parenthesis four-way re-score failed the declared bar (top-1 lower bound 0.33 < 0.50): see bk_exp17_paren_fourway. The talk script's cross-question 1 attributes the 94% to free readouts; it is from the prompted six-way argmax (free-readout stated rate on table column is 41%, exp 13).",
+  "layout": {
+    "png_px": [
+      1866,
+      835
+    ],
+    "aspect": 2.235,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.1
+  }
+}

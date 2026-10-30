@@ -1,0 +1,51 @@
+{
+  "name": "bk_exp20_exhibits_recon",
+  "title": "Re-scored through the reconstructor, Oracle Lens's exhibits cell holds on 6 of 8 rows, not 7 (post hoc)",
+  "caption": "Exp 19's rows: Oracle Lens's free readouts fed to the NLA critic and scored with the frozen probe (exp 20), against the 0.70 line used for the other AUROC cells; triangles mark the pre-registered direction, crosses the judged share the cell was actually scored with (0.00 on every row). Whiskers are Hanley-McNeil 95% intervals (80 vs 80 items; no per-item scores stored, so no bootstrap). Post hoc: the measure replaced the judge after it failed. The call-argument row is 0.697, under the line, so the strict count is 6/8 (primary 34/38), not the recorded 7/8 (35/38).",
+  "section": "backup:exp20",
+  "role": "backup",
+  "sources": [
+    "experiments/20_ar_structure/results/recon20_*.json",
+    "experiments/19_natural_bank/results/score19.json"
+  ],
+  "checks": [
+    {
+      "quantity": "exp 19 exhibits cell via reconstructor, hits at >= 0.70",
+      "computed": "6/8",
+      "record": "7/8",
+      "where": "exp 19 RESULTS post hoc; exp 20 RESULTS; talk S5",
+      "match": false
+    },
+    {
+      "quantity": "same with AUROC rounded to 2 dp before thresholding",
+      "computed": "7/8",
+      "record": "7/8",
+      "where": "how the record appears to have counted",
+      "match": true
+    },
+    {
+      "quantity": "call argument Oracle Lens readout AUROC",
+      "computed": 0.6972,
+      "record": "0.70 ('all five observed high (0.70 to 0.94)')",
+      "where": "exp 20 RESULTS",
+      "match": false
+    },
+    {
+      "quantity": "primary scorecard with this cell",
+      "computed": "34/38",
+      "record": "35/38",
+      "where": "exp 19/20 RESULTS",
+      "match": false
+    }
+  ],
+  "notes": "Threshold convention >= (score19.py: high = v >= CELL_THRESH). New record discrepancy.",
+  "layout": {
+    "png_px": [
+      2434,
+      1033
+    ],
+    "aspect": 2.356,
+    "min_font_pt": 11.0,
+    "effective_min_pt_at_9p4in": 8.5
+  }
+}

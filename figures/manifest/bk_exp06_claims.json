@@ -1,0 +1,65 @@
+{
+  "name": "bk_exp06_claims",
+  "title": "A text-only model's claims are more often true of the prompt than either reader's",
+  "caption": "100 readouts per source (25 per WorkspaceBench family, same items), split by a judge model (Gemini 3.8 Flash, T=0) into at most 12 atomic claims each and labelled against the prompt and gold answer (NLA 844, Oracle Lens 675, text-only 587 claims). B: precision = text-true / (text-true + contradicted), 95% bootstrap CI over readouts. The NLA's contradictions are mostly near-miss quotes of the prompt; Oracle Lens's are wrong facts plus 28% unsupported. Caveat: the judge sees the gold answer; agreement with a second judge is kappa 0.72 (5-way), no human labels.",
+  "section": "backup:exp06",
+  "role": "backup",
+  "sources": [
+    "experiments/06_resolving_decomposition/data/claims_gemini.jsonl",
+    "experiments/06_resolving_decomposition/data/claims_summary.json"
+  ],
+  "checks": [
+    {
+      "quantity": "TVP NLA at layer 42",
+      "computed": 0.619,
+      "record": 0.62,
+      "where": "exp 06 RESULTS sec 5",
+      "match": true
+    },
+    {
+      "quantity": "n claims NLA at layer 42",
+      "computed": 844,
+      "record": 844,
+      "where": "claims_summary.json",
+      "match": true
+    },
+    {
+      "quantity": "TVP Oracle Lens at layer 42",
+      "computed": 0.524,
+      "record": 0.52,
+      "where": "exp 06 RESULTS sec 5",
+      "match": true
+    },
+    {
+      "quantity": "n claims Oracle Lens at layer 42",
+      "computed": 675,
+      "record": 675,
+      "where": "claims_summary.json",
+      "match": true
+    },
+    {
+      "quantity": "TVP TextNLA(prompt,Qwen)",
+      "computed": 0.918,
+      "record": 0.92,
+      "where": "exp 06 RESULTS sec 5",
+      "match": true
+    },
+    {
+      "quantity": "n claims TextNLA(prompt,Qwen)",
+      "computed": 587,
+      "record": 587,
+      "where": "claims_summary.json",
+      "match": true
+    }
+  ],
+  "notes": "Text-only arm = base Qwen3.6-27B given the prompt under the NLA warm-start instruction (data/nla_instruction.txt), sample s0. Codebook precedence: contradicted > restatement > target/latent > inferable > unsupported (claims.py).",
+  "layout": {
+    "png_px": [
+      2333,
+      1286
+    ],
+    "aspect": 1.814,
+    "min_font_pt": 11.5,
+    "effective_min_pt_at_9p4in": 9.3
+  }
+}

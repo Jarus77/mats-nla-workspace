@@ -1,0 +1,92 @@
+{
+  "name": "s1_wsbench_arms",
+  "title": "The readout adds nothing the prompt lacks",
+  "caption": "A: one judge model (Gemini 3.8 Flash, one naming instruction, k=1) answers WorkspaceBench from the prompt, a reader's layer-42 readout, or both; regex-scored, 400 items over 4 multi-token families, Wilson 95% CIs. Prompt + readout minus prompt: NLA -0.015 [-0.043, +0.013], Oracle Lens -0.013 [-0.043, +0.015] (paired item bootstrap). B: of each reader's own regex passes, the number missed by all eight prompt-only texts (Qwen x3 and Gemini x1 under the NLA register and the benchmark template); the 4 Oracle Lens items are credited through Chinese forms of the concept. Caveat: the eight text arms are best-of-8 against k=1 readers.",
+  "section": "S1",
+  "role": "main",
+  "sources": [
+    "experiments/06_resolving_decomposition/judged/gem_rsP/*/results.json",
+    "experiments/06_resolving_decomposition/judged/gem_resolve_nla/*/results.json",
+    "experiments/06_resolving_decomposition/judged/gem_resolve_ol42/*/results.json",
+    "experiments/06_resolving_decomposition/judged/gem_rsP_nla/*/results.json",
+    "experiments/06_resolving_decomposition/judged/gem_rsP_ol42/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_nla_s0/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_nla_s1/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_nla_s2/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_wsb_s0/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_wsb_s1/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_wsb_s2/*/results.json",
+    "experiments/06_resolving_decomposition/judged/gem_prompt_nla/*/results.json",
+    "experiments/06_resolving_decomposition/judged/gem_prompt_wsb/*/results.json",
+    "experiments/01_wsbench_replication/judged/nla_L42/*/results.json",
+    "experiments/01_wsbench_replication/judged/olens_L42/*/results.json"
+  ],
+  "checks": [
+    {
+      "quantity": "pass rate gem_rsP",
+      "computed": 0.892,
+      "record": 0.89,
+      "where": "exp 06 RESULTS re-solver check; talk script S1 table",
+      "match": true
+    },
+    {
+      "quantity": "pass rate gem_resolve_nla",
+      "computed": 0.6,
+      "record": 0.6,
+      "where": "exp 06 RESULTS re-solver check; talk script S1 table",
+      "match": true
+    },
+    {
+      "quantity": "pass rate gem_resolve_ol42",
+      "computed": 0.56,
+      "record": 0.56,
+      "where": "exp 06 RESULTS re-solver check; talk script S1 table",
+      "match": true
+    },
+    {
+      "quantity": "pass rate gem_rsP_nla",
+      "computed": 0.877,
+      "record": 0.88,
+      "where": "exp 06 RESULTS re-solver check; talk script S1 table",
+      "match": true
+    },
+    {
+      "quantity": "pass rate gem_rsP_ol42",
+      "computed": 0.88,
+      "record": 0.88,
+      "where": "exp 06 RESULTS re-solver check; talk script S1 table",
+      "match": true
+    },
+    {
+      "quantity": "NLA at layer 42 passes / unreachable by 8 prompt-only texts",
+      "computed": "187 / 0",
+      "record": "187 / 0",
+      "where": "exp 06 RESULTS sec 2; talk S1",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens at layer 42 passes / unreachable",
+      "computed": "159 / 4",
+      "record": "159 / 4",
+      "where": "exp 06 RESULTS sec 2; talk S1",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens unreachable items whose concept credit came from a Chinese form",
+      "computed": 4,
+      "record": "all 4 (Chinese code-switching)",
+      "where": "exp 06 RESULTS sec 2",
+      "match": true
+    }
+  ],
+  "notes": "Judge prompt (prompt arm): 'Below is a text that a language model was reading, cut off at its final token. <text>...</text> [readout arms add: 'Below is also a description, produced by an interpretability tool, of what the model was internally representing at that final token. <description>...</description>'] Work out what the model was thinking about at that token. Write a short summary (at most ~150 words) that (1) states what the text is about, (2) names the specific entity, term, word or answer the model was most likely representing or about to produce, written out in full and spelled correctly, and (3) states the language of the text.' Readout-only arms use RESOLVE_TEMPLATE in experiments/06_resolving_decomposition/common.py (same three asks, 'You do not see the text itself'). Reader passes in B come from exp 01's own judged layer-42 files; the 4 Oracle Lens items are mlh-ar-sandpaper, mlh-id-hailstone, mlh-pl-strzykawka, mlh-vi-clothesiron (concept unit hit in 'zh').",
+  "layout": {
+    "png_px": [
+      1882,
+      838
+    ],
+    "aspect": 2.246,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.0
+  }
+}

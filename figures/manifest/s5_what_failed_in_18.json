@@ -1,0 +1,115 @@
+{
+  "name": "s5_what_failed_in_18",
+  "title": "Exp 18: the NLA does not state what the model uses",
+  "caption": "Exp 18's ten synthetic rows: x = how strongly pushing the state moves the model's next-token odds (|z| vs 20 isotropic nulls; grey strip = rows with no next-token set), y = share of the NLA's 320 free readouts (40 items x 8) a judge marked as stating the property, with item-clustered bootstrap 95% intervals. The pre-registered rule 'states exactly when used' (it predicts stated right of the |z| = 3 line) got 5 of 10: LaTeX math is the most used row and is never stated, natural language has no next-token use and is stated 95%. 'Used' is the language here; the NLA's statements followed the statement shift instead (exp 28 later showed that only separates language from structure).",
+  "section": "S5",
+  "role": "main",
+  "sources": [
+    "experiments/18_prediction_test/results/instruments18.json",
+    "experiments/18_prediction_test/results/judged/*_nla.json",
+    "experiments/18_prediction_test/results/score18.json"
+  ],
+  "checks": [
+    {
+      "quantity": "JSON nesting depth stated rate from judged verdicts",
+      "computed": 0.2469,
+      "record": 0.2469,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math stated rate from judged verdicts",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string stated rate from judged verdicts",
+      "computed": 0.0281,
+      "record": 0.0281,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "call_arg stated rate from judged verdicts",
+      "computed": 0.325,
+      "record": 0.325,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "Markdown heading level stated rate from judged verdicts",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "csv_col stated rate from judged verdicts",
+      "computed": 0.1281,
+      "record": 0.1281,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth stated rate from judged verdicts",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "stance_word stated rate from judged verdicts",
+      "computed": 0.0,
+      "record": 0.0,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "ij2_lang stated rate from judged verdicts",
+      "computed": 0.95,
+      "record": 0.95,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "bk_quote stated rate from judged verdicts",
+      "computed": 0.0781,
+      "record": 0.0781,
+      "where": "score18.json nla_states",
+      "match": true
+    },
+    {
+      "quantity": "LaTeX math used z, stated",
+      "computed": "22.15, 0.00",
+      "record": "+22.15, 0.00 ('most used row, never stated')",
+      "where": "predictions18.md; talk S5",
+      "match": true
+    },
+    {
+      "quantity": "language stated rate",
+      "computed": 0.95,
+      "record": "0.95",
+      "where": "talk S5",
+      "match": true
+    },
+    {
+      "quantity": "rule 'NLA states exactly when used' hits",
+      "computed": "5/10",
+      "record": "5/10",
+      "where": "talk S5 table",
+      "match": true
+    }
+  ],
+  "notes": "Computed from instruments18.json (used_z, two-sided rule |z| >= 3 per prereg \u00a72 clarification), judged/<row>_nla.json (per-readout 'stated' verdicts, n = 320, 40 items), score18.json (predicted cell). Stated threshold 0.20 from notes/prereg_prediction_test.md. Python string has z = -12.2 (used, negative direction).",
+  "layout": {
+    "png_px": [
+      1749,
+      829
+    ],
+    "aspect": 2.11,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 16.1
+  }
+}

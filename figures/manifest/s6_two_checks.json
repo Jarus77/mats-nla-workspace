@@ -1,0 +1,468 @@
+{
+  "name": "s6_two_checks",
+  "title": "Two independent checks agree: Oracle Lens's words carry the state through a second decoder and on a public bank",
+  "caption": "Left, exp 24: each exp 20 readout (k = 1) is fed to Oracle Lens's own activation reconstructor (layer tag 44) and scored by a probe fit on the rebuilds of the true 32-token span, applied frozen: Oracle Lens 0.73 to 0.80 on five of six readable rows (call argument 0.61), the NLA at chance; a probe fit on the NLA's own rebuilds (grouped 5-fold CV, hollow) separates it at 0.81 to 0.90. Right, exp 25: exp 20's protocol on the independent public bank through the NLA's critic: Oracle Lens 0.84 to 0.97 on string, math and JSON depth (call argument 0.51); shuffled tokens keep only the language control. 160 items per row; bars Hanley-McNeil 95% (no per-item scores saved; ignores clustering).",
+  "section": "S6",
+  "role": "main",
+  "sources": [
+    "experiments/13_new_rows/results/items_base.json",
+    "experiments/19_natural_bank/results/items_base.json",
+    "experiments/24_second_decoder/results/recon24_html_depth.json",
+    "experiments/24_second_decoder/results/recon24_js_string.json",
+    "experiments/24_second_decoder/results/recon24_json_depth.json",
+    "experiments/24_second_decoder/results/recon24_latex_math.json",
+    "experiments/24_second_decoder/results/recon24_md_heading.json",
+    "experiments/24_second_decoder/results/recon24_md_list.json",
+    "experiments/24_second_decoder/results/recon24_py_arg.json",
+    "experiments/24_second_decoder/results/recon24_py_string.json",
+    "experiments/24_second_decoder/results/recon24_tb_paren.json",
+    "experiments/24_second_decoder/results/recon24_tb_tablecol.json",
+    "experiments/25_public_exhibits/results/recon25_code_lang.json",
+    "experiments/25_public_exhibits/results/recon25_js_string.json",
+    "experiments/25_public_exhibits/results/recon25_json_depth.json",
+    "experiments/25_public_exhibits/results/recon25_latex_math.json",
+    "experiments/25_public_exhibits/results/recon25_md_heading.json",
+    "experiments/25_public_exhibits/results/recon25_md_list.json",
+    "experiments/25_public_exhibits/results/recon25_py_arg.json",
+    "experiments/25_public_exhibits/results/recon25_py_string.json"
+  ],
+  "checks": [
+    {
+      "quantity": "inside a Python string Oracle Lens frozen layer 44 (2dp)",
+      "computed": 0.8,
+      "record": 0.8,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string Oracle Lens cv layer 44 (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string NLA frozen layer 44 (2dp)",
+      "computed": 0.56,
+      "record": 0.56,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string NLA cv layer 44 (2dp)",
+      "computed": 0.89,
+      "record": 0.89,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string bag frozen layer 44 (2dp)",
+      "computed": 0.55,
+      "record": 0.55,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string Oracle Lens frozen layer 44 (2dp)",
+      "computed": 0.8,
+      "record": 0.8,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string Oracle Lens cv layer 44 (2dp)",
+      "computed": 0.92,
+      "record": 0.92,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string NLA frozen layer 44 (2dp)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string NLA cv layer 44 (2dp)",
+      "computed": 0.81,
+      "record": 0.81,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string bag frozen layer 44 (2dp)",
+      "computed": 0.44,
+      "record": 0.44,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math Oracle Lens frozen layer 44 (2dp)",
+      "computed": 0.78,
+      "record": 0.78,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math Oracle Lens cv layer 44 (2dp)",
+      "computed": 0.93,
+      "record": 0.93,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math NLA frozen layer 44 (2dp)",
+      "computed": 0.44,
+      "record": 0.44,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math NLA cv layer 44 (2dp)",
+      "computed": 0.81,
+      "record": 0.81,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math bag frozen layer 44 (2dp)",
+      "computed": 0.59,
+      "record": 0.59,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument Oracle Lens frozen layer 44 (2dp)",
+      "computed": 0.61,
+      "record": 0.61,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument Oracle Lens cv layer 44 (2dp)",
+      "computed": 0.58,
+      "record": 0.58,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument NLA frozen layer 44 (2dp)",
+      "computed": 0.52,
+      "record": 0.52,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument NLA cv layer 44 (2dp)",
+      "computed": 0.59,
+      "record": 0.59,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument bag frozen layer 44 (2dp)",
+      "computed": 0.53,
+      "record": 0.53,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth Oracle Lens frozen layer 44 (2dp)",
+      "computed": 0.74,
+      "record": 0.74,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth Oracle Lens cv layer 44 (2dp)",
+      "computed": 0.92,
+      "record": 0.92,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth NLA frozen layer 44 (2dp)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth NLA cv layer 44 (2dp)",
+      "computed": 0.83,
+      "record": 0.83,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth bag frozen layer 44 (2dp)",
+      "computed": 0.71,
+      "record": 0.71,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth Oracle Lens frozen layer 44 (2dp)",
+      "computed": 0.73,
+      "record": 0.73,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth Oracle Lens cv layer 44 (2dp)",
+      "computed": 0.78,
+      "record": 0.78,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth NLA frozen layer 44 (2dp)",
+      "computed": 0.44,
+      "record": 0.44,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth NLA cv layer 44 (2dp)",
+      "computed": 0.9,
+      "record": 0.9,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "HTML nesting depth bag frozen layer 44 (2dp)",
+      "computed": 0.74,
+      "record": 0.74,
+      "where": "exp24 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens frozen, five of six readable rows >= 0.73 (min of top five, 2dp)",
+      "computed": 0.73,
+      "record": 0.73,
+      "where": "talk script S6 update '0.73 to 0.80 on five of six'",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens frozen call argument (2dp)",
+      "computed": 0.61,
+      "record": 0.61,
+      "where": "talk script S6 update",
+      "match": true
+    },
+    {
+      "quantity": "NLA cv min over five readable rows (2dp)",
+      "computed": 0.81,
+      "record": 0.81,
+      "where": "talk script '0.81 to 0.90'",
+      "match": true
+    },
+    {
+      "quantity": "NLA cv max over five readable rows (2dp)",
+      "computed": 0.9,
+      "record": 0.9,
+      "where": "talk script '0.81 to 0.90'",
+      "match": true
+    },
+    {
+      "quantity": "code language span_32 (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language bag_32 (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language ol_readout (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "code language nla_readout (2dp)",
+      "computed": 0.98,
+      "record": 0.98,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string span_32 (2dp)",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string bag_32 (2dp)",
+      "computed": 0.46,
+      "record": 0.46,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string ol_readout (2dp)",
+      "computed": 0.86,
+      "record": 0.86,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a Python string nla_readout (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string span_32 (2dp)",
+      "computed": 0.77,
+      "record": 0.77,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string bag_32 (2dp)",
+      "computed": 0.46,
+      "record": 0.46,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string ol_readout (2dp)",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside a JavaScript string nla_readout (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math span_32 (2dp)",
+      "computed": 0.85,
+      "record": 0.85,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math bag_32 (2dp)",
+      "computed": 0.5,
+      "record": 0.5,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math ol_readout (2dp)",
+      "computed": 0.87,
+      "record": 0.87,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "inside LaTeX math nla_readout (2dp)",
+      "computed": 1.0,
+      "record": 1.0,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth span_32 (2dp)",
+      "computed": 0.92,
+      "record": 0.92,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth bag_32 (2dp)",
+      "computed": 0.76,
+      "record": 0.76,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth ol_readout (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "JSON nesting depth nla_readout (2dp)",
+      "computed": 0.99,
+      "record": 0.99,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument span_32 (2dp)",
+      "computed": 0.88,
+      "record": 0.88,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument bag_32 (2dp)",
+      "computed": 0.49,
+      "record": 0.49,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument ol_readout (2dp)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "call argument nla_readout (2dp)",
+      "computed": 0.93,
+      "record": 0.93,
+      "where": "exp25 RESULTS.md table",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens readout min over string/math/depth rows (2dp)",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "talk script '0.84 to 0.97'",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens readout max over string/math/depth rows (2dp)",
+      "computed": 0.97,
+      "record": 0.97,
+      "where": "talk script '0.84 to 0.97'",
+      "match": true
+    },
+    {
+      "quantity": "Oracle Lens readout call argument (2dp)",
+      "computed": 0.51,
+      "record": 0.51,
+      "where": "talk script '(call argument 0.51)'",
+      "match": true
+    }
+  ],
+  "notes": "Combines the backups s6_second_decoder (all ten exp 20 rows, both probes in separate panels, shuffled reference) and s6_public_carry (all eight public-bank rows, critic on the true span too). Rows shown here: the readable natural rows shared by the claims plus the public bank's language control; exp 24's table column (Oracle Lens frozen 0.57) and parentheses (0.60) and the two Markdown rows (not linearly present at layer 42) are in the backups. Exp 24 has no language row and exp 25 has no HTML row ('not in this bank').",
+  "layout": {
+    "png_px": [
+      1859,
+      846
+    ],
+    "aspect": 2.197,
+    "min_font_pt": 15.0,
+    "effective_min_pt_at_9p4in": 15.2
+  }
+}

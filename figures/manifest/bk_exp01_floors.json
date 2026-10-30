@@ -1,0 +1,143 @@
+{
+  "name": "bk_exp01_floors",
+  "title": "The published prompt-only floors are too low; re-run with thinking off they rise by up to 0.21",
+  "caption": "Prompt-only floor per WorkspaceBench family: the frozen published value against our re-run of the authors' own template and sampling (base Qwen3.6-27B, chat rendering with thinking off, k=1, n=100 per family, regex scorer), Wilson 95% CIs; dots are three earlier draws of the same arm; the red line is the NLA's own layer-42 score. Re-run minus published: +0.16, +0.05, +0.15, +0.21. Caveat: the published generator and its rendering are not public; thinking-on and raw rendering come closer but do not reproduce it either.",
+  "section": "backup:exp01",
+  "role": "backup",
+  "sources": [
+    "third_party/workspace-bench/evals/baselines/prompt_only.json",
+    "experiments/06_resolving_decomposition/judged/floor_think_off/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_wsb_s0/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_wsb_s1/*/results.json",
+    "experiments/06_resolving_decomposition/judged/qwen_prompt_wsb_s2/*/results.json",
+    "experiments/01_wsbench_replication/judged/nla_L42/*/results.json"
+  ],
+  "checks": [
+    {
+      "quantity": "typo_mt published floor",
+      "computed": 0.67,
+      "record": 0.67,
+      "where": "exp 01 RESULTS replication table",
+      "match": true
+    },
+    {
+      "quantity": "typo_mt re-run thinking off",
+      "computed": 0.83,
+      "record": 0.83,
+      "where": "exp 06 RESULTS floor verification",
+      "match": true
+    },
+    {
+      "quantity": "typo_mt T_wsb s0/s1/s2",
+      "computed": [
+        0.85,
+        0.83,
+        0.83
+      ],
+      "record": [
+        0.85,
+        0.83,
+        0.83
+      ],
+      "where": "exp 06 RESULTS floor verification",
+      "match": true
+    },
+    {
+      "quantity": "multilingual_mt published floor",
+      "computed": 0.42,
+      "record": 0.42,
+      "where": "exp 01 RESULTS replication table",
+      "match": true
+    },
+    {
+      "quantity": "multilingual_mt re-run thinking off",
+      "computed": 0.47,
+      "record": 0.47,
+      "where": "exp 06 RESULTS floor verification",
+      "match": true
+    },
+    {
+      "quantity": "multilingual_mt T_wsb s0/s1/s2",
+      "computed": [
+        0.58,
+        0.55,
+        0.51
+      ],
+      "record": [
+        0.58,
+        0.55,
+        0.51
+      ],
+      "where": "exp 06 RESULTS floor verification",
+      "match": true
+    },
+    {
+      "quantity": "multihop_mt published floor",
+      "computed": 0.69,
+      "record": 0.69,
+      "where": "exp 01 RESULTS replication table",
+      "match": true
+    },
+    {
+      "quantity": "multihop_mt re-run thinking off",
+      "computed": 0.84,
+      "record": 0.84,
+      "where": "exp 06 RESULTS floor verification",
+      "match": true
+    },
+    {
+      "quantity": "multihop_mt T_wsb s0/s1/s2",
+      "computed": [
+        0.82,
+        0.79,
+        0.88
+      ],
+      "record": [
+        0.82,
+        0.79,
+        0.88
+      ],
+      "where": "exp 06 RESULTS floor verification",
+      "match": true
+    },
+    {
+      "quantity": "basic_readout_mt published floor",
+      "computed": 0.59,
+      "record": 0.59,
+      "where": "exp 01 RESULTS replication table",
+      "match": true
+    },
+    {
+      "quantity": "basic_readout_mt re-run thinking off",
+      "computed": 0.8,
+      "record": 0.8,
+      "where": "exp 06 RESULTS floor verification",
+      "match": true
+    },
+    {
+      "quantity": "basic_readout_mt T_wsb s0/s1/s2",
+      "computed": [
+        0.77,
+        0.78,
+        0.8
+      ],
+      "record": [
+        0.77,
+        0.78,
+        0.8
+      ],
+      "where": "exp 06 RESULTS floor verification",
+      "match": true
+    }
+  ],
+  "notes": "Template (from prompt_only.json _source): 'Below is a prompt that was given to a language model, cut off at a specific token. The token in question is the final token of the text below: {token!r}. <prompt>{prefix}</prompt> What would a language model be thinking about on this token? Please write me a summary for this token.' Published CI recomputed as Wilson from rate x n_items.",
+  "layout": {
+    "png_px": [
+      2113,
+      1141
+    ],
+    "aspect": 1.852,
+    "min_font_pt": 12.0,
+    "effective_min_pt_at_9p4in": 10.7
+  }
+}
