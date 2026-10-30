@@ -93,6 +93,24 @@ def statement_accuracy(readouts: Mapping[str, str | None], items: Sequence[Mappi
             "naming_rate": (counts["correct"] + counts["wrong"]) / n if n else float("nan"), "per_item": per}
 
 
+
+def statement_said_by_state(readouts: Mapping[str, str | None], items: Sequence[Mapping], fixed_pair: Mapping[str, str]) -> dict:
+    """Which fixed statement each readout says, split by the item's true value. Returns {true value: {"n": count,
+    "said": {each value of ``fixed_pair``: rate, "both": rate, "nothing": rate}}}; the rates within a true value sum
+    to 1. Uses the same normalised substring test as :func:`statement_accuracy`."""
+    pats = {v: _norm(s) for v, s in fixed_pair.items()}
+    out: dict[str, dict] = {}
+    for true in fixed_pair:
+        group = [it for it in items if it["value"] == true]
+        counts = {**{v: 0 for v in fixed_pair}, "both": 0, "nothing": 0}
+        for it in group:
+            text = _norm(readouts.get(it["id"]) or "")
+            hits = [v for v, p in pats.items() if p in text]
+            counts[hits[0] if len(hits) == 1 else ("nothing" if not hits else "both")] += 1
+        n = len(group)
+        out[true] = {"n": n, "said": {k: (c / n if n else float("nan")) for k, c in counts.items()}}
+    return out
+
 # ---- FVE (nla.py's definition, restated so the eval can score reconstructions with a fixed baseline) ----------------
 
 def fve(pred: torch.Tensor, gold: torch.Tensor, baseline: float | None = None) -> tuple[torch.Tensor, float]:

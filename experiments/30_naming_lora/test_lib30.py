@@ -213,3 +213,15 @@ def test_freeze_writes_the_file_and_a_matching_sha256(tmp_path: Path):
     assert hashlib.sha256(blob).hexdigest() == info["sha256"]
     assert (tmp_path / "data30.sha256").read_text().split()[0] == info["sha256"]
     assert json.loads(blob)["seed"] == 30
+
+
+def test_statement_said_by_state_splits_by_true_value():
+    from lib30 import statement_said_by_state
+    pair = {"inside": "It is inside", "outside": "It is outside"}
+    items = [{"id": "a", "value": "inside"}, {"id": "b", "value": "inside"}, {"id": "c", "value": "inside"},
+             {"id": "d", "value": "outside"}, {"id": "e", "value": "outside"}]
+    texts = {"a": "x. It is inside.", "b": "it  is OUTSIDE", "c": "It is inside. It is outside.", "d": None, "e": "It is outside"}
+    by = statement_said_by_state(texts, items, pair)
+    assert by["inside"]["n"] == 3 and by["outside"]["n"] == 2
+    assert by["inside"]["said"] == {"inside": 1 / 3, "outside": 1 / 3, "both": 1 / 3, "nothing": 0.0}
+    assert by["outside"]["said"] == {"inside": 0.0, "outside": 0.5, "both": 0.0, "nothing": 0.5}

@@ -19,6 +19,14 @@ Per row (held-out clusters; arms present: base, C, S):
 | js_string | no (transfer) | 32 | 0.00 | 0.00 | 0.542 | 0.00 | 0.00 | 0.565 | 0.31 | 0.53 | 0.544 |
 | latex_math | no (transfer) | 32 | 0.00 | 0.00 | 0.585 | 0.00 | 0.00 | 0.592 | 0.03 | 0.03 | 0.595 |
 
-Exp 23 random points, in-string naming by lib23's strict regex: base: true 0.015, false 0.005 (statement check: inside-when-true 0.000) / C: true 0.030, false 0.005 (statement check: inside-when-true 0.000) / S: true 0.396, false 0.260 (statement check: inside-when-true 0.184)
+Exp 23 random points, in-string naming by lib23's strict regex: base: true 0.015, false 0.005 (statement check, overall accuracy 0.000) / C: true 0.030, false 0.005 (statement check, overall accuracy 0.000) / S: true 0.396, false 0.260 (statement check, overall accuracy 0.184)
 
-Training: arm S 400 steps, final loss 1.327, 35699 s; arm C 400 steps, final loss 1.378, 36492 s
+Exp 23 random points by the statement check (lib30's substring test of the py_string statements), by the true label:
+
+| arm | in string: says inside / outside / both / nothing | not in string: says inside / outside / both / nothing |
+|---|---|---|
+| base | 0.00 / 0.00 / 0.00 / 1.00 (n = 134) | 0.00 / 0.00 / 0.00 / 1.00 (n = 366) |
+| C | 0.00 / 0.00 / 0.00 / 1.00 (n = 134) | 0.00 / 0.00 / 0.00 / 1.00 (n = 366) |
+| S | 0.12 / 0.24 / 0.00 / 0.64 (n = 134) | 0.04 / 0.21 / 0.00 / 0.75 (n = 366) |
+
+Training: arm S 400 steps, final loss 1.327, 13.4 min; arm C 400 steps, final loss 1.378, 13.4 min (wall time from launch to done in pipeline.log, container start included; train30_*.json's wall_s over-accumulates and is not shown)

@@ -4,17 +4,23 @@ prediction P1-P5: the measured number, the line, pass/fail; then the per-row num
 from __future__ import annotations
 
 import json
+import re
 import sys
+from datetime import datetime, timedelta
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 RES = HERE / "results"
+EXP22 = HERE.parent / "22_public_bank"            # feature_spec: the fixed statement templates
+ITEMS23 = HERE.parent / "23_random_points" / "results" / "items_base.json"
 sys.path.insert(0, str(HERE))
-from lib30 import ALL_ROWS, within  # noqa: E402
+from lib30 import ALL_ROWS, statement_said_by_state, within  # noqa: E402
 
 ARMS = ("base", "C", "S")
 P2_HIGH, P2_LOW = ("py_string", "json_depth", "py_arg"), "md_list"
 SERIES = {"S": "#2a78d6", "C": "#eb6834"}          # categorical slots 1 and 2, fixed order
+EXPLANATION_RE = re.compile(r"<explanation>(.*?)</explanation>", re.DOTALL)   # mats.readers.nla's, without torch
+_LOG_LINE = re.compile(r"^(\d\d:\d\d:\d\d) (launching (\S+)|(\S+) done)$")
 
 
 def _load(name: str) -> dict | None:
@@ -71,8 +77,57 @@ def per_row_table(ev: dict) -> list[str]:
         cells = [f"{ev[a]['rows'][row]['accuracy']:.2f} | {ev[a]['rows'][row]['naming_rate']:.2f} | {ev[a]['rows'][row]['fve']:.3f}" for a in arms]
         out.append(f"| {row} | {'yes' if any_arm['trained'] else 'no (transfer)'} | {any_arm['n']} | " + " | ".join(cells) + " |")
     rp = " / ".join(f"{a}: true {_fmt(ev[a]['random_points']['strict_regex']['named_when_true'])}, false {_fmt(ev[a]['random_points']['strict_regex']['named_when_false'])}"
-                    + f" (statement check: inside-when-true {_fmt(ev[a]['random_points']['statement_check']['accuracy'])})" for a in arms)
-    return out + ["", f"Exp 23 random points, in-string naming by lib23's strict regex: {rp}"]
+                    + f" (statement check, overall accuracy {_fmt(ev[a]['random_points']['statement_check']['accuracy'])})" for a in arms)
+    return out + ["", f"Exp 23 random points, in-string naming by lib23's strict regex: {rp}"] + random_point_statement_table(ev)
+
+
+def _explanation(raw: str | None) -> str:
+    m = EXPLANATION_RE.search(raw or "")
+    return m.group(1).strip() if m else ""
+
+
+def random_point_statement_table(ev: dict, items_path: Path = ITEMS23) -> list[str]:
+    """Exp 23 random points by the statement check, split by the true in-string label: the rate at which each arm's
+    readouts say the "inside" statement, the "outside" statement, both, or neither. Recounted from the stored
+    readouts (the eval JSON keeps only the pooled accuracy, correct / 500, which is not a per-state rate)."""
+    arms = [a for a in ARMS if a in ev and "readouts" in ev[a].get("random_points", {})]
+    if not arms or not items_path.exists():
+        return ["", f"(statement check by state skipped: {'no readouts in the eval JSONs' if not arms else f'{items_path} missing'})"]
+    if str(EXP22) not in sys.path:
+        sys.path.append(str(EXP22))
+    from feature_spec import FIXED, fill
+    spec = FIXED["nla"]["py_string"]
+    pair = {v: fill(spec, v) for v in spec["fillers"]}
+    items = [{"id": it["id"], "value": "inside" if it["meta"]["labels"]["in_string"] else "outside"} for it in json.loads(items_path.read_text())]
+    out = ["", "Exp 23 random points by the statement check (lib30's substring test of the py_string statements), by the true label:", "",
+           "| arm | in string: says inside / outside / both / nothing | not in string: says inside / outside / both / nothing |", "|---|---|---|"]
+    for a in arms:
+        readouts = {k: _explanation(v) for k, v in ev[a]["random_points"]["readouts"].items()}
+        by = statement_said_by_state(readouts, items, pair)
+        cells = [" / ".join(f"{by[t]['said'][k]:.2f}" for k in ("inside", "outside", "both", "nothing")) + f" (n = {by[t]['n']})"
+                 for t in ("inside", "outside")]
+        out.append(f"| {a} | {cells[0]} | {cells[1]} |")
+    return out
+
+
+def training_minutes(log_path: Path) -> dict[str, float]:
+    """Per-arm training wall time in minutes from pipeline.log ("HH:MM:SS launching train_X" to "HH:MM:SS train_X
+    done"; includes the Modal container start and model load). The ``wall_s`` in train30_*.json is not usable: it
+    over-accumulates (each step re-adds the time since the last checkpoint)."""
+    if not log_path.exists():
+        return {}
+    start, out = {}, {}
+    for line in log_path.read_text().splitlines():
+        m = _LOG_LINE.match(line.strip())
+        if not m:
+            continue
+        t = datetime.strptime(m.group(1), "%H:%M:%S")
+        if m.group(3):
+            start[m.group(3)] = t
+        elif m.group(4) in start:
+            dt = t - start.pop(m.group(4))
+            out[m.group(4)] = (dt if dt >= timedelta(0) else dt + timedelta(days=1)).total_seconds() / 60
+    return {k.removeprefix("train_"): v for k, v in out.items() if k.startswith("train_")}
 
 
 def figure(train: dict, path: Path) -> bool:
@@ -107,7 +162,10 @@ def main() -> None:
     md += [f"| {p} | {m} | {line} | {v} |" for p, m, line, v in prediction_rows(ev, _load("p5.json"))]
     md += ["", f"Per row (held-out clusters; arms present: {', '.join(ev)}):", ""] + per_row_table(ev)
     if train:
-        md += ["", "Training: " + "; ".join(f"arm {a} {d['step']} steps, final loss {d['losses'][-1][1]:.3f}, {d['wall_s']:.0f} s" for a, d in train.items())]
+        mins = training_minutes(RES / "pipeline.log")
+        md += ["", "Training: " + "; ".join(f"arm {a} {d['step']} steps, final loss {d['losses'][-1][1]:.3f}, "
+                                            + (f"{mins[a]:.1f} min" if a in mins else "time n/a") for a, d in train.items())
+               + " (wall time from launch to done in pipeline.log, container start included; train30_*.json's wall_s over-accumulates and is not shown)"]
     (RES / "table30.md").write_text("\n".join(md) + "\n")
     print("\n".join(md))
     if figure(train, RES / "fig30.png"):

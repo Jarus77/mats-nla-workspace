@@ -90,7 +90,7 @@ def train(nla: NL.NLA, acts: torch.Tensor, targets: Sequence[str], out: str, arm
             losses.append([done, total])
         state = {**state, "step": done, "losses": losses, "done": done == steps,
                  "wall_s": round(state["wall_s"] + time.time() - t0, 1)}
+        t0 = time.time()       # reset every step: state["wall_s"] already holds the time up to here (was: only on save)
         if done % save_every == 0 or done == steps:
             state = _save(nla, opt, out, arm, state, on_save)
-            t0 = time.time()
     return state
