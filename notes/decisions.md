@@ -548,12 +548,12 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 - **Trigger.** Neel, 23 Oct: "most excited about the 'here are the things that one method can find and the other one can't' results"; asked for the per-concept table across readers, more concepts (code, LaTeX, LLM-mined), positive controls, far-apart layers, and two mechanism experiments (reconstructor blind spot; difference-term swap).
 - **Decision.** The pre-registered confirmatory run (prereg rev 4.3: P1–P4 at n = 240, N1–N5, T1) is **not run**. Its question ("does any reader read col descriptively under text-fixed steering") was answered on the pilot and on fresh items (exp 13: fresh line-position items at chance for every reader, 0.51 / 0.49 / 0.53); the sprint's remaining days go to Neel's asks. Every pilot number stays labelled pilot. If days 5–7 of the plan have slack, P1/P2 only (~$15) as a confirmatory footnote.
 - **Where.** exp 12 (14 rows, prompted + judged spontaneous), exp 13 (8 new rows, length control, 22-row table), app `tq7`.
-- **Result carried.** OLens states nothing in 13,420 readouts; NLA states completion-relevant structure (table column 41%, parenthesis 30%) and no count; prompted NLA > OL on table column (1.00 / 0.74) and parenthesis (0.96 / 0.73), length-matched.
+- **Result carried.** OLens states 6 of 13,420 readouts (layers 40/42/44; 1 of 4,480 at 42); NLA states completion-relevant structure (table column 41%, parenthesis 30%) and no count; prompted NLA > OL on table column (1.00 / 0.74) and parenthesis (0.96 / 0.73), length-matched.
 
 ## 2026-10-23 — D36: exp 14 answers Neel's "is the AR blind to the concept": no, it is blind to statements; the OL-AR output is whitened
 
 - **Design.** OL-AR (`agu18dec/olens_and_ar:ar_ptag_pooled`, tags 44/40) and NLA-AR on true spans, fresh OL bullets, fresh NLA explanations and fixed statement pairs; probes, gap retention, statement shifts; app `kq2`.
-- **Result.** OL-AR keeps table column 1.00 / parenthesis 0.93 from the true 32-token span; statements move it 0.03–0.10 of the class gap for every concept including language ("French language" 0.10 vs a French bullet 1.39); OL bullets carry structure partially (0.66 / 0.60) vs language 0.92. NLA-AR: statements move it only for language (0.72), not structure (0.07).
+- **Result.** OL-AR keeps table column 1.00 / parenthesis 0.93 from the true 32-token span (probe AUROC on the rebuild, not a gap share); statements move it 0.03–0.10 of the class gap for every concept including language ("French language" 0.10 vs a bullet written in French, `- Je recommande` vs `- Je empfehle`, 1.39); OL bullets carry structure partially (probe AUROC 0.66 / 0.60, class-gap share 0.12 / 0.18) vs language 0.92 (gap share 0.28). NLA-AR: statements move it only for language (0.72), not structure (0.07).
 - **Reading.** OLens is rewarded for re-inducing the activation, never for naming; concepts a short span cannot re-induce are partly lost and never stated. The NLA's correct statements are not load-bearing for its reconstruction.
 - **Blocker.** The OL-AR head writes in a whitened space; the moments (`whitening_iolens_pooled_L40/44`) are in a gated dataset. Analysis done in AR space; raw-space error term deferred. Asked the user to request access / ask Agam.
 - **Cost.** ≈ $8.
@@ -599,7 +599,7 @@ On the same 160 col selection items with the frozen templates (unchanged, sha256
 - **Bank.** `experiments/18_prediction_test/`, ten rows x 200 items (seven synthetic position/format rows, stance, language and quote controls), sha256 `44308dfdc1b92898b2f463add7117d0fdd15f6a8a626b179ccd68ae7c9efcd36`; token length matched between values within 20% on every synthetic row (one rebuild).
 - **Instruments** (`modal18.py --stage instr1|instr2`, one H100 then one H200, about 45 min total, about $4): readable (probe), sayable by span (frozen probe on the NLA reconstructor's rebuild of the true 32-token span), sayable by statement (fixed statement pair through the reconstructor), used (centred class-mean push at r11 vs 20 isotropic nulls, next-token log-odds on the declared set), J-enrichment. Two clarifications before the fill, both disclosed in the prereg: span = frozen-probe AUROC ≥ 0.80 (the gap-ratio form was uninformative, 0.02-0.12 everywhere); used is two-sided |z| ≥ 3 (py_string came out at z −12).
 - **What the instruments say.** Every synthetic row is readable (1.00); none is statement-sayable (≤ 0.14), language is (0.51); span-sayability is graded with what a 32-token window can carry (LaTeX, argument, string, JSON 0.98-1.00; HTML, CSV, heading 0.68-0.77); used splits the rows (LaTeX +22, string −12, argument +9, quote +3.8 vs JSON +2.6, HTML −1.0, CSV +0.3). Stance is not readable (0.45) and becomes a negative control.
-- **Predictions** (`results/predictions18.md`, sha256 `2db98042fe02a448e287e0a23a4ba87a1417164ddcce19decd4215075eeb77a6`): NLA prompted high on nine rows; NLA states unprompted on the four used rows only; OLens prompted high on the four fully span-sayable rows and language, low on HTML, CSV, heading, quote, stance; J-lens high on quote, language and (by the rule, expected to fail) stance. Decisive cells: HTML, CSV, heading, where readable says yes and sayable says no.
+- **Predictions** (`results/predictions18.md`, sha256 `1edd828344478437731f1707eaa10c2a691c0190286a7432739ea17452f48aad`; the `2db98042fe02a448e287e0a23a4ba87a1417164ddcce19decd4215075eeb77a6` first written here is the hash of `results/instruments18.json`, corrected in D51; both files have a single commit): NLA prompted high on nine rows; NLA states unprompted on the four used rows only; OLens prompted high on the four fully span-sayable rows and language, low on HTML, CSV, heading, quote, stance; J-lens high on quote, language and (by the rule, expected to fail) stance. Decisive cells: HTML, CSV, heading, where readable says yes and sayable says no.
 - **Next.** Mine and freeze phrasings on the mining split (exp 07 procedure), then the reader stages (prompted, spontaneous judge, multi-candidate complement check; OLens at 36/44/52), then score §5.
 
 ## 2026-10-26 — D42: exp 18 readers scored against the pre-registered predictions: 0.63 over 70 cells, below the 0.80 bar; Oracle Lens half predictive, NLA and J-lens rules not
@@ -643,7 +643,7 @@ every readable state at 0.94 to 1.00 (four of six rows already at 4 tokens); the
 0.93 to 0.99 (the latter partly in-distribution for the critic). Decision: the thesis sentence becomes "the readers
 carry structural state in their outputs and do not name it"; the window account of Oracle Lens is retired as the
 explanation of its prompted misses, which are a naming and phrasing failure. The exp 19 exhibits cell is re-scored with
-the reconstructor measure at 0.70 (7 of 8; primary scorecard 35 of 38), reported beside the judged cell and labelled
+the reconstructor measure at 0.70 (6 of 8, py_arg at 0.697 just under the line; primary scorecard 34 of 38; corrected in D51 from 7 of 8 and 35 of 38), reported beside the judged cell and labelled
 post hoc. The same protocol is being run on exp 13's table-column and parenthesis rows to reconcile with exp 16, which
 measured the Oracle Lens part through the Oracle Lens reconstructor at layer 44.
 
@@ -660,8 +660,10 @@ behind exp 22's GPU stages.
 
 Exp 22 (public-source rebuild, predictions frozen before the readers ran): primary 30 of 38 (0.79), without the
 judge-scored exhibits cell 26 of 30 (0.87); secondary 13 of 16 (0.81); all 56 cells 0.79 against the declared 0.80, as
-in exp 19 (0.79). The two scorecards agree on 50 of 56 cells, with the same two complement-naming misses (latex_math
-named at 0.40; md_list unnamed). The positive control failed as pre-registered: Python-vs-JavaScript is stated by the
+in exp 19 (0.79). On the seven rows the banks share the two scorecards agree on 42 of 49 cells, with the same two
+complement-naming misses (latex_math named at 0.40; md_list unnamed). (Corrected in D51: an always-low predictor scores
+30 of 38 on this primary scorecard and 33 of 38 on exp 19's, so the rules tie or lose to it there; their margin comes
+from the NLA complement-naming rule.) The positive control failed as pre-registered: Python-vs-JavaScript is stated by the
 NLA at 0.70, exhibited by Oracle Lens at 0.78 (the judge's first non-zero exhibition score in three experiments) and
 read by the J-lens at 0.93, with a statement shift of 0.2976 against the 0.30 line. Decision: the line stays; the
 ordering of rows by the statement instrument (the one stated row is the highest) is the finding, and the write-up says
@@ -671,8 +673,8 @@ exp 19); the free-readout cells are not. The reconstructor-based exhibits measur
 
 Exp 23 (random read points, Neel's "random prompts"): the loose naming regex first shipped (`MENTION_ANY`) counted
 content words ("open", "math", "level") and gave NLA 0.43 to 0.60; replaced before reporting by state-specific
-phrasing (`names_state`), with the loose count kept in the table for the record. Strict: Oracle Lens names a
-structural state in 0 of 500 readouts; the NLA in 3% (string), 13% (parentheses), 4% (braces) of points where the
+phrasing (`names_state`), with the loose count kept in the table for the record. Strict: Oracle Lens never names a
+structural state where it holds (0 of 500; 5 regex hits, all where the state does not hold); the NLA in 3% (string), 13% (parentheses), 4% (braces) of points where the
 state holds, against 0 to 1% where it does not, and 50% for list items (n = 18). Carrying at random points in code: the
 string state is readable at 0.86 and recoverable from the readout text alone at 0.72 (Oracle Lens) and 0.79 (NLA);
 depth states are only weakly readable at random points (0.67 to 0.69) and carried at 0.54 to 0.68. The "all kinds"
@@ -758,8 +760,8 @@ from layer 20. "Why layer 42" is answered: it is not special.
 
 Exp 29 (ten points of the NLA's history, step 600 run on 28 Oct and step 800 folded in): structural naming by the judge
 is 0.17 to 0.49 for the text-only warm start, 0.01 to 0.21 for the activation warm start and 0.00 to 0.29 with no trend
-through 800 RL steps, while FVE (0.18 to 0.59 on Python strings) and code-language naming (0.55 to 0.75) rise, mostly by
-step 100. P2 held; P1 (TextNLA above 0.25), P3 (carrying capped at ceiling) and P4 (text-bag spread 0.09) failed as
+through 800 RL steps, while FVE (0.18 to 0.59 on Python strings) and code-language naming (judge 0.55 to 0.71-0.77, regex 0.46 to 0.62-0.75) rise, mostly by
+step 100. P2 held; P1 (TextNLA above 0.25), P3 (carrying capped at ceiling) and P4 (text-bag spread 0.082 on js_string) failed as
 written.
 
 Thesis wording from here: both readers carry structural state and do not name it (Oracle Lens never, the NLA in a
@@ -767,3 +769,41 @@ minority of cases in its describing register); the NLA's silence is a register t
 reconstruction reward neither pays for nor removes (exps 28, 29, 30), not a limit of what the activation or the reader
 holds. Still open: a statement-aware critic trained by RL, a second model. Talk script, ledger (chapters 22, 23) and
 write-up (sections 8, 9, 10, 11) updated.
+
+## 2026-10-30 — D51: record audit from the figure recompute
+
+Every talk figure was recomputed from the raw results files (`figures/manifest/*.json`, checks with `"match": false`).
+Where the written record disagreed with the raw data, the raw value replaces it; wording changed only where the number
+forced it. Nothing under `results/`, `data/`, `src/` or `figures/` was edited. Talk-script-only mismatches (exp 14 units
+and reconstructor, exp 15 parenthesis +12.9, exp 16 "within 0.04", exp 17 0.57 and the 94% source, the NLA carrier
+prompt, D45's date) are not in this repository; the RESULTS files already state those numbers correctly.
+
+| quantity | old | new | file |
+|---|---|---|---|
+| exp 19 vs 22 scorecard agreement | 50 of 56 cells | 42 of 49 shared cells (7 shared rows; observed high/low 44 of 49) | 22 RESULTS, D47 |
+| always-low baseline beside the scorecards | absent | exp 19 primary 33/38 vs rules 31/38, all 45/56 vs 44/56; exp 22 primary 30/38 vs 30/38, all 36/56 vs 44/56; exp 18 40/70 vs 44/70; NLA rules 14/16 vs 11/16 (19), 12/16 vs 9/16 (22) | 18, 19, 22 RESULTS, D47 |
+| exp 19 exhibits via reconstructor | 7 of 8; primary 35 of 38 (0.92) | 6 of 8 (py_arg 0.697 < 0.70); primary 34 of 38 (0.89 [0.76, 0.96]) | 19, 20, 25 RESULTS, D45 |
+| exp 28 rows with paraphrase range > 0.15 | 5 of 47 (language rows and tense) | 8 of 47: two natural-language rows, exp 12 code language, sentence count, quote, call argument (19, 22), predicate position; tense 0.10 | 28 RESULTS |
+| exp 14 parenthesis 0.44 pair | `- ), and` vs `- and` | `- /or` vs `- /early` (`- ), and` gives -0.17) | 14 RESULTS |
+| exp 14 OL-AR 1.00/0.93 and bullets 0.66/0.60 | unlabelled ("keeps") | probe AUROCs; bullets keep 0.12/0.18 of the class gap; language 1.39 is a bullet written in French | D36, 16 RESULTS |
+| exp 12 OL >= NLA prompted | 9 of 14; NLA leads only on two rows | 7 of 14 (8 at two decimals); NLA leads on five rows clearly | 12, 13 RESULTS |
+| exp 12 OL "states" verdicts at 42 | 0 of 4,480 | 1 of 4,480 (language, 1 of 320); three layers 6 of 13,420, not all "Python" | 12, 14 RESULTS, D35, derivation C4 |
+| exp 12 words-since-start OL prompted | 0.51 | 0.55 (the table's value) | 12 RESULTS |
+| exp 13 fresh line position NLA | text 0.48, table 0.51 unlabelled | 0.51 fixed label, 0.48 mean of three, both stated | 13 RESULTS |
+| exps 23/27 OL regex naming | 0 of 500; 0 of 1,939 | 5 of 500 and 17 of 1,939 regex hits; when the state holds 0 of 500 and 1 of 1,939 | 23, 27 RESULTS, D47, derivation C4 |
+| exp 26 P1 Markdown half | holds | partial (md_heading 0.77 at L20, 0.78 at L32) | 26 RESULTS |
+| exp 29 code-language naming | 0.55 to 0.75 | judge 0.55 to 0.71-0.77; regex 0.46 to 0.62-0.75 | 29 RESULTS, D50, derivation |
+| exp 29 P4 text-bag spans | 0.04 / 0.09 / 0.06 | 0.047 / 0.082 / 0.057 | 29 RESULTS, D50 |
+| exp 30 random points, statement arm in string | 0.16 / 0.24 / 0.60 | 0.12 / 0.24 / 0.64 | 30 RESULTS |
+| exp 30 random points, statement arm not in string | 0.04 / 0.22 / 0.74 | 0.04 / 0.21 / 0.75 | 30 RESULTS |
+| exp 30 random points, control in string | 0.02 / 0.00 / 0.98 | 0.00 / 0.00 / 1.00 | 30 RESULTS |
+| exp 30 P1 | holds | partial: second clause (both arms within 0.03 of 0.761) fails, both about 0.25 below | 30 RESULTS |
+| exp 30 training time | table30 wall_s read as training time | about 13 min per arm (pipeline.log); wall_s accumulate across stages | 30 RESULTS |
+| exp 18 predictions hash | predictions18.md = 2db98042… | predictions18.md = 1edd8283…; 2db98042… is instruments18.json | 18 RESULTS, D41 |
+| exp 04 dose column | "best dose" | dose as labelled (p90 or p99), not always the stronger | 04 RESULTS |
+| exp 11 leak z | vs the J-complement band; layer 52 absent | vs pooled isotropic + J-complement nulls; layer 52 row added (leak z +6.2) | 11 RESULTS |
+| exp 17 94% "first" | "says" | the prompted six-way argmax | 17 RESULTS |
+
+No verdict on a pre-registered scorecard changes except where listed; the reconstructor-scored exhibits cell of exp 19
+loses one row, and exp 30's P1 becomes partial. The primary-scorecard comparison with always-low is new and weakens
+how the scorecards may be quoted: the rules do not beat always-low on the primary cells.

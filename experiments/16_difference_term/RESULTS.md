@@ -42,7 +42,7 @@ phrasings agree (table column 0.76 / 0.20, parenthesis 0.84 / 0.19, language 0.1
    / 0.64 for the donor when the difference term is swapped, and 0.42 / 0.38 / 0.39 when its own part is
    swapped. The OLens reader's partial signal on position therefore comes from the same component its own
    text fails to reconstruct. Together with exp 14 (OL-AR keeps 1.00 / 0.93 from the true span, 0.66 /
-   0.60 from OL bullets): OLens can read position partially, says nothing about it, and what it says does
+   0.60 from OL bullets, both probe AUROCs; the bullets keep 0.12 / 0.18 of the class gap): OLens can read position partially, says nothing about it, and what it says does
    not re-induce it.
 4. **Reconstruction quality.** FVE of R_ol against h: −0.26 (table column), +0.17 (parenthesis), +0.04
    (language), −0.13 (list index); R_nla: 0.50 / 0.71 / 0.61 / 0.57. Retrained probes still find the

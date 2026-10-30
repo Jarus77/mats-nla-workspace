@@ -97,13 +97,13 @@ Predictions:
 2. Holds: code_lang states rise 0.55 to 0.71 by step 400 (+0.16), and the rise is complete by step 100.
 3. FAILS, on the ceiling: carrying on the readable rows rises only +0.02 on average from av_base to step 400 because
    av_base already carries at 0.87 to 0.99. The second half holds: TextNLA is within 0.05 of av_base (-0.04).
-4. FAILS narrowly: the text-bag AUROC spans 0.04 on py_string, 0.09 on js_string and 0.06 on latex_math across ten
+4. FAILS narrowly: the text-bag AUROC spans 0.047 on py_string, 0.082 on js_string and 0.057 on latex_math across ten
    checkpoints, with no trend; this is sampling spread around 0.90, not drift.
 
 Reading. The low structural naming is set before RL. The text-only warm start describes the prompt and says where in
 a string or heading the reader is; the activation-verbaliser warm start (av_base) already drops most of that, and the
 800 RL steps leave it where av_base put it while raising reconstruction a great deal (FVE 0.18 to 0.59 on py_string,
-cosine 0.79 to 0.91) and raising code-language naming (0.55 to 0.75), with both changes mostly complete by step 100.
+cosine 0.79 to 0.91) and raising code-language naming (judge 0.55 to 0.71-0.77, regex 0.46 to 0.62-0.75), with both changes mostly complete by step 100.
 Carrying of the structural state is near ceiling from av_base on. So the reward pays for reconstruction and for the
 one property (the language) that the describing register already names, and neither pays for nor removes structural
 statements; exp 30 shows the statements can be added at no cost to reconstruction.

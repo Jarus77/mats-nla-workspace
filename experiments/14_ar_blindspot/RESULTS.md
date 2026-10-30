@@ -78,7 +78,8 @@ layer 44 (layer 40 is the same picture, `summary.md`); NLA ruler at 42.
    vs `- German language` moves its output 0.10 of the real gap; a bullet written in French vs
    German (`- Je recommande` vs `- Je empfehle`) moves it 1.39. For table column, `- column one`
    vs `- column five` moves it 0.03, and no bullet statement does better than 0.04. For parenthesis
-   the only statement that moves it is the punctuation-bearing `- ), and` vs `- and` (0.44); the
+   the only statement that moves it is the mined continuation `- /or` vs `- /early` (0.44); the
+   punctuation-bearing `- ), and` vs `- and` gives -0.17 and `- )` vs `- ,` 0.14, and the
    descriptive `- inside parentheses` vs `- outside parentheses` gives 0.10. The ruler maps text to
    activation by what the text *exhibits*, not by what it *says*.
 3. **This is why OLens's channel for structure is a continuation.** OLens is rewarded only for text
@@ -87,7 +88,7 @@ layer 44 (layer 40 is the same picture, `summary.md`); NLA ruler at 42.
    first-cell item are `- an | marocain | 45 | Linguistics | ...`). Those bullets carry the concept
    partially: 0.66 on the true-text probe and 0.82 with their own probe for table column, 0.60/0.90
    for parenthesis, against 0.92/0.98 for language. It is consistent with exp 12 (OLens states
-   nothing in 6,720 readouts, exhibits language 56% and code 93%) and with exp 08/09 (OLens's
+   1 of 6,720 readouts (exps 12 and 13 at layer 42), exhibits language 56% and code 93%) and with exp 08/09 (OLens's
    newline-continuation tracks line position while every descriptive template is flat).
 4. **The NLA ruler does respond to descriptions, but only of the control.** "The text is in French"
    vs "German" moves it 0.72 of the gap; "first column" vs "fifth column" 0.07, parenthesis -0.05,

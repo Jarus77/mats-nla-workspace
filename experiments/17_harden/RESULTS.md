@@ -32,7 +32,7 @@ top-1 lower bound 0.33, below the 0.50 bar).
 
 **What the confusion shows, which the verdicts do not.** On both rows the NLA's discrimination is unchanged by
 the extra candidates (0.89 and 0.88, the same as the two-candidate numbers), but its *naming* is one-sided. It
-says "first column" for 94% of first-cell items and never names a late column (columns four to six get zero
+picks "first column" as its six-way argmax for 94% of first-cell items and never a late column (columns four to six get zero
 argmax hits; late items split between "first" and "second"). It says "inside a parenthesis" for 84% of inside
 items and never says "outside" (outside items go to "inside a quotation"). The table-column verdict passes
 because the first-cell items alone carry the top-1; the parenthesis verdict fails because "outside" is never

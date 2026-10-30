@@ -67,7 +67,8 @@ Ran 28 Oct 2026 (resumed after the overnight cancellation; the four rows already
 Predictions:
 
 1. FAILS on the readable rows: the probe is already 0.98 to 1.00 at layer 20; there is no rise to a plateau. The
-   Markdown half holds (md_heading 0.63 to 0.78, md_list about 0.5).
+   Markdown half is partial: md_list stays near 0.5 (0.49 to 0.59), but md_heading ranges 0.63 to 0.78 and sits
+   well above "near 0.6" at layer 20 (0.77) and layer 32 (0.78).
 2. Holds: prompted AUROC moves under 0.10 from 36 to 60 on every row (largest span py_arg 0.82 to 0.76, md_heading
    0.60 to 0.51); there is no fall at 20 to 28.
 3. Holds: carrying stays at or above 0.70 wherever the probe is at or above 0.80 on py_string, js_string, latex_math

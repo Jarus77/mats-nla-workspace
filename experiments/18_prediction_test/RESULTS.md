@@ -1,7 +1,7 @@
 # 18 — Prediction test: does the objective account predict the readers on concepts it has never seen? (26 Oct 2026)
 
 **Verdict against the pre-registered bar: no, not as written.** Accuracy 0.63 [0.51, 0.73] over 70 scored cells
-(bar 0.80). The Oracle Lens half of the account is predictive (prompted 9/10, never-states 10/10); the NLA
+(bar 0.80; an always-"low" predictor scores 40 of 70 on the same cells against the rules' 44). The Oracle Lens half of the account is predictive (prompted 9/10, never-states 10/10); the NLA
 "states iff used" rule (5/10), the blanket "never names the complement" rule (4/10) and the J-lens rule (2/10)
 are not. Pre-registration: `notes/prereg_prediction_test.md` (instruments and predictions hashed before any reader
 ran; two clarifications disclosed there). Scorecard: `results/scorecard18.md`; everything: `results/score18.json`.
@@ -13,7 +13,7 @@ string, call argument, Markdown heading, CSV field, HTML depth, stance word, and
 (`items_build18.py`, bank sha256 `44308d…cd36`). Instruments without a reader (D41): readable (probe), sayable
 by span (frozen probe on the NLA reconstructor's rebuild of the true 32-token span), sayable by statement, used
 (centred class-mean push at r11 vs 20 isotropic nulls), J-enrichment. Predictions per reader cell written and
-hashed (`results/predictions18.md`, sha256 `2db980…77a6`). Readers: free readouts k = 8 on the mining split
+hashed (`results/predictions18.md`, sha256 `1edd82…8aad`; `2db980…77a6` is `results/instruments18.json`). Readers: free readouts k = 8 on the mining split
 (NLA, OLens@42) judged by Gemini 3.8 Flash for stated / exhibited; phrasings mined from those readouts and
 selected on the selection split with exp 07's procedure (`templates_frozen.json`); prompted log-odds AUROC
 (max of the 3-template mean and the fixed label) for NLA@42, OLens@36/42/44/52, J-lens@42; the NLA's

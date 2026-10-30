@@ -63,9 +63,9 @@ true one: model window 32 is 0.78 to 0.93 on the six readable rows, critic span 
 
 The exp 19 "exhibits" cell, re-scored with the reconstructor measure at the same 0.70 line used for the other AUROC
 cells (post hoc, disclosed: the pre-registered judge measure failed on every row of two experiments): predicted high
-on the five span-sayable rows and all five observed high (0.70 to 0.94); predicted low on HTML depth and observed 0.79
-(miss); predicted low on both Markdown rows and observed low. Seven of eight, against three of eight with the judge.
-The primary scorecard with this cell becomes 35 of 38 (0.92).
+on the five span-sayable rows and four of five observed high (0.87 to 0.94), py_arg just under the line (0.697, miss);
+predicted low on HTML depth and observed 0.79 (miss); predicted low on both Markdown rows and observed low. Six of
+eight, against three of eight with the judge. The primary scorecard with this cell becomes 34 of 38 (0.89).
 
 The sentence for the thesis: the readers carry structural state in their outputs and do not name it. The remaining
 question is why naming fails, and the exp 17 and 19 statement-shift numbers say what it is: a statement of the

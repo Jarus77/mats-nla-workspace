@@ -1,6 +1,6 @@
 # Exp 27: random read points at 2,000 points, with a blind judge on the in-string readouts
 
-Question: exp 23 found that neither reader names the structural state at a random read point (Oracle Lens 0 of 500,
+Question: exp 23 found that neither reader names the structural state at a random read point (Oracle Lens never where the state holds, 0 of 500,
 NLA 3 to 13% on string, parentheses and braces) while the unprompted readouts still carry the state weakly, but its
 intervals were about plus or minus 0.10 and its strict naming regex could in principle miss unusual phrasings. Do the
 naming and carrying base rates hold at four times the points and with intervals of about plus or minus 0.05, and does
@@ -91,8 +91,9 @@ the record only.
 2. **The regex under-counted the NLA.** A blind judge finds the NLA stating that the position is inside a string
    on about one readout in five when it is, against one in fifty when it is not; the strict regex found one in
    fifty either way. The NLA says it in its own words ("mid-quotation", "quoted"), not in ours. Exp 23's sentence
-   "neither reader names structural state" must be read as: Oracle Lens never does (0 of 598 by the judge, 0 of
-   1,939 by the regex, on every state); the NLA does so in a minority of cases, one in five for strings, half the
+   "neither reader names structural state" must be read as: Oracle Lens never does when the state holds (0 of 598 by the
+   judge; by the regex 1 of 1,939, a list item, and 16 further hits all on points where the named state does not
+   hold); the NLA does so in a minority of cases, one in five for strings, half the
    time for list items, and almost never for depth.
 3. **Carrying is unchanged** and still ordered as before: the activation, then the NLA's readout, then Oracle
    Lens's, with the code-only string row the honest number (0.86 / 0.81 / 0.72).

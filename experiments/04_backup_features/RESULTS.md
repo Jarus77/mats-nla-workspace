@@ -64,7 +64,7 @@ Machine-readable output: `results/gates.json`. Raw JSONs are in `/results/04_bac
 
 ## Gate table (L42; G4 at L38, centred steering)
 
-| feature | role | items / rows | G1 AUROC [95% CI] | enrichment r\*/4r\* (shuffled-label ref) | J-Lens label-word AUROC [null 95%] | emitted top-10 / soft AUROC [soft null] | label n1000 | label camilablank | G4 @L38, J-removed(1536): effect, ×max \|random\|, z vs J-complement (best dose) | leak 40/42/44 at that dose | self-report AUROC | **qualifies** |
+| feature | role | items / rows | G1 AUROC [95% CI] | enrichment r\*/4r\* (shuffled-label ref) | J-Lens label-word AUROC [null 95%] | emitted top-10 / soft AUROC [soft null] | label n1000 | label camilablank | G4 @L38, J-removed(1536): effect, ×max \|random\|, z vs J-complement (dose as labelled in each cell, p90 or p99; not always the stronger one: at p99 cap_next is 10.8×, cap_next_all 16.0×, code_lang 10.0×) | leak 40/42/44 at that dose | self-report AUROC | **qualifies** |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | cap_next | P1 | 1173 / 9280 | 0.864 [0.856, 0.871] | **2.71** / 1.49 (2.17 / 1.46) | 0.504 [0.494, 0.505] | **0.806** / 0.830 [0.49, 0.51] | IN-J | IN-J | p90 +0.187, 7.3×, z 16 ✓ | 42, 44 (negative) | 0.69 | no |
 | cap_next_all | P1 variant | 1200 / 9593 | 0.901 [0.894, 0.906] | **1.75** / 1.26 (2.26 / 1.48) | 0.492 (below) | **0.791** / 0.793 | IN-J | DIFFUSE-READABLE | p90 +0.523, 12.5×, z 30 ✓ | none | 0.66 | no |

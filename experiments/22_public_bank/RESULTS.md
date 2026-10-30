@@ -65,10 +65,16 @@ rows) HH 1, LH 1, LL 6.
 ## Reading
 
 1. **The exp 19 result replicates on a public bank built from different files with a different seed.** The two
-   scorecards agree cell for cell on 50 of 56 cells, and the four revised-rule misses include the same two
-   complement-naming misses (latex_math named at 0.40 and 0.41; md_list unnamed on both). The revised NLA rules score
-   12 of 16 here against 14 of 16 in exp 19; the two new misses are json_depth creeping over the 0.20 observed line
-   (0.25) and the positive control.
+   banks share seven rows (49 cells); on those the two scorecards agree hit for miss on 42 of 49 cells (observed
+   high/low on 44 of 49), and the four revised-rule misses include the same two complement-naming misses (latex_math
+   named at 0.40 and 0.41; md_list unnamed on both). The revised NLA rules score 12 of 16 here against 14 of 16 in
+   exp 19; the two new misses are json_depth creeping over the 0.20 observed line (0.25) and the positive control.
+   Beside an always-"low" predictor on the same cells the rules do not win on the primary scorecard: exp 19 primary
+   31 of 38 against 33 of 38 for always-low, exp 22 30 of 38 against 30 of 38; all cells, exp 19 44 of 56 against
+   45 of 56, exp 22 44 of 56 against 36 of 56 (exp 18: 44 of 70 against 40 of 70). On the primary scorecard the rules
+   tie or lose to always-low. Their margin over the baseline among the NLA cells comes from the complement-naming rule:
+   the two revised NLA rules score 14 of 16 against 11 of 16 for always-low in exp 19 and 12 of 16 against 9 of 16
+   here.
 2. **The positive control failed as pre-registered, and that is informative about the instrument, not the thesis.**
    Python-vs-JavaScript is the one row where the NLA states the property freely (0.70), the judge sees Oracle Lens
    exhibiting it (0.78), and the J-lens reads it (0.93). Its statement shift is 0.2976. Every natural structural row
@@ -97,6 +103,7 @@ rows) HH 1, LH 1, LL 6.
 | bank | local files, unpublished | package directories and arXiv, tracked |
 | rows | 8 incl. html_depth | 8 incl. code_lang positive control |
 | primary | 31 / 38 (0.82) | 30 / 38 (0.79) |
+| primary, always-low baseline | 33 / 38 | 30 / 38 |
 | primary without the judged exhibits cell | 28 / 30 (0.93) | 26 / 30 (0.87) |
 | secondary | 11 / 16 (0.69) | 13 / 16 (0.81) |
 | revised NLA rules | 14 / 16 | 12 / 16 (one miss the pre-registered positive control) |

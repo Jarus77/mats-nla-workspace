@@ -36,7 +36,7 @@ near its register. Evidence: the NLA's readouts are explanations with a `<explan
 `- ` bullets; neither register changed over RL (exp 07 to 13 readouts).
 Exp 29 tests A3 directly on the NLA's own history: structural naming is 0.17 to 0.49 for the text-only warm start,
 0.01 to 0.21 for the activation warm start, and 0.00 to 0.29 with no trend through 800 RL steps, while FVE rises
-0.18 to 0.59 (Python strings) and code-language naming 0.55 to 0.75. The register is set before RL and RL keeps it.
+0.18 to 0.59 (Python strings) and code-language naming rises (judge 0.55 to 0.71-0.77; regex 0.46 to 0.62-0.75). The register is set before RL and RL keeps it.
 
 ## 3. The one equation
 
@@ -87,8 +87,9 @@ in-distribution for it). Exp 18, 19 and 22 give `stmt` between -0.03 and 0.23 fo
 
 C4 (why Oracle Lens never states and the NLA sometimes does). For Oracle Lens the register is bullets of context
 (A3), and for any self-inducing `c` a bullet written in `c` earns more than a bullet stating `c` (1.39 against
-0.10), so stating is dominated at the optimum for self-inducing states and worthless for the rest: 0 of 13,420
-readouts state a concept in exps 07 to 13, 0 of 500 at random read points in exp 23, max 1 percent on every row of
+0.10), so stating is dominated at the optimum for self-inducing states and worthless for the rest: 6 of 13,420
+readouts state a concept in exps 07 to 13, the state is named where it holds at random read points 0 of 500 times in
+exp 23 and 1 of 1,939 in exp 27, max 1 percent on every row of
 exps 18, 19, 22. For the NLA the register is description (A3), so a statement is in-register and costs little KL;
 it is emitted where `Delta_u` pays (language, code language) and not where it does not (every structural row).
 

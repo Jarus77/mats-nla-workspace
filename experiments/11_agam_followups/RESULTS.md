@@ -142,7 +142,7 @@ logistic probes **on these 60 / 120 items only**, so they are far noisier than e
 
 ### B1. Where col leaves the J-space (map, `results/phaseB.md`)
 
-| layer | col direction enrichment r\*=384 / 4r\*=1536 (read token) | J-Lens leak z of the J-removed col push | tense enrichment |
+| layer | col direction enrichment r\*=384 / 4r\*=1536 (read token) | J-Lens leak z of the J-removed col push (vs the pooled isotropic + J-complement nulls) | tense enrichment |
 |---|---|---|---|
 | 24 | 3.67 / 1.79 | 0.0 | 3.38 / 1.62 |
 | 32 | 2.78 / 1.71 | −0.2 | 3.87 / 1.82 |
@@ -150,11 +150,12 @@ logistic probes **on these 60 / 120 items only**, so they are far noisier than e
 | 42 | 1.54 / 1.29 | 0.0 | 3.49 / 1.76 |
 | 44 | 1.46 / 1.17 | 0.4 | 3.34 / 1.68 |
 | 48 | 1.45 / 1.00 | 0.2 | 3.14 / 1.57 |
+| 52 | 1.74 / 1.12 | **6.2** | 2.99 / 1.46 |
 | 56 | 1.42 / 0.96 | **19.4** | 2.20 / 1.18 |
 
 The class-mean col direction is strongly J-enriched at early layers and falls to about the ≤ 1.5 gate only at
 layers 42–48 (42 is 1.54 at r\* with this direction; 52 rises to 1.74, and its push leaks); tense stays 3–4× enriched until 52 and drops at 56. The J-removed col push is leak-free at
-every layer up to 48 and leaks massively into the J-Lens at 56 (close to the unembedding, where the
+every layer up to 48, leaks at 52 (z +6.2) and massively into the J-Lens at 56 (close to the unembedding, where the
 top-1536 directions no longer contain the newline readout). So "col is non-J" is a property of the band
 around the readers' layer, not of the model as a whole; at 24–36 the same feature sits inside the J-space.
 The positions −2…−4 give the same enrichment picture (`phaseB.md`). The model's next token at the col read
@@ -193,7 +194,7 @@ point 1 rests on 40 vs 42. (Run time 55 min on one A100-80GB.)
 
 Same construction at every layer: the layer's own class-mean direction (see the direction caveat above), J-removed
 at 1536, q90 dose, K = 10 + 10 nulls, read token (position −2 as a check at 42 / 44). z = mean-shift z against the
-pooled bands; "leak z" = J-Lens shift of the same push vs the J-complement band (void if > 3).
+pooled bands; "leak z" = J-Lens shift of the same push vs the same pooled isotropic + J-complement nulls (void if > 3).
 
 | OL layer | col nl_cont, J-removed: AUROC / shift / z | col leak z | tense f07, J-removed: AUROC / shift / z | tense raw AUROC | tense leak z |
 |---|---|---|---|---|---|

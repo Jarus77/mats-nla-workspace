@@ -7,7 +7,7 @@ judge, does the exp 22 scorecard move the way exp 19's did?
 **Why.** Exp 20 showed on exp 19's bank that both readers' free readouts carry the structural state through the critic
 (Oracle Lens 0.70 to 0.94 on the six readable rows, NLA 0.93 to 0.99) while the judge scored exhibition at 0.00 on every
 natural row; re-scoring exp 19's `ol_exhibits` cell with that measure at the 0.70 line took the cell from three of eight
-to seven of eight and the primary scorecard to 35 of 38 (exp 20, "What this changes"). Exp 22 rebuilt exp 19's bank from
+to six of eight and the primary scorecard to 34 of 38 (exp 20, "What this changes"). Exp 22 rebuilt exp 19's bank from
 public sources and replicated it (primary 30 of 38; 26 of 30 without the judged exhibits cell), but its `ol_exhibits`
 cell is still judge-scored and the judge is blind to structure (0.00 on all seven natural rows, 0.78 on the `code_lang`
 positive control; exp 22, reading 5: "the reconstructor-based measure was not run on this bank"). This experiment runs
@@ -97,10 +97,10 @@ HH on py_string, latex_math, json_depth, code_lang; LL on both Markdown rows; LH
 3. **The span instrument bounds exhibition loosely.** JavaScript string sits under the 0.80 line (0.77) and the
    readout carries it at 0.84; call argument sits above (0.88) and the readout carries it at 0.51. The rule's two
    misses here are the two directions a floor-type instrument can miss in, and the LH miss is on the row exp 22's
-   prompted cell also missed. With both measures the rule stands at 6 of 8 on this bank and 7 of 8 on exp 19's.
+   prompted cell also missed. With both measures the rule stands at 6 of 8 on this bank and 6 of 8 on exp 19's.
 4. **The scorecard clears the declared bar with the reconstructor measure.** Primary 32 of 38 (0.84), all cells
    0.82 against the pre-registered 0.80; the judge-scored version (0.79) stays in the record as the pre-registered
-   measure, and the replacement is post hoc and disclosed, as in exp 20's re-scoring of exp 19 (35 of 38 there).
+   measure, and the replacement is post hoc and disclosed, as in exp 20's re-scoring of exp 19 (34 of 38 there).
    The secondary scorecard is untouched. Both versions are quoted together wherever the number appears.
 
 ## What this changes

@@ -53,8 +53,9 @@ score.
 
 ## Reading
 
-1. **Neither reader names the structural state at a random read point.** Oracle Lens: 0 of 500 readouts name any of
-   the six states. The NLA names the state in 3% of in-string points, 13% of in-parentheses points and 4% of in-brace
+1. **Neither reader names the structural state at a random read point.** Oracle Lens never names a state where it
+   holds (0 of 500 readouts); the strict regex fires on 5 of 500, all on points where the named state does not
+   hold (two parentheses, three list items). The NLA names the state in 3% of in-string points, 13% of in-parentheses points and 4% of in-brace
    points, against 0 to 1% when the state does not hold; the one state it names often is "list item" (9 of 18,
    against 9% elsewhere), which is also the one state that is a visible token at the line start rather than a count
    over the prefix. This is the base rate behind the forced-choice "states" cells of exps 18, 19 and 22, which were

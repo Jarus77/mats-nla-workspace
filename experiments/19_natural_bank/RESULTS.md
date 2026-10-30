@@ -43,7 +43,10 @@ predicts the NLA states nothing anywhere on this bank.
 **Primary scorecard (free-readout and reconstructor-based cells, J-lens on the six uncued rows): 31 of 38, 0.82
 [0.67, 0.91].** Without the Oracle Lens "exhibits" cell, whose judge again scored 0.00 on every row (see below): 28 of
 30, 0.93 [0.79, 0.98]. **Secondary (prompted forced-choice cells): 11 of 16, 0.69 [0.44, 0.86].** All 56 cells
-together, the exp 18 convention: 44 of 56, 0.79 [0.66, 0.87], against the declared 0.80.
+together, the exp 18 convention: 44 of 56, 0.79 [0.66, 0.87], against the declared 0.80. Beside an always-"low"
+predictor on the same cells (added in D51): primary 33 of 38, without the exhibits cell 25 of 30, all cells 45 of 56;
+on the primary scorecard the rules lose to always-low, and their margin among the NLA cells comes from the
+complement-naming rule (the two revised NLA rules 14 of 16 against 11 of 16).
 
 | rule | score | what happened |
 |---|---|---|
@@ -79,9 +82,10 @@ Confusion, predicted x observed: NLA HH 7, HL 4, LH 1, LL 12; Oracle Lens HH 3, 
 ## Post hoc (disclosed): the exhibits cell through the reconstructor
 
 Exp 20 fed Oracle Lens's own free readouts to the NLA critic and scored them with the frozen probe. At the 0.70 line used
-for the other AUROC cells: predicted-high rows all high (py_string 0.91, js_string 0.90, latex_math 0.87, py_arg 0.70,
-json_depth 0.94), html_depth predicted low and observed 0.79 (miss), both Markdown rows low as predicted. Seven of eight
-against three of eight with the judge; the primary scorecard with this measure is 35 of 38 (0.92 [0.79, 0.97]). This
+for the other AUROC cells: predicted-high rows high except py_arg (py_string 0.91, js_string 0.90, latex_math 0.87,
+json_depth 0.94; py_arg 0.697, under the line, miss), html_depth predicted low and observed 0.79 (miss), both Markdown
+rows low as predicted. Six of eight against three of eight with the judge; the primary scorecard with this measure is
+34 of 38 (0.89 [0.76, 0.96]). This
 replacement was not pre-registered and is reported beside the judged cell, not instead of it.
 
 ## Bank provenance and what is tracked

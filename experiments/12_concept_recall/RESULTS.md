@@ -27,8 +27,8 @@ syntax, controls (known in-workspace features).
 
 ## What it says
 
-1. **OLens never states a property.** 0 of 4,480 OLens@42 free readouts state any of the 14
-   properties. OLens is a continuation reader: it *exhibits* language (56%), code language (93%),
+1. **OLens (almost) never states a property.** 1 of 4,480 OLens@42 free readouts states any of the 14
+   properties (one language readout, 1 of 320). OLens is a continuation reader: it *exhibits* language (56%), code language (93%),
    caps (50%) and tense (16%) in its own text, and exhibits nothing detectable for any position-in-text
    or syntax concept. So on Camila's "concepts extracted from the readout" measure, every
    "NLA high / OLens zero" cell is automatic for anything the NLA states at all; the fair
@@ -40,12 +40,14 @@ syntax, controls (known in-workspace features).
    Camila's description of the NLA's unique content ("document format and template structure",
    "mid-unit syntactic incompleteness and required completion category").
 3. **Three position-in-text concepts are never stated by anyone, even when the reader can discriminate
-   them when asked.** Words since sentence start: NLA prompted 0.72 vs OLens 0.51, stated 0%. Line
+   them when asked.** Words since sentence start: NLA prompted 0.72 vs OLens 0.55, stated 0%. Line
    position: 0.60 / 0.55, stated 0%. Indentation: 0.87 / 0.89, stated 0% (2% of items). The
    prompted/spontaneous gap is the finding: the information is in the readers' reach but not in
    their vocabulary.
-4. **Prompted, OLens ≥ NLA on 9 of 14; the NLA leads only on words-since-sentence-start (0.72 vs
-   0.51) and quote state (0.83 vs 0.76).** J-Lens is at or near chance on every position-in-text and
+4. **Prompted, OLens ≥ NLA on 7 of 14 (8 at two decimals); the NLA leads clearly on
+   words-since-sentence-start (0.72 vs 0.55), noun number (0.99 vs 0.86), quote state (0.83 vs 0.76),
+   next-word POS (0.72 vs 0.66) and line position (0.60 vs 0.55), and by under 0.02 on bullet index and
+   language.** J-Lens is at or near chance on every position-in-text and
    syntax concept (0.45–0.68) and high only on language/code (0.95–0.98) and noun number (0.84).
    "What OLens finds that J-Lens doesn't" = tense, indentation, bullet index, quote, caps, gender,
    Item-N: 0.76–0.99 vs 0.49–0.68.
@@ -63,7 +65,7 @@ syntax, controls (known in-workspace features).
 - The NLA's "states it" count depends on the judge's reading of "explicit claim"; four cells were
   spot-checked (bullet index, quote, number, POS) and the stated values matched the ground truth
   in the examples read. A kimi-k3 second-judge pass on a stratified sample is the next check.
-- OLens at 40/44 was not judged (it states nothing at 42; the prompted OL@40/44 numbers in exp 07
+- OLens at 40/44 was not judged (it states 1 of 4,480 at 42; the prompted OL@40/44 numbers in exp 07
   match 42 on every feature).
 
 ## Spot-check examples (NLA, judged "stated")
@@ -78,8 +80,9 @@ syntax, controls (known in-workspace features).
 Same 14 concepts, OLens fed the layer-40, 42 or 44 activation (40 and 44 are on its training grid;
 42 is not). Judged 2026-10-22, 448 more calls, $1.87. Table: `results/ol_by_layer.md`.
 
-- **Stated:** 6 of 13,420 readouts across the three layers state any property (all six are "this is
-  Python" at layer 40). OLens states nothing at any layer.
+- **Stated:** 6 of 13,420 readouts across the three layers state any property (four "this is
+  Python" on one JavaScript item and one indentation readout at layer 40, one language readout at
+  layer 42). OLens states next to nothing at any layer.
 - **Exhibited:** within a few points across layers (language 56 / 56 / 59%, code 87 / 93 / 94%,
   caps 44 / 50 / 38%, tense 8 / 16 / 16%); nothing exhibited for any position-in-text or syntax concept.
 - **Prompted:** every concept within 0.05 across 40 / 42 / 44 (largest spread: indentation 0.86 /

@@ -61,7 +61,7 @@ rsLoRA cleanly), this experiment ships the frozen data file and the eval of the 
 and reports the failure with the traceback; the fallback named in the memo (a new r16 adapter on the attention
 projections only) is a separate decision, not run silently.
 
-## Results (27 Oct, 23:53 UTC; `results/table30.md`, `results/eval30_{base,S,C}.json`, `results/train30_{S,C}.json`, `results/fig30.png`; two training arms of 400 steps, 13 minutes each on one H200; three evaluations of about 10 minutes; about $8)
+## Results (27 Oct, 23:53 UTC; `results/table30.md`, `results/eval30_{base,S,C}.json`, `results/train30_{S,C}.json`, `results/fig30.png`; two training arms of 400 steps, 13 minutes each on one H200 per `pipeline.log` (13.4 min launch to done, as `table30.md` now prints; the `wall_s` of 35,699 s and 36,492 s in `train30_{S,C}.json` over-count, because `train30.py` re-added the time since the last checkpoint at every step, and are not training time); three evaluations of about 10 minutes; about $8)
 
 Training ran: the backward pass through the injection hook and the hybrid attention kernels worked at the first
 step; arm S loss 1.81 to 1.33, arm C 1.38 at the end (the control's targets have no appended sentence, so its loss
@@ -84,23 +84,24 @@ state; control arm C = the explanation alone; base = the untouched iter_000400 a
 
 Gate-set FVE (192 held-out items of the six training rows): base 0.504, control 0.512, statement arm 0.507.
 
-**Exp 23's 500 random read points** (the adapter's statements classified as "inside a string" or "outside a
-string" by regex, against the true label):
+**Exp 23's 500 random read points** (the adapter's readout classified as stating "inside a string" or "outside a
+string" by the row's fixed statement, lib30's substring check, against the true label; recounted from the readouts in
+`eval30_{arm}.json`):
 
 | arm | when the point is inside a string (n = 134): says inside / outside / nothing | when it is not (n = 366) |
 |---|---|---|
 | base | 0.00 / 0.00 / 1.00 | 0.00 / 0.00 / 1.00 |
-| control | 0.02 / 0.00 / 0.98 | 0.00 / 0.00 / 1.00 |
-| statement arm | 0.16 / 0.24 / 0.60 | 0.04 / 0.22 / 0.74 |
+| control | 0.00 / 0.00 / 1.00 | 0.00 / 0.00 / 1.00 |
+| statement arm | 0.12 / 0.24 / 0.64 | 0.04 / 0.21 / 0.75 |
 
 ### Scoring the predictions
 
 | prediction | result |
 |---|---|
-| P1 gate FVE within 0.02 of the control arm | holds: 0.507 against 0.512 (base 0.504); no row moves more than 0.04 |
+| P1 gate FVE within 0.02 of the control arm, both within 0.03 of 0.761 | partial: the first clause holds (0.507 against 0.512, base 0.504; no row moves more than 0.04); the second fails, both arms about 0.25 below 0.761 (S -0.254, C -0.249; the base adapter is at 0.504 on this gate set too) |
 | P2 statement accuracy at or above 0.85 on held-out files of readable rows (accuracy counts items with no statement as wrong) | fails as defined: 0.41 to 0.69, because the adapter states on 50 to 72 percent of items; conditional on stating, 0.79 to 1.00 on the four readable code rows, 0.46 to 0.58 on the two Markdown rows (the md_list line of at most 0.65 holds) |
 | P3 transfer: js_string accuracy at or above 0.70; latex_math naming under 0.30 | fails on js_string (0.31; conditional 0.59 on 17 statements); holds on latex_math (0.03) |
-| P4 random points: in-string naming at or above 0.50 when the state holds, at or below 0.15 when not | fails: "inside" 0.16 against 0.04, "outside" 0.24 against 0.22 |
+| P4 random points: in-string naming at or above 0.50 when the state holds, at or below 0.15 when not | fails: by lib23's strict regex 0.40 when the state holds against 0.26 when not (`table30.md`); by the statement check "inside" 0.12 against 0.04, "outside" 0.24 against 0.21 |
 | P5 within-item FVE of naming versus non-naming samples | not scorable: exp 22's k = 8 readouts carry no per-sample FVE |
 
 ## Reading
@@ -117,9 +118,10 @@ string" by regex, against the true label):
 3. **But what was learned is narrow.** A row of the same kind not in training (JavaScript strings) gets statements
    on half its items, right 59 percent of the time; a row with a template never seen gets none; and at random read
    points inside strings the adapter mostly says "outside" regardless of the truth, with a weak "inside" signal
-   (0.16 against 0.04). Four hundred supervised steps on 768 items teach the trained templates at the trained
+   (0.12 against 0.04). Four hundred supervised steps on 768 items teach the trained templates at the trained
    kind of read point, not a general habit of reporting state. Three of the five pre-registered lines fail on their
-   definitions, and the failures are the generalisation lines.
+   definitions, and the failures are the generalisation lines; P1 holds only in its first clause (the absolute
+   FVE line at 0.761 fails for both arms alike).
 4. **What this changes.** The sentence "the gap is the objective, not capacity" is supported for the trained rows
    and bounded by the transfer rows. The causal claim that fixing the reward would make the readers name what they
    carry is not shown here; what is shown is that naming costs the reward nothing and that the information is

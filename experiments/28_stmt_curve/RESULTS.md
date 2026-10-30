@@ -81,8 +81,9 @@ F2 (the reward pays and the NLA declines).
 
 Correlation of the shift with the stated rate: Spearman 0.40 (p = 0.006) over all rows; 0.23 (p = 0.14) without
 the four language rows; 0.28 (p = 0.08) within the 41 structural rows. AUROC of the shift for "stated at or above
-0.30": 0.76. Paraphrase ranges are narrow on structural rows (SD 0.01 to 0.08) and wider on the language rows
-(min to max 0.24 to 0.35). The fixed-pair shifts recomputed here match the source experiments' values within 0.03
+0.30": 0.76. Paraphrase ranges are narrow on most structural rows (SD 0.01 to 0.08; median range 0.10) and wider on
+the natural-language rows (min to max 0.24 to 0.35), though five structural rows also exceed 0.15 (up to 0.24 on
+sentence count). The fixed-pair shifts recomputed here match the source experiments' values within 0.03
 on every row, and exp 14's four values within 0.10.
 
 Logistic fits of the stated rate (binomial, 320 readouts per row): shift alone beats the type indicator alone by
@@ -93,7 +94,7 @@ the type label carries information beyond the shift.
 
 | prediction | result |
 |---|---|
-| 1. paraphrase range above 0.15 on at least half the rows | fails: 5 of 47 rows (the language rows and tense); a single pair was a fair measurement on structural rows |
+| 1. paraphrase range above 0.15 on at least half the rows | fails: 8 of 47 rows (`stats28.json`): the two natural-language rows (0.35, 0.24) and exp 12's code language (0.17), and five structural rows (sentence count 0.24, quote 0.22, call argument in exps 22 and 19 0.19 and 0.17, predicate position 0.16); tense is 0.10; median range 0.10, so a single pair was a fair measurement on most structural rows |
 | 2. the four counter-rows keep paraphrase-mean shifts under 0.20 | holds: table column 0.05, call argument 0.05, parenthesis 0.00, bullet index 0.14 |
 | 3. Spearman 0.3 to 0.6 overall, under 0.3 within structural rows | holds: 0.40 and 0.28 |
 | 4. a logistic in the shift does not beat the type indicator by more than 4 AIC | fails: it beats it by 314, because the shift also separates the language rows from the rest more finely than a binary type does |

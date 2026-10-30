@@ -38,7 +38,7 @@ Code: `feature_spec.py`, `items_build.py` (+ `test_items_build.py`, 9 tests), `m
 | line in function body | 0% | 0% | 0% |
 | words left under limit | 0% | 0% | 0% |
 
-- **OLens states nothing on any new row** (0 of 2,240), as on the 14 earlier rows.
+- **OLens states nothing on any new row** (0 of 2,240), as on the 14 earlier rows (1 of 4,480 there).
 - **The NLA's new statements are one-sided and about pending structure.** It says "a new row is beginning" /
   "first column" on first-cell items and almost never names a late column; it says "an open parenthetical"
   on inside items and never "outside a parenthesis". Stated values are correct whenever stated. This is the
@@ -66,12 +66,12 @@ Judge caveat: on table column the judge accepts "a new row/entry is beginning" a
 | list nesting depth | 0.96 | 0.88 | 0.96 (fixed) | 0.42 | 1.00 / 1.00 (82; length alone 0.83 there) |
 | Q&A vs prose | 0.79 (fixed) | 0.56 | 0.54 | 0.86 | 0.63 / 0.54 (119; length alone 0.75) |
 | words left under limit | 0.58 | 0.56 | 0.55 | 0.08 | 0.45 / 0.46 (85) |
-| line position, fresh items | 0.51 | 0.49 | 0.53 | – | – |
+| line position, fresh items | 0.51 (fixed; mean of 3 0.48) | 0.49 | 0.53 (fixed) | – | – |
 
 - **Two clean "NLA reads it, OLens half, J-lens blind" cells, robust to length:** table column (1.00 vs
   0.67 vs 0.64 on length-matched items) and parenthesis state (0.98 vs 0.76 vs 0.47). Both are also the two
   rows the NLA states unprompted (41% / 30%). These are the first prompted cells in the whole table where the
-  NLA clearly beats OLens on a position-in-text concept; on the 14 earlier rows OLens ≥ NLA on 9.
+  NLA clearly beats OLens on a position-in-text concept; on the 14 earlier rows OLens ≥ NLA on 7.
 - **Sentence count and code-line number are confounded with prefix length by construction** (late items are
   always longer; no overlap to re-score). The 0.99s say the NLA separates them but not that it does so by
   counting sentences or lines rather than tokens. Redesign for the next pass: pad early items with an
@@ -79,7 +79,7 @@ Judge caveat: on table column the judge accepts "a new row/entry is beginning" a
 - **List depth** is read by all three readers (J-lens 0.96 on the fixed words "top / nested"); length is also
   predictive there (0.83 in the overlap), so it is not a clean cell.
 - **Q&A layout** is weak for every reader once length is accounted for; **words-left** is at chance for all.
-- **Fresh line position: the pilot's 0.60 did not replicate** (NLA 0.48, OLens 0.49, J-lens 0.53 with the frozen
+- **Fresh line position: the pilot's 0.60 did not replicate** (NLA 0.51 on the fixed label and 0.48 on the mean of three, OLens 0.49, J-lens 0.53 with the frozen
   nj1_col templates on 160 unseen items). This is the pre-registered P1 cell run informally on fresh items:
   the predicted branch was "P1 fails", and it does. Line position is at chance for all three readers.
 
