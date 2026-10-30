@@ -747,3 +747,23 @@ Thesis wording after tonight: the readers carry structural state in their output
 NLA as a description); Oracle Lens never names it; the NLA names some of it, in its describing register, and the
 reconstructor reward neither pays for nor charges for those statements. Whether the register was set by the warm start
 or shaped by RL is exp 29's question.
+
+## 2026-10-30 — D50: exps 26 and 29 scored; the warm start, not the reward, sets the NLA's structural silence
+
+Exp 26 (Oracle Lens at layers 20 to 60, resumed on 28 Oct after the overnight cancellation, the four finished rows
+kept): at every layer the state is linearly present (probe 0.96 to 1.00 on the readable rows, already at layer 20),
+Oracle Lens's free readout carries it through the critic (0.76 to 1.00) and names it in at most 2% of readouts. Call
+argument is carried only at layers 20 to 24. Three of four pre-registered lines held; the miss predicted a probe rise
+from layer 20. "Why layer 42" is answered: it is not special.
+
+Exp 29 (ten points of the NLA's history, step 600 run on 28 Oct and step 800 folded in): structural naming by the judge
+is 0.17 to 0.49 for the text-only warm start, 0.01 to 0.21 for the activation warm start and 0.00 to 0.29 with no trend
+through 800 RL steps, while FVE (0.18 to 0.59 on Python strings) and code-language naming (0.55 to 0.75) rise, mostly by
+step 100. P2 held; P1 (TextNLA above 0.25), P3 (carrying capped at ceiling) and P4 (text-bag spread 0.09) failed as
+written.
+
+Thesis wording from here: both readers carry structural state and do not name it (Oracle Lens never, the NLA in a
+minority of cases in its describing register); the NLA's silence is a register the warm start sets and the
+reconstruction reward neither pays for nor removes (exps 28, 29, 30), not a limit of what the activation or the reader
+holds. Still open: a statement-aware critic trained by RL, a second model. Talk script, ledger (chapters 22, 23) and
+write-up (sections 8, 9, 10, 11) updated.
