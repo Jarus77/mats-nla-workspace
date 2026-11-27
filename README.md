@@ -1,6 +1,6 @@
 # Do NLAs read what the model can't say?
 
-A MATS 12.0 (Neel Nanda stream) research project on Qwen3.6-27B. It asks whether natural-language autoencoders (NLAs) and Oracle Lens read content in a model's activations that sits outside its verbal "workspace" (the J-space), or whether their success comes from re-solving the prompt text.
+A research project on Qwen3.6-27B. It asks whether natural-language autoencoders (NLAs) and Oracle Lens read content in a model's activations that sits outside its verbal "workspace" (the J-space), or whether their success comes from re-solving the prompt text.
 
 **Status:** prep and pilot work are complete; the confirmatory run is pre-registered for Oct 19 – Nov 1, 2026. All pilot numbers come from declared pilot splits that are excluded from the main analysis.
 
